@@ -1,0 +1,23 @@
+name: "read log file action"
+
+description: "read the log file that is pushed in the pull request"
+
+inputs:
+
+  repo-token:
+    description: "The GITHUB_TOKEN secret"
+    required: true
+  
+  path-to-log-file:
+    description: "this is the path to the uploaded log file which contains test results"
+    required: true
+    default: "tests/logfile.json"
+
+outputs:
+  log-file-content:
+    description: "this is the content of the log file"
+    # value:
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

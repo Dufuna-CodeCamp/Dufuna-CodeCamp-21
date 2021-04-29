@@ -1,0 +1,13 @@
+name: check pr title
+
+description: This action checks to ensure that the PR title conforms to a particular format
+
+inputs:
+
+  repo-token:
+    description: "The GITHUB_TOKEN secret"
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

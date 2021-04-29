@@ -1,0 +1,16 @@
+name: "calculate statistics action"
+
+description: "this action calculates the amount of test passes and failures and displays a result"
+
+inputs:
+  log-file-content:
+    description: "content of the log file read by a previous action"
+    required: true
+
+outputs:
+  stats-output:
+    description: The resulting output after statistics is calculated
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

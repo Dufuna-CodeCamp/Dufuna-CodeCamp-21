@@ -1,0 +1,44 @@
+name: Code Review
+
+# Controls when the action will run. 
+on:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened, edited, review_requested, review_request_removed]
+    branches:
+      - master
+
+jobs:
+  build:
+    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: check-pr-title-action
+      uses: ./.github/actions/check-pr-title-action
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: read-log-action
+      uses: ./.github/actions/read-log-action
+      id: read-log
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-log-file: "tests/logfile.json"
+
+    - name: calculate-stats-action
+      uses: ./.github/actions/calculate-stats-action
+      id: stats
+      with:
+        log-file-content: ${{ steps.read-log.outputs.log-file-content }}
+
+    - name: automate approval action
+      uses: ./.github/actions/approve-pr-action
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        status: ${{ steps.stats.outputs.stats-output }}

@@ -1,0 +1,14 @@
+# Mac DS_Store Files
+*.DS_Store
+
+# PhpStorm Project Files
+*.idea
+
+# Vs Code project folder
+*.vscode
+
+*node_modules
+tests/assets
+tests/logfile.html
+tests/package-lock.json
+tests/setup/winos/package-lock.json
