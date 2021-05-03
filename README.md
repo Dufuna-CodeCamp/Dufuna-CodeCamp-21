@@ -19,7 +19,7 @@ This repository exists for the submission of tasks by the Dufuna-CodeCamp partic
 
 - In this new folder, create a new file for the solution of the tasks, e.g `aboutMe.txt`
 
-## Setting up the project locally (One time setup) (Windows Users Only)
+## Setting up the project locally (One time setup) - Windows Users Only
 1. Open `Command Prompt` as an administrator
 2. Navigate to the project directory (`Dufuna-CodeCamp-21`)
 3. Once you're in the project directory, navigate to `tests\setup\winos`. This directory contains the setup files for Windows Operating System.
@@ -34,7 +34,7 @@ This repository exists for the submission of tasks by the Dufuna-CodeCamp partic
 10. Type the command: `winrunner.bat`. When this command successfully runs, you will see an output that says `Setup is Complete!`
 - As an aside, ensure you have installed on your PC the latest version of Chrome.
 
-## Setting up the project locally (One time setup) (Mac OS and Linux Users Only)
+## Setting up the project locally (One time setup) - Mac OS and Linux Users Only
 1. Open your `terminal`
 2. Navigate to the project directory (`Dufuna-CodeCamp-21`)
 3. Once you're in the project directory, 
