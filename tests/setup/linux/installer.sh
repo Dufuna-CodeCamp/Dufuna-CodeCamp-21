@@ -53,7 +53,7 @@ if [[ $selenium_wc > 0 ]]
 then
     echo "selenium-webdriver is available"
 else
-    sudo npm install --prefix $test_folder selenium-webdriver
+    npm install --prefix $test_folder selenium-webdriver
 fi
 
 set +ex
