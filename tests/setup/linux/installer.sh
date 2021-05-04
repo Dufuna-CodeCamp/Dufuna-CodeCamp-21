@@ -82,7 +82,7 @@ else
     sudo mv -f ~/chromedriver $path_to_driver/chromedriver
     sudo chown root $path_to_driver/chromedriver
     sudo chmod +x $path_to_driver/chromedriver
-    echo export PATH=\"$PATH:$path_to_driver\" > ~/etc/environment
+    echo export PATH=\"$PATH:$path_to_driver\" > /etc/environment
 fi
 
 # Mocha check & Installation
