@@ -7,7 +7,7 @@ try {
     const passes = content.stats.passes;
     const fails = content.stats.failures;
 
-    const status = passes > fails ? "PASS" : "FAIL";
+    const status = fails > 0 ? "FAIL" : "PASS";
     console.log(`status is ${status}`);
     core.setOutput("stats-output", status);
 
