@@ -1,8 +1,8 @@
 {
   "stats": {
     "tests": 3,
-    "passes": 0,
-    "failures": 3,
+    "passes": 3,
+    "failures": 0,
     "owner": "jeffKayombo"
   }
 }
