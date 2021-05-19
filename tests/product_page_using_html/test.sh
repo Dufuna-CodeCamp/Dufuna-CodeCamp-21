@@ -1,8 +1,14 @@
 #!/bin/bash
 
-project_working_directory=$PWD/../../
+working_directory=$(pwd -W)
+if [ $? -eq 0 ]
+then
+    project_working_directory=$working_directory/../../
+else
+    project_working_directory=$PWD/../../
+fi
 test_folder=$project_working_directory/tests/
-submission_directory="$PWD/../../submissions"
+submission_directory="$project_working_directory/submissions"
 
 NONE='\033[00m'
 BOLD='\x1b[1m'
@@ -34,4 +40,4 @@ customReportDir=$test_folder
 customReportFilename=logfile
 
 echo -e "${ITALIC}visit${NONE} ${BOLD}${UNDERLINE}$test_folder/logfile.html${NONE} in your browser to see test reports"
-env FILE_PATH=$submission_directory/$folder_name/$html_file mocha $test_folder/product_page_using_html/html_task.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=tru
+env FILE_PATH=$submission_directory/$folder_name/$html_file mocha $PWD/html_task.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true
