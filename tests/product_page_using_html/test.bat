@@ -32,7 +32,7 @@ SET customReportFilename=logfile
 ECHO.
 ECHO [92mvisit %test_folder%/logfile.html in your browser to see test reports[0m
 
-env FILE_PATH=%path_to_folder:="%/%html_file:="% "%APPDATA:"=%\npm\mocha.cmd" "%test_folder:"=%\issue2\html_task.js" --reporter mochawesome --reporter-options reportDir=%test_folder%,reportFilename=%customReportFilename%,quiet=true
+env FILE_PATH=%path_to_folder:="%/%html_file:="% "%APPDATA:"=%\npm\mocha.cmd" "%test_folder:"=%\product_page_using_html\html_task.js" --reporter mochawesome --reporter-options reportDir=%test_folder%,reportFilename=%customReportFilename%,quiet=true
 
 :TrimFirstName
 :: trim left whitespace
