@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 4,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 3,
-    "start": "2021-05-24T09:52:25.689Z",
-    "end": "2021-05-24T09:52:43.679Z",
-    "duration": 17990,
+    "failures": 2,
+    "start": "2021-05-24T11:19:25.376Z",
+    "end": "2021-05-24T11:19:35.242Z",
+    "duration": 9866,
     "testsRegistered": 4,
-    "passPercent": 25,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5498786b-97ec-48a5-98ae-15bed8aafc2f",
+      "uuid": "c6530e1f-1d9b-4bfd-9faa-462f2c23cbb6",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "745ac4f4-765f-4e91-9b47-4428e4001974",
+          "uuid": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 16929,
+              "duration": 9015,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "1d23aa27-c0ba-49c1-9dae-14150c06d23d",
-              "parentUUID": "745ac4f4-765f-4e91-9b47-4428e4001974",
+              "uuid": "037116f2-1c91-47c1-8973-71d8e2b8b542",
+              "parentUUID": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 3,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "6de6c87f-94af-4bcc-9e4d-42506270dd47",
-              "parentUUID": "745ac4f4-765f-4e91-9b47-4428e4001974",
+              "uuid": "3370af19-5735-4c34-9d5c-6f588e6872fa",
+              "parentUUID": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 261,
+              "duration": 237,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(text, \"Price\", `Ensure Price is present`);",
               "err": {
-                "message": "AssertionError: Ensure Price is present: expected 'EXQUISITE ARTS\\n\\nEMBRACING THE POWER OF ART\\n\\nWE PRIDE OURSELVES IN SATISFYING THE NEEDS OF OUR CUSTOMERS\\n\\n\\nProducts in store >>' to include 'Price'",
-                "estack": "AssertionError: Ensure Price is present: expected 'EXQUISITE ARTS\\n\\nEMBRACING THE POWER OF ART\\n\\nWE PRIDE OURSELVES IN SATISFYING THE NEEDS OF OUR CUSTOMERS\\n\\n\\nProducts in store >>' to include 'Price'\n    at Context.<anonymous> (html_task.js:24:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: Ensure Price is present: expected 'EXQUISITE ARTS\\nPEACH SKETCH\\nPRODUCT PRICE: ZMK 500\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nRABBIT SKETCH\\nPRICE: ZMK 600\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nsimilar product names\\nart painting\\nart portraits\\nart landscapes\\npencil sketches' to include 'Price'",
+                "estack": "AssertionError: Ensure Price is present: expected 'EXQUISITE ARTS\\nPEACH SKETCH\\nPRODUCT PRICE: ZMK 500\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nRABBIT SKETCH\\nPRICE: ZMK 600\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nsimilar product names\\nart painting\\nart portraits\\nart landscapes\\npencil sketches' to include 'Price'\n    at Context.<anonymous> (html_task.js:24:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "b91840d1-c2b4-4e99-b0af-fd54a6e0bf1b",
-              "parentUUID": "745ac4f4-765f-4e91-9b47-4428e4001974",
+              "uuid": "ae3f3864-53d2-41f7-8861-121c9272be95",
+              "parentUUID": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 178,
+              "duration": 140,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -107,12 +107,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(text, \"DESCRIPTION\", `Ensure DESCRIPTION is present`);",
               "err": {
-                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'EXQUISITE ARTS\\n\\nEMBRACING THE POWER OF ART\\n\\nWE PRIDE OURSELVES IN SATISFYING THE NEEDS OF OUR CUSTOMERS\\n\\n\\nProducts in store >>' to include 'DESCRIPTION'",
-                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'EXQUISITE ARTS\\n\\nEMBRACING THE POWER OF ART\\n\\nWE PRIDE OURSELVES IN SATISFYING THE NEEDS OF OUR CUSTOMERS\\n\\n\\nProducts in store >>' to include 'DESCRIPTION'\n    at Context.<anonymous> (html_task.js:30:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'EXQUISITE ARTS\\nPEACH SKETCH\\nPRODUCT PRICE: ZMK 500\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nRABBIT SKETCH\\nPRICE: ZMK 600\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nsimilar product names\\nart painting\\nart portraits\\nart landscapes\\npencil sketches' to include 'DESCRIPTION'",
+                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'EXQUISITE ARTS\\nPEACH SKETCH\\nPRODUCT PRICE: ZMK 500\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nRABBIT SKETCH\\nPRICE: ZMK 600\\nLorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum obcaecati eius unde inventore vitae atque. Repudiandae, cupiditate. Dolor esse placeat quia corrupti reiciendis suscipit accusantium voluptate, molestiae excepturi exercitationem.\\nsimilar product names\\nart painting\\nart portraits\\nart landscapes\\npencil sketches' to include 'DESCRIPTION'\n    at Context.<anonymous> (html_task.js:30:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "ace332f0-340f-456b-9147-775dda133210",
-              "parentUUID": "745ac4f4-765f-4e91-9b47-4428e4001974",
+              "uuid": "84f781f1-c809-4a49-b1e3-51c66f5b1394",
+              "parentUUID": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
               "isHook": false,
               "skipped": false
             },
@@ -120,21 +120,17 @@
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 111,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 84,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
-              "err": {
-                "message": "AssertionError: Amount of images on the page not equal to 2: expected 0 to equal 2",
-                "estack": "AssertionError: Amount of images on the page not equal to 2: expected 0 to equal 2\n    at Context.<anonymous> (html_task.js:36:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- 0\n+ 2\n"
-              },
-              "uuid": "088e9dd3-a088-42cf-97b6-b312d0fd4a80",
-              "parentUUID": "745ac4f4-765f-4e91-9b47-4428e4001974",
+              "err": {},
+              "uuid": "fb02f7d5-c1fc-4ede-9378-93e61e35733f",
+              "parentUUID": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +138,7 @@
               "title": "test case: ordered list available",
               "fullTitle": "Testing Scholars Project test case: ordered list available",
               "timedOut": false,
-              "duration": 8,
+              "duration": 3,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -151,24 +147,24 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
               "err": {},
-              "uuid": "7f6a6349-fe23-428f-986b-3e6b80f72905",
-              "parentUUID": "745ac4f4-765f-4e91-9b47-4428e4001974",
+              "uuid": "24be9e56-2dd1-433f-89a9-ff477c9ca0b6",
+              "parentUUID": "7d515fa5-ce95-4798-8446-7a8946e5f61c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7f6a6349-fe23-428f-986b-3e6b80f72905"
+            "fb02f7d5-c1fc-4ede-9378-93e61e35733f",
+            "24be9e56-2dd1-433f-89a9-ff477c9ca0b6"
           ],
           "failures": [
-            "b91840d1-c2b4-4e99-b0af-fd54a6e0bf1b",
-            "ace332f0-340f-456b-9147-775dda133210",
-            "088e9dd3-a088-42cf-97b6-b312d0fd4a80"
+            "ae3f3864-53d2-41f7-8861-121c9272be95",
+            "84f781f1-c809-4a49-b1e3-51c66f5b1394"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 558,
+          "duration": 464,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
