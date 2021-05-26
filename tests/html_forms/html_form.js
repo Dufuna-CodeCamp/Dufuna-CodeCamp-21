@@ -4,7 +4,7 @@ var assert = require('chai').assert;
 var { Builder, By } = require("selenium-webdriver");
 
 describe("Testing Form Task", function () {
-    this.timeout(5 * 1000 * 60);
+    this.timeout(3 * 1000 * 60);
     var driver = new webdriver.Builder()
         .forBrowser('chrome')
         .build();
@@ -25,34 +25,36 @@ describe("Testing Form Task", function () {
     });
 
     it('test case: Full Name label is present', async () => {
-        const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("label")));
+        const name = await driver.findElement(By.css("label"));
         const text = await name.getText();
-        const name = await text.toLowerCase();
-        assert.equal(name, "full name", `Ensure "Full Name" label is present`);
-
+        const fullname = await text.toLowerCase();
+        assert.equal(fullname, "full name", `Ensure "Full Name" label is present`);
     });
 
     it('test case: Email label is present', async () => {
-        const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("label")));
+        const name = await driver.findElement(By.css("label"));
         const text = await name.getText();
         const email = await text.toLowerCase();
         assert.equal(email, "email", `Ensure "Email" label is present`);
-
+        done();
     });
 
     it('test case: Subject label is present', async () => {
-        const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("label")));
+        const name = await driver.findElement(By.css("label"));
         const text = await name.getText();
         const subject = await text.toLowerCase();
         assert.equal(subject, "subject", `Ensure "Subject" label is present`);
+        done();
     });
 
     it('test case: Message label is present', async () => {
-        const name = driver.wait(webdriver.until.elementLocated(webdriver.By.css("label")));
+        const name = await driver.findElement(By.css("label"));
         const text = await name.getText();
         const message = await text.toLowerCase();
         assert.equal(message, "message", `Ensure "Message" label is present`);
+        done();
     });
+    
 });
 
     
