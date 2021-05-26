@@ -5,6 +5,7 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2021-05-24T14:40:44.459Z",
     "end": "2021-05-24T14:40:54.176Z",
     "duration": 9717,
@@ -195,5 +196,8 @@
       },
       "version": "5.2.0"
     }
+=======
+    "owner": "luteChongo"
+>>>>>>> f3c200530e1678ad837adf233a249d5e879d1156
   }
 }
