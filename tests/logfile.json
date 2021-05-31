@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 5,
-    "passes": 0,
+    "tests": 4,
+    "passes": 4,
     "pending": 0,
-    "failures": 5,
-    "start": "2021-05-26T18:37:23.968Z",
-    "end": "2021-05-26T18:37:26.464Z",
-    "duration": 2496,
-    "testsRegistered": 5,
-    "passPercent": 0,
+    "failures": 0,
+    "start": "2021-05-31T16:57:03.631Z",
+    "end": "2021-05-31T16:57:10.541Z",
+    "duration": 6910,
+    "testsRegistered": 4,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "842e0640-1936-4264-ba06-1d90f560a87c",
+      "uuid": "10d242f9-b032-4f64-ad08-4ea97f6d965a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
-          "title": "Testing Form Task",
-          "fullFile": "C:\\Users\\oemma\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
-          "file": "\\html_form.js",
+          "uuid": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
+          "file": "\\html_task.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 2254,
+              "duration": 6159,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,16 +45,16 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "bd4ed62e-5498-42b3-a6d1-90d39956cb0e",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
+              "uuid": "2aaa7b08-4291-4c4a-bd93-784a83913985",
+              "parentUUID": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,136 +65,97 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "b06a0ce1-47d5-43fb-a782-e6042a0fc91a",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
+              "uuid": "14ed2efd-ceca-45d0-ad27-1b1ecbe275a1",
+              "parentUUID": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert 4 input fields are present",
-              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "title": "test case: check if Price is present",
+              "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 40,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 335,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
-              "err": {
-                "message": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 0 to equal 4",
-                "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 0 to equal 4\n    at Context.<anonymous> (html_form.js:24:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- 0\n+ 4\n"
-              },
-              "uuid": "d87d47d4-ad90-48a2-b082-614e8c78fdc5",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = await text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "err": {},
+              "uuid": "af3c7334-ba6b-4dee-a185-27c24a0e2bf8",
+              "parentUUID": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: Full Name label is present",
-              "fullTitle": "Testing Form Task test case: Full Name label is present",
+              "title": "test case: check if Description is present",
+              "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 40,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 304,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.equal(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
-              "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:671:13)\n    at Executor.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:597:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:28:22)",
-                "diff": null
-              },
-              "uuid": "7a99358d-cc6d-47b5-b726-83520dbae427",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = await text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "err": {},
+              "uuid": "17444619-bba2-43e9-9882-5f0675f8ab63",
+              "parentUUID": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: Email label is present",
-              "fullTitle": "Testing Form Task test case: Email label is present",
+              "title": "test case: assert image amount is 2",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 20,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 44,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.equal(email, \"email\", `Ensure \"Email\" label is present`);\ndone();",
-              "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:671:13)\n    at Executor.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:597:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:35:22)",
-                "diff": null
-              },
-              "uuid": "f483d20c-8483-4c40-96a9-5b2de1852acf",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "err": {},
+              "uuid": "84f52198-05c3-4ba6-8afc-d022cad9e41f",
+              "parentUUID": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: Subject label is present",
-              "fullTitle": "Testing Form Task test case: Subject label is present",
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
               "timedOut": false,
-              "duration": 33,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 3,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.equal(subject, \"subject\", `Ensure \"Subject\" label is present`);\ndone();",
-              "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:671:13)\n    at Executor.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:597:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:43:22)",
-                "diff": null
-              },
-              "uuid": "15846f32-5462-4179-bcec-315be7f61eb2",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: Message label is present",
-              "fullTitle": "Testing Form Task test case: Message label is present",
-              "timedOut": false,
-              "duration": 30,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.equal(message, \"message\", `Ensure \"Message\" label is present`);\ndone();",
-              "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:671:13)\n    at Executor.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\http.js:597:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\oemma\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:51:22)",
-                "diff": null
-              },
-              "uuid": "c321bc10-fbaa-417c-ba4b-8ec30483a4d4",
-              "parentUUID": "aa191887-1985-4dd1-9158-ce977ee7f4b6",
+              "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
+              "err": {},
+              "uuid": "ba37597d-a554-45b6-9b26-e2d6fe042965",
+              "parentUUID": "6e981bda-dd52-459f-a3c9-a329b50b3aea",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "d87d47d4-ad90-48a2-b082-614e8c78fdc5",
-            "7a99358d-cc6d-47b5-b726-83520dbae427",
-            "f483d20c-8483-4c40-96a9-5b2de1852acf",
-            "15846f32-5462-4179-bcec-315be7f61eb2",
-            "c321bc10-fbaa-417c-ba4b-8ec30483a4d4"
+          "passes": [
+            "af3c7334-ba6b-4dee-a185-27c24a0e2bf8",
+            "17444619-bba2-43e9-9882-5f0675f8ab63",
+            "84f52198-05c3-4ba6-8afc-d022cad9e41f",
+            "ba37597d-a554-45b6-9b26-e2d6fe042965"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 163,
+          "duration": 686,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -212,7 +173,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "8.3.1"
+      "version": "8.4.0"
     },
     "mochawesome": {
       "options": {
@@ -228,7 +189,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/oemma/Desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        "reportDir": "C:/Users/morta/desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
