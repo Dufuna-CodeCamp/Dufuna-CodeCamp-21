@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 5,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 5,
-    "start": "2021-06-01T13:08:48.395Z",
-    "end": "2021-06-01T13:09:01.383Z",
-    "duration": 12988,
+    "failures": 4,
+    "start": "2021-06-01T13:30:20.524Z",
+    "end": "2021-06-01T13:30:32.570Z",
+    "duration": 12046,
     "testsRegistered": 5,
-    "passPercent": 0,
+    "passPercent": 20,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "966f4e6a-5c0f-423a-8a65-5ba27e4d6f5d",
+      "uuid": "7641b1cd-42ec-46e6-99b2-d7fd5e213c06",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f78348c-a550-4427-8c7a-ac888699f515",
+          "uuid": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 12046,
+              "duration": 11153,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "0d81d20d-0ab6-4641-a839-dafc847da7c4",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "uuid": "9619f1a0-cc50-4f54-b662-702cd1efc427",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "a8157ea2-b998-4bb3-87cb-4cc9413a3b04",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "uuid": "60f2dc36-3214-43f2-a0b7-10791864dc49",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": true,
               "skipped": false
             }
@@ -76,21 +76,17 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 133,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 129,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
-              "err": {
-                "message": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 3 to equal 4",
-                "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 3 to equal 4\n    at Context.<anonymous> (html_form.js:24:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- 3\n+ 4\n"
-              },
-              "uuid": "93f56a8b-0fde-4901-b0b2-53dd626c00e2",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "err": {},
+              "uuid": "d4f63400-edd6-4066-9a44-4f69b80dbcbf",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +94,7 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
-              "duration": 290,
+              "duration": 263,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -107,12 +103,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.equal(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
               "err": {
-                "message": "AssertionError: Ensure \"Full Name\" label is present: expected 'full name:' to equal 'full name'",
-                "estack": "AssertionError: Ensure \"Full Name\" label is present: expected 'full name:' to equal 'full name'\n    at Context.<anonymous> (html_form.js:31:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name:\n+ full name\n"
+                "message": "AssertionError: Ensure \"Full Name\" label is present: expected 'full name :' to equal 'full name'",
+                "estack": "AssertionError: Ensure \"Full Name\" label is present: expected 'full name :' to equal 'full name'\n    at Context.<anonymous> (html_form.js:31:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name :\n+ full name\n"
               },
-              "uuid": "46d56cc2-11d3-4b2f-9164-a42db5c6c3a3",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "uuid": "a7c8872d-2828-4fd3-8dcb-e4feb5d4d01a",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +116,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 102,
+              "duration": 90,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -129,12 +125,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.equal(email, \"email\", `Ensure \"Email\" label is present`);\ndone();",
               "err": {
-                "message": "AssertionError: Ensure \"Email\" label is present: expected 'full name:' to equal 'email'",
-                "estack": "AssertionError: Ensure \"Email\" label is present: expected 'full name:' to equal 'email'\n    at Context.<anonymous> (html_form.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name:\n+ email\n"
+                "message": "AssertionError: Ensure \"Email\" label is present: expected 'full name :' to equal 'email'",
+                "estack": "AssertionError: Ensure \"Email\" label is present: expected 'full name :' to equal 'email'\n    at Context.<anonymous> (html_form.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name :\n+ email\n"
               },
-              "uuid": "d0bd5b55-5896-4b16-8c87-0ca8093eba84",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "uuid": "d1745710-955d-48ff-b1a1-4554dbbd9ee2",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +138,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 99,
+              "duration": 125,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -151,12 +147,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.equal(subject, \"subject\", `Ensure \"Subject\" label is present`);\ndone();",
               "err": {
-                "message": "AssertionError: Ensure \"Subject\" label is present: expected 'full name:' to equal 'subject'",
-                "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'full name:' to equal 'subject'\n    at Context.<anonymous> (html_form.js:46:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name:\n+ subject\n"
+                "message": "AssertionError: Ensure \"Subject\" label is present: expected 'full name :' to equal 'subject'",
+                "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'full name :' to equal 'subject'\n    at Context.<anonymous> (html_form.js:46:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name :\n+ subject\n"
               },
-              "uuid": "bf68aa8b-1373-487f-8975-689e1f44d9d1",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "uuid": "bbb11cdf-25d4-4bd2-ac43-bf1e68507435",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": false,
               "skipped": false
             },
@@ -164,7 +160,7 @@
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
-              "duration": 95,
+              "duration": 110,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -173,28 +169,29 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.equal(message, \"message\", `Ensure \"Message\" label is present`);\ndone();",
               "err": {
-                "message": "AssertionError: Ensure \"Message\" label is present: expected 'full name:' to equal 'message'",
-                "estack": "AssertionError: Ensure \"Message\" label is present: expected 'full name:' to equal 'message'\n    at Context.<anonymous> (html_form.js:54:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name:\n+ message\n"
+                "message": "AssertionError: Ensure \"Message\" label is present: expected 'full name :' to equal 'message'",
+                "estack": "AssertionError: Ensure \"Message\" label is present: expected 'full name :' to equal 'message'\n    at Context.<anonymous> (html_form.js:54:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name :\n+ message\n"
               },
-              "uuid": "44be164a-7000-4943-aff2-f8272a936d08",
-              "parentUUID": "9f78348c-a550-4427-8c7a-ac888699f515",
+              "uuid": "b8607f83-9557-4626-aa79-e25ddc235e23",
+              "parentUUID": "6ea50fe2-ba4a-4cb7-857f-998fb983cc7c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
+          "passes": [
+            "d4f63400-edd6-4066-9a44-4f69b80dbcbf"
+          ],
           "failures": [
-            "93f56a8b-0fde-4901-b0b2-53dd626c00e2",
-            "46d56cc2-11d3-4b2f-9164-a42db5c6c3a3",
-            "d0bd5b55-5896-4b16-8c87-0ca8093eba84",
-            "bf68aa8b-1373-487f-8975-689e1f44d9d1",
-            "44be164a-7000-4943-aff2-f8272a936d08"
+            "a7c8872d-2828-4fd3-8dcb-e4feb5d4d01a",
+            "d1745710-955d-48ff-b1a1-4554dbbd9ee2",
+            "bbb11cdf-25d4-4bd2-ac43-bf1e68507435",
+            "b8607f83-9557-4626-aa79-e25ddc235e23"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 719,
+          "duration": 717,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
