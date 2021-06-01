@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 3,
-    "start": "2021-06-01T13:58:03.571Z",
-    "end": "2021-06-01T13:58:15.272Z",
-    "duration": 11701,
+    "start": "2021-06-01T14:52:45.463Z",
+    "end": "2021-06-01T14:53:10.428Z",
+    "duration": 24965,
     "testsRegistered": 5,
     "passPercent": 40,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4c423e59-6829-4fe5-a249-289850282361",
+      "uuid": "5e9d4496-ecb9-4114-84fa-2b9b10a1f3f2",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+          "uuid": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 10923,
+              "duration": 23501,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4d91c6fd-66aa-45e8-b4a0-542526c8071c",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "26aa2963-8ba8-4275-97b0-8a500581ef4d",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "85ac0bda-a718-43e5-8e5e-053a151d8017",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "56b07522-94a7-4ff0-ba73-2689dfc5a7e2",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 87,
+              "duration": 192,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +85,8 @@
               "context": null,
               "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
               "err": {},
-              "uuid": "f584c08a-1d13-40ba-96e3-3677db71d315",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "225b479f-3ce8-4024-b7a9-cb29aadce38a",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": false,
               "skipped": false
             },
@@ -94,7 +94,7 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
-              "duration": 163,
+              "duration": 371,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -103,8 +103,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.equal(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
               "err": {},
-              "uuid": "57ab2967-490a-4c41-aa83-089d3f4454f7",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "e989b782-68e9-4f6c-8221-1bbb6d71b896",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": false,
               "skipped": false
             },
@@ -112,7 +112,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 90,
+              "duration": 222,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -125,8 +125,8 @@
                 "estack": "AssertionError: Ensure \"Email\" label is present: expected 'full name' to equal 'email'\n    at Context.<anonymous> (html_form.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": "- full name\n+ email\n"
               },
-              "uuid": "315c408a-1b9c-4b87-abdb-70249e1f8e69",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "e4fb14fd-0c47-4bc3-902a-e57e9dab5e48",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": false,
               "skipped": false
             },
@@ -134,7 +134,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 101,
+              "duration": 215,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -147,8 +147,8 @@
                 "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'full name' to equal 'subject'\n    at Context.<anonymous> (html_form.js:46:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": "- full name\n+ subject\n"
               },
-              "uuid": "5cd751da-5793-49a2-9e02-87688400e54c",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "cdbe5b4f-96a5-4a18-a552-6e9114ebf3af",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": false,
               "skipped": false
             },
@@ -156,7 +156,7 @@
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
-              "duration": 84,
+              "duration": 258,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -169,25 +169,25 @@
                 "estack": "AssertionError: Ensure \"Message\" label is present: expected 'full name' to equal 'message'\n    at Context.<anonymous> (html_form.js:54:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": "- full name\n+ message\n"
               },
-              "uuid": "2cc1337d-7372-4274-9d2c-014ed8b61d45",
-              "parentUUID": "c4529de1-76c0-4293-9837-50f1a8d324b0",
+              "uuid": "6d4c7fe9-d38a-490a-8f52-434ef9d228b5",
+              "parentUUID": "e6675513-3ffe-4b08-be32-36f15d2cb5f2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f584c08a-1d13-40ba-96e3-3677db71d315",
-            "57ab2967-490a-4c41-aa83-089d3f4454f7"
+            "225b479f-3ce8-4024-b7a9-cb29aadce38a",
+            "e989b782-68e9-4f6c-8221-1bbb6d71b896"
           ],
           "failures": [
-            "315c408a-1b9c-4b87-abdb-70249e1f8e69",
-            "5cd751da-5793-49a2-9e02-87688400e54c",
-            "2cc1337d-7372-4274-9d2c-014ed8b61d45"
+            "e4fb14fd-0c47-4bc3-902a-e57e9dab5e48",
+            "cdbe5b4f-96a5-4a18-a552-6e9114ebf3af",
+            "6d4c7fe9-d38a-490a-8f52-434ef9d228b5"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 525,
+          "duration": 1258,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
