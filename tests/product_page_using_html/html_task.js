@@ -21,13 +21,15 @@ describe("Testing Scholars Project", function () {
     it("test case: check if Price is present", async () => {
         const element = await driver.findElement(By.css("body"));
         const text = await element.getText();
-        assert.include(text, "Price", `Ensure Price is present`);
+        const price = await text.toLowerCase();
+        assert.include(price, "price", `Ensure Price is present`);
     });
 
     it("test case: check if Description is present", async () => {
         const element = await driver.findElement(By.css("body"));
         const text = await element.getText();
-        assert.include(text, "DESCRIPTION", `Ensure DESCRIPTION is present`);
+        const description = await text.toLowerCase();
+        assert.include(description, "description", `Ensure DESCRIPTION is present`);
     });
 
     it('test case: assert image amount is 2', async () => {

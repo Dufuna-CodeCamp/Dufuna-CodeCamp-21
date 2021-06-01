@@ -1,2 +1,5 @@
 *assets/
 *node_modules/
+*
+!logfile.json
+!.gitignore
