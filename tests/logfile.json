@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 5,
     "passes": 2,
@@ -227,5 +228,11 @@
       },
       "version": "5.2.0"
     }
+=======
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "promiseChilufya"
+>>>>>>> 2b3f310f4d483340015af85d93514e5d869dd792
   }
 }
