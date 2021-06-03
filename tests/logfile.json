@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 5,
-    "passes": 0,
+    "passes": 2,
     "pending": 0,
-    "failures": 5,
-    "start": "2021-06-02T16:06:57.234Z",
-    "end": "2021-06-02T16:07:07.001Z",
-    "duration": 9767,
+    "failures": 3,
+    "start": "2021-06-03T09:30:54.481Z",
+    "end": "2021-06-03T09:30:57.864Z",
+    "duration": 3383,
     "testsRegistered": 5,
-    "passPercent": 0,
+    "passPercent": 40,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "97e333cf-5a62-44cf-a3f0-ad9ce3be832a",
+      "uuid": "2a5f9d89-8e9c-4773-b6bb-b4210614e55a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+          "uuid": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
           "title": "Testing Form Task",
-          "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
+          "fullFile": "C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 8627,
+              "duration": 2789,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "88873f46-88bd-4295-abe1-d017ac608d03",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "uuid": "bdaa5b8c-b711-4631-9553-335021cb22df",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "f97da91b-44fe-48ee-963f-f3d9781514af",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "uuid": "1e9926a5-77a7-49ee-8f30-b9fd8c831113",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": true,
               "skipped": false
             }
@@ -76,21 +76,17 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 96,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 73,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
-              "err": {
-                "message": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 0 to equal 4",
-                "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 0 to equal 4\n    at Context.<anonymous> (html_form.js:24:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- 0\n+ 4\n"
-              },
-              "uuid": "3e74b457-a422-469f-a245-d5379df0f9bf",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "err": {},
+              "uuid": "bf05a7e4-d3f8-48d9-b585-b3244d333b1b",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": false,
               "skipped": false
             },
@@ -98,21 +94,17 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
-              "duration": 188,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 278,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.equal(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
-              "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:28:22)",
-                "diff": null
-              },
-              "uuid": "c3890f6e-01aa-47ec-af16-383b822b9ccc",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "err": {},
+              "uuid": "d3cdae3a-fea7-4ad5-991c-730e52bc794e",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +112,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 120,
+              "duration": 61,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -129,12 +121,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.equal(email, \"email\", `Ensure \"Email\" label is present`);\ndone();",
               "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:35:22)",
-                "diff": null
+                "message": "AssertionError: Ensure \"Email\" label is present: expected 'full name' to equal 'email'",
+                "estack": "AssertionError: Ensure \"Email\" label is present: expected 'full name' to equal 'email'\n    at Context.<anonymous> (html_form.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name\n+ email\n"
               },
-              "uuid": "6566341b-cb00-48e5-9943-c9605fed8668",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "uuid": "94c2ae4e-a75e-48f0-81b5-b832dfc49045",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +134,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 227,
+              "duration": 60,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -151,12 +143,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.equal(subject, \"subject\", `Ensure \"Subject\" label is present`);\ndone();",
               "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:43:22)",
-                "diff": null
+                "message": "AssertionError: Ensure \"Subject\" label is present: expected 'full name' to equal 'subject'",
+                "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'full name' to equal 'subject'\n    at Context.<anonymous> (html_form.js:46:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name\n+ subject\n"
               },
-              "uuid": "0f367161-3e6e-4a72-9ba0-f117d65cc5fa",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "uuid": "0643651d-63ae-4a5a-92f5-102f6afe95e0",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": false,
               "skipped": false
             },
@@ -164,7 +156,7 @@
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
-              "duration": 195,
+              "duration": 48,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -173,28 +165,29 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.equal(message, \"message\", `Ensure \"Message\" label is present`);\ndone();",
               "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"label\"}\n  (Session info: chrome=90.0.4430.93)\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:51:22)",
-                "diff": null
+                "message": "AssertionError: Ensure \"Message\" label is present: expected 'full name' to equal 'message'",
+                "estack": "AssertionError: Ensure \"Message\" label is present: expected 'full name' to equal 'message'\n    at Context.<anonymous> (html_form.js:54:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- full name\n+ message\n"
               },
-              "uuid": "a31a0030-66e8-41d7-8f63-8b64e9306f87",
-              "parentUUID": "4ebde50c-5621-4537-9e68-92f44a0781cc",
+              "uuid": "d2a278d8-d1fe-46a5-93a3-3727451ebdeb",
+              "parentUUID": "a5c04810-be1b-4a6e-91f9-100b8a33b8c1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
+          "passes": [
+            "bf05a7e4-d3f8-48d9-b585-b3244d333b1b",
+            "d3cdae3a-fea7-4ad5-991c-730e52bc794e"
+          ],
           "failures": [
-            "3e74b457-a422-469f-a245-d5379df0f9bf",
-            "c3890f6e-01aa-47ec-af16-383b822b9ccc",
-            "6566341b-cb00-48e5-9943-c9605fed8668",
-            "0f367161-3e6e-4a72-9ba0-f117d65cc5fa",
-            "a31a0030-66e8-41d7-8f63-8b64e9306f87"
+            "94c2ae4e-a75e-48f0-81b5-b832dfc49045",
+            "0643651d-63ae-4a5a-92f5-102f6afe95e0",
+            "d2a278d8-d1fe-46a5-93a3-3727451ebdeb"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 826,
+          "duration": 520,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -228,7 +221,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/ACER/Desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        "reportDir": "C:/Users/morta/desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
