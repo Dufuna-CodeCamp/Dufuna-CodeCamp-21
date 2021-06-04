@@ -25,7 +25,7 @@ describe("Testing Form Task", function () {
     });
 
     it('test case: Full Name label is present', async () => {
-        const name = await driver.findElement(By.css("label"));
+        const name = await driver.findElement(By.css("body"));
         const text = await name.getText();
         const fullname = await text.toLowerCase();
         assert.include(fullname, "full name", `Ensure "Full Name" label is present`);
@@ -51,7 +51,6 @@ describe("Testing Form Task", function () {
         const message = await text.toLowerCase();
         assert.include(message, "message", `Ensure "Message" label is present`);
     });
-    
 });
 
     
