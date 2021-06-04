@@ -28,31 +28,28 @@ describe("Testing Form Task", function () {
         const name = await driver.findElement(By.css("label"));
         const text = await name.getText();
         const fullname = await text.toLowerCase();
-        assert.equal(fullname, "full name", `Ensure "Full Name" label is present`);
+        assert.include(fullname, "full name", `Ensure "Full Name" label is present`);
     });
 
     it('test case: Email label is present', async () => {
-        const name = await driver.findElement(By.css("label"));
+        const name = await driver.findElement(By.css("body"));
         const text = await name.getText();
         const email = await text.toLowerCase();
-        assert.equal(email, "email", `Ensure "Email" label is present`);
-        done();
+        assert.include(email, "email", `Ensure "Email" label is present`);
     });
 
     it('test case: Subject label is present', async () => {
-        const name = await driver.findElement(By.css("label"));
+        const name = await driver.findElement(By.css("body"));
         const text = await name.getText();
         const subject = await text.toLowerCase();
-        assert.equal(subject, "subject", `Ensure "Subject" label is present`);
-        done();
+        assert.include(subject, "subject", `Ensure "Subject" label is present`);
     });
 
     it('test case: Message label is present', async () => {
-        const name = await driver.findElement(By.css("label"));
+        const name = await driver.findElement(By.css("body"));
         const text = await name.getText();
         const message = await text.toLowerCase();
-        assert.equal(message, "message", `Ensure "Message" label is present`);
-        done();
+        assert.include(message, "message", `Ensure "Message" label is present`);
     });
     
 });
