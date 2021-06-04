@@ -1,4 +1,4 @@
-Hello
+Hello World
 My name is Promise, i live in Lusaka,Zambia. I love everything about Technology, and me having this rare opportunity to
 learn and aquire knowledge on Tech especially on software development is such a great opportunity that i do not take
 lightly.
