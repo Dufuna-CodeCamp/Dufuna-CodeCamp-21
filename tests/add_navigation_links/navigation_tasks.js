@@ -14,11 +14,11 @@ describe("Testing Navigation on HtmlForms", function() {
     
     after(function() {
         driver.quit()
-        })
+    })
 
-        it('test case: assert that there are 2 links on this page', async () => {
-            const links = await driver.findElements(By.css('a'));
-            const size = links.length;
-            assert.equal(size, 2, `Ensure you have two links on this page`);
-        });
+    it('test case: assert that there are 2 links on this page', async () => {
+        const links = await driver.findElements(By.css('a'));
+        const size = links.length;
+        assert.equal(size, 2, `Ensure you have two links on this page`);
+    });
  })
