@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 3,
-    "start": "2021-06-03T09:50:13.540Z",
-    "end": "2021-06-03T09:50:16.729Z",
-    "duration": 3189,
+    "start": "2021-06-07T16:48:45.147Z",
+    "end": "2021-06-07T16:48:48.464Z",
+    "duration": 3317,
     "testsRegistered": 5,
     "passPercent": 40,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e6219418-20eb-41f9-8e70-e0de58499450",
+      "uuid": "e9136cdf-5003-4f14-a8e3-b072a2748612",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9443b068-0132-495b-808d-52d52a1ba1a9",
+          "uuid": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 2691,
+              "duration": 2737,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "ba81fff2-1965-42dc-a344-81064cdbf6d9",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "3604b1a7-da4d-48d8-9e94-0b1859f2d0c6",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "9d4ccd27-23e9-46a9-b8fa-ec17b56f2968",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "3169c9e1-e64c-4ae2-b113-4d44090babc1",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": true,
               "skipped": false
             }
@@ -76,17 +76,17 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 61,
+              "duration": 81,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
               "err": {},
-              "uuid": "0d15c667-264a-4c59-9757-94eacc3b8803",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "e6a557b3-96d1-49b9-b4f7-c45fd1fee1a0",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": false,
               "skipped": false
             },
@@ -94,7 +94,7 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
-              "duration": 163,
+              "duration": 164,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -103,8 +103,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.equal(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
               "err": {},
-              "uuid": "ba3ffc5c-69ca-4c5d-9b3c-d529772db57d",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "1f9a30b4-559f-4f1d-b3aa-8602e4d2a65f",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": false,
               "skipped": false
             },
@@ -112,7 +112,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 101,
+              "duration": 227,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -121,12 +121,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.equal(email, \"email\", `Ensure \"Email\" label is present`);\ndone();",
               "err": {
-                "message": "AssertionError: Ensure \"Email\" label is present: expected 'full name' to equal 'email'",
-                "estack": "AssertionError: Ensure \"Email\" label is present: expected 'full name' to equal 'email'\n    at Context.<anonymous> (html_form.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name\n+ email\n"
+                "message": "TypeError: Cannot read property 'getText' of null",
+                "estack": "TypeError: Cannot read property 'getText' of null\n    at Context.<anonymous> (html_form.js:36:33)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
               },
-              "uuid": "71914d67-120a-4a01-9ac3-5cc7cd083d25",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "fab8e5b2-2008-4938-9d25-460b4b30fd99",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": false,
               "skipped": false
             },
@@ -134,7 +134,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 60,
+              "duration": 13,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -143,12 +143,12 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.equal(subject, \"subject\", `Ensure \"Subject\" label is present`);\ndone();",
               "err": {
-                "message": "AssertionError: Ensure \"Subject\" label is present: expected 'full name' to equal 'subject'",
-                "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'full name' to equal 'subject'\n    at Context.<anonymous> (html_form.js:46:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name\n+ subject\n"
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:43:22)",
+                "diff": null
               },
-              "uuid": "c21d327e-81a4-4d0e-a339-a47d1aea2d42",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "2b492c48-f2bd-4466-8124-5249786ca36b",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": false,
               "skipped": false
             },
@@ -156,7 +156,7 @@
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
-              "duration": 50,
+              "duration": 14,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -165,29 +165,29 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.equal(message, \"message\", `Ensure \"Message\" label is present`);\ndone();",
               "err": {
-                "message": "AssertionError: Ensure \"Message\" label is present: expected 'full name' to equal 'message'",
-                "estack": "AssertionError: Ensure \"Message\" label is present: expected 'full name' to equal 'message'\n    at Context.<anonymous> (html_form.js:54:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- full name\n+ message\n"
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:51:22)",
+                "diff": null
               },
-              "uuid": "f6e26761-12be-4e7b-9dc6-672caea010bc",
-              "parentUUID": "9443b068-0132-495b-808d-52d52a1ba1a9",
+              "uuid": "7bb5cfdf-f353-4ce8-9c74-e19e60552b88",
+              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0d15c667-264a-4c59-9757-94eacc3b8803",
-            "ba3ffc5c-69ca-4c5d-9b3c-d529772db57d"
+            "e6a557b3-96d1-49b9-b4f7-c45fd1fee1a0",
+            "1f9a30b4-559f-4f1d-b3aa-8602e4d2a65f"
           ],
           "failures": [
-            "71914d67-120a-4a01-9ac3-5cc7cd083d25",
-            "c21d327e-81a4-4d0e-a339-a47d1aea2d42",
-            "f6e26761-12be-4e7b-9dc6-672caea010bc"
+            "fab8e5b2-2008-4938-9d25-460b4b30fd99",
+            "2b492c48-f2bd-4466-8124-5249786ca36b",
+            "7bb5cfdf-f353-4ce8-9c74-e19e60552b88"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 435,
+          "duration": 499,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
