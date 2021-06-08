@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 5,
-    "passes": 2,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
-    "failures": 3,
-    "start": "2021-06-07T16:48:45.147Z",
-    "end": "2021-06-07T16:48:48.464Z",
-    "duration": 3317,
-    "testsRegistered": 5,
-    "passPercent": 40,
+    "failures": 0,
+    "start": "2021-06-08T10:36:34.011Z",
+    "end": "2021-06-08T10:36:37.204Z",
+    "duration": 3193,
+    "testsRegistered": 1,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e9136cdf-5003-4f14-a8e3-b072a2748612",
+      "uuid": "7c17f44b-a2f7-425b-af11-87c10cac49f9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,34 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
-          "title": "Testing Form Task",
-          "fullFile": "C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
-          "file": "\\html_form.js",
+          "uuid": "44c645f7-bd09-4779-9e9f-55d8ad00123e",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+          "file": "\\navigation_tasks.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 2737,
+              "duration": 3038,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "3604b1a7-da4d-48d8-9e94-0b1859f2d0c6",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
+              "uuid": "c92f01e7-013c-4f4c-ab3b-2a81e934658c",
+              "parentUUID": "44c645f7-bd09-4779-9e9f-55d8ad00123e",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -63,131 +63,42 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
-              "uuid": "3169c9e1-e64c-4ae2-b113-4d44090babc1",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
+              "uuid": "a7923789-2c2c-4f81-9f86-76df9ddcc1c5",
+              "parentUUID": "44c645f7-bd09-4779-9e9f-55d8ad00123e",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert 4 input fields are present",
-              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 81,
+              "duration": 74,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "e6a557b3-96d1-49b9-b4f7-c45fd1fee1a0",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: Full Name label is present",
-              "fullTitle": "Testing Form Task test case: Full Name label is present",
-              "timedOut": false,
-              "duration": 164,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.equal(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
-              "err": {},
-              "uuid": "1f9a30b4-559f-4f1d-b3aa-8602e4d2a65f",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: Email label is present",
-              "fullTitle": "Testing Form Task test case: Email label is present",
-              "timedOut": false,
-              "duration": 227,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.equal(email, \"email\", `Ensure \"Email\" label is present`);\ndone();",
-              "err": {
-                "message": "TypeError: Cannot read property 'getText' of null",
-                "estack": "TypeError: Cannot read property 'getText' of null\n    at Context.<anonymous> (html_form.js:36:33)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": null
-              },
-              "uuid": "fab8e5b2-2008-4938-9d25-460b4b30fd99",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: Subject label is present",
-              "fullTitle": "Testing Form Task test case: Subject label is present",
-              "timedOut": false,
-              "duration": 13,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.equal(subject, \"subject\", `Ensure \"Subject\" label is present`);\ndone();",
-              "err": {
-                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)",
-                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:43:22)",
-                "diff": null
-              },
-              "uuid": "2b492c48-f2bd-4466-8124-5249786ca36b",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: Message label is present",
-              "fullTitle": "Testing Form Task test case: Message label is present",
-              "timedOut": false,
-              "duration": 14,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const name = await driver.findElement(By.css(\"label\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.equal(message, \"message\", `Ensure \"Message\" label is present`);\ndone();",
-              "err": {
-                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)",
-                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=90.0.4430.212)\n    at Object.throwDecodedError (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\morta\\desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:731:17)\n    at async Context.<anonymous> (html_form.js:51:22)",
-                "diff": null
-              },
-              "uuid": "7bb5cfdf-f353-4ce8-9c74-e19e60552b88",
-              "parentUUID": "0a89ae40-b97f-4574-8f59-80fbe74a663b",
+              "uuid": "398d15a8-cb86-432d-8b71-9b3be3acc8c7",
+              "parentUUID": "44c645f7-bd09-4779-9e9f-55d8ad00123e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e6a557b3-96d1-49b9-b4f7-c45fd1fee1a0",
-            "1f9a30b4-559f-4f1d-b3aa-8602e4d2a65f"
+            "398d15a8-cb86-432d-8b71-9b3be3acc8c7"
           ],
-          "failures": [
-            "fab8e5b2-2008-4938-9d25-460b4b30fd99",
-            "2b492c48-f2bd-4466-8124-5249786ca36b",
-            "7bb5cfdf-f353-4ce8-9c74-e19e60552b88"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 499,
+          "duration": 74,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -221,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/morta/desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        "reportDir": "C:/Users/morta/desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
