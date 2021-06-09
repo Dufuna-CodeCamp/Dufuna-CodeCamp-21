@@ -19,35 +19,6 @@ describe("Testing Scholars Project", function () {
             driver.quit();
         });
 
-        // it("test case: Check if clicking the Product link navigates user to the Product Page", async () => {
-        //     const element = await driver.findElement(By.css("a[href='../product.html']"));
-        //     if (element.click()) {
-        //         const navigator =  driver.navigate().to('../product.html');
-        //         if(navigator){
-        //             const actualTitle = await driver.getTitle()
-        //             const expectedTitle = 'Product'
-        //             assert(actualTitle !== expectedTitle, `Expects ${actualTitle} to navigate to ${expectedTitle}`)
-        //         }
-        //     }   
-        // })
-
-        // it("test case: Check if clicking the Contact Form link navigates user to the Contact Page", async () => {
-        //     const element = await driver.findElement(By.css("a[href='../contact.html']"))
-        //     if(element.click()){
-        //         const navigator = driver.navigate().to('../contact.html');
-        //         if(navigator) {
-        //             const actualTitle = await driver.getTitle()
-        //             const expectedTitle = 'Contact Form'
-        //             assert(actualTitle !== expectedTitle, `Expects ${actualTitle} to navigate to ${expectedTitle}`)
-        //         }
-        //     }
-        // })
-
-        // it('test case: Check if there is a product image at the left side', async () => {
-        //     const element = await driver.findElement(By.css())
-        // })
-
-
         it('test case: FoodBag Logo is present', async () => {
             const name = await driver.findElement(By.css("body"));
             const text = await name.getText();
@@ -142,18 +113,4 @@ describe("Testing Scholars Project", function () {
             const size = images.length
             assert.equal(size, 7, `Ensure all the images are present in the page`);
         });
-
-
-
-        // it("test case: product image is present", async () => {
-        //     const element = await driver.findElement(By.css("img"))
-        //     const name = await element.getText();
-        //     assert.include(text, "Quantity", "Ensure Quantity label is present");
-        // })
-
-        // it("test case: product name is present", async () => {
-        //     const element = await driver.findElement(By.css("img"))
-        //     const name = await element.getText();
-        //     assert.include(text, "Quantity", "Ensure Quantity label is present");
-        // })
 })
