@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    padding: 10px 70px 70px 70px;
+    margin: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+* {
+    box-sizing: border-box;
+}
+
+/****** HEADER ******/
+header a {
+    color: #696969;
+    text-decoration: none;
+    font-size: 16px;
+}
+header li {
+    display: inline;
+    margin: 0 50px 0 30px;
+}
+header nav {
+    float: right;
+    margin-top: -65px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-text {
+    color: #AD4C4C;
+}
+header button {
+    color: #AD4C4C;
+    background: #fff;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    width: 92px;
+    height: 40px;
+    margin-top: 8px;
+}
+header button:hover {
+    background: #AD4C4C;
+    color: #fff;
+}
+header button:hover {
+    background: #AD4C4C;
+    color: #fff;
+}
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+.order {
+    font-size: 25px;
+    color:#5EA304;
+    line-height: 37px;
+}
+.process-order {
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    margin-top: -10px;
+}
+
+/******* MEDIA QUERIES *******/
+@media screen and (max-width: 650px) {
+    body {
+        padding: 10px 15px 20px 15px;
+    }
+    header a {
+        font-size: 10px;
+    }
+    header li {
+        margin: 0 25px 0 10px;
+    }
+    header button {
+        width: 62px;
+        height: 30px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    header nav {
+        margin-top: -65px;
+    }
+    main {
+        margin-bottom: 60px;
+    }
+}
