@@ -31,11 +31,18 @@ header {
     padding: 6px 10px;
 }
 
-.navigation-links li:last-child {
+.navigation-links button {
     border: 1px solid rgb(219, 9, 9);
     border-radius: 3px;
     padding: 6px 10px;
 }
+
+/*
+.navigation-links li:last-child {
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 3px;
+    padding: 6px 10px;
+}*/
 
 .navigation-links a {
     text-decoration: none;
@@ -63,6 +70,14 @@ header {
     padding: 10px 0;
 }
 
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+}
+
+/*
 select {
     padding: 10px;
     width: 100%;
@@ -70,7 +85,7 @@ select {
     outline: none;
     color:rgb(44, 44, 44);
 }
-
+*/
 .pick-interest {
     padding: 2px 0 40px 0;
 }
