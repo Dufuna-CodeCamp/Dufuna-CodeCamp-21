@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    padding: 15px 30px;
+    margin: 15px 30px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo .color-red {
+    color: rgb(219, 9, 9);
+}
+
+.navigation-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation-links li {
+    margin: 0 15px;
+    padding: 6px 10px;
+}
+
+.navigation-links li:last-child {
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation-links a:hover {
+    color:rgb(219, 9, 9);
+}
+
+.home-text {
+    text-align: center;
+    padding: 80px;
+}
+
+.home-text h2 {
+    padding-bottom: 10px;
+}
+
+.home-text p {
+    color: rgb(44, 44, 44);
+}
+
+.location-pointer h3 {
+    padding: 10px 0;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color:rgb(44, 44, 44);
+}
+
+.pick-interest {
+    padding: 2px 0 40px 0;
+}
+
+.pick-interest h3 {
+    padding: 10px 0;
+}
+
+.flex-parent-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-wrapper {
+    border: 2px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.option-wrapper h4, p {
+    padding: 5px;
+    color:rgb(163, 163, 163);
+}
+
+hr {
+    color:rgb(163, 163, 163)
+}
+
+.services {
+    padding: 45px 0;
+}
+
+.services h2 {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.flex-parent-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-wrapper h4, p {
+    color:rgb(163, 163, 163);
+    padding: 5px;
+    text-align: center;
+}
+
+.contact-page {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-page p {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.contact-icons i {
+    padding: 0 8px;
+    color:rgb(219, 9, 9);
+}
+
+footer {
+    padding: 10px 0;
+}
+
+.footer-notice {
+    display: flex;
+    justify-content: space-between;
+}
