@@ -77,15 +77,6 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-/*
-select {
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    outline: none;
-    color:rgb(44, 44, 44);
-}
-*/
 .pick-interest {
     padding: 2px 0 40px 0;
 }
