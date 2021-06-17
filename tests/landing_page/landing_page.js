@@ -114,8 +114,8 @@ describe("Testing Scholars Project", function () {
         });
 
         it('test case: check label of input-field', async () => {
-            const element = await driver.findElement(By.css('input')).getAttribute('label');
-            assert.equal(element, "Where are you?", `Ensure you have the input field as the appropriate label as seen in the mock-up`);
+            const element = await driver.findElement(By.css('body')).getText();
+            assert.include(element, "Where are you?", `Ensure you have the input field as the appropriate label as seen in the mock-up`);
         });
 
         it('test case: assert image amount is 10', async () => {
