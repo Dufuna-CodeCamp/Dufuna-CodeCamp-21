@@ -63,9 +63,11 @@ header {
     padding: 10px 0;
 }
 
-.location-pointer label {
+.title {
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 18px;
+    padding: 20px 0;
 }
 
 input[type="text"] {
