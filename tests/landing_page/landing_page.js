@@ -48,10 +48,11 @@ describe("Testing Scholars Project", function () {
             const text = await element.getText();
             assert.include(text, "Cart", "Ensure the `Cart` link is present on the header");
         })
+
         it("test case: check Sign up", async () => {
             const element = await driver.findElement(By.css("body"))
             const text = await element.getText();
-            assert.include(text, "Ensure the `Cart` link is present on the header");
+            assert.include(text, "Sign up", "Ensure the `Sign up` link is present on the header");
         })
 
         it("test case: check service-descrption1", async () => {
@@ -99,23 +100,23 @@ describe("Testing Scholars Project", function () {
         it("test case: check copyright on footer", async () => {
             const element = await driver.findElement(By.css("footer"))
             const text = await element.getText();
-            assert.include(text, "© Copyright 2021 FoodBag is a registered trademark", "Ensure you have the appropriate text as seen on the mock-up");
+            assert.include(text, "Copyright 2021 FoodBag is a registered trademark", "Ensure you have the appropriate text as seen on the mock-up");
         })
 
-        it('test case: assert input field is present', async () => {
+        it('test case: check input field', async () => {
             const input = await driver.findElements(By.css('input'));
             const size = input.length
             assert.equal(size, 1, `Ensure you have the input field as seen in the mock-up`);
         });
 
-        it('test case: assert placeholder', async () => {
+        it('test case: check placeholder', async () => {
             const element = await driver.findElement(By.css('input')).getAttribute('placeholder');
             assert.equal(element, "Enter your delivery address", `Ensure you have the placeholder as seen in the mock-up`);
         });
 
-        it('test case: assert placeholder', async () => {
-            const element = await driver.findElement(By.css('input')).getAttribute('label');
-            assert.equal(element, "Where are you?", `Ensure you have the input field as the appropriate label as seen in the mock-up`);
+        it('test case: check label of input-field', async () => {
+            const element = await driver.findElement(By.css('body')).getText();
+            assert.include(element, "Where are you?", `Ensure you have the input field as the appropriate label as seen in the mock-up`);
         });
 
         it('test case: assert image amount is 10', async () => {
