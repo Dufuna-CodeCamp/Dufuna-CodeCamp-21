@@ -1,6 +1,6 @@
 #!/bin/bash
 
-working_directory=$(pwd -W)
+working_directory=$(pwd [-LP])
 if [ $? -eq 0 ]
 then
     project_working_directory=$working_directory/../../
