@@ -48,6 +48,7 @@ describe("Testing Scholars Project", function () {
             const text = await element.getText();
             assert.include(text, "Cart", "Ensure the `Cart` link is present on the header");
         })
+
         it("test case: check Sign up", async () => {
             const element = await driver.findElement(By.css("body"))
             const text = await element.getText();
