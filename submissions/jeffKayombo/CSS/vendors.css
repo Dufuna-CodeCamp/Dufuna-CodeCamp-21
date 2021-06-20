@@ -17,9 +17,12 @@ header {
     justify-content: space-between;
 }
 
+/*
 hr {
     margin-bottom: 30px;
 }
+
+*/
 
 header .logo {
     font-size: 30px;
@@ -133,6 +136,8 @@ header .logo {
     border: 2px solid red;
 }
 
+/*
 #first-rule {
     border-bottom: 2px solid rgb(196, 193, 193);
 }
+*/
