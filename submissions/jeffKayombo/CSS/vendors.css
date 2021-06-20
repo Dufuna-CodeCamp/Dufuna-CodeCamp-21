@@ -17,6 +17,10 @@ header {
     justify-content: space-between;
 }
 
+hr {
+    margin-bottom: 30px;
+}
+
 header .logo {
     font-size: 30px;
 }
@@ -53,6 +57,10 @@ header .logo {
 .page-select {
     display: flex;
     padding: 40px 0;
+}
+
+.page-select p  {
+    padding: 0 5px;
 }
 
 .page-select p:last-child {
