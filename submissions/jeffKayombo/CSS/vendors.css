@@ -132,3 +132,7 @@ header .logo {
     color: red;
     border: 2px solid red;
 }
+
+#first-rule {
+    border-bottom: 2px solid rgb(196, 193, 193);
+}
