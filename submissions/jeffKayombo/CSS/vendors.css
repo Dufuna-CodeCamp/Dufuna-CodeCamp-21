@@ -17,12 +17,9 @@ header {
     justify-content: space-between;
 }
 
-/*
 hr {
-    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(211, 209, 209);
 }
-
-*/
 
 header .logo {
     font-size: 30px;
