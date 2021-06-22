@@ -56,9 +56,9 @@ describe("Testing Scholars Project", function () {
         })
 
         it("test case: check page text", async () => {
-            const element = await driver.findElement(By.css("body"))
-            const size = await element.getAttribute("hr")
-            assert.equal(size, 1,  "Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up");
+            const element = await driver.findElements(By.css("hr"))
+            const length = await element.length
+            assert.equal(length, 1,  "Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up");
         })
 
         it('test case: assert image amount is 9', async () => {
