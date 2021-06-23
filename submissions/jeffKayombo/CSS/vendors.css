@@ -128,12 +128,6 @@ header .logo {
     color: red;
     border: 2px solid red;
 }
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
     .container {
         padding: 12px;
@@ -308,7 +302,5 @@ header .logo {
     .packages-select img {
         width: 300px;
     }
-
-
 }
 
