@@ -19,6 +19,6 @@ describe("Testing Navigation on HtmlForms", function() {
     it('test case: assert that the url to the document is present', async () => {
         const body = await driver.findElements(By.css('body'));
         const size = body.getText();
-        assert.equal(size, "https://docs.google.com/spreadsheets", `Ensure you habe the link to the google doc containinf the results from your research`);
+        assert.equal(size, "https://docs.google.com/spreadsheets", `Ensure you have the link to the google doc containinf the results from your research`);
     });
  })
