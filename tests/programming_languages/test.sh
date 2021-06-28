@@ -97,7 +97,7 @@ check_file_content() {
             echo -e "${BOLD}Checking the text file ...${NONE}"
             echo -e "1. Ensure your text file contains the link to the google document containing the solution to your task."${NONE}
         fi
-    done
+   done
 }
 
 write_json_response() {
@@ -140,7 +140,8 @@ then
         then
             no_of_passes=$((no_of_passes+1))
      
-           check_file_content
+            check_file_content
+            
             if [ $content_exists -eq 1 ]
             then
                 no_of_passes=$((no_of_passes+1))
