@@ -1,0 +1,583 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: sans-serif;
+	margin: 20px 20px 20px 20px;
+}
+
+	/**Header**/
+#header {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 0px;
+
+}
+
+#logo {
+	grid-column: 1 / 2;
+}
+
+.nav-item-1 {
+	margin: 0px;
+	padding: 10px;
+	grid-column: 10 / 11;
+}
+
+.nav-item-2 {
+	margin: 0px;
+	padding: 10px;
+	grid-column: 11 / 12;
+}
+
+.nav-item-3 {
+	margin: 0px;
+	padding: 10px;
+	grid-column: 12 / 13;
+}
+
+a {
+	text-decoration: none;
+	color: #696969;
+}
+
+a:hover {
+	border: 1px solid red;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 0px;
+}
+
+/**Main**/
+
+.title {
+	color: #696969;
+	text-align: center;
+}
+
+.slogan {
+	color: #696969;
+	text-align: center;
+}
+
+/**Location**/
+
+#location {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0px;
+	padding-bottom: 10px;
+}
+
+#address1 {
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0px;
+}
+
+/**Pick an interest**/
+
+.interest {
+	padding: 0px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-content: center;
+	padding: 0px;
+	
+
+}
+
+.pick-interest {
+	border: 1px solid #DCDCDF;
+	border-radius: 5px;
+	width: 100%;
+
+}
+.food {
+	margin: 10px 0px 5px 10px;
+	padding: 15px 0px 15px 0px;
+}
+
+.food-msg {
+	padding: 0px 5px 10px 10px;
+	width: 100%;
+}
+
+.food-img {
+	padding: 10px;
+}
+
+/**How we serve you**/ 
+
+hr {
+	margin: 50px 0px 50px 0px;
+	color: #DCDCDF;
+}
+
+.serve {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.serve-title {
+	font-size: 18px;
+	color: #696969;
+	text-align: center;
+}
+
+.other-img-msg {
+	font-size: 15px;
+	color: #696969;
+	text-align: center;
+	padding: 0px;
+	width: 100%;
+}
+
+/**Footer**/
+
+.contact {
+	text-align: center;
+}
+
+.contact1 {
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-gap: 5px;
+	padding: 50px;
+}
+
+.logo2 {
+	align-items: center;
+}
+
+
+.end {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	padding: 0px;
+	margin: 0px;
+	color: #696969;
+	font-size: 15px;
+}
+
+.copy {
+	grid-column: 5 / 6;
+	text-align: right;
+}
+
+.TC {
+	grid-column: 1 / 2;
+	text-align: left;
+}
+
+
+@media screen and (max-width: 425px) {
+
+body {
+	font-size: 13px;
+}
+	/**Header**/
+#header {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 0px;
+	font-size: 10px;
+}
+
+#logo {
+	grid-column: 1 / 2;
+}
+
+.nav-item-1 {
+	margin: 0px;
+	grid-column: 8 / 9;
+}
+
+.nav-item-2 {
+	margin: 0px;
+	grid-column: 9 / 10;
+}
+
+.nav-item-3 {
+	margin: 0px;
+	grid-column: 10 / 13;
+
+	background-color: skyblue;
+}
+
+a {
+	text-decoration: none;
+	color: #696969;
+}
+
+a:hover {
+	border: 1px solid red;
+	border-radius: 3px;
+	margin: 0px;
+	padding: 0px;
+}
+
+	/**Main**/
+
+.title {
+	color: #696969;
+	padding: 0px 0px 0px 0px;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.slogan {
+	color: #696969;
+	text-align: left;
+}
+
+/**Location**/
+
+#location {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0px;
+	padding-bottom: 15px;
+}
+
+#address1 {
+	width: 100%;
+	border-radius: 10px;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+
+/**Pick an interest**/
+
+.grid {
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.pick-interest {
+	border: 1px solid #DCDCDF;
+	border-radius: 5px;
+	width: 100%;
+
+}
+.food {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+}
+
+.food-msg {
+	padding: 0px 5px 10px 10px;
+	width: 100%;
+}
+
+.food-img {
+	padding: 10px;
+}
+
+/**How we serve you**/ 
+
+hr {
+	margin: 50px 0px 50px 0px;
+	color: #DCDCDF;
+}
+
+.serve {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 0px;
+}
+
+.service {
+	width: 100%;
+	padding: 50px 50px 0px 50px;
+}
+
+.serve-title {
+	color: #696969;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.other-img-msg {
+	color: #696969;
+	text-align: center;
+	padding: 0px;
+}
+
+/**Footer**/
+
+.contact {
+	text-align: center;
+}
+
+.contact1 {
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-gap: 5px;
+	padding: 50px;
+}
+
+.logo2 {
+	align-items: center;
+}
+
+.end {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 0px;
+	margin: 0px;
+	color: #696969;
+}
+
+.copy {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	text-align: center;
+}
+
+.TC {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	padding: 0px;
+	text-align: center;
+}
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+	/**Header**/
+
+#header {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 0px;
+
+}
+
+#logo {
+	grid-column: 1 / 2;
+}
+
+.nav-item-1 {
+	margin: 0px;
+	padding: 10px;
+	grid-column: 10 / 11;
+}
+
+.nav-item-2 {
+	margin: 0px;
+	padding: 10px;
+	grid-column: 11 / 12;
+}
+
+.nav-item-3 {
+	margin: 0px;
+	padding: 10px;
+	grid-column: 12 / 13;
+}
+
+a {
+	text-decoration: none;
+	color: #696969;
+}
+
+a:hover {
+	border: 1px solid red;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 0px;
+}
+
+
+/**Main**/
+
+.title {
+	color: #696969;
+	text-align: center;
+}
+
+.slogan {
+	color: #696969;
+	text-align: center;
+}
+
+/**Location**/
+
+#location {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0px;
+
+}
+
+.address1 {
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0px;
+}
+
+/**Pick an interest**/
+
+.interest {
+	padding: 0px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-content: center;
+	padding: 0px;
+	
+
+}
+
+.pick-interest {
+	border: 1px solid #DCDCDF;
+	border-radius: 5px;
+	width: 100%;
+
+}
+.food {
+	margin: 10px 0px 5px 10px;
+	padding: 15px 0px 15px 0px;
+}
+
+.food-msg {
+	padding: 0px 5px 10px 10px;
+	width: 100%;
+}
+
+.food-img {
+	padding: 10px;
+}
+
+/**How we serve you**/ 
+
+hr {
+	margin: 50px 0px 50px 0px;
+	color: #DCDCDF;
+}
+
+.serve {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0px;
+	margin: 0px;
+}
+
+.service {
+}
+
+.serve-title {
+	color: #696969;
+	text-align: center;
+	padding-top: 50px;
+	margin: 0px;
+}
+
+.other-img-msg {
+	color: #696969;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+/**Footer**/
+
+.contact {
+	text-align: center;
+}
+
+.contact1 {
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-gap: 5px;
+	padding: 50px;
+}
+
+.logo2 {
+	align-items: center;
+}
+
+.end {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr, 1fr;
+	padding-left: 0px;
+	color: #696969;
+}
+
+.copy {
+	grid-column: 6 / 7;
+}
+
+.TC {
+	grid-column: 1 / 2;
+}
+
+}
