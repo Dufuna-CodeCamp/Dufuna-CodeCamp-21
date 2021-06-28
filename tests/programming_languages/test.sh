@@ -87,7 +87,7 @@ check_file_existence() {
 check_file_content() {    
     for currentFile in $path_to_programmingLanguages_folder/*
     do
-        if grep -q https://docs.google.com/spreadsheet "$currentFile"
+        if grep ^https://docs.google.com/spreadsheets/ $currentFile -n && grep sharing$ $currentFile
         then
             content_exists=1
             break
@@ -141,7 +141,7 @@ then
             no_of_passes=$((no_of_passes+1))
      
             check_file_content
-            
+
             if [ $content_exists -eq 1 ]
             then
                 no_of_passes=$((no_of_passes+1))
