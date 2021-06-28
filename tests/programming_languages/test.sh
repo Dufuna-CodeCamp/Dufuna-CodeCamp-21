@@ -6,7 +6,7 @@ ITALIC='\x1b[3m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 
-total_tests=3 # only 3 tests are currently being done, this value should be changed if tests increases
+total_tests=4 # only 3 tests are currently being done, this value should be changed if tests increases
 
 echo -n "Enter First Name : "
 read first_name
@@ -50,7 +50,7 @@ check_programmingLanguages_folder_existence() {
         programmingLanguages_folder_exists=0
         echo ""
         echo -e "${BOLD}Checking the programmingLanguages folder ...${NONE}"
-        echo -e "${RED}Your folder should be named ${BOLD}\"programmingLanguages\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/aboutMe\"${NONE}${RED})${NONE}"
+        echo -e "${RED}Your folder should be named ${BOLD}\"programmingLanguages\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/programmingLanguages\"${NONE}${RED})${NONE}"
     else
         programmingLanguages_folder_exists=1
     fi
@@ -84,6 +84,22 @@ check_file_existence() {
     fi
 }
 
+check_file_content() {    
+    for currentFile in $path_to_programmingLanguages_folder/*
+    do
+        if grep -q https://docs.google.com/spreadsheet "$currentFile"
+        then
+            content_exists=1
+            break
+        else
+            content_exists=0
+            echo ""
+            echo -e "${BOLD}Checking the text file ...${NONE}"
+            echo -e "1. Ensure your text file contains the link to the google document containing the solution to your task."${NONE}
+        fi
+    done
+}
+
 write_json_response() {
     echo "{" > $path_to_log
     echo "  \"stats\": {" >> $path_to_log
@@ -111,22 +127,32 @@ check_folder_existence
 if [ $folder_exists -eq 1 ]
 then
     no_of_passes=$((no_of_passes+1))
+
     check_programmingLanguages_folder_existence
 
     if [ $programmingLanguages_folder_exists -eq 1 ]
     then
         no_of_passes=$((no_of_passes+1))
+
         check_file_existence
 
         if [ $file_exists -eq 1 ]
         then
             no_of_passes=$((no_of_passes+1))
+     
+           check_file_content
+            if [ $content_exists -eq 1 ]
+            then
+                no_of_passes=$((no_of_passes+1))
         else
             no_of_failures=$((total_tests-no_of_passes))
         fi
     else
         no_of_failures=$((total_tests-no_of_passes))
     fi
+else
+    no_of_failures=$((total_tests-no_of_passes))
+fi
 else
     no_of_failures=$((total_tests-no_of_passes))
 fi
