@@ -11,11 +11,11 @@ body {
 }
 
 	/**Header**/
+
 #header {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin: 0px;
-
 }
 
 #logo {
@@ -94,16 +94,14 @@ a:hover {
 	grid-gap: 10px;
 	justify-content: center;
 	padding: 0px;
-	
-
 }
 
 .pick-interest {
 	border: 1px solid #DCDCDF;
 	border-radius: 5px;
 	width: 100%;
-
 }
+
 .food {
 	margin: 10px 0px 5px 10px;
 	padding: 15px 0px 15px 0px;
@@ -197,17 +195,22 @@ ul {
 }
 
 
-@media screen and (max-width: 425px) {
+
+/**Mobile Responsiveness**/
+
+@media screen and (max-width: 600px) {
 
 body {
 	font-size: 13px;
 }
 	/**Header**/
+
 #header {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin: 0px;
-	font-size: 10px;
+	font-size: 13px;
+	padding-bottom: 15px;
 }
 
 #logo {
@@ -227,8 +230,6 @@ body {
 .nav-item-3 {
 	margin: 0px;
 	grid-column: 10 / 13;
-
-	background-color: skyblue;
 }
 
 a {
@@ -240,7 +241,7 @@ a:hover {
 	border: 1px solid red;
 	border-radius: 3px;
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 }
 
 	/**Main**/
@@ -255,6 +256,7 @@ a:hover {
 .slogan {
 	color: #696969;
 	text-align: left;
+	padding: 0px;
 }
 
 /**Location**/
@@ -270,7 +272,7 @@ a:hover {
 	width: 100%;
 	border-radius: 10px;
 	padding: 0px;
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-bottom: 5px;
 	margin: 0px;
 }
@@ -289,8 +291,9 @@ a:hover {
 	border: 1px solid #DCDCDF;
 	border-radius: 5px;
 	width: 100%;
-
+	height: 100%;
 }
+
 .food {
 	margin: 0px;
 	padding: 0px;
@@ -300,6 +303,7 @@ a:hover {
 .food-msg {
 	padding: 0px 5px 10px 10px;
 	width: 100%;
+	font-size: 15px;
 }
 
 .food-img {
@@ -322,17 +326,18 @@ hr {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 0px;
+	align-items: center;
 }
 
-.service {
-	width: 100%;
-	padding: 50px 50px 0px 50px;
-}
 
 .serve-title {
 	color: #696969;
 	text-align: center;
 	padding-top: 50px;
+}
+
+.other-img {
+	width: 90%;
 }
 
 .other-img-msg {
@@ -386,12 +391,11 @@ ul {
 	padding: 0px;
 	text-align: center;
 }
-
 }
 
+/**TABLET Responsiveness**/
 
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
 	/**Header**/
 
@@ -399,7 +403,6 @@ ul {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin: 0px;
-
 }
 
 #logo {
@@ -455,7 +458,6 @@ a:hover {
 	display: inline-block;
 	font-weight: bold;
 	padding: 0px;
-
 }
 
 .address1 {
@@ -479,16 +481,14 @@ a:hover {
 	grid-gap: 10px;
 	justify-content: center;
 	padding: 0px;
-	
-
 }
 
 .pick-interest {
 	border: 1px solid #DCDCDF;
 	border-radius: 5px;
 	width: 100%;
-
 }
+
 .food {
 	margin: 10px 0px 5px 10px;
 	padding: 15px 0px 15px 0px;
@@ -520,9 +520,6 @@ hr {
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 0px;
 	margin: 0px;
-}
-
-.service {
 }
 
 .serve-title {
@@ -579,5 +576,4 @@ ul {
 .TC {
 	grid-column: 1 / 2;
 }
-
 }
