@@ -373,7 +373,7 @@ ul {
 .end {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	padding: 0px;
 	margin: 0px;
 	color: #696969;
@@ -381,7 +381,7 @@ ul {
 
 .copy {
 	grid-column: 1 / 2;
-	grid-row: 2 / 3;
+	grid-row: 3 / 4;
 	text-align: center;
 }
 
