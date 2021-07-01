@@ -1,6 +1,6 @@
 var file_path = process.env.FILE_PATH
-var webdriver = require('selenium-webdriver');
-var assert = require('chai').assert;
+const webdriver = require('selenium-webdriver');
+const assert = require('chai').assert;
 var { Builder, By } = require("selenium-webdriver");
 var expect = require('expect.js')
 

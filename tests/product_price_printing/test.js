@@ -1,8 +1,5 @@
 var file_path = process.env.FILE_PATH
 const webdriver = require("selenium-webdriver");
-const assert = require("chai").assert
-const chromedriver = require('chromedriver')
-const { Builder, By } = require("selenium-webdriver");
 
 describe("Printing product price", function () {
     this.timeout(3 * 1000 * 60)
@@ -14,10 +11,10 @@ describe("Printing product price", function () {
     })
 
     after(function () {
-        // driver.quit()
+         driver.quit()
     })
 
-    it("prints product price", async () => {
+    it("prints product price", () => {
         var productList = [{ productName: "a", imageUrl: "b", productPrice: "4" }, { productName: "a", imageUrl: "b", productPrice: "4" }, { productName: "a", imageUrl: "b", productPrice: "4" }]
         console.log(productList)
     })
