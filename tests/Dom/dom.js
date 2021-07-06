@@ -34,7 +34,8 @@ describe("Testing Scholars Project", function () {
     it('test case: check options in dropdown', async () => {
         driver.findElement(By.css("select")).click();
         const options = await driver.findElements(By.css("option"));
-        options.forEach(option => validateImage(option, options[1]));
+        const first_option = options[1];
+        options.forEach(option => validateImage(option, first_option));
         async function validateImage(item, arr) {
             arr = item.click();
             const images = await driver.findElements(By.css("img"));
