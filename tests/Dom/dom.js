@@ -1,7 +1,7 @@
 var file_path = process.env.FILE_PATH;
 var webdriver = require('selenium-webdriver');
 var assert = require('chai').assert;
-var { Builder, By } = require("selenium-webdriver");
+var { By } = require("selenium-webdriver");
 
 
 describe("Testing Scholars Project", function () {
@@ -34,12 +34,13 @@ describe("Testing Scholars Project", function () {
     it('test case: check options in dropdown', async () => {
         driver.findElement(By.css("select")).click();
         const options = await driver.findElements(By.css("option"));
-        options.forEach(validateImage);
+        options.forEach(option => validateImage(option, options[1]));
         async function validateImage(item, arr) {
-            arr[3] = item.click();
+            arr = item.click();
             const images = await driver.findElements(By.css("img"));
             const validate = images.length
             assert.equal(validate, 10, `Ensure the images change when you click on any option`)
         }
     });
+
 });
