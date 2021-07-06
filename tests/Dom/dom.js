@@ -1,7 +1,7 @@
-var file_path = process.env.FILE_PATH;
-var webdriver = require('selenium-webdriver');
-var assert = require('chai').assert;
-var { By } = require("selenium-webdriver");
+const file_path = process.env.FILE_PATH;
+const webdriver = require('selenium-webdriver');
+const assert = require('chai').assert;
+const { By } = require("selenium-webdriver");
 
 
 describe("Testing Scholars Project", function () {
