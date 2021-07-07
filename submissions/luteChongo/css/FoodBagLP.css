@@ -6,7 +6,7 @@
 
 
 body {
-	font-family: sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 20px 20px 20px 20px;
 }
 
@@ -46,7 +46,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #696969;
+	color: #454645;
 }
 
 a:hover {
@@ -59,12 +59,12 @@ a:hover {
 /**Main**/
 
 .title {
-	color: #696969;
+	color: #252625;
 	text-align: center;
 }
 
 .slogan {
-	color: #696969;
+	color: #454645;
 	text-align: center;
 }
 
@@ -73,8 +73,7 @@ a:hover {
 #location {
 	display: inline-block;
 	font-weight: bold;
-	padding: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 
 #address1 {
@@ -258,7 +257,6 @@ body {
 
 a {
 	text-decoration: none;
-	color: #696969;
 }
 
 a:hover {
@@ -271,14 +269,12 @@ a:hover {
 	/**Main**/
 
 .title {
-	color: #696969;
 	padding: 0px 0px 0px 0px;
 	margin-bottom: 0;
 	text-align: left;
 }
 
 .slogan {
-	color: #696969;
 	font-size: 15px;
 	text-align: left;
 	padding: 0px;
@@ -477,10 +473,6 @@ ul {
 	grid-column: 12 / 13;
 }
 
-a {
-	text-decoration: none;
-	color: #696969;
-}
 
 a:hover {
 	border: 1px solid red;
@@ -492,30 +484,6 @@ a:hover {
 
 /**Main**/
 
-.title {
-	color: #696969;
-	text-align: center;
-}
-
-.slogan {
-	color: #696969;
-	text-align: center;
-}
-
-/**Location**/
-
-#location {
-	display: inline-block;
-	font-weight: bold;
-	padding: 0px;
-}
-
-.address1 {
-	width: 100%;
-	border-radius: 10px;
-	padding: 5px;
-	margin: 0px;
-}
 
 /**Pick an interest**/
 
