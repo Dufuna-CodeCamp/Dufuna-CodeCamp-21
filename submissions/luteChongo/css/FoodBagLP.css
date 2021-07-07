@@ -6,7 +6,7 @@
 
 
 body {
-	font-family: sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 20px 20px 20px 20px;
 }
 
@@ -20,6 +20,10 @@ body {
 
 #logo {
 	grid-column: 1 / 2;
+}
+
+#red {
+	color: #A50F0F;
 }
 
 .nav-item-1 {
@@ -42,7 +46,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #696969;
+	color: #454645;
 }
 
 a:hover {
@@ -55,12 +59,12 @@ a:hover {
 /**Main**/
 
 .title {
-	color: #696969;
+	color: #252625;
 	text-align: center;
 }
 
 .slogan {
-	color: #696969;
+	color: #454645;
 	text-align: center;
 }
 
@@ -69,8 +73,7 @@ a:hover {
 #location {
 	display: inline-block;
 	font-weight: bold;
-	padding: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 
 #address1 {
@@ -165,13 +168,29 @@ hr {
 ul {
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: 3fr 3fr 3fr;
-	grid-gap: 5px;
-	padding: 50px;
+	grid-template-columns: repeat(15, 1fr);
+	grid-gap: 0px;
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-.logo2 {
-	align-items: center;
+#logo2 {
+	grid-column: 7 / 8;
+	padding: 0px;
+	margin: 0;
+}
+
+#logo3 {
+	grid-column: 8 / 9;
+	padding: 0px;
+	margin: 0;
+}
+
+#logo4 {
+	grid-column: 9 / 10;
+	padding: 0px;
+	margin: 0;
 }
 
 
@@ -209,12 +228,16 @@ body {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin: 0px;
-	font-size: 13px;
+	font-size: 15px;
 	padding-bottom: 15px;
 }
 
 #logo {
 	grid-column: 1 / 2;
+}
+
+#red {
+	color: #A50F0F;
 }
 
 .nav-item-1 {
@@ -234,7 +257,6 @@ body {
 
 a {
 	text-decoration: none;
-	color: #696969;
 }
 
 a:hover {
@@ -247,14 +269,13 @@ a:hover {
 	/**Main**/
 
 .title {
-	color: #696969;
 	padding: 0px 0px 0px 0px;
 	margin-bottom: 0;
 	text-align: left;
 }
 
 .slogan {
-	color: #696969;
+	font-size: 15px;
 	text-align: left;
 	padding: 0px;
 }
@@ -266,6 +287,7 @@ a:hover {
 	font-weight: bold;
 	padding: 0px;
 	padding-bottom: 15px;
+	font-size: 15px;
 }
 
 #address1 {
@@ -274,6 +296,7 @@ a:hover {
 	padding: 0px;
 	padding-top: 10px;
 	padding-bottom: 5px;
+	padding-left: 5px;
 	margin: 0px;
 }
 
@@ -353,23 +376,39 @@ hr {
 }
 
 .contact1 {
+	font-size: 20px;
 	text-align: center;
 	color: #696969;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 ul {
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: 3fr 3fr 3fr;
-	grid-gap: 5px;
-	padding: 50px;
+	grid-template-columns: repeat(15, 1fr);
+	grid-gap: 0px;
+	padding: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
-.logo2 {
-	align-items: center;
+#logo2 {
+	grid-column: 6 / 7;
+	padding: 0px;
+	margin: 0;
 }
 
+#logo3 {
+	grid-column: 8 / 9;
+	padding: 0px;
+	margin: 0;
+}
+
+#logo4 {
+	grid-column: 10 / 11;
+	padding: 0px;
+	margin: 0;
+}
 .end {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -393,6 +432,9 @@ ul {
 }
 }
 
+
+
+
 /**TABLET Responsiveness**/
 
 @media screen and (min-width: 768px) {
@@ -407,6 +449,10 @@ ul {
 
 #logo {
 	grid-column: 1 / 2;
+}
+
+#red {
+	color: #A50F0F;
 }
 
 .nav-item-1 {
@@ -427,10 +473,6 @@ ul {
 	grid-column: 12 / 13;
 }
 
-a {
-	text-decoration: none;
-	color: #696969;
-}
 
 a:hover {
 	border: 1px solid red;
@@ -442,30 +484,6 @@ a:hover {
 
 /**Main**/
 
-.title {
-	color: #696969;
-	text-align: center;
-}
-
-.slogan {
-	color: #696969;
-	text-align: center;
-}
-
-/**Location**/
-
-#location {
-	display: inline-block;
-	font-weight: bold;
-	padding: 0px;
-}
-
-.address1 {
-	width: 100%;
-	border-radius: 10px;
-	padding: 5px;
-	margin: 0px;
-}
 
 /**Pick an interest**/
 
@@ -552,13 +570,29 @@ hr {
 ul {
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: 3fr 3fr 3fr;
-	grid-gap: 5px;
-	padding: 50px;
+	grid-template-columns: repeat(15, 1fr);
+	grid-gap: 0px;
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-.logo2 {
-	align-items: center;
+#logo2 {
+	grid-column: 7 / 8;
+	padding: 0px;
+	margin: 0;
+}
+
+#logo3 {
+	grid-column: 8 / 9;
+	padding: 0px;
+	margin: 0;
+}
+
+#logo4 {
+	grid-column: 9 / 10;
+	padding: 0px;
+	margin: 0;
 }
 
 .end {
@@ -570,10 +604,10 @@ ul {
 }
 
 .copy {
-	grid-column: 6 / 7;
+	grid-column: 4 / 7;
 }
 
 .TC {
-	grid-column: 1 / 2;
+	grid-column: 1 / 3;
 }
 }
