@@ -2,7 +2,6 @@ var file_path = process.env.FILE_PATH
 const webdriver = require('selenium-webdriver');
 const assert = require('chai').assert;
 var { Builder, By } = require("selenium-webdriver");
-var expect = require('expect.js')
 
 describe("Testing Product Projects", function () {
     this.timeout(3 * 1000 * 60);
@@ -25,16 +24,16 @@ describe("Testing Product Projects", function () {
         let x= 123 -7;
         for (let i = 1; i <= x; i++) {
           if (i % 3 === 0 && i % 5 === 0)  {      
-        assert.include(text, "console.log('Software Developer')" );
+        assert.include(text, 'Software Developer' );
           }
           else if (i % 3 === 0) {
-            assert.include(text, "console.log('Software')");
+            assert.include(text, 'Software');
         }
         else if (i % 5 === 0) {
-          assert.include(text, "console.log('Developer')");
+          assert.include(text, 'Developer');
       }
       else {
-        assert(text, `Expects ${text} to include ${i}`)
+        assert.include(text, i)
     }
         }
     });

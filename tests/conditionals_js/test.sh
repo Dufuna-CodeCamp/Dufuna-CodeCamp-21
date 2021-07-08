@@ -40,4 +40,4 @@ customReportDir=$test_folder
 customReportFilename=logfile
 
 echo -e "${ITALIC}visit${NONE} ${BOLD}${UNDERLINE}$test_folder/logfile.html${NONE} in your browser to see test reports"
-env FILE_PATH=$submission_directory/$folder_name/$html_file mocha $PWD/landing_page.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true
+env FILE_PATH=$submission_directory/$folder_name/$html_file mocha $PWD/conditionals_test.js --reporter mochawesome --reporter-options reportDir=$customReportDir,reportFilename=$customReportFilename,quiet=true
