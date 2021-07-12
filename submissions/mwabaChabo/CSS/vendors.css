@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: gainsboro;
     font-size: 17px;
     margin: 0px;
 }
@@ -188,10 +188,6 @@ body{
     .contact_us{
         font-size: 10px;
     }
-
-
-
-
 
     .foot_note{
         font-size: 10px;
