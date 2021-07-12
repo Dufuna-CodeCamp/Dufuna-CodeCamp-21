@@ -15,6 +15,7 @@ body {
 /**Header**/
 
 header {
+<<<<<<< HEAD
 
 	display: flex;
 	justify-content: space-between;
@@ -26,11 +27,21 @@ header {
 }
 
 header h2 {
+=======
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+}
+
+header h2 {
+	justify-self: left;
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 	padding: 10px 0px;
 }
 
 header ul{
 	display: flex;
+<<<<<<< HEAD
 	align-content: center;
 	list-style-type: none;
 	padding: 15px 0;
@@ -38,6 +49,22 @@ header ul{
 
 li a {
 	/*display: block;*/
+=======
+	flex-direction: row;
+	align-content: center;
+	justify-self: right;
+	list-style-type: none;
+	text-align: center;
+	padding: 15px 0;
+}
+
+ul li {
+	display: inline;
+}
+
+li a {
+	display: block;
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 	color: #696969;
 	text-decoration: none;
 	padding: 0 15px;
@@ -61,14 +88,20 @@ header a:hover {
 #nav2 {
 	display: grid;
 	grid-template-columns: repeat(15, 1fr);
+<<<<<<< HEAD
 	padding-top: 50px;
+=======
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 }
 
 .nav2-items {
 	border: none;
 	text-decoration: none;
 	color: #696969;
+<<<<<<< HEAD
 	padding: 5px;
+=======
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 }
 
 #nav-item-5 {
@@ -161,7 +194,11 @@ section {
 }
 
 .food {
+<<<<<<< HEAD
 	grid-column: 1 / 5;
+=======
+	grid-column: 1 / 4;
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 }
 
 .green {
@@ -169,6 +206,26 @@ section {
 	color: #13C319;
 }
 
+<<<<<<< HEAD
+=======
+.remove a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.remove {
+	display: inline-block;
+	border-radius: 2px;
+	background-color: #696969
+
+}
+
+.remove-img {
+	padding: 0px;
+}
+
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 .cart {
 	display: inline-block;
 	color: red;
@@ -206,6 +263,16 @@ body {
 	margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+header {
+	grid-template-columns: 110px auto;
+}
+
+ul {
+	display: ;
+}
+>>>>>>> 3b685799099c228ff0cb72c94f6c562c38366722
 
 /**KFC MENU & CHICKEN REPUBLIC MENU**/
 
