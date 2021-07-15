@@ -21,13 +21,13 @@ describe("Printing product price", function () {
     it("test case: check product details", async () => {
         const element = await driver.findElement(By.css("body"))
         const text = await element.getText();
-        assert.include(text, "is sold for", "Ensure the `Cart` link is present on the header");
+        assert.include(text, "is sold for", "Ensure you print out the value in the right format");
     })
 
-    it("test case: check Sign up", async () => {
+    it("test case: check three arrays are present", async () => {
         const element = await driver.findElement(By.css("body"))
         const text = await element.getText();
         const count = text.split("is sold for").length - 1;
-        assert.equal(count, 3, "Ensure the `Sign up` link is present on the header");
+        assert.equal(count, 3, "Ensure the array contains 3 objects");
     })
 })

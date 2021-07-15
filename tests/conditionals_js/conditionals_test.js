@@ -24,14 +24,11 @@ describe("Testing Product Projects", function () {
         for (let i = 1; i <= x; i++) {
             if (i % 3 === 0 && i % 5 === 0) {
                 assert.include(text, 'Software Developer');
-            }
-            else if (i % 3 === 0) {
+            } else if (i % 3 === 0) {
                 assert.include(text, 'Software');
-            }
-            else if (i % 5 === 0) {
+            } else if (i % 5 === 0) {
                 assert.include(text, 'Developer');
-            }
-            else {
+            } else {
                 assert.include(text, i)
             }
         }
