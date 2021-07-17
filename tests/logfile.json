@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 8,
     "passes": 8,
@@ -390,5 +391,11 @@
       },
       "version": "5.2.0"
     }
+=======
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "sallyMwangi"
+>>>>>>> master
   }
 }
