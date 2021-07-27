@@ -95,7 +95,7 @@ else
     npm install --prefix $test_folder chai
 fi
 
-npm install --prefix $test_folder phantomjs
+npm install --prefix $test_folder phantomjs-prebuilt
 npm install --prefix $test_folder phantomcss
 npm install --global casperjs
 
