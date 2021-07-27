@@ -1,5 +1,5 @@
 @ECHO off
 
-npm install --global phantomjs
+npm install --global phantomjs-prebuilt
 
 exit /B
