@@ -1,2 +1,3 @@
 Hello World!
-I am George Owen Kivumbi, and thats all folks! 
+I am George Owen Kivumbi, a Computer Science Student at Makerere University Kampala,Uganda.
+And thats all folks! 
