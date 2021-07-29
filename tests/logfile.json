@@ -1,8 +1,212 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
-    "failures": 0,
-    "owner": "sallyMwangi"
+    "suites": 1,
+    "tests": 4,
+    "passes": 1,
+    "pending": 0,
+    "failures": 3,
+    "start": "2021-07-28T21:00:44.807Z",
+    "end": "2021-07-28T21:00:48.460Z",
+    "duration": 3653,
+    "testsRegistered": 4,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1e3b52df-e189-4e26-9ace-4288b7aa3999",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\Lungowe\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
+          "file": "\\html_task.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 3483,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "6f20b948-b609-4563-80a0-c4d8cbcfdcb1",
+              "parentUUID": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "19d0bedb-f232-4170-b58b-fd9b694afacb",
+              "parentUUID": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check if Price is present",
+              "fullTitle": "Testing Scholars Project test case: check if Price is present",
+              "timedOut": false,
+              "duration": 79,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = await text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "err": {
+                "message": "AssertionError: Ensure Price is present: expected 'search\\nafrothenticity\\nour collection\\nshop\\nabout\\nblog\\ncontact us\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop now\\nshop our collections\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nshop all collections\\nour bestsellers\\nshop all bestsellers\\ncoconut shea hand cream\\nshop now\\ncoconut shea curl defining creme\\nshop now\\njojoba manoi deep conditioner\\nshop now\\ncleanse first.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all cleansers\\nmanuka honey & yogurt hydrate + repair shampoo\\nshop now\\nbamboo charcoal deep cleansing shampoo\\nshop now\\ncoconut & hibiscus curl & shine shampoo\\nshop now\\ncondition second.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all conditioners\\nrapid recovery treatment deep hair treatment\\nshop now\\nsoften me up conditioner\\nshop now\\nsuper sweetback treatment - hair softening treatment\\nshop now\\nmoisturize third.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all moisturizers\\nbaby buttercreme\\nshop now\\ncurly buttercreme\\nshop now\\ncarol\\'s daughter coil enhancing moisture butter\\nshop now\\nget inspired\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nhair tips\\nten reasons why you should go natural today.\\nread more\\nhair tips\\nwhy everyone should be deep conditioning, no matter your hair type.\\nread more\\nhair tips\\nbuilding a hair routine.\\nread more\\nbetter care, healthy hair.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit.\\ncustomer care\\nreturns\\nshipping\\nfaq\\ncontact us\\nprivacy policy\\nterms of service\\nsign up for our newsletter\\nemail\\nconnect with us!\\n© 2021, afrothenticity. all rights reserved.' to include 'price'",
+                "estack": "AssertionError: Ensure Price is present: expected 'search\\nafrothenticity\\nour collection\\nshop\\nabout\\nblog\\ncontact us\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop now\\nshop our collections\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nshop all collections\\nour bestsellers\\nshop all bestsellers\\ncoconut shea hand cream\\nshop now\\ncoconut shea curl defining creme\\nshop now\\njojoba manoi deep conditioner\\nshop now\\ncleanse first.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all cleansers\\nmanuka honey & yogurt hydrate + repair shampoo\\nshop now\\nbamboo charcoal deep cleansing shampoo\\nshop now\\ncoconut & hibiscus curl & shine shampoo\\nshop now\\ncondition second.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all conditioners\\nrapid recovery treatment deep hair treatment\\nshop now\\nsoften me up conditioner\\nshop now\\nsuper sweetback treatment - hair softening treatment\\nshop now\\nmoisturize third.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all moisturizers\\nbaby buttercreme\\nshop now\\ncurly buttercreme\\nshop now\\ncarol\\'s daughter coil enhancing moisture butter\\nshop now\\nget inspired\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nhair tips\\nten reasons why you should go natural today.\\nread more\\nhair tips\\nwhy everyone should be deep conditioning, no matter your hair type.\\nread more\\nhair tips\\nbuilding a hair routine.\\nread more\\nbetter care, healthy hair.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit.\\ncustomer care\\nreturns\\nshipping\\nfaq\\ncontact us\\nprivacy policy\\nterms of service\\nsign up for our newsletter\\nemail\\nconnect with us!\\n© 2021, afrothenticity. all rights reserved.' to include 'price'\n    at Context.<anonymous> (html_task.js:25:16)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "c07e0032-eb85-4c41-8585-7af5363a254a",
+              "parentUUID": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check if Description is present",
+              "fullTitle": "Testing Scholars Project test case: check if Description is present",
+              "timedOut": false,
+              "duration": 67,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = await text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "err": {
+                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'search\\nafrothenticity\\nour collection\\nshop\\nabout\\nblog\\ncontact us\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop now\\nshop our collections\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nshop all collections\\nour bestsellers\\nshop all bestsellers\\ncoconut shea hand cream\\nshop now\\ncoconut shea curl defining creme\\nshop now\\njojoba manoi deep conditioner\\nshop now\\ncleanse first.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all cleansers\\nmanuka honey & yogurt hydrate + repair shampoo\\nshop now\\nbamboo charcoal deep cleansing shampoo\\nshop now\\ncoconut & hibiscus curl & shine shampoo\\nshop now\\ncondition second.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all conditioners\\nrapid recovery treatment deep hair treatment\\nshop now\\nsoften me up conditioner\\nshop now\\nsuper sweetback treatment - hair softening treatment\\nshop now\\nmoisturize third.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all moisturizers\\nbaby buttercreme\\nshop now\\ncurly buttercreme\\nshop now\\ncarol\\'s daughter coil enhancing moisture butter\\nshop now\\nget inspired\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nhair tips\\nten reasons why you should go natural today.\\nread more\\nhair tips\\nwhy everyone should be deep conditioning, no matter your hair type.\\nread more\\nhair tips\\nbuilding a hair routine.\\nread more\\nbetter care, healthy hair.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit.\\ncustomer care\\nreturns\\nshipping\\nfaq\\ncontact us\\nprivacy policy\\nterms of service\\nsign up for our newsletter\\nemail\\nconnect with us!\\n© 2021, afrothenticity. all rights reserved.' to include 'description'",
+                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'search\\nafrothenticity\\nour collection\\nshop\\nabout\\nblog\\ncontact us\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop now\\nshop our collections\\nlorem ipsum dolor sit amet, consectetur adipisicing elit.\\nshop all collections\\nour bestsellers\\nshop all bestsellers\\ncoconut shea hand cream\\nshop now\\ncoconut shea curl defining creme\\nshop now\\njojoba manoi deep conditioner\\nshop now\\ncleanse first.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all cleansers\\nmanuka honey & yogurt hydrate + repair shampoo\\nshop now\\nbamboo charcoal deep cleansing shampoo\\nshop now\\ncoconut & hibiscus curl & shine shampoo\\nshop now\\ncondition second.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all conditioners\\nrapid recovery treatment deep hair treatment\\nshop now\\nsoften me up conditioner\\nshop now\\nsuper sweetback treatment - hair softening treatment\\nshop now\\nmoisturize third.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nshop all moisturizers\\nbaby buttercreme\\nshop now\\ncurly buttercreme\\nshop now\\ncarol\\'s daughter coil enhancing moisture butter\\nshop now\\nget inspired\\nlorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda culpa fugiat pariatur magnam harum! recusandae eius illum, cupiditate incidut.\\nhair tips\\nten reasons why you should go natural today.\\nread more\\nhair tips\\nwhy everyone should be deep conditioning, no matter your hair type.\\nread more\\nhair tips\\nbuilding a hair routine.\\nread more\\nbetter care, healthy hair.\\nlorem ipsum dolor, sit amet consectetur adipisicing elit.\\ncustomer care\\nreturns\\nshipping\\nfaq\\ncontact us\\nprivacy policy\\nterms of service\\nsign up for our newsletter\\nemail\\nconnect with us!\\n© 2021, afrothenticity. all rights reserved.' to include 'description'\n    at Context.<anonymous> (html_task.js:32:16)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "5039610b-59f8-4059-af91-a4caedc80ec1",
+              "parentUUID": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 2",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
+              "timedOut": false,
+              "duration": 15,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "err": {
+                "message": "AssertionError: Amount of images on the page not equal to 2: expected 22 to equal 2",
+                "estack": "AssertionError: Amount of images on the page not equal to 2: expected 22 to equal 2\n    at Context.<anonymous> (html_task.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": "- 22\n+ 2\n"
+              },
+              "uuid": "e5f1753a-4475-44ab-94af-6c10d1485a98",
+              "parentUUID": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
+              "err": {},
+              "uuid": "c41271cf-0f71-4ddd-ae05-202307322246",
+              "parentUUID": "23a1ac64-d894-4739-af00-9ca6d91299b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c41271cf-0f71-4ddd-ae05-202307322246"
+          ],
+          "failures": [
+            "c07e0032-eb85-4c41-8585-7af5363a254a",
+            "5039610b-59f8-4059-af91-a4caedc80ec1",
+            "e5f1753a-4475-44ab-94af-6c10d1485a98"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 162,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/Lungowe/OneDrive/desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "5.2.0"
+    }
   }
 }
