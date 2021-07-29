@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 4,
     "passes": 4,
@@ -195,5 +196,11 @@
       },
       "version": "5.2.0"
     }
+=======
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "luteChongo"
+>>>>>>> master
   }
 }
