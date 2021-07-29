@@ -79,7 +79,7 @@ else
     sudo npm install --prefix $test_folder chai
 fi
 
-sudo npm install --prefix $test_folder phantomjs
+sudo npm install --prefix $test_folder phantomjs-prebuilt
 sudo npm install --prefix $test_folder phantomcss
 sudo npm install --global casperjs
 
