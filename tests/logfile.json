@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-08-03T12:05:03.727Z",
-    "end": "2021-08-03T12:05:11.287Z",
-    "duration": 7560,
+    "start": "2021-08-03T14:14:22.715Z",
+    "end": "2021-08-03T14:14:29.791Z",
+    "duration": 7076,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "47f91894-6875-4b99-8175-27339908f63b",
+      "uuid": "115c79e8-a498-4a62-a831-0cade9df5014",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "823f646f-47b2-4093-905f-ef4260c1a378",
+          "uuid": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 7234,
+              "duration": 6760,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "79fd02da-2b4b-474c-ad25-ca933ceefc6b",
-              "parentUUID": "823f646f-47b2-4093-905f-ef4260c1a378",
+              "uuid": "1bd0e95c-b360-4dc7-9391-83039fa05a65",
+              "parentUUID": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c8c983d6-31b3-4c73-9138-3f925eb906a9",
-              "parentUUID": "823f646f-47b2-4093-905f-ef4260c1a378",
+              "uuid": "c9b94ef8-7d9a-45d5-b9d5-20f580496ae2",
+              "parentUUID": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 260,
+              "duration": 153,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } else {\n        assert.include(text, i)\n    }\n}",
               "err": {
-                "message": "AssertionError: expected 'var x= 0;\\nvar y= 7;\\nvar z= 123;\\nvar f= (z - y);\\nwhile (x < f) {\\n    x += 1;\\n    if ((x%3===0) && (x%5===0)) {\\n    document.write(\"software developer\");\\n} else if (x%3===0) {\\n    document.write(\"software\");\\n} else if (x%5===0){\\n    document.write(\"developer\");\\n}\\n}' to include 'Software'",
-                "estack": "AssertionError: expected 'var x= 0;\\nvar y= 7;\\nvar z= 123;\\nvar f= (z - y);\\nwhile (x < f) {\\n    x += 1;\\n    if ((x%3===0) && (x%5===0)) {\\n    document.write(\"software developer\");\\n} else if (x%3===0) {\\n    document.write(\"software\");\\n} else if (x%5===0){\\n    document.write(\"developer\");\\n}\\n}' to include 'Software'\n    at Context.<anonymous> (conditionals_test.js:28:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: expected '/*\\nvar x= 0;\\nvar y= 7;\\nvar z= 123;\\nvar f= (z - y);\\nwhile (x < f) {\\n    x += 1;\\n    if ((x%3===0) && (x%5===0)) {\\n    document.write(\"software developer\");\\n} else if (x%3===0) {\\n    document.write(\"software\");\\n} else if (x%5===0){\\n    document.write(\"developer\");\\n}\\n}/*\\n\\nlet positiveDifference=123 -7;\\nfor (var x=1; x<=positiveDifference; x++)\\n    if((x%3===0)&& (x%5===0)){\\n        document.write(\"Software developer\")\\n    }\\n    else if(x%3===0){\\n        document.write(\"Software\")\\n    }\\n    else if(if x%5===0){\\n        document.write(\"Developer\")\\n    }' to include 4",
+                "estack": "AssertionError: expected '/*\\nvar x= 0;\\nvar y= 7;\\nvar z= 123;\\nvar f= (z - y);\\nwhile (x < f) {\\n    x += 1;\\n    if ((x%3===0) && (x%5===0)) {\\n    document.write(\"software developer\");\\n} else if (x%3===0) {\\n    document.write(\"software\");\\n} else if (x%5===0){\\n    document.write(\"developer\");\\n}\\n}/*\\n\\nlet positiveDifference=123 -7;\\nfor (var x=1; x<=positiveDifference; x++)\\n    if((x%3===0)&& (x%5===0)){\\n        document.write(\"Software developer\")\\n    }\\n    else if(x%3===0){\\n        document.write(\"Software\")\\n    }\\n    else if(if x%5===0){\\n        document.write(\"Developer\")\\n    }' to include 4\n    at Context.<anonymous> (conditionals_test.js:32:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "c5c1e4ae-e3c6-4e24-a4d3-ed8c6446e229",
-              "parentUUID": "823f646f-47b2-4093-905f-ef4260c1a378",
+              "uuid": "79ed41a0-0ae9-4a87-ad04-235e4380b4cd",
+              "parentUUID": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "c5c1e4ae-e3c6-4e24-a4d3-ed8c6446e229"
+            "79ed41a0-0ae9-4a87-ad04-235e4380b4cd"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 260,
+          "duration": 153,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
