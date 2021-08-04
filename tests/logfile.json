@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-08-04T13:05:18.853Z",
-    "end": "2021-08-04T13:05:55.217Z",
-    "duration": 36364,
+    "start": "2021-08-04T13:18:04.424Z",
+    "end": "2021-08-04T13:18:19.498Z",
+    "duration": 15074,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e48111ff-5f34-4689-8b37-a7f3a8a2cf2b",
+      "uuid": "1eaad805-7571-4adf-92c7-787e10213080",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
+          "uuid": "2de69725-ceb7-4608-b735-e80e7b9aefb9",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 32154,
+              "duration": 13516,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "f442de5f-c1ff-4ab9-9f03-6ad2026510f1",
-              "parentUUID": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
+              "uuid": "51df5342-90ff-432c-aba1-8e3e0d7cffcf",
+              "parentUUID": "2de69725-ceb7-4608-b735-e80e7b9aefb9",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "999acaee-5682-447d-beb7-36475af257a9",
-              "parentUUID": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
+              "uuid": "b4fbd644-ef2a-4f2b-b092-9a6cc2b89547",
+              "parentUUID": "2de69725-ceb7-4608-b735-e80e7b9aefb9",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 3433,
+              "duration": 1241,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } else {\n        assert.include(text, i)\n    }\n}",
               "err": {
-                "message": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper\\nJAVASCRIPT TASK' to include 1",
-                "estack": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper\\nJAVASCRIPT TASK' to include 1\n    at Context.<anonymous> (conditionals_test.js:32:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper' to include 1",
+                "estack": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper' to include 1\n    at Context.<anonymous> (conditionals_test.js:32:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "7e315f89-f77c-422f-a9d9-f1ecfce132c6",
-              "parentUUID": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
+              "uuid": "40d1d405-43cb-4df4-82fb-c047d7fded18",
+              "parentUUID": "2de69725-ceb7-4608-b735-e80e7b9aefb9",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "7e315f89-f77c-422f-a9d9-f1ecfce132c6"
+            "40d1d405-43cb-4df4-82fb-c047d7fded18"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3433,
+          "duration": 1241,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
