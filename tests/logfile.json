@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-08-03T14:14:22.715Z",
-    "end": "2021-08-03T14:14:29.791Z",
-    "duration": 7076,
+    "start": "2021-08-04T13:05:18.853Z",
+    "end": "2021-08-04T13:05:55.217Z",
+    "duration": 36364,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "115c79e8-a498-4a62-a831-0cade9df5014",
+      "uuid": "e48111ff-5f34-4689-8b37-a7f3a8a2cf2b",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
+          "uuid": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 6760,
+              "duration": 32154,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "1bd0e95c-b360-4dc7-9391-83039fa05a65",
-              "parentUUID": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
+              "uuid": "f442de5f-c1ff-4ab9-9f03-6ad2026510f1",
+              "parentUUID": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c9b94ef8-7d9a-45d5-b9d5-20f580496ae2",
-              "parentUUID": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
+              "uuid": "999acaee-5682-447d-beb7-36475af257a9",
+              "parentUUID": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 153,
+              "duration": 3433,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } else {\n        assert.include(text, i)\n    }\n}",
               "err": {
-                "message": "AssertionError: expected '/*\\nvar x= 0;\\nvar y= 7;\\nvar z= 123;\\nvar f= (z - y);\\nwhile (x < f) {\\n    x += 1;\\n    if ((x%3===0) && (x%5===0)) {\\n    document.write(\"software developer\");\\n} else if (x%3===0) {\\n    document.write(\"software\");\\n} else if (x%5===0){\\n    document.write(\"developer\");\\n}\\n}/*\\n\\nlet positiveDifference=123 -7;\\nfor (var x=1; x<=positiveDifference; x++)\\n    if((x%3===0)&& (x%5===0)){\\n        document.write(\"Software developer\")\\n    }\\n    else if(x%3===0){\\n        document.write(\"Software\")\\n    }\\n    else if(if x%5===0){\\n        document.write(\"Developer\")\\n    }' to include 4",
-                "estack": "AssertionError: expected '/*\\nvar x= 0;\\nvar y= 7;\\nvar z= 123;\\nvar f= (z - y);\\nwhile (x < f) {\\n    x += 1;\\n    if ((x%3===0) && (x%5===0)) {\\n    document.write(\"software developer\");\\n} else if (x%3===0) {\\n    document.write(\"software\");\\n} else if (x%5===0){\\n    document.write(\"developer\");\\n}\\n}/*\\n\\nlet positiveDifference=123 -7;\\nfor (var x=1; x<=positiveDifference; x++)\\n    if((x%3===0)&& (x%5===0)){\\n        document.write(\"Software developer\")\\n    }\\n    else if(x%3===0){\\n        document.write(\"Software\")\\n    }\\n    else if(if x%5===0){\\n        document.write(\"Developer\")\\n    }' to include 4\n    at Context.<anonymous> (conditionals_test.js:32:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper\\nJAVASCRIPT TASK' to include 1",
+                "estack": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper\\nJAVASCRIPT TASK' to include 1\n    at Context.<anonymous> (conditionals_test.js:32:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "79ed41a0-0ae9-4a87-ad04-235e4380b4cd",
-              "parentUUID": "ae05e5cb-c997-48b1-a6d7-3e2f1666591f",
+              "uuid": "7e315f89-f77c-422f-a9d9-f1ecfce132c6",
+              "parentUUID": "cda4c493-46fe-4c7f-9ee0-76052b9074f4",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "79ed41a0-0ae9-4a87-ad04-235e4380b4cd"
+            "7e315f89-f77c-422f-a9d9-f1ecfce132c6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 153,
+          "duration": 3433,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
