@@ -2,7 +2,7 @@ const file_path = process.env.FILE_PATH
 const webdriver = require('selenium-webdriver');
 const assert = require('chai').assert;
 
-describe("Testing Product Projects", function () {
+describe("Testing javascript conditionals", function () {
     this.timeout(3 * 1000 * 60);
     const driver = new webdriver.Builder()
         .forBrowser('chrome')
@@ -17,7 +17,7 @@ describe("Testing Product Projects", function () {
         driver.quit();
     });
 
-    it('test case: Prints out the value of array', async () => {
+    it('test case: check conditionals', async () => {
         const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css("body")));
         const text = await productList.getText();
         const x = 123 - 7;
