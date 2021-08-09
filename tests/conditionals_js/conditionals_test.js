@@ -28,9 +28,7 @@ describe("Testing javascript conditionals", function () {
                 assert.include(text, 'Software');
             } else if (i % 5 === 0) {
                 assert.include(text, 'Developer');
-            } else {
-                assert.include(text, i)
-            }
+            } 
         }
     });
 });
