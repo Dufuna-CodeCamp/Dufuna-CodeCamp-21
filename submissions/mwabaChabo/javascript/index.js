@@ -12,3 +12,32 @@ for (var x=1; x<=positiveDifference; x++){
         document.write("Developer")
     }
 }
+
+
+var productList = [
+
+  {
+     productName:"samsung",
+     imageUrl:"samsung.com",
+     productPrice:1800,
+    
+  },
+
+  {
+   productName:"nokia",
+   imageUrl:"nokia.com",
+   productPrice:3800,
+  },
+
+  {
+   productName:"motorola",
+   imageUrl:"motorola.com",
+   productPrice:4600,
+  }
+
+];
+
+productList.forEach(function(gadget){
+document.write(`<br><br>${gadget.productName} ${gadget.imageUrl} is sold for ${gadget.productPrice}`)
+})
+
