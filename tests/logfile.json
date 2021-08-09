@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-09T10:07:37.407Z",
-    "end": "2021-08-09T10:07:53.894Z",
-    "duration": 16487,
+    "start": "2021-08-09T19:31:48.197Z",
+    "end": "2021-08-09T19:31:55.064Z",
+    "duration": 6867,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7ba29576-e99f-460c-865c-f9440c1c4d69",
+      "uuid": "3c27ee2d-4ee9-49d4-bc13-9883070ec067",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ad0ef22f-079e-4918-a507-10e33c5439de",
+          "uuid": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 14749,
+              "duration": 6511,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "5a41f507-73ca-4b11-b338-3a18b741586f",
-              "parentUUID": "ad0ef22f-079e-4918-a507-10e33c5439de",
+              "uuid": "1aaaea8f-f7a8-4218-87eb-c4de91f91f2e",
+              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "ac13faa4-781d-4492-8459-10d309ade476",
-              "parentUUID": "ad0ef22f-079e-4918-a507-10e33c5439de",
+              "uuid": "413eeaf0-fa9b-4e61-8fd6-e9a083b11e75",
+              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 1140,
+              "duration": 189,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,20 +85,20 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "00ae56c8-f52e-43a1-b76b-d0ae7380d8eb",
-              "parentUUID": "ad0ef22f-079e-4918-a507-10e33c5439de",
+              "uuid": "dcff0dff-fba9-48df-81f9-614a6feecc1f",
+              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "00ae56c8-f52e-43a1-b76b-d0ae7380d8eb"
+            "dcff0dff-fba9-48df-81f9-614a6feecc1f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1140,
+          "duration": 189,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
