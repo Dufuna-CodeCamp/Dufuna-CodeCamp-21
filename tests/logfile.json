@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-08-09T09:50:01.482Z",
-    "end": "2021-08-09T09:50:26.385Z",
-    "duration": 24903,
+    "failures": 0,
+    "start": "2021-08-09T10:07:37.407Z",
+    "end": "2021-08-09T10:07:53.894Z",
+    "duration": 16487,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6f4a21de-20ce-4219-8724-7fe1dbaac999",
+      "uuid": "7ba29576-e99f-460c-865c-f9440c1c4d69",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "702b829d-bc8d-4f5f-8479-d6a07f541e3a",
+          "uuid": "ad0ef22f-079e-4918-a507-10e33c5439de",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 22033,
+              "duration": 14749,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4ab5ae08-1768-4db2-8641-2528bc1cb602",
-              "parentUUID": "702b829d-bc8d-4f5f-8479-d6a07f541e3a",
+              "uuid": "5a41f507-73ca-4b11-b338-3a18b741586f",
+              "parentUUID": "ad0ef22f-079e-4918-a507-10e33c5439de",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "5bb664d2-da42-4c68-83e4-96640987b9a7",
-              "parentUUID": "702b829d-bc8d-4f5f-8479-d6a07f541e3a",
+              "uuid": "ac13faa4-781d-4492-8459-10d309ade476",
+              "parentUUID": "ad0ef22f-079e-4918-a507-10e33c5439de",
               "isHook": true,
               "skipped": false
             }
@@ -76,33 +76,29 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 2001,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 1140,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
-              "err": {
-                "message": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper' to include 'Software Developer'",
-                "estack": "AssertionError: expected 'SoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloperSoftwareSoftware developerSoftwareDeveloperSoftwareSoftwareDeveloper' to include 'Software Developer'\n    at Context.<anonymous> (conditionals_test.js:26:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": null
-              },
-              "uuid": "d2bdcac4-b419-41fd-8743-cda090f15b04",
-              "parentUUID": "702b829d-bc8d-4f5f-8479-d6a07f541e3a",
+              "err": {},
+              "uuid": "00ae56c8-f52e-43a1-b76b-d0ae7380d8eb",
+              "parentUUID": "ad0ef22f-079e-4918-a507-10e33c5439de",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "d2bdcac4-b419-41fd-8743-cda090f15b04"
+          "passes": [
+            "00ae56c8-f52e-43a1-b76b-d0ae7380d8eb"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2001,
+          "duration": 1140,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
