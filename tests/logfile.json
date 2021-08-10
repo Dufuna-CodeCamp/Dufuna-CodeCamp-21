@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+
     "tests": 0,
     "passes": 0,
     "pending": 0,
@@ -10,6 +11,17 @@
     "duration": 180046,
     "testsRegistered": 5,
     "passPercent": 0,
+
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-09T19:31:48.197Z",
+    "end": "2021-08-09T19:31:55.064Z",
+    "duration": 6867,
+    "testsRegistered": 1,
+    "passPercent": 100,
+
     "pendingPercent": 0,
     "other": 1,
     "hasOther": true,
@@ -18,7 +30,11 @@
   },
   "results": [
     {
+
       "uuid": "c802b055-b06b-431d-b448-6f7d8004114d",
+
+      "uuid": "3c27ee2d-4ee9-49d4-bc13-9883070ec067",
+
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,6 +43,7 @@
       "tests": [],
       "suites": [
         {
+
           "uuid": "af041f0f-13a2-4556-b774-b04401fb5f78",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\dcriso\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
@@ -38,11 +55,25 @@
               "timedOut": true,
               "duration": 180028,
               "state": "failed",
+
+          "uuid": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+          "title": "Testing javascript conditionals",
+          "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
+          "file": "\\conditionals_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "timedOut": false,
+              "duration": 6511,
+              "state": null,
+
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
+
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {
                 "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\dcriso\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js)",
@@ -51,6 +82,12 @@
               },
               "uuid": "20fe0f90-7ea6-45de-81d7-076cd34b2663",
               "parentUUID": "af041f0f-13a2-4556-b774-b04401fb5f78",
+
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "1aaaea8f-f7a8-4218-87eb-c4de91f91f2e",
+              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+
               "isHook": true,
               "skipped": false
             }
@@ -59,8 +96,12 @@
             {
               "title": "\"after all\" hook in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+
+              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,14 +110,20 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+
               "uuid": "fae244ae-c249-4c90-b513-758b82fd4ebf",
               "parentUUID": "af041f0f-13a2-4556-b774-b04401fb5f78",
+
+              "uuid": "413eeaf0-fa9b-4e61-8fd6-e9a083b11e75",
+              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
+
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
@@ -163,11 +210,28 @@
               "err": {},
               "uuid": "964eab63-303d-463d-98c0-afcfd10222a6",
               "parentUUID": "af041f0f-13a2-4556-b774-b04401fb5f78",
+
+              "title": "test case: check conditionals",
+              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "timedOut": false,
+              "duration": 189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
+              "err": {},
+              "uuid": "dcff0dff-fba9-48df-81f9-614a6feecc1f",
+              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+
               "isHook": false,
               "skipped": true
             }
           ],
           "suites": [],
+
           "passes": [],
           "failures": [],
           "pending": [],
@@ -179,6 +243,15 @@
             "964eab63-303d-463d-98c0-afcfd10222a6"
           ],
           "duration": 0,
+
+          "passes": [
+            "dcff0dff-fba9-48df-81f9-614a6feecc1f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 189,
+
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -212,7 +285,11 @@
     },
     "marge": {
       "options": {
+
         "reportDir": "C:/Users/dcriso/Desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+
+        "reportDir": "C:/Users/ACER/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+
         "reportFilename": "logfile",
         "quiet": "true"
       },
