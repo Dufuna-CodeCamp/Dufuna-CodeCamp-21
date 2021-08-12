@@ -1,4 +1,6 @@
-My name is Irene Nakiyingi
-I'm from Uganda
-I'm a student.
-I'd like to learn programming.
+My name is Irene Nakiyingi.
+I live in Uganda.
+I wish to learn programming.
+This is harder than i hoped. 
+Why does it keep giving me hard time when i'm almost done.
+Maybe i need to take this slow.
