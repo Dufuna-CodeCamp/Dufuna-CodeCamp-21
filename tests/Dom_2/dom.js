@@ -23,7 +23,7 @@ describe("Testing Scholars Project", function () {
     it('test case: check dot on Cart', async () => {
         const click = await driver.findElements(By.css("button"));
         click[2].click();
-        const option = await driver.findElement(By.className("badge")).isDisplayed();
+        const option = await driver.findElement(By.css("span")).isEnabled();
         assert.exists(option == true, "Ensure the badge/dot is present on Cart")
     });
 
@@ -38,7 +38,7 @@ describe("Testing Scholars Project", function () {
         const click = await driver.findElements(By.css("button"));
         click[2].click();
         const text_color = await click[2].getCssValue("color");
-        assert.equal(text_color, "rgba(78, 77, 77, 1)", 'Ensure the colour of the text `Remove` is white')
+        assert.equal(text_color, "rgba(255, 255, 255, 1)", 'Ensure the colour of the text `Remove` is white')
     });
 
     it('test case: check text on button', async () => {
