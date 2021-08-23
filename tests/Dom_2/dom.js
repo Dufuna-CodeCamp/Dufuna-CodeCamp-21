@@ -11,9 +11,9 @@ describe("Testing Scholars Project", function () {
 
     var actions = driver.actions();
 
-    before(function setupWebdriver(done) {
+    before(function setupWebdriver() {
         var file_url = `file://${file_path}`;
-        driver.get(file_url).then(done);
+        driver.get(file_url).then();
     });
 
     after(function () {
