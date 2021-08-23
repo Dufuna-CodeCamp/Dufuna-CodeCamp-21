@@ -1,13 +1,11 @@
 const file_path = process.env.FILE_PATH;
 const webdriver = require('selenium-webdriver');
 const assert = require('chai').assert;
-const { By, Actions } = require("selenium-webdriver");
-
+const { By } = require("selenium-webdriver");
 
 describe("Testing Scholars Project", function () {
     this.timeout(3 * 1000 * 60);
     var driver = new webdriver.Builder()
-
         .forBrowser('chrome')
         .build();
 
