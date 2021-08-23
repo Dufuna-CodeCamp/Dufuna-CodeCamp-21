@@ -20,13 +20,6 @@ describe("Testing Scholars Project", function () {
         driver.quit();
     });
 
-    it('test case: check dot on Cart', async () => {
-        const click = await driver.findElements(By.css("button"));
-        click[2].click();
-        const option = await driver.findElement(By.css("span")).isEnabled();
-        assert.exists(option == true, "Ensure the badge/dot is present on Cart")
-    });
-
     it('test case: check text on button', async () => {
         const click = await driver.findElements(By.css("button"));
         click[2].click();
