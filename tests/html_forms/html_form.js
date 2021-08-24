@@ -3,21 +3,21 @@ var webdriver = require('selenium-webdriver');
 var assert = require('chai').assert;
 var { Builder, By } = require("selenium-webdriver");
 
-describe("Testing Form Task", function () {
-    this.timeout(3 * 1000 * 60);
+describe("Testing Form Task", function (done) {
     var driver = new webdriver.Builder()
         .forBrowser('chrome')
-        .build();
+        .build(done);
 
-        before(function setupWebdriver(done) {
+        before(function setupWebdriver() {
             var file_url = `file://${file_path}`;
-            driver.get(file_url).then(done);
+            driver.get(file_url)
         });
     
         after(function() {
             driver.quit();
         });
-        
+
+
     it('test case: assert 4 input fields are present', async () => {
         const input = await driver.findElements(By.css('input'));
         const size = input.length
