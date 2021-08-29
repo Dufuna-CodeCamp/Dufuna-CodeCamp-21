@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 Socio-Tech Solutions
+=======
+<<<<<<< HEAD
+	Socio-Tech Solutions
+>>>>>>> 1064462d03eb994b5ce22f1d2f1b3b1a055f52f8
 Socio-Tech Solutions is a small business consultancy registered with the Malawi Government under the Business Act (Bz #). It derives its inspiration from merging social sciences and information technology. 
 Services we provide;
 1.	Training in
@@ -14,3 +19,9 @@ b.	Social Science
 	Research
 	Data management systems 
 	Web development for organisations/companies/business
+<<<<<<< HEAD
+=======
+=======
+Am writing to express my interest in the vacant post as a social policy officer.
+>>>>>>> df2e1bbeec498ca3ecde2157042b9b3f44c190c5
+>>>>>>> 1064462d03eb994b5ce22f1d2f1b3b1a055f52f8
