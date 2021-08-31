@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 2,
-    "start": "2021-08-31T20:03:16.436Z",
-    "end": "2021-08-31T20:03:21.255Z",
-    "duration": 4819,
+    "start": "2021-08-31T20:14:58.137Z",
+    "end": "2021-08-31T20:15:02.031Z",
+    "duration": 3894,
     "testsRegistered": 4,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "272dc5cd-c525-4150-9c2e-1aafd178c681",
+      "uuid": "924178fd-96ba-4ae7-a89c-c69746dafc76",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "51b6fdcd-c9ac-4223-98b0-120804707619",
+          "uuid": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\CTDO\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 4205,
+              "duration": 3460,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "67895205-b40a-4d3a-9f52-ebef3b04b742",
-              "parentUUID": "51b6fdcd-c9ac-4223-98b0-120804707619",
+              "uuid": "9ac2a359-b7b0-47e2-aee4-d768caeebe99",
+              "parentUUID": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "ac62d8db-5270-439b-8eb2-5480254ea89b",
-              "parentUUID": "51b6fdcd-c9ac-4223-98b0-120804707619",
+              "uuid": "c72433b8-07bc-46db-b1db-16f700d3aa60",
+              "parentUUID": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 305,
+              "duration": 211,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: Ensure Price is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'price'\n    at Context.<anonymous> (html_task.js:25:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "343ff7bd-a7ec-4b99-bdbc-963d99f80f80",
-              "parentUUID": "51b6fdcd-c9ac-4223-98b0-120804707619",
+              "uuid": "0e3e2ce4-9335-4907-bcbc-ec63aa1794c6",
+              "parentUUID": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 73,
+              "duration": 85,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'description'\n    at Context.<anonymous> (html_task.js:32:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "7f3e123a-985a-407d-9911-68755f003c5b",
-              "parentUUID": "51b6fdcd-c9ac-4223-98b0-120804707619",
+              "uuid": "92b6cf6d-794c-4eb4-a685-59039998c793",
+              "parentUUID": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
               "isHook": false,
               "skipped": false
             },
@@ -120,17 +120,17 @@
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 46,
+              "duration": 76,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
               "err": {},
-              "uuid": "9617d95e-ad18-4053-b516-9b8468aa1813",
-              "parentUUID": "51b6fdcd-c9ac-4223-98b0-120804707619",
+              "uuid": "9cfb74ae-919b-4911-a4a7-c150ba279a34",
+              "parentUUID": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
               "isHook": false,
               "skipped": false
             },
@@ -147,24 +147,24 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
               "err": {},
-              "uuid": "bce1b19a-7613-4225-9742-a942529fff63",
-              "parentUUID": "51b6fdcd-c9ac-4223-98b0-120804707619",
+              "uuid": "b4f7f875-21f4-446f-b105-d6b5a489ee67",
+              "parentUUID": "994cbcda-bef2-4c9c-b00d-b80b4d6ee05b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9617d95e-ad18-4053-b516-9b8468aa1813",
-            "bce1b19a-7613-4225-9742-a942529fff63"
+            "9cfb74ae-919b-4911-a4a7-c150ba279a34",
+            "b4f7f875-21f4-446f-b105-d6b5a489ee67"
           ],
           "failures": [
-            "343ff7bd-a7ec-4b99-bdbc-963d99f80f80",
-            "7f3e123a-985a-407d-9911-68755f003c5b"
+            "0e3e2ce4-9335-4907-bcbc-ec63aa1794c6",
+            "92b6cf6d-794c-4eb4-a685-59039998c793"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 425,
+          "duration": 373,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
