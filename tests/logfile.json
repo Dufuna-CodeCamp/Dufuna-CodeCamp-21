@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 4,
-    "passes": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 2,
-    "start": "2021-08-30T16:53:55.567Z",
-    "end": "2021-08-30T16:54:00.526Z",
-    "duration": 4959,
+    "failures": 3,
+    "start": "2021-08-31T07:49:25.422Z",
+    "end": "2021-08-31T07:49:29.779Z",
+    "duration": 4357,
     "testsRegistered": 4,
-    "passPercent": 50,
+    "passPercent": 25,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "962a2773-63c9-43ac-8e04-5705a8b5ab97",
+      "uuid": "76c8bce6-5a3e-4030-bc0d-5834c1afdf1c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+          "uuid": "a7971731-f562-408a-a0d2-eec6638375e8",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\CTDO\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 4561,
+              "duration": 3810,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "0123f2c0-1df5-4b71-abe4-c953680b226f",
-              "parentUUID": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+              "uuid": "f97d5c37-9029-47df-a700-2f55740dfa16",
+              "parentUUID": "a7971731-f562-408a-a0d2-eec6638375e8",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c22b38ab-ebe3-4ee8-856b-58cd96588f60",
-              "parentUUID": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+              "uuid": "6e5229de-febe-4344-a021-bcbfb8758cc3",
+              "parentUUID": "a7971731-f562-408a-a0d2-eec6638375e8",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 246,
+              "duration": 401,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = await text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
               "err": {
-                "message": "AssertionError: Ensure Price is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'price'",
-                "estack": "AssertionError: Ensure Price is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'price'\n    at Context.<anonymous> (html_task.js:25:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "message": "AssertionError: Ensure Price is present: expected 'sociotech solutions\\nabout us our products login contact us\\nprofile\\nsociotech solutions is a malawian tech-biz consultancy company. it derives its inspiration from striving to merge information technology and social sciences. as such, we provide expert services and products in it and social sciences arena. these services can be accessed both remotely through our store or at our physical offices in mzuzu city, luwinga road, opposite petroda filling station.\\nwhat we offer\\nwe offer products and services in it and social sciences arenas. our innovative component is meging these two services into a tangible activity that excites and meet our clients\\' satisfaction. to access our products and services. click here\\nour address\\nsociotech solutions\\np.o. box ---\\nluwinga road\\nopposite petroda filling station\\nmzuzu\\nmalawi\\nwechat\\nlinkedin\\nfacebook\\n© 2021 sociotech' to include 'price'",
+                "estack": "AssertionError: Ensure Price is present: expected 'sociotech solutions\\nabout us our products login contact us\\nprofile\\nsociotech solutions is a malawian tech-biz consultancy company. it derives its inspiration from striving to merge information technology and social sciences. as such, we provide expert services and products in it and social sciences arena. these services can be accessed both remotely through our store or at our physical offices in mzuzu city, luwinga road, opposite petroda filling station.\\nwhat we offer\\nwe offer products and services in it and social sciences arenas. our innovative component is meging these two services into a tangible activity that excites and meet our clients\\' satisfaction. to access our products and services. click here\\nour address\\nsociotech solutions\\np.o. box ---\\nluwinga road\\nopposite petroda filling station\\nmzuzu\\nmalawi\\nwechat\\nlinkedin\\nfacebook\\n© 2021 sociotech' to include 'price'\n    at Context.<anonymous> (html_task.js:25:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "2008d91c-89eb-44c4-9317-d2182f093808",
-              "parentUUID": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+              "uuid": "92fdad11-8582-4086-86f2-7ee2234fb3a6",
+              "parentUUID": "a7971731-f562-408a-a0d2-eec6638375e8",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 63,
+              "duration": 58,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -107,12 +107,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = await text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
               "err": {
-                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'description'",
-                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'description'\n    at Context.<anonymous> (html_task.js:32:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'sociotech solutions\\nabout us our products login contact us\\nprofile\\nsociotech solutions is a malawian tech-biz consultancy company. it derives its inspiration from striving to merge information technology and social sciences. as such, we provide expert services and products in it and social sciences arena. these services can be accessed both remotely through our store or at our physical offices in mzuzu city, luwinga road, opposite petroda filling station.\\nwhat we offer\\nwe offer products and services in it and social sciences arenas. our innovative component is meging these two services into a tangible activity that excites and meet our clients\\' satisfaction. to access our products and services. click here\\nour address\\nsociotech solutions\\np.o. box ---\\nluwinga road\\nopposite petroda filling station\\nmzuzu\\nmalawi\\nwechat\\nlinkedin\\nfacebook\\n© 2021 sociotech' to include 'description'",
+                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'sociotech solutions\\nabout us our products login contact us\\nprofile\\nsociotech solutions is a malawian tech-biz consultancy company. it derives its inspiration from striving to merge information technology and social sciences. as such, we provide expert services and products in it and social sciences arena. these services can be accessed both remotely through our store or at our physical offices in mzuzu city, luwinga road, opposite petroda filling station.\\nwhat we offer\\nwe offer products and services in it and social sciences arenas. our innovative component is meging these two services into a tangible activity that excites and meet our clients\\' satisfaction. to access our products and services. click here\\nour address\\nsociotech solutions\\np.o. box ---\\nluwinga road\\nopposite petroda filling station\\nmzuzu\\nmalawi\\nwechat\\nlinkedin\\nfacebook\\n© 2021 sociotech' to include 'description'\n    at Context.<anonymous> (html_task.js:32:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "9de7cdce-227b-4585-b8d6-90171b5eb6d6",
-              "parentUUID": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+              "uuid": "ee1f57a4-df15-478c-809b-13415932bd7b",
+              "parentUUID": "a7971731-f562-408a-a0d2-eec6638375e8",
               "isHook": false,
               "skipped": false
             },
@@ -120,17 +120,21 @@
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 38,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 35,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
-              "err": {},
-              "uuid": "ec09858f-38f2-4dd5-ab69-f658397573b9",
-              "parentUUID": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+              "err": {
+                "message": "AssertionError: Amount of images on the page not equal to 2: expected 0 to equal 2",
+                "estack": "AssertionError: Amount of images on the page not equal to 2: expected 0 to equal 2\n    at Context.<anonymous> (html_task.js:38:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "- 0\n+ 2\n"
+              },
+              "uuid": "133f41b7-efe3-4f0c-b77c-cbdc80770760",
+              "parentUUID": "a7971731-f562-408a-a0d2-eec6638375e8",
               "isHook": false,
               "skipped": false
             },
@@ -147,24 +151,24 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
               "err": {},
-              "uuid": "fabefe7e-7c34-4b89-a337-872906397097",
-              "parentUUID": "0f01d61c-7bf1-4689-b082-f57d5d41555c",
+              "uuid": "1800b0e8-1edf-453d-b3d6-150385d5045d",
+              "parentUUID": "a7971731-f562-408a-a0d2-eec6638375e8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ec09858f-38f2-4dd5-ab69-f658397573b9",
-            "fabefe7e-7c34-4b89-a337-872906397097"
+            "1800b0e8-1edf-453d-b3d6-150385d5045d"
           ],
           "failures": [
-            "2008d91c-89eb-44c4-9317-d2182f093808",
-            "9de7cdce-227b-4585-b8d6-90171b5eb6d6"
+            "92fdad11-8582-4086-86f2-7ee2234fb3a6",
+            "ee1f57a4-df15-478c-809b-13415932bd7b",
+            "133f41b7-efe3-4f0c-b77c-cbdc80770760"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 348,
+          "duration": 495,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
