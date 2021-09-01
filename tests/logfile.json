@@ -1,25 +1,14 @@
 {
   "stats": {
     "suites": 1,
-<<<<<<< HEAD
     "tests": 5,
     "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-31T19:57:41.201Z",
-    "end": "2021-08-31T19:57:42.578Z",
-    "duration": 1377,
+    "start": "2021-09-01T18:08:55.335Z",
+    "end": "2021-09-01T18:08:56.915Z",
+    "duration": 1580,
     "testsRegistered": 5,
-=======
-    "tests": 4,
-    "passes": 4,
-    "pending": 0,
-    "failures": 0,
-    "start": "2021-08-31T20:32:17.235Z",
-    "end": "2021-08-31T20:32:24.357Z",
-    "duration": 7122,
-    "testsRegistered": 4,
->>>>>>> master
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -29,11 +18,7 @@
   },
   "results": [
     {
-<<<<<<< HEAD
-      "uuid": "1ad23286-9e89-4529-886a-ac5c63912955",
-=======
-      "uuid": "5c0ae5ad-3468-4163-83f9-4ff0ca75ea2c",
->>>>>>> master
+      "uuid": "34d3ae25-25aa-496e-9e64-141c16710fb9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -42,8 +27,7 @@
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
-          "uuid": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
+          "uuid": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\Lungowe\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -53,52 +37,26 @@
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
               "duration": 1,
-=======
-          "uuid": "1763638d-cf82-4f5c-9d38-902410340f59",
-          "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\CTDO\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
-          "file": "\\html_task.js",
-          "beforeHooks": [
-            {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "timedOut": false,
-              "duration": 6486,
->>>>>>> master
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-<<<<<<< HEAD
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
               "err": {},
-              "uuid": "cd01d661-ac1d-48f7-b9da-18301e969d93",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
-=======
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
-              "err": {},
-              "uuid": "68c88b9f-f74f-4451-8771-6f5477a6ac9a",
-              "parentUUID": "1763638d-cf82-4f5c-9d38-902410340f59",
->>>>>>> master
+              "uuid": "b03d28a4-1600-4b56-8701-822afb0e8a90",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-<<<<<<< HEAD
               "title": "\"after all\" hook in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 1,
-=======
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
-              "timedOut": false,
               "duration": 0,
->>>>>>> master
               "state": null,
               "speed": null,
               "pass": false,
@@ -107,52 +65,32 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "e22e8be2-c1be-4371-8134-c9db1faff313",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
-=======
-              "uuid": "10f8e905-f7f1-4f29-b08d-65074c7a078c",
-              "parentUUID": "1763638d-cf82-4f5c-9d38-902410340f59",
->>>>>>> master
+              "uuid": "06bfb8d6-c984-44f6-a5fe-12a93b79d47d",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-<<<<<<< HEAD
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 1245,
-=======
-              "title": "test case: check if Price is present",
-              "fullTitle": "Testing Scholars Project test case: check if Price is present",
-              "timedOut": false,
-              "duration": 315,
->>>>>>> master
+              "duration": 1475,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-<<<<<<< HEAD
               "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
               "err": {},
-              "uuid": "eb0e7790-7b3f-48ec-9182-f5a25c9860b4",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
-=======
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = await text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
-              "err": {},
-              "uuid": "54f2ed26-185b-4a1f-afc7-6ec4275848b9",
-              "parentUUID": "1763638d-cf82-4f5c-9d38-902410340f59",
->>>>>>> master
+              "uuid": "244c010d-7627-43c9-9ce2-186dabbd3b07",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": false,
               "skipped": false
             },
             {
-<<<<<<< HEAD
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
@@ -165,8 +103,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
               "err": {},
-              "uuid": "0fa09a74-75af-4ddb-84ca-111330f3d21a",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
+              "uuid": "e210f97e-a13f-48ae-b99a-ad342e8fab31",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": false,
               "skipped": false
             },
@@ -174,129 +112,72 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 28,
+              "duration": 19,
               "state": "passed",
               "speed": "fast",
-=======
-              "title": "test case: check if Description is present",
-              "fullTitle": "Testing Scholars Project test case: check if Description is present",
-              "timedOut": false,
-              "duration": 171,
-              "state": "passed",
-              "speed": "slow",
->>>>>>> master
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-<<<<<<< HEAD
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
               "err": {},
-              "uuid": "f1c6cd10-ef92-42f6-aff0-ef15837b9b3f",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
-=======
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = await text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
-              "err": {},
-              "uuid": "a12b93dc-e2ce-47e5-88fe-3271bcc9d2c2",
-              "parentUUID": "1763638d-cf82-4f5c-9d38-902410340f59",
->>>>>>> master
+              "uuid": "ef887a20-7385-49a1-b062-7afa068a71c3",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": false,
               "skipped": false
             },
             {
-<<<<<<< HEAD
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 24,
-=======
-              "title": "test case: assert image amount is 2",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
-              "timedOut": false,
-              "duration": 27,
->>>>>>> master
+              "duration": 15,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-<<<<<<< HEAD
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.include(subject, \"subject\", `Ensure \"Subject\" label is present`);",
               "err": {},
-              "uuid": "1554f00e-c7f0-4d47-aca7-33ecec7d0c72",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
-=======
-              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
-              "err": {},
-              "uuid": "90f1e057-866f-42ce-8a29-45f2c4cf075f",
-              "parentUUID": "1763638d-cf82-4f5c-9d38-902410340f59",
->>>>>>> master
+              "uuid": "fe089b27-6549-4b30-9c27-d017cd7acc0e",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": false,
               "skipped": false
             },
             {
-<<<<<<< HEAD
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
-              "duration": 26,
-=======
-              "title": "test case: ordered list available",
-              "fullTitle": "Testing Scholars Project test case: ordered list available",
-              "timedOut": false,
-              "duration": 2,
->>>>>>> master
+              "duration": 13,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-<<<<<<< HEAD
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.include(message, \"message\", `Ensure \"Message\" label is present`);",
               "err": {},
-              "uuid": "a46b1fec-ba0d-4de2-802d-9baac76c0f7b",
-              "parentUUID": "58b11dd4-1362-476f-be61-86c49a5e4e1e",
-=======
-              "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
-              "err": {},
-              "uuid": "7d13598d-78cb-4fad-8fa0-9d10d19e1e22",
-              "parentUUID": "1763638d-cf82-4f5c-9d38-902410340f59",
->>>>>>> master
+              "uuid": "22f8deef-1f39-451a-8bd5-49618f0eacc5",
+              "parentUUID": "5c42c4d8-0ffe-481d-a512-64e49d6eac93",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
-            "eb0e7790-7b3f-48ec-9182-f5a25c9860b4",
-            "0fa09a74-75af-4ddb-84ca-111330f3d21a",
-            "f1c6cd10-ef92-42f6-aff0-ef15837b9b3f",
-            "1554f00e-c7f0-4d47-aca7-33ecec7d0c72",
-            "a46b1fec-ba0d-4de2-802d-9baac76c0f7b"
-=======
-            "54f2ed26-185b-4a1f-afc7-6ec4275848b9",
-            "a12b93dc-e2ce-47e5-88fe-3271bcc9d2c2",
-            "90f1e057-866f-42ce-8a29-45f2c4cf075f",
-            "7d13598d-78cb-4fad-8fa0-9d10d19e1e22"
->>>>>>> master
+            "244c010d-7627-43c9-9ce2-186dabbd3b07",
+            "e210f97e-a13f-48ae-b99a-ad342e8fab31",
+            "ef887a20-7385-49a1-b062-7afa068a71c3",
+            "fe089b27-6549-4b30-9c27-d017cd7acc0e",
+            "22f8deef-1f39-451a-8bd5-49618f0eacc5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-<<<<<<< HEAD
-          "duration": 1369,
+          "duration": 1568,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
-=======
-          "duration": 515,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 180000
->>>>>>> master
         }
       ],
       "passes": [],
@@ -311,11 +192,7 @@
   ],
   "meta": {
     "mocha": {
-<<<<<<< HEAD
       "version": "9.0.0"
-=======
-      "version": "9.0.3"
->>>>>>> master
     },
     "mochawesome": {
       "options": {
@@ -331,11 +208,7 @@
     },
     "marge": {
       "options": {
-<<<<<<< HEAD
         "reportDir": "C:/Users/Lungowe/OneDrive/desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
-=======
-        "reportDir": "C:/Users/CTDO/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
->>>>>>> master
         "reportFilename": "logfile",
         "quiet": "true"
       },
