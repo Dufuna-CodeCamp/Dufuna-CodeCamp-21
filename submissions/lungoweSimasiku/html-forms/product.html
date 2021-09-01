@@ -8,30 +8,12 @@
 </head>
 <body>
     <header>
-        <!-- <div class="header__utility">
-            <div class="header__utility-search-box">
-                <form>
-                    <img src ="images/loupe.svg" alt="the search icon" />
-                    <label class="search__box-label" for="header__search">Search</label>
-                    <input type="text" id="header__search">
-                    <button class="search__button" type="submit">
-                        <span class="button__icon">
-                            <img src="images/right-arrow.svg" alt="right arrow icon which will be the search button" />
-                        </span>
-                    </button>
-                </form>
-            </div>
-            <div class="header__utility-account">
-                <a href="#"> 
-                    <img src="images/user.svg" alt="eCommerce user account icon" />
-                </a> 
-            </div>
-            <div class="header__utility-cart">
-                <a href="#">  
-                    <img src="images/add-to-basket.svg" alt="add to basket icon" />
-                </a> 
-            </div>
-        </div> -->
+        <!-- <nav class="nav">
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> -->
         <div class="header__logo">
             <a href="product.html">
                 Afrothenticity
@@ -39,8 +21,23 @@
         </div>
         <div class="header__nav">
             <ul class="nav__menu">
-                <a href="#">
-                    <li>Our Collection</li>
+                <li>
+                    <a href="product.html">Product</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <!-- <a href="#">
+                    <li></li>
                 </a> 
                 <a href="#">
                     <li>Shop</li>
@@ -53,7 +50,7 @@
                 </a> 
                 <a href="#">
                     <li>Contact Us</li>
-                </a> 
+                </a>  -->
             </ul>
         </div>
     </header>
@@ -81,9 +78,6 @@
                 <a class="btn__block" href="#">Shop all bestsellers</a>
                 <div class="bestsellers__slider">
                     <div class="bestsellers__slider-wrapper">
-                        <!-- <button class="bestsellers__button previous-button">
-                            <img src="images/left-chevron.svg" alt="right arrow button" />
-                        </button> -->
                         <div class="bestsellers__contents-container">
                             <div class="bestsellers__contents">
                                 <div class="bestsellers__product"> 
@@ -117,158 +111,10 @@
                                 
                             </div>
                         </div>
-                        <!-- <button class="bestsellers__button previous-button">
-                            <img src="images/right-chevron.svg" alt="left arrow button" />
-                        </button> -->
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="cleansers">
-            <div class="cleansers__wrapper">
-                <h2>Cleanse first.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda culpa fugiat pariatur magnam harum! Recusandae eius illum, cupiditate incidut.</p>
-                <a class="btn__block" href="#">Shop all cleansers</a>
-                <div class="cleansers__products">
-                    <div class="cleansers__products-wrapper">
-                        <a class="cleanser__product" href="#">
-                            <div class="cleanser__product-img">
-                                <img src="images/764302231493_image 1.jpg" alt="" />
-                                <h4 class="cleanser__product-title">Manuka Honey & Yogurt Hydrate + Repair Shampoo</h4>
-                                <span class="cleansers__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                        <a class="cleanser__product" href="#">
-                            <div class="cleanser__product-img">
-                                <img src="images/764302271048_image 1.jpg" alt="" />
-                                <h4 class="cleanser__product-title">Bamboo Charcoal Deep Cleansing Shampoo</h4>
-                                <span class="cleansers__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                        <a class="cleanser__product" href="#">
-                            <div class="cleanser__product-img">
-                                <img src="images/764302290209_image 1.jpg" alt="" />
-                                <h4 class="cleanser__product-title">Coconut & Hibiscus Curl & Shine Shampoo</h4>
-                                <span class="cleansers__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="conditioner">
-            <div class="conditioner__wrapper">
-                <h2>Condition second.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda culpa fugiat pariatur magnam harum! Recusandae eius illum, cupiditate incidut.</p>
-                <a class="btn__block" href="#">Shop all conditioners</a>
-                <div class="conditioner__products">
-                    <div class="conditioner__products-wrapper">
-                        <a class="conditioner__product" href="#">
-                            <div class="conditioner__product-img">
-                                <img src="images/RRT_9be1f5de-5606-433e-91e3-0c1bb849874b_large.png" alt="" />
-                                <h4 class="conditioner__product-title">Rapid Recovery Treatment Deep Hair Treatment</h4>
-                                <span class="conditioner__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                        <a class="conditioner__product" href="#">
-                            <div class="conditioner__product-img">
-                                <img src="images/SMU_7edc47e8-b87e-4e65-8985-43649f1936a4_large.png" alt="" />
-                                <h4 class="conditioner__product-title">Soften Me Up Conditioner</h4>
-                                <span class="conditioner__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                        <a class="conditioner__product" href="#">
-                            <div class="conditioner__product-img">
-                                <img src="images/SST_2a4720c8-4f6d-4877-bf39-d69f73158292_large.png" alt="" />
-                                <h4 class="conditioner__product-title">Super Sweetback Treatment - Hair Softening Treatment</h4>
-                                <span class="conditioner__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="moisturizer">
-            <div class="moisturizer__wrapper">
-                <h2>Moisturize third.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda culpa fugiat pariatur magnam harum! Recusandae eius illum, cupiditate incidut.</p>
-                <a class="btn__block" href="#">Shop all moisturizers</a>
-                <div class="moisturizer__products">
-                    <div class="moisturizer__products-wrapper">
-                        <a class="moisturizer__product" href="#">
-                            <div class="moisturizer__product-img">
-                                <img src="images/BBC_large.png" alt="" />
-                                <h4 class="moisturizer__product-title">Baby Buttercreme</h4>
-                                <span class="moisturizer__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                        <a class="moisturizer__product" href="#">
-                            <div class="moisturizer__product-img">
-                                <img src="images/CBC_large.png" alt="" />
-                                <h4 class="moisturizer__product-title">Curly Buttercreme</h4>
-                                <span class="moisturizer__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                        <a class="moisturizer__product" href="#">
-                            <div class="moisturizer__product-img">
-                                <img src="images/SBS-842383.jpg" alt="" />
-                                <h4 class="moisturizer__product-title">Carol's Daughter Coil Enhancing Moisture Butter</h4>
-                                <span class="moisturizer__product-btn al-btn">Shop Now</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="featured-articles">
-            <div class="featured-articles__wrapper">
-                <div class="featured-articles__header">
-                    <h2 class="featured-articles__title">Get Inspired</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda culpa fugiat pariatur magnam harum! Recusandae eius illum, cupiditate incidut.</p>
-                </div>
-                <div class="featured-articles__container">
-                    <div class="featured-article">
-                        <a href="#">
-                            <picture class="featured-article__picture">
-                                <img src="images/pexels-cottonbro-4153143.jpg" alt="image of two hair brushes at a salon" />
-                            </picture>
-                            <div class="featured-article__category">Hair Tips</div>
-                        </a>
-                        <div class="featured-article__title">Ten reasons why you should go natural today.</div>
-                        <a href="#">
-                            <span>Read</span>
-                            <span>More</span>
-                        </a>
-                    </div>
-                    <div class="featured-article">
-                        <a href="#">
-                            <picture class="featured-article__picture">
-                                <img src="images/pexels-tara-winstead-6690249.jpg" alt="two bottles of hair conditioner" />
-                            </picture>
-                            <div class="featured-article__category">Hair Tips</div>
-                        </a>
-                        <div class="featured-article__title">Why everyone should be deep conditioning, no matter your hair type.</div>
-                        <a href="#">
-                            <span>Read</span>
-                            <span>More</span>
-                        </a>
-                    </div>
-                    <div class="featured-article">
-                        <a href="#">
-                            <picture class="featured-article__picture">
-                                <img src="images/pexels-karolina-grabowska-4465121.jpg" alt="a tube of conditioner" />
-                            </picture>
-                            <div class="featured-article__category">Hair Tips</div>
-                        </a>
-                        <div class="featured-article__title">Building a hair routine.</div>
-                        <a href="#">
-                            <span>Read</span>
-                            <span>More</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <footer>
             <div class="footer__wrapper">
                 <div class="footer__column">
