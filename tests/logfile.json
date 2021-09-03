@@ -5,10 +5,17 @@
     "passes": 5,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2021-09-01T18:44:23.150Z",
     "end": "2021-09-01T18:44:24.716Z",
     "duration": 1566,
     "testsRegistered": 5,
+=======
+    "start": "2021-09-02T20:01:44.998Z",
+    "end": "2021-09-02T20:01:46.608Z",
+    "duration": 1610,
+    "testsRegistered": 4,
+>>>>>>> master
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +25,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "9b51a1ac-5ec1-4411-a4d0-43119123e959",
+=======
+      "uuid": "6bfe9aaf-c18e-472c-8f6e-852f8de6a3bb",
+>>>>>>> master
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +38,27 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\Lungowe\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
+=======
+          "uuid": "359d3dda-6883-4f15-9411-68ad574416e4",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\Public\\Documents\\DufunaClasses\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
+          "file": "\\html_task.js",
+>>>>>>> master
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 0,
+=======
+              "duration": 1443,
+>>>>>>> master
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +67,13 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
               "err": {},
+<<<<<<< HEAD
               "uuid": "897cee92-df68-421c-99a7-db10ade132f5",
               "parentUUID": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
+=======
+              "uuid": "b919d90e-7da8-44eb-93d9-ee6189b79e18",
+              "parentUUID": "359d3dda-6883-4f15-9411-68ad574416e4",
+>>>>>>> master
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +92,13 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+<<<<<<< HEAD
               "uuid": "3f3313b2-4091-4118-9b90-dc64264edda0",
               "parentUUID": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
+=======
+              "uuid": "267b0f9f-8e65-4302-8359-8be955309864",
+              "parentUUID": "359d3dda-6883-4f15-9411-68ad574416e4",
+>>>>>>> master
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +108,11 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 1392,
+=======
+              "duration": 112,
+>>>>>>> master
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +121,13 @@
               "context": null,
               "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "73fba25c-fbcc-406b-8143-108e848bce36",
               "parentUUID": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
+=======
+              "uuid": "372c2892-9243-45d8-b78b-af4e6426d9ea",
+              "parentUUID": "359d3dda-6883-4f15-9411-68ad574416e4",
+>>>>>>> master
               "isHook": false,
               "skipped": false
             },
@@ -94,17 +135,28 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 70,
               "state": "passed",
               "speed": "medium",
+=======
+              "duration": 32,
+              "state": "passed",
+              "speed": "fast",
+>>>>>>> master
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "0a157efc-bf8c-4878-808b-57244f5c7a00",
               "parentUUID": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
+=======
+              "uuid": "5bdef0c4-607e-45ca-a460-51034b2fc693",
+              "parentUUID": "359d3dda-6883-4f15-9411-68ad574416e4",
+>>>>>>> master
               "isHook": false,
               "skipped": false
             },
@@ -112,7 +164,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 27,
+              "duration": 12,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -139,8 +191,13 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.include(subject, \"subject\", `Ensure \"Subject\" label is present`);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "4387c76a-7081-45de-b012-c7d561f3ad6f",
               "parentUUID": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
+=======
+              "uuid": "addaa7f8-14bb-4c91-8d5a-aa7f0bf8a721",
+              "parentUUID": "359d3dda-6883-4f15-9411-68ad574416e4",
+>>>>>>> master
               "isHook": false,
               "skipped": false
             },
@@ -148,7 +205,11 @@
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 33,
+=======
+              "duration": 0,
+>>>>>>> master
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -157,24 +218,40 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.include(message, \"message\", `Ensure \"Message\" label is present`);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "356ee06c-aa94-48e1-972d-247dafe97382",
               "parentUUID": "208b7479-ab68-46ac-93ec-69d97a54b9aa",
+=======
+              "uuid": "c2bef055-1f0f-4cbb-83df-7aeae50f8c08",
+              "parentUUID": "359d3dda-6883-4f15-9411-68ad574416e4",
+>>>>>>> master
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+<<<<<<< HEAD
             "73fba25c-fbcc-406b-8143-108e848bce36",
             "0a157efc-bf8c-4878-808b-57244f5c7a00",
             "bf479c49-aeb9-4f37-bab3-4ceb3466f249",
             "4387c76a-7081-45de-b012-c7d561f3ad6f",
             "356ee06c-aa94-48e1-972d-247dafe97382"
+=======
+            "372c2892-9243-45d8-b78b-af4e6426d9ea",
+            "5bdef0c4-607e-45ca-a460-51034b2fc693",
+            "addaa7f8-14bb-4c91-8d5a-aa7f0bf8a721",
+            "c2bef055-1f0f-4cbb-83df-7aeae50f8c08"
+>>>>>>> master
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+<<<<<<< HEAD
           "duration": 1552,
+=======
+          "duration": 156,
+>>>>>>> master
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -192,7 +269,11 @@
   ],
   "meta": {
     "mocha": {
+<<<<<<< HEAD
       "version": "9.0.0"
+=======
+      "version": "9.1.1"
+>>>>>>> master
     },
     "mochawesome": {
       "options": {
@@ -208,7 +289,11 @@
     },
     "marge": {
       "options": {
+<<<<<<< HEAD
         "reportDir": "C:/Users/Lungowe/OneDrive/desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+=======
+        "reportDir": "C:/Users/Public/Documents/DufunaClasses/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+>>>>>>> master
         "reportFilename": "logfile",
         "quiet": "true"
       },
