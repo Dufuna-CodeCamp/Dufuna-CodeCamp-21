@@ -1,0 +1,4 @@
+hello world!
+I am onuoha collins a software developer for dufuna bootcamp
+I am actually a frontend web developer but decided to go fullstack to be working both frontend and backend.
+What i want to Achieve in this program is to be a skill fullstack developer.
