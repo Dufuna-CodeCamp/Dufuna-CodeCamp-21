@@ -76,9 +76,9 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 44,
+              "duration": 15,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
@@ -116,7 +116,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.1.1"
+      "version": "9.0.2"
     },
     "mochawesome": {
       "options": {
