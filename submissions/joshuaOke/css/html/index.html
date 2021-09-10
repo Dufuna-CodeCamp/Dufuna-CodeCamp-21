@@ -13,12 +13,14 @@
     <main class="container">
         <!-- The Header and nav bar -->
         <header>
-            <span style="color: black; font-size: 20px;">Food</span><span
-                style="color: #AD4C4C; font-size: 20px;">Bag</span>
+            <p>
+                <span style="color: black;">Food</span><span
+                style="color: #AD4C4C;">Bag</span>
+            </p>
             <nav>
-                <li><a href="">Cart</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="" id="signup">Signup</a></li>
+                <a href="">Cart</a>
+                <a href="">Login</a>
+                <a href="" id="signup">Sign up</a>
             </nav>
         </header>
         <!-- The foodbag massive display -->
@@ -29,8 +31,13 @@
         <!-- Enter Location in delivery address -->
         <div class="box">
             <h3 class="black">Where are you?</h3>
-            <input type="text" name="address" id="address" placeholder="Enter your delivery address">
-            <!-- </div> -->
+            <input list="location" name="address" id="address" placeholder="Enter your delivery address">
+            <datalist id="location">
+                <option value="Bodija market">
+                <option value="Idumota market">
+                <option value="Alaba market">
+            </datalist>
+            
             <!-- Pick an Interest section -->
             <h3 class="black">Pick an interest</h3>
             <div class="interests">

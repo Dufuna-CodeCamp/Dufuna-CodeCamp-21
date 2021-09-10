@@ -32,12 +32,10 @@ header {
     font-weight: 400;
     margin-top: 50px;
 }
-nav {
-    float: right;
-}
-nav li {
+nav a {
     display: inline-block;
     margin-left: 50px;
+    font-size: 16px;
 }
 #signup {
     border: 1px solid #ad4c4c;
@@ -74,14 +72,23 @@ nav li {
     color: #696969;
     padding: 15px 30px;
     height: 60px;
+    margin-bottom: 42px;
 }
+select {
+    width: 100px;
+    background: url("../assets/keyboard_arrow_down.svg") no-repeat right white;
+    display: inline-block;
+    position: relative;
+    appearance:none;
+  }
 /* 
     Here the Interests CSS values 
 */
 .interests,
 section,
 footer div:last-of-type,
-footer div:first-of-type p  {
+footer div:first-of-type p,
+header  {
     display: flex;
     justify-content: space-between;
 }
@@ -124,12 +131,13 @@ hr {
     font-size: 30px;
     line-height: 45px;
     color: #4e4d4d;
+    margin-bottom: 80px;
 }
 #service div {
-    padding: 24px 0 24px 30px;
     align-items: center;
     color: #a5a5a5;
     text-align: center;
+    width: 300px;
 }
 #service div h3 {
     font-weight: 500;
