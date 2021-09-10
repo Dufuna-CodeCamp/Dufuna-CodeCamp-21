@@ -9,10 +9,8 @@
 }
 .container {
     max-width: 1240px;
-    /* height: 1878px; */
     margin: auto;
-    /* padding: 0 50px; */
-    color:#696969;
+    color: #696969;
 }
 .box {
     width: 100%;
@@ -42,8 +40,8 @@ nav li {
     margin-left: 50px;
 }
 #signup {
-    border: 1px solid #AD4C4C;
-    color: #AD4C4C;
+    border: 1px solid #ad4c4c;
+    color: #ad4c4c;
     padding: 8px;
     border-radius: 5px;
 }
@@ -53,14 +51,12 @@ nav li {
 .head {
     width: 100%;
     clear: both;
-    /* height: auto; */
     text-align: center;
-    /* padding-top: 190px; */
 }
-.head h1{
+.head h1 {
     font-weight: 600;
     font-size: 40px;
-    color: #4E4D4D;
+    color: #4e4d4d;
 }
 .head p {
     font-size: 20px;
@@ -73,9 +69,8 @@ nav li {
 }
 #address {
     width: 100%;
-    border: 1px solid #C4C4C4;
+    border: 1px solid #c4c4c4;
     border-radius: 5px;
-    margin-bottom: 10px;
     color: #696969;
     padding: 15px 30px;
     height: 60px;
@@ -83,22 +78,24 @@ nav li {
 /* 
     Here the Interests CSS values 
 */
+.interests,
+section,
+footer div:last-of-type,
+footer div:first-of-type p  {
+    display: flex;
+    justify-content: space-between;
+}
 .interests div {
     width: 295px;
     height: 169px;
     box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
-    float: left;
-    margin-right: 20px;
     padding: 24px 0 24px 30px;
     align-items: center;
-    margin-left: auto;
-    color: #A5A5A5;
+    color: #a5a5a5;
 }
-.interests div:last-child {
+.interests div:last-child,
+#service div:last-child {
     margin-right: 0;
-}
-.interests div:first-child {
-    margin-left: 0;
 }
 .interests div h3 {
     font-weight: 500;
@@ -108,13 +105,13 @@ nav li {
     font-weight: 400;
     font-size: 14px;
 }
-.interests{
+.interests {
     clear: both;
     height: 169px;
-} 
+}
 
 hr {
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
 }
 /* 
 * Services styling
@@ -126,15 +123,39 @@ hr {
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
-    color: #4E4D4D;
+    color: #4e4d4d;
 }
 #service div {
-    /* height: 169px; */
-    float: left;
-    /* margin-right: 20px; */
     padding: 24px 0 24px 30px;
     align-items: center;
-    /* margin-left: auto; */
-    color: #A5A5A5;
-    max-width: 33%;
+    color: #a5a5a5;
+    text-align: center;
+}
+#service div h3 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #696969;
+}
+#service div p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #a5a5a5;
+}
+/* 
+*footer
+ */
+ footer {
+     font-weight: 400;
+     font-size: 18px;
+ }
+footer div:first-of-type {
+    width: 110px;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 45px;
+}
+footer div:first-of-type h4 {
+    margin-bottom: 30px;
 }
