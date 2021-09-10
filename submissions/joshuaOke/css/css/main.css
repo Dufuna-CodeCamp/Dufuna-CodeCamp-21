@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+.container {
+    max-width: 1240px;
+    /* height: 1878px; */
+    margin: auto;
+    /* padding: 0 50px; */
+    color:#696969;
+}
+.box {
+    width: 100%;
+    height: max-content;
+    clear: both;
+    margin: 80px 0;
+}
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* 
+*   Header styles here
+*/
+header {
+    width: 100%;
+    font-weight: 400;
+    margin-top: 50px;
+}
+nav {
+    float: right;
+}
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+}
+#signup {
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
+    padding: 8px;
+    border-radius: 5px;
+}
+/* 
+* Here goes the styling for the FoodBag div and the location search
+*/
+.head {
+    width: 100%;
+    clear: both;
+    /* height: auto; */
+    text-align: center;
+    /* padding-top: 190px; */
+}
+.head h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: #4E4D4D;
+}
+.head p {
+    font-size: 20px;
+}
+.black {
+    color: #000;
+    font-weight: 500;
+    font-size: 20;
+    margin-bottom: 20px;
+}
+#address {
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #696969;
+    padding: 15px 30px;
+    height: 60px;
+}
+/* 
+    Here the Interests CSS values 
+*/
+.interests div {
+    width: 295px;
+    height: 169px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-right: 20px;
+    padding: 24px 0 24px 30px;
+    align-items: center;
+    margin-left: auto;
+    color: #A5A5A5;
+}
+.interests div:last-child {
+    margin-right: 0;
+}
+.interests div:first-child {
+    margin-left: 0;
+}
+.interests div h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.interests div p {
+    font-weight: 400;
+    font-size: 14px;
+}
+.interests{
+    clear: both;
+    height: 169px;
+} 
+
+hr {
+    border: 1px solid #F2F2F2;
+}
+/* 
+* Services styling
+*/
+#service h2 {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #4E4D4D;
+}
+#service div {
+    /* height: 169px; */
+    float: left;
+    /* margin-right: 20px; */
+    padding: 24px 0 24px 30px;
+    align-items: center;
+    /* margin-left: auto; */
+    color: #A5A5A5;
+    max-width: 33%;
+}
