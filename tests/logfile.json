@@ -33,8 +33,8 @@
           "file": "\\vendors.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
               "duration": 1705,
               "state": null,
@@ -43,7 +43,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
               "uuid": "b106b8fa-5993-4edf-b045-ad398dab7174",
               "parentUUID": "cacd5f1d-c990-4353-9681-31e4d301ed41",
@@ -53,8 +53,8 @@
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -63,7 +63,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
               "uuid": "06ca7495-2db8-4a82-ae67-a0788f87df9d",
               "parentUUID": "cacd5f1d-c990-4353-9681-31e4d301ed41",
@@ -73,17 +73,17 @@
           ],
           "tests": [
             {
-              "title": "test case: FoodBag Logo is present",
-              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
               "duration": 52,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
               "uuid": "ed79b41a-c64f-412c-983f-521b195b381e",
               "parentUUID": "cacd5f1d-c990-4353-9681-31e4d301ed41",
@@ -249,7 +249,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.1.1"
+      "version": "9.0.3"
     },
     "mochawesome": {
       "options": {
