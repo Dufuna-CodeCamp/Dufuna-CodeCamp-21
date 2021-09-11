@@ -22,6 +22,7 @@ li,
 a {
     list-style-type: none;
     text-decoration: none;
+    color: #696969;
 }
 
 /* 
@@ -37,11 +38,12 @@ nav a {
     margin-left: 50px;
     font-size: 16px;
 }
-#signup {
+#signup, .button-brown {
     border: 1px solid #ad4c4c;
     color: #ad4c4c;
     padding: 8px;
     border-radius: 5px;
+    font-size: 16px;
 }
 /* 
 * Here goes the styling for the FoodBag div and the location search
@@ -88,7 +90,8 @@ select {
 section,
 footer div:last-of-type,
 footer div:first-of-type p,
-header  {
+header,
+.vendor-head, .item-list, .info  {
     display: flex;
     justify-content: space-between;
 }
