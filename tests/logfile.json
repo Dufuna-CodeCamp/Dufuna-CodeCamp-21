@@ -4,12 +4,21 @@
     "tests": 5,
     "passes": 4,
     "pending": 0,
+<<<<<<< HEAD
     "failures": 1,
     "start": "2021-09-13T17:31:06.052Z",
     "end": "2021-09-13T17:31:10.071Z",
     "duration": 4019,
     "testsRegistered": 5,
     "passPercent": 80,
+=======
+    "failures": 0,
+    "start": "2021-09-13T17:12:52.371Z",
+    "end": "2021-09-13T17:12:56.101Z",
+    "duration": 3730,
+    "testsRegistered": 1,
+    "passPercent": 100,
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +27,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "6f1ea256-c29c-4100-8fe1-a5e9ac95dcf6",
+=======
+      "uuid": "c8a1c45c-a5ce-4c1d-ad9f-e3fe7ed9908c",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +40,27 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "343cae5f-f9df-4ce4-836c-4411a9266ddc",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\CTDO\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
+=======
+          "uuid": "c8de41ae-9dba-46c8-bc85-a8773e55afe5",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "C:\\Users\\Wale\\Documents\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+          "file": "\\navigation_tasks.js",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 1,
+=======
+              "duration": 3675,
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +69,13 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
               "err": {},
+<<<<<<< HEAD
               "uuid": "295e12f3-640a-4f88-8e9d-8f2299e0d11f",
               "parentUUID": "343cae5f-f9df-4ce4-836c-4411a9266ddc",
+=======
+              "uuid": "0431af98-a176-4442-a5df-c90ed8303427",
+              "parentUUID": "c8de41ae-9dba-46c8-bc85-a8773e55afe5",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +94,13 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+<<<<<<< HEAD
               "uuid": "9e96b320-7430-4cb3-807a-40857f4d97c0",
               "parentUUID": "343cae5f-f9df-4ce4-836c-4411a9266ddc",
+=======
+              "uuid": "2838d96c-d7b5-4b64-9e05-a99b1da3ac34",
+              "parentUUID": "c8de41ae-9dba-46c8-bc85-a8773e55afe5",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
               "isHook": true,
               "skipped": false
             }
@@ -98,9 +132,13 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 1458,
+=======
+              "duration": 34,
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
@@ -125,6 +163,7 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "dacab9df-57ac-4729-8265-e6d38a400d5e",
               "parentUUID": "343cae5f-f9df-4ce4-836c-4411a9266ddc",
               "isHook": false,
@@ -163,12 +202,17 @@
               "err": {},
               "uuid": "1d42a7af-4368-4e92-abff-f2fe7635f3ad",
               "parentUUID": "343cae5f-f9df-4ce4-836c-4411a9266ddc",
+=======
+              "uuid": "4479a089-a780-487a-affe-72101756e571",
+              "parentUUID": "c8de41ae-9dba-46c8-bc85-a8773e55afe5",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+<<<<<<< HEAD
             "5f2f93aa-29c7-4533-9c94-3bcb810aab91",
             "dacab9df-57ac-4729-8265-e6d38a400d5e",
             "2486f969-8897-476e-80df-2ca90c86915a",
@@ -176,10 +220,17 @@
           ],
           "failures": [
             "f1f7ab98-47eb-4599-a4c2-39e3cc1270e7"
+=======
+            "4479a089-a780-487a-affe-72101756e571"
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
           ],
           "pending": [],
           "skipped": [],
+<<<<<<< HEAD
           "duration": 3798,
+=======
+          "duration": 34,
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -197,7 +248,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.0.3"
+      "version": "9.1.1"
     },
     "mochawesome": {
       "options": {
@@ -213,7 +264,11 @@
     },
     "marge": {
       "options": {
+<<<<<<< HEAD
         "reportDir": "C:/Users/CTDO/desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+=======
+        "reportDir": "C:/Users/Wale/Documents/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
         "reportFilename": "logfile",
         "quiet": "true"
       },
