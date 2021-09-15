@@ -389,16 +389,24 @@
               "fail": false,
               "pending": false,
               "context": null,
+<<<<<<< HEAD
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
               "uuid": "be8e8494-feef-41c9-988d-e5df6699cd53",
               "parentUUID": "9051a2c0-0f8a-4210-ba8e-f85b1fe36e3d",
+=======
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "err": {},
+              "uuid": "4479a089-a780-487a-affe-72101756e571",
+              "parentUUID": "c8de41ae-9dba-46c8-bc85-a8773e55afe5",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+<<<<<<< HEAD
             "438800f1-04d4-4cf7-b27a-1c0ba5134dff",
             "d478be54-e040-484f-9284-fb8bed591b81",
             "ec78ab13-7711-4002-a06f-25b02c8f1b1e",
@@ -417,11 +425,18 @@
             "de332060-90c8-496c-b561-ef2859028cb1",
             "b852fbf9-cba4-4254-9a41-d5b884d786da",
             "be8e8494-feef-41c9-988d-e5df6699cd53"
+=======
+            "4479a089-a780-487a-affe-72101756e571"
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+<<<<<<< HEAD
           "duration": 1139,
+=======
+          "duration": 34,
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -455,7 +470,11 @@
     },
     "marge": {
       "options": {
+<<<<<<< HEAD
         "reportDir": "C:/Users/user/Desktop/Dufuna-CodeCamp-21/tests/landing_page/../..//tests/",
+=======
+        "reportDir": "C:/Users/Wale/Documents/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+>>>>>>> 9fa17d7281db2375976f4a0f2535e4a03cdd0209
         "reportFilename": "logfile",
         "quiet": "true"
       },
