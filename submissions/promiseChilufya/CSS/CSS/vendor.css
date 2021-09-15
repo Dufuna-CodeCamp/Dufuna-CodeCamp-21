@@ -151,7 +151,7 @@ nav {
 } 
 @media screen and (max-width: 600px) {
     .container {
-        padding: 12px;
+        padding: 13px;
     }
     
     header {
@@ -161,7 +161,7 @@ nav {
     }
     
     header .logo {
-        font-size: 25px;
+        font-size: 24px;
     }
     
     .nav-links ul li {
@@ -255,7 +255,7 @@ nav {
         }
     
         .select-page p:last-child {
-            margin-right: 5px;
+            margin-right: 8px;
         }
     
         .select-page a {
