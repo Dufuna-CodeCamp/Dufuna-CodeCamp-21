@@ -113,6 +113,7 @@
   border-radius: 5px;
   margin-top: 20px;
   outline: none;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -247,6 +248,7 @@ text-align: center; */
 }
 
 .contact-session {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   /* text-align: center; */
