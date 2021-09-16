@@ -1,2 +1,3 @@
-Hello World!.
-My name is Emmanuel, I have just signed up with DufunaCodeCamp and I'm currently learning Full Stack Development.
+Hello World!. 
+
+My name is Emmanuel and I'm learning Software Development currently with Dufuna. I hope to build on my skills and envisioned a great learning experience.
