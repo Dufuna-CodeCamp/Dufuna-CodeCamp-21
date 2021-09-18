@@ -19,6 +19,14 @@ a {
     text-decoration: none;
     color: #696969;
 }
+.head {
+    width: 100%;
+    clear: both;
+}
+.head h1 {
+    font-weight: 600;
+    color: #4e4d4d;
+}
 
 @media (max-width: 576px) {
     * {
@@ -61,14 +69,10 @@ a {
 * Here goes the styling for the FoodBag div and the location search
 */
     .head {
-        width: 100%;
-        clear: both;
         text-align: left;
     }
     .head h1 {
-        font-weight: 600;
         font-size: 20px;
-        color: #4e4d4d;
     }
     .head p {
         font-size: 12px;
