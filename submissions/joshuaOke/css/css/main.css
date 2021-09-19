@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+.container {
+    max-width: 1240px;
+    margin: auto;
+    color: #696969;
+}
+.box {
+    width: 100%;
+    height: max-content;
+    clear: both;
+    margin: 80px 0;
+}
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #696969;
+}
+
+/* 
+*   Header styles here
+*/
+header {
+    width: 100%;
+    font-weight: 400;
+    margin-top: 50px;
+}
+nav a {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 16px;
+}
+#signup, .button-brown {
+    border: 1px solid #ad4c4c;
+    color: #ad4c4c;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* 
+* Here goes the styling for the FoodBag div and the location search
+*/
+.head {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+.head h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #4e4d4d;
+}
+.head p {
+    font-size: 20px;
+}
+.black {
+    color: #000;
+    font-weight: 500;
+    font-size: 20;
+    margin-bottom: 20px;
+}
+#address {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    color: #696969;
+    padding: 15px 30px;
+    height: 60px;
+    margin-bottom: 42px;
+}
+select {
+    width: 100px;
+    background: url("../assets/keyboard_arrow_down.svg") no-repeat right white;
+    display: inline-block;
+    position: relative;
+    appearance:none;
+  }
+/* 
+    Here the Interests CSS values 
+*/
+.interests,
+section,
+footer div:last-of-type,
+footer div:first-of-type p,
+header,
+.vendor-head, .item-list, .info  {
+    display: flex;
+    justify-content: space-between;
+}
+.interests div {
+    width: 295px;
+    height: 169px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 24px 0 24px 30px;
+    align-items: center;
+    color: #a5a5a5;
+}
+.interests div:last-child,
+#service div:last-child {
+    margin-right: 0;
+}
+.interests div h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.interests div p {
+    font-weight: 400;
+    font-size: 14px;
+}
+.interests {
+    clear: both;
+    height: 169px;
+}
+
+hr {
+    border: 1px solid #f2f2f2;
+}
+/* 
+* Services styling
+*/
+#service h2 {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #4e4d4d;
+    margin-bottom: 80px;
+}
+#service div {
+    align-items: center;
+    color: #a5a5a5;
+    text-align: center;
+    width: 300px;
+}
+#service div h3 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #696969;
+}
+#service div p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #a5a5a5;
+}
+/* 
+*footer
+ */
+ footer {
+     font-weight: 400;
+     font-size: 18px;
+ }
+footer div:first-of-type {
+    width: 110px;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 45px;
+}
+footer div:first-of-type h4 {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,4 @@
+Hello World
+I am Ifeoluwa Adeyemi
+I expect my career to take a different direction 
+I expect to be proficient in frontend aspect of web development after this
