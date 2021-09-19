@@ -35,8 +35,8 @@ check_database_folder_existence() {
     then
         database_folder_exists=0
         echo ""
-        echo -e "${BOLD}Checking the programmingLanguages folder ...${NONE}"
-        echo -e "${RED}Your folder should be named ${BOLD}\"programmingLanguages\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/programmingLanguages\"${NONE}${RED})${NONE}"
+        echo -e "${BOLD}Checking the database folder ...${NONE}"
+        echo -e "${RED}Your folder should be named ${BOLD}\"database\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/programmingLanguages\"${NONE}${RED})${NONE}"
     else
         database_folder_exists=1
     fi
@@ -131,7 +131,7 @@ check_file_content4() {
 check_file_content5() {    
     for currentFile in $path_to_database_folder/*
     do
-        if grep "food_id INT NOT NULL"  $currentFile 
+        if grep "food_id INT NOT NULL"  $currentFile && grep "type INT NOT NULL" $currentFile
         then
             content_exists=1
             break     
