@@ -80,6 +80,11 @@
   justify-content: space-between;
   margin-top: 26px;
 }
+.chicken-session {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
 .home-vendor {
   padding-top: 92px;
   font-family: Poppins;
@@ -118,6 +123,11 @@
   color: #ad4c4c;
 }
 
+.chicken-session a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ad4c4c;
+}
 .kfc-vendors {
   display: flex;
   justify-content: space-between;
@@ -244,14 +254,148 @@ hr {
     cursor: pointer;
   }
   .kfc-vendors {
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
     margin-top: 26px;
   }
 
-.kfc-vendors img{ 
-width: 350px;
-margin: auto;
+  .kfc-vendors img {
+    width: 350px;
+    margin: auto;
+    margin-top: 33px;
+  }
+
+  .kfc-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .kfc-session {
+    display: block;
+  }
+
+  .chicken-session {
+    display: block;
+  }
+  .chicken-session a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ad4c4c;
+    position: absolute;
+    top: 2650px;
+    z-index: 1;
+  }
+  .kfc-session a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 1400px;
+    z-index: 1;
+  }
+
+  .yamicilious-section {
+    display: none;
+  }
+  .crunchy-wings {
+    display: none;
+  }
+
+  .chicken-republic {
+    padding-bottom: 100px;
+  }
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .foodbag-page {
+    width: 92%;
+    margin: auto;
+    /* padding-top: 40px; */
+  }
+
+  .foodbag-session {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+  }
+
+  .list {
+    padding-left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .foodbag-session p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .food-bag {
+    font-size: 20px;
+    color: #ad4c4c;
+  }
+
+  .sign-up {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ad4c4c;
+    padding-left: 10px;
+    padding-top: 4px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 74px;
+    height: 32px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .kfc-vendors {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    margin-top: 26px;
+  }
+
+  .kfc-vendors img {
+    width: 350px;
+    margin: auto;
+    margin-top: 33px;
+  }
+
+  .kfc-details {
+    
+  }
+  .kfc-session {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: block; */
+  }
+
+  .kfc-session a{
+    color:#ad4c4c;
+    cursor: pointer;
+  }
 
 }

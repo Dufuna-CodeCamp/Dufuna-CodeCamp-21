@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
-@media (max-width: 600px) {
+@media screen and(max-width: 600px) {
   .foodbag-page {
     width: 92%;
     margin: auto;
