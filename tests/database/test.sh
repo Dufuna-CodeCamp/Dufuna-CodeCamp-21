@@ -36,7 +36,7 @@ check_database_folder_existence() {
         database_folder_exists=0
         echo ""
         echo -e "${BOLD}Checking the database folder ...${NONE}"
-        echo -e "${RED}Your folder should be named ${BOLD}\"database\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/programmingLanguages\"${NONE}${RED})${NONE}"
+        echo -e "${RED}Your folder should be named ${BOLD}\"database\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
     else
         database_folder_exists=1
     fi
