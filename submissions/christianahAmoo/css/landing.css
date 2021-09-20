@@ -50,7 +50,6 @@
   .nav-links {
     color: black;
     text-decoration: none;
-    /* padding: 0.5rem 1rem; */
   }
   
   .nav-links:hover {
@@ -58,14 +57,6 @@
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
-  
-  /* .fa-bars {
-    color: black;
-    margin-top: 23px;
-  }
-  .fa-times {
-    color: black;
-  } */
   
   .nav-links-mobile {
     display: none;
@@ -313,6 +304,6 @@
     justify-content: space-between;
     color: #696969;
   }
-  
-  
+
+
   
