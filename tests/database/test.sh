@@ -101,7 +101,7 @@ check_file_content2() {
 check_file_content3() {    
     for currentFile in $path_to_database_folder/*
     do
-        if grep  "id INT NOT NULL AUTO_INCREMENT"  $currentFile && grep "name VARCHAR NOT NULL" $currentFile
+        if grep  "id INT NOT NULL AUTO_INCREMENT"  $currentFile && grep "name VARCHAR" $currentFile
         then
             content_exists=1
             break     
@@ -116,7 +116,7 @@ check_file_content3() {
 check_file_content4() {    
     for currentFile in $path_to_database_folder/*
     do
-        if grep "admin_id INT NOT NULL"  $currentFile && grep "password VARCHAR NOT NULL" $currentFile
+        if grep "admin_id INT NOT NULL"  $currentFile && grep "password VARCHAR" $currentFile
         then
             content_exists=1
             break     
