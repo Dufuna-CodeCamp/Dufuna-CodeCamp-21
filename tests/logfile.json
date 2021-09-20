@@ -1,5 +1,6 @@
 {
   "stats": {
+
     "suites": 1,
     "tests": 18,
     "passes": 18,
@@ -461,5 +462,11 @@
       },
       "version": "5.2.0"
     }
+
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "kivumbiGeorge"
+
   }
 }
