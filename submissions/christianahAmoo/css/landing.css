@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* navbar */
+.navbar {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 86%;
+    margin: auto;
+  }
+  
+  .navbar-logo {
+    font-family: Poppins;
+    color: black;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 19px;
+    margin-top: 45px;
+    font-weight: 600;
+  }
+  .navbar-logo span {
+    color: #ad4c4c;
+  }
+  
+  .fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .nav-menu {
+    display: flex;
+    font-family: Poppins;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    font-size: 16px;
+  }
+  
+  .nav-links {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-links:hover {
+    background-color: #ad4c4c;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    color: black;
+    margin-top: 23px;
+  }
+  .sign-in-btn {
+    width: 92px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #ad4c4c;
+    font-size: 16px;
+  }
+  /* landing page */
+  
+.foodbag-section {
+    width: 86%;
+    margin: auto;
+  }
+  .foodbag{
+    margin-top: 127px;
+  }
+  .foodbag-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #4e4d4d;
+  }
+  .foodbag-header-p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #696969;
+    margin-top: -32px;
+  }
+  .where-are-you-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 62px;
+  }
+  .enter-your-address input {
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  ::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #696969;
+    padding-left: 10px;
+  }
+  .pick-an-interest-section h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 40px;
+  }
+  .pick-an-interest-card {
+    margin-top: -10px;
+  }
+  .pick-an-interest-flex {
+    display: flex;
+  }
+  .fast-foods {
+    width: 30%;
+    height: 169px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  }
+  .fast-foods-main {
+    padding: 20px 20px;
+  }
+  .fast-food-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a5a5a5;
+    margin: 0;
+    padding: 0;
+  }
+  .fast-food-p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #a5a5a5;
+  }
+  .fast-food-title-colored {
+    color: #ad4c4c;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+    padding: 0;
+  }
+  .other-menus {
+    width: 30%;
+    height: 169px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+  }
+  .how-we-serve-section h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #4e4d4d;
+    margin-top: 160px;
+  }
+  .how-we-serve-section {
+    width: 100%;
+    margin: auto;
+  }
+  .how-we-serve-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+  .where-you-are {
+    display: flex;
+    flex-direction: column;
+  }
+  .other-services {
+    display: flex;
+    flex-direction: column;
+  }
+  .where-you-are h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    color: #696969;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+  }
+  .where-you-are p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #a5a5a5;
+    text-align: center;
+  }
+  .other-services h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    color: #696969;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .other-services p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #a5a5a5;
+    text-align: center;
+  }
+  .other-services {
+    margin-left: 120px;
+  }
+  .footer-section {
+    margin-top: 120px;
+  }
+  /* footer-section */
+  .footer-main  {
+    padding: 60px 0px;
+  }
+  .footer-header {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+  }
+  .font-awesome-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .twitter-icon {
+    margin-left: 10px;
+    color: #ad4c4c;
+  }
+  .youtube-icon {
+    margin-left: 10px;
+    color: #ad4c4c;
+  }
+  .facebook-icon {
+    margin-left: 10px;
+    color: #ad4c4c;
+  }
+  .termsandcondition {
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+    color: #696969;
+  }
+
+
+  
