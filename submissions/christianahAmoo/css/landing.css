@@ -305,5 +305,230 @@
     color: #696969;
   }
 
+  @media screen and (max-width: 476px){
+    .nav-menu {
+      grid-gap: 20px;
+    }
+    .nav-item {
+      margin-right: 10px;
+    }
+    .foodbag-title {
+      font-size: 20px;
+      text-align: left;
+    }
+    .foodbag-header-p {
+      font-size: 12px;
+      text-align: left;
+    }
+    .where-are-you-text {
+      font-size: 12px;
+    }
+  
+    ::placeholder {
+      font-size: 12px;
+    }
+    .pick-an-interest-flex {
+      display: block;
+    }
+    .how-we-serve-flex {
+      display: block;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+    }
+    .how-we-serve-section h5 {
+      font-size: 20px;
+    }
+    .where-you-are h6 {
+      font-size: 15px;
+    }
+    .where-you-are p {
+      font-size: 10px;
+    }
+    .other-services h6 {
+      font-size: 15px;
+    }
+    .other-services p {
+      font-size: 10px;
+    }
+    .fast-foods {
+      width: 100%;
+      height: 169px;
+      background: #ffffff;
+      box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    }
+    .other-menus {
+      width: 100%;
+      height: 169px;
+      background: #ffffff;
+      box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    .other-services {
+      margin-left: 0px;
+    }
+    .termsandcondition {
+      display: block;
+    text-align: center;
+    }
+    .footer-section {
+      margin-top: 60px;
+    }
+  
+  }
+
+  @media screen and (min-width: 477px) and (max-width: 768px) {
+    .nav-menu {
+      display: flex;
+      font-family: Poppins;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 50px;
+      list-style: none;
+      text-align: center;
+      justify-content: end;
+    }
+    
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      font-size: 16px;
+    }
+    .nav-menu {
+      grid-gap: 20px;
+    }
+    .nav-item {
+      margin-right: 38px;
+    }
+    .pick-an-interest-flex {
+      display: block;
+    }
+    .how-we-serve-flex {
+      display: block;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+    }
+    .fast-foods {
+      width: 100%;
+      height: 169px;
+      background: #ffffff;
+      box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    }
+    .other-menus {
+      width: 100%;
+      height: 169px;
+      background: #ffffff;
+      box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    .other-services {
+      margin-left: 0px;
+    }
+    .termsandcondition {
+      display: block;
+    text-align: center;
+    }
+    .footer-section {
+      margin-top: 60px;
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1300px) {
+    .navbar {
+      background: #fff;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      width: 86%;
+      margin: auto;
+    }
+    .nav-menu {
+      display: flex;
+      font-family: Poppins;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 50px;
+      list-style: none;
+      text-align: center;
+      justify-content: space-around;
+    }
+    .nav-item {
+      margin-right: 48px;
+    }
+    .fast-foods {
+      width: 100%;
+      height: 209px;
+      background: #ffffff;
+      box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    }
+    .other-menus {
+      width: 100%;
+      height: 209px;
+      background: #ffffff;
+      box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+      margin-left: 20px;
+    }
+    .how-we-serve-section {
+    width: 100%;
+    margin: auto;
+  }
+  .where-you-are {
+    width:30%;
+  }
+  .other-services {
+    width: 30%;
+  }
+  .how-we-serve-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+  .other-services {
+    margin-left: 0px;
+  }
+  .where-you-are h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 37px;
+    color: #696969;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+  }
+  .where-you-are p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a5a5a5;
+    text-align: center;
+  }
+  .other-services h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 37px;
+    color: #696969;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+  }
+  .other-services p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a5a5a5;
+    text-align: center;
+  }
+  .footer-section {
+    margin-top: 80px;
+  }
+  }
+
 
   
