@@ -8,12 +8,27 @@
     <body>
         <h1>Contact Form</h1>
         <form action="#" method="POST" enctype="multipart/form-data">
-            <label for="firstname">First Name</label>
-            <input type="firstname" name="firstname" id="firstname"><br>
-            
-            <p><label for="lastname">Last Name</label>
-                <input type="lastname" name="lastname" id="lastname"><br>
-            </p>
+            <label for="firstname">First Name</label> <br>
+            <input type="text" name="firstname" id="firstname"/> <br><br>
+            <label for="lastname">Last Name</label> <br>
+            <input type="text" name="lastname" id="lastname"/> <br><br>
+            <label for="address">Address</label> <br>
+            <input type="text" name="address" id="address"/> <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"/> <br><br>
+            <label for="male">Gender</label> <br>
+            <input type="radio" name="gender" value="male" id="male"/> 
+            <label for="male">Male</label> <br>
+            <input type="radio" name="gender" value="female" id="female"/> 
+            <label for="female">Female</label> <br>
+            <label for="description1">How Would you like to be contacted?</label><br>
+            <input type="checkbox" name="decription1" id="description1" value="description1"/>
+            <label for="description1">By Phone</label><br>
+            <input type="checkbox" name="description2" id="description2" value="description2"/>
+            <label for="description3">E-mail</label><br>
+            <input type="checkbox" name="description3" value="description3" id="description3"/>
+            <label for="description4">Home Address</label><br>
+            <input type="submit">
         </form>
     </body>
 </html>    
