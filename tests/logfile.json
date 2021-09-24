@@ -1,5 +1,11 @@
 {
   "stats": {
+<<<<<<< HEAD
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "shirleyAbaegbu"
+=======
     "suites": 1,
     "tests": 0,
     "passes": 0,
@@ -142,5 +148,6 @@
       },
       "version": "5.2.0"
     }
+>>>>>>> aa12d6638188cfbdc120b36b6d356a70e28b828a
   }
 }
