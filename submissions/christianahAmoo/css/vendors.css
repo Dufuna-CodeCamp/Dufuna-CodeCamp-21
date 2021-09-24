@@ -167,5 +167,216 @@ body {
   .to-add-padding {
     margin-bottom: 70px;
   }
+  .footer-main  {
+    padding: 60px 0px;
+  }
+  .footer-header {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+  }
+  .font-awesome-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .twitter-icon {
+    margin-left: 10px;
+    color: #ad4c4c;
+  }
+  .youtube-icon {
+    margin-left: 10px;
+    color: #ad4c4c;
+  }
+  .facebook-icon {
+    margin-left: 10px;
+    color: #ad4c4c;
+  }
+  .termsandcondition {
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+    color: #696969;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .nav-menu {
+      grid-gap: 20px;
+    }
+    .nav-item {
+      margin-right: 10px;
+    }
+    .burger-menu-flex {
+      display: block;
+      justify-content: space-between;
+    }
+     .menu-name {
+      display: flex;
+      width: 85%;
+      margin: auto 10px;
+    }
+    .add-to-cart {
+     margin-bottom: 10px;
+    }
+    .termsandcondition {
+      display: block;
+    text-align: center;
+    }
+    .footer-section {
+      margin-top: 60px;
+    }
+  }
+  @media only screen and (min-width: 421px) and (max-width: 620px) {
+    .nav-menu {
+      display: flex;
+      font-family: Poppins;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 50px;
+      list-style: none;
+      text-align: center;
+      justify-content: end;
+    }
+    
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      font-size: 16px;
+    }
+    .nav-menu {
+      grid-gap: 20px;
+    }
+    .nav-item {
+      margin-right: 38px;
+    }
+    .burger-menu-flex {
+     display: block;
+      justify-content: space-between;
+    }
+    .burger-menu-main {
+      width: 60%;
+      margin: auto;
+      
+    }
+    .menu-name {
+      display: flex;
+      width: 85%;
+      margin: auto 10px;
+    }
+    .add-to-cart {
+     margin-bottom: 10px;
+    }
+    .termsandcondition {
+      display: block;
+    text-align: center;
+    }
+    .footer-section {
+      margin-top: 60px;
+    }
+  }
+  @media only screen and (min-width: 621px) and (max-width: 798px) {
+    .nav-menu {
+      display: flex;
+      font-family: Poppins;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 50px;
+      list-style: none;
+      text-align: center;
+      justify-content: end;
+    }
+    
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      font-size: 16px;
+    }
+    .nav-menu {
+      grid-gap: 20px;
+    }
+    .nav-item {
+      margin-right: 38px;
+    }
+    
+    .burger-menu-flex {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .burger-menu-main {
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+    }
+    /* .menu-name {
+      display: block;
+    } */
+    .menu-name {
+      display: flex;
+      width: 80%;
+      margin: auto 10px;
+    }
+    .add-to-cart {
+     margin-bottom: 10px;
+    }
+    .footer-section {
+      margin-top: 80px;
+    }
+  }
   
+  @media only screen and (min-width: 799px) and (max-width: 1300px) {
+    .nav-menu {
+      display: flex;
+      font-family: Poppins;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 50px;
+      list-style: none;
+      text-align: center;
+      justify-content: end;
+    }
+    
+    .nav-item {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      font-size: 16px;
+    }
+    .nav-menu {
+      grid-gap: 20px;
+    }
+    .nav-item {
+      margin-right: 38px;
+    }
+    
+    .burger-menu-flex {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .burger-menu-main {
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+    }
+    /* .menu-name {
+      display: block;
+    } */
+    .menu-name {
+      display: flex;
+      width: 48%;
+      margin: auto 10px;
+    }
+    .add-to-cart {
+     margin-bottom: 10px;
+    }
+    .footer-section {
+      margin-top: 80px;
+    }
+  }
   
