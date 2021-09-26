@@ -7,24 +7,24 @@
     "owner": "shirleyAbaegbu"
 =======
     "suites": 1,
-    "tests": 0,
-    "passes": 0,
+    "tests": 5,
+    "passes": 4,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-09-21T11:28:23.001Z",
-    "end": "2021-09-21T11:31:23.022Z",
-    "duration": 180021,
-    "testsRegistered": 1,
-    "passPercent": 0,
+    "failures": 1,
+    "start": "2021-09-23T06:43:42.989Z",
+    "end": "2021-09-23T06:43:47.625Z",
+    "duration": 4636,
+    "testsRegistered": 5,
+    "passPercent": 80,
     "pendingPercent": 0,
-    "other": 1,
-    "hasOther": true,
-    "skipped": 1,
-    "hasSkipped": true
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
   },
   "results": [
     {
-      "uuid": "5aea7af1-4950-4721-ae55-03917aac56c2",
+      "uuid": "3663a6be-1f8f-4868-af82-f8df0da3a190",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -33,85 +33,162 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7a3134c8-95fa-4d8f-a10d-af112bec9f25",
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\Users\\Sally\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
+          "title": "Testing Form Task",
+          "fullFile": "C:\\Users\\CTDO\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
+          "file": "\\html_form.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver for \"test case: assert that there are 2 links on this page\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver for \"test case: assert that there are 2 links on this page\"",
-              "timedOut": true,
-              "duration": 180014,
-              "state": "failed",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "timedOut": false,
+              "duration": 4,
+              "state": null,
               "speed": null,
               "pass": false,
-              "fail": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
-              "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Sally\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Sally\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
-                "diff": null
-              },
-              "uuid": "3c7cf93d-8972-4244-acbb-e1a35f534282",
-              "parentUUID": "7a3134c8-95fa-4d8f-a10d-af112bec9f25",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
+              "err": {},
+              "uuid": "a47437bf-b8a2-4021-bce9-459d1ba657e8",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"after all\" hook in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "driver.quit();",
               "err": {},
-              "uuid": "e840478a-a69a-4679-9feb-1088679d78f1",
-              "parentUUID": "7a3134c8-95fa-4d8f-a10d-af112bec9f25",
+              "uuid": "327ead0c-db57-421a-9dd0-477036123cd5",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
-              "timedOut": false,
-              "duration": 0,
-              "state": null,
+              "title": "test case: assert 4 input fields are present",
+              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "timedOut": true,
+              "duration": 2020,
+              "state": "failed",
               "speed": null,
               "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\CTDO\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\CTDO\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
+                "diff": null
+              },
+              "uuid": "03fcd887-334a-4e32-bc13-014df14e37c4",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Full Name label is present",
+              "fullTitle": "Testing Form Task test case: Full Name label is present",
+              "timedOut": false,
+              "duration": 1995,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(fullname, \"full name\", `Ensure \"Full Name\" label is present`);",
               "err": {},
-              "uuid": "6a30ea22-b22d-43d5-8bb8-c3824e3376b5",
-              "parentUUID": "7a3134c8-95fa-4d8f-a10d-af112bec9f25",
+              "uuid": "4576536d-53be-4c21-bf6f-69643911b0ac",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
               "isHook": false,
-              "skipped": true
+              "skipped": false
+            },
+            {
+              "title": "test case: Email label is present",
+              "fullTitle": "Testing Form Task test case: Email label is present",
+              "timedOut": false,
+              "duration": 158,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
+              "err": {},
+              "uuid": "58fa4194-0ed3-48a5-bb44-64da01bda041",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Subject label is present",
+              "fullTitle": "Testing Form Task test case: Subject label is present",
+              "timedOut": false,
+              "duration": 63,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.include(subject, \"subject\", `Ensure \"Subject\" label is present`);",
+              "err": {},
+              "uuid": "87c7789a-48c6-4de2-9c37-dccd09b5e38b",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Message label is present",
+              "fullTitle": "Testing Form Task test case: Message label is present",
+              "timedOut": false,
+              "duration": 75,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.include(message, \"message\", `Ensure \"Message\" label is present`);",
+              "err": {},
+              "uuid": "65c0bdde-f01c-47a5-8586-4c14884c9dc5",
+              "parentUUID": "1cb89172-b052-46f0-85b7-c9c2fab434bf",
+              "isHook": false,
+              "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [],
-          "pending": [],
-          "skipped": [
-            "6a30ea22-b22d-43d5-8bb8-c3824e3376b5"
+          "passes": [
+            "4576536d-53be-4c21-bf6f-69643911b0ac",
+            "58fa4194-0ed3-48a5-bb44-64da01bda041",
+            "87c7789a-48c6-4de2-9c37-dccd09b5e38b",
+            "65c0bdde-f01c-47a5-8586-4c14884c9dc5"
           ],
-          "duration": 0,
+          "failures": [
+            "03fcd887-334a-4e32-bc13-014df14e37c4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4311,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 180000
+          "_timeout": 2000
         }
       ],
       "passes": [],
@@ -126,7 +203,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.0.2"
+      "version": "9.0.3"
     },
     "mochawesome": {
       "options": {
@@ -142,7 +219,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Sally/desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/Users/CTDO/Desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
