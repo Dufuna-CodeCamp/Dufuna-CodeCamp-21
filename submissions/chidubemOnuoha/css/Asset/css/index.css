@@ -16,6 +16,7 @@ header.header{
     display: flex;
     justify-content: space-between;
 
+
 }
 
 header .logo-text  {
@@ -91,6 +92,11 @@ section.banner .order-meal button {
 
 section.banner .order-meal button:hover {
     background-color: tan;
+}
+
+.input {
+    width: 700px;
+     height: 48px;
 }
 
 /* food cart */
@@ -195,4 +201,76 @@ footer .nav ul li {
 
 .nav ul> li  a:hover {
     color: tan ;
+}
+
+
+@media screen and (max-width: 450px) {
+    header .logo-text{
+        margin-top: 5px;
+        font-size: 18px;
+    } 
+}
+@media screen and (max-width: 400px) {
+    header .logo-text{
+        margin-top: 5px;
+        font-size: 18px;
+    } 
+
+    header.header{
+         display: block;
+         height: 100px;
+         width: 100%;
+         margin-top: -5px;
+         position: relative;
+    }
+
+    header .logo-text {
+        margin-left: 120px;
+        padding-bottom: 10px;
+    }
+    
+
+    .food-card{
+        margin-top: 20px;
+    }
+
+    header .nav ul li{
+        padding: 0px 0px 0px 50px;
+    }
+
+   
+    
+
+    section.banner .order-meal h3 {
+        font-size: 35px;
+        margin-top: 100px;
+    }
+
+    
+
+    footer.footer {
+        margin-top: 700px;
+        width: 100%;
+        display: block;
+    }
+
+    form input [type="text"] {
+        width: 100px;
+    }
+
+    footer .logo-text  {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer .nav ul li a {
+        text-align: center;
+        margin-left: 20px;
+       
+    }
+
+    footer .nav p {
+        text-align: center;
+    }
+
 }
