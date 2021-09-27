@@ -1,3 +1,4 @@
 Hello World
-My name is Angella Mhango and i am a mobile development student
-By the end of this program i want to become one of the best mobile developers
+My name is Angella Mhango 
+I am studying mobile development
+I want to make sure i learn as much as i can
