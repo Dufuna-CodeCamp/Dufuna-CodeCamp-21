@@ -1,276 +1,290 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 
 body {
-    height: 100vh;   
+    max-width: 1240px;
+    margin: 0px auto;
 }
 
-header.header{
-    width: 100%;
-    height: 80px;
-    position: relative;
-    background-color: #242e4c;
+.header-container {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
+}
 
+.header-container ul {
+    display: flex;
+    list-style: none;
 
 }
 
-header .logo-text  {
-    padding: 20px 0px 5px 15px;
-    color: #fff;
-    font-size: 24px;
-}
-
-header .logo-text h3::first-letter {
-    color: orange;
-}
-
-header .logo-text h3 .span-logo {
-    color: orange;
-}
-
-header .nav ul li {
-  display: inline-block;
-  padding: 25px 40px 15px 0px; 
-  font-size: 18px;
-  list-style: none; 
-  
-}
-
-.nav ul> li  a{
+.header-container ul li {
+    padding: 10px 10px;
     text-decoration: none;
-    color: orange;
 }
 
-.nav ul> li  a:hover {
-    color: tan ;
+.header-container ul li a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 400;
 }
 
-/* //////////// Banner section ////// */
-section.banner {
-    width: 100%;
-    height: 600px;
-    background-image: url(../images/o-FOOD-facebook.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+.header-container  ul .link-item  a{
+    color:#AD4C4C ;
+    border: 1px solid #AD4C4C;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 
+.logo-container {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
 
-section.banner .order-meal { 
-    padding: 15% 0px 0px 0px;
+.logo-container span{
+    color:  #AD4C4C;
+    
+}
+
+/* /////////////////// */
+
+  .banner-container {
+   margin-top: 100px;
+}
+
+.banner-heading {
     text-align: center;
+}
+.banner-paragraph {
+    text-align: center;
+}
+
+.banner-heading {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 10px;
     
 }
 
-section.banner .order-meal h3 {
-    font-size: 48px;
-    color: orange;
+.banner-paragraph {
+   font-weight: 400;
+   font-style: normal;
+   font-size: 20px;
+   margin-top: -30px;
+
 }
 
-section.banner .order-meal h3 span {
-    color: #fff;
-}
-
-section.banner .order-meal button {
-    width: 100px;
-    margin-top: 10px;
-    height: 40px;
-    background-color: orange; 
-    border: orange;  
-    outline: none;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-
-section.banner .order-meal button:hover {
-    background-color: tan;
-}
-
-.input {
-    width: 700px;
-     height: 48px;
-}
-
-/* food cart */
-section.food-cart{
-    width: 100%;
+/* ////////////////// */
+#address-container {
     margin-top: 60px;
-    height: 600px;
-   
 }
 
-
-@media screen and(min-width: 450px) {
-    section.food-cart {
-        margin-top: 60px;
-        height: 900px;
-    }
-}
-
-
-
-section div.food-cart-container {
-    display: flex;
-    justify-content: space-around;
-     flex-wrap: wrap; 
-     align-items: center;
-}
-
-@media screen and (min-width: 400px){
-    section div.food-cart-container {
-        margin: 5px;
-    } 
-}
-
-section div.food-cart-container div.food-card {
-    border: 1px solid orange;
-    padding: 20px;
-    box-shadow: 5px 0px 5px 5px tan;
-
-}
-
-section div.food-cart-container div.food-card p {
-    color: red;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-section div.food-cart-container div.food-card button {
-    width: 70px;
-    height: 30px;
-    background-color: orange;
-    color: whitesmoke;
-    border-radius: 5px;
-    outline: none;
-}
-
-section.food-cart img {
-    width: 150px;
-    height: 150px;
-}
-
-/* footer */
-footer.footer{
+#address-container .select-container {
     width: 100%;
-    margin-top: 30px;
-    height: 200px;
-    position: sticky;
-    background-color: #242e4c;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+
+/* ///////////// */
+.food-container{
+    margin-top: 42px;
+}
+
+.food-container hr {
+  color: #F2F2F2;
+}
+
+.food-items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer .logo-text  {
-    padding: 20px 0px 5px 15px;
-    color: #fff;
-    font-size: 24px;
+.item-list {
+    width: 230px;
+    height: 169px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
-footer .logo-text h3::first-letter {
-    color: orange;
+/* ////////////// */
+.services-container {
+    margin-top: 60px;
 }
 
-header .logo-text h3::first-letter {
-    color: orange;
+.services-container h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #4E4D4D;
 }
 
-footer .logo-text h3 .span-logo {
-    color: orange;
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer .nav ul li {
-  display: inline-block;
-  padding: 25px 40px 15px 0px; 
-  font-size: 18px;
-  list-style: none; 
+.service-item h4 {
+  color: #696969;
+  text-align: center;
+}
+
+.service-item h4{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 37.5px;
+}
+
+.service-item p {
+    margin-top: -25px;
+    color: #696969;
+}
+
+/* /////////// */
+.footer-container h3 {
+   text-align: center;
+}
+
+.footer-content-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-items {
+    padding: 10px;
+}
+
+.footer-content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 540px){
+
+    .header-container h3 {
+        margin-left: 10px;
+    }
+    .food-items {
+        margin-left: 100px;
+        padding: 10px;
+    }
+
+    .service-item {
+        margin-left: 70px;
+    }
+
+
+    #address-container .select-container{
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    #address-container h4 {
+        margin-left: 10px;
+    }
+
+    .footer-container.footer-heading {
+        margin-left: 25px;
+     } 
   
+     .footer-content-2 .footer-items-2 {
+        margin-left: 130px;
+
+     }
+
+     .footer-content-2 .footer-items-3 {
+        margin-left: 70px;
+     }
 }
 
-.nav ul> li  a{
-    text-decoration: none;
-    color: orange;
-}
-
-.nav ul> li  a:hover {
-    color: tan ;
-}
 
 
-@media screen and (max-width: 450px) {
-    header .logo-text{
-        margin-top: 5px;
-        font-size: 18px;
-    } 
-}
-@media screen and (max-width: 400px) {
-    header .logo-text{
-        margin-top: 5px;
-        font-size: 18px;
-    } 
+@media screen and (max-width: 360px) {
 
-    header.header{
-         display: block;
-         height: 100px;
-         width: 100%;
-         margin-top: -5px;
-         position: relative;
+    .header-container h3 {
+        margin-left: 10px;
     }
 
-    header .logo-text {
-        margin-left: 120px;
-        padding-bottom: 10px;
-    }
-    
 
-    .food-card{
+    .banner-heading {
+        text-align: inherit;
+        margin-left: 10px;
+        font-size: 25px;
+        margin-top: -50px;
+
+    }
+
+    .banner-paragraph {
+        text-align: start;
+        font-size: 16px;
+        padding-top: 7px;
+        margin-left: 10px;
+         
+    }
+
+ 
+
+    .header-container ul li {
+        margin-top: -2px;
+    }
+
+    #address-container .select-container{
+        width: 90%;
+        margin-left: 10px;
+        margin-top: -5px;
+        
+    }
+    #address-container h4 {
+        margin-left: 10px;
+        margin-top: -5px;
+    }
+
+    .item-list {
+        width: 200px;
         margin-top: 20px;
     }
 
-    header .nav ul li{
-        padding: 0px 0px 0px 50px;
+    .food-container h4 {
+        margin-left: 10px;
+
+    }
+    .food-items {
+        margin-left: 35px;
+        padding: 10px;
     }
 
-   
+    .service-container{
+        margin-left: 30px;
+    }
+
+    .service-item {
+        margin-left: 0px;
+    }
+
+
+   .footer-container.footer-heading {
+      margin-left: 25px;
+   } 
+
+   .footer-content-2 .footer-items-2 {
+      margin-left: 45px;
+   }
+
+   .footer-content-2 .footer-items-3 {
+       margin-left: 20px;
+       font-size: 14px;
+   }
     
-
-    section.banner .order-meal h3 {
-        font-size: 35px;
-        margin-top: 100px;
-    }
-
-    
-
-    footer.footer {
-        margin-top: 700px;
-        width: 100%;
-        display: block;
-    }
-
-    form input [type="text"] {
-        width: 100px;
-    }
-
-    footer .logo-text  {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    footer .nav ul li a {
-        text-align: center;
-        margin-left: 20px;
-       
-    }
-
-    footer .nav p {
-        text-align: center;
-    }
-
 }
+
+
