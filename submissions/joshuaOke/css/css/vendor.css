@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+.black {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.container {
+    margin: 20px;
+    color: #696969;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+nav a {
+    font-size: 10px;
+    margin: 0;
+    margin-left: 20px;
+}
+.button-brown {
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    color: #ad4c4c;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+.routing {
+    margin-bottom: 20px;
+}
+.highlight {
+    color: #000;
+    font-size: 14px;
+}
+.routing p,
+.routing span {
+    font-size: 14px;
+}
+.vendors-header {
+    margin-bottom: 20px;
+}
+.vendors-header h1 {
+    font-size: 20px;
+    color: black;
+}
+.box-container,
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-list {
+    display: grid;
+    column-gap: 20px;
+}
+.vendor-head {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.vendor-head div {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 50px;
+}
+.food_img {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.kfc {
+    background-image: url("../assets/image4.svg");
+}
+.vendor-head p {
+    display: none;
+}
+.item-list div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #696969;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.info span {
+    font-weight: bold;
+}
+.item {
+    color: #4E4D4D;
+}
+.amount {
+    color: #5EA304;
+}
+.view-small {
+    color: #AD4C4C;   
+    text-align: center;
+    font-weight: 500;
+}
+hr {
+    margin: 25px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .item-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .vendor-head p {
+        display: flex;
+    }
+    .bottom {
+        display: none;
+    }
+    hr {
+        margin: 60px 0;
+    }
+    .container {
+        margin: 30px 30px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .item-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    body {
+        max-width: 1440px;
+        margin: auto;
+        padding: 0;
+    }
+    * {
+        font-size: 16px;
+    } 
+    header p span {
+        font-weight: 500;
+        font-size: 20;
+    }
+    .vendors-header h1 {
+        font-size: 30px;
+    }
+    .black {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        margin: 50px 100px;
+    } 
+}
