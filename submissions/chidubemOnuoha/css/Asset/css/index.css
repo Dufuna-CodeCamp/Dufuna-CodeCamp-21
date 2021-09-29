@@ -13,7 +13,6 @@ body {
 .header-container ul {
     display: flex;
     list-style: none;
-
 }
 
 .header-container ul li {
@@ -34,7 +33,6 @@ body {
     border-radius: 5px;
 }
 
-
 .logo-container {
     font-weight: 500;
     font-style: normal;
@@ -43,11 +41,8 @@ body {
 }
 
 .logo-container span{
-    color:  #AD4C4C;
-    
+    color:  #AD4C4C;  
 }
-
-/* /////////////////// */
 
   .banner-container {
    margin-top: 100px;
@@ -75,7 +70,6 @@ body {
 
 }
 
-/* ////////////////// */
 #address-container {
     margin-top: 60px;
 }
@@ -88,8 +82,6 @@ body {
     border-radius: 5px;
 }
 
-
-/* ///////////// */
 .food-container{
     margin-top: 42px;
 }
@@ -111,7 +103,6 @@ body {
     padding: 30px;
 }
 
-/* ////////////// */
 .services-container {
     margin-top: 60px;
 }
@@ -147,7 +138,6 @@ body {
     color: #696969;
 }
 
-/* /////////// */
 .footer-container h3 {
    text-align: center;
 }
@@ -169,6 +159,7 @@ body {
 }
 
 
+
 @media screen and (max-width: 540px){
 
     .header-container h3 {
@@ -182,7 +173,6 @@ body {
     .service-item {
         margin-left: 70px;
     }
-
 
     #address-container .select-container{
         width: 90%;
@@ -210,12 +200,9 @@ body {
 
 
 @media screen and (max-width: 360px) {
-
     .header-container h3 {
         margin-left: 10px;
     }
-
-
     .banner-heading {
         text-align: inherit;
         margin-left: 10px;
@@ -223,7 +210,6 @@ body {
         margin-top: -50px;
 
     }
-
     .banner-paragraph {
         text-align: start;
         font-size: 16px;
@@ -231,8 +217,6 @@ body {
         margin-left: 10px;
          
     }
-
- 
 
     .header-container ul li {
         margin-top: -2px;
