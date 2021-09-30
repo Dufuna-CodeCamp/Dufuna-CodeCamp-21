@@ -72,6 +72,7 @@ section#order-now .container .order-1{
     font-weight: 500;
     text-transform: capitalize;
     color:  #242e4c;
+    
 
 }
 
@@ -123,6 +124,7 @@ section#card-info .container-card-1 .card{
     border: 1px solid orange;
     padding: 10px;
     box-shadow: 5px 5px 5px #242e4c;
+    margin: 10px;
     border-radius: 5px;
 }
 
@@ -152,6 +154,7 @@ section#card-info .container-card-2{
 section#card-info .container-card-2 .card {
     border: 1px solid orange;
     padding: 10px;
+    margin: 10px;
     box-shadow: 5px 5px 5px #242e4c;
 }
 
