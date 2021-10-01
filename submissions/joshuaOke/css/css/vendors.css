@@ -1,0 +1,37 @@
+.vendors-header h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000;
+}
+.amount {
+    color: #5ea304;
+}
+.info {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4e4d4d;
+    margin-bottom: 20px;
+}
+.vendor-head div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.vendor-head p {
+    color: #ad4c4c;
+    margin-bottom: 30px;
+}
+.vendor-head {
+    margin-bottom: 30px;
+}
+.routing {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 30px 0;
+}
+.routing .highlight {
+    color: #000;
+}

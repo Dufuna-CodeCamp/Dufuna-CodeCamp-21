@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-09T19:31:48.197Z",
-    "end": "2021-08-09T19:31:55.064Z",
-    "duration": 6867,
+    "start": "2021-09-30T08:46:20.516Z",
+    "end": "2021-09-30T08:46:39.049Z",
+    "duration": 18533,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3c27ee2d-4ee9-49d4-bc13-9883070ec067",
+      "uuid": "dcaefddb-6ffc-4bd0-ac30-3057556fd980",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+          "uuid": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
           "title": "Testing javascript conditionals",
-          "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
-          "file": "\\conditionals_test.js",
+          "fullFile": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
+          "file": "/conditionals_test.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 6511,
+              "duration": 18439,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "1aaaea8f-f7a8-4218-87eb-c4de91f91f2e",
-              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+              "uuid": "97ce74b5-32b2-45c5-87cb-9c7cd071b762",
+              "parentUUID": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "413eeaf0-fa9b-4e61-8fd6-e9a083b11e75",
-              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+              "uuid": "384716f0-3140-4d73-82c2-b89dc37f9088",
+              "parentUUID": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 189,
+              "duration": 81,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,20 +85,20 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "dcff0dff-fba9-48df-81f9-614a6feecc1f",
-              "parentUUID": "a91fb2df-85ec-4e64-98df-c7069299b6c8",
+              "uuid": "388c8d36-fd0c-493f-86be-5bbcd0de59ab",
+              "parentUUID": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dcff0dff-fba9-48df-81f9-614a6feecc1f"
+            "388c8d36-fd0c-493f-86be-5bbcd0de59ab"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 189,
+          "duration": 81,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -116,7 +116,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "8.4.0"
+      "version": "9.0.3"
     },
     "mochawesome": {
       "options": {
@@ -132,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/ACER/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportDir": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
