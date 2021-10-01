@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-30T08:46:20.516Z",
-    "end": "2021-09-30T08:46:39.049Z",
-    "duration": 18533,
-    "testsRegistered": 1,
+    "start": "2021-10-01T14:22:13.136Z",
+    "end": "2021-10-01T14:22:33.045Z",
+    "duration": 19909,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "dcaefddb-6ffc-4bd0-ac30-3057556fd980",
+      "uuid": "8812c140-e98c-4a5a-90d7-dd16678fd017",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,34 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
-          "title": "Testing javascript conditionals",
-          "fullFile": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
-          "file": "/conditionals_test.js",
+          "uuid": "3f36fe13-283b-40a5-a9ba-45b3063cbce2",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 18439,
+              "duration": 16174,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "97ce74b5-32b2-45c5-87cb-9c7cd071b762",
-              "parentUUID": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
+              "uuid": "e0cf83f0-2407-49db-88b5-27eb9237bd45",
+              "parentUUID": "3f36fe13-283b-40a5-a9ba-45b3063cbce2",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,40 +65,78 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "384716f0-3140-4d73-82c2-b89dc37f9088",
-              "parentUUID": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
+              "uuid": "7856aa6d-4f6b-4332-9e51-1626c555ad67",
+              "parentUUID": "3f36fe13-283b-40a5-a9ba-45b3063cbce2",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check conditionals",
-              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "title": "test case: check dropdown",
+              "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
-              "duration": 81,
+              "duration": 656,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
+              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
-              "uuid": "388c8d36-fd0c-493f-86be-5bbcd0de59ab",
-              "parentUUID": "286c6553-66a0-448e-8fa1-8c8b152e80cb",
+              "uuid": "587c1d9c-81d9-4c2f-81ee-f7697e751f35",
+              "parentUUID": "3f36fe13-283b-40a5-a9ba-45b3063cbce2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 1267,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "err": {},
+              "uuid": "9910275b-cd24-444b-8e04-9ef85c789d7c",
+              "parentUUID": "3f36fe13-283b-40a5-a9ba-45b3063cbce2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 515,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "err": {},
+              "uuid": "78e4fff7-dc17-4624-af71-aea3c11c0ef0",
+              "parentUUID": "3f36fe13-283b-40a5-a9ba-45b3063cbce2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "388c8d36-fd0c-493f-86be-5bbcd0de59ab"
+            "587c1d9c-81d9-4c2f-81ee-f7697e751f35",
+            "9910275b-cd24-444b-8e04-9ef85c789d7c",
+            "78e4fff7-dc17-4624-af71-aea3c11c0ef0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 81,
+          "duration": 2438,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -116,7 +154,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.0.3"
+      "version": "8.4.0"
     },
     "mochawesome": {
       "options": {
@@ -132,7 +170,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportDir": "C:/Users/ACER/Desktop/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
