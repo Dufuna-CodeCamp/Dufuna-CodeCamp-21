@@ -1,23 +1,23 @@
 const productList = [
     {
-        productName: "Mango",
-        imageUrl: "mangoUrl",
-        productPrice: 360.0,
+        productName: "Sony PS4 Slim",
+        imageUrl: "https://pixabay.com/images/id-2326616/",
+        productPrice: "#160,000.00",
     },
     {
-        productName: "Apple",
-        imageUrl: "appleUrl",
-        productPrice: 360.0,
+        productName: "XBox 360 Console",
+        imageUrl: "https://pixabay.com/images/id-1200296/",
+        productPrice: "#50,000.00",
     },
     {
-        productName: "Carrot",
-        imageUrl: "carrotUrl",
-        productPrice: 360.0,
+        productName: "Nintendo Switch",
+        imageUrl: "https://pixabay.com/images/id-3953601/",
+        productPrice: "#185,000.00",
     },
 ];
 productList.forEach((product) => {
     document.write(
-        `<p>${product.productName} ${product.imageUrl} is sold for ${product.productPrice}</p>`
+        `<p>${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}</p>`
     );
 });
 
