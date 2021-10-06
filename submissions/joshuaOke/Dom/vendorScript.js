@@ -13,7 +13,6 @@ for (const button of lists) {
             button.style.color = "rgba(255, 255, 255, 1)";
             button.style.backgroundColor = "#A5A5A5";
             button.style.border = "none";
-            console.dir(button.children)
         }
         // not selected anymore, return it to default
         else if (button.innerText == "Remove") {
