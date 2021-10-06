@@ -1,3 +1,5 @@
+// Landing Page Script
+
 let currentLocation = document.querySelector("#address"),
     divInterests = document.querySelector(".interests");
 

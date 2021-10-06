@@ -32,7 +32,21 @@ nav a {
     border-radius: 5px;
     color: #ad4c4c;
     padding: 8px 18px;
-    font-weight: 500;
+    font-weight: 400;
+    cursor: pointer;
+}
+.add-to-cart {
+    min-width: max-content;
+    width: 138px;
+    padding: 8px 20px;
+    align-items: center;
+    display: flex;
+}
+.remove {
+    width: 30px;
+    margin: 0;
+    padding: auto;
+    color: #fff;
 }
 .routing {
     margin-bottom: 20px;
@@ -111,13 +125,13 @@ a {
     font-weight: bold;
 }
 .item {
-    color: #4E4D4D;
+    color: #4e4d4d;
 }
 .amount {
-    color: #5EA304;
+    color: #5ea304;
 }
 .view-small {
-    color: #AD4C4C;   
+    color: #ad4c4c;
     text-align: center;
     font-weight: 500;
 }
@@ -125,6 +139,16 @@ hr {
     margin: 25px 0;
 }
 
+/* added the dot for the add to cart selection */
+.dot {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #ad4c4c;
+    border-radius: 100%;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    display: none;
+}
 @media screen and (min-width: 768px) {
     .item-list {
         grid-template-columns: 1fr 1fr;
@@ -141,7 +165,16 @@ hr {
     .container {
         margin: 30px 30px;
     }
-
+    nav a,
+    header p {
+        font-size: 16px;
+    }
+    nav a {
+        margin-left: 50px;
+    }
+    .routing {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -155,7 +188,7 @@ hr {
     }
     * {
         font-size: 16px;
-    } 
+    }
     header p span {
         font-weight: 500;
         font-size: 20;
@@ -171,5 +204,5 @@ hr {
 @media screen and (min-width: 1440px) {
     .container {
         margin: 50px 100px;
-    } 
+    }
 }
