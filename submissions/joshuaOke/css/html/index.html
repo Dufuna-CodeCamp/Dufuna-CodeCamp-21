@@ -30,34 +30,36 @@
         <!-- Enter Location in delivery address -->
         <div class="box">
             <h3 class="black">Where are you?</h3>
-            <input list="location" name="address" id="address" placeholder="Enter your delivery address">
-            <datalist id="location">
-                <option value="Bodija market">
-                <option value="Idumota market">
-                <option value="Alaba market">
-            </datalist>
+            <select name="address" id="address"placeholder="Enter your delivery address">
+                <option value="">Enter your delivery address</option>
+                <option value="Bodija, Ibadan">Bodija, Ibadan</option>
+                <option value="Idumota, Lagos">Idumota, Lagos</option>
+                <option value="Alaba, Lagos">Alaba, Lagos</option>
+                <option value="Ikorodu, Lagos">Ikorodu, Lagos</option>
+            </select>
+            <p></p>
         </div>
         <div class="box">
             <!-- Pick an Interest section -->
             <h3 class="black">Pick an interest</h3>
             <div class="interests">
                 <div>
-                    <img src="../assets/fast-food_disabled.svg" alt="fast food">
+                    <img class="interest_item" src="../assets/fast-food_disabled.svg" alt="fast food">
                     <h3>Fast food</h3>
                     <p>All sorrows are less with bread</p>
                 </div>
                 <div>
-                    <img src="../assets/Vegetables _ Drinks_disabled.svg" alt="Vegetables">
+                    <img class="interest_item" src="../assets/Vegetables _ Drinks_disabled.svg" alt="Vegetables">
                     <h3>Vegetables & Fruits</h3>
                     <p>nay not want it, but good for you</p>
                 </div>
                 <div>
-                    <img src="../assets/Drinks _ Cocktails_disabled.svg" alt="Drinks">
+                    <img class="interest_item" src="../assets/Drinks _ Cocktails_disabled.svg" alt="Drinks">
                     <h3>Drinks & Cocktails</h3>
                     <p>I feel sad for those who don't drink.</p>
                 </div>
                 <div>
-                    <img src="../assets/resturant_disabled.svg" alt="Resturants">
+                    <img class="interest_item" src="../assets/resturant_disabled.svg" alt="Resturants">
                     <h3>Resturants</h3>
                     <p>All sorrows are less with bread.</p>
                 </div>
@@ -103,6 +105,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="../../Dom/script.js"></script>
 </body>
 
 </html>
