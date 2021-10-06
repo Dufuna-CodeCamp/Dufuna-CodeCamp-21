@@ -27,7 +27,7 @@ nav a {
     margin: 0;
     margin-left: 20px;
 }
-.button-brown {
+.button-brown, .add-to-cart {
     border: 1px solid #ad4c4c;
     border-radius: 5px;
     color: #ad4c4c;
@@ -41,6 +41,7 @@ nav a {
     padding: 8px 20px;
     align-items: center;
     display: flex;
+    background-color: #fff;
 }
 .remove {
     width: 30px;

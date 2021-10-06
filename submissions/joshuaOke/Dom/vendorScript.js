@@ -7,12 +7,13 @@ for (const button of lists) {
         // selected, make it remove
         if (button.innerText == "Add to Cart") {
             button.innerHTML =
-                '<img src="../assets/remove.svg" class="remove" alt="remove"> <span>Remove</span>';
+                '<img src="../assets/remove.svg" style="color: #ffffff" class="remove" alt="remove"> Remove';
             button.style.justifyContent = "space-around";
             button.style.padding = "5px 18px 5px 8px";
-            button.style.color = "#fff";
+            button.style.color = "rgba(255, 255, 255, 1)";
             button.style.backgroundColor = "#A5A5A5";
             button.style.border = "none";
+            console.dir(button.children)
         }
         // not selected anymore, return it to default
         else if (button.innerText == "Remove") {
