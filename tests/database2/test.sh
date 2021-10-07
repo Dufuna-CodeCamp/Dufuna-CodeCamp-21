@@ -78,7 +78,7 @@ check_file_content1() {
         else
             content_exists=0
             echo ""
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure your sql file contains the passengers and passengers_details tables"${NONE}
         fi
    done
 }
@@ -93,7 +93,7 @@ check_file_content2() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure your sql file contains the accident_cases table and has a primary key"${NONE}
         fi
    done
 }
@@ -108,7 +108,7 @@ check_file_content3() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure the accident_cases and passengers_details tables has a foreign key."${NONE}
         fi
    done
 }
@@ -123,7 +123,7 @@ check_file_content4() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure the passengers table contains the age column"${NONE}
         fi
    done
 }
@@ -138,7 +138,7 @@ check_file_content5() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure you create a database"${NONE}
         fi
    done
 }
