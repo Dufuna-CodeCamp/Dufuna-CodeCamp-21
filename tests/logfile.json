@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-07T09:54:18.909Z",
-    "end": "2021-10-07T09:54:34.441Z",
-    "duration": 15532,
+    "start": "2021-10-06T20:57:05.030Z",
+    "end": "2021-10-06T20:57:06.966Z",
+    "duration": 1936,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f37e1a19-b8c0-4385-a4f5-2b5b3738c269",
+      "uuid": "5170da95-fc2a-4301-8ed1-f66aea5c4f25",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,26 +27,26 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "669c0949-9f6e-4f6f-8823-b39af62a88a4",
+          "uuid": "9786023f-6a22-4558-bc6c-a5881a109ce2",
           "title": "Testing Scholars Project",
-          "fullFile": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/Dom/dom.js",
-          "file": "/dom.js",
+          "fullFile": "C:\\Users\\olaok\\Documents\\Classes\\DufunaClasses\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 14902,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "70c0cdb1-674d-4d02-ad4b-773d4baa331f",
-              "parentUUID": "669c0949-9f6e-4f6f-8823-b39af62a88a4",
+              "uuid": "220371a8-a234-4dc6-9d92-a51575eb7bd0",
+              "parentUUID": "9786023f-6a22-4558-bc6c-a5881a109ce2",
               "isHook": true,
               "skipped": false
             }
@@ -65,52 +65,52 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "b7c5c9a7-17bc-44e4-9d6d-43064f991daf",
-              "parentUUID": "669c0949-9f6e-4f6f-8823-b39af62a88a4",
+              "uuid": "1e3c84aa-b388-48bb-989b-6e73327a60d4",
+              "parentUUID": "9786023f-6a22-4558-bc6c-a5881a109ce2",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check dropdown",
-              "fullTitle": "Testing Scholars Project test case: check dropdown",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 77,
+              "duration": 1853,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
               "err": {},
-              "uuid": "a6bdfa2c-b705-4e25-a262-d7a67d8773bb",
-              "parentUUID": "669c0949-9f6e-4f6f-8823-b39af62a88a4",
+              "uuid": "f3487e61-9e26-43c3-ba37-447ef466bfb8",
+              "parentUUID": "9786023f-6a22-4558-bc6c-a5881a109ce2",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: check options in dropdown",
-              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 504,
+              "duration": 45,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
               "err": {},
-              "uuid": "0061e1c3-d8cb-4128-aa3e-28276e2681e8",
-              "parentUUID": "669c0949-9f6e-4f6f-8823-b39af62a88a4",
+              "uuid": "e6782399-1a26-43f4-99d1-0be7624e71f8",
+              "parentUUID": "9786023f-6a22-4558-bc6c-a5881a109ce2",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: check options in dropdown",
-              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
               "duration": 27,
               "state": "passed",
@@ -119,24 +119,24 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {},
-              "uuid": "36b960de-9034-4346-ad10-3e992ecae784",
-              "parentUUID": "669c0949-9f6e-4f6f-8823-b39af62a88a4",
+              "uuid": "8aad3c4d-5d21-4296-a850-304e0bbbdcfa",
+              "parentUUID": "9786023f-6a22-4558-bc6c-a5881a109ce2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a6bdfa2c-b705-4e25-a262-d7a67d8773bb",
-            "0061e1c3-d8cb-4128-aa3e-28276e2681e8",
-            "36b960de-9034-4346-ad10-3e992ecae784"
+            "f3487e61-9e26-43c3-ba37-447ef466bfb8",
+            "e6782399-1a26-43f4-99d1-0be7624e71f8",
+            "8aad3c4d-5d21-4296-a850-304e0bbbdcfa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 608,
+          "duration": 1925,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -154,7 +154,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.0.3"
+      "version": "9.1.1"
     },
     "mochawesome": {
       "options": {
@@ -170,7 +170,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
+        "reportDir": "C:/Users/olaok/Documents/Classes/DufunaClasses/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
