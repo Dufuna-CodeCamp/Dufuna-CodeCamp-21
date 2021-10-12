@@ -162,10 +162,10 @@
         header {
             flex-direction: column;
             justify-content: space-between;
-            font-size: 15px;
+            font-size: 14px;
         }
         .logo {
-            font-size: 28px;
+            font-size: 26px;
         }
         .logo .color-red {
             color: red;
@@ -255,7 +255,7 @@
             padding: 5px;
         }
         .footer-notice p {
-            font-size: 15px;
+            font-size: 14px;
         }
     }
     

@@ -1,10 +1,9 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
+    "tests": 4,
+    "passes": 4,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2021-10-12T12:46:33.578Z",
     "end": "2021-10-12T12:49:33.600Z",
     "duration": 180022,
@@ -465,5 +464,8 @@
       },
       "version": "5.2.0"
     }
+=======
+    "owner": "olaleyeOlawale"
+>>>>>>> 83476686cdd4ef663c53e98735e878365eedfa2f
   }
 }
