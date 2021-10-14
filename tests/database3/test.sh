@@ -26,17 +26,17 @@ set_folder
 
 submission_directory="$PWD/../../submissions"
 path_to_folder="$submission_directory/$folder_name"
-path_to_database_folder="$path_to_folder/database"
+path_to_database_folder="$path_to_folder/database3"
 path_to_log="$submission_directory/../tests/logfile.json"
 
 check_database_folder_existence() {
-    folder_count=$(ls $path_to_folder | grep "database" -c)
+    folder_count=$(ls $path_to_folder | grep "database3" -c)
     if [ $folder_count -eq 0 ]
     then
         database_folder_exists=0
         echo ""
         echo -e "${BOLD}Checking the database folder ...${NONE}"
-        echo -e "${RED}Your folder should be named ${BOLD}\"database\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
+        echo -e "${RED}Your folder should be named ${BOLD}\"database3\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
     else
         database_folder_exists=1
     fi
@@ -49,8 +49,8 @@ check_file_existence() {
         echo ""
         echo -e "${BOLD}Checking the text file ...${NONE}"
         echo -e "${RED}1. You should create a text file."
-        echo -e "2. Ensure your sql file is located in the ${BOLD}\"database\"${NONE} ${RED}folder you have created."
-        echo -e "3. Ensure your sql file contains text."${NONE}
+        echo -e "2. Ensure your sql file is located in the ${BOLD}\"database3\"${NONE} ${RED}folder you have created."
+        echo -e "3. Ensure your sql file contains sql queries."${NONE}
     else
         for currentFile in $path_to_database_folder/*
         do
@@ -62,7 +62,7 @@ check_file_existence() {
                 file_exists=0
                 echo ""
                 echo -e "${BOLD}Checking the sql file ...${NONE}"
-                echo -e "2. Ensure your sql file is located in the ${BOLD}\"database\"${NONE} ${RED}folder you have created."
+                echo -e "2. Ensure your sql file is located in the ${BOLD}\"database3\"${NONE} ${RED}folder you have created."
             fi
         done
     fi
@@ -71,14 +71,14 @@ check_file_existence() {
 check_file_content1() {    
     for currentFile in $path_to_database_folder/*
     do
-        if grep  "SELECT COUNT(*) as"  $currentFile  && grep "WHERE" $currentFile
+        if grep  "SELECT COUNT"  $currentFile  && grep "WHERE" $currentFile
         then
             content_exists=1
             break     
         else
             content_exists=0
             echo ""
-            echo -e "1. Ensure your sql file contains "SELECT" AND "WHERE" queries."${NONE}
+            echo -e "1. Ensure your sql file contains SELECT AND WHERE queries."${NONE}
         fi
    done
 }
@@ -93,7 +93,7 @@ check_file_content2() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure your sql file contains FROM AND JOIN queries."${NONE}
         fi
    done
 }
@@ -108,7 +108,37 @@ check_file_content3() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the required SQL queries."${NONE}
+            echo -e "1. Ensure your sql file contains ON and AND queries."${NONE}
+        fi
+   done
+}
+
+check_query_result1() {    
+    for currentFile in $path_to_database_folder/*
+    do
+        if grep  "342"  $currentFile && grep "549" $currentFile
+        then
+            content_exists=1
+            break     
+        else
+            content_exists=0
+            echo -e "${BOLD}Checking the sql file ...${NONE}"
+            echo -e "1. Ensure your sql queries gives the correct result"${NONE}
+        fi
+   done
+}
+
+check_query_result2() {    
+    for currentFile in $path_to_database_folder/*
+    do
+        if grep  "218"  $currentFile && grep "9" $currentFile
+        then
+            content_exists=1
+            break     
+        else
+            content_exists=0
+            echo -e "${BOLD}Checking the sql file ...${NONE}"
+            echo -e "1. Ensure your sql queries gives the correct result"${NONE}
         fi
    done
 }
@@ -160,6 +190,14 @@ no_of_failures=0
             if [ $content_exists -eq 1 ]
             then
              no_of_passes=$((no_of_passes+1))
+                     check_query_result1
+            if [ $content_exists -eq 1 ]
+            then
+             no_of_passes=$((no_of_passes+1))
+                     check_query_result2
+            if [ $content_exists -eq 1 ]
+            then
+             no_of_passes=$((no_of_passes+1))
         else
             no_of_failures=$((total_tests-no_of_passes))
         fi
@@ -169,6 +207,12 @@ no_of_failures=0
      else
         no_of_failures=$((total_tests-no_of_passes))
     fi
+else
+    no_of_failures=$((total_tests-no_of_passes))
+fi
+else
+    no_of_failures=$((total_tests-no_of_passes))
+fi
 else
     no_of_failures=$((total_tests-no_of_passes))
 fi
