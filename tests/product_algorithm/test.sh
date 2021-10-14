@@ -21,7 +21,7 @@ read first_name
 echo -n "Enter Last Name : "
 read last_name
 
-echo -n "Enter HTML file name & location (e.g algorithms/sum.js) : "
+echo -n "Enter HTML file name & location (e.g algorithms/productAlgorithms.js) : "
 read js_file
 
 set_folder() {
