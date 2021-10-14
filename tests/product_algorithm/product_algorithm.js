@@ -1,8 +1,8 @@
 const file_path = process.env.FILE_PATH;
-const { products, product_price} = require(file_path);
+const { products, product_price } = require(file_path);
 const expect = require("chai").expect;
 
-describe("DSA Algorithm 1", function () {
+describe("Product Array Algorithm Task", function () {
     it("check length of products", function () {
         expect(products.length).to.equal(20);
     });
