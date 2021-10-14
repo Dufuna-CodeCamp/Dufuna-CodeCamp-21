@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+javascript
     "tests": 1,
     "passes": 1,
     "pending": 0,
@@ -9,6 +10,16 @@
     "end": "2021-10-14T18:46:37.442Z",
     "duration": 6801,
     "testsRegistered": 1,
+
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-13T11:20:12.385Z",
+    "end": "2021-10-13T11:20:45.065Z",
+    "duration": 32680,
+    "testsRegistered": 3,
+ master
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +29,11 @@
   },
   "results": [
     {
+ javascript
       "uuid": "7a8a2257-4b36-4814-a875-d6ffbb3f406f",
+
+      "uuid": "8cf1bd84-c7d5-4765-8edb-5c650bbd6c39",
+ master
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,6 +42,7 @@
       "tests": [],
       "suites": [
         {
+ javascript
           "uuid": "9f43497d-9843-4d1d-b791-03a494db6802",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\Wale\\Documents\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
@@ -37,24 +53,48 @@
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
               "duration": 6363,
+
+          "uuid": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+          "title": "Testing Scholars Project",
+          "fullFile": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/Dom_2/dom.js",
+          "file": "/dom.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+master
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
+javascript
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
               "uuid": "4d603cc3-da4a-415f-a27f-60934b612fca",
               "parentUUID": "9f43497d-9843-4d1d-b791-03a494db6802",
+
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
+              "err": {},
+              "uuid": "847a21f7-c7f1-4197-9017-2d1fa8fa8b00",
+              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+master
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
+javascript
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+master
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,40 +105,105 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+javascript
               "uuid": "b819edfc-e026-4e83-88c0-2814e6e6fd5a",
               "parentUUID": "9f43497d-9843-4d1d-b791-03a494db6802",
+
+              "uuid": "860edf9b-c937-4bf7-8d20-d1917f39684d",
+              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+master
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
+javascript
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
               "duration": 246,
+
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 32529,
+master
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
+javascript
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
               "uuid": "7b3a3544-0f89-4b5a-965e-b9c16f95dba5",
               "parentUUID": "9f43497d-9843-4d1d-b791-03a494db6802",
+
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
+              "err": {},
+              "uuid": "14137ca9-ab55-4742-a86b-541de7455d75",
+              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
+              "timedOut": false,
+              "duration": 80,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
+              "err": {},
+              "uuid": "32edada0-ba67-404b-9bc4-4ae2e63f18ed",
+              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 58,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
+              "err": {},
+              "uuid": "3c792ee9-ce27-4cb1-bf68-b276e86f4c77",
+              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+master
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+javascript
             "7b3a3544-0f89-4b5a-965e-b9c16f95dba5"
+
+            "14137ca9-ab55-4742-a86b-541de7455d75",
+            "32edada0-ba67-404b-9bc4-4ae2e63f18ed",
+            "3c792ee9-ce27-4cb1-bf68-b276e86f4c77"
+ master
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+ javascript
           "duration": 246,
+
+          "duration": 32667,
+ master
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -116,7 +221,11 @@
   ],
   "meta": {
     "mocha": {
+ javascript
       "version": "9.1.1"
+
+      "version": "9.0.3"
+ master
     },
     "mochawesome": {
       "options": {
@@ -132,7 +241,11 @@
     },
     "marge": {
       "options": {
+ javascript
         "reportDir": "C:/Users/Wale/Documents/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+
+        "reportDir": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
+ master
         "reportFilename": "logfile",
         "quiet": "true"
       },
