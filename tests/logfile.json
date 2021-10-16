@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-14T18:46:30.641Z",
-    "end": "2021-10-14T18:46:37.442Z",
-    "duration": 6801,
+    "start": "2021-10-16T23:27:14.100Z",
+    "end": "2021-10-16T23:27:35.850Z",
+    "duration": 21750,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7a8a2257-4b36-4814-a875-d6ffbb3f406f",
+      "uuid": "d648dc2d-a417-4b69-b515-7dc202b71e81",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f43497d-9843-4d1d-b791-03a494db6802",
+          "uuid": "02ae7044-71cd-43b8-9c78-3dd6d6824f4a",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\Wale\\Documents\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 6363,
+              "duration": 20563,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4d603cc3-da4a-415f-a27f-60934b612fca",
-              "parentUUID": "9f43497d-9843-4d1d-b791-03a494db6802",
+              "uuid": "378e554f-a847-4ed9-b5f6-aefca709e79d",
+              "parentUUID": "02ae7044-71cd-43b8-9c78-3dd6d6824f4a",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "b819edfc-e026-4e83-88c0-2814e6e6fd5a",
-              "parentUUID": "9f43497d-9843-4d1d-b791-03a494db6802",
+              "uuid": "01b6be06-abd8-4eb4-b0ef-39715018b23b",
+              "parentUUID": "02ae7044-71cd-43b8-9c78-3dd6d6824f4a",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 246,
+              "duration": 399,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,20 +85,20 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "7b3a3544-0f89-4b5a-965e-b9c16f95dba5",
-              "parentUUID": "9f43497d-9843-4d1d-b791-03a494db6802",
+              "uuid": "67645815-c54d-47ae-80d7-cbc90d2db948",
+              "parentUUID": "02ae7044-71cd-43b8-9c78-3dd6d6824f4a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7b3a3544-0f89-4b5a-965e-b9c16f95dba5"
+            "67645815-c54d-47ae-80d7-cbc90d2db948"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 246,
+          "duration": 399,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
