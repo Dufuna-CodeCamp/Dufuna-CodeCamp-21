@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 3,
-    "passes": 3,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-13T11:20:12.385Z",
-    "end": "2021-10-13T11:20:45.065Z",
-    "duration": 32680,
-    "testsRegistered": 3,
+    "start": "2021-10-17T02:47:08.186Z",
+    "end": "2021-10-17T02:47:34.853Z",
+    "duration": 26667,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8cf1bd84-c7d5-4765-8edb-5c650bbd6c39",
+      "uuid": "8a527a15-3770-4844-9d03-c33d928edb17",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,34 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9d54f992-c195-4e7f-af1d-5008b90e5883",
-          "title": "Testing Scholars Project",
-          "fullFile": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/Dom_2/dom.js",
-          "file": "/dom.js",
+          "uuid": "e41a775e-cb97-477a-9cca-def982b101be",
+          "title": "Testing javascript conditionals",
+          "fullFile": "C:\\Users\\Wale\\Documents\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
+          "file": "\\conditionals_test.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 25441,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "847a21f7-c7f1-4197-9017-2d1fa8fa8b00",
-              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+              "uuid": "337ed2c1-de77-494a-a3b3-88e3d25d08b9",
+              "parentUUID": "e41a775e-cb97-477a-9cca-def982b101be",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,78 +65,40 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "860edf9b-c937-4bf7-8d20-d1917f39684d",
-              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+              "uuid": "82247b63-0b6c-4fe1-a26e-41c62921f076",
+              "parentUUID": "e41a775e-cb97-477a-9cca-def982b101be",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check text on button",
-              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "title": "test case: check conditionals",
+              "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 32529,
+              "duration": 291,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
+              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "14137ca9-ab55-4742-a86b-541de7455d75",
-              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: check colour of text",
-              "fullTitle": "Testing Scholars Project test case: check colour of text",
-              "timedOut": false,
-              "duration": 80,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
-              "err": {},
-              "uuid": "32edada0-ba67-404b-9bc4-4ae2e63f18ed",
-              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: check text on button",
-              "fullTitle": "Testing Scholars Project test case: check text on button",
-              "timedOut": false,
-              "duration": 58,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
-              "err": {},
-              "uuid": "3c792ee9-ce27-4cb1-bf68-b276e86f4c77",
-              "parentUUID": "9d54f992-c195-4e7f-af1d-5008b90e5883",
+              "uuid": "0f3dddf8-6c00-4679-a562-aec30644c138",
+              "parentUUID": "e41a775e-cb97-477a-9cca-def982b101be",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "14137ca9-ab55-4742-a86b-541de7455d75",
-            "32edada0-ba67-404b-9bc4-4ae2e63f18ed",
-            "3c792ee9-ce27-4cb1-bf68-b276e86f4c77"
+            "0f3dddf8-6c00-4679-a562-aec30644c138"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 32667,
+          "duration": 291,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -154,7 +116,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.0.3"
+      "version": "9.1.1"
     },
     "mochawesome": {
       "options": {
@@ -170,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/gokivumbi/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
+        "reportDir": "C:/Users/Wale/Documents/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
