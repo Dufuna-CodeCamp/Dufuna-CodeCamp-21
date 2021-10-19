@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-15T12:56:41.788Z",
-    "end": "2021-10-15T12:59:41.819Z",
-    "duration": 180031,
+    "start": "2021-10-19T10:52:30.533Z",
+    "end": "2021-10-19T10:55:30.550Z",
+    "duration": 180017,
     "testsRegistered": 8,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e8cf90fe-5d17-4763-8c87-bbec9b3392d7",
+      "uuid": "48931afd-dd3f-46f3-8601-c68b1bd792a9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+          "uuid": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
           "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\Sally\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
+          "fullFile": "C:\\Users\\Sally\\desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
           "file": "\\vendors.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver for \"test case: FoodBag Logo is present\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: FoodBag Logo is present\"",
               "timedOut": true,
-              "duration": 180020,
+              "duration": 180010,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -45,12 +45,12 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Sally\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Sally\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Sally\\desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Sally\\desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
                 "diff": null
               },
-              "uuid": "6cd511d6-b9a3-4520-acec-8aadd538e9da",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "6d69d6ca-4c3e-48e0-bc92-7cc8d70eda79",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "1eb91685-789e-4dcd-b2f5-b9b7b2da0c27",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "3a8e1de5-45aa-4662-a0ea-206dd18a3146",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-              "uuid": "fe55884b-2520-4473-83ac-566cd5efa531",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "bad16ff8-fa9b-4929-8c46-ee80c9e36fa4",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-              "uuid": "5d318529-89f2-4c2d-895c-5fc2b89e5bca",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "ebe3d6ed-6056-4108-a12d-b53cbd293922",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
-              "uuid": "93d71115-1b46-4749-8422-e2361e7798cf",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "26fbf68e-7349-4d76-a258-dc4d7d40fbf3",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -143,8 +143,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
               "err": {},
-              "uuid": "c958b8d1-ef69-4321-87ae-b885cafe4a69",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "634d8c82-9c1f-4ada-93ea-74a1391b075f",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -161,8 +161,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "d93ea258-448b-4826-93ab-e57c29ed6ae6",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "85654748-a576-4464-b012-e5ab3d0f7d70",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -179,8 +179,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "20c452d4-262e-4a7d-a06c-6307be575f2e",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "e2b09c3c-6b10-4a4c-9ac8-52b1b532f1ae",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -197,8 +197,8 @@
               "context": null,
               "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
               "err": {},
-              "uuid": "375b9af3-e6cc-417f-9322-71583321597e",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "a4b1b95a-2705-48ae-b7de-9ed7a62fcf83",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             },
@@ -215,8 +215,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
-              "uuid": "91f2d996-89e5-4cbd-bf3c-673c81fe41c1",
-              "parentUUID": "cdd682e9-8e02-443a-9215-9c159c3997d3",
+              "uuid": "c29e4751-01a1-485a-b0a5-b7982ab58eb7",
+              "parentUUID": "246eb890-2e65-4d2f-9704-9e3bcd7c4cb0",
               "isHook": false,
               "skipped": true
             }
@@ -226,14 +226,14 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "fe55884b-2520-4473-83ac-566cd5efa531",
-            "5d318529-89f2-4c2d-895c-5fc2b89e5bca",
-            "93d71115-1b46-4749-8422-e2361e7798cf",
-            "c958b8d1-ef69-4321-87ae-b885cafe4a69",
-            "d93ea258-448b-4826-93ab-e57c29ed6ae6",
-            "20c452d4-262e-4a7d-a06c-6307be575f2e",
-            "375b9af3-e6cc-417f-9322-71583321597e",
-            "91f2d996-89e5-4cbd-bf3c-673c81fe41c1"
+            "bad16ff8-fa9b-4929-8c46-ee80c9e36fa4",
+            "ebe3d6ed-6056-4108-a12d-b53cbd293922",
+            "26fbf68e-7349-4d76-a258-dc4d7d40fbf3",
+            "634d8c82-9c1f-4ada-93ea-74a1391b075f",
+            "85654748-a576-4464-b012-e5ab3d0f7d70",
+            "e2b09c3c-6b10-4a4c-9ac8-52b1b532f1ae",
+            "a4b1b95a-2705-48ae-b7de-9ed7a62fcf83",
+            "c29e4751-01a1-485a-b0a5-b7982ab58eb7"
           ],
           "duration": 0,
           "root": false,
@@ -269,7 +269,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Sally/Desktop/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
+        "reportDir": "C:/Users/Sally/desktop/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
