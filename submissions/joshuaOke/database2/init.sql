@@ -1,5 +1,5 @@
-CREATE DATABASE REFERENCES;
-use REFERENCES;
+CREATE DATABASE travels;
+use travels;
 CREATE TABLE passengers (
     passengers_id INT NOT NULL,
     age VARCHAR,
@@ -8,19 +8,22 @@ CREATE TABLE passengers (
 );
 
 CREATE TABLE passengers_details (
-    id INT NOT NULL AUTO_INCREMENT FOREIGN KEY (passengers_id),
-    passengerclass enum(1,2,3) NOT NULL,
-    passengerticket VARCHAR NOT NULL,
-    tripfare VARCHAR NOT NULL,
-    assignedcabin VARCHAR,
-    parents INT NOT NULL,
-    children INT NOT NULL,
-    siblings INT NOT NULL,
-    spouses INT NOT NULL,
-    embarked VARCHAR NOT NULL
+    id INT NOT NULL AUTO_INCREMENT,
+    passenger_id INT NOT NULL,
+    passenger_class INT NOT NULL,
+    passenger_ticket VARCHAR NOT NULL,
+    fare VARCHAR NOT NULL,
+    cabin VARCHAR,
+    parents_children INT NOT NULL,
+    siblings_spouses INT NOT NULL,
+    embarked VARCHAR NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (passenger_id) REFERENCES passengers (passengers_id)
 );
 
 CREATE TABLE accident_cases (
-    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY (id),
-    passengerid INT NOT NULL FOREIGN KEY (id)
+    id INT AUTO_INCREMENT NOT NULL,
+    survive BOOLEAN NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (id) REFERENCES passengers (passengers_id)
 );
