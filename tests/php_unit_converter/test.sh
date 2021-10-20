@@ -141,44 +141,37 @@ no_of_passes=0
 no_of_failures=0
 
     check_database_folder_existence
-
     if [ $database_folder_exists -eq 1 ]
     then
         no_of_passes=$((no_of_passes+1))
-
-        # check_file_existence
-
-        # if [ $file_exists -eq 1 ]
-        # then
-        #     no_of_passes=$((no_of_passes+1))
      
             check_file_content1
-
             if [ $content_exists -eq 1 ]
             then
                 no_of_passes=$((no_of_passes+1))
+
                 check_file_content2
-            if [ $content_exists -eq 1 ]
-            then
-             no_of_passes=$((no_of_passes+1))
+                if [ $content_exists -eq 1 ]
+                then
+                    no_of_passes=$((no_of_passes+1))
+
                    check_file_content3
-            if [ $content_exists -eq 1 ]
-            then
-             no_of_passes=$((no_of_passes+1))
-                   check_file_content4
-            if [ $content_exists -eq 1 ]
-            then
-             no_of_passes=$((no_of_passes+1))
-                     check_file_content5
-            if [ $content_exists -eq 1 ]
-            then
-             no_of_passes=$((no_of_passes+1))
-        else
+                   if [ $content_exists -eq 1 ]
+                   then
+                       no_of_passes=$((no_of_passes+1))
+
+                       check_file_content4
+                       if [ $content_exists -eq 1 ]
+                       then
+                           no_of_passes=$((no_of_passes+1))
+
+                           check_file_content5
+                           if [ $content_exists -eq 1 ]
+                           then
+                               no_of_passes=$((no_of_passes+1))
+                                  else
             no_of_failures=$((total_tests-no_of_passes))
         fi
-    # else
-    #     no_of_failures=$((total_tests-no_of_passes))
-    # fi
      else
         no_of_failures=$((total_tests-no_of_passes))
     fi
