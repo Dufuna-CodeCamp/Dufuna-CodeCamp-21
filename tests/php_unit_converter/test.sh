@@ -29,16 +29,16 @@ path_to_folder="$submission_directory/$folder_name"
 path_to_php_folder="$path_to_folder/php"
 path_to_log="$submission_directory/../tests/logfile.json"
 
-check_database_folder_existence() {
+check_php_folder_existence() {
     folder_count=$(ls $path_to_folder | grep "php" -c)
     if [ $folder_count -eq 0 ]
     then
-        database_folder_exists=0
+        php_folder_exists=0
         echo ""
         echo -e "${BOLD}Checking the database folder ...${NONE}"
         echo -e "${RED}Your folder should be named ${BOLD}\"php\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
     else
-        database_folder_exists=1
+        php_folder_exists=1
     fi
 }
 
@@ -53,7 +53,7 @@ check_file_content1() {
         else
             content_exists=0
             echo ""
-            echo -e "1. Ensure your sql file contains the passengers and passengers_details tables"${NONE}
+            echo -e "1. Ensure your file contains php syntax"${NONE}
         fi
    done
 }
@@ -68,7 +68,7 @@ check_file_content2() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure your sql file contains the accident_cases table and has a primary key"${NONE}
+            echo -e "1. Ensure you use the correct yard conversion"${NONE}
         fi
    done
 }
@@ -83,7 +83,7 @@ check_file_content3() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure the accident_cases and passengers_details tables has a foreign key."${NONE}
+            echo -e "1. Ensure you use the correct pound conversion"${NONE}
         fi
    done
 }
@@ -98,7 +98,7 @@ check_file_content4() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure the passengers table contains the age column"${NONE}
+            echo -e "1. Ensure you use the appropriate fahrenheit conversion"${NONE}
         fi
    done
 }
@@ -113,7 +113,7 @@ check_file_content5() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the sql file ...${NONE}"
-            echo -e "1. Ensure you create a database"${NONE}
+            echo -e "1. Ensure you use the correct fahrenheit conversion"${NONE}
         fi
    done
 }
@@ -140,8 +140,8 @@ write_output() {
 no_of_passes=0
 no_of_failures=0
 
-    check_database_folder_existence
-    if [ $database_folder_exists -eq 1 ]
+    check_php_folder_existence
+    if [ $php_folder_exists -eq 1 ]
     then
         no_of_passes=$((no_of_passes+1))
      
