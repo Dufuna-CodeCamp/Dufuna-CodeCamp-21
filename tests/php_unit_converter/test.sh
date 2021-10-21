@@ -67,7 +67,7 @@ check_file_content2() {
             break     
         else
             content_exists=0
-            echo -e "${BOLD}Checking the sql file ...${NONE}"
+            echo -e "${BOLD}Checking the php file ...${NONE}"
             echo -e "1. Ensure you use the correct yard conversion"${NONE}
         fi
    done
@@ -82,7 +82,7 @@ check_file_content3() {
             break     
         else
             content_exists=0
-            echo -e "${BOLD}Checking the sql file ...${NONE}"
+            echo -e "${BOLD}Checking the php file ...${NONE}"
             echo -e "1. Ensure you use the correct pound conversion"${NONE}
         fi
    done
@@ -97,7 +97,7 @@ check_file_content4() {
             break     
         else
             content_exists=0
-            echo -e "${BOLD}Checking the sql file ...${NONE}"
+            echo -e "${BOLD}Checking the php file ...${NONE}"
             echo -e "1. Ensure you use the appropriate fahrenheit conversion"${NONE}
         fi
    done
@@ -112,7 +112,7 @@ check_file_content5() {
             break     
         else
             content_exists=0
-            echo -e "${BOLD}Checking the sql file ...${NONE}"
+            echo -e "${BOLD}Checking the php file ...${NONE}"
             echo -e "1. Ensure you use the correct fahrenheit conversion"${NONE}
         fi
    done
