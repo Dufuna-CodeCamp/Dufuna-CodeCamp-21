@@ -1,8 +1,165 @@
 {
   "stats": {
-    "tests": 4,
-    "passes": 4,
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
     "failures": 0,
-    "owner": "davidFaleye"
+    "start": "2021-10-26T15:34:55.712Z",
+    "end": "2021-10-26T15:37:55.815Z",
+    "duration": 180103,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "2bf026a5-d066-4b8d-b733-d8b6a3200751",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8ad744e9-961d-4aa2-9941-dc0a2c571e73",
+          "title": "Printing product price",
+          "fullFile": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/test.js",
+          "file": "/test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "timedOut": true,
+              "duration": 180006,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "err": {
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/test.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/test.js)\n    at listOnTimeout (internal/timers.js:551:17)\n    at processTimers (internal/timers.js:494:7)",
+                "diff": null
+              },
+              "uuid": "f2e5b4de-8867-4349-9cc9-4e00db9cb055",
+              "parentUUID": "8ad744e9-961d-4aa2-9941-dc0a2c571e73",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit()",
+              "err": {},
+              "uuid": "9f7f00c1-1005-428a-ba80-c4f4e12d0c7c",
+              "parentUUID": "8ad744e9-961d-4aa2-9941-dc0a2c571e73",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"is sold for\", \"Ensure you print out the value in the right format\");",
+              "err": {},
+              "uuid": "141add1d-c16d-4bc2-b77d-519c19a862a0",
+              "parentUUID": "8ad744e9-961d-4aa2-9941-dc0a2c571e73",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
+              "err": {},
+              "uuid": "95082a33-dd2a-495d-a40b-dd7133ab40a0",
+              "parentUUID": "8ad744e9-961d-4aa2-9941-dc0a2c571e73",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "141add1d-c16d-4bc2-b77d-519c19a862a0",
+            "95082a33-dd2a-495d-a40b-dd7133ab40a0"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "5.2.0"
+    }
   }
 }
