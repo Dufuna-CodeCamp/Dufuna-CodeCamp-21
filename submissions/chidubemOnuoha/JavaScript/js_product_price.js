@@ -26,4 +26,3 @@ const total =  productList.forEach(function (product ){
     document.write(`${product.productName}  ${product.imageURL} <br> is sold for:  ${product.productPrice}`);
 });
 
-console.log(total);
