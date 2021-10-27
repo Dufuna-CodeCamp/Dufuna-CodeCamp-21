@@ -9,9 +9,9 @@ function multiplyFunc() {
         if(counter === 3) {
           document.write('<br> Software instead of the number')
         } else if (counter === 5) {
-            document.wwrite(' <br> Developr instead of the number</h1>')
+            document.wwrite('Developr instead of the number')
         } else if (counter === 3 && counter === 5) {
-             document.write('<br> Software Developer </h1>')
+             document.write('Software Developer')
         } 
     }
 }
