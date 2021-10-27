@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-10-27T21:38:29.828Z",
-    "end": "2021-10-27T21:38:31.917Z",
-    "duration": 2089,
+    "start": "2021-10-27T21:43:08.079Z",
+    "end": "2021-10-27T21:43:10.056Z",
+    "duration": 1977,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0f4a0ec4-bc38-4e20-bce2-988a31b5f95b",
+      "uuid": "02ca1e01-ab89-40cc-8a5a-9bb408043bfe",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e455d95a-da97-4eb0-998b-db2112a99c49",
+          "uuid": "f1136f0e-49f0-4411-b13e-a0163aa2e0cc",
           "title": "Testing javascript conditionals",
           "fullFile": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
           "file": "/conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1925,
+              "duration": 1912,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "97545e50-2007-4c1a-bd2e-39cf22890373",
-              "parentUUID": "e455d95a-da97-4eb0-998b-db2112a99c49",
+              "uuid": "1a0d743e-37bb-47fc-8b67-a8d03c6389c4",
+              "parentUUID": "f1136f0e-49f0-4411-b13e-a0163aa2e0cc",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "448ebcc8-af42-444f-8da4-d9d3b73dd6b2",
-              "parentUUID": "e455d95a-da97-4eb0-998b-db2112a99c49",
+              "uuid": "ace590d2-8e7b-4781-88ba-2048f9a3c5e8",
+              "parentUUID": "f1136f0e-49f0-4411-b13e-a0163aa2e0cc",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 144,
+              "duration": 56,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {
-                "message": "AssertionError: expected 'conditional page\\n\\n\\nDeverloper\\n\\nDeverloper\\nSoftware instead of the number\\n\\nDeverloper' to include 'Developer'",
-                "estack": "AssertionError: expected 'conditional page\\n\\n\\nDeverloper\\n\\nDeverloper\\nSoftware instead of the number\\n\\nDeverloper' to include 'Developer'\n    at Context.<anonymous> (conditionals_test.js:30:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited or deleted.\\nERR_FILE_NOT_FOUND' to include 'Software'",
+                "estack": "AssertionError: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited or deleted.\\nERR_FILE_NOT_FOUND' to include 'Software'\n    at Context.<anonymous> (conditionals_test.js:28:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "94afe013-2cd2-48a3-b46f-850b391dba73",
-              "parentUUID": "e455d95a-da97-4eb0-998b-db2112a99c49",
+              "uuid": "064a69f8-3ff1-4a06-9e85-d064ad26ecae",
+              "parentUUID": "f1136f0e-49f0-4411-b13e-a0163aa2e0cc",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "94afe013-2cd2-48a3-b46f-850b391dba73"
+            "064a69f8-3ff1-4a06-9e85-d064ad26ecae"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 144,
+          "duration": 56,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
