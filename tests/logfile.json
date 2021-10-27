@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-10-27T22:54:25.043Z",
-    "end": "2021-10-27T22:54:27.159Z",
-    "duration": 2116,
+    "failures": 0,
+    "start": "2021-10-27T22:56:24.180Z",
+    "end": "2021-10-27T22:56:25.997Z",
+    "duration": 1817,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "793ccb4b-2c07-4963-9998-7b476d8b5a75",
+      "uuid": "c248e246-1728-46bd-bbbf-61f0d7c0a3d1",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "55e45da7-81e5-497a-aedc-8b662dde3f16",
+          "uuid": "67b4f0ad-baad-40de-9a43-6a8a87afdaeb",
           "title": "Testing javascript conditionals",
           "fullFile": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
           "file": "/conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1973,
+              "duration": 1700,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4bd3b0e6-b474-43c2-b8a6-e9973ca2cb30",
-              "parentUUID": "55e45da7-81e5-497a-aedc-8b662dde3f16",
+              "uuid": "2649643a-8651-444e-9f04-888e9f4956f1",
+              "parentUUID": "67b4f0ad-baad-40de-9a43-6a8a87afdaeb",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "316c149c-4cb4-4754-97ac-d06799ffad9e",
-              "parentUUID": "55e45da7-81e5-497a-aedc-8b662dde3f16",
+              "uuid": "75c1b024-8e54-4d47-8b95-0df219337301",
+              "parentUUID": "67b4f0ad-baad-40de-9a43-6a8a87afdaeb",
               "isHook": true,
               "skipped": false
             }
@@ -76,33 +76,29 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 131,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 92,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
-              "err": {
-                "message": "AssertionError: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited or deleted.\\nERR_FILE_NOT_FOUND' to include 'Software'",
-                "estack": "AssertionError: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited or deleted.\\nERR_FILE_NOT_FOUND' to include 'Software'\n    at Context.<anonymous> (conditionals_test.js:28:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": null
-              },
-              "uuid": "2c1db3f6-61d2-4fb6-a253-c790c0176e96",
-              "parentUUID": "55e45da7-81e5-497a-aedc-8b662dde3f16",
+              "err": {},
+              "uuid": "d7081413-788b-424d-a840-33e057324d4a",
+              "parentUUID": "67b4f0ad-baad-40de-9a43-6a8a87afdaeb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "2c1db3f6-61d2-4fb6-a253-c790c0176e96"
+          "passes": [
+            "d7081413-788b-424d-a840-33e057324d4a"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 131,
+          "duration": 92,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
