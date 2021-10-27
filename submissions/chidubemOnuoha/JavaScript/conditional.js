@@ -12,9 +12,7 @@ function multiplyFunc() {
             document.wwrite(' <br> Developr instead of the number</h1>')
         } else if (counter === 3 && counter === 5) {
              document.write('<br> Software Developer </h1>')
-        } else{
-            document.write(' <br> <br>Deverloper')
-        }
+        } 
     }
 }
 

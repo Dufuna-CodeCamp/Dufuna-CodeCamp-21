@@ -1,8 +1,146 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
-    "failures": 0,
-    "owner": "deborahAdegoke"
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-27T21:38:29.828Z",
+    "end": "2021-10-27T21:38:31.917Z",
+    "duration": 2089,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0f4a0ec4-bc38-4e20-bce2-988a31b5f95b",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e455d95a-da97-4eb0-998b-db2112a99c49",
+          "title": "Testing javascript conditionals",
+          "fullFile": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
+          "file": "/conditionals_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "timedOut": false,
+              "duration": 1925,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "97545e50-2007-4c1a-bd2e-39cf22890373",
+              "parentUUID": "e455d95a-da97-4eb0-998b-db2112a99c49",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "448ebcc8-af42-444f-8da4-d9d3b73dd6b2",
+              "parentUUID": "e455d95a-da97-4eb0-998b-db2112a99c49",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check conditionals",
+              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "timedOut": false,
+              "duration": 144,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
+              "err": {
+                "message": "AssertionError: expected 'conditional page\\n\\n\\nDeverloper\\n\\nDeverloper\\nSoftware instead of the number\\n\\nDeverloper' to include 'Developer'",
+                "estack": "AssertionError: expected 'conditional page\\n\\n\\nDeverloper\\n\\nDeverloper\\nSoftware instead of the number\\n\\nDeverloper' to include 'Developer'\n    at Context.<anonymous> (conditionals_test.js:30:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "94afe013-2cd2-48a3-b46f-850b391dba73",
+              "parentUUID": "e455d95a-da97-4eb0-998b-db2112a99c49",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "94afe013-2cd2-48a3-b46f-850b391dba73"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 144,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "5.2.0"
+    }
   }
 }
