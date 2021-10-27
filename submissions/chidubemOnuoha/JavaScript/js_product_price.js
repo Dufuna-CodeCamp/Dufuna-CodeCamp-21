@@ -1,24 +1,25 @@
-var productList = new Array({
-  productName : "product1",
-  imageUrl : "http://localhost:5000/p1",
-  productPrice : 1000
-},{
-  productName : "product2",
-  imageUrl : "http://localhost:5000/p2",
-  productPrice : 2000
-},{
-  productName : "product3",
-  imageUrl : "http://localhost:5000/p3",
-  productPrice : 3000
-})
 
+let productList = [
+  {
+      productName: "Iphone 12",
+      imageUrl: "https://cdn.pixabay.com/photo/2015/02/02/11/08/office-620817_960_720.jpg",
+      productPrice: "$800"
+  },
 
-var value;
+  {
+      productName: "Iphone X",
+      imageUrl: "https://cdn.pixabay.com/photo/2015/09/02/13/11/iphone-918928_960_720.jpg",
+      productPrice: "$600"
+  },
 
-function printPrice() {
-for(let i=0; i<=productList.length; i++){
+  {
+      productName: "Iphone XR",
+      imageUrl: "https://cdn.pixabay.com/photo/2015/05/12/09/13/social-media-763731_960_720.jpg",
+      productPrice: "$550"
+  }
+];
 
-  document.write(productList[i]['productName'] + " with " + productList[i]['imageUrl'] + " is sold for " + productList[i]['productPrice'] + " ")
-}
-}
-printPrice();
+productList.forEach(function(item){
+  document.write(`${item.productName}${item.imageUrl} is sold for ${item.productPrice}`);
+});
+
