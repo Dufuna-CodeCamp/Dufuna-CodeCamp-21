@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-10-27T21:44:30.922Z",
-    "end": "2021-10-27T21:44:33.051Z",
-    "duration": 2129,
+    "start": "2021-10-27T22:34:56.585Z",
+    "end": "2021-10-27T22:34:58.827Z",
+    "duration": 2242,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "49104fa1-70f6-4e2e-ab24-0d04f5eb2092",
+      "uuid": "7b8ca521-7776-4a05-94d9-8b726757105d",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "04e68dea-6047-40f7-b4cd-640bbf0579c3",
+          "uuid": "6e03740f-38b5-4f01-ab29-76726a0d9eb1",
           "title": "Testing javascript conditionals",
           "fullFile": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
           "file": "/conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 2047,
+              "duration": 2119,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "d4d02710-bfa0-4628-ba83-e4bf81eac792",
-              "parentUUID": "04e68dea-6047-40f7-b4cd-640bbf0579c3",
+              "uuid": "720c244f-2d29-4da0-8842-b35f76eb1604",
+              "parentUUID": "6e03740f-38b5-4f01-ab29-76726a0d9eb1",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "7d1043d0-90de-4b73-8145-e826af9a9714",
-              "parentUUID": "04e68dea-6047-40f7-b4cd-640bbf0579c3",
+              "uuid": "ac23cafe-6b00-469a-9407-dafbb7cc03f8",
+              "parentUUID": "6e03740f-38b5-4f01-ab29-76726a0d9eb1",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 75,
+              "duration": 81,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited or deleted.\\nERR_FILE_NOT_FOUND' to include 'Software'\n    at Context.<anonymous> (conditionals_test.js:28:24)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "3a2ab5e8-c21a-43f5-8508-262a37f5ffd6",
-              "parentUUID": "04e68dea-6047-40f7-b4cd-640bbf0579c3",
+              "uuid": "1bd01daa-e109-4246-90a3-38539ba03cea",
+              "parentUUID": "6e03740f-38b5-4f01-ab29-76726a0d9eb1",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "3a2ab5e8-c21a-43f5-8508-262a37f5ffd6"
+            "1bd01daa-e109-4246-90a3-38539ba03cea"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 75,
+          "duration": 81,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
