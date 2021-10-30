@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    padding: 10px 70px 70px 70px;
+    margin: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+/****** HEADER ******/
+header a {
+    color: #696969;
+    text-decoration: none;
+    font-size: 16px;
+}
+header li {
+    display: inline;
+    margin: 0 50px 0 30px;
+}
+header nav {
+    float: right;
+    margin-top: -65px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-text {
+    color: #AD4C4C;
+}
+header button {
+    color: #AD4C4C;
+    background: #fff;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    width: 92px;
+    height: 40px;
+    margin-top: 8px;
+}
+header button:hover {
+    background: #AD4C4C;
+    color: #fff;
+}
+
+/******* MAIN BODY ******/
+main {
+    margin-top: 80px;
+}
+main li {
+    display: inline;
+}
+main ul {
+    margin: 0;
+    padding: 0; 
+}
+main a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.homeCart-link {
+    color: #A5A5A5;
+}
+.verify-link {
+    color: #4E4D4D;
+    font-weight: bold;
+}
+.main-heading {
+    font-size: 30px;
+}
+.confirm-address {
+    color: #AD4C4C;
+    font-size: 16px;
+    margin-top: -30px;
+}
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.sub-heading {
+    color: #696969;
+    font-size: 16px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.checkbox-round {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #AD4C4C;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.checkbox-round:checked {
+    background: #AD4C4C;
+}
+.checkbox {
+    float: right;
+    border-radius: 50px;
+}
+.user-input {
+    width: 100%;
+    height: 3.125rem;
+    padding: 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.border-line {
+    border: 1px solid #E6E6E6;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.expiry-cvc, .delivery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expiry, .cvc {
+    width: 49%;
+}
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main button {
+    color: #fff;
+    font-size: 16px;
+    width: 60%;
+    font-weight: 600;
+    border: 1px solid;
+    height: 3.125rem;
+    background: #AD4C4C;
+    border-radius: 5px;
+}
+main button:hover {
+    background: #fff;
+    color: #AD4C4C;
+}
+
+/******* MEDIA QUERIES *******/
+@media screen and (max-width: 650px) {
+    body {
+        padding: 10px 15px 20px 15px;
+    }
+    header a {
+        font-size: 10px;
+    }
+    header li {
+        margin: 0 25px 0 10px;
+    }
+    header button {
+        width: 62px;
+        height: 30px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    header nav {
+        margin-top: -65px;
+    }
+    .main-heading {
+        font-size: 20px;
+    }
+    .confirm-address {
+        color: #AD4C4C;
+        font-size: 16px;
+        margin-top: -20px;
+    }
+    .heading {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .sub-heading {
+        color: #696969;
+        font-size: 10px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+    .user-input {
+        height: 2.5rem;
+        padding: 10px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    main button {
+        width: 100%;
+    }
+}
