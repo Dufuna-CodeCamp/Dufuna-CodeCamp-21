@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 4,
-    "passes": 3,
+    "passes": 4,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-11-01T19:36:56.056Z",
-    "end": "2021-11-01T19:36:59.294Z",
-    "duration": 3238,
+    "failures": 0,
+    "start": "2021-11-01T22:41:44.588Z",
+    "end": "2021-11-01T22:41:47.246Z",
+    "duration": 2658,
     "testsRegistered": 4,
-    "passPercent": 75,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bbc4ca29-02d3-4d0d-ab12-46c8aa3262ef",
+      "uuid": "cd4fd6e2-a6dc-42ce-beb3-85b1bf2c243f",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+          "uuid": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\King_Dunamis\\Documents\\Holy\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 3040,
+              "duration": 2461,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "a49dc25a-9ff3-482f-a992-73edbf827b63",
-              "parentUUID": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+              "uuid": "d0cdc044-53e2-43fc-a220-dd37719b95df",
+              "parentUUID": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "43816662-67ba-4a11-9546-f9f849f01fb5",
-              "parentUUID": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+              "uuid": "18e7a9a3-c274-4b49-8911-69f726772d56",
+              "parentUUID": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 95,
+              "duration": 96,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +85,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = await text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
               "err": {},
-              "uuid": "a51594cf-f182-4e2b-ab35-e5f3c9f67508",
-              "parentUUID": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+              "uuid": "ab7fe0e3-fd80-4241-ab34-2c00c3676686",
+              "parentUUID": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
               "isHook": false,
               "skipped": false
             },
@@ -94,21 +94,17 @@
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 45,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 44,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = await text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
-              "err": {
-                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'shop\\nour story\\nblog\\ngift card\\nsearch\\nhelp\\ncart\\nnourishing treatment mask\\nnourish your strands at their core, giving you healthier hair on the outside through improved strength on the inside.\\n$40.00\\nsimilar product\\nshampoo and conditioner duo\\nrevitalizing shampoo\\nnourishing conditioner\\nshare like comment\\n© 2021 lv hair inc. all prices in usd.' to include 'description'",
-                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'shop\\nour story\\nblog\\ngift card\\nsearch\\nhelp\\ncart\\nnourishing treatment mask\\nnourish your strands at their core, giving you healthier hair on the outside through improved strength on the inside.\\n$40.00\\nsimilar product\\nshampoo and conditioner duo\\nrevitalizing shampoo\\nnourishing conditioner\\nshare like comment\\n© 2021 lv hair inc. all prices in usd.' to include 'description'\n    at Context.<anonymous> (html_task.js:32:16)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": null
-              },
-              "uuid": "b0279b39-9308-48f9-9a3f-c3dafe55594a",
-              "parentUUID": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+              "err": {},
+              "uuid": "c0055749-6a78-49ef-bf82-d1e3314bebbc",
+              "parentUUID": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
               "isHook": false,
               "skipped": false
             },
@@ -125,8 +121,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
               "err": {},
-              "uuid": "c411c05b-8705-4b07-bebb-3e406080e49e",
-              "parentUUID": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+              "uuid": "5d958857-f2bc-42e0-8cc1-524c64e5e507",
+              "parentUUID": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
               "isHook": false,
               "skipped": false
             },
@@ -143,21 +139,20 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id('ol'));\nassert.notStrictEqual(list.length, 0, 'No ordered list on this page');",
               "err": {},
-              "uuid": "bce9923a-9b9f-4686-a8ec-925ec142b94e",
-              "parentUUID": "cd3f8677-0f91-459e-be31-b3843e7d043a",
+              "uuid": "ddaa419c-8422-4caa-9539-3a90e1bba52e",
+              "parentUUID": "4ba75044-a0e4-4dce-bd84-12f0739393f3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a51594cf-f182-4e2b-ab35-e5f3c9f67508",
-            "c411c05b-8705-4b07-bebb-3e406080e49e",
-            "bce9923a-9b9f-4686-a8ec-925ec142b94e"
+            "ab7fe0e3-fd80-4241-ab34-2c00c3676686",
+            "c0055749-6a78-49ef-bf82-d1e3314bebbc",
+            "5d958857-f2bc-42e0-8cc1-524c64e5e507",
+            "ddaa419c-8422-4caa-9539-3a90e1bba52e"
           ],
-          "failures": [
-            "b0279b39-9308-48f9-9a3f-c3dafe55594a"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 168,
