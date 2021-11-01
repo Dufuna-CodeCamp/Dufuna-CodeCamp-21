@@ -1,0 +1,208 @@
+body {
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+.header-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-container ul li {
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.header-container ul li a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 400;
+}
+
+.header-container  ul .link-item  a{
+    color:#AD4C4C ;
+    border: 1px solid #AD4C4C;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo-container span{
+    color:  #AD4C4C;  
+}
+
+.main-header h5 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.main-header h5 span {
+    color: #C9C9C9;
+}
+
+.main-header h3 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+
+.kfc-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kfc-container h5 a {
+    text-decoration: none;
+    color: #AD4C4C;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    margin-top: -10px;
+}
+
+.kfc-header {
+    display: flex; 
+}
+.kfc-header h4 {
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.kfc-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item-one-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.item-two-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.item-three-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.item-four-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button a {
+    text-decoration: none;
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1020px ){
+    
+}
+@media screen and (max-width: 940px ){
+    
+}
+@media screen and (max-width: 760px ){
+    
+}
+@media screen and (max-width: 600px ){
+
+    .header-container h3 {
+        margin-top: 26px;
+        margin-left: 15px;
+    } 
+    
+    .kfc-container h5 a {
+        margin-right: 10px;
+    }
+
+    .main-header h3 {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .main-header h5 {
+        margin-left: 10px;
+    }
+
+    
+
+    .kfc-items {
+        margin-left: 35px;
+        
+    }
+
+    .kfc-items {
+        margin-left: 150px;
+        
+    }
+
+    .item-two {
+        margin-top: 30px;
+    }
+    .item-three {
+        margin-top: 30px;
+    }
+    .item-four {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 490px){
+    .kfc-items {
+        margin-left: 45px;
+        
+    }
+}
+
+@media screen and (max-width: 360px ){
+    .header-container h3 {
+        margin-top: 26px;
+        margin-left: 10px;
+    }  
+
+    .main-header h3 {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .main-header h5 {
+        margin-left: 10px;
+    }
+
+    .kfc-container h5 a {
+      display: none;
+    }
+    .kfc-header {
+        margin-left: 10px;
+    }
+
+    .kfc-items {
+        margin-left: 35px;
+        
+    }
+    .item-two {
+        margin-top: 30px;
+    }
+    .item-three {
+        margin-top: 30px;
+    }
+    .item-four {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}

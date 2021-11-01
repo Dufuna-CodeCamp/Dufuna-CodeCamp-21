@@ -1,6 +1,7 @@
 *assets/
 *node_modules/
-*
 !logfile.json
 !logfile.html
 !.gitignore
+!package.json
+package-lock.json
