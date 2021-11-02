@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 16px 50px;
+    margin: 15px 30px;
+}
+
+header {
+    display: flex;
+    align-items: right;
+    padding: 20px 20px;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    border: 0px solid rgb(219, 9, 9);
+}
+
+.navigationlinks ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navigationlinks li:last-child {
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 2%;
+    padding: 5px;
+}
+
+.navigationlinks ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44330;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigationlinks ul li:hover::after {
+    width: 100%;
+}
+
+.navigationlinks ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+}
+
+.navigationlinks a:hover {
+    color: rgb(219, 9, 9);
+}
+
+.selectionpage {
+    display: flex;
+    padding: 16px 30px;
+}
+
+.selectionpage p {
+    padding: 0 5px;
+}
+
+.selectionpage p:last-child {
+    margin-right: 5px;
+}
+
+.selectionpage a {
+    color: #000;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    padding: 16px 30px;
+}
+
+.food-section .brand-logo {
+    display: left;
+}
+
+.brand-logo {
+    display: flex;
+    padding: 16px 30px;
+}
+
+.brand-logo p {
+    display: flex;
+    padding: 15px 20px;
+}
+
+.info .color-red {
+    color: red;
+    text-decoration: none;
+}
+
+.info p {
+    display: right;
+    font-weight: bold;
+}
+
+.select-food {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 30px;
+    justify-content: space-between;
+}
+
+.price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price .color-green {
+    color: rgb(8, 146, 8);
+}
+
+.food-wrapper button {
+    outline: none;
+    background: none;
+    padding: 5px 12px;
+    margin: 5px 0;
+    color: red;
+    border: 1px solid rgb(230, 4, 4);
+}
+
+.foodselection1 {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 30px;
+    justify-content: space-between;
+} 
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 12px;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .logo {
+        font-size: 25px;
+    }
+    
+    .navigationlinks ul li {
+        flex-direction: column;
+    }
+     
+    .navigationlinks ul li a {
+        margin: 5px 0;
+    }
+    
+    .navigationlinks li:last-child {
+        border: 1px solid rgb(219, 9, 9);
+        border-radius: 3px;
+        width: 90px;
+    }
+    .selectionpage {
+        padding: 20px 0;
+    }
+
+    .selectionpage p:last-child {
+        margin-right: 5px;
+    }
+
+    .selectionpage a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .home {
+        padding: 20px 0;
+    }
+
+    .vendors-section {
+        padding: 17px 0;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foodselection1 {
+        padding: 40px 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .food-wrapper {
+        padding: 10px;
+    }
+
+    .food-wrapper button {
+        outline: none;
+        background: none;
+        padding: 5px 12px;
+        margin: 5px 0;
+        color: red;
+        border: 1px solid red;
+    }
+    @media screen and (min-width: 600px) {
+        .container {
+            padding: 12px;
+        }
+        
+        header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header .logo {
+            font-size: 25px;
+        }
+        
+        .navigationlinks ul {
+            flex-direction: column;
+        }
+        
+        .navigationlinks li {
+            margin: 5px 0;
+        }
+        
+        .navigationlinks ul li:last-child {
+            border: 1px solid rgb(219, 9, 9);
+            border-radius: 3px;
+            width: 90px;
+        }
+        .selectionpage {
+            padding: 20px 0;
+        }
+    
+        .selectionpage p:last-child {
+            margin-right: 5px;
+        }
+    
+        .selectionpage a {
+            color: #000;
+            text-decoration: none;
+        }
+    
+        .home {
+            padding: 20px 0;
+        }
+    
+        .vendors-section {
+            padding: 17px 0;
+        }
+    
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .foodselection {
+            padding: 40px 0;
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .foodselection img {
+            width: 420px;
+        }
+    
+        .food-wrapper {
+            padding: 10px;
+        }
+    
+        .food-wrapper button {
+            outline: none;
+            background: none;
+            padding: 5px 12px;
+            margin: 5px 0;
+            color: red;
+            border: 1px solid red;
+        }
+    
+    }
+    
+    
+    @media  screen and (min-width: 992px) {
+        header {
+            flex-direction: row;
+        }
+    
+        .navigationlinks ul li{
+            flex-direction: row;
+        }
+    
+        .foodselection {
+            width: 100%;
+            flex-direction: row;
+        }
+    
+        .foodselection img {
+            width: 300px;
+        }
+    }
