@@ -61,7 +61,7 @@ check_file_content1() {
 check_file_content2() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep  "array"  $currentFile && grep "for" $currentFile
+        if grep  "["  $currentFile && grep "]" $currentFile
         then
             content_exists=1
             break     
@@ -91,7 +91,7 @@ check_file_content3() {
 check_file_content4() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep "<="  $currentFile && grep "count" $currentFile
+        if grep "="  $currentFile && grep "," $currentFile
         then
             content_exists=1
             break     

@@ -35,7 +35,7 @@ check_php_folder_existence() {
     then
         php_folder_exists=0
         echo ""
-        echo -e "${BOLD}Checking the database folder ...${NONE}"
+        echo -e "${BOLD}Checking the php folder ...${NONE}"
         echo -e "${RED}Your folder should be named ${BOLD}\"php\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
     else
         php_folder_exists=1
@@ -61,7 +61,7 @@ check_file_content1() {
 check_file_content2() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep  "temp < 30"  $currentFile && grep "The weather is just perfect" $currentFile
+        if grep  "< 30"  $currentFile && grep "The weather is just perfect" $currentFile
         then
             content_exists=1
             break     
@@ -76,7 +76,7 @@ check_file_content2() {
 check_file_content3() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep  "temp >= 30"  $currentFile && grep "It's so hot today" $currentFile
+        if grep  ">= 30"  $currentFile && grep "It's so hot today" $currentFile
         then
             content_exists=1
             break     
