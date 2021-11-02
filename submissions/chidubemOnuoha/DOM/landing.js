@@ -8,19 +8,15 @@ var submitForm13 = document.getElementById('submitForm3')
 function Validate() {
     if (userSelection.value == "") {
         errorBlock.innerHTML = "Please select your prefer location!"
-
         return false
     } else {
         errorBlock.innerHTML = "";
         return true;
     }
-
-
 }
 
 function SubmitInput() {
     return Validate();
-
 }
 
 submitForm.addEventListener('click', () => {
@@ -32,7 +28,6 @@ submitForm.addEventListener('click', () => {
         return true;
     }
 })
-
 
 submitForm1.addEventListener('click', () => {
     if (userSelection.value == "") {
@@ -63,9 +58,6 @@ submitForm3.addEventListener('click', () => {
         return true;
     }
 })
-
-
-
 
 submitForm.addEventListener('click', SubmitInput);
 submitForm1.addEventListener('click', SubmitInput);
