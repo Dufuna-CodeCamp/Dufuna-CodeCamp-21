@@ -26,6 +26,16 @@ body {
     font-weight: 400;
 }
 
+.error-block {
+    color: red;
+    font-size: 16px;
+    
+}
+
+.select-state{
+    color: red;
+}
+
 .header-container  ul .link-item  a{
     color:#AD4C4C ;
     border: 1px solid #AD4C4C;
@@ -192,6 +202,8 @@ body {
      .footer-content-2 .footer-items-3 {
         margin-left: 70px;
      }
+
+   
 }
 
 @media screen and (max-width: 360px) {
