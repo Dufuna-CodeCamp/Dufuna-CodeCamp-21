@@ -17,7 +17,8 @@
 
         <!-- nav item -->
         <ul>
-            <li><a href="">Cart</a></li>
+            <div class="add-to-cart"></div>
+            <li ><a href="">Cart</a></li>
             <li><a href=""> Login</a> </li>
             <li class="link-item"><a href="">Sign up</a></li>
         </ul>
@@ -27,7 +28,7 @@
     <main>
 
         <div class="main-header">
-            <h5> <span>Home > </span> Vendors</h5>
+            <h5> <span>Home> </span> Vendors</h5>
             <h3>All Vendors</h3>
         </div>
 
@@ -44,11 +45,15 @@
                 <img src="../images/kfc.svg" alt="">
                 <div class="item-one-flex">
                     <h4>KFC - King Bucket</h4>
-                    <h4 style="color: #5EA304;">#5,000</h4>
+                       <div>
+                        <h4 style="color: #5EA304;">#5,000</h4>
+                        <button id='#remove-info'>X</button>
+                       </div>
+                   
                 </div>
 
                 <div class="button">
-                    <a href=""> Add to Cart</a>
+                    <a id='add-info' href=""> Add to Cart</a>
                 </div>
             </div>
             <div class="item-two">
@@ -57,11 +62,11 @@
                     <h4>Zinger Burger</h4>
                     <h4 style="color: #5EA304;">#3,600</h4>
                 </div>
-                
-                    <div class="button">
-                        <a href=""> Add to Cart</a>
-                    </div>
-                
+
+                <div class="button">
+                    <a id='add-info2' href=""> Add to Cart</a>
+                </div>
+
             </div>
             <div class="item-three">
                 <img src="../images/kfc.svg" alt="">
@@ -71,7 +76,7 @@
                 </div>
 
                 <div class="button">
-                    <a href=""> Add to Cart</a>
+                    <a id='add-info3' href=""> Add to Cart</a>
                 </div>
             </div>
 
@@ -83,7 +88,7 @@
                 </div>
 
                 <div class="button">
-                    <a href=""> Add to Cart</a>
+                    <a id='add-info4'  href=""> Add to Cart</a>
                 </div>
             </div>
         </section>
@@ -94,10 +99,10 @@
                 <img src="../images/Ellipse 35.svg" alt="">
                 <h4 style="line-height: 30px;">Chicken republic</h4>
             </div>
-            <h5><a href="">View all</a></h5>
+            <h5><a class="button-2" href="">View all</a></h5>
         </section>
 
-       <!-- section two -->
+        <!-- section two -->
         <section class="kfc-items">
             <div class="item-one">
                 <img src="../images/pot.svg" alt="">
@@ -107,7 +112,7 @@
                 </div>
 
                 <div class="button">
-                    <a href=""> Add to Cart</a>
+                    <a class="button-2" href=""> Add to Cart</a>
                 </div>
             </div>
             <div class="item-two">
@@ -116,11 +121,11 @@
                     <h4>Express meal</h4>
                     <h4 style="color: #5EA304;">#2,000</h4>
                 </div>
-                
-                    <div class="button">
-                        <a href=""> Add to Cart</a>
-                    </div>
-                
+
+                <div class="button">
+                    <a class="button-2" href=""> Add to Cart</a>
+                </div>
+
             </div>
             <div class="item-three">
                 <img src="../images/flavour.svg" alt="">
@@ -130,7 +135,7 @@
                 </div>
 
                 <div class="button">
-                    <a href=""> Add to Cart</a>
+                    <a class="button-2" href=""> Add to Cart</a>
                 </div>
             </div>
 
@@ -142,11 +147,13 @@
                 </div>
 
                 <div class="button">
-                    <a href=""> Add to Cart</a>
+                    <a class="button-2" href=""> Add to Cart</a>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="../DOM/vendor.js"></script>
 </body>
 
 </html>
