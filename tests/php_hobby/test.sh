@@ -6,7 +6,7 @@ ITALIC='\x1b[3m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 
-total_tests=6 # only 7 tests are currently being done, this value should be changed if tests increases
+total_tests=5 # only 7 tests are currently being done, this value should be changed if tests increases
 
 echo -n "Enter First Name : "
 read first_name
@@ -61,14 +61,14 @@ check_file_content1() {
 check_file_content2() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep  "["  $currentFile && grep "]" $currentFile
+        if grep  "{"  $currentFile && grep "}" $currentFile
         then
             content_exists=1
             break     
         else
             content_exists=0
             echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure your code contains array(s)"${NONE}
+            echo -e "1. Ensure you echo the appropriate result as seen in the task criteria"${NONE}
         fi
    done
 }
@@ -76,14 +76,14 @@ check_file_content2() {
 check_file_content3() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep  "i++"  $currentFile && grep "0" $currentFile
+        if grep  "$"  $currentFile && grep "." $currentFile
         then
             content_exists=1
             break     
         else
             content_exists=0
             echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure you loop through the array"${NONE}
+            echo -e "1. Ensure you use the appropriate syntax"${NONE}
         fi
    done
 }
@@ -98,25 +98,11 @@ check_file_content4() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure you loop through the array(s)"${NONE}
+            echo -e "1. Ensure you use the appropriate syntax"${NONE}
         fi
    done
 }
 
-check_file_content5() {    
-    for currentFile in $path_to_php_folder/*
-    do
-        if grep "["  $currentFile && grep "]" $currentFile
-        then
-            content_exists=1
-            break     
-        else
-            content_exists=0
-            echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure you have created array(s)"${NONE}
-        fi
-   done
-}
 
 write_json_response() {
     echo "{" > $path_to_log
@@ -164,20 +150,12 @@ no_of_failures=0
                        if [ $content_exists -eq 1 ]
                        then
                            no_of_passes=$((no_of_passes+1))
-
-                           check_file_content5
-                           if [ $content_exists -eq 1 ]
-                           then
-                               no_of_passes=$((no_of_passes+1))
                                   else
             no_of_failures=$((total_tests-no_of_passes))
         fi
      else
         no_of_failures=$((total_tests-no_of_passes))
     fi
-else
-    no_of_failures=$((total_tests-no_of_passes))
-fi
 else
     no_of_failures=$((total_tests-no_of_passes))
 fi
