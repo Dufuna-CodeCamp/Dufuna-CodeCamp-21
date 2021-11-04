@@ -25,15 +25,15 @@ body {
     font-weight: 400;
 }
 
-.header-container  ul .link-item  a{
-    color:#AD4C4C ;
+.header-container ul .link-item a {
+    color: #AD4C4C;
     border: 1px solid #AD4C4C;
     padding: 5px;
     border-radius: 5px;
 }
 
-.logo-container span{
-    color:  #AD4C4C;  
+.logo-container span {
+    color: #AD4C4C;
 }
 
 .main-header h5 {
@@ -54,7 +54,6 @@ body {
     line-height: 45px;
 }
 
-
 .kfc-container {
     margin-top: 20px;
     display: flex;
@@ -72,8 +71,9 @@ body {
 }
 
 .kfc-header {
-    display: flex; 
+    display: flex;
 }
+
 .kfc-header h4 {
     margin-left: 10px;
     margin-top: 25px;
@@ -89,14 +89,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .item-two-flex {
     display: flex;
     justify-content: space-between;
 }
+
 .item-three-flex {
     display: flex;
     justify-content: space-between;
 }
+
 .item-four-flex {
     display: flex;
     justify-content: space-between;
@@ -110,47 +113,33 @@ body {
     border-radius: 3px;
 }
 
-@media screen and (max-width: 1020px ){
-    
-}
-@media screen and (max-width: 940px ){
-    
-}
-@media screen and (max-width: 760px ){
-    
-}
-@media screen and (max-width: 600px ){
+@media screen and (max-width: 1020px) {}
 
+@media screen and (max-width: 940px) {}
+
+@media screen and (max-width: 760px) {}
+
+@media screen and (max-width: 600px) {
     .header-container h3 {
         margin-top: 26px;
         margin-left: 15px;
-    } 
-    
+    }
     .kfc-container h5 a {
         margin-right: 10px;
     }
-
     .main-header h3 {
         font-size: 15px;
         margin-left: 15px;
     }
-
     .main-header h5 {
         margin-left: 10px;
     }
-
-    
-
     .kfc-items {
         margin-left: 35px;
-        
     }
-
     .kfc-items {
         margin-left: 150px;
-        
     }
-
     .item-two {
         margin-top: 30px;
     }
@@ -162,38 +151,33 @@ body {
         margin-bottom: 20px;
     }
 }
-@media screen and (max-width: 490px){
+
+@media screen and (max-width: 490px) {
     .kfc-items {
         margin-left: 45px;
-        
     }
 }
 
-@media screen and (max-width: 360px ){
+@media screen and (max-width: 360px) {
     .header-container h3 {
         margin-top: 26px;
         margin-left: 10px;
-    }  
-
+    }
     .main-header h3 {
         font-size: 15px;
         margin-left: 10px;
     }
-
     .main-header h5 {
         margin-left: 10px;
     }
-
     .kfc-container h5 a {
-      display: none;
+        display: none;
     }
     .kfc-header {
         margin-left: 10px;
     }
-
     .kfc-items {
         margin-left: 35px;
-        
     }
     .item-two {
         margin-top: 30px;
