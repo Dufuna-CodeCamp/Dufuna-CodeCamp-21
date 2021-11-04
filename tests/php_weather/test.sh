@@ -91,7 +91,7 @@ check_file_content3() {
 check_file_content4() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep "temp >= 40"  $currentFile && grep "Am i in the Sahara today?" $currentFile
+        if grep ">= 40"  $currentFile && grep "Am i in the Sahara today?" $currentFile
         then
             content_exists=1
             break     
@@ -106,7 +106,7 @@ check_file_content4() {
 check_file_content5() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep "temp <= 20"  $currentFile && grep "if" $currentFile
+        if grep "<= 20"  $currentFile && grep "if" $currentFile
         then
             content_exists=1
             break     
