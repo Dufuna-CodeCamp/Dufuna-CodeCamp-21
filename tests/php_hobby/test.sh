@@ -6,7 +6,7 @@ ITALIC='\x1b[3m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 
-total_tests=5 # only 7 tests are currently being done, this value should be changed if tests increases
+total_tests=5 # only 6 tests are currently being done, this value should be changed if tests increases
 
 echo -n "Enter First Name : "
 read first_name
@@ -68,7 +68,7 @@ check_file_content2() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure you echo the appropriate result as seen in the task criteria"${NONE}
+            echo -e "1. Ensure you have written a program to loop through the array"${NONE}
         fi
    done
 }
@@ -83,7 +83,7 @@ check_file_content3() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure you use the appropriate syntax"${NONE}
+            echo -e "1. Ensure you display the required output"${NONE}
         fi
    done
 }
@@ -98,7 +98,7 @@ check_file_content4() {
         else
             content_exists=0
             echo -e "${BOLD}Checking the php file ...${NONE}"
-            echo -e "1. Ensure you use the appropriate syntax"${NONE}
+            echo -e "1. Ensure you display the required output"${NONE}
         fi
    done
 }
