@@ -103,6 +103,21 @@ check_file_content4() {
    done
 }
 
+check_file_content5() {    
+    for currentFile in $path_to_php_folder/*
+    do
+        if grep "["  $currentFile && grep "]" $currentFile
+        then
+            content_exists=1
+            break     
+        else
+            content_exists=0
+            echo -e "${BOLD}Checking the php file ...${NONE}"
+            echo -e "1. Ensure you use the appropriate syntax"${NONE}
+        fi
+   done
+}
+
 
 write_json_response() {
     echo "{" > $path_to_log
@@ -150,12 +165,19 @@ no_of_failures=0
                        if [ $content_exists -eq 1 ]
                        then
                            no_of_passes=$((no_of_passes+1))
+                              check_file_content5
+                       if [ $content_exists -eq 1 ]
+                       then
+                           no_of_passes=$((no_of_passes+1))
                                   else
             no_of_failures=$((total_tests-no_of_passes))
         fi
      else
         no_of_failures=$((total_tests-no_of_passes))
     fi
+else
+    no_of_failures=$((total_tests-no_of_passes))
+fi
 else
     no_of_failures=$((total_tests-no_of_passes))
 fi
