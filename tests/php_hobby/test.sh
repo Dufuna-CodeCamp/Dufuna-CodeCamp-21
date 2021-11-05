@@ -76,7 +76,7 @@ check_file_content2() {
 check_file_content3() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep  "$"  $currentFile && grep "." $currentFile
+        if grep  "My name is"  $currentFile && grep "." $currentFile
         then
             content_exists=1
             break     
@@ -91,7 +91,7 @@ check_file_content3() {
 check_file_content4() {    
     for currentFile in $path_to_php_folder/*
     do
-        if grep "="  $currentFile && grep "," $currentFile
+        if grep "I love"  $currentFile && grep "<br>" $currentFile
         then
             content_exists=1
             break     
