@@ -1,174 +1,192 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body {
-    height: 100vh;   
+    max-width: 1240px;
+    margin: 0px auto;
 }
 
-header.header{
-    width: 100%;
-    height: 80px;
-    position: relative;
-    background-color: #242e4c;
+.header-container {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
-
 }
 
-header .logo-text  {
-    padding: 20px 0px 5px 15px;
-    color: #fff;
-    font-size: 24px;
+.header-container ul {
+    display: flex;
+    list-style: none;
 }
 
-header .logo-text h3::first-letter {
-    color: orange;
-}
-
-header .logo-text h3 .span-logo {
-    color: orange;
-}
-
-header .nav ul li {
-  display: inline-block;
-  padding: 25px 40px 15px 0px; 
-  font-size: 18px;
-  list-style: none; 
-  
-}
-
-.nav ul> li  a{
+.header-container ul li {
+    padding: 10px 10px;
     text-decoration: none;
-    color: orange;
 }
 
-.nav ul> li  a:hover {
-    color: tan ;
+.header-container ul li a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 400;
 }
 
-/* emding of head section */
-
-/* main page section */
-
-section#order-now {
-    margin-top: 3rem;
-    width: 100%;
-    height: 80px;
-    border-bottom: 1px solid orange;
-}
-
-section#order-now .container{
-    max-width: 760px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-section#order-now .container .order-1{
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: capitalize;
-    color:  #242e4c;
-    
-
-}
-
-section#order-now .container .order-1::first-letter{
-    color: orange;
-}
-
-/* second ordering */
-section#order-now .container .order-2 input[type="submit"] {
-    
-    font-size: 18px;
-    padding: 7px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    
-
-    
-}
-
-
-section#order-now .container .order-2 input[type="submit"]:focus {
-    border: 1px solid orange;
-     outline: none;
-}
-
-/* card-info */
-
-section#card-info {
-    margin-top: 50px;
-    max-width: 900px;
-    margin: auto;
-}
-
-section#card-info img {
-    width: 150px;
-    height: 150px;
-}
-
-section#card-info .container-card-1{
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-section#card-info .container-card-1 .card{
-    border: 1px solid orange;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #242e4c;
-    margin: 10px;
+.header-container ul .link-item a {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 5px;
     border-radius: 5px;
 }
 
-section#card-info .container-card-1 .card p {
-    color: red;
-    padding: 2px;
+.logo-container span {
+    color: #AD4C4C;
 }
 
-section#card-info .container-card-1 .card button {
-    color: white;
-    margin-top: 5px;
-    background-color: orange;
-    padding: 10px;
-    border: none;
-    border-radius: 2px;
+.main-header h5 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
 }
 
+.main-header h5 span {
+    color: #C9C9C9;
+}
 
+.main-header h3 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 45px;
+}
 
-section#card-info .container-card-2{
+.kfc-container {
+    margin-top: 20px;
     display: flex;
-    margin-top: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.kfc-container h5 a {
+    text-decoration: none;
+    color: #AD4C4C;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    margin-top: -10px;
+}
+
+.kfc-header {
+    display: flex;
+}
+
+.kfc-header h4 {
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.kfc-items {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-section#card-info .container-card-2 .card {
-    border: 1px solid orange;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px #242e4c;
+.item-one-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-section#card-info .container-card-2 .card p {
-    color: red;
-    padding: 2px;
+.item-two-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-section#card-info .container-card-2 .card button {
-    color: white;
-    margin-top: 5px;
-    background-color: orange;
-    padding: 10px;
-    border: none;
-    border-radius: 2px;
-}  
+.item-three-flex {
+    display: flex;
+    justify-content: space-between;
+}
 
+.item-four-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button a {
+    text-decoration: none;
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1020px) {}
+
+@media screen and (max-width: 940px) {}
+
+@media screen and (max-width: 760px) {}
+
+@media screen and (max-width: 600px) {
+    .header-container h3 {
+        margin-top: 26px;
+        margin-left: 15px;
+    }
+    .kfc-container h5 a {
+        margin-right: 10px;
+    }
+    .main-header h3 {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .main-header h5 {
+        margin-left: 10px;
+    }
+    .kfc-items {
+        margin-left: 35px;
+    }
+    .kfc-items {
+        margin-left: 150px;
+    }
+    .item-two {
+        margin-top: 30px;
+    }
+    .item-three {
+        margin-top: 30px;
+    }
+    .item-four {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .kfc-items {
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header-container h3 {
+        margin-top: 26px;
+        margin-left: 10px;
+    }
+    .main-header h3 {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .main-header h5 {
+        margin-left: 10px;
+    }
+    .kfc-container h5 a {
+        display: none;
+    }
+    .kfc-header {
+        margin-left: 10px;
+    }
+    .kfc-items {
+        margin-left: 35px;
+    }
+    .item-two {
+        margin-top: 30px;
+    }
+    .item-three {
+        margin-top: 30px;
+    }
+    .item-four {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
