@@ -6,7 +6,7 @@ ITALIC='\x1b[3m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 
-total_tests=5 # only 6 tests are currently being done, this value should be changed if tests increases
+total_tests = 6 # only 6 tests are currently being done, this value should be changed if tests increases
 
 echo -n "Enter First Name : "
 read first_name
@@ -36,7 +36,7 @@ check_php_folder_existence() {
         php_folder_exists=0
         echo ""
         echo -e "${BOLD}Checking the php folder ...${NONE}"
-        echo -e "${RED}Your folder should be named ${BOLD}\"php\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
+        echo -e "${RED}Your folder should be named ${BOLD}\"php\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/php\"${NONE}${RED})${NONE}"
     else
         php_folder_exists=1
     fi
