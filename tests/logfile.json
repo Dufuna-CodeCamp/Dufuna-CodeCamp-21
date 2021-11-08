@@ -1,12 +1,13 @@
 {
   "stats": {
-    "tests": 5,
-    "passes": 5,
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
     "failures": 0,
-<<<<<<< HEAD
-    "start": "2021-11-05T15:21:49.759Z",
-    "end": "2021-11-05T15:21:52.769Z",
-    "duration": 3010,
+    "start": "2021-11-08T14:27:43.057Z",
+    "end": "2021-11-08T14:27:45.690Z",
+    "duration": 2633,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -17,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8d3da585-3286-47c6-9ade-9e0ae5faa808",
+      "uuid": "c7d3fc8e-a9cd-4711-920b-4df294091b44",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -26,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f665d61d-696d-493f-9c8a-bfa263fb61b8",
+          "uuid": "09124033-6052-4541-915d-9a84a6a2ddba",
           "title": "Testing Scholars Project",
           "fullFile": "/Users/macadmin/Desktop/Dufuna-CodeCamp-21/tests/Dom_2/dom.js",
           "file": "/dom.js",
@@ -35,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -44,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "110776a4-7ee7-4b48-b26b-93e22411a0ac",
-              "parentUUID": "f665d61d-696d-493f-9c8a-bfa263fb61b8",
+              "uuid": "93a7d0a1-8042-44e9-b997-c099db2d7fbb",
+              "parentUUID": "09124033-6052-4541-915d-9a84a6a2ddba",
               "isHook": true,
               "skipped": false
             }
@@ -64,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "df8e44bb-d875-4b1b-96f5-97babf65a9aa",
-              "parentUUID": "f665d61d-696d-493f-9c8a-bfa263fb61b8",
+              "uuid": "86a12132-beab-4eef-b69f-045af388779b",
+              "parentUUID": "09124033-6052-4541-915d-9a84a6a2ddba",
               "isHook": true,
               "skipped": false
             }
@@ -75,7 +76,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 2903,
+              "duration": 2508,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -84,8 +85,8 @@
               "context": null,
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
               "err": {},
-              "uuid": "19f3682d-46fa-4da2-b691-47a3ca196bf0",
-              "parentUUID": "f665d61d-696d-493f-9c8a-bfa263fb61b8",
+              "uuid": "c1cad32c-a0bf-42b3-abbc-3392905b426d",
+              "parentUUID": "09124033-6052-4541-915d-9a84a6a2ddba",
               "isHook": false,
               "skipped": false
             },
@@ -93,7 +94,7 @@
               "title": "test case: check colour of text",
               "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 58,
+              "duration": 57,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -102,8 +103,8 @@
               "context": null,
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
               "err": {},
-              "uuid": "f389a139-7e8b-47a6-9502-73fb6b7468fa",
-              "parentUUID": "f665d61d-696d-493f-9c8a-bfa263fb61b8",
+              "uuid": "4f158cff-1e86-45aa-ad60-8e07bd5afd35",
+              "parentUUID": "09124033-6052-4541-915d-9a84a6a2ddba",
               "isHook": false,
               "skipped": false
             },
@@ -111,31 +112,31 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 38,
+              "duration": 26,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {},
-              "uuid": "624170b5-1392-4ef1-89a3-b43844393c37",
-              "parentUUID": "f665d61d-696d-493f-9c8a-bfa263fb61b8",
+              "uuid": "9ddaf56f-d845-4b46-ae22-2b93f6347fc8",
+              "parentUUID": "09124033-6052-4541-915d-9a84a6a2ddba",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "19f3682d-46fa-4da2-b691-47a3ca196bf0",
-            "f389a139-7e8b-47a6-9502-73fb6b7468fa",
-            "624170b5-1392-4ef1-89a3-b43844393c37"
+            "c1cad32c-a0bf-42b3-abbc-3392905b426d",
+            "4f158cff-1e86-45aa-ad60-8e07bd5afd35",
+            "9ddaf56f-d845-4b46-ae22-2b93f6347fc8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2999,
+          "duration": 2591,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -175,8 +176,5 @@
       },
       "version": "5.2.0"
     }
-=======
-    "owner": "dufunaTask"
->>>>>>> c120d603846b4b84402eceefcbca4e32a201893c
   }
 }
