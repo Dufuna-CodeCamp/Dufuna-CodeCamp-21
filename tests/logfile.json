@@ -1,10 +1,9 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 3,
-    "passes": 3,
-    "pending": 0,
+    "tests": 5,
+    "passes": 5,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2021-11-05T15:21:49.759Z",
     "end": "2021-11-05T15:21:52.769Z",
     "duration": 3010,
@@ -176,5 +175,8 @@
       },
       "version": "5.2.0"
     }
+=======
+    "owner": "dufunaTask"
+>>>>>>> c120d603846b4b84402eceefcbca4e32a201893c
   }
 }
