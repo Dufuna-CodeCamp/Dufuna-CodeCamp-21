@@ -3,7 +3,7 @@ var webdriver = require('selenium-webdriver');
 var assert = require('chai').assert;
 var { By } = require("selenium-webdriver");
 
-describe("Testing Form Task", function (done) {
+describe("Testing Cookies Task", function (done) {
     var driver = new webdriver.Builder()
         .forBrowser('chrome')
         .build(done);
@@ -16,13 +16,6 @@ describe("Testing Form Task", function (done) {
         after(function() {
             driver.quit();
         });
-
-
-    // it('test case: assert 4 input fields are present', async () => {
-    //     const input = await driver.findElements(By.css('input'));
-    //     const size = input.length
-    //     assert.equal(size, 4, `Ensure you have all the input fields in the order stated in the task criteria`);
-    // });
 
     it('test case: S/N is present', async () => {
         const name = await driver.findElement(By.css("body"));
