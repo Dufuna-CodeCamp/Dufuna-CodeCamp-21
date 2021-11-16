@@ -27,16 +27,16 @@ CREAT TABLE vendor_food (
 );
 
 --CREATE ADMIN TABLE
--- CREATE TABLE admins (
---   id INT NOT NULL AUTO_INCREMENT,
---   name VARCHAR(100) NOT NULL,
---   type INT NOT NULL,
---   email_address VARCHAR(255) NOT NULL,
---   phone_number VARCHAR(50) NOT NULL,
---   password VARCHAR(15)NOT NULL,
---   created_at DATETIME,
---   PRIMARY KEY(id)
--- );
+CREATE TABLE admins (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  type INT NOT NULL,
+  email_address VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(50) NOT NULL,
+  password VARCHAR(15)NOT NULL,
+  created_at DATETIME,
+  PRIMARY KEY(id)
+);
 
 
 
