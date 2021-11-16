@@ -36,7 +36,7 @@ check_php_folder_existence() {
         php_folder_exists=0
         echo ""
         echo -e "${BOLD}Checking the database folder ...${NONE}"
-        echo -e "${RED}Your folder should be named ${BOLD}\"php\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/database\"${NONE}${RED})${NONE}"
+        echo -e "${RED}Your folder should be named ${BOLD}\"php\"${NONE} ${RED}and located in the folder with your First and Last name. (${BOLD}\"$folder_name/php\"${NONE}${RED})${NONE}"
     else
         php_folder_exists=1
     fi
