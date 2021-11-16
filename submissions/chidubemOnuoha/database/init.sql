@@ -38,14 +38,7 @@ CREAT TABLE vendor_food (
 --   PRIMARY KEY(id)
 -- );
 
-CREATE TABLE admins (
-id INT NOT NULL AUTO_INCREMENT,
-name VARCHAR,
-type INT NOT NULL,
-email_address VARCHAR,
-phone_number VARCHAR,
-password VARCHAR
-);
+
 
 -- CREATE CUSTOMER TABLE
 CREATE TABLE customers (
