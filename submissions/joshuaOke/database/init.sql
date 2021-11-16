@@ -23,14 +23,14 @@ amount float(10,2) NOT NULL
 );
 
 -- CREATE the admins TABLE
--- CREATE TABLE admins (
--- id INT NOT NULL AUTO_INCREMENT,
--- name VARCHAR,
--- type INT NOT NULL,
--- email_address VARCHAR,
--- phone_number VARCHAR,
--- password VARCHAR
--- );
+CREATE TABLE admins (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR,
+type INT NOT NULL,
+email_address VARCHAR,
+phone_number VARCHAR,
+password VARCHAR
+);
 
 -- CREATE the customers TABLE
 CREATE TABLE customers (
