@@ -1,7 +1,3 @@
-
-
-
-
 -- this is the beginning of the queries
 -- this CREATEs the db
 -- CREATE database foodbag;
