@@ -49,14 +49,14 @@ describe("Testing Cookies Task", function (done) {
         const name = await driver.findElement(By.css("body"));
         const text = await name.getText();
         const actions = await text.toLowerCase();
-        assert.include(actions, "Actions", `Ensure "Actions" column is present on the table`);
+        assert.include(actions, "actions", `Ensure "Actions" column is present on the table`);
     });
 
     it('test case: View button is is present', async () => {
         const name = await driver.findElement(By.css("body"));
         const text = await name.getText();
         const view = await text.toLowerCase();
-        assert.include(view, "View", `Ensure "VIEW" column is present on the table`);
+        assert.include(view, "view", `Ensure there is a button with text "VIEW" in the actions column`);
     });
 
     it('test case: Check if cookies is set', async () => {
