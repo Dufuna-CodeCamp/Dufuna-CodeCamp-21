@@ -60,7 +60,7 @@ describe("Testing Cookies Task", function (done) {
     });
 
     it('test case: View button is is present', async () => {
-        const text = await driver.findElement(By.css("body")).getText();
+        const text = await driver.findElement(By.css("button")).getText();
         const view = text.toLowerCase();
         assert.include(view, "view", `Ensure there is a button with text "VIEW" in the actions column`);
     });
