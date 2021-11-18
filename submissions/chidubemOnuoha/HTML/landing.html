@@ -35,34 +35,38 @@
         <!-- address container  -->
         <section id="address-container">
             <h4>Where are you?</h4>
-            <select name="" id="" class="select-container">
-                <option value="">ikeja</option>
-                <option value="">lagos island</option>
-                <option value=""> isheri</option>
+            <select name="" id="select-state" class="select-container" required>
+                <option value=""> 
+                </option>
+                <option value="ikeja">ikeja</option>
+                <option value="lagos">lagos island</option>
+                <option value="isheri"> isheri</option>
             </select>
+  
         </section>
+        <span class="error-block"></span>
         <!-- end of address container -->
 
         <!-- food container -->
         <section class="food-container">
             <h4>Pick an interest</h4>
             <div class="food-items">
-                <div class="item-list">
+                <div class="item-list" type="submit" value="Validate" id="submitForm" >
                     <img src="../images/fast-food 1.svg" alt="">
                     <h5>Fast food</h5>
                     <p>All sorrows are less with bread.</p>
                 </div>
-                <div class="item-list">
+                <div class="item-list" type="submit" value="Validate" id="submitForm1" >
                     <img src="../images/healthy-food 1.svg" alt="">
                     <h5>Vegetables & Fruits</h5>
                     <p>Vegetables & Fruits</p>
                 </div>
-                <div class="item-list">
+                <div class="item-list" type="submit" value="Validate" id="submitForm2" >
                     <img src="../images/mai-thai 1.svg" alt="">
                     <h5>Drinks & Cocktails</h5>
                     <p>I feel sad for those who don't drink.</p>
                 </div>
-                <div class="item-list">
+                <div class="item-list" type="submit" value="Validate" id="submitForm3" >
                     <img src="../images/fork 1.svg" alt="">
                     <h5>Resturants</h5>
                     <p>All sorrows are less with bread.</p>
@@ -79,9 +83,9 @@
             <h3>How we serve you</h3>
             <div class="service-container">
                 <div class="service-item">
-                  <img src="../images/Map_Two Color 1.svg" alt="world in search">
-                  <h4>Tell us where you are</h4>
-                  <p>Select the location you want us to deliver.</p>
+                    <img src="../images/Map_Two Color 1.svg" alt="world in search">
+                    <h4>Tell us where you are</h4>
+                    <p>Select the location you want us to deliver.</p>
                 </div>
                 <div class="service-item">
                     <img src="../images/Fast food_Two Color (1) 1.svg" alt="world in search">
@@ -96,15 +100,15 @@
             </div>
         </section>
         <!-- end of services container -->
-       <hr style="margin-top: 81px; color: #F2F2F2;">
+        <hr style="margin-top: 81px; color: #F2F2F2;">
     </main>
 
     <footer>
-         <div class="footer-container">
+        <div class="footer-container">
             <h3 class="footer-heading">Contact us</h3>
             <div class="footer-content-1">
                 <div class="footer-items">
-                  <img src="../images/twitter 2.svg" alt="twitter icon">
+                    <img src="../images/twitter 2.svg" alt="twitter icon">
                 </div>
                 <div class="footer-items">
                     <img src="../images/youtube 1.svg" alt="twitter icon">
@@ -115,15 +119,17 @@
             </div>
 
             <div class="footer-content-2">
-                 <div class="footer-items-2">
-                  Terms & Conditions . Privacy Policy
-                 </div>
-                 <div class="footer-items-3">
+                <div class="footer-items-2">
+                    Terms & Conditions . Privacy Policy
+                </div>
+                <div class="footer-items-3">
                     © Copyright 2021 FoodBag is a registered trademark
                 </div>
             </div>
-         </div>   
+        </div>
     </footer>
+
+    <script src="../DOM/landing.js"></script>
 </body>
 
 </html>

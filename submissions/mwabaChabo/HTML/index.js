@@ -6,14 +6,14 @@ var productList [
     productPrice:1800,
   },
   {
-  productName:"nokia",
-  imageUrl:"nokia.com",
-  productPrice:3800,
+    productName:"nokia",
+    imageUrl:"nokia.com",
+    productPrice:3800,
   },
   {
-  productName:"motorola",
-  imageUrl:"motorola.com",
-  productPrice:4600,
+    productName:"motorola",
+    imageUrl:"motorola.com",
+    productPrice:4600,
   },
 ];
 
