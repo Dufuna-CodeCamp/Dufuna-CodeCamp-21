@@ -129,15 +129,8 @@ input {
     font-size: 20px;
     cursor: pointer;
     line-height: 1.1;
-    /*appearance: none;  A reset of styles, including removing the default dropdown arrow */
-    outline: none; /* existing styles */
-    /* background: url("images/keyboard_arrow_down.svg") no-repeat center right; */
+    outline: none; 
 }
-
-/*To remove button from IE11, thank you Matt
-select::-ms-expand {
-    display: none;
-} */
 
 select:focus {
     border: 1px solid var(--select-focus);
@@ -191,18 +184,6 @@ select:hover {
 margin-right: 10px; 
 }
 
-/* .pick-box .image-hover {
-    display: none;
-    position: absolute;
-    margin: 30px 10px;
-    top: 0px;
-    left: 0;
-    z-index: 99;
-}
-
-.pick-box:hover .image-hover {
-    display: inline; */
-}
 .pick-box:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #AD4C4C;
