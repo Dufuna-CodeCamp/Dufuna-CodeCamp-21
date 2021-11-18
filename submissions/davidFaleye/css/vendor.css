@@ -1,0 +1,175 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+:root {
+    --select-border: #C4C4C4;
+    --select-focus: #b4b3b3;
+    --select-arrow: #AD4C4C;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+nav a[href='index.html']{
+    font-weight: 600;
+    color: black;
+}
+
+.logo-bag{
+    color: #AD4C4C;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    padding: 50px 100px;
+    position: relative;
+    color: black;
+}
+
+nav li{
+    display: inline;
+    padding: 0 50px;
+    float: right;
+    color: #696969;
+    ;
+}
+
+nav a{
+    color:#696969;
+}
+
+.signup a{
+    padding: 8px 8px;
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+section{
+    padding:0 85px;
+}
+
+hr{
+    width: 85%;
+    opacity: 0.2;
+
+}
+  
+.pointer {
+    cursor: pointer;
+}
+
+.breadcrumb{
+    padding-top: 90px;
+    color: #C9C9C9;
+    font-size: 14px;
+    padding: 0 100px 0;
+}
+
+.breadcrumb span{
+    color: black;
+}
+
+.header {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 33px 0 20px;
+    padding: 0 100px 0;
+}
+
+.sect-detail{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 15px 0; 
+}
+
+.sect-detail a{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+    width: 100%;
+    color: #AD4C4C;
+}
+
+.sect-detail img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.sect-detail p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card{
+    width: 100%;
+    text-align: justify;    
+}
+
+.card-box{
+    display: block;
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 10px 15px 90px;
+}
+
+.card-box img{
+    width: 100%;
+    height: 100%;   
+}
+
+.card-info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.card-info h2{
+    color: #4E4D4D;
+    font-size:16px; ;
+    font-weight: 600;
+}
+
+.card-info p{
+    font-size:16px; ;
+    font-weight: 600;
+    color: #5EA304;
+    width: 45%;
+    text-align: right;   
+}
+
+.card-box button{
+    color: #AD4C4C;
+    background-color: white;
+    border: 1px solid #AD4C4C;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 7px 20px;
+}
+
+.card-box button:hover{
+    background-color: #cac8c8;
+    border: 1px solid white;
+}
+
+.chicken-republic{
+    padding-top: 20px;
+}
