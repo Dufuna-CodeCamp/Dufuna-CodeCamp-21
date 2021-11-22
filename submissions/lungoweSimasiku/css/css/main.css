@@ -1,0 +1,54 @@
+:root {
+  --offBlack: #4e4d4d;
+  --black: #000000;
+  --lightGray: #696969;
+  --maroon: #ad4c4c;
+  --veryLightGray: #a5a5a5;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 125%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li a {
+  color: var(--lightGray);
+}
+
+/** Header Section **/
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  margin: auto;
+  padding-top: 1.15em;
+}
+
+.logo {
+  font-size: 0.8em;
+  margin-right: auto;
+}
+
+.menu {
+  display: flex;
+  font-weight: 400;
+}
+
+.menu li a {
+  padding-right: 2em;
+}
+
+.menu,
+.nav__signup {
+  font-size: 0.5em;
+}

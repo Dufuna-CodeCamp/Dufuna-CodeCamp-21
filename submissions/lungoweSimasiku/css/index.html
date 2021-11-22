@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodBag</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
     <header class="header">
         <div class="header__nav">
-            <a href="#">FoodBag</a>
+            <a class="logo" href="index.html">FoodBag</a>
             <nav class="nav">
-                <ul>
+                <ul class="menu">
                     <li>
                         <a href="cart.html">Cart</a>
                     </li>
@@ -20,8 +24,11 @@
                         <a href="login.html">Login</a>
                     </li>
                 </ul>
-                <button class="nav__signup">Sign up</button>
+                
             </nav>
+            <div>
+                <button class="nav__signup">Sign up</button>
+            </div>
         </div>
     </header>
     <main class="main__container">
@@ -42,7 +49,7 @@
         <section class="selection">
             <div class="selection__content">
                 <div class="fastfood selection-card">
-                    <a href="vendor.html">
+                    <a href="vendors.html">
                         <img src="images/fast-food_disabled.svg" alt="fast food icon of a burger and drink" />
                         <h4>Fast Food</h4>
                         <p>All sorrows are less with bread</p>
