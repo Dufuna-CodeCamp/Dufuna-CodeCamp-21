@@ -9,7 +9,7 @@ for (let n = 1; n <= maxNumber; n++) {
        str += " Developer";
     }
     if (n % 5 != 0 && n % 3 != 0) {
-        str += i;
+        str += n;
     }
     document.write("<p>" + toWrite + "</p>");
 }
