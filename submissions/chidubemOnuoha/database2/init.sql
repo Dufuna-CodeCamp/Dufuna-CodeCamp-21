@@ -25,7 +25,7 @@ CREATE TABLE  passengers (
      number_sibling  VARCHAR NULL,
      created_at DATETIME,
      passenger_id INT NOT NULL,
-     FOREIGN key(passengers_id) REFERENCES passengers(id)
+     FOREIGN key(passengers_id)
      
  );
 
@@ -38,7 +38,7 @@ CREATE TABLE  passengers (
     assigned_cabin VARCHAR NOT NULL,
     passenger_class VARCHAR  NOT NULL,
     created_at DATETIME
-    FOREIGN key(passenger_id) REFERENCES passengers(id)
+    FOREIGN key(passenger_id)
     
 
  )
