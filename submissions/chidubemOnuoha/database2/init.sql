@@ -16,7 +16,7 @@ CREATE TABLE  passengers (
 
 --creating a passengers detail table
  CREATE TABLE passengers_details (
-     id INT NOT NULL AUTO_INCREMENT ,
+     id INT NOT NULL AUTO_INCREMENT  FOREIGN KEY (passengers_id),
      passenger_class VARCHAR NOT NULL,
      ticket_number VARCHAR NOT NULL,
      trip_fare VARCHAR NOT NULL,
@@ -25,20 +25,19 @@ CREATE TABLE  passengers (
      number_sibling  VARCHAR NULL,
      created_at DATETIME,
      passenger_id INT NOT NULL,
-     FOREIGN key(passengers_id)
      
  );
 
 --creting a passenger acciedent_cases
  CREATE TABLE accident_cases (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY (id),
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY (id) FOREIGN KEY (passengers_id)  ,
     passenger_id INT NOT NULL AUTO_INCREMENT,
     accident_id INT NOT NULL
     ticket_number VARCHAR NOT NULL,
     assigned_cabin VARCHAR NOT NULL,
     passenger_class VARCHAR  NOT NULL,
     created_at DATETIME
-    FOREIGN key(passenger_id)
+    FOREIGN key(passengers_id)
     
 
  )
