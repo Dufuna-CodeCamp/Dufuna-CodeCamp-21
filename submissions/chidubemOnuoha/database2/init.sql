@@ -7,9 +7,38 @@ USE transport_company;
 
 CREATE TABLE  passengers (
     id NOT NULL AUTO_INCREMENT,
-    full_name VARCHAR,
-    sex VARCHAR,
-    age VARCHAR,
+    full_name VARCHAR NOT NULL,
+    sex VARCHAR NOT NULL,
+    age VARCHAR NOT NULL,
+    created_at DATETIME,
+    PRIMARY key (id)
 );
 
+--creating a passengers detail table
+ CREATE TABLE passengers_details (
+     id INT NOT NULL AUTO_INCREMENT,
+     passenger_class VARCHAR NOT NULL,
+     ticket_number VARCHAR NOT NULL,
+     trip_fare VARCHAR NOT NULL,
+     assigned_cabin VARCHAR NOT NULL,
+     number_passengers VARCHAR NULL,
+     number_sibling  VARCHAR NULL,
+     created_at DATETIME,
+     passenger_id INT NOT NULL,
+     PRIMARY (id),
+     FOREIGN KEY(passenger_id) REFERENCES passengers (id)
+     
+ );
+
+--creting a passenger acciedent_cases
+ CREATE TABLE accident_cases (
+     id INT NOT NULL AUTO_INCREMENT,
+      accident_id INT NOT NULL
+     ticket_number VARCHAR NOT NULL,
+     assigned_cabin VARCHAR NOT NULL,
+     passenger_class VARCHAR  NOT NULL,
+     created_at DATETIME
+    FOREIGN KEY(accident_id) REFERENCES passengers_details(id)
+
+ )
 
