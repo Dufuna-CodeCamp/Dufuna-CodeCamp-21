@@ -1,5 +1,5 @@
 --create a database for a transport company
-CREATE DATABASE transport_company;
+CREATE DATABASE REFERENCES,
 --run your command to create your database
 
 --we are going to use the databse
