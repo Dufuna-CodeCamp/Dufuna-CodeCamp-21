@@ -33,8 +33,6 @@ nav ul{
 }
 
 nav{
-    padding: 50px 100px;
-    position: relative;
     color: black;
 }
 
@@ -43,7 +41,6 @@ nav li{
     padding: 0 50px;
     float: right;
     color: #696969;
-    ;
 }
 
 nav a{
@@ -58,14 +55,9 @@ nav a{
     border-radius: 5px;
 }
 
-section{
-    padding:0 85px;
-}
-
 hr{
     width: 85%;
     opacity: 0.2;
-
 }
   
 .pointer {
@@ -73,10 +65,7 @@ hr{
 }
 
 .breadcrumb{
-    padding-top: 90px;
     color: #C9C9C9;
-    font-size: 14px;
-    padding: 0 100px 0;
 }
 
 .breadcrumb span{
@@ -85,18 +74,13 @@ hr{
 
 .header {
     color: black;
-    font-size: 30px;
     font-weight: 500;
-    margin: 33px 0 20px;
-    padding: 0 100px 0;
 }
 
 .sect-detail{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 40px;
-    padding: 0 15px 0; 
 }
 
 .sect-detail a{
@@ -107,28 +91,18 @@ hr{
     color: #AD4C4C;
 }
 
-.sect-detail img{
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-}
-
 .sect-detail p{
-    font-size: 20px;
     font-weight: 500;
 }
 
 .card{
-    width: 100%;
-    text-align: justify;    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
 }
 
 .card-box{
-    display: block;
-    position: relative;
-    float: left;
-    width: 25%;
-    padding: 10px 15px 90px;
+    margin-bottom: 20px;
 }
 
 .card-box img{
@@ -138,7 +112,7 @@ hr{
 
 .card-info{
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 .card-info h2{
@@ -150,9 +124,7 @@ hr{
 .card-info p{
     font-size:16px; ;
     font-weight: 600;
-    color: #5EA304;
-    width: 45%;
-    text-align: right;   
+    color: #5EA304;  
 }
 
 .card-box button{
@@ -172,4 +144,155 @@ hr{
 
 .chicken-republic{
     padding-top: 20px;
+}
+
+@media screen and (max-width:440px) {
+    nav{
+        padding: 50px 20px;
+    }
+    nav li{
+        padding: 0 10px;
+        font-size: 13px;
+    }
+    section{
+        padding:0 20px 40px;
+    }
+
+    .breadcrumb{
+        padding-top: 60px;
+        font-size: 14px;
+        padding: 0 20px 0;
+    }
+    .header {
+        font-size: 20px;
+        margin: 23px 0 20px;
+        padding-left: 20px;
+    }
+    .sect-detail{
+        justify-content: flex-start;
+        margin-top: 23px;
+        padding: 0; 
+    }
+    .sect-detail a{
+        display: none;
+    }
+    .view{
+        text-align: center;
+    }
+    .view a{
+        font-size: 16px;
+        font-weight: 500;
+        color: #AD4C4C;
+    }
+    .sect-detail img{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .sect-detail p{
+        font-size: 15px;
+    }
+    .card{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:440px) {
+    nav{
+        padding: 50px 50px;
+    }
+    nav li{
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    section{
+        padding:0 50px 50px;
+    }
+
+    .breadcrumb{
+        padding-top: 70px;
+        font-size: 15px;
+        padding: 0 50px 0;
+    }
+    .header {
+        font-size: 20px;
+        margin: 25px 0 50px;
+        padding-left: 50px;
+    }
+    .sect-detail{
+        justify-content: flex-start;
+        margin-top: 23px;
+        padding: 0; 
+    }
+    .view{
+        display: none;
+    }
+    .sect-detail img{
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+    .sect-detail p{
+        font-size: 16px;
+    }
+    .card{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       column-gap: 20px;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    nav{
+        padding: 50px 100px;
+    }
+    nav li{
+        padding: 0 50px;
+        font-size: 15px;
+    }
+
+    section{
+        padding: 30px 100px;
+    }
+
+    .breadcrumb{
+        padding-top: 90px;
+        font-size: 14px;
+        padding: 0 100px 0;
+    }
+    .header {
+        font-size: 20px;
+        margin: 33px 0 20px;
+        padding-left: 100px;
+    }
+    .sect-detail a{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: right;
+        width: 100%;
+        color: #AD4C4C;
+    }
+    .sect-detail{
+        justify-content: flex-start;
+        margin-top: 40px;
+        padding: 15px; 
+    }
+    .view{
+        display: none;
+    }
+    .sect-detail img{
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .sect-detail p{
+        font-size: 20px;
+    }
+    .card{
+       display: flex;
+       flex-wrap: nowrap;
+       justify-content: space-between;
+    }
 }
