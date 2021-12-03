@@ -6,10 +6,10 @@ CREATE DATABASE transport_company;
 USE transport_company;
 
 CREATE TABLE  passengers (
-    id NOT NULL AUTO_INCREMENT PRIMARY key,
+    id NOT NULL AUTO_INCREMENT PRIMARY key  age VARCHAR,
     full_name VARCHAR NOT NULL,
     sex VARCHAR NOT NULL,
-    age VARCHAR
+   
     created_at DATETIME,
     
 );
@@ -30,7 +30,7 @@ CREATE TABLE  passengers (
 
 --creting a passenger acciedent_cases
  CREATE TABLE accident_cases (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY (id) FOREIGN KEY (passengers_id)  ,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY (id) FOREIGN KEY (passengers_id),
     passenger_id INT NOT NULL AUTO_INCREMENT,
     accident_id INT NOT NULL
     ticket_number VARCHAR NOT NULL,
