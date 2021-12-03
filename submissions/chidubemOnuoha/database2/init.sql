@@ -25,7 +25,6 @@ CREATE TABLE  passengers (
      number_sibling  VARCHAR NULL,
      created_at DATETIME,
      passenger_id INT NOT NULL,
-     PRIMARY  (id),
      FOREIGN key(passengers_id) REFERENCES passengers(id)
      
  );
