@@ -4,11 +4,12 @@ var assert = require("chai").assert;
 var { Builder, By } = require("selenium-webdriver");
 
 describe("Testing Scholars Project", function () {
-  var driver = new Builder().forBrowser("chrome").build();
+  this.timeout(3 * 1000 * 60);
+  const driver = new webdriver.Builder().forBrowser("chrome").build();
 
   before(function setupWebdriver(done) {
     var file_url = `file://${file_path}`;
-    driver.get(file_url);
+    driver.get(file_url).then(done);
   });
 
   after(function () {
