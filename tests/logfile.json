@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 4,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 3,
-    "start": "2021-12-10T14:38:04.063Z",
-    "end": "2021-12-10T14:38:40.019Z",
-    "duration": 35956,
+    "failures": 2,
+    "start": "2021-12-10T15:12:53.365Z",
+    "end": "2021-12-10T15:13:02.867Z",
+    "duration": 9502,
     "testsRegistered": 4,
-    "passPercent": 25,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "26d5d191-5ba8-4a1d-8208-6523e8498e61",
+      "uuid": "b21f8563-c2cb-48ab-aadd-eeed21582e24",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+          "uuid": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 31558,
+              "duration": 9082,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "45bf6652-9210-4649-b3f4-bcefbd1b8f97",
-              "parentUUID": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+              "uuid": "bbfbd9c9-3e7e-4abe-8ff8-fc455f56e582",
+              "parentUUID": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "5ab661ab-c290-4873-9fb6-7c868b31a63d",
-              "parentUUID": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+              "uuid": "5ee5f6e8-0e3c-4927-9641-c204fc42122c",
+              "parentUUID": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 3127,
+              "duration": 49,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
               "err": {
-                "message": "TypeError: Cannot read property 'getText' of null",
-                "estack": "TypeError: Cannot read property 'getText' of null\n    at Context.<anonymous> (html_task.js:21:32)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "message": "AssertionError: Ensure Price is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'price'",
+                "estack": "AssertionError: Ensure Price is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'price'\n    at Context.<anonymous> (html_task.js:23:12)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "506b1d24-7307-48b8-9a3e-28a000f924b8",
-              "parentUUID": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+              "uuid": "0c386c08-603a-4267-93f7-69581f456726",
+              "parentUUID": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 5,
+              "duration": 89,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -107,12 +107,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
               "err": {
-                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=96.0.4664.45)",
-                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=96.0.4664.45)\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async Context.<anonymous> (html_task.js:27:21)",
+                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'description'",
+                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'description'\n    at Context.<anonymous> (html_task.js:30:12)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "ab8865db-ab22-4106-8e82-bac03d87c87b",
-              "parentUUID": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+              "uuid": "a7a74ada-fe1d-4b6c-8e10-32362eb243b1",
+              "parentUUID": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
               "isHook": false,
               "skipped": false
             },
@@ -120,21 +120,17 @@
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 3,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 32,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
-              "err": {
-                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=96.0.4664.45)",
-                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=96.0.4664.45)\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async thenableWebDriverProxy.findElements (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1058:17)\n    at async Context.<anonymous> (html_task.js:34:20)",
-                "diff": null
-              },
-              "uuid": "9b6bd269-39aa-4d5b-b7c1-10e66fc4eb2e",
-              "parentUUID": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+              "err": {},
+              "uuid": "abdc0b89-f5d1-45f4-be32-d6e941b68e88",
+              "parentUUID": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
               "isHook": false,
               "skipped": false
             },
@@ -142,33 +138,33 @@
               "title": "test case: ordered list available",
               "fullTitle": "Testing Scholars Project test case: ordered list available",
               "timedOut": false,
-              "duration": 89,
+              "duration": 1,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
-              "uuid": "8c941151-db00-4b49-9a63-f3daa6c30bac",
-              "parentUUID": "98a8adab-6f8d-48e6-a55f-253b4614cf02",
+              "uuid": "c782afad-14ed-408c-bf5e-82f8b5426215",
+              "parentUUID": "5073d18a-0f34-4e98-94b7-bb2a1b2eeb09",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8c941151-db00-4b49-9a63-f3daa6c30bac"
+            "abdc0b89-f5d1-45f4-be32-d6e941b68e88",
+            "c782afad-14ed-408c-bf5e-82f8b5426215"
           ],
           "failures": [
-            "506b1d24-7307-48b8-9a3e-28a000f924b8",
-            "ab8865db-ab22-4106-8e82-bac03d87c87b",
-            "9b6bd269-39aa-4d5b-b7c1-10e66fc4eb2e"
+            "0c386c08-603a-4267-93f7-69581f456726",
+            "a7a74ada-fe1d-4b6c-8e10-32362eb243b1"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3224,
+          "duration": 171,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
