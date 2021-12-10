@@ -1,12 +1,12 @@
 <?php
-  for ($i=100; $i <= 150; $i++) { 
-    echo $i."<br>";
+  for ($i=101; $i <= 150; $i++) { 
+    echo "$i<br>";
   }
 
   echo "<br><br>";
 
-  for ($i=0; $i <= 50; $i++) { 
+  for ($i=0; $i < 50; $i++) { 
     if($i % 2 == 0){
-      echo $i."<br>"; 
+      echo "$i<br>"; 
     }
   }
