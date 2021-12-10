@@ -40,10 +40,8 @@ nav{
 
 nav li{
     display: inline;
-    padding: 0 50px;
     float: right;
     color: #696969;
-    ;
 }
 
 nav a,
@@ -67,16 +65,7 @@ footer li{
 footer p{
     float: right;
     padding: 0;
-    margin: 0;
-    
-}
-
-section{
-    padding:0 100px;
-}
-
-footer{
-    padding: 80px 100px  50px;
+    margin: 0;  
 }
 
 .contact{
@@ -98,13 +87,7 @@ hr{
     opacity: 0.2;
 }
 
-.sect1 {
-    text-align: center;
-    padding: 150px 0 80px 0;
-}
-
 .sect1 h3{
-    font-size: 40px;
     color: #4E4D4D;
 }
 
@@ -116,7 +99,6 @@ hr{
 form label{
     display: inline-block; 
     text-align: right;
-    padding-bottom: 20px;
     margin: 0;
 }
 
@@ -129,15 +111,8 @@ input {
     font-size: 20px;
     cursor: pointer;
     line-height: 1.1;
-    /*appearance: none;  A reset of styles, including removing the default dropdown arrow */
-    outline: none; /* existing styles */
-    /* background: url("images/keyboard_arrow_down.svg") no-repeat center right; */
+    outline: none; 
 }
-
-/*To remove button from IE11, thank you Matt
-select::-ms-expand {
-    display: none;
-} */
 
 select:focus {
     border: 1px solid var(--select-focus);
@@ -150,23 +125,18 @@ select:hover {
 }
 
 .pick{
-    margin: 40px 0 80px ;
-    width: 100%;
     justify-content: stretch;
 }
     
 .pick-box{
     display: inline-grid;
     position: relative;
-    padding: 30px 10px;
-    width: 275px;
-    color: #A5A5A5;;
+    color: #A5A5A5;
     border: 1px solid white;
     box-shadow: 0px 0px 2px 2px  rgba(0, 0, 0, 0.1); 
 }
 
 .pick-info h6{
-    font-size: 18px;
     font-weight: 400;
     line-height: 40px;
     padding: 0px;
@@ -191,18 +161,6 @@ select:hover {
 margin-right: 10px; 
 }
 
-/* .pick-box .image-hover {
-    display: none;
-    position: absolute;
-    margin: 30px 10px;
-    top: 0px;
-    left: 0;
-    z-index: 99;
-}
-
-.pick-box:hover .image-hover {
-    display: inline; */
-}
 .pick-box:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #AD4C4C;
@@ -216,12 +174,10 @@ margin-right: 10px;
 }
 
 .serve{
-    margin: 80px 0;
     text-align: center;
 }
 
 .serve h3{
-    font-size: 45px;
     font-weight: 600;
     color: #4E4D4D;
 }
@@ -229,8 +185,6 @@ margin-right: 10px;
 .serve-box{
     display: inline-grid;
     position: relative;
-    width: 33%;
-    padding: 39px;
 }
 
 .serve-info h5{
@@ -240,12 +194,261 @@ margin-right: 10px;
 }
 
 .serve-info p{
-    font-size: 18px;
     color: #A5A5A5;
 }
 
 .serve-box img{
     width: 100%;
     height: 100%;
-    padding:20px;
+}
+
+@media screen and (max-width:440px) {
+    nav{
+        padding: 50px 20px;
+    }
+    nav li{
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 18px;
+    }
+    section{
+        padding: 0 20px;
+    }
+    .sect1 {
+        text-align: left;
+        padding: 0 20px 30px;
+    }
+    .sect1 h3{
+        font-size: 30px;
+        margin: 20px 0 0;
+    }
+    .sect1 p{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    form label{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: -9px;
+    }
+    input {
+        font-size: 16px;
+        padding: 10px 7px;
+    }
+    .pick{
+        margin-bottom: 20px;
+    }
+    .pick-box{
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 20px 
+    }
+    .pick h5{
+        margin: 15px 0;
+    }
+    .pick-info p{
+        font-size: 16px;
+    }
+    .serve{
+        margin: 20px 0;
+    }
+    .serve h3{
+        font-size: 25px;
+    }
+    .serve-box{
+        padding: 0;
+        margin: 15px;
+        width: 80%
+    }
+    .serve-info h5{
+        font-size: 23px;
+        margin: 20px 0 5px;
+    }
+    .serve-info p{
+        font-size: 15px;
+        padding: 0 50px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .serve-box img{
+        width: 100%;
+        height: 100%;
+        padding:0;
+    }
+    .icon a{
+        padding: 10px;
+    }   
+    footer{
+        padding: 0 30px;
+        text-align: center;
+        font-size: 15px;
+    }
+    footer p{
+        padding:20px 0 20px;
+    }
+}
+
+@media screen and (min-width:440px) {
+    nav{
+        padding: 50px 50px;
+    }
+    nav li{
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    footer{
+        padding: 40px 50px  50px;
+        text-align: center;
+        font-size: 18px;
+    }
+    footer li{
+        display: inline;
+    }
+    footer p{
+        float: none;
+        text-align: center;
+        padding-top: 20px;
+    }
+    section{
+        padding: 0 50px;
+    }
+    .sect1 {
+        text-align: left;
+        padding: 40px 50px 10px;
+    }
+    .sect1 h3{
+        font-size: 30px;
+        margin: 20px 0 0;
+    }
+    .sect1 p{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    form label{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: -9px;
+    }
+    input {
+        font-size: 16px;
+        padding: 10px 7px;
+    }
+    .pick{
+        margin-bottom: 20px;
+    }
+    
+    .pick-box{   
+        width: 40%;
+        margin-bottom: 40px;
+        padding: 10px 10px 10px 10px; 
+    }
+    .pick h5{
+        margin: 15px 0;
+    }
+    .pick-info p{
+        font-size: 16px;
+    }
+    .serve{
+        margin: 20px 0;
+    }
+    .serve h3{
+        font-size: 25px;
+    }
+    .serve-box{
+        padding: 0;
+        margin: 15px;
+        width: 40%
+    }
+    .serve-info h5{
+        font-size: 23px;
+        margin: 20px 0 5px;
+    }
+    .serve-info p{
+        font-size: 15px;
+        padding: 0 50px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .serve-box img{
+        width: 100%;
+        height: 100%;
+        padding:0;
+    }   
+}
+
+@media screen and (min-width:795px) {
+
+    nav{
+        padding: 50px 100px;
+    }
+    nav li{
+        padding: 0 50px;
+    }
+    section{
+        padding:0 100px;
+    }
+    .sect1 {
+        text-align: center;
+        padding: 150px 0 80px 0;
+    }
+    .sect1 h3{
+        font-size: 40px;
+    }
+    .sect1 p{
+        font-size: 20px;
+    }
+    form label{
+        padding-bottom: 20px;
+    }
+    input {
+        padding: 0.25em 0.5em;
+        font-size: 20px;
+    }
+    .pick{
+        margin: 40px 0 80px;
+    }
+    .pick-box{
+    padding: 30px 10px;
+    width: 275px;
+    }
+    .pick h5{
+        margin: 0;
+    }
+    .pick-info h6{
+        font-size: 18px;
+    }
+    .serve{
+        margin: 80px 0;
+    }
+    .serve h3{
+        font-size: 45px;
+    }
+    .serve-box{
+        margin: 0;
+        width: 33%;
+        padding: 39px;
+    }
+    .serve-info h5{
+        margin: 0;
+    }
+    .serve-info p{
+        font-size: 18px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .serve-box img{
+        padding:10px;
+    }
+    footer p{
+        float: right;
+        padding: 0; 
+    }
+    footer{
+        text-align: left;
+        padding: 80px 100px  50px;
+    }
 }
