@@ -5,10 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-<<<<<<< HEAD
-    "start": "2021-12-11T10:04:26.769Z",
-    "end": "2021-12-11T10:04:30.109Z",
-    "duration": 3340,
+    "start": "2021-12-11T13:41:23.460Z",
+    "end": "2021-12-11T13:41:30.256Z",
+    "duration": 6796,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ad3fe413-b082-4660-bd5a-34b796f3b830",
+      "uuid": "3edb15b8-deff-43a2-a6bf-cdc4be52039e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -28,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "645cb033-da27-4ff2-94d3-d8901e4dc323",
+          "uuid": "e276866b-8daf-4170-bf78-44748210e7ca",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\PROJECTS\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -37,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 3306,
+              "duration": 6698,
               "state": null,
               "speed": null,
               "pass": false,
@@ -46,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "e5744460-23c4-43f8-b131-0d6e57f37e18",
-              "parentUUID": "645cb033-da27-4ff2-94d3-d8901e4dc323",
+              "uuid": "3c37ecc3-a642-453e-81ee-0f952945d52e",
+              "parentUUID": "e276866b-8daf-4170-bf78-44748210e7ca",
               "isHook": true,
               "skipped": false
             }
@@ -57,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -66,8 +65,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "70a361ba-706b-4c98-9783-70d37b6ba67c",
-              "parentUUID": "645cb033-da27-4ff2-94d3-d8901e4dc323",
+              "uuid": "f12cb3bf-d370-4a88-bc0b-ec89fe804db0",
+              "parentUUID": "e276866b-8daf-4170-bf78-44748210e7ca",
               "isHook": true,
               "skipped": false
             }
@@ -77,29 +76,29 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 26,
+              "duration": 42,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "20b3ea6f-e92f-470a-b851-1f936cae112c",
-              "parentUUID": "645cb033-da27-4ff2-94d3-d8901e4dc323",
+              "uuid": "ee0a2e41-e610-40b5-ae5a-c2a1064e6bf5",
+              "parentUUID": "e276866b-8daf-4170-bf78-44748210e7ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "20b3ea6f-e92f-470a-b851-1f936cae112c"
+            "ee0a2e41-e610-40b5-ae5a-c2a1064e6bf5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26,
+          "duration": 42,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -139,9 +138,5 @@
       },
       "version": "6.0.1"
     }
-=======
-
-    "owner": "joshuaOke"
->>>>>>> c4cbe81bde1db108cdbde391144d9216eb0a98b0
   }
 }
