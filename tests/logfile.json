@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-12-11T09:56:23.881Z",
-    "end": "2021-12-11T09:56:39.346Z",
-    "duration": 15465,
+    "failures": 0,
+    "start": "2021-12-11T10:04:26.769Z",
+    "end": "2021-12-11T10:04:30.109Z",
+    "duration": 3340,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ff63efa2-60a9-4bfd-be18-e8eb011d105f",
+      "uuid": "ad3fe413-b082-4660-bd5a-34b796f3b830",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e2d52620-63d9-4c13-9697-cb2d74f77440",
+          "uuid": "645cb033-da27-4ff2-94d3-d8901e4dc323",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\PROJECTS\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 14960,
+              "duration": 3306,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "6b962050-a5a0-4b07-ac07-607d991044ee",
-              "parentUUID": "e2d52620-63d9-4c13-9697-cb2d74f77440",
+              "uuid": "e5744460-23c4-43f8-b131-0d6e57f37e18",
+              "parentUUID": "645cb033-da27-4ff2-94d3-d8901e4dc323",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "7f167fbe-9228-4ebf-a40b-4ab1c227c87e",
-              "parentUUID": "e2d52620-63d9-4c13-9697-cb2d74f77440",
+              "uuid": "70a361ba-706b-4c98-9783-70d37b6ba67c",
+              "parentUUID": "645cb033-da27-4ff2-94d3-d8901e4dc323",
               "isHook": true,
               "skipped": false
             }
@@ -76,33 +76,29 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 179,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
-              "err": {
-                "message": "AssertionError: Ensure you have two links on this page: expected 1 to equal 2",
-                "estack": "AssertionError: Ensure you have two links on this page: expected 1 to equal 2\n    at Context.<anonymous> (navigation_tasks.js:22:16)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
-                "diff": "- 1\n+ 2\n"
-              },
-              "uuid": "a4529238-e3fb-4b78-947b-b6dc7b8267c0",
-              "parentUUID": "e2d52620-63d9-4c13-9697-cb2d74f77440",
+              "err": {},
+              "uuid": "20b3ea6f-e92f-470a-b851-1f936cae112c",
+              "parentUUID": "645cb033-da27-4ff2-94d3-d8901e4dc323",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "a4529238-e3fb-4b78-947b-b6dc7b8267c0"
+          "passes": [
+            "20b3ea6f-e92f-470a-b851-1f936cae112c"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 179,
+          "duration": 26,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
