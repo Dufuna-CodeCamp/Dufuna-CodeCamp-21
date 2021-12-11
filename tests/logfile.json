@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "stats": {
     "suites": 1,
@@ -6,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-11T06:02:25.683Z",
-    "end": "2021-12-11T06:02:57.098Z",
-    "duration": 31415,
+    "start": "2021-12-11T06:11:05.332Z",
+    "end": "2021-12-11T06:11:12.545Z",
+    "duration": 7213,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "dd2cf263-3a71-4bd0-9c3e-5d7ca9ec949f",
+      "uuid": "84d906ac-e0f6-427c-843e-8f61bfcb15d9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -28,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7c69a28a-951a-417f-8c46-f017fea3aca4",
+          "uuid": "94c5bd39-d8a7-47ef-b997-44205f3b7df9",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -37,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 31215,
+              "duration": 7004,
               "state": null,
               "speed": null,
               "pass": false,
@@ -46,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "4a2ac9a0-fa49-47ca-8e05-d844174effe4",
-              "parentUUID": "7c69a28a-951a-417f-8c46-f017fea3aca4",
+              "uuid": "ed01b079-2daa-4229-b6b8-0712371ec1c4",
+              "parentUUID": "94c5bd39-d8a7-47ef-b997-44205f3b7df9",
               "isHook": true,
               "skipped": false
             }
@@ -57,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -66,8 +65,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "6e902f5a-c595-44ec-9baf-75f7b8809ffb",
-              "parentUUID": "7c69a28a-951a-417f-8c46-f017fea3aca4",
+              "uuid": "75de0b5b-7f75-43c5-9afe-625cc22ee546",
+              "parentUUID": "94c5bd39-d8a7-47ef-b997-44205f3b7df9",
               "isHook": true,
               "skipped": false
             }
@@ -77,7 +76,7 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 141,
+              "duration": 98,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,20 +85,20 @@
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "9f733b58-e7a2-43ff-b2b8-f6cc567e14ec",
-              "parentUUID": "7c69a28a-951a-417f-8c46-f017fea3aca4",
+              "uuid": "39961e73-061d-417e-b3de-596ecaca3426",
+              "parentUUID": "94c5bd39-d8a7-47ef-b997-44205f3b7df9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9f733b58-e7a2-43ff-b2b8-f6cc567e14ec"
+            "39961e73-061d-417e-b3de-596ecaca3426"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 141,
+          "duration": 98,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -141,5 +140,3 @@
     }
   }
 }
-=======
->>>>>>> c4018789950f5fcb692c8ef95ac0a8d7c9e0be76
