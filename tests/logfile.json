@@ -5,6 +5,7 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2021-12-11T10:04:26.769Z",
     "end": "2021-12-11T10:04:30.109Z",
     "duration": 3340,
@@ -138,5 +139,9 @@
       },
       "version": "6.0.1"
     }
+=======
+
+    "owner": "joshuaOke"
+>>>>>>> c4cbe81bde1db108cdbde391144d9216eb0a98b0
   }
 }
