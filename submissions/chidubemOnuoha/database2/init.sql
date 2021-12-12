@@ -29,15 +29,15 @@ CREATE TABLE  passengers (
      
  );
 
- SELECT * passengers
- WHERE accident_id = ture;
+--  SELECT * passengers
+--  WHERE accident_id = ture;
 
 --creting a passenger acciedent_cases
  CREATE TABLE accident_cases (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY (id) FOREIGN KEY (passengers_id),
     passenger_id INT NOT NULL AUTO_INCREMENT,
-    accident_id INT NOT NULL
-    number_survival: VARCHAR(255 NOT null,)
+    accident_id INT NOT NULL,
+    passenger_status ENUM('Survived', 'Not Survived', 'Not sure'),
     ticket_number VARCHAR(50) NOT NULL,
     assigned_cabin VARCHAR(100) NOT NULL,
     passenger_class VARCHAR(100)  NOT NULL,
