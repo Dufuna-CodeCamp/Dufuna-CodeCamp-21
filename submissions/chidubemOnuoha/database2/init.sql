@@ -9,7 +9,7 @@ CREATE TABLE  passengers (
     id NOT NULL AUTO_INCREMENT PRIMARY key,
     full_name VARCHAR(100) NOT NULL,
     passengers_id INT NOT NULL 
-    age VARCHAR,
+    age INT NOT NOT,
     sex VARCHAR(10) NOT NULL, 
     created_at DATETIME,
     
@@ -29,6 +29,9 @@ CREATE TABLE  passengers (
      
  );
 
+ SELECT * passengers
+ WHERE accident_id = ture;
+
 --creting a passenger acciedent_cases
  CREATE TABLE accident_cases (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY (id) FOREIGN KEY (passengers_id),
@@ -40,7 +43,5 @@ CREATE TABLE  passengers (
     passenger_class VARCHAR(100)  NOT NULL,
     created_at DATETIME
     FOREIGN key(passengers_id)
-    
-
  )
 
