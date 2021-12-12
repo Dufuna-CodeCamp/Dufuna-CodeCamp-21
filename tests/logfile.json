@@ -1,18 +1,10 @@
 {
   "stats": {
-<<<<<<< HEAD
-    "tests": 7,
-    "passes": 7,
-    "failures": 0,
-    "owner": "chidubemOnuoha"
-=======
     "suites": 1,
     "tests": 1,
     "passes": 1,
     "pending": 0,
     "failures": 0,
-
     "owner": "joshuaOke"
->>>>>>> c4cbe81bde1db108cdbde391144d9216eb0a98b0
   }
 }
