@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    color: #696969;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;    
+}
+
+nav {
+    position: relative;
+}
+
+nav a strong {
+    color: #000000;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.navbar-item a {
+    margin-right: 30px;
+  }
+  
+ .navbar-item a:hover {
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+#signup {
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+nav a strong span {
+    color: #AD4C4C;
+
+}
+/* navbar-item */
+.navbar-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: right;
+}
+
+.navbar-item a {
+    padding: 10px;
+}
+
+/* FoodBag Description */
+.foodbag-desc {
+    text-align: center;
+
+}
+.foodbag-desc h1 {
+    color: #4E4D4D;
+}
+
+/* Forms */
+form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+form input {
+    height: 40px;
+    width: -webkit-fill-available;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-indent: 10px;
+    margin-top: 15px;
+}
+
+/* Interests */
+.interest {
+    color: #A5A5A5;
+    display: flex;
+    color: #A5A5A5;
+}
+.card-items {
+    margin: 20px 20px 80px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1); 
+}
+p .card-text {
+    margin-bottom: 0;
+}
+img, .card-body {
+    margin: 25px 30px;
+}
+
+/* Horizontal Rule */
+
+hr {
+    margin: 50px 0;
+    border: 1px solid #F2F2F2;
+
+}
+
+/* How we serve you */
+.services-text {
+    text-align: center;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Footer */
+footer h4 {
+    text-align: center;
+
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+
+}
