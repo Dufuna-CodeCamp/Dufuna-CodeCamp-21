@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 5,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-12-11T13:41:23.460Z",
-    "end": "2021-12-11T13:41:30.256Z",
-    "duration": 6796,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 5,
+    "start": "2021-12-13T19:10:05.790Z",
+    "end": "2021-12-13T19:10:08.695Z",
+    "duration": 2905,
+    "testsRegistered": 5,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3edb15b8-deff-43a2-a6bf-cdc4be52039e",
+      "uuid": "28fcb3d5-1a21-4584-99d8-4d15e3f3eb4b",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,14 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e276866b-8daf-4170-bf78-44748210e7ca",
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\PROJECTS\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
+          "title": "Testing Form Task",
+          "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\PROJECTS\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
+          "file": "\\html_form.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "timedOut": false,
-              "duration": 6698,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
-              "err": {},
-              "uuid": "3c37ecc3-a642-453e-81ee-0f952945d52e",
-              "parentUUID": "e276866b-8daf-4170-bf78-44748210e7ca",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "afterHooks": [
-            {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -63,42 +43,158 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
               "err": {},
-              "uuid": "f12cb3bf-d370-4a88-bc0b-ec89fe804db0",
-              "parentUUID": "e276866b-8daf-4170-bf78-44748210e7ca",
+              "uuid": "65c470ef-aa35-4746-90cd-9d26a7f6b31f",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "98d3e0e2-c329-433f-82ee-8b37e98d3fe3",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "title": "test case: assert 4 input fields are present",
+              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 42,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 2644,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
-              "err": {},
-              "uuid": "ee0a2e41-e610-40b5-ae5a-c2a1064e6bf5",
-              "parentUUID": "e276866b-8daf-4170-bf78-44748210e7ca",
+              "code": "const input = await driver.findElements(By.css(\"input\"));\nconst size = input.length;\nassert.equal(\n  size,\n  4,\n  `Ensure you have all the input fields in the order stated in the task criteria`\n);",
+              "err": {
+                "message": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 0 to equal 4",
+                "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 0 to equal 4\n    at Context.<anonymous> (html_form.js:22:12)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": "- 0\n+ 4\n"
+              },
+              "uuid": "c13aabfc-57bb-40a0-b90b-7de3ca9eca8a",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Full Name label is present",
+              "fullTitle": "Testing Form Task test case: Full Name label is present",
+              "timedOut": false,
+              "duration": 97,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(\n  fullname,\n  \"full name\",\n  `Ensure \"Full Name\" label is present`\n);",
+              "err": {
+                "message": "AssertionError: Ensure \"Full Name\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'full name'",
+                "estack": "AssertionError: Ensure \"Full Name\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'full name'\n    at Context.<anonymous> (html_form.js:33:12)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "75109d2e-048e-4779-b928-3d7cf55d5c15",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Email label is present",
+              "fullTitle": "Testing Form Task test case: Email label is present",
+              "timedOut": false,
+              "duration": 23,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"Email\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'email'",
+                "estack": "AssertionError: Ensure \"Email\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'email'\n    at Context.<anonymous> (html_form.js:44:12)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "9f334077-8204-4e5d-b6fa-15d3f5c30e75",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Subject label is present",
+              "fullTitle": "Testing Form Task test case: Subject label is present",
+              "timedOut": false,
+              "duration": 23,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.include(subject, \"subject\", `Ensure \"Subject\" label is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"Subject\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'subject'",
+                "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'subject'\n    at Context.<anonymous> (html_form.js:51:12)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "5abadceb-d56f-4f43-931c-51046206a366",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Message label is present",
+              "fullTitle": "Testing Form Task test case: Message label is present",
+              "timedOut": false,
+              "duration": 21,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.include(message, \"message\", `Ensure \"Message\" label is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"Message\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'message'",
+                "estack": "AssertionError: Ensure \"Message\" label is present: expected 'your file couldn’t be accessed\\nit may have been moved, edited, or deleted.\\nerr_file_not_found' to include 'message'\n    at Context.<anonymous> (html_form.js:58:12)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "e9fc9f29-720b-4a23-a81d-48dfae298c80",
+              "parentUUID": "a1b457d3-ed56-4186-a908-2bf1e03cf26b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "ee0a2e41-e610-40b5-ae5a-c2a1064e6bf5"
+          "passes": [],
+          "failures": [
+            "c13aabfc-57bb-40a0-b90b-7de3ca9eca8a",
+            "75109d2e-048e-4779-b928-3d7cf55d5c15",
+            "9f334077-8204-4e5d-b6fa-15d3f5c30e75",
+            "5abadceb-d56f-4f43-931c-51046206a366",
+            "e9fc9f29-720b-4a23-a81d-48dfae298c80"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 42,
+          "duration": 2808,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -132,7 +228,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/mintas/Desktop/New-beginning-code/Dufuna/PROJECTS/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/Users/mintas/Desktop/New-beginning-code/Dufuna/PROJECTS/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
