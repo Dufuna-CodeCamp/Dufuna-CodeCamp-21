@@ -1,11 +1,8 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
-    "pending": 0,
+    "tests": 7,
+    "passes": 7,
     "failures": 0,
-
-    "owner": "joshuaOke"
+    "owner": "chidubemOnuoha"
   }
 }
