@@ -1,11 +1,8 @@
 {
   "stats": {
-
-    "tests": 4,
-    "passes": 4,
+    "tests": 6,
+    "passes": 6,
     "failures": 0,
-    "owner": "davidFaleye"
-
-
+    "owner": "joshuaOke"
   }
 }
