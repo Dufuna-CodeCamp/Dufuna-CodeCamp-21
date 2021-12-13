@@ -2,9 +2,8 @@
   "dependencies": {
     "@babel/core": "^7.15.8",
     "chai": "^4.3.4",
-    "chromedriver": "^96.0.0",
     "phantomcss": "^1.6.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "selenium-webdriver": "^4.1.0"
+    "selenium-webdriver": "^4.0.0"
   }
 }
