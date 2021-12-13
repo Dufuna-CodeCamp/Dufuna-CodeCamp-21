@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 3,
-    "start": "2021-11-30T19:20:01.067Z",
-    "end": "2021-11-30T19:20:23.385Z",
-    "duration": 22318,
+    "start": "2021-12-09T18:04:36.934Z",
+    "end": "2021-12-09T18:04:56.570Z",
+    "duration": 19636,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ecbe60e4-7774-445e-97ff-8db891aa2cf6",
+      "uuid": "9904103e-29dc-4db1-a76a-24e46efa1362",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cf477944-46f1-43f9-bc33-6ce38e9a4750",
+          "uuid": "bf3ead24-9e54-425c-b58e-6ecd70b3ad04",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
           "file": "\\dom.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "a9744d43-1f33-4358-a66d-71cb4d5d4c89",
-              "parentUUID": "cf477944-46f1-43f9-bc33-6ce38e9a4750",
+              "uuid": "9815b8ce-1178-46f1-8331-1e8e9264c083",
+              "parentUUID": "bf3ead24-9e54-425c-b58e-6ecd70b3ad04",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "32af9832-2117-4c61-921b-584da412ced5",
-              "parentUUID": "cf477944-46f1-43f9-bc33-6ce38e9a4750",
+              "uuid": "bd4fcdff-8541-4ed0-8637-285ec8e3644f",
+              "parentUUID": "bf3ead24-9e54-425c-b58e-6ecd70b3ad04",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 22107,
+              "duration": 19194,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -86,11 +86,11 @@
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
               "err": {
                 "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "747e3892-095f-40a3-ad1f-a82c37f0174a",
-              "parentUUID": "cf477944-46f1-43f9-bc33-6ce38e9a4750",
+              "uuid": "6b2672b8-8b0f-448f-b7ae-857af9411f28",
+              "parentUUID": "bf3ead24-9e54-425c-b58e-6ecd70b3ad04",
               "isHook": false,
               "skipped": false
             },
@@ -108,11 +108,11 @@
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
               "err": {
                 "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "d7a83d13-e2ef-4813-b6b3-6ceca8b21108",
-              "parentUUID": "cf477944-46f1-43f9-bc33-6ce38e9a4750",
+              "uuid": "ac55fe06-2540-4832-b19d-72b88abb6f97",
+              "parentUUID": "bf3ead24-9e54-425c-b58e-6ecd70b3ad04",
               "isHook": false,
               "skipped": false
             },
@@ -130,11 +130,11 @@
               "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {
                 "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:517:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:642:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:568:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 94\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\ACER\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
                 "diff": null
               },
-              "uuid": "c652bd9e-9fb7-44f3-a19a-5cf22f0a33f1",
-              "parentUUID": "cf477944-46f1-43f9-bc33-6ce38e9a4750",
+              "uuid": "86a0db82-47d0-4a5b-8c80-ac3bcec572c3",
+              "parentUUID": "bf3ead24-9e54-425c-b58e-6ecd70b3ad04",
               "isHook": false,
               "skipped": false
             }
@@ -142,13 +142,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "747e3892-095f-40a3-ad1f-a82c37f0174a",
-            "d7a83d13-e2ef-4813-b6b3-6ceca8b21108",
-            "c652bd9e-9fb7-44f3-a19a-5cf22f0a33f1"
+            "6b2672b8-8b0f-448f-b7ae-857af9411f28",
+            "ac55fe06-2540-4832-b19d-72b88abb6f97",
+            "86a0db82-47d0-4a5b-8c80-ac3bcec572c3"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 22109,
+          "duration": 19196,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
