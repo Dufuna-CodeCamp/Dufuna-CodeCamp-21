@@ -1,11 +1,8 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
-    "pending": 0,
-    "failures": 0,
-
+    "tests": ,
+    "passes": 5,
+    "failures": -5,
     "owner": "joshuaOke"
   }
 }
