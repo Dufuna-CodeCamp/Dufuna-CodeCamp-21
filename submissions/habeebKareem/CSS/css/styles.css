@@ -1,27 +1,24 @@
 * {
     box-sizing: border-box;
-<<<<<<< HEAD
     color: rgb(105, 105, 105);
 }
 
 body {
     font-family: Poppins, sans-serif;
     padding: 30px;
-=======
     color: #696969;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     padding: 30px;    
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 }
 
 nav {
     position: relative;
 }
 
-<<<<<<< HEAD
+
 nav a {
     font-size: 16px;
     text-decoration: none;
@@ -39,15 +36,7 @@ nav a strong span {
     position: absolute;
     top: 0px;
     right: 0px;
-=======
-nav a strong {
-    color: #000000;
-}
 
-nav a {
-    font-size: 16px;
-    text-decoration: none;
-    
 }
 
 .navbar-item a {
@@ -80,12 +69,10 @@ nav a strong span {
     top: 0;
     right: 0;
     align-items: right;
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 }
 
 .navbar-item a {
     padding: 10px;
-<<<<<<< HEAD
     margin-right: 30px;
 }
 
@@ -119,8 +106,7 @@ nav a strong span {
     color: rgb(78, 77, 77);
 }
 
-=======
-}
+
 
 /* FoodBag Description */
 .foodbag-desc {
@@ -132,12 +118,10 @@ nav a strong span {
 }
 
 /* Forms */
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 form label {
     font-size: 20px;
     font-weight: bold;
 }
-<<<<<<< HEAD
 
 form input {
     height: 40px;
@@ -164,7 +148,6 @@ form input {
     background: rgb(255, 255, 255);
 }
 
-=======
 form input {
     height: 40px;
     width: -webkit-fill-available;
@@ -190,12 +173,10 @@ form input {
 p .card-text {
     margin-bottom: 0;
 }
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 img, .card-body {
     margin: 25px 30px;
 }
 
-<<<<<<< HEAD
 hr {
     margin: 50px 0px;
     border-width: 1px;
@@ -204,7 +185,6 @@ hr {
     border-image: initial;
 }
 
-=======
 /* Horizontal Rule */
 
 hr {
@@ -214,51 +194,26 @@ hr {
 }
 
 /* How we serve you */
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 .services-text {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .services {
-=======
-.services{
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-<<<<<<< HEAD
 footer h4 {
     text-align: center;
 }
 
-=======
-/* Footer */
-footer h4 {
-    text-align: center;
-
-}
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 .footer-links {
     display: flex;
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .footer-text {
     display: flex;
     justify-content: space-between;
-=======
-.footer-links a {
-    
-
-}
-
-.footer-text {
-    display: flex;
-    justify-content: space-between;
-
->>>>>>> 90170222e30d74b4999bc2f3afc37b9d964d19e3
 }
