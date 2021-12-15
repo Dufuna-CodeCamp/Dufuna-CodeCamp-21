@@ -3,7 +3,7 @@
 // let btnCitizen = document.querySelector("#citizen");
 
 const buttons = document.querySelectorAll("button"); 
-buttons.forEach(button=>button.addEventListener("click" , function(event) {
+buttons.forEach(button=>button.addEventListener("click" , function() {
     if (button.textContent == "Add to cart" ){
         button.textContent = "Remove";
         button.style.color = "white";
