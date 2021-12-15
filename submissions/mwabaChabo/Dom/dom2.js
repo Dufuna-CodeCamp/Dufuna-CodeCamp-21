@@ -15,7 +15,6 @@ buttons.forEach(button=>button.addEventListener("click" , function(event) {
         button.style.backgroundColor = "white";
         button.style.borderColor = "red";
         button.textContent = "Add to cart";
-
     }
     var removeCart = document.getElementById("added");
     var addCart = document.getElementById("not-added");
