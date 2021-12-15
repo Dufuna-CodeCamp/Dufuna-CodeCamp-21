@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+
     "tests": 1,
     "passes": 1,
     "pending": 0,
@@ -27,6 +28,7 @@
       "tests": [],
       "suites": [
         {
+
           "uuid": "124e36ba-a8de-42c6-b62a-40f4496e77af",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
@@ -37,24 +39,29 @@
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
               "duration": 7529,
+
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
+
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
               "uuid": "a89ab135-c3b8-4569-aa75-220ae4fb7f3d",
               "parentUUID": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
+
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,8 +72,10 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
+
               "uuid": "f8b6fe2f-48cc-48a8-bd15-5b6df5d1f2d0",
               "parentUUID": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+
               "isHook": true,
               "skipped": false
             }
@@ -77,27 +86,32 @@
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
               "duration": 236,
+
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
+
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
               "uuid": "24188480-863a-473c-9c3d-1b9a99b9ea02",
               "parentUUID": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+
             "24188480-863a-473c-9c3d-1b9a99b9ea02"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+
           "duration": 236,
           "root": false,
           "rootEmpty": false,
