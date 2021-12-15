@@ -1,13 +1,23 @@
 {
   "stats": {
     "suites": 1,
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
     "tests": 1,
     "passes": 1,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2021-12-15T13:42:12.219Z",
     "end": "2021-12-15T13:42:19.659Z",
     "duration": 7440,
+=======
+    "start": "2021-12-15T10:06:37.606Z",
+    "end": "2021-12-15T10:06:45.419Z",
+    "duration": 7813,
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +28,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "58d8e1fe-8d34-44b4-b5bc-91c37bd3d65e",
+=======
+      "uuid": "32b61bcc-0b15-49fd-8829-73ba49ce765f",
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +41,62 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "12654881-3ff3-4120-8d58-eb08c83b08e9",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+=======
+
+          "uuid": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
           "file": "\\navigation_tasks.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 6628,
+=======
+              "duration": 7529,
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
+<<<<<<< HEAD
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
               "uuid": "3d09332a-d718-4594-96d3-c4ef4fb5a3af",
               "parentUUID": "12654881-3ff3-4120-8d58-eb08c83b08e9",
+=======
+
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "err": {},
+              "uuid": "a89ab135-c3b8-4569-aa75-220ae4fb7f3d",
+              "parentUUID": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
+<<<<<<< HEAD
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+=======
+
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,8 +107,15 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
+<<<<<<< HEAD
               "uuid": "7f9a1174-1d7a-4baf-969b-1746f8c003e5",
               "parentUUID": "12654881-3ff3-4120-8d58-eb08c83b08e9",
+=======
+
+              "uuid": "f8b6fe2f-48cc-48a8-bd15-5b6df5d1f2d0",
+              "parentUUID": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
               "isHook": true,
               "skipped": false
             }
@@ -76,29 +125,53 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 384,
+=======
+              "duration": 236,
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
+<<<<<<< HEAD
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
               "uuid": "76d34130-7b1f-4832-9ff9-40ffe167a92d",
               "parentUUID": "12654881-3ff3-4120-8d58-eb08c83b08e9",
+=======
+
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "err": {},
+              "uuid": "24188480-863a-473c-9c3d-1b9a99b9ea02",
+              "parentUUID": "124e36ba-a8de-42c6-b62a-40f4496e77af",
+
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+<<<<<<< HEAD
             "76d34130-7b1f-4832-9ff9-40ffe167a92d"
+=======
+
+            "24188480-863a-473c-9c3d-1b9a99b9ea02"
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+<<<<<<< HEAD
           "duration": 384,
+=======
+
+          "duration": 236,
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -132,7 +205,11 @@
     },
     "marge": {
       "options": {
+<<<<<<< HEAD
         "reportDir": "C:/Users/HP/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+=======
+        "reportDir": "C:/Users/mintas/Desktop/New-beginning-code/Dufuna/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+>>>>>>> 49babb21947d1a966dd61125fe6591472bc3f03f
         "reportFilename": "logfile",
         "quiet": "true"
       },
