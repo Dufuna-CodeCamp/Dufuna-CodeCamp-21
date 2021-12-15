@@ -4,20 +4,13 @@
 }
 
 body {
-    font-family: Poppins, sans-serif;
-    padding: 30px;
-    color: #696969;
-}
-
-body {
     font-family: 'Poppins', sans-serif;
-    padding: 30px;    
+    padding: 50px;    
 }
 
 nav {
     position: relative;
 }
-
 
 nav a {
     font-size: 16px;
@@ -26,37 +19,6 @@ nav a {
 
 nav a strong {
     color: rgb(0, 0, 0);
-}
-
-nav a strong span {
-    color: rgb(173, 76, 76);
-}
-
-.navbar-item {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-
-}
-
-.navbar-item a {
-    margin-right: 30px;
-  }
-  
- .navbar-item a:hover {
-    color: #AD4C4C;
-    background: #FFFFFF;
-    border: 1px solid #AD4C4C;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-#signup {
-    color: #AD4C4C;
-    background: #FFFFFF;
-    border: 1px solid #AD4C4C;
-    box-sizing: border-box;
-    border-radius: 5px;
 }
 
 nav a strong span {
@@ -77,35 +39,20 @@ nav a strong span {
 }
 
 .navbar-item a:hover {
-    color: rgb(173, 76, 76);
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
     box-sizing: border-box;
-    background: rgb(255, 255, 255);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(173, 76, 76);
-    border-image: initial;
-    border-radius: 5px;    
-}
-
-#signup {
-    color: rgb(173, 76, 76);
-    box-sizing: border-box;
-    background: rgb(255, 255, 255);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(173, 76, 76);
-    border-image: initial;
     border-radius: 5px;
 }
 
-.foodbag-desc {
-    text-align: center;
+#signup {
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
-
-.foodbag-desc h1 {
-    color: rgb(78, 77, 77);
-}
-
 
 
 /* FoodBag Description */
@@ -126,31 +73,6 @@ form label {
 form input {
     height: 40px;
     width: -webkit-fill-available;
-    box-sizing: border-box;
-    text-indent: 10px;
-    margin-top: 15px;
-    background: rgb(255, 255, 255);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(196, 196, 196);
-    border-image: initial;
-    border-radius: 5px;
-}
-
-.interest {
-    display: flex;
-    color: rgb(165, 165, 165);
-}
-
-.card-items {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 1.5px;
-    margin: 20px 20px 80px 0px;
-    background: rgb(255, 255, 255);
-}
-
-form input {
-    height: 40px;
-    width: -webkit-fill-available;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -163,34 +85,25 @@ form input {
 .interest {
     color: #A5A5A5;
     display: flex;
-    color: #A5A5A5;
 }
+
 .card-items {
     margin: 20px 20px 80px 0;
     background: #FFFFFF;
     box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1); 
 }
+
 p .card-text {
     margin-bottom: 0;
 }
-img, .card-body {
+.card-img, .card-body {
     margin: 25px 30px;
 }
 
-hr {
-    margin: 50px 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(242, 242, 242);
-    border-image: initial;
-}
-
 /* Horizontal Rule */
-
 hr {
     margin: 50px 0;
     border: 1px solid #F2F2F2;
-
 }
 
 /* How we serve you */
@@ -213,7 +126,100 @@ footer h4 {
     justify-content: center;
 }
 
+.footer-links a {
+    margin: 25px 30px;
+}
+
 .footer-text {
     display: flex;
     justify-content: space-between;
+}
+
+/* Vendor Page Styles */
+
+
+/* Breadcrumb */
+/* Style the list */
+ol.breadcrumb {
+    padding: 10px 5px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  ol.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (>) before/behind each list item */
+  ol.breadcrumb li+li:before {
+    padding: 5px;
+    color: black;
+    content: ">";
+  }
+  
+  /* Add a color to all links inside the list */
+  ol.breadcrumb li a {
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ol.breadcrumb li a:hover {
+    text-decoration: none;
+  }
+
+/* Vendor Name */
+.vendor-name {
+    display: flex;
+    position: relative;
+}
+.vendor-name span {
+    margin-left: 40px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+.vendor-name a {
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    color: #AD4C4C;
+}
+
+/* Vendor Menu */
+.vendor-menu {
+    display: flex;
+    margin-top: 40px;
+}
+
+/* Menu Item */
+.menu-item {
+    margin-right: 30px;
+}
+
+/* Menu Price */
+.menu-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.price {
+    color: #5EA304;
+}
+
+/* Add to Cart */
+#cart-btn {
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #AD4C4C;
+    text-decoration: none;
 }
