@@ -6,7 +6,7 @@ ITALIC='\x1b[3m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 
-total_tests = 6 # only 6 tests are currently being done, this value should be changed if tests increases
+total_tests=5 # only 5 tests are currently being done, this value should be changed if tests increases
 
 echo -n "Enter First Name : "
 read first_name
