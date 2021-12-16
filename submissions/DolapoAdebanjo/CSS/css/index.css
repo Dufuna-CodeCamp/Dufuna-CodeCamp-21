@@ -143,11 +143,8 @@ footer > p{
     gap: 30px;
     margin-bottom: 50px;
 }
-.terms,.copyright{
+.copyright{
     display: flex;
-}
-.terms{
-    gap:15px;
 }
 .copyright{
     justify-content: space-between;
