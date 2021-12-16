@@ -20,6 +20,8 @@ SELECT * FROM survivals WHERE parch = passenger_id AND sibsp = id
 
 --expected result 
 "342" || "549"
+--survival result
+"218" AND "9"
 
 --create survival tables
 
