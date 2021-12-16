@@ -82,7 +82,7 @@ select{
 main > p:nth-of-type(2){
     color: #000;
     font-weight: 500;
-    margin: 42px 0 20px 0;
+    margin: 42px 0 20px;
 }
 .options{
     display: flex;
@@ -145,8 +145,6 @@ footer > p{
 }
 .copyright{
     display: flex;
-}
-.copyright{
     justify-content: space-between;
 }
 /** End of styling of the Footer section **/
