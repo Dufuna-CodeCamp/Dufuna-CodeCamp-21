@@ -1,7 +1,6 @@
 {
   "stats": {
     "suites": 1,
-
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -11,7 +10,6 @@
   },
   "results": [
     {
-
       "title": "",
       "fullFile": "",
       "file": "",
@@ -29,14 +27,12 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
               "uuid": "5dd19a65-3c26-4768-9d4b-eaadcf62e53d",
@@ -47,7 +43,6 @@
           ],
           "afterHooks": [
             {
-
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
@@ -60,7 +55,6 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-
               "isHook": true,
               "skipped": false
             }
@@ -70,7 +64,6 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -88,7 +81,6 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-
               "pass": true,
               "fail": false,
               "pending": false,
@@ -210,12 +202,10 @@
             }
           ],
           "suites": [],
-          "passes": [
-          ],
+          "passes": [],
           "failures": [],
           "pending": [],
           "skipped": [],
-
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
