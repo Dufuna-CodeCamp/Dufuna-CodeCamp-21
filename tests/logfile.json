@@ -1,14 +1,7 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 8,
-    "passes": 8,
-    "pending": 0,
-    "failures": 0,
-    "start": "2021-12-16T19:52:02.542Z",
-    "end": "2021-12-16T19:52:22.710Z",
-    "duration": 20168,
-    "testsRegistered": 8,
+
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +11,7 @@
   },
   "results": [
     {
-      "uuid": "5b43d493-8ef5-4116-92d2-9d554ca5d701",
+
       "title": "",
       "fullFile": "",
       "file": "",
@@ -36,13 +29,14 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 17460,
+
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
+
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
               "uuid": "5dd19a65-3c26-4768-9d4b-eaadcf62e53d",
@@ -53,6 +47,7 @@
           ],
           "afterHooks": [
             {
+
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
@@ -65,8 +60,7 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "73cd2b42-ac59-46f2-9171-25d08d43d344",
-              "parentUUID": "d97bf2fa-d550-4d30-aacc-cfa30d8d6d50",
+
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +70,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-              "duration": 838,
+
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -94,9 +88,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-              "duration": 786,
-              "state": "passed",
-              "speed": "slow",
+
               "pass": true,
               "fail": false,
               "pending": false,
@@ -219,19 +211,11 @@
           ],
           "suites": [],
           "passes": [
-            "76cb9e9f-8984-446a-96dc-0fd27ef5313c",
-            "2fa06a82-cd65-42ce-8037-53ff955da5aa",
-            "c0a186cb-d97a-4a40-a4a6-f9ed8c9401db",
-            "e5eafb43-d641-4100-a30d-920ca8576737",
-            "0a42f381-9299-4316-a056-8ee64995ce2e",
-            "d13a3e32-d219-477c-b96d-8a1f19e8c772",
-            "06d58cab-fd42-4cf5-83ad-be43c2e97128",
-            "bfe45a57-10d2-4e6c-8a89-707bb81590f2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2608,
+
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
