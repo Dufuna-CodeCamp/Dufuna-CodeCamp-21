@@ -35,13 +35,11 @@ nav{
     align-items: center;
     font-size: 1rem;
 }
-nav > button{
-    border: none;
-    background-color: transparent;
-    font-size: inherit;
-    color: inherit;
+a{
+    text-decoration: none;
+    color:inherit;
 }
-nav button:nth-of-type(2){
+nav a:last-child{
     border:2px solid #AD4C4C;
     border-radius: 5px;
     color:#AD4C4C;
