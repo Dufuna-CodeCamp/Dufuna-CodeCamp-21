@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	font-family: Century Gothic;
+
+}
+
+header {
+	background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(image1/cropped-9jafoods.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	display: table;
+}
+
+p {
+	text-align: center;
+	font-size: 80px;
+	color: white;
+
+}
+
+.add{
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.click {
+	text-align: center;
+	background: none;
+	border: solid #000000;
+	color: #000000;
+	padding: 20px 40px;
+	font-size: 30px;
+	border-radius: 50px;
+	transition: color 0.7s;
+	cursor: pointer;
+	outline: none;
+}
+
+.click:hover {
+	border-color: royalblue;
+	background-color: royalblue;
+	color: white;
+}
+
+.button {
+	text-align: center;
+}
+
+nav ul {
+	position: relative;
+	padding: o;
+	margin: 0;
+	float: right;
+	list-style-type: none;
+}
+
+nav li {
+	float: right;
+	padding: 5px;
+}
