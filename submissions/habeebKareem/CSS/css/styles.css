@@ -4,6 +4,7 @@
 }
 
 body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     padding: 50px;    
 }
@@ -27,10 +28,12 @@ nav a strong span {
 }
 /* navbar-item */
 .navbar-item {
+    display: flex;
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    align-items: right;
+    justify-content: end;
 }
 
 .navbar-item a {
@@ -113,12 +116,13 @@ hr {
 
 .services {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
 footer h4 {
     text-align: center;
+    margin: 0;
 }
 
 .footer-links {
@@ -190,6 +194,10 @@ ol.breadcrumb {
     color: #AD4C4C;
 }
 
+#view-all {
+    display: none;
+}
+
 /* Vendor Menu */
 .vendor-menu {
     display: flex;
@@ -207,6 +215,7 @@ ol.breadcrumb {
     justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 /* Price */
@@ -222,4 +231,112 @@ ol.breadcrumb {
     border-radius: 3px;
     color: #AD4C4C;
     text-decoration: none;
+    padding: 8px 22px;
+}
+
+
+/* Responsive Media Queries */
+
+/* Extra small devices ie. phones  */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    nav {
+        margin: 20px 0 50px 0;
+    }
+
+    .navbar-item {
+        top: -10px;
+    }
+    .navbar-item a {
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .foodbag-desc {
+        text-align: start;
+    }
+
+    .foodbag-desc p{
+        margin-top: 0;
+    }
+
+    .foodbag-desc h1 {
+        margin-bottom: 0;
+    }
+
+    form label {
+        margin-top: 30px;
+    }
+
+    .interest, .services, .vendor-menu {
+        display: grid;
+    }
+
+    .card-items {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        margin: 30px 0
+    }
+
+    .footer-text {
+        display: block;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 20px 20px;
+    }
+
+
+    /* Vendor's page */
+    .menu-item {
+        margin: 0 0 25px 0;
+    }
+    .menu-item img {
+        width: 100%;
+    }
+
+    .vendor-name a {
+        display: none;
+    }
+
+    #view-all {
+        display: block;
+        color: #AD4C4C;
+        margin: 55px 0 30px 0;
+        text-decoration: none;
+        text-align: center;
+    }
+
+}
+
+/* Landscape, Potrait tablets and large phones */
+@media screen and (min-width: 600px ) and (max-width: 992px) {
+    .interest, .vendor-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .services {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 20px;
+    }
+
+    .menu-item img {
+        width: 100%;
+    }
 }
