@@ -252,7 +252,7 @@ ol.breadcrumb {
     }
     .navbar-item a {
         padding: 10px;
-        margin: 0px;
+        margin: 0;
     }
 
     .foodbag-desc {
@@ -291,13 +291,13 @@ ol.breadcrumb {
     }
 
     .footer-links a {
-        margin: 20px 20px;
+        margin: 20px;
     }
 
 
     /* Vendor's page */
     .menu-item {
-        margin: 0 0 25px 0;
+        margin: 0 0 25px;
     }
     .menu-item img {
         width: 100%;
@@ -310,7 +310,7 @@ ol.breadcrumb {
     #view-all {
         display: block;
         color: #AD4C4C;
-        margin: 55px 0 30px 0;
+        margin: 55px 0 30px;
         text-decoration: none;
         text-align: center;
     }
