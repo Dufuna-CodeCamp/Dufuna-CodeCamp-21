@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 5,
-    "start": "2021-12-21T09:52:25.374Z",
-    "end": "2021-12-21T09:52:33.048Z",
-    "duration": 7674,
+    "start": "2021-12-21T10:07:50.492Z",
+    "end": "2021-12-21T10:07:54.401Z",
+    "duration": 3909,
     "testsRegistered": 5,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "18802349-e031-4c09-9fcc-d4b88310802c",
+      "uuid": "eff46ab6-ac3f-4801-a1cf-738dd83aa601",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+          "uuid": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 3,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
               "err": {},
-              "uuid": "4b375af3-7a91-4158-aa96-53fb4c605639",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "39bb9f18-3454-41da-8b3b-554b4ea37c40",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "16f5748f-9a81-4762-b67f-394d82af3dc5",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "b7604722-7b5c-495c-bf4c-5279f7729b09",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 7396,
+              "duration": 3841,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "c096fb02-a8dd-45ce-abc3-31c598143406",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "56bb0909-cf7e-4a72-aeee-a5b0402069b6",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": false,
               "skipped": false
             },
@@ -111,8 +111,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "acadd880-7304-4eb5-a01d-22696c4440ba",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "7391c5cc-72f6-4555-a82f-f9d11c0cc2b4",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -133,8 +133,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "f4d270d0-e5b1-49f9-8f6d-14c18a923245",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "b346b678-0206-44c6-8ddd-293fa4c7c494",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +142,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -155,8 +155,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "1d999755-d3d4-4753-a638-bd78521df44c",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "f5142e04-0601-4e5a-82af-e48f647663d7",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": false,
               "skipped": false
             },
@@ -177,8 +177,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "1f458927-c5ae-41cd-bc2d-ae2fb4168d8e",
-              "parentUUID": "6b245c7d-b088-48b1-a622-fedcdc6cafd9",
+              "uuid": "19183c2f-0213-4ab0-8440-17e82b92507f",
+              "parentUUID": "a913bb8d-ffa4-4fa6-9d4f-0c12b69d86cb",
               "isHook": false,
               "skipped": false
             }
@@ -186,15 +186,15 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "c096fb02-a8dd-45ce-abc3-31c598143406",
-            "acadd880-7304-4eb5-a01d-22696c4440ba",
-            "f4d270d0-e5b1-49f9-8f6d-14c18a923245",
-            "1d999755-d3d4-4753-a638-bd78521df44c",
-            "1f458927-c5ae-41cd-bc2d-ae2fb4168d8e"
+            "56bb0909-cf7e-4a72-aeee-a5b0402069b6",
+            "7391c5cc-72f6-4555-a82f-f9d11c0cc2b4",
+            "b346b678-0206-44c6-8ddd-293fa4c7c494",
+            "f5142e04-0601-4e5a-82af-e48f647663d7",
+            "19183c2f-0213-4ab0-8440-17e82b92507f"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 7400,
+          "duration": 3845,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
