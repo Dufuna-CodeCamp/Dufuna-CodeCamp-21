@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-21T11:37:58.153Z",
-    "end": "2021-12-21T11:38:01.449Z",
-    "duration": 3296,
+    "start": "2021-12-22T14:59:38.047Z",
+    "end": "2021-12-22T14:59:39.969Z",
+    "duration": 1922,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7c2a468b-71b5-429d-a0d7-d8fed678e159",
+      "uuid": "13b4ffe6-1555-4bbe-ac51-cc896f26099b",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,78 +27,78 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "16607187-c556-4ccf-bc34-5d5e2a4a042f",
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "496f2255-9065-4bf6-92a8-3f84a2b66177",
+          "title": "Testing javascript conditionals",
+          "fullFile": "C:\\Users\\King_Dunamis\\Documents\\Holy\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
+          "file": "\\conditionals_test.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 3210,
+              "duration": 1829,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "0dd57bdd-4f8e-4b7c-a63f-646eb54fa435",
-              "parentUUID": "16607187-c556-4ccf-bc34-5d5e2a4a042f",
+              "uuid": "628ee8ab-0c57-4913-a16a-a0ff590fa567",
+              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "driver.quit();",
               "err": {},
-              "uuid": "99729125-e184-4dc6-9777-b049b9679f38",
-              "parentUUID": "16607187-c556-4ccf-bc34-5d5e2a4a042f",
+              "uuid": "11f7635c-d862-46f7-81e4-265a2fba63b7",
+              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "title": "test case: check conditionals",
+              "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 48,
+              "duration": 77,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "496a8a7b-30af-4ffe-be50-b7ca15aae69c",
-              "parentUUID": "16607187-c556-4ccf-bc34-5d5e2a4a042f",
+              "uuid": "e92bed3d-88f3-4de9-841d-f667ecc0fa1f",
+              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "496a8a7b-30af-4ffe-be50-b7ca15aae69c"
+            "e92bed3d-88f3-4de9-841d-f667ecc0fa1f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 48,
+          "duration": 77,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -128,15 +128,15 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "7.0.1"
+      "version": "6.3.1"
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Maurice/Desktop/2021/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/Users/King_Dunamis/Documents/Holy/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
-      "version": "6.0.1"
+      "version": "5.2.0"
     }
   }
 }
