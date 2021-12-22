@@ -1,15 +1,14 @@
 {
   "stats": {
-
     "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-22T11:16:41.928Z",
-    "end": "2021-12-22T11:16:45.450Z",
-    "duration": 3522,
-    "testsRegistered": 2,
+    "start": "2021-12-22T14:59:38.047Z",
+    "end": "2021-12-22T14:59:39.969Z",
+    "duration": 1922,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "04dd3e2a-9cab-43e5-9371-1b697ca834ac",
+      "uuid": "13b4ffe6-1555-4bbe-ac51-cc896f26099b",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -28,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9a952041-0757-4b55-b4ae-e9b53df8e4ac",
-          "title": "Printing product price",
-          "fullFile": "C:\\Users\\King_Dunamis\\Documents\\Holy\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
-          "file": "\\test.js",
+          "uuid": "496f2255-9065-4bf6-92a8-3f84a2b66177",
+          "title": "Testing javascript conditionals",
+          "fullFile": "C:\\Users\\King_Dunamis\\Documents\\Holy\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
+          "file": "\\conditionals_test.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
-              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 3419,
+              "duration": 1829,
               "state": null,
               "speed": null,
               "pass": false,
@@ -46,18 +45,18 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "8abdb4cf-e8de-4585-aa75-bcdc5fdb2e48",
-              "parentUUID": "9a952041-0757-4b55-b4ae-e9b53df8e4ac",
+              "uuid": "628ee8ab-0c57-4913-a16a-a0ff590fa567",
+              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Printing product price\"",
-              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
+              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -66,59 +65,40 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c8a7e456-d246-4d71-8f1a-19cd3a6a603f",
-              "parentUUID": "9a952041-0757-4b55-b4ae-e9b53df8e4ac",
+              "uuid": "11f7635c-d862-46f7-81e4-265a2fba63b7",
+              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check product details",
-              "fullTitle": "Printing product price test case: check product details",
+              "title": "test case: check conditionals",
+              "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 60,
+              "duration": 77,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
+              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "37b51d14-f50c-4809-8040-cb98ba60efad",
-              "parentUUID": "9a952041-0757-4b55-b4ae-e9b53df8e4ac",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: check three arrays are present",
-              "fullTitle": "Printing product price test case: check three arrays are present",
-              "timedOut": false,
-              "duration": 25,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
-              "err": {},
-              "uuid": "5a85c2b4-921c-45ed-ab7f-51da51481f1d",
-              "parentUUID": "9a952041-0757-4b55-b4ae-e9b53df8e4ac",
+              "uuid": "e92bed3d-88f3-4de9-841d-f667ecc0fa1f",
+              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "37b51d14-f50c-4809-8040-cb98ba60efad",
-            "5a85c2b4-921c-45ed-ab7f-51da51481f1d"
+            "e92bed3d-88f3-4de9-841d-f667ecc0fa1f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 85,
+          "duration": 77,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -152,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/King_Dunamis/Documents/Holy/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
+        "reportDir": "C:/Users/King_Dunamis/Documents/Holy/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
