@@ -1,0 +1,537 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 18,
+    "passes": 0,
+    "pending": 0,
+    "failures": 18,
+    "start": "2021-12-22T15:36:49.165Z",
+    "end": "2021-12-22T15:37:21.936Z",
+    "duration": 32771,
+    "testsRegistered": 18,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "07ad14e5-38be-4089-906c-15fc50f3a49d",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\landing_page\\landing_page.js",
+          "file": "\\landing_page.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 31462,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "21af533a-4ac9-43f3-82d7-846546e0bb3e",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "a1715c49-7494-48c2-8f00-633101a624da",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "timedOut": false,
+              "duration": 215,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
+              "err": {
+                "message": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Food'",
+                "estack": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Food'\n    at Context.<anonymous> (landing_page.js:24:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "7349b4d4-e8b7-4dfb-988c-f944167b6826",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "timedOut": false,
+              "duration": 106,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
+              "err": {
+                "message": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Bag'",
+                "estack": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Bag'\n    at Context.<anonymous> (landing_page.js:30:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "436131cc-03a0-4571-82c0-a3c46efa7ecd",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: FoodBag text is present on the page",
+              "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
+              "timedOut": false,
+              "duration": 63,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"FoodBag\" text is present: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'FoodBag'",
+                "estack": "AssertionError: Ensure \"FoodBag\" text is present: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'FoodBag'\n    at Context.<anonymous> (landing_page.js:36:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "85cc06df-7cb2-4119-a6a5-a05a51f1f666",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Login",
+              "fullTitle": "Testing Scholars Project test case: check Login",
+              "timedOut": false,
+              "duration": 73,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
+              "err": {
+                "message": "AssertionError: Ensure the `Login` link is present on the header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Login'",
+                "estack": "AssertionError: Ensure the `Login` link is present on the header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Login'\n    at Context.<anonymous> (landing_page.js:43:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "ef6cad6d-7da2-4548-ba36-9d6d08e5136c",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Cart",
+              "fullTitle": "Testing Scholars Project test case: check Cart",
+              "timedOut": false,
+              "duration": 63,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {
+                "message": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Cart'",
+                "estack": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Cart'\n    at Context.<anonymous> (landing_page.js:49:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "781aebf4-00d5-4c6c-a8e5-af265f62bdef",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Sign up",
+              "fullTitle": "Testing Scholars Project test case: check Sign up",
+              "timedOut": false,
+              "duration": 61,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Sign up\", \"Ensure the `Sign up` link is present on the header\");",
+              "err": {
+                "message": "AssertionError: Ensure the `Sign up` link is present on the header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Sign up'",
+                "estack": "AssertionError: Ensure the `Sign up` link is present on the header: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Sign up'\n    at Context.<anonymous> (landing_page.js:55:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "9c8c7bde-1e96-4715-938b-dcf775d1a41c",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check service-descrption1",
+              "fullTitle": "Testing Scholars Project test case: check service-descrption1",
+              "timedOut": false,
+              "duration": 60,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Pick an interest\", \"Ensure Quantity label is present\");",
+              "err": {
+                "message": "AssertionError: Ensure Quantity label is present: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Pick an interest'",
+                "estack": "AssertionError: Ensure Quantity label is present: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Pick an interest'\n    at Context.<anonymous> (landing_page.js:61:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "a80cee36-94cb-4fab-9bb0-71f58dcc5c22",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check service-description2",
+              "fullTitle": "Testing Scholars Project test case: check service-description2",
+              "timedOut": false,
+              "duration": 61,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"How we serve you\", \"Ensure you have the appropriate text for the service\");",
+              "err": {
+                "message": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'How we serve you'",
+                "estack": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'How we serve you'\n    at Context.<anonymous> (landing_page.js:67:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "1e1f5a2d-dd3f-407b-8595-4f2fb6128d6c",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check service title-1",
+              "fullTitle": "Testing Scholars Project test case: check service title-1",
+              "timedOut": false,
+              "duration": 74,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Tell us where you are\", \"Ensure you have the appropriate text for the service\");",
+              "err": {
+                "message": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Tell us where you are'",
+                "estack": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Tell us where you are'\n    at Context.<anonymous> (landing_page.js:73:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "796b263a-0157-4d16-ad31-023277936275",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check service-title-2",
+              "fullTitle": "Testing Scholars Project test case: check service-title-2",
+              "timedOut": false,
+              "duration": 68,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Tell us what you want\", \"Ensure you have the appropriate text for the service\");",
+              "err": {
+                "message": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Tell us what you want'",
+                "estack": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Tell us what you want'\n    at Context.<anonymous> (landing_page.js:79:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "899ac8a4-a1c6-4987-adc8-edf9876fe36a",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check service-title-3",
+              "fullTitle": "Testing Scholars Project test case: check service-title-3",
+              "timedOut": false,
+              "duration": 84,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"We'll come running\", \"Ensure you have the appropriate text for the service\");",
+              "err": {
+                "message": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'We\\'ll come running'",
+                "estack": "AssertionError: Ensure you have the appropriate text for the service: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'We\\'ll come running'\n    at Context.<anonymous> (landing_page.js:85:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "5e4982ee-4d4d-46be-aa87-304763d6eb56",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check footer",
+              "fullTitle": "Testing Scholars Project test case: check footer",
+              "timedOut": false,
+              "duration": 56,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"footer\"))\nconst text = await element.getText();\nassert.include(text, \"Contact us\", \"Ensure you have the appropriate text as seen on the mock-up\");",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"footer\"}\n  (Session info: chrome=96.0.4664.110)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"footer\"}\n  (Session info: chrome=96.0.4664.110)\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async Context.<anonymous> (landing_page.js:89:29)",
+                "diff": null
+              },
+              "uuid": "67a10015-0d30-4995-8f5c-f6a4356eac88",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check terms & conditions on footer",
+              "fullTitle": "Testing Scholars Project test case: check terms & conditions on footer",
+              "timedOut": false,
+              "duration": 35,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"footer\"))\nconst text = await element.getText();\nassert.include(text, \"Terms & Conditions . Privacy Policy\", \"Ensure the texts on the footer is properly formated\");",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"footer\"}\n  (Session info: chrome=96.0.4664.110)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"footer\"}\n  (Session info: chrome=96.0.4664.110)\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async Context.<anonymous> (landing_page.js:95:29)",
+                "diff": null
+              },
+              "uuid": "4ddfca39-578e-47a4-aa3d-cbc6d4557a6c",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check copyright on footer",
+              "fullTitle": "Testing Scholars Project test case: check copyright on footer",
+              "timedOut": false,
+              "duration": 32,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"footer\"))\nconst text = await element.getText();\nassert.include(text, \"Copyright 2021 FoodBag is a registered trademark\", \"Ensure you have the appropriate text as seen on the mock-up\");",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"footer\"}\n  (Session info: chrome=96.0.4664.110)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"footer\"}\n  (Session info: chrome=96.0.4664.110)\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async Context.<anonymous> (landing_page.js:101:29)",
+                "diff": null
+              },
+              "uuid": "9270ff48-aaf8-4bff-8f76-f8c1cf08c724",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check input field",
+              "fullTitle": "Testing Scholars Project test case: check input field",
+              "timedOut": false,
+              "duration": 45,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const input = await driver.findElements(By.css('input'));\nconst size = input.length\nassert.equal(size, 1, `Ensure you have the input field as seen in the mock-up`);",
+              "err": {
+                "message": "AssertionError: Ensure you have the input field as seen in the mock-up: expected 0 to equal 1",
+                "estack": "AssertionError: Ensure you have the input field as seen in the mock-up: expected 0 to equal 1\n    at Context.<anonymous> (landing_page.js:109:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": "- 0\n+ 1\n"
+              },
+              "uuid": "16f2ba6c-3175-4358-8215-398cdaf7c40e",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check placeholder",
+              "fullTitle": "Testing Scholars Project test case: check placeholder",
+              "timedOut": false,
+              "duration": 47,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css('input')).getAttribute('placeholder');\nassert.equal(element, \"Enter your delivery address\", `Ensure you have the placeholder as seen in the mock-up`);",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input\"}\n  (Session info: chrome=96.0.4664.110)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input\"}\n  (Session info: chrome=96.0.4664.110)\n    at Object.throwDecodedError (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:539:15)\n    at parseHttpResponse (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:647:13)\n    at Executor.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:573:28)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async toWireValue (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:140:15)\n    at async C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:190:16\n    at async forEachKey (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:184:9)\n    at async convertKeys (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:189:3)\n    at async thenableWebDriverProxy.execute (C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:733:22)\n    at async Context.<anonymous> (landing_page.js:113:29)",
+                "diff": null
+              },
+              "uuid": "c35fe46e-8488-4ebe-9155-aca56117a974",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check label of input-field",
+              "fullTitle": "Testing Scholars Project test case: check label of input-field",
+              "timedOut": false,
+              "duration": 65,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css('body')).getText();\nassert.include(element, \"Where are you?\", `Ensure you have the input field as the appropriate label as seen in the mock-up`);",
+              "err": {
+                "message": "AssertionError: Ensure you have the input field as the appropriate label as seen in the mock-up: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Where are you?'",
+                "estack": "AssertionError: Ensure you have the input field as the appropriate label as seen in the mock-up: expected 'Your file couldn’t be accessed\\nIt may have been moved, edited, or deleted.\\nERR_FILE_NOT_FOUND' to include 'Where are you?'\n    at Context.<anonymous> (landing_page.js:119:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": null
+              },
+              "uuid": "b4bde70b-e4f0-4c75-8cbd-eecff55afe8a",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 10",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 10",
+              "timedOut": false,
+              "duration": 37,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
+              "err": {
+                "message": "AssertionError: Ensure all the images are present on the page: expected 2 to equal 10",
+                "estack": "AssertionError: Ensure all the images are present on the page: expected 2 to equal 10\n    at Context.<anonymous> (landing_page.js:125:20)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": "- 2\n+ 10\n"
+              },
+              "uuid": "5023fa05-4e0c-4d86-b77a-98d14dc80fe9",
+              "parentUUID": "d37b72ad-4a9f-420e-8a9c-14d805fad08f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7349b4d4-e8b7-4dfb-988c-f944167b6826",
+            "436131cc-03a0-4571-82c0-a3c46efa7ecd",
+            "85cc06df-7cb2-4119-a6a5-a05a51f1f666",
+            "ef6cad6d-7da2-4548-ba36-9d6d08e5136c",
+            "781aebf4-00d5-4c6c-a8e5-af265f62bdef",
+            "9c8c7bde-1e96-4715-938b-dcf775d1a41c",
+            "a80cee36-94cb-4fab-9bb0-71f58dcc5c22",
+            "1e1f5a2d-dd3f-407b-8595-4f2fb6128d6c",
+            "796b263a-0157-4d16-ad31-023277936275",
+            "899ac8a4-a1c6-4987-adc8-edf9876fe36a",
+            "5e4982ee-4d4d-46be-aa87-304763d6eb56",
+            "67a10015-0d30-4995-8f5c-f6a4356eac88",
+            "4ddfca39-578e-47a4-aa3d-cbc6d4557a6c",
+            "9270ff48-aaf8-4bff-8f76-f8c1cf08c724",
+            "16f2ba6c-3175-4358-8215-398cdaf7c40e",
+            "c35fe46e-8488-4ebe-9155-aca56117a974",
+            "b4bde70b-e4f0-4c75-8cbd-eecff55afe8a",
+            "5023fa05-4e0c-4d86-b77a-98d14dc80fe9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1245,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/Maurice/Desktop/2021/Dufuna-CodeCamp-21/tests/landing_page/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
