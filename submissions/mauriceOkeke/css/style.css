@@ -72,7 +72,6 @@ section {
   font-weight: bold;
 }
 .location input {
-  border: none;
   outline: none;
   border: 1px solid #ccc;
   display: block;
