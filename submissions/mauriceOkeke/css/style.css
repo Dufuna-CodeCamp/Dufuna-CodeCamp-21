@@ -101,7 +101,7 @@ section {
   border: 1px solid #ccc;
   padding: 20px 40px 20px 20px;
   border-radius: 4px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .interests p:nth-of-type(1) {
