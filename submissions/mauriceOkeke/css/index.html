@@ -19,9 +19,10 @@
       <ul>
         <li><a href="#">Cart</a></li>
         <li><a href="#">Login</a></li>
-        <li><a href="#" class="red-color">Sign Up</a></li>
+        <li><a href="#" class="red-color">Sign up</a></li>
       </ul>
     </header>
+
     <main>
       <h2>FoodBag</h2>
       <p>Anything food we have you convered</p>
@@ -29,7 +30,12 @@
 
     <section class="location">
       <label for="location" class="location-title">Where are you?</label>
-      <input list="locations" id="location" name="location" />
+      <input
+        list="locations"
+        id="location"
+        name="location"
+        placeholder="Enter your delivery address"
+      />
       <datalist id="locations">
         <option value="Bodja Market" selected></option>
         <option value="Balogun Market"></option>
@@ -38,8 +44,8 @@
     </section>
 
     <section class="interest">
-      <label>Pick an Interest</label>
-      <div class="interests">
+      <label for="interests">Pick an Interest</label>
+      <div class="interests" id="interests">
         <div class="fast-food">
           <img src="./images/fast-food.svg" alt="" />
           <p class="red-color">Fast Food</p>

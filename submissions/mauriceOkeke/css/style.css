@@ -135,7 +135,7 @@ section {
   color: gray;
 }
 
-footer {
+.footer {
   margin: 50px;
 }
 
@@ -148,7 +148,7 @@ footer {
   display: inline-block;
 }
 
-footer img {
+.footer img {
   margin: 10px;
 }
 
