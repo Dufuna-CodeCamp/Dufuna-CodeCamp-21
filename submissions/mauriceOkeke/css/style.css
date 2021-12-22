@@ -101,7 +101,11 @@ section {
   border: 1px solid #ccc;
   padding: 20px 40px 20px 20px;
   border-radius: 4px;
+<<<<<<< HEAD
   margin: 20px 0;
+=======
+  margin: 20px 0px;
+>>>>>>> master
 }
 
 .interests p:nth-of-type(1) {
