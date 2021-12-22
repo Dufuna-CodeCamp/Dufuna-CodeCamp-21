@@ -10,11 +10,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav {
+header {
   padding: 20px 50px;
 }
 
-nav p {
+header p {
   font-weight: bold;
   display: inline;
   font-size: 20px;
@@ -24,42 +24,42 @@ nav p {
   color: #ff0000;
 }
 
-nav ul {
+header ul {
   list-style: none;
   float: right;
 }
 
-nav ul li {
+header ul li {
   display: inline;
   padding: 5px 10px;
   margin-left: 15px;
 }
 
-nav ul li a {
+header ul li a {
   text-decoration: none;
   color: gray;
   display: inline-block;
   font-size: 15px;
 }
 
-nav ul li:last-child {
+header ul li:last-child {
   color: red;
   border-radius: 4px;
   border: 1px solid red;
 }
 
-header {
+main {
   text-align: center;
   margin: 100px 20px;
 }
 
-header h2 {
+main h2 {
   font-weight: 600;
   font-size: 25px;
   padding-bottom: 5px;
 }
 
-header p {
+main p {
   color: gray;
   font-size: 14px;
 }
@@ -88,7 +88,7 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
-.interest p:first-child {
+.interest label {
   font-weight: bold;
 }
 .interest p:nth-of-type(2) {
