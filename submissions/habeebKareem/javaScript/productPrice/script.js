@@ -26,6 +26,4 @@ for (let i = 0; i < productList.length; i++) {
         
     );
     
-};
-
-
+}
