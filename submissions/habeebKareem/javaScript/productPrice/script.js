@@ -22,8 +22,6 @@ for (let i = 0; i < productList.length; i++) {
     const product = productList[i];
     console.log(product);
     document.write(
-        `<h5>${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}</h5>`
-        
+        `<h5>${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}</h5>`        
     );
-    
 }
