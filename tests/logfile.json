@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-25T03:59:31.691Z",
-    "end": "2021-12-25T03:59:49.318Z",
-    "duration": 17627,
+    "start": "2021-12-25T04:11:08.348Z",
+    "end": "2021-12-25T04:11:13.697Z",
+    "duration": 5349,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "26f9c33d-09ac-44c2-bd0d-e775bba22db9",
+      "uuid": "c2c9e9ee-9497-4381-a54c-27208d5be5a1",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "079aef22-48f1-4499-a74d-4b3c503b720c",
+          "uuid": "d496f08a-1b4e-4bb0-993c-994a1dac118e",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 16456,
+              "duration": 5166,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "99c45053-3ece-41c2-81fc-f0845f2b1ef0",
-              "parentUUID": "079aef22-48f1-4499-a74d-4b3c503b720c",
+              "uuid": "9823fd45-4e27-4807-b7b3-c2e0d4d38bf3",
+              "parentUUID": "d496f08a-1b4e-4bb0-993c-994a1dac118e",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "5dc8269b-8373-4cac-8fa5-9efc2b2d3c29",
-              "parentUUID": "079aef22-48f1-4499-a74d-4b3c503b720c",
+              "uuid": "15b0933d-3e51-4053-8f47-8455c75922cd",
+              "parentUUID": "d496f08a-1b4e-4bb0-993c-994a1dac118e",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 854,
+              "duration": 149,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,20 +85,20 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "7810bf1a-562d-4c1f-9b7e-d89169a1ae56",
-              "parentUUID": "079aef22-48f1-4499-a74d-4b3c503b720c",
+              "uuid": "e542716f-4373-4d1f-9f57-80e46a0453e4",
+              "parentUUID": "d496f08a-1b4e-4bb0-993c-994a1dac118e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7810bf1a-562d-4c1f-9b7e-d89169a1ae56"
+            "e542716f-4373-4d1f-9f57-80e46a0453e4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 854,
+          "duration": 149,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
