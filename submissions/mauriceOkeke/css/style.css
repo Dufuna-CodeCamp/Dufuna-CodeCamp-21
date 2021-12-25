@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 20px 50px;
+}
+
+header p {
+  font-weight: bold;
+  display: inline;
+  font-size: 20px;
+}
+
+.red-color {
+  color: #ff0000;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+}
+
+header ul li {
+  display: inline;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: gray;
+  display: inline-block;
+  font-size: 15px;
+}
+
+header ul li:last-child {
+  color: red;
+  border-radius: 4px;
+  border: 1px solid red;
+}
+
+main {
+  text-align: center;
+  margin: 100px 20px;
+}
+
+main h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+main p {
+  color: gray;
+  font-size: 14px;
+}
+
+section {
+  margin: 50px;
+}
+
+.location label {
+  font-weight: bold;
+}
+.location input {
+  outline: none;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.interests {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.interest label {
+  font-weight: bold;
+}
+.interest p:nth-of-type(2) {
+  font-size: 14px;
+  color: gray;
+}
+.fast-food,
+.vegetable-fruit,
+.drinks-cocktail,
+.restaurants {
+  border: 1px solid #ccc;
+  padding: 20px 40px 20px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.interests p:nth-of-type(1) {
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.service-method h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.methods {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.methods p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.methods p:nth-of-type(2) {
+  margin-top: 10px;
+  color: gray;
+}
+
+.footer {
+  margin: 50px;
+}
+
+.footer-socials {
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer-images {
+  display: inline-block;
+}
+
+.footer img {
+  margin: 10px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 14px;
+}
