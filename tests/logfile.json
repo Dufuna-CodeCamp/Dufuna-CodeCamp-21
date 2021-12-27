@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-27T21:41:44.469Z",
-    "end": "2021-12-27T21:41:46.019Z",
-    "duration": 1550,
+    "start": "2021-12-27T21:46:35.427Z",
+    "end": "2021-12-27T21:46:37.050Z",
+    "duration": 1623,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8c325469-0bc4-44d0-b135-73288fd5c0d6",
+      "uuid": "f0a12b31-5047-43b1-bee2-467698256759",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ac1212b0-d1ab-4fd9-93bd-58a53171decb",
+          "uuid": "fe8a8981-98db-4ea3-8128-bfef3cc94271",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\users\\DELL\\OneDrive\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1510,
+              "duration": 1582,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "1be00309-ada2-41e8-a333-8dbf0ebe73fa",
-              "parentUUID": "ac1212b0-d1ab-4fd9-93bd-58a53171decb",
+              "uuid": "b1d5f22e-5cd5-4a19-9e40-0106841e3ca7",
+              "parentUUID": "fe8a8981-98db-4ea3-8128-bfef3cc94271",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "474b62a2-e70d-4727-92d2-d7bf21052933",
-              "parentUUID": "ac1212b0-d1ab-4fd9-93bd-58a53171decb",
+              "uuid": "2a0f1f6b-8792-457e-83d8-e1801c4b96a9",
+              "parentUUID": "fe8a8981-98db-4ea3-8128-bfef3cc94271",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 29,
+              "duration": 27,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -85,20 +85,20 @@
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "b24b790d-2ff3-4005-a87c-44b38d083be4",
-              "parentUUID": "ac1212b0-d1ab-4fd9-93bd-58a53171decb",
+              "uuid": "2d4a1f9c-e6f1-439f-a228-ea5210ded786",
+              "parentUUID": "fe8a8981-98db-4ea3-8128-bfef3cc94271",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b24b790d-2ff3-4005-a87c-44b38d083be4"
+            "2d4a1f9c-e6f1-439f-a228-ea5210ded786"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 29,
+          "duration": 27,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
