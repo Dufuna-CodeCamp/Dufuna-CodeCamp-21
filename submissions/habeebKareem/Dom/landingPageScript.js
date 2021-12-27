@@ -3,20 +3,8 @@ interestItems = document.getElementsByClassName("interest-items"),
 interestTitle = document.getElementsByClassName("interest-title"),
 interestText = document.getElementsByClassName("interest-text");
 
-console.log(interestItems);
-
 // Allow the use of forEach on an HTMLCollection
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
-
-// interestItems.onClick() {
-
-// }
-
-// interestItems.forEach(element => {
-//     element.onclick = () => (window.location.href = "../HTML/vendor-page.html");
-// });
-
-// interestItems.onclick = () => (window.location.href = "../HTML/vendor-page.html");
 
 clickableInterest = () => {
     var inputLocation = document.getElementById("location").value;
@@ -45,6 +33,4 @@ clickableInterest = () => {
     interestItems.forEach(element => {
         element.onclick = () => (window.location.href = "../HTML/vendor-page.html");
     });
-    
 }
-
