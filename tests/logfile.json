@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 4,
+    "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-12-27T21:51:27.586Z",
-    "end": "2021-12-27T21:51:28.682Z",
-    "duration": 1096,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2021-12-27T22:06:55.318Z",
+    "end": "2021-12-27T22:06:56.564Z",
+    "duration": 1246,
+    "testsRegistered": 4,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8a47a3d2-07cd-4050-b01a-4d7fdf022ffd",
+      "uuid": "89f6822b-5927-4b71-bb64-010fdd6fe919",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,34 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e6424875-cb1e-465a-8635-67601e9c7561",
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\users\\DELL\\OneDrive\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\users\\DELL\\OneDrive\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
+          "file": "\\html_task.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1069,
+              "duration": 1101,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "096539ab-a31d-4873-b2d0-eb6f74a17897",
-              "parentUUID": "e6424875-cb1e-465a-8635-67601e9c7561",
+              "uuid": "973a27b9-dabf-4041-bfca-efd8a4023026",
+              "parentUUID": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -63,42 +63,108 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "driver.quit();",
               "err": {},
-              "uuid": "32539bb7-1eae-466c-8a1b-0bee59f252c2",
-              "parentUUID": "e6424875-cb1e-465a-8635-67601e9c7561",
+              "uuid": "a16e91fe-4e8d-430f-82e2-7848ee94cd5c",
+              "parentUUID": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "title": "test case: check if Price is present",
+              "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 18,
+              "duration": 74,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "err": {},
+              "uuid": "9656b8c6-663c-4f9d-8928-24e90263e5be",
+              "parentUUID": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check if Description is present",
+              "fullTitle": "Testing Scholars Project test case: check if Description is present",
+              "timedOut": false,
+              "duration": 43,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "err": {
+                "message": "AssertionError: Ensure DESCRIPTION is present: expected 'printivo\\nproduct\\nall products\\nbecome a reseller\\ncost calculator\\nsign in\\ncreate an account\\ncontact form\\nquality prints\\nshipped to your doorstep\\nwhat would you like to print today\\n\\npopular products\\ntwo-sided business card\\nstarting at\\n₦7,500 per 100\\nbrowse two-sided business card >\\n\\na5 flyers (single sided)\\nstarting at\\n₦12,000 per 100\\nbrowse a5 flyers (single sided) >\\n\\nround stickers (3.5\" diameter)\\nstarting at\\n₦9,000 per 100\\nbrowse round stickers (3.5\" diameter) >\\n\\nsimple mugs\\nstarting at\\n₦2,500 per 1\\nbrowse simple mugs >\\n\\npopular categories\\ngreeting cards\\nstarting at\\n₦15,000 per 50\\nbrowse greeting cards >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nnigeria\\'s no. 1 online print shop\\nour print services and solutions are trusted by these brands and over 15,000 other businesses in nigeria.\\nwhat customers say about us\\namina ebele @deliciousamina\\ni am now the unofficial @printivo ambassador. what these guys just pulled to ensure i got my menu cards today is stunning!\\noluwatosin @tosingirlfx\\n@printivo delivered my mugs in 24hrs. thank you so much! it\\'s nice doing business with you. more to come.\\noluwatosin @olgablark\\nthese guys @printivo are really awesome and affordable. excellent customer service and delivery too. thank you.\\n\\nyou can count on us for:\\nfast turnaround within days\\nyour order gets to you within 3-7 working days via dhl or our very own printivo direct.\\n\\n100% top quality\\nonly the finest materials, machines and people will be involved in fulfilling your order.\\n\\naffordable services\\nall products are adequately priced to ensure you get value for your money at all times.\\n\\ncontact us\\nfacebook\\ntwitter\\nlinkedin\\ninstagram\\ncopyright © 2021 printivo. all rights reserved. terms & conditions applies.' to include 'description'",
+                "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'printivo\\nproduct\\nall products\\nbecome a reseller\\ncost calculator\\nsign in\\ncreate an account\\ncontact form\\nquality prints\\nshipped to your doorstep\\nwhat would you like to print today\\n\\npopular products\\ntwo-sided business card\\nstarting at\\n₦7,500 per 100\\nbrowse two-sided business card >\\n\\na5 flyers (single sided)\\nstarting at\\n₦12,000 per 100\\nbrowse a5 flyers (single sided) >\\n\\nround stickers (3.5\" diameter)\\nstarting at\\n₦9,000 per 100\\nbrowse round stickers (3.5\" diameter) >\\n\\nsimple mugs\\nstarting at\\n₦2,500 per 1\\nbrowse simple mugs >\\n\\npopular categories\\ngreeting cards\\nstarting at\\n₦15,000 per 50\\nbrowse greeting cards >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nstickers\\nstarting at\\n₦4,949 per 75\\nbrowse stickers >\\n\\nnigeria\\'s no. 1 online print shop\\nour print services and solutions are trusted by these brands and over 15,000 other businesses in nigeria.\\nwhat customers say about us\\namina ebele @deliciousamina\\ni am now the unofficial @printivo ambassador. what these guys just pulled to ensure i got my menu cards today is stunning!\\noluwatosin @tosingirlfx\\n@printivo delivered my mugs in 24hrs. thank you so much! it\\'s nice doing business with you. more to come.\\noluwatosin @olgablark\\nthese guys @printivo are really awesome and affordable. excellent customer service and delivery too. thank you.\\n\\nyou can count on us for:\\nfast turnaround within days\\nyour order gets to you within 3-7 working days via dhl or our very own printivo direct.\\n\\n100% top quality\\nonly the finest materials, machines and people will be involved in fulfilling your order.\\n\\naffordable services\\nall products are adequately priced to ensure you get value for your money at all times.\\n\\ncontact us\\nfacebook\\ntwitter\\nlinkedin\\ninstagram\\ncopyright © 2021 printivo. all rights reserved. terms & conditions applies.' to include 'description'\n    at Context.<anonymous> (html_task.js:30:12)\n    at processTicksAndRejections (node:internal/process/task_queues:93:5)",
+                "diff": null
+              },
+              "uuid": "92cc9903-f36e-47a4-be24-cdc501b1c450",
+              "parentUUID": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 2",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
+              "timedOut": false,
+              "duration": 14,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "err": {
+                "message": "AssertionError: Amount of images on the page not equal to 2: expected 10 to equal 2",
+                "estack": "AssertionError: Amount of images on the page not equal to 2: expected 10 to equal 2\n    at Context.<anonymous> (html_task.js:36:12)\n    at processTicksAndRejections (node:internal/process/task_queues:93:5)",
+                "diff": "- 10\n+ 2\n"
+              },
+              "uuid": "dea8af77-c838-4530-bb93-a386703b7049",
+              "parentUUID": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "timedOut": false,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
-              "uuid": "a7855798-9a22-4214-bf8c-c3aef87b1dce",
-              "parentUUID": "e6424875-cb1e-465a-8635-67601e9c7561",
+              "uuid": "078ba063-c9af-4989-85cc-b6e826c307ae",
+              "parentUUID": "b76deee6-2260-4eeb-99a4-37a27f4b729c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a7855798-9a22-4214-bf8c-c3aef87b1dce"
+            "9656b8c6-663c-4f9d-8928-24e90263e5be",
+            "078ba063-c9af-4989-85cc-b6e826c307ae"
           ],
-          "failures": [],
+          "failures": [
+            "92cc9903-f36e-47a4-be24-cdc501b1c450",
+            "dea8af77-c838-4530-bb93-a386703b7049"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 18,
+          "duration": 131,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -132,7 +198,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/users/DELL/OneDrive/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/users/DELL/OneDrive/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
