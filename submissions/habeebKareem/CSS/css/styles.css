@@ -233,7 +233,25 @@ ol.breadcrumb {
     padding: 8px 22px;
 }
 
+#removebtn {
+    background: #A5A5A5;
+    border: 1px solid #A5A5A5;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 3px;
+}
+  
+.notification .badge {
+    position: absolute;
+    top: 5px;
+    right: 235px;
+    padding: 9px;
+    border-radius: 50%;
+    background: #AD4C4C;
 
+}
 /* Responsive Media Queries */
 
 /* Extra small devices ie. phones  */
