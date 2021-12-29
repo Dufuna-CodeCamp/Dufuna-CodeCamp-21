@@ -58,14 +58,13 @@ const printProductPrice = (array_names, array_prices) => {
 }
 
 const [products, product_price] = printProductPrice(product_names, product_prices);
-for (let i = 0, j = 0; i < products.length, i < product_price.length; i++, j++) {
-    // Print out the product prices for all the products
-    document.write (`<p>The price of ${products[i]} is $${product_price[j]}</p>`)
-    //console.log(`The price of ${products[i]} is $${product_price[j]}`);
-    
-}
+// for (let i = 0, j = 0; i < products.length, i < product_price.length; i++, j++) {
+//     // Print out the product prices for all the products
+//     // document.write (`<p>The price of ${products[i]} is $${product_price[j]}</p>`)
+//     //console.log(`The price of ${products[i]} is $${product_price[j]}`); 
+// }
 
-// module.exports = {
-//     products, 
-//     product_price
-// };
+module.exports = {
+    products, 
+    product_price
+};
