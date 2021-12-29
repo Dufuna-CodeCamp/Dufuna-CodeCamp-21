@@ -65,7 +65,7 @@ for (let i = 0, j = 0; i < products.length, i < product_price.length; i++, j++) 
     
 }
 
-module.exports = {
-    products, 
-    product_price
-};
+// module.exports = {
+//     products, 
+//     product_price
+// };
