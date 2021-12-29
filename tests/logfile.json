@@ -5,9 +5,7 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-29T15:40:21.805Z",
-    "end": "2021-12-29T15:40:21.839Z",
-    "duration": 34,
+
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +16,7 @@
   },
   "results": [
     {
-      "uuid": "3cd03e8a-41af-4e29-afc7-3ee77406ed4c",
+
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,29 +25,11 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b714080b-f98d-4d6d-b619-63996dedc33b",
-          "title": "Product Array Algorithm Task",
-          "fullFile": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
-          "file": "\\product_algorithm.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
             {
               "title": "check length of products",
               "fullTitle": "Product Array Algorithm Task check length of products",
               "timedOut": false,
-              "duration": 2,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "expect(products.length).to.equal(20);",
-              "err": {},
-              "uuid": "d7bdcbce-5b57-4f2b-9641-e29c296628a5",
-              "parentUUID": "b714080b-f98d-4d6d-b619-63996dedc33b",
-              "isHook": false,
+
               "skipped": false
             },
             {
@@ -57,67 +37,47 @@
               "fullTitle": "Product Array Algorithm Task check length of product price",
               "timedOut": false,
               "duration": 0,
-              "state": "passed",
-              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "expect(product_price.length).to.equal(20);",
-              "err": {},
-              "uuid": "7d38933e-cade-4435-b168-78d4565e9330",
-              "parentUUID": "b714080b-f98d-4d6d-b619-63996dedc33b",
+
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "check products data type",
-              "fullTitle": "Product Array Algorithm Task check products data type",
-              "timedOut": false,
-              "duration": 5,
+
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "for (i = 0; i < products.length; i++) {\n    expect(products[i]).to.be.a(\"string\");\n}",
-              "err": {},
-              "uuid": "a12f7b0a-dcb8-48c0-9714-c5d2f994ec08",
-              "parentUUID": "b714080b-f98d-4d6d-b619-63996dedc33b",
+
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "check product price data type",
-              "fullTitle": "Product Array Algorithm Task check product price data type",
-              "timedOut": false,
-              "duration": 3,
+
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "for (i = 0; i < product_price.length; i++) {\n    expect(product_price[i]).to.be.a(\"number\");\n}",
-              "err": {},
-              "uuid": "d7d0a469-030c-41ba-9b1c-6c2ac09b253d",
-              "parentUUID": "b714080b-f98d-4d6d-b619-63996dedc33b",
+
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d7bdcbce-5b57-4f2b-9641-e29c296628a5",
-            "7d38933e-cade-4435-b168-78d4565e9330",
-            "a12f7b0a-dcb8-48c0-9714-c5d2f994ec08",
-            "d7d0a469-030c-41ba-9b1c-6c2ac09b253d"
+
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10,
+
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -151,7 +111,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/lawanson/Downloads/Habeeb_Kareem/DEV/Dufuna-CodeCamp/Dufuna-CodeCamp-21/tests/product_algorithm/../..//tests/",
+
         "reportFilename": "logfile",
         "quiet": "true"
       },
