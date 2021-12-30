@@ -90,7 +90,7 @@ form input {
     display: flex;
 }
 
-.card-items {
+.interest-items {
     margin: 20px 20px 80px 0;
     background: #FFFFFF;
     box-shadow: 0 0 3px 1.5px; 
@@ -99,7 +99,7 @@ form input {
 p .card-text {
     margin-bottom: 0;
 }
-.card-img, .card-body {
+.card-img, .card-img-int, .card-body {
     margin: 25px 30px;
 }
 
@@ -233,7 +233,25 @@ ol.breadcrumb {
     padding: 8px 22px;
 }
 
+#removebtn {
+    background: #A5A5A5;
+    border: 1px solid #A5A5A5;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 3px;
+}
+  
+.notification .badge {
+    position: absolute;
+    top: 5px;
+    right: 235px;
+    padding: 9px;
+    border-radius: 50%;
+    background: #AD4C4C;
 
+}
 /* Responsive Media Queries */
 
 /* Extra small devices ie. phones  */
@@ -266,7 +284,7 @@ ol.breadcrumb {
     .interest, .services, .vendor-menu {
         display: grid;
     }
-    .card-items {
+    .interest-items {
         margin: 0;
         margin-bottom: 20px;
     }

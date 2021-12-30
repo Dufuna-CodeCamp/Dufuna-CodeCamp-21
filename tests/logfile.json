@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 4,
+    "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-22T14:59:38.047Z",
-    "end": "2021-12-22T14:59:39.969Z",
-    "duration": 1922,
-    "testsRegistered": 1,
+    "start": "2021-12-29T16:00:23.610Z",
+    "end": "2021-12-29T16:00:24.247Z",
+    "duration": 637,
+    "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "13b4ffe6-1555-4bbe-ac51-cc896f26099b",
+      "uuid": "f47dca92-07e5-46ed-8f28-a8f0931b8704",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,81 +27,100 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "496f2255-9065-4bf6-92a8-3f84a2b66177",
-          "title": "Testing javascript conditionals",
-          "fullFile": "C:\\Users\\King_Dunamis\\Documents\\Holy\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
-          "file": "\\conditionals_test.js",
-          "beforeHooks": [
-            {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
-              "timedOut": false,
-              "duration": 1829,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
-              "err": {},
-              "uuid": "628ee8ab-0c57-4913-a16a-a0ff590fa567",
-              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "afterHooks": [
-            {
-              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
-              "timedOut": false,
-              "duration": 0,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "driver.quit();",
-              "err": {},
-              "uuid": "11f7635c-d862-46f7-81e4-265a2fba63b7",
-              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
+          "uuid": "a10f49dd-1cfe-41ec-925c-9e9ead4922fa",
+          "title": "Product Array Algorithm Task",
+          "fullFile": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
+          "file": "\\product_algorithm.js",
+          "beforeHooks": [],
+          "afterHooks": [],
           "tests": [
             {
-              "title": "test case: check conditionals",
-              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "title": "check length of products",
+              "fullTitle": "Product Array Algorithm Task check length of products",
               "timedOut": false,
-              "duration": 77,
+              "duration": 3,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
+              "code": "expect(products.length).to.equal(20);",
               "err": {},
-              "uuid": "e92bed3d-88f3-4de9-841d-f667ecc0fa1f",
-              "parentUUID": "496f2255-9065-4bf6-92a8-3f84a2b66177",
+              "uuid": "e7b9b004-7ced-4c0f-bdb7-5eeba1337a55",
+              "parentUUID": "a10f49dd-1cfe-41ec-925c-9e9ead4922fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check length of product price",
+              "fullTitle": "Product Array Algorithm Task check length of product price",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(product_price.length).to.equal(20);",
+              "err": {},
+              "uuid": "1fcd0340-abd3-4496-8bd6-6b1b0cace0a8",
+              "parentUUID": "a10f49dd-1cfe-41ec-925c-9e9ead4922fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check products data type",
+              "fullTitle": "Product Array Algorithm Task check products data type",
+              "timedOut": false,
+              "duration": 16,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (i = 0; i < products.length; i++) {\n    expect(products[i]).to.be.a(\"string\");\n}",
+              "err": {},
+              "uuid": "724a9c8f-c7f9-42cc-94f3-4f4a9638c3f3",
+              "parentUUID": "a10f49dd-1cfe-41ec-925c-9e9ead4922fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check product price data type",
+              "fullTitle": "Product Array Algorithm Task check product price data type",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (i = 0; i < product_price.length; i++) {\n    expect(product_price[i]).to.be.a(\"number\");\n}",
+              "err": {},
+              "uuid": "48177b88-c6db-4f57-9968-14a5c473e76b",
+              "parentUUID": "a10f49dd-1cfe-41ec-925c-9e9ead4922fa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e92bed3d-88f3-4de9-841d-f667ecc0fa1f"
+            "e7b9b004-7ced-4c0f-bdb7-5eeba1337a55",
+            "1fcd0340-abd3-4496-8bd6-6b1b0cace0a8",
+            "724a9c8f-c7f9-42cc-94f3-4f4a9638c3f3",
+            "48177b88-c6db-4f57-9968-14a5c473e76b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 77,
+          "duration": 24,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 180000
+          "_timeout": 2000
         }
       ],
       "passes": [],
@@ -128,15 +147,15 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "6.3.1"
+      "version": "7.0.1"
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/King_Dunamis/Documents/Holy/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportDir": "C:/Users/lawanson/Downloads/Habeeb_Kareem/DEV/Dufuna-CodeCamp/Dufuna-CodeCamp-21/tests/product_algorithm/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
-      "version": "5.2.0"
+      "version": "6.0.1"
     }
   }
 }
