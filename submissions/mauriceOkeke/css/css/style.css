@@ -12,6 +12,9 @@ body {
 
 header {
   padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header p {
@@ -26,7 +29,6 @@ header p {
 
 header ul {
   list-style: none;
-  float: right;
 }
 
 header ul li {
@@ -156,4 +158,86 @@ section {
   justify-content: space-between;
   color: gray;
   font-size: 14px;
+}
+
+/* ========MEDIA QUERIES======== */
+@media screen and (max-width: 992px) {
+  header {
+    padding: 20px;
+  }
+
+  main {
+    text-align: center;
+    margin: 80px 20px;
+  }
+
+  section {
+    margin: 35px;
+  }
+
+  .interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .methods {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-info p:last-child {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+
+  main {
+    text-align: left;
+    margin: 50px 20px;
+  }
+
+  section {
+    margin: 20px;
+  }
+
+  .interests {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .interests > * {
+    margin: 0;
+  }
+
+  .methods {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-info p:last-child {
+    width: 70%;
+    text-align: center;
+  }
 }
