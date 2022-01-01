@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    margin: 50px 50px;
+    margin: 50px;
     padding-bottom: 30px;
 }
 nav a[href='/'] {
@@ -44,7 +44,7 @@ a:link {
 .signup a{
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
-    padding: 8px 8px;
+    padding: 8px;
     border-radius: 5px;
 }
 
@@ -61,7 +61,7 @@ a:link {
 }
 
 .location {
-    margin: 50px 50px;
+    margin: 50px;
 }
 .location h3 {
     font-size: 20px;
@@ -80,7 +80,7 @@ a:link {
 }
 
 .interest {
-    margin: 50px 50px;
+    margin: 50px;
 }
 
 .interest h3 {
@@ -102,7 +102,7 @@ a:link {
 }
 
 .card-box {
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     border-radius: 3px;
 
@@ -127,12 +127,12 @@ a:link {
 }
 
 .card-info1 {
-    margin: 0px 50px;
+    margin: 0 50px;
     text-align: center;
 }
 
 .contact {
-    margin: 50px 50px;
+    margin: 50px;
 }
 .contact h4 {
     font-size: 18px;
@@ -151,13 +151,13 @@ img {
 hr {
     position: relative;
     width: 90%;
-    height: 0px;
+    height: 0;
     border: 1px solid #F2F2F2;
 }
 
 .terms {
     display: flex;
-    margin: 50px 50px;
+    margin: 50px;
     justify-content: space-between;
 }
 
