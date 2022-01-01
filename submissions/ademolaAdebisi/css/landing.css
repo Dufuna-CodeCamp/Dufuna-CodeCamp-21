@@ -140,10 +140,12 @@ a:link {
 }
 .image {
     text-align: center;
+    margin: -20px 0;
 }
 
-.contact img {
+img {
     padding: 10px 15px;
+
 }
 
 hr {
@@ -153,13 +155,13 @@ hr {
     border: 1px solid #F2F2F2;
 }
 
-footer {
+.terms {
     display: flex;
     margin: 50px 50px;
     justify-content: space-between;
 }
 
-footer p {
+.terms p {
     font-size: 18px;
 }
 
