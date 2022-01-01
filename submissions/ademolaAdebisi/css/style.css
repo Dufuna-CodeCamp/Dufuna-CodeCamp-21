@@ -37,7 +37,7 @@ a:link {
 .signup a{
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
-    padding: 8px 8px;
+    padding: 8px;
     border-radius: 5px;
 }
 
@@ -55,7 +55,7 @@ a:link {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 50px 50px;
+    margin: 50px;
 }
 .kfc-logo img {
     padding-right: 30px;
@@ -75,14 +75,14 @@ a:link {
 }
 
 .card {
-    margin: 50px 50px;
+    margin: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
 }
 .card-img {
-    box-sizing: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-sizing: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     height: 100%;
     width: 100%;
@@ -121,7 +121,7 @@ a:link {
 .horizontal-line {
     position: relative;
     width: 95%;
-    height: 0px;
+    height: 0;
     border: 1px solid #E6E6E6;
 }
 
@@ -129,7 +129,7 @@ a:link {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 50px 50px;
+    margin: 50px;
 }
 .cr-logo img {
     padding-right: 30px;
