@@ -72,5 +72,6 @@
         "status": "passed",
         "summary": ""
     }],
-    "wasInterrupted": false
+    "wasInterrupted": false,
+    "passes": 5
 }
