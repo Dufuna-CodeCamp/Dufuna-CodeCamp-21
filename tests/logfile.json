@@ -1,5 +1,11 @@
 {
   "stats": {
+<<<<<<< HEAD
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "mauriceOkeke"
+=======
     "suites": 1,
     "tests": 18,
     "passes": 18,
@@ -461,5 +467,6 @@
       },
       "version": "6.0.1"
     }
+>>>>>>> master
   }
 }
