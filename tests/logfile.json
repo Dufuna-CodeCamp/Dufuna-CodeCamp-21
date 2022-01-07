@@ -2,13 +2,13 @@
     "numFailedTestSuites": 0,
     "numFailedTests": 0,
     "numPassedTestSuites": 1,
-    "numPassedTests": 5,
+    "numPassedTests": 4,
     "numPendingTestSuites": 0,
     "numPendingTests": 0,
     "numRuntimeErrorTestSuites": 0,
     "numTodoTests": 0,
     "numTotalTestSuites": 1,
-    "numTotalTests": 5,
+    "numTotalTests": 4,
     "openHandles": [],
     "snapshot": {
         "added": 0,
@@ -26,7 +26,7 @@
         "unmatched": 0,
         "updated": 0
     },
-    "startTime": 1641502370255,
+    "startTime": 1641548429088,
     "success": true,
     "testResults": [{
         "assertionResults": [{
@@ -39,40 +39,32 @@
         }, {
             "ancestorTitles": [],
             "failureMessages": [],
-            "fullName": "test case: check header title",
+            "fullName": "test case: check service-title1",
             "location": null,
             "status": "passed",
-            "title": "test case: check header title"
+            "title": "test case: check service-title1"
         }, {
             "ancestorTitles": [],
             "failureMessages": [],
-            "fullName": "test case: check intial counter value",
+            "fullName": "test case: check input elements",
             "location": null,
             "status": "passed",
-            "title": "test case: check intial counter value"
+            "title": "test case: check input elements"
         }, {
             "ancestorTitles": [],
             "failureMessages": [],
-            "fullName": "test case: expected images",
+            "fullName": "test case: check select element",
             "location": null,
             "status": "passed",
-            "title": "test case: expected images"
-        }, {
-            "ancestorTitles": [],
-            "failureMessages": [],
-            "fullName": "test case: check submit button",
-            "location": null,
-            "status": "passed",
-            "title": "test case: check submit button"
+            "title": "test case: check select element"
         }],
-        "endTime": 1641502436953,
+        "endTime": 1641548450954,
         "message": "",
-        "name": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\submissions\\habeebKareem\\REACT\\react-app\\src\\__tests__\\CartPage.test.js",
-        "startTime": 1641502398484,
+        "name": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\submissions\\habeebKareem\\REACT\\react-app\\src\\__tests__\\Verification.test.js",
+        "startTime": 1641548429256,
         "status": "passed",
         "summary": ""
     }],
     "wasInterrupted": false,
-    "passes": 5
-    
+    "passes": 4
 }
