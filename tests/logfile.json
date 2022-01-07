@@ -1,8 +1,78 @@
 {
-  "stats": {
-    "tests": 4,
-    "passes": 4,
-    "failures": 0,
-    "owner": "mauriceOkeke"
-  }
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 5,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 5,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1641502370255,
+    "success": true,
+    "testResults": [{
+        "assertionResults": [{
+            "ancestorTitles": [],
+            "failureMessages": [],
+            "fullName": "renders without crashing",
+            "location": null,
+            "status": "passed",
+            "title": "renders without crashing"
+        }, {
+            "ancestorTitles": [],
+            "failureMessages": [],
+            "fullName": "test case: check header title",
+            "location": null,
+            "status": "passed",
+            "title": "test case: check header title"
+        }, {
+            "ancestorTitles": [],
+            "failureMessages": [],
+            "fullName": "test case: check intial counter value",
+            "location": null,
+            "status": "passed",
+            "title": "test case: check intial counter value"
+        }, {
+            "ancestorTitles": [],
+            "failureMessages": [],
+            "fullName": "test case: expected images",
+            "location": null,
+            "status": "passed",
+            "title": "test case: expected images"
+        }, {
+            "ancestorTitles": [],
+            "failureMessages": [],
+            "fullName": "test case: check submit button",
+            "location": null,
+            "status": "passed",
+            "title": "test case: check submit button"
+        }],
+        "endTime": 1641502436953,
+        "message": "",
+        "name": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\submissions\\habeebKareem\\REACT\\react-app\\src\\__tests__\\CartPage.test.js",
+        "startTime": 1641502398484,
+        "status": "passed",
+        "summary": ""
+    }],
+    "wasInterrupted": false,
+    "passes": 5
+    
 }
