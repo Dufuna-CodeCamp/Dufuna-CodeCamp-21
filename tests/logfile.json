@@ -36,8 +36,8 @@
         "name": "C:\\Users\\lawanson\\Downloads\\Habeeb_Kareem\\DEV\\Dufuna-CodeCamp\\Dufuna-CodeCamp-21\\submissions\\habeebKareem\\REACT\\react-app\\src\\__tests__\\Verification.test.js",
         "startTime": 1641547282837,
         "status": "failed",
-        "summary": ""
+        "summary": "",
+        "passes": 5
     }],
-    "wasInterrupted": false,
-    "passes": 5
+    "wasInterrupted": false
 }
