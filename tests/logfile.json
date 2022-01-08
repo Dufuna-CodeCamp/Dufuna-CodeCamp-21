@@ -1,15 +1,13 @@
-
 {
   "stats": {
-<<<<<<< HEAD
     "suites": 1,
     "tests": 1,
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-01-08T11:46:49.883Z",
-    "end": "2022-01-08T11:47:04.852Z",
-    "duration": 14969,
+    "start": "2022-01-08T11:59:49.692Z",
+    "end": "2022-01-08T11:59:53.229Z",
+    "duration": 3537,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -20,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ba1eda03-d90f-49f5-82cb-b4e6dc8a0684",
+      "uuid": "f2a6c885-96df-49fd-aabd-1003e5746d4a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -29,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "90c90faf-58e8-4f03-92d5-947629f444fd",
+          "uuid": "7e0b38ee-4cf1-4c9f-aa08-3d27667bbe43",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -38,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 14606,
+              "duration": 3312,
               "state": null,
               "speed": null,
               "pass": false,
@@ -47,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "35fb543e-2464-48f9-8188-9bfeafedbd02",
-              "parentUUID": "90c90faf-58e8-4f03-92d5-947629f444fd",
+              "uuid": "cbb0a0d7-6607-4cd8-9587-5536811584dc",
+              "parentUUID": "7e0b38ee-4cf1-4c9f-aa08-3d27667bbe43",
               "isHook": true,
               "skipped": false
             }
@@ -58,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -67,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "0aa365cf-4104-4c16-a6ac-03dc5fd6be43",
-              "parentUUID": "90c90faf-58e8-4f03-92d5-947629f444fd",
+              "uuid": "1fb8b291-a26e-4937-8b22-3a28b82f4a8d",
+              "parentUUID": "7e0b38ee-4cf1-4c9f-aa08-3d27667bbe43",
               "isHook": true,
               "skipped": false
             }
@@ -78,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 308,
+              "duration": 165,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -87,20 +85,20 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "4bc36fbb-1b3b-453c-8371-c315c295c1ab",
-              "parentUUID": "90c90faf-58e8-4f03-92d5-947629f444fd",
+              "uuid": "5eee389b-e303-459a-9021-2b9ee7c423cb",
+              "parentUUID": "7e0b38ee-4cf1-4c9f-aa08-3d27667bbe43",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4bc36fbb-1b3b-453c-8371-c315c295c1ab"
+            "5eee389b-e303-459a-9021-2b9ee7c423cb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 308,
+          "duration": 165,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -142,12 +140,3 @@
     }
   }
 }
-=======
-    "tests": 3,
-    "passes": 3,
-    "failures": 0,
-    "owner": "oladayoKelani"
-  }
-}
-
->>>>>>> master
