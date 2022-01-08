@@ -1,5 +1,7 @@
+
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 1,
     "passes": 1,
@@ -140,3 +142,12 @@
     }
   }
 }
+=======
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "oladayoKelani"
+  }
+}
+
+>>>>>>> master
