@@ -6,5 +6,8 @@
     "phantomcss": "^1.6.0",
     "phantomjs-prebuilt": "^2.1.16",
     "selenium-webdriver": "^4.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3"
   }
 }
