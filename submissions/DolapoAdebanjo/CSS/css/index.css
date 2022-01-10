@@ -1,0 +1,206 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color:#696969;
+    padding: 3.125rem;
+}
+main{
+    margin:auto;
+}
+/** Beginning of styling of the Header section **/
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+/**Logo**/
+#logo{
+    font-weight: 500;
+    color: #000;
+}
+#logo span{
+    color: #AD4C4C;
+}
+/**Navbar**/
+nav{
+    display: flex;
+    gap: 3.125rem;
+    align-items: center;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+nav a:last-child{
+    border:0.125rem solid #AD4C4C;
+    border-radius: 5px;
+    color:#AD4C4C;
+    padding:5px;
+}
+/** End of styling of the Header section **/
+
+/** Beginning of styling of the Main section **/
+
+/** Beginning of styling of the Header section **/
+h1, h1 + p, h2, footer > p{
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4E4D4D;
+}
+form{
+    margin-top: 5rem;
+}
+label{
+    color: #000;
+    font-weight: 500;
+}
+#address{
+    width: 100%;
+    height: 3.75rem;
+    margin-top:1.25rem;
+    padding:0.9375rem;
+    color: inherit;
+    font-size: inherit;
+    border: 0.0625rem solid #C4C4C4;
+    border-radius: 5px;
+}
+select{
+    background: url(../assets/keyboard_arrow_down.svg) no-repeat 98%;
+    appearance: none;
+}
+main > p:nth-of-type(2){
+    color: #000;
+    font-weight: 500;
+    margin: 2.625rem 0 1.25rem;
+}
+.options{
+    display: flex;
+    gap: 20px;
+}
+.opt-item{
+    width: 18.4375rem;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.10);
+    padding: 1.875rem;
+}
+.opt-item p:nth-of-type(1){
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.opt-item p:nth-of-type(2){
+    margin-top: 0.3125rem;
+    font-size: 0.875rem;
+}
+/** End of styling of the Header section **/
+
+/** Beginning of styling of the Service section **/
+.line{
+    border-top: 0.125rem solid #F2F2F2;
+    margin:5rem 0;
+}
+h2{
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #4E4D4D;
+    margin-bottom: 4.5rem;
+}
+.location{
+    display: flex;
+    justify-content: space-around;
+}
+.location-item{
+    width: 18.75rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+.location p{
+    color: #A5A5A5;
+}
+/** End of styling of the Service section **/
+
+/** Beginning of styling of the Footer section **/
+footer > p{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.875rem;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+    margin-bottom: 3.125rem;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+/** End of styling of the Footer section **/
+
+@media (max-width: 768px)  {
+    html{
+        font-size: 14px;
+    }
+/*body{
+    padding:0;
+}*/
+main{
+    text-align: start;
+}
+header{
+    margin-bottom: 2.5rem;
+}
+form{
+    margin-top: 3rem;
+}
+nav{
+    gap: 10px;
+    justify-content: space-between;
+}
+h1, h1 + p{
+    text-align: start;
+}
+.options, .copyright, .location{
+    flex-direction: column;
+}
+.location-item, .opt-item{
+    width:100%;
+}
+.copyright p{
+    text-align: center;
+}
+.copyright{
+    gap: 20px;
+}
+}
+
+@media (max-width: 360px) {
+   header{
+       flex-direction: column;
+       align-items: center;
+       gap: 15px;
+   }
+   h1, h1 + p{
+    text-align: center;
+}
+   input{
+       width:100%;
+   }
+   .location-item > img{
+    width: 150px;
+}
+}
