@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+<<<<<<< HEAD
     "tests": 3,
     "passes": 3,
     "pending": 0,
@@ -9,6 +10,16 @@
     "end": "2022-01-10T16:48:11.699Z",
     "duration": 11302,
     "testsRegistered": 3,
+=======
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-10T10:42:46.384Z",
+    "end": "2022-01-10T10:43:04.228Z",
+    "duration": 17844,
+    "testsRegistered": 8,
+>>>>>>> master
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +29,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "558a372b-18ed-4dbe-a820-9688a9ae6a27",
+=======
+      "uuid": "a74dae64-fe6b-4d71-a926-1cacb5054c03",
+>>>>>>> master
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +42,27 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
           "file": "\\dom.js",
+=======
+          "uuid": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\user\\documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
+          "file": "\\vendors.js",
+>>>>>>> master
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 10584,
+=======
+              "duration": 16862,
+>>>>>>> master
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +71,13 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "6ae12463-e72f-4d38-9b80-41508e2cbd91",
               "parentUUID": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
+=======
+              "uuid": "122816a6-fbe9-4000-97fd-961fe224db6d",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+>>>>>>> master
               "isHook": true,
               "skipped": false
             }
@@ -65,78 +96,232 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+<<<<<<< HEAD
               "uuid": "7a0b4f61-7fdd-4c42-8541-6b5aa238a151",
               "parentUUID": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
+=======
+              "uuid": "5c2a3f4c-9913-4ef7-b9d1-ffe8885a45ca",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+>>>>>>> master
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
+<<<<<<< HEAD
               "title": "test case: check dropdown",
               "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
               "duration": 356,
+=======
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "timedOut": false,
+              "duration": 412,
+>>>>>>> master
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
+<<<<<<< HEAD
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
               "uuid": "b35bf19d-cc5c-486f-bf3c-ae7df38acb2c",
               "parentUUID": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
+=======
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
+              "err": {},
+              "uuid": "5cf4ece4-f142-4ed2-9aee-49cfd44ea9c2",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+>>>>>>> master
               "isHook": false,
               "skipped": false
             },
             {
+<<<<<<< HEAD
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
               "duration": 233,
               "state": "passed",
               "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
-              "err": {},
-              "uuid": "177b2438-3c99-4d6b-9ae2-26b5d543f715",
-              "parentUUID": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: check options in dropdown",
-              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+=======
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-              "duration": 68,
+              "duration": 47,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
+              "err": {},
+              "uuid": "3f06a90b-86c7-4590-86a8-3c266c3cc497",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: FoodBag text is present on the page",
+              "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
+              "timedOut": false,
+              "duration": 75,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
+              "err": {},
+              "uuid": "c32abb5c-5f53-4d47-a430-5705aa360944",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Login",
+              "fullTitle": "Testing Scholars Project test case: check Login",
+              "timedOut": false,
+              "duration": 57,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
+              "err": {},
+              "uuid": "94f7a556-339c-4a8d-b491-98ac9841414d",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Cart",
+              "fullTitle": "Testing Scholars Project test case: check Cart",
+              "timedOut": false,
+              "duration": 42,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {},
+              "uuid": "4f0871e1-f14c-40ab-abf6-5a796cb2adc0",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 62,
+              "state": "passed",
+              "speed": "medium",
+>>>>>>> master
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "err": {},
+              "uuid": "177b2438-3c99-4d6b-9ae2-26b5d543f715",
+              "parentUUID": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
+=======
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {},
+              "uuid": "1bc288b4-6808-4373-9e64-8493173699c3",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+>>>>>>> master
+              "isHook": false,
+              "skipped": false
+            },
+            {
+<<<<<<< HEAD
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 68,
+=======
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 46,
+>>>>>>> master
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+<<<<<<< HEAD
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
               "uuid": "9748a9dc-2eb4-4b0e-b327-5182ef14b8ea",
               "parentUUID": "e9ead25f-5dd4-47ca-ade4-21e21dc9c39b",
+=======
+              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
+              "err": {},
+              "uuid": "20443439-ea78-42d6-922b-0e17ebad737d",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 9",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
+              "timedOut": false,
+              "duration": 11,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
+              "err": {},
+              "uuid": "115fa26c-9228-4899-86a9-d705c81a62b1",
+              "parentUUID": "e4b192bf-07cd-4a0d-b84f-56ee44263eaf",
+>>>>>>> master
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+<<<<<<< HEAD
             "b35bf19d-cc5c-486f-bf3c-ae7df38acb2c",
             "177b2438-3c99-4d6b-9ae2-26b5d543f715",
             "9748a9dc-2eb4-4b0e-b327-5182ef14b8ea"
+=======
+            "5cf4ece4-f142-4ed2-9aee-49cfd44ea9c2",
+            "3f06a90b-86c7-4590-86a8-3c266c3cc497",
+            "c32abb5c-5f53-4d47-a430-5705aa360944",
+            "94f7a556-339c-4a8d-b491-98ac9841414d",
+            "4f0871e1-f14c-40ab-abf6-5a796cb2adc0",
+            "1bc288b4-6808-4373-9e64-8493173699c3",
+            "20443439-ea78-42d6-922b-0e17ebad737d",
+            "115fa26c-9228-4899-86a9-d705c81a62b1"
+>>>>>>> master
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+<<<<<<< HEAD
           "duration": 657,
+=======
+          "duration": 752,
+>>>>>>> master
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -170,7 +355,11 @@
     },
     "marge": {
       "options": {
+<<<<<<< HEAD
         "reportDir": "C:/Users/Maurice/Desktop/2021/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
+=======
+        "reportDir": "C:/Users/user/documents/GitHub/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
+>>>>>>> master
         "reportFilename": "logfile",
         "quiet": "true"
       },
