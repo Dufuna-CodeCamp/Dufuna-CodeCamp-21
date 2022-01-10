@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 2,
-    "start": "2022-01-10T17:23:47.368Z",
-    "end": "2022-01-10T17:23:58.595Z",
-    "duration": 11227,
+    "start": "2022-01-10T17:25:56.269Z",
+    "end": "2022-01-10T17:26:03.777Z",
+    "duration": 7508,
     "testsRegistered": 3,
     "passPercent": 33.33333333333333,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b260f795-24d0-49d2-9ce2-5aed30bd6168",
+      "uuid": "7f3711d8-3f72-4acd-964e-690d12d17877",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "48de7ef6-8680-4113-b816-fbae819ee0b0",
+          "uuid": "30ced6da-85e4-4b2c-ae20-5ae2fad21060",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
           "file": "\\dom.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 10793,
+              "duration": 7038,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4de00303-e882-4698-bb78-f50a6a2aabe3",
-              "parentUUID": "48de7ef6-8680-4113-b816-fbae819ee0b0",
+              "uuid": "fc21538f-8d2b-4906-8a5c-39c9c09b4acd",
+              "parentUUID": "30ced6da-85e4-4b2c-ae20-5ae2fad21060",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "6afcea07-e3a7-4cd0-b6e7-1f8346dcf4e8",
-              "parentUUID": "48de7ef6-8680-4113-b816-fbae819ee0b0",
+              "uuid": "8c2dc858-6a6e-45a4-92a9-d8bd89b33244",
+              "parentUUID": "30ced6da-85e4-4b2c-ae20-5ae2fad21060",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check dropdown",
               "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
-              "duration": 134,
+              "duration": 158,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: Unspecified AssertionError\n    at Context.<anonymous> (dom.js:25:9)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "dd73ea20-bf42-4eaa-adc6-68e4442ceabb",
-              "parentUUID": "48de7ef6-8680-4113-b816-fbae819ee0b0",
+              "uuid": "63578cf8-b133-4807-8478-26badd4436c8",
+              "parentUUID": "30ced6da-85e4-4b2c-ae20-5ae2fad21060",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-              "duration": 152,
+              "duration": 150,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Unspecified AssertionError\n    at Context.<anonymous> (dom.js:31:9)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": null
               },
-              "uuid": "da6691ee-601b-40a7-8092-ad33959a9b9f",
-              "parentUUID": "48de7ef6-8680-4113-b816-fbae819ee0b0",
+              "uuid": "be948e4f-1ffc-4231-96ac-20c2a8f8d097",
+              "parentUUID": "30ced6da-85e4-4b2c-ae20-5ae2fad21060",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-              "duration": 65,
+              "duration": 68,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -129,23 +129,23 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "bc819662-35b0-4953-bfa8-0738185df424",
-              "parentUUID": "48de7ef6-8680-4113-b816-fbae819ee0b0",
+              "uuid": "63f21124-d738-4a8c-84c8-2b2590189efa",
+              "parentUUID": "30ced6da-85e4-4b2c-ae20-5ae2fad21060",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bc819662-35b0-4953-bfa8-0738185df424"
+            "63f21124-d738-4a8c-84c8-2b2590189efa"
           ],
           "failures": [
-            "dd73ea20-bf42-4eaa-adc6-68e4442ceabb",
-            "da6691ee-601b-40a7-8092-ad33959a9b9f"
+            "63578cf8-b133-4807-8478-26badd4436c8",
+            "be948e4f-1ffc-4231-96ac-20c2a8f8d097"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 351,
+          "duration": 376,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
