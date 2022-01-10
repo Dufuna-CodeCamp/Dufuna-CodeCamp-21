@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-01-10T16:42:45.325Z",
-    "end": "2022-01-10T16:42:51.802Z",
-    "duration": 6477,
+    "start": "2022-01-10T16:45:05.362Z",
+    "end": "2022-01-10T16:45:11.822Z",
+    "duration": 6460,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0c5be216-9988-4133-9309-6c4bee1eb818",
+      "uuid": "f3112d8c-c4c3-4dfc-a5b8-fd1b1fba166a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1f834184-831f-4f3d-a350-811de66cc8bb",
+          "uuid": "f9cedef1-8454-4624-8f70-1f13d37d9ac5",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
           "file": "\\dom.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 5890,
+              "duration": 5859,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "552f6f87-5034-4d5c-bed6-c7ced0458843",
-              "parentUUID": "1f834184-831f-4f3d-a350-811de66cc8bb",
+              "uuid": "d190c4ab-06a6-4278-8c7f-c1d5f137bfef",
+              "parentUUID": "f9cedef1-8454-4624-8f70-1f13d37d9ac5",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "f31c828d-6b98-44ea-952b-7fdd7500cf80",
-              "parentUUID": "1f834184-831f-4f3d-a350-811de66cc8bb",
+              "uuid": "f55e6d97-d2d8-42fc-a911-e37ece154642",
+              "parentUUID": "f9cedef1-8454-4624-8f70-1f13d37d9ac5",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check dropdown",
               "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
-              "duration": 133,
+              "duration": 154,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +85,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
-              "uuid": "76594150-c318-4b59-a16e-10122e041c77",
-              "parentUUID": "1f834184-831f-4f3d-a350-811de66cc8bb",
+              "uuid": "be766769-3625-4e19-abb9-4ac9bd08d248",
+              "parentUUID": "f9cedef1-8454-4624-8f70-1f13d37d9ac5",
               "isHook": false,
               "skipped": false
             },
@@ -94,7 +94,7 @@
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-              "duration": 287,
+              "duration": 273,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -103,8 +103,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
-              "uuid": "38d436e6-72ad-4cd7-aca8-5cecbb1fbaf7",
-              "parentUUID": "1f834184-831f-4f3d-a350-811de66cc8bb",
+              "uuid": "0cb87bf9-dac5-4c48-88b1-03df034008e7",
+              "parentUUID": "f9cedef1-8454-4624-8f70-1f13d37d9ac5",
               "isHook": false,
               "skipped": false
             },
@@ -112,7 +112,7 @@
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-              "duration": 85,
+              "duration": 94,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -121,22 +121,22 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "f12c1df8-12a1-4a7a-b35a-15d4753c24d8",
-              "parentUUID": "1f834184-831f-4f3d-a350-811de66cc8bb",
+              "uuid": "a5b35a1e-136d-45b5-a534-49fdba60abd6",
+              "parentUUID": "f9cedef1-8454-4624-8f70-1f13d37d9ac5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "76594150-c318-4b59-a16e-10122e041c77",
-            "38d436e6-72ad-4cd7-aca8-5cecbb1fbaf7",
-            "f12c1df8-12a1-4a7a-b35a-15d4753c24d8"
+            "be766769-3625-4e19-abb9-4ac9bd08d248",
+            "0cb87bf9-dac5-4c48-88b1-03df034008e7",
+            "a5b35a1e-136d-45b5-a534-49fdba60abd6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 505,
+          "duration": 521,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
