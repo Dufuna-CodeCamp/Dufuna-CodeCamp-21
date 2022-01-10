@@ -29,6 +29,11 @@
     </main>
 
     <section class="location">
+      <select style="display: none">
+        <option value="Bodja Market"></option>
+        <option value="Balogun Market"></option>
+        <option value="TBS Junction"></option>
+      </select>
       <label for="location" class="location-title">Where are you?</label>
       <input
         list="locations"
@@ -36,11 +41,11 @@
         name="location"
         placeholder="Enter your delivery address"
       />
-      <select id="locations">
+      <datalist id="locations">
         <option value="Bodja Market"></option>
         <option value="Balogun Market"></option>
         <option value="TBS Junction"></option>
-      </select>
+      </datalist>
       <span class="error-message"></span>
     </section>
 
