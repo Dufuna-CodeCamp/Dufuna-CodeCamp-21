@@ -164,7 +164,7 @@ body {font-family: Poppins;
        width: 100%;
        flex-direction: row;
        padding-bottom: 5px;
-       padding-top: 0.5px;
+       padding-top: 0.6px;
        
         
    }
@@ -175,7 +175,7 @@ body {font-family: Poppins;
        font-style: normal;
        display: flex;
        align-content: center;
-        margin-bottom: 3px;
+        margin-bottom: 3.5px;
        padding-bottom: 4px;
        line-height: 24px;
        color: #ad4c4c;
@@ -222,5 +222,5 @@ body {font-family: Poppins;
    }
 hr {
     border: 1px solid #e6e6e6;
-    margin-top: 30px;
+    margin-top: 35px;
 }
