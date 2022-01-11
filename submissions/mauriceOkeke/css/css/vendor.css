@@ -115,7 +115,7 @@ main {
   margin-top: 15px;
   font-weight: bold;
   font-size: 16px;
-  color: #f00;
+  color: rgba(255, 0, 0, 1);
 }
 
 button:hover {
