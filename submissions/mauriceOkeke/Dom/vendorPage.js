@@ -13,10 +13,9 @@ for (let btn of ctaBtn) {
       btn.style.alignItems = "center";
     } else if (btn.innerText == "Remove") {
       btn.style.background = "#fff";
-      btn.style.color = "#f00";
+      btn.style.color = "rgba(255, 0, 0, 1)";
       btn.style.border = "1px solid red";
       btn.innerHTML = "Add to Cart";
-      dot.innerText--;
     }
 
     let cartDotCount = document.querySelectorAll(".remove").length;

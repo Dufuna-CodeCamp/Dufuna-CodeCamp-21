@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 2,
-    "start": "2022-01-11T12:29:35.868Z",
-    "end": "2022-01-11T12:30:00.259Z",
-    "duration": 24391,
+    "failures": 1,
+    "start": "2022-01-11T12:39:49.171Z",
+    "end": "2022-01-11T12:40:00.652Z",
+    "duration": 11481,
     "testsRegistered": 3,
-    "passPercent": 33.33333333333333,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f8f948e6-876e-41b5-8fba-5d12ef2bb4fa",
+      "uuid": "6284c62b-6d3f-4332-b9e7-18e862702a79",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "47b333e2-2977-4967-a997-f2d41072bb8b",
+          "uuid": "110dddb9-b703-4391-a878-717808d7a236",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Maurice\\Desktop\\2021\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
           "file": "\\dom.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 2,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "39437171-b1cd-4c6f-875e-fddaf64cbe17",
-              "parentUUID": "47b333e2-2977-4967-a997-f2d41072bb8b",
+              "uuid": "991f18df-6be0-435d-b823-21570335c633",
+              "parentUUID": "110dddb9-b703-4391-a878-717808d7a236",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "130e9fc1-1fa0-42da-84e6-b2a172d9b983",
-              "parentUUID": "47b333e2-2977-4967-a997-f2d41072bb8b",
+              "uuid": "2b837d37-8769-41c8-95eb-cf350e96a15f",
+              "parentUUID": "110dddb9-b703-4391-a878-717808d7a236",
               "isHook": true,
               "skipped": false
             }
@@ -76,21 +76,17 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 24004,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 11053,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
-              "err": {
-                "message": "AssertionError: Ensure the text on the button changes to `Remove` after adding to Cart`: expected 'Add to Cart' to equal 'Remove'",
-                "estack": "AssertionError: Ensure the text on the button changes to `Remove` after adding to Cart`: expected 'Add to Cart' to equal 'Remove'\n    at Context.<anonymous> (dom.js:27:16)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
-                "diff": "- Add to Cart\n+ Remove\n"
-              },
-              "uuid": "caa07d0d-0345-409a-a154-f907ad5f661b",
-              "parentUUID": "47b333e2-2977-4967-a997-f2d41072bb8b",
+              "err": {},
+              "uuid": "f1c864a5-f515-445e-a211-3326ddfab029",
+              "parentUUID": "110dddb9-b703-4391-a878-717808d7a236",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +94,7 @@
               "title": "test case: check colour of text",
               "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 268,
+              "duration": 295,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +107,8 @@
                 "estack": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(255, 0, 0, 1)' to equal 'rgba(255, 255, 255, 1)'\n    at Context.<anonymous> (dom.js:34:16)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
                 "diff": "- rgba(255, 0, 0, 1)\n+ rgba(255, 255, 255, 1)\n"
               },
-              "uuid": "b39a2885-e6e0-4b75-a33f-2f0ff9bb2cfb",
-              "parentUUID": "47b333e2-2977-4967-a997-f2d41072bb8b",
+              "uuid": "2883d6f2-657f-4464-bc6e-a5f93cc9c6e0",
+              "parentUUID": "110dddb9-b703-4391-a878-717808d7a236",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +116,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 59,
+              "duration": 75,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -129,23 +125,23 @@
               "context": null,
               "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {},
-              "uuid": "f42366ee-112e-4f68-9c01-e8891c95b50d",
-              "parentUUID": "47b333e2-2977-4967-a997-f2d41072bb8b",
+              "uuid": "2cd2a788-a303-4422-a0f9-323f6aba7ebf",
+              "parentUUID": "110dddb9-b703-4391-a878-717808d7a236",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f42366ee-112e-4f68-9c01-e8891c95b50d"
+            "f1c864a5-f515-445e-a211-3326ddfab029",
+            "2cd2a788-a303-4422-a0f9-323f6aba7ebf"
           ],
           "failures": [
-            "caa07d0d-0345-409a-a154-f907ad5f661b",
-            "b39a2885-e6e0-4b75-a33f-2f0ff9bb2cfb"
+            "2883d6f2-657f-4464-bc6e-a5f93cc9c6e0"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 24331,
+          "duration": 11423,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
