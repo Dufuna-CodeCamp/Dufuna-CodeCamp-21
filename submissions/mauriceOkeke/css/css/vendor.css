@@ -40,7 +40,9 @@ header nav ul li a {
   text-decoration: none;
   color: gray;
 }
-
+header nav ul li:first-child {
+  position: relative;
+}
 header nav ul li:last-child {
   border: 1px solid #f00;
   border-radius: 4px;
@@ -159,6 +161,20 @@ hr {
   display: none;
   place-items: center;
   margin-bottom: 3rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 13%;
+  display: none;
+  justify-content: center;
+  right: 10%;
+  font-size: 8px;
+  color: white;
 }
 
 /* MEDIA QUERIES */
