@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {font-family: Poppins;
+    margin: 50px 80px 88px 80px
+}
+
+.headers {background-color: #fff;
+    height: 83px;
+    width 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 1.2rem;
+    text-decoration: none;
+ 
+}
+.sign-up {
+    width: 80px;
+    height: 30px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ad4c4c;
+}
+
+.headers {
+    display: flex;
+    color:  black;
+    font-size: large;
+}
+
+.headers-logo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 25px;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    background: linear-gradient(
+      to right,
+      black 0% 1.19em,
+      black 1.19em 55%,
+      #ad4c4c 1.9em 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.headers-menu {
+   display: flex;
+    justify-content: flex-end;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+    font-family: Poppins;
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.5px;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-header p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #c9c9c9;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.3%;
+  }
+  .nav-item p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #c9c9c9;  }
+
+  .vendor-menu-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+  }
+.vendor-menu-title {
+
+    display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      flex-direction: row;
+}
+
+.kfc-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.kfc-logo img {
+    width: 65px;
+    height: 55px;
+}
+.kfc-logo p {
+    
+    display: flex;
+    font-family: Poppins;
+    align-items: center;
+    font-weight: 550;
+    font-style: normal;
+    padding-left: 1%;
+}
+.food-menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .food-menu {
+      padding: 10px 0 40px 0;
+      margin-bottom: 5px;
+  }
+
+.add-to-cart {
+    width: 140px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ad4c4c;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+   }
+   .image-menu{
+    
+    padding: 0 35px 0 3px ;
+   }
+.chicken {
+    margin-bottom: 20px;
+}
+   .vendor-all {
+       display: flex;
+       justify-content: flex-end;
+       width: 100%;
+       flex-direction: row;
+       padding-bottom: 5px;
+       padding-top: 0.6px;
+       
+        
+   }
+   .vendor-all p {
+       font-family: Poppins;
+       font-size: 16px;
+       font-weight: 500;
+       font-style: normal;
+       display: flex;
+       align-content: center;
+        margin-bottom: 3.0px;
+       padding-bottom: 4px;
+       line-height: 24px;
+       color: #ad4c4c;
+   }
+
+   .food-details {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       padding: 1px;
+       margin: 1px;
+       align-content: center;
+   }
+   .food-name {
+       display: flex;
+       justify-content: flex-start;
+       width: 100%;
+       font-family: Poppins;
+       font-style: normal;
+       font-weight: 600;
+       font-size: 14px;
+       line-height: 24px;
+       display: flex;
+       align-items: center;
+       color: #4e4d4d;
+   }
+
+
+
+   .food-price{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #5ea304;
+    padding-right: 20px;
+
+   }
+hr {
+    border: 1px solid #e6e6e6;
+    margin-top: 35px;
+}
