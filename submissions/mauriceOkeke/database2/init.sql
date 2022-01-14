@@ -1,7 +1,6 @@
 --create a database for a transport company
 CREATE DATABASE REFERENCES;
 
-
 --we are going to use the databse
 USE REFERENCES;
 
@@ -12,7 +11,6 @@ CREATE TABLE passengers(
   fullname VARCHAR NOT NULL,
   sex VARCHAR NOT NULL,
   age VARCHAR
-
 );
 
 
