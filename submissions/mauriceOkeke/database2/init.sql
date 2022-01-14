@@ -2,8 +2,7 @@
 CREATE DATABASE REFERENCES;
 
 -- Use the created database
-USE REFERENCES;
-
+Use REFERENCES;
 -- Table for passengers
 CREATE TABLE passengers(
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
