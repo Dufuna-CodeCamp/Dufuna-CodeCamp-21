@@ -1,8 +1,8 @@
 --create a database for a transport company
-CREATE DATABASE REFERENCES;
+CREATE DATABASE TRANSPORT;
 
 -- Use the created database
-USE REFERENCES;
+USE TRANSPORT;
 
 -- Table for passengers
 CREATE TABLE passengers(
