@@ -50,7 +50,7 @@ footer a{
 }
 
 .signup a{
-    padding: 8px 8px;
+    padding: 8px;
     color: #AD4C4C;
     border: 1px solid #AD4C4C;
     font-weight: 500;
@@ -133,27 +133,27 @@ select:hover {
     position: relative;
     color: #A5A5A5;
     border: 1px solid white;
-    box-shadow: 0px 0px 2px 2px  rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 2px 2px  rgba(0, 0, 0, 0.1); 
 }
 .pick-info h6{
     font-weight: 400;
     line-height: 40px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .pick-info p{
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .pick-box img{
     width: 40px;
     height: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .pbox1,.pbox2,.pbox3{
@@ -283,13 +283,13 @@ margin-right: 10px;
         font-size: 15px;
     }
     footer p{
-        padding:20px 0 20px;
+        padding:20px 0;
     }
 }
 
 @media screen and (min-width:440px) {
     nav{
-        padding: 50px 50px;
+        padding: 50px;
     }
     nav li{
         padding: 0 10px;
@@ -339,7 +339,7 @@ margin-right: 10px;
     .pick-box{   
         width: 40%;
         margin-bottom: 40px;
-        padding: 10px 10px 10px 10px; 
+        padding: 10px; 
     }
     .pick h5{
         margin: 15px 0;
@@ -388,7 +388,7 @@ margin-right: 10px;
     }
     .sect1 {
         text-align: center;
-        padding: 150px 0 80px 0;
+        padding: 150px 0 80px;
     }
     .sect1 h3{
         font-size: 40px;

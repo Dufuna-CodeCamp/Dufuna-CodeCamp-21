@@ -48,7 +48,7 @@ nav a{
 }
 
 .signup a{
-    padding: 8px 8px;
+    padding: 8px;
     color: #AD4C4C;
     border: 1px solid #AD4C4C;
     font-weight: 500;
@@ -117,12 +117,12 @@ hr{
 }
 .card-info h2{
     color: #4E4D4D;
-    font-size:16px; ;
+    font-size:16px; 
     font-weight: 600;
 }
 
 .card-info p{
-    font-size:16px; ;
+    font-size:16px; 
     font-weight: 600;
     color: #5EA304;  
 }
@@ -161,7 +161,7 @@ hr{
     .breadcrumb{
         padding-top: 60px;
         font-size: 14px;
-        padding: 0 20px 0;
+        padding: 0 20px;
     }
     .header {
         font-size: 20px;
@@ -199,7 +199,7 @@ hr{
 
 @media screen and (min-width:440px) {
     nav{
-        padding: 50px 50px;
+        padding: 50px;
     }
     nav li{
         padding: 0 10px;
@@ -213,7 +213,7 @@ hr{
     .breadcrumb{
         padding-top: 70px;
         font-size: 15px;
-        padding: 0 50px 0;
+        padding: 0 50px;
     }
     .header {
         font-size: 20px;
@@ -260,7 +260,7 @@ hr{
     .breadcrumb{
         padding-top: 90px;
         font-size: 14px;
-        padding: 0 100px 0;
+        padding: 0 100px;
     }
     .header {
         font-size: 20px;
