@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-01-16T18:30:04.378Z",
-    "end": "2022-01-16T18:30:10.124Z",
-    "duration": 5746,
+    "failures": 1,
+    "start": "2022-01-16T19:35:44.911Z",
+    "end": "2022-01-16T19:35:47.549Z",
+    "duration": 2638,
     "testsRegistered": 2,
-    "passPercent": 100,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bbe2a6f0-32bc-4f6b-9604-6bba2dd79986",
+      "uuid": "cf393156-6bb4-4612-9b24-5cb1d39472cd",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b8fb0cdc-d162-42fd-8b9f-a839d28196d2",
+          "uuid": "9c8fa1c2-2821-47c4-87cf-ba542b74ee43",
           "title": "Printing product price",
           "fullFile": "C:\\Users\\mintas\\Desktop\\New-beginning-code\\Dufuna\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
           "file": "\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
               "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
               "timedOut": false,
-              "duration": 5499,
+              "duration": 2531,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4ec8edcf-8c2e-4bb9-9f17-0700fc67dd6f",
-              "parentUUID": "b8fb0cdc-d162-42fd-8b9f-a839d28196d2",
+              "uuid": "3bd5a3b3-a745-4a46-a4c1-c1fd3ff59f98",
+              "parentUUID": "9c8fa1c2-2821-47c4-87cf-ba542b74ee43",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Printing product price\"",
               "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "70926ba1-fe56-499c-a5fa-dab0ce7eac92",
-              "parentUUID": "b8fb0cdc-d162-42fd-8b9f-a839d28196d2",
+              "uuid": "e993d947-7691-4165-a8aa-9708364fc82b",
+              "parentUUID": "9c8fa1c2-2821-47c4-87cf-ba542b74ee43",
               "isHook": true,
               "skipped": false
             }
@@ -76,17 +76,17 @@
               "title": "test case: check product details",
               "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
-              "duration": 141,
+              "duration": 55,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "70d8f4b9-d39e-43b2-a612-b4fd768d0a58",
-              "parentUUID": "b8fb0cdc-d162-42fd-8b9f-a839d28196d2",
+              "uuid": "1858306c-2a90-451d-829c-8640bba4c19c",
+              "parentUUID": "9c8fa1c2-2821-47c4-87cf-ba542b74ee43",
               "isHook": false,
               "skipped": false
             },
@@ -94,30 +94,35 @@
               "title": "test case: check three arrays are present",
               "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
-              "duration": 34,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 18,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
-              "err": {},
-              "uuid": "e6be1ae0-df14-4c59-94c4-6a975be9f3db",
-              "parentUUID": "b8fb0cdc-d162-42fd-8b9f-a839d28196d2",
+              "err": {
+                "message": "AssertionError: Ensure the array contains 3 objects: expected 1 to equal 3",
+                "estack": "AssertionError: Ensure the array contains 3 objects: expected 1 to equal 3\n    at Context.<anonymous> (test.js:33:12)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)",
+                "diff": "- 1\n+ 3\n"
+              },
+              "uuid": "dcfb1257-cefe-4064-84ec-359479480463",
+              "parentUUID": "9c8fa1c2-2821-47c4-87cf-ba542b74ee43",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "70d8f4b9-d39e-43b2-a612-b4fd768d0a58",
-            "e6be1ae0-df14-4c59-94c4-6a975be9f3db"
+            "1858306c-2a90-451d-829c-8640bba4c19c"
           ],
-          "failures": [],
+          "failures": [
+            "dcfb1257-cefe-4064-84ec-359479480463"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 175,
+          "duration": 73,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
