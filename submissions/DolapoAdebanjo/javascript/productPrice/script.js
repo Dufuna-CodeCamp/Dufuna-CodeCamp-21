@@ -22,6 +22,3 @@ for (let i = 0; i <= products.length; i++) {
     `<p>${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}.</p> <br>`
   );
 };
-/* sold for;
-sold for;
-*/
