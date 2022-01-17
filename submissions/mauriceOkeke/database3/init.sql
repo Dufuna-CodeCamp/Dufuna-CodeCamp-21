@@ -8,7 +8,8 @@ USE travels;
 
 
 -- Total number of passengers that survived
-
+SELECT COUNT(*) FROM travels_csv WHERE Survived = 1;
+342
 
 
 -- Total number of passengers that did not survive
