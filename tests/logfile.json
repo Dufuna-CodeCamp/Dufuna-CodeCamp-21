@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 2,
     "passes": 1,
@@ -162,5 +163,11 @@
       },
       "version": "6.0.1"
     }
+=======
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "mubarakOlaoluwa"
+>>>>>>> master
   }
 }
