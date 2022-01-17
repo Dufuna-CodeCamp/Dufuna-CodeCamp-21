@@ -1,6 +1,5 @@
 {
   "stats": {
-
     "suites": 1,
     "tests": 3,
     "passes": 3,
@@ -38,6 +37,7 @@
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 69199,
+
               "state": null,
               "speed": null,
               "pass": false,
