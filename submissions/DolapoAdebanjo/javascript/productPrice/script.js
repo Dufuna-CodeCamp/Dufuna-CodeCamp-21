@@ -21,4 +21,4 @@ for (let i = 0; i <= products.length; i++) {
   document.write(
     `<p>${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}.</p> <br>`
   );
-};
+}
