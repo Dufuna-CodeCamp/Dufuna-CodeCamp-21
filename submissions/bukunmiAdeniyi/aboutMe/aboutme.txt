@@ -1,7 +1,7 @@
 My name is Bukunmi Adeniyi
-<<<<<<< HEAD
 I am a full stack developer
 I am expecting to be a good programmer.
-=======
-i am a full stack Developer
->>>>>>> 2028c6cbd590d571d1d6963a603ad064f775a4d5
+i am willing to learn from Dufuna expert.
+Nice to be here
+thanks
+

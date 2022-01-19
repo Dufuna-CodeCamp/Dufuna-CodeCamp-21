@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="view port" content="width=device-width, initial-scale=1.0">
     <title>My e.commerce foodbag website</title>
     <link rel="stylesheet" href="../CSS/stylesheet.css">
-    <link rel="stylesheet" href="../CSS/vendors.css">
+    <link rel="stylesheet" href="../CSS/landing.css">
 </head>
 <div class="header">
     <ul>
-        <li style="border: 1px solid red; color: red;"><a href="#"></a>Sign up</li>
-        <li><a href="#"></a>Login</li>
-        <li><a href="#"></a>Cart</li>
+        <a href="#"><li style="border: 1px solid red; color: red;">Sign up</li></a>
+        <a href="#"><li>Login</li></a>
+        <a href="cart.html"><li>Cart</li></a>
     </ul>
 </div>
 
@@ -22,48 +23,82 @@
         <p>Anything food we have you covered</p>
     </div>
     <div class="location">
-        <label for="address"><h4>Where are you?</h4></label>
-        <input type="text" name="address" id="address" placeholder="Bodija Market">
+        <label for="address">
+            <h4>Where are you?</h4>
+        </label>
 
+        <select id="address" name="address">
+            <option value="Bodija">Bodija Market</option>
+            <option value="Makeni">Makeni</option>
+            <option value="Kabwata">Kabwata</option>
+            <option value="Jesmondine">Jesmondine</option>
+        </select>
     </div>
 
     <h3>Pick an interest</h3>
-    <div class="menu_option">
-        <img src="fast-food_disabled.svg">
-        <h4>Fast food</h4>
-        <p>All sorrows are less with bread</p>
+    <div id="inactive">
+        <div class="menu_option menu_option_item">
+            <img src="../HTML/images/fast-food_disabled.svg">
+            <h4>Fast food</h4>
+            <p>All sorrows are less with bread</p>
+        </div>
+        <div class="menu_option">
+            <img src="../HTML/images/Vegetables & Drinks_disabled.svg">
+            <h4>Vegetables & Fruits</h4>
+            <p>May not want it, but good for you.</p>
+        </div>
+        <div class="menu_option">
+            <img src="../HTML/images/Drinks & Cocktails_disabled.svg">
+            <h4>Drinks & Cocktails</h4>
+            <p>I feel sad for those who don't drink.</p>
+        </div>
+        <div class="menu_option">
+            <img src="../HTML/images/resturant_disabled.svg"><br>
+            <h4>Restaurants</h4>
+            <p>All sorrows are less with bread.</p>
+        </div>
     </div>
-    <div class="menu_option">
-        <img src="Vegetables & Drinks_disabled.svg">
-        <h4>Vegetables & Fruits</h4>
-        <p>May not want it, but good for you.</p>
+    <br><br><br>
+    <div id="active">
+        <div class="menuOpt">
+            <a href="vendorPage.html"><img src="../HTML/images/fast-food.svg"></a>
+            <h4>Fast food</h4>
+            <p>All sorrows are less with bread</p>
+        </div>
+        <div class="menuOpt">
+            <a href="vendorPage.html"><img src="../HTML/images/Vegetables & Drinks.svg"></a>
+            <h4>Vegetables & Fruits</h4>
+            <p>May not want it, but good for you.</p>
+        </div>
+        <div class="menuOpt">
+            <a href="vendorPage.html"><img src="../HTML/images/Drinks & Cocktails.svg"></a>
+            <h4>Drinks & Cocktails</h4>
+            <p>I feel sad for those who don't drink.</p>
+        </div>
+        <div class="menuOpt">
+           <a href="vendorPage.html"><img src="../HTML/images/resturant.svg"></a><br>
+            <h4>Restaurants</h4>
+            <p>All sorrows are less with bread.</p>
+        </div>
     </div>
-    <div class="menu_option">
-        <img src="Drinks & Cocktails_disabled.svg">
-        <h4>Drinks & Cocktails</h4>
-        <p>I feel sad for those who don't drink.</p>
-    </div>
-    <div class="menu_option">
-        <img src="resturant_disabled.svg"><br>
-        <h4>Restaurants</h4>
-        <p>All sorrows are less with bread.</p>
-    </div><br><br><br>
+    <br><br><br>
+
     <hr>
     <div class="heading">
         <h2>How we serve you</h2>
     </div>
     <div class="service">
-        <img src="illustration_1.svg">
+        <img src="../HTML/images/Illustration_1.svg">
         <h4>Tell us where you are</h4>
         <p>Select the location you want us to deliver</p>
     </div>
     <div class="service">
-        <img src="illustration_2.svg">
+        <img src="../HTML/images/illustration_2.svg">
         <h4>Tell us what you want</h4>
         <p>Browse the type of food that interests you</p>
     </div>
     <div class="service">
-        <img src="illustration_3.svg">
+        <img src="../HTML/images/illustration_3.svg">
         <h4>We'll come running</h4>
         <p>Your order will be delivered to you in no time</p>
     </div>
@@ -72,9 +107,9 @@
     <footer>
         <div class="contact_us">
             <p>Contact us</p>
-            <img src="twitter 2.svg">
-            <img src="youtube 1.svg">
-            <img src="facebook-f 1.svg">
+            <img src="../HTML/images/twitter 2.svg">
+            <img src="../HTML/images/youtube 1.svg">
+            <img src="../HTML/images/facebook-f 1.svg">
         </div>
         <div class="foot_note">
             <p>Terms & Conditions . Privacy Policy</p>
@@ -83,7 +118,8 @@
             <p>&copy;Copyright 2021 FoodBag is a registered trademark</p>
         </div>
     </footer>
-
+    <script src="../Dom/dom.js"></script>
+    <script src="../Dom/dom2.js"></script>
 
 </body>
 

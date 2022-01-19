@@ -1,18 +1,18 @@
-body{
-    background-color: gainsboro;
+body {
+    background-color: rgb(255,255,255);
     font-size: 17px;
     margin: 0px;
 }
-.header ul li{
+
+.header ul li  {
     list-style-type: none;
     display: inline;
     margin: 10px;
     padding: 10px;
     float: right;
-    
-
 }
-.menu_option{
+
+.menu_option {
     height: 150px;
     width: 250px;
     border: 1px solid;
@@ -20,183 +20,217 @@ body{
     padding: 10px;
     display:inline-block;
 }
-.heading{
-    text-align: center;
 
+.menuOpt {
+    height: 150px;
+    width: 250px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
 }
-.service{
+
+.heading {
+    text-align: center;
+}
+
+.service {
     display: inline-block;
     margin-left: 15px;
     padding: 10px;
     height: 320px;
     width:300px;
     text-align:justify;
-
 }
-.contact_us{
+
+.contact_us {
     text-align: center;
 }
 
-.content{
+.content {
     text-align: center;
     margin-top: 140px;
 }
-.foot_note{
+
+.foot_note {
     display: inline-flex;
     float: left;
 }
-.footer{
-    float:right
+
+#active {
+    display: none;
 }
-.location{
+
+.footer {
+    float: right;
+}
+
+.location {
     font-size: 19px;
-    
-}
-.location input{
-    width: 1125px;
-    height: 30px;
-    margin-left: 5px;
 }
 
-
+#address {
+    width: 1130px;
+    height:40px;
+    margin: 5px;
+}
 
 /* tablet */
 @media only screen and (max-width: 768px) {
-    h3{
+    h3 {
         font-size: 17px;
     }
-    .header ul li{
+
+    .header ul li {
         font-size: 12px;
     }
-    .content{
+
+    .content {
         font-size: 12px;
     }
-    .content h1{
+
+    .content h1 {
         text-align: left;
     }
-    .content p{
-        text-align: left;
 
+    .content p {
+        text-align: left;
     }
 
-    
-    .location input{
+    #address {
         width: 650px;
         height: 30px;
         margin-left: 5px;
     }
-    .location{
+
+    .location {
         font-size: 17px;
     }
-    .menu_option{
+
+    .menu_option {
         grid-template-columns: 1fr 1fr;
         flex-direction: column;
         font-size: 12px;
         height: 170px;
         width: 300px;
-        
     }
-    .heading{
+
+    #active .menuOpt {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        font-size: 12px;
+        height: 170px;
+        width: 300px;
+    }
+
+    .heading {
         font-size: 17px;
     }
-    .service{
+
+    .service {
         grid-template-columns: 1fr 1fr;
         font-size: 12px;
         flex-direction: column;
         margin-left: 200px;
     }
-    .service H4{
+
+    .service H4 {
         text-align: center;
     }
-    .service p{
+
+    .service p {
         text-align:center;
     }
-    .contact_us{
+
+    .contact_us {
         font-size: 12px;
     }
-    .foot_note{
+
+    .foot_note {
         font-size: 12px;
         text-align: center;
         margin-left: 280px;
         display: block;
-
     }
 
-    .footer{
+    .footer {
         text-align: center;
         font-size: 12px;
         margin-right: 240px;
         display: block;
-
     }
 
 }
 
-
-/* mobile version */
-
 @media only screen and (max-width: 600px) {
 
-    h3{
+    h3 {
         font-size: 15px;
     }
 
-    .header ul li{
+    .header ul li {
         font-size: 10px;
     }
 
-    .content{
+    .content {
         font-size: 10px;
     }
 
-    .content h1{
+    .content h1 {
         text-align: left;
     }
 
-    .content p{
+    .content p {
         text-align: left;
-
     }
 
-    .location input{
+    #address {
         width: 550px;
         height: 30px;
         margin-left: 5px;
     }
 
-    .location{
+    .location {
         font-size: 15px;
     }
 
-    .menu_option{
+    .menu_option {
         flex-direction: column;
         font-size: 10px;
         height: 170px;
         width: 300px;
     }
 
-    .heading{
+ #active .menuOpt {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        font-size: 12px;
+        height: 170px;
+        width: 300px;
+    }
+
+    .heading {
         font-size: 17px;
     }
 
-    .service{
+    .service {
         font-size: 10px;
         flex-direction: column;
         margin-left: 160px;
     }
 
-    .contact_us{
+    .contact_us {
         font-size: 10px;
     }
 
-    .foot_note{
+    .foot_note {
         font-size: 10px;
         text-align: center;
         margin-left: 220px;
         display: block;
     }
 
-    .footer{
+    .footer {
         text-align: center;
         font-size: 10px;
         margin-right: 190px;
@@ -204,8 +238,3 @@ body{
     }
 
 }
-
-
-
-
-    
