@@ -1,4 +1,4 @@
 Hello World!
 
-My name is Raphael Popoola
-A budding software developer
+My name is Raphael.
+Excited to be here learning Software Development.
