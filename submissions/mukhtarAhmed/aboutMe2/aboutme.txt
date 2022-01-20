@@ -2,4 +2,6 @@ Hello World
 I’m Ahmed mukhtar, but people call me “smiley mukti.” I’m a frontend developer, and I specialize in efficient  CSS & HTML that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible
 
 hello dufuna
+My professional life has been 100% driven by my passion for design and structure.
+Right now I’m excited because i have ben working on dufuna course content
 
