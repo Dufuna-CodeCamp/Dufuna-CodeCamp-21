@@ -23,10 +23,13 @@ header p {
   font-size: 20px;
 }
 
-.red-color {
+.red-color,
+.error-message {
   color: #ff0000;
 }
-
+.gray-color {
+  color: #a5a5a5;
+}
 header ul {
   list-style: none;
 }
@@ -70,6 +73,10 @@ section {
   margin: 50px;
 }
 
+option {
+  width: 100%;
+}
+
 .location label {
   font-weight: bold;
 }
@@ -80,6 +87,10 @@ section {
   width: 100%;
   padding: 10px 20px;
   margin-top: 5px;
+}
+
+#locations {
+  border: 2px solid blue !important;
 }
 
 .interests {
