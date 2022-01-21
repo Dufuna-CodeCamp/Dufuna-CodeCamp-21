@@ -1,11 +1,311 @@
 {
   "stats": {
-    "tests": 5,
-
+    "suites": 1,
+    "tests": 9,
     "passes": 5,
-
-    "failures": 0,
-
-    "owner": "joshuaOke"
+    "pending": 0,
+    "failures": 4,
+    "start": "2022-01-20T23:18:57.023Z",
+    "end": "2022-01-20T23:19:01.672Z",
+    "duration": 4649,
+    "testsRegistered": 9,
+    "passPercent": 55.55555555555556,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8091234e-03fc-47a1-a7cb-a45733adbf50",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+          "title": "Testing Cookies Task",
+          "fullFile": "C:\\Users\\JoshuaOke\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js",
+          "file": "\\cookies_2.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Cookies Task\"",
+              "fullTitle": "Testing Cookies Task \"before all\" hook: setupWebdriver in \"Testing Cookies Task\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
+              "err": {},
+              "uuid": "be5d7009-b8bb-48cc-bd84-01ddf219d27d",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Cookies Task\"",
+              "fullTitle": "Testing Cookies Task \"after all\" hook in \"Testing Cookies Task\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "310971c7-000e-43f2-80fa-44a1b11f7fde",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: S/N is present",
+              "fullTitle": "Testing Cookies Task test case: S/N is present",
+              "timedOut": true,
+              "duration": 2006,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst serial = text.toLowerCase();\nassert.include(serial, \"s/n\", `Ensure \"S/N\" column is present on the table`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\JoshuaOke\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\JoshuaOke\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js)\n    at listOnTimeout (node:internal/timers:557:17)\n    at processTimers (node:internal/timers:500:7)",
+                "diff": null
+              },
+              "uuid": "60d11944-c96d-4d66-a087-e4e26ecb4b42",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Product Name is present",
+              "fullTitle": "Testing Cookies Task test case: Product Name is present",
+              "timedOut": true,
+              "duration": 2010,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst product_name = text.toLowerCase();\nassert.include(product_name, \"product text\", `Ensure \"Product Name\" column is present on the table`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\JoshuaOke\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\JoshuaOke\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js)\n    at listOnTimeout (node:internal/timers:557:17)\n    at processTimers (node:internal/timers:500:7)",
+                "diff": null
+              },
+              "uuid": "ce72340d-c4b1-4964-954b-fb4c7ef61edf",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Unit price is present",
+              "fullTitle": "Testing Cookies Task test case: Unit price is present",
+              "timedOut": false,
+              "duration": 516,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();;\nconst unit_price = text.toLowerCase();\nassert.include(unit_price, \"order unit price\", `Ensure \"Order Unit Price\" is present`);",
+              "err": {},
+              "uuid": "77570658-0f4a-4d06-abda-e9c03b0ca6b3",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Quantity is present",
+              "fullTitle": "Testing Cookies Task test case: Quantity is present",
+              "timedOut": false,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst qty = text.toLowerCase();\nassert.include(qty, \"order quantity\", `Ensure \"Order Quantity\" is present on the table`);",
+              "err": {},
+              "uuid": "8168c1bb-e59b-4d02-8331-b6d5c684a548",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Order total price is present",
+              "fullTitle": "Testing Cookies Task test case: Order total price is present",
+              "timedOut": false,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst order = text.toLowerCase();\nassert.include(order, \"order total price\", `Ensure \"Order Total Price\" column is present on the table`);",
+              "err": {},
+              "uuid": "ad83a957-02e5-4a75-b0fc-6ff4bec203cb",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Created Date is present",
+              "fullTitle": "Testing Cookies Task test case: Created Date is present",
+              "timedOut": false,
+              "duration": 19,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst date = text.toLowerCase();\nassert.include(date, \"created date\", `Ensure \"Created Date\" column is present on the table`);",
+              "err": {},
+              "uuid": "85883055-87e3-434e-9427-980f75381390",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Customer location is present",
+              "fullTitle": "Testing Cookies Task test case: Customer location is present",
+              "timedOut": false,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst location = text.toLowerCase();\nassert.include(location, \"customer location\", `Ensure \"Customer Location\" column is present on the table`);",
+              "err": {},
+              "uuid": "fbb30820-9aa3-4574-8f6b-30a0f5abca6b",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: View button is is present",
+              "fullTitle": "Testing Cookies Task test case: View button is is present",
+              "timedOut": false,
+              "duration": 13,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"button\")).getText();\nconst view = text.toLowerCase();\nassert.include(view, \"view\", `Ensure there is a button with text \"VIEW\" in the actions column`);",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"button\"}\n  (Session info: chrome=97.0.4692.99)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"button\"}\n  (Session info: chrome=97.0.4692.99)\n    at Object.throwDecodedError (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\http.js:548:13)\n    at Executor.execute (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\http.js:474:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async toWireValue (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:140:15)\n    at async C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:190:16\n    at async forEachKey (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:184:9)\n    at async convertKeys (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:189:3)\n    at async thenableWebDriverProxy.execute (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:733:22)\n    at async Context.<anonymous> (cookies_2.js:63:22)",
+                "diff": null
+              },
+              "uuid": "9a0f26c5-04e1-49dc-bb09-c4a8bd47755c",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Check if cookies is set",
+              "fullTitle": "Testing Cookies Task test case: Check if cookies is set",
+              "timedOut": false,
+              "duration": 7,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const get_cookie = await driver.manage().getCookie();\nconst cookie = get_cookie.value();\nassert.exists(cookie, `Ensure cookie is present`)",
+              "err": {
+                "message": "NoSuchCookieError: no such cookie\n  (Session info: chrome=97.0.4692.99)",
+                "estack": "NoSuchCookieError: no such cookie\n  (Session info: chrome=97.0.4692.99)\n    at Object.throwDecodedError (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\http.js:548:13)\n    at Executor.execute (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\http.js:474:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async Options.getCookie (C:\\Users\\JoshuaOke\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1712:22)\n    at async Context.<anonymous> (cookies_2.js:69:28)",
+                "diff": null
+              },
+              "uuid": "d53b96b4-8d1d-49c4-8672-8faf89a01908",
+              "parentUUID": "faced40c-2cf1-4f08-9b20-0fdde55c0737",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "77570658-0f4a-4d06-abda-e9c03b0ca6b3",
+            "8168c1bb-e59b-4d02-8331-b6d5c684a548",
+            "ad83a957-02e5-4a75-b0fc-6ff4bec203cb",
+            "85883055-87e3-434e-9427-980f75381390",
+            "fbb30820-9aa3-4574-8f6b-30a0f5abca6b"
+          ],
+          "failures": [
+            "60d11944-c96d-4d66-a087-e4e26ecb4b42",
+            "ce72340d-c4b1-4964-954b-fb4c7ef61edf",
+            "9a0f26c5-04e1-49dc-bb09-c4a8bd47755c",
+            "d53b96b4-8d1d-49c4-8672-8faf89a01908"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4626,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/JoshuaOke/Documents/GitHub/Dufuna-CodeCamp-21/tests/cookies2/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.0.1"
+    }
   }
 }
