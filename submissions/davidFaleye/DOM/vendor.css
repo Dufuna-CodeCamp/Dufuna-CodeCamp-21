@@ -47,6 +47,22 @@ nav a{
     color:#696969;
 }
 
+.cart{
+    position: relative;
+}
+  
+.cartdot{
+    position: absolute;
+    right: -3px;
+    top: -1px;
+    background: #AD4C4C;
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    content: "";
+    display: none;
+}
+  
 .signup a{
     padding: 8px;
     color: #AD4C4C;
@@ -137,10 +153,7 @@ hr{
     padding: 7px 20px;
 }
 
-.card-box button:hover{
-    background-color: #cac8c8;
-    border: 1px solid white;
-}
+
 
 .chicken-republic{
     padding-top: 20px;
