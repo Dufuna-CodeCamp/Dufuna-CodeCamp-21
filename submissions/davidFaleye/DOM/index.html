@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>eCommerce food ordering service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html">Food<span class="logo-bag">Bag</span></a>
+            <li class="signup"><a href="signup">Sign up</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="cart">Cart</a></li>
+        </ul>
+    </div>
+    </nav>
+    <section class="sect1">
+        <h3>FoodBag</h3>
+        <p>Anything food, we have you covered.</p>
+    </section>
+    <section>
+
+            <label for="location">Where are you?</label> <br>
+            <select id="location" name="location" placeholder="Enter your delivery address" onchange="changePick()">
+                <option value="Nigeria"> Enter your delivery address</option>
+                <option value="Nigeria"> Nigeria</option>
+                <option value="Libeia">Libeia</option>
+                <option value="Ghana"> Ghana </option>
+            </select>
+            
+    </section>
+    <section class="pick">
+        <h5>Pick an interest</h5>
+        <div onclick="navTo()" class="navToLink pick-box pbox1">
+            <img id= "changeImage" src="image/fast-food_disabled.svg" alt="Fast food" name = "imagS">
+            <div class="pick-info">
+                <h6 class="heading">Fast food</h6>
+                <p class="detail">All sorrows are less with bread.</p>
+            </div>             
+        </div>
+        <div onclick="navTo()" class=" navToLink pick-box pbox2">
+            <img id="changeImage1" src="image/Vegetables _ Drinks_disabled.svg" alt="Vegetables & Drinks">
+            <div class="pick-info">
+                <h6 class="heading">Vegetables & Fruits</h6>
+                <p class="detail">May not want it, but good for you..</p>
+            </div>             
+        </div>
+        <div onclick="navTo()" class=" navToLink pick-box pbox3">
+            <img id="changeImage2" src="image/Drinks _ Cocktails_disabled.svg" alt="Drinks & Cocktails">
+            <div class="pick-info">
+                <h6 class="heading">Drinks & Cocktails</h6>
+                <p class="detail">I feel sad for those who don't drink.</p>
+            </div>
+        </div>             
+        <div onclick="navTo()"
+        
+         class= "navToLink pick-box">
+            <img id="changeImage3" src="image/resturant_disabled.svg" alt="Resturant">
+            <div class="pick-info">
+                <h6 class="heading">Resturants</h6>
+                <p class="detail">All sorrows are less with bread.</p>
+            </div>                    
+        </div>
+    </section>
+    <hr>
+    <section class="serve">
+        <h3 class="center">How we serve you</h3>
+        <div class="serve-container">
+            <div class="serve-box">
+                <img src="image/Illustration_1.svg" alt="">
+                <div class="serve-info">
+                    <h5>Tell us where you are</h5>
+                    <p>Select the location you want us to deliver.</p>
+                </div>
+            </div>
+            <div class="serve-box">
+                <img src="image/Illustration_2.svg" alt="">
+                <div class="serve-info">
+                    <h5>Tell us what you want</h5>
+                    <p>Browse the type of food that interest you.</p>
+                </div>
+            </div>
+            <div class="serve-box">
+                <img src="image/illustration_3.svg" alt="">
+                <div class="serve-info">
+                    <h5>We'll come running</h5>
+                    <p>Your order will be delivered to you in no time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="contact">
+            <h6>Contact us</h6>
+            <div class="icon">
+                <a href="twitter">
+                    <img src="image/twitter 2.svg" alt="">
+                </a>
+                <a href="youtube">
+                    <img src="image/youtube 1.svg" alt="">
+                </a>
+                <a href="facebook">
+                    <img src="image/facebook.svg" alt="">
+                </a>                
+            </div>
+        </div>
+        
+            <ul>
+                <li><a href="Terms&Conditions"> Terms & Conditions</a></li>
+                <li><a href="Privacy Policy"> . Privacy Policy</a></li>
+                <p>© Copyright 2021 FoodBag is a registered trademark</p>
+            </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
