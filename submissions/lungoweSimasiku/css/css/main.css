@@ -547,8 +547,14 @@ footer {
     font-size: 0.8em;
   }
 
+  .selection__content-wrapper {
+    margin-bottom: 4em;
+  }
+
   .services h2 {
     font-size: 1.3em;
+    padding-top: 3.1em;
+    padding-bottom: 2.5em;
   }
 
   .services__content-wrapper {
@@ -565,5 +571,14 @@ footer {
   .services__type p {
     font-size: 0.8em;
     letter-spacing: -0.4px;
+  }
+
+  .contact__wrapper h3 {
+    padding-top: 5em;
+    padding-bottom: 1.9em;
+  }
+
+  .contact__content {
+    padding-top: 3.36em;
   }
 }
