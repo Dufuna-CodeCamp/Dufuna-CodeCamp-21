@@ -27,7 +27,7 @@
                 
             </nav>
             <div>
-                <button class="nav__button">Sign up</button>
+                <button class="nav__button button">Sign up</button>
             </div>
         </div>
     </header>
@@ -42,8 +42,15 @@
             <div class="address__content">
                 <h3>Where are you?</h3>
                 <form>
-                    <input type="text" name="delivery-address" size="50" placeholder="Enter your delivery address">
-                </form>
+                    <select name="address">
+                        <option value="delivery address" selected>Enter your delivery address</option>
+                        <option value="rhodes park">Rhodes Park</option>
+                        <option value="kabwata">Kabwata</option>
+                        <option value="woodlands">Woodlands</option>
+                        <option value="chelston">Chelston</option>
+                        <option value="avondale">Avondale</option>
+                    </select>
+               </form>
             </div>
         </section>
         <section class="selection">
@@ -92,26 +99,29 @@
         <section class="services">
             <div class="services__content">
                 <h2>How we serve you</h2>
-                <div class="location services-type">
-                    <img src="images/Illustration_1.svg" alt="illustration of person viewing the globe" />
-                    <h3>Tell us where you are</h3>
-                    <p>Select the location you want us to deliver.</p>
-                </div>
-                <div class="meal services-type">
-                    <img src="images/illustration_2.svg" alt="illustration of a drink and burger" />
-                    <h3>Tell us what you want</h3>
-                    <p>Browse the type of food that interest you</p>
-                </div>
-                <div class="delivery services-type">
-                    <img src="images/illustration_3.svg" alt="illustration of a delivery man on a scooter" />
-                    <h3>We'll come running</h3>
-                    <p>Your order will be delivered in no time</p>
+                <div class="services__content-wrapper">
+                    <div class="location services__type">
+                        <img src="images/Illustration_1.svg" alt="illustration of person viewing the globe" />
+                        <h3>Tell us where you are</h3>
+                        <p>Select the location you want us to deliver.</p>
+                    </div>
+                    <div class="meal services__type">
+                        <img src="images/illustration_2.svg" alt="illustration of a drink and burger" />
+                        <h3>Tell us what you want</h3>
+                        <p>Browse the type of food that interest you.</p>
+                    </div>
+                    <div class="delivery services__type">
+                        <img src="images/illustration_3.svg" alt="illustration of a delivery man on a scooter" />
+                        <h3>We'll come running</h3>
+                        <p>Your order will be delivered to you in no time.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="contact">
+        <div class="contact__wrapper">
+            <h3>Contact us</h3>
             <div class="contact__social-icons">
                 <a href="#">
                     <img src="images/twitter 2.svg" alt="twitter icon" />
@@ -123,13 +133,14 @@
                     <img src="images/facebook-f 1.svg" alt="facebook icon" />
                 </a>
             </div>
-            <div class="contact__terms-policy">
-                <p>Terms & Conditions. Privacy Policy</p>
+            <div class="contact__content">
+                <div class="contact__terms-policy">
+                    <p>Terms & Conditions. Privacy Policy</p>
+                </div>
+                <div class="contact__copyright-info">
+                    <p>&copy Copyright 2021 FoodBag is a registered trademark</p>
+                </div>
             </div>
-            <div class="contact__copyright-info">
-                <p>&copy Copyright 2021 FoodBag is a registered trademark</p>
-            </div>
-            
         </div>
     </footer>
 </body>
