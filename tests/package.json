@@ -6,5 +6,9 @@
     "phantomcss": "^1.6.0",
     "phantomjs-prebuilt": "^2.1.16",
     "selenium-webdriver": "^4.1.0"
+  },
+  "scripts": {
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start"
   }
 }
