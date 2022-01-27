@@ -1,6 +1,6 @@
 # Welcome to the Dufuna-CodeCamp Programme 🚩
 
-This repository exists for the submission of tasks by the Dufuna-CodeCamp participants for the year 2021.
+This repository exists for the submission of tasks by the Dufuna-CodeCamp participants from the year 2021.
 
 ## Getting Started
 
