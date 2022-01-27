@@ -103,6 +103,6 @@ select #cards {
         display: block;
         text-align: center;
         width: 100%;
-        margin: 35px 0 10px 0;  
+        margin: 35px 0 10px;  
       }
 }

@@ -103,6 +103,8 @@ hr {
     }
 
     .price {
+        display: inline-block;
+        position: absolute;
         right: 0;
         font-weight: 500;
         font-size: 20px;
@@ -124,14 +126,4 @@ hr {
         margin: 0 5px;
         padding: 5px;
     }
-
-    .price {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        font-weight: 500;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-      
 }

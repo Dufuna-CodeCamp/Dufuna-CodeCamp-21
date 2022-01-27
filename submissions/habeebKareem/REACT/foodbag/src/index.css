@@ -56,7 +56,7 @@ ul.breadcrumb li a:hover {
 
 @media (max-width: 650px) {
   ul.breadcrumb {
-    margin: 53px 0 20px 0px;
+    margin: 53px 0 20px 0;
   }
 }
 
