@@ -1,8 +1,14 @@
 {
   "stats": {
     "tests": 3,
+<<<<<<< HEAD
     "passes": 3,
     "failures": 0,
     "owner": "mariamPopoola"
+=======
+    "passes": 1,
+    "failures": 2,
+    "owner": "davidFaleye"
+>>>>>>> 06001f8b056b1f47970eb4e63898ac8fd177cba2
   }
 }
