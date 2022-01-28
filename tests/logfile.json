@@ -439,7 +439,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.1.3"
+      "version": "9.1.4"
     },
     "mochawesome": {
       "options": {
