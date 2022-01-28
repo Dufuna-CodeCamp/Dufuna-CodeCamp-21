@@ -1,0 +1,154 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color:#4E4D4D;
+    padding:50px;
+}
+main{
+    max-width: 1440px;
+    margin:auto;
+}
+h1{
+    color:#000;
+    font-weight: 500;
+    font-size: 1.875rem;
+}
+/** Beginning of styling of the Header section **/
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+/**Logo**/
+#logo{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #000;
+}
+#logo span, .KFC > p{ 
+    color: #AD4C4C;
+}
+/**Navbar**/
+nav{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    font-size: 1rem;
+    color:#696969;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+nav a:last-child{
+    border:2px solid #AD4C4C;
+    border-radius: 5px;
+    color:#AD4C4C;
+    padding:5px;
+}
+/** End of styling of the Header section **/
+
+p.navigate{
+    color:#C9C9C9;
+    font-size: 0.875rem;
+    margin-bottom: 25px;
+}
+p.navigate span:last-child{
+    color:#000;
+}
+
+.eatery, .eatery-logo, .list, .price{
+    display:flex;
+}
+.eatery{
+    font-weight: 500;
+    margin: 26px 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.view{
+    margin-top: 60px;
+    font-weight: 500;
+    color: #AD4C4C;
+}
+.bottom-view{
+    text-align: center;
+    display: none;
+}
+.eatery-logo{
+    gap:20px;
+    align-items: center;
+}
+.eatery-logo p{
+    color:#000;
+    font-size: 1.25rem;
+}
+.list{
+    justify-content: space-between;
+}
+.list > div{
+width:265px;
+}
+.price{
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin:15px 0 20px;
+}
+.price p:last-child{
+    color:#5EA304;
+}
+.list a{
+    border:1px solid #AD4C4C;
+    border-radius: 3px;
+    color:#AD4C4C;
+    padding:8px;
+    font-weight: 500;
+}
+
+hr{
+    border-top:1px solid #E6E6E6;
+    border-bottom: 0;
+    margin:61px 0 66px;
+}
+
+@media (max-width:750px){
+    nav{
+        gap: 10px;
+        justify-content: space-between;
+    }
+   .list{
+       flex-direction: column;
+       gap: 20px;
+   }
+   .list > div{
+    width:100%;
+    } 
+   .list > div img{
+    width: 100%;
+    }
+    .eatery-logo{
+        align-self: flex-start;
+        gap: 10px;
+    }
+    .top-view{
+        display: none;
+    }
+    .bottom-view{
+        display: block;
+    }
+}
+@media (max-width: 375px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

@@ -15,11 +15,13 @@
     <nav>        
       <a class="nav-logo" href=""><strong>Food<span>Bag</span></strong></a>
       <div class="navbar-item">
-          <a href="">Cart</a>
+          <a href="" class="notification"> 
+            <span>Cart</span>
+            <span class="badge" hidden=true></span>
+          </a>
           <a href="">Login</a>
           <a id="signup" href="">Sign up</a>
-      </div>
-        
+      </div>        
     </nav>
 
     <!-- Breadcrumb -->
@@ -29,8 +31,9 @@
       <li class="breadcrumb-item"><a href="">Vendors</a></li>
     </ol>
 
-    <h3>All Vendors</h3>
+    <!-- Vendors sections -->
 
+    <h3>All Vendors</h3>
 
     <div class="vendor-name">
       <img src="../HTML/assets/KFC logo.svg" alt="">
@@ -46,7 +49,7 @@
           <span class="">KFC - King Bucket</span>
           <span class="price">#5,000</span>
         </div>
-        <a id="cart-btn" href="">Add to Cart</a>
+        <button id="cart-btn" href="">Add to Cart</button>
       </div>
       <div class="menu-item">
         <img src="../HTML/assets/image4.svg" class="" alt="...">
@@ -54,7 +57,7 @@
           <span>Zinger Burger</span>
           <span class="price">#3,600</span>
         </div>
-        <a id="cart-btn" href="">Add to Cart</a>
+        <button id="cart-btn" href="">Add to Cart</button>
       </div>
       <div class="menu-item">
         <img src="../HTML/assets/image4.svg" class="" alt="">
@@ -62,7 +65,7 @@
          <span>Chicken strips</span>
          <span class="price">#1,450</span>
         </div>
-        <a id="cart-btn" href="">Add to Cart</a>
+        <button id="cart-btn" href="">Add to Cart</button>
       </div>
       <div class="menu-item">
         <img src="../HTML/assets/image4.svg" class="" alt="">
@@ -70,8 +73,10 @@
           <span>Yamilicious</span>
           <span class="price">#900</span>
         </div>
-        <a id="cart-btn" href="">Add to Cart</a>
+        <button id="cart-btn" href="">Add to Cart</button>
       </div>
+
+      <a id="view-all" href="">View all</a>
   </div>
 
   <hr>
@@ -90,7 +95,7 @@
         <span class="">Refuel Max</span>
         <span class="price">#1,200</span>
       </div>
-      <a id="cart-btn" href="">Add to Cart</a>
+      <button id="cart-btn" href="">Add to Cart</button>
     </div>
     <div class="menu-item">
       <img src="../HTML/assets/image2.svg" class="" alt="...">
@@ -98,7 +103,7 @@
         <span>Express meal</span>
         <span class="price">#2,000</span>
       </div>
-      <a id="cart-btn" href="">Add to Cart</a>
+      <button id="cart-btn" href="">Add to Cart</button>
     </div>
     <div class="menu-item">
       <img src="../HTML/assets/image3.svg" class="" alt="">
@@ -106,7 +111,7 @@
        <span>Citizen meal</span>
        <span class="price">#1,500</span>
       </div>
-      <a id="cart-btn" href="">Add to Cart</a>
+      <button id="cart-btn" href="">Add to Cart</button>
     </div>
     <div class="menu-item">
       <img src="../HTML/assets/image3.svg" class="" alt="">
@@ -114,9 +119,12 @@
         <span>Crunchy wings</span>
         <span class="price">#1,750</span>
       </div>
-      <a id="cart-btn" href="">Add to Cart</a>
+      <button id="cart-btn" href="">Add to Cart</button>
     </div>
+
+    <a id="view-all" href="">View all</a>
 </div>
 
+  <script src="../Dom/vendorPageScript.js"></script>
   </body>
 </html>

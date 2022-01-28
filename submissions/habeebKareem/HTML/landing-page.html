@@ -28,53 +28,55 @@
       <p>Anything food, we have you covered.</p>
   </div>
 
-  
   <form action="" method="post">
       <label for="locations">Where are you?</label>
       <br>
-      <input list="locations" name="locations" id="location" placeholder="Enter your delivery address">
-      <datalist id="locations">
-          <option value="Lagos">
-          </option><option value="Kano">
-          </option><option value="Ogun">
-          </option><option value="Oyo">
-          </option><option value="Abuja">
-          </option><option value="Kaduna">
-          </option><option value="Jos">
-      </option></datalist>
+      <input list="locations" oninput='clickableInterest()' name="locations" id="location" placeholder="Enter your delivery address">
+      <datalist name="locations" id="locations">
+        <option value="Lagos"></option>
+        <option value="Kano"></option>
+        <option value="Ogun"></option>
+        <option value="Oyo"></option>
+        <option value="Abuja"></option>
+        <option value="Kaduna"></option>
+        <option value="Jos"></option>
+      </datalist>  
   </form>
-  
 
   <!-- Interest Cards -->
   <h3>Pick an interest</h3>
   <div class="interest">       
 
-      <div class="card-items">
-        <img src="../HTML/assets/fast-food_disabled.svg" class="card-img" alt="Fast-Food-disabled">
+      <div class="interest-items">
+        <img src="../HTML/assets/fast-food_disabled.svg"  class="card-img-int" alt="Fast-Food-disabled">
+        <img src="../HTML/assets/fast-food.svg" hidden="hidden" class="card-img-int" alt="Fast-Food">
         <div class="card-body">
-          <h5 class="card-title">Fast food</h5>
-          <p class="card-text">All sorrows are less with bread</p>
+          <h5 class="interest-title">Fast food</h5>
+          <p class="interest-text">All sorrows are less with bread</p>
         </div>
       </div>
-      <div class="card-items">
-        <img src="../HTML/assets/Vegetables _ Drinks_disabled.svg" class="card-img" alt="Vegetables-disabled">
+      <div class="interest-items">
+        <img src="../HTML/assets/Vegetables _ Drinks_disabled.svg" class="card-img-int" alt="Vegetables-disabled">
+        <img src="../HTML/assets/Vegetables _ Drinks.svg" hidden="hidden" class="card-img-int" alt="Vegetables">
         <div class="card-body">
-          <h5 class="card-title">Vegetables &amp; Fruits</h5>
-          <p class="card-text">May not want it, but good for you.</p>
+          <h5 class="interest-title">Vegetables &amp; Fruits</h5>
+          <p class="interest-text">May not want it, but good for you.</p>
         </div>
       </div>
-      <div class="card-items">
-        <img src="../HTML/assets/Drinks _ Cocktails_disabled.svg" class="card-img" alt="Drinks-Cocktails-disabled">
+      <div class="interest-items">
+        <img src="../HTML/assets/Drinks _ Cocktails_disabled.svg" class="card-img-int" alt="Drinks-Cocktails-disabled">
+        <img src="../HTML/assets/Drinks _ Cocktails.svg"hidden="hidden" class="card-img-int" alt="Drinks-Cocktails">
         <div class="card-body">
-          <h5 class="card-title">Drinks &amp; Cocktails</h5>
-          <p class="card-text">I feel sad for those who don't drink.</p>
+          <h5 class="interest-title">Drinks &amp; Cocktails</h5>
+          <p class="interest-text">I feel sad for those who don't drink.</p>
         </div>
       </div>
-      <div class="card-items">
-          <img src="../HTML/assets/resturant_disabled.svg" class="card-img" alt="Resturants-disabled">
+      <div class="interest-items">
+          <img src="../HTML/assets/resturant_disabled.svg" class="card-img-int" alt="Resturants-disabled">
+          <img src="../HTML/assets/resturant.svg" hidden="hidden" class="card-img-int" alt="Resturants">
           <div class="card-body">
-            <h5 class="card-title">Resturants</h5>
-            <p class="card-text">All sorrows are less with bread.</p>
+            <h5 class="interest-title">Resturants</h5>
+            <p class="interest-text">All sorrows are less with bread.</p>
           </div>
       </div>
   </div>
@@ -125,7 +127,7 @@
       
       
   </footer>
-  
 
+  <script src="../Dom/landingPageScript.js"></script>
 </body>
 </html>
