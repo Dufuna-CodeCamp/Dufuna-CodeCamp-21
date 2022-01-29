@@ -2,6 +2,8 @@ const selectedAddress = document.getElementById("address");
 const imgBox = document.querySelectorAll(".item-img");
 const imgParent = document.querySelectorAll(".opt-item");
 const span = document.querySelector(".span");
+const option = document.querySelectorAll(".option");
+const select = document.querySelector('.select');
 
 /*const domChanges = function () {
   if (selectedAddress.value) {
