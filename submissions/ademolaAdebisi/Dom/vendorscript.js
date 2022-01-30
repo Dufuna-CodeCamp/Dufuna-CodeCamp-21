@@ -7,7 +7,7 @@ lists.forEach((button) => {
     button.addEventListener('click', function () {
         if (button.innerText == "Add to Cart") {
             button.innerHTML =
-                '<img src = "images/disable_1.svg" style = "color: rgba(255, 255, 255, 1)" class="remove" alt = "remove"> Remove';
+                '<img src = "images/disable_1.svg" style = "color: rgba(255, 255, 255, 1)" class="remove" alt = "remove">Remove';
             button.style.justifyContent = "space-around";
             button.style.padding = "5px 18px 5px 8px";
             button.style.color = "rgba(255, 255, 255, 1)";
@@ -16,7 +16,7 @@ lists.forEach((button) => {
         }
 
         //not selected anymore, return it to default
-        else if (button.innerText == " Remove") {
+        else if (button.innerText == "Remove") {
             button.innerText = "Add to Cart";
             button.style.padding = "8px 20px";
             button.style.color = "#ad4c4c";
