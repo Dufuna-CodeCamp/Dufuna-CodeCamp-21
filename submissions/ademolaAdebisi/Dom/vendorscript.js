@@ -7,7 +7,7 @@ lists.forEach((button) => {
     button.addEventListener('click', function () {
         if (button.innerText == "Add to Cart") {
             button.innerHTML =
-                '<img src = "images/disable_1.svg" style = "color: #ffffff" class="remove" alt = "remove"> Remove';
+                '<img src = "images/disable_1.svg" style = "color: rgba(255, 255, 255, 1)" class="remove" alt = "remove"> Remove';
             button.style.justifyContent = "space-around";
             button.style.padding = "5px 18px 5px 8px";
             button.style.color = "rgba(255, 255, 255, 1)";
