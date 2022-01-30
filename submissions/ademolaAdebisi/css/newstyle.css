@@ -132,12 +132,12 @@ nav {
     border: 1px solid #fff;
 }
 
-.remove {
+/* .remove {
     width: 24px;
     margin: 0;
     padding: auto;
     color: rgba(255, 255, 255, 1);
-}
+} */
 
 .horizontal-line {
     position: relative;
