@@ -33,14 +33,15 @@
 
         <div class="location">
             <h3>Where are you?</h3>
-            <input type="text" list="address-list" name="address" id="address"
-                placeholder="Enter your delivery address" />
-            <datalist name="address" id="address-list">
-                <option value="Wuse, Abuja"></option>
-                <option value="Ikeja, Lagos"></option>
-                <option value="Ibadan, Oyo"></option>
-                <option value="Minna, Niger"></option>
-            </datalist>
+            <!--  <input type="text" list="address-list" name="address" id="address"
+                placeholder="Enter your delivery address" /> -->
+            <select name="address" id="address-list" placeholder="Enter your delivery address">
+                <option value="">Enter your delivery address</option>
+                <option value="Wuse, Abuja">Wuse, Abuja</option>
+                <option value="Ikeja, Lagos">Ikeja, Lagos</option>
+                <option value="Ibadan, Oyo">Ibadan, Oyo</option>
+                <option value="Minna, Niger">Minna, Niger</option>
+            </select>
             <span class="error-message"></span>
         </div>
         <br>

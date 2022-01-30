@@ -1,4 +1,4 @@
-let locationSelect = document.querySelector("#address");
+let locationSelect = document.querySelector("#address-list");
 let interest = document.querySelector(".card").children;
 let errorMessage = document.querySelector(".error-message");
 
