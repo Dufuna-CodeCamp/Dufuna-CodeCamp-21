@@ -19,7 +19,7 @@ lists.forEach((button) => {
         else if (button.innerText == "Remove") {
             button.innerText = "Add to Cart";
             button.style.padding = "8px 20px";
-            button.style.color = "#ad4c4c";
+            button.style.color = "rgba(255,255,255,1)";
             button.style.backgroundColor = "#fff";
             button.style.border = "1px solid #ad4c4c";
         }
