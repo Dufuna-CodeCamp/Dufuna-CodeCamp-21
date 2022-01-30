@@ -136,7 +136,7 @@ nav {
     width: 24px;
     margin: 0;
     padding: auto;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
 }
 
 .horizontal-line {
