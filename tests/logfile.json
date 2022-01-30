@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
+    "tests": 3,
     "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-01-16T22:54:11.727Z",
-    "end": "2022-01-16T22:54:12.487Z",
-    "duration": 760,
-    "testsRegistered": 2,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2022-01-30T00:26:34.952Z",
+    "end": "2022-01-30T00:26:36.333Z",
+    "duration": 1381,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6018f59d-6f66-45d0-88fe-0273686aa09f",
+      "uuid": "b173b9ce-954b-4936-a74d-70064dd73aec",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,34 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cf0b80f8-82e2-48e2-bbad-31c20f3a07d7",
-          "title": "Printing product price",
-          "fullFile": "C:\\users\\dell\\onedrive\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
-          "file": "\\test.js",
+          "uuid": "9b593f30-3611-40a6-b5c0-dd83595bddef",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\users\\dell\\oneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\dom_2\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
-              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 686,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "2813a471-7e84-4cad-bca4-022b9f9be612",
-              "parentUUID": "cf0b80f8-82e2-48e2-bbad-31c20f3a07d7",
+              "uuid": "a4c2cdac-f0f4-41de-be7a-d63fed297fb2",
+              "parentUUID": "9b593f30-3611-40a6-b5c0-dd83595bddef",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Printing product price\"",
-              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -65,59 +65,83 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "9db8cd04-396a-4fee-b9e7-5589fdb5b2df",
-              "parentUUID": "cf0b80f8-82e2-48e2-bbad-31c20f3a07d7",
+              "uuid": "ce1c76db-6062-41c0-a1f0-56f2af07b846",
+              "parentUUID": "9b593f30-3611-40a6-b5c0-dd83595bddef",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check product details",
-              "fullTitle": "Printing product price test case: check product details",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 47,
+              "duration": 1286,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
               "err": {},
-              "uuid": "01e0e036-9249-4d3e-b5c4-31f05b56688b",
-              "parentUUID": "cf0b80f8-82e2-48e2-bbad-31c20f3a07d7",
+              "uuid": "9f31f44f-36b3-43ee-94db-2ecec081ac64",
+              "parentUUID": "9b593f30-3611-40a6-b5c0-dd83595bddef",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: check three arrays are present",
-              "fullTitle": "Printing product price test case: check three arrays are present",
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 17,
+              "duration": 57,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
+              "err": {
+                "message": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(173, 76, 76, 1)' to equal 'rgba(255, 255, 255, 1)'",
+                "estack": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(173, 76, 76, 1)' to equal 'rgba(255, 255, 255, 1)'\n    at Context.<anonymous> (dom.js:34:16)\n    at processTicksAndRejections (node:internal/process/task_queues:93:5)",
+                "diff": "- rgba(173, 76, 76, 1)\n+ rgba(255, 255, 255, 1)\n"
+              },
+              "uuid": "d42db919-ed99-453b-9f44-bbb4a284c0cb",
+              "parentUUID": "9b593f30-3611-40a6-b5c0-dd83595bddef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 26,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {},
-              "uuid": "d14e96e8-91ac-486f-8e16-bc62a0ebc10b",
-              "parentUUID": "cf0b80f8-82e2-48e2-bbad-31c20f3a07d7",
+              "uuid": "876b2b64-a13b-4490-93bd-7bb264e3fe65",
+              "parentUUID": "9b593f30-3611-40a6-b5c0-dd83595bddef",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "01e0e036-9249-4d3e-b5c4-31f05b56688b",
-            "d14e96e8-91ac-486f-8e16-bc62a0ebc10b"
+            "9f31f44f-36b3-43ee-94db-2ecec081ac64",
+            "876b2b64-a13b-4490-93bd-7bb264e3fe65"
           ],
-          "failures": [],
+          "failures": [
+            "d42db919-ed99-453b-9f44-bbb4a284c0cb"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 64,
+          "duration": 1369,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -151,7 +175,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/users/dell/onedrive/desktop/dufuna-codecamp-21/tests/product_price_printing/../..//tests/",
+        "reportDir": "C:/users/dell/oneDrive/desktop/Dufuna-CodeCamp-21/tests/dom_2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
