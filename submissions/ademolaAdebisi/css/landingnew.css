@@ -17,6 +17,12 @@ ul {
     margin: 20px;
 }
 
+.red-color, .error-message {
+  color: #ff0000;
+}
+.gray-color {
+  color: #a5a5a5;
+}
 
 nav {
     display: flex;
