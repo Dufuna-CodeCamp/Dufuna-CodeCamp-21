@@ -1,13 +1,11 @@
-let lists = document.querySelectorAll('button');
+let lists = document.querySelectorAll("button");
 let dot = document.querySelector(".dot");
-
-console.dir(lists);
 
 lists.forEach((button) => {
     button.addEventListener('click', function () {
         if (button.innerText == "Add to Cart") {
             button.innerHTML =
-                '<img src = "images/disable_1.svg" style = "width:20px; padding-right:2px; color: #fff" class = "remove" alt = "remove">Remove';
+                '<img src = "images/remove.svg" class = "remove" style = "width:30px; padding-right:2px; color: #fff"  alt = "remove">Remove';
             button.style.color = "rgba(255, 255, 255, 1)";
             button.style.justifyContent = "space-around";
             button.style.padding = "5px 18px 5px 8px";
