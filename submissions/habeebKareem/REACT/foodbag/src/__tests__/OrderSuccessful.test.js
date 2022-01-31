@@ -5,7 +5,7 @@ import OrderSuccessful from "../components/OrderSuccessful"
 const thisComponent = shallow(<OrderSuccessful />);
 
 it("renders without crashing", () => {
-    thisComponent;
+    shallow(<OrderSuccessful />);
 });
 
 

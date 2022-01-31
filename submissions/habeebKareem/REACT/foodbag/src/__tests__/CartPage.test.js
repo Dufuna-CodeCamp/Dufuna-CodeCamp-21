@@ -5,7 +5,7 @@ import CartPage from "../components/CartPage"
 const thisComponent = shallow(<CartPage />);
 
 it("renders without crashing", () => {
-    thisComponent 
+    shallow(<CartPage />); 
 });
 
 it("test case: check header title", async () => {

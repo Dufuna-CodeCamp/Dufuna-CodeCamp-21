@@ -4,5 +4,5 @@ import App from '../App';
 const thisComponent = shallow(<App />);
 
 it("renders without crashing", () => {
-  thisComponent 
+  shallow(<App />);
 });
