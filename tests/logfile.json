@@ -1,8 +1,203 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
     "failures": 0,
-    "owner": "mukhtarAhmed"
+    "start": "2022-02-01T17:59:53.831Z",
+    "end": "2022-02-01T18:02:53.958Z",
+    "duration": 180127,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "3a961e29-aff4-4a63-a30c-933ecb97e14a",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+          "title": "Testing Scholars Project",
+          "fullFile": "/home/mukhtar/Dufuna-CodeCamp-21/tests/product_page_using_html/html_task.js",
+          "file": "/html_task.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check if Price is present\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check if Price is present\"",
+              "timedOut": true,
+              "duration": 180102,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/home/mukhtar/Dufuna-CodeCamp-21/tests/product_page_using_html/html_task.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/home/mukhtar/Dufuna-CodeCamp-21/tests/product_page_using_html/html_task.js)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)",
+                "diff": null
+              },
+              "uuid": "bcc133a3-137d-4efb-b6bb-9a07037388c0",
+              "parentUUID": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "85496195-0f78-44d9-a85d-0529be7a2dbf",
+              "parentUUID": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check if Price is present",
+              "fullTitle": "Testing Scholars Project test case: check if Price is present",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "err": {},
+              "uuid": "49ad2ade-da79-4686-b794-779c93c23b18",
+              "parentUUID": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: check if Description is present",
+              "fullTitle": "Testing Scholars Project test case: check if Description is present",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "err": {},
+              "uuid": "5c28e8ab-d452-43c5-8912-aadd5ae2fdde",
+              "parentUUID": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: assert image amount is 2",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "err": {},
+              "uuid": "f1bd04cc-dfcf-4d0c-abd9-3f6cc27a22d9",
+              "parentUUID": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
+              "err": {},
+              "uuid": "10b6ec31-ab73-4918-9c08-9edae47fc369",
+              "parentUUID": "c4580841-f0c9-4ce0-81c3-c23fbeeda181",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "49ad2ade-da79-4686-b794-779c93c23b18",
+            "5c28e8ab-d452-43c5-8912-aadd5ae2fdde",
+            "f1bd04cc-dfcf-4d0c-abd9-3f6cc27a22d9",
+            "10b6ec31-ab73-4918-9c08-9edae47fc369"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.4"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "/home/mukhtar/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.0.1"
+    }
   }
 }
