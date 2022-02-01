@@ -9,7 +9,7 @@ if (isset($_COOKIE['customers'])) {
     try {
         $sql = "SELECT id, name, address , created_at FROM customers";
         $values = $connection->query($sql);
-
+        $dataArray = [];
         if ($values->rowCount() > 0) {
             $data = "
             <form action='orders.php' method='POST'>
@@ -19,6 +19,7 @@ if (isset($_COOKIE['customers'])) {
                 <th>Actions</th> </thead><tbody>";
             $i = 1;
             while ($row = $values->fetch()) {
+                array_push($dataArray, $row);
                 $data .= "<tr>
                 <td>" . $i++ . "</td>
                 <td>" . $row['name'] . "</td>
