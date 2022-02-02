@@ -16,7 +16,7 @@
       <form action="#" method="post" enctype="multipart/form-data">
         <fieldset>
           <legend>Contact Form</legend>
-          <label for="name">Full Name</label><br />
+          <label for="fullname">Full Name</label><br />
           <input
             type="text"
             name="name"
@@ -38,14 +38,12 @@
             placeholder="Enter your subject"
           /><br /><br />
           <label for="message">Message</label><br />
-          <textarea
+          <input
+            type="text"
             name="message"
             id="message"
-            cols="21"
-            rows="10"
             placeholder="Enter your message"
-          ></textarea
-          ><br />
+          /><br /><br />
           <button type="submit">Submit</button>
         </fieldset>
       </form>
