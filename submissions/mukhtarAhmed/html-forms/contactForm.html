@@ -11,19 +11,22 @@
     <a href="contactForm.html">Contact form</a>
 
     <h1>Contact form Page</h1>
-    <form action="">
+    <form action="#" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Contact Form</legend>
             <label for="fullname">Full Name</label><br><br>
             <input type="text" name="fullname" id="fullname"><br><br>
+
             <label for="email">Email</label><br><br>
             <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
+
             <label for="subject">Subject</label><br><br>
             <input type="text" name="subject" id="subject"> <br><br>
-            <label for="message">Message</label><br><br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea><br><br>
 
-            <button type="button">Submit</button>
+            <label for="message">Message</label><br>
+            <input type="text" name="message" id="message"> <br><br>
+            
+            <button type="submit">Submit</button>
         </fieldset>
 
     </form>
