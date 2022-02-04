@@ -6,8 +6,8 @@ body{
     padding: 20px 40px 25px 50px;
 }
 
-.headers {background-color: #fff;
-    height: 83px;
+.headers {
+    background-color: #fff;
     width 90%;
     display: flex;
     justify-content: space-between;
@@ -19,12 +19,12 @@ body{
 .sign-up {
     text-decoration: none;
     width: 80px;
-    height: 40px;
+    height: 30px;
     background: #ffffff;
     border: 1px solid #ad4c4c;
     box-sizing: border-box;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     color: #ad4c4c;
 }
 
@@ -39,7 +39,7 @@ body{
     font-style: normal;
     font-weight: 25px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
     display: flex;
     align-items: center;
     color: #000000;
@@ -56,11 +56,11 @@ body{
    display: flex;
     justify-content: flex-end;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 50px;
+    grid-gap: 20px;
     font-family: Poppins;
     list-style: none;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0;
 }
 
 .navbar{
@@ -192,8 +192,129 @@ box-sizing: border-box; */
      flex-wrap: wrap;
  }
 
+ @media  (max-width: 450px) and (min-width: 304px) {
 
- @media screen and (max-width: 640px){
+    body{
+        background-color: #fff;
+        padding: 30px 30px 25px 40px;
+    }
+    .headers-logo h2{
+        font-size: 16px;
+    }
+
+    .headers{
+        font-size: 14px;
+        margin-right: 10px;
+        padding-right: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+
+    .sign-up {
+        text-decoration: none;
+        width: 60px;
+        height: 20px;
+        background: #ffffff;
+        border: 1px solid #ad4c4c;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #ad4c4c;
+    }
+
+    .headers-menu {
+        display: flex;
+         justify-content: flex-end;
+         grid-template-columns: repeat(3, auto);
+         grid-gap: 20px;
+         font-family: Poppins;
+         list-style: none;
+         text-align: center;
+         padding-top: 0;
+     }
+    
+     /* .food-menu{
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        
+    } */
+    .navbar{
+        margin-top: 50;
+    }
+    .navbar-header{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .navbar2{
+        font-size: 12px;
+    }
+    .food-menu-list{
+        /* margin-top: 30px;
+        margin-bottom: 20px; */
+    }
+    .food-menu-tag{
+   
+        display: flex;
+       width: 70%;
+       justify-content: space-between;
+       flex-direction: column;
+       padding: 30px 50px 50px 15px;
+       margin-left: 0;
+       
+    
+    }
+    
+    .food-menu{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0 15px 0;
+    }
+    /* .food-menu1{
+        display: flex;
+        flex-direction: column;
+    } */
+    .serve-bar{
+        margin: 20px 0 30px 0;
+    }
+    .serve-bar h2{
+        font-size: 20px;
+        
+    }
+    .serve-menu h3 {
+        color: #696969;
+        text-align: center;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .serve-menu img{
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-content-2{
+        font-size: 12px;
+    }
+    .footer-items-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-items-3{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+
+    @media  (max-width: 770px) and (min-width: 451px) {
+
 .headers h2 {
     margin-left: 10px;
 }
@@ -205,7 +326,10 @@ box-sizing: border-box; */
     text-align: inherit;
     margin-left: 10px;
     font-size: 25px;
-    margin-top: -50px;
+    margin-top: -40px;
+}
+.navbar p {
+    text-align: center;
 }
 
 .navbar2 {
@@ -214,6 +338,18 @@ box-sizing: border-box; */
     padding-top: 7px;
     margin-left: 10px;
 }
+
+.food-menu-list h2 {
+    font-size: 20px;
+}
+
+.food-menu-tag {
+    display: flex;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-row: repeat(2, 1fr);
+}
+
 #selection-container .address-container {
     width: 90%;
     margin-left: 15px;
