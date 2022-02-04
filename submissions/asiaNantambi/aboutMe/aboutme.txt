@@ -1,4 +1,7 @@
-Hello Dufuna Team,
-I am Asia Nantambi from Uganda. 
-Thank you for the opportunity to learn more about coding because it is my passion.
-special thanks to my tutors and mentors.
+
+Hello Dufuna,
+I am Asia Nantambi a computer scientist from Uganda. I love tech, coding and playing chess.
+
+I am here for the react module and i thank Dufuna team for the opportunity granted to me to learn more, improve my skills and meet new brains.
+
+This is my second attempt for the aboutMe submission therefore changed the name of the branch from about-Asia to about-Asian. 
