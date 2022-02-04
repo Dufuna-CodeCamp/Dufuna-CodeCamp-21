@@ -73,10 +73,7 @@ a {
   font-weight: bold;
   text-transform: none;
 }
-.viewall {
-  text-align: right;
-}
-.productname{
+.productname {
   display: flex;
   justify-content: space-between;
 }
