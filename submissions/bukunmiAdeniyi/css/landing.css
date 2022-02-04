@@ -316,7 +316,7 @@ box-sizing: border-box; */
     @media  (max-width: 770px) and (min-width: 451px) {
 
 .headers h2 {
-    margin-left: 10px;
+    margin-left: 12px;
 }
 
 .headers ul li {
