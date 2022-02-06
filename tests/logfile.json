@@ -1,6 +1,5 @@
 {
   "stats": {
-<<<<<<< HEAD
     "suites": 1,
     "tests": 18,
     "passes": 18,
@@ -464,6 +463,3 @@
     }
   }
 }
-=======
-  }
->>>>>>> d86eda8bb92b835ea8d9d6fa705b1c090a7fe624
