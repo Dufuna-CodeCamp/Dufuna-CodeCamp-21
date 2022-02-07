@@ -127,8 +127,7 @@
               "skipped": false
             },
             {
-              "title": "test case: ordered list available",
-              "fullTitle": "Testing Scholars Project test case: ordered list available",
+
               "timedOut": false,
               "duration": 1,
               "state": "passed",
@@ -139,6 +138,7 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
+
               "uuid": "83e344c7-5921-49f7-911a-36ca5a038638",
               "parentUUID": "a42c085d-638b-4097-b21c-f189d3eaef9f",
               "isHook": false,
@@ -189,7 +189,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+
         "reportFilename": "logfile",
         "quiet": "true"
       },
