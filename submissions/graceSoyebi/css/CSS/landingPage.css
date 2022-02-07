@@ -1,0 +1,80 @@
+body{
+    margin: 1% 5% 1% 5%;
+    font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: smaller
+}
+h1{
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+    margin-left: 70%;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    margin-left: 18px;
+}
+#special{
+    color:rgb(146, 68, 68);
+    border: 1px solid rgb(146, 68, 68);
+    padding: 6px;
+    border-radius: 4px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.title-div{
+    text-align: center;
+}.title-div p{
+    margin-top: -15px;
+}
+.div-interest{
+    border: 1px solid rgb(165, 165, 165);
+    width: 25%;
+    margin: 10px;
+   padding-left: 20px;
+   padding-top: 20px;
+}
+.div-interest p{
+    font-size: smaller;
+    color: grey;
+}
+.div-service{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.outter-div{
+    width: 120%;
+    margin-left: -10.5%;
+}
+.sec-service{
+    border-top: 1px solid rgb(233, 230, 230);
+    border-bottom: 1px solid rgb(233, 230, 230);
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 3%;
+    
+}
+.contact{
+    margin-top: 8%;
+}
+.contact p{
+    text-align: center;
+}
+.contact a{
+    margin-left: 3%;
+}
+.a-div{
+    margin-left: 44.2%;
+}
+
+#footer-p-1{
+    float: left;
+}
+#footer-p-2{
+    float: right;
+}
