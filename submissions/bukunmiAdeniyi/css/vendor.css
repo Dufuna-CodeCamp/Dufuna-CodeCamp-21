@@ -3,8 +3,11 @@
 
 body {font-family: Poppins;
     margin: 50px 80px 88px 80px
+    width: 80%;
 }
-
+header{
+    
+}
 .headers {background-color: #fff;
     height: 83px;
     width 90%;
@@ -161,7 +164,7 @@ body {font-family: Poppins;
 }
    .vendor-all {
        display: flex;
-       justify-content: flex-end;
+       justify-content: center;
        width: 100%;
        flex-direction: row;
        padding-bottom: 5px;
@@ -225,9 +228,7 @@ hr {
 }
 
 @media (max-width: 400px) and (min-width: 304px) {
-    *{
-        
-    }
+    
 
     body{
       display: flex;
