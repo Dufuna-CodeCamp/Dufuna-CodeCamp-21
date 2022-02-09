@@ -67,8 +67,8 @@ main {
   width: 100%;
 }
 section {
-    width: 100%;
-    margin-bottom: 61px;
+  width: 100%;
+  margin-bottom: 61px;
 }
 
 .vendor__link {
@@ -166,14 +166,15 @@ button.kfc__CTA {
 }
 
 .hor__line {
-    height: 1px;
-    width: 100%;
-    background-color: #E6E6E6;
-    margin-bottom: 56px;
+  height: 1px;
+  width: 100%;
+  background-color: #e6e6e6;
+  margin-bottom: 56px;
+  border: none;
 }
 
 @media screen and (max-width: 1439px) {
-    .kfc__treats {
-        width: 24%;
-      }
+  .kfc__treats {
+    width: 24%;
+  }
 }
