@@ -8,14 +8,14 @@
 }
 
 body {
-  margin: 42px 100px 0px 100px;
+  margin: 42px 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header-container {
-  margin: 0px 0px 143px 0px;
+  margin-bottom: 143px;
   width: 100%;
 }
 
@@ -25,7 +25,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  margin: 0px;
 }
 
 ul.nav__text {
@@ -246,7 +245,7 @@ footer {
   width: 114px;
 }
 
-.footer__end {
+.copyright {
   width: 100%;
   display: flex;
   justify-content: space-between;
