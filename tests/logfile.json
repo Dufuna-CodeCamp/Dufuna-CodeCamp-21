@@ -131,12 +131,13 @@
             "58907d42-02ff-48e4-a7f9-36c50bfc0788",
             "27bf155b-c605-4f90-b52c-9c7e3d14ca3a"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 1,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 2000
+          "_timeout": 180000
         }
       ],
       "passes": [],
