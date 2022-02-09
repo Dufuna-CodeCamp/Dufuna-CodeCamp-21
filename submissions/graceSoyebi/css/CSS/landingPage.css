@@ -1,8 +1,8 @@
 body{
     margin: 1% 5%;
     font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-size: smaller
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller
 }
 h1{
     display: inline-block;
@@ -21,6 +21,7 @@ nav a{
     border: 1px solid rgb(146, 68, 68);
     padding: 6px;
     border-radius: 4px;
+    font-weight: bold;
 }
 .flex-container{
     display: flex;
