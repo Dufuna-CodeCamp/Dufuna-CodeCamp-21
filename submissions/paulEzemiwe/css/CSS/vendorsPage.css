@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Open+Sans:wght@300&family=Orbitron:wght@800&family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 42px 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  margin: 0 0 90px;
+  width: 100%;
+}
+
+.nav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.nav__text {
+  width: 270px;
+}
+
+.nav__logo {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.nav__logo--red {
+  color: #ad4c4c;
+}
+
+.nav__btns {
+  font-size: 16px;
+  font-weight: 400px;
+  color: #696969;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.nav__btns--border {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px solid #ad4c4c;
+  background-color: #ffffff;
+  color: #ad4c4c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1240px;
+  width: 100%;
+}
+section {
+    width: 100%;
+    margin-bottom: 61px;
+}
+
+.vendor__link {
+  color: #c9c9c9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.vendor__link--bold {
+  font-weight: 500;
+  color: #000000;
+}
+
+.vendor__title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-top: 33px;
+  margin-bottom: 44px;
+}
+
+.vendor__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.vendor__box--text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ad4c4c;
+  cursor: pointer;
+}
+
+.vendor__logo {
+  display: flex;
+  align-items: center;
+}
+
+.vendor__logo--img {
+  margin-right: 20px;
+}
+
+.vendor__logo--text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.kfc__gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kfc__treats {
+  width: 22.3%;
+}
+
+.kfc__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 3px;
+}
+
+.kfc__title {
+  color: #4e4d4d;
+}
+
+.kfc__price {
+  color: #5ea304;
+}
+
+button.kfc__CTA {
+  padding: 8px 22px 8px 22px;
+  border: 1px solid #ad4c4c;
+  background-color: #ffffff;
+  color: #ad4c4c;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0px 3px;
+}
+
+.hor__line {
+    height: 1px;
+    width: 100%;
+    background-color: #E6E6E6;
+    margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1439px) {
+    .kfc__treats {
+        width: 24%;
+      }
+}
