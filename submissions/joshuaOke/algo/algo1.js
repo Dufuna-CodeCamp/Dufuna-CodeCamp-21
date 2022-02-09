@@ -45,12 +45,7 @@ let product_price = [
 ];
 function manipulateArray(products, prices) {
     for (let i = 0; i < products.length; i++) {
-        if (products[i].length % 2 == 0) {
-            prices[i] *= 2;
-        }
-        else {
-            prices[i] /= 2;
-        }
+        prices[i] = products[i].length % 2 == 0 ? prices[i] *= 2 : prices[i] /= 2;
         console.log(`The price of ${products[i]} is ${prices[i]}`);
     }
 }
