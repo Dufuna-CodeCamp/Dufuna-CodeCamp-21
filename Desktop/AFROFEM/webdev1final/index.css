@@ -1,0 +1,101 @@
+html{
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: ridge;
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    text-align: center;
+}
+title{
+    font-size: 20px;
+    color: brown;
+    background-image: url("logo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+nav{
+    display: inline-flexbox;
+    background-color:rgb(59, 55, 56);
+}
+nav:hover{
+    color: brown;
+    background-color:  rgb(218, 157, 157); ;
+}
+.fr{
+    display: inline;
+    float: right;
+    
+}
+.fl{
+    display: inline;
+    float: left;
+    
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+table{
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+
+}
+.contact{
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 16px;
+    background-color: gainsboro;
+    
+}
+.contact:hover{
+    color: rgb(41, 11, 179);
+    background-color: rgb(218, 157, 157);
+}
+.socials{
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left{
+    float: left;
+
+}
+.right{
+    float: right;
+}
+.image{
+    padding: 10px;
+}
+.socimg{
+    padding-bottom: 0;
+    height: 25px;
+    width: 25px; 
+}
+#cart{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: -10px;
+    right: 0px;
+    background-color: red;
+    visibility: visible;
+    border-radius: 100%;
+}
