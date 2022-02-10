@@ -140,24 +140,15 @@ button {
 .list button {
   font-weight: 700;
   cursor: pointer;
-  border: 1px solid transparent;
   outline: none;
 }
-.list .add {
+.button{
   border-radius: 3px;
   color: #ad4c4c;
   border: 1px solid #ad4c4c;
   padding: 8px;
 }
-
-.list .remove {
-  border-radius: 3px;
-  background-color: #a5a5a5;
-  color: #e6e6e6;
-  display: none;
-  padding: 6px;
-}
-.list .remove img {
+.list img.remove{
   width: 20px;
   margin: 0 10px 0 0;
   vertical-align: middle;
