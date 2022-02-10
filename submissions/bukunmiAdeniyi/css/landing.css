@@ -345,9 +345,10 @@ box-sizing: border-box; */
 
 .food-menu-tag {
     display: flex;
-    justify-content: center;
-    grid-gap: 20px;
-    grid-template-row: repeat(2, 1fr);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 #selection-container .address-container {

@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Open+Sans:wght@300&family=Orbitron:wght@800&family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 42px 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  margin: 0 0 143px;
+  width: 100%;
+}
+
+.nav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.nav__text {
+  width: 270px;
+}
+
+.nav__logo {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.nav__logo--red {
+  color: #ad4c4c;
+}
+
+.nav__btns {
+  font-size: 16px;
+  font-weight: 400px;
+  color: #696969;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.nav__btns--border {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px solid #ad4c4c;
+  background-color: #ffffff;
+  color: #ad4c4c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1240px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title__header {
+  font-size: 40px;
+  line-height: 60px;
+  color: #4e4d4d;
+  font-weight: 600;
+}
+
+.title__desc {
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
+  font-weight: 400;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 42px;
+}
+
+.select__label,
+.menu__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.select__input {
+  padding: 15px 30px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #696969;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #c4c4c4;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url("../assets/svgs/keyboard_arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 97.6%;
+  background-position-y: 50%;
+}
+
+.select__placeholder {
+  display: none;
+}
+
+.menu {
+  margin-bottom: 81px;
+}
+
+.menu__gallery {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  width: 23.8%;
+  height: 169px;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+  padding: 27px 0 24px 2%;
+  cursor: pointer;
+}
+
+.cards__title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #a5a5a5;
+}
+
+.cards__desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #a5a5a5;
+  font-weight: 400;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.details__title {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: #4e4d4d;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 72px;
+}
+
+.details__gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details__card {
+  width: 24.2%;
+}
+
+.details__card--img {
+  margin-bottom: 41px;
+}
+
+.details__card--text {
+  text-align: center;
+  width: 100%;
+}
+
+.details__card--title {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 27.5px;
+  color: #696969;
+}
+
+.details__card--desc {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #a5a5a5;
+}
+
+footer {
+  width: 100%;
+  margin-top: 81px;
+  margin-bottom: 137px;
+}
+
+.footer__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+.footer__title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #696969;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 114px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #696969;
+}
