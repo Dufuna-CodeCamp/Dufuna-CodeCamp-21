@@ -119,9 +119,6 @@ p.navigate span:last-child {
   color: #000;
   font-size: 2rem;
 }
-.list {
-  justify-content: space-between;
-}
 .list > div {
   width: 265px;
 }
