@@ -4,11 +4,11 @@ CREATE DATABASE travel_records;
 USE travel_records;
 -- create table structure for passengers
 CREATE TABLE passengers (
-    passengers_id INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(100) NOT NULL,
     sex VARCHAR(20) NOT NULL,
     age VARCHAR(20),
-    PRIMARY KEY (passengers_id)
+    PRIMARY KEY (id)
 );
 
 -- create table structure for passengers_details
@@ -23,7 +23,7 @@ CREATE TABLE passengers_details (
     siblings_spouses INT NOT NULL,
     embark_point VARCHAR(20) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (passenger_id) REFERENCES passengers (passengers_id)
+    FOREIGN KEY (passenger_id) REFERENCES passengers (id)
 );
 
 
@@ -33,8 +33,9 @@ CREATE TABLE accident_cases (
     passenger_id INT NOT NULL,
     survived BOOLEAN NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (passenger_id) REFERENCES passengers (passengers_id)
+    FOREIGN KEY (passenger_id) REFERENCES passengers (id)
     
 );
+
 
 
