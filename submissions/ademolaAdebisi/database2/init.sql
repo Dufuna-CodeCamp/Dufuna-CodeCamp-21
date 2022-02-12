@@ -10,11 +10,10 @@ CREATE TABLE passengers (
     age VARCHAR(20),
     PRIMARY KEY (id)
 );
-
 -- create table structure for passengers_details
 CREATE TABLE passengers_details (
 	id INT NOT NULL AUTO_INCREMENT,
-    passenger_id INT NOT NULL,
+    passenger_id INT,
     passenger_class INT NOT NULL,
     passenger_ticket VARCHAR(20) NOT NULL,
     trip_fare DECIMAL(10,2) NOT NULL,
@@ -26,11 +25,10 @@ CREATE TABLE passengers_details (
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)
 );
 
-
 -- create table structure for accident_cases
 CREATE TABLE accident_cases (
 	id INT NOT NULL AUTO_INCREMENT,
-    passenger_id INT NOT NULL,
+    passenger_id INT,
     survived BOOLEAN NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)
