@@ -1,7 +1,7 @@
 -- create a database travel_records
-CREATE DATABASE travel_records;
+CREATE DATABASE REFERENCES;
 -- select the database travel_records
-USE travel_records;
+USE REFERENCES;
 -- create table structure for passengers
 CREATE TABLE passengers (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
