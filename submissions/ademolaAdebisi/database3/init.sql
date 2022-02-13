@@ -13,8 +13,8 @@ WHERE passengers.age < 27 AND (passengers_details.embark_point='C' or passengers
 ORDER BY passengers.passengers_id ASC;
 
 -- How many of the passengers that embarked at Southampton survived?
--- SELECT COUNT(*) FROM survival INNER JOIN passengers_details ON survival.passenger_id = passengers_details.passenger_id
--- WHERE passengers_details.embark_point='S' AND survival.survived=1;
+SELECT COUNT(*) FROM survival INNER JOIN passengers_details ON survival.passenger_id = passengers_details.passenger_id
+WHERE passengers_details.embark_point='S' AND survival.survived=1;
 218
 
 -- Get the id, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board
