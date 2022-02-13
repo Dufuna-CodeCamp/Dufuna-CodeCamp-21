@@ -15,6 +15,8 @@ else if( count % 5 ===0){
 else{
     document.write(count);
 }
-
+console.log(count);
 
 }
+
+done()
