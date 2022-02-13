@@ -2,10 +2,10 @@ USE travel;
 
 -- What is the total number of passengers who survived?
 SELECT COUNT(survived) FROM survival WHERE survived=1;
--- Answer = 342
+342
 -- What is the total number of passengers who did not survive?
 SELECT COUNT(survived) FROM survival WHERE survived=0;
--- Answer = 549
+549
 -- Get the name and sex of passengers under the age of 27 that embarked at Queenstown and Cherbourg?
 SELECT passengers.full_name, passengers.sex FROM passengers
 INNER JOIN passengers_details ON passengers.passengers_id=passengers_details.passenger_id
@@ -15,7 +15,7 @@ ORDER BY passengers.passengers_id ASC;
 -- How many of the passengers that embarked at Southampton survived?
 SELECT COUNT(*) FROM survival INNER JOIN passengers_details ON survival.passenger_id = passengers_details.passenger_id
 WHERE passengers_details.embark_point='S' AND survival.survived=1;
--- Answer = 218
+218
 
 -- Get the id, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board
 SELECT passengers.passengers_id, passengers.full_name FROM passengers
