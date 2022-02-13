@@ -24,3 +24,5 @@ WHERE passengers_details.trip_fare > 100 AND passengers.age > 35 AND passengers_
 
 SELECT COUNT(*) FROM passengers INNER JOIN passengers_details ON passengers.passengers_id = passengers_details.passenger_id
 WHERE passengers_details.trip_fare > 100.00 AND passengers.age > 35 AND passengers_details.siblings_spouses > 0;
+
+SHOW TABLES;
