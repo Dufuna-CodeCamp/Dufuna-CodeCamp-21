@@ -1,8 +1,5 @@
 const positiveDifference = 123 - 7;
 
-
-
-
 for ( let count = 1; count <= positiveDifference; count++){
 
 if( count % 3 ===0 && count % 5 ===0){
