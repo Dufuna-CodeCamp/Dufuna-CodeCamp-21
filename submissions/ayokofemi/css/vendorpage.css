@@ -128,6 +128,7 @@ header .logo {
     color: red;
     border: 2px solid red;
 }
+
 @media screen and (min-width: 600px) {
     .container {
         padding: 12px;

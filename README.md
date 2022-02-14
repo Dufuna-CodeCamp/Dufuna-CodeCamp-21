@@ -56,7 +56,7 @@ If you want to make a submission for a week where the topic was `HTML`, you'll n
 
 - Navigate to the project folder (In this case `Dufuna-CodeCamp-21`)
 
-- Create and move to a new branch.
+- Create and move to a new branch if this is your first pull request, if not, use your former branch name and work with it.
 
 - Navigate to the folder that has your name inside the `submissions` folder.
 
