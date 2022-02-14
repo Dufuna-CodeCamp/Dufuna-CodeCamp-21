@@ -289,7 +289,7 @@ select::after {
 }
 
 footer {
-  padding-bottom: 1.6em;
+  padding-bottom: 5em;
 }
 
 /**** VENDOR PAGE STYLES ****/
@@ -411,12 +411,6 @@ footer {
   }
 }
 
-/* @media only screen and (min-width: 600px) {
-  .services__content-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-} */
-
 @media only screen and (min-width: 700px) {
   .header__nav {
     padding: 1.15em 2em 0 2em;
@@ -449,6 +443,10 @@ footer {
     font-size: 1.2em;
   }
 
+  .hero {
+    padding-top: 2.5em;
+  }
+
   .hero__content {
     align-items: center;
   }
@@ -458,7 +456,7 @@ footer {
   }
 
   .address {
-    margin-top: 1.8em;
+    margin-top: 2em;
     margin-bottom: 1.8em;
   }
 
@@ -511,6 +509,10 @@ footer {
     max-width: 87%;
     margin: auto;
   }
+
+  .hero {
+    padding-top: 3.5em;
+  }
 }
 
 @media only screen and (min-width: 1120px) {
@@ -518,9 +520,23 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding-bottom: 3em;
   }
+
+  /** Vendor Page Styles **/
+  .kfc__wrapper,
+  .chicken-rep__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 1.5em;
+    column-gap: 1em;
+  }
 }
 
 @media only screen and (min-width: 1180px) {
+  .header__nav {
+    padding-top: 2em;
+  }
+
   .logo {
     font-size: 1em;
   }
@@ -534,8 +550,16 @@ footer {
     font-size: 1.5em;
   }
 
+  .hero {
+    padding-top: 4.5em;
+  }
+
   .hero__content p {
     font-size: 0.8em;
+  }
+
+  .address {
+    margin-top: 2.5em;
   }
 
   .address__content h3,
@@ -580,5 +604,106 @@ footer {
 
   .contact__content {
     padding-top: 3.36em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__nav {
+    padding: 2.5em 4em 0 4em;
+  }
+
+  .main__container {
+    margin: 0 4em 0 4em;
+  }
+
+  .hero {
+    padding-top: 5.5em;
+  }
+
+  .address {
+    margin-top: 3em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .hero__content p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header__nav {
+    padding: 2.5em 5em 0 5em;
+  }
+
+  .main__container {
+    margin: 0 5em 0 5em;
+  }
+
+  .menu,
+  .nav__button {
+    font-size: 0.8em;
+  }
+
+  .hero {
+    padding-top: 7.25em;
+  }
+
+  .hero__content p,
+  .address__content h3,
+  select {
+    letter-spacing: -0.3px;
+  }
+
+  .address {
+    margin-top: 4em;
+    margin-bottom: 2.1em;
+  }
+
+  .address__content h3,
+  select {
+    font-size: 1em;
+  }
+
+  select {
+    padding: 0.75em 0 0.75em 1.5em;
+  }
+
+  .selection h3 {
+    font-size: 1em;
+  }
+
+  .services h2 {
+    font-size: 1.5em;
+    padding-top: 2.67em;
+    padding-bottom: 2.4em;
+  }
+
+  .services__type img {
+    width: 250px;
+  }
+
+  .services__type h3 {
+    font-size: 1.25em;
+    letter-spacing: -0.6px;
+  }
+
+  .services__type p {
+    font-size: 1em;
+    letter-spacing: -0.4px;
+  }
+
+  .services__content-wrapper {
+    column-gap: 5em;
+  }
+
+  .contact__wrapper h3 {
+    font-size: 0.9em;
+  }
+
+  .contact__content {
+    font-size: 0.9em;
   }
 }
