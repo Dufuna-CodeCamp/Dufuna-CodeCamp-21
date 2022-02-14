@@ -1,0 +1,184 @@
+html{
+    margin: 80px;
+    max-width: fit-content;
+    max-height: fit-content;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+  
+}
+nav{
+    display: inline;
+    margin-bottom: 30px;
+    font-size: 16px;
+    
+}
+#name{
+    font-size: 18px;
+}
+#sign{
+    margin-right: 0px;
+    padding: 5px;
+    background-color: white;
+}
+.order{
+    display: inline-block;
+    height: 150px;
+    width: 250px;
+    text-align: left;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: gray;
+    padding: 10px;
+}
+div .order:first-of-type{
+    margin-left: 0px;
+
+}
+
+div .order:last-of-type{
+    margin-right: 0px;  
+}
+#veg{
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+}
+#drink{
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+.interest{
+    display: flex;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    color: orangered;
+    font-weight: bold;
+}
+.interest:first-child .order{
+    margin-left: 0px;
+}
+.order::h3{
+    color: maroon;
+}
+h3{
+    font-size: 15px;
+    color: black;
+}
+h4{
+    font-size: 15px;
+    color: rgb(109, 107, 107);
+    font-weight: 500;
+    padding-left: 5px;
+}
+p{
+    color: rgb(117, 116, 116);
+}
+span{
+    color: rgb(177, 10, 10);
+}
+#location{
+    padding-right: 5px;
+    background-image:url(file:///C:/Users/Admin/Desktop/test/keyboard_arrow_down.svg) ;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+input{
+    width: 100%;
+    width: 1110px ;
+    height: 25px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+image{
+    text-align: center;
+}
+.process{
+    text-align: center;
+    color: grey;
+    margin: 20px 10px;
+}
+.process h3{
+    color: rgb(80, 77, 77);
+}
+.box{
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-evenly;
+}
+div .process:first-of-type{
+    margin-left: 0px;
+}
+div .process:last-of-type{
+    margin-right: 0px;
+}
+.process::first-line{
+    font-weight: bolder;
+}
+.para{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.para::first-line{
+    font-size: 24px;
+    font-weight: bold;
+}
+.para h4{
+    font-size: 14px;
+    color: rgb(116, 109, 109);
+    margin-top: 0px;
+    font-weight: 500;
+}
+.left{
+    float: left;
+    display: inline-flex;
+}
+.right{
+    float: right;
+    margin: 10px;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+button{
+    color: rgb(177, 10, 10);
+    border-radius: 5px;
+    border-color: rgb(177, 10, 10);
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight:bold;
+}
+#pick{
+    font-weight: bold;
+}
+#serve{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(63, 59, 59);
+    font-size: 20px;
+}
+.socials img{
+    margin: 10px;
+}
+#para{
+    font-size: 24px;
+    margin-bottom: 2px;
+    color: rgb(66, 65, 65);
+}
+label{
+    font-weight: 500;
+}
