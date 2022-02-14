@@ -1,0 +1,40 @@
+.successful-order {
+    margin-top: 10rem;
+}
+
+.successful-img {
+    display: flex;
+    width: 20rem;
+    height: 15rem;
+    margin: 0 auto;
+}
+.successful-text {
+    text-align: center;
+}
+.successful-text h2 {
+    color: #5EA304;
+}
+
+
+.successful-text p {
+    color: #696969;
+    display: inline-flex;
+    width: 20%;
+    margin-top: 14px;
+}
+
+@media (max-width: 650px) {
+    .successful-order {
+        margin-top: 7rem;
+    }
+
+    .successful-img {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .successful-text p {
+        width: 55%;
+    }
+    
+}
