@@ -137,3 +137,64 @@ input:hover, input:focus {
     margin-top: -15px;
     color: #928f8f;
 }
+
+
+
+footer
+{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.footer-grid img {
+    padding-right: 15px;
+}
+.we-serve {
+    margin-top: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid2
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+    text-align: center;
+}
+
+.serve-box
+{
+    width: 100%;
+    text-align: center;
+}
+
+.footer1
+{
+    align-items: center;
+    text-align: center;
+}
+.contact
+{
+    margin: 20px 0px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer2
+{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 45px;
+}
+
+.footer-item1
+{
+    margin: 0px;
+    grid-column: 1/2;
+}
+
+.footer-item2
+{
+    margin: 0px;
+    grid-column: 6/8;
+}
