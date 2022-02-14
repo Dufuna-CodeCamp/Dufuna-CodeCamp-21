@@ -20,9 +20,9 @@ let productList = [
    
 
   ]
-  for (let i = 0; i <= productList.length; i++) {
-    let product = productList[i];
-    document.write(
-      `${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}` 
-    );
-    }
+  productList.forEach(function(item){
+    document.write(`${item.productName} with ${item.imageUrl} is sold for ${item.productPrice} <br><br>`);
+  }
+  );
+
+   
