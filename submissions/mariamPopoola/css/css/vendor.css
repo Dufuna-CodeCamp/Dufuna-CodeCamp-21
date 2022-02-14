@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.navbar h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar span{
+    color: #AD4C4C;
+}
+
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    color: #696969;
+    text-transform: capitalize;
+}
+
+.navbar .signin-btn{
+    color: #AD4C4C;
+    border: 2px solid #AD4C4C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #C9C9C9;
+    font-size: 14px;
+}
+
+.breadcrumb a:last-child{
+    color: black;
+}
+
+.vendor{
+    padding-top: 20px;
+}
+
+.vendor h6{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.kfc-section{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #F2F2F2;;
+}
+
+.kfc,
+.chicken-republic{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.kfc-img,
+.chicken-republic-img{
+    display: flex;
+}
+
+.kfc-img p,
+.chicken-republic-img p{
+    padding: 15px;
+}
+
+.view-all p{
+    color: #AD4C4C;
+}
+
+.kfc-item{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.kfc-item .price,
+.chicken-republic .price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4E4D4D;
+    padding-bottom: 15px;
+    padding-left: 6px;
+}
+
+.kfc-item .price span,
+.chicken-republic .price span{
+    color:  #5EA304;
+}
+
+.kfc-item a,
+.chicken-republic a{
+    color: #AD4C4C;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.chicken-republic-section{
+    padding: 50px 0;
+}
+
+
