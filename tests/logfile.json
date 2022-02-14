@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-14T14:41:33.673Z",
-    "end": "2022-02-14T14:44:33.850Z",
-    "duration": 180177,
+    "start": "2022-02-14T15:03:05.749Z",
+    "end": "2022-02-14T15:06:05.961Z",
+    "duration": 180212,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6eee564d-71a0-4e41-a99e-5c98cce21061",
+      "uuid": "08f01b60-2693-430b-972c-4a98753acbde",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e0c2b52d-2a2c-4a68-a1ca-22e48a8d2c2d",
+          "uuid": "73726a17-ad8f-449d-980c-9818d73fc03b",
           "title": "Printing product price",
           "fullFile": "C:\\Users\\user\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
           "file": "\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
               "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
               "timedOut": true,
-              "duration": 180001,
+              "duration": 180014,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)\n    at listOnTimeout (node:internal/timers:557:17)\n    at processTimers (node:internal/timers:500:7)",
                 "diff": null
               },
-              "uuid": "5a9fbd40-22d0-4ccf-894f-7930083392f0",
-              "parentUUID": "e0c2b52d-2a2c-4a68-a1ca-22e48a8d2c2d",
+              "uuid": "3741328d-860c-4159-9dfe-263f4e0cedca",
+              "parentUUID": "73726a17-ad8f-449d-980c-9818d73fc03b",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "17c8f879-5727-4a19-8eaf-6776aba75282",
-              "parentUUID": "e0c2b52d-2a2c-4a68-a1ca-22e48a8d2c2d",
+              "uuid": "24e3c1fc-73a2-41e2-905b-83ae548f2b2d",
+              "parentUUID": "73726a17-ad8f-449d-980c-9818d73fc03b",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "b2e25838-6ff5-41dd-9643-c59943177422",
-              "parentUUID": "e0c2b52d-2a2c-4a68-a1ca-22e48a8d2c2d",
+              "uuid": "f2870b74-8301-4abe-842d-3cea002a5a1f",
+              "parentUUID": "73726a17-ad8f-449d-980c-9818d73fc03b",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "b8af1729-f170-402d-a555-ca61e44db320",
-              "parentUUID": "e0c2b52d-2a2c-4a68-a1ca-22e48a8d2c2d",
+              "uuid": "baedf8e9-2861-4d8f-a57e-f6cb1b32df3f",
+              "parentUUID": "73726a17-ad8f-449d-980c-9818d73fc03b",
               "isHook": false,
               "skipped": true
             }
@@ -118,8 +118,8 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "b2e25838-6ff5-41dd-9643-c59943177422",
-            "b8af1729-f170-402d-a555-ca61e44db320"
+            "f2870b74-8301-4abe-842d-3cea002a5a1f",
+            "baedf8e9-2861-4d8f-a57e-f6cb1b32df3f"
           ],
           "duration": 0,
           "root": false,
