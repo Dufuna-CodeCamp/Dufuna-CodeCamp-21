@@ -45,7 +45,7 @@ button {
   align-items: center;
   /* max-width: 320px;
   margin: auto; */
-  padding: 1.15em 1em 0 1em;
+  padding: 1.15em 1em 0;
 }
 
 .logo {
@@ -142,18 +142,6 @@ select::after {
   position: absolute;
 }
 
-/* input[type="text"] {
-  margin-top: 0.84em;
-  font-size: 0.6em;
-  padding: 0.92em 0 0.92em 0.833em;
-  border: 1px solid var(--borderGray);
-  border-radius: 5px;
-} */
-
-/* input::placeholder {
-  color: var(--lightGray);
-} */
-
 /*** Selection section ***/
 .selection,
 .services {
@@ -166,7 +154,7 @@ select::after {
 }
 
 .selection__content-wrapper {
-  margin: 0.5em 0 1.5em 0;
+  margin: 0.5em 0 1.5em;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   row-gap: 1em;
@@ -176,12 +164,8 @@ select::after {
   box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
-/* .selection__card:nth-child(4) {
-  margin-bottom: 1.5em;
-} */
-
 .selection__card-wrapper {
-  padding: 1.25em 1em 1.2em 1em;
+  padding: 1.25em 1em 1.2em;
 }
 
 .selection__card-wrapper img {
@@ -337,7 +321,7 @@ footer {
 .kfc__wrapper,
 .chicken-rep__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   row-gap: 1.25em;
   margin-top: 1.5em;
 }
@@ -353,7 +337,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.2em 0 0.2em;
+  padding: 0 0.2em;
 }
 
 .kfc__price h3,
@@ -413,21 +397,21 @@ footer {
 
 @media only screen and (min-width: 700px) {
   .header__nav {
-    padding: 1.15em 2em 0 2em;
+    padding: 1.15em 2em 0;
   }
 
   .main__container {
-    margin: 0 2em 0 2em;
+    margin: 0 2em;
   }
 }
 
 @media only screen and (min-width: 800px) {
   .main__container {
-    margin: 0 3em 0 3em;
+    margin: 0 3em;
   }
 
   .header__nav {
-    padding: 1.5em 3em 0 3em;
+    padding: 1.5em 3em 0;
   }
 
   .logo {
@@ -470,7 +454,7 @@ footer {
   }
 
   .selection__content-wrapper {
-    margin: 0.7em 0 3em 0;
+    margin: 0.7em 0 3em;
   }
 
   .selection__card-wrapper img {
@@ -524,7 +508,6 @@ footer {
   /** Vendor Page Styles **/
   .kfc__wrapper,
   .chicken-rep__wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     max-width: 1100px;
     margin: auto;
     padding-top: 1.5em;
@@ -613,7 +596,7 @@ footer {
   }
 
   .main__container {
-    margin: 0 4em 0 4em;
+    margin: 0 4em;
   }
 
   .hero {
@@ -630,6 +613,13 @@ footer {
 
   .hero__content p {
     font-size: 1em;
+  }
+
+  /** Vendor Page Styles **/
+  .kfc__wrapper,
+  .chicken-rep__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 1200px;
   }
 }
 
@@ -668,7 +658,7 @@ footer {
   }
 
   select {
-    padding: 0.75em 0 0.75em 1.5em;
+    padding: 0.75em 0 1.5em;
   }
 
   .selection h3 {
