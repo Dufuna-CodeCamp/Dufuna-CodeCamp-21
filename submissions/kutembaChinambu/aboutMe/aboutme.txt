@@ -1,0 +1,5 @@
+Hello world
+My names are Kutemba Chinambu
+I am currently studyng to be a software engineer under Dufuna
+I hope to learn how to write clean, efficient and robust code.
+I also hope to collaborate on great projects.
