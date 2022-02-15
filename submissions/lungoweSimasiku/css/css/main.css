@@ -173,7 +173,6 @@ select::after {
 .selection__card-wrapper a {
   color: var(--veryLightGray);
 }
-
 /*** Services section ***/
 .services h2 {
   text-align: center;
