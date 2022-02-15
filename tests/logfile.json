@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "43918837-32c5-4b21-aed0-573bc81d311d",
+ "uuid": "43918837-32c5-4b21-aed0-573bc81d311d",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -173,7 +173,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.2.0"
+      "version": "9.1.3"
     },
     "mochawesome": {
       "options": {
@@ -189,7 +189,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+        "reportDir": "C:/Users/user/Documents/GitHub/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
