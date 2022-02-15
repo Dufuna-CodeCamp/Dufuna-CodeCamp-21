@@ -1,2 +1,3 @@
 Hello World!
-I am Ruth Igbinoba and I am a Software Developer.
+I am Ruth Igbinoba.
+I want to become a full fledged frontend developer and hopefully get a job as one.
