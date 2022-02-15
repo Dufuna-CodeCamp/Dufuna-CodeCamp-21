@@ -43,8 +43,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 320px;
-  margin: auto; */
   padding: 1.15em 1em 0;
 }
 
@@ -64,10 +62,6 @@ button {
   font-weight: 400;
 }
 
-/* .menu li a {
-  
-} */
-
 .menu,
 .nav__button {
   font-size: 0.5em;
@@ -79,15 +73,8 @@ button {
 }
 
 /** Main styles **/
-/* .hero__content,
-.address__content,
-.selection__content {
-  max-width: 320px;
-  margin: auto;
-} */
-
 .main__container {
-  margin: 0 1em 0 1em;
+  margin: 0 1em;
 }
 
 .hero {
@@ -129,7 +116,7 @@ select {
   background-color: var(--white);
   margin-top: 0.84em;
   font-size: 0.6em;
-  padding: 0.92em 0 0.92em 0.833em;
+  padding: 0.92em 0 0.833em;
   border: 1px solid var(--borderGray);
   border-radius: 5px;
   color: var(--lightGray);
@@ -361,7 +348,7 @@ footer {
 .kfc__button,
 .chicken-rep__button {
   font-size: 0.8em;
-  padding: 0.5em 1.375em 0.5em 1.4375em;
+  padding: 0.5em 1.375em 1.4375em;
   border-radius: 3px;
   margin-top: 0.9375em;
   margin-left: 0.25em;
@@ -592,7 +579,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .header__nav {
-    padding: 2.5em 4em 0 4em;
+    padding: 2.5em 4em 0;
   }
 
   .main__container {
@@ -625,11 +612,11 @@ footer {
 
 @media only screen and (min-width: 1300px) {
   .header__nav {
-    padding: 2.5em 5em 0 5em;
+    padding: 2.5em 5em 0;
   }
 
   .main__container {
-    margin: 0 5em 0 5em;
+    margin: 0 5em;
   }
 
   .menu,
