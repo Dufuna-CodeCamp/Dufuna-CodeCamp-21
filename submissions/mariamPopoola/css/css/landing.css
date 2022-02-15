@@ -100,7 +100,7 @@ footer {
 }
 
 .list-of-interest .list{
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     width: 28%;
     height: 180px;
