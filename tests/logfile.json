@@ -1,8 +1,14 @@
 {
   "stats": {
     "tests": 3,
+<<<<<<< HEAD
     "passes": 3,
     "failures": 0,
     "owner": "kutembaChinambu"
+=======
+    "passes": 1,
+    "failures": 2,
+    "owner": ""
+>>>>>>> f37db98b3206870895a4f5f8e99500c7d351c5d5
   }
 }
