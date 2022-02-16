@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.red-color {
+  color: #f00;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 10px;
+  padding: 5px 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: gray;
+}
+header nav ul li:first-child {
+  position: relative;
+}
+header nav ul li:last-child {
+  border: 1px solid #f00;
+  border-radius: 4px;
+}
+header nav ul li:last-child a {
+  color: #f00;
+}
+
+section,
+main {
+  padding: 20px 50px;
+}
+
+.kfc {
+  padding-bottom: 80px;
+}
+
+.kfc-logo,
+.crepublic-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.kfc-logo img,
+.crepublic-logo img {
+  padding-right: 10px;
+}
+
+.kfc-logo a,
+.crepublic-logo a {
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.kfc-items,
+.crepublic-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.kfc .name-price,
+.crepublic .name-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.kfc .name-price p:nth-of-type(1),
+.crepublic .name-price p:nth-of-type(1) {
+  font-weight: bold;
+}
+.kfc .name-price p:nth-of-type(2),
+.crepublic .name-price p:nth-of-type(2) {
+  font-weight: bold;
+  color: green;
+}
+
+.kfc button,
+.crepublic button {
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid red;
+  padding: 8px 20px;
+  background-color: #fff;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(255, 0, 0, 1);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.crepublic {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb ul li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.breadcrumb ul li:not(:first-child)::before {
+  content: "\003E";
+  padding: 5px;
+  font-weight: 500;
+  color: gray;
+  font-size: 14px;
+}
+
+.breadcrumb ul li a.active {
+  color: #000;
+  font-size: 16px;
+}
+
+hr {
+  border-top: 1px solid #f4f4f4;
+}
+
+.mobile-view {
+  text-align: center;
+  text-decoration: none;
+  display: none;
+  place-items: center;
+  margin-bottom: 3rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 13%;
+  display: none;
+  justify-content: center;
+  right: 10%;
+  font-size: 8px;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+  section,
+  main {
+    padding: 30px;
+  }
+
+  .kfc-items,
+  .crepublic-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 2rem;
+  }
+
+  .kfc .name-price,
+  .crepublic .name-price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .name-price p:nth-of-type(2) {
+    justify-self: flex-end;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header ul {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 0 10px;
+    padding: 5px;
+  }
+
+  .kfc {
+    padding-bottom: 30px;
+  }
+
+  .kfc-items,
+  .crepublic-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .item-one,
+  .item-two,
+  .item-three,
+  .item-four {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .kfc-items img,
+  .crepublic-items img {
+    width: 100%;
+  }
+
+  section,
+  main {
+    padding: 20px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: grid;
+  }
+}
