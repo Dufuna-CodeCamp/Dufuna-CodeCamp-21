@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 5,
     "passes": 5,
@@ -214,5 +215,11 @@
       },
       "version": "6.0.1"
     }
+=======
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "mableChileshe"
+>>>>>>> e5566cfaf06254ea18c714f1029bee5ef640b30f
   }
 }
