@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-11T13:10:45.808Z",
-    "end": "2022-02-11T13:13:46.114Z",
-    "duration": 180306,
+    "start": "2022-02-14T17:49:52.242Z",
+    "end": "2022-02-14T17:52:52.860Z",
+    "duration": 180618,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "29447dc8-3daf-4578-af3e-52ebeeacf05e",
+      "uuid": "92ce32cb-bf45-4d78-9666-c02b82df10de",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f2a748b-8a55-4b71-a13c-e3c6b4aad2b5",
+          "uuid": "bc374dc3-e6df-4476-a2a4-c4577494cb83",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\personal\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: assert that there are 2 links on this page\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver for \"test case: assert that there are 2 links on this page\"",
               "timedOut": true,
-              "duration": 180009,
+              "duration": 180028,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\personal\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
                 "diff": null
               },
-              "uuid": "5353c982-c8e5-45bf-ab4d-7987e5d37855",
-              "parentUUID": "9f2a748b-8a55-4b71-a13c-e3c6b4aad2b5",
+              "uuid": "d6b42092-2105-42cc-a8f0-a05e5b351abe",
+              "parentUUID": "bc374dc3-e6df-4476-a2a4-c4577494cb83",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "47d2c6ae-4084-4bc3-8ad2-b57dda46504b",
-              "parentUUID": "9f2a748b-8a55-4b71-a13c-e3c6b4aad2b5",
+              "uuid": "9df20172-899b-4da7-8d75-265f020fc60d",
+              "parentUUID": "bc374dc3-e6df-4476-a2a4-c4577494cb83",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "f7ba6033-4a5f-4a33-a6fd-6d014290d6eb",
-              "parentUUID": "9f2a748b-8a55-4b71-a13c-e3c6b4aad2b5",
+              "uuid": "d213f452-8a78-4609-85fc-495bb625c279",
+              "parentUUID": "bc374dc3-e6df-4476-a2a4-c4577494cb83",
               "isHook": false,
               "skipped": true
             }
@@ -100,7 +100,7 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "f7ba6033-4a5f-4a33-a6fd-6d014290d6eb"
+            "d213f452-8a78-4609-85fc-495bb625c279"
           ],
           "duration": 0,
           "root": false,
