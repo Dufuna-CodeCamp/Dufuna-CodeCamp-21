@@ -8,7 +8,9 @@
 }
 
 body{
-    padding: 30px 30px 0 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .list-of-interest,
@@ -61,7 +63,8 @@ body{
 }
 
 .foodbag-continer .intro{
-    padding: 60px 0 30px 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
     color: #696969;
 
 }
