@@ -1,6 +1,7 @@
 import React from 'react'
 import kyc from '../../assets/images/kfc-small.png'
 import scooters from '../../assets/images/scooter.png'
+import { Link } from 'react-router-dom'
 import './cart.css'
 
 
@@ -177,7 +178,10 @@ const CartPage = () => {
                 </div>
 
                 <div style={{ marginBottom: 200, marginTop: 100, textAlign: 'center' }}>
-                    <button className='btn btn-danger'>Checkout</button>
+                    <Link to='/verify'>
+                        <button className='btn btn-danger'>Checkout</button>
+                    </Link>
+
                 </div>
 
             </div>
