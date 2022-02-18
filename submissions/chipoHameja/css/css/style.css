@@ -20,7 +20,6 @@ body {
     margin-top: 50px;
 
     display: inline-block;
-    font-size: 20;
     line-height: 30px;
     font-style: normal;
     font-weight: 500;
@@ -94,7 +93,7 @@ header p {
     width: 367px;
     height: 30px;
     margin-left: 536px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 80px;
     margin-right: 537px;
 }
@@ -128,7 +127,7 @@ section select {
 
 option {
     color: #696969;
-    margin: 15px 0px 15px 30px;
+    margin: 15px 0 15px 30px;
 }
 
 #interest {
@@ -143,7 +142,7 @@ option {
     /*position: absolute;*/
     width: 154px;
     height: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -161,7 +160,7 @@ option {
     /*margin-top: 20px;*/
     margin-right: 20px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .interest-card img {
