@@ -13,6 +13,7 @@ body {
 .header-container ul {
     display: flex;
     list-style: none;
+    
 }
 
 .header-container ul li {
@@ -24,6 +25,16 @@ body {
     text-decoration: none;
     color: #696969;
     font-weight: 400;
+}
+
+.error-block {
+    color: red;
+    font-size: 16px;
+    
+}
+
+.select-state{
+    color: red;
 }
 
 .header-container  ul .link-item  a{
@@ -192,6 +203,8 @@ body {
      .footer-content-2 .footer-items-3 {
         margin-left: 70px;
      }
+
+   
 }
 
 @media screen and (max-width: 360px) {

@@ -1,0 +1,94 @@
+
+body{
+    background-color: white;
+    margin: 0;
+}
+
+.header ul li  {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+}
+.header a {
+    color: black;
+}
+
+h5 {
+    color:black;
+    margin-top: 70px;
+}
+.item {
+        height: 150px;
+        width: 250px;
+        margin: 5px;
+        padding: 10px;
+        display:inline-block;
+    }
+
+.item-chickenRepublic {
+    height: 150px;
+        width: 250px;
+        margin: 5px;
+        padding: 10px;
+        display:inline-block;
+        margin-bottom: 150px;
+} 
+
+img {
+    height: 150px;
+    width: 250px;
+}
+
+button {
+    border-style: solid;
+    border-color: red;
+    width: 90px;
+    height: 30px;
+    color: red;
+    background-color: white;
+}
+.logo img {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    vertical-align: middle;
+    }
+.logo button {
+        float: right;
+        margin-right: 215px;
+        border: none;
+    }
+
+.logo-chicken img {
+        height: 35px;
+        width: 35px;
+        margin-left: 20px;
+        vertical-align: middle;
+        }
+        .logo-chicken button {
+            float: right;
+            margin-right: 215px;
+            border: none;
+        }
+#added {
+    display:none;
+} 
+    
+.notification .badge {
+         position:absolute;
+         background: #AD4C4C;
+         padding: 5px 10px; 
+         border-radius: 50%;  
+         color: white;
+         top: -10px;
+         right: -10px;
+     }  
+     
+.notification {
+         position: relative;
+         display: inline-block;
+         border-radius: 2px;
+         text-decoration: none !important;
+     }
