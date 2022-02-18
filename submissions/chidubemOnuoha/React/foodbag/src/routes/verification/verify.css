@@ -151,7 +151,7 @@ hr {
 
 @media (max-width: 360px) {
     hr {
-        width: 0px;
+        width: 0;
     }
     .verify-container {
         max-width: 540px;
