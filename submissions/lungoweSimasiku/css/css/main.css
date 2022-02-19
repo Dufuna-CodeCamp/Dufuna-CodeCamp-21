@@ -1,0 +1,685 @@
+:root {
+  --offBlack: #4e4d4d;
+  --black: #000000;
+  --lightGray: #696969;
+  --maroon: #ad4c4c;
+  --veryLightGray: #a5a5a5;
+  --white: #ffffff;
+  --borderGray: #c4c4c4;
+  --borderBottomGray: #f2f2f2;
+  --green: #5ea304;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 125%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.menu li a {
+  color: var(--lightGray);
+  padding-right: 2em;
+}
+
+button {
+  color: var(--maroon);
+  font-weight: 500;
+  border: 0.1em solid var(--maroon);
+}
+
+/*** HOME PAGE STYLES ***/
+
+/** Header Section **/
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.15em 1em 0;
+}
+
+.logo {
+  font-size: 0.8em;
+  margin-right: auto;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.logo span {
+  color: var(--maroon);
+}
+
+.menu {
+  display: flex;
+  font-weight: 400;
+}
+
+.menu,
+.nav__button {
+  font-size: 0.5em;
+}
+
+.nav__button {
+  padding: 0.8em 1.8em 0.9em;
+  border-radius: 0.5em;
+}
+
+/** Main styles **/
+.main__container {
+  margin: 0 1em;
+}
+
+.hero {
+  padding-top: 2.3em;
+}
+
+.hero__content,
+.address__content {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--offBlack);
+}
+
+.hero__content p {
+  font-size: 0.6em;
+  color: var(--lightGray);
+}
+
+.address__content h3 {
+  font-size: 0.6em;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+.address {
+  margin-top: 1.55em;
+  margin-bottom: 1.5em;
+}
+
+select {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  margin-top: 0.84em;
+  font-size: 0.6em;
+  padding: 0.92em 0 0.833em;
+  border: 1px solid var(--borderGray);
+  border-radius: 5px;
+  color: var(--lightGray);
+  position: relative;
+}
+
+select::after {
+  content: "";
+  padding-right: 8px;
+  position: absolute;
+}
+
+/*** Selection section ***/
+.selection,
+.services {
+  border-bottom: 1px solid var(--borderBottomGray);
+}
+
+.selection h3 {
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+.selection__content-wrapper {
+  margin: 0.5em 0 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 1em;
+}
+
+.selection__card {
+  box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.selection__card-wrapper {
+  padding: 1.25em 1em 1.2em;
+}
+
+.selection__card-wrapper img {
+  width: 1.5em;
+}
+
+.selection__card-wrapper h4 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding-top: 0.832em;
+}
+
+.selection__card-wrapper p {
+  font-size: 0.7em;
+  padding-top: 0.5em;
+}
+
+.selection__card-wrapper a {
+  color: var(--veryLightGray);
+}
+/*** Services section ***/
+.services h2 {
+  text-align: center;
+  font-size: 1em;
+  padding: 1.5em 0;
+  color: var(--offBlack);
+}
+
+.services__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.services__type {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services__type img {
+  width: 200px;
+}
+
+.services__type h3 {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: var(--lightGray);
+  padding-top: 1.346em;
+}
+
+.services__type:nth-child(1) h3 {
+  padding-top: 1.36em;
+}
+
+.services__type p {
+  font-size: 0.5em;
+  font-weight: normal;
+  color: var(--veryLightGray);
+  padding-top: 0.5em;
+  width: 14.7em;
+}
+
+/** Footer section **/
+.contact__wrapper h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 1.94em;
+  padding-bottom: 1.0625em;
+}
+
+.contact__wrapper h3,
+.contact__content {
+  color: var(--lightGray);
+}
+
+.contact__social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__social-icons a:nth-child(2) {
+  padding-left: 1.5em;
+  padding-right: 1.55em;
+}
+
+.contact__content {
+  font-size: 0.6em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.67em;
+  justify-content: center;
+  padding-top: 3.041em;
+  text-align: center;
+}
+
+.contact__copyright-info p {
+  display: inline-block;
+  width: 50%;
+}
+
+footer {
+  padding-bottom: 5em;
+}
+
+/**** VENDOR PAGE STYLES ****/
+
+.page__nav {
+  font-size: 0.7em;
+  font-weight: 400;
+  padding: 3.79em 0 1.43em;
+}
+
+.page__nav span a {
+  color: var(--lightGray);
+}
+
+.vendor__title {
+  font-size: 1em;
+  font-weight: 500;
+  padding-bottom: 1.5em;
+}
+
+/*** KFC section and Chicken republic ***/
+
+.kfc__logo,
+.chicken-rep__logo {
+  display: flex;
+  align-items: center;
+}
+
+.kfc__logo img,
+.chicken-rep__logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.kfc__logo span {
+  font-size: 0.75em;
+  padding-left: 0.67em;
+  font-weight: 500;
+}
+
+.kfc {
+  border-bottom: 1px solid var(--borderBottomGray);
+}
+
+.kfc__wrapper,
+.chicken-rep__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  row-gap: 1.25em;
+  margin-top: 1.5em;
+}
+
+.kfc__menu img,
+.chicken-rep__menu img {
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+
+.kfc__price,
+.chicken-rep__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.2em;
+}
+
+.kfc__price h3,
+.chicken-rep__price h3 {
+  color: var(--offBlack);
+}
+
+.kfc__price p,
+.chicken-rep__price p {
+  color: var(--green);
+}
+
+.kfc__price h3,
+.kfc__price p,
+.chicken-rep__price h3,
+.chicken-rep__price p {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.kfc__button,
+.chicken-rep__button {
+  font-size: 0.8em;
+  padding: 0.5em 1.375em 1.4375em;
+  border-radius: 3px;
+  margin-top: 0.9375em;
+  margin-left: 0.25em;
+}
+
+.chicken-rep {
+  padding-top: 1em;
+}
+
+.view-all {
+  font-size: 0.8em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.4375em;
+  color: var(--maroon);
+  font-weight: 500;
+  padding-bottom: 1.8125em;
+}
+
+/*** Media Queries ***/
+@media only screen and (min-width: 400px) {
+  .contact__copyright-info p {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .selection__content-wrapper {
+    column-gap: 1em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .header__nav {
+    padding: 1.15em 2em 0;
+  }
+
+  .main__container {
+    margin: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main__container {
+    margin: 0 3em;
+  }
+
+  .header__nav {
+    padding: 1.5em 3em 0;
+  }
+
+  .logo {
+    font-size: 0.9em;
+  }
+
+  .menu,
+  .nav__button {
+    font-size: 0.6em;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .hero {
+    padding-top: 2.5em;
+  }
+
+  .hero__content {
+    align-items: center;
+  }
+
+  .hero__content p {
+    font-size: 0.7em;
+  }
+
+  .address {
+    margin-top: 2em;
+    margin-bottom: 1.8em;
+  }
+
+  .address__content h3,
+  select {
+    font-size: 0.7em;
+  }
+
+  .selection h3 {
+    font-size: 0.7em;
+  }
+
+  .selection__content-wrapper {
+    margin: 0.7em 0 3em;
+  }
+
+  .selection__card-wrapper img {
+    width: 2em;
+  }
+
+  .selection__card-wrapper p {
+    padding-top: 0.36em;
+  }
+
+  .services__content-wrapper {
+    padding-bottom: 2.5em;
+  }
+
+  .services h2 {
+    font-size: 1.2em;
+  }
+
+  .services__type h3 {
+    font-size: 0.9em;
+  }
+
+  .services__type p {
+    font-size: 0.6em;
+  }
+
+  .contact__content {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contact__content {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 87%;
+    margin: auto;
+  }
+
+  .hero {
+    padding-top: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .services__content-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-bottom: 3em;
+  }
+
+  /** Vendor Page Styles **/
+  .kfc__wrapper,
+  .chicken-rep__wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 1.5em;
+    column-gap: 1em;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .header__nav {
+    padding-top: 2em;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  .menu,
+  .nav__button {
+    font-size: 0.7em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .hero {
+    padding-top: 4.5em;
+  }
+
+  .hero__content p {
+    font-size: 0.8em;
+  }
+
+  .address {
+    margin-top: 2.5em;
+  }
+
+  .address__content h3,
+  select {
+    font-size: 0.8em;
+  }
+
+  .selection h3 {
+    font-size: 0.8em;
+  }
+
+  .selection__content-wrapper {
+    margin-bottom: 4em;
+  }
+
+  .services h2 {
+    font-size: 1.3em;
+    padding-top: 3.1em;
+    padding-bottom: 2.5em;
+  }
+
+  .services__content-wrapper {
+    max-width: 1160px;
+    margin: auto;
+    padding-bottom: 4em;
+  }
+
+  .services__type h3 {
+    font-size: 1em;
+    letter-spacing: -0.7px;
+  }
+
+  .services__type p {
+    font-size: 0.8em;
+    letter-spacing: -0.4px;
+  }
+
+  .contact__wrapper h3 {
+    padding-top: 5em;
+    padding-bottom: 1.9em;
+  }
+
+  .contact__content {
+    padding-top: 3.36em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__nav {
+    padding: 2.5em 4em 0;
+  }
+
+  .main__container {
+    margin: 0 4em;
+  }
+
+  .hero {
+    padding-top: 5.5em;
+  }
+
+  .address {
+    margin-top: 3em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .hero__content p {
+    font-size: 1em;
+  }
+
+  /** Vendor Page Styles **/
+  .kfc__wrapper,
+  .chicken-rep__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header__nav {
+    padding: 2.5em 5em 0;
+  }
+
+  .main__container {
+    margin: 0 5em;
+  }
+
+  .menu,
+  .nav__button {
+    font-size: 0.8em;
+  }
+
+  .hero {
+    padding-top: 7.25em;
+  }
+
+  .hero__content p,
+  .address__content h3,
+  select {
+    letter-spacing: -0.3px;
+  }
+
+  .address {
+    margin-top: 4em;
+    margin-bottom: 2.1em;
+  }
+
+  .address__content h3,
+  select {
+    font-size: 1em;
+  }
+
+  select {
+    padding: 0.75em 0 1.5em;
+  }
+
+  .selection h3 {
+    font-size: 1em;
+  }
+
+  .services h2 {
+    font-size: 1.5em;
+    padding-top: 2.67em;
+    padding-bottom: 2.4em;
+  }
+
+  .services__type img {
+    width: 250px;
+  }
+
+  .services__type h3 {
+    font-size: 1.25em;
+    letter-spacing: -0.6px;
+  }
+
+  .services__type p {
+    font-size: 1em;
+    letter-spacing: -0.4px;
+  }
+
+  .services__content-wrapper {
+    column-gap: 5em;
+  }
+
+  .contact__wrapper h3 {
+    font-size: 0.9em;
+  }
+
+  .contact__content {
+    font-size: 0.9em;
+  }
+}
