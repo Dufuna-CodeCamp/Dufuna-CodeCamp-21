@@ -1,0 +1,1091 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@media screen and(max-width: 600px) {
+  .foodbag-page {
+    width: 92%;
+    margin: auto;
+    /* padding-top: 40px; */
+  }
+
+  .foodbag-session {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+  }
+
+  .list {
+    padding-left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .foodbag-session p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .food-bag {
+    font-size: 20px;
+    color: #ad4c4c;
+  }
+
+  .sign-up {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ad4c4c;
+    padding-left: 10px;
+    padding-top: 4px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 74px;
+    height: 32px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .foodbag-header h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 60px;
+    color: #4e4d4d;
+    /* padding-top: 20px; */
+  }
+
+  .foodbag-header p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 30px;
+    color: #696969;
+    margin-top: -25px;
+  }
+  .foodbag-select p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 21px;
+  }
+
+  .select-location {
+    width: 320px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 30px;
+    color: #696969;
+    padding-left: 10px;
+    padding-top: px;
+    padding-bottom: 15px;
+  }
+  .food-select {
+    display: block;
+    margin: auto;
+    padding-bottom: 81px;
+  }
+
+  .fast-food {
+    padding-top: 27px;
+    margin-top: 20px;
+    width: 320px;
+    height: 169px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  }
+  .fast-food img {
+    padding-left: 30px;
+    /* margin-top: 14px; */
+  }
+  .fast-food h6 {
+    padding-left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a5a5a5;
+    margin-top: 10px;
+  }
+  .fast-food p {
+    padding-left: 20px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a5a5a5;
+    margin-top: -25px;
+  }
+
+  .landing-hr {
+    width: 300px;
+    border: 1px solid #f2f2f2;
+  }
+  .server-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+    color: #4e4d4d;
+    margin-top: 80px;
+  }
+
+  .food-location {
+    text-align: center;
+    /* align-items: center; */
+    display: block;
+    margin: auto;
+    /* justify-content: space-around; */
+    padding-bottom: 81px;
+    /* width: 90%; */
+    /* margin-left: 200px; */
+    /* width: 300px; */
+  }
+  .location-details {
+    margin-top: 72px;
+  }
+  .location-details h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    margin-top: 20px;
+    /* align-items: center;
+text-align: center; */
+    color: #696969;
+  }
+  .location-details p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #a5a5a5;
+    width: 75%;
+    padding-left: 50px;
+    margin-top: -0px;
+    /* padding-top: 15px; */
+  }
+
+  .contact-page {
+    width: 110px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-page p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    margin-top: 81px;
+  }
+
+  .contact-session {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    margin-top: 21px;
+  }
+
+  .footer {
+    display: block;
+    margin: auto;
+    /* justify-content: space-between; */
+    margin-top: 47px;
+  }
+
+  .footer p {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    /* margin-top: -47px; */
+    padding-bottom: 70px;
+  }
+
+  .copy {
+    margin-top: -47px;
+  }
+}
+
+@media (min-width: 600px) {
+  * {
+    margin: 0;
+    /* padding: 0; */
+    font-family: "Poppins";
+  }
+
+  .foodbag-page {
+    width: 92%;
+    margin: auto;
+    /* padding-top: 40px; */
+  }
+
+  .foodbag-session {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+  }
+
+  .list {
+    padding-left: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .foodbag-session p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .food-bag {
+    font-size: 20px;
+    color: #ad4c4c;
+  }
+
+  .sign-up {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ad4c4c;
+    padding-left: 15px;
+    padding-top: 8px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 92px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .foodbag-header {
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .foodbag-header h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4e4d4d;
+    padding-top: 50px;
+  }
+
+  .foodbag-header p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    margin-top: 10px;
+  }
+
+  .foodbag-select p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 80px;
+  }
+  .select-location {
+    width: 600px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .fast-food {
+    padding-top: 27px;
+    margin-top: 60px;
+    width: 600px;
+    height: 169px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  }
+
+  .landing {
+    width: 600px;
+    margin-top: 30px;
+    border: 1px solid #f2f2f2;
+    margin-left: 30px;
+  }
+  .fast-food img {
+    padding-left: 30px;
+    margin-top: 27px;
+  }
+  .fast-food h6 {
+    padding-left: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a5a5a5;
+    padding-top: 1px;
+  }
+  .fast-food p {
+    padding-left: 30px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a5a5a5;
+    margin-top: 5px;
+  }
+
+  .interest-text {
+    line-height: 45px;
+    align-items: center;
+    color: #4e4d4d;
+    margin-top: 40px;
+  }
+
+  .server-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .food-location {
+    text-align: center;
+    /* align-items: center; */
+    display: block;
+    margin: auto;
+    /* justify-content: space-around; */
+    padding-bottom: 81px;
+    /* width: 90%; */
+    /* margin-left: 200px; */
+    /* width: 300px; */
+  }
+  .location-details {
+    margin-top: 72px;
+  }
+  .location-details h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    margin-top: 20px;
+    /* align-items: center;
+text-align: center; */
+    color: #696969;
+  }
+  .location-details p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #a5a5a5;
+    width: 75%;
+    padding-left: 80px;
+    margin-top: -0px;
+    /* padding-top: 15px; */
+  }
+
+  .contact-page {
+    width: 110px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-page p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    margin-top: 81px;
+  }
+
+  .contact-session {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    margin-top: 21px;
+  }
+
+  .footer {
+    display: block;
+    margin: auto;
+    /* justify-content: space-between; */
+    margin-top: 47px;
+  }
+
+  .footer p {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    /* margin-top: -47px; */
+    padding-bottom: 70px;
+  }
+
+  .copy {
+    margin-top: -47px;
+  }
+}
+@media (min-width: 992px) {
+  * {
+    margin: 0;
+    /* padding: 0; */
+    font-family: "Poppins";
+  }
+
+  .foodbag-page {
+    width: 92%;
+    margin: auto;
+    /* padding-top: 40px; */
+  }
+
+  .foodbag-session {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+  }
+
+  .list {
+    padding-left: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .foodbag-session p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .food-bag {
+    font-size: 20px;
+    color: #ad4c4c;
+  }
+
+  .sign-up {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ad4c4c;
+    padding-left: 15px;
+    padding-top: 8px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 92px;
+    height: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .foodbag-header {
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .foodbag-header h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4e4d4d;
+    padding-top: 50px;
+  }
+
+  .foodbag-header p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+  }
+
+  .foodbag-select p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 80px;
+  }
+
+  .select-location {
+    width: 950px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .interest-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding-top: 42px;
+  }
+
+  .food-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 81px;
+  }
+
+  .fast-food {
+    padding-top: 27px;
+    margin-top: 20px;
+    width: 215px;
+    height: 169px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  }
+  .fast-food img {
+    padding-left: 30px;
+    margin-top: 27px;
+  }
+  .fast-food h6 {
+    padding-left: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a5a5a5;
+    padding-top: 1px;
+  }
+  .fast-food p {
+    padding-left: 30px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a5a5a5;
+    margin-top: 5px;
+  }
+
+  .landing {
+    width: 1100px;
+    border: 1px solid #f2f2f2;
+  }
+  .server-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+    color: #4e4d4d;
+    margin-top: 80px;
+  }
+
+  .food-location {
+    text-align: center;
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: space-around; */
+    padding-bottom: 81px;
+    /* width: 90%; */
+    /* margin-left: 200px; */
+    /* width: 300px; */
+  }
+  .location-details {
+    margin-top: 72px;
+  }
+  .location-details h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    /* align-items: center;
+text-align: center; */
+    color: #696969;
+  }
+  .location-details p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #a5a5a5;
+    width: 75%;
+    padding-left: 50px;
+    padding-top: 15px;
+  }
+
+  .contact-page {
+    width: 110px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-page p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    margin-top: 81px;
+  }
+
+  .contact-session {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    margin-top: 21px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+
+  .footer p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    margin-top: 47px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 1100px) {
+  * {
+    margin: 0;
+    /* padding: 0; */
+    font-family: "Poppins";
+  }
+
+  .foodbag-page {
+    width: 92%;
+    margin: auto;
+    /* padding-top: 40px; */
+  }
+
+  .foodbag-session {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+  }
+
+  .list {
+    padding-left: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  .foodbag-session p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .food-bag {
+    font-size: 20px;
+    color: #ad4c4c;
+  }
+
+  .sign-up {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ad4c4c;
+    padding-left: 15px;
+    padding-top: 8px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 92px;
+    height: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .foodbag-header {
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .foodbag-header h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4e4d4d;
+    padding-top: 50px;
+  }
+
+  .foodbag-header p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+  }
+
+  .foodbag-select p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 80px;
+  }
+
+  .select-location {
+    width: 1240px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .interest-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding-top: 42px;
+  }
+
+  .food-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 81px;
+  }
+
+  .fast-food {
+    padding-top: 27px;
+    margin-top: 20px;
+    width: 295px;
+    height: 169px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  }
+  .fast-food img {
+    padding-left: 30px;
+    margin-top: 27px;
+  }
+  .fast-food h6 {
+    padding-left: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a5a5a5;
+    padding-top: 1px;
+  }
+  .fast-food p {
+    padding-left: 30px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a5a5a5;
+    margin-top: 5px;
+  }
+
+  .landing {
+    width: 1200px;
+    border: 1px solid #f2f2f2;
+  }
+  .server-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+    color: #4e4d4d;
+    margin-top: 80px;
+  }
+
+  .food-location {
+    text-align: center;
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: space-around; */
+    padding-bottom: 81px;
+    /* width: 90%; */
+    /* margin-left: 200px; */
+    /* width: 300px; */
+  }
+  .location-details {
+    margin-top: 72px;
+  }
+  .location-details h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    /* align-items: center;
+text-align: center; */
+    color: #696969;
+  }
+  .location-details p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #a5a5a5;
+    width: 75%;
+    padding-left: 50px;
+    padding-top: 15px;
+  }
+
+  .contact-page {
+    width: 110px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-page p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    margin-top: 81px;
+  }
+
+  .contact-session {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    margin-top: 21px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+
+  .footer p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #696969;
+    margin-top: 47px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (max-width:600px){
+
+  }
+}
