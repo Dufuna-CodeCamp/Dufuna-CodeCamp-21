@@ -16,7 +16,7 @@ nav{
     font-size: 18px;
 }
 #sign{
-    margin-right: 0;
+    margin-right: 0px;
     padding: 5px;
     background-color: white;
 }
@@ -32,36 +32,36 @@ nav{
     padding: 10px;
 }
 div .order:first-of-type{
-    margin-left: 0;
+    margin-left: 0px;
 
 }
 
 div .order:last-of-type{
-    margin-right: 0;  
+    margin-right: 0px;  
 }
 #veg{
-    margin-top: 0;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-right: 0px;
+    margin-bottom: 0px;
 
 }
 #drink{
-    margin-top: 0;
+    margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 .interest{
     display: flex;
     padding-left: 5px;
     padding-top: 5px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     color: orangered;
     font-weight: bold;
 }
 .interest:first-child .order{
-    margin-left: 0;
+    margin-left: 0px;
 }
 .order::h3{
     color: maroon;
@@ -95,7 +95,7 @@ input{
     width: 100%;
     width: 1110px ;
     height: 25px;
-    margin-right: 0;
+    margin-right: 0px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -112,14 +112,14 @@ image{
 }
 .box{
     display: flex;
-    margin: 10px 0;
+    margin: 10px 0px;
     justify-content: space-evenly;
 }
 div .process:first-of-type{
-    margin-left: 0;
+    margin-left: 0px;
 }
 div .process:last-of-type{
-    margin-right: 0;
+    margin-right: 0px;
 }
 .process::first-line{
     font-weight: bolder;
@@ -136,7 +136,7 @@ div .process:last-of-type{
 .para h4{
     font-size: 14px;
     color: rgb(116, 109, 109);
-    margin-top: 0;
+    margin-top: 0px;
     font-weight: 500;
 }
 .left{
