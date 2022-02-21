@@ -2,7 +2,7 @@ let productList = [
     {
         productName: "IPhone 13",
         imageUrl: "https://cdn.pixabay.com/photo/2021/09/25/17/43/iphone-13-6655518__480.jpg",
-        productPrice: 10500
+        productPrice: 10000
     },
 
     {
