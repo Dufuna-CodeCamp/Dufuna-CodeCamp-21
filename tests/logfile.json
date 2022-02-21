@@ -1,7 +1,6 @@
 {
   "stats": {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     "suites": 1,
     "tests": 8,
     "passes": 8,
@@ -273,16 +272,9 @@
       },
       "version": "6.0.1"
     }
-=======
-=======
->>>>>>> 440077434ebe574c58f9f1de8891ab5d4126f3a3
     "tests": 3,
     "passes": 3,
     "failures": 0,
     "owner": "mapenziMasilani"
-<<<<<<< HEAD
->>>>>>> 252e9e17d56c7a7ac834942c02782cde664ee000
-=======
->>>>>>> 440077434ebe574c58f9f1de8891ab5d4126f3a3
   }
 }
