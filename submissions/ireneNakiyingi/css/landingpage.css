@@ -16,7 +16,7 @@ nav{
     font-size: 18px;
 }
 #sign{
-    margin-right: 0px;
+    margin-right: 0;
     padding: 5px;
     background-color: white;
 }
@@ -32,36 +32,36 @@ nav{
     padding: 10px;
 }
 div .order:first-of-type{
-    margin-left: 0px;
+    margin-left: 0;
 
 }
 
 div .order:last-of-type{
-    margin-right: 0px;  
+    margin-right: 0;  
 }
 #veg{
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 10px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
 
 }
 #drink{
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .interest{
     display: flex;
     padding-left: 5px;
     padding-top: 5px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     color: orangered;
     font-weight: bold;
 }
 .interest:first-child .order{
-    margin-left: 0px;
+    margin-left: 0;
 }
 .order::h3{
     color: maroon;
