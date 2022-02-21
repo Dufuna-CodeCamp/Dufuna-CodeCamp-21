@@ -13,7 +13,7 @@ let product = "infinix";
      console.log(price)
 
      product = "nokia";
-     console.log(products);
+     console.log(product);
      image = "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-x20-1.jpgs";
      console.log(image);
      price = "$140";
