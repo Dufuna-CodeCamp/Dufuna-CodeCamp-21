@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    margin: 23px 20px 53px 20px;
+    margin: 23px 20px 53px;
 }
 
 a {
@@ -24,7 +24,7 @@ a {
     height: 24px;
     width: 72px;
     margin: 0;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     display: inline-block;
     line-height: 24px;
@@ -49,6 +49,8 @@ a {
 
 nav ul {
     margin: 0;
+    float: right;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -62,11 +64,6 @@ li {
 
 ul li {
     display: inline-block;
-}
-
-nav ul {
-    float: right;
-    padding-left: 0;
 }
 
 nav ul li a {
@@ -105,7 +102,7 @@ header p {
     height: 18px;
     font-size: 12px;
     line-height: 18px;
-    margin: 0 0 31px 0;
+    margin: 0 0 31px;
     /*margin-left: 20px;*/
     /*margin-top: 0;
     margin-bottom: 80px;
@@ -146,7 +143,7 @@ section select {
 }
 
 #interest {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 30px;
     width: 280px;
@@ -196,19 +193,18 @@ section select {
     font-size: 14px;
     line-height: 21px;
     color: #A5A5A5;
-    margin: 0 0 0px 25px;
+    margin: 0 0 25px;
     padding-bottom: 20px;
 }
 
 #serving {
-    margin-left: 0;
     /*width: auto;*/
     align-items: center;
     /*text-align: center;*/
     padding-bottom: 1px;
     border-bottom: 1px solid #F2F2F2;
     margin-bottom: 81px;
-    margin: 0 20px 0px 20;
+    margin: 0 20px;
 }
 
 #serving .title {
@@ -262,7 +258,7 @@ footer p {
     color: #696969;
     font-weight: 500;
     font-size: 16px;
-    margin: 31px 0 18px 0;
+    margin: 31px 0 18px;
 }
 
 ul#socials {
