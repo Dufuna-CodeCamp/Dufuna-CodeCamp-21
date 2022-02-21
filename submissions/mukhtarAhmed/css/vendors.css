@@ -2,8 +2,8 @@
 *
 {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body
@@ -11,7 +11,7 @@ body
     color: #696464;
     font-family: Poppins, sans-serif;
     font-size: 13px;
-    margin: 10px 0px 0px 15px;
+    margin: 10px 0 0 15px;
     padding-bottom: 20px;
 }
 
@@ -32,7 +32,7 @@ header
 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: 0px;
+    margin: 0;
 }
 
 .logo
@@ -42,23 +42,16 @@ header
 
 .list-item1
 {
-    margin: 0px;
+    margin: 0;
     padding: 10px;
     grid-column: 10/11;
 }
 
 .list-item2
 {
-    margin: 0px;
+    margin: 0;
     padding: 10px;
     grid-column: 11/12;
-}
-
-.list-item3
-{
-    margin: 0px;
-    padding: 10px;
-    grid-column: 12/13;
 }
 
 .header h3
@@ -112,13 +105,13 @@ section h2
 
 .inline1
 {
-    margin: 0px;
+    margin: 0;
     grid-column: 1/2;
 }
 
 .inline2
 {
-    margin: 0px;
+    margin: 0;
     grid-column: 2/3;
     margin-left: -70px;
     margin-top: 20px;
@@ -128,7 +121,7 @@ section h2
 
 .inline3
 {
-    margin: 0px;
+    margin: 0;
     grid-column: 10/11;
     color: rgb(172, 37, 37);
 }
@@ -192,7 +185,7 @@ section h2
     {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        margin: 0px;
+        margin: 0;
     }
 
     .logo
@@ -250,20 +243,20 @@ section h2
 
     .inline1
     {
-        margin: 0px;
+        margin: 0;
         grid-column: 1/2;
     }
 
     .inline2
     {
-        margin: 0px;
+        margin: 0;
         grid-column: 2/3;
         margin-top: 17px;
     }
 
     .inline3
     {
-        margin: 0px;
+        margin: 0;
         grid-column: 10/11;
         color: rgb(172, 37, 37);
     }
