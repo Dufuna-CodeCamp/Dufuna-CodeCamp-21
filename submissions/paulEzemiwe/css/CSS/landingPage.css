@@ -391,7 +391,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
   .menu__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -427,4 +426,3 @@ footer {
     margin-bottom: 25px;
   }
 }
-
