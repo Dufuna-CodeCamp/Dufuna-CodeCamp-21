@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -87,6 +87,7 @@
               "err": {},
               "uuid": "5009c4d9-a7cc-46cb-bf28-0d7484c95eeb",
               "parentUUID": "5667953a-40c8-4d63-837e-9b6e809378a7",
+
               "isHook": false,
               "skipped": false
             },
@@ -96,7 +97,7 @@
               "timedOut": false,
               "duration": 27,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
@@ -231,7 +232,7 @@
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 221,
+          "duration": 134,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
