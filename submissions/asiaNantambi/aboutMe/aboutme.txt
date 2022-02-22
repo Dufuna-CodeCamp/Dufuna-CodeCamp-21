@@ -1,3 +1,7 @@
+
 Hello Dufuna,
-I am Asia Nantambi a computer science student at Kyambogo University in Uganda.
-I am glad to be part of this camp because i love coding.
+I am Asia Nantambi a computer scientist from Uganda. I love tech, coding and playing chess.
+
+I am here for the react module and i thank Dufuna team for the opportunity granted to me to learn more, improve my skills and meet new brains.
+
+This is my second attempt for the aboutMe submission therefore changed the name of the branch from about-Asia to about-Asian. 

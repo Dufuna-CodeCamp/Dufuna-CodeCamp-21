@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff;
+    box-sizing: content-box;
+    flex-direction: row;
+    
+}
+
+h2 {
+    margin: 0;
+    padding: o;
+    color: rgb(219, 9, 9);
+}
+.container {
+    padding: 20px 10px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.logo .c-red {
+    color: red;
+}
+
+.navl ul {
+    list-style-type: none;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+}
+
+.navl li {
+    margin: 0;
+    font-size: 16px;
+    height: 50px;
+    width: inherit;
+    display: flex;
+    align-items: centers;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navl li:last-child {
+    border: 1px solid red;
+    width: 150px;
+    padding: 5px;
+}
+
+.navl a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navl a:hover {
+    color: #f00;
+}
+
+
+.home {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.home h2 {
+    font-size: 28px;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+
+.location {
+    padding: 10px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+  
+}
+
+.location label {
+    font-size: 22px;
+    padding: 15px 0;
+}
+
+.location input[type="text"] {
+    padding: 8px 20px;
+    margin: 10px 0;
+    width: 250px;
+    text-align: center;
+}
+
+.pick-interest {
+    padding: 16px 0;
+}
+
+.pick-interest h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.options {
+    border: 2px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    padding: 35px;
+    width: 250px;
+    text-align: center;
+    margin: 10px 0;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.options img {
+    width: 80px;
+    place-items: right;
+}
+
+.options h4 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.options p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+.services {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 25px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.services2 {
+    padding: 35px 0;
+}
+
+.services2 img {
+    width: 200px;
+}
+
+.services2 h4 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.services2 p {
+    font-size: 18px;
+    padding: 5px;
+}
+    
+footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.contact-page p {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.contact-images img {
+    padding: 5px;
+}
+
+.footer-notice p {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .logo .color-red {
+        color: #f00;
+    }
+
+    .navl ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .navl li {
+        margin: 0 15px; 
+        font-size: 16px;
+    }
+
+    .home {
+        text-align: center;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+
+    .home h2 {
+        font-size: 35px;
+    }
+
+    .home p {
+        font-size: 24px;
+    }
+
+    .location-pointer label {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    .location-pointer input[type="text"] {
+        padding: 8px 20px;
+        margin: 10px 0;
+        width: 450px;
+        text-align: center;
+    }
+
+    .pick-interest {
+        padding: 16px 0;
+    }
+
+    .pick-interest h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .one {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .options {
+        border: 2px solid rgb(163, 163, 163);
+        border-radius: 5px;
+        padding: 35px;
+        width: 400px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .options img {
+        width: 120px;
+    }
+
+    .options h4 {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .options p {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .services2 {
+        padding: 35px 0;
+    }
+
+    .services2 img {
+        width: 250px;
+    }
+
+    .services2 h4 {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .services2 p {
+        font-size: 20px;
+        padding: 5px;
+    }
+        
+    footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .contact-page p {
+        font-size: 22px;
+        padding: 5px 0;
+    }
+
+    .contact-images img {
+        padding: 5px;
+    }
+
+    .footer-notice p {
+        font-size: 15px;
+    }
+}
