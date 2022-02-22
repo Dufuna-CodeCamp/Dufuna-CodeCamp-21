@@ -304,6 +304,22 @@ footer {
   border-bottom: 1px solid var(--borderBottomGray);
 }
 
+/* .kfc p,
+.chicken-rep p {
+  display: none;
+} */
+
+.kfc__logo p,
+.chicken-rep__logo p {
+  display: none;
+}
+
+.kfc__logo-content,
+.chicken-rep__logo-content {
+  display: flex;
+  align-items: center;
+}
+
 .kfc__wrapper,
 .chicken-rep__wrapper {
   display: grid;
@@ -499,6 +515,36 @@ footer {
     padding-top: 1.5em;
     column-gap: 1em;
   }
+
+  .view-all {
+    display: none;
+  }
+
+  /* .kfc p,
+  .chicken-rep p {
+    display: flex;
+    padding: 0;
+  } */
+
+  .kfc__logo p,
+  .chicken-rep__logo p {
+    display: flex;
+    padding: 0;
+  }
+
+  .kfc__logo,
+  .chicken-rep__logo {
+    justify-content: space-between;
+  }
+
+  .kfc {
+    padding-bottom: 3.05em;
+  }
+
+  .chicken-rep {
+    padding-top: 2.8em;
+    padding-bottom: 5em;
+  }
 }
 
 @media only screen and (min-width: 1180px) {
@@ -604,7 +650,7 @@ footer {
   /** Vendor Page Styles **/
   .kfc__wrapper,
   .chicken-rep__wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     max-width: 1200px;
   }
 }
@@ -681,5 +727,16 @@ footer {
 
   .contact__content {
     font-size: 0.9em;
+  }
+
+  /*** Vendor section **/
+  .kfc__wrapper,
+  .chicken-rep__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .kfc__wrapper,
+  .chicken-rep__wrapper {
+    column-gap: 2.85em;
   }
 }
