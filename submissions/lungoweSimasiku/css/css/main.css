@@ -733,10 +733,6 @@ footer {
   .kfc__wrapper,
   .chicken-rep__wrapper {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-
-  .kfc__wrapper,
-  .chicken-rep__wrapper {
     column-gap: 2.85em;
   }
 }
