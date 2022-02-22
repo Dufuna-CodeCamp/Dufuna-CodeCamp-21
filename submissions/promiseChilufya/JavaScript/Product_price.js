@@ -1,4 +1,4 @@
-let productList = [
+const productList = [
     {
         productName: "IPhone 13",
         imageUrl: "https://cdn.pixabay.com/photo/2021/09/25/17/43/iphone-13-6655518__480.jpg",
@@ -16,8 +16,8 @@ let productList = [
         imageUrl: "https://media.istockphoto.com/photos/huawei-p40-pro-telephone-picture-id1215314534.jpg",
         productPrice: 8000
     }
-];
+]
 
-productList.forEach(function(gadget){
-    document.write('${gadget.productName}${gadget.imageUrl} is sold for ${gadget.productPrice}')
-})
+productList.forEach((gadget) =>{
+    document.write(`<br><br>${gadget.productName} ${gadget.imageUrl} is sold for ${gadget.productPrice}`)
+});
