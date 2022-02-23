@@ -1,0 +1,126 @@
+body{
+
+font-family: 'Poppins', sans-serif;
+
+}
+header{
+    text-align: center;
+}
+
+header #logo{
+    float: left;
+
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+span{
+    color: rgb(248, 17, 17);
+}
+
+
+nav li{
+    text-align: center;
+    list-style: none;
+    float: right;
+    display: inline;
+    padding-right: 20px;
+    margin-top:20px;
+}
+
+header nav ol li:nth-child(1){
+
+    border: 1px red solid;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+nav li a{
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+
+#signup-link{
+    color: red;
+}
+
+#heading{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    line-height: 0.5;
+}
+
+form select{
+    width: 50%;
+    padding: 5px;
+}
+
+.interests li{
+    list-style: none;
+    display: inline-grid;
+    box-shadow: 3px 1px 10px rgba(131, 130, 130, 0.2);;
+    line-height: 0.3;
+}
+.interests h4{
+    color: red;
+}
+
+.interests li img, .interests li h4, .interests li p{
+margin: 15px;
+}
+
+#serving{
+    text-align: center;
+}
+
+#serving #serving-title{
+    padding-top: 20px;
+    text-align: center;
+    line-height: 0.5;
+}
+
+
+#serving li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 20px;
+}
+
+
+#contact{
+    text-align: center;
+    line-height: 0.2;
+}
+
+#contact-title{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact li{
+    list-style: none;
+    display: inline-grid;
+    margin-right: 30px;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    text-decoration: none;
+    color: gray;
+}
+
+footer li:nth-child(2){
+    float: right;
+    margin-top: -25px;
+    margin-right: 60px;
+}
