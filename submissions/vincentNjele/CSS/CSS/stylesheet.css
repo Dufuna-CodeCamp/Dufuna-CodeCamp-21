@@ -1,0 +1,189 @@
+
+header #foodbag {
+    font-size: 30px;
+}
+span {
+    color:rgb(172, 13, 13);
+}
+#foodbag {
+
+    font-weight: bold;
+}
+
+#cartsignuplogin  p{
+    float: right;
+    display:inline;
+    margin-top: -38px;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+
+#cartsignuplogin  p a {
+
+    text-decoration: none;
+    color:black;
+
+}
+
+a #signup {
+    
+    color:rgb(172, 13, 13);
+}
+
+
+#cartsignuplogin p:nth-child(1) {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+}
+#foodbagheader {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#form {
+    margin-top: 5px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 25px;
+}
+#address {
+    margin-top: 5px;
+    width: 40%;
+    height: 25px;
+    border: grey solid 1px;
+    background-color: white;
+}
+
+#interest {
+   margin-top: 5px; 
+  
+}
+
+#interest ul{
+    margin-top: 0; 
+   
+ }
+
+.interest li {
+    
+    font-size: 22px;
+   height: 180px;
+   width:22%;
+ display:inline-grid;
+    margin-bottom: 5px;
+    float: inline-start;
+    margin-left: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2);
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    line-height: 0.5;
+    
+}
+.interest li p span {
+    color:rgb(172, 13, 13);
+    font-weight: bold;
+    font-size: 22px;
+}
+#interest li p:nth-child(3){
+
+    margin-top: -10px;
+}
+
+
+#interest li:nth-child(2) {
+    margin-left: 70px;
+}
+#interest li:nth-child(3) {
+    margin-left: 70px;
+}
+#interest li:nth-child(1) {
+    margin-left: 240px;
+}
+#interest li:nth-child(4) {
+    margin-left: 70px;
+}
+
+#ourserving  li{
+
+    display:inline-grid;
+    float: inline-start;
+    margin-left: 20px;
+    padding: 15px;
+    width: 20%;
+    font-size: 22px;
+   
+    
+}
+
+#ourserving h2 {
+    text-align: center;
+}
+
+
+#ourserving  li p{
+    margin-top: -10px;
+}
+
+#ourserving  li p span{
+    color: black;
+    font-weight: 600;
+}
+
+
+#ourserving  li img {
+
+    height: 200px;
+    width: 200px;
+}
+
+#ourserving li:nth-child(2) {
+    margin-left: 130px;
+}
+#ourserving li:nth-child(3) {
+    margin-left: 130px;
+}
+#ourserving li:nth-child(1) {
+    margin-left: 240px;
+}
+
+#contactus {
+    margin-left: 50%;
+}
+
+#contactus li {
+    margin-left: -10%;
+    list-style: none;
+}
+
+
+
+
+#contactus li img{
+    height: 30px;
+    width: 30px;
+}
+
+#contactus li img:nth-child(2) {
+    margin-left: 33px;
+}
+
+#contactus li img:nth-child(3) {
+    margin-left: 33px;
+}
+
+#copyright {
+    float: right;
+    margin-right: 90px;
+    margin-top: -50px;
+}
+#termsconditions {
+
+    margin-left: 90px;
+
+}
