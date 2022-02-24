@@ -2,7 +2,7 @@ const selectedLocation = document.querySelector("#location"),
       interestCardImages = document.querySelectorAll(".interest-image"),
       interestCards = document.querySelectorAll(".interest-card"),
       enabledImages = ["fast-food.svg", "Vegetables _ Drinks.svg", "Drinks _ Cocktails.svg", "resturant.svg"],
-      disabledImages = ["fast-food_disabled.svg", "Vegetables _ Drinks_disabled.svg", "Drinks _ Cocktails_disabled.svg", "resturant_disabled.svg"];;
+      disabledImages = ["fast-food_disabled.svg", "Vegetables _ Drinks_disabled.svg", "Drinks _ Cocktails_disabled.svg", "resturant_disabled.svg"];
 
 selectedLocation.addEventListener("change", (e) => {
     if (e.target.value === "") {
