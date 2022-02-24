@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-22T19:12:20.561Z",
-    "end": "2022-02-22T19:15:20.596Z",
-    "duration": 180035,
+    "start": "2022-02-24T14:24:26.652Z",
+    "end": "2022-02-24T14:27:26.683Z",
+    "duration": 180031,
     "testsRegistered": 8,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7cfd2485-1f92-4e8a-9a02-ca63e9892f1b",
+      "uuid": "b33271ae-98ad-408e-a2f3-facced4d72d1",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6960a958-a5d9-4808-aa37-82d45f11142d",
+          "uuid": "341d3f6c-6017-419a-b438-8588bd99e9eb",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Lungowe\\OneDrive\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
           "file": "\\vendors.js",
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Lungowe\\OneDrive\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)",
                 "diff": null
               },
-              "uuid": "b1b11539-e7e0-4bf9-9c98-afde0b5da008",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "d18d1508-c21c-40d4-9ede-ff40ed0ed9a1",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "e1619493-8327-4b4e-809f-77092a5ec298",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "70bb88d7-18e3-4a49-bea4-973f0cb6de9e",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-              "uuid": "9cbb317a-6221-4f29-a2a0-ed3276117cbc",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "b0f26e97-1271-4b9f-afbb-b25e54bf6ea4",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-              "uuid": "71c96195-9000-4912-9df7-e38c837732eb",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "d96163bc-1743-4709-b8c0-6d6722e8f9f5",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
-              "uuid": "c67e8af8-5fca-4bf4-9f93-6e66a2e2f4a1",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "fca7bfed-19e3-4306-9649-ba51c5f51ccd",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -143,8 +143,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
               "err": {},
-              "uuid": "1563616d-cd83-4eff-937b-399b902a962c",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "69000980-a333-485d-8aac-ddad720950ab",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -161,8 +161,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "eca88160-1cf1-4aee-9fa4-07df0af1f10f",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "599b442b-1a2b-4592-ac35-2210d2a02d0b",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -179,8 +179,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "eb9f6431-a8cf-476e-b419-a59114bee4dd",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "7435ff53-8ebd-4db1-8a63-95abc9dcae7f",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -197,8 +197,8 @@
               "context": null,
               "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
               "err": {},
-              "uuid": "b7d1c397-1d5c-4fd4-9355-528c0f9122b3",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "044560c4-1f5b-4bf0-b9cf-61f510377916",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             },
@@ -215,8 +215,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
-              "uuid": "d76cd953-d334-42c7-bfb0-397381780936",
-              "parentUUID": "6960a958-a5d9-4808-aa37-82d45f11142d",
+              "uuid": "f6cba69a-c104-45cb-a8b1-21665ed89b30",
+              "parentUUID": "341d3f6c-6017-419a-b438-8588bd99e9eb",
               "isHook": false,
               "skipped": true
             }
@@ -226,14 +226,14 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "9cbb317a-6221-4f29-a2a0-ed3276117cbc",
-            "71c96195-9000-4912-9df7-e38c837732eb",
-            "c67e8af8-5fca-4bf4-9f93-6e66a2e2f4a1",
-            "1563616d-cd83-4eff-937b-399b902a962c",
-            "eca88160-1cf1-4aee-9fa4-07df0af1f10f",
-            "eb9f6431-a8cf-476e-b419-a59114bee4dd",
-            "b7d1c397-1d5c-4fd4-9355-528c0f9122b3",
-            "d76cd953-d334-42c7-bfb0-397381780936"
+            "b0f26e97-1271-4b9f-afbb-b25e54bf6ea4",
+            "d96163bc-1743-4709-b8c0-6d6722e8f9f5",
+            "fca7bfed-19e3-4306-9649-ba51c5f51ccd",
+            "69000980-a333-485d-8aac-ddad720950ab",
+            "599b442b-1a2b-4592-ac35-2210d2a02d0b",
+            "7435ff53-8ebd-4db1-8a63-95abc9dcae7f",
+            "044560c4-1f5b-4bf0-b9cf-61f510377916",
+            "f6cba69a-c104-45cb-a8b1-21665ed89b30"
           ],
           "duration": 0,
           "root": false,
