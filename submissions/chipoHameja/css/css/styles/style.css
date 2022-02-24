@@ -51,7 +51,7 @@ ul li {
 nav ul {
     float: right;
     margin-top: 50px;
-    /*margin-right: 100px;*/
+    margin-right: 100px;
     text-align: center;
     font-size: 16px;
 }
@@ -62,10 +62,6 @@ nav ul li a {
     margin-left: 50px;
     padding: 8px;
 }
-
-/*nav ul li {
-    padding: 0px 25px;
-}*/
 
 a {
     text-decoration: none;
@@ -98,7 +94,6 @@ header p {
 }
 
 section label {
-    /*position: absolute;*/
     width: 158px;
     height: 30px;
     margin-left: 100px;
@@ -111,7 +106,6 @@ section label {
 }
 
 section select {
-    /*position: absolute;*/
     width: 1240px;
     height: 60px;
     margin-left: 100px;
@@ -131,14 +125,12 @@ option {
 
 #interest {
     margin-left: 100px;
-    /*margin-top: 40px;*/
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 81px;
     width: 100%;
 }
 
 #interest #pi1 {
-    /*position: absolute;*/
     width: 154px;
     height: 30px;
     margin-top: 0;
@@ -146,17 +138,13 @@ option {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    /*display: flex;*/
     align-items: center;
     color: black;
 }
 
 .interest-card {
-    /*position: absolute;*/
     display: inline-block;
     width: 295px;
-    /*height: 169px;*/
-    /*margin-top: 20px;*/
     margin-right: 20px;
     background: #FFFFFF;
     box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
@@ -187,7 +175,6 @@ option {
     margin-left: 100px;
     width: auto;
     align-items: center;
-    /*text-align: center;*/
     padding-bottom: 80px;
     border-bottom: 1px solid #F2F2F2;
     margin-bottom: 81px;
@@ -206,7 +193,6 @@ option {
 .serving-card {
     display: inline-block;
     margin-right: 160px;
-    /*width: 413px;*/
 }
 
 .serving-card img {

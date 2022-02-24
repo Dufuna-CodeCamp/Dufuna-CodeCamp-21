@@ -9,7 +9,7 @@ selectedLocation.addEventListener("change", (e) => {
         let i = 0;
 
         interestCardImages.forEach(function (image) {
-            image.src = "assets/" + disabledImages[i];
+            image.src = "../css/assets/" + disabledImages[i];
             i++;
         })
 
@@ -24,7 +24,7 @@ selectedLocation.addEventListener("change", (e) => {
         let i = 0;
 
         interestCardImages.forEach(function (image) {
-            image.src = "assets/" + enabledImages[i];
+            image.src = "../css/assets/" + enabledImages[i];
             i++;
             console.dir(image)
         })
