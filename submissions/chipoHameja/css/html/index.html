@@ -3,12 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    -->
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/styles/style.css">
     <title>FoodBag</title>
 </head>
 <body>
@@ -31,8 +27,9 @@
 
         <select name="location" id="location">
             <option value="" selected>Enter your delivery address</option>
-            <option value="">Lusaka</option>
-            <option value="">Mazabuka</option>
+            <option value="lusaka">Lusaka</option>
+            <option value="mazabuka">Mazabuka</option>
+            <option value="ndola">Ndola</option>
         </select>
     </section>
 
@@ -40,25 +37,25 @@
         <p id="pi1">Pick an interest</p>
 
         <div class="interest-card">
-            <img src="../css/assets/fast-food 1.svg" alt="Fast food">
+            <img class="interest-image" src="../css/assets/fast-food_disabled.svg" alt="Fast food">
             <p><b>Fast food</b></p>
             <p>All sorrows are less with bread.</p>
         </div>
 
         <div class="interest-card">
-            <img src="../css/assets/healthy-food 1.svg" alt="Vegetables & FRuits">
+            <img class="interest-image" src="../css/assets/Vegetables _ Drinks_disabled.svg" alt="Vegetables & FRuits">
             <p><b>Vegetables & Fruits</b></p>
             <p>May not want it, but good for you.</p>
         </div>
 
         <div class="interest-card">
-            <img src="../css/assets/mai-thai 1.svg" alt="Drinks and Cocktails">
+            <img class="interest-image" src="../css/assets/Drinks _ Cocktails_disabled.svg" alt="Drinks and Cocktails">
             <p><b>Drinks & Cocktails</b></p>
             <p>I feel sad for those who don't drink.</p>
         </div>
 
         <div class="interest-card">
-            <img src="../css/assets/fork 1.svg" alt="Resturants">
+            <img class="interest-image" src="../css/assets/resturant_disabled.svg" alt="Resturants">
             <p><b>Resturants</b></p>
             <p>All sorrows are less with bread.</p>
         </div>
@@ -68,19 +65,19 @@
         <p class="title"><b>How we serve you</b></p>
 
         <div class="serving-card">
-            <img src="../css/assets/Map_Two Color 1.svg" alt="Tell us where you are">
+            <img src="../css/assets/Illustration_1.svg" alt="Tell us where you are">
             <p><b>Tell us where you are</b></p>
             <p class="bottom">Select the location you want <br>us to deliver.</p>
         </div>
 
         <div class="serving-card">
-            <img src="../css/assets/Fast food_Two Color (1) 1.svg" alt="Tell us what you want">
+            <img src="../css/assets/illustration_2.svg" alt="Tell us what you want">
             <p><b>Tell us what you want</b></p>
             <p class="bottom">Browse the type of food that <br>interest you.</p>
         </div>
 
         <div class="serving-card" style="margin-right: 0;">
-            <img src="../css/assets/Scooter_Two Color 1.svg" alt="We’ll come running">
+            <img src="../css/assets/illustration_3.svg" alt="We’ll come running">
             <p><b>We’ll come running</b></p>
             <p class="bottom">Your order will be delivered to <br>you in no time.</p>
         </div>
@@ -101,4 +98,5 @@
         </div>
     </footer>
 </body>
+<script src="../../Dom/js/index.js"></script>
 </html>
