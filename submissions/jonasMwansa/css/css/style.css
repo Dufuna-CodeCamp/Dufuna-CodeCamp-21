@@ -1,3 +1,7 @@
+/*
+
+*/
+
 body{
 
 font-family: 'Poppins', sans-serif;
@@ -29,6 +33,7 @@ nav li{
     display: inline;
     padding-right: 20px;
     margin-top:20px;
+    margin-right:40px;
 }
 
 header nav ol li:nth-child(1){
@@ -49,6 +54,7 @@ nav li a{
 #signup-link{
     color: red;
 }
+
 
 #heading{
     padding-top: 80px;
@@ -110,6 +116,109 @@ margin: 15px;
     margin-right: 30px;
 }
 
+
+/*----------------vendors page-----------------*/
+
+
+.heading{
+    float: left;
+}
+
+.sub-title{
+    padding-top: 50px;
+}
+
+.sub-title a{
+    color: gray;
+    text-decoration: none;
+}
+
+
+.heading p:nth-child(3){
+    float:right;
+    border: 1px red solid;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.kfc-vendor img{
+    float: left;
+}
+
+.kfc-vendor #kfc-heading{
+    float: left;
+    margin-left: 30px;
+}
+
+.kfc-vendor li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 5px;
+    padding: 5px;
+}
+
+.kfc-vendor p:nth-child(4){
+    margin-left: 215px;
+    margin-top: -18px;
+    color: green;
+}
+
+.kfc-vendor input{
+    width: 80px;
+    color: red;
+    border: 1px rgb(218, 13, 13) solid;
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#view-all a{
+    float: right;
+    color: rgb(248, 17, 17);
+    margin-top: -320px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.chicken-republic-vendor img{
+    float: left;
+    
+}
+
+    #chicken-republic-vendor-heading{
+    float: left;
+    display: inline;
+    margin-left: 30px;
+}
+
+.chicken-republic-vendor li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 5px;
+    padding: 5px;
+}
+
+.chicken-republic-vendor p:nth-child(4){
+    margin-left: 215px;
+    margin-top: -18px;
+    color: green;
+}
+
+.chicken-republic-vendor input{
+    width: 80px;
+    color: red;
+    border: 1px rgb(218, 13, 13) solid;
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+/*----------------Footer--------------------*/
 footer li{
     list-style: none;
 }
