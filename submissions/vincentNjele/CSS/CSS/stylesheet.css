@@ -168,8 +168,6 @@ a #signup {
 }
 
 
-
-
 .kfclist li {
     
     font-size: 22px;
@@ -190,7 +188,7 @@ a #signup {
 
 #kingbucket {
     color: black;
-    margin-left: -0px;
+
 }
 #amount {
     margin-left: 208px;
@@ -274,83 +272,3 @@ a #signup {
  margin-top: 120px;
 }
 
-/*
-#ourserving  li{
-
-    display:inline-grid;
-    float: inline-start;
-    margin-left: 20px;
-    padding: 15px;
-    width: 20%;
-    font-size: 22px;
-   
-    
-}
-
-#ourserving h2 {
-    text-align: center;
-}
-
-
-#ourserving  li p{
-    margin-top: -10px;
-}
-
-#ourserving  li p span{
-    color: black;
-    font-weight: 600;
-}
-
-
-#ourserving  li img {
-
-    height: 200px;
-    width: 200px;
-}
-
-#ourserving li:nth-child(2) {
-    margin-left: 130px;
-}
-#ourserving li:nth-child(3) {
-    margin-left: 130px;
-}
-#ourserving li:nth-child(1) {
-    margin-left: 240px;
-}
-
-#contactus {
-    margin-left: 50%;
-}
-
-#contactus li {
-    margin-left: -10%;
-    list-style: none;
-}
-
-
-
-
-#contactus li img{
-    height: 30px;
-    width: 30px;
-}
-
-#contactus li img:nth-child(2) {
-    margin-left: 33px;
-}
-
-#contactus li img:nth-child(3) {
-    margin-left: 33px;
-}
-
-#copyright {
-    float: right;
-    margin-right: 90px;
-    margin-top: -50px;
-}
-#termsconditions {
-
-    margin-left: 90px;
-
-}
-*/
