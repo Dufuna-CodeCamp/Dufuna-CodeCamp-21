@@ -1,14 +1,122 @@
 
 header #foodbag {
     font-size: 30px;
+    margin-left: 60px;
 }
 span {
     color:rgb(172, 13, 13);
+}
+#home {
+    color: rgb(109, 104, 104);
+}
+#cartsignuplogin {
+
+    margin-right: 290px;
+}
+
+#foodbagheaderhome {
+
+    margin-left: 60px;
+}
+#spans {
+    color: black;
 }
 #foodbag {
 
     font-weight: bold;
 }
+
+#interest #logo p h2{
+
+   margin-left: 20px;
+}
+
+h1 {
+    margin-left: 60px;
+}
+#kfc {
+
+    margin-left: 120px;
+    margin-top: -38px;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+#addtocart {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocarts {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartss {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartsss {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+
+
+
+#addtocart2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocarts2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartss2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartsss2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
 
 #cartsignuplogin  p{
     float: right;
@@ -59,131 +167,108 @@ a #signup {
     background-color: white;
 }
 
-#interest {
-   margin-top: 5px; 
-  
-}
 
-#interest ul{
-    margin-top: 0; 
-   
- }
-
-.interest li {
+.kfclist li {
     
     font-size: 22px;
    height: 180px;
    width:22%;
- display:inline-grid;
+   display:inline-grid;
     margin-bottom: 5px;
     float: inline-start;
     margin-left: 20px;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2);
-    border-radius: 5px;
-    border: 1px solid whitesmoke;
     line-height: 0.5;
     
 }
-.interest li p span {
-    color:rgb(172, 13, 13);
-    font-weight: bold;
-    font-size: 22px;
-}
-#interest li p:nth-child(3){
 
-    margin-top: -10px;
+.kfclist li:nth-child(1){
+    margin-left: 10px;
 }
 
-
-#interest li:nth-child(2) {
-    margin-left: 70px;
-}
-#interest li:nth-child(3) {
-    margin-left: 70px;
-}
-#interest li:nth-child(1) {
-    margin-left: 240px;
-}
-#interest li:nth-child(4) {
-    margin-left: 70px;
-}
-
-#ourserving  li{
-
-    display:inline-grid;
-    float: inline-start;
-    margin-left: 20px;
-    padding: 15px;
-    width: 20%;
-    font-size: 22px;
-   
-    
-}
-
-#ourserving h2 {
-    text-align: center;
-}
-
-
-#ourserving  li p{
-    margin-top: -10px;
-}
-
-#ourserving  li p span{
+#kingbucket {
     color: black;
-    font-weight: 600;
+
+}
+#amount {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amounts {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amountss {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
 }
 
-
-#ourserving  li img {
-
-    height: 200px;
-    width: 200px;
-}
-
-#ourserving li:nth-child(2) {
-    margin-left: 130px;
-}
-#ourserving li:nth-child(3) {
-    margin-left: 130px;
-}
-#ourserving li:nth-child(1) {
-    margin-left: 240px;
-}
-
-#contactus {
-    margin-left: 50%;
-}
-
-#contactus li {
-    margin-left: -10%;
-    list-style: none;
+#amountsss {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
 }
 
 
 
 
-#contactus li img{
-    height: 30px;
-    width: 30px;
+
+#amount2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amounts2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amountss2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
 }
 
-#contactus li img:nth-child(2) {
-    margin-left: 33px;
+#amountsss2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
 }
 
-#contactus li img:nth-child(3) {
-    margin-left: 33px;
+#viewall {
+    float:right;
+    color: rgb(172, 13, 13);
+    margin-top: -113px;
+    margin-right: 292px;
+}
+#viewall2 {
+    float:right;
+    color: rgb(172, 13, 13);
+    margin-top: -113px;
+    margin-right: 292px;
+}
+#logos {
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
-#copyright {
-    float: right;
-    margin-right: 90px;
-    margin-top: -50px;
+#logo {
+    margin-top: 40px;
+    margin-left: 60px;
 }
-#termsconditions {
 
-    margin-left: 90px;
+#kfcc {
+    margin-left: 100px;
+    margin-top: -38px;
+    margin-bottom: 80px;
+    font-weight: bold;
 
 }
+
+#ourserving {
+ margin-top: 120px;
+}
+
