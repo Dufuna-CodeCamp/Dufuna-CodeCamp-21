@@ -1,0 +1,337 @@
+/* Start of body tag */
+*
+{
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 0;
+}
+
+body
+{
+    color: #696464;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    margin: 10px 0 0 15px;
+    padding-bottom: 20px;
+}
+
+main
+{
+    padding: 20px;
+}
+/* End of body tag */
+
+/* Header and nav */
+header
+{
+    padding-bottom: 40px;
+    display: grid;
+}
+
+.header
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+}
+
+.logo
+{
+    grid-column: 1/2;
+}
+
+.list-item1
+{
+    margin: 0;
+    padding: 10px;
+    grid-column: 10/11;
+}
+
+.list-item2
+{
+    margin: 0;
+    padding: 10px;
+    grid-column: 11/12;
+}
+
+.list-item3
+{
+    margin: 0;
+    padding: 10px;
+    grid-column: 12/13;
+    width: 75px;
+    align-items: center;
+    border: 0.5px solid rgb(172, 37, 37);
+    border-radius: 3px;
+}
+
+.header h3
+{
+    font-size: 24px;
+}
+.red
+{
+    color: rgb(172, 37, 37);
+}
+/* End of header and nav */
+
+
+.list-item3 a
+{
+    color: rgb(172, 37, 37);
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.home
+{
+    color: #a5a5a5;
+    padding-right: 8px;
+}
+
+section h2
+{
+    padding-top: 30px;
+}
+
+.vendor
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.inline1
+{
+    margin: 0;
+    grid-column: 1/2;
+}
+
+.inline2
+{
+    margin: 0;
+    grid-column: 2/3;
+    margin-left: -70px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.inline3
+{
+    margin: 0;
+    grid-column: 10/11;
+    color: rgb(172, 37, 37);
+}
+
+.grid1
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 70px;
+}
+
+.grid2
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.meals
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.meal-name
+{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.meal-price
+{
+    color: rgb(17, 87, 17);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.add-cart
+{
+    color: rgba(112, 33, 33, 0.7);
+    border: 1px solid rgba(112, 33, 33, 0.6);
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    width: 120px;
+}
+
+.add-cart:hover
+{
+    color: #fff;
+    border: 1px solid rgba(112, 33, 33, 0.6);
+    background-color: rgba(112, 33, 33, 0.7);
+}
+
+@media screen and (max-width:600px)
+{
+    .header
+    {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0px;
+    }
+
+    .logo
+    {
+        grid-column: 1/2;
+    }
+
+    .list-item1
+    {
+        grid-column: 7/8;
+    }
+
+    .list-item2
+    {
+        grid-column: 9/10;
+    }
+
+
+    .header h3
+    {
+        font-size: 24px;
+    }
+
+    .red
+    {
+        color: rgb(172, 37, 37);
+    }
+    /* End of header and nav */
+
+    .list-item3
+    {
+        padding: 10px;
+        width: 70px;
+        text-align: center;
+        border: 0.5px solid rgb(172, 37, 37);
+        border-radius: 3px;
+        grid-column: 11/12;
+    }
+
+    section h2
+    {
+        padding-top: 30px;
+    }
+
+    .vendor
+    {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .inline1
+    {
+        margin: 0;
+        grid-column: 1/2;
+    }
+
+    .inline2
+    {
+        margin: 0;
+        grid-column: 2/3;
+        margin-top: 17px;
+    }
+
+    .inline3
+    {
+        margin: 0;
+        grid-column: 10/11;
+        color: rgb(172, 37, 37);
+    }
+
+    .grid1
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .grid2
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .meals
+    {
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr);
+        justify-content: center;
+        padding-top: 8px;
+    }
+
+    .meal-name
+    {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-left: 60px;
+    }
+
+    .meal-price
+    {
+        color: rgb(17, 87, 17);
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: 150px;
+        width: 60px;
+    }
+
+    .add-cart
+    {
+        color: rgba(112, 33, 33, 0.7);
+        border: 1px solid rgba(112, 33, 33, 0.6);
+        border-radius: 3px;
+        padding: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        width: 120px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        margin-left: 155px;
+    }
+
+    #inline1
+    {
+        position: relative;
+        top: 1110px;
+        right: 250px;
+        font-size: 16px;
+        font-weight: 650;
+    }
+
+    #inline2
+    {
+        position: relative;
+        top: 1140px;
+        right: 250px;
+        font-size: 16px;
+        font-weight: 650px;
+    }
+    
+}
