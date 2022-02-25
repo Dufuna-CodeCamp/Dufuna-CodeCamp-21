@@ -191,7 +191,6 @@ div.vendor-item-card .button-container {
     background: #FFFFFF;
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
-    display: flex;
     border-radius: 3px;
     justify-content: center;
 }
