@@ -66,7 +66,12 @@ nav ul li a {
 a {
     text-decoration: none;
 }
-
+/*
+header {
+    display: flex;
+    justify-content: center;
+}
+*/
 header h1 {
     width: 180px;
     height: 60px;
