@@ -70,7 +70,7 @@ form select{
 .interests li{
     list-style: none;
     display: inline-grid;
-    box-shadow: 3px 1px 10px rgba(131, 130, 130, 0.2);;
+    box-shadow: 3px 1px 10px rgba(131, 130, 130, 0.2);
     line-height: 0.3;
 }
 .interests h4{
