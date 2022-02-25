@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }else {
             let i = 0;
-
             interestCardImages.forEach(function (image) {
                 // console.log(image);
                 image.src = "../css/assets/" + enabledImages[i];
