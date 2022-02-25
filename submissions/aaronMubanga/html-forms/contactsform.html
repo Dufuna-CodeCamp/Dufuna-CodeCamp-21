@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <form action="#" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" name="full-name" id="full-name" placeholder="Doe john"/>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="example@email.com"/>
+            <label for="subject">subject:</label>
+            <input list="sub" id="subject" />
+            <datalist id="sub">
+                <option value="Dodge"/>
+                <option value="audi" selected/>
+                <option value="aston"/>
+                <option value="Dodge Viper"/>
+            </datalist><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="mes" cols="60" rows="10"></textarea>
+            <input type="button" name="sumbite" id="submite">
+            
+        </form>
+    </fieldset>
+</body>
+</html>
