@@ -147,6 +147,41 @@ p {
     padding: 10px;
 }
 
+.remove {
+    color: white;
+    background-color: grey;
+    border: solid;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 10px 10px 10px 30px;
+    
+}
+.kfc p,
+.chickenrep p {
+    line-height: 1.0px;
+}
+#rem {
+    position: absolute;
+    top: 525px;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#rem1 {
+    position: absolute;
+    top: 930px;
+    bottom: 0;
+    left: 810px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
 .vendors {
     position: absolute;
     padding: 50px;
@@ -197,6 +232,26 @@ p {
     font-weight: bold;
     padding-right: 10px;
 }
+
+.chickenreplogo a {
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    color: brown;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 1340px;
+    right: 0;
+  }
+
 
 
 
