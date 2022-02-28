@@ -10,10 +10,7 @@ span {
 #home {
     color: rgb(109, 104, 104);
 }
-#cartsignuplogin {
 
-    margin-right: 290px;
-}
 
 #foodbagheaderhome {
 
@@ -121,6 +118,7 @@ h1 {
    float:right;
    margin-top: -20px;
    margin-right: 40px;
+   
 }
 
 #cartsignuplogin  p{
@@ -322,12 +320,6 @@ a #signup {
     }
     
 
-    #address {
-        height: 30px;
-        margin-top: 20px;
-        border: 2px solid rgb(146, 142, 142);
-        background-color: white
-    }
 
     #form {
         margin-top: 35px;
@@ -345,10 +337,7 @@ a #signup {
         margin-left: 38px;
     }
 
-    #foodbag {
-
-        margin-left: 38px;
-    }
+    
 
     header #cartsignuplogin {
         margin-left: 38px;
@@ -381,6 +370,10 @@ a #signup {
         height: 34px;
         -webkit-appearance: none;
         background-position-x: 244px;
+        height: 30px;
+        margin-top: 20px;
+        border: 2px solid rgb(146, 142, 142);
+        background-color: white
     }
 
     #contactus img {
@@ -393,6 +386,8 @@ a #signup {
     #foodbagheader {
         
         margin-left: -230px;
+    
+       
       
     }
     
@@ -420,8 +415,7 @@ a #signup {
        display:inline-grid;
         margin-bottom: 5px;
         float: inline-start;
-        margin-left: 0px;
-        padding: 1pxpx;
+        padding: 1px;
         box-shadow: 1px 4px 8px 1px rgb(0,0,0,0.2);
         border-radius: 5px;
         border: 1px solid whitesmoke;
