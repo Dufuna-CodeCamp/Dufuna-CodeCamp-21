@@ -1,4 +1,5 @@
 
+
 header #foodbag {
     font-size: 30px;
     margin-left: 60px;
@@ -116,17 +117,23 @@ h1 {
     padding: 10px;
     width:fit-content;
 }
-
+#cartsignuplogin {
+   float:right;
+   margin-top: -20px;
+   margin-right: 40px;
+}
 
 #cartsignuplogin  p{
-    float: right;
+  
     display:inline;
-    margin-top: -38px;
+    margin-top: -48px;
     padding: 10px;
     font-size: 20px;
 
 
 }
+
+
 
 #cartsignuplogin  p a {
 
@@ -141,7 +148,7 @@ a #signup {
 }
 
 
-#cartsignuplogin p:nth-child(1) {
+#cartsignuplogin p:nth-child(3) {
 
     color:rgb(172, 13, 13);
     border:rgb(172, 13, 13) solid 1px;
@@ -272,3 +279,173 @@ a #signup {
  margin-top: 120px;
 }
 
+@media only screen and (min-width: 480px ) {
+
+    .interest li {
+        box-shadow: 1px 4px 8px 1px rgb(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    #ourserving li {
+        
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    #ourserving img {
+        height: 140px;
+        
+    }
+
+    .interest img {
+        height: 100px;
+       
+    }
+    
+    .interest p {
+        margin-left: 15px;
+    }
+
+    #location {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+
+    #address {
+        height: 30px;
+        margin-top: 20px;
+        border: 2px solid rgb(146, 142, 142);
+        background-color: white
+    }
+
+    #form {
+        margin-top: 35px;
+        margin-left: 38px;
+    }
+    #ourserving h2 {
+       text-align: center;
+
+    }
+    h2 {
+        margin-left: 38px;
+    }
+    #foodbagheader {
+
+        margin-left: 38px;
+    }
+
+    #foodbag {
+
+        margin-left: 38px;
+    }
+
+    header #cartsignuplogin {
+        margin-left: 38px;
+    }
+
+    #contactus {
+        text-align: center;
+    }
+
+    #contactus li {
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #address {
+
+        background-image: url("../images/keyboard_arrow_down.svg");
+        width: 268px;
+        padding: 5px;
+        font-size: 16px;
+        line-height: 1;
+        border: 1px;
+        border-radius: 5px;
+   
+        background-repeat: no-repeat;
+  
+        height: 34px;
+        -webkit-appearance: none;
+        background-position-x: 244px;
+    }
+
+    #contactus img {
+        
+        padding: 20px;
+    }
+    
+
+
+    #foodbagheader {
+        
+        margin-left: -230px;
+      
+    }
+    
+    #foodbagheader h1 {
+        margin-left: -90px;
+    }
+
+  
+    header #foodbag {
+        margin-left: 40px;
+    }
+  
+    
+    
+}
+
+
+@media screen  and (min-width: 790px) {
+
+    .interest li {
+    
+        font-size: 22px;
+       height: 220px;
+       width:22%;
+       display:inline-grid;
+        margin-bottom: 5px;
+        float: inline-start;
+        margin-left: 0px;
+        padding: 1pxpx;
+        box-shadow: 1px 4px 8px 1px rgb(0,0,0,0.2);
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+        line-height: 0.5;
+        
+    }
+
+    .interest p {
+      margin-top: 5px;
+    }
+      
+    #ourserving  li{
+
+        display:inline-grid;
+        float: inline-start;
+        margin-left: 120px;
+        padding: 15px;
+        width: 22%;
+        font-size: 22px;
+       
+        
+    }
+
+    #ourserving  li p:nth-child(1) {
+        margin-left: 50px;
+    }
+  }
