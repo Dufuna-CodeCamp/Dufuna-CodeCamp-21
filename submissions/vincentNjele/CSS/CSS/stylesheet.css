@@ -389,6 +389,157 @@ a #signup {
         margin-left: 40px;
     }
 
+
+    #viewall {
+    
+        margin-right: 50px;
+    }
+
+    #viewall2 {
+
+        margin-right: 50px;
+        margin-top: -100px;
+    }
+
+    .kfclist li {
+    
+        font-size: 22px;
+       height: 180px;
+       width:22%;
+       display:flex;
+       flex-direction: column;
+        margin-bottom: 5px;
+        float: inline-start;
+        margin-left: 20px;
+        padding: 5px;
+        line-height: 0.5;
+       
+        
+    }
+
+    
+  .kfclist li img {
+      width: 350px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+  }
+
+  .kfclist li p{
+    width: 100px;
+    margin-top: 20px;
+  }
+
+  #kingbuckets {
+      width: 300px;
+      margin-top: -55px;
+      margin-bottom: 40px;
+      
+  }
+
+  #kingbucket {
+      margin-top: -30px;
+      width: 300px;
+      margin-bottom: 30px;
+  }
+   
+  #viewalldata {
+      margin-top: -90px;
+  }
+  #addtocarts {
+      margin-top: -20px;
+      width: 120px;
+  }
+
+  #addtocartsss {
+
+    width: 120px;
+  }
+
+  #addtocart {
+    margin-top: -15px; 
+    width: 120px;
+  }
+
+ 
+  #amounts {
+      margin-top: -50px;
+  }
+
+ 
+#kfcc {
+    margin-top: -42px;
+}
+
+#logos {
+    margin-top: 600px;
+}
+
+#kingbucketss {
+    width: 180px; 
+}
+ 
+#addtocartss {
+  
+    width: 120px;
+}
+
+#expressmeal {
+    margin-top: 70px;
+}
+#refuel {
+    margin-top: -70px;
+}
+
+#kingbucket2 {
+    margin-top: -35px;
+    width: 120px;
+}
+
+#addtocart2 {
+    width:120px;
+}
+
+#crunchy {
+    margin-top: 200px;
+}
+
+#kingbuckets2 {
+
+    margin-top: -35px;
+    width: 120px;
+}
+
+#addtocarts2 {
+    width: 120px;
+}
+
+#kingbucketss2 {
+    margin-top: -35px;
+    width: 120px;
+}
+
+#wings {
+    margin-top: 300px;
+}
+
+#kingbucketsss2 {
+    margin-top: -35px;
+    width: 140px;
+}
+
+#last {
+    color: rgb(172, 13, 13);
+    text-align: center;
+    margin-top: 500px;
+}
+
+#addtocartss2 {
+    width: 120px;
+}
+
+#addtocartsss2 {
+    width: 120px;
+}
 }
 
 
@@ -429,4 +580,9 @@ a #signup {
     #ourserving  li p:nth-child(1) {
         margin-left: 50px;
     }
+
+/*  For Vendors page   */
+
+
+
   }
