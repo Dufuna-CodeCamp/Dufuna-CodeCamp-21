@@ -3,6 +3,10 @@
     "tests": 3,
     "passes": 3,
     "failures": 0,
+<<<<<<< HEAD
     "owner": "willyThor"
+=======
+    "owner": "victoriaIdomeh"
+>>>>>>> b602c361f8c0fd6a0f80e46516ba1956f342d3e2
   }
 }
