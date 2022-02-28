@@ -332,10 +332,7 @@ a #signup {
     h2 {
         margin-left: 38px;
     }
-    #foodbagheader {
-
-        margin-left: 38px;
-    }
+    
 
     
 
@@ -361,13 +358,11 @@ a #signup {
         width: 268px;
         padding: 5px;
         font-size: 16px;
-        line-height: 1;
-        border: 1px;
+        line-height: 0.8;
         border-radius: 5px;
    
         background-repeat: no-repeat;
   
-        height: 34px;
         -webkit-appearance: none;
         background-position-x: 244px;
         height: 30px;
@@ -383,13 +378,7 @@ a #signup {
     
 
 
-    #foodbagheader {
-        
-        margin-left: -230px;
-    
-       
-      
-    }
+   
     
     #foodbagheader h1 {
         margin-left: -90px;
@@ -399,9 +388,7 @@ a #signup {
     header #foodbag {
         margin-left: 40px;
     }
-  
-    
-    
+
 }
 
 
