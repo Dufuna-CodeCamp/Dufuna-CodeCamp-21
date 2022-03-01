@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-26T15:26:21.988Z",
-    "end": "2022-02-26T15:26:23.984Z",
-    "duration": 1996,
+    "start": "2022-02-28T09:49:46.117Z",
+    "end": "2022-02-28T09:49:50.701Z",
+    "duration": 4584,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "78554925-4a44-44cc-99f1-17c04928661a",
+      "uuid": "4748d11b-60cf-43bc-a11b-41502851fce1",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,34 +27,34 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e0019daa-458a-43be-8fd4-55f3ead9c337",
-          "title": "Testing javascript conditionals",
-          "fullFile": "C:\\Users\\pezem\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
-          "file": "\\conditionals_test.js",
+          "uuid": "03f42d8c-64de-48f4-9be6-8d718ba5c136",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "/home/ubuntu/Documents/Dufuna-CodeCamp-21/tests/add_navigation_links/navigation_tasks.js",
+          "file": "/navigation_tasks.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1874,
+              "duration": 4513,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "30981695-4ab6-415e-8b98-bddff80e6563",
-              "parentUUID": "e0019daa-458a-43be-8fd4-55f3ead9c337",
+              "uuid": "6f7cdd5f-f566-4037-bd7a-86989912bf6d",
+              "parentUUID": "03f42d8c-64de-48f4-9be6-8d718ba5c136",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -63,42 +63,42 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
-              "uuid": "8a7ed500-1838-4eb2-880b-b518ccba4084",
-              "parentUUID": "e0019daa-458a-43be-8fd4-55f3ead9c337",
+              "uuid": "27515745-fea0-4491-8e86-ab83fb95d4df",
+              "parentUUID": "03f42d8c-64de-48f4-9be6-8d718ba5c136",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check conditionals",
-              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 113,
+              "duration": 61,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "b3045f25-f7cf-418f-9e76-433153ab7aae",
-              "parentUUID": "e0019daa-458a-43be-8fd4-55f3ead9c337",
+              "uuid": "4a563f1d-8140-4281-b111-cbdc98907064",
+              "parentUUID": "03f42d8c-64de-48f4-9be6-8d718ba5c136",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b3045f25-f7cf-418f-9e76-433153ab7aae"
+            "4a563f1d-8140-4281-b111-cbdc98907064"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 113,
+          "duration": 61,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -116,7 +116,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.1.4"
+      "version": "9.2.0"
     },
     "mochawesome": {
       "options": {
@@ -132,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/pezem/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportDir": "/home/ubuntu/Documents/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },

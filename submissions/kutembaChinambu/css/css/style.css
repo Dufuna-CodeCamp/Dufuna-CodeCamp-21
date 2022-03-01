@@ -1,7 +1,10 @@
 nav a[href*='/'] {
-    font-size: 25px;
     font-weight: bold;
     color: black
+}
+
+#ven {
+    font-size: 25px;
 }
 
 nav span {
@@ -33,6 +36,10 @@ a{
 .lowernav {
     float: left;
     padding-top: 60px;
+}
+
+.home {
+    color: gray;
 }
 
 .signup {
@@ -114,13 +121,15 @@ input[placeholder] {background-image:url("../FoodBag\ Task\ Images/keyboard_arro
     background-repeat:no-repeat;
     }
 
+
 .interest h4,
 p {
     line-height: 0.5px;
     padding: 1px;
 }
 
-.kfc li {
+.kfc li,
+.chickenrep li {
         display: inline-grid;
         padding: 20px 40px;
         margin-bottom: 5px;
@@ -129,21 +138,48 @@ p {
     
 }
 
-.chickenrep li {
-    display: inline-grid;
-    padding: 20px 40px;
-    margin-bottom: 5px;
-    background-color: #fff;
-    border-radius: 5px;
-
-}
-
 .cart {
     color: brown;
     border: solid;
     border-radius: 5px;
     border-color: brown;
     font-size: 15px;
+    padding: 10px;
+}
+
+.remove {
+    color: white;
+    background-color: grey;
+    border: solid;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 10px 10px 10px 30px;
+    
+}
+.kfc p,
+.chickenrep p {
+    line-height: 1.0px;
+}
+#rem {
+    position: absolute;
+    top: 525px;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#rem1 {
+    position: absolute;
+    top: 930px;
+    bottom: 0;
+    left: 810px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 .vendors {
@@ -162,9 +198,11 @@ p {
     padding-right: 10px;
 }
 
-.kfclogo a{
+.kfclogo a,
+.chickenreplogo a {
     float: right;
-    padding-right: 80px;
+    padding-right: 10px;
+    padding-bottom: 20px;
     color: brown;
 }
 
@@ -173,6 +211,48 @@ p {
     font-weight: bold;
 
 }
+
+.chickenrep {
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.naira {
+    color: green;
+    float: right;
+}
+
+.chickenreplogo li {
+    position: absolute;
+    top: 600px;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.chickenreplogo a {
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    color: brown;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 1340px;
+    right: 0;
+  }
+
+
 
 
 

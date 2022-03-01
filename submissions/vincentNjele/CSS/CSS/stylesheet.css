@@ -1,4 +1,5 @@
 
+
 header #foodbag {
     font-size: 30px;
     margin-left: 60px;
@@ -9,10 +10,7 @@ span {
 #home {
     color: rgb(109, 104, 104);
 }
-#cartsignuplogin {
 
-    margin-right: 290px;
-}
 
 #foodbagheaderhome {
 
@@ -116,17 +114,24 @@ h1 {
     padding: 10px;
     width:fit-content;
 }
-
+#cartsignuplogin {
+   float:right;
+   margin-top: -20px;
+   margin-right: 40px;
+   
+}
 
 #cartsignuplogin  p{
-    float: right;
+  
     display:inline;
-    margin-top: -38px;
+    margin-top: -48px;
     padding: 10px;
     font-size: 20px;
 
 
 }
+
+
 
 #cartsignuplogin  p a {
 
@@ -141,7 +146,7 @@ a #signup {
 }
 
 
-#cartsignuplogin p:nth-child(1) {
+#cartsignuplogin p:nth-child(3) {
 
     color:rgb(172, 13, 13);
     border:rgb(172, 13, 13) solid 1px;
@@ -272,3 +277,312 @@ a #signup {
  margin-top: 120px;
 }
 
+@media only screen and (min-width: 480px ) {
+
+    .interest li {
+        box-shadow: 1px 4px 8px 1px rgb(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    #ourserving li {
+        
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+    #ourserving img {
+        height: 140px;
+        
+    }
+
+    .interest img {
+        height: 100px;
+       
+    }
+    
+    .interest p {
+        margin-left: 15px;
+    }
+
+    #location {
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+
+
+    #form {
+        margin-top: 35px;
+        margin-left: 38px;
+    }
+    #ourserving h2 {
+       text-align: center;
+
+    }
+    h2 {
+        margin-left: 38px;
+    }
+    
+
+    
+
+    header #cartsignuplogin {
+        margin-left: 38px;
+    }
+
+    #contactus {
+        text-align: center;
+    }
+
+    #contactus li {
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #address {
+
+        background-image: url("../images/keyboard_arrow_down.svg");
+        width: 268px;
+        padding: 5px;
+        font-size: 16px;
+        line-height: 0.8;
+        border-radius: 5px;
+   
+        background-repeat: no-repeat;
+  
+        -webkit-appearance: none;
+        background-position-x: 244px;
+        height: 30px;
+        margin-top: 20px;
+        border: 2px solid rgb(146, 142, 142);
+        background-color: white
+    }
+
+    #contactus img {
+        
+        padding: 20px;
+    }
+    
+
+
+   
+    
+    #foodbagheader h1 {
+        margin-left: -90px;
+    }
+
+  
+    header #foodbag {
+        margin-left: 40px;
+    }
+
+
+    #viewall {
+    
+        margin-right: 50px;
+    }
+
+    #viewall2 {
+
+        margin-right: 50px;
+        margin-top: -100px;
+    }
+
+    .kfclist li {
+    
+        font-size: 22px;
+       height: 180px;
+       width:22%;
+       display:flex;
+       flex-direction: column;
+        margin-bottom: 5px;
+        float: inline-start;
+        margin-left: 20px;
+        padding: 5px;
+        line-height: 0.5;
+       
+        
+    }
+
+    
+  .kfclist li img {
+      width: 350px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+  }
+
+  .kfclist li p{
+    width: 100px;
+    margin-top: 20px;
+  }
+
+  #kingbuckets {
+      width: 300px;
+      margin-top: -55px;
+      margin-bottom: 40px;
+      
+  }
+
+  #kingbucket {
+      margin-top: -30px;
+      width: 300px;
+      margin-bottom: 30px;
+  }
+   
+  #viewalldata {
+      margin-top: -90px;
+  }
+  #addtocarts {
+      margin-top: -20px;
+      width: 120px;
+  }
+
+  #addtocartsss {
+
+    width: 120px;
+  }
+
+  #addtocart {
+    margin-top: -15px; 
+    width: 120px;
+  }
+
+ 
+  #amounts {
+      margin-top: -50px;
+  }
+
+ 
+#kfcc {
+    margin-top: -42px;
+}
+
+#logos {
+    margin-top: 600px;
+}
+
+#kingbucketss {
+    width: 180px; 
+}
+ 
+#addtocartss {
+  
+    width: 120px;
+}
+
+#expressmeal {
+    margin-top: 70px;
+}
+#refuel {
+    margin-top: -70px;
+}
+
+#kingbucket2 {
+    margin-top: -35px;
+    width: 120px;
+}
+
+#addtocart2 {
+    width:120px;
+}
+
+#crunchy {
+    margin-top: 200px;
+}
+
+#kingbuckets2 {
+
+    margin-top: -35px;
+    width: 120px;
+}
+
+#addtocarts2 {
+    width: 120px;
+}
+
+#kingbucketss2 {
+    margin-top: -35px;
+    width: 120px;
+}
+
+#wings {
+    margin-top: 300px;
+}
+
+#kingbucketsss2 {
+    margin-top: -35px;
+    width: 140px;
+}
+
+#last {
+    color: rgb(172, 13, 13);
+    text-align: center;
+    margin-top: 500px;
+}
+
+#addtocartss2 {
+    width: 120px;
+}
+
+#addtocartsss2 {
+    width: 120px;
+}
+}
+
+
+@media screen  and (min-width: 790px) {
+
+    .interest li {
+    
+        font-size: 22px;
+       height: 220px;
+       width:22%;
+       display:inline-grid;
+        margin-bottom: 5px;
+        float: inline-start;
+        padding: 1px;
+        box-shadow: 1px 4px 8px 1px rgb(0,0,0,0.2);
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+        line-height: 0.5;
+        
+    }
+
+    .interest p {
+      margin-top: 5px;
+    }
+      
+    #ourserving  li{
+
+        display:inline-grid;
+        float: inline-start;
+        margin-left: 120px;
+        padding: 15px;
+        width: 22%;
+        font-size: 22px;
+       
+        
+    }
+
+    #ourserving  li p:nth-child(1) {
+        margin-left: 50px;
+    }
+
+/*  For Vendors page   */
+
+
+
+  }
