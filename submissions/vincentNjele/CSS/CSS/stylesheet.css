@@ -1,0 +1,274 @@
+
+header #foodbag {
+    font-size: 30px;
+    margin-left: 60px;
+}
+span {
+    color:rgb(172, 13, 13);
+}
+#home {
+    color: rgb(109, 104, 104);
+}
+#cartsignuplogin {
+
+    margin-right: 290px;
+}
+
+#foodbagheaderhome {
+
+    margin-left: 60px;
+}
+#spans {
+    color: black;
+}
+#foodbag {
+
+    font-weight: bold;
+}
+
+#interest #logo p h2{
+
+   margin-left: 20px;
+}
+
+h1 {
+    margin-left: 60px;
+}
+#kfc {
+
+    margin-left: 120px;
+    margin-top: -38px;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+#addtocart {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocarts {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartss {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartsss {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+
+
+
+#addtocart2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocarts2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartss2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+#addtocartsss2 {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+    text-align: center;
+    padding: 10px;
+    width:fit-content;
+}
+
+
+#cartsignuplogin  p{
+    float: right;
+    display:inline;
+    margin-top: -38px;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+
+#cartsignuplogin  p a {
+
+    text-decoration: none;
+    color:black;
+
+}
+
+a #signup {
+    
+    color:rgb(172, 13, 13);
+}
+
+
+#cartsignuplogin p:nth-child(1) {
+
+    color:rgb(172, 13, 13);
+    border:rgb(172, 13, 13) solid 1px;
+}
+#foodbagheader {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#form {
+    margin-top: 5px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 25px;
+}
+#address {
+    margin-top: 5px;
+    width: 40%;
+    height: 25px;
+    border: grey solid 1px;
+    background-color: white;
+}
+
+
+.kfclist li {
+    
+    font-size: 22px;
+   height: 180px;
+   width:22%;
+   display:inline-grid;
+    margin-bottom: 5px;
+    float: inline-start;
+    margin-left: 20px;
+    padding: 5px;
+    line-height: 0.5;
+    
+}
+
+.kfclist li:nth-child(1){
+    margin-left: 10px;
+}
+
+#kingbucket {
+    color: black;
+
+}
+#amount {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amounts {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amountss {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+
+#amountsss {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+
+
+
+
+
+#amount2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amounts2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+#amountss2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+
+#amountsss2 {
+    margin-left: 208px;
+    margin-top: -33px;
+    color:green;
+}
+
+#viewall {
+    float:right;
+    color: rgb(172, 13, 13);
+    margin-top: -113px;
+    margin-right: 292px;
+}
+#viewall2 {
+    float:right;
+    color: rgb(172, 13, 13);
+    margin-top: -113px;
+    margin-right: 292px;
+}
+#logos {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#logo {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+#kfcc {
+    margin-left: 100px;
+    margin-top: -38px;
+    margin-bottom: 80px;
+    font-weight: bold;
+
+}
+
+#ourserving {
+ margin-top: 120px;
+}
+

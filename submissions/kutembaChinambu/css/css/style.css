@@ -1,0 +1,178 @@
+nav a[href*='/'] {
+    font-size: 25px;
+    font-weight: bold;
+    color: black
+}
+
+nav span {
+    color: brown;
+}
+
+nav ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+    nav{
+        padding: 25px 35px;
+    }
+    nav li {
+        display: inline;
+        padding: 8px;
+        float: right;
+    }
+}
+
+.lowernav {
+    float: left;
+    padding-top: 60px;
+}
+
+.signup {
+    border: solid;
+    border-radius: 5px;
+    border-color: brown;
+    color: brown;
+    font-size: 15px;
+}
+
+a:visited {
+    color: gray;
+}
+
+.tagline {
+    text-align: center;
+    padding: 50px;
+}
+
+.interest li {
+    display: inline-grid;
+    padding: 20px 60px;
+    margin-bottom: 5px;
+    border: 1px solid #addBe6;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.interest h4 {
+    color: brown;
+}
+
+.interest h3 {
+    padding: 10px 40px;
+}
+
+.serve {
+    text-align: center;
+    padding: 50px;
+}
+
+.serve li {
+    display: inline-grid;
+    padding: 50px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.contactus {
+    padding: 10px;
+    text-align: center;
+    line-height: 2px;
+}
+
+.contactus img {
+    padding: 2px 15px;
+}
+
+footer span {
+    float: right;
+}
+
+footer p {
+    padding: 70px;
+}
+#location {
+    width: 1330px;
+    height: 30px;
+}
+.form {
+    padding: 40px;
+}
+
+input[placeholder] {background-image:url("../FoodBag\ Task\ Images/keyboard_arrow_down.svg");
+    background-size: 40px 30px;
+    background-position:right;
+    padding:10px;
+    background-repeat:no-repeat;
+    }
+
+.interest h4,
+p {
+    line-height: 0.5px;
+    padding: 1px;
+}
+
+.kfc li {
+        display: inline-grid;
+        padding: 20px 40px;
+        margin-bottom: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+    
+}
+
+.chickenrep li {
+    display: inline-grid;
+    padding: 20px 40px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.cart {
+    color: brown;
+    border: solid;
+    border-radius: 5px;
+    border-color: brown;
+    font-size: 15px;
+}
+
+.vendors {
+    position: absolute;
+    padding: 50px;
+}
+
+.kfclogo li {
+    position: absolute;
+    top: 250px;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.kfclogo a{
+    float: right;
+    padding-right: 80px;
+    color: brown;
+}
+
+.kfc {
+    padding-top:  190px;
+    font-weight: bold;
+
+}
+
+
+
