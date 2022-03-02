@@ -282,7 +282,7 @@ footer .bottom {
   .vendor-container > .viewbtn.mdbtn {
     display: block;
     width: 70px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 0;
   }
 }
 
