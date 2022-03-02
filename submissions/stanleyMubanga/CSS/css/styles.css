@@ -244,13 +244,13 @@ section.interest ul li.interest-card {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0px 0px 5px #A5A5A5;
+    box-shadow: 0 0 5px #A5A5A5;
     transition: .6s;
 }
 
 section.interest ul li.interest-card:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 8px #4E4D4D;
+    box-shadow: 0 0 8px #4E4D4D;
     transform: scale(1.07);
 }
 
