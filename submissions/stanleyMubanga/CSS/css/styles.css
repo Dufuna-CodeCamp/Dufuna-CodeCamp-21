@@ -324,58 +324,53 @@ section.serve-description ul li.serve-description-card p {
     color: var(--themegray--);
 }
 
-.footer {
+.contact-us {
     width: 100%;
-    height: 30%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer .contact-us {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer .contact-us h3 {
+.contact-us h3 {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.footer .contact-us ul.contact-links {
+.contact-us ul.contact-links {
     width: 100%;
-    height: 60%;
+    height: 30%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer .contact-us ul.contact-links li {
+.contact-us ul.contact-links li {
     padding: 2%;
 }
 
-.footer .bottom-footer {
+footer {
+    margin-top: 5em;
     padding: 0 2%;
     width: 100%;
-    height:40%;
+    height: 30%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.footer .bottom-footer .tsandCs {
+footer .tsandCs {
     width: 50%;
     height: 100%;
     display: flex;
 }
 
-.footer .bottom-footer .tsandCs a {
+footer .tsandCs a {
     color: var(--themegray--);
     font-size: medium;
 }
 
-.footer .bottom-footer .copyright {
+footer .copyright {
     color: var(--themegray--);
     font-size: medium;
 }
