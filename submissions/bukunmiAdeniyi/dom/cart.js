@@ -14,6 +14,7 @@ const domChanges = function () {
             menuParent.style.cursor = `pointer`;
             menuParent.onclick = () => location.href = "../html/vendor.html";
             span.textContent = "";
+            
         } else {
             menuImg.textContent = menuValue
             .replace(".svg", "")
