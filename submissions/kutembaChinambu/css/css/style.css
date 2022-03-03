@@ -427,7 +427,7 @@ p {
         font-weight: bold;
         padding-right: 10px;
     }
-    
+
     .dot {
         height: 7px;
         width: 7px;
@@ -532,6 +532,18 @@ p {
         padding-bottom: 20px;
         color: brown;
     }
+
+    #rem1 {
+        position: absolute;
+        top: 928px;
+        bottom: 0;
+        left: 808px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
 }
 
 
