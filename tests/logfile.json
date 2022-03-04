@@ -5,6 +5,180 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "owner": "willyThor"
-     }
+    "start": "2022-03-03T22:15:40.280Z",
+    "end": "2022-03-03T22:18:40.978Z",
+    "duration": 180698,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "f1079db7-79b2-4745-9e3a-8e1c1bb672c9",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bd6773fe-81b0-401e-8367-db2943adb59c",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\user\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "file": "\\dom.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
+              "timedOut": true,
+              "duration": 180008,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Documents\\GitHub\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (node:internal/timers:557:17)\n    at processTimers (node:internal/timers:500:7)",
+                "diff": null
+              },
+              "uuid": "d1aa63b1-fb45-4fa4-91a0-3a3e281ea38b",
+              "parentUUID": "bd6773fe-81b0-401e-8367-db2943adb59c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "616f4d1e-1252-4ae6-b8d7-48d3f2609a45",
+              "parentUUID": "bd6773fe-81b0-401e-8367-db2943adb59c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check dropdown",
+              "fullTitle": "Testing Scholars Project test case: check dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
+              "err": {},
+              "uuid": "8bd253e8-7319-4bf5-836f-580b6b05dc94",
+              "parentUUID": "bd6773fe-81b0-401e-8367-db2943adb59c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "err": {},
+              "uuid": "d6718ebd-2834-43bb-9b29-c27d173557fa",
+              "parentUUID": "bd6773fe-81b0-401e-8367-db2943adb59c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "err": {},
+              "uuid": "a5518245-eee2-4cac-99f1-29124d7689ac",
+              "parentUUID": "bd6773fe-81b0-401e-8367-db2943adb59c",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "8bd253e8-7319-4bf5-836f-580b6b05dc94",
+            "d6718ebd-2834-43bb-9b29-c27d173557fa",
+            "a5518245-eee2-4cac-99f1-29124d7689ac"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/user/Documents/GitHub/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.0.1"
+    }
+  }
 }
