@@ -3,35 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d363fb0010.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/vendor.css">
+    
 
     <title>FoodBag</title>
 </head>
 <body>
     <header>
-        <div class="headers">
+        <nav class="headers">
             <div class="headers-logo">
                <h2>FoodBag</h2>
             
             </div>
             <div class="headers-menu-logo">
                 <ul class="headers-menu">
-                    <li class="headers-list">
-                        Cart
+                    <li class="headers-list"><a href="#">Cart <span class = "headers-cart"></span> </a>                 
                     </li>
                     <li class="headers-list">
-                        Login
+                      <a href="#">Login</a>  
                     </li>
-                    <div class="headers-list">
-                        <button class="Sign-up"> Sign up</button>
-                    </div>
+                    <li class="headers-list"><a href="#"> <button class="Sign-up"> Sign up</button></a>
+                        
+                    </li>
                 </ul>
 
             </div>
-        </div>
+        </nav>
         <nav class="navbar">
             <div class="nav-header">
               <p>Home ></p>
@@ -48,9 +47,7 @@
           <div class="kfc-logo">
               <img src="image/KFC logo.png.crdownload" alt="">
               <p>KFC</p>
-              <div class="vendor-all">
-                <p>View all</p>
-              </div>
+              
           </div>
         </div>
         
@@ -103,6 +100,9 @@
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
+            <div class="vendor-all">
+                <p>View all</p>
+              </div>
             
         </div>
     </header>
@@ -110,9 +110,7 @@
     <div class="kfc-logo">
         <img src="image/kfc-image2.svg" alt="">
         <p>Chicken Republic</p>
-        <div class="vendor-all">
-            <p>View all</p>
-          </div>
+        
     </div>
       </div>
   
@@ -165,7 +163,10 @@
               <button class="add-to-cart">Add to Cart</button>
           </div>
       </div>
+      <div class="vendor-all">
+        <p>View all</p>
+      </div>
  </div>
- 
+ <script src="../dom/vendor.js" async  ></script>
 </body>
 </html>

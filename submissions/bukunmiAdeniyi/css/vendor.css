@@ -3,8 +3,11 @@
 
 body {font-family: Poppins;
     margin: 50px 80px 88px 80px
+    width: 80%;
 }
-
+header{
+    
+}
 .headers {background-color: #fff;
     height: 83px;
     width 90%;
@@ -140,6 +143,32 @@ body {font-family: Poppins;
       margin-bottom: 5px;
   }
 
+  .headers-cart {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color:red;
+    border-radius: 70%;
+    color:#fff;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+  /* .headers-cart{
+    position: absolute;
+    bottom:1.2rem;
+    left:3.4rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: red;
+    color:#fff;
+    text-align: center;
+    display: none;
+  } */
+
 .add-to-cart {
     width: 140px;
     height: 40px;
@@ -149,8 +178,12 @@ body {font-family: Poppins;
     border-radius: 4px;
     font-size: 16px;
     color: #ad4c4c;
+    padding-bottom: 5px;
     padding-bottom: 10px;
     margin-bottom: 5px;
+   }
+   button.add-to-cart{
+    padding-bottom: 5px;
    }
    .image-menu{
     
@@ -161,15 +194,18 @@ body {font-family: Poppins;
 }
    .vendor-all {
        display: flex;
-       justify-content: flex-end;
-       width: 100%;
+       justify-content: center;
        flex-direction: row;
        padding-bottom: 5px;
        padding-top: 0.6px;  
         
    }
+   div.vendor-all{
+     width: 112px;
+   }
    .vendor-all p {
        font-family: Poppins;
+       width: 112px;
        font-size: 16px;
        font-weight: 500;
        font-style: normal;
@@ -225,9 +261,7 @@ hr {
 }
 
 @media (max-width: 400px) and (min-width: 304px) {
-    *{
-        
-    }
+    
 
     body{
       display: flex;

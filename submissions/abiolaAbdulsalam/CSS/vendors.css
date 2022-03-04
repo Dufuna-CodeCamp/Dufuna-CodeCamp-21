@@ -1,0 +1,142 @@
+*{margin:0;
+    padding:0;
+    box-sizing: border-box;}
+
+html{font-size: 20px;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: 50px;
+   
+}
+span{color:#ad4c4c}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom
+    : 90px;
+}
+
+ header div{ 
+    font-weight: 500px;
+     font-size: 20px; 
+    line-height: 30px;
+    color: black;
+}
+
+nav a{margin-right: 50px;
+font-size: 16px;
+text-decoration: none;
+line-height: 24px;
+color:#696969;
+}
+
+nav a:last-child{
+    color: #ad4c4c;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    padding:8px;
+}
+
+#breadcrumbs li{
+    display: inline;
+}
+
+#breadcrumbs a{ 
+    text-decoration: none;
+    font-size: 14px;
+}
+#breadcrumbs li+li:before{
+    content: ">";
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+    font-size: 14px;
+    color: #c9c9c9;
+}
+#home a{
+    color: #c9c9c9;
+}
+#vendors a{
+    color: black;
+}
+
+#all-vendors h1{
+    margin: 33px 0 40px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#kfc_header, #cr-header{
+     align-items: center;
+     display:flex;
+}
+
+#kfc_header img, #cr-header img{
+    margin-right: 20px;
+}
+.view{
+    display:flex;
+    align-items: center;
+}
+
+.view p:last-child{
+    color: #ad4c4c;
+    font-size: 16px;
+}
+
+#kview p:last-child{
+    margin-left: 1040px;
+}
+
+#kfc-items ul, #cr-items ul{
+    margin-top:25px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    font-size: 16px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.price p:last-child{
+    color:#5ea304;
+    margin-right: 10px;
+    
+}
+button{
+background: #FFFFFF;
+border: 1px solid #AD4C4C;
+box-sizing: border-box;
+border-radius: 3px;
+color: #AD4C4C;
+padding:8px 20px;
+font-weight: 500;
+font-family: inherit;
+font-size: 16px;
+}
+#KFC{
+    margin-bottom: 60px;
+}
+
+#chicken-republic{
+    margin-bottom: 110px;
+}
+
+#line{ 
+    width:1220px;
+    border-top: 1px solid #f2f2f2;
+    margin-bottom: 60px;
+}
+
+#cview p:last-child{
+    margin-left: 900px;
+}
