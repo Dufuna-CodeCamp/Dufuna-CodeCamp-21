@@ -24,9 +24,15 @@
                 <h2>FoodBag</h2>
                 <p>Anything food, we have you covered.</p>
             </div>
-            <div class="location-pointer">
+            <div class="location">
                 <label for="address">Where are you?</label>
-                <input type="text" placeholder="Enter your delivery address">
+                <input list="address" type="text" placeholder="enter your address">
+                <datalist id="address">
+                    <select>
+                    <option value="Makeni Market"></option>
+                        <option value="Kabwata Market"></option>
+                        </select>
+                </datalist>
             </div>
             <div class="pick-interest">
                 <h3>Pick an interest</h3>
@@ -91,5 +97,6 @@
             </div>
         </footer>
     </div>
+    <script src="/home/jay/Documents/GitHub/Dufuna-CodeCamp-21/submissions/promiseChilufya/DOM/dom.js"></script>
 </body>
 </html>
