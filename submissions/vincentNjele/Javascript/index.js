@@ -22,8 +22,8 @@ var productList = [
     }
 
 ]
-//document.write(productList[0].productName)
-let para = document.getElementsByTagName("h1");
+
+
 for(var i =0; i<productList.length; i++) {
    
     
