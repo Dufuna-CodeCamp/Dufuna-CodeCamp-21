@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--setting page title-->
+        <title>Contact Form Page</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../html/product.html"><h3>Product</h3></a>
+                <a href="contact-form.html"><h3>Contact Form</h3></a>
+            </nav>  
+        </header>
+
+        <!--Displaying contact form heading-->
+        <h1>Product Contact Form</h1>
+
+        <!--creating a form that uses the post method and the default enctype. No action as yet-->
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <!--grouping form elements together-->
+            <fieldset>
+                <!--group caption for form elements-->
+                <legend>Contact Form</legend>
+
+            <!--label and fullname textfield-->
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname"><br><br>
+
+            <!--label and textfield for email-->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="mail@mailer.com"><br><br>
+
+            <!--label and textfield for subject-->
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject"><br><br>
+
+            <!--label and textarea for message-->
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="40" rows="15"></textarea><br>
+
+            <!--submit button-->
+            <button type="submit">Submit</button>
+            </fieldset>
+
+        </form>
+        <!--adding page footer-->
+        <footer>
+            <p>
+                <ul>
+                    <li><a href="https://www.twitter .com">Twitter</a></li>
+                    <li><a href="https://www.linkedIn.com">LinkedIn</a></li>
+                    <li><a href="https://www.medium.com">Medium</a></li>
+                </ul>
+            </p>
+            <p>&copy; 2022 We care Pharmacy </p>
+        </footer>
+    </body>
+</html>
