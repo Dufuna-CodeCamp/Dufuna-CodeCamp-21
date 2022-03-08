@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    background-color: #ffffff;
+    box-sizing: content-box;
+    flex-direction: row;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 20px 0px 60px 0px;
+  }
+.header{
+  padding: 5px;
+  margin-bottom: 100px;
+  
+}
+
+.nav-1 ul {
+  margin: 0px;
+  font-size: small;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  float: right;
+  justify-content: space-around;
+  padding: 0px 10px;
+  
+}
+
+.nav-1 ul a{
+  text-decoration: none;
+  color:#696969;
+  padding:5px;
+  margin: 0px 10px;
+}
+
+.nav-1 ul button {
+  border: 1px solid #AD4C4C;
+  border-radius: 5px;;
+  padding:10px;
+}
+
+.nav-1 button a{
+  color:#AD4C4C
+}
+.title p{
+  float:left;
+}
+
+.b-red{
+  color: #AD4C4C; 
+}
+.fb {
+  text-align: center;
+  padding: 30px;
+  margin: 10px 0px;
+    
+}
+.fb h2{
+   font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #4E4D4D;
+}
+
+.fb p{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
+}
+
+.location{
+  margin: 20px 0px;
+}
+
+.location h3{
+  color: #000000;
+  padding: 10px 0px;
+  }
+
+.location select{
+  width: 100%; 
+  padding:5px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #696969;
+}
+
+.pick-interest{
+  margin: 20px 0px;
+}
+
+.pick-interest h3{
+  padding: 10px 0px;
+  color: #000000;
+}
+.group-interest{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*gap: 10px;*/
+  }
+
+.fastfood,.veg-fruit, .drink-cock, .Restaurant{
+  margin:10px;
+  padding:10px;
+  border: 1px solid #C4C4C4;
+  border-radius:  5px;
+  
+}
+
+.fastfood h4,.veg-fruit h4, .drink-cock h4, .Restaurant h4 {
+  color: #696969;
+  font-size: small;
+}
+
+.fastfood p,.veg-fruit p, .drink-cock p, .Restaurant p {
+  color: #696969;
+  font-size: small;
+}
+
+.fastfood img,.veg-fruit img, .drink-cock img, .Restaurant img {
+  color: #696969;
+  font-size: small;
+  padding:10px;
+}
+
+.service{
+  margin: 40px 0px;
+}
+
+.service h3{
+  padding: 10px 0px;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+}
+
+.serve{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*gap:10px;*/
+}
+
+.serve-where, .serve-want, .serve-run{
+  margin:10px;
+  padding:10px;
+  text-align: center;
+}
+
+.serve-where h4, .serve-want h4, .serve-run h4 {
+  color: #696969;
+  padding: 10px 5px
+}
+
+.serve-where p, .serve-want p, .serve-run p {
+  color: #696969;
+  font-size: medium;
+  padding: 5px 40px 
+}
+
+.serve-run img,.serve-want img, .serve-where img {
+  padding:10px;
+  
+}
+hr{
+  margin: 40px 0px;
+}
+.footer1{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#term{
+  float: left;
+}
+
+#copy{
+  float:right;
+}
