@@ -123,7 +123,7 @@ a {
     left: 100px;
     top: 610px;
     background: #ffffff;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .fast-food {
@@ -165,7 +165,7 @@ a {
     left: 415px;
     top: 610px;
     background: #ffffff;
-    box-shadow: 0px 0px 3px 0.1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 0.1px rgba(0, 0, 0, 0.1);
 }
 
 .vegetables {
@@ -208,7 +208,7 @@ a {
     left: 730px;
     top: 610px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .Drinks {
@@ -251,7 +251,7 @@ a {
     left: 1045px;
     top: 610px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .Resturants{
@@ -305,7 +305,7 @@ h3{
     left: 200px;
     top: 1080px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .delivery {
@@ -337,7 +337,7 @@ h3{
     left: 600px;
     top: 1080px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .browse {
@@ -369,7 +369,7 @@ h3{
     left: 1000px;
     top: 1080px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .running {
