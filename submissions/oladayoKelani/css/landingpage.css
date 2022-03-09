@@ -11,39 +11,42 @@
     padding: 20px;
     margin: 20px 0px 60px 0px;
   }
-.header{
-  padding: 5px;
-  margin-bottom: 100px;
-  
+
+  .navbar{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 
-.nav-1 ul {
-  margin: 0px;
-  font-size: small;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  float: right;
-  justify-content: space-around;
-  padding: 0px 10px;
-  
+.navbar h5{
+    font-size: 19px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.nav-1 ul a{
-  text-decoration: none;
-  color:#696969;
-  padding:5px;
-  margin: 0px 10px;
+.navbar span{
+    color: #AD4C4C;
 }
 
-.nav-1 ul button {
-  border: 1px solid #AD4C4C;
-  border-radius: 5px;;
-  padding:10px;
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
 }
 
-.nav-1 button a{
-  color:#AD4C4C
+.navbar a{
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px;
+    color: #696969;
+    text-transform: capitalize;
+}
+
+.navbar .signup-btn{
+    color: #AD4C4C;
+    border: 2px solid #AD4C4C;
+    border-radius: 5px;
 }
 .title p{
   font-size: 18px;
@@ -192,24 +195,19 @@ hr{
   float:right;
 }
 
-
-@media screen and (max-width:480px){
-
-  .header{
-    padding: 5px;
-    margin-bottom: 70px;
-    
-  }
-  
-
+/*
+@media screen and (min-width:480px){
   .fb {
     text-align: left;
     padding: 0px;
     margin: 0px 0px;
-    font-size: small;
-      
+    font-size: small; 
   }
   
+  .navbar{
+    margin-bottom: 40px;;
+  }
+
   .pick-interest{
     margin: 20px 0px;
   }
@@ -219,7 +217,7 @@ hr{
     color: #000000;
   }
   .group-interest{
-    display: inline-block;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -260,7 +258,7 @@ hr{
   }
   
   .serve{
-    display: inline-block;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -309,19 +307,18 @@ hr{
     color: #696969;
     font-weight: 400;
     text-align: center;
-    margin: 20px;
-  }
+    }
   
   #copy{
     color: #696969;
     font-weight: 400;
     text-align: center;
-    margin: 20px;
+    
   }
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:760px){
    .pick-interest{
     margin: 20px 0px;
   }
@@ -330,12 +327,8 @@ hr{
     padding: 10px 0px;
     color: #000000;
   }
-  .group-interest{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  
-  .fastfood,.veg-fruit, .drink-cock, .Restaurant{
+ 
+   .fastfood,.veg-fruit, .drink-cock, .Restaurant{
     margin:5px;
     padding:10px;
     border: 1px solid #C4C4C4;
@@ -370,11 +363,7 @@ hr{
     font-size: 20px;
   }
   
-  .serve{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*gap:10px;*/
-  }
+  
   
   .serve-where, .serve-want, .serve-run{
     margin:10px;
