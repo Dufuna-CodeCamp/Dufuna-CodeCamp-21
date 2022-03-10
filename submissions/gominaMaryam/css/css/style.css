@@ -1,261 +1,383 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-	font-family: "Poppins", sans-serif;
-	width: 90%;
-	margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header {
-	padding-block: 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo {
-	font-size: 20px;
-	font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 header .logo span {
-	color: #ad4c4c;
+  color: #ad4c4c;
 }
 
 nav ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-items {
-	margin-left: 40px;
+  margin-left: 40px;
 }
 
 .nav-items a {
-	color: black;
+  color: black;
 }
 
 .nav-items a:hover {
-	color: #ad4c4c;
+  color: #ad4c4c;
 }
 
 .nav-items .signup {
-	border: 1px solid #ad4c4c;
-	color: #ad4c4c;
-	padding: 5px 10px;
-	border-radius: 5px;
+  border: 1px solid #ad4c4c;
+  color: #ad4c4c;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .hero {
-	text-align: center;
-	padding-top: 100px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .hero h2 {
-	color: #4e4d4d;
-	font-size: 40px;
-	font-weight: 600;
+  color: #4e4d4d;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .hero p {
-	color: #696969;
+  color: #696969;
 }
 
 .sub-head {
-	font-weight: 500;
-	font-size: 20px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 form {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 form select {
-	width: 100%;
-	padding: 10px;
-	margin-block: 10px;
-	border-radius: 5px;
-	font-size: 18px;
-	color: #4e4d4d;
-	outline: none;
+  width: 100%;
+  padding: 10px;
+  margin-block: 10px;
+  appearance: none;
+  background: url("../images/keyboard_arrow_down.svg") no-repeat;
+  background-position: 99%;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #4e4d4d;
+  outline: none;
 }
 
 .service-container {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 .services {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .service-item {
-	box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-	width: 295px;
-	height: 169px;
-	padding: 20px;
-	margin-top: 10px;
+  box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+  width: 295px;
+  height: 169px;
+  padding: 20px;
+  margin-top: 10px;
 }
 
 .service-title {
-	color: #ad4c4c;
-	font-size: 16px;
-	font-weight: 500;
+  color: #ad4c4c;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .about-service {
-	margin-block: 50px;
-	padding-block: 50px;
-	border-top: 1px solid #f2f2f2;
-	border-bottom: 1px solid #f2f2f2;
+  margin-block: 50px;
+  padding-block: 50px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .about-service > h3 {
-	font-size: 30px;
-	font-weight: 600;
-	text-align: center;
-	padding: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
 }
 
 .about-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	text-align: center;
-	gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
 }
 
 .about-box {
-	width: 295px;
+  width: 295px;
 }
 
 .about-text {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 .about-text h4 {
-	color: #696969;
-	font-size: 23px;
-	font-weight: 500;
+  color: #696969;
+  font-size: 23px;
+  font-weight: 500;
 }
 
 .about-text p {
-	padding-top: 8px;
-	font-size: 17px;
-	color: #a5a5a5;
+  padding-top: 8px;
+  font-size: 17px;
+  color: #a5a5a5;
 }
 
 footer {
-	padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .contact {
-	text-align: center;
+  text-align: center;
 }
 
 .contact > p {
-	color: #696969;
-	padding-bottom: 20px;
+  color: #696969;
+  padding-bottom: 20px;
 }
 
 .contact-icons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 footer .bottom {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 40px;
-	color: #696969;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  color: #696969;
 }
 
+/* styles for vendors page */
+.nav {
+  font-size: 14px;
+  padding-top: 40px;
+}
+
+.nav span {
+  color: #c9c9c9;
+}
+
+.all-vendors {
+  font-size: 26px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+.vendor-container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.vendor-container:last-of-type {
+  border-top: 1px solid #e6e6e6;
+  padding-bottom: 100px;
+}
+
+.vendor-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.viewbtn {
+  background-color: white;
+  color: #ad4c4c;
+  font-size: 16px;
+  border: none;
+}
+
+.viewbtn.mdbtn {
+  display: none;
+}
+
+.vendor-head {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.vendor-head p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.vendor-content {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.vendor-content img {
+  width: 100%;
+}
+
+.vendor-text {
+  display: flex;
+  padding-inline: 3px;
+  margin-top: 5px;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.vendor-text h5 {
+  color: #4e4d4d;
+}
+
+.vendor-text p {
+  color: #5ea304;
+}
+
+.vendor-content button {
+  color: #ad4c4c;
+  font-weight: 500;
+  border: 1px solid #ad4c4c;
+  padding: 8px 15px;
+  background: white;
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+/* responsiveness */
 @media screen and (max-width: 500px) {
-	.nav-items {
-		font-size: 12px;
-	}
+  .nav-items {
+    font-size: 12px;
+  }
 
-	.hero {
-		text-align: start;
-		padding-top: 50px;
-	}
+  .hero {
+    text-align: start;
+    padding-top: 50px;
+  }
 
-	form {
-		margin-top: 30px;
-	}
+  form {
+    margin-top: 30px;
+  }
 
-	.sub-head {
-		font-size: 15px;
-	}
+  .sub-head {
+    font-size: 15px;
+  }
 
-	form select {
-		font-size: 14px;
-		font-weight: 500;
-	}
+  form select {
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-	.service-item {
-		width: 100%;
-		height: auto;
-		padding-block: 30px;
-	}
+  .service-item {
+    width: 100%;
+    height: auto;
+    padding-block: 30px;
+  }
 
-	.service-item img {
-		width: 40px;
-	}
+  .service-item img {
+    width: 40px;
+  }
 
-	.about-service {
-		margin-block: 30px;
-		padding-block: 20px;
-	}
-	.about-service > h3 {
-		font-size: 20px;
-		padding: 20px;
-	}
+  .about-service {
+    margin-block: 30px;
+    padding-block: 20px;
+  }
+  .about-service > h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
 
-	.about-container {
-		justify-content: center;
-	}
+  .about-container {
+    justify-content: center;
+  }
 
-	.about-text h4 {
-		font-size: 17px;
-	}
-	.about-text p {
-		font-size: 12px;
-	}
+  .about-text h4 {
+    font-size: 17px;
+  }
+  .about-text p {
+    font-size: 12px;
+  }
 
-    footer{
-        padding-bottom: 50px;
-    }
+  footer {
+    padding-bottom: 50px;
+  }
 
-    .contact p{
-        font-size: 20px;
-        font-weight: 600;
-    }
+  .contact p {
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-    footer .bottom{
-flex-direction: column;
-text-align: center;
-gap: 20px;
-    }
+  footer .bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  
+  /* styles for vendors page */
+  .vendor-bar > button {
+    display: none;
+  }
+
+  .vendor-box {
+    width: 100%;
+  }
+
+  .vendor-container {
+    padding-bottom: 10px;
+  }
+
+  .vendor-container:last-of-type{
+	  padding-bottom: 40px;
+  }
+
+  .vendor-container > .viewbtn.mdbtn {
+    display: block;
+    width: 70px;
+    margin-top: 40px;
+    margin-inline: auto;
+  }
 }
