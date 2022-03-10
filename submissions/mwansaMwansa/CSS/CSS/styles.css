@@ -319,7 +319,7 @@ b {
 .horizontalrule {
     position: absolute;
     width: 1240px;
-    height: 0px;
+    height: 0;
     left: 100px;
     top: 705px;
     border: 1px solid #E6E6E6;
