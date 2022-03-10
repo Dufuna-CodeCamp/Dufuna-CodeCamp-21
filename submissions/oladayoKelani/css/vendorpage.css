@@ -116,7 +116,7 @@ hr{
 .item{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 30px 0;
+    margin: 30px 0px;
     gap: 20px;
 }
 .item img{
