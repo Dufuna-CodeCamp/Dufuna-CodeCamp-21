@@ -6,4 +6,3 @@ function convertUnits($var){
   $fahrenheit = ($var * 1.8) + 32;
 }
 
-convertUnits($fahrenheit);
