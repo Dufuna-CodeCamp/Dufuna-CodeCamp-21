@@ -22,7 +22,6 @@ CREATE TABLE trips (
     number_of_parents_children_aboard INT NOT NULL,
     number_of_siblings_spouses_aboard INT NOT NULL,
     point_of_embarkation VARCHAR(250) NOT NULL,
-    accident_occured BOOLEAN NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)
 );
