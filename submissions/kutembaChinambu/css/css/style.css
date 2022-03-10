@@ -1,7 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-right: 20px;
+
+}
+
+
 nav a[href*='/'] {
-    font-size: 25px;
     font-weight: bold;
     color: black
+}
+
+#ven {
+    font-size: 25px;
 }
 
 nav span {
@@ -19,20 +33,29 @@ a{
     text-decoration: none;
 }
 
-@media screen and (min-width: 640px) {
-    nav{
-        padding: 25px 35px;
-    }
-    nav li {
-        display: inline;
-        padding: 8px;
-        float: right;
-    }
+nav{
+    padding: 15px 40px;
+}
+
+nav li {
+    display: inline;
+    padding: 8px;
+    float: right;
+    font-size: 15px;
+}
+
+.tagline {
+    text-align: left;
+    padding: 30px 10px 10px 40px;
 }
 
 .lowernav {
     float: left;
     padding-top: 60px;
+}
+
+.home {
+    color: gray;
 }
 
 .signup {
@@ -46,15 +69,9 @@ a{
 a:visited {
     color: gray;
 }
-
-.tagline {
-    text-align: center;
-    padding: 50px;
-}
-
 .interest li {
-    display: inline-grid;
-    padding: 20px 60px;
+    display: grid;
+    padding: 5px 0 5px 40px;
     margin-bottom: 5px;
     border: 1px solid #addBe6;
     background-color: #fff;
@@ -67,19 +84,21 @@ a:visited {
 
 .interest h3 {
     padding: 10px 40px;
+    white-space: nowrap;
 }
 
 .serve {
     text-align: center;
-    padding: 50px;
+    padding: 5px;
 }
 
 .serve li {
-    display: inline-grid;
-    padding: 50px;
+    display: grid;
+    padding: 5px;
     margin-bottom: 5px;
     background-color: #fff;
     border-radius: 5px;
+    justify-items: center;
 }
 
 .contactus {
@@ -92,19 +111,28 @@ a:visited {
     padding: 2px 15px;
 }
 
-footer span {
-    float: right;
-}
 
 footer p {
-    padding: 70px;
+    padding: 30px 10px;
+    text-align: center;
+    white-space: nowrap;
 }
+
+.terms li {
+    text-align: center;
+    list-style-type: none;
+    white-space: nowrap;
+
+
+}
+
 #location {
-    width: 1330px;
-    height: 30px;
+    width: 100%;
+    height: 40px;
 }
+
 .form {
-    padding: 40px;
+    padding: 20px 20px 20px 40px;
 }
 
 input[placeholder] {background-image:url("../FoodBag\ Task\ Images/keyboard_arrow_down.svg");
@@ -114,13 +142,16 @@ input[placeholder] {background-image:url("../FoodBag\ Task\ Images/keyboard_arro
     background-repeat:no-repeat;
     }
 
+
 .interest h4,
 p {
     line-height: 0.5px;
     padding: 1px;
+    white-space: nowrap;
 }
 
-.kfc li {
+.kfc li,
+.chickenrep li {
         display: inline-grid;
         padding: 20px 40px;
         margin-bottom: 5px;
@@ -129,21 +160,48 @@ p {
     
 }
 
-.chickenrep li {
-    display: inline-grid;
-    padding: 20px 40px;
-    margin-bottom: 5px;
-    background-color: #fff;
-    border-radius: 5px;
-
-}
-
 .cart {
     color: brown;
     border: solid;
     border-radius: 5px;
     border-color: brown;
     font-size: 15px;
+    padding: 10px;
+}
+
+.remove {
+    color: white;
+    background-color: grey;
+    border: solid;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 10px 10px 10px 30px;
+    
+}
+.kfc p,
+.chickenrep p {
+    line-height: 1.0px;
+}
+#rem {
+    position: absolute;
+    top: 475px;
+    bottom: 0;
+    left: 88px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#rem1 {
+    position: absolute;
+    top: 2285px;
+    bottom: 0;
+    left: 80px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 .vendors {
@@ -152,8 +210,56 @@ p {
 }
 
 .kfclogo li {
+    display: grid;
     position: absolute;
-    top: 250px;
+    top: 200px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.kfclogo a {
+    position: absolute;
+    top: 1180px;
+    bottom: 0;
+    left: 115px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    color: brown;
+}
+.chickenreplogo a {
+    position: absolute;
+    top: 1200px;
+    bottom: 0;
+    left: 100px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    color: brown;
+    float: right;
+  }
+
+.kfc {
+    padding: 170px 5px 5px;
+    font-weight: bold;
+
+}
+
+.chickenrep {
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.naira {
+    color: green;
+    float: right;
+}
+
+.chickenreplogo li {
+    position: absolute;
+    top: 1450px;
     bottom: 0;
     left: 90px;
     right: 0;
@@ -161,18 +267,288 @@ p {
     font-weight: bold;
     padding-right: 10px;
 }
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+  }
 
-.kfclogo a{
-    float: right;
-    padding-right: 80px;
-    color: brown;
+  @media screen and (min-width: 600px) {
+    nav{
+        padding: 25px 35px;
+    }
+    
+    nav li {
+        display: inline;
+        padding: 8px;
+        float: right;
+        font-size: 15px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+    }
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tagline {
+        font-size: 20px;
+        text-align: center;
+    } 
+    #rem {
+        position: absolute;
+        top: 495px;
+        bottom: 0;
+        left: 88px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+    #rem1 {
+        position: absolute;
+        top: 2305px;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .dot {
+        height: 7px;
+        width: 7px;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        top: 27px;
+        bottom: 0;
+        left: 403px;
+        right: 0;
+      }
+
 }
 
-.kfc {
-    padding-top:  190px;
-    font-weight: bold;
+@media screen and (min-width: 768px) {
+    nav{
+        padding: 25px 35px;
+    }
+    
+    nav li {
+        display: inline;
+        padding: 8px;
+        float: right;
+        font-size: 20px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+
+
+    }
+    .tagline {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .terms li {
+        text-align: center;
+        list-style-type: none;
+        white-space: nowrap;
+    }
+
+    .kfcvendor,
+    .chickvendor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .chickenreplogo li {
+        position: absolute;
+        top: 900px;
+        bottom: 0;
+        left: 90px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    #rem1 {
+        position: absolute;
+        top: 1478px;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .chickenreplogo a {
+        position: absolute;
+        top: 700px;
+        bottom: 0;
+        left: 300px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        color: brown;
+    
+    }
+    .kfclogo a {
+        position: absolute;
+        top: 650px;
+        bottom: 0;
+        left: 300px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        color: brown;
+    }
+
+    #rem {
+        position: absolute;
+        top: 495px;
+        bottom: 0;
+        left: 88px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .dot {
+        height: 7px;
+        width: 7px;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 560px;
+        right: 0;
+      }
 
 }
+
+@media screen and (min-width: 992px) {
+    nav{
+        padding: 25px 35px;
+    }
+    
+    nav li {
+        display: inline;
+        padding: 8px;
+        float: right;
+        font-size: 15px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+
+    }
+
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tagline {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .terms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        padding: 70px 20px 50px;
+        justify-content: space-around;
+
+    }
+    .kfcvendor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .chickvendor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .dot {
+        height: 7px;
+        width: 7px;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        top: 27px;
+        bottom: 0;
+        left: 1330px;
+        right: 0;
+      }
+
+      .chickenreplogo li {
+        position: absolute;
+        top: 630px;
+        bottom: 0;
+        left: 90px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .chickenreplogo a {
+        position: absolute;
+        top: 60px;
+        bottom: 0;
+        left: 1250px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        color: brown;
+    
+    }
+
+    .kfclogo a {
+        position: absolute;
+        top: 60px;
+        bottom: 0;
+        left: 1300px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        color: brown;
+    }
+
+    #rem1 {
+        position: absolute;
+        top: 928px;
+        bottom: 0;
+        left: 808px;
+        right: 0;
+        list-style-type: none;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+}
+
+
+
+
 
 
 
