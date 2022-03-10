@@ -126,9 +126,8 @@ hr{
     display:flex;
     list-style-type: none;
     justify-content: space-between; 
-  display:flex;
-  padding:10px 0px;
-  width: inherit;   
+    padding:10px 0px;
+    width: inherit;   
 }
 .amount{
     display: flex;
