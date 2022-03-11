@@ -43,7 +43,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
+              "code": "driver.quit();",
               "err": {},
               "uuid": "bd4e1f86-5045-43fc-961c-062f7d6ffb76",
               "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
@@ -51,10 +51,10 @@
               "skipped": false
             }
           ],
-          "afterHooks": [
+          "tests": [
             {
-              "title": "\"after all\" hook in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -63,15 +63,13 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
               "uuid": "848237e4-60bc-48d6-ab12-ae7d93a04178",
               "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
               "isHook": true,
               "skipped": false
-            }
-          ],
-          "tests": [
+            },
             {
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
@@ -105,7 +103,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(\n  fullname,\n  \"full name\",\n  `Ensure \"Full Name\" label is present`\n);",
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
               "uuid": "5deb77e2-143a-415d-98ff-0fa57634270f",
               "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
@@ -118,12 +116,12 @@
               "timedOut": false,
               "duration": 34,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
               "uuid": "4add2809-bbfc-4a3f-aebf-ce9b3437291c",
               "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
@@ -131,8 +129,8 @@
               "skipped": false
             },
             {
-              "title": "test case: Subject label is present",
-              "fullTitle": "Testing Form Task test case: Subject label is present",
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
               "timedOut": false,
               "duration": 31,
               "state": "passed",
@@ -141,7 +139,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.include(subject, \"subject\", `Ensure \"Subject\" label is present`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
               "uuid": "af88c2fe-d1af-4847-9fde-d0fe5e5af605",
               "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
@@ -149,17 +147,17 @@
               "skipped": false
             },
             {
-              "title": "test case: Message label is present",
-              "fullTitle": "Testing Form Task test case: Message label is present",
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
               "timedOut": false,
               "duration": 30,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.include(message, \"message\", `Ensure \"Message\" label is present`);",
+              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
               "err": {},
               "uuid": "664922dc-c51c-435b-b9a0-ad1051f74f08",
               "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
