@@ -11,6 +11,7 @@ let locationSelector = document.querySelector('select');
 
 locationSelector.onchange = HandleFunction;
 
+
 function HandleFunction() {
 
     if(locationSelector.length>0) {

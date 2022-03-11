@@ -3,6 +3,7 @@
 header #foodbag {
     font-size: 30px;
     margin-left: 60px;
+    padding-bottom: 10px;
 }
 span {
     color:rgb(172, 13, 13);
@@ -15,10 +16,18 @@ span {
 #foodbagheaderhome {
 
     margin-left: 60px;
+    margin-top: 10px;
 }
 #spans {
     color: black;
 }
+
+#remove {
+    height:50px;
+    width: 50px;
+    margin-top: -5px;
+}
+
 #foodbag {
 
     font-weight: bold;
@@ -116,21 +125,34 @@ h1 {
 }
 #cartsignuplogin {
    float:right;
-   margin-top: -20px;
+   margin-top: -38px;
    margin-right: 40px;
    
 }
 
+
 #cartsignuplogin  p{
   
     display:inline;
-    margin-top: -48px;
-    padding: 10px;
+    margin-top: -38px;
+    padding: 5px;
+    padding-left: 10px;
+    
     font-size: 20px;
 
 
 }
 
+#notiImage {
+    height: 15px;
+    width: 15px;
+}
+
+#cartimage {
+    visibility: hidden;
+    margin-left: 320px;
+    margin-top: -41px;
+}
 
 
 #cartsignuplogin  p a {
@@ -472,8 +494,42 @@ a #signup {
   #addtocart {
     margin-top: -15px; 
     width: 120px;
+    height: 45px;
+    cursor: pointer;
+
   }
 
+  #removeadd {
+      visibility: hidden;
+      cursor: pointer;
+      color: white;
+      background-color: grey;
+      margin-top: -60px;
+      width: 140px;
+      height: 40px;
+      display: inline-grid;
+  }
+  #removeadd2 {
+    visibility: hidden;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    margin-top: -60px;
+    width: 143px;
+    border: none;
+    height: 40px;
+    display: inline-grid;
+   
+}
+  #removeitem {
+      margin-top: -80px;
+      margin-left: 50px;
+  }
+
+  #removeitem2 {
+    margin-top: -20px;
+    margin-left: 50px;
+}
  
   #amounts {
       margin-top: -50px;
@@ -555,6 +611,7 @@ a #signup {
 
 #addtocartss2 {
     width: 120px;
+    cursor: pointer;
 }
 
   #addtocartsss2 {
@@ -585,8 +642,6 @@ a #signup {
 
 
 }
-
-
 
 @media screen  and (min-width: 790px) {
 
