@@ -1,3 +1,4 @@
+/* ................................general stying............... */
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body{
     padding-right: 50px;
 }
 
+/* ................................general stying end............... */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -18,7 +20,7 @@ body{
 }
 
 .navbar h5{
-    font-size: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     font-weight: 500;
     font-style: normal;
@@ -35,8 +37,8 @@ body{
 
 .navbar a{
     text-decoration: none;
-    font-size: 16px;
-    padding: 15px;
+    font-size: 14px;
+    padding: 10px;
     color: #696969;
     text-transform: capitalize;
 }
@@ -58,23 +60,24 @@ body{
     color: black;
 }
 
-.vendor{
-    padding-top: 20px;
-}
-
-.vendor h6{
-    font-size: 30px;
-    font-weight: 500;
-}
-
 .kfc-section{
     padding-bottom: 50px;
     border-bottom: 1px solid #F2F2F2;
 }
 
+.vendor{
+    padding-top: 20px;
+}
+
+.vendor h6{
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .kfc,
 .chicken-republic{
     display: flex;
+    flex-direction: column;
     margin-top: 15px;
     justify-content: space-between;
 }
@@ -87,49 +90,123 @@ body{
 .kfc-img p,
 .chicken-republic-img p{
     padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.view{
+    display: none;
 }
 
 .view-all p{
     color: #AD4C4C;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.kfc-item{
+.kfc-item,
+.chickens-republic{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-top: 20px;
 }
 
+.kfc-item img,
+.chickens-republic img{
+    width: 100%;
+}
+
 .kfc-item .price,
-.chicken-republic .price{
+.chickens-republic .price{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
     color: #4E4D4D;
+    padding-top: 12px;
     padding-bottom: 15px;
     padding-left: 6px;
 }
 
 .kfc-item .price span,
-.chicken-republic .price span{
+.chickens-republic .price span{
     color:  #5EA304;
 }
 
 .kfc-item a,
-.chicken-republic a{
+.chickens-republic a{
     color: #AD4C4C;
     font-size: 16px;
     font-weight: 500;
     border: 1px solid #AD4C4C;
     border-radius: 3px;
     background-color: white;
-    padding: 5px;
+    padding: 8px 15px;
     text-decoration: none;
     margin-left: 6px;
 }
 
 .chicken-republic-section{
     padding: 50px 0;
+}
+
+.kfc-item-box,
+.chickens-republic-box{
+    margin-bottom: 25px;
+}
+
+
+/* ...................................media query................... */
+@media screen and (min-width:992px){
+    .navbar h5{
+        font-size: 20px;
+    }
+    .navbar a{
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .vendor h6{
+        font-size: 30px;
+    }
+
+    .kfc-item,
+    .chickens-republic{
+        flex-direction: row;
+    }
+    
+    .kfc-item-box,
+    .chickens-republic-box{
+        margin-bottom: 0;
+    }
+
+    .view-all p{
+        display: none;
+    }
+
+    .view p{
+        color: #AD4C4C;
+        font-weight: bold;
+    }
+
+    .kfc,
+    .chicken-republic{
+        flex-direction: row;
+    }
+
+    .kfc-img p,
+    .chicken-republic-img p{
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+}
+
+
+    
+
 }
 
 
