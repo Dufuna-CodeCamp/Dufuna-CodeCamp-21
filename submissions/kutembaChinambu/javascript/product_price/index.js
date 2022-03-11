@@ -1,3 +1,4 @@
+//declaring an array that stores product objects
 let productList = [
      {
         "productName" : "Boom Paste",
@@ -17,7 +18,7 @@ let productList = [
         "productPrice": "ZMW 10.00"
     }
 ];
-
+//creatig a loop to loop through all product objects in the array and print out a string that picks out the contained values
 for (let i = 0 ; i < productList.length ; i++) {
 
     document.write(productList[i].productName + " "+ "with" + " " +productList[i].imageUrl + " " +"is sold for" +" "+ productList[i].productPrice + "<br>");
