@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     outline: unset;
     list-style: none;
@@ -8,12 +8,12 @@
     appearance: none;
 }
 
-:root{
+:root {
     --theme--: #AD4C4C;
+    --themegreen--: #5EA304;
     --themegray--: #696969;
     --themedarkgray--: #4E4D4D;
-    --themeborder--: #C4C4C4:
-    --themefaint--: #A5A5A5;
+    --themeborder--: #C4C4C4: --themefaint--: #A5A5A5;
 }
 
 html {
@@ -24,6 +24,27 @@ html {
 
 h2 {
     font-weight: 500;
+}
+
+a.border-btn {
+    color: var(--theme--);
+    border: 2.5px solid #AD4C4C;
+    border-radius: 4px;
+    transition: .6s;
+}
+
+a.border-btn:hover {
+    color: white;
+    /* border:2.5px solid; */
+    border-radius: 4px;
+    background-color: var(--theme--);
+}
+
+a.page-links {
+    padding: 5.5%;
+    text-decoration: unset;
+    color: #696969;
+    font-size: medium;
 }
 
 body {
@@ -37,8 +58,8 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     overflow-y: auto;
 }
 
@@ -64,7 +85,6 @@ header.top-header .logo {
 /* ##################################################
     Here are the styles for the logo in the header 
     #################################################*/
-
 
 header.top-header .logo h2 {
     display: flex;
@@ -95,14 +115,14 @@ header.top-header nav.nav {
     align-items: center;
 }
 
-header.top-header nav.nav  ul {
+header.top-header nav.nav ul {
     height: 100%;
     width: 46%;
     /* background-color: aqua; */
     display: inline-flex;
 }
 
-header.top-header nav.nav  ul li {
+header.top-header nav.nav ul li {
     width: 33.33%;
     height: 100%;
     display: flex;
@@ -110,18 +130,26 @@ header.top-header nav.nav  ul li {
     align-items: center;
 }
 
-header.top-header nav.nav  ul li a.page-links {
+header.top-header nav.nav ul li a.page-links {
     padding: 5.5%;
     text-decoration: unset;
     color: #696969;
-    
 }
 
-header.top-header nav.nav  ul li a.C {
+header.top-header nav.nav ul li a.C {
     color: var(--theme--);
-    border:2.5px solid;
+    border: 2.5px solid #AD4C4C;
     border-radius: 4px;
+    transition: .6s;
 }
+
+header.top-header nav.nav ul li a.C:hover {
+    color: white;
+    /* border:2.5px solid; */
+    border-radius: 4px;
+    background-color: var(--theme--);
+}
+
 
 /* ##################################################
     Here are the styles for the hero section
@@ -176,8 +204,7 @@ section.location {
 section.location form {
     width: 85%;
     height: 100%;
-} 
-
+}
 
 section.location form section {
     width: 100%;
@@ -226,7 +253,6 @@ section.interest .interest-header {
     align-items: center;
 }
 
-
 section.interest ul {
     width: 86%;
     height: 86%;
@@ -244,21 +270,21 @@ section.interest ul li.interest-card {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 0 5px #A5A5A5;
+    box-shadow: 0px 0px 5px #A5A5A5;
     transition: .6s;
 }
 
 section.interest ul li.interest-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 8px #4E4D4D;
+    box-shadow: 0px 0px 8px #4E4D4D;
     transform: scale(1.07);
 }
 
-
 section.interest ul li.interest-card h3 {
     color: var(--theme--);
-    height: 10%;width: 100%;
-    padding: 3% 0;
+    height: 10%;
+    width: 100%;
+    padding: 3% 0px;
 }
 
 section.interest ul li.interest-card p {
@@ -283,7 +309,6 @@ section.serve-description {
     justify-content: center;
     align-items: center;
 }
-
 
 section.serve-description h2.description-header {
     width: 100%;
@@ -349,9 +374,16 @@ section.serve-description ul li.serve-description-card p {
     padding: 2%;
 }
 
+.contact-us ul.contact-links li a:hover img {
+    transform: scale(1.4);
+    transition: .4s ease-in-out;
+}
+
+
+
 footer {
     margin-top: 5em;
-    padding: 0 2%;
+    padding: 0px 2%;
     width: 100%;
     height: 30%;
     display: flex;
@@ -373,4 +405,157 @@ footer .tsandCs a {
 footer .copyright {
     color: var(--themegray--);
     font-size: medium;
+}
+
+.path {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.path .path-content {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.path .path-content .home-dir {
+    padding: 0 1% 0 0;
+    color: black;
+}
+
+.path .path-content .followup-dir {
+    padding: 0 0 0 1%;
+    color: var(--themegray--);
+}
+
+.vendor-header {
+    padding: 0 5.8%;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+section.vendor {
+    padding: 0 5.7%;
+    margin-top: 10px;
+    width: 100%;
+    height: 60%;
+}
+
+section.vendor-B {
+    margin-top: 5em;
+}
+
+.v-nav {
+    width: 100%;
+    height: 15%;
+}
+
+.v-nav nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.v-nav nav .v-nav-cont {
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+
+.v-nav-cont .vendor-image {
+    padding: 0 1.2%;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.vendor-image img {
+    width: 70%;
+}
+
+.v-nav-cont .vendor-name {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.v-nav nav .v-nav-link {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.v-nav nav .v-nav-link a {
+    color: var(--theme--);
+}
+
+
+.v-nav nav .v-nav-link a:hover {
+    text-decoration: underline;
+}
+
+.vendor .v-products {
+    width: 100%;
+    height: 85%;
+}
+
+.v-products ul {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+
+.v-products ul li {
+    padding: 2%;
+    width: 25%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.v-products ul li a.product {
+    width: 100%;
+    height: 100%;
+}
+
+.product .product-details {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #5EA304; */
+}
+
+.product .product-details h3 {
+    font-size: medium;
+    color: var(--themedarkgray--);
+}
+
+.product .product-details h2 {
+    font-size: medium;
+    color: var(--themegreen--);
+}
+
+.add-to-cart {
+    width: 100%;
+    height: 20%;
+}
+
+.add-to-cart .btn-to-cart {
+    padding: 4% 14%;
+    width: 50%;
 }
