@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+    dufuna_tasks
     "tests": 18,
     "passes": 18,
     "pending": 0,
@@ -10,6 +11,16 @@
     "duration": 1809,
     "testsRegistered": 18,
     "passPercent": 100,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-11T12:08:19.240Z",
+    "end": "2022-03-11T12:08:23.152Z",
+    "duration": 3912,
+    "testsRegistered": 5,
+    "passPercent": 80,
+     master
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +29,10 @@
   },
   "results": [
     {
+   dufuna_tasks
       "uuid": "e6552d6e-a6d0-45f8-b331-32dca32bd33f",
+
+      "uuid": "233fc8cc-1f17-46cf-b591-c2f3af1b6b05", master
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,6 +41,7 @@
       "tests": [],
       "suites": [
         {
+       dufuna_tasks
           "uuid": "3a339632-e72d-4ca8-baea-73dba3d16b85",
           "title": "Testing Scholars Project",
           "fullFile": "/home/hp/Desktop/Dufuna-CodeCamp-21/tests/landing_page/landing_page.js",
@@ -57,6 +72,17 @@
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 0,
+          "uuid": "58da4950-7320-4fc0-ae12-d104c710bd20",
+          "title": "Testing Form Task",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
+          "file": "\\html_form.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "timedOut": false,
+              "duration": 3,
+               master
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +91,13 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+       dufuna_tasks
               "uuid": "0b7d9aeb-7cb2-4730-98ec-98c4ba43b779",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
+
+              "uuid": "bd4e1f86-5045-43fc-961c-062f7d6ffb76",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+       master
               "isHook": true,
               "skipped": false
             }
@@ -76,15 +107,22 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
+               dufuna_tasks
               "duration": 85,
               "state": "passed",
               "speed": "slow",
               "pass": true,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+               master
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
+               dufuna_tasks
               "uuid": "9417798f-960f-412c-87c7-e61d915d67ae",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
               "isHook": false,
@@ -105,28 +143,69 @@
               "err": {},
               "uuid": "e0168f40-4540-41b3-8d4d-0b0ae9672368",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
+
+              "uuid": "848237e4-60bc-48d6-ab12-ae7d93a04178",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert 4 input fields are present",
+              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "timedOut": false,
+              "duration": 3697,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const input = await driver.findElements(By.css(\"input\"));\nconst size = input.length;\nassert.equal(\n  size,\n  4,\n  `Ensure you have all the input fields in the order stated in the task criteria`\n);",
+              "err": {
+                "message": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 3 to equal 4",
+                "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 3 to equal 4\n    at Context.<anonymous> (html_form.js:22:12)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": "- 3\n+ 4\n"
+              },
+              "uuid": "35ef1823-e962-41c4-bee5-b4ace10dc408",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+                master
               "isHook": false,
               "skipped": false
             },
             {
+              dufuna_tasks
               "title": "test case: FoodBag text is present on the page",
               "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
               "timedOut": false,
               "duration": 50,
               "state": "passed",
               "speed": "medium",
+
+              "title": "test case: Full Name label is present",
+              "fullTitle": "Testing Form Task test case: Full Name label is present",
+              "timedOut": false,
+              "duration": 95,
+              "state": "passed",
+              "speed": "slow",
+              master
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
+               dufuna_tasks
               "uuid": "af6c7d32-7f1a-47b1-8212-a2081609284d",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
+
+              "uuid": "5deb77e2-143a-415d-98ff-0fa57634270f",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+               master
               "isHook": false,
               "skipped": false
             },
             {
+               dufuna_tasks
               "title": "test case: check Login",
               "fullTitle": "Testing Scholars Project test case: check Login",
               "timedOut": false,
@@ -151,18 +230,32 @@
               "duration": 54,
               "state": "passed",
               "speed": "medium",
+
+              "title": "test case: Email label is present",
+              "fullTitle": "Testing Form Task test case: Email label is present",
+              "timedOut": false,
+              "duration": 34,
+              "state": "passed",
+              "speed": "slow",
+               master
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
+              dufuna_tasks
               "uuid": "4e52c7f5-645d-4d62-ba8b-8db9022e0541",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
+
+              "uuid": "4add2809-bbfc-4a3f-aebf-ce9b3437291c",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+              master
               "isHook": false,
               "skipped": false
             },
             {
+              dufuna_tasks
               "title": "test case: check Sign up",
               "fullTitle": "Testing Scholars Project test case: check Sign up",
               "timedOut": false,
@@ -345,6 +438,10 @@
             {
               "title": "test case: check placeholder",
               "fullTitle": "Testing Scholars Project test case: check placeholder",
+
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+               master
               "timedOut": false,
               "duration": 31,
               "state": "passed",
@@ -353,14 +450,22 @@
               "fail": false,
               "pending": false,
               "context": null,
+               dufuna_tasks
               "code": "const element = await driver.findElement(By.css('input')).getAttribute('placeholder');\nassert.equal(element, \"Enter your delivery address\", `Ensure you have the placeholder as seen in the mock-up`);",
               "err": {},
               "uuid": "e8f8bc82-ffb2-418f-abbc-5cbf535a6461",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
+
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {},
+              "uuid": "af88c2fe-d1af-4847-9fde-d0fe5e5af605",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+               master
               "isHook": false,
               "skipped": false
             },
             {
+              dufuna_tasks
               "title": "test case: check label of input-field",
               "fullTitle": "Testing Scholars Project test case: check label of input-field",
               "timedOut": false,
@@ -385,20 +490,36 @@
               "duration": 16,
               "state": "passed",
               "speed": "fast",
+
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 30,
+              "state": "passed",
+              "speed": "slow",
+               master
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
+              dufuna_tasks
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
               "uuid": "28a6eccc-813b-45ad-8cb8-27b4a6991acc",
               "parentUUID": "3a339632-e72d-4ca8-baea-73dba3d16b85",
+
+              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
+              "err": {},
+              "uuid": "664922dc-c51c-435b-b9a0-ad1051f74f08",
+              "parentUUID": "58da4950-7320-4fc0-ae12-d104c710bd20",
+               master
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+            dufuna_tasks
             "9417798f-960f-412c-87c7-e61d915d67ae",
             "e0168f40-4540-41b3-8d4d-0b0ae9672368",
             "af6c7d32-7f1a-47b1-8212-a2081609284d",
@@ -422,6 +543,19 @@
           "pending": [],
           "skipped": [],
           "duration": 779,
+
+            "5deb77e2-143a-415d-98ff-0fa57634270f",
+            "4add2809-bbfc-4a3f-aebf-ce9b3437291c",
+            "af88c2fe-d1af-4847-9fde-d0fe5e5af605",
+            "664922dc-c51c-435b-b9a0-ad1051f74f08"
+          ],
+          "failures": [
+            "35ef1823-e962-41c4-bee5-b4ace10dc408"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3887,
+           master
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -439,7 +573,11 @@
   ],
   "meta": {
     "mocha": {
+ dufuna_tasks
       "version": "9.2.1"
+
+      "version": "9.2.0"
+ master
     },
     "mochawesome": {
       "options": {
@@ -455,7 +593,11 @@
     },
     "marge": {
       "options": {
+        dufuna_tasks
         "reportDir": "/home/hp/Desktop/Dufuna-CodeCamp-21/tests/landing_page/../..//tests/",
+
+        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        master
         "reportFilename": "logfile",
         "quiet": "true"
       },
