@@ -29,10 +29,8 @@ CREATE TABLE trips (
 /* Create accidents table */
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
-    trip_id INT NOT NULL,
     passenger_id INT NOT NULL,
     passenger_survived BOOLEAN NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (trip_id) REFERENCES trips (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)
 );
