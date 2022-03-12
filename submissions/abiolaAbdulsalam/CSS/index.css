@@ -2,35 +2,41 @@
     padding:0;
     box-sizing: border-box;}
 
-html{font-size: 20px;}
+html{font-size: 12px;}
 
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin: 30px 20px 0px 20px;
+    /* margin-top: 30px; */
+    text-align: left;
    
 }
 span{color:#ad4c4c}
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
     align-items: center;
+    width:100%
 }
 
  header div{ 
     font-weight: 500px;
-     font-size: 20px; 
-    line-height: 30px;
+    font-size: 16px; 
+    line-height: 24px;
     color: black;
+    margin-right: 85px;
+
 }
 
-nav a{margin-right: 50px;
-font-size: 16px;
-text-decoration: none;
-line-height: 24px;
-color:#696969;
+nav a{
+    margin-right: 20px; 
+    font-size: 10px;
+    text-decoration: none;
+    line-height: 15px;
+    color:#696969;
+    text-align: right;
 }
 
 nav a:last-child{
@@ -38,6 +44,172 @@ nav a:last-child{
     border: 1px solid #ad4c4c;
     border-radius: 5px;
     padding:8px;
+    margin-right: 0 ;
+}
+
+#motto{ 
+       text-align: left;
+       margin-top: 55px;
+}
+#motto h1{
+    color: #4e4d4d;
+    font-weight: 600px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#motto p{
+    color: #696969;
+    line-height: 18px;
+}
+
+#location p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+#address{
+        width: 100%;
+        height: 3rem;
+        padding:0.9375rem;
+        color: #696969;
+        border: 0.0625rem solid #C4C4C4;
+        border-radius: 5px; 
+}
+
+    select{
+        background: url(Assets/keyboard_arrow_down.svg) no-repeat 98%;
+        appearance: none;
+    }
+
+#interest{
+    margin-top: 30px;
+    margin-bottom:30px;
+   
+}
+ #first{
+    font-weight: 500;
+}
+
+#interest ul{margin-top: 10px;
+display: flex;
+flex-direction: column;
+gap: 20px;}
+
+#interest li{
+    width: 100%;
+    height:160px;
+    list-style: none;
+    padding: 30px;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);}
+
+.interest p:nth-of-type(1){
+    font-weight: 500;
+    color: #a5a5a5;
+    font-size: 16px;
+    line-height: 24px;}
+
+.interest p:nth-of-type(2) {
+font-size: 14px;
+line-height: 21px;
+color: #a5a5a5;
+margin-top: 5px;}
+
+#line{ 
+    width: 100%;
+    border-top: 1px solid #f2f2f2;
+  }
+  #service {
+    width: 100%;
+    text-align: center; 
+    align-items: center;
+
+}
+
+#service h2{ 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600px;
+    color:#4e4d4d;
+    font-size: 20px;
+}
+
+#service ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+#service h3{ 
+    margin-top: 30px;
+    color: #696969;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#service p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #a5a5a5;
+    font-weight: 400;
+
+}
+#contacts p{
+    margin-top: 30px;
+    text-align: center;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+#contacts ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+
+}
+
+#copyright{
+    margin-top: 35px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    text-align: center;
+    color:#696969;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+@media (min-width:600px){
+
+    html{font-size: 20px;}
+
+body{
+    margin-left: 50px;
+    margin-top: 50px;  
+}
+
+
+ header div{ 
+    font-weight: 500px;
+    font-size: 20px; 
+    line-height: 30px;
+}
+
+nav a{margin-right: 50px;
+font-size: 16px;
+line-height: 24px;
 }
 
 #motto{ 
@@ -45,23 +217,18 @@ nav a:last-child{
        margin-top: 150px;
 }
 #motto h1{
-    color: #4e4d4d;
-    font-weight: 600px;
     line-height: 60px;
     font-size: 40px;
     margin-bottom: 5px;
 }
 
-#motto p{color: #696969;}
-
 #location p{
     margin-top: 80px;
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
 #address{
-        width: 1200px;
+        width: 100%;
         height: 3rem;
         padding:0.9375rem;
         color: #696969;
@@ -77,101 +244,99 @@ nav a:last-child{
 
 #interest{
     margin-top: 42px;
-    width:1220px;
+    width:100%;
     margin-bottom:80px;
    
 }
- #first{
-    font-weight: 500;
-    
-}
-#interest ul{margin-top: 20px;
-display: flex;
-gap: 20px;}
 
-#interest li{
-    
-    height:160px;
-    list-style: none;
-    padding: 30px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);}
+#interest ul{margin-top: 20px;
+}
 
 .interest p:nth-of-type(1){
-    font-weight: 500;
-    color: #a5a5a5;
 font-size: 18px;
 line-height: 27px;}
 
-.interest p:nth-of-type(2) {
-font-size: 14px;
-line-height: 21px;
-color: #a5a5a5;
-margin-top: 5px;}
-
-#line{ 
-    width:1220px;
-    border-top: 1px solid #f2f2f2;
-  }
 
 #service h2{ 
     margin-top: 80px;
     margin-bottom: 80px;
-    font-weight: 600px;
     align-items: center;
     text-align: center;
-    color:#4e4d4d;
+    font-size: 30px ;
 }
 
-#service ul{
-    display: flex;
-    list-style: none;
-    text-align: center;
-    gap: 160px;
-    
-}
 #service h3{ 
     margin-top: 45px;
-    color: #696969;
     font-size: 25px;
-    font-weight: 500;
 }
-#service li{
-    width: 300px;
 
-}
 #service p{
     margin-top: 15px;
     font-size: 20px;
-    color: #a5a5a5;
-    font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
 }
 #contacts p{
-    margin-top: 80px;
-    text-align: center;
-    color: #696969;
+    margin-top: 50px;
     font-size: 18px;
-    font-weight: 500px;
 }
 
 #contacts ul{
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 30px;
-
+    
 }
 
 #copyright{
     margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+
+    body{
+    margin-left: 100px;
+}
+
+#interest ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#interest li{
+    
+    height:160px;
+    overflow: hidden;
+}
+
+#service ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+}
+ 
+#service p{
+        margin-bottom: 80px;
+
+}
+#contacts p{
+    margin-top: 80px;  
+}
+
+#contacts ul{
+        gap: 30px;
+}
+
+#copyright{
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 130px;
-    color:#696969;
-    font-size: 18px;
-    font-weight: 400;
 
 }
 #copyright p:last-child{margin-right: 30px;}
+
+}
