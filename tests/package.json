@@ -8,10 +8,14 @@
     "mochawesome": "^7.1.2",
     "phantomcss": "^1.6.0",
     "phantomjs-prebuilt": "^2.1.16",
+<<<<<<< HEAD
     "selenium-webdriver": "^4.1.1"
   },
   "scripts": {
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start"
+=======
+    "selenium-webdriver": "^4.1.0"
+>>>>>>> 9fe4acbadeabe3ea65c63bbc02108a9212394113
   }
 }
