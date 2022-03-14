@@ -1,7 +1,7 @@
 body {
     box-sizing: border-box;
     padding: 100px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 50px;
     margin: 0;
     font-family: "Poppins";
@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    padding: 20px 0px 30px 0px;
+    padding: 20px 0 30px 0px;
 }
 
 .nav{
@@ -49,7 +49,7 @@ header {
 
 /* Hero */
 .hero {
-    padding: 70px 0px;
+    padding: 70px 0;
 }
 
 .hero-brand {
@@ -104,7 +104,7 @@ label {
 .card {
     width: 21%;
     padding: 25px 15px 20px 20px; 
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -118,7 +118,7 @@ label {
     font-size: 14px;
     color: #696969;
     font-weight: 400;
-    line-height: 0px;
+    line-height: 0;
 }
 
 /* About */
@@ -172,7 +172,7 @@ label {
 }
 
 .contact a {
-    padding: 0px 15px;
+    padding: 0 15px;
 }
 
 .social-links {
