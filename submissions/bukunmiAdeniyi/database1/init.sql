@@ -21,7 +21,7 @@ SHOW COLUMNS FROM passengers;
 -- CREATING a TABLE keeping the records of passengers 
  CREATE TABLE passengers_details (
      id INT NOT NULL AUTO_INCREMENT,  
-     passenger_class VARCHAR(100) NOT NULL,
+     passenger_class ENUM('1','2','3') NOT NULL,
      ticket_number VARCHAR(50) NOT NULL,
      trip_fare DECIMAL(10,2) NOT NULL,
      assigned_cabin VARCHAR(20) NULL,
@@ -40,7 +40,7 @@ SHOW COLUMNS FROM passengers;
     id INT NOT NULL AUTO_INCREMENT ,
     passenger_id INT NOT NULL,
     accident_id INT NOT NULL,
-    passenger_status ENUM('Survived', 'Not Survived', 'comtemplating'),
+    passenger_status ENUM('Y', 'N'),
     ticket_number VARCHAR(70) NOT NULL,
     assigned_cabin VARCHAR(60) NOT NULL,
     passenger_class VARCHAR(100)  NOT NULL,
