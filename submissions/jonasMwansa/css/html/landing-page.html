@@ -37,22 +37,22 @@
     </div>
 
     <section>
-            <form action="#" method="post" enctype="multipart/form-data">
-                <label for="location">
-                    <b>Where are you?</b>
-                </label>
+            <form id="locationForm" method="post" enctype="multipart/form-data">
+                <label for="location"><b>Where are you?</b></label>
                 <br>
                     <select name="address" id="location">
-                        <option value="bodjila market">Bodija market</option>
-                        <option value="Nkwashi AIR park">Nkwashi, AIR park</option>
-                        <option value="Nkwashi prefab 01">Nkwashi, prefab 01</option>
-                        <option value="Nkwashi AIR Main house 01">Nkwashi, AIR Main house 01</option>
-                        <option value="Nkwashi AIR Main house 03">Nkwashi, AIR Main house 03</option>
-                        <option value="Nkwashi prefab 02">Nkwashi, prefab 02</option>
-                        <option value="Nkwashi Main gate">Nkwashi, Main gate</option>
-                        <option value="Nkwashi Main house">Nkwashi, Main house</option>
+                        <option value disabled selected>select location</option>
+                        <option value="bodjila-market">Bodija market</option>
+                        <option value="Nkwashi-AIR-park">Nkwashi, AIR park</option>
+                        <option value="Nkwashi-prefab-01">Nkwashi, prefab 01</option>
+                        <option value="Nkwashi-AIR-Main-house-01">Nkwashi, AIR Main house 01</option>
+                        <option value="Nkwashi-AIR-Main-house-03">Nkwashi, AIR Main house 03</option>
+                        <option value="Nkwashi-prefab-02">Nkwashi, prefab 02</option>
+                        <option value="Nkwashi-Main-gate">Nkwashi, Main gate</option>
+                        <option value="Nkwashi-Main-house">Nkwashi, Main house</option>
                     </select>
-            </form>
+                    <span class="error-block"></span>
+                </form>
         </section>
         <section class="interests">
             <div class="interest-title">
@@ -60,49 +60,50 @@
             </div>
             <br>
             <div class="interest-items">
-                    <div class="interest-item">                        
-                            <div class="image">
-                                <img src="../FoodBagTaskAssets/fast-food.svg"  alt="fast food">
-                            </div>
-                            <br>
-                            <div class="description">
-                                    <h4>Fast Food</h4>
+                    
+                        <div class="interest-item">                        
+                                <div class="image">
+                                    <img src="../FoodBagTaskAssets/fast-food.svg"  alt="fast food">
+                                </div>
+                                <br>
+                                <div class="description">
+                                        <h4>Fast Food</h4>
+                                        <p>All sorrows are less with bread.</p>
+                                </div>
+                        </div>                  
+                    <br>
+                        <div class="interest-item">                        
+                                <div class="image">
+                                    <img src="../FoodBagTaskAssets/Vegetables _ Drinks.svg" alt="fast food">
+                                </div>
+                                <br>
+                                <div class="description">
+                                    <h4>Vegetables & Fruits</h4>
+                                    <p>May not want it, but good for you.</p>
+                                </div>                            
+                        </div>
+                    <br>
+                        <div class="interest-item">                        
+                                <div class="image">
+                                    <img src="../FoodBagTaskAssets/Drinks _ Cocktails.svg" alt="fast food">
+                                </div>
+                                <br>
+                                <div class="description">
+                                    <h4>Drinks & Cocktails</h4>
+                                    <p>I feel sad for those who don't drink. </p>
+                                </div>
+                        </div>
+                    <br>
+                        <div class="interest-item">                        
+                                <div class="image">
+                                    <img src="../FoodBagTaskAssets/resturant.svg" alt="fast food">
+                                </div>
+                                <br>
+                                <div class="description">
+                                    <h4>Resturants</h4>
                                     <p>All sorrows are less with bread.</p>
-                            </div>
-                    </div>
-                    <br>
-                    <div class="interest-item">
-                            <div class="image">
-                                <img src="../FoodBagTaskAssets/Vegetables _ Drinks.svg" alt="fast food">
-                            </div>
-                            <br>
-                            <div class="description">
-                                <h4>Vegetables & Fruits</h4>
-                                <p>May not want it, but good for you.</p>
-                            </div>
-                    </div>
-                    <br>
-                    <div class="interest-item">
-                            <div class="image">
-                                <img src="../FoodBagTaskAssets/Drinks _ Cocktails.svg" alt="fast food">
-                            </div>
-                            <br>
-                            <div class="description">
-                                <h4>Drinks & Cocktails</h4>
-                                <p>I feel sad for those who don't drink. </p>
-                            </div>
-                    </div>
-                    <br>
-                    <div class="interest-item">    
-                            <div class="image">
-                                <img src="../FoodBagTaskAssets/resturant.svg" alt="fast food">
-                            </div>
-                            <br>
-                            <div class="description">
-                                <h4>Resturants</h4>
-                                <p>All sorrows are less with bread.</p>
-                            </div>
-                    </div>
+                                </div>
+                        </div>
             </div>
         </section>
         <!--interests section ends here-->
@@ -172,5 +173,8 @@
                 <a href="#">Terms & Conditions . Privacy Policy</a>
                 <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
         </footer>
+
+    <!--script are included here-->
+    <script src="../../dom/validation.js"></script>
 </body>
 </html>
