@@ -15,7 +15,7 @@ sex VARCHAR(50),
 created_at DATETIME,
 PRIMARY KEY (id)
 );
-ALTER TABLE passengers DROP passenger_id;
+
 SHOW COLUMNS FROM passengers;
 
 -- CREATING a TABLE keeping the records of passengers 
