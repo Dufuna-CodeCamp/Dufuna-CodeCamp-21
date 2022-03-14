@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 8a81830ea7a066c1213f1197af4beb3d7b4c6493
 body{
 
 font-family: 'Poppins', sans-serif;
 
 }
+
 header{
     text-align: center;
     display: flex;
@@ -124,6 +122,118 @@ form select{
     display: inline-grid;
     margin-right: 30px;
 }
+
+
+/*----------------vendors page-----------------*/
+
+
+.sub-title{
+    padding-top: 50px;
+    display: inline;
+}
+
+.sub-title a{
+    color: gray;
+    text-decoration: none;
+}
+
+.vendors-title{
+    display: inline;
+}
+
+.vendor-title{
+    display: flex;
+
+}
+
+.vendor-heading{
+    float: left;
+    margin-left: 20px;
+}
+
+.vendor-title p{
+    display: inline;
+}
+
+    .view-all{
+        display: inline;
+        float: right;
+        color: rgb(248, 17, 17);
+    }
+
+
+.vendor-content{
+    display: flex;
+    
+}
+
+.kfc-vendor img{
+    float: left;
+}
+
+
+
+.kfc-vendor li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 5px;
+    padding: 5px;
+}
+
+.kfc-vendor p:nth-child(4){
+    margin-left: 215px;
+    margin-top: -18px;
+    color: green;
+}
+
+.kfc-vendor input{
+    width: 80px;
+    color: red;
+    border: 1px rgb(218, 13, 13) solid;
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.chicken-republic-vendor img{
+    float: left;
+    
+}
+
+
+.chicken-republic-vendor li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 5px;
+    padding: 5px;
+}
+
+.chicken-republic-vendor p:nth-child(4){
+    margin-left: 215px;
+    margin-top: -18px;
+    color: green;
+}
+
+.chicken-republic-vendor input{
+    width: 80px;
+    color: red;
+    border: 1px rgb(218, 13, 13) solid;
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.vendor-title a{
+    color: red;
+    text-decoration: none;
+}
+
 
 
 /*---------------adding some responsiveness------------*/
@@ -249,6 +359,42 @@ form select{
         font-size: 16px;
     }
 
+
+
+    /* vendors page*/
+
+    .vendor-content{
+        display: flex;
+     align-content: center;   
+    }
+
+    .kfc-vendor .view-all{
+        margin-left: 160px;
+        color: rgb(248, 17, 17);
+    }
+    
+    .chicken-republic-vendor .view-all{
+        margin-left: 70px;
+        color: rgb(248, 17, 17);
+    }
+
+    .kfc-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 100%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+    .chicken-republic-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 100%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+
     footer{
         display: flex;
         flex-direction: column;
@@ -373,6 +519,41 @@ form select{
     p{
         font-size: 16px;
     }
+
+    /*vendors page*/
+    .vendor-content{
+        display: flex;
+        align-content: center;   
+    }
+
+
+    .kfc-vendor .view-all{
+        margin-left: 500px;
+        color: rgb(248, 17, 17);
+    }
+    
+    .chicken-republic-vendor .view-all{
+        margin-left: 430px;
+        color: rgb(248, 17, 17);
+    }
+
+
+    .kfc-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 46%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+    .chicken-republic-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 46%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
 
     footer{
         display: flex;
@@ -503,6 +684,146 @@ form select{
         line-height: 0.2;
     }
 
+
+
+}
+
+
+
+
+/*for devices with screens larger than 992px*/
+@media (min-width: 992px){
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+        
+    header a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    span{
+        color: rgb(248, 17, 17);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    nav a{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        color: gray;
+        float: right;
+        font-size: 1em;
+    }
+    
+    header nav a:nth-child(3){
+    
+        border: 1px red solid;
+        text-align: center;
+        border-radius: 5px;
+    
+    }
+        
+    #signup-link{
+        color: red;
+    }
+
+
+    /*vendors*/
+    
+    .vendor-content{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+
+
+.kfc-vendor .view-all{
+    display: inline;
+    margin-left: 1060px;
+    color: rgb(248, 17, 17);
+}
+
+.chicken-republic-vendor .view-all{
+    display: inline;
+    margin-left: 950px;
+    color: rgb(248, 17, 17);
+}
+
+
+.vendor-content li{
+    width: auto;
+}
+
+.kfc-vendor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    
+    .kfc-vendor img{
+        float: left;
+    }
+    
+    
+    .kfc-vendor li{
+        list-style: none;
+        display: inline-grid;
+        line-height: 0.3;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    
+    .kfc-vendor input{
+        width: 80px;
+        color: red;
+        border: 1px rgb(218, 13, 13) solid;
+        padding: 5px;
+        background-color: white;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+    
+    .chicken-republic-vendor img{
+        float: left;
+        
+    }
+    
+    
+    .chicken-republic-vendor li{
+        list-style: none;
+        display: inline-grid;
+        line-height: 0.3;
+        margin: 5px;
+        padding: 5px;
+    }
+
+
+    footer li{
+        list-style: none;
+        display: inline;
+    }
+    
+    footer li a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    footer li:nth-child(2){
+        float: right;
+        margin-left: 20px;
+    }
+
+
     footer{
         display: flex;
         
@@ -512,120 +833,20 @@ form select{
         text-decoration: none;
         color: gray;
     }
-
+    
     footer p{
         display: inline;
         font-size: 16px;
         float:  right;
-
+    
     }
 
 }
 
-/*----------------vendors page-----------------*/
-
-
-.heading{
-    float: left;
-}
-
-.sub-title{
-    padding-top: 50px;
-}
-
-.sub-title a{
-    color: gray;
-    text-decoration: none;
-}
-
-
-.heading p:nth-child(3){
-    float:right;
-    border: 1px red solid;
-    text-align: center;
-    border-radius: 5px;
-}
-
-
-.kfc-vendor img{
-    float: left;
-}
-
-.kfc-vendor #kfc-heading{
-    float: left;
-    margin-left: 30px;
-}
-
-.kfc-vendor li{
-    list-style: none;
-    display: inline-grid;
-    line-height: 0.3;
-    margin: 5px;
-    padding: 5px;
-}
-
-.kfc-vendor p:nth-child(4){
-    margin-left: 215px;
-    margin-top: -18px;
-    color: green;
-}
-
-.kfc-vendor input{
-    width: 80px;
-    color: red;
-    border: 1px rgb(218, 13, 13) solid;
-    padding: 5px;
-    background-color: white;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-#view-all a{
-    float: right;
-    color: rgb(248, 17, 17);
-    margin-top: -320px;
-    margin-right: 40px;
-    text-decoration: none;
-}
-
-.chicken-republic-vendor img{
-    float: left;
-    
-}
-
-    #chicken-republic-vendor-heading{
-    float: left;
-    display: inline;
-    margin-left: 30px;
-}
-
-.chicken-republic-vendor li{
-    list-style: none;
-    display: inline-grid;
-    line-height: 0.3;
-    margin: 5px;
-    padding: 5px;
-}
-
-.chicken-republic-vendor p:nth-child(4){
-    margin-left: 215px;
-    margin-top: -18px;
-    color: green;
-}
-
-.chicken-republic-vendor input{
-    width: 80px;
-    color: red;
-    border: 1px rgb(218, 13, 13) solid;
-    padding: 5px;
-    background-color: white;
-    border-radius: 2px;
-}
-
-
 /*----------------Footer--------------------*/
 footer li{
     list-style: none;
+
 }
 
 footer li a{
@@ -635,6 +856,5 @@ footer li a{
 
 footer li:nth-child(2){
     float: right;
-    margin-top: -25px;
     margin-right: 60px;
 }

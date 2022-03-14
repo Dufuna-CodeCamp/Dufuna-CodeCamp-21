@@ -194,99 +194,6 @@ footer .bottom {
   color: #696969;
 }
 
-@media screen and (max-width: 500px) {
-  .nav-items {
-    font-size: 12px;
-  }
-
-  .hero {
-    text-align: start;
-    padding-top: 50px;
-  }
-
-  form {
-    margin-top: 30px;
-  }
-
-  .sub-head {
-    font-size: 15px;
-  }
-
-  form select {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .service-item {
-    width: 100%;
-    height: auto;
-    padding-block: 30px;
-  }
-
-  .service-item img {
-    width: 40px;
-  }
-
-  .about-service {
-    margin-block: 30px;
-    padding-block: 20px;
-  }
-  .about-service > h3 {
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  .about-container {
-    justify-content: center;
-  }
-
-  .about-text h4 {
-    font-size: 17px;
-  }
-  .about-text p {
-    font-size: 12px;
-  }
-
-  footer {
-    padding-bottom: 50px;
-  }
-
-  .contact p {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  footer .bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  /* styles for vendors page */
-  .vendor-bar > button {
-    display: none;
-  }
-
-  .vendor-box {
-    width: 100%;
-  }
-
-  .vendor-container {
-    padding-bottom: 10px;
-  }
-
-  .vendor-container:last-of-type{
-	  padding-bottom: 40px;
-  }
-
-  .vendor-container > .viewbtn.mdbtn {
-    display: block;
-    width: 70px;
-    margin-top: 40px;
-    margin-inline: auto;
-  }
-}
-
 /* styles for vendors page */
 .nav {
   font-size: 14px;
@@ -378,4 +285,99 @@ footer .bottom {
   background: white;
   margin-top: 15px;
   font-size: 17px;
+}
+
+/* responsiveness */
+@media screen and (max-width: 500px) {
+  .nav-items {
+    font-size: 12px;
+  }
+
+  .hero {
+    text-align: start;
+    padding-top: 50px;
+  }
+
+  form {
+    margin-top: 30px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+  }
+
+  form select {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .service-item {
+    width: 100%;
+    height: auto;
+    padding-block: 30px;
+  }
+
+  .service-item img {
+    width: 40px;
+  }
+
+  .about-service {
+    margin-block: 30px;
+    padding-block: 20px;
+  }
+  .about-service > h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .about-container {
+    justify-content: center;
+  }
+
+  .about-text h4 {
+    font-size: 17px;
+  }
+  .about-text p {
+    font-size: 12px;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .contact p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  footer .bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  
+  /* styles for vendors page */
+  .vendor-bar > button {
+    display: none;
+  }
+
+  .vendor-box {
+    width: 100%;
+  }
+
+  .vendor-container {
+    padding-bottom: 10px;
+  }
+
+  .vendor-container:last-of-type{
+	  padding-bottom: 40px;
+  }
+
+  .vendor-container > .viewbtn.mdbtn {
+    display: block;
+    width: 70px;
+    margin-top: 40px;
+    margin-inline: auto;
+  }
 }
