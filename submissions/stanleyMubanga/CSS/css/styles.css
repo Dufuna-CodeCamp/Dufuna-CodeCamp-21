@@ -8,6 +8,9 @@
     appearance: none;
 }
 
+
+/* the root contains the primary properties in the style page (colors) */
+
 :root {
     --theme--: #AD4C4C;
     --themegreen--: #5EA304;
