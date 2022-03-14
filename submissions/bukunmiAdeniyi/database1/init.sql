@@ -35,7 +35,7 @@ SHOW COLUMNS FROM passengers;
       );
       SHOW COLUMNS FROM passengers_details;
       
-      -- CREATING a TABLE indicating events of accidents whether the passengers survived or not 
+      -- CREATING a TABLE indicating events of accidents whether the passengers survived or not -- 
       CREATE TABLE accident_trips (
     id INT NOT NULL AUTO_INCREMENT ,
     passenger_id INT NOT NULL,
