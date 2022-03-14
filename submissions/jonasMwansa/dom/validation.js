@@ -1,7 +1,6 @@
 
 //associate html id's and classes to variables to be used
-let formSubmit = document.querySelector('#locationForm'),
-    locations = document.querySelector('#location'),
+let locations = document.querySelector('#location'),
     interestClass = document.querySelectorAll('.interest-items');
     
     //any change on the form we call this anonymous function we contains the listener
