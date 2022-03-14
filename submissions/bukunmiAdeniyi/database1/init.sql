@@ -26,7 +26,7 @@ SHOW COLUMNS FROM passengers;
      trip_fare DECIMAL(10,2) NOT NULL,
      assigned_cabin VARCHAR(20) NULL,
      number_passengers INT NOT NULL,
-     number_sibling  VARCHAR(50) NULL,
+     number_sibling  INT NULL,
      point_embarkation VARCHAR (100) NOT NULL,
      created_at DATETIME,
     passengers_id INT NOT NULL,
