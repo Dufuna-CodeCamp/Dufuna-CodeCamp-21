@@ -1,9 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f8f7f7;
+    background-color: #E5E5E5;
     font-family: 'Poppins';
     font-style: normal;
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    margin: 20px;
+    margin-top: -150px;
 }
 
 ul {
@@ -13,57 +22,43 @@ a {
     text-decoration: none;
 }
 
+.header {
+    margin: 0;
+    min-height: 56px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.nav-list {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    width: 24%;
+    text-align: right;
+    line-height: 24px;
+    padding: 12px;
+}
+
 .foodbagHeader {
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    left: 100px;
-    top: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+    padding: 12px;
     font-weight: 500px;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
     color: #000000;
 }
 
-.cart {
-    position: absolute;
-    width: 35px;
-    height: 24px;
-    left: 1070px;
-    top: 50px;
-    font-size: 17px;
-    line-height: 24px;
-    color: #696969;
-}
-
-.login {
-    position: absolute;
-    width: 43px;
-    height: 24px;
-    left: 1155px;
-    top: 50px;
-    font-size: 17px;
-    line-height: 24px;
-    color: #696969;
-}
-
-.signUp {
-    position: absolute;
-    width: 70px;
-    height: 24px;
-    left: 1263px;
-    top: 50px;
-    font-size: 17px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
 .homeVendors {
-    position: absolute;
-    width: 115px;
-    height: 21px;
-    left: 95px;
-    top: 172px;
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    margin-top: 50px;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -75,539 +70,156 @@ b {
 }
 
 .allVendors {
-    position: absolute;
-    width: 171px;
-    height: 45px;
-    left: 101px;
-    top: 226px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    height: 200px;
     font-weight: 500;
-    font-size: 30px;
     line-height: 45px;
     color: #000000;
 }
 
+.KFC, .ChickenRepub {
+    display: grid;
+    column-gap: 20px;
+}
+
 .kfc {
-    position: absolute;
-    width: 113px;
-    height: 85px;
-    left: 69px;
-    top: 297px;
-    /*background: url(image4.png);*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding-left: 30px;
+    height: 200px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-#kfc {
-    position: absolute;
-    width: 39px;
-    height: 30px;
-    left: 195px;
-    top: 298px;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
-    color: #000000;
+.kfc-img, .chickenrepub-img {
+    display: block;
+    height: 100px;
+    padding: 15px;
 }
 
-.viewAllkfc {
-    position: absolute;
-    width: 62px;
-    height: 24px;
-    left: 1278px;
-    top: 328px;
+.title-price-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.title-price {
+    line-height: 24px;
+    padding: 12px;
+}
+
+.title-prices {
+    line-height: 24px;
+    padding: 12px;
+    color: #5EA304;
+}
+
+
+.viewAll {
+    display: block;
+    text-align: center;
+    margin: 0 150px 0 150px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    border: 2px solid #AD4C4C;
     color: #AD4C4C;
-}
-
-.kingBucket {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 101px;
-    top: 395px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-.kingbucket {
-    position: absolute;
-    width: 145px;
-    height: 24px;
-    left: 101px;
-    top: 560px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.kfcprice {
-    position: absolute;
-    width: 59px;
-    height: 24px;
-    left: 308px;
-    top: 560px;
-    font-weight: 600px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addcartkfc {
-    position: absolute;
-    width: 138px;
-    height: 40px;
-    left: 101px;
-    top: 604px;
-    background: #FFFFFF;
-    border: 1px solid #AD4C4C;
-    box-sizing: border-box;
-    border-radius: 3px;
-}
-
-.addCartkfc {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 124px;
-    top: 612px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
-.zingerBurger {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 425px;
-    top: 395px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-.zingerburger {
-    position: absolute;
-    width: 110px;
-    height: 24px;
-    left: 425px;
-    top: 560px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.kfcprice1{
-    position: absolute;
-    width: 59px;
-    height: 24px;
-    left: 632px;
-    top: 560px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addCartkfc1 {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 448px;
-    top: 612px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #AD4C4C;
-}
-
-.chickenStrips {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 749px;
-    top: 395px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-.chickenstrips {
-    position: absolute;
-    width: 116px;
-    height: 24px;
-    left: 749px;
-    top: 560px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.kfcprice2{
-    position: absolute;
-    width: 56px;
-    height: 24px;
-    left: 956px;
-    top: 560px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addCartkfc2 {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 772px;
-    top: 612px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
-.yamilicious {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 1073px;
-    top: 395px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-.yamiliciouss {
-    position: absolute;
-    width: 95px;
-    height: 24px;
-    left: 1073px;
-    top: 560px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.kfcprice3 {
-    position: absolute;
-    width: 45px;
-    height: 24px;
-    left: 1280px;
-    top: 560px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addCartkfc3 {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 1096px;
-    top: 612px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
-.horizontalrule {
-    position: absolute;
-    width: 1240px;
-    height: 0;
-    left: 100px;
-    top: 705px;
-    border: 1px solid #E6E6E6;
 }
 
 .chickenrepub {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 101px;
-    top: 761px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    height: 200px;
     background: #ffffff;
-    border: 1px solid #F8F8F8;
-    box-sizing: border-box;
-    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-#chickenrepublic {
-    position: absolute;
-    width: 190px;
-    height: 30px;
-    left: 170px;
-    top: 745px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
-}
-
-.viewAllchickenrep {
-    position: absolute;
-    width: 62px;
-    height: 24px;
-    left: 1278px;
-    top: 774px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
-.refuelMax {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 100px;
-    top: 841px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-.refuelmax {
-    position: absolute;
-    width: 89px;
-    height: 24px;
-    left: 100px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.chickenrepubprice {
-    position: absolute;
-    width: 54px;
-    height: 24px;
-    left: 307px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addCartchicken {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 123px;
-    top: 1058px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
-.expressmeal {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 424px;
-    top: 841px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-.expressMeal {
-    position: absolute;
-    width: 108px;
-    height: 24px;
-    left: 424px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.chickenrepubprice1 {
-    position: absolute;
-    width: 59px;
-    height: 24px;
-    left: 631px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addCartchicken1 {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 447px;
-    top: 1058px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
-}
-
-.citizenmeal {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 748px;
-    top: 841px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-.citizenMeal {
-    position: absolute;
-    width: 102px;
-    height: 24px;
-    left: 748px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
-}
-
-.chickenrepubprice2 {
-    position: absolute;
-    width: 56px;
-    height: 24px;
-    left: 955px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
-}
-
-.addCartchicken2 {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 771px;
-    top: 1058px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+.addCart {
+    display: block;
+    text-align: left;
+    padding: 12px;
     color: #AD4C4C;
 }
 
-.crunchywings {
-    position: absolute;
-    width: 266.67px;
-    height: 150px;
-    left: 1072px;
-    top: 841px;
-    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+hr {
+    margin-top: 30px;
+    border: 1px solid #bbb8b8;
 }
 
-.crunchyWings {
-    position: absolute;
-    width: 122px;
-    height: 24px;
-    left: 1072px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4e4d4d;
+.logo-area {
+    margin-top: 50px;
 }
 
-.chickenrepubprice3 {
-    position: absolute;
-    width: 54px;
-    height: 24px;
-    left: 1279px;
-    top: 1006px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5ea304;
+.logo {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 50%;
 }
 
-.addCartchicken3 {
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    left: 1095px;
-    top: 1058px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ad4c4c;
+.logo-title {
+    display: inline-block;
+    text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+    padding-left: 10px;
 }
 
-.contact {
-    position: absolute;
-    width: 100px;
-    height: 27px;
-    left: 670px;
-    top: 1300px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #696969;
+footer {
+    background-color: rgb(58, 57, 57);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .Contact {
-    position: absolute;
-    width: 113.31px;
-    height: 20px;
-    left: 660px;
-    top: 1360px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.twitter {
-    position: absolute;
-    left: 20px;
-    right: 757px;
-    bottom: 1px;
-    background: #ad4c4c;
+.socials {
+    text-align: center;
 }
 
-.youtube {
-    position: absolute;
-    left: 50px;
-    right: 810px;
-    bottom: 1px;
-    background: #AD4C4C;
-}
+/*for tablets*/
+@media screen and (min-width: 600px) {
+    .KFC, .ChickenRepub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
 
-.facebook {
-    position: absolute;
-    left: 90px;
-    right: 910px;
-    bottom: 1px;
-    background: #AD4C4C;
-}
+    .Contact {
+        display: flex;
+    }
 
-.TCs{
-    position: absolute;
-    width: 311px;
-    height: 27px;
-    left: 100px;
-    top: 1400px;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #696969;
-}
+    .socials {
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.copyright{
-    position: absolute;
-    width: 468px;
-    height: 27px;
-    left: 872px;
-    top: 1400px;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #696969;
+    .TCs {
+        display: inline;
+        text-align: left;
+        width: 24%;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        display: inline;
+        text-align: right;
+        width: 24%;
+        padding-left: 10px;
+    }
 }
