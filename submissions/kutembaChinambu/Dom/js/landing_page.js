@@ -1,4 +1,9 @@
-let input = document.querySelector('input').addEventListener('input', function (event) {
+/*declaring an input variable that checks if the datalist does not contain any string, if it does:
+it changes the images on the interests list to active ones
+changes the text color of the interest list text content
+makes each interest list item clickable */
+
+document.querySelector('input').addEventListener('input', function (event) {
     if (event.target.value != ""){
         document.getElementById("fast-food").src = "../FoodBag Task Images/fast-food.svg";
         document.getElementById("vegetables").src = "../FoodBag Task Images/Vegetables _ Drinks.svg";
@@ -20,16 +25,13 @@ let input = document.querySelector('input').addEventListener('input', function (
         }
         
     }
-   console.log(event.target.value);
     
 });
 
 
-
+//function that loads the vendors page when an interest list item is loaded
 function loadVendor() {
-    window.location = "vendors_page.html"
+    window.location = "vendors_page.html";
 }
 
-  
-//document.getElementById("img").src = img.src.replace("_t", "_b");
 

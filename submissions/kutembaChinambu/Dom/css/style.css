@@ -78,11 +78,6 @@ a:visited {
     border-radius: 5px;
 }
 
-.interest h4,
-p {
-    color: gray;
-}
-
 .interest h3 {
     padding: 10px 40px;
     white-space: nowrap;
@@ -149,12 +144,13 @@ p {
     line-height: 0.5px;
     padding: 1px;
     white-space: nowrap;
+    color: gray;
 }
 
 .kfc li,
 .chickenrep li {
         display: inline-grid;
-        padding: 20px 40px;
+        padding: 20px 40px 20px 0px;
         margin-bottom: 5px;
         background-color: #fff;
         border-radius: 5px;
@@ -243,7 +239,7 @@ p {
   }
 
 .kfc {
-    padding: 170px 5px 5px;
+    padding: 170px 5px 0px;
     font-weight: bold;
 
 }
@@ -268,7 +264,7 @@ p {
     font-weight: bold;
     padding-right: 10px;
 }
-.dot {
+/*.dot {
     height: 7px;
     width: 7px;
     background-color: brown;
@@ -278,7 +274,7 @@ p {
     bottom: 0;
     left: 220px;
     right: 0;
-  }
+  }*/
 
   @media screen and (min-width: 600px) {
     nav{
