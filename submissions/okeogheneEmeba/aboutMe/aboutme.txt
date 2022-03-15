@@ -1,2 +1,5 @@
 Hello World!
-i am Emeba Okeoghene Jones and i am a software engineer
+I am Emeba Okeoghene Jones and i am a software engineer.
+I am currently in the dufuna program.
+Currently working on Git. 
+I just linked my github account to my app
