@@ -7,7 +7,6 @@ let images = document.querySelectorAll(".cards__img--img");
 let cardTitle = document.querySelectorAll(".cards__title");
 let cards = document.querySelectorAll(".cards");
 let vendorUrl = "./vendorsPage.html";
-console.log(FastFood);
 
 let imageArray = [FastFood, Vegetables, Drinks, Restaurant];
 
@@ -29,6 +28,5 @@ const changeFunc = () => {
     });
   });
 };
-
 
 selectBox.addEventListener("change", changeFunc);
