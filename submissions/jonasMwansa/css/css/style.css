@@ -843,6 +843,11 @@ form select{
 
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /*----------------Footer--------------------*/
 footer li{
     list-style: none;
