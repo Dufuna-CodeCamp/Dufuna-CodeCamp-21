@@ -68,7 +68,7 @@ main {
   font-weight: 400;
   margin-top: 5px;
 }
-#delivery-address{
+select{
   width: 100%;
   height: 60px;
   padding: 15px 30px;
@@ -76,6 +76,7 @@ main {
   border: solid 1px #C4C4C4;
   font-size: 20px;
   margin-top: 20px;
+  color: #696969;
 }
 .delivery-label {
   font-size: 20px;
@@ -104,9 +105,12 @@ form {
   box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 .interest-name {
-  font-size: 14px;
+  font-size: 18px;
   color: #A5A5A5;
   margin-top: 5px;
+}
+.interest-name p:last-child {
+  font-size: 14px;
 }
 .ruler {
   margin: 81px 0;
@@ -128,22 +132,25 @@ form {
 }
 .services {
   text-align: center;
-  width: 245px;
   margin-top: 33px;
 }
 .services-title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
+  color: #696969;
 }
 .services-description {
   color: #A5A5A5;
-  margin-top: 15px;
+  width: 245px;
+  margin: 15px auto 0;
 }
 .contact-section {
   text-align: center;
 }
 .contact-us {
   margin-bottom: 30.5px ;
+  color: #696969;
+  font-size: 18px;
 }
 .icon {
   margin-right: 30px ;
@@ -153,4 +160,5 @@ footer  {
   justify-content: space-between;
   color: #696969;
   margin-top: 48px;
+  font-size: 18px;
 }
