@@ -50,18 +50,18 @@ ul.nav__text {
   line-height: 24px;
 }
 
-.nav__btn--cart {
-  position: absolute;
+.nav__btns--nil {
+  display: none;
 }
 
 .nav__btns--dot {
-  position: relative;
+  position: absolute;
   height: 9px;
   width: 9px;
   border-radius: 50%;
   background: #ad4c4c;
-  left: -1.8em;
-  top: -0.4em;
+  right: 20.4em;
+  top: 3.2em;
 }
 
 .nav__btns--border {
@@ -227,8 +227,8 @@ button.kfc__CTA {
   .nav__btns--dot {
     height: 5px;
     width: 5px;
-    left: -1.2em;
-    top: -0.25em;
+    right: 11.3rem;
+    top: 2.3em;
   }
 
   .nav__btns--border {
