@@ -2,17 +2,16 @@ CREATE DATABASE Trasportation;
 
 USE Transportation;
 
-/* passegers_table comes here*/
-
 CREATE TABLE passengers_table(
 id INT NOT NULL auto_increment,
 full_name VARCHAR(255) NOT NULL,
 sex VARCHAR(255) NOT NULL,
+created_at DATE NOT NULL,
 age INT NULL,
 primary key(id)
 )
 
-/* passeger_class_table comes here*/
+/* passeger_class_table comes* here*/
 
 CREATE TABLE passengers_class_table(
 id INT NOT NULL auto_increment,
@@ -45,17 +44,17 @@ primary key(id)
 CREATE TABLE trips_table(
 id INT NOT NULL auto_increment,
 passenger_id INT NOT NULL,
-ticket_id INT NOT NULL,
-trip_fare DOUBLE NOT NULL,
+passenger_class_id INT NOT NULL,
+ticket_id VARCHAR(255) NOT NULL,
+trip_fare FLOAT NOT NULL,
 cabin_id INT NOT NULL,
-number_of_parents INT NOT NULL,
-number_of_children INT NOT NULL,
-number_of_siblings INT NOT NULL,
-number_of_spouses INT NOT NULL,
+num_of_parents_or_children INT NOT NULL,
+num_of_siblings_or_spouses INT NOT NULL,
 embarkation_point VARCHAR(255) NOT NULL,
 primary key(id),
 foreign key(passenger_id) references passengers_table(id),
 foreign key(ticket_id) references tickets_table(id),
+foreign key(passenger_class_id) references passengers_class_table(id),
 foreign key(cabin_id) references cabins_table(id)
 
 )
@@ -64,7 +63,7 @@ foreign key(cabin_id) references cabins_table(id)
 CREATE TABLE accidents_table(
 id INT NOT NULL auto_increment,
 passenger_id INT NOT NULL,
-survival_status VARCHAR(255) NOT NULL,
+survival_status BOOL NOT NULL,
 primary key(id),
 foreign key(passenger_id) references passengers_table(id)
 )
