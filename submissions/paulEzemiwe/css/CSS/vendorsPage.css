@@ -62,7 +62,6 @@ ul.nav__text {
   background: #ad4c4c;
   right: 20.4em;
   top: 3.2em;
-  box-shadow: 0px, 0px, 4px, 2px, rgba(0, 0, 0, 0.1);
 }
 
 .nav__btns--border {
@@ -226,8 +225,6 @@ button.kfc__CTA {
   }
 
   .nav__btns--dot {
-    height: 5px;
-    width: 5px;
     right: 11.45rem;
     top: 2.35em;
     height: 3px;
