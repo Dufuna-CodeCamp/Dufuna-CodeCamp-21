@@ -24,7 +24,10 @@
         <nav>
             <a href="#" id="signup-link">Sign up</a>
             <a href="#">Login</a>
-            <a href="#">Cart</a>
+            <a href="#" id="cart">Cart 
+                <img src="../FoodBagTaskAssets/red-icon.png" alt="item" id="cartImg">
+            </a>
+           
         </nav>
     </div>
     <div class="sub-title">
@@ -45,28 +48,44 @@
                     <br>
                     <p>KFC - King Bucket</p>
                     <p class="price">#5,000</p>
-                    <input type="button" value="Add to cart">
+                    <div class="action">
+                        <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove added" >
+                        <input type="button" value="Add to cart" class="input">
+                    </div>
+                    
                 </li>
                 <li>
                     <img src="../FoodBagTaskAssets/image4.svg"  alt="fast food">
                     <br>
                     <p>Zinger Burger</p>
                     <p class="price">#3,600</p>
-                    <input type="button" value="Add to cart">
+                    <div class="action">
+                        <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                        <input type="button" value="Add to cart" class="input">
+                    </div>
                 </li>
+
                 <li>
                     <img src="../FoodBagTaskAssets/image4.svg"  alt="fast food">
                     <br>
                     <p>Chicken strips</p>
                     <p class="price">#1,450</p>
-                    <input type="button" value="Add to cart">
+                    <div class="action">
+                        <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                        <input type="button" value="Add to cart" class="input">
+                    </div>
+
                 </li>
                 <li>
                     <img src="../FoodBagTaskAssets/image4.svg"  alt="fast food">
                     <br>
                     <p>Yamilicious</p>
                     <p class="price">#900</p>
-                    <input type="button" value="Add to cart">
+                    <div class="action">
+                        <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                        <input type="button" value="Add to cart" class="input">
+                    </div>
+
                 </li>
             </ol>
         </div>
@@ -88,28 +107,43 @@
                         <br>
                         <p>Refuel Max</p>
                         <p class="price">#1,200</p>
-                        <input type="button" value="Add to cart">
+                        <div class="action">
+                            <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                            <input type="button" value="Add to cart" class="input">
+                        </div>
+    
                     </li>
                     <li>
                         <img src="../FoodBagTaskAssets/image2.svg"  alt="fast food">
                         <br>
                         <p>Express meal</p>
                         <p class="price">#2,000</p>
-                        <input type="button" value="Add to cart">
+                        <div class="action">
+                            <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                            <input type="button" value="Add to cart" class="input">
+                        </div>
+    
                     </li>
                     <li>
                         <img src="../FoodBagTaskAssets/image3.svg"  alt="fast food">
                         <br>
                         <p>Citizen meal</p>
                         <p class="price">#1,500</p>
-                        <input type="button" value="Add to cart">
+                        <div class="action">
+                            <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                            <input type="button" value="Add to cart" class="input">
+                        </div>
+    
                     </li>
                     <li>
                         <img src="../FoodBagTaskAssets/image3.svg"  alt="fast food">
                         <br>
                         <p>Crunchy wings</p>
                         <p class="price">#1,750</p>
-                        <input type="button" value="Add to cart">
+                        <div class="action">
+                            <img src="../FoodBagTaskAssets/remove.svg" alt="remove" class="remove">
+                            <input type="button" value="Add to cart" class="input">
+                        </div>    
                     </li>
                 </ol>
             </div>
@@ -124,4 +158,5 @@
             </ol>
         </footer>
 </body>
+<script src="../../dom/transactionsCart.js"></script>
 </html>
