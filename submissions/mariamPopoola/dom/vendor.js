@@ -1,5 +1,4 @@
 let addCart = document.querySelectorAll(".add-cart");
-let cart = document.querySelector(".cart");
 let dot = document.querySelector(".dot");
 
 addCart.forEach(function(e){
@@ -31,7 +30,7 @@ addCart.forEach(function(e){
                 dot.textContent= cartCount;
             }else {
                 dot.style.display = "none";
-                
+
             }
         }
         
