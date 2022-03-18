@@ -6,7 +6,7 @@ var optionWrapper = document.getElementById("address");
      inactive.style.display = (this.value == "") ? "flex" : "none";
 
   var optionWrapper = document.getElementsByClassName("option-wrapper");
-  for (let item of option-wrapper) {
+  for (let item of optionWrapper) {
      item.classList.remove("option-wrapper")
      item.classList.add("option-wrapper")    
      }
