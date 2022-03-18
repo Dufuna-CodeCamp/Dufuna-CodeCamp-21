@@ -86,6 +86,8 @@ form select{
     background-color: white
 }
 
+
+
 .interests {
     display: inline-grid;
     line-height: 0.3;
@@ -172,7 +174,6 @@ form select{
 }
 
 
-
 .kfc-vendor li{
     list-style: none;
     display: inline-grid;
@@ -188,12 +189,10 @@ form select{
 }
 
 .kfc-vendor input{
-    width: 80px;
     color: red;
-    border: 1px rgb(218, 13, 13) solid;
-    padding: 5px;
+    padding: 1px;
+    border: hidden;
     background-color: white;
-    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -219,12 +218,10 @@ form select{
 }
 
 .chicken-republic-vendor input{
-    width: 80px;
     color: red;
-    border: 1px rgb(218, 13, 13) solid;
-    padding: 5px;
+    padding: 1px;
+    border: hidden;
     background-color: white;
-    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -782,17 +779,6 @@ form select{
     }
     
     
-    .kfc-vendor input{
-        width: 80px;
-        color: red;
-        border: 1px rgb(218, 13, 13) solid;
-        padding: 5px;
-        background-color: white;
-        border-radius: 2px;
-        cursor: pointer;
-    }
-    
-    
     .chicken-republic-vendor img{
         float: left;
         
@@ -843,6 +829,11 @@ form select{
 
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /*----------------Footer--------------------*/
 footer li{
     list-style: none;
@@ -858,3 +849,33 @@ footer li:nth-child(2){
     float: right;
     margin-right: 60px;
 }
+
+
+.action{
+
+    width: 120px;
+    display: flex;
+    color: red;
+    border: 1px rgb(218, 13, 13) solid;
+    border-radius: 2px;
+}
+
+
+.remove{
+    width: 20px;
+    visibility: hidden;
+    margin-left:15px;
+    -webkit-appearance: none;
+}
+
+
+#cartImg{
+    width: 15px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.grey {
+    background-color: grey;
+}
+
