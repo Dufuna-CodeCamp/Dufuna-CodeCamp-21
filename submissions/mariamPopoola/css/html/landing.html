@@ -38,7 +38,7 @@
                 <label for="location">  
                     Where are you? <br/>
                      
-                <input type="text" id="" list="location" placeholder="Enter your delivery address">  
+                <input type="text" id="selectLocation" list="location" placeholder="Enter your delivery address">  
                 <datalist id="location">  
                     <option value="Aiyetoro">  
                     <option value="Alekuwodo">  
@@ -50,31 +50,36 @@
                 </datalist>  
                </label> 
             </div>
+            
 
             <div class="interest">
                 <p>Pick an interest</p>
 
                 <div class="list-of-interest">
                     <div class="list">
-                        <img src="../img/fast-food_disabled.svg" alt="">
+                        <img src="../img/fast-food_disabled.svg" alt="" >
+                        <img src="../img/fast-food.svg" alt="" class="hidden">
                         <p class="title"> Fast food</p>
                         <p>All sorrows are less with bread.</p>
                     </div>
     
                     <div class="list">
                         <img src="../img/Vegetables & Drinks_disabled.svg" alt="">
+                        <img src="../img/Vegetables & Drinks.svg" alt="" class="hidden">
                         <p  class="title">Vegetables & Fruits</p>
                         <p>May not want it, but good for you.</p>
                     </div>
     
                     <div class="list">
                         <img src="../img/Drinks & Cocktails_disabled.svg" alt="">
+                        <img src="../img/Drinks & Cocktails.svg" alt="" class="hidden" >
                         <p  class="title">Drinks & Cocktails</p>
                         <p>I feel sad for those who don't drink.</p>
                     </div>
     
                     <div class="list">
                         <img src="../img/resturant_disabled.svg" alt="">
+                        <img src="../img/resturant.svg" alt=""  class="hidden">
                         <p  class="title">Resturants</p>
                         <p>All sorrows are less with bread.</p>
                     </div>
@@ -120,5 +125,7 @@
             <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
         </div>
     </footer>
+
+    <script src="../../dom/landing.js"></script>
 </body>
 </html>
