@@ -99,13 +99,14 @@ header {
 }
 
 .pick-interest h3 {
-    text-align: center;
+    display: flex;
+    text-align: left;
     font-size: 20px;
 }
 
-.flex-parent-one {
+#flex-parent-inactive {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -173,6 +174,9 @@ footer {
     padding: 15px 0;
     text-align: center;
 }
+#flex-parent-active{
+    display: none;
+}
 
 .contact-page p {
     font-size: 18px;
@@ -186,7 +190,11 @@ footer {
 .footer-notice p {
     font-size: 12px;
 }
-
+#address {
+    width: 1210px;
+    height:40px;
+    margin: 5px;
+}
 @media screen and (min-width: 600px) {
     header {
         flex-direction: row;
@@ -225,6 +233,11 @@ footer {
     .home-text p {
         font-size: 24px;
     }
+    #address {
+        width: 650px;
+        height:30px;
+        margin: 5px;
+    }
 
     .location-pointer label {
         font-size: 25px;
@@ -240,6 +253,14 @@ footer {
 
     .pick-interest {
         padding: 16px 0;
+    }
+
+    #flex-parent-active .option-wrapper {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        font-size: 12px;
+        height: 130px;
+        width: 250px;
     }
 
     .pick-interest h3 {
@@ -363,9 +384,23 @@ footer {
         color: rgb(44, 44, 44);
     }
 
+    #address {
+        width: 550px;
+        height:30px;
+        margin: 5px;
+    }
+
     .location-pointer h3 {
         padding: 10px 0;
     }
+
+    /*#flex-parent-active .option-wrapper {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        font-size: 12px;
+        height: 170px;
+        width: 300px;
+    }*/
 
     label {
         font-weight: bold;
@@ -513,6 +548,12 @@ footer {
         color: rgb(44, 44, 44);
     }
 
+    #address {
+        width: 1180px;
+        height: 30px;
+        margin: 5px;
+    }
+
     .location-pointer h3 {
         padding: 10px 0;
     }
@@ -522,6 +563,14 @@ footer {
         margin-bottom: 20px;
         font-size: 18px;
         padding: 20px 0;
+    }
+
+    #flex-parent-active .option-wrapper {
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        font-size: 2px;
+        height: 300px;
+        width: 350px;
     }
 
     input[type="text"] {
