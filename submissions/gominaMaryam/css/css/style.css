@@ -278,13 +278,41 @@ footer .bottom {
 }
 
 .vendor-content button {
-  color: #ad4c4c;
   font-weight: 500;
-  border: 1px solid #ad4c4c;
-  padding: 8px 15px;
-  background: white;
   margin-top: 15px;
   font-size: 17px;
+}
+
+.add-btn {
+  color: #ad4c4c;
+  border: 1px solid #ad4c4c;
+  background: white;
+  padding: 8px 15px;
+}
+
+.cart {
+  position: relative;
+}
+
+.active-cart {
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: #ad4c4c;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #a5a5a5;
+  gap: 5px;
+  padding: 4px 15px;
+  color: #e6e6e6;
 }
 
 /* responsiveness */
@@ -356,7 +384,6 @@ footer .bottom {
     gap: 20px;
   }
 
-  
   /* styles for vendors page */
   .vendor-bar > button {
     display: none;
@@ -370,8 +397,8 @@ footer .bottom {
     padding-bottom: 10px;
   }
 
-  .vendor-container:last-of-type{
-	  padding-bottom: 40px;
+  .vendor-container:last-of-type {
+    padding-bottom: 40px;
   }
 
   .vendor-container > .viewbtn.mdbtn {
