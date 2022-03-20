@@ -23,7 +23,6 @@ body {
     color: #000;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 500;
 }
 
 .logo span {
@@ -51,7 +50,6 @@ nav a:last-child {
     padding: 5px;
     background: #FFFFFF;
     border: 1px solid #AD4C4C;
-    border-radius: 5px;
     font-weight: 500;
 }
 
@@ -64,7 +62,7 @@ main {
 .foodbag-text {
     display: block;
     text-align: center;
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 
 .foodbag-text h1 {
@@ -111,7 +109,7 @@ label {
 
 select {
     background: url(../assets/keyboard_arrow_down.svg);
-    /* appearance: none; */
+
 }
 
 /* 4subs */
@@ -131,12 +129,10 @@ select {
 
 .box {
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px 1.5px rgba(0, 0, 0, 0.1);
     padding: 38px;
     height: 169px;
     width: 295px;
-    border-radius: 0px;
-
 }
 
 .box img {
@@ -150,7 +146,6 @@ select {
     font-style: normal;
     font-weight: 500;
     line-height: 27px;
-    letter-spacing: 0em;
     text-align: left;
     color: #AD4C4C;
 
@@ -200,12 +195,12 @@ select {
 
 .serve-sub1 {
     width: 300px;
-    height: 226.11px;
+    height: 226px;
 }
 
 .serve-sub1 img {
     width: 300px;
-    height: 225.9px;
+    height: 226px;
 }
 
 .serve-sub1 h3 {
@@ -214,10 +209,8 @@ select {
     font-style: normal;
     font-weight: 500;
     line-height: 38px;
-    letter-spacing: 0em;
     text-align: center;
     color: #696969;
-
 }
 
 .serve-sub1 p {
@@ -295,8 +288,7 @@ footer{
    body{
       
        padding: 20px;
-       margin: 0px;
-       /* width: 100%; */
+       margin: 0;
    }
    .logo {
    
@@ -315,14 +307,13 @@ line-height: 15px;
 .foodbag-text {
     display: block;
     text-align: left;
-    margin: 20px 0px;
+    margin: 20px 0;
     font-size: 20px;
 line-height: 30px;
 }
 
 .foodbag-text h1 {
     font-size: 20px;
-    line-height: 30px;
 }
 
 .foodbag-text p {
@@ -361,13 +352,11 @@ line-height: 18px;
 
 .box {
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px 1.5px rgba(0, 0, 0, 0.1);
     padding: 38px;
     height: 169px;
     width: 100%;
-    border-radius: 0px;
    margin-bottom: 30px;
-
 }
 
 .box img {
@@ -453,8 +442,6 @@ line-height: 18px;
     margin: 10px;
 }
 
-
-
 /* footer */
 footer{
     display: block;
@@ -469,25 +456,3 @@ footer{
     line-height: 18px;
 }
  }
-
-
-
-
-
-
-
-@media (min-width: 768px) { }
-
-
-@media (min-width: 992px) { }
-
-
-@media (min-width: 1200px) { 
-
-}
-
-@media (max-width: 1400px) { 
-    .boxes{
-        
-    }
-}
