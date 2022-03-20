@@ -236,7 +236,7 @@ p{
     .process{
         display: inline-block;
         justify-content: center;
-        margin: 0px;
+        margin: 0;
         width: 100%;
         text-align: center;
 
