@@ -93,7 +93,7 @@ h1 {
 .left {
     display: flex;
     align-items: center;
-    margin: 10px 0px;
+    margin: 10px 0;
     justify-content: space-between;
 }
 
@@ -196,7 +196,7 @@ button {
     body {
 
         padding: 20px;
-        margin: 0px;
+        margin: 0;
         width: 100%;
     }
 
