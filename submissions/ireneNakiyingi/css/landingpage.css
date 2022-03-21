@@ -18,6 +18,7 @@ nav{
 #sign{
     margin-right: 0;
     padding: 5px;
+    font-weight: 500;
     background-color: white;
 }
 .order{
@@ -60,9 +61,6 @@ div .order:last-of-type{
     color: orangered;
     font-weight: bold;
 }
-.interest:first-child .order{
-    margin-left: 0;
-}
 .order::h3{
     color: maroon;
 }
@@ -88,5 +86,94 @@ span{
     background-position: right;
     background-repeat: no-repeat;
     padding-left: 5px;
+    font-weight: 500;
+}
+
+input{
+    width: 100%;
+    width: 1110px ;
+    height: 25px;
+}
+image{
+    text-align: center;
+}
+.process{
+    text-align: center;
+    color: grey;
+    margin: 20px 10px;
+}
+.process h3{
+    color: rgb(80, 77, 77);
+}
+.box{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-evenly;
+}
+div .process:first-of-type{
+    margin-left: 0;
+}
+div .process:last-of-type{
+    margin-right: 0;
+}
+.process::first-line{
+    font-weight: bolder;
+}
+.para{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.para::first-line{
+    font-size: 24px;
+    font-weight: bold;
+}
+.para h4{
+    font-size: 14px;
+    color: rgb(116, 109, 109);
+    margin-top: 0;
+    font-weight: 500;
+}
+.left{
+    float: left;
+    display: inline-flex;
+}
+.right{
+    float: right;
+    margin: 10px;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+button{
+    color: rgb(177, 10, 10);
+    border-radius: 5px;
+    border-color: rgb(177, 10, 10);
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+#pick{
+    font-weight: bold;
+}
+#serve{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(63, 59, 59);
+    font-size: 20px;
+}
+.socials img{
+    margin: 10px;
+}
+#para{
+    font-size: 24px;
+    margin-bottom: 2px;
+    color: rgb(66, 65, 65);
+}
+label{
     font-weight: 500;
 }
