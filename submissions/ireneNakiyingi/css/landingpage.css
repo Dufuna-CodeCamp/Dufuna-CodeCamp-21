@@ -51,7 +51,7 @@ div .order:last-of-type{
     margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .interest{
     display: flex;
