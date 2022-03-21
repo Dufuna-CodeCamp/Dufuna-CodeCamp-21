@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Poppins;
     background-color: #ffffff;
     box-sizing: content-box;
@@ -9,7 +9,7 @@
 
   .container {
     padding: 20px;
-    margin: 20px 0px 60px;
+    margin: 20px 0 60px;
   }
 
   .navbar{
@@ -61,7 +61,7 @@
 .fb {
   text-align: center;
   padding: 30px;
-  margin: 10px 0px;
+  margin: 10px 0;
     
 }
 .fb h2{
@@ -79,12 +79,12 @@
 }
 
 .location{
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .location h3{
   color: #000000;
-  padding: 10px 0px;
+  padding: 10px 0;
   }
 
 .location select{
@@ -97,11 +97,11 @@
   color: #696969;
 }
 .pick-interest{
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .pick-interest h3{
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #000000;
 }
 .group-interest{
@@ -134,11 +134,11 @@
   padding:10px;
 }
 .service{
-  margin: 40px 0px;
+  margin: 40px 0;
 }
 
 .service h3{
-  padding: 10px 0px;
+  padding: 10px 0;
   color: #000000;
   text-align: center;
   font-size: 20px;
@@ -173,11 +173,11 @@
   
 }
 hr{
-  margin: 40px 0px;
+  margin: 40px 0;
 }
 .footer1{
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 .footer1 li{
   padding: 10px;
@@ -197,21 +197,21 @@ hr{
 @media screen and (min-width:360px){
   .fb {
     text-align: left;
-    padding: 0px;
-    margin: 0px 0px;
+    padding: 0;
+    margin: 0;
     font-size: small; 
   }
   
   .navbar{
-    margin-bottom: 40px;;
+    margin-bottom: 40px;
   }
 
   .pick-interest{
-    margin: 20px 0px;
+    margin: 20px 0;
   }
   
   .pick-interest h3{
-    padding: 10px 0px;
+    padding: 10px 0;
     color: #000000;
   }
   .group-interest{
@@ -245,11 +245,11 @@ hr{
   }
   
   .service{
-    margin: 40px 0px;
+    margin: 40px 0;
   }
   
   .service h3{
-    padding: 10px 0px;
+    padding: 10px 0;
     color: #000000;
     text-align: center;
     font-size: 20px;
@@ -288,12 +288,12 @@ hr{
     
   }
   hr{
-    margin: 40px 0px;
+    margin: 40px 0;
     color:#696969
   }
   .footer1{
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0;
   }
   .footer1 li{
     padding: 10px;
@@ -318,11 +318,11 @@ hr{
 
 @media screen and (max-width:760px){
    .pick-interest{
-    margin: 20px 0px;
+    margin: 20px 0;
   }
   
   .pick-interest h3{
-    padding: 10px 0px;
+    padding: 10px 0;
     color: #000000;
   }
  
@@ -351,11 +351,11 @@ hr{
   }
   
   .service{
-    margin: 40px 0px;
+    margin: 40px 0;
   }
   
   .service h3{
-    padding: 10px 0px;
+    padding: 10px 0;
     color: #000000;
     text-align: center;
     font-size: 20px;
@@ -387,11 +387,11 @@ hr{
     
   }
   hr{
-    margin: 40px 0px;
+    margin: 40px 0;
   }
   .footer1{
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0;
   }
   .footer1 li{
     padding: 10px;
