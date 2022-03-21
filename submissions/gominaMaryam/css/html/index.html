@@ -12,7 +12,7 @@
 			<h3 class="logo">Food<span>Bag</span></h3>
 			<nav>
 				<ul class="nav-list">
-					<li class="nav-items"><a href="#">Cart</a></li>
+					<li class="nav-items cart"><a href="#">Cart</a><span class="active-cart"></span></li>
 					<li class="nav-items"><a href="#">Login</a></li>
 					<li class="nav-items">
 						<a class="signup" href="#">Sign Up</a>
@@ -28,6 +28,7 @@
 			<form>
 				<label class="sub-head" for="location">Where are you?</label>
 				<select name="location" id="location">
+					<option value disabled selected>Enter your delivery address</option>
 					<option value="Bodija Market">Bodija Market</option>
 					<option value="Owerri">Owerri</option>
 					<option value="Lekki">Lekki</option>
@@ -38,7 +39,11 @@
 				<h5 class="sub-head">Pick an interest</h5>
 				<div class="services">
 					<div class="service-item">
-						<img src="../images/fast-food.svg" alt="Fast food" />
+						<img
+							src="../images/fast-food_disabled.svg"
+							class="service-img"
+							alt="Fast food"
+						/>
 						<h6 class="service-title">Fast food</h6>
 						<p class="service-text">
 							All sorrows are less with bread.
@@ -46,7 +51,8 @@
 					</div>
 					<div class="service-item">
 						<img
-							src="../images/Vegetables & Drinks.svg"
+							src="../images/Vegetables & Drinks_disabled.svg"
+							class="service-img"
 							alt="Vegetables & Fruits"
 						/>
 						<h6 class="service-title">Vegetables & Fruits</h6>
@@ -56,7 +62,8 @@
 					</div>
 					<div class="service-item">
 						<img
-							src="../images/Drinks & Cocktails.svg"
+							src="../images/Drinks & Cocktails_disabled.svg"
+							class="service-img"
 							alt="Drinks & Cocktails"
 						/>
 						<h6 class="service-title">Drinks & Cocktails</h6>
@@ -65,7 +72,11 @@
 						</p>
 					</div>
 					<div class="service-item">
-						<img src="../images/resturant.svg" alt="Resturants" />
+						<img
+							src="../images/resturant_disabled.svg"
+							class="service-img"
+							alt="Resturants"
+						/>
 						<h6 class="service-title">Resturants</h6>
 						<p class="service-text">
 							All sorrows are less with bread.
@@ -83,7 +94,10 @@
 						/>
 						<div class="about-text">
 							<h4>Tell us where you are</h4>
-							<p>Select the location you want <br>us to deliver.</p>
+							<p>
+								Select the location you want <br />us to
+								deliver.
+							</p>
 						</div>
 					</div>
 					<div class="about-box">
@@ -93,7 +107,9 @@
 						/>
 						<div class="about-text">
 							<h4>Tell us what you want</h4>
-							<p>Browse the type of food <br>that interest you.</p>
+							<p>
+								Browse the type of food <br />that interest you.
+							</p>
 						</div>
 					</div>
 					<div class="about-box">
@@ -104,7 +120,8 @@
 						<div class="about-text">
 							<h4>We'll come running</h4>
 							<p>
-								Your order will be delivered to <br>you in no time.
+								Your order will be delivered to <br />you in no
+								time.
 							</p>
 						</div>
 					</div>
@@ -125,5 +142,6 @@
 				<p>© Copyright 2021 FoodBag is a registered trademark</p>
 			</div>
 		</footer>
+		<script src="../../dom/landing.js"></script>
 	</body>
 </html>
