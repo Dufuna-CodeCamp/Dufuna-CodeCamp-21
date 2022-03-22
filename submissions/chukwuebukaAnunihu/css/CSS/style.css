@@ -38,7 +38,6 @@ header span {
 
 /* Navigation links */
 .header-nav a {
-    color: black;
     text-decoration: none;
     color: #696969;
     font-weight: 400;
@@ -58,7 +57,6 @@ header span {
 
 .food {
     font-style: normal;
-    letter-spacing: 0em;
     text-align: center;
     margin-top: 150px;
 }
@@ -67,19 +65,17 @@ header span {
     color: #4E4D4D;
     font-weight: 600;
     font-size: 40px;
+    margin-bottom: 0;
 }
 
 .food p {
     font-weight: 400;
     font-size: 20px;
     color: #696969;
+    margin-top: 0;
 }
 
 /* Address input field */
-form {
-    margin-top: 50px;
-    margin: auto;
-}
 
 .location-div {
     width: 85vw;
@@ -135,7 +131,7 @@ label {
     align-items: flex-start;
     justify-content: center;
     background: #FFFFFF;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 #interest div p:nth-of-type(1) {
