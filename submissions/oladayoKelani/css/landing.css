@@ -84,11 +84,7 @@
 
 .location h3{
   color: #000000;
-<<<<<<< Updated upstream
   padding: 10px 0;
-=======
-  padding: 10px 1px;
->>>>>>> Stashed changes
   }
 
 .location select{
@@ -201,13 +197,8 @@ hr{
 @media screen and (min-width:360px){
   .fb {
     text-align: left;
-<<<<<<< Updated upstream
     padding: 0;
     margin: 0;
-=======
-    padding: 0px;
-    margin: 0px;
->>>>>>> Stashed changes
     font-size: small; 
   }
   
