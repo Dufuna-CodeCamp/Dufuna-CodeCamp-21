@@ -57,6 +57,7 @@ SELECT COUNT(survival) FROM survivals WHERE survival = 0;
 549 
 
 -- Get the name and sex of passengers under the age of 27 that embarked at Queenstown and Cherbourg?
+
 SELECT passengers.full_name, passengers.age FROM passengers 
 INNER JOIN passengers_details ON  passengers.id = passengers_details.passengers_id
 WHERE passengers.age < 27 AND (passengers_details.point_embarkation = 'C'or passengers_details.point_embarkation = 'Q')
