@@ -1,8 +1,307 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
-    "failures": 0,
-    "owner": "christopherUshie"
+    "suites": 1,
+    "tests": 8,
+    "passes": 0,
+    "pending": 0,
+    "failures": 8,
+    "start": "2022-03-22T21:21:50.137Z",
+    "end": "2022-03-22T21:21:51.590Z",
+    "duration": 1453,
+    "testsRegistered": 8,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b3c6f16-e057-4810-a0b7-0d643da8f6f2",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
+          "file": "\\vendors.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 1226,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "d47cad57-1916-452d-9d96-70ca07e65642",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "08e4b06e-3c84-4b64-84d7-c74dcb6fea63",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "timedOut": false,
+              "duration": 69,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
+              "err": {
+                "message": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Food'",
+                "estack": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Food'\n    at Context.<anonymous> (vendors.js:24:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "55d2cb0f-8a7f-4424-b33a-88b124cfa68e",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "timedOut": false,
+              "duration": 23,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
+              "err": {
+                "message": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Bag'",
+                "estack": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Bag'\n    at Context.<anonymous> (vendors.js:30:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "2ac98092-d77e-44c2-b061-bd06f9bd4465",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: FoodBag text is present on the page",
+              "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
+              "timedOut": false,
+              "duration": 26,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"FoodBag\" text is present: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'FoodBag'",
+                "estack": "AssertionError: Ensure \"FoodBag\" text is present: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'FoodBag'\n    at Context.<anonymous> (vendors.js:36:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "7903eed1-d7da-4663-b8b4-3eb86d807fd9",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Login",
+              "fullTitle": "Testing Scholars Project test case: check Login",
+              "timedOut": false,
+              "duration": 20,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
+              "err": {
+                "message": "AssertionError: Ensure the `Login` link is present on the header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Login'",
+                "estack": "AssertionError: Ensure the `Login` link is present on the header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Login'\n    at Context.<anonymous> (vendors.js:43:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "2ac95ccd-59d9-48cf-afbe-cc06f0ffe8fb",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Cart",
+              "fullTitle": "Testing Scholars Project test case: check Cart",
+              "timedOut": false,
+              "duration": 24,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {
+                "message": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Cart'",
+                "estack": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'Cart'\n    at Context.<anonymous> (vendors.js:49:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "98bd28ae-7dc9-4906-95bc-b160278cd8f9",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 23,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {
+                "message": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'All Vendors'",
+                "estack": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Chicken republic\\nrefuel max\\n#1200\\n…' to include 'All Vendors'\n    at Context.<anonymous> (vendors.js:55:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "55c238e0-e11a-4708-a01f-3b78badd2232",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 12,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
+              "err": {
+                "message": "AssertionError: Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up: expected +0 to equal 1",
+                "estack": "AssertionError: Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up: expected +0 to equal 1\n    at Context.<anonymous> (vendors.js:61:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "- 0\n+ 1\n"
+              },
+              "uuid": "fc456fcb-c244-42ef-b621-72e5f9b1e203",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 9",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
+              "timedOut": false,
+              "duration": 16,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
+              "err": {
+                "message": "AssertionError: Ensure all the images are present on the page: expected 5 to equal 10",
+                "estack": "AssertionError: Ensure all the images are present on the page: expected 5 to equal 10\n    at Context.<anonymous> (vendors.js:67:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "- 5\n+ 10\n"
+              },
+              "uuid": "5482cadc-ad68-4927-a49d-b49572e5340a",
+              "parentUUID": "0e7d9dbd-bff1-4cf2-8725-58805ce9f756",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "55d2cb0f-8a7f-4424-b33a-88b124cfa68e",
+            "2ac98092-d77e-44c2-b061-bd06f9bd4465",
+            "7903eed1-d7da-4663-b8b4-3eb86d807fd9",
+            "2ac95ccd-59d9-48cf-afbe-cc06f0ffe8fb",
+            "98bd28ae-7dc9-4906-95bc-b160278cd8f9",
+            "55c238e0-e11a-4708-a01f-3b78badd2232",
+            "fc456fcb-c244-42ef-b621-72e5f9b1e203",
+            "5482cadc-ad68-4927-a49d-b49572e5340a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 213,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.0.1"
+    }
   }
 }
