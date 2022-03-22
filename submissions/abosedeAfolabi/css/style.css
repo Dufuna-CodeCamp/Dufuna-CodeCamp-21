@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.logo{
+    height: 70px;
+    
+    
+}
+  .chicken{
+      font-size: 14px;
+      margin-top: 40px;
+
+      
+      
+  }  
+  .head{
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+  }
+  .cards{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 100px;
+
+  }
+   .cards div{
+       padding: relative;
+       width: 240px;
+       height: 380px;
+       
+       margin:  10px;
+       text-align: center;
+       background: white;
+       padding: 7px;
+
+   }
+   img{
+       height: 150px;
+   }
+   p{
+       margin: 0px;
+      float: left; 
+
+   }
+   h3{
+       position: relative;
+       color: green;
+       font-size: 14px;
+       float: right;
+       left: -10%;
+       top: -2.5%;
+   }
+   h4{
+       margin-top: 50px;
+       position: relative;
+       border: 1px solid red;
+       width: 100px;
+       padding: 5px;
+   }
