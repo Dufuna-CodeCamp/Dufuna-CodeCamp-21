@@ -53,6 +53,7 @@ SELECT COUNT(survival) FROM survivals WHERE survival = 1;
 342
 
 -- What is the total number of passengers who did not survived?
+
 SELECT COUNT(survival) FROM survivals WHERE survival = 0;
 549 
 
