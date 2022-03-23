@@ -78,8 +78,9 @@ label{
     border-radius: 5px;
 }
 select{
-    background: url(../assets/keyboard_arrow_down.svg) no-repeat 98%;
+    background: url("../assets/keyboard_arrow_down.svg") ;
     appearance: none;
+    color: red;
 }
 main > p:nth-of-type(2){
     color: #000;

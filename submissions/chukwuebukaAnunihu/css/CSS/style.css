@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* div {
+    border: 1px solid black;
+
+} */
+
+header span {
+    color: #AD4C4C;
+}
+
+.top-left {
+    margin: 50px 0 0 100px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header-nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    margin: -30px 110px 0 0;
+}
+
+/* Navigation links */
+.header-nav a {
+    text-decoration: none;
+    color: #696969;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header-nav input {
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    height: 40px;
+    width: 92px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+}
+
+.food {
+    font-style: normal;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.food h1 {
+    color: #4E4D4D;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.food p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #696969;
+    margin-top: 0;
+}
+
+/* Address input field */
+
+.location-div {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#location {
+    width: 100%;
+    padding-left: 35px;
+    height: 50px;
+    border-radius: 5px;
+    text-indent: 1px;
+    text-overflow: '';
+    background: url(/images/keyboard_arrow_down.svg) no-repeat right center;
+    border: 1px solid #C4C4C4;
+}
+
+#location:focus {
+    outline: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none !important
+}
+
+input:hover {
+    cursor: context-menu;
+}
+
+/* Pick an interest */
+label {
+    margin-left: 100px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#interest {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#interest div {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 169px;
+    line-height: 2px;
+    align-items: flex-start;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+#interest div p:nth-of-type(1) {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #A5A5A5;
+}
+
+#interest div p:nth-of-type(2) {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A5A5A5;
+}
+
+#interest div input {
+    margin-left: 20px;
+}
+
+/* How we serve you */
+.serve {
+    margin-top: 82px;
+    margin-bottom: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 30px;
+    color: #4E4D4D;
+}
+
+#procedure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#procedure div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 100%;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    word-break: break-word;
+    color: #A5A5A5;
+}
+
+.first {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #696969;
+}
+
+/* Footer & Social media icons */
+.contact-us {
+    width: fit-content;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #696969;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer-nav {
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer nav img {
+    height: 200px;
+    width: 200px;
+}
+
+.terms {
+    width: 90vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    color: #696969;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #696969;
+}

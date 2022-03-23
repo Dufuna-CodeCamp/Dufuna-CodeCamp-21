@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Landing Page</title>
-        <link rel="stylesheet" href="landingpage.css">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Landing Page responsive</title>
+        <link rel="stylesheet" href="landingresponsive.css">
     </head>
     <body>
-        <nav>
-            <h3 class="left" id="name">Food<span>Bag</span></h3>  
-            <button class="right" id="sign">Sign up</button> 
+        <nav class="nav">
+            <span class="left" id="name">Food<span class="span">Bag</span></span>
+            <a href="signup"><button class="right" id="sign">Sign up</button> </a>
             <a href="#" class="right">Login</a>
             <a href="#" class="right">Cart</a>
-        </nav> <br><br>
+            
+        </nav> 
         <div class="para">
             <h3 id="para">FoodBag</h3>
             <h4>Anything food, we have you covered. </h4>
         </div>
         <div>
             <label for="location">Where are you?</label><br>
-            <div class="input">
-                <input type="text" name="location" id="location" placeholder="Bodija Market">
-            </div>
-            
-            
+            <select name="location" id="location" disabled="disabled" class="bodija" >
+                <option value="Bodija Market" class="bodija" placeholder="Bodija Market">Bodija Market</option>
+            </select>
         </div>
         <h3 id="pick">Pick an interest</h3>
         <div class="interest">
@@ -42,7 +42,7 @@
             </div>
             <div class="order" id="rest">
                 <img src="resturant.svg" alt="restaurant">
-                <h3 class="interest">Resturants</h3>
+                <h3 class="interest">Restaurants</h3>
                 <h4>All sorrows are less with bread.</h4>
             </div>
         </div>
@@ -79,7 +79,7 @@
                 <p> Privacy policy</p>
             </div>
             <div class="right">
-                <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
+                <p>&copy; Copyright 2021 FoodBag is a <span>registered trademark</span></p>
             </div>
         </section>
         
