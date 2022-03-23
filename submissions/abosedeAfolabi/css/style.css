@@ -33,21 +33,17 @@
        padding: relative;
        width: 240px;
        height: 380px;
-       
        margin:  10px;
        text-align: center;
        background: white;
        padding: 7px;
-
    }
    img{
        height: 150px;
    }
    p{
-       
        margin: 15px;
       float: left; 
-
    }
    h3{
        position: relative;
@@ -70,18 +66,17 @@
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
-    margin-left: 0px;
-
+    margin-left: 0;
 }
  .kfc div{
      padding: relative;
      width: 240px;
      height: 380px;
-     
      margin:  10px;
      text-align: center;
      background: white;
-     padding: 7px;}
+     padding: 7px;
+}
      .red{
          margin-left: -15px;
          color: red;
@@ -93,14 +88,10 @@
     position: relative;
     left: 70%;
     margin: 20px;
-    
-
-    
      }
      .mo{
         margin-top: 50px;
-         display: inline;
-         
+         display: inline;  
      }
      .mo1{
          margin-left: -10px;
@@ -111,9 +102,7 @@
          margin-bottom: 50px;
      }
      #no{
-         opacity: 0.5;
-         
-         
+         opacity: 0.5; 
      }
      .round{
          border: 1px solid black;
@@ -122,16 +111,12 @@
          width: 50px; 
          float: left;
          margin-top: -12px;
-         
-
      }
      .view {
          position: relative;
          left: 80%;
          margin-top: -30px;
          color: red;
-        
-
      }
      .kf{
          margin-left: 20px;
@@ -144,9 +129,7 @@
         left: 80%;
         margin-top: 30px;
         color: red;
-       
-
-    }
+     }
     #sign{
         border: 1px solid red;
         padding: 5px;
@@ -162,7 +145,3 @@
         margin-left: -120px;
         margin-top: 70px;
     }
-         
-     
-          
-     
