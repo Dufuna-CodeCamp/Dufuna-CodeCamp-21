@@ -1,20 +1,14 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 .logo{
     height: 70px;
-    margin-left: -30px;
-    
-    
+    margin-left: -30px;  
 }
   .chicken{
       font-size: 14px;
       margin-top: 40px;
-
-      
-      
   }  
   .head{
       display: flex;
@@ -30,7 +24,6 @@
 
   }
    .cards div{
-       padding: relative;
        width: 240px;
        height: 380px;
        margin:  10px;
@@ -69,7 +62,6 @@
     margin-left: 0;
 }
  .kfc div{
-     padding: relative;
      width: 240px;
      height: 380px;
      margin:  10px;
