@@ -85,14 +85,16 @@
      .red{
          margin-left: -15px;
          color: red;
+         margin-top: -10px;
      }
      li{
         display: inline;
         text-decoration: none;
     position: relative;
-    left: 75%;
+    left: 70%;
     margin: 20px;
     
+
     
      }
      .mo{
@@ -147,13 +149,14 @@
     }
     #sign{
         border: 1px solid red;
-        padding: 3px;
+        padding: 5px;
     }
     .home{
         margin-left: -40px;
     }
     .none{
         margin-left: -5px;
+        margin-top: -10px;
     }
          
      
