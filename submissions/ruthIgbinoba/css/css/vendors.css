@@ -1,0 +1,141 @@
+body {
+    box-sizing: border-box;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 100px;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+/* Header */
+header {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.brand a{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #000;
+}
+
+.bag {
+    color: #ad4c4c;
+}
+
+.nav-link {
+    padding-right: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #696969;
+}
+
+.signup {
+    padding: 5px 10px;
+    font-weight: 500;
+    color: #ad4c4c;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+}
+
+/* Main */
+.main {
+    padding: 10px 0;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9c9c9;
+}
+
+.home-link {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+.vendor-link {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.main h1 {
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.kfc {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.chicken-republic{
+    padding-top: 60px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.header, .info, .orders, .card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h2{
+    margin-left: 18px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.view-all {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ad4c4c;
+}
+
+.orders {
+    padding-top: 15px;
+}
+
+.card {
+    width: 250px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.order-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #4e4d4d;
+}
+
+.order-price {
+    font-weight: 600;
+    font-size: 16px;
+    color: #5ea304;
+}
+
+.add-cart-link {
+    text-decoration: none;
+    color:#ad4c4c;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 20px;
+    border: 1px solid #ad4c4c;
+    border-radius: 3px;
+    position: relative;
+    top: 10px;
+}
