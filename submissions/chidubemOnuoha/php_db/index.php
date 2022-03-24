@@ -1,5 +1,5 @@
 <?php
-// save values into a cookie
+// save values into a cookie in php
 if (isset($_COOKIE['customers'])) {
     echo $_COOKIE['customers'];
     // unset($_COOKIE);
