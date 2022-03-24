@@ -59,7 +59,7 @@
     }
 
     .responsive-container2 {
-        height: 140%;
+        height: 200%;
     }
 
     .responsive-container li.interest-card {
@@ -120,13 +120,14 @@
         font-size: x-large;
     }
     .hero-content {
-        width: 70%;
+        width: 100%;
+        
     }
     .hero-header {
         font-size: 70px;
     }
     .slogan {
-        font-size: x-large;
+        font-size: xx-large;
     }
     select#location {
         padding: 1%;
@@ -140,7 +141,7 @@
     }
 
     .responsive-container2 {
-        height: 160%;
+        height: 200%;
     }
 
     .responsive-container li.interest-card {
@@ -204,10 +205,13 @@
         height: 100%;
     }
     .hero-content {
+        justify-content: left;
         padding: 0;
         width: 100%;
     }
     .hero-header {
+        display: flex;
+        justify-content: left;
         font-size: 50px;
     }
     .slogan {
@@ -226,7 +230,7 @@
     }
 
     .responsive-container2 {
-        height: 140%;
+        height: 200%;
     }
 
     .responsive-container ul {
@@ -314,10 +318,13 @@
         height: 100%;
     }
     .hero-content {
+        justify-content: left;
         padding: 0;
         width: 100%;
     }
     .hero-header {
+        display: flex;
+        justify-content: left;
         font-size: 40px;
     }
     .slogan {
@@ -336,7 +343,7 @@
     }
 
     .responsive-container2 {
-        height: 190%;
+        height: 200%;
     }
 
     .responsive-container ul {
