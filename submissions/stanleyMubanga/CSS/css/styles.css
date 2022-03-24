@@ -206,12 +206,11 @@ select#location {
     height: 70%;
     display: flex;
     flex-wrap: wrap;
-    font-size: small;
+    font-size: medium;
 }
 
-.interest-card a img {
-    width: 30%;
-}
+/* .interest-card a img {
+} */
 
 .interests-header {
     width: 100%;

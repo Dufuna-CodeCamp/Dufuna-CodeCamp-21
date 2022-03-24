@@ -26,6 +26,10 @@
         scroll-behavior: smooth;
         overflow-y: auto;
     }
+
+    .topNav {
+        width: 50%;
+    }
     .nav-link {
         font-size: x-large;
     }
@@ -37,10 +41,10 @@
         width: 70%;
     }
     .hero-header {
-        font-size: 70px;
+        font-size: 60px;
     }
     .slogan {
-        font-size: xx-large;
+        font-size: x-large;
     }
     select#location {
         padding: 1%;
@@ -132,7 +136,7 @@
     }
 
     .responsive-container {
-        height: 60%;
+        height: 100%;
     }
 
     .responsive-container2 {
@@ -140,7 +144,7 @@
     }
 
     .responsive-container li.interest-card {
-        padding: 1%;
+        padding: 0 5%;
         height: 45%;
         width: 43%;
         font-size: x-large;
