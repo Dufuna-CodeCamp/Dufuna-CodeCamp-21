@@ -1,0 +1,377 @@
+@media only screen and (max-width: 1200px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+     :root {
+        --theme--: #AD4C4C;
+        --themegreen--: #5EA304;
+        --themegray--: #696969;
+        --themedarkgray--: #4E4D4D;
+        --themeborder--: #C4C4C4: --themefaint--: #A5A5A5;
+    }
+    html {
+        font-size: 17px;
+        font-weight: 400;
+        outline: unset;
+    }
+    h2 {
+        font-size: xx-large;
+    }
+    .wrapper {
+        padding: 0 5%;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+    }
+    .nav-link {
+        font-size: x-large;
+    }
+    .topNav-link {
+        width: 30%;
+        height: 100%;
+    }
+    .hero-content {
+        width: 70%;
+    }
+    .hero-header {
+        font-size: 70px;
+    }
+    .slogan {
+        font-size: xx-large;
+    }
+    select#location {
+        padding: 1%;
+        width: 100%;
+        height: 40%;
+        font-size: x-large;
+    }
+
+    .responsive-container {
+        height: 60%;
+        transition: 400ms;
+    }
+
+    .responsive-container2 {
+        height: 140%;
+    }
+
+    .responsive-container li.interest-card {
+        padding: 1%;
+        height: 45%;
+        width: 44%;
+        font-size: large;
+        align-items: center;
+    }
+
+    .responsive-container a {
+        font-size: large;
+    }
+
+    .responsive-container2 li.serve-card {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 17px;
+        font-weight: 400;
+        outline: unset;
+    }
+    h2 {
+        font-size: xx-large;
+    }
+    .wrapper {
+        padding: 0 5%;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+    }
+
+    .topNav {
+        width: 60%;
+    }
+
+
+    .nav-link {
+        font-size: x-large;
+    }
+    .topNav-link {
+        width: 30%;
+        height: 100%;
+        font-size: x-large;
+    }
+    .hero-content {
+        width: 70%;
+    }
+    .hero-header {
+        font-size: 70px;
+    }
+    .slogan {
+        font-size: x-large;
+    }
+    select#location {
+        padding: 1%;
+        width: 100%;
+        height: 40%;
+        font-size: x-large;
+    }
+
+    .responsive-container {
+        height: 60%;
+    }
+
+    .responsive-container2 {
+        height: 160%;
+    }
+
+    .responsive-container li.interest-card {
+        padding: 1%;
+        height: 45%;
+        width: 43%;
+        font-size: x-large;
+        align-items: center;
+    }
+
+    .responsive-container2 li.serve-card {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer span {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 14px;
+        font-weight: 400;
+        outline: unset;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    .wrapper {
+        padding: 0 5%;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+    }
+
+    .topNav {
+        width: 60%;
+    }
+
+    .nav-link {
+        font-size: large;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .topNav-link {
+        width: 33%;
+        height: 100%;
+    }
+    .hero-content {
+        padding: 0;
+        width: 100%;
+    }
+    .hero-header {
+        font-size: 50px;
+    }
+    .slogan {
+        font-size: large;
+    }
+    select#location {
+        padding: 1%;
+        width: 100%;
+        height: 40%;
+        font-size: x-large;
+    }
+
+    .responsive-container {
+        height: 180%;
+        justify-content: space-around;
+    }
+
+    .responsive-container2 {
+        height: 140%;
+    }
+
+    .responsive-container ul {
+        margin-top: -30%;
+    }
+ 
+    .responsive-container li.interest-card {
+        padding: 0 10%;
+        height: 22%;
+        width: 86%;;
+        font-size: x-large;
+        align-items: center;
+    }
+
+    .responsive-container2 li.serve-card {
+        width: 100%;
+        height: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serve-top {
+        margin-top: 0;
+        height: 20%;
+    }
+
+    .contacts {
+        margin-top: 0;
+        height: 30%;
+        border-top: solid 3px rgba(220, 220, 220, 0.233);
+    }
+
+    .contacts-header {
+        height: 20%;
+    }
+
+    footer span {
+        width: 48%;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 14px;
+        font-weight: 400;
+        outline: unset;
+    }
+    h2 {
+        font-size: large;
+    }
+    .wrapper {
+        padding: 0 5%;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+    }
+
+    .topNav {
+        width: 80%;
+    }
+
+    .nav-link {
+        font-size: medium;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .logo span {
+        font-size: medium;
+    }
+
+    .topNav-link {
+        width: 33%;
+        height: 100%;
+    }
+    .hero-content {
+        padding: 0;
+        width: 100%;
+    }
+    .hero-header {
+        font-size: 40px;
+    }
+    .slogan {
+        font-size: medium;
+    }
+    select#location {
+        padding: 1%;
+        width: 100%;
+        height: 40%;
+        font-size: x-large;
+    }
+
+    .responsive-container {
+        height: 180%;
+        justify-content: space-around;
+    }
+
+    .responsive-container2 {
+        height: 190%;
+    }
+
+    .responsive-container ul {
+        margin-top: -30%;
+    }
+ 
+    .responsive-container li.interest-card {
+        padding: 0 10%;
+        height: 22%;
+        width: 86%;;
+        font-size: x-large;
+        align-items: center;
+    }
+
+    .responsive-container2 li.serve-card {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serve-top {
+        margin-top: 0;
+        height: 20%;
+    }
+
+    .contacts {
+        margin-top: 0;
+        height: 30%;
+        border-top: solid 3px rgba(220, 220, 220, 0.233);
+    }
+
+    .contacts-header {
+        height: 20%;
+    }
+
+    footer span {
+        width: 48%;
+        font-size: small;
+    }
+}
