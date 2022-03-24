@@ -22,7 +22,7 @@ header span {
 }
 
 .top-left {
-    margin: 50px 0 0 100px;
+    margin: 50px 0 0 90px;
     font-weight: 500;
     font-size: 20px;
 }
@@ -234,4 +234,170 @@ label {
 .terms a {
     text-decoration: none;
     color: #696969;
+}
+
+/* Vendor's Page */
+
+/* Home > Vendor Navigation links */
+.home-vendor-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 92px;
+    width: 115px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 90px;    
+}
+
+.home-vendor-nav a {
+    text-decoration: none;
+    color: #C9C9C9;
+}
+
+.home-vendor-nav a:hover {
+    color: black;
+}
+
+.home-vendor-nav .active a {
+    color: black;
+}
+
+/* Buttons */
+.add-to-cart-button {
+    display: flex;
+    width: 85vw;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-to-cart-button div {
+    display: flex;
+    width: fit-content;
+    margin-right: 160px; 
+}
+
+button {
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+}
+
+/* MAIN CONTENT */
+
+/* Heading */
+.all-vendors {
+    margin-top: 33px;
+    width: fit-content;
+    margin-left: 90px;
+    font-weight: 500;
+    font-size: 30px;    
+}
+
+/* KFC Section */
+.kfc-logo {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: -50px;
+}
+
+.view-all {
+    width: fit-content;
+    margin-right: 90px;
+    margin-left: auto;
+    margin-bottom: 43px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+}
+
+#kfc {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 86vw;
+}
+
+.item-price {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 85vw;
+}
+
+.item-price div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260px;
+    margin-top: 0;
+}
+
+.item-price div .price {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 600;
+    font-size: 16px; 
+    color: #5EA304;
+    margin-top: 0;
+}
+
+.item-price div .item {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4E4D4D;
+    margin-top: 0;
+}
+
+/* Page break */
+hr {
+    margin-top: 61px;
+    margin-bottom: 56px;
+    width: 86vw;
+    border: 1px solid #E6E6E6;
+}
+
+/* Chicken Republic Section*/
+.chicken-republic-logo {
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    margin-left: 90px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: -50px;
+}
+
+#chicken-republic {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 86vw;
+}
+
+main {
+    margin-bottom: 110px;
 }
