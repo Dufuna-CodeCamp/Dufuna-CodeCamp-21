@@ -162,8 +162,14 @@ p {
     border: solid;
     border-radius: 5px;
     border-color: brown;
+    background-color: white;
     font-size: 15px;
     padding: 10px;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    
 }
 
 .remove {
@@ -264,17 +270,37 @@ p {
     font-weight: bold;
     padding-right: 10px;
 }
-/*.dot {
+#dotlink {
     height: 7px;
     width: 7px;
     background-color: brown;
     border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    bottom: 0;
-    left: 220px;
-    right: 0;
-  }*/
+    display: inline-block;
+    align-self: center;
+    
+  }
+
+  .cart-btn {
+    background-color: #fff;
+    border: solid;
+    color: brown;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .remove-btn {
+    background-color: gray;
+    border: none;
+    color: #fff;
+    padding: 6.98px 16px;
+    text-align:justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+  }
 
   @media screen and (min-width: 600px) {
     nav{
@@ -322,7 +348,7 @@ p {
         padding-right: 10px;
     }
 
-   /* .dot {
+   /*.dot {
         height: 7px;
         width: 7px;
         background-color: brown;
@@ -486,7 +512,7 @@ p {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-   /* .dot {
+    /*.dot {
         height: 7px;
         width: 7px;
         background-color: brown;
@@ -540,6 +566,7 @@ p {
         font-weight: bold;
         padding-right: 10px;
     }
+
 
 }
 
