@@ -24,7 +24,6 @@ body {
     color: #000;
     font-size: 20px;
     line-height: 30px;
-  
 }
 
 .logo span {
@@ -86,7 +85,6 @@ h1 {
 .desc {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
 }
 
@@ -246,22 +244,17 @@ button {
     }
 
     .txt-name h2 {
-
         font-size: 16px;
-
         line-height: 24px;
-
-
     }
 
     .txt-price {
-
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 24px;
+        letter-spacing: 0;
         text-align: left;
-
     }
 
     h2 {
