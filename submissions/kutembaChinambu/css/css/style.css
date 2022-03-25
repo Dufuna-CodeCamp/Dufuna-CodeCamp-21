@@ -275,7 +275,7 @@ p {
     width: 7px;
     background-color: brown;
     border-radius: 50%;
-    display: inline-block;
+    display: none;
     align-self: center;
     
   }
@@ -295,7 +295,7 @@ p {
     background-color: gray;
     border: none;
     color: #fff;
-    padding: 6.98px 16px;
+    padding: 6.98px 15px;
     text-align:justify;
     text-decoration: none;
     display: inline-block;
@@ -348,17 +348,15 @@ p {
         padding-right: 10px;
     }
 
-   /*.dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 27px;
-        bottom: 0;
-        left: 403px;
-        right: 0;
-      }*/
+   .dot {
+    width: 7px;
+    background-color: brown;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+      }
+      height: 7px;
+   
 
 }
 
@@ -451,17 +449,13 @@ p {
         padding-right: 10px;
     }
 
-   /* .dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        left: 560px;
-        right: 0;
-      }*/
+   .dot {
+    width: 7px;
+    background-color: brown;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+      }
 
 }
 
@@ -474,7 +468,7 @@ p {
         display: inline;
         padding: 8px;
         float: right;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .wrapper {
@@ -512,17 +506,13 @@ p {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    /*.dot {
-        height: 7px;
+    .dot {
         width: 7px;
         background-color: brown;
         border-radius: 50%;
-        position: absolute;
-        top: 27px;
-        bottom: 0;
-        left: 1330px;
-        right: 0;
-      }*/
+        display: inline-block;
+        align-self: center;
+      }
 
       .chickenreplogo li {
         position: absolute;
