@@ -294,7 +294,7 @@ p {
     background-color: gray;
     border: none;
     color: #fff;
-    padding: 6.98px 15px;
+    padding: 7px 15px;
     text-align:justify;
     text-decoration: none;
     display: inline-block;
@@ -312,20 +312,24 @@ p {
         float: right;
         font-size: 15px;
     }
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
 
     }
+
     .wrapper2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
     .tagline {
         font-size: 20px;
         text-align: center;
     } 
+
     #rem {
         position: absolute;
         top: 495px;
@@ -336,6 +340,7 @@ p {
         font-weight: bold;
         padding-right: 10px;
     }
+
     #rem1 {
         position: absolute;
         top: 2305px;
@@ -348,6 +353,7 @@ p {
     } 
 
 }
+
 
 @media screen and (min-width: 768px) {
     nav{
