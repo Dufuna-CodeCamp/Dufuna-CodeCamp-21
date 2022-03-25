@@ -1,7 +1,6 @@
 var img = new Image();
 img.src = "../FoodBag Task Images/remove.svg";
 var dotlink = document.getElementById("dotlink");
-var selector = document.querySelectorAll('remove-btn');
 
 
 //select all elements with the class cart-button and alternate between cart-btn class and remove-btn class
@@ -27,8 +26,6 @@ cartOptions.forEach(cartOptions => {
 function addDot(){
      var dotlink = document.getElementById("dotlink");
         var selector = document.querySelectorAll('.remove-btn');
-        console.log(selector);
-        console.log(selector.length);
             if (selector.length >=1) {
             dotlink.style.display = 'inline-block';
 
