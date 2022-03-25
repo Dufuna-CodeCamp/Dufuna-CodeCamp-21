@@ -294,7 +294,7 @@ p {
     background-color: gray;
     border: none;
     color: #fff;
-    /*padding: 6.98px 15px;*/
+    padding: 6.98px 15px;
     text-align:justify;
     text-decoration: none;
     display: inline-block;
@@ -345,7 +345,7 @@ p {
         list-style-type: none;
         font-weight: bold;
         padding-right: 10px;
-    }
+    } 
 
 }
 
