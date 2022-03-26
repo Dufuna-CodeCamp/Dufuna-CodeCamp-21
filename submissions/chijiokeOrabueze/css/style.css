@@ -19,9 +19,7 @@ body{
 header{
     position:relative;
     display: flex;
-    /* border:1px solid black; */
     align-items: center;
-    /* line-height: 16px;; */
 }
 
 header h3 a{
@@ -35,7 +33,6 @@ header h3 a span{
 nav{
     position:absolute;
     right:0px;
-    /* top:50%; */
     display:flex; 
     align-items: center;
 }
@@ -94,7 +91,6 @@ section.landing .serve-you{
 }
 
 section.landing .serve-you h3{
-    /* display:flex; */
     text-align: center;
     margin-top:150px;
     margin-bottom: 80px;
