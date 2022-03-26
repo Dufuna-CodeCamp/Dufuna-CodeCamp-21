@@ -163,7 +163,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   body  {
-    padding: 20px 60px 110px ;
+    padding: 50px 100px 110px ;
     font-size: 16px;
   }
   .menu {

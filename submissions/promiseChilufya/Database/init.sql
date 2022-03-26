@@ -12,11 +12,11 @@ USE food_bag;
     
     CREATE TABLE vendor_food(
     id INT NOT NULL AUTO_INCREMENT,
-    admin_id INT NOT NULL,
-    food_id INT NOT NULL,
+    admin_id ENUM('0','1'),
+    food_id ENUM('1','2','3','4'),
     name VARCHAR(255) NOT NULL,
     amount double NOT NULL,
-    PRIMARY KEY(id), FOREIGN KEY(food_id) REFERENCES food_table(id)
+    PRIMARY KEY(id), FOREIGN KEY(food_id) REFERENCES food_table(admin_id)
     );
     /* This is the Admins Table */
     
@@ -43,8 +43,8 @@ USE food_bag;
     /* This is the orders_table */
     
     CREATE TABLE orders_table(
-    id INT NOT NULL AUTO_INCREMENT,
-    vendor_id INT NOT NULL,
+    id INT NULL AUTO_INCREMENT,
+    vendor_id INT NULL,
     customer_id INT NULL,
     PRIMARY KEY(id), FOREIGN KEY(vendor_id) REFERENCES vendor_food(id), FOREIGN KEY(customer_id) REFERENCES customer_table(id)
     );
