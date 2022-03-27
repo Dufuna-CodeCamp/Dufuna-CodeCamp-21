@@ -190,14 +190,14 @@ select#location {
     height: 90%;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 4px rgba(184, 184, 184, 0.76);
+    box-shadow: 0 0 4px rgba(184, 184, 184, 0.76);
     transition: transform 300ms;
     background-color: white;
     transition: 500ms;
 }
 
 .interest-card:hover {
-    box-shadow: 0px 0px 4px rgb(134, 134, 134);
+    box-shadow: 0 0 4px rgb(134, 134, 134);
     transform: scale(1.02);
 }
 
