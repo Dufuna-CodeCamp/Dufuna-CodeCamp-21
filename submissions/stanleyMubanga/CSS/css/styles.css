@@ -11,8 +11,7 @@
     --themegreen--: #5EA304;
     --themegray--: #696969;
     --themedarkgray--: #4E4D4D;
-    --themeborder--: #C4C4C4: 
-    --themefaint--: #A5A5A5;
+    --themeborder--: #C4C4C4: --themefaint--: #A5A5A5;
 }
 
 h2 {
@@ -44,7 +43,6 @@ a.page-links {
     color: #696969;
     font-size: medium;
 }
-
 
 .flexbox-wrap {
     display: flex;
@@ -193,7 +191,6 @@ select#location {
     box-shadow: 0 0 4px rgba(184, 184, 184, 0.76);
     transition: transform 300ms;
     background-color: white;
-    transition: 500ms;
 }
 
 .interest-card:hover {
@@ -295,7 +292,6 @@ select#location {
     align-items: center;
 }
 
-
 .contact-links a:hover img {
     transform: scale(1.5);
 }
@@ -317,4 +313,111 @@ footer span {
     font-size: large;
     cursor: pointer;
     color: var(--themegray--);
+}
+
+
+/* @@@@@@@@@ vendor page styles ########## */
+
+.path {
+    width: 100%;
+    height: 10%;
+}
+
+.regular-path {
+    color: #C9C9C9;
+}
+
+.page-header {
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    /* background-color: #202020; */
+}
+
+.vendor {
+    width: 100%;
+    height: 60%;
+    /* overflow: hidden; */
+}
+
+.vendor-nav {
+    width: 100%;
+    height: 12%;
+    justify-content: space-between;
+}
+
+.vendor-nav-left {
+    width: 15%;
+    height: 100%;
+}
+
+.vendor-image {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendor-name {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendor-nav-right {
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all {
+    color: var(--theme--);
+    transition: 400ms;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.vendor-products {
+    width: 100%;
+    height: 88%;
+}
+
+.vendor-products ul {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vendor-product-card {
+    height: 90%;
+    width: 24%;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    /* box-shadow: 0 0 5px rgba(128, 128, 128, 0.274); */
+}
+
+.product-image {
+    width: 100%;
+    /* box-shadow: 0 0 5px rgba(128, 128, 128, 0.274); */
+}
+
+.prodcut-details {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name {
+    color: var(--themegray--);
+}
+
+.product-price {
+    display: flex;
+    color: var(--themegreen--);
+    /* background-color: #202020; */
 }

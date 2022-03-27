@@ -26,7 +26,6 @@
         scroll-behavior: smooth;
         overflow-y: auto;
     }
-
     .topNav {
         width: 50%;
     }
@@ -52,16 +51,13 @@
         height: 40%;
         font-size: x-large;
     }
-
     .responsive-container {
         height: 60%;
         transition: 400ms;
     }
-
     .responsive-container2 {
         height: 200%;
     }
-
     .responsive-container li.interest-card {
         padding: 1%;
         height: 45%;
@@ -69,11 +65,9 @@
         font-size: large;
         align-items: center;
     }
-
     .responsive-container a {
         font-size: large;
     }
-
     .responsive-container2 li.serve-card {
         width: 100%;
         height: 30%;
@@ -89,7 +83,6 @@
         margin: 0;
         box-sizing: border-box;
     }
-
     html {
         font-size: 17px;
         font-weight: 400;
@@ -105,12 +98,9 @@
         scroll-behavior: smooth;
         overflow-y: auto;
     }
-
     .topNav {
         width: 60%;
     }
-
-
     .nav-link {
         font-size: x-large;
     }
@@ -121,7 +111,6 @@
     }
     .hero-content {
         width: 100%;
-        
     }
     .hero-header {
         font-size: 70px;
@@ -135,15 +124,12 @@
         height: 40%;
         font-size: x-large;
     }
-
     .responsive-container {
         height: 100%;
     }
-
     .responsive-container2 {
         height: 200%;
     }
-
     .responsive-container li.interest-card {
         padding: 0 5%;
         height: 45%;
@@ -151,7 +137,6 @@
         font-size: x-large;
         align-items: center;
     }
-
     .responsive-container2 li.serve-card {
         width: 100%;
         height: 30%;
@@ -159,7 +144,6 @@
         justify-content: center;
         align-items: center;
     }
-
     footer span {
         font-size: medium;
     }
@@ -171,7 +155,6 @@
         margin: 0;
         box-sizing: border-box;
     }
-
     html {
         font-size: 14px;
         font-weight: 400;
@@ -187,19 +170,15 @@
         scroll-behavior: smooth;
         overflow-y: auto;
     }
-
     .topNav {
         width: 60%;
     }
-
     .nav-link {
         font-size: large;
     }
-
     .logo {
         width: 20%;
     }
-
     .topNav-link {
         width: 33%;
         height: 100%;
@@ -223,28 +202,24 @@
         height: 40%;
         font-size: x-large;
     }
-
     .responsive-container {
         height: 180%;
         justify-content: space-around;
     }
-
     .responsive-container2 {
         height: 200%;
     }
-
     .responsive-container ul {
         margin-top: -30%;
     }
- 
     .responsive-container li.interest-card {
         padding: 0 10%;
         height: 22%;
-        width: 86%;;
+        width: 86%;
+        ;
         font-size: x-large;
         align-items: center;
     }
-
     .responsive-container2 li.serve-card {
         width: 100%;
         height: 33%;
@@ -252,22 +227,18 @@
         justify-content: center;
         align-items: center;
     }
-
     .serve-top {
         margin-top: 0;
         height: 20%;
     }
-
     .contacts {
         margin-top: 0;
         height: 30%;
         border-top: solid 3px rgba(220, 220, 220, 0.233);
     }
-
     .contacts-header {
         height: 20%;
     }
-
     footer span {
         width: 48%;
         font-size: small;
@@ -280,7 +251,6 @@
         margin: 0;
         box-sizing: border-box;
     }
-
     html {
         font-size: 14px;
         font-weight: 400;
@@ -296,23 +266,18 @@
         scroll-behavior: smooth;
         overflow-y: auto;
     }
-
     .topNav {
         width: 80%;
     }
-
     .nav-link {
         font-size: medium;
     }
-
     .logo {
         width: 10%;
     }
-
     .logo span {
         font-size: medium;
     }
-
     .topNav-link {
         width: 33%;
         height: 100%;
@@ -336,28 +301,24 @@
         height: 40%;
         font-size: x-large;
     }
-
     .responsive-container {
         height: 180%;
         justify-content: space-around;
     }
-
     .responsive-container2 {
         height: 200%;
     }
-
     .responsive-container ul {
         margin-top: -30%;
     }
- 
     .responsive-container li.interest-card {
         padding: 0 10%;
         height: 22%;
-        width: 86%;;
+        width: 86%;
+        ;
         font-size: x-large;
         align-items: center;
     }
-
     .responsive-container2 li.serve-card {
         width: 100%;
         height: 30%;
@@ -365,22 +326,18 @@
         justify-content: center;
         align-items: center;
     }
-
     .serve-top {
         margin-top: 0;
         height: 20%;
     }
-
     .contacts {
         margin-top: 0;
         height: 30%;
         border-top: solid 3px rgba(220, 220, 220, 0.233);
     }
-
     .contacts-header {
         height: 20%;
     }
-
     footer span {
         width: 48%;
         font-size: small;
