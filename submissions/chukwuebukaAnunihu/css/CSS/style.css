@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 html {
@@ -33,7 +33,7 @@ header span {
     justify-content: space-between;
     align-items: center;
     float: right;
-    margin: -30px 110px 0 0;
+    margin: -30px 5.56vw 0 0;
 }
 
 /* Navigation links */
@@ -59,6 +59,7 @@ header span {
     font-style: normal;
     text-align: center;
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .food h1 {
@@ -81,6 +82,8 @@ header span {
     width: 85vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #location {
@@ -108,7 +111,7 @@ input:hover {
 
 /* Pick an interest */
 label {
-    margin-left: 100px;
+    margin-left: 7vw;
     color: black;
     font-weight: 500;
     font-size: 20px;
@@ -120,12 +123,14 @@ label {
     width: 85vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    height: fit-content;
 }
 
 #interest div {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    width: 24%;
     height: 169px;
     line-height: 2px;
     align-items: flex-start;
@@ -171,13 +176,14 @@ label {
     width: 85vw;
     margin-left: auto;
     margin-right: auto;
+    height: fit-content;
 }
 
 #procedure div {
     display: flex;
     flex-direction: column;
     width: 300px;
-    min-height: 100%;
+    height: fit-content;
     align-items: center;
     text-align: center;
     font-weight: 400;
@@ -229,6 +235,7 @@ label {
     font-weight: 400;
     font-size: 18px;
     color: #696969;
+    text-align: center;
 }
 
 .terms a {
@@ -247,7 +254,7 @@ label {
     width: 115px;
     font-weight: 400;
     font-size: 14px;
-    margin-left: 90px;    
+    margin-left: 90px;
 }
 
 .home-vendor-nav a {
@@ -275,7 +282,7 @@ label {
 .add-to-cart-button div {
     display: flex;
     width: fit-content;
-    margin-right: 160px; 
+    margin-right: 160px;
 }
 
 button {
@@ -297,7 +304,7 @@ button {
     width: fit-content;
     margin-left: 90px;
     font-weight: 500;
-    font-size: 30px;    
+    font-size: 30px;
 }
 
 /* KFC Section */
@@ -355,7 +362,7 @@ button {
     width: fit-content;
     height: fit-content;
     font-weight: 600;
-    font-size: 16px; 
+    font-size: 16px;
     color: #5EA304;
     margin-top: 0;
 }
@@ -400,4 +407,178 @@ hr {
 
 main {
     margin-bottom: 110px;
+}
+
+/* Media Queries */
+
+/* Media Queries for Landing Page */
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+    .top-left {
+        margin: 23px 0 0 5.56vw;
+        font-size: 16px;
+    }
+
+    .header-nav {
+        width: 150px;
+        margin: -30px 5.56vw 0 0;
+    }
+
+    .header-nav a {
+        font-size: 10px;
+    }
+
+    .header-nav input {
+        width: 74px;
+        height: 32px;
+        font-size: 10px;
+    }
+
+    .food {
+        margin-top: 53px;
+        margin-left: 5.56vw;
+        text-align: left;
+    }
+
+    .food h1 {
+        font-size: 20px;
+    }
+
+    .food p {
+        font-size: 12px;
+    }
+
+    label {
+        margin-left: 5.56vw;
+        font-size: 12px;
+    }
+
+    .location-div {
+        width: 89vw;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #location {
+        height: 40px;
+        padding: 10px;
+    }
+
+    #interest {
+        width: fit-content;
+        flex-direction: column;
+        align-content: space-between;
+        height: 624px;
+        margin-top: 10px;
+    }
+
+    #interest div {
+        width: 88.89vw;
+        height: 141px;
+        font-size: 16px;
+    }
+
+    .serve {
+        margin-top: 60px;
+        margin-bottom: 39.7px;
+        font-size: 20px;
+        flex-direction: column;
+    }
+
+    #procedure {
+        flex-direction: column;
+        align-content: space-between;
+        width: 56vw;
+        height: 750px;
+    }
+
+    #procedure div {
+        width: 100%;
+        height: 250px;
+        font-size: 10px;
+    }
+
+    #procedure div img {
+        width: 200px;
+        height: 150.6px;
+    }
+
+    .first {
+        font-size: 15px;
+    }
+
+    .contact-us {
+        margin-top: 61px;
+        font-size: 16px;
+    }
+
+    .footer nav img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .terms {
+        min-width: 57.5vw;
+        margin-top: 36.5px;
+        margin-bottom: 32px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        word-break: break-word;
+    }
+
+    .terms a {
+        text-decoration: none;
+        color: #696969;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    #procedure div img {
+        width: 200px;
+        height: 150.6px;
+    }
+
+    #procedure div {
+        font-size: 14px;
+    }
+
+    .first {
+        font-size: 18px;
+    }
+
+    .serve {
+        font-size: 25px;
+    }
+
+    #interest {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 110px;
+    }
+
+    #interest div {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #interest div p:nth-of-type(1) {
+        font-size: 16px;
+    }
+
+    .contact-us {
+        margin-top: 10px;
+    }
+
+    .terms {
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #interest div p:nth-of-type(2) {
+        font-size: 1.07vw;
+    }
 }
