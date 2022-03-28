@@ -5,11 +5,7 @@
 
 CREATE TABLE food (
     id INT NOT NULL AUTO_INCREMENT,
-    type INT NOT NULL,
-    category_one VARCHAR(100) NOT NULL,
-    category_two VARCHAR(100) NOT NULL,
-    category_three VARCHAR(100) NOT NULL,
-    category_four VARCHAR(100) NOT NULL,
+    type ENUM('food_category_one','food_category_two', 'food_category_three') INT NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -21,10 +17,10 @@ CREATE TABLE vendor_food (
     id INT NOT NULL AUTO_INCREMENT,
     admin_id INT NOT NULL,
     food_id INT NOT NULL,
-    name VARCHAR(100) NOT NULL,
+    name VARCHAR(250) NOT NULL,
     amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id) REFERENCES food (id)
+    FOREIGN KEY (admin_id ) REFERENCES food (id)
 );
 
 
@@ -32,7 +28,7 @@ CREATE TABLE vendor_food (
 
 CREATE TABLE admins (
     id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR NOT NULL,
+    name VARCHAR(250) NOT NULL,
     type INT NOT NULL,
     email_address VARCHAR(50) NOT NULL,
     phone_number INT(11) NOT NULL,
