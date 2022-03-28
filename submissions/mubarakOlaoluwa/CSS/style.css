@@ -1,0 +1,403 @@
+body {
+        background-color: white;
+}
+
+
+ span {
+    margin: 10px 100px 50px 10px;
+    font-size: medium;
+    font-weight: bold;
+
+} 
+
+span.f1::after {
+    color: orange;
+    content: 'Bag';    
+    
+}
+
+
+.f2 {
+    display: inline-grid;
+    margin: 10px 50px 50px 500px; 
+    font-size: medium;
+
+}
+
+.f3 {
+    display: inline-grid;
+    margin: 10px 50px 50px 50px;
+    font-size: medium;
+}
+
+.f4 {
+    font-size: medium;
+    display: inline-grid;
+    margin: 10px 50px 50px 50px;
+    border: 2px solid orange;
+    border-radius: 20%;
+    padding: 5px
+
+}
+
+.breadcrumb  {
+
+    list-style-type: none;
+    margin: 0px;
+    padding-left:10px;
+
+
+}
+
+li {
+    display: inline-grid;
+    margin: 0px;
+    padding: 1px;
+    font-size: small;
+
+}
+
+p {
+
+    margin: 20px 20px 20px 10px;
+    font-weight: bold;
+}
+
+.image1 {
+ 
+
+    background-image: url('Kfc logo.jpg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    display: inline-grid;
+
+}
+
+div.image1::after {
+
+    content: 'KFC';
+    margin-left: 80px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.view {
+
+    padding-top: 50px;
+    margin: 10px 50px 5px 900px;
+    color: red;
+
+}
+.adjust {
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+
+.ads1 {
+ 
+    background-image: url('kfc_image.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 50px 0px 50px;
+    display: inline-grid;
+    
+   
+}
+
+.ads2 {
+ 
+    background-image: url('kfc_image.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 50px 0px 10px;
+    display: inline-grid;
+}
+
+.ads3 {
+ 
+    background-image: url('kfc_image.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 50px 0px 10px;
+    display: inline-grid;
+
+}
+
+.ads4 {
+ 
+    background-image: url('kfc_image.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 50px 0px 10px;
+    display: inline-grid;
+    
+
+}
+
+.adjust {
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+.text1 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 50px;
+}
+
+.text2 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 50px;
+
+}
+
+.text3 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 60px;
+}
+
+.text4 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 80px;
+
+}
+
+.text5 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 60px;
+}
+
+.text6 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 70px;
+
+}
+
+.text7 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 65px;
+}
+
+.text8 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 100px;
+
+}
+
+.add1 {
+
+    margin: 10px 70px 10px 50px;
+    display:inline-grid;
+    padding: 5px;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+
+}
+
+.add2 {
+    margin: 10px 70px 10px 100px;
+    display:inline-grid;
+    padding: 5px;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+}
+
+.add3 {
+
+    margin: 10px 70px 10px 100px;
+    display:inline-grid;
+    padding: 5px;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+}
+
+.add4 {
+
+    margin: 10px 0px 10px 100px;
+    display:inline-grid;
+    padding: 5px;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+
+}
+
+hr {
+
+    width: 1050px;
+    height: 1px;
+    margin: 10px;
+}
+
+.image2 {
+ 
+
+    background-image: url('chickenrepublic.jpg');
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    display: inline-grid;
+
+}
+
+div.image2::after {
+
+    content: 'Chiciken';
+    margin-left: 70px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.rep {
+
+    margin-left: 63px;
+    margin-top: 30px; 
+}
+
+.view1 {
+
+    padding-top: 50px;
+    margin: 10px 50px 5px 680px;
+    color: red;
+
+}
+
+.adjust {
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+.ad1 {
+ 
+    background-image: url('refuelmax.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 50px 0px 50px;
+    display: inline-grid;
+    
+   
+}
+
+.ad2 {
+ 
+    background-image: url('expressmeal.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 50px 0px 0px;
+    display: inline-grid;
+
+}
+
+.ad3 {
+ 
+    background-image: url('crunchywings.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 30px 0px 20px;
+    display: inline-grid;
+
+}
+
+.ad4 {
+ 
+    background-image: url('crunchywings.png');
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 200px;
+    margin: 20px 30px 0px 30px;
+    display: inline-grid;
+
+}
+
+.text11 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 50px;
+}
+
+.text22 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 90px;
+
+}
+
+.text33 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 50px;
+}
+
+.text44 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 80px;
+
+}
+
+.text55 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 75px;
+}
+
+.text66 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 80px;
+}
+
+.text77 {
+
+    font-weight: lighter;
+    font-size: small;
+    margin: 0px 0px 0px 60px;
+}
+
+.text88 {
+  
+    font-weight: bold;
+    color: green;
+    margin: 0px 0px 0px 80px;
+}
+
