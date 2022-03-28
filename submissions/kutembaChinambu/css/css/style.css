@@ -275,7 +275,6 @@ p {
     width: 7px;
     background-color: brown;
     border-radius: 50%;
-    display: inline-block;
     align-self: center;
     
   }
@@ -295,7 +294,7 @@ p {
     background-color: gray;
     border: none;
     color: #fff;
-    padding: 6.98px 16px;
+    padding: 7px 15px;
     text-align:justify;
     text-decoration: none;
     display: inline-block;
@@ -313,20 +312,24 @@ p {
         float: right;
         font-size: 15px;
     }
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
 
     }
+
     .wrapper2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
     .tagline {
         font-size: 20px;
         text-align: center;
     } 
+
     #rem {
         position: absolute;
         top: 495px;
@@ -337,6 +340,7 @@ p {
         font-weight: bold;
         padding-right: 10px;
     }
+
     #rem1 {
         position: absolute;
         top: 2305px;
@@ -346,21 +350,10 @@ p {
         list-style-type: none;
         font-weight: bold;
         padding-right: 10px;
-    }
-
-   /*.dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 27px;
-        bottom: 0;
-        left: 403px;
-        right: 0;
-      }*/
+    } 
 
 }
+
 
 @media screen and (min-width: 768px) {
     nav{
@@ -451,18 +444,6 @@ p {
         padding-right: 10px;
     }
 
-   /* .dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        left: 560px;
-        right: 0;
-      }*/
-
 }
 
 @media screen and (min-width: 992px) {
@@ -474,7 +455,7 @@ p {
         display: inline;
         padding: 8px;
         float: right;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .wrapper {
@@ -511,18 +492,6 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
-    /*.dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 27px;
-        bottom: 0;
-        left: 1330px;
-        right: 0;
-      }*/
 
       .chickenreplogo li {
         position: absolute;
