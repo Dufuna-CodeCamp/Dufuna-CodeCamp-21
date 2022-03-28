@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    padding:20px 50px;
+}
+
+header{
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+
+header h3 a{
+    color:black;
+}
+
+header h3 a span{
+    color:brown;
+}
+
+nav{
+    position:absolute;
+    right:0;
+    display:flex; 
+    align-items: center;
+}
+
+nav li{
+    padding-right: 40px;
+}
+
+nav button{
+    color:brown;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius:8px;
+    outline: none;
+    border:2px solid brown;
+    font-weight: 400;
+}
+
+section.landing{
+    margin-top: 100px;
+}
+
+section.landing .title{
+    width:100%;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+
+section.landing .destination{
+    width:100%;
+    margin-bottom:40px;
+}
+
+section.landing .destination input{
+    width: 100%;
+    padding:10px;
+    outline:none;
+    border:1px solid grey;
+}
+
+section.landing .interests .interest-container{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+section.landing .interests .interest{
+    padding:20px;
+    border: 2px solid grey;
+    color: grey;
+}
+
+section.landing .serve-you{
+    margin-bottom:150px;
+}
+
+section.landing .serve-you h3{
+    text-align: center;
+    margin-top:150px;
+    margin-bottom: 80px;
+}
+
+section.landing .serve-you .serve-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+section.landing .serve-you .serve-container div{
+    text-align: center;
+}
+
+section.landing .serve-you .serve-container div p{
+    width:190px;
+    margin-left:50px;
+    color: grey;
+}
+
+footer .contact{
+    margin-left:47%;
+}
+
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+}
+
