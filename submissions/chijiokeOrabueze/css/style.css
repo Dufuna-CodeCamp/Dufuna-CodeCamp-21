@@ -32,7 +32,7 @@ header h3 a span{
 
 nav{
     position:absolute;
-    right:0;
+    right:0px;
     display:flex; 
     align-items: center;
 }
@@ -51,7 +51,7 @@ nav button{
     font-weight: 400;
 }
 
-section.landing{
+section.landing, section.vendors{
     margin-top: 100px;
 }
 
@@ -91,6 +91,7 @@ section.landing .serve-you{
 }
 
 section.landing .serve-you h3{
+    /* display:flex; */
     text-align: center;
     margin-top:150px;
     margin-bottom: 80px;
@@ -106,7 +107,7 @@ section.landing .serve-you .serve-container div{
 }
 
 section.landing .serve-you .serve-container div p{
-    width:190px;
+    width:195px;
     margin-left:50px;
     color: grey;
 }
@@ -118,5 +119,60 @@ footer .contact{
 footer .foot{
     display: flex;
     justify-content: space-between;
+}
+
+section.vendors .vendor.kfc{
+    padding-bottom: 100px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+section.vendors .vendor .title{
+    margin-top:80px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.vendors .vendor .title .logo {
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+section.vendors .vendor .title .logo h3{
+    margin-left:10px;
+}
+
+section.vendors .vendor .title button{
+    outline:none;
+    border:none;
+    color:brown;
+    background-color: transparent;
+}
+
+.orders{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders .desc{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+.orders .desc p:nth-child(2){
+    color:green;
+}
+
+.orders button{
+    background-color: transparent;
+    color: brown;
+    outline:none;
+    border:1px solid brown;
+    padding:5px 15px;
+    border-radius: 5px;
 }
 
