@@ -20,8 +20,8 @@
     {
       "uuid": "1499be34-0ba3-49e2-ad62-9bb3484fedee",
       "title": "",
-      "fullFile": "",
-      "file": "",
+      "fullFile": "/home/david/Documents/Dufuna-CodeCamp-21/tests/html_forms/html_form.js",
+      "file": "/html_form.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Printing product price\"",
               "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -135,7 +135,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.2.0"
+      "version": "9.2.2"
     },
     "mochawesome": {
       "options": {
@@ -147,7 +147,7 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "7.0.1"
+      "version": "7.1.2"
     },
     "marge": {
       "options": {
@@ -155,7 +155,7 @@
         "reportFilename": "logfile",
         "quiet": "true"
       },
-      "version": "6.0.1"
+      "version": "6.1.1"
     }
   }
 }
