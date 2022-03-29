@@ -1,3 +1,0 @@
-Hello World!
-I am Adedunmola Adediran, an aspiring software developer.
-This is my first pull request.
