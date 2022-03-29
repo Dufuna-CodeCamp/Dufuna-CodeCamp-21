@@ -1,15 +1,10 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    list-style-type: none;
     outline: unset;
-    list-style: none;
-    text-decoration: none;
-    appearance: none;
 }
-
-
-/* the root contains the primary properties in the style page (colors) */
 
 :root {
     --theme--: #AD4C4C;
@@ -19,17 +14,17 @@
     --themeborder--: #C4C4C4: --themefaint--: #A5A5A5;
 }
 
-html {
-    font-size: 14px;
-    font-weight: 400;
-    outline: unset;
-}
-
 h2 {
     font-weight: 500;
+    color: #202020;
+}
+
+a {
+    text-decoration: unset;
 }
 
 a.border-btn {
+    padding: 1%;
     color: var(--theme--);
     border: 2.5px solid #AD4C4C;
     border-radius: 4px;
@@ -38,7 +33,6 @@ a.border-btn {
 
 a.border-btn:hover {
     color: white;
-    /* border:2.5px solid; */
     border-radius: 4px;
     background-color: var(--theme--);
 }
@@ -50,513 +44,393 @@ a.page-links {
     font-size: medium;
 }
 
+.flexbox-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox {
+    display: flex;
+}
+
 body {
-    /* height: 100%; */
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .wrapper {
+    padding: 0 5%;
     width: 100vw;
     height: 100vh;
-    /* display: flex;
-    flex-wrap: wrap; */
+    scroll-behavior: smooth;
     overflow-y: auto;
 }
 
-header.top-header {
+header {
     width: 100%;
     height: 13%;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-header.top-header .logo {
-    width: 18%;
-    display: flex;
-    /* padding: 1% 4%; */
-    height: 100%;
-    /* background-color: aqua; */
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* ##################################################
-    Here are the styles for the logo in the header 
-    #################################################*/
-
-header.top-header .logo h2 {
-    display: flex;
-}
-
-header.top-header .logo h2 p.logo-A {
-    color: rgb(59, 59, 59);
-}
-
-header.top-header .logo h2 p.logo-B {
-    color: var(--theme--);
-}
-
-
-/* ##################################################
-**************************************************
-    Here are the styles for the nav in the header 
-    ***************************************************
-    #################################################*/
-
-header.top-header nav.nav {
-    width: 82%;
-    height: 100%;
-    /* padding: 1% 0.5%; */
-    /* background-color: #AD4C4C; */
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-header.top-header nav.nav ul {
-    height: 100%;
-    width: 46%;
-    /* background-color: aqua; */
-    display: inline-flex;
-}
-
-header.top-header nav.nav ul li {
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.top-header nav.nav ul li a.page-links {
-    padding: 5.5%;
-    text-decoration: unset;
-    color: #696969;
-}
-
-header.top-header nav.nav ul li a.C {
-    color: var(--theme--);
-    border: 2.5px solid #AD4C4C;
-    border-radius: 4px;
-    transition: .6s;
-}
-
-header.top-header nav.nav ul li a.C:hover {
-    color: white;
-    /* border:2.5px solid; */
-    border-radius: 4px;
-    background-color: var(--theme--);
-}
-
-
-/* ##################################################
-    Here are the styles for the hero section
-    #################################################*/
-
-section.hero {
-    /* margin-top: -8.1rem; */
-    /* background-color: maroon; */
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section.hero .hero-content {
-    padding: 5% 15%;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-section.hero .hero-content h1 {
-    width: 100%;
-    color: var(--themedarkgray--);
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-}
-
-section.hero .hero-content p {
-    color: var(--themegray--);
-}
-
-
-/* ##################################################
-**************************************************
-    Here are the styles for the location form
-    ***************************************************
-    #################################################*/
-
-section.location {
-    /* margin-top: -14rem; */
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section.location form {
-    width: 85%;
-    height: 100%;
-}
-
-section.location form section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-section.location form section label {
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
-
-section.location form section input#location {
-    padding: 1%;
-    width: 98%;
-    height: 45%;
-    border-radius: 4px;
-    border: 3px solid #C4C4C4;
-    font-size: medium;
-    color: var(--themegray--);
-}
-
-section.location form section datalist {
-    overflow-y: auto;
-}
-
-section.interest {
-    margin-top: 2%;
-    width: 100%;
-    height: 48%;
-    /* background-color: aqua; */
-    /* overflow: hidden; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-section.interest .interest-header {
-    width: 100%;
-    height: 14%;
-    padding: 0 7.5%;
-    display: flex;
-    align-items: center;
-}
-
-section.interest ul {
-    width: 86%;
-    height: 86%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-section.interest ul li.interest-card {
-    margin-top: 1%;
-    width: 23%;
-    height: 92%;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 0 0 5px #A5A5A5;
-    transition: .6s;
-}
-
-section.interest ul li.interest-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 8px #4E4D4D;
-    transform: scale(1.07);
-}
-
-section.interest ul li.interest-card h3 {
-    color: var(--theme--);
-    height: 10%;
-    width: 100%;
-    padding: 3% 0;
-}
-
-section.interest ul li.interest-card p {
-    color: var(--themegray--);
-}
-
-section.space {
-    width: 100%;
-    height: 20%;
-}
-
-section.space-2 {
-    width: 100%;
-    height: 20%;
-}
-
-section.serve-description {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-section.serve-description h2.description-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-section.serve-description ul {
-    width: 86%;
-    height: 86%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-section.serve-description ul li.serve-description-card {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-section.serve-description ul li.serve-description-card h2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1.5%;
-    color: var(--themedarkgray--);
-}
-
-section.serve-description ul li.serve-description-card p {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--themegray--);
-}
-
-.contact-us {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contact-us h3 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.contact-us ul.contact-links {
-    width: 100%;
-    height: 30%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-us ul.contact-links li {
-    padding: 2%;
-}
-
-.contact-us ul.contact-links li a:hover img {
-    transform: scale(1.4);
-    transition: .4s ease-in-out;
-}
-
-footer {
-    margin-top: 5em;
-    padding: 0 2%;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-footer .tsandCs {
-    width: 50%;
+.logo {
+    width: 15%;
     height: 100%;
-    display: flex;
+    align-items: center;
 }
 
-footer .tsandCs a {
-    color: var(--themegray--);
-    font-size: medium;
+.logo span {
+    font-size: x-large;
+    font-weight: 600;
 }
 
-footer .copyright {
-    color: var(--themegray--);
-    font-size: medium;
+.red {
+    color: var(--theme--);
 }
 
-.path {
+.topNav {
+    width: 35%;
+    height: 100%;
+}
+
+.topNav ul {
     width: 100%;
-    height: 12%;
-    display: flex;
+    height: 100%;
+}
+
+.topNav-link {
+    width: 30%;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+    font-size: large;
+}
+
+a.C {
+    padding: 5%;
+}
+
+.hero {
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header {
+    width: 100%;
+    font-size: xxx-large;
+    justify-content: center;
+    color: var(--themedarkgray--);
+}
+
+.slogan {
+    font-size: larger;
+    color: var(--themegray--);
+}
+
+.location {
+    width: 100%;
+    height: 20%;
     align-items: center;
     justify-content: center;
 }
 
-.path .path-content {
-    width: 88%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.path .path-content .home-dir {
-    padding: 0 1% 0 0;
-    color: black;
-}
-
-.path .path-content .followup-dir {
-    padding: 0 0 0 1%;
-    color: var(--themegray--);
-}
-
-.vendor-header {
-    padding: 0 5.8%;
+.location-header {
     width: 100%;
-    height: 8%;
-    display: flex;
+}
+
+.location-select {
+    width: 100%;
+    height: 90%;
+    justify-content: center;
     align-items: center;
 }
 
-section.vendor {
-    padding: 0 5.7%;
-    margin-top: 10px;
+select#location {
+    padding: 1%;
+    width: 100%;
+    height: 50%;
+    font-size: larger;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.582);
+    border: 3px solid #C4C4C4;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.interest {
+    width: 100%;
+    height: 45%;
+}
+
+.interest-header {
+    width: 100%;
+    height: 12%;
+}
+
+.interest-list {
+    width: 100%;
+    height: 86%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.interest-card {
+    padding: 2%;
+    width: 24%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(184, 184, 184, 0.76);
+    transition: transform 300ms;
+    background-color: white;
+}
+
+.interest-card:hover {
+    box-shadow: 0 0 4px rgb(134, 134, 134);
+    transform: scale(1.02);
+}
+
+.interest-card a {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+}
+
+.interests-header {
+    width: 100%;
+    color: var(--theme--);
+}
+
+.interest-slogan {
+    color: var(--themegray--);
+    font-weight: 500;
+}
+
+.serve {
+    border-top: solid rgb(250, 250, 250);
     width: 100%;
     height: 60%;
 }
 
-section.vendor-B {
-    margin-top: 5em;
-}
-
-.v-nav {
+.serve-top {
     width: 100%;
-    height: 15%;
-}
-
-.v-nav nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.v-nav nav .v-nav-cont {
-    width: 20%;
-    height: 100%;
-    display: flex;
-}
-
-.v-nav-cont .vendor-image {
-    padding: 0 1.2%;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
+    height: 40%;
+    justify-content: center;
     align-items: center;
 }
 
-.vendor-image img {
-    width: 70%;
-}
-
-.v-nav-cont .vendor-name {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
+.serve-images {
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.v-nav nav .v-nav-link {
-    width: 10%;
-    height: 100%;
+.serve-card-header {
     display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.v-nav nav .v-nav-link a {
-    color: var(--theme--);
-}
-
-.v-nav nav .v-nav-link a:hover {
-    text-decoration: underline;
-}
-
-.vendor .v-products {
+    justify-content: center;
     width: 100%;
-    height: 85%;
-}
-
-.v-products ul {
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-}
-
-.v-products ul li {
-    padding: 2%;
-    width: 25%;
-    height: 90%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.v-products ul li a.product {
-    width: 100%;
-    height: 100%;
-}
-
-.product .product-details {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #5EA304; */
-}
-
-.product .product-details h3 {
-    font-size: medium;
+    font-size: large;
     color: var(--themedarkgray--);
 }
 
-.product .product-details h2 {
-    font-size: medium;
+.serve-card-slogan {
+    font-weight: 500;
+    color: var(--themegray--);
+}
+
+.contacts {
+    margin-top: 5%;
+    border-top: solid rgb(250, 250, 250);
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-header {
+    width: 100%;
+    height: 70%;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links {
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links ul {
+    width: 40%;
+    height: 60%;
+    justify-content: center;
+}
+
+.contact-links ul li {
+    width: 30%;
+    height: 100%;
+}
+
+.contact-links a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links a:hover img {
+    transform: scale(1.5);
+}
+
+.contact-links img {
+    width: 60%;
+    height: 90%;
+    transition: 500ms;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer span {
+    font-size: large;
+    cursor: pointer;
+    color: var(--themegray--);
+}
+
+
+/* @@@@@@@@@ vendor page styles ########## */
+
+.path {
+    margin-top: 40px;
+    width: 100%;
+    height: 10%;
+}
+
+.regular-path {
+    color: #C9C9C9;
+}
+
+.page-header {
+    width: 100%;
+    height: 8%;
+    align-items: center;
+}
+
+.vendor {
+    width: 100%;
+    height: 60%;
+}
+
+.vendor-nav {
+    width: 100%;
+    height: 12%;
+    justify-content: space-between;
+}
+
+.vendor-nav-left {
+    width: 30%;
+    height: 100%;
+}
+
+.vendor-image {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendor-name {
+    width: 70%;
+    justify-content: left;
+    align-items: center;
+}
+
+.vendor-nav-right {
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all {
+    color: var(--theme--);
+    transition: 400ms;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.vendor-products {
+    width: 100%;
+    height: 88%;
+}
+
+.vendor-products ul {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vendor-product-card {
+    height: 90%;
+    width: 24%;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    /* box-shadow: 0 0 5px rgba(128, 128, 128, 0.274); */
+}
+
+.product-image {
+    width: 100%;
+    /* box-shadow: 0 0 5px rgba(128, 128, 128, 0.274); */
+}
+
+.product-info {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name {
+    color: var(--themegray--);
+}
+
+.product-price {
+    display: flex;
     color: var(--themegreen--);
 }
 
-.add-to-cart {
+.product-actions {
     width: 100%;
     height: 20%;
 }
 
-.add-to-cart .btn-to-cart {
-    padding: 4% 14%;
-    width: 50%;
+.cart-adder-btn {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
