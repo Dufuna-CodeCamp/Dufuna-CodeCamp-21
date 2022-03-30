@@ -1,25 +1,26 @@
 -- we create a database to be using
 CREATE DATABASE food_bag_database;
-use food_bag_database;
+USE food_bag_database;
 
 -- we create the food table consisting of two columns namely, the id and type (four different food categories)
 CREATE TABLE food_table(
-	id int not null auto_increment,
-	type varchar(255) not null,
-    primary key(id)
+	id INT NOT NULL AUTO_INCREMENT,
+	type BOOLEAN NOT NULL,
+    PRIMARY KEY(id)
 );
 
 -- vendor_food table is the relationship between the vendor itself and the food they sell. This table will 
 -- contain all they need to know about the food they sell. There will be a relationship between the food table and this table
 
 CREATE TABLE vendors_table(
-	id int not null auto_increment,
-	name varchar(255) not null,
-	amount decimal(20,4) not null,
-    admin_id int not null,
-	food_id int not null,
-    primary key(id),
-    foreign key(food_id) references food_table (id)
+	id INT NOT NULL AUTO_INCREMENT,
+	name vARCHAR(255) NOT NULL,
+	amount DECIMAL(20,4) NOT NULL,
+    admin_id INT NOT NULL,
+	food_id INT NOT NULL,
+    PRIMARY KEY(id),
+    
+    FOREIGN KEY(food_id) REFERENCES food_table (id)
 );
 
 -- we create the admins table
@@ -27,33 +28,32 @@ CREATE TABLE vendors_table(
 -- they will be differentiated by type admin(0) vendor(1)
 
 CREATE TABLE admins_table(
-	id int not null auto_increment,
-	name varchar(200) not null,
-	type varchar(100) not null,
-	email_address varchar(50) not null,
-	phone_number text not null,
-	password varchar (20) not null,
-	primary key (id)
+	id INT NOT NULL AUTO_INCREMENT,
+	name varchar(200) NOT NULL,
+	type BOOLEAN NOT NULL,
+	email_address VARCHAR(250) NOT NULL,
+	phone_number TEXT NOT NULL,
+	password VARCHAR(20) NOT NULL,
+	PRIMARY KEY(id)
 );
 
 
 -- we create a customer table and specify its columns 
 CREATE TABLE customers_table(
-	id int not null auto_increment,
-	name varchar(100) not null,
-	phone_number text not null,
-	address varchar(255) not null,
-    payment_method varchar(255) null,
-    primary key(id)
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(200) NOT NULL,
+	phone_number TEXT NOT NULL,
+	address varchar(255) NOT NULL,
+    payment_method VARCHAR(255) NULL,
+    PRIMARY KEY(id)
 );
 
 -- we create an orders table
 CREATE TABLE orders_table(
-	id int not null auto_increment,
-	customer_id int null,
-    vendor_id int not null, 
-	primary key(id),
-    foreign key(customer_id) references customers_table(id),
-	foreign key(vendor_id) references vendors_table(id)
-
+	id INT NOT NULL AUTO_INCREMENT,
+	customer_id INT NULL,
+    vendor_id INT NOT NULL, 
+	PRIMARY KEY(id),
+    FOREIGN KEY(customer_id) REFERENCES customers_table(id),
+	FOREIGN KEY(vendor_id) REFERENCES vendors_table(id)
 );
