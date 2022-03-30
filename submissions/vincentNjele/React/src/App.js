@@ -1,4 +1,4 @@
-import CartContents from "./components/CartContents";
+
 import ComponentsHolder from "./components/ComponentsHolder";
 import ManageContext from "./context/mainContext";
 

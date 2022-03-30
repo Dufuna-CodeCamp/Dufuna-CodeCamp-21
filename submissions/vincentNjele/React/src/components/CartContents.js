@@ -15,7 +15,7 @@ export default function CartContents () {
     const {cartItems, OnAdd, OnRemove,RemoveItem,buttonClick} = useContext(MainContext)
      return (
        <section>
-        <CardDetails number={cartItems.length==0? 0 : cartItems.length + 1}
+        <CardDetails number={cartItems.length===0? 0 : cartItems.length + 1}
           buttonClick = {()=>buttonClick()}/>
         { cartItems.length!==0?
             
@@ -36,14 +36,14 @@ export default function CartContents () {
                      
                     
                     <button onClick ={()=>RemoveItem(item)} id = "add-btn">
-                    <img id="remove-item-from-list" src= {item.cancel} ></img>
+                    <img id="remove-item-from-list" src= {item.cancel} alt="Cancel icon here" ></img>
                     </button>
                    
                    
                     </div>
 
                     <div className="cart-item-image">
-                     <img id="item-image-main" src={item.image}></img>
+                     <img id="item-image-main" src={item.image} alt="food image"></img>
                     </div>
 
                     <div className="cart-item-title">
@@ -54,14 +54,14 @@ export default function CartContents () {
   
 
                             <button onClick={()=> OnAdd(item)}  id = "add-btn" >
-                            <img src={plus}></img>
+                            <img src={plus} alt="plus image"></img>
                             </button>
 
                             <p>{item.quantity}</p>
 
 
                             <button onClick={() => OnRemove(item)}  id = "add-btn" >
-                            <img src={minus}></img>
+                            <img src={minus} alt="minus image"></img>
                             </button>
 
                             </div>
@@ -89,7 +89,7 @@ export default function CartContents () {
         <div className="delivery-details">
   
          <div className="delivery-image-title">
-             <img id="scooter" src={scooter}></img>
+             <img id="scooter" src={scooter} alt="scooter image"></img>
              <p id="delivery-title">Delivery fee</p>
          </div>
 

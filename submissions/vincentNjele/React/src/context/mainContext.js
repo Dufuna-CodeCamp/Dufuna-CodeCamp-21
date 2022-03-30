@@ -60,7 +60,6 @@ import remove from '../components/images/cancel.png'
          )
 
        }
-       
         
    }
 

@@ -152,12 +152,12 @@ hr {
 .checkout {
 
   margin-left: 40%;
-  border : 1px solid #AD4C4C;;
+  border : 1px solid #AD4C4C;
   height: 50px ;
   width : 20% ;
   font-weight: 700;
   color: White;
-  background-color: #AD4C4C;;
+  background-color: #AD4C4C;
   cursor: pointer;
   margin-bottom: 30px;
    
@@ -264,7 +264,7 @@ hr {
   .checkout {
 
 
-    border : 1px solid #AD4C4C;;
+    border : 1px solid #AD4C4C;
     height: 50px ;
     width : 20% ;
      align-content: flex-start;
@@ -272,7 +272,7 @@ hr {
     margin-left: 250px;
     float: left;
     color: White;
-    background-color: #AD4C4C;;
+    background-color: #AD4C4C;
     cursor: pointer;
     margin-bottom: 30px;
      
