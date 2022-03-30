@@ -1,21 +1,85 @@
 
-import React, { useContext } from "react";
+import React, {useEffect,useState } from "react";
 import plus from './images/plus.svg'
 import minus from './images/Minus.svg'
 import scooter from '../components/images/scooter1.svg'
-import { MainContext } from "../context/mainContext";
 import CardDetails from "./CartDetails";
 import Button from "./Button";
 
 
-export default function CartContents () {
+export default function CartContents (props) {
+
+  const {ListOfData} = props
+    const[cartItems, setCartItems] = useState([]);
+
+    useEffect(()=> 
+      
+      setCartItems(ListOfData),[ListOfData]
+      
+      );
+
+   const OnAdd =(item) => {
+       //check if the product exits in the array, if it exits we increment the quantity
+       const itemExits = cartItems.find((index)=> index.id===item.id)
+       
+       if(itemExits) {
+
+         setCartItems(
+
+            cartItems.map((index)=>(
+                index.id=== item.id ? {...itemExits, quantity: itemExits.quantity+1}: index
+            ))
+
+         )
+
+       }
+        
+   }
+
+   const OnRemove = (item) => {
+   
+    //check if the product exits in the array, if it exits we increment the quantity
+    const itemExits = cartItems.find((index)=> index.id===item.id)
+
+    if(itemExits) {
+
+        setCartItems(
+            cartItems.map((index) => (
+              index.id===item.id ? {...itemExits,quantity: itemExits.quantity - (itemExits.quantity<=0? 0: 1)}: index
+            ))
+        )
+    }
+
+   }
+
+   const RemoveItem = (item) => {
+    
+      //check if the product exits in the array, if it exits we increment the quantity
+      const itemExits = cartItems.find((index)=> index.id===item.id)
+      if(itemExits.quantity===0) {
+
+     
+      setCartItems(
+        cartItems.filter((index)=> (
+           index.id !==item.id 
+        ))
+      )
+
+    }
+
+   }
+
+   const buttonClick = () => {
+    setCartItems([])
+   }
+
 
     let totalPrice = 0;
     let cash = 1200;
-    const {cartItems, OnAdd, OnRemove,RemoveItem,buttonClick} = useContext(MainContext)
+   // const {cartItems, OnAdd, OnRemove,RemoveItem,buttonClick} = useContext(MainContext)
      return (
        <section>
-        <CardDetails number={cartItems.length===0? 0 : cartItems.length + 1}
+        <CardDetails value= {cartItems.length} number = {cartItems.length===0? 0 : cartItems.length + 1}
           buttonClick = {()=>buttonClick()}/>
         { cartItems.length!==0?
             

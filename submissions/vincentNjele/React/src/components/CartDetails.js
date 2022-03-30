@@ -1,10 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Button from './Button'
-import { MainContext } from "../context/mainContext";
 
-export default function CardDetails({number}) {
+export default function CardDetails({number,buttonClick,value}) {
 
-  const {cartItems,buttonClick} = useContext(MainContext)
   return (
       
     <div className="cart-title">
@@ -18,8 +16,8 @@ export default function CardDetails({number}) {
       <div className='remove-all-items-from-cart'>
       <p id='number-of-items'>{number} Items </p>
 
-      {cartItems.length!==0?<span><Button button="remove-all" buttonClick = {()=> buttonClick()} 
-       buttonName = "Remove all"/> </span>:<p></p> }
+      {value===0?<p></p> : <span><Button button="remove-all" buttonClick = {()=> buttonClick()} 
+       buttonName = "Remove all"/> </span>}
       </div>
 
     </div>
