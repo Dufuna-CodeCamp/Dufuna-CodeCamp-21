@@ -43,7 +43,7 @@ export default function CartContents () {
                     </div>
 
                     <div className="cart-item-image">
-                     <img id="item-image-main" src={item.image} alt="food image"></img>
+                     <img id="item-image-main" src={item.image} alt="food"></img>
                     </div>
 
                     <div className="cart-item-title">
@@ -54,14 +54,14 @@ export default function CartContents () {
   
 
                             <button onClick={()=> OnAdd(item)}  id = "add-btn" >
-                            <img src={plus} alt="plus image"></img>
+                            <img src={plus} alt="plus"></img>
                             </button>
 
                             <p>{item.quantity}</p>
 
 
                             <button onClick={() => OnRemove(item)}  id = "add-btn" >
-                            <img src={minus} alt="minus image"></img>
+                            <img src={minus} alt="minus"></img>
                             </button>
 
                             </div>
@@ -89,7 +89,7 @@ export default function CartContents () {
         <div className="delivery-details">
   
          <div className="delivery-image-title">
-             <img id="scooter" src={scooter} alt="scooter image"></img>
+             <img id="scooter" src={scooter} alt="scooter"></img>
              <p id="delivery-title">Delivery fee</p>
          </div>
 
@@ -103,12 +103,12 @@ export default function CartContents () {
         <hr/>
         
         <div className="total-price">
-            <p>Total <span>#{totalPrice ===0? cash=0 : totalPrice + cash }</span></p>
+            <p>Total <span>#{totalPrice === 0? cash=0 : totalPrice + cash }</span></p>
         </div>
            
         <Button button="checkout-buttons" buttonName= "Checkout" />
 
-        </div> : <p id="cart-is-empty">Whoops :) The Cart Is Empty</p>
+        </div> : <p id="cart-is-empty"> Whoops :) The Cart Is Empty </p>
        }
       
        </section>
