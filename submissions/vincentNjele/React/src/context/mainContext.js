@@ -41,9 +41,9 @@ import remove from '../components/images/cancel.png'
 
     const[cartItems, setCartItems] = useState([]);
 
-   useEffect(()=> {
-       setCartItems(ListOfData)
-   },[])
+    useEffect(()=> {
+      setCartItems(ListOfData)
+      },[ListOfData.values]);
 
    const OnAdd =(item) => {
        //check if the product exits in the array, if it exits we increment the quantity
