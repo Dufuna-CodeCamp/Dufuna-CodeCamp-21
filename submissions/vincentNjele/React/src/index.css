@@ -49,10 +49,6 @@ nav ul li a {
 
   color: #C9C9C9;
 }
-.main-cart-time {
-  font-size: 33px;
-  font-weight: bold;
-}
 .cart-contents {
 
   display: flex;
@@ -100,10 +96,7 @@ nav ul li a {
   color: #AD4C4C;
   padding-top: 50px;
 }
-hr {
-  margin-left: 120px;
-  margin-right: 80px;
-}
+
 .delivery-details {
   display: flex;
   justify-content: space-between;
@@ -207,10 +200,7 @@ hr {
 }
 
 
-.home-time p span {
 
-  color: #C9C9C9;
-}
 .main-cart-time {
   font-size: 35px;
   font-weight: bold;
@@ -600,7 +590,7 @@ hr {
     margin-top: 20px;
     height: 28px;
     width: 28px;
-    margin-top: -20px;
+   
     cursor: pointer;
   }
   #form-group {
@@ -611,6 +601,7 @@ hr {
     border-radius: 5px;
     margin-bottom: 30px;
   }
+
   #label-id {
     font-size: 33px;
   }
