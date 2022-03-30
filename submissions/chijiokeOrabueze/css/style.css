@@ -150,23 +150,35 @@ section.vendors .vendor .title{
 section.vendors .vendor .title .logo {
     display:flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
+
+
 
 section.vendors .vendor .title .logo h3{
     margin-left:10px;
 }
 
-section.vendors .vendor .title button{
+section.vendors .vendor .title button, .vendor > .btn button{
     outline:none;
     border:none;
     color:brown;
     background-color: transparent;
 }
 
+.vendor .btn{
+    display:none;
+    justify-content: center;
+    margin-top:40px;
+}
+
 .orders{
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.orders .order{
+    margin-bottom: 20px;
 }
 
 .orders .desc{
@@ -223,6 +235,26 @@ section.vendors .vendor .title button{
         text-align: center;
     }
 }
+
+@media screen and (max-width: 649px){
+
+    .vendor .orders .order{
+        width:100%;
+    }
+
+    .vendor .orders .order img{
+        width:100%;
+    }
+
+    section.vendors .vendor .title button{
+        display: none;
+    }
+
+    .vendor .btn{
+        display:flex;
+    }
+}
+
 
 /* small devices (portrait tablets and large phones 600px and up) */
 
