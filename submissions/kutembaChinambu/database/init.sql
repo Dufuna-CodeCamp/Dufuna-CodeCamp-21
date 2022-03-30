@@ -14,7 +14,6 @@ CREATE TABLE admin
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
 type ENUM ('0','1') NOT NULL,
-email_address VARCHAR(200) NOT NULL,
 phone_number VARCHAR(13) NOT NULL,
 password VARCHAR(100) NOT NULL,
 PRIMARY KEY (id)
@@ -39,7 +38,7 @@ FOREIGN KEY (admin_id) REFERENCES admin (id)
 CREATE TABLE customer
 (
 id INT NOT NULL AUTO_INCREMENT,
-name VARCHAR(100) NOT NULL,
+name VARCHAR(250) NOT NULL,
 phone_number VARCHAR(13) NOT NULL,
 address VARCHAR(200) NOT NULL,
 payment_method ENUM('card','Mobile Money','Cash'),
