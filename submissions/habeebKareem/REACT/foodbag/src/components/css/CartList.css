@@ -1,0 +1,129 @@
+.cart-item {
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+  }
+  
+  .cart-name {
+    color: #4E4D4D;
+    font-weight: 600;
+    height: fit-content;
+  }
+  
+  .cart-img {
+    border-radius: 3px;
+    margin-right: 16px;
+    width: 165px;
+    height: 85px;
+  }
+  
+  .fa-icons {
+    background: #FFFFFF;
+    color: #AD4C4C;
+    cursor: pointer;
+  }
+  
+  
+  
+  .fa-icons-x {
+    color: #A5A5A5;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 25px;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+.price {
+    color: #4E4D4D;
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.qty {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+  
+.qty-btn {
+    color: #AD4C4C;
+    display: inline-block;
+    position: absolute;
+    left: 195px;
+    top: 37px;
+}
+
+.qty-btn button {
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #AD4C4C; 
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+hr {
+    margin: 20px 35px;
+    border: 1px solid #F2F2F2;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        margin: 20px;
+        padding: 5px 0;
+    }
+
+    .cart-item {
+        margin-top: 40px
+    }
+
+    .cart-img {
+        border-radius: 5px;
+        margin: 5px 0;
+        width: 120px;
+        height: 60px;
+      }
+
+    .fa-icons-x {
+        margin: 20px 0;
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .cart-name {
+        width: 15rem;
+        font-weight: 500;
+    }
+
+    .price {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .qty {
+        margin: 3px;
+    }
+
+    .qty-btn {
+        display: inline-block;
+        position: absolute;
+        left: 132px;
+        top: 30px;
+    }
+
+    .qty-btn button {
+        margin: 0 5px;
+        padding: 5px;
+    }
+}

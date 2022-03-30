@@ -1,0 +1,144 @@
+.header-container {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-top: 7px;
+}
+
+.nav-link ul {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    list-style: none;
+}
+
+.body-container .img-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.p-h1 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    color: greenyellow;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.p-h2 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* content body goes here */
+
+.contentContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.shoppingContainer {
+    margin-top: 70px;
+}
+
+.total-container {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-danger {
+    background-color: #AD4C4C !important;
+    width: 809px;
+    height: 60px;
+}
+
+@media (max-width: 540px) {
+    .logo h3 {
+        font-size: 16px;
+        top: -20px;
+        margin-left: 10px;
+    }
+    .nav-link li {
+        font-size: 16px;
+    }
+    .last-link {
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .nav-link ul {
+        width: 250px;
+        justify-content: space-around;
+    }
+    .home-text {
+        margin-left: 10px;
+    }
+    .cart-text {
+        margin-left: 10px;
+    }
+    .btn-danger {
+        width: 350px;
+    }
+    .kyc-image {
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 20;
+    }
+    .btn-add {
+        width: 30px;
+        height: 30px;
+    }
+    .btn-remove {
+        width: 30px;
+        height: 30px;
+    }
+    .scooters {
+        margin-right: 70px;
+        width: 70px;
+    }
+    .scooter-container {
+        margin-left: -20px;
+        align-self: flex-start;
+    }
+    .delivery-container {
+        margin-left: -70px;
+    }
+    .total-text {
+        margin-left: -70;
+    }
+    .total-container {
+        margin-left: -80px;
+    }
+    .item-container {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,139 @@
+body{
+    margin: 1% 5%;
+    font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: smaller
+}
+h1{
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+    margin-left: 70%;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    margin-left: 20px;
+}
+.mobile{
+    display: none;
+}
+.sub-heading img{
+    float: left;
+}
+.sub-heading a{
+    float: right;
+    color: rgb(146, 68, 68);
+}
+.div-group{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    width: 126%;
+    padding-top: 2%;
+}
+.chicken-republic-div{
+    margin-top: 4%;
+    padding-top: 3%;
+    border-top: 1px solid rgb(226, 224, 224);
+    padding-bottom: 4%;
+}
+#special{
+    color:rgb(146, 68, 68);
+    border: 1px solid rgb(146, 68, 68);
+    padding: 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.div-kfc-menu{
+   width:20%;
+  
+}
+.kfc-p-div{
+    width: 92%;
+}
+.kfc-p-div #p1{
+    float: left;
+    font-weight: bold;
+}
+.kfc-p-div #p2{
+    float: right;
+    color: rgb(29, 185, 29);
+    font-weight: bold;
+}
+.a{
+    clear: both;
+   padding-top: 3%;
+}
+.a a{
+    border: 1px solid rgb(146, 68, 68) ;
+    color: rgb(146, 68, 68) ;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 7px 28px;
+    font-weight: bold;
+
+}
+.mobile-view-all{
+    display: none;
+}
+@media (min-width:320px) and (max-width:480px){
+    .div-group{
+        display: grid;
+        grid-template-columns: 1500px;
+        width: 100%;
+       align-self: center;
+       
+    }
+    .sub-heading a{
+        display: none;
+    }
+    .sub-heading{
+        margin-left: 7%;
+    }
+    nav{
+        margin-left: 5%;
+    }
+    .div-kfc-menu{
+        padding-left: 2.5%;
+        margin-top: 1%;     
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile-special a{
+        text-decoration: none;
+        color: rgb(189, 186, 186);
+        font-weight: bold;
+    }
+    .mobile-view-all{
+        display: block;
+       margin-top: 3%;
+       margin-left: 10%;
+    }
+    .mobile-view-all a{
+   text-decoration: none;
+   color: rgb(146, 68, 68) ;
+    }
+}
+  
+
+@media (min-width:769px) and (max-width:1024px){
+   .div-group{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       width: 100%;
+   }
+   nav{
+       margin-left: 54%;
+   }
+   .div-kfc-menu{
+       width: 80%;
+       padding-left: 13%;
+   }
+   .sub-heading a{
+       padding-right: 5%;
+   }
+
+}
