@@ -5,7 +5,7 @@
 
 CREATE TABLE food (
     id INT NOT NULL AUTO_INCREMENT,
-    type ENUM('food_category_one','food_category_two', 'food_category_three') INT NOT NULL,
+    type ENUM('food_category_one','food_category_two', 'food_category_three') NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -20,8 +20,8 @@ CREATE TABLE vendor_food (
     name VARCHAR(250) NOT NULL,
     amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (admin_id ) REFERENCES admins (id),
-    FOREIGN KEY (food_id ) REFERENCES food (id),
+    FOREIGN KEY (admin_id) REFERENCES admins (id),
+    FOREIGN KEY (food_id) REFERENCES food (id),
     
 );
 
@@ -46,7 +46,7 @@ CREATE TABLE customers (
     name VARCHAR NOT NULL,
     phone_number INT(11) NOT NULL,
     address VARCHAR(250) NOT NULL,
-    payment_method ENUM('cash','bank_transfer','card') NOT NULL,
+    payment_method ENUM('cash','bank_transfer','card') NULL,
     PRIMARY KEY (id)
 );
 
@@ -58,6 +58,8 @@ CREATE TABLE orders (
     vendor_id INT NOT NULL,
     customer_id INT,
     PRIMARY KEY (id)
+    FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
+    FOREIGN KEY (customer_id) REFERENCES customers (id),
 );
 
 
