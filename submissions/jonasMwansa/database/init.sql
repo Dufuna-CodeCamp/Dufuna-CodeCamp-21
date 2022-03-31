@@ -16,11 +16,11 @@ CREATE TABLE vendors_table(
 	id INT NOT NULL AUTO_INCREMENT,
 	name vARCHAR(255) NOT NULL,
 	amount DECIMAL(20,4) NOT NULL,
-    admin_id INT NOT NULL,
+	admin_id INT NOT NULL,
 	food_id INT NOT NULL,
-    PRIMARY KEY(id),
-    
-    FOREIGN KEY(food_id) REFERENCES food_table (id)
+	PRIMARY KEY(id),
+	FOREIGN KEY(food_id) REFERENCES food_table (id)
+	FOREIGN KEY(admin_id) REFERENCES admins_table (id)
 );
 
 -- we create the admins table
