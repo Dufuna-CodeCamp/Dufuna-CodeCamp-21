@@ -15,9 +15,9 @@ USE Transportation;
 	CREATE TABLE trips_table(
 	id INT NOT NULL AUTO_INCREMENT,
 	passenger_id INT NOT NULL,
-	passenger_class VARCHAR(255) NOT NULL,
+	passenger_class ENUM('1','2','3') NOT NULL,
 	trip_fare FLOAT NOT NULL,
-	cabin VARCHAR(255) NOT NULL,
+	cabin VARCHAR(255) NULL,
 	number_of_parents_or_children INT NOT NULL,
 	number_of_siblings_or_spouses INT NOT NULL,
 	embarkation_point VARCHAR(255) NOT NULL,
