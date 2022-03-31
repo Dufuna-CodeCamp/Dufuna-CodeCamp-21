@@ -3,7 +3,7 @@ import React from 'react';
 function NavBar() {
     return <nav>
         <div className='site-name'>
-            <a href='#'><div className='first-part'>Food</div><div className='second-part'>Bag</div></a>
+            <a href='/'><div className='first-part'>Food</div><div className='second-part'>Bag</div></a>
         </div>
         <ul id="nav-links">
             <li id="nav-cart"><a href='/'>Cart</a></li>
