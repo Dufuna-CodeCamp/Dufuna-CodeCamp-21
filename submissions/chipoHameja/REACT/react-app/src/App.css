@@ -22,14 +22,11 @@ div.site-name {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  margin: 50px 0 0 100px;
 }
 
 div.site-name div {
   display: inline;
-}
-
-div.site-name {
-  margin: 50px 0 0 100px;
 }
 
 div.site-name div.second-part, #nav-links #nav-cart a, #nav-links #sign-up a {

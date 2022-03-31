@@ -55,11 +55,11 @@ class Cart extends React.Component {
         let updatedCart = this.items;
 
         let itemsTotalPrice = 0;
-        let itemsTotalQuantity = 0;
+        //let itemsTotalQuantity = 0;
 
         updatedCart.forEach((i) => {
             itemsTotalPrice += (i.quantity * i.unitPrice);
-            itemsTotalQuantity += i.quantity;
+            //itemsTotalQuantity += i.quantity;
         })
 
         if(this.state.deliveryFee === 0) {
