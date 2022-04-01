@@ -1,6 +1,0 @@
-Hello World!
-I am Charles Umoke. I am on the Full Stack Developer track.
-
-01/04 - I have sent my first pull request and succesfully merged on GitHub, but can't seem to reconcile the completed task on my app. It is kicking my butt.
-
-I will get it.
