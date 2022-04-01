@@ -13,13 +13,13 @@ function OrderHeader () {
         </div>
         <ul>
             <li id="order-list">
-                <a id="cart" href="#">
+                <a id="cart" href="cart">
                  Cart
                 </a>
-                <a id="login" href="#">
+                <a id="login" href="login">
                  Login
                 </a>
-                <a id="logout" href="#">
+                <a id="logout" href="logout">
                  Sign Up
                 </a>
             </li>
