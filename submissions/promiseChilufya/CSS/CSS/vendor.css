@@ -149,6 +149,25 @@ nav {
     padding: 16px 30px;
     justify-content: space-between;
 } 
+#added {
+    display:none;
+} 
+    .notification .badge {
+         position:absolute;
+         background: #AD4C4C;
+         padding: 5px 10px; 
+         border-radius: 60%;  
+         color: white;
+         top: -10px;
+         right: -10px;
+     }  
+     
+.notification {
+         position: relative;
+         display: inline-block;
+         border-radius: 1px;
+         text-decoration: none !important;
+     }
 @media screen and (max-width: 600px) {
     .container {
         padding: 12px;
@@ -222,6 +241,26 @@ nav {
         color: red;
         border: 1px solid red;
     }
+    #added {
+        display:none;
+    } 
+        
+    .notification .badge {
+             position:absolute;
+             background: #AD4C4C;
+             padding: 5px 10px; 
+             border-radius: 50%;  
+             color: white;
+             top: -10px;
+             right: -10px;
+         }  
+         
+    .notification {
+             position: relative;
+             display: inline-block;
+             border-radius: 2px;
+             text-decoration: none !important;
+         }
     @media screen and (min-width: 600px) {
         .container {
             padding: 12px;
