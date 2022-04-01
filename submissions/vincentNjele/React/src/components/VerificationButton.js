@@ -4,7 +4,7 @@ export const VerificationButton = (props) => {
   return (
     <div>
 
-     <button className={props.buttonClass} >
+     <button onClick={props.buttonClick} className={props.buttonClass} >
      {props.name}
      </button>
     </div>
