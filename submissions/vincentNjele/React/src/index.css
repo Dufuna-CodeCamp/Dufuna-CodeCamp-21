@@ -49,10 +49,6 @@ nav ul li a {
 
   color: #C9C9C9;
 }
-.main-cart-time {
-  font-size: 33px;
-  font-weight: bold;
-}
 .cart-contents {
 
   display: flex;
@@ -100,10 +96,7 @@ nav ul li a {
   color: #AD4C4C;
   padding-top: 50px;
 }
-hr {
-  margin-left: 120px;
-  margin-right: 80px;
-}
+
 .delivery-details {
   display: flex;
   justify-content: space-between;
@@ -172,6 +165,175 @@ hr {
   font-size: 50px;
   font-weight: 700;
 }
+
+#form-group {
+  height: 60px;
+  width: 90%;
+  font-size: 43px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.contents {
+   
+  margin-left: 10%;
+}
+.headers {
+  
+  display: flex;
+  justify-content: space-between;
+}
+.foodbags {
+  font-size: 26px;
+  font-weight: 700;
+}
+.foodbags span {
+  color:#AD4C4C;
+}
+#logout-header {
+  border: 1px solid #AD4C4C;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#login-header {
+  color:#4E4D4D;
+}
+
+
+
+.main-cart-time {
+  font-size: 35px;
+  font-weight: bold;
+}
+#confirm {
+  font-size: 22px;
+  color:#AD4C4C;
+}
+.address {
+  margin-top: 60px;
+}
+#delivery {
+  font-size: 30px;
+  font-weight: 600;
+}
+#delivery-order {
+  color: #696969;
+  font-size: 25px;
+}
+.delivery-order-image {
+  display: flex;
+  justify-content: space-between;
+}
+#delivery-image {
+  margin-right: 10%;
+  margin-top: -20px;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+#option-value {
+  border: 1px solid #AD4C4C;
+}
+#label-id {
+  font-size: 33px;
+}
+#input-id {
+  width: 90%;
+  height: 60px;
+  font-size: 43px;
+  margin-bottom: 40px;
+}
+hr {
+  margin-right: 10%;
+  margin-bottom: 30px;
+}
+#line {
+  margin-left: 1px;
+  margin-right: 10%;
+}
+
+.cvc {
+  width: 49%;
+  height: 60px;
+  margin-left: -50px;
+
+}
+.expiry-date {
+  
+  height: 60px;
+  width: 49%;
+}
+.con {
+  display: flex;
+}
+.con:nth-child(1) {
+  font-weight: bold;
+}
+.button-class {
+  
+  margin-top: 80px;
+  width: 809px;
+  height: 60px;
+  margin-left: 280px;
+  top: 1155px;
+  color: white;
+  background: #AD4C4C;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+.cart-description {
+  font-size: 24px;
+}
+.main-cart-discription p {
+  font-size: 27px;
+}
+#top-nav {
+  margin-left: -15%;
+}
+.top-header {
+
+  display: flex;
+  justify-content: space-between;
+}
+.order-foodbag {
+  font-size: 26px;
+  font-weight: 700;
+}
+.order-foodbag span {
+  color:#AD4C4C;
+}
+#order-logout {
+  border: 1px solid #AD4C4C;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#order-login {
+  color:#4E4D4D;
+}
+#success {
+  margin-left: 40%;
+  margin-top: 10%;
+  height: 400px;
+  width: 400px;
+}
+#order {
+text-align: center;
+font-size: 28px;
+color: #5EA304;
+}
+#processing {
+
+  color: #696969;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+.order-contents {
+
+  margin-left: 2%;
+}
+
 
 @media screen and (min-width: 468px) {
 
@@ -320,6 +482,73 @@ hr {
     font-size: 50px;
     font-weight: 700;
   }
+  .button-class {
+    
+    margin-top: 80px;
+    width: 409px;
+    height: 60px;
+    margin-left: 15px;
+    top: 1155px;
+    color: white;
+    background: #AD4C4C;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+
+  #form-group {
+    height: 40px;
+    width: 90%;
+    font-size: 33px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  #label-id {
+    font-size: 23px;
+  }
+  #input-id {
+    width: 90%;
+    height: 40px;
+    font-size: 33px;
+    margin-bottom: 40px;
+  }
+  .cvc {
+    width: 44%;
+    height: 60px;
+    margin-left: 10px;
+  
+  }
+ #top-nav {
+   margin-top: 10px;
+   margin-left: 5px;
+ }
+ .contents {
+   
+  margin-left: 15px;
+}
+#delivery-image {
+  margin-right: 5%;
+  margin-top: 20px;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+#order-list {
+  margin-top: 15px;
+}
+.order-contents {
+
+  margin-left: 5%;
+}
+
+#success {
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 400px;
+  width: 400px;
+}
+
  
 }
 
@@ -413,5 +642,73 @@ hr {
     font-size: 23px;
     margin-bottom: 30px;
   }
+
+  #delivery-image {
+    margin-right: 10%;
+    margin-top: 20px;
+    height: 28px;
+    width: 28px;
+   
+    cursor: pointer;
+  }
+  #form-group {
+    height: 50px;
+    width: 90%;
+    font-size: 33px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  #label-id {
+    font-size: 33px;
+  }
+  #input-id {
+    width: 90%;
+    height: 40px;
+    font-size: 33px;
+    margin-bottom: 40px;
+  }
+  .cvc {
+    width: 45%;
+    height: 60px;
+    margin-left: 10px;
   
+  }
+
+  .button-class {
+  
+    margin-top: 80px;
+    width: 809px;
+    height: 60px;
+    margin-left: 415px;
+    top: 1155px;
+    color: white;
+    background: #AD4C4C;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  .contents {
+   
+    margin-left:10%;
+  }
+  #top-nav {
+    margin-left: -15%;
+  }
+
+  .order-contents {
+
+    margin-left: 5%;
+  }
+
+ 
+
+  #success {
+    margin-left: 39%;
+    margin-top: 10%;
+    height: 400px;
+    width: 400px;
+  }
+
 }
