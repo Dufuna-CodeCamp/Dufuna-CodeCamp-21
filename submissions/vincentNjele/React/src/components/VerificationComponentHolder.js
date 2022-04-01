@@ -63,7 +63,7 @@ export const VerificationComponentsHolder = () => {
         </div>
         <br/>
      
-        <VerificationButton buttonClass="button-class" name= "Pay" />
+        <VerificationButton buttonClick= {()=> window.location.assign("/OrderMainComponentHolder")} buttonClass="button-class" name= "Pay" />
     </div>
   )
 }
