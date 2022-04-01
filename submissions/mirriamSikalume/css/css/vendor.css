@@ -230,7 +230,6 @@ color: rgb(201, 44, 44);
 
     .vendor-items ul{
         display: flex;
-        flex-direction: row;
         flex-flow: row wrap;
         justify-content: space-between;
         list-style: none;
