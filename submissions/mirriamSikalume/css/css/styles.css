@@ -1,0 +1,510 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid black thin; */
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #A5A5A5;
+}
+
+.wrapper{
+    padding: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    line-height: 24px;
+
+}
+
+.logo {
+    display: flex;
+}
+
+.f{
+    color: black;
+}
+
+.b{
+    color:rgb(201, 44, 44);
+}
+
+h4 {
+    color: rgb(201, 44, 44);
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    line-height: 24px;
+}
+
+nav a{
+    text-decoration: none;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 10px;
+    border-radius: 2px;
+    color: #696969;
+    text-align: center;
+    
+   
+}
+
+nav a:nth-child(3){
+color: rgb(201, 44, 44);
+border: 1px solid rgb(201, 44, 44);
+}
+
+select{
+    width: 100%;
+    background-color: white;
+    padding: 1% 0;
+}
+
+
+.FB {
+    margin: 0 35% 0 40%;
+}
+
+.FB h1 {
+    padding: 0 24%;
+    color: #555;
+}
+
+.welcome h1, .welcome p {
+    text-align: center;
+}
+
+.welcome h1{
+    margin-top:100px;
+    font-size: 40px;
+    color: #4E4D4D;
+}
+
+.location select {  
+    margin-top: 20px;
+}
+
+.location #label{
+    margin-top: 30px;
+}
+
+
+.interest-title{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #000;    
+}
+
+.interest-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interest-item{
+    padding: 10px;
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    background: #E5E5E5;
+}
+
+.how-it-works h2{
+    text-align: center;
+}
+
+.serve-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.serve-item h4, .serve-item p{
+    text-align: center;
+    padding:5px ;
+}
+
+.serve-item h4{
+    color: #696969;
+}
+
+.serve-item p{
+    color: #A5A5A5;
+
+}
+
+.contact-us p{
+    text-align: center;
+    color: #696969;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-us-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-us-items .contact-us-item{
+    margin: 10px;
+}
+
+footer a{
+    color: #696969;   
+    text-decoration: none;
+}
+
+footer p{
+ float: right;
+ color: #696969;   
+}
+
+
+
+@media (max-width: 576px ) {
+    
+    .interest-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .interest-item{
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    hr{
+        margin-top: 50px;
+        margin-bottom: 90px;
+        background: #E5E5E5;
+    }
+    
+
+    .how-it-works h2{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .serve-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+    .serve-item h4, .serve-item p{
+        text-align: center;
+        padding:5px ;
+    }
+    
+    .serve-item h4{
+        color: #696969;
+    }
+    
+    .serve-item p{
+        color: #A5A5A5;
+    
+    }
+    
+    .contact-us p{
+        text-align: center;
+        color: #696969;
+        padding-bottom: 25px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .contact-us-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contact-us-items .contact-us-item{
+        margin: 10px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding-top: 20px;
+    }
+
+    footer a{
+        color: #696969;
+        font-size: 12px;
+        text-align: center;   
+        text-decoration: none;
+        display: inline;
+    }
+    
+    footer p{
+        margin-top: 10px;
+        color: #696969;   
+        font-size: 12px;
+    
+    }
+
+}
+
+@media (min-width: 576px ) {
+
+    .interest-items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .interest-item{
+        margin: 10px;
+        width: 43%;
+    }
+     
+    .serve-items{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .serve-items .serve-item{
+        width: 30%;
+    }
+    
+    .serve-item img{
+        width: 70%;
+    }
+
+    .serve-item h4, .serve-item p{
+        text-align: center;
+        padding:5px;
+    }
+    
+    .serve-item h4{
+        color: #696969;
+    }
+    
+    .serve-item p{
+        color: #A5A5A5;
+    
+    }
+    
+
+    footer a{
+        color: #696969;
+        font-size: 12px;
+        text-align: center;   
+        text-decoration: none;
+    }
+    
+    footer p{
+        color: #696969;   
+        font-size: 12px;
+        float: right;
+    }
+
+} 
+
+@media (min-width: 768px) { 
+    .interest-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .interest-item{
+        padding: 10px;
+        margin: 10px;
+        width: 43%;
+        background: #FFFFFF;
+        box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    hr{
+        margin-top: 50px;
+        margin-bottom: 90px;
+        background: #E5E5E5;
+    }
+    
+
+    .how-it-works h2{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .serve-items{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .serve-items .serve-item{
+        width: 30%;
+    }
+    
+    .serve-item img{
+        width: 70%;
+    }
+
+    .serve-item h4, .serve-item p{
+        text-align: center;
+        padding:5px;
+    }
+    
+    .serve-item h4{
+        color: #696969;
+    }
+    
+    .serve-item p{
+        color: #A5A5A5;
+    
+    }
+    
+    .contact-us p{
+        text-align: center;
+        color: #696969;
+        padding-bottom: 25px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .contact-us-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contact-us-items .contact-us-item{
+        margin: 10px;
+    }
+
+
+    footer a{
+        color: #696969;
+        font-size: 12px;
+        text-align: center;   
+        text-decoration: none;
+    }
+    
+    footer p{
+        color: #696969;   
+        font-size: 12px;
+        float: right;
+    }
+
+}
+
+@media (min-width: 1024px) { 
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 24px;
+        line-height: 24px;
+    
+    }
+    
+    .interest-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .interest-item{
+        padding: 10px;
+        background: #FFFFFF;
+        width: 20%;
+        box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    hr{
+        margin-top: 50px;
+        margin-bottom: 90px;
+        background: #E5E5E5;
+    }
+    
+    .how-it-works h2{
+        text-align: center;
+    }
+    
+    .serve-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 90px;
+    }
+    
+    .serve-item h4, .serve-item p{
+        text-align: center;
+        padding:5px ;
+    }
+    
+    .serve-item h4{
+        color: #696969;
+    }
+    
+    .serve-item p{
+        color: #A5A5A5;
+    
+    }
+    
+    .contact-us p{
+        text-align: center;
+        color: #696969;
+        padding-bottom: 25px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .contact-us-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contact-us-items .contact-us-item{
+        margin: 10px;
+    }
+    
+    
+    footer p{
+     float: right;
+     color: #696969;   
+    }
+}

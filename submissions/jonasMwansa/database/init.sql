@@ -6,7 +6,7 @@ USE food_bag_database;
 CREATE TABLE food_table(
 	id INT NOT NULL AUTO_INCREMENT,
 	type BOOLEAN NOT NULL,
-    PRIMARY KEY(id)
+	PRIMARY KEY(id)
 );
 
 -- vendor_food table is the relationship between the vendor itself and the food they sell. This table will 
@@ -16,11 +16,11 @@ CREATE TABLE vendors_table(
 	id INT NOT NULL AUTO_INCREMENT,
 	name vARCHAR(255) NOT NULL,
 	amount DECIMAL(20,4) NOT NULL,
-    admin_id INT NOT NULL,
+	admin_id INT NOT NULL,
 	food_id INT NOT NULL,
-    PRIMARY KEY(id),
-    
-    FOREIGN KEY(food_id) REFERENCES food_table (id)
+	PRIMARY KEY(id),
+	FOREIGN KEY(food_id) REFERENCES food_table (id)
+	FOREIGN KEY(admin_id) REFERENCES admins_table (id)
 );
 
 -- we create the admins table
@@ -44,16 +44,16 @@ CREATE TABLE customers_table(
 	name VARCHAR(200) NOT NULL,
 	phone_number TEXT NOT NULL,
 	address varchar(255) NOT NULL,
-    payment_method VARCHAR(255) NULL,
-    PRIMARY KEY(id)
+	payment_method VARCHAR(255) NULL,
+	PRIMARY KEY(id)
 );
 
 -- we create an orders table
 CREATE TABLE orders_table(
 	id INT NOT NULL AUTO_INCREMENT,
 	customer_id INT NULL,
-    vendor_id INT NOT NULL, 
+	vendor_id INT NOT NULL, 
 	PRIMARY KEY(id),
-    FOREIGN KEY(customer_id) REFERENCES customers_table(id),
+	FOREIGN KEY(customer_id) REFERENCES customers_table(id),
 	FOREIGN KEY(vendor_id) REFERENCES vendors_table(id)
 );
