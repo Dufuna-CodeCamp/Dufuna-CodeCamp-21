@@ -3,6 +3,8 @@ import ComponentsHolder from "./components/ComponentsHolder";
 import { VerificationComponentsHolder } from "./components/VerificationComponentHolder";
 import ManageContext from "./context/mainContext";
 
+import { OrderMainComponentHolder } from "./components/OrderMainComponentHolder";
+
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
   <Route path="/"  element = { <ComponentsHolder />} />
   
   <Route path="VerificationComponentsHolder"  element = { <VerificationComponentsHolder />} />
+
+  <Route path="OrderMainComponentHolder" element = {<OrderMainComponentHolder/>} />
 
   </Routes>
      
