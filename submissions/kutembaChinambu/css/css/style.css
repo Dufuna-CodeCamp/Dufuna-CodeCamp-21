@@ -78,10 +78,6 @@ a:visited {
     border-radius: 5px;
 }
 
-.interest h4 {
-    color: brown;
-}
-
 .interest h3 {
     padding: 10px 40px;
     white-space: nowrap;
@@ -148,12 +144,13 @@ p {
     line-height: 0.5px;
     padding: 1px;
     white-space: nowrap;
+    color: gray;
 }
 
 .kfc li,
 .chickenrep li {
         display: inline-grid;
-        padding: 20px 40px;
+        padding: 20px 40px 20px 0;
         margin-bottom: 5px;
         background-color: #fff;
         border-radius: 5px;
@@ -165,8 +162,14 @@ p {
     border: solid;
     border-radius: 5px;
     border-color: brown;
+    background-color: white;
     font-size: 15px;
     padding: 10px;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    
 }
 
 .remove {
@@ -242,7 +245,7 @@ p {
   }
 
 .kfc {
-    padding: 170px 5px 5px;
+    padding: 170px 5px 0;
     font-weight: bold;
 
 }
@@ -267,16 +270,35 @@ p {
     font-weight: bold;
     padding-right: 10px;
 }
-.dot {
+#dotlink {
     height: 7px;
     width: 7px;
     background-color: brown;
     border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    bottom: 0;
-    left: 220px;
-    right: 0;
+    align-self: center;
+    
+  }
+
+  .cart-btn {
+    background-color: #fff;
+    border: solid;
+    color: brown;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .remove-btn {
+    background-color: gray;
+    border: none;
+    color: #fff;
+    padding: 7px 15px;
+    text-align:justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 600px) {
@@ -290,20 +312,24 @@ p {
         float: right;
         font-size: 15px;
     }
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
 
     }
+
     .wrapper2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
     .tagline {
         font-size: 20px;
         text-align: center;
     } 
+
     #rem {
         position: absolute;
         top: 495px;
@@ -314,6 +340,7 @@ p {
         font-weight: bold;
         padding-right: 10px;
     }
+
     #rem1 {
         position: absolute;
         top: 2305px;
@@ -323,21 +350,10 @@ p {
         list-style-type: none;
         font-weight: bold;
         padding-right: 10px;
-    }
-
-    .dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 27px;
-        bottom: 0;
-        left: 403px;
-        right: 0;
-      }
+    } 
 
 }
+
 
 @media screen and (min-width: 768px) {
     nav{
@@ -428,18 +444,6 @@ p {
         padding-right: 10px;
     }
 
-    .dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        left: 560px;
-        right: 0;
-      }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -451,7 +455,7 @@ p {
         display: inline;
         padding: 8px;
         float: right;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .wrapper {
@@ -488,18 +492,6 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
-    .dot {
-        height: 7px;
-        width: 7px;
-        background-color: brown;
-        border-radius: 50%;
-        position: absolute;
-        top: 27px;
-        bottom: 0;
-        left: 1330px;
-        right: 0;
-      }
 
       .chickenreplogo li {
         position: absolute;
@@ -543,6 +535,7 @@ p {
         font-weight: bold;
         padding-right: 10px;
     }
+
 
 }
 
