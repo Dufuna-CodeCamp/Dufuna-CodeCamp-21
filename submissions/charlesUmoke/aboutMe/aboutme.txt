@@ -1,1 +1,3 @@
 Hello! I am Charles Umoke, currently on the Full Stack Developer Track.
+
+On the path to becoming a web developer.
