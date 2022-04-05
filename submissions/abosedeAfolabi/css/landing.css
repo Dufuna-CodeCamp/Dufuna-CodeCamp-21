@@ -1,0 +1,141 @@
+li{
+    display: inline;
+    text-decoration: none;
+    position: relative;
+    left: 70%;
+    margin: 20px;
+    
+}
+.none{
+    float: left;
+}
+#lok{
+    position: relative;
+    margin-top: -5px;
+}
+#red{
+
+    margin-top: -5px;
+    color: red;
+}
+.no{
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+select{
+    width: 70%;
+    display: block;
+    margin-top: 5px;
+    height: 30px;
+}
+.you{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    margin-left: 0px;
+    
+
+}
+ .you div{
+     padding: relative;
+     width: 250px;
+     height: 200px;
+     border:1px solid black;
+     margin:  10px;
+     text-align: center;
+     background: white;
+     padding: 7px;}
+     .img{
+         height: 100px;
+     }
+     h2{
+         margin-bottom: 10px;
+         margin-left: 5px;
+     }
+     .fast{
+         color: red;
+         text-transform: capitalize;
+     }
+     .serve{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    
+        
+    
+    }
+     .serve div{
+         padding: relative;
+         width: 200px;
+         height: 200px;
+         margin: 90px;
+         
+         text-align: center;
+         background: white;
+         padding: 7px;}
+         h4{
+             opacity: 0.5;
+         }
+         .url{
+            height: 200px;
+        object-fit: contain;
+        }
+        
+            
+
+        
+        .bose{
+            text-align: center;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .contact{
+            margin-top: 90px;
+            text-align: center;
+            left: 100%;
+            position: relative;
+            
+        }
+        .social{
+            display: inline;
+        
+            
+            text-align: center;
+            
+            }
+            hr{
+                margin-top: 40px;
+                opacity: 0.5;
+            }
+         .social div{
+             padding: relative;
+             width: 200px;
+             height: 50px;
+             margin: 5px;
+             display: inline;
+            position: relative;
+        right: -100%;
+             text-align: center;
+             background: white;
+             padding: 7px;}
+             .sell{
+                 width: 50px;
+                 margin-top: 30px;
+             }
+             .copy{
+                 margin-top: -30px;
+                 position: relative;
+                 left: 900px;
+             }
+             .tel{
+                 margin-top: 100px;
+                 
+
+             }
+             h5{
+                 opacity: 0.3;
+             }
+             
