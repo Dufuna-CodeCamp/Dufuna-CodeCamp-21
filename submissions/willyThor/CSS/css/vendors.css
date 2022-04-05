@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    max-width: 1240px;
+    margin: 40px 90px 100px 91px;
+    font-family: poppins;
+    padding: 10px;
+}
+a {
+  text-decoration:none;
+  color: rgba(105, 105, 105, 1);
+
+}
+ul, ol {
+  list-style-type: none;
+}
+ li {
+  display:inline-grid;
+  padding: 5px 10px;
+}
+.foodbag-head {
+  font-size:20px;
+  font-weight: medium;
+  margin-top: 80px;
+}
+.foodbag-head li {
+  display: inline;
+  font-weight: regular;
+  float: right;
+  flex-wrap: wrap;
+}
+ span {
+ color:#AD4C4C;
+ font-family: Poppins;
+ font-size: 16px;
+ font-weight: 500;
+ text-align: center; 
+
+}
+ .foodbag-head .signup {
+  border: 1px solid #AD4C4C;
+  border-radius: 5px;
+}
+#kfc-vendor  {
+  margin-bottom: 60px;
+  }
+.head {
+  margin-top: 80px;
+}
+.head p {
+  display: contents;
+  flex-wrap: wrap;
+  line-height: 21px;
+}
+#home {
+  color:#A5A5A5;
+  font-weight: 400;
+}
+#vendors {
+  color: #000000;
+  font-weight: 500;
+}
+#allvendors {
+  font-color: #000000;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: medium;
+  margin-top: 33px;
+}
+.logo, .caps p  {
+  display:inline;
+  flex-wrap: wrap;
+}
+ .logo {
+  width: 113px;
+  height: 85px;
+  left: 69px;
+  top: 297px;
+} 
+.caps p {
+  display: inline;
+  font-weight:500;
+  flex-wrap: wrap;
+  font-size:20px;
+  height: 30px;
+  width: 39px;
+  left: 171px;
+  top: 325px;
+  border-radius: nullpx;
+  margin-bottom: 60px;
+}
+.caps span {
+  display:inline;
+  flex-wrap: wrap;
+  float: right;
+} 
+ #interest, #price {
+  display: flex;
+  flex-wrap: wrap;
+}
+#interest {
+ font-family: Poppins;
+ font-size: 16px;
+ font-weight: 600;
+ line-height: 24px;
+ letter-spacing: 0em;
+ text-align: left;
+ color: #4E4D4D;
+ flex-wrap: wrap;
+}
+#price {
+  color: #5EA304;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+   float: right;
+  flex-wrap: wrap;
+}
+.food-items ul {
+  display:inline;
+  flex-wrap: wrap;
+  padding:0;
+  margin:0;
+}
+.food-items .signup, .chicken-republic .signup {
+  height: 40px;
+  width: 100px;
+  left: 420px;
+  top: 604px;
+  border-radius: 5px;
+  border: 1px solid #AD4C4C;
+  
+} 
+ 
+#chicken-republic {
+  margin-top: 40px;
+}
+.chickrep-header, .kfc-header {
+  margin-bottom: 30px;
+}
