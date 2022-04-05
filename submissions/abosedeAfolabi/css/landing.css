@@ -33,10 +33,7 @@ select{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
     margin-left: 0px;
-    
-
 }
  .you div{
      padding: relative;
@@ -46,7 +43,8 @@ select{
      margin:  10px;
      text-align: center;
      background: white;
-     padding: 7px;}
+     padding: 7px;
+}
      .img{
          height: 100px;
      }
@@ -62,20 +60,17 @@ select{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
-    
-        
-    
+      
     }
      .serve div{
          padding: relative;
          width: 200px;
          height: 200px;
          margin: 90px;
-         
          text-align: center;
          background: white;
-         padding: 7px;}
+         padding: 7px;
+    }
          h4{
              opacity: 0.5;
          }
@@ -83,9 +78,6 @@ select{
             height: 200px;
         object-fit: contain;
         }
-        
-            
-
         
         .bose{
             text-align: center;
@@ -117,11 +109,12 @@ select{
              margin: 5px;
              display: inline;
             position: relative;
-        right: -100%;
+             right: -100%;
              text-align: center;
              background: white;
-             padding: 7px;}
-             .sell{
+             padding: 7px;
+    }
+            .sell{
                  width: 50px;
                  margin-top: 30px;
              }
@@ -132,8 +125,6 @@ select{
              }
              .tel{
                  margin-top: 100px;
-                 
-
              }
              h5{
                  opacity: 0.3;
