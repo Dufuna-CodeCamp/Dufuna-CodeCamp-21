@@ -33,7 +33,12 @@
         <div class="select">
           <label class="select__label" for="location">Where are you?</label>
           <!-- <input class="select__input" type="text" name="location" placeholder="Enter your delivery address" /> -->
-          <select class="select__input" name="location" id="location">
+          <select
+            class="select__input"
+            id="select__box"
+            name="location"
+            id="location"
+          >
             <option class="select__placeholder" selected>
               Enter the delivery address
             </option>
@@ -54,6 +59,7 @@
             <div class="cards">
               <div class="cards__img">
                 <img
+                  class="cards__img--img"
                   src="../assets/svgs/fast-food_disabled.svg"
                   alt="fast food"
                 />
@@ -66,6 +72,7 @@
             <div class="cards">
               <div class="cards__img">
                 <img
+                  class="cards__img--img"
                   src="../assets/svgs/Vegetables & Drinks_disabled.svg"
                   alt="Veg & Fruits"
                 />
@@ -78,6 +85,7 @@
             <div class="cards">
               <div class="cards__img">
                 <img
+                  class="cards__img--img"
                   src="../assets/svgs/Drinks & Cocktails_disabled.svg"
                   alt="Drinks & Cocktails"
                 />
@@ -90,6 +98,7 @@
             <div class="cards">
               <div class="cards__img">
                 <img
+                  class="cards__img--img"
                   src="../assets/svgs/resturant_disabled.svg"
                   alt="restaurant"
                 />
@@ -145,15 +154,24 @@
       <div class="footer__header">
         <p class="footer__title">Contact us</p>
         <div class="footer__icons">
-            <a href="#"><img src="../assets/svgs/twitter 2.svg" alt="twitter" /></a>
-            <a href="#"><img src="../assets/svgs/youtube 1.svg" alt="youtube" /></a>
-            <a href="#"><img src="../assets/svgs/facebook-f 1.svg" alt="facebook" /></a>
+          <a href="#"
+            ><img src="../assets/svgs/twitter 2.svg" alt="twitter"
+          /></a>
+          <a href="#"
+            ><img src="../assets/svgs/youtube 1.svg" alt="youtube"
+          /></a>
+          <a href="#"
+            ><img src="../assets/svgs/facebook-f 1.svg" alt="facebook"
+          /></a>
         </div>
       </div>
       <div class="copyright">
         <p class="copyright__terms">Terms & Conditions . Privacy Policy</p>
-        <p class="copyright__trademark">&copy; Copyright 2021 FoodBag is a registered trademark</p>
+        <p class="copyright__trademark">
+          &copy; Copyright 2021 FoodBag is a registered trademark
+        </p>
       </div>
     </footer>
+    <script src="../../Dom/landingPage.js"></script>
   </body>
 </html>

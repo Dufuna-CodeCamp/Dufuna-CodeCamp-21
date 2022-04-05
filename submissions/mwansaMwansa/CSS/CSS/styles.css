@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Poppins';
+    font-style: normal;
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    margin: 20px;
+    margin-top: -150px;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    margin: 0;
+    min-height: 56px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.nav-list {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    width: 24%;
+    text-align: right;
+    line-height: 24px;
+    padding: 12px;
+}
+
+.foodbagHeader {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+    padding: 12px;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.homeVendors {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #6b6969;
+}
+
+b {
+    color: #000000;
+}
+
+.allVendors {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    height: 200px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #000000;
+}
+
+.KFC, .ChickenRepub {
+    display: grid;
+    column-gap: 20px;
+}
+
+.kfc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding-left: 30px;
+    height: 200px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.kfc-img, .chickenrepub-img {
+    display: block;
+    height: 100px;
+    padding: 15px;
+}
+
+.title-price-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.title-price {
+    line-height: 24px;
+    padding: 12px;
+}
+
+.title-prices {
+    line-height: 24px;
+    padding: 12px;
+    color: #5EA304;
+}
+
+
+.viewAll {
+    display: block;
+    text-align: center;
+    margin: 0 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 2px solid #AD4C4C;
+    color: #AD4C4C;
+}
+
+.chickenrepub {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    height: 200px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.addCart {
+    display: block;
+    text-align: left;
+    padding: 12px;
+    color: #AD4C4C;
+}
+
+hr {
+    margin-top: 30px;
+    border: 1px solid #bbb8b8;
+}
+
+.logo-area {
+    margin-top: 50px;
+}
+
+.logo {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.logo-title {
+    display: inline-block;
+    text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: rgb(58, 57, 57);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials {
+    text-align: center;
+}
+
+/*for tablets*/
+@media screen and (min-width: 600px) {
+    .KFC, .ChickenRepub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .Contact {
+        display: flex;
+    }
+
+    .socials {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .TCs {
+        display: inline;
+        text-align: left;
+        width: 24%;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        display: inline;
+        text-align: right;
+        width: 24%;
+        padding-left: 10px;
+    }
+}
