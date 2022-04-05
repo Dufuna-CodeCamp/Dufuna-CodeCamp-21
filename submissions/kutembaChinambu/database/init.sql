@@ -1,4 +1,4 @@
-<!-- This is a query that creates the food table.-->
+<!-- This query creates the food table.-->
 
 CREATE TABLE food 
 (
@@ -7,7 +7,7 @@ category ENUM ('fast_food','vegetables_and_fruits','drinks_and_cocktails','restu
 PRIMARY KEY (id)
 );
 
-<!-- This is a query that creates the admin table -->
+<!-- This query creates the admin table -->
 
 CREATE TABLE admin 
 (
