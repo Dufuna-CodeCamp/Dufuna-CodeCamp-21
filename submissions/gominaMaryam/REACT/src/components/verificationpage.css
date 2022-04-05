@@ -1,0 +1,90 @@
+.confirm-add {
+	color: #ad4c4c;
+}
+
+.delivery-add {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-block: 30px;
+}
+
+.delivery-add h5 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.delivery-add p {
+	font-size: 15px;
+	color: #696969;
+}
+
+input[type="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type="radio"]:before {
+	content: "";
+	/* create custom radiobutton appearance */
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 2px;
+	/* background-color only for content */
+	background-clip: content-box;
+	border: 2px solid #ad4c4c;
+	background-color: #ad4c4c;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.delivery-add input {
+	color: #ad4c4c;
+}
+
+.form-box {
+	margin-bottom: 20px;
+}
+
+.form-box label {
+	display: block;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.form-box input,
+.form-box select {
+	display: block;
+	width: 100%;
+	padding: 13px 20px;
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+}
+
+.pay {
+	padding-bottom: 60px;
+	width: 80%;
+	padding-top: 20px;
+	margin-inline: auto;
+}
+
+.pay button {
+	background: #ad4c4c;
+	text-align: center;
+	width: 100%;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 600;
+	padding-block: 10px;
+}
+
+@media screen and (max-width: 500px) {
+	.pay {
+		width: 100%;
+	}
+}

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import CartList from "./CartList";
-import Header from "./Header";
 import "./cartpage.css";
 
 const CartPage = () => {
-	// const[delivery, setDelivery] = useState(1200)
+
 	const [cart, setCart] = useState([
 		{
 			id: 1,
@@ -68,7 +69,6 @@ const CartPage = () => {
 	};
 	return (
 		<div>
-			<Header />
 			<section>
 				<div className="">
 					<p className="nav">
@@ -108,9 +108,11 @@ const CartPage = () => {
 					<h2>#{total.toLocaleString()}</h2>
 				</div>
 			</section>
-			<section className="checkout">
-				<button>Checkout</button>
-			</section>
+			<div className="checkout">
+				<Link to='/verification'>
+					<button>Checkout</button>
+				</Link>
+			</div>
 		</div>
 	);
 };
