@@ -112,6 +112,7 @@ span{
 
 .logo{
     color: black;
+   
 }
 
 .anchor{
@@ -155,10 +156,9 @@ span{
 
 .heading li{
     display: inline-block;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-bottom: 5px; 
-       
+    padding: 40px;
+    
+    
 }
 
 .kfc li{
@@ -208,24 +208,5 @@ span{
 }
 
 
-@media screen and (min-width: 320px) {
-   nav ul{
-       display: inline;
-       
-   }
-   .anchor, .anchor1, .anchor2{
-       padding: 5px;
-       margin: 5px;
-   }
-   nav{
-      
-       align-items: none;
-       display: inline;
-       padding: 5px;
-       
-   }
-   .logo{
-       float: inline-start;
-       margin: 5px;
-       padding: 5px;   
-   }
+
+
