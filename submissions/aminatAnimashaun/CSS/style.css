@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+nav ul,
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+footer li{
+    float:left;
+    padding: 5px;
+   
+}
+
+section,
+footer{
+    padding: 20px 35px;
+}
+
+nav{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+    align-items: center;
+    text-align: right;
+    
+}
+
+.content{
+    padding: 100px;
+    text-align: center;
+}
+
+.form{
+    text-align: left;
+}
+
+.img li{
+    display: inline-grid;
+    padding: 40px;
+    margin-bottom: 5px;
+    border: 1px solid grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
+}
+
+.how li{
+    display: inline-grid;
+    padding: 40px;
+    margin-bottom: 5px;
+   
+}
+
+.describe{
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+    
+}
+ 
+footer ul li{
+    align-items: left;
+    width: 100%;
+    
+}
+
+.copy{
+    text-align: right;
+    
+}
+
+table{
+    width: 100%;
+}
+
+.dropwdown{
+ width: 100%;
+ padding: 10px;
+}
+
+span{
+    color: #AD4C4C;
+}
+
+.logo{
+    color: black;
+   
+}
+
+.anchor{
+    width: 100%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #AD4C4C;
+    padding: 10px;
+    color: #AD4C4C;
+    border-radius: 10%;
+    
+}
+.anchor1{
+    width: 100%;
+    margin: 30px;
+    color: gray;
+}
+
+.anchor2{
+    width: 100%;
+    margin: 30px;
+    color: gray;
+}
+.socialmedia{
+    width: 10%;
+    margin-left: 45%;
+    
+}
+.sorrows{
+    margin-top: 3px;
+    color: gray;
+}
+.img{
+    color:#AD4C4C;
+}
+
+.locate{
+    margin-top: 3px;
+    color: gray;
+}
+
+.heading li{
+    display: inline-block;
+    padding: 40px;
+    
+    
+}
+
+.kfc li{
+    display: inline-grid;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.chicken li{
+    display: inline-grid;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.price{
+    padding: 60px;
+    color: green;
+}
+
+.head{
+    padding-top: 4%;
+    margin: 1.5%;
+    margin-left: 1%;
+    padding-left: 0;
+    
+}
+
+.addcart{
+    width: 40%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #AD4C4C;
+    padding: 10px;
+    color: #AD4C4C;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.home{
+    color: grey;
+}
+
+.ven{
+    color: black;
+}
+
+
+
+
