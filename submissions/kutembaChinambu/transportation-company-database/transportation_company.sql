@@ -3,7 +3,7 @@
 CREATE TABLE passengers
 (
 id INT NOT NULL AUTO_INCREMENT,
-full_name VARCHAR(100) NOT NULL,
+full_name VARCHAR(250) NOT NULL,
 sex VARCHAR(10) NOT NULL,
 age INT,
 PRIMARY KEY (id)
@@ -18,7 +18,7 @@ id INT NOT NULL AUTO_INCREMENT,
 passenger_id INT NOT NULL,
 passenger_class ENUM('1','2','3') NOT NULL,
 passenger_ticket_number VARCHAR(20) NOT NULL,
-trip_fare decimal (30,20) NOT NULL,
+trip_fare decimal (30,2) NOT NULL,
 assigned_cabin VARCHAR(20),
 number_of_parents_and_children_aboard INT NOT NULL,
 number_of_siblings_and_spouses_aboard INT NOT NULL,
