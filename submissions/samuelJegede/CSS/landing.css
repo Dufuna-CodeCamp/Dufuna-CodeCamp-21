@@ -1,0 +1,135 @@
+body {
+    max-width: 1240;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+nav a[href='#'] {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav{
+    padding: 30px;
+    background-color: grey;
+    position: relative;
+}
+
+@media screen and (min-width: 600px) {
+    nav li{
+        float: right;
+        padding: 8px;
+        display: inline;
+    }
+} 
+
+.sbj-foods{
+    margin-top: 60px;
+}
+.sbj-foods h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: darkolivegreen;
+    line-height: 1.5;
+}
+.sbj-foods p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: darkolivegreen;
+    line-height: 0.5;
+}
+.sbj-intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.available-foods h3{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    color: darkolivegreen;
+}
+
+.available-foods {
+    border: 1px solid #add8eb;
+    background-color: #fff;
+    box-shadow: 0 4px 8px o rgba (0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+}
+
+.services {
+    margin-top: 60px;
+    background-color: aliceblue;
+}
+.services h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: darkolivegreen;
+}
+.service-available {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.service-item h3 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    color: darkolivegreen;
+}
+.service-item p{
+    margin-top: -25px;
+    color: darkolivegreen;
+    text-align: center;
+}
+
+.service-item {
+    border: 1px solid #add8eb;
+    background-color: #fff;
+    margin: 0 0 5px 0;
+    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+footer{
+    background-color: grey;
+}
+
+nav a,
+footer a{
+    color: black;
+}
+a:hover{
+    color: aquamarine;
+}
+a:visited{
+    color: cornflowerblue;
+}
+
+footer li{
+    float: right;
+    padding: 5px;
+}
+
+nav ul,
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    padding: 20px 30px;
+}
