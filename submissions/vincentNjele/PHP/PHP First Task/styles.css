@@ -1,0 +1,22 @@
+
+body {
+    margin-top: 200px;
+    margin-left: 500px; 
+}
+.form {
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px 5px  rgb(151, 148, 148);
+    width: fit-content;
+    padding: 20px;
+}
+input {
+    height: 30px;
+    margin-top: 20px;
+}
+.btn {
+    height: 30px;
+    background-color: rgb(54, 54, 243);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
