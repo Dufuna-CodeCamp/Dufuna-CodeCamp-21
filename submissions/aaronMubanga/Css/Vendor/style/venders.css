@@ -1,0 +1,53 @@
+.vendors{
+    border-bottom: thin solid var(--text-color);
+    margin: auto;
+}
+.vendors:last-child{
+    border-bottom: unset;
+}
+h3{
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    padding-left: 4.6rem;
+    padding-top: 1.5rem;
+}
+.vendors h5 a{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.vendor{
+    justify-content: flex-start;
+    padding: 1rem;
+}
+.vendor h4{
+    padding-left: 1.3rem;
+}
+.info {
+    justify-items: flex-end;
+    flex: 3;
+}
+.details {
+    gap: 1.1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.vendors .card h5 {
+    display: block;
+    font-size: 0.92rem;
+    margin: unset;
+}
+.vendors .card img{
+    width: 100%;
+}
+.vendors .card {
+    box-shadow: unset;
+}
+.vendors .card .price {
+    justify-self: flex-end;
+    color: var(--success);
+    flex: 1;
+}
+.vendors a {
+    color: var(--primary-color);
+}
+
