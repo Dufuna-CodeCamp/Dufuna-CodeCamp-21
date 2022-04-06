@@ -64,7 +64,7 @@ nav{
     background-color: #fff;
     box-shadow: 0 4px 8px o rgba (0, 0, 0, 0.2);
     border-radius: 5px;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px;
 }
 
 .services {
@@ -99,13 +99,14 @@ nav{
 .service-item {
     border: 1px solid #add8eb;
     background-color: #fff;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px;
     box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
 footer{
     background-color: grey;
+    padding: 20px 30px;
 }
 
 nav a,
@@ -129,7 +130,4 @@ footer ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-footer{
-    padding: 20px 30px;
 }
