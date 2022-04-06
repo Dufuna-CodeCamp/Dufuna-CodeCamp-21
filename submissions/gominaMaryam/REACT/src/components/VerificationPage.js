@@ -37,6 +37,7 @@ const VerificationPage = () => {
 						placeholder="+234"
 					/>
 				</div>
+				<div className="v-line"></div>
 				<div className="form-box">
 					<label htmlFor="PaymentMethod">Payment method</label>
 					<select
