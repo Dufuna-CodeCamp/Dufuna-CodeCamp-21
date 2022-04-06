@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./verification.css";
 
 const Verification = () => {
+	const [inputValue, setInputValue] = useState({
+		phoneNumber: "",
+		cardNumber: "",
+		cardName: "",
+		expiryDate: "",
+		CVC: "",
+	});
+
+	const handleInputChange = (e) => {
+		const { name, value } = e.target;
+
+		setInputValue((prevInputValue) => ({
+			...prevInputValue,
+			[name]: value,
+		}));
+	};
+
 	return (
 		<div>
 			<section>
@@ -20,30 +37,33 @@ const Verification = () => {
 					<p>Your order will be deliverd to your address</p>
 				</div>
 				<input
+					onChange={handleInputChange}
 					type="radio"
 					name="confirmDelivery"
 					id="confirmDelivery"
-                    checked
+					checked
 				/>
 			</div>
 			<form>
 				<div className="form-box">
-					<label htmlFor="PhoneNumber">Phone number</label>
+					<label htmlFor="phoneNumber">Phone number</label>
 					<input
+						onChange={handleInputChange}
 						type="tel"
-						name="PhoneNumber"
+						name="phoneNumber"
+						value={inputValue.phoneNumber}
 						required
-						id="PhoneNumber"
+						id="phoneNumber"
 						placeholder="+234"
 					/>
 				</div>
 				<div className="v-line"></div>
 				<div className="form-box">
-					<label htmlFor="PaymentMethod">Payment method</label>
+					<label htmlFor="paymentMethod">Payment method</label>
 					<select
-						name="PaymentMethod"
+						name="paymentMethod"
 						required
-						id="PaymentMethod"
+						id="paymentMethod"
 						placeholder="Card"
 					>
 						<option value="card">Card</option>
@@ -52,42 +72,50 @@ const Verification = () => {
 					</select>
 				</div>
 				<div className="form-box">
-					<label htmlFor="CardNumber">Card Number</label>
+					<label htmlFor="cardNumber">Card Number</label>
 					<input
+						onChange={handleInputChange}
 						type="number"
-						name="CardNumber"
+						name="cardNumber"
+						value={inputValue.cardNumber}
 						required
-						id="CardNumber"
+						id="cardNumber"
 						placeholder="2345 6543 7868 2343"
 					/>
 				</div>
 				<div className="form-box">
-					<label htmlFor="CardName">Card Name</label>
+					<label htmlFor="cardName">Card Name</label>
 					<input
+						onChange={handleInputChange}
 						type="text"
-						name="CardName"
+						name="cardName"
+						value={inputValue.cardName}
 						required
-						id="CardName"
+						id="cardName"
 						placeholder="TOLUWALASE KENNY OJO"
 					/>
 				</div>
 				<div className="v-divide">
 					<div className="form-box">
-						<label htmlFor="ExpiryDate">Expiry date</label>
+						<label htmlFor="expiryDate">Expiry date</label>
 						<input
-							type=""
-							name="ExpiryDate"
+							onChange={handleInputChange}
+							type="number"
+							name="expiryDate"
+							value={inputValue.expiryDate}
 							required
-							id="ExpiryDate"
+							id="expiryDate"
 							placeholder="01/23"
 						/>
 					</div>
 					<div className="form-box">
 						<label htmlFor="CVC">CVC</label>
 						<input
+							onChange={handleInputChange}
 							type="number"
 							maxLength={3}
 							name="CVC"
+							value={inputValue.CVC}
 							required
 							id="CVC"
 							placeholder="123"
