@@ -5,7 +5,7 @@ function displayNimbers() {
     $counter = 101;
 
     
-    echo("The numbers between 100 and 150 are: "."<br/>");
+    echo("The numbers between 100 and 150 are: ".'<br/>');
 
     while($counter < 150 ) {
        
