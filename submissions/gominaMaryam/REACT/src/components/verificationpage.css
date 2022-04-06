@@ -102,6 +102,13 @@ form select {
 	outline: none;
 }
 
+.v-line{
+	background-color:#c4c4c4;
+	padding: 1px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
 @media screen and (max-width: 500px) {
 	.pay {
 		width: 100%;
