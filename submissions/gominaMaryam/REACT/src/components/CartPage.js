@@ -76,7 +76,7 @@ const CartPage = () => {
 					</p>
 				</div>
 			</section>
-			<h3 className="head-page">Cart</h3>
+			<h2 className="head-page">Cart</h2>
 			<section className="mobile-cart">
 				<p>{cart.length + 1} items</p>
 				<p>Remove all</p>
