@@ -1,7 +1,7 @@
 import React from "react";
-import "./verificationpage.css";
+import "./verification.css";
 
-const VerificationPage = () => {
+const Verification = () => {
 	return (
 		<div>
 			<section>
@@ -12,7 +12,7 @@ const VerificationPage = () => {
 					</p>
 				</div>
 			</section>
-			<h3 className="head-page">Verification</h3>
+			<h2 className="head-page">Verification</h2>
 			<p className="confirm-add">Confirm address & Payments</p>
 			<div className="delivery-add">
 				<div>
@@ -103,4 +103,4 @@ const VerificationPage = () => {
 	);
 };
 
-export default VerificationPage;
+export default Verification;
