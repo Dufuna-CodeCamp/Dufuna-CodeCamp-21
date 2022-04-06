@@ -16,13 +16,13 @@ function displayNimbers() {
 
         echo("<br/>");
 
-        echo ("The even numbers between 0 and 50 are: "."<br/>");
+        echo ("The even numbers between 0 and 50 are: ".'<br/>');
 
         for($evenLooper = 2; $evenLooper<50; $evenLooper++) {
 
         if($evenLooper % 2 === 0) {
 
-            echo ($evenLooper."<br/>");
+            echo ($evenLooper.'<br/>');
         }
      }      
     
