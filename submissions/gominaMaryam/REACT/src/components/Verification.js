@@ -5,7 +5,7 @@ const Verification = () => {
 	return (
 		<div>
 			<section>
-				<div className="">
+				<div>
 					<p className="nav">
 						<span>Home {`>`} </span>
 						<span>Cart {`>`} </span>Verification
