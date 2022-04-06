@@ -83,8 +83,47 @@ input[type="radio"]:before {
 	padding-block: 10px;
 }
 
+.v-divide {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+}
+
+form select {
+	width: 100%;
+	padding: 10px;
+	margin-block: 10px;
+	appearance: none;
+	background: url("../images/keyboard_arrow_down.svg") no-repeat;
+	background-position: 99%;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #4e4d4d;
+	outline: none;
+}
+
 @media screen and (max-width: 500px) {
 	.pay {
 		width: 100%;
+	}
+	.v-divide {
+		grid-template-columns: 1fr;
+	}
+
+	.delivery-add h5 {
+		font-size: 16px;
+	}
+
+	.delivery-add p {
+		font-size: 14px;
+		color: #696969;
+	}
+	input[type="radio"]:before {
+	width: 8px;
+	height: 8px;
+	}
+
+	.form-box label{
+		font-size: 14px;
 	}
 }

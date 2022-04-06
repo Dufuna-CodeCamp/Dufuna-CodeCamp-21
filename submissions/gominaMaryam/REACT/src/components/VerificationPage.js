@@ -74,7 +74,7 @@ const VerificationPage = () => {
 					<div className="form-box">
 						<label htmlFor="ExpiryDate">Expiry date</label>
 						<input
-							type="month"
+							type=""
 							name="ExpiryDate"
 							required
 							id="ExpiryDate"
@@ -84,12 +84,12 @@ const VerificationPage = () => {
 					<div className="form-box">
 						<label htmlFor="CVC">CVC</label>
 						<input
-							type="num"
+							type="number"
 							maxLength={3}
 							name="CVC"
 							required
 							id="CVC"
-							placeholder="TOLUWALASE KENNY OJO"
+							placeholder="123"
 						/>
 					</div>
 				</div>
