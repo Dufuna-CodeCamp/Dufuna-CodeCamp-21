@@ -9,5 +9,5 @@ for(var i = 1;i <= endNum;i++){
         document.write('Developer' + '<br>');
     }else{
         document.write(i + '<br>');
-    };
+    }
 }
