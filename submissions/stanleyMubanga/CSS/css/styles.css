@@ -319,6 +319,7 @@ footer span {
 /* @@@@@@@@@ vendor page styles ########## */
 
 .path {
+    margin-top: 40px;
     width: 100%;
     height: 10%;
 }
@@ -329,9 +330,8 @@ footer span {
 
 .page-header {
     width: 100%;
-    height: 10%;
+    height: 8%;
     align-items: center;
-    /* background-color: #202020; */
 }
 
 .vendor {
@@ -346,7 +346,7 @@ footer span {
 }
 
 .vendor-nav-left {
-    width: 15%;
+    width: 30%;
     height: 100%;
 }
 
@@ -358,7 +358,7 @@ footer span {
 
 .vendor-name {
     width: 70%;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -383,10 +383,12 @@ footer span {
 }
 
 .vendor-products ul {
+    margin: auto;
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .vendor-product-card {
@@ -403,9 +405,9 @@ footer span {
     /* box-shadow: 0 0 5px rgba(128, 128, 128, 0.274); */
 }
 
-.prodcut-details {
+.product-info {
     width: 100%;
-    height: 15%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -418,5 +420,17 @@ footer span {
 .product-price {
     display: flex;
     color: var(--themegreen--);
-    /* background-color: #202020; */
+}
+
+.product-actions {
+    width: 100%;
+    height: 20%;
+}
+
+.cart-adder-btn {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
