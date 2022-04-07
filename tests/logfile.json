@@ -1,8 +1,161 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
     "failures": 0,
-    "owner": "jesusemenEhimiyein"
+    "start": "2022-04-06T23:54:11.350Z",
+    "end": "2022-04-06T23:55:08.716Z",
+    "duration": 57366,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "70ce7e14-a41c-4509-a201-a0a988b729ca",
+      "title": "",
+      "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
+      "file": "\\test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00e46ee0-3c5c-4bf3-9caa-c41f93458475",
+          "title": "Printing product price",
+          "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
+          "file": "\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "timedOut": false,
+              "duration": 54569,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "b069d20b-b690-41d8-a4f0-46dfe1618374",
+              "parentUUID": "00e46ee0-3c5c-4bf3-9caa-c41f93458475",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "20adf3e1-6c4f-4056-bcb4-e0ea4f17e34c",
+              "parentUUID": "00e46ee0-3c5c-4bf3-9caa-c41f93458475",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
+              "timedOut": false,
+              "duration": 1116,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
+              "err": {},
+              "uuid": "b43b5259-35d8-4494-a910-867547f80941",
+              "parentUUID": "00e46ee0-3c5c-4bf3-9caa-c41f93458475",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
+              "timedOut": false,
+              "duration": 139,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
+              "err": {},
+              "uuid": "97ef5f53-0da8-4e3c-add7-4baae9d0d952",
+              "parentUUID": "00e46ee0-3c5c-4bf3-9caa-c41f93458475",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b43b5259-35d8-4494-a910-867547f80941",
+            "97ef5f53-0da8-4e3c-add7-4baae9d0d952"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1255,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/user/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.1.1"
+    }
   }
 }
