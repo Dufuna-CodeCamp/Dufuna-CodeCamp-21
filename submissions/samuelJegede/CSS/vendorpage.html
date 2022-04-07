@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial scale="1.0">
-        <title> SBJ foods|Vendors page</title>
+        <title> FoodBag|Vendors page</title>
         <link rel="stylesheet" href="vendor.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,101 +16,149 @@
                 width: 300px;
                 height: 200px;
             }
+            h3{
+                font-weight: 600;
+                font-size: 14px;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
-        <nav>
-            <ul>
-                <a href="#">SBJ Foods</a>
-                <li><a href="#">Guest</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-            </ul>
+
+        <nav class="nav1">
+            <h2>Food<strong class="red">Bag</strong></h2>
+                <ul>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
         </nav>
 
-        <!-- Header-->
-        <section class="header">
-            <p>Home ><span class="span-meal">Meals</span></p>
-        </section>
-            
-        
-        <!-- Meals-->
-        <section class="meals">
-            <h2>Meals</h2>
-            
-            <div class="meal-available">
-                <div class="meal-item">
-                    <img src="image/jollof.jpg" alt="jollof" class="center">
-                    <h3>Jollof rice & chicken</h3>
-                    <p>NGN 4,000.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
-                </div>
-
-                <div class="meal-item">
-                    <img src="image/spaghetti.jpg" alt="spaghetti" class="center">
-                    <h3>Spaghetti & Fish</h3>
-                    <p>NGN 3,500.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
-                </div>
-
-                <div class="meal-item">
-                    <img src="image/fried rice.jpg" alt="friedrice" class="center">
-                    <h3>Fried rice & turkey</h3>
-                    <p>NGN 5,000.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
-                </div>
-
-                <div class="meal-item">
-                    <img src="image/ofada.jpg" alt="ofada" class="center">
-                    <h3>Ofada rice, sauce and beef</h3>
-                    <p>NGN 6,000.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
-                </div>
+        <!-- nav 2-->
+        <section>
+            <div class="nav2">
+                <a href="#" class="nav2-item1">Home</a>
+                <a href="#" class="nav2-item1">Vendors</a>
+            </div>
+            <div class="nav2-item2">
+                <h1>All Vendors</h1>
             </div>
 
         </section>
 
-        <!-- Sides-->
-        <section class="sides">
-            <h2>Sides</h2>
-            <div class="sides-available">
-                <div class="sides-item">
-                    <img src="image/plantain.jpg" alt="plantain">
-                    <h3>Plantain</h3>
-                    <p>NGN 500.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
+        <!-- KFC-->
+        <section class="KFC">  
+            <div class="grid1"> 
+                <img src="image/KFC logo.svg" alt="KFC" class="logo"> 
+                <h4>KFC</h4>      
+            </div>
+            <h4 class="view-all">View all</h4>
+            
+            <div class="menugrid">
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/burger.svg" alt="burger">
+                        <div class="grid3">
+                            <h3 class="burger">KFC- King basket</h3>
+                            <h3 class="green">#5,000</h3>
+                        </div>  
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>
                 </div>
 
-                <div class="sides-item">
-                    <img src="image/pomo.jpg" alt="pomo">
-                    <h3>Peppered pomo</h3>
-                    <p>NGN 500.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/burger.svg" alt="burger">
+                        <div class="grid3">
+                            <h3 class="burger">Zinger burger</h3>
+                            <h3 class="green">#3,000</h3>
+                        </div>  
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>
                 </div>
 
-                <div class="sides-item">
-                    <img src="image/hotdog.jpg" alt="hotdog" class="center">
-                    <h3>Hot dog</h3>
-                    <p>NGN 500.00</p>
-                    <button>
-                        <p>Add to list</p>
-                    </button>
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/burger.svg" alt="burger">
+                        <div class="grid3">
+                            <h3 class="burger">Chicken strips</h3>
+                            <h3 class="green">#1,450</h3>
+                        </div>  
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/burger.svg" alt="burger">
+                        <div class="grid3">
+                            <h3 class="burger">Yamalicious</h3>
+                            <h3 class="green">#900</h3>
+                        </div>  
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+
+        <!-- Chicken republic-->
+        <section class="chicken-republic">
+            <div class="grid1">
+                <img src="image/Chicken republic_logo.svg" alt="chickenrepublic" class="logo">
+                <h4>Chicken republic</h4>
+            </div>
+            <a href="#" class="view-all">View all</a>
+
+            <div class="menugrid">
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/refuel max.svg" alt="refuelmax">
+                        <div class="grid3">
+                            <h3 class="burger">Refuel Max</h3>
+                            <h3 class="green">#1,200</h3>
+                        </div>
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>                    
+                </div>
+
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/chill.svg" alt="chill">   
+                        <div class="grid3">
+                            <h3 class="burger">Express Meal</h3>
+                            <h3 class="green">#2,200</h3>
+                        </div>
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>                    
+                </div>
+
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/citizen meal.svg" alt="citizenmeal">  
+                        <div class="grid3">
+                            <h3 class="burger">Citizen Meal</h3>
+                            <h3 class="green">#1,500</h3>
+                        </div>
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>                    
+                </div>
+
+                <div class="grid2">
+                    <div class="menu-1">
+                        <img src="image/citizen meal.svg" alt="citizenmeal">  
+                        <div class="grid3">
+                            <h3 class="burger">Crunchy Meal</h3>
+                            <h3 class="green">#1,750</h3>
+                        </div>
+                        <a href="#" class="cart">Add to cart</a>
+                    </div>                    
                 </div>
 
             </div>
 
         </section>
+          
     </body>
 </html>
