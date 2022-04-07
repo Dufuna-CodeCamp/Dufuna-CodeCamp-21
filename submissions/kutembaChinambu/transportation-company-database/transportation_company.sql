@@ -33,9 +33,7 @@ CREATE TABLE flight_statuses
 (
 id INT NOT NULL AUTO_INCREMENT,
 passenger_id INT NOT NULL,
-trip_id INT NOT NULL,
 survived ENUM('0','1') NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (passenger_id) REFERENCES passengers (id),
-FOREIGN KEY (trip_id) REFERENCES trips (id)
+FOREIGN KEY (passenger_id) REFERENCES passengers (id)
 );
