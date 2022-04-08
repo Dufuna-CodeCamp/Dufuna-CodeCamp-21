@@ -12,13 +12,6 @@ body {
     display: flex;
 	justify-content: space-between;
     position: relative;
-}
-@media screen and (min-width: 500px) {
-    .nav1 li{
-        float: right;
-        padding: 8px;
-        display: inline;
-    }
 } 
 .nav1 h2{
     padding: 10px 0;
@@ -93,3 +86,14 @@ li a {
     text-align: center;
     color: red;
 }
+@media screen and (max-width:450px) {
+    body {
+        font-size: 13px;
+    }
+    .nav1 {
+        display: block;
+        margin: 0px;
+        font-size: 15px;
+        padding: 10px;
+    }
+}  

@@ -1,7 +1,7 @@
 body {
     max-width: 1240;
     font-family: 'Lato', sans-serif;
-    margin: 0;
+    margin: 15px;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -9,125 +9,186 @@ body {
 *{
     box-sizing: border-box;
 }
-
-nav a[href='#'] {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-nav{
-    padding: 30px;
-    background-color: grey;
+.nav {
+    display: flex;
+	justify-content: space-between;
     position: relative;
 }
-
-@media screen and (min-width: 600px) {
-    nav li{
-        float: right;
-        padding: 8px;
-        display: inline;
-    }
-} 
-
-.sbj-foods{
+.nav h2{
+    padding: 10px 0;
+}
+.nav ul{
+	display: flex;
+	align-content: center;
+	list-style-type: none;
+	padding: 15px 0;
+}
+li a {
+	color: black;
+	text-decoration: none;
+	padding: 0 15px;
+	border-radius: 5px;
+	border: 1px solid none;
+}
+.red{
+    color: #a50f0f;
+}
+.nav a:hover {
+	border: 1px solid red;
+	border-radius: 5px;
+}
+.food-bag{
     margin-top: 60px;
 }
-.sbj-foods h2{
+.food-bag h2{
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    color: darkolivegreen;
+    color: black;
     line-height: 1.5;
 }
-.sbj-foods p{
+.covered{
     text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: darkolivegreen;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
     line-height: 0.5;
+}
+.where {
+    display: inline-block;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+#location1 {
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0px;
 }
 .sbj-intro{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.available-foods h3{
-    font-weight: 500;
-    font-style: italic;
-    font-size: 25px;
-    text-align: center;
-    color: darkolivegreen;
-}
-
-.available-foods {
-    border: 1px solid #add8eb;
+.available-foods{
+    border: 0px solid grey;
     background-color: #fff;
     box-shadow: 0 4px 8px o rgba (0, 0, 0, 0.2);
     border-radius: 5px;
     margin: 0 0 5px;
 }
-
-.services {
-    margin-top: 60px;
-    background-color: aliceblue;
-}
-.services h2{
+.available-foods h3{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
     text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: darkolivegreen;
 }
-.service-available {
+.available-foods p{
+    font-size: 15px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+}
+.serve {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+.service-available{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .service-item h3 {
-    font-weight: 500;
-    font-style: italic;
-    font-size: 25px;
     text-align: center;
-    color: darkolivegreen;
 }
 .service-item p{
-    margin-top: -25px;
-    color: darkolivegreen;
     text-align: center;
 }
-
-.service-item {
-    border: 1px solid #add8eb;
-    background-color: #fff;
-    margin: 0 0 5px;
-    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2);
-    border-radius: 5px;
+.contactus {
+	text-align: center;
 }
-
-footer{
-    background-color: grey;
-    padding: 20px 30px;
+.contact {
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+    font-size: 30px;
 }
-
-nav a,
-footer a{
-    color: black;
+ul {
+	list-style-type: none;
+	padding: 0px;
 }
-a:hover{
-    color: aquamarine;
+.logo{
+    display: inline;
+    padding: 15px 15px;
 }
-a:visited{
-    color: cornflowerblue;
+.end {
+	display: grid;
+	padding: 0px;
+	margin: 0px;
+	color: #696969;
+	font-size: 15px;
 }
-
-footer li{
+.copy{
     float: right;
-    padding: 5px;
+}
+.terms{
+    float: left;
 }
 
-nav ul,
-footer ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 13px;
+    }
+    .nav {
+        display: block;
+        margin: 0px;
+        font-size: 15px;
+        padding: 0;
+    }
+    .food-bag1 {
+        text-align: left;
+
+    }
+    .covered {
+        font-size: 15px;
+        text-align: left;
+        padding: 0px;
+    }
+    .end{
+        font-size: 10px;
+        padding: 0;
+    }
+    .copy{
+        float: left;
+    }
+    .img{
+        width: 30px;
+        height: 30px;
+    }
+    .illustration{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .end{
+        font-size: 10px;
+        padding: 0;
+    }
+    .illustration{
+        width: 125px;
+        height: 125px;
+    }   
+}
+@media screen and (max-width:470px) {
+    .available-foods p{
+        font-size: 10px;
+    }   
+}
+@media screen and (max-width:860px) {
+    .available-foods p{
+        font-size: 12px;
+    }  
 }
