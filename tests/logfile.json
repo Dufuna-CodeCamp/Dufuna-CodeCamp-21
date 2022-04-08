@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-08T15:11:51.025Z",
-    "end": "2022-04-08T15:14:51.773Z",
-    "duration": 180748,
+    "start": "2022-04-08T16:24:18.278Z",
+    "end": "2022-04-08T16:27:19.519Z",
+    "duration": 181241,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "eebe9b0e-e154-44b8-9cf8-423b9a98ad92",
+      "uuid": "f701f4a2-a2e0-43b9-991d-729a52b78e71",
       "title": "",
       "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
       "file": "\\dom.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "68b5bbf3-b3e0-441e-9f32-20c692105390",
+          "uuid": "cad792e6-6ae9-4d3f-8f0b-735eb977b862",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
           "file": "\\dom.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "timedOut": true,
-              "duration": 180002,
+              "duration": 180003,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
                 "diff": null
               },
-              "uuid": "1c160731-af73-4dac-8c5e-af21be18d6eb",
-              "parentUUID": "68b5bbf3-b3e0-441e-9f32-20c692105390",
+              "uuid": "f362a04d-8aaf-480b-b58d-53341dd67907",
+              "parentUUID": "cad792e6-6ae9-4d3f-8f0b-735eb977b862",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "90d5b0dc-b567-4609-9bf8-dd67049b59b1",
-              "parentUUID": "68b5bbf3-b3e0-441e-9f32-20c692105390",
+              "uuid": "b8e011d9-9519-4644-af93-d7a961f7df2c",
+              "parentUUID": "cad792e6-6ae9-4d3f-8f0b-735eb977b862",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
-              "uuid": "5bbcb9bc-992f-456a-baec-381178f67254",
-              "parentUUID": "68b5bbf3-b3e0-441e-9f32-20c692105390",
+              "uuid": "c48dea26-3ad4-455f-92b5-44d9c6dcc685",
+              "parentUUID": "cad792e6-6ae9-4d3f-8f0b-735eb977b862",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
-              "uuid": "bb6c1d70-ee43-47a2-9fbf-bf2b86f27579",
-              "parentUUID": "68b5bbf3-b3e0-441e-9f32-20c692105390",
+              "uuid": "d1caf6dc-e7a4-4bf0-a696-fbb7d7d5399c",
+              "parentUUID": "cad792e6-6ae9-4d3f-8f0b-735eb977b862",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "99b03c00-5abe-43f2-892d-da6beb6e4ba8",
-              "parentUUID": "68b5bbf3-b3e0-441e-9f32-20c692105390",
+              "uuid": "42c519da-6958-48d2-92c1-e87d36ab2587",
+              "parentUUID": "cad792e6-6ae9-4d3f-8f0b-735eb977b862",
               "isHook": false,
               "skipped": true
             }
@@ -136,9 +136,9 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "5bbcb9bc-992f-456a-baec-381178f67254",
-            "bb6c1d70-ee43-47a2-9fbf-bf2b86f27579",
-            "99b03c00-5abe-43f2-892d-da6beb6e4ba8"
+            "c48dea26-3ad4-455f-92b5-44d9c6dcc685",
+            "d1caf6dc-e7a4-4bf0-a696-fbb7d7d5399c",
+            "42c519da-6958-48d2-92c1-e87d36ab2587"
           ],
           "duration": 0,
           "root": false,
