@@ -67,7 +67,7 @@ section.landing .destination{
     margin-bottom:40px;
 }
 
-section.landing .destination input{
+section.landing .destination select{
     width: 100%;
     padding:10px;
     outline:none;

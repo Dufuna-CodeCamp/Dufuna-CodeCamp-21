@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
+    "tests": 3,
     "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-04-07T08:04:07.316Z",
-    "end": "2022-04-07T08:04:34.272Z",
-    "duration": 26956,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2022-04-08T14:39:52.003Z",
+    "end": "2022-04-08T14:40:52.659Z",
+    "duration": 60656,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,43 +18,43 @@
   },
   "results": [
     {
-      "uuid": "940cab3e-cff2-44b6-a69d-8edc9939f517",
+      "uuid": "b28912fc-42eb-4b9f-9897-163de4ff488f",
       "title": "",
-      "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
-      "file": "\\conditionals_test.js",
+      "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+      "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "d616f6f2-0f42-4b14-9fe0-a24a72b9a027",
-          "title": "Testing javascript conditionals",
-          "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\conditionals_js\\conditionals_test.js",
-          "file": "\\conditionals_test.js",
+          "uuid": "102161fe-5096-4981-bb4e-d4d1f8cff7fe",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 25485,
+              "duration": 59080,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "d0802838-a8e1-4f4e-b925-5803fc00b682",
-              "parentUUID": "d616f6f2-0f42-4b14-9fe0-a24a72b9a027",
+              "uuid": "0a1eaffe-a500-4f23-9191-04b413a38bed",
+              "parentUUID": "102161fe-5096-4981-bb4e-d4d1f8cff7fe",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -65,40 +65,87 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "df45a130-b48b-4059-ba28-6ba5eb1390d2",
-              "parentUUID": "d616f6f2-0f42-4b14-9fe0-a24a72b9a027",
+              "uuid": "cb84ba49-5ce6-43a8-b359-a1349dc8ff38",
+              "parentUUID": "102161fe-5096-4981-bb4e-d4d1f8cff7fe",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check conditionals",
-              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "title": "test case: check dropdown",
+              "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
-              "duration": 1342,
+              "duration": 223,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"select\"}\n  (Session info: chrome=100.0.4896.75)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"select\"}\n  (Session info: chrome=100.0.4896.75)\n    at Object.throwDecodedError (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:548:13)\n    at Executor.execute (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:474:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:735:17)\n    at async toWireValue (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:140:15)\n    at async C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:190:16\n    at async forEachKey (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:184:9)\n    at async convertKeys (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:189:3)\n    at async thenableWebDriverProxy.execute (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\webdriver.js:733:22)\n    at async Context.<anonymous> (dom.js:24:25)",
+                "diff": null
+              },
+              "uuid": "4918785d-1701-4326-8341-1cf28decfe68",
+              "parentUUID": "102161fe-5096-4981-bb4e-d4d1f8cff7fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 872,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "err": {
+                "message": "AssertionError: Unspecified AssertionError",
+                "estack": "AssertionError: Unspecified AssertionError\n    at Context.<anonymous> (dom.js:31:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "df9d25a0-f697-4306-92f8-a0a598da81f9",
+              "parentUUID": "102161fe-5096-4981-bb4e-d4d1f8cff7fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 125,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "f1128087-5e0f-4a3f-b0e2-8ab92e626109",
-              "parentUUID": "d616f6f2-0f42-4b14-9fe0-a24a72b9a027",
+              "uuid": "7cbef846-dec1-40c7-a2e7-0ffa24757183",
+              "parentUUID": "102161fe-5096-4981-bb4e-d4d1f8cff7fe",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f1128087-5e0f-4a3f-b0e2-8ab92e626109"
+            "7cbef846-dec1-40c7-a2e7-0ffa24757183"
           ],
-          "failures": [],
+          "failures": [
+            "4918785d-1701-4326-8341-1cf28decfe68",
+            "df9d25a0-f697-4306-92f8-a0a598da81f9"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 1342,
+          "duration": 1220,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -132,7 +179,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/user/Desktop/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportDir": "C:/Users/user/Desktop/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
