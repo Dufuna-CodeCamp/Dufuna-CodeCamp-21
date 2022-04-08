@@ -4,7 +4,7 @@ let inputField = document.getElementById('address'),
 
 
 
-inputField.addEventListener('change', function(e){
+inputField.addEventListener('change', function(){
     interestImgField.forEach(function(element){
         element.style.filter = 'none';
         interestField.forEach((node) => {
