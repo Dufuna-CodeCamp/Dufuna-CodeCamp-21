@@ -13,7 +13,7 @@ for (i = 0; i <= sum; i++){
     else if (i % 3 == 0 || i % 5 == 0){
         statement += "Software Developer <br>";
     }
-    else {
+    else if (i % 3 != 0 || i % 5 != 0){
         statement += i + "<br>";
     }
 }
