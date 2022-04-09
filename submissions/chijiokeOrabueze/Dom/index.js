@@ -18,7 +18,7 @@ interestField.forEach(function(element){
     element.addEventListener('click', function(){
         if (interestImgField[0].style.filter === 'none'){
             console.log('in');
-            window.location.href = './vendors.html';  
+            window.location.href = '../css/vendors.html';  
         }
     });
 });
