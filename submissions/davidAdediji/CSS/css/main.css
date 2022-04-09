@@ -2,10 +2,6 @@ nav{
 	margin-top: 50px;
 }
 
-nav ul{
-	list-style: none;
-}
-
 
 nav p{
 	float:left;
@@ -105,7 +101,6 @@ nav ul li{
 	padding-top:27.75px;
 	padding-bottom: 24px;
 	margin-right: 20px;
-	border:0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .box-1{
