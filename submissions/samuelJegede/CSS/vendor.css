@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     font-size: 16px;
-    padding: 20px 50px 60px 50px;
+    padding: 20px 50px 60px;
 }
 
 *{
@@ -55,7 +55,7 @@ li a {
 }
 .nav2-item2 {
 	padding-top: 20px;
-	margin: 0px;
+	margin: 0;
 }
 
 .nav2-item2 h1{
@@ -92,7 +92,7 @@ li a {
     }
     .nav1 {
         display: block;
-        margin: 0px;
+        margin: 0;
         font-size: 15px;
         padding: 10px;
     }
