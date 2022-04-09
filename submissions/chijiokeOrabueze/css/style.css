@@ -67,6 +67,7 @@ section.landing .destination{
     margin-bottom:40px;
 }
 
+section.landing .destination select,
 section.landing .destination input{
     width: 100%;
     padding:10px;
@@ -90,6 +91,10 @@ section.landing .interests .interest{
     padding:20px;
     border: 2px solid grey;
     color: grey;
+}
+
+section.landing .interests .interest img{
+    filter: grayscale(100%);
 }
 
 section.landing .serve-you{
