@@ -1,0 +1,18 @@
+header{
+	text-align: center;
+	padding-top: 145px;
+	padding-bottom: 80px;
+}
+
+header h1{
+	font-weight: 600;
+	font-size: 40px;
+	color: #4E4D4D;
+}
+
+header p{
+	font-size: 20px;
+	font-weight: 400;
+	color: #696969;
+	line-height: 2rem;
+}

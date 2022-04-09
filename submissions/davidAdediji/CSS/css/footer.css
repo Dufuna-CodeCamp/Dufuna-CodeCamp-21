@@ -1,0 +1,30 @@
+.footer-contact-text{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 40px;
+	color: #696969;
+}
+
+.footer-copyright-terms-text{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	color: #696969;
+}
+
+.contact{
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.contact img{
+	width:40px;
+	padding-right: 10px;
+}
+
+.t-c{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
