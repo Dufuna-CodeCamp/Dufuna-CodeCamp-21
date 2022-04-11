@@ -5,20 +5,20 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-06T12:41:42.836Z",
-    "end": "2022-04-06T12:44:42.965Z",
-    "duration": 180129,
-    "testsRegistered": 2,
+    "start": "2022-04-11T14:42:20.707Z",
+    "end": "2022-04-11T14:45:21.052Z",
+    "duration": 180345,
+    "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
     "other": 1,
     "hasOther": true,
-    "skipped": 2,
+    "skipped": 3,
     "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "2a7287c8-a61a-4a4e-823e-bcd3d0dd3c28",
+      "uuid": "9bd12bf9-4c1c-4dcf-9d3b-3673f27b24da",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,30 +27,30 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1919b9da-8a22-4bad-869d-892a9234c808",
-          "title": "Printing product price",
-          "fullFile": "/home/asus/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/test.js",
-          "file": "/test.js",
+          "uuid": "d98a90a4-7f76-4c31-8486-e6dc51b45d48",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "timedOut": true,
-              "duration": 180104,
+              "duration": 180003,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/home/asus/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/test.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/home/asus/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/test.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
                 "diff": null
               },
-              "uuid": "42f09bc9-1f9a-4337-96a8-3371523053dd",
-              "parentUUID": "1919b9da-8a22-4bad-869d-892a9234c808",
+              "uuid": "31586fa7-7a7d-49a7-bac9-bcf6589dd532",
+              "parentUUID": "d98a90a4-7f76-4c31-8486-e6dc51b45d48",
               "isHook": true,
               "skipped": false
             }
@@ -69,16 +69,34 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c91027c2-05d8-4538-8f72-4bb5bee0f447",
-              "parentUUID": "1919b9da-8a22-4bad-869d-892a9234c808",
+              "uuid": "e0d1add7-6f10-4ade-b6cd-62a2a86ffd0a",
+              "parentUUID": "d98a90a4-7f76-4c31-8486-e6dc51b45d48",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check product details",
-              "fullTitle": "Printing product price test case: check product details",
+              "title": "test case: check dropdown",
+              "fullTitle": "Testing Scholars Project test case: check dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
+              "err": {},
+              "uuid": "3de8e7e5-f6f1-405c-8c8d-c14e2ae0ad6e",
+              "parentUUID": "d98a90a4-7f76-4c31-8486-e6dc51b45d48",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -89,8 +107,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "b9fd7034-52f0-47ed-8c55-af77313d038e",
-              "parentUUID": "1919b9da-8a22-4bad-869d-892a9234c808",
+              "uuid": "baf18e33-89f0-48ad-92c9-0b4709ae1c3d",
+              "parentUUID": "d98a90a4-7f76-4c31-8486-e6dc51b45d48",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +125,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "828dffe8-1fff-4092-9c3f-c7da4ae3a90a",
-              "parentUUID": "1919b9da-8a22-4bad-869d-892a9234c808",
+              "uuid": "dd12c3e0-9227-423d-99ed-f26f0efc414f",
+              "parentUUID": "d98a90a4-7f76-4c31-8486-e6dc51b45d48",
               "isHook": false,
               "skipped": true
             }
@@ -118,8 +136,9 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "b9fd7034-52f0-47ed-8c55-af77313d038e",
-            "828dffe8-1fff-4092-9c3f-c7da4ae3a90a"
+            "3de8e7e5-f6f1-405c-8c8d-c14e2ae0ad6e",
+            "baf18e33-89f0-48ad-92c9-0b4709ae1c3d",
+            "dd12c3e0-9227-423d-99ed-f26f0efc414f"
           ],
           "duration": 0,
           "root": false,
