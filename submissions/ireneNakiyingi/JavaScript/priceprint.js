@@ -19,4 +19,3 @@ var productList= [
 productList.forEach(function(product){
         document.write(product.productName + " with "+ product.imageUrl +" is sold for "+ product.productPrice +"."+"<br>")
 });
-
