@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     font-size: 16px;
-    padding: 20px 50px 60px;
+    padding: 20px 50px 60px 50px;
 }
 
 *{
@@ -36,7 +36,6 @@ li a {
 	border: 1px solid red;
 	border-radius: 5px;
 }
-
 .nav2{
     display: inline;
 	padding-top: 30px;
@@ -55,36 +54,47 @@ li a {
 }
 .nav2-item2 {
 	padding-top: 20px;
-	margin: 0;
+	margin: 0px;
 }
-
 .nav2-item2 h1{
     font-size: 30px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.vendor-head {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.grid1 {
+    display: flex;
+    align-items: center;
+}
+.view-all {
+    color: red;
+    text-align: center;
+    font-weight: 500;
 }
 .menugrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.logo{
-    width: 50px;
-    height: 50px;
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
-.green {
-	color: #13C319;
-}
-.view-all{
-    color: red;
-}
-.cart {
-	display: inline-block;
-	border: 1px solid red;
-	border-radius: 2px;
-	margin-left: 5px;
-	padding: 10px;
+.info span {
     font-weight: bold;
-    text-align: center;
-    color: red;
+}
+.item {
+    color: #4e4d4d;
+}
+.amount {
+    color: #5ea304;
 }
 @media screen and (max-width:450px) {
     body {
@@ -92,7 +102,7 @@ li a {
     }
     .nav1 {
         display: block;
-        margin: 0;
+        margin: 0px;
         font-size: 15px;
         padding: 10px;
     }
