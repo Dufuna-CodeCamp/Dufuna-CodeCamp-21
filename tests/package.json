@@ -5,7 +5,8 @@
     "chai": "^4.3.6",
     "chromedriver": "^96.0.0",
     "phantomcss": "^1.6.0",
-    "phantomjs-prebuilt": "^2.1.16"
+    "phantomjs-prebuilt": "^2.1.16",
+    "selenium-webdriver": "^4.1.1"
   },
   "scripts": {
     "webdriver-update": "webdriver-manager update",
