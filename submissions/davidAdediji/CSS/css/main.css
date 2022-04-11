@@ -1,20 +1,17 @@
 nav{
+	display: flex;
+	justify-content: space-between;
 	margin-top: 50px;
 }
 
 
-nav p{
-	float:left;
-}
-
 nav ul{
-	float: right;
 	list-style: none;
+	display: flex;
 }
 
 nav ul li{
-	display: inline;
-	margin-right:50px;
+	margin-left: 70px;
 	font-weight: 400;
 	font-size: 16px;
 	cursor: pointer;
@@ -54,6 +51,16 @@ nav ul li{
 	font-size: 20px;
 }
 
+.text-primary2{
+	font-weight: 600;
+	font-size: 40px;
+	color: #4E4D4D;
+}
+
+.text-primary3{
+	font-size: 16px;
+}
+
 .text-pr1{
 	font-weight: 500;
 	font-size: 18px;
@@ -68,45 +75,50 @@ nav ul li{
 	color: #a5a5a5;
 }
 
+.text-pr2 span{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color:#333;
+}
+
 .section-delivery .location input{
-	display: block;
-	width: 1250px;
+	width: 1275px;
 	height:60px;
 	color:#696969;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 5px;
+	padding:0px 30px 5px 30px;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
 	border-radius: 5px;
-	margin-right:100px;
 	border: 1px solid #c4c4c4;
 	cursor: pointer;
 }
+
 .section-delivery .location input:focus{
 	outline: none;
 	border: 1px solid #AD4C4C;
 }
 
+.box{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	column-gap: 32px;
+
+}
 
 
 .section-interest .box div{
-	display: inline-grid;
 	border:1px solid #C4C4C4;
 	width: 295px;
 	height:169px;
-	padding-left: 30px;
-	padding-right: 51px;
-	padding-top:27.75px;
-	padding-bottom: 24px;
-	margin-right: 20px;
+	padding: 27.75px 5px 24px 30px;
 }
 
 .box-1{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 200px;
+	column-gap: 190px;
 }
 
 
@@ -134,9 +146,37 @@ nav ul li{
 	color:#a5a5a5;
 }
 
+.bg-font3{
+	font-weight: 500;
+	text-align: center;
+	font-size: 30px;
+	line-height: 45px;
+	color:#000;
+}
+
+.bg-font4{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #AD4C4C;
+}
+
 .align-1{
 	margin-top: 80px;
 	margin-bottom: 80px;
+}
+
+.align-2{
+	margin-top: 92px;
+}
+
+.align-3{
+	margin-top: 32px;
+}
+
+.align-4{
+	margin-top: 61px;
+	margin-bottom: 56px;
 }
 
 .center{
@@ -151,11 +191,7 @@ header{
 	padding-bottom: 80px;
 }
 
-header h1{
-	font-weight: 600;
-	font-size: 40px;
-	color: #4E4D4D;
-}
+
 
 header p{
 	font-size: 20px;
@@ -192,9 +228,7 @@ hr{
 
 .container{
 	margin: auto;
-	max-width: 1500px;
-	padding-left: 100px;
-	padding-right: 100px;
+	max-width: 1280px;
 }
 
 
@@ -226,6 +260,48 @@ hr{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 35px;
+}
+
+
+/*Vendor Page*/
+
+.kfc .list-kfc{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.kfc .list-kfc div{
+	display: flex;
+	align-items: center;
+}
+
+.kfc .list-kfc div p{
+	margin-left: 20px;
+}
+
+
+.block-grid{
+	display: grid;
+	grid-template-columns: 332px 332px 332px 332px;
+	margin-top: 25px;
+}
+
+.block-grid div{
+	width:500px;
+}
+.vd-font{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color:#5ea304;
+}
+
+.block-grid div .inner-grid{
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	column-gap: 62px;
+	margin-bottom: 20px;
 }
 
 
