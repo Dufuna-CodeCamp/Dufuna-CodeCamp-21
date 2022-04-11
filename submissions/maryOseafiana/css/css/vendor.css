@@ -270,9 +270,7 @@ button {
     }
 }
 
-
-
-/* Tablet */
+/* Tablet view */
 @media (min-width: 768px) { 
     .group{
         display: grid;
