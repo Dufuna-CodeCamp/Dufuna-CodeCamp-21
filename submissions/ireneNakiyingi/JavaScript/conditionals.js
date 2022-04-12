@@ -1,4 +1,3 @@
-var figure = []
 var diff = (123-7);
 for (var num =1; num<=diff ;num++ ) {
     if (num%3 ===0 && num%5===0){
