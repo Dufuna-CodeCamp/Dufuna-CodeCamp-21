@@ -29,7 +29,7 @@ class Verification extends React.Component {
         const {phoneNumber, paymentMethod, cardNumber, cardName, expiryDate, cvc} = this.state;
 
         if (phoneNumber !== "" && paymentMethod !== "" && cardNumber !== "" && cardName !== "" && expiryDate !== "" && cvc !== "") {
-            window.alert("Submitted successfully");
+            window.open(window.location.origin + "/success", "_self");
         }
 
         else {
