@@ -318,7 +318,7 @@ input, select {
 }
 
 .col {
-  width: 608.54px;
+  /*width: 608.54px;*/
   display: inline-block;
   width: 48.46%;
 }
@@ -390,7 +390,7 @@ input, select {
 
   #pay button {
     width: 100%;
-    margin: 49px 0 33px 0;
+    margin: 49px 0 33px;
   }
 
   /* VERIFICATION RESPONSIVE STYLE END */
