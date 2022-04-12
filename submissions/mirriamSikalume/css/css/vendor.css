@@ -71,3 +71,316 @@ color: rgb(201, 44, 44);
 .home {
     color: grey;
 }
+
+
+
+@media (max-width: 576px ) {
+    .vendor-items {
+        margin-bottom: 40px;
+    }
+    
+    .vendor-items ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+    
+    .price {
+        float: right;
+        color: green;
+    }
+    .container-add-to-cart {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        width: 120px;
+        text-align: center;
+        padding: -80px;
+        cursor: pointer;
+    }
+    hr {
+        margin-top: 100px;
+    }
+    
+    .view-all {
+        float: right;
+    }
+    .kfc p {
+        margin-top: -35px;
+        border-radius: 4px;
+        
+    }
+    .kfc-name {
+        margin-left: 58px;
+    }
+    .logo {
+        display: flex;
+        
+    }
+    nav {
+        margin-top: -50px;
+    }
+    nav a{
+        float: right;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+       
+    }
+    .b {
+    color: rgb(201, 44, 44);
+    }
+    .kfc img {
+        margin-top: 20px;
+    }
+    .hero {
+        margin-top: 40px;
+    }
+    .signup {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        padding: 7px;
+        margin-top: -8px;
+    }
+    .home {
+        color: grey;
+    }
+    
+}
+
+
+
+@media screen and  (min-width: 468px ) {
+
+    
+    .vendor-items ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+    
+    .price {
+        float: right;
+        color: green;
+    }
+    .container-add-to-cart {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        width: 120px;
+        text-align: center;
+        padding: -80px;
+        cursor: pointer;
+    }
+    hr {
+        margin-top: 100px;
+    }
+    
+    .view-all {
+        float: right;
+    }
+    .kfc p {
+        margin-top: -35px;
+        border-radius: 4px;
+        
+    }
+    .kfc-name {
+        margin-left: 58px;
+    }
+    .logo {
+        display: flex;
+        
+    }
+    nav {
+        margin-top: -50px;
+    }
+    nav a{
+        float: right;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+       
+    }
+    .b {
+    color: rgb(201, 44, 44);
+    }
+    .kfc img {
+        margin-top: 20px;
+    }
+    .hero {
+        margin-top: 40px;
+    }
+    .signup {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        padding: 7px;
+        margin-top: -8px;
+    }
+    .home {
+        color: grey;
+    }
+    
+
+}
+
+
+@media (min-width: 768px ) {
+
+    .vendor-items ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+    .vendor-individual-item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+    
+    .price {
+        float: right;
+        color: green;
+    }
+    .container-add-to-cart {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        width: 120px;
+        text-align: center;
+        padding: -80px;
+        cursor: pointer;
+    }
+    hr {
+        margin-top: 100px;
+    }
+    
+    .view-all {
+        float: right;
+    }
+    .kfc p {
+        margin-top: -35px;
+        border-radius: 4px;
+        
+    }
+    .kfc-name {
+        margin-left: 58px;
+    }
+    .logo {
+        display: flex;
+        
+    }
+    nav {
+        margin-top: -50px;
+    }
+    nav a{
+        float: right;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+       
+    }
+    .b {
+    color: rgb(201, 44, 44);
+    }
+    .kfc img {
+        margin-top: 20px;
+    }
+    .hero {
+        margin-top: 40px;
+    }
+    .signup {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        padding: 7px;
+        margin-top: -8px;
+    }
+    .home {
+        color: grey;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+    .vendor-items ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+    .vendor-individual-item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+       
+
+    }
+    
+    .price {
+        float: right;
+        color: green;
+        margin-right: 15px;
+    }
+    .container-add-to-cart {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        width: 120px;
+        text-align: center;
+        padding: -80px;
+        cursor: pointer;
+    }
+    hr {
+        margin-top: 100px;
+    }
+    
+    .view-all {
+        float: right;
+    }
+    .kfc p {
+        margin-top: -35px;
+        border-radius: 4px;
+        
+    }
+    .kfc-name {
+        margin-left: 58px;
+    }
+    .logo {
+        display: flex;
+        
+    }
+    nav {
+        margin-top: -50px;
+    }
+    nav a{
+        float: right;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+       
+    }
+    .b {
+    color: rgb(201, 44, 44);
+    }
+    .kfc img {
+        margin-top: 20px;
+    }
+    .hero {
+        margin-top: 40px;
+    }
+    .signup {
+        color: rgb(201, 44, 44);
+        border: 1px solid rgb(201, 44, 44);
+        padding: 7px;
+        margin-top: -8px;
+    }
+    .home {
+        color: grey;
+    }
+}
