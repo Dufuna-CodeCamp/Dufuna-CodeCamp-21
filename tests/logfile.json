@@ -11,10 +11,10 @@
     "testsRegistered": 18,
     "passPercent": 100,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
   },
   "results": [
     {
@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -88,7 +88,7 @@
               "uuid": "083c5b6b-16c1-4f14-8951-960d03d43203",
               "parentUUID": "512758f6-5ca5-4983-90a3-22a137026393",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
               "title": "test case: FoodBag Logo is present",
@@ -106,7 +106,7 @@
               "uuid": "c61bf346-dce2-4ab0-9e32-2cc0c4b9fb62",
               "parentUUID": "512758f6-5ca5-4983-90a3-22a137026393",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
               "title": "test case: FoodBag text is present on the page",
@@ -394,7 +394,7 @@
               "uuid": "87a69067-89a1-4544-8ff3-d39154cf3f6b",
               "parentUUID": "512758f6-5ca5-4983-90a3-22a137026393",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
