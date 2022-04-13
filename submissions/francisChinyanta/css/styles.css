@@ -2,8 +2,7 @@ html, body{
 	height:100%;
 	padding: 0;
 	margin: 0;
-	background: #f6f6f6;
-    
+	background: #f6f6f6;    
 }
 nav ul{
     background-color: rgb(221, 215, 226);
@@ -64,10 +63,7 @@ img {
 .footer{
     background-color: rgb(221, 215, 226);
     list-style-type: none;
-    margin-top: 20px;
-  
-    
-  
+    margin-top: 20px;   
 }
 #div1, #div1 p{
     text-align: center;
@@ -101,8 +97,7 @@ img {
     height: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 850px;
-   
+    margin-left: 850px;   
 }
 #terms_copyrit{
     display: flex;
