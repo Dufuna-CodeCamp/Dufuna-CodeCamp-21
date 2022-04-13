@@ -2,10 +2,11 @@ html, body{
 	height:100%;
 	padding: 0;
 	margin: 0;
-	background: #f6f6f6;    
+	/**background: #f6f6f6;*/
+    background: #fff;
 }
 nav ul{
-    background-color: rgb(221, 215, 226);
+    background-color: white;
     list-style-type: none;
     margin: 0;
     padding: 20px;
@@ -18,7 +19,7 @@ nav{
     text-decoration: black;    
 }
 select {        
-    width: 1300px;   
+    width: 1400px;   
     padding: 10px;    }
 a{
     text-decoration: none;
@@ -59,7 +60,7 @@ img {
     height: 90px;
 }
 .footer{
-    background-color: rgb(221, 215, 226);
+    background-color: white;
     list-style-type: none;
     margin-top: 20px;   
 }
