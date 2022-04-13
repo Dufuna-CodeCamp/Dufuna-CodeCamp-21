@@ -81,6 +81,8 @@ img {
 }
 .foods p{
     text-align: center;
+    font-size: large;
+    font-weight: 600;
 }
 .contact-sec, .contact-sec a{    
     text-align: center;
@@ -104,11 +106,6 @@ img {
 }
 #terms_copyrit{
     display: flex;
-}
-.foods p{
-    font-size: large;
-    font-weight: 600;
-
 }
 #reg_1{
     display: flex;
