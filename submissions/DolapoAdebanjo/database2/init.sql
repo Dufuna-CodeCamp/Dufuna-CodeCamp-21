@@ -5,12 +5,12 @@ USE transportation;
 -- CREATE A passengers table for personal details of passenger
 CREATE TABLE passengers (
 id INT NOT NULL AUTO_INCREMENT,
-age VARCHAR,
+age VARCHAR(50),
 PRIMARY KEY(id)
 );
 
 --CREATE A passenger_details table for the travel details of passengers.
-CREATE TABLE passengers_details (
+CREATE TABLE travel_details (
 id INT NOT NULL AUTO_INCREMENT,
 passengers_id INT NOT NULL,
 passenger_class ENUM('1','2','3') NOT NULL,
