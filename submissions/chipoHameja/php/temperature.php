@@ -14,6 +14,6 @@ elseif($temperature >= 30 && $temperature < 40) {
     echo "It's so hot today.";
 }
 
-else {
+elseif($temperature >= 40) {
     echo "Am I in the Sahara Desert?!";
 }
