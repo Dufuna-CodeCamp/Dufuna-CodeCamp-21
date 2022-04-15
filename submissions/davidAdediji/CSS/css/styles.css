@@ -171,7 +171,7 @@ header nav ul li{
 	padding-left:20px;
 	padding-top:20px;
 	padding-bottom: 24px;
-	box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 3 1.5 rgba(0, 0, 0, 0.1);
 }
 
 #ice-cream-flavors{
@@ -418,6 +418,7 @@ header nav ul li{
 @media screen and (min-width:1201px){
 	header{
 		margin-top: 23px;
+		margin-bottom: 92px;
 	}
 
 	header nav ul li{
@@ -453,8 +454,8 @@ header nav ul li{
 	}
 
 	hr{
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 61px;
+		margin-bottom: 56px;
 	}
 
 	.container{
@@ -496,9 +497,6 @@ header nav ul li{
 		column-gap: 53px;
 	}
 
-	header{
-		margin-bottom: 92px;
-	}
 
 	.home-vendors .instance1{
 		padding-bottom: 33px;
@@ -512,10 +510,6 @@ header nav ul li{
 		margin-top: 13px;
 	}
 
-	hr{
-		margin-top: 61px;
-		margin-bottom: 56px;
-	}
 	.vendor-item-content-name-price{
 		margin-top: 15px;
 		margin-bottom: 20px;
