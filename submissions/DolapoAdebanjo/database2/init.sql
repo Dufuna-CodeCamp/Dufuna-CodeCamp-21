@@ -5,11 +5,13 @@ USE transportation;
 -- CREATE A passengers table for personal details of passenger
 CREATE TABLE passengers (
 id INT NOT NULL AUTO_INCREMENT,
+full_name VARCHAR(250) NOT NULL,
+sex VARCHAR(20) NOT NULL,
 age VARCHAR(50),
 PRIMARY KEY(id)
 );
 
---CREATE A passenger_details table for the travel details of passengers.
+-- CREATE A passenger_details table for the travel details of passengers.
 CREATE TABLE travel_details (
 id INT NOT NULL AUTO_INCREMENT,
 passengers_id INT NOT NULL,
@@ -31,4 +33,7 @@ passengers_id INT NOT NULL,
 passenger_survived BOOLEAN NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (passengers_id) REFERENCES passengers (id)
-)
+);
+
+SHOW COLUMNS FROM travel_details;
+ALTER TABLE passengers ADD sex VARCHAR(20) NOT NULL
