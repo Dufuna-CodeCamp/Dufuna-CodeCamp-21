@@ -17,7 +17,7 @@ CREATE TABLE passengers (
 -- creating passengers_details table
 CREATE TABLE passengers_details (
 	id INT NOT NULL AUTO_INCREMENT,
-    passenger_id INT NOT NULL,
+    passengers_id INT NOT NULL,
     passenger_class INT NOT NULL,
     ticket_number VARCHAR(50) NOT NULL,
     trip_fare DECIMAL(10,5) NOT NULL,
@@ -26,16 +26,16 @@ CREATE TABLE passengers_details (
     num_sibilings_spouses INT NOT NULL,
     embark_point VARCHAR(10) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (passenger_id) REFERENCES passengers (id)
+    FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
 -- creating accident_cases table
 CREATE TABLE accident_cases (
 	id INT NOT NULL AUTO_INCREMENT,
-    passenger_id INT NOT NULL,
+    passengers_id INT NOT NULL,
     status INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (passenger_id) REFERENCES passengers_details (id)
+    FOREIGN KEY (passengers_id) REFERENCES passengers_details (id)
 );
 
 
