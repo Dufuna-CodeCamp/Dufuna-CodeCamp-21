@@ -8,7 +8,7 @@ USE travel_sample;
 -- creating passengers table
 CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
-    full_name VARCHAR(100) NOT NULL,
+    full_name VARCHAR(250) NOT NULL,
     sex VARCHAR(10) NOT NULL,
     age VARCHAR(20),
     PRIMARY KEY (id)
@@ -18,7 +18,7 @@ CREATE TABLE passengers (
 CREATE TABLE passengers_details (
 	id INT NOT NULL AUTO_INCREMENT,
     passengers_id INT NOT NULL,
-    passenger_class INT NOT NULL,
+    passenger_class ENUM('1','2','3') NOT NULL,
     ticket_number VARCHAR(50) NOT NULL,
     trip_fare DECIMAL(10,5) NOT NULL,
     cabin VARCHAR(100),
