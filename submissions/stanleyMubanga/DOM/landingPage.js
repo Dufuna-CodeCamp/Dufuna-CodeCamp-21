@@ -22,7 +22,7 @@ const   city = document.getElementById('location');
                 interestCard.classList.add("activeCard");
             }))
             for (let l = 0; l < interestCards.length; l++) {
-                interestCards[l].addEventListener('click', (redirect) => {
+                interestCards[l].addEventListener('click', () => {
                     window.location = "vendorPage.html"
                 })
                 
