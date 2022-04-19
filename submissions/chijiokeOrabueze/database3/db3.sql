@@ -2,11 +2,11 @@
 use travel_sample;
 
 -- query 1
-SELECT * FROM accident_cases WHERE status = 1;
+SELECT COUNT(*) FROM accident_cases WHERE status = 1;
 -- 342
 
 -- query 2
-SELECT * FROM accident_cases WHERE status = 0;
+SELECT COUNT(*) FROM accident_cases WHERE status = 0;
 -- 549
 
 -- query 3
@@ -15,7 +15,7 @@ FROM users INNER JOIN passengers_details ON users.id = passengers_details.passen
 AND passengers_details.embark_point = 'Q' OR passengers_details.embark_point = 'C';
 
 -- query 4
-SELECT passengers_details.embark_point, passengers_details.id 
+SELECT COUNT(*) 
 FROM passengers_details INNER JOIN accident_cases ON passengers_details.id = accident_cases.passengers_id 
 WHERE passengers_details.embark_point = 'S' AND accident_cases.status = 1;
 -- 218
