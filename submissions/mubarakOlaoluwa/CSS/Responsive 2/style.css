@@ -1,0 +1,191 @@
+body {
+    margin-left: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.nav-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.one{
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.add {
+    flex-basis: 200px;
+    color: orange;
+    font-weight: bold;
+    padding-top: 5px;
+    
+
+}
+
+.two {
+    flex-basis: 65px;
+    padding-top: 5px;
+
+
+}
+    
+
+.three {
+    flex-basis: 65px;
+    padding: 5px;
+}
+
+.four {
+    border: 1px solid rgba(255, 0, 200, 0.5);
+    border-radius: 20%;
+    padding: 5px;
+    flex-shrink: 0;
+    
+}
+
+.first-flex {
+    display: flex;
+}
+
+.home {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    flex-basis: 45px;
+}
+
+.bread {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    flex-basis: 15px;
+}
+
+.vendor {
+    font-size: 14px;
+}
+
+.second-flex {
+    display: flex;   
+}
+
+.kfc{
+    padding: 15px 0 0 10px;
+    font-size: 15px;
+    }
+
+.first-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    }
+    
+.image2{
+    width: 360px;
+    align-items: center;  
+}
+
+.flex-in {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.king {
+    flex-basis: 300px;
+    padding: 10px 10px 10px 5px;
+    font-size: 13px;   
+}
+
+.price {
+    padding: 10px 10px 10px 5px;
+    font-size: 13px;   
+    color: green;
+}
+
+.cart {
+    color: rgba(255, 0, 200, 0.8);
+    padding: 5px;
+    border: 1px solid rgba(255, 0, 200, 0.8);
+    margin-left: 5px;
+    margin-right: 280px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 430px) {
+    .add {
+        flex-basis: 320px;
+    }
+
+    .image2{
+        width: 420px;
+        align-items: center;  
+    }
+
+    .king {
+        flex-basis: 400px;
+    }
+
+    .cart {
+        margin-right: 320px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .add {
+        flex-basis: 430px;
+    }
+
+    .image2{
+        width: 520px;
+        align-items: center;  
+    }
+
+    .king {
+        flex-basis: 445px;
+    }
+
+    .cart {
+        margin-right: 400px;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .add {
+        flex-basis: 550px;
+    }
+
+    .image2{
+        width: 650px;
+        align-items: center;  
+    }
+
+    .king {
+        flex-basis: 575px;
+    }
+
+    .cart {
+        margin-right: 500px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .add {
+        flex-basis: 630px;
+    }
+
+    .image2{
+        width: 760px;
+        align-items: center;  
+    }
+
+    .king {
+        flex-basis: 675px;
+    }
+
+    .cart {
+        margin-right: 600px;
+    }
+}
