@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 3,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-04-17T19:46:58.961Z",
-    "end": "2022-04-17T19:46:59.426Z",
-    "duration": 465,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 3,
+    "start": "2022-04-19T20:18:39.011Z",
+    "end": "2022-04-19T20:18:42.574Z",
+    "duration": 3563,
+    "testsRegistered": 3,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,43 +18,43 @@
   },
   "results": [
     {
-      "uuid": "57bde9a2-44c4-449d-b992-58712dfc6ec0",
+      "uuid": "a944edec-29ef-4807-9cdc-990bcaffb7b3",
       "title": "",
-      "fullFile": "/home/david/Documents/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
-      "file": "/conditionals_test.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "0b72bd78-2d00-49dc-a5d5-75f2a42e8b54",
-          "title": "Testing javascript conditionals",
-          "fullFile": "/home/david/Documents/Dufuna-CodeCamp-21/tests/conditionals_js/conditionals_test.js",
-          "file": "/conditionals_test.js",
+          "uuid": "6027106d-8b8c-4bb0-af86-8d76f1632329",
+          "title": "Testing Scholars Project",
+          "fullFile": "/home/asus/Desktop/Dufuna-CodeCamp-21/tests/Dom_2/dom.js",
+          "file": "/dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 406,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "85bf512d-d7f3-411e-b840-95fdbb37f545",
-              "parentUUID": "0b72bd78-2d00-49dc-a5d5-75f2a42e8b54",
+              "uuid": "7a40f771-b04b-4298-9f03-bf083dc6c3c4",
+              "parentUUID": "6027106d-8b8c-4bb0-af86-8d76f1632329",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing javascript conditionals\"",
-              "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -65,40 +65,90 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "92d17792-4553-4308-a747-9ca0e1e2060a",
-              "parentUUID": "0b72bd78-2d00-49dc-a5d5-75f2a42e8b54",
+              "uuid": "8554ec68-6e13-4a9e-916c-704c4f4171d8",
+              "parentUUID": "6027106d-8b8c-4bb0-af86-8d76f1632329",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check conditionals",
-              "fullTitle": "Testing javascript conditionals test case: check conditionals",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 49,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 3539,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
-              "err": {},
-              "uuid": "e0f6f97a-e4e2-44ca-ab40-69b617e893fb",
-              "parentUUID": "0b72bd78-2d00-49dc-a5d5-75f2a42e8b54",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 98\nCurrent browser version is 100.0.4896.88 with binary path /usr/bin/google-chrome",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 98\nCurrent browser version is 100.0.4896.88 with binary path /usr/bin/google-chrome\n    at Object.throwDecodedError (/home/asus/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/home/asus/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/home/asus/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "962c1919-158f-4844-ad3d-89a41a34900c",
+              "parentUUID": "6027106d-8b8c-4bb0-af86-8d76f1632329",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 98\nCurrent browser version is 100.0.4896.88 with binary path /usr/bin/google-chrome",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 98\nCurrent browser version is 100.0.4896.88 with binary path /usr/bin/google-chrome\n    at Object.throwDecodedError (/home/asus/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/home/asus/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/home/asus/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "23cd1d0f-354c-4c2c-81cc-86098f930177",
+              "parentUUID": "6027106d-8b8c-4bb0-af86-8d76f1632329",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 98\nCurrent browser version is 100.0.4896.88 with binary path /usr/bin/google-chrome",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 98\nCurrent browser version is 100.0.4896.88 with binary path /usr/bin/google-chrome\n    at Object.throwDecodedError (/home/asus/node_modules/selenium-webdriver/lib/error.js:522:15)\n    at parseHttpResponse (/home/asus/node_modules/selenium-webdriver/lib/http.js:548:13)\n    at Executor.execute (/home/asus/node_modules/selenium-webdriver/lib/http.js:474:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "835c2337-8a19-42af-a5fc-088ec54785ed",
+              "parentUUID": "6027106d-8b8c-4bb0-af86-8d76f1632329",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "e0f6f97a-e4e2-44ca-ab40-69b617e893fb"
+          "passes": [],
+          "failures": [
+            "962c1919-158f-4844-ad3d-89a41a34900c",
+            "23cd1d0f-354c-4c2c-81cc-86098f930177",
+            "835c2337-8a19-42af-a5fc-088ec54785ed"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 49,
+          "duration": 3540,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -116,7 +166,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.2.2"
+      "version": "9.2.1"
     },
     "mochawesome": {
       "options": {
@@ -128,15 +178,15 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "7.1.2"
+      "version": "7.0.1"
     },
     "marge": {
       "options": {
-        "reportDir": "/home/david/Documents/Dufuna-CodeCamp-21/tests/conditionals_js/../..//tests/",
+        "reportDir": "/home/asus/Desktop/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
-      "version": "6.1.1"
+      "version": "6.0.1"
     }
   }
 }
