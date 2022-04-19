@@ -73,7 +73,7 @@ li a {
 	width: 100%;
 	border-radius: 10px;
 	padding: 5px;
-	margin: 0px;
+	margin: 0;
 }
 .interest {
     font-size: 16px;
@@ -87,7 +87,7 @@ li a {
 }
 .available-foods{
     width: 100%;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     color: #a5a5a5;
     margin-bottom: 10px;
     padding: 24px 0 24px 20px;   
@@ -136,11 +136,11 @@ li a {
 }
 ul {
 	list-style-type: none;
-	padding: 0px;
+	padding: 0;
 }
 .logo{
     display: inline;
-    padding: 15px 15px;
+    padding: 15px;
 }
 .end {
     width: 100%;
@@ -173,7 +173,7 @@ hr {
     }
     .available-foods{
         width: 25%;
-        box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
         color: #a5a5a5;
         margin-bottom: 10px;
         padding: 24px 0 24px 20px;   
