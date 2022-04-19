@@ -20,7 +20,7 @@ body {
      .h2 {
 
         display: inline-grid;
-        margin: 10px 50px 10px 50px;
+        margin: 10px 50px;
      }
 
      .h3 {        
@@ -72,7 +72,7 @@ body {
 
     .payment {
         text-align: center;
-        margin: 50px 300px 50px 300px;
+        margin: 50px 300px;
         border: 5px solid bisque;
         border-radius: 20%;
         padding: 5px;
