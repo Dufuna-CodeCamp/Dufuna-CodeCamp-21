@@ -188,12 +188,16 @@ select#location {
     height: 90%;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 4px rgba(184, 184, 184, 0.76);
+    box-shadow: 0 0 4px rgba(184, 184, 184, 0.24);
     transition: transform 300ms;
     background-color: white;
 }
 
-.interest-card:hover {
+.activeCard {
+    box-shadow: 0 0 4px rgba(184, 184, 184, 0.76);
+}
+
+.activeCard:hover {
     box-shadow: 0 0 4px rgb(134, 134, 134);
     transform: scale(1.02);
 }
@@ -208,7 +212,7 @@ select#location {
 
 .interests-header {
     width: 100%;
-    color: var(--theme--);
+    color: var(--themegray--);
 }
 
 .interest-slogan {
