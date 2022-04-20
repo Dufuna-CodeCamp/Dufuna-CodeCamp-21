@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Koffee's Contact Form</title>
+    <meta name="author" content="Koffee">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Form</h1>
+    </header>
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>
+                    Contact Form
+                </legend>
+                <label for="full_name">Full Name</label><br>
+                <input type="text" name="full_name" id="fullName"><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="koffee@gmail.com" id="email"><br>
+
+                <label>Country</label><br>
+                <input list="country-list" name="country1" id="country1">
+                <datalist id="country-list">
+                        <option value="Nigeria">
+                        <option value="Ghana">
+                        <option value="Kenya">
+                </datalist><br>
+
+                <label for="subject">Subject</label><br>
+                <input type="text" name="subject" id="subject"><br>
+
+                <label for="message">Message</label><br>
+                <textarea rows="5" cols="50" name="message" id="message"></textarea><br>
+
+                <label>How would you like to describe our products?</label><br>
+                <input type="checkbox" name="review_1" id="review1"><label>High Quality</label><br>
+                <input type="checkbox" name="review_2" id="review2"><label>Standard</label><br>
+                <input type="checkbox" name="review_3" id="review3"><label>Unique</label><br>
+                <input type="checkbox" name="review_4" id="review4"><label>Low Quality</label><br>
+
+                <button type="submit" name="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
