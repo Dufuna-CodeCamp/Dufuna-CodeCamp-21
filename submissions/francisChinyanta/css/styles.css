@@ -1,0 +1,129 @@
+html, body{
+	height:100%;
+	padding: 0;
+	margin: 0;
+	/**background: #f6f6f6;*/
+    background: #fff;
+}
+nav ul{
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px; 
+    font-size: large;
+    font-weight: 600;       
+}
+nav{
+    text-decoration: black;    
+}
+select {        
+    width: 1200px;   
+    padding: 10px;    }
+a{
+    text-decoration: none;
+}
+
+.foods div{
+    text-align: center;
+}
+
+.foods li{
+    display: inline-grid;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    border: 1px solid #add8e6;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+nav li{
+    display: inline-grid;
+    padding: 0;
+    float: right;
+    padding-left:40px;
+}
+nav li a:hover{
+        color: rgb(56, 146, 146);        
+}
+  /* selected link */
+nav li a:active {
+    color: yellow;
+  }
+  
+span{
+    color: red;
+}
+img {
+    height: 90px;
+}
+.footer{
+    background-color: white;
+    list-style-type: none;
+    margin-top: 20px;   
+}
+#div1, #div1 p{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+#div2{
+    padding-left: 50px;
+    font-size: large;
+    font-weight: 600;
+}
+.foods p{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+.contact-sec, .contact-sec a{    
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+#terms{
+   width: 300px;
+   height: 50px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 50px;
+}
+#copyrit{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 850px;   
+}
+#terms_copyrit{
+    display: flex;
+}
+#reg_1{
+    display: flex;
+}
+.signup{
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.signup fieldset{
+    padding-left: 30px;
+}
+.signup input{
+    width: 170px;
+}
+#gender input{
+    width: 30px;
+}
+#reg{
+    margin-left: 320px;
+    width: 400px;
+    margin-top: 50px;
+    font-style: italic;  
+}
+#condition input{
+    width: 20px;
+}
