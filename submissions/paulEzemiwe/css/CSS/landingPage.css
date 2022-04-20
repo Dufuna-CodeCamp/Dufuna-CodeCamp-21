@@ -158,6 +158,15 @@ main {
   color: #a5a5a5;
 }
 
+.cards__title--red {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ad4c4c;
+}
+
 .cards__desc {
   font-size: 14px;
   line-height: 21px;

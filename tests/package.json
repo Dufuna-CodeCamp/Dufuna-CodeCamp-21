@@ -4,8 +4,6 @@
     "casperjs": "^1.1.4",
     "chai": "^4.3.6",
     "chromedriver": "^96.0.0",
-    "mocha": "^9.2.0",
-    "mochawesome": "^7.1.2",
     "phantomcss": "^1.6.0",
     "phantomjs-prebuilt": "^2.1.16",
     "selenium-webdriver": "^4.1.1"

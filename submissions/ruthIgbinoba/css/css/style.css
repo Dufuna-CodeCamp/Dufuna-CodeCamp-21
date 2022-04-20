@@ -1,0 +1,417 @@
+body {
+    box-sizing: border-box;
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+/* Header */
+header {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.brand a{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #000;
+}
+
+.bag {
+    color: #ad4c4c;
+}
+
+.nav-link {
+    padding-right: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #696969;
+}
+
+.signup {
+    padding: 5px 10px;
+    font-weight: 500;
+    color: #ad4c4c;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+    padding: 70px 0;
+}
+
+.hero-brand {
+   text-align: center;
+   padding-bottom: 70px;
+}
+
+.hero-brand h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4e4d4d;
+    line-height: 5px;
+}
+
+.hero-brand p {
+   font-size: 1.25rem;
+   font-weight: 400;
+   color: #696969;
+}
+
+label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+}
+
+#location {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: "Poppins";
+    padding-left:  15px;
+    font-weight: 400;
+    font-size: 20px;
+   background-color: #fff;
+   background-image: url('../images/keyboard_arrow_down.svg');
+    background-position-x: 99%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+   appearance: none;
+}
+
+#interest {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 21%;
+    padding: 25px 15px 20px 20px; 
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #ad4c4c;
+}
+
+.card p {
+    font-size: 14px;
+    color: #696969;
+    font-weight: 400;
+    line-height: 0;
+}
+
+/* About */
+.about {
+    padding-top: 70px;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    padding-bottom: 50px;
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #4e4d4d;
+}
+.services {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer {
+    width: 300px;
+}
+
+.offer h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #696969;
+    line-height: 15px;
+}
+
+.offer p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #a5a5a5;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.contact p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #696969;
+}
+
+.contact a {
+    padding: 0 15px;
+}
+
+.social-links {
+    padding-top: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #696969;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    body {
+        padding-left: 80px;
+       padding-right: 80px;
+    }
+    
+    .card {
+        width: 20%;
+        padding-bottom: 15px; 
+    }
+    
+    .card h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .card p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    /* About */
+    .services {
+        padding-top: 40px;
+    }
+    
+    .offer {
+        width: 250px;
+    }
+    
+    .offer img {
+        width: 250px;
+    }
+
+    .offer h3 {
+        line-height: 25px;
+    }
+    
+    /* Contact */
+    .contact {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    
+    /* Hero */ 
+    
+    .card {
+        width: 18%;
+        /* padding-bottom: 20px; */
+    }
+    
+    .card p {
+        line-height: 20px;
+    }
+    
+    /* About */
+    
+    .offer {
+        width: 180px;
+    }
+    
+    .offer img{
+        width: 180px;
+    }
+
+    .offer h3 {
+        line-height: 24px;
+    }
+    
+    /* Footer */
+    footer p {
+        font-size: 14px;
+    } 
+
+    .copyright{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    /* Header */
+    .nav-link {
+        padding-right: 20px;
+        font-size: 12px;
+    }
+    
+    .signup {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .hero-brand {
+       text-align: left;
+       padding-bottom: 20px;
+    }
+    
+    .hero-brand h1 {
+        font-size: 22px;
+    }
+    
+    .hero-brand p {
+       font-size: 14px;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+    
+    #location {
+        height: 40px;
+        margin-top: 15px;
+        padding-left:  12px;
+        font-size: 12px;
+    }
+    
+    label:nth-of-type(2) {
+        position: relative;
+        bottom: 10px;
+    }
+
+    #interest {
+        position: relative;
+        bottom: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 100%;
+        margin-top: 20px;
+        padding: 25px 15px 10px 20px; 
+    }
+    
+    .card h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .card p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    /* About */
+     .about {
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+    
+    .about h2 {
+        font-size: 20px;
+    }
+    .services {
+        padding-top: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .offer {
+        width: 100%;
+    }
+    
+    .offer h3 {
+        font-size: 17px;
+        line-height: 22.5px;
+    }
+    
+    .offer p {
+        font-size: 12px;
+    }
+    
+    /* Contact */
+     .contact {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .contact p {
+        font-size: 16px;
+    }
+    
+    .contact a {
+        padding: 0 18px;
+    }
+    
+    .social-links {
+        padding-top: 5px;
+    } 
+    
+    /* Footer */
+     footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    footer p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #696969;
+    } 
+
+    .copyright {
+        text-align: center;
+    }
+}
