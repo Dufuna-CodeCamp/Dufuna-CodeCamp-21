@@ -33,9 +33,21 @@ nav li a:active {
     color: yellow;
   }
 
-select {        
-    width: 1490px;
-    padding: 10px;    }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    
+    
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    
+  }
+  /**END **/
 a{
     text-decoration: none;
 }
@@ -54,7 +66,24 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
-  
+.foods .images li .image_1 .img_1 .i_1{
+    display: flex;
+}
+.i_1{
+    margin: 10px;
+    font-weight: bold;
+}
+.i_1 .i2{
+    padding-left: 15px;
+    color: green;
+    font-weight: bold;
+}
+button{
+    padding: 5px;
+    font-weight: bold;
+    color: red;
+}
+
 span{
     color: red;
 }
@@ -66,16 +95,49 @@ img {
     list-style-type: none;
     margin-top: 20px;   
 }
-#div1, #div1 p{
-    text-align: center;
-    font-size: large;
-    font-weight: 600;
-}
+
 #div2{
     padding-left: 50px;
     font-size: large;
-    font-weight: 600;
+    font-weight: bold;
+    
 }
+#div2 span{
+    color: darkgray;
+}
+
+#div3 ul{
+    list-style-type: none;
+}
+#div3 li{
+    display: inline-grid;
+    padding: 2px;
+}
+div#kfc{
+    position: relative;
+    bottom: 15px;
+}
+#div3 span{
+    float: right;
+    padding-top: 18px;
+    padding-right: 200px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#view div{
+ width: 60px;
+ position: relative;
+ left: 1090px;
+ font-weight: bold;
+ font-size: medium; 
+ color: red;
+}
+
+#log img{
+    height: 50px;
+}
+
 .foods p{
     text-align: center;
     font-size: large;
@@ -87,22 +149,27 @@ img {
     padding-left: 30px;
 }
 #terms{
-   width: 300px;
+  
    height: 50px;  
    margin-bottom: 20px;
-   margin-left: 50px;
- 
+   margin-left: 50px;  
+   /**margin-right: 50%;**/
+   padding: 5px;
+   width: 100%;
 }
 #copyrit{
-    width: 400px;
+    
     height: 50px;   
-    margin-bottom: 20px;
-    margin-left: 60%;   
+    margin-bottom: 20px;      
     float: right;   
+    margin-right: 50px;   
+    padding: 5px;
+    width: 100%;
+    text-align: right;
 }
 #terms_copyrit{
     display: flex;    
-    width: 100%;
+    width: 100%;      
 }
 #reg_1{
     display: flex;
@@ -131,15 +198,21 @@ img {
     width: 20px;
 }
 /**MEDIA QUERIES**/
-@media screen and (max-width: 600px) {
-    nav li {
-      float: none;
-      width: 100%;
+@media screen and (min-width: 1500px) {
+
+    #div3 span{
+    float: right;
+    padding-top: 18px;
+    padding-right: 320px;
+    font-weight: bold;
+    font-size: medium;
     }
-  }
-  @media screen and (max-width: 600px) {
-    nav ul {
-      float: none;
-      width: 100%;
-    }
+    #view div{
+        width: 60px;
+        position: relative;
+        left: 1210px;
+        font-weight: bold;
+        font-size: medium; 
+        color: red;
+       }
   }
