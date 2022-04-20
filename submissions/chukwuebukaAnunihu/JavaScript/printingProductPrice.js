@@ -18,8 +18,8 @@ const productList = new Array(
 
 productList.forEach((product) => {
   document.write(
-    `${product.productName} with
+    `<p> ${product.productName} with
       ${product.imageUrl} is sold for
-      ${product.productPrice}`
+      ${product.productPrice} </p>`
   );
 });
