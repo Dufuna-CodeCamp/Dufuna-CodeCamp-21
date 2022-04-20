@@ -216,3 +216,26 @@ div#kfc{
         color: red;
        }
   }
+  hr{
+    width: 950px;
+  }
+  /**MEDIA QUERIES**/
+@media screen and (min-width: 1668px ) {
+
+    #div3 span{
+    float: right;
+    padding-top: 18px;
+    padding-right: 400px;
+    font-weight: bold;
+    font-size: medium;
+    }
+    #view div{
+        width: 60px;
+        position: relative;
+        left: 1300px;
+        font-weight: bold;
+        font-size: medium; 
+        color: red;
+       }
+  }
+
