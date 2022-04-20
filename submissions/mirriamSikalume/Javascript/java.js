@@ -19,6 +19,8 @@ var productList = [
     },
 ]
 
+// this is where the printing happenings
+
 for (var i=0; i<=productList.length; i++) {
     var product=productList[i];
     document.write (product.Name + " " +  "with" + " " + product.Image + " " + "is sold for" + " "  + product.price +"<br><br>");
