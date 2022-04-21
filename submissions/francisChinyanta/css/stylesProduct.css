@@ -7,6 +7,7 @@ html, body{
 	margin: 0;
 	/**background: #f6f6f6;*/
     background: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 nav ul{
     background-color: white;
