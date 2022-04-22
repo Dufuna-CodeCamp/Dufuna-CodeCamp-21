@@ -19,7 +19,7 @@ for (let i = 0; i < vendorsLink.length; i++) {
 function clearInputField() {
   // Clears the input field when an interest is clicked
   locationInputField.value = "";
-};
+}
 
 function changePicture() {
   //changes the picture and font colors of the text in the div
@@ -48,4 +48,4 @@ function changePicture() {
     }
     return true;
   }
-};
+}
