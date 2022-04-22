@@ -1,0 +1,171 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    font-size: 16px;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.nav1 {
+    display: flex;
+	justify-content: space-between;
+} 
+.nav1 ul{
+	display: flex;
+	align-content: center;
+	list-style-type: none;
+	padding: 20px 0;
+}
+.nav1 h2{
+    padding: 5px 0;
+}
+.red{
+    color: #a50f0f;
+}
+li a {
+	color: black;
+	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	border: 1px solid none;
+}
+.nav1 a:hover {
+	border: 1px solid red;
+	border-radius: 5px;
+}
+.nav-list {
+    font-size: 10px;
+    align-items: flex-end;
+}
+.food-bag{
+    padding: 0 30px;
+}
+.active{
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    color: #ad4c4c;
+    padding: 8px 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.nav2{
+    display: block;
+	padding-top: 15px;
+}
+.nav2-item1{
+    color: grey;
+}
+.nav2-item2{
+    font-weight: 700;
+    color: #000;
+}
+.nav2-item1:hover {
+	cursor: pointer;
+	color: red;
+	font-weight: bold;
+	border: none;
+}
+.nav2-item3 {
+	padding-top: 5px;
+}
+.nav2-item3 h1{
+    font-size: 30px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.vendor-head {
+    display: flex;
+}
+.view-all {
+    color: red;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.menugrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px 0 20px;
+}
+.burger{
+    width: 250px;
+    height: 200px;
+}
+.cart-button {
+    display: flex;
+    justify-content: flex-start;
+}
+.cart-button button {
+    width: 138px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #ad4c4c;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.cart-button p {
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ad4c4c;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info span {
+    font-weight: bold;
+}
+.item {
+    color: #4e4d4d;
+}
+.amount {
+    color: #5ea304;
+}
+.vendor {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 0 40px 0 0;
+}
+@media screen and (min-width:590px) {
+    .menugrid {
+        column-gap: 10px;
+    }
+    .nav-list{
+        font-size: 12px;
+    }
+    .view-all{
+        display: flex;
+        justify-content: flex-end;
+        order: 1;
+        position: relative; bottom: 700px;
+    }
+}
+@media screen and (min-width:1150px) {
+    .burger {
+        height: 250px;
+        width: 300px;
+    }
+    .nav-list{
+        font-size: 16px;
+    }  
+    .view-all{
+        display: flex;
+        justify-content: flex-end;
+        order: 1;
+        position: relative; bottom: 450px;
+    }
+}

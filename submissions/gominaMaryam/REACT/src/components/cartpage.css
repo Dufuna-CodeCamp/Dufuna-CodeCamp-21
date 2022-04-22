@@ -1,0 +1,166 @@
+.cart-container {
+	margin-top: 30px;
+}
+
+.cart-container button {
+	border: 1px solid #ad4c4c;
+	border-radius: 5px;
+	padding: 3px 9px;
+	cursor: pointer;
+	color: #ad4c4c;
+	background-color: inherit;
+}
+
+.cart-box {
+	position: relative;
+	margin-left: 30px;
+	padding-block: 20px;
+	border-bottom: 1px solid #c9c9c9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cart-text {
+	color: #4e4d4d;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.cart-text h4 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.cart-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.cancel-order {
+	cursor: pointer;
+	position: absolute;
+	left: -25px;
+}
+
+.cart-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.cart-menu span {
+	color: #ad4c4c;
+}
+
+.cart-menu div {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.delivery {
+	gap: 50px;
+	padding-left: 25px;
+}
+
+.total {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+	padding-block: 30px;
+	font-weight: 600;
+}
+
+.total h2 {
+	font-size: 18px;
+}
+
+.total h3 {
+	font-size: 18px;
+	color: #4e4d4d;
+}
+
+.checkout {
+	padding-bottom: 60px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.checkout button {
+	background: #ad4c4c;
+	text-align: center;
+	width: 100%;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 600;
+	padding-block: 10px;
+}
+
+.mobile-cart {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.mobile-cart {
+		display: flex;
+		justify-content: space-between;
+		color: #ad4c4c;
+	}
+
+	.mobile-cart p:last-of-type{
+		text-decoration: underline;
+		font-weight: 600px;
+		cursor: pointer;
+	}
+
+	.order-img, .scooter {
+		width: 57px;
+		height: 46px;
+	}
+
+	.cart-text
+	{
+		font-size: 10px;
+	}
+
+	.cart-menu span{
+font-size: 13px;
+font-weight: 500;
+	}
+
+	.cart-menu{
+		gap: 8px;
+	}
+
+	.cart-container button{
+		padding: 0.5px 4px;
+		border-radius: 0;
+	}
+
+	.cart-container button:last-of-type{
+		padding-inline: 6px;
+	}
+
+	.cart-menu div{
+		gap: 10px;
+	}
+
+	.delivery{
+		padding-left: 0;
+		gap: 10px;
+	}
+
+	.total h2, .total h3{
+		font-size: 15px;
+		color: #4E4D4D;
+	}
+
+	.checkout{
+		width: 100%;
+	}
+}
