@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+	<link rel="stylesheet" href="style.css" />
+    <title>Food Bag</title>
+  </head>
+  <body>
+    <header class="container-fluid px-md-5 px-2">
+		<nav class="navbar justify-content-between align-items-center py-3">
+		  <h3 class="nav-brand">Food<span class="text-brown">Bag</span></h3>
+        <ul class="nav align-items-center">
+          <li class="nav-item cart">
+            <a class="nav-link text-dark" href="#">Cart</a><span class="active-cart"></span>
+          </li>
+          <li class="nav-item "><a class="nav-link text-dark" href="#">Login</a></li>
+          <li class="nav-item ">
+            <a class="nav-link text-brown border-brown rounded py-1" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container-fluid px-md-5 px-2">
+      <div class="text-md-center p-2 p-md-5 mt-5">
+        <h1 class="fs-1 text-asher fw-bold mt-5">FoodBag</h1>
+        <p class="text-ash">Anything food, we have you covered.</p>
+      </div>
+      <form class="">
+        <label class="fs-5  fw-bold" for="location">Where are you?</label>
+        <select class="form-select py-2 mt-2" name="location" id="location" aria-label="Default select example">
+          <option value selected>Enter your delivery address</option>
+          <option value="Bodija Market">Bodija Market</option>
+          <option value="Owerri">Owerri</option>
+          <option value="Lekki">Lekki</option>
+          <option value="Abuja">Abuja</option>
+        </select>
+      </form>
+      <div class="py-5 px-4 px-lg-0 border-bottom">
+        <h5 class="">Pick an interest</h5>
+        <div class="row  align-items-center gap-3">
+          <div class="col-lg-3 col-md-5 shadow p-4">
+            <img
+              src="./assets/fast-food_disabled.svg"
+              class="service-img"
+              alt="Fast food"
+            />
+            <h6 class="text-brown pt-3">Fast food</h6>
+            <p class="service-text">All sorrows are less with bread.</p>
+          </div>
+          <div class="col-lg-3 col-md-5 shadow p-4 ">
+            <img
+              src="./assets/Vegetables & Drinks_disabled.svg"
+              class="service-img"
+              alt="Vegetables & Fruits"
+            />
+            <h6 class="text-brown pt-3">Vegetables & Fruits</h6>
+            <p class="service-text">May not want it, but good for you.</p>
+          </div>
+          <div class="col-lg-3 col-md-5 shadow p-4 ">
+            <img
+              src="./assets/Drinks & Cocktails_disabled.svg"
+              class="service-img"
+              alt="Drinks & Cocktails"
+            />
+            <h6 class="text-brown pt-3">Drinks & Cocktails</h6>
+            <p class="service-text">I feel sad for those who don't drink.</p>
+          </div>
+          <div class="col-lg-3 col-md-5 shadow p-4 ">
+            <img
+              src="./assets/resturant_disabled.svg"
+              class="service-img"
+              alt="Resturants"
+            />
+            <h6 class="text-brown pt-3">Resturants</h6>
+            <p class="service-text">All sorrows are less with bread.</p>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 border-bottom">
+        <h2 class="text-center">How we serve you</h2>
+        <div class="row align-items-center justify-content-between pt-5">
+          <div class="text-center col-md-4">
+            <img src="./assets/Illustration_1.svg" alt="Illustration_1" />
+            <div class="">
+              <h4 class="text-ash">Tell us where you are</h4>
+              <p class="text-asher">Select the location you want <br />us to deliver.</p>
+            </div>
+          </div>
+          <div class="text-center col-md-4">
+            <img src="./assets/Illustration_2.svg" alt="Illustration_2" />
+            <div class="about-text">
+              <h4 class="text-ash">Tell us what you want</h4>
+              <p class="text-asher">Browse the type of food <br />that interest you.</p>
+            </div>
+          </div>
+          <div class="text-center col-md-4">
+            <img src="./assets/Illustration_3.svg" alt="Illustration_3" />
+            <div class="about-text">
+              <h4 class="text-ash">We'll come running</h4>
+              <p class="text-asher">Your order will be delivered to <br />you in no time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid px-md-5 px-2 pb-5">
+      <div class="py-4 text-center">
+        <p class="text-ash pt-4">Contact us</p>
+        <div class="d-flex align-items-center justify-content-center gap-4">
+          <img src="./assets/twitter 2.svg" alt="twitter" />
+          <img src="./assets/youtube 1.svg" alt="youtube" />
+          <img src="./assets/facebook-f 1.svg" alt="facebook" />
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row flex-wrap text-center align-items-center justify-content-between text-ash">
+        <p>Terms & Conditions . Privacy Policy</p>
+        <p>© Copyright 2021 FoodBag is a registered trademark</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
