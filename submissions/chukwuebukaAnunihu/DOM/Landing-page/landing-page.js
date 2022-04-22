@@ -16,12 +16,12 @@ for (let i = 0; i < vendorsLink.length; i++) {
 
 /* Function Declarations */
 
-const clearInputField = () => {
+function clearInputField() {
   // Clears the input field when an interest is clicked
   locationInputField.value = "";
 };
 
-const changePicture = () => {
+function changePicture() {
   //changes the picture and font colors of the text in the div
   if (locationInputField.value !== "") {
     fastFoodImage.src = "/images/fast-food.svg";
