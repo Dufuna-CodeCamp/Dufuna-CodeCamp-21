@@ -230,15 +230,15 @@ text-align: right;
 
 	@media screen and (min-width: 640px){
 	nav{
-		padding: 25px 100px;
+		padding: 50px 100px;
 	}
 
 	nav li{
 		display: inline;
-		align-items: center;
-		text-align: right;
+		align-items: center;top: 50px;
+		text-align: right;left: 1070px;
 		padding: 5px;color: #AD4C4C;
-		float: right;
+		float: right;width: 35px;
 		line-height: 24px;
 		margin: 35px 0px 0px 20px;
 	}
