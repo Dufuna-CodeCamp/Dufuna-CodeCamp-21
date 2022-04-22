@@ -2,7 +2,7 @@ body {
 	width: 1440px;position: relative;
 	height: 1878px;background: #FFFFFF;
 	font-family: 'poppins', san serif;
-	font-size: 16px;
+	font-size: 16px;margin: 42px 100px 170px 100px;
 	line-height: 1.5;
 }
 nav h4 {
@@ -235,10 +235,9 @@ text-align: right;
 
 	nav li{
 		display: inline;
-		align-items: center;top: 50px;
-		text-align: right;left: 1070px;
+		text-align: right;
 		padding: 5px;color: #AD4C4C;
-		float: right;width: 35px;
+		float: right;
 		line-height: 24px;
 		margin: 35px 0px 0px 20px;
 	}
