@@ -116,7 +116,7 @@
   margin: auto;
 }
 .checkout-btn{
-  margin:20px 0px;
+  margin:20px 0;
   margin-left: 20px;
   text-align: center;
 }
@@ -268,7 +268,7 @@
     }
 
     .delivery p{
-      padding: 25px 0px 25px 50px;
+      padding: 25px 0 25px 50px;
     }
 
     
