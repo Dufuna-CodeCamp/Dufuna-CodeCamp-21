@@ -1,0 +1,68 @@
+var userSelection = document.getElementById("location-list");
+var errorBlock = document.querySelector(".error-message");
+var choice1 = document.getElementById('choice 1')
+var choice2 = document.getElementById('choice 2')
+var choice3 = document.getElementById('choice 3')
+var choice4 = document.getElementById('choice 4')
+
+function Validate() {
+    if (userSelection.value == "") {
+        errorBlock.innerHTML = "Please select your prefer location!"
+        return false
+    } else {
+        errorBlock.innerHTML = "";
+        return true;
+    }
+}
+
+function SubmitInput() {
+    return Validate();
+}
+
+choice1.addEventListener('click', () => {
+    if (userSelection.value == "") {
+        errorBlock.innerHTML = "please select your prefer location"
+        return false;
+    } else {
+        location.href = "./vendor.html";
+        return true;
+    }
+})
+
+choice2.addEventListener('click', () => {
+    if (userSelection.value == "") {
+        errorBlock.innerHTML = "please select your prefer location"
+        return false;
+    } else {
+        location.href = "./vendor.html";
+        return true;
+    }
+})
+
+choice3.addEventListener('click', () => {
+    if (userSelection.value == "") {
+        errorBlock.innerHTML = "please select your prefer location"
+        return false;
+    } else {
+        location.href = "./vendor.html";
+        return true;
+    }
+})
+
+choice4.addEventListener('click', () => {
+    if (userSelection.value == "") {
+        errorBlock.innerHTML = "please select your prefer location"
+        return false;
+    } else {
+        location.href = "./vendor.html";
+        return true;
+    }
+})
+
+
+
+
+
+
+
+
