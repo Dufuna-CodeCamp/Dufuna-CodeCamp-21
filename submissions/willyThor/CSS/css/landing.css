@@ -5,6 +5,7 @@ body {
     max-width: 1240px;
     margin: 0px auto;
     font-family: poppins;
+
 }
 a {
   text-decoration:none;
@@ -109,6 +110,7 @@ main #head {
   padding: 0;
   color:#A5A5A5;
   margin:0;
+  text-align:center;
 }
 .space2 {
   margin-bottom: 20px;
@@ -132,10 +134,103 @@ footer ul {
     justify-content: space-between;
     margin-top: 20px;
     flex-wrap: wrap;
-.copyright {
-  float: right;
-  margin-left:20px;
+    font-size: 18px;
 }
-  
+.copright {
+  float: right;
+}
+
+@media screen and (max-width:650px)  {
+   .foodbag-head {
+      font-size: 18px;
+      }
+   .foodbag-head li {
+        font-size: 18px;
+        letter-spacing: 0em;
+       }
+   #head h2 {
+       font-size: 30px;
+       line-height: 30px;
+       text-align: center;
+    }  
+    #head p {
+     font-size: 19px;
+     text-align: center;
+    }
+    .services #interest, .services li {
+      font-size: 16px;
+    }
+    .services ul {
+      margin:10px;
+      padding-left: 10px;
+    }
+    .serve h2 {
+      font-size: 30px;
+    }
+    .serve #caps1 {
+      font-size: 22px;
+    }
+    .serve #caps2 {
+      font-size: 14px;
+      text-align: center;
+    }
+    .cont {
+      font-size: 16px;
+    }
+    .foot {
+      display: flex;
+    }
+   .terms, .copright {
+     font-size:16px;
+   }
+
+}
+
+@media  screen and (max-width: 430px) {
+
+   .foodbag-head {
+      font-size: 16px;
+      }
+   .foodbag-head li {
+        font-size: 14px;
+        letter-spacing: 0em;
+       }
+    #head h2 {
+       font-size: 24px;
+       line-height: 30px;
+       text-align: left;
+    }
+   #head p {
+     font-size: 16px;
+     text-align: left;
+    }
+     .services #interest, .services li {
+      font-size: 14px;
+    }
+    .services ul {
+      margin:0px;
+      padding-left: 0px;
+    }
+    .serve h2 {
+      font-size: 25px;
+    }
+    .serve #caps1 {
+      font-size: 18px;
+    }
+    .serve #caps2 {
+      font-size: 12px;
+      text-align: center;
+    }
+   .cont {
+      font-size: 14px;
+    }
+    .foot {
+      display: inline;
+    }
+   .terms, .copright {
+     text-align: center;
+     font-size:14px;
+    }
+} 
 
 
