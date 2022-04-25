@@ -1,23 +1,24 @@
-var options=document.querySelector('option');
-var myimg1=document.getElementById(myimg1);
-console.log(options)
-options.addEventListener('click', function(){
-    myimg1.style.display="none";
-    
-    var img = document.createElement("img");
-    img.src = "/css/assets/FoodBag Task Assets(beginner)/fast-food.svg";
+//to get DOM node
+let addresslist = document.getElementById('delivery-addr'),
+    interestImg = document.querySelectorAll('.image-class'),
+    interest = document.querySelectorAll('.div-interest');
 
-    var interest = document.getElementsById("interest");
-    interest.appendChild(img);
-    
-})
-console.log("option")
-// options.addEventListener('click', function(){
-//     if (document.getElementById("myimg1").src=="/css/assets/FoodBag Task Assets(beginner)/fast-food_disabled.svg"){
-//         document.getElementById("myimg1").src="/css/assets/FoodBag Task Assets(beginner)/fast-food.svg"
-//     }
-//     else{
-//         document.getElementById("myimg1").src="/css/assets/FoodBag Task Assets(beginner)/fast-food_disabled.svg"
-//     }
-// })
+//to change image to color and change text to colored
+addresslist.addEventListener('change', function(){
+    interestImg.forEach(function(element){
+        element.style.filter = 'none';
+        interest.forEach((node) => {
+            node.querySelector('p').style.color = 'brown';
+        });
+    }); });
+
+//to make clickable
+interest.forEach(function(element){
+    element.addEventListener('click', function(){
+        if (interestImg[0].style.filter === 'none'){
+            console.log('in');
+            window.location.href = '/css/HTML/vendorsPage.html';  
+        }
+    });
+});
 
