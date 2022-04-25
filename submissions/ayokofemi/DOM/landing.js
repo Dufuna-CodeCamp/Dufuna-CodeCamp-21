@@ -1,9 +1,9 @@
 var userSelection = document.getElementById("location-list");
 var errorBlock = document.querySelector(".error-message");
-var choice1 = document.getElementById('choice 1')
-var choice2 = document.getElementById('choice 2')
-var choice3 = document.getElementById('choice 3')
-var choice4 = document.getElementById('choice 4')
+var choice1 = document.getElementById('choice1')
+var choice2 = document.getElementById('choice2')
+var choice3 = document.getElementById('choice3')
+var choice4 = document.getElementById('choice4')
 
 function Validate() {
     if (userSelection.value == "") {
