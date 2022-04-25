@@ -1,11 +1,10 @@
 import './App.css';
-import Success from './components/sucesspage/success';
-
+import Verification from '../src/components/verificationpage/verification';
 
 function App() {
   return (
     <div>
-       <Success/>
+       <Verification/>
     </div>
   );
 }
