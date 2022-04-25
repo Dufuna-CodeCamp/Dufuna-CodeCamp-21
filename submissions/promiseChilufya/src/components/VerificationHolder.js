@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 import { VerificationButton } from './VerificationButton';
 import VerificationNavbar from './VerificationNavbar';
 import { VerificationInput } from './VerificationInput';
 import { VerificationSelect } from './VerificationSelect';
 import VerificationDetails from './VerificationDetails';
-import './styles.css'
+import './styles.css';
 
 
 
@@ -62,7 +62,7 @@ export const VerificationHolder = () => {
         </div>
         <br/>
      
-        <VerificationButton  buttonClass="button-class" name= "Pay" />
+        <VerificationButton buttonClick= {()=> window.location.assign("/OrderHolder")} buttonClass="button-class" name= "Pay" />
     </div>
   )
 }
