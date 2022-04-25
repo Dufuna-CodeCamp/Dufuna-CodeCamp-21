@@ -81,6 +81,8 @@ h3 {
 .info {
     display: flex;
     justify-content: space-between;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 .information {
     text-align: center;
@@ -108,7 +110,7 @@ h3 {
 
 .twitter,
 .youtube {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     box-sizing: border-box;
 }
 
