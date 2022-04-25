@@ -385,17 +385,11 @@ color: #5EA304;
 #order-list {
  margin-top: 15px;
 }
-.order-contents {
+.order-content {
 
  margin-left: 5%;
 }
 
-#success {
- margin-left: 10%;
- margin-top: 10%;
- height: 400px;
- width: 400px;
-}
 
 @media screen and (min-width: 790px) {
 
@@ -491,18 +485,9 @@ color: #5EA304;
     margin-left: -15%;
   }
 
-  .order-contents {
+  .order-content {
 
     margin-left: 5%;
   }
 
- 
-
-  #success {
-    margin-left: 39%;
-    margin-top: 10%;
-    height: 400px;
-    width: 400px;
-  }
-  
 }
