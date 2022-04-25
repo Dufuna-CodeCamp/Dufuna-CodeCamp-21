@@ -15,9 +15,9 @@ function Validate() {
     }
 }
 
-// function SubmitInput() {
-//     return Validate();
-// 
+function SubmitInput() {
+    return Validate();
+}
 
 choice1.addEventListener('click', () => {
     if (userSelection.value == "") {
