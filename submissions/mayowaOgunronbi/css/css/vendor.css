@@ -1,0 +1,146 @@
+
+    
+    
+    box-sizing: border-box;
+} *
+
+* {
+    padding: 50px;
+    margin: 0;
+    border: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    margin: 50px;
+    max-width: 1440px;
+}
+header {
+    margin: 50px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+
+li {
+    display: inline-block;
+    justify-content: space-evenly;
+    justify-items: auto;
+    padding: 20px;
+    margin-top: -50rem;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(51, 48, 48);
+    /* text-emphasis: none; */
+}
+
+#signup {
+    color:  rgb(139, 53, 53);
+    background-color: white;
+    border-color: rgb(139, 53, 53);
+    padding: 5px;
+    border-width: thin;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: 600;
+}
+
+#signup:hover {
+    background-color: rgb(187, 150, 150);
+}
+
+.navigation {
+    margin: 50px;
+    margin-bottom: -10px;
+}
+
+#home {
+    color: rgb(212, 203, 203);
+}
+
+h2 {
+    margin: -20px 0 40px 0;
+}
+
+.list-items {
+    display: flex;
+    padding: 20px;
+    /* gap: 3px; */
+    width: auto;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.add-to-cart {
+    color: brown;
+    border-color: brown;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 8px 10px;
+    width: 120px;
+    border-width: thin;
+    font-weight: 600;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(187, 150, 150);
+}
+
+.logo1,
+.logo2 {
+    display: flex;
+    border-bottom: -20px;
+}
+
+.price-tag {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: rgb(51, 48, 48);
+    margin-top: -15px;
+    /* font-size: large; */
+}
+
+.price-tag p:last-child {
+    color: rgb(12, 167, 12);
+}
+
+.view {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    color: rgb(139, 53, 53);
+}
+
+.break-line {
+    color: blue;
+    margin: 40px;
+    border-width: thin;
+    /* width: 100%; */
+}
+
+.viewall a {
+    color: brown;
+    text-decoration: none;
+}
+.foodbag {
+    font-weight: 600;
+}
+
+#bag {
+    color: brown;
+}
+
+.eatery {
+    font-weight: bold;
+    margin-top: 5px;
+}
