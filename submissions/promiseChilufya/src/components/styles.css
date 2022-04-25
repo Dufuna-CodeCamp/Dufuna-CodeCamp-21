@@ -65,9 +65,9 @@ body {
       margin-left: 90%;
   }
   hr{
-      margin-left: -0px;
+      margin-left: 0;
       margin-right: 120px;
-     padding: 0px;
+     padding: 0;
   }
   
   .expiry-date{
