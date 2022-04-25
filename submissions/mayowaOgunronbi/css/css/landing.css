@@ -1,0 +1,119 @@
+body {
+    margin: 50px;
+    /* color: grey; */
+}
+html {
+    font-style: normal;
+}
+.interests {
+    display: flex;
+}
+header {
+    display: flex;
+    /* gap: 2rem; */
+    justify-content: space-between;
+}
+.foodbag {
+    font-weight: 600;
+}
+#bag {
+    color: brown;
+}
+
+li {
+    display: inline-block;
+    justify-content: space-evenly;
+    justify-items: auto;
+    padding: 0 20px;
+}
+li a {
+    text-decoration: none;
+    color:grey;
+}
+#signup {
+    color:  rgb(139, 53, 53);
+    background-color: white;
+    border-color: rgb(139, 53, 53);
+    padding: 5px;
+    border-width: thin;
+    border-radius: 3px;
+    width: 80px;
+    font-weight: 600;
+}
+#signup:hover {
+    background-color: rgb(187, 150, 150);
+}
+.heading {
+    text-align: center;
+    color: rgb(51, 48, 48);
+}
+#anything {
+    color: grey;
+}
+h2 {
+    margin-bottom: -10px;
+}
+#location {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-color: grey;
+}
+.box {
+    border:  0.1px solid grey;
+    /* border-width: 0.1; */
+    width: 280px;
+    height: 120px;
+    margin: 20px;
+}
+.name {
+    color: brown;
+}
+.name,
+.description {
+    text-align: left;
+    padding: 0 0 0 15px;
+    margin: 0;
+}
+h3 {
+    text-align: center;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.information {
+    text-align: center;
+}
+.tell-us {
+    font-size: larger;
+    font-weight: bold;
+}
+.description,
+.select {
+    color: grey;
+}
+.pictures {
+    display: flex;
+}
+ footer .contact-info {
+    text-align: center;
+    color: grey;
+    
+}
+.contact-info .pictures {
+    justify-content: center;
+    /* margin-left: 50px; */
+}
+
+.twitter,
+.youtube {
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.watermark {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
