@@ -56,7 +56,7 @@
 .fooda p{
     width: 367px;
     height: 30px;
-    margin-left: 536px;;
+    margin-left: 536px;
     margin-top: 10px;
     
     font-family: 'Poppins';
@@ -107,12 +107,21 @@
 
 .form__icon {
     position: absolute;
-      pointer-events:visible;
-      z-index: 2;
+    pointer-events:visible;
+    z-index: 2;
+    margin: 18px 0 0 -30px;
+    font-size: 14px;
   }
   .form__input {
       position: relative;
       z-index: 3;
+      height: 40px;
+      width:1115px;
+      padding-left: 20px;
+      border-radius: 5px;
+      border: 1px solid #C4C4C4;
+      outline: none;
+      transition: all 0.5s;
   }
   .form__input:placeholder-shown {
       z-index: 1;
@@ -120,25 +129,9 @@
 
   .form {
     margin-top: calc(50vh - 325px);
-
     color: #7e7985;
   }
-  .form__icon {
-    margin: 18px 0 0 -30px;
-    font-size: 14px;
-  }
-  .form__input {
-      height: 40px;
-      width:1115px;
-      padding-left: 20px;
-     
-      border: none;
-      border-radius: 5px;
-      border: 1px solid #C4C4C4;
-      outline: none;
-      transition: all 0.5s;
-      
-  }
+  
   .form__input:hover {
       box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.1);
   }
@@ -159,29 +152,24 @@
       margin-left: 100px;
      
   }
-  
-
-
+ 
 .fast {
     height: 169;
     Width :315px;
     border: 1px solid #E5E5E5;
     margin-right: 20px;
     align-items: left;
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 30px;
-    color: #A5A5A5;
-    
+    color: #A5A5A5;  
 }
 .veg {
-  
     Width :315px;
     height: 169;
     border: 1px solid #E5E5E5;
     margin-right: 20px;
     padding-left: 30px;
     color: #A5A5A5;
-
 }
 
 .drinks {
@@ -202,22 +190,18 @@
 }
 
   .fast h3{
-    margin-left: 0px;
-    
+    margin-left: 0;
   }
   .veg h3{
-    margin-left: 0px;
-    
+    margin-left: 0;
   }
 
   .drinks h3{
-    margin-left: 0px;
-    
+    margin-left: 0;
   }
 
   .rest h3{
-    margin-left: 0px;
-
+    margin-left: 0;
   }
 
   .hwsy{
