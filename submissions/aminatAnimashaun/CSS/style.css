@@ -208,5 +208,28 @@ span{
 }
 
 
+@media screen and (min-width: 320px) {
+   nav ul{
+       display: inline;
+       
+   }
+   .anchor, .anchor1, .anchor2{
+       padding: 5px;
+       margin: 5px;
+   }
+   nav{
+      
+       align-items: none;
+       display: inline;
+       padding: 5px;
+       
+   }
+   .logo{
+       float: inline-start;
+       margin: 5px;
+       padding: 5px;   
+   }
+    
+}
 
 
