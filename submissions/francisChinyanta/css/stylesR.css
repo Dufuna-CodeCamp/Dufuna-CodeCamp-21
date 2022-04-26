@@ -20,6 +20,7 @@ main {
     min-height: 50px;
     padding-left: 10px;
     padding-right: 30px;
+    margin-right: 15px;
 }
 .header h1 {
     font-size: 24px;
@@ -32,9 +33,6 @@ main {
     align-items: center;
     min-height: 50px;
     padding: 10px;    
-}
-.header {
-    margin-right: 15px;
 }
 .header span {
     color: red;
@@ -210,6 +208,7 @@ hr{
 @media screen and (min-width: 992px) {
     .header {
         font-size: 36px;
+	margin-right: 650px;
     }
     .foods .wp {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -238,10 +237,6 @@ hr{
         left: 20px;
         border-radius: 5px;
        }
-
-   .header {
-       margin-right: 650px;
-   }
    .navItem {
     height: 50px;
     width: inherit;   
@@ -252,6 +247,7 @@ hr{
     @media screen and (min-width: 1200px) {
         .header {
             font-size: 36px;
+	    margin-right: 650px;
         }
         .foods .wp {
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -280,10 +276,6 @@ hr{
             left: 20px;
             border-radius: 5px;
            }
-    
-       .header {
-           margin-right: 650px;
-       }
        .navItem {
         height: 50px;
         width: inherit;   
