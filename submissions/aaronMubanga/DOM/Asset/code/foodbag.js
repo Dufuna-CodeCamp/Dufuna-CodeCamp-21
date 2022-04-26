@@ -1,7 +1,5 @@
 const   town = document.getElementById('local'),
-        interests = document.querySelector('.interests'),
         interestHeader = document.querySelectorAll('.interetHeader'),
-        interest = document.getElementsByClassName('yourInteret'),
         cards = document.querySelectorAll('.card')
         fastFood = document.getElementById('fastFood'),
         vDrinks = document.getElementById('V&Drinks'),
