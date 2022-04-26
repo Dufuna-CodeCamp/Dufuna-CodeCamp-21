@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -8,36 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Display Customers</title>
-   
+
 </head>
 
 <body>
 
-<h1>List Of Registered Customers</h1>
+    <h1>List Of Registered Customers</h1>
 
-<?php
+    <?php
 
-include_once("RetrieveUsers.php");
+    include_once("RetrieveUsers.php");
 
 
-class Display {
-
-    private $obj;
-    private $result;
-
-    function __construct()
+    class Display
     {
 
-        $this->obj = new Retrieve();
-        $this->result = $this->obj->RetrieveUsers();
-        
-    }
+        private $obj;
+        private $result;
 
-    function DisplayCustomers() {
+        function __construct()
+        {
+
+            $this->obj = new Retrieve();
+            $this->result = $this->obj->RetrieveUsers();
+        }
+
+        function DisplayCustomers()
+        {
 
 
-            echo"<table id='customers'>";
-            echo"<tr >";
+            echo "<table id='customers'>";
+            echo "<tr >";
             echo "<th > S/N </th>";
             echo "<th> Full Name </th>";
             echo "<th> Email Address </th>";
@@ -45,37 +46,32 @@ class Display {
             echo "<th> Action</th>";
             echo "</tr>";
 
-            while($row = $this->result->fetch()) {
+            while ($row = $this->result->fetch()) {
 
-                
-                    echo "<tr>";
 
-                       echo "<td>".$row['S/N']."</td>";
-                       echo "<td>".$row['Full Name']."</td>";
-                       echo "<td>".$row['Email Address']."</td>";
-                       echo "<td>".$row['Created At']."</td>";
-                       echo "<td> <input id='btn' type= 'button' value='View'> </td> </tr>";
+                echo "<tr>";
 
-                    echo "</tr>";
+                echo "<td>" . $row['S/N'] . "</td>";
+                echo "<td>" . $row['Full Name'] . "</td>";
+                echo "<td>" . $row['Email Address'] . "</td>";
+                echo "<td>" . $row['Created At'] . "</td>";
+                echo "<td> <button id ='btn' name = 'submittedId'  ><a id='btn-link' href='DisplayCustomerList.php?Id=".$row['Id']."'>View<a/> </button></td>";
 
-               
+                echo "</tr>";
             }
-       
-                   echo "</table>";
 
-
-                  
+            echo "</table>";
+        }
     }
 
+    $display = new Display();
 
-}
+    $display->DisplayCustomers();
 
-$display = new Display();
+    ?>
 
-$display->DisplayCustomers();
 
-?>
-    
+
 </body>
-</html>
 
+</html>
