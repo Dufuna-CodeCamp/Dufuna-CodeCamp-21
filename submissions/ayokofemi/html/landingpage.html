@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>e-commerce lading page</title>
+    <title>E-commerce lading Page</title>
     <link rel="stylesheet" href="landingpage.css">
 </head>
 <body>
@@ -27,46 +27,55 @@
                     <p>Anything food, we have you covered.</p>
                 </div>
                 <div class="location">
-                  
-                    <label for="address">Where are you?</label>
-                    <input type="text" placeholder="Enter your delivery address">
-                   
+                  <div id="validateInput">
+                       <label for="address">where are you?</label>
+                       <select id="location-list" >
+                            <option class="location-option" value="" disabled selected hidden>
+                              Enter your delivery address
+                            </option>
+                            <option class="location-option" value="Lagos">Lagos</option>
+                            <option class="location-option" value="Ondo">Ondo</option>
+                            <option class="location-option" value="Kwara">Kwara</option>
+                      </select><br>
+                      <span class="error-message"></span>
+                  </div>
                 </div>
-    
+                  
+             <div id="pick-interest">
                 <div class="pick-interest">
                     <h3>Pick an interest</h3>
                     <div class="one">
     
-                        <div class="options">
+                        <div class="options" id="choice 1">
                             <img src="images/fast-food_disabled.svg">
                             <h4>Fast food</h4>
                             <p>All sorrows are less with bread.</p>
                         </div>
     
-                        <div class="options">
+                        <div class="options" id="choice 2">
                             <img src="images/Vegetables & Drinks_disabled.svg">
                             <h4>Vegetables</h4>
                             <p>May not want it, but good for you.</p>
                         </div>
                     
     
-                        <div class="options">
+                        <div class="options" id="choice 3">
                             <img src="images/Drinks & Cocktails_disabled.svg">
                             <h4>Drinks & Cocktails</h4>
                             <p>I feel sad for those who don't drink.</p>
                         </div>
                     
     
-                        <div class="options">
+                        <div class="options" id="choice 4">
                             <img src="images/resturant_disabled.svg">
                             <h4>Resturants</h4>
                             <p>All sorrows are less with bread.</p>
                         </div>
     
                     </div>
-    
+            
                 </div><hr>
-                
+             </div>   
                 <div class="services2">
                     <h2>How we serve you</h2>
                     <div class="two">
@@ -116,6 +125,6 @@
             
         </div>
     
-    
+    <script src="landing.js"></script>
 </body>
 </html>
