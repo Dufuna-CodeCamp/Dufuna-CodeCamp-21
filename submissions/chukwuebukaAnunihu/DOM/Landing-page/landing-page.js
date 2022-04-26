@@ -24,22 +24,22 @@ function clearInputField() {
 function changePicture() {
   //changes the picture and font colors of the text in the div
   if (locationInputField.value !== "") {
-    fastFoodImage.src = "/images/fast-food.svg";
-    vegetablesImage.src = "/images/Vegetables _ Drinks.svg";
-    drinksImage.src = "/images/Drinks _ Cocktails.svg";
-    restaurantImage.src = "/images/resturant.svg";
+    fastFoodImage.src = "../../css/images/fast-food.svg";
+    vegetablesImage.src = "../../css/images/Vegetables _ Drinks.svg";
+    drinksImage.src = "../../css/images/Drinks _ Cocktails.svg";
+    restaurantImage.src = "../../css/images/resturant.svg";
 
     for (let i = 0; i < firstParagraph.length; i++) {
       firstParagraph[i].style.color = "#AD4C4C";
       secondParagraph[i].style.color = "#696969";
-      vendorsLink[i].setAttribute("href", "/Vendors' page/vendor-page.html");
+      vendorsLink[i].setAttribute("href", "../../css/HTML/vendor-page.html");
     }
     return false;
   } else {
-    fastFoodImage.src = "/images/fast-food_disabled.svg";
-    vegetablesImage.src = "/images/Vegetables _ Drinks_disabled.svg";
-    drinksImage.src = "/images/Drinks _ Cocktails_disabled.svg";
-    restaurantImage.src = "/images/resturant_disabled.svg";
+    fastFoodImage.src = "../../css/images/fast-food_disabled.svg";
+    vegetablesImage.src = "../../css/images/Vegetables _ Drinks_disabled.svg";
+    drinksImage.src = "../../css/images/Drinks _ Cocktails_disabled.svg";
+    restaurantImage.src = "../../css/images/resturant_disabled.svg";
 
     for (let i = 0; i < firstParagraph.length; i++) {
       firstParagraph[i].style.color = "#A5A5A5";
