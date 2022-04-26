@@ -1,10 +1,10 @@
 import './App.css';
-import Verification from '../src/components/verificationpage/verification';
+import CartPage from '../src/components/cart/cartpage';
 
 function App() {
   return (
     <div>
-       <Verification/>
+       <CartPage/>
     </div>
   );
 }
