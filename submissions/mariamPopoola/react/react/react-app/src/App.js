@@ -1,3 +1,4 @@
+<<<<<<< HEAD:submissions/mariamPopoola/react/react/react-app/src/App.js
 import './App.css';
 import Verification from '../src/components/verificationpage/verification';
 
@@ -12,4 +13,20 @@ function App() {
 export default App;
 
   
+=======
+import './App.css';
+import CartPage from '../src/components/cart/cartpage';
+
+function App() {
+  return (
+    <div>
+       <CartPage/>
+    </div>
+  );
+}
+
+export default App;
+
+  
+>>>>>>> 3302d5dc (cart page):react/react-app/src/App.js
      
