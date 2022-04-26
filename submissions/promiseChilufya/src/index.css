@@ -173,6 +173,51 @@ hr {
   font-weight: 700;
 }
 
+.top-navbar {
+
+  display: flex;
+  justify-content: space-between;
+}
+.order-foodbag {
+  margin-left: 30px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.order-foodbag span {
+  color: crimson;
+}
+#order-logout {
+  border: 1px solid crimson;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#order-login {
+  color:#4E4D4D;
+}
+#success {
+  margin-left: 40%;
+  margin-top: 10%;
+  height: 400px;
+  width: 400px;
+}
+#order {
+text-align: center;
+font-size: 28px;
+color: #5EA304;
+}
+#processing {
+
+  color: #696969;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+.order-contents {
+
+  margin-left: 2%;
+}
+
+
 @media screen and (min-width: 468px) {
 
   .cart-contents {
@@ -322,6 +367,27 @@ hr {
   }
  
 }
+#top-nav {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#delivery-image {
+ margin-right: 5%;
+ margin-top: 20px;
+ height: 28px;
+ width: 28px;
+ cursor: pointer;
+}
+#order-list {
+ margin-top: 15px;
+}
+.order-content {
+
+ margin-left: 5%;
+}
+
+
 
 @media screen and (min-width: 790px) {
 
@@ -412,6 +478,23 @@ hr {
     margin-left: 27%;
     font-size: 23px;
     margin-bottom: 30px;
+  }
+  #top-nav {
+    margin-left: -15%;
+  }
+
+  .order-contents {
+
+    margin-left: 5%;
+  }
+
+ 
+
+  #success {
+    margin-left: 39%;
+    margin-top: 10%;
+    height: 400px;
+    width: 400px;
   }
   
 }
