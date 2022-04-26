@@ -1,0 +1,45 @@
+
+.hero-section {
+    min-height: 17.67rem;
+    /* background-color: green; */
+    padding-bottom: 2.3rem;
+    margin-top: 3.5rem;
+}
+.hero-section h1{
+    font-size: 3.2rem;
+    text-transform: capitalize;
+}
+.hero-section p {
+    /* letter-spacing: 0.2rem; */
+    font-size: 1.03rem;
+    text-transform: capitalize;
+}
+.location, 
+.interests,
+.how-we-serve {
+    margin: 2.5rem auto;
+}
+.location h4 {
+    text-transform: capitalize;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.how-we-serve {
+    margin-top: 6.3rem;
+    text-align: center;
+}
+.how-we-serve h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 2.2rem;
+}
+.how-we-serve h4 {
+    padding: 1.2rem;
+}
+
+.how-we-serve .card {
+    box-shadow: unset;
+}
