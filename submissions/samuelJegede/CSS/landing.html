@@ -32,39 +32,41 @@
             
             <div class="address">
                 <label class="where">Where are you?</label><br>
-                <input list="location-list" id="location1" name="location" placeholder="Enter your address">
-    
-                <datalist id="location-list">
-                    <option value="Lekki"/>
-                    <option value="Surulere"/>
-                    <option value="Festac"/>
-                    <option value="Ajah"/>
-                </datalist>
+                <select class="select-box" name="location" id="location1" placeholder="Enter your address">
+                    <option value="">Enter your address</option>
+                    <option value="Lekki">Lekki</option>
+                    <option value="Surulere">Surulere</option>
+                    <option value="Festac">Festac</option>
+                    <option value="Ajah">Ajah</option>
+                    <option value="Ikoyi">Ikoyi</option>
+                </select>
+                         
             </div><br><br>
+
 
             <h3 class="interest">Pick an interest</h3><br>
             <div class="sbj-intro">
                 <div class="available-foods">
                     <img class="img" src="image/fast-food_disabled.svg" alt="fastfood">
-                    <h3>Fast food</h3>
+                    <h3 class="img-heading">Fast food</h3>
                     <p>All sorrows are less with bread</p>
                 </div><br><br>
     
                 <div class="available-foods">
                     <img class="img" src="image/Vegetables _ Drinks_disabled.svg" alt="vegetables">
-                    <h3>Vegetables & Fruits</h3>
+                    <h3 class="img-heading">Vegetables & Fruits</h3>
                     <p>Vegetables & fruits</p>
                 </div><br><br>
     
                 <div class="available-foods">
                     <img class="img" src="image/Drinks _ Cocktails_disabled.svg" alt="drinks">
-                    <h3>Drinks & Cocktails</h3>
+                    <h3 class="img-heading">Drinks & Cocktails</h3>
                     <p>I feel sad for those who dont drink</p>
                 </div><br><br>
     
                 <div class="available-foods">
                     <img class="img" src="image/resturant_disabled.svg" alt="Restaurants">
-                    <h3>Restaurants</h3>
+                    <h3 class="img-heading">Restaurants</h3>
                     <p>All sorrows are less with food</p>
                 </div><br><br>
             </div>
@@ -116,6 +118,6 @@
                     
         </footer>
        
-
+        <script src="landing.js"></script>
     </body>
 </html>
