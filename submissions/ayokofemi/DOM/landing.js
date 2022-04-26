@@ -16,8 +16,9 @@ function Validate() {
 }
 
 function SubmitInput() {
-    return Validate();
+    Validate();
 }
+userSelection.addEventListener("Submit", SubmitInput);
 
 choice1.addEventListener('click', () => {
     if (userSelection.value == "") {
