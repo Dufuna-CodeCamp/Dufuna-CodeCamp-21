@@ -42,6 +42,34 @@ class Retrieve {
 
        
     }
+
+    function RetrieveUsersOrders($id) {
+
+
+        try {
+
+
+            $select = "SELECT * FROM CustomerOrders WHERE CustomerId = $id ";
+
+            $result = $this->con->query($select);
+    
+            if($result->rowCount() > 0) {
+    
+                return $result;
+    
+            } else {
+    
+                echo "There are no records in the database";
+            }
+    
+
+        } catch(PDOException $e) {
+
+            die("ERROR: Could not execute $select." .$e->getMessage());
+        }
+
+       
+    }
 }
 
 

@@ -45,3 +45,12 @@
     
       text-align: center;
   }
+  .container {
+    margin-left: 200px;
+    font-size: 25px;
+    margin-top: 40px;
+  }
+  #btn-link {
+    text-decoration: none;
+    color: white;
+  }
