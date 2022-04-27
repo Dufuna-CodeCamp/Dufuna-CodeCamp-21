@@ -1,0 +1,298 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.navbar h5{
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar span,
+.navbar .cart{
+  color: #AD4C4C;
+}
+
+.navbar li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  color: #696969;
+  text-transform: capitalize;
+}
+
+.navbar .signup-btn{
+  color: #AD4C4C;
+  border: 2px solid #AD4C4C;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.breadcrumb {
+  text-decoration: none;
+  color: #C9C9C9;
+  font-size: 14px;
+}
+
+.breadcrumb:last-child{
+  color: black;
+}
+
+.title {
+  padding-top: 10px;
+}
+
+.cartItem{
+  display:  flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.cartItem .close{
+  padding: 30px;
+  width: 80px;
+}
+
+.cartItem .itemImg{
+  width: 100px;
+}
+
+.itemDetails p{
+  padding: 4px 10px;
+  font-size: 15px;
+}
+
+.itemDetails img{
+  width: 20px;
+}
+
+.itemPrice{
+ position: absolute;
+ right: 25px;
+ padding: 25px 0;
+ font-size: 15px;
+}
+
+.delivery,
+.total{
+  display: flex;
+}
+
+.delivery p{
+  padding: 25px 10px;
+}
+
+.delivery img{
+  width: 100px;
+  margin-left: 5em;
+}
+
+.total{
+  margin-left: 6em;
+}
+.total p{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.checkout-btn button{
+  width: 80%;
+  background-color:  #AD4C4C;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  margin: auto;
+}
+.checkout-btn{
+  margin:20px 0;
+  margin-left: 20px;
+  text-align: center;
+}
+/* verification page */
+
+.form{
+  margin-bottom: 25px;
+}
+
+.vari-title,
+.vari-address{
+  padding:20px 0 ;
+}
+
+.vari-address{
+  display: flex;
+  justify-content: space-between;
+}
+
+.vari-title h3{
+  font-size: 24px;
+}
+.vari-title p{
+  color: #AD4C4C;
+  font-size: 14px;
+}
+
+.vari-address h4{
+  font-size: 18px;
+}
+
+.vari-address p{
+  color: #696969;
+  font-size: 14px;
+}
+
+.form-control{
+  padding: 15px 0;
+}
+
+.form-control label{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.form-control input,
+.form-control select{
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  padding:0 10px ;
+}
+
+.card-details{
+  display: flex;
+}
+.card-details div{
+  width: 100%;
+  margin: 0 2px ;
+}
+
+.btn{
+  margin: 20px 0;
+}
+
+.btn button{
+  width: 100%;
+  background-color:  #AD4C4C;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  margin: auto;
+}
+
+
+/* success page */
+.success{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.success-Message{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success-Message p:first-child{
+  color: #5EA304;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.success-Message p:last-child{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width:992px){
+    body{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .navbar h5{
+      font-size: 20px;
+    }
+
+    .navbar a{
+        font-size: 16px;
+          padding: 15px;
+    }
+
+    .navbar .signup-btn{
+        padding: 5px;
+    }
+
+    .cartItem .close{
+      padding: 30px;
+      width: 80px;
+    }
+    
+    .cartItem .itemImg{
+      width: 130px;
+    }
+    
+    .itemDetails p{
+      padding: 7px 20px;
+      font-size: 17px;
+    }
+    
+    .itemDetails img{
+      width: 30px;
+    }
+    
+    .itemPrice{
+     position: absolute;
+     right: 25px;
+     padding: 25px 0;
+     font-size: 17px;
+    }
+
+    .delivery p{
+      padding: 25px 0 25px 50px;
+    }
+
+    
+    .vari-title h3{
+      font-size: 30px;
+    }
+
+    .vari-address h4{
+      font-size: 20px;
+    }
+
+    .vari-address p,
+    .vari-title p{
+      font-size: 16px;
+    }
+
+    .btn{
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .btn button{
+      width: 80%;
+    }
+
+}
+
