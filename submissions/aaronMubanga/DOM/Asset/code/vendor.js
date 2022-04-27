@@ -33,4 +33,3 @@ addCartbtns.forEach(addCartbtn => {
     })
 })
 
-console.log(addCartbtns);
