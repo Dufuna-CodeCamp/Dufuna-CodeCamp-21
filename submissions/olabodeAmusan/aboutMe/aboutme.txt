@@ -1,3 +1,7 @@
 Hello World!
 
+<<<<<<< HEAD
 I am Olabode Amusan. At the end of this program, I will become a Software Engineer.
+=======
+I am Olabode Amusan. At the end of this program, I will become a world class Software Engineer.
+>>>>>>> dcaee65370ff54dc205a1ab81b2190666a30e8ca
