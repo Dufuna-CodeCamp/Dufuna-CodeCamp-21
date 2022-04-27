@@ -1,4 +1,5 @@
-import React from "react";
+/*import React from "react";
+import { useHistory } from "react-router-dom";
 
 class Verification extends React.Component {
     render() {
@@ -10,10 +11,9 @@ class Verification extends React.Component {
                 signUp= "SignUp"  
                 linkElement1 = "Login" 
                 linkElement2="Cart" />
-
             </div>
         )
     }
 }
 
-export default Verification;
+export default Verification;*/
