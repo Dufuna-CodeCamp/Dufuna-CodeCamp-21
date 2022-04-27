@@ -112,7 +112,7 @@ main {
     margin-bottom: 10px;    
     border: 1px solid #add8e6;
     background-color: #fff;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
 .foods .images .orderHide .image_1 .im {
@@ -121,7 +121,7 @@ main {
     margin-bottom: 10px;    
     border: 1px solid #add8e6;
     background-color: #fff;
-    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
 .foods .images .order .image_1 .i_2 {
