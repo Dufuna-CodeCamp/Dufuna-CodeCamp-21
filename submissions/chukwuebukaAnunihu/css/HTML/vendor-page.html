@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/vendor-page.css">
 
     <!-- External fonts from fonts.google.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,8 @@
         </div>
         <nav>
             <div class="header-nav">
-                <a href="#">Cart</a>
+                <a href="#">Cart</a> 
+                <div class="dot"></div>
                 <a href="#">Login</a>
                 <a href="#"><input type="button" value="Sign up"></a>
             </div>
@@ -36,74 +37,83 @@
         <p class="vendors active"><a href="vendor-page.html">Vendors</a></p>
     </div>
 
-    <div class="all-vendors">All Vendors</div>
 
-    <div class="kfc-logo"><img src="/images/KFC logo.svg" alt="KFC logo">
-        <p>KFC</p>
-    </div>
-
-    <div class="view-all">View all</div>
 
     <main>
+        <div class="all-vendors">All Vendors</div>
+
         <!-- KFC -->
-        <section>
+        <section class="kfc-section">
+
+            <div class="kfc-logo"><img src="../images/KFC logo.svg" alt="KFC logo">
+                <p>KFC</p>
+            </div>
+
+            <div class="view-all">View all</div>
 
             <div id="kfc">
-                <div>
-                    <input type="image" src="/images/image4.svg" alt="a bucket of kfc chicken">
-                </div>
-                <div>
-                    <input type="image" src="/images/image4.svg" alt="a bucket of kfc chicken">
-                </div>
-                <div>
-                    <input type="image" src="/images/image4.svg" alt="a bucket of kfc chicken">
-                </div>
-                <div>
-                    <input type="image" src="/images/image4.svg" alt="a bucket of kfc chicken">
-                </div>
-            </div>
-
-            <div class="item-price">
                 <div class="king-bucket">
-                    <div class="item">
-                        <p>KFC - King Bucket</p>
+                    <div class="img">
+                        <img src="../images/image4.svg" alt="a bucket of kfc chicken">
                     </div>
-                    <div class="price">
-                        <p>#5,000</p>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>KFC - King Bucket</p>
+                        </div>
+                        <div class="price">
+                            <p>#5,000</p>
+                        </div>
                     </div>
+                    <div class="button1"><button>Add to Cart</button></div>
                 </div>
-                <div class="zinger-burger">
-                    <div class="item">
-                        <p>Zinger Burger</p>
-                    </div>
-                    <div class="price">
-                        <p>#3,600</p>
-                    </div>
-                </div>
-                <div class="chicken-strips">
-                    <div class="item">
-                        <p>Chicken strips</p>
-                    </div>
-                    <div class="price">
-                        <p>#1,450</p>
-                    </div>
-                </div>
-                <div class="yamilicious">
-                    <div class="item">
-                        <p>Yamilicious</p>
-                    </div>
-                    <div class="price">
-                        <p>#900</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="add-to-cart-button">
-                <div class="button1"><button>Add to Cart</button></div>
-                <div class="button2"><button>Add to Cart</button></div>
-                <div class="button3"><button>Add to Cart</button></div>
-                <div class="button4"><button>Add to Cart</button></div>
+                <div class="zinger-burger">
+                    <div class="img">
+                        <img src="../images/image4.svg" alt="a bucket of kfc chicken">
+                    </div>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Zinger Burger</p>
+                        </div>
+                        <div class="price">
+                            <p>#3,600</p>
+                        </div>
+                    </div>
+                    <div class="button2"><button>Add to Cart</button></div>
+                </div>
+
+                <div class="chicken-strips">
+                    <div class="img">
+                        <img src="../images/image4.svg" alt="a bucket of kfc chicken">
+                    </div>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Chicken strips</p>
+                        </div>
+                        <div class="price">
+                            <p>#1,450</p>
+                        </div>
+                    </div>
+                    <div class="button3"><button>Add to Cart</button></div>
+                </div>
+
+                <div class="yamilicious">
+                    <div class="img">
+                        <img src="../images/image4.svg" alt="a bucket of kfc chicken">
+                    </div>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Yamilicious</p>
+                        </div>
+                        <div class="price">
+                            <p>#900</p>
+                        </div>
+                    </div>
+                    <div class="button4"><button>Add to Cart</button></div>
+                </div>
+
             </div>
+            <div class="view">View all</div>
 
         </section>
 
@@ -111,75 +121,81 @@
 
         <!-- Chicken Republic -->
 
-        <section>
+        <section class="chicken-republic-section">
 
-            <div class="chicken-republic-logo"><img src="/images/Chicken republic_logo.svg" alt="KFC logo">
+            <div class="chicken-republic-logo"><img src="../images/Chicken republic_logo.svg" alt="KFC logo">
                 <p>Chicken republic</p>
             </div>
 
             <div class="view-all">View all</div>
 
-
             <div id="chicken-republic">
-                <div>
-                    <input type="image" src="/images/image1.svg" alt="a bucket of kfc chicken">
-                </div>
-                <div>
-                    <input type="image" src="/images/image2.svg" alt="a bucket of kfc chicken">
-                </div>
-                <div>
-                    <input type="image" src="/images/image3.svg" alt="a bucket of kfc chicken">
-                </div>
-                <div>
-                    <input type="image" src="/images/image3.svg" alt="a bucket of kfc chicken">
-                </div>
-            </div>
 
-            <div class="item-price">
                 <div class="refuel-max">
-                    <div class="item">
-                        <p>Refuel max</p>
+                    <div class="img">
+                        <img src="../images/image1.svg" alt="a bucket of kfc chicken">
                     </div>
-                    <div class="price">
-                        <p>#1,200</p>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Refuel max</p>
+                        </div>
+                        <div class="price">
+                            <p>#1,200</p>
+                        </div>
                     </div>
+                    <div class="button1"><button>Add to Cart</button></div>
                 </div>
-                <div class="express-meal">
-                    <div class="item">
-                        <p>Express meal</p>
-                    </div>
-                    <div class="price">
-                        <p>#2,000</p>
-                    </div>
-                </div>
-                <div class="citizen-meal">
-                    <div class="item">
-                        <p>Citizen meal</p>
-                    </div>
-                    <div class="price">
-                        <p>#1,500</p>
-                    </div>
-                </div>
-                <div class="crunchy-wings">
-                    <div class="item">
-                        <p>Crunchy wings</p>
-                    </div>
-                    <div class="price">
-                        <p>#1,750</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="add-to-cart-button">
-                <div class="button1"><button>Add to Cart</button></div>
-                <div class="button2"><button>Add to Cart</button></div>
-                <div class="button3"><button>Add to Cart</button></div>
-                <div class="button4"><button>Add to Cart</button></div>
+                <div class="express-meal">
+                    <div class="img">
+                        <img src="../images/image2.svg" alt="a bucket of kfc chicken">
+                    </div>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Express meal</p>
+                        </div>
+                        <div class="price">
+                            <p>#2,000</p>
+                        </div>
+                    </div>
+                    <div class="button2"><button>Add to Cart</button></div>
+                </div>
+
+                <div class="citizen-meal">
+                    <div class="img">
+                        <img src="../images/image3.svg" alt="a bucket of kfc chicken">
+                    </div>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Citizen meal</p>
+                        </div>
+                        <div class="price">
+                            <p>#1,500</p>
+                        </div>
+                    </div>
+                    <div class="button3"><button>Add to Cart</button></div>
+                </div>
+
+                <div class="crunchy-wings">
+                    <div class="img">
+                        <img src="../images/image3.svg" alt="a bucket of kfc chicken">
+                    </div>
+                    <div class="item-price">
+                        <div class="item">
+                            <p>Crunchy wings</p>
+                        </div>
+                        <div class="price">
+                            <p>#1,750</p>
+                        </div>
+                    </div>
+                    <div class="button4"><button>Add to Cart</button></div>
+                </div>
             </div>
+            <div class="view">View all</div>
 
         </section>
     </main>
-
+    <script src="../../DOM/Vendor-page/vendor-page.js"></script>
 </body>
 
 </html>
