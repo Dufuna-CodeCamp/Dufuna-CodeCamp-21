@@ -1,0 +1,240 @@
+
+ nav a[href*='/'] {
+  font-weight: bold;
+  color: black
+}
+
+nav span {
+  color: brown;
+}
+
+nav ul,
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+a { 
+  text-decoration: none;
+}
+
+nav {
+  padding: 15px 40px;
+}
+
+nav li {
+  display: inline;
+  padding: 8px;
+  float: right;
+  font-size: 20px;
+}
+
+.signup {
+  border: solid;
+  border-radius: 5px;
+  border-color: brown;
+  color: brown;
+  font-size: 15px;
+}
+
+a:visited {
+  color: gray;
+}
+
+.lowernav {
+  float: left;
+  padding-top: 60px;
+}
+
+.pname {
+  float: absolute;
+  padding: 100px 40px;
+}
+
+.wrapper22 li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+#closed {
+  padding: 60px 10px ;
+  float: left;
+}
+
+#foodName {
+  padding: 10px 5px 15px 5px;
+}
+
+#count {
+  font-size: 30px;
+  color: brown;
+  padding: 10px;
+}
+
+#priceTotal {
+ padding: 20px 50px 20px 830px; 
+}
+
+#priceDelivery {
+  padding: 20px 50px 20px 820px;  
+ }
+
+ #priceCart {
+  padding: 50px 50px 20px 750px; 
+ }
+
+#fee {
+  padding: 5px 100px 30px;
+}
+
+#total {
+  padding-right: 315px;
+}
+
+#button {
+  background-color: brown;
+  float: center;
+  color: #fff;
+  text-align: center;
+  padding: 8px 350px;
+  font-size: 20px;
+  border-color: brown;
+  border-radius: 5px;
+
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.theCart {
+  float: left;
+  padding: 5px;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+#mobile li {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+      padding: 25px 35px;
+  }
+  
+  nav li {
+      display: inline;
+      padding: 8px;
+      float: right;
+      font-size: 15px;
+  }
+
+  nav ul,
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  #closed img {
+    width: 25px;
+    height: 25px;
+    padding-left: 2px;
+  }
+
+  .controls img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theCart {
+    float: left;
+    padding: 5px;
+  }
+
+  .wrapper22 .theCart {
+    width: 120px;
+    height: 120px;
+  }
+
+  #foodName {
+    font-size: 10px;
+    padding: 20px 5px 13px 5px;
+  }
+
+  #count {
+    font-size: 20px;
+  }
+
+  #priceCart {
+    padding: 60px 50px 10px 70px; 
+    font-size: 15px;
+   }
+
+   #priceDelivery {
+    padding: 40px 50px 10px 140px;  
+    font-size: 15px;
+   }
+
+   #priceTotal {
+    padding: 40px 50px 10px 0;
+    font-size: 15px;
+   }
+
+   #total {
+     font-size: 15px;
+   }
+
+   #closed {
+    padding: 45px 5px ;
+    float: left;
+  }
+
+  #deliver img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #fee {
+    font-size: 10px;
+    padding: 50px 30px;
+  }
+
+  #button {
+    padding: 8px 230px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+
+  }
+  #mobile {
+    padding-left: 0;
+  }
+
+  #mobile li {
+      display: inline;
+      font-size: 15px;
+      list-style-type: none;
+      color: brown;
+      padding: 5px 40px;
+  }
+
+  #remove {
+    float: right;
+    text-decoration-line: underline;
+  }
+
+}
+
+
