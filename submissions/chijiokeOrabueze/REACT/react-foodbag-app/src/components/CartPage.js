@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
+<<<<<<< HEAD
 import {Link} from 'react-router-dom';
+=======
+>>>>>>> 323abe5b (React task 1)
 
 
 
@@ -86,7 +89,11 @@ class CartPage extends Component{
         return(
             <div>
                 <div style={{marginTop: "50px", marginBottom: "50px"}}>
+<<<<<<< HEAD
                     <div style={{display: "inline"}}><p style={{color: "#f4f4f4", display: "inline"}}>Home &#62;</p>Cart</div>
+=======
+                    <p><div style={{color: "#f4f4f4", display: "inline"}}>Home &#62;</div>Cart</p>
+>>>>>>> 323abe5b (React task 1)
                     <h2 style={{marginTop: "30px"}}>Cart</h2>
                 </div>
                 <div className="option-container">
@@ -97,9 +104,15 @@ class CartPage extends Component{
                             <div className="flex-column">
                                 <h3>{this.state.items[0].name}</h3>
                                 <div className="flex-center">
+<<<<<<< HEAD
                                     <button onClick={this.onIncreaseCount(0)} className='btn-3'>+</button>
                                     <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
                                     <button onClick={this.onDeductCount(0)}  className='btn-4'>-</button>
+=======
+                                    <button onClick={this.onIncreaseCount(0)} className='btn btn-3'>+</button>
+                                    <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
+                                    <button onClick={this.onDeductCount(0)}  className='btn btn-4'>-</button>
+>>>>>>> 323abe5b (React task 1)
                                 </div>
                             </div>
                         </div>
@@ -114,9 +127,15 @@ class CartPage extends Component{
                             <div className="flex-column">
                                 <h3>{this.state.items[1].name}</h3>
                                 <div className="flex-center">
+<<<<<<< HEAD
                                     <button onClick={this.onIncreaseCount(1)} className='btn-3'>+</button>
                                     <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
                                     <button onClick={this.onDeductCount(1)}  className='btn-4'>-</button>
+=======
+                                    <button onClick={this.onIncreaseCount(1)} className='btn btn-3'>+</button>
+                                    <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
+                                    <button onClick={this.onDeductCount(1)}  className='btn btn-4'>-</button>
+>>>>>>> 323abe5b (React task 1)
                                 </div>
                             </div>
                         </div>
@@ -131,9 +150,15 @@ class CartPage extends Component{
                             <div className="flex-column">
                                 <h3>{this.state.items[2].name}</h3>
                                 <div className="flex-center">
+<<<<<<< HEAD
                                     <button onClick={this.onIncreaseCount(2)} className='btn-3'>+</button>
                                     <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
                                     <button onClick={this.onDeductCount(2)}  className='btn-4'>-</button>
+=======
+                                    <button onClick={this.onIncreaseCount(2)} className='btn btn-3'>+</button>
+                                    <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
+                                    <button onClick={this.onDeductCount(2)}  className='btn btn-4'>-</button>
+>>>>>>> 323abe5b (React task 1)
                                 </div>
                             </div>
                         </div>
@@ -154,10 +179,14 @@ class CartPage extends Component{
                     </div>
                 </div>
                 <div className='flex-center' style={{width:"100%", justifyContent:"center"}}>
+<<<<<<< HEAD
                     <Link to="/verification">
                         <button className = "checkout-btn">Checkout</button>
                     </Link>
                     
+=======
+                    <button className = "checkout-btn">Checkout</button>
+>>>>>>> 323abe5b (React task 1)
                 </div>
             </div>
         )

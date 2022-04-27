@@ -25,7 +25,15 @@ button{
   align-items: center;
 }
 
+<<<<<<< HEAD
 .nav-container h3 span{
+=======
+.nav-container h3 a{
+  color:black;
+}
+
+.nav-container h3 a span{
+>>>>>>> 323abe5b (React task 1)
   color:brown;
 }
 
@@ -107,9 +115,15 @@ button{
     justify-content: center;
   }
 
+<<<<<<< HEAD
   .checkout-btn,.btn{
     width:80vw;
     height: 40px;
+=======
+  .checkout-btn{
+    width:90%;
+    height: 30px;
+>>>>>>> 323abe5b (React task 1)
     border-radius:3px;
     background-color: brown;
     color:white;
@@ -170,5 +184,15 @@ button{
   .App .option-wrapper h1{
     font-size: 20px;
   }
+<<<<<<< HEAD
   
+=======
+
+  .App .checkout-btn{
+    padding:0 !important;
+    width:100%;
+    height: 25px;
+    border-radius:3px;
+  }
+>>>>>>> 323abe5b (React task 1)
 }
