@@ -1,0 +1,83 @@
+body {
+        /* background: url('food_vendor.jpeg');
+        background-size: 100%;
+        background-repeat: no-repeat;   */
+        background-color: aqua;
+    
+
+}
+
+@media screen and (min-width:150px) {
+    
+
+    .h1 {
+
+        display: inline-grid;
+        margin: 10px 50px 10px 5px;
+     }
+
+
+     .h2 {
+
+        display: inline-grid;
+        margin: 10px 50px;
+     }
+
+     .h3 {        
+        display: inline-grid;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+
+     p {
+
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: larger;
+        font-style: oblique;
+
+     }
+
+     .image {
+
+        background-image: url('food_vendor.jpeg');
+        background-position: center;
+        height: 200px;
+        /*width: 200px;*/
+
+    }
+
+    a {
+
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline;
+        margin: 50px;
+    }
+
+    ul {
+
+        margin: 100px 10px 10px 200px;        
+    }
+
+    #label  {
+
+        text-align: center;
+        font-size: large;
+        color: blue;
+    }
+
+    .payment {
+        text-align: center;
+        margin: 50px 300px;
+        border: 5px solid bisque;
+        border-radius: 20%;
+        padding: 5px;
+        background-color: white;
+
+    }
+
+}

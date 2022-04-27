@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":0,"numPassedTests":0,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":0,"numTotalTests":0,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0},"startTime":1651090117145,"success":true,"testResults":[],"wasInterrupted":false}
+=======
+{
+  "stats": {
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "oluwatimileyinAkinpelu"
+  }
+}
+>>>>>>> 72e742c491eb06e10f4ac6d7ee2ba556e28e91b9
