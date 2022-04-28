@@ -1,0 +1,28 @@
+body {
+    margin-top: 150px;
+    margin-left: 500px; 
+}
+.form {
+    border: 2px solid rgb(6, 114, 238);
+    box-shadow: 5px 5px 5px 5px rgb(125, 150, 179);
+    width: 300px;
+    padding: 20px;
+}
+h1{
+    color: rgb(6, 114, 238);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input {
+    border-radius: 2rem;
+    height: 25px;
+    margin-top: 20px;
+    width: 270px;
+}
+.btn {
+    border-radius: 3rem;
+    height: 30px;
+    background-color: rgb(6, 114, 238);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
