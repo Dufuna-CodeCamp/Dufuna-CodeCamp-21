@@ -2,7 +2,7 @@ const   removeImg = new Image();
         removeImg.src = "../Asset/images/remove.svg";
         cartBtn = document.getElementById('cart');
         addCartbtns = document.querySelectorAll('.btn');
-;
+
 
 function addItem() {
     let picker = document.querySelectorAll('.remove-item');
@@ -21,7 +21,7 @@ addCartbtns.forEach(addCartbtn => {
        if (addCartbtn.textContent === "Add to Cart") {
            addCartbtn.classList.add("remove-item");
            addCartbtn.classList.remove("cartadd");
-           addCartbtn.innerHTML = '<img height="22px" width="22px" src="' + removeImg.src+'" />' + "remove";
+           addCartbtn.innerHTML = '<img height="40rem" width="40rem" src="' + removeImg.src+'" />' + "Remove";
 
        }else{
            addCartbtn.classList.add("cartadd");
