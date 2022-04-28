@@ -97,11 +97,15 @@ header {
     font-size: 20px;
 }
 
-.view-all {
+.view-all, .view-all-1 {
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     color: #ad4c4c;
+}
+
+.view-all-1 {
+    display: none;
 }
 
 .orders {
@@ -128,6 +132,10 @@ header {
     color: #5ea304;
 }
 
+.orders .card:last-of-type{
+    display: none;
+}
+
 .add-cart-link {
     text-decoration: none;
     color:#ad4c4c;
@@ -138,4 +146,153 @@ header {
     border-radius: 3px;
     position: relative;
     top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .orders {
+        padding-top: 15px;
+    }
+    
+    .card {
+        width: 200px;
+    }
+    
+    .card img{
+        width: 100%;
+    }
+    
+    .order-name {
+        font-size: 14px;
+    }
+    
+    .order-price {
+        font-size: 14px;
+    }
+    
+    .add-cart-link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px ) {
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .card {
+        width: 150px;
+    }
+    
+    .order-name {
+        font-size: 12px;
+    }
+    
+    .order-price {
+        font-size: 12px;
+    }
+    
+    .add-cart-link {
+        font-size: 12px;
+        padding: 7px 15px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    
+    /* Header */
+    header {
+        padding-bottom: 20px;
+    }
+    
+    .nav-link {
+        padding-right: 20px;
+        font-size: 12px;
+    }
+    
+    .signup {
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+    
+    /* Main */
+    .main {
+        padding: 0;
+    }
+    
+    .breadcrumb {
+        font-size: 16x;
+    }
+    
+    .main h1 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    
+    .kfc {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    
+    .chicken-republic{
+        padding-top: 0;
+    }
+    
+    .header, .info, .orders, .card-info {
+        flex-wrap: wrap;
+    }
+    
+    .header {
+        position: relative;
+        top: 30px;
+    }
+    .info h2{
+        margin-left: 15px;
+       font-size: 15px;
+    }
+    
+    .view-all {
+        display: none;
+    }
+
+    .view-all-1 {
+        display: inline;
+    }
+    
+    .orders {
+        padding-top: 15px;
+    }
+    
+    .card {
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    .orders .card:last-of-type{
+        display: block;
+        text-align: center;
+    }
+    
+    .order-name {
+        font-size: 16px;
+    }
+    
+    .order-price {
+        font-size: 16px;
+    }
+    
+    .add-cart-link {
+        font-size: 16px;
+        padding: 7px 20px;
+    }
 }
