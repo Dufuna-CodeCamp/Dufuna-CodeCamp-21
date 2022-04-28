@@ -97,15 +97,12 @@ div.interest {
   border: 2px solid rgb(212, 210, 210);
   border-radius: 5px;
   padding: 20px 30px;
-  /* width: 280px; */
   text-align: center;
   margin: 16px;
 }
-
 .item img {
   width: 100px;
 }
-
 .item h4 {
   font-size: 20px;
   padding: 4px;
@@ -113,7 +110,6 @@ div.interest {
   font-family: "Poppins";
   font-style: normal;
   line-height: 27px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,12 +120,10 @@ div.interest {
   font-size: 20px;
   padding: 4px;
 }
-
 .service {
   padding: 20px 0;
   text-align: center;
 }
-
 .service h2 {
   padding: 20px 0;
   font-family: "Poppins";
@@ -138,7 +132,6 @@ div.interest {
   font-size: 30px;
   line-height: 45px;
   margin: 50px auto;
-  /* identical to box height */
   display: flex;
   justify-content: center;
   color: #4e4d4d;
@@ -163,13 +156,11 @@ div.interest {
   font-size: 20px;
   padding: 5px;
   text-align: center;
-  /* identical to box height */
   display: flex;
   align-items: center;
   justify-content: center;
   color: #696969;
 }
-
 .service-item p {
   font-size: 16px;
   padding: 10px;
@@ -181,7 +172,6 @@ div.interest {
   text-align: center;
   color: #a5a5a5;
 }
-
 .contact-page p {
   font-size: 16px;
   padding: 7px 0;
