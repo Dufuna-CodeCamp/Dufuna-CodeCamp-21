@@ -18,7 +18,7 @@ header-part {
 
 nav {
   display: flex;
-  padding: 2% 2%;
+  padding: 2%;
   justify-content: space-between;
   align-items: center;
 }
@@ -112,7 +112,6 @@ div.interest {
   height: 27px;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 18px;
   line-height: 27px;
   /* identical to box height */
   display: flex;
@@ -132,7 +131,6 @@ div.interest {
 }
 
 .service h2 {
-  font-size: 20px;
   padding: 20px 0;
   font-family: "Poppins";
   font-style: normal;
@@ -168,7 +166,6 @@ div.interest {
   /* identical to box height */
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
   color: #696969;
 }
@@ -185,17 +182,11 @@ div.interest {
   color: #a5a5a5;
 }
 
-footer {
-  padding: 10px 0;
-  text-align: center;
-}
-
 .contact-page p {
   font-size: 16px;
   padding: 7px 0;
   height: 27px;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,16 +206,13 @@ footer {
   fill: #ad4c4c;
 }
 
-.footer-notice p {
-  font-size: 12px;
-}
-
 footer {
   padding: 10px 0;
   margin: auto 20px;
+  text-align: center;
 }
 .footer-content {
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px 0;
   padding: 12px 0;
   display: flex;
   justify-content: space-between;
@@ -234,4 +222,7 @@ footer {
   font-weight: 200;
   font-size: 16px;
   color: #696969;
+}
+.footer-notice p {
+  font-size: 12px;
 }
