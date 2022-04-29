@@ -18,7 +18,6 @@ ul, ol {
 .foodbag-head li {
   display:inline-grid;
   padding: 5px 10px;
-  display: inline;
   font-weight: regular;
   float: right;
 
