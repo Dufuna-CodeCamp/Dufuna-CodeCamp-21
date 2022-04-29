@@ -25,11 +25,7 @@ button{
   align-items: center;
 }
 
-.nav-container h3 a{
-  color:black;
-}
-
-.nav-container h3 a span{
+.nav-container h3 span{
   color:brown;
 }
 
