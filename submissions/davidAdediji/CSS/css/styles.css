@@ -438,7 +438,7 @@ header nav ul li{
 @media screen and (min-width:1201px){
 	header{
 		margin-top: 23px;
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 
 	header nav ul li{
