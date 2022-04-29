@@ -31,7 +31,7 @@ class Verification extends Component{
             <div >
                 <div style={{marginTop: "50px", marginBottom: "50px"}}>
                     <p><span style={{color: "rgb(212, 205, 205)"}}>Home &#62; Cart &#62;</span>Verification</p>
-                    <h1 style={{marginTop: "30px"}}>Verification</h1>
+                    <h2 style={{marginTop: "30px"}}>Verification</h2>
                     <p style={{color: "brown"}}>Confirm address & Payment</p>
 
                     <div className="title-items-show">
@@ -132,13 +132,12 @@ class Verification extends Component{
                     </div>
 
                     <div className='flex-center' style={{width:"100%", justifyContent:"center"}}>
-                        <input
+                        <button
                             className="btn"
                             type= "submit"
-                            name="Pay"
                             style = {{backgroundColor:"brown", color:"white"}}
-                            value="Pay"
-                            />
+                            >Pay</button>
+
                     </div>
                 </form>
             </div>
