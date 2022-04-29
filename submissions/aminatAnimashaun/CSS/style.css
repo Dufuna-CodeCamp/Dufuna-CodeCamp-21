@@ -5,7 +5,7 @@
 body{
     margin: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
@@ -31,7 +31,7 @@ footer{
 
 nav{
     
-    position: absolute;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -52,7 +52,7 @@ nav ul li{
 }
 
 .content{
-    padding: 100px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -152,9 +152,13 @@ span{
     margin-top: 3px;
     color: gray;
 }
+
 .heading li{
     display: inline-block;
-    padding: 40px;    
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 5px; 
+       
 }
 
 .kfc li{
@@ -202,3 +206,26 @@ span{
 .ven{
     color: black;
 }
+
+
+@media screen and (min-width: 320px) {
+   nav ul{
+       display: inline;
+       
+   }
+   .anchor, .anchor1, .anchor2{
+       padding: 5px;
+       margin: 5px;
+   }
+   nav{
+      
+       align-items: none;
+       display: inline;
+       padding: 5px;
+       
+   }
+   .logo{
+       float: inline-start;
+       margin: 5px;
+       padding: 5px;   
+   }

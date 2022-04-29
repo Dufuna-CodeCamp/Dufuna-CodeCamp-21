@@ -32,15 +32,17 @@
             
             <div class="address">
                 <label class="where">Where are you?</label><br>
-                <input list="location-list" id="location1" name="location" placeholder="Enter your address">
-    
-                <datalist id="location-list">
-                    <option value="Lekki"/>
-                    <option value="Surulere"/>
-                    <option value="Festac"/>
-                    <option value="Ajah"/>
-                </datalist>
+                <select class="select-box" name="location" id="location1" placeholder="Enter your address">
+                    <option value="">Enter your address</option>
+                    <option value="Lekki">Lekki</option>
+                    <option value="Surulere">Surulere</option>
+                    <option value="Festac">Festac</option>
+                    <option value="Ajah">Ajah</option>
+                    <option value="Ikoyi">Ikoyi</option>
+                </select>
+                         
             </div><br><br>
+
 
             <h3 class="interest">Pick an interest</h3><br>
             <div class="sbj-intro">
@@ -116,6 +118,6 @@
                     
         </footer>
        
-
+        <script src="landing.js"></script>
     </body>
 </html>
