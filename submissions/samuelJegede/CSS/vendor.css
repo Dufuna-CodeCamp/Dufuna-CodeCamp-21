@@ -105,8 +105,8 @@ li a {
     border-radius: 3px;
     font-size: 16px;
     color: #ad4c4c;
-    margin: 10px 10px;
-    padding: 10px 10px;
+    margin: 10px;
+    padding: 10px;
 }
 .dots--nil {
     display: none;
