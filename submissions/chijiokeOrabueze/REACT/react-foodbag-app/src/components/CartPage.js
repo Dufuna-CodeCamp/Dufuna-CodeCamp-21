@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 
 
@@ -153,7 +154,10 @@ class CartPage extends Component{
                     </div>
                 </div>
                 <div className='flex-center' style={{width:"100%", justifyContent:"center"}}>
-                    <button className = "checkout-btn">Checkout</button>
+                    <Link to="/verification">
+                        <button className = "checkout-btn">Checkout</button>
+                    </Link>
+                    
                 </div>
             </div>
         )

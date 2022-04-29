@@ -107,9 +107,9 @@ button{
     justify-content: center;
   }
 
-  .checkout-btn{
-    width:90%;
-    height: 30px;
+  .checkout-btn,.btn{
+    width:80vw;
+    height: 40px;
     border-radius:3px;
     background-color: brown;
     color:white;
@@ -170,11 +170,5 @@ button{
   .App .option-wrapper h1{
     font-size: 20px;
   }
-
-  .App .checkout-btn{
-    padding:0 !important;
-    width:100%;
-    height: 25px;
-    border-radius:3px;
-  }
+  
 }
