@@ -32,12 +32,7 @@ ul, ol {
   font-weight: medium;
   margin-top: 80px;
 }
-.foodbag-head li {
-  display: inline;
-  font-weight: regular;
-  float: right;
 
-}
  span {
  color:#AD4C4C;
  font-family: Poppins;
