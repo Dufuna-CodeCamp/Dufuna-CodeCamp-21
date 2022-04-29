@@ -85,7 +85,7 @@ class CartPage extends Component{
         return(
             <div>
                 <div style={{marginTop: "50px", marginBottom: "50px"}}>
-                    <p><div style={{color: "#f4f4f4", display: "inline"}}>Home &#62;</div>Cart</p>
+                    <div style={{display: "inline"}}><p style={{color: "#f4f4f4", display: "inline"}}>Home &#62;</p>Cart</div>
                     <h2 style={{marginTop: "30px"}}>Cart</h2>
                 </div>
                 <div className="option-container">
