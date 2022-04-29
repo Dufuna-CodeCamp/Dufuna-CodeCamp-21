@@ -3,7 +3,7 @@
 }
 body {
     max-width: 1240px;
-    margin: 40px 90px 100px 91px;
+    margin: 0 auto;
     font-family: poppins;
     padding: 10px;
 }
@@ -15,9 +15,13 @@ a {
 ul, ol {
   list-style-type: none;
 }
- li {
+.foodbag-head li {
   display:inline-grid;
   padding: 5px 10px;
+}
+ li {
+  display:inline-grid;
+  padding: 0;
 }
 .foodbag-head {
   font-size:20px;
@@ -28,15 +32,24 @@ ul, ol {
   display: inline;
   font-weight: regular;
   float: right;
-  flex-wrap: wrap;
+
 }
  span {
  color:#AD4C4C;
  font-family: Poppins;
- font-size: 16px;
  font-weight: 500;
  text-align: center; 
 
+}
+#view {
+ color:#AD4C4C;
+ font-family: Poppins;
+ font-weight: 500;
+ float: right;
+ margin-top: 10px;
+ width: fit-content;
+ padding-top: 20px;
+ 
 }
  .foodbag-head .signup {
   border: 1px solid #AD4C4C;
@@ -48,19 +61,23 @@ ul, ol {
 .head {
   margin-top: 80px;
 }
+
 .head p {
   display: contents;
   flex-wrap: wrap;
   line-height: 21px;
 }
+
 #home {
   color:#A5A5A5;
   font-weight: 400;
 }
+
 #vendors {
   color: #000000;
   font-weight: 500;
 }
+
 #allvendors {
   font-color: #000000;
   font-size: 30px;
@@ -68,76 +85,108 @@ ul, ol {
   font-weight: medium;
   margin-top: 33px;
 }
-.logo, .caps p  {
-  display:inline;
-  flex-wrap: wrap;
-}
- .logo {
-  width: 113px;
-  height: 85px;
+
+ .kfc-header img, .chickrep-header img  {
+  width: 50px; 
+  height: 50px;
   left: 69px;
   top: 297px;
 } 
-.caps p {
+
+.kfc-header div, .chickrep-header div  {
   display: inline;
-  font-weight:500;
+  font-weight:medium;
   flex-wrap: wrap;
   font-size:20px;
   height: 30px;
   width: 39px;
   left: 171px;
   top: 325px;
-  border-radius: nullpx;
   margin-bottom: 60px;
 }
-.caps span {
-  display:inline;
-  flex-wrap: wrap;
-  float: right;
-} 
- #interest, #price {
-  display: flex;
-  flex-wrap: wrap;
-}
+
+
+
 #interest {
- font-family: Poppins;
- font-size: 16px;
  font-weight: 600;
  line-height: 24px;
- letter-spacing: 0;
- text-align: left;
  color: #4E4D4D;
- flex-wrap: wrap;
-}
+ }
+ 
 #price {
   color: #5EA304;
-  font-family: Poppins;
-  font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0;
-   float: right;
-  flex-wrap: wrap;
+  float: right;
 }
-.food-items ul {
-  display:inline;
-  flex-wrap: wrap;
-  padding:0;
-  margin:0;
-}
-.food-items .signup, .chicken-republic .signup {
+
+.food-items .signup {
   height: 40px;
   width: 100px;
   left: 420px;
   top: 604px;
   border-radius: 5px;
   border: 1px solid #AD4C4C;
-  
+  padding: 10px;
+  border-width: fit-content;
 } 
- 
+
+.food-items span {
+  font-weight: 600px;
+  color:#AD4C4C;
+}
 #chicken-republic {
   margin-top: 40px;
 }
+
 .chickrep-header, .kfc-header {
   margin-bottom: 30px;
+  
 }
+@media screen and (max-width:650px)  {
+   .foodbag-head {
+      font-size: 18px;
+      }
+   .foodbag-head li {
+        font-size: 18px;
+        letter-spacing: 0;
+       }
+    #interest {
+      font-size: 14px;
+    }
+    #allvendors {
+      font-size: 25px;
+    }
+     .logo img{
+      width: 40px;
+      height: 40px;
+    }
+	li {
+      display:inline-grid;
+      padding: 0;
+    }
+
+
+}
+
+@media  screen and (max-width: 430px) {
+
+   .foodbag-head {
+      font-size: 16px;
+      }
+   .foodbag-head li {
+        font-size: 14px;
+        letter-spacing: 0;
+       }
+   #interest {
+      font-size: 12px;
+    }
+    #allvendors {
+      font-size: 20px;
+    }
+	li {
+      display:inline-grid;
+       padding:0;
+    }
+   
+} 
+
