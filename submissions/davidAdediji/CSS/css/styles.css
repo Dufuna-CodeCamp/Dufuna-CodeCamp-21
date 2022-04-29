@@ -114,6 +114,9 @@ header nav ul li{
 	color:#fff;
 }
 
+.btn a:hover{
+		color: white;
+}
 .bg-color{
 	color: #a5a5a5;
 }
@@ -140,6 +143,13 @@ header nav ul li{
 
 .text-primary{
 	color:#ad4c4c;
+}
+
+.disable{
+  background-color: #A5A5A5;
+  color:white;
+  border: none;
+  border-radius: 5px;
 }
 
 .wrapper{
@@ -428,7 +438,7 @@ header nav ul li{
 @media screen and (min-width:1201px){
 	header{
 		margin-top: 23px;
-		margin-bottom: 92px;
+		margin-bottom: 0px;
 	}
 
 	header nav ul li{
