@@ -1,17 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import BreadCrumb from './components/BreadCrumb';
+import Verification from './pages/Verification';
 import Cart from './components/Cart';
-
-import Checkout from './components/Checkout';
+import Success from './pages/Success';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <BreadCrumb />
-      <Cart cartTitle="Cart" />
-      <Checkout />
+
+      <Routes>
+        <Route path="/" element={ <Cart cartTitle="Cart" /> } />
+        <Route path="/verification" element={ <Verification /> } />
+        <Route path='/success' element={ <Success /> } />
+      </Routes>
     </div>
   );
 }

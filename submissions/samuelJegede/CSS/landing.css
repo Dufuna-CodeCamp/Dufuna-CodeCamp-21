@@ -1,133 +1,208 @@
 body {
     max-width: 1240;
     font-family: 'Lato', sans-serif;
-    margin: 0;
-    font-size: 16px;
+    margin: 15px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
 *{
     box-sizing: border-box;
 }
-
-nav a[href='#'] {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-nav{
-    padding: 30px;
-    background-color: grey;
+.nav {
+    display: flex;
+	justify-content: space-between;
     position: relative;
 }
-
-@media screen and (min-width: 600px) {
-    nav li{
-        float: right;
-        padding: 8px;
-        display: inline;
-    }
-} 
-
-.sbj-foods{
-    margin-top: 60px;
+.nav h2{
+    padding: 10px 0;
 }
-.sbj-foods h2{
-    text-align: center;
-    font-size: 30px;
+.nav ul{
+	display: flex;
+	align-content: center;
+	list-style-type: none;
+	padding: 18px 0 18px 15px;
+    font-size: 12px;
+}
+li a {
+	color: black;
+	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	border: 1px solid none;
+}
+.red{
+    color: #a50f0f;
+}
+.nav a:hover {
+	border: 1px solid red;
+	border-radius: 5px;
+}
+.active{
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    color: #ad4c4c;
+    padding: 8px 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.food-bag{
+    margin-top: 30px;
+}
+.food-bag1 h2{
+    text-align: left;
+    font-size: 15px;
     font-weight: 600;
-    color: darkolivegreen;
+    color: black;
     line-height: 1.5;
 }
-.sbj-foods p{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: darkolivegreen;
+.covered{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
     line-height: 0.5;
+}
+.where {
+    display: inline-block;
+	font-weight: bold;
+	padding-bottom: 15px;
+    color: #000;
+}
+#location1 {
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0;
+}
+.interest {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
 }
 .sbj-intro{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.available-foods h3{
-    font-weight: 500;
-    font-style: italic;
-    font-size: 25px;
+.available-foods{
+    width: 100%;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    color: #a5a5a5;
+    margin-bottom: 10px;
+    padding: 24px 0 24px 20px;   
+}
+.available-foods h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.available-foods p{
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+.serve {
+    font-size: 24px;
     text-align: center;
-    color: darkolivegreen;
-}
-
-.available-foods {
-    border: 1px solid #add8eb;
-    background-color: #fff;
-    box-shadow: 0 4px 8px o rgba (0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 0 0 5px;
-}
-
-.services {
-    margin-top: 60px;
-    background-color: aliceblue;
-}
-.services h2{
-    text-align: center;
-    font-size: 30px;
     font-weight: 600;
-    line-height: 1.5;
-    color: darkolivegreen;
 }
-.service-available {
+.service-available{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .service-item h3 {
-    font-weight: 500;
-    font-style: italic;
-    font-size: 25px;
     text-align: center;
-    color: darkolivegreen;
+    font-size: 16px;
 }
 .service-item p{
-    margin-top: -25px;
-    color: darkolivegreen;
     text-align: center;
+    font-size: 12px;
 }
-
-.service-item {
-    border: 1px solid #add8eb;
-    background-color: #fff;
-    margin: 0 0 5px;
-    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2);
-    border-radius: 5px;
+.illustration {
+    width: 200px;
+    height: 200px;
 }
-
-footer{
-    background-color: grey;
-    padding: 20px 30px;
+.contactus {
+	text-align: center;
 }
-
-nav a,
-footer a{
-    color: black;
+.contact {
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+    font-size: 20px;
+    padding-top: -20px;
 }
-a:hover{
-    color: aquamarine;
+ul {
+	list-style-type: none;
+	padding: 0;
 }
-a:visited{
-    color: cornflowerblue;
+.logo{
+    display: inline;
+    padding: 15px;
 }
-
-footer li{
-    float: right;
-    padding: 5px;
+.end {
+    width: 100%;
+    text-align: center;
+    align-items: center;
 }
-
-nav ul,
-footer ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+hr {
+    border: 1px solid #f2f2f2;
+}
+@media screen and (min-width:600px) {
+    .food-bag1{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        color: black;
+        line-height: 0.5;
+        padding-top: 20px;
+    }
+    .covered{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        color: black;
+        line-height: 0.5;
+    }
+    .sbj-intro{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .available-foods{
+        width: 25%;
+        box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+        color: #a5a5a5;
+        margin-bottom: 10px;
+        padding: 24px 0 24px 20px;   
+    }
+    .serve {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .service-item h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .service-item p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .illustration {
+        width: 300px;
+        height: 200px;
+    }
+    .terms{
+        float: left;
+    }
+    .copy{
+        float: right;
+    }
+    .end{
+        padding-bottom: 20px;
+        margin: 0 0 20px;
+    }    
 }

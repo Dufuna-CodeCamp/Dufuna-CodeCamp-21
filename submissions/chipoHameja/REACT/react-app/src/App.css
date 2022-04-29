@@ -64,7 +64,6 @@ div.site-name div.first-part {
 }
 
 .bread-crumb {
-  margin-left: 95px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -193,7 +192,7 @@ hr {
 }
 
 #total {
-  /*margin-left: 135px;*/
+  margin-left: 35px;
   /*margin-right: 100px;*/
   margin-bottom: 60px;
 }
@@ -214,13 +213,13 @@ hr {
   margin: 0;
 }
 
-#checkout {
+#checkout, #pay {
   display: flex;
   justify-items: center;
   width: 100%;
 }
 
-#checkout button {
+#checkout button, #pay button {
   background-color: #AD4C4C;
   border: 0;
   border-radius: 5px;
@@ -230,15 +229,217 @@ hr {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  margin-left: 315px;
+  margin-left: 190px;
   margin-bottom: 154px;
+}
+
+#pay {
+  margin-top: 30px;
+  margin-bottom: 82px;
 }
 
 #item-count, #remove-all {
   display: none;
 }
 
+/* VERIFICATION PAGE STYLE */
+
+form {
+  /*width: 100%;*/
+  margin: 0 100px;
+}
+
+#verification-header-text {
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#cap {
+  color: #AD4C4C;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+#da {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#da-text, select {
+  font-weight: 400;
+  font-size: 16px;
+  color: #696969;
+  margin-bottom: 30px;
+}
+
+select {
+  font-weight: 400;
+  font-size: 16px;
+  color: #696969;
+  margin-bottom: 0;
+}
+
+input, select {
+  padding-left: 30.5px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 20px;
+}
+
+#phone-number {
+  margin-bottom: 20px;
+}
+
+#verification-hr {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.col {
+  /*width: 608.54px;*/
+  display: inline-block;
+  width: 48.46%;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  float: right;
+}
+
+#radio {
+  position: relative;
+  display: inline;
+  float: right;
+  margin-right: 2px;
+  bottom: 70px;
+}
+
+/*  SUCCESS PAGE STYLES START */
+
+#success-img {
+  display: block;
+  margin: 320px auto 41.89px;
+}
+
+#order-successful {
+  display: block;
+  margin: 0 auto 14px;
+  font-weight: 500;
+  font-size: 25px;
+  color: #5EA304;
+  text-align: center;
+}
+
+#success-text {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 517px;
+  color: #696969;
+}
+
+/* SUCCESS PAGE STYLES END */
+
 @media only screen and (max-width: 360px) {
+
+  /* SUCCESS PAGE STYLES START RESPONSIVE */
+
+  #success-img {
+    margin-top: 154px;
+    margin-bottom: 7.26px;
+  }
+
+  #order-successful {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  #success-text {
+    font-size: 15px;
+    margin-bottom: 200px;
+  }
+
+  /* SUCCESS PAGE STYLES END RESPONSIVE */
+
+  /* VERIFICATION RESPONSIVE STYLE START */
+  form {
+    margin: 0 20px;
+  }
+
+  #verification-header-text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  #cap {
+    margin-bottom: 42px;
+  }
+
+  #da, .form-label {
+    font-size: 14px;
+  }
+
+  #da-text {
+    font-size: 10px;
+  }
+
+  .form-control {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  input, select {
+    padding-left: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  #verification-hr {
+    margin: 30px 0;
+  }
+
+  .col {
+    width: 46.5%;
+  }
+
+  #pay {
+    margin: 0;
+  }
+
+  #pay button {
+    width: 100%;
+    margin: 49px 0 33px;
+  }
+
+  /* VERIFICATION RESPONSIVE STYLE END */
+
   nav {
     margin-bottom: 53px;
     margin-top: 23px;
@@ -260,7 +461,6 @@ hr {
   }
 
   .bread-crumb {
-    margin-left: 20px;
     margin-bottom: 20px;
   }
 
