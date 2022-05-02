@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 
 const Button = ({imageId,iconName,imageName,addButton}) => {
 
