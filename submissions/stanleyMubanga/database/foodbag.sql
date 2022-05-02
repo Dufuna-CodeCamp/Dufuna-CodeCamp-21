@@ -14,6 +14,15 @@ type VARCHAR(250) NOT NULL,
 PRIMARY KEY (id)
 );
 
+-- HERE I INSERT THE DATA IN THE TYPE COLUMN FIELDS
+
+INSERT INTO food (type)
+VALUES
+('fast food'),
+('Vegetables & Friuts'),
+('Drinks'),
+('Resturants');
+
 -- HERE I CREATE THE ADMINS TABLE
 
 CREATE TABLE admins (
@@ -44,13 +53,22 @@ FOREIGN KEY (admin_id) REFERENCES admins (id)
 CREATE TABLE customers (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
+<<<<<<< HEAD
 phone_number VARCHAR(50) NOT NULL,
 address VARCHAR(250) NOT NULL,
+=======
+phone_number VARCHAR(13) NOT NULL,
+address VARCHAR(100) NOT NULL,
+>>>>>>> 6cd61505 (created food bag database)
 payment_method ENUM('card','Mobile Money','Cash'),
 PRIMARY kEY (id)
 );
 
+<<<<<<< HEAD
 -- HERE I CREATE THE ORDERS TABLE LINKED TO CUSTOMERS AND VENDORS
+=======
+-- HERE I CREATE THE ORDERS TABLE
+>>>>>>> 6cd61505 (created food bag database)
 
 CREATE TABLE orders (
 id INT AUTO_INCREMENT,
