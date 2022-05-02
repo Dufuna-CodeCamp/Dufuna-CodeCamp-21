@@ -5,7 +5,7 @@ import Verification from "../components/Verification"
 const thisComponent = shallow(<Verification />);
 
 it("renders without crashing", () => {
-    thisComponent 
+    (thisComponent) 
 });
 
 it("test case: check service-title1", async () => {
