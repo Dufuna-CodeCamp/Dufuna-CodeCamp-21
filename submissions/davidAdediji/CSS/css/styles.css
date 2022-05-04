@@ -210,7 +210,7 @@ header nav ul li{
 	padding-left:20px;
 	padding-top:20px;
 	padding-bottom: 24px;
-	box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
 }
 
 .location select{
