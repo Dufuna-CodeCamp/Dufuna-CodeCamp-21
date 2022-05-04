@@ -13,6 +13,7 @@ btns.forEach(btn => {
   btn.style.border = "none";
   cartNotify.style.display = "block";
   notifyCount ++;
+  cartNotify.innerText = notifyCount;
 }else if (btn.innerText === "Remove"){
   btn.innerText = "Add to Cart";
   btn.style.backgroundColor = "#fff";
@@ -20,11 +21,11 @@ btns.forEach(btn => {
   btn.style.border="1px solid #ad4c4c";
   cartNotify.style.display = "block";
   notifyCount --;
+  cartNotify.innerText = notifyCount;
 
 }
 if (notifyCount <= 0){
     cartNotify.style.display = "none";
 }
 })
-  
 });
