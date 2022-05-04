@@ -72,9 +72,9 @@ header nav ul li {
 }
 .nav-item .notify {
   position: absolute;
-  top: -7px;
+  top: -3px;
   right: -7px;
-  padding: 2px;
+  padding: 5px;
   border-radius: 50%;
   background: red;
   color: white;
