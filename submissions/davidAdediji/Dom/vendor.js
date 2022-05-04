@@ -8,7 +8,7 @@ btns.forEach(btn => {
   btn.addEventListener('click', ()=>{
   if (btn.innerText === "Add to Cart"){
   btn.innerHTML = '<span class="remove"><img src="./img/remove.svg" alt="">Remove</span>'
-  btn.style.backgroundColor = "grey"
+  btn.style.backgroundColor = "#A5A5A5";
   btn.style.color = "#fff";
   btn.style.border = "none";
   cartNotify.style.display = "block";
