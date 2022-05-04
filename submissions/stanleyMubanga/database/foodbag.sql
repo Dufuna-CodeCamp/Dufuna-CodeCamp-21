@@ -14,24 +14,15 @@ type VARCHAR(250) NOT NULL,
 PRIMARY KEY (id)
 );
 
--- HERE I INSERT THE DATA IN THE TYPE COLUMN FIELDS
-
-INSERT INTO food (type)
-VALUES
-('fast food'),
-('Vegetables & Friuts'),
-('Drinks'),
-('Resturants');
-
 -- HERE I CREATE THE ADMINS TABLE
 
 CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
 type ENUM ('0','1') NOT NULL,
-email_address VARCHAR(100) NOT NULL,
-phone_number VARCHAR(13) NOT NULL,
-password VARCHAR(100) NOT NULL,
+email_address VARCHAR(250) NOT NULL,
+phone_number VARCHAR(50) NOT NULL,
+password VARCHAR(250) NOT NULL,
 PRIMARY KEY (id)
 );
 
@@ -53,8 +44,8 @@ FOREIGN KEY (admin_id) REFERENCES admins (id)
 CREATE TABLE customers (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
-phone_number VARCHAR(13) NOT NULL,
-address VARCHAR(100) NOT NULL,
+phone_number VARCHAR(50) NOT NULL,
+address VARCHAR(250) NOT NULL,
 payment_method ENUM('card','Mobile Money','Cash'),
 PRIMARY kEY (id)
 );
@@ -62,9 +53,9 @@ PRIMARY kEY (id)
 -- HERE I CREATE THE ORDERS TABLE LINKED TO CUSTOMERS AND VENDORS
 
 CREATE TABLE orders (
-id INT NOT NULL AUTO_INCREMENT,
-vendor_id INT NOT NULL,
-customer_id INT NOT NULL,
+id INT AUTO_INCREMENT,
+vendor_id INT,
+customer_id INT,
 PRIMARY KEY (id),
 FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
 FOREIGN KEY (customer_id) REFERENCES customers (id)

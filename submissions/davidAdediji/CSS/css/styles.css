@@ -114,6 +114,9 @@ header nav ul li{
 	color:#fff;
 }
 
+.btn a:hover{
+		color: white;
+}
 .bg-color{
 	color: #a5a5a5;
 }
@@ -140,6 +143,13 @@ header nav ul li{
 
 .text-primary{
 	color:#ad4c4c;
+}
+
+.disable{
+  background-color: #A5A5A5;
+  color:white;
+  border: none;
+  border-radius: 5px;
 }
 
 .wrapper{
@@ -171,7 +181,17 @@ header nav ul li{
 	padding-left:20px;
 	padding-top:20px;
 	padding-bottom: 24px;
-	box-shadow: 0 0 3 1.5 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.location select{
+	background-color: #fff;
+	outline: none;
+	cursor: pointer;
+}
+
+.location select option{
+	background-color: #fff;
 }
 
 #ice-cream-flavors{
@@ -418,7 +438,7 @@ header nav ul li{
 @media screen and (min-width:1201px){
 	header{
 		margin-top: 23px;
-		margin-bottom: 92px;
+		margin-bottom: 0;
 	}
 
 	header nav ul li{

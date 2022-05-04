@@ -1,8 +1,15 @@
 {
   "stats": {
+<<<<<<< HEAD
     "tests": 7,
     "passes": 6,
     "failures": 1,
     "owner": "stanleyMubanga"
+=======
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "dolapoIshiaq"
+>>>>>>> ad3f26863d29f997db6de293285c3e03bff4960d
   }
 }
