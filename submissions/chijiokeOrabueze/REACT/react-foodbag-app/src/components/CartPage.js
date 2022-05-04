@@ -97,9 +97,9 @@ class CartPage extends Component{
                             <div className="flex-column">
                                 <h3>{this.state.items[0].name}</h3>
                                 <div className="flex-center">
-                                    <button onClick={this.onIncreaseCount(0)} className='btn btn-3'>+</button>
+                                    <button onClick={this.onIncreaseCount(0)} className='btn-3'>+</button>
                                     <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
-                                    <button onClick={this.onDeductCount(0)}  className='btn btn-4'>-</button>
+                                    <button onClick={this.onDeductCount(0)}  className='btn-4'>-</button>
                                 </div>
                             </div>
                         </div>
@@ -114,9 +114,9 @@ class CartPage extends Component{
                             <div className="flex-column">
                                 <h3>{this.state.items[1].name}</h3>
                                 <div className="flex-center">
-                                    <button onClick={this.onIncreaseCount(1)} className='btn btn-3'>+</button>
+                                    <button onClick={this.onIncreaseCount(1)} className='btn-3'>+</button>
                                     <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
-                                    <button onClick={this.onDeductCount(1)}  className='btn btn-4'>-</button>
+                                    <button onClick={this.onDeductCount(1)}  className='btn-4'>-</button>
                                 </div>
                             </div>
                         </div>
@@ -131,9 +131,9 @@ class CartPage extends Component{
                             <div className="flex-column">
                                 <h3>{this.state.items[2].name}</h3>
                                 <div className="flex-center">
-                                    <button onClick={this.onIncreaseCount(2)} className='btn btn-3'>+</button>
+                                    <button onClick={this.onIncreaseCount(2)} className='btn-3'>+</button>
                                     <span className = "elem-holder" style={{margin: "0 25px", color:"brown"}}>1</span>
-                                    <button onClick={this.onDeductCount(2)}  className='btn btn-4'>-</button>
+                                    <button onClick={this.onDeductCount(2)}  className='btn-4'>-</button>
                                 </div>
                             </div>
                         </div>

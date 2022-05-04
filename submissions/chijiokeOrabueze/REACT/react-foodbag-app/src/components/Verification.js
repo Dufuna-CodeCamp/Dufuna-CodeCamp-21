@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import "../css/Verification.css";
 
 
@@ -132,12 +133,13 @@ class Verification extends Component{
                     </div>
 
                     <div className='flex-center' style={{width:"100%", justifyContent:"center"}}>
-                        <button
-                            className="btn"
-                            type= "submit"
-                            style = {{backgroundColor:"brown", color:"white"}}
-                            >Pay</button>
-
+                        <Link to = '/ordersucceful'>
+                            <button
+                                className="btn"
+                                type= "submit"
+                                style = {{backgroundColor:"brown", color:"white"}}
+                                >Pay</button>
+                        </Link>
                     </div>
                 </form>
             </div>
