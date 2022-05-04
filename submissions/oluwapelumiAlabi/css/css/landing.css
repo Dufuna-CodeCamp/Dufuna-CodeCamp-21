@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size:38px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(212, 90, 90);
+    margin-top: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    background-color: rgb(156, 110, 113);
+    margin-top: 25px;
+    text-decoration: none;
+    
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: rgb(36, 31, 31);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 ;
+    color: crimson;
+    font-size: 30px;
+}
+
+sub {
+    font-family: cursive;
+}
+
+p {
+    text-align: center;
+    margin: 10px 70px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.menu {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+h3 {
+    color: red;
+    margin: 10px 110px 0 150px;
+}
+
+.contact {
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+a{
+margin: 15px 200px;
+text-align: center;
+padding-bottom: 50px;
+}
