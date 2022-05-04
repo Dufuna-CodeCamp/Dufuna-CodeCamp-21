@@ -47,6 +47,36 @@ header nav ul li{
 	margin-left: 20px;
 }
 
+.remove{
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+  padding-top:5px;
+  padding-bottom: 5px;
+  }
+
+  .remove img{
+  	width:20px;
+  } 
+
+.nav-item{
+	position: relative;
+	display: inline-block;
+}
+
+.notify{
+	display: none;
+}
+.nav-item .notify {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  padding: 5px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
 .input{
 	width: 100%;
 	outline: none;
@@ -107,16 +137,15 @@ header nav ul li{
 .btn{
 	padding: 8px 18px;
 	border-radius: 5px;
+	color: #ad4c4c;
 	border: 1px solid #ad4c4c;
+	background-color: #fff;
 }
 .btn:hover{
 	background-color: #ad4c4c;
 	color:#fff;
 }
 
-.btn a:hover{
-		color: white;
-}
 .bg-color{
 	color: #a5a5a5;
 }
