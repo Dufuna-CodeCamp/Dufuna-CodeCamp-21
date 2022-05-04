@@ -15,14 +15,6 @@ CREATE TABLE food_bag (
     PRIMARY KEY (id)
 );
 
--- Addition of values to Food Bag
-
-INSERT INTO food_bag (type)
-	VALUE	('Fast Food'),
-			('Vegetables & Fruits'),
-            ('Drinks & Crocktails'),
-            ('Resturants')
-;
 
 -- (2) Table Vendor Food
 
@@ -72,5 +64,6 @@ CREATE TABLE orders (
     admin_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
+    FOREIGN KEY (customers_id) REFERENCES customers_account (id),
     FOREIGN KEY (admin_id) REFERENCES admins (id)
 );
