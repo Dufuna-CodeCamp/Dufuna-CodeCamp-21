@@ -7,13 +7,41 @@
     <title>Contact form page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../HTML/homePage.html">Home</a></li>
-        </ul>
-      </nav>
-    </header>
-   
+    
+    <main>
+      <form action="#">
+        <fieldset>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter Subject"
+          />
+          <label for="message">Message</label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Enter Message"
+          />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
