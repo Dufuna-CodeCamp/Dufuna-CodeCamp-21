@@ -6,7 +6,7 @@ const Lowernav = (props) => {
             <nav>
             <ul className="lowernav">
                 <li><a href="/">{props.cart}</a></li>
-                <li><a className="home" href="#"> {props.home}</a></li>
+                <li><a className="home" href="/"> {props.home}</a></li>
             </ul>
 
             </nav>
