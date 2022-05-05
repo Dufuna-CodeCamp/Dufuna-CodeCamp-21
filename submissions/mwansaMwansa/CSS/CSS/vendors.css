@@ -54,6 +54,12 @@ a {
     color: #000000;
 }
 
+#cart-dot {
+    position: relative;
+    right: 12px;
+    opacity: 0;
+}
+
 .homeVendors {
     display: inline-block;
     width: 200px;
@@ -85,13 +91,13 @@ b {
     column-gap: 20px;
 }
 
-.kfc {
+.vendors {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     margin-top: -10px;
     padding-left: 30px;
-    height: 200px;
+    height: 250px;
     background: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
@@ -130,7 +136,7 @@ b {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    border: 2px solid #AD4C4C;
+    /*border: 2px solid #AD4C4C;*/
     color: #AD4C4C;
 }
 
@@ -144,11 +150,54 @@ b {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-.addCart {
-    display: block;
-    text-align: left;
-    padding: 12px;
+.button-container {
+    display: flex !important;
+    margin-top: 4px;
+    width: 138px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
     color: #AD4C4C;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+.button-container p {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+
+.button-container div {
+    margin: 2px;
+}
+
+.added {
+    background-color: #A5A5A5 !important;
+    border: 3px solid #A5A5A5 !important;
+    color: #E6E6E6 !important;
+}
+
+div.vendor-item-card .button-container:hover {
+    cursor: pointer;
+}
+
+.remove {
+    width: 29px;
+    height: 29px;
+    margin: 0 !important;
+    display: none;
+}
+
+.addCart {
+    margin: 0;
 }
 
 hr {
