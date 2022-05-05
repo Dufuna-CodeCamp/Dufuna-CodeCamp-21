@@ -1,4 +1,4 @@
-USE travel;
+USE transportation_company_db;
 
 -- What is the total number of passengers who survived?
 SELECT COUNT(survived) FROM accident_cases WHERE survived=1;
