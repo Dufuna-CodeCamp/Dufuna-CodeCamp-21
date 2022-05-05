@@ -148,6 +148,7 @@ header nav ul li {
 .btn:hover {
   background-color: #ad4c4c;
   color: #fff;
+  cursor: pointer;
 }
 
 .bg-color {
