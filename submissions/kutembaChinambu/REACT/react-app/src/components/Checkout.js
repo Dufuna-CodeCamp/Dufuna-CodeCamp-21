@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 const Checkout = (props) => {
-   
-  
+//    let history = useHistory()
+
 
     return (
         <div id="container">
-            <button id="button" >Checkout</button>
+            <Link to='/' id="button" >{props.Checkout}</Link>
         </div>
     )
 }
