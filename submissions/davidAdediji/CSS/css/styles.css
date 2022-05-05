@@ -48,15 +48,17 @@ header nav ul li {
 }
 
 .remove {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
   padding: 2px 5px;
   border-radius: 5px;
 }
 
 .remove img{
 	width:15px;
+  margin-right: 8px;
+}
+.remove span{
+  vertical-align: top;
 }
 
 .nav-item {
