@@ -17,7 +17,7 @@ CREATE TABLE passengers_details (
     passengers_id INT NOT NULL,
     sex VARCHAR(10) NOT NULL,
     age VARCHAR(3),
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
