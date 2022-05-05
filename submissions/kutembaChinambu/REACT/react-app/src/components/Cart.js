@@ -154,7 +154,8 @@ class Cart extends React.Component {
                 totalCost = {this.addComma.format(this.state.total)}
                 />
 
-                <Checkout />
+                <Checkout
+                Checkout = "Checkout" />
                 
             </div>
 

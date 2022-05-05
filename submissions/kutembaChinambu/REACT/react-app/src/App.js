@@ -1,11 +1,15 @@
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Cart from './components/Cart';
 
 function App() {
   return (
-    <div>
-      <Cart />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" exact element={<Cart />}></Route>
+        
+      </Routes>
+    </>
   );
 }
 

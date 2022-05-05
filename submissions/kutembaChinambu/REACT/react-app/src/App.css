@@ -28,7 +28,7 @@ nav li {
   display: inline;
   padding: 8px;
   float: right;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .signup {
@@ -46,11 +46,17 @@ a:visited {
 .lowernav {
   float: left;
   padding-top: 60px;
+  font-size: 10px;
+}
+
+.pname1 {
+  float: absolute;
+  padding: 100px 8px;
 }
 
 .pname {
   float: absolute;
-  padding: 100px 40px;
+  padding: 100px 50px;
 }
 
 .wrapper22 li {
@@ -66,7 +72,7 @@ a:visited {
 }
 
 #foodName {
-  padding: 10px 5px 15px 5px;
+  padding: 10px 5px 15px;
 }
 
 #count {
@@ -125,6 +131,72 @@ img {
 
 #mobile li {
   display: none;
+}
+
+.tag li {
+  list-style-type: none;
+  float: absolute;
+  padding-left: 5px;
+  padding-top: 2px;
+
+}
+
+#confirm {
+  color: brown;
+}
+
+#address {
+  color: gray;
+}
+
+#breadcrumb {
+  float: right;
+  padding-right: 50px;
+}
+
+#form {
+  padding: 5px 60px 20px 50px;
+}
+.input-elements {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: gray;
+}
+
+select[placeholder] {background-image:url("images/keyboard_arrow_down.svg");
+  background-size: 20px 25px;
+  background-position:right;
+  background-repeat:no-repeat;
+  background-color: #fff;
+  }
+
+.last {
+  display: table;
+
+}
+
+.exp {
+  display: table-cell;
+  width: 50%;
+  padding: 12px 50px 20px 0;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.bottom-input {
+  padding: 12px 20px;
+  width: 633px;
+}
+
+#success {
+  text-align: center ;
+  padding-top: 15%;
+}
+
+#green {
+  color: green;
 }
 
 @media only screen and (max-width: 600px) {
@@ -233,6 +305,11 @@ img {
   #remove {
     float: right;
     text-decoration-line: underline;
+  }
+
+  .bottom-input {
+    padding: 12px 10px;
+    width: 188px;
   }
 
 }
