@@ -1,7 +1,10 @@
 
  nav a[href*='/'] {
   font-weight: bold;
-  color: black
+  color: gray
+}
+.black {
+  color: black;
 }
 
 nav span {
