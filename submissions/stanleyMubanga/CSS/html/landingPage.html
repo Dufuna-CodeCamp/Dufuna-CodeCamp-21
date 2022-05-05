@@ -6,180 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Landing page</title>
 </head>
 
 <body>
+
     <div class="wrapper">
-        <header class="top-header">
-            <div class="logo">
-                <h2>
-                    <p class="logo-A">Food</p>
-                    <p class="logo-B">Bag</p>
-                </h2>
+        <header class="flexbox">
+            <div class="logo flexbox">
+                <span class="black">Food</span>
+                <span class="red">Bag</span>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="#" class="page-links A">Cart</a>
-                    </li>
-                    <li>
-                        <a href="#" class="page-links B">Login</a>
-                    </li>
-                    <li>
-                        <a href="#" class="page-links C">Sign up</a>
-                    </li>
+            <nav class="topNav">
+                <ul class="flexbox">
+                    <li class="topNav-link flexbox"><a href="#" class="nav-link page-links A">Cart</a></li>
+                    <li class="topNav-link flexbox"><a href="#" class="nav-link page-links B">Login</a></li>
+                    <li class="topNav-link flexbox"><a href="#" class="nav-link border-btn C">Sign up</a></li>
                 </ul>
             </nav>
         </header>
-
-        <!-- here is the code for the section -->
-
-        <section class="hero">
-            <div class="hero-content">
-                <h1>FoodBag</h1>
-                <p>Anything food, we we have you covered.</p>
+        <section class="hero flexbox">
+            <span class="hero-content flexbox-wrap">
+                <h1 class="hero-header flexbox">FoodBag</h1>
+                <p class="slogan">Anything food, we got you covered.</p>
+            </span>
+        </section>
+        <section class="location flexbox-wrap">
+            <h2 class="location-header">Where are you?</h2>
+            <div class="location-select flexbox">
+                <select id="location">
+                    <option value="default" selected>Select a location</option>
+                    <option value="chipata">Chipata</option>
+                    <option value="chongwe">Chongwe</option>
+                    <option value="kasama">Kasama</option>
+                    <option value="luapula">Luapula</option>
+                    <option value="lusaka">Lusaka</option>
+                    <option value="mansa">Mansa</option>
+                    <option value="mongu">Mongu</option>
+                    <option value="ndola">Ndola</option>
+                    <option value="solwezi">Solwezi</option>
+                </select>
             </div>
         </section>
-
-        <!-- We have the delivery location done using a data list -->
-
-        <section class="location">
-            <form action="#" method="POST">
-                <section>
-                    <label for="location"><h2>Where are you?</h2></label>
-                    <input list="location-list" placeholder="Enter your delivery address" id="location">
-                    <datalist id="location-list">
-                        <option value="Lusaka"></option>
-                        <option value="Chipata"></option>
-                        <option value="Mazabuka"></option>
-                        <option value="Solwezi"></option>
-                        <option value="Mansa"></option>
-                        <option value="Mongu"></option>
-                        <option value="Kitwe"></option>
-                        <option value="Chililawombwe"></option>
-                        <option value="Ndola"></option>
-                        <option value="Chongwe"></option>
-                        <option value="Meanwood"></option>
-                    </datalist>
-                </section>
-
-            </form>
-        </section>
-
-        <!-- Here we have the interest section -->
-
-        <section class="interest">
-
+        <section class="interest flexbox-wrap  responsive-container">
             <h2 class="interest-header">Pick an interest</h2>
-
-            <ul>
-                <li class="interest-card">
+            <ul class="interest-list flexbox-wrap">
+                <li class="interest-card flexbox-wrap">
                     <a href="#">
-                        <img src="../assets/fast-food.svg" alt="">
-                        <h3>Fast food</h3>
-                        <p>All Sorrows are less with bread.</p>
+                        <img id="fastFood" src="../assets/fast-food_disabled.svg" class="interest-image" alt="">
+                        <h3 class="interests-header">Fast food</h3>
+                        <p class="interest-slogan">All sorrows are less with bread.</p>
                     </a>
                 </li>
-                <li class="interest-card">
+                <li class="interest-card flexbox-wrap">
                     <a href="#">
-                        <img src="../assets/Vegetables & Drinks.svg" alt="">
-                        <h3>Vegetables & Fruits</h3>
-                        <p>May not want it but good for you.</p>
+                        <img id="vegetables" src="../assets/Vegetables & Drinks_disabled.svg" class="interest-image" alt="">
+                        <h3 class="interests-header">Vegetables & Fruits</h3>
+                        <p class="interest-slogan">May not want it but good for you</p>
                     </a>
                 </li>
-                <li class="interest-card">
+                <li class="interest-card flexbox-wrap">
                     <a href="#">
-                        <img src="../assets/Drinks & Cocktails_disabled.svg" alt="">
-                        <h3 style="color: #696969;">Drinks and Cocktails</h3>
-                        <p style="color: #696969;">I feel sad for those who don't drink.</p>
+                        <img id="drinks" src="../assets/Drinks & Cocktails_disabled.svg" class="interest-image" alt="">
+                        <h3 class="interests-header">Drinks and Cocktails</h3>
+                        <p class="interest-slogan">I feel sad for those who don't drink</p>
                     </a>
                 </li>
-                <li class="interest-card">
+                <li class="interest-card flexbox-wrap">
                     <a href="#">
-                        <img src="../assets/resturant.svg" alt="">
-                        <h3>Resturants</h3>
-                        <p>All Sorrows are less with bread.</p>
+                        <img id="resturant" src="../assets/resturant_disabled.svg" class="interest-image" alt="">
+                        <h3 class="interests-header">Restaurants</h3>
+                        <p class="interest-slogan">all sorrows are less with bread</p>
                     </a>
                 </li>
             </ul>
         </section>
-
-        <section class="space">
-            <!-- this is a space that is in between the interests and the description  -->
-        </section>
-
-        <!-- here is the description section of how we serve the customer/client -->
-
-        <section class="serve-description">
-
-            <h2 class="description-header">How we serve you</h2>
-
-            <ul>
-                <li class="serve-description-card">
+        <section class="serve flexbox-wrapx responsive-container2">
+            <div class="serve-top flexbox">
+                <h2>How we serve you</h2>
+            </div>
+            <ul class="serve-images flexbox-wrap">
+                <li class="serve-card">
                     <a href="#">
                         <img src="../assets/Illustration_1.svg" alt="">
-                        <h2>Tell us where you are</h2>
-                        <p>Select the location you want us to deliver</p>
+                        <h3 class="serve-card-header">Tell us where you are</h3>
+                        <p class="serve-card-slogan">Select the location you want us to deliver</p>
                     </a>
                 </li>
-                <li class="serve-description-card">
+                <li class="serve-card">
                     <a href="#">
                         <img src="../assets/illustration_2.svg" alt="">
-                        <h2>Tell us what you want</h2>
-                        <p>Browse the type of food you that interests you</p>
+                        <h3 class="serve-card-header">Tellus what you want</h3>
+                        <p class="serve-card-slogan">Browse the type of food you that interests you</p>
                     </a>
                 </li>
-                <li class="serve-description-card">
+                <li class="serve-card">
                     <a href="#">
                         <img src="../assets/illustration_3.svg" alt="">
-                        <h2>We'll come running</h2>
-                        <p>Your order will be delivered to you in no time</p>
+                        <h3 class="serve-card-header">We'll come running</h3>
+                        <p class="serve-card-slogan">your order will be delivered to you in no time</p>
                     </a>
                 </li>
             </ul>
         </section>
-        <div class="space-2">
-
-        </div>
-
-        <footer class="footer">
-
-            <!-- contact links fall here -->
-
-            <section class="contact-us">
-                <h3>Contact us</h3>
-                <ul class="contact-links">
+        <section class="contacts flexbox-wrap">
+            <h1 class="contacts-header flexbox">contacts</h1>
+            <div class="contact-links flexbox">
+                <ul class="flexbox">
                     <li class="contact-link">
-                        <a href="#" id="twitter">
-                            <img src="../assets/twitter 2.svg" alt="">
-                        </a>
+                        <a href="#"><img src="../assets/twitter 2.svg" alt=""></a>
                     </li>
                     <li class="contact-link">
-                        <a href="#" id="youtube">
-                            <img src="../assets/youtube 1.svg" alt="">
-                        </a>
+                        <a href="#"><img src="../assets/youtube 1.svg" alt=""></a>
                     </li>
                     <li class="contact-link">
-                        <a href="#" id="facebook">
-                            <img src="../assets/facebook-f 1.svg" alt="">
-                        </a>
+                        <a href="#"><img src="../assets/facebook-f 1.svg" alt=""></a>
                     </li>
                 </ul>
-            </section>
-
-            <div class="tsandCs">
-                <a href="#" class="terms-conditions">
-                        Terms & Conditions .
-                        Privacy Policy
-                </div>
-                <div class="copyright">
-                    <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
-                </div>
-            </section>
-        <footer>
-
+            </div>
+        </section>
+        <footer class="flexbox">
+            <span class="policies">Terms & Conditions,Privacy Policy</span>
+            <span class="copyright"> &copy; Copyright 2021 FoodBag is a registered trademark</span>
+        </footer>
     </div>
+
 </body>
+<script src="../../DOM/landingPage.js"></script>
 
 </html>

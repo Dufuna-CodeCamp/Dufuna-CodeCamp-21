@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/landing-page.css">
 
     <!-- External fonts from fonts.google.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,13 +37,13 @@
             <div class="food">
                 <h1>FoodBag</h1>
                 <p>Anything food, we have you covered.</p>
-            </div> <br><br>
+            </div>
 
             <form action="#" method="post" enctype="multipart/form-data">
-                <label for="location">Where are you?</label> <br><br>
+                <label for="location">Where are you?</label>
                 <div class="location-div">
                     <input type="text" name="location" id="location" placeholder="Enter your delivery address"
-                        list="location-list"> <br><br>
+                        list="location-list">
                 </div>
                 <datalist id="location-list">
                     <option value="Alimosho"></option>
@@ -66,29 +66,38 @@
                     <option value="Lagos Island"></option>
                     <option value="Epe"></option>
                     <option value="Ibeju-Lekki"></option>
-                </datalist> <br>
+                </datalist>
 
-                <label for="interest">Pick an interest</label><br><br>
+                <label for="interest">Pick an interest</label>
                 <div id="interest">
                     <div>
-                        <input type="image" src="/images/fast-food_disabled.svg" alt="fast food">
-                        <p>Fast food</p>
-                        <p>All sorrows are less with bread</p>
+                        <a href="#" class="vendors-link">
+                            <input id="fast" type="image" src="../images/fast-food_disabled.svg" alt="fast food">
+                            <p class="first-para">Fast food</p>
+                            <p class="second-para">All sorrows are less with bread</p>
+                        </a>
                     </div>
                     <div>
-                        <input type="image" src="/images/Vegetables _ Drinks_disabled.svg" alt="vegetables and fruits">
-                        <p>Vegetables & Fruits</p>
-                        <p>May not want it, but good for you</p>
+                        <a href="# " class="vendors-link">
+                            <input id="vegetables" type="image" src="../images/Vegetables _ Drinks_disabled.svg"
+                                alt="vegetables and fruits">
+                            <p class="first-para">Vegetables & Fruits</p>
+                            <p class="second-para">May not want it, but good for you</p>
+                        </a>
                     </div>
-                    <div>
-                        <input type="image" src="/images/Drinks _ Cocktails_disabled.svg" alt="a glass of cocktail">
-                        <p>Drinks & Cocktails</p>
-                        <p>I feel sad for those who don't drink</p>
+                    <div><a href="#" class="vendors-link">
+                            <input id="drinks" type="image" src="../images/Drinks _ Cocktails_disabled.svg"
+                                alt="a glass of cocktail">
+                            <p class="first-para">Drinks & Cocktails</p>
+                            <p class="second-para">I feel sad for those who don't drink</p>
+                        </a>
                     </div>
-                    <div>
-                        <input type="image" src="/images/resturant_disabled.svg" alt="a fork and a spoon">
-                        <p>Restaurants</p>
-                        <p>All sorrows are less with bread</p>
+                    <div><a href="#" class="vendors-link">
+                            <input id="restaurant" type="image" src="../images/resturant_disabled.svg"
+                                alt="a fork and a spoon">
+                            <p class="first-para">Restaurants</p>
+                            <p class="second-para">All sorrows are less with bread</p>
+                        </a>
                     </div>
                 </div>
             </form><br>
@@ -100,17 +109,17 @@
             </div>
             <div id="procedure">
                 <div>
-                    <img src="/images/Illustration_1.svg" alt="man checking location">
+                    <img src="../images/Illustration_1.svg" alt="man checking location">
                     <p class="first">Tell us where you are</p>
                     <p>Set the location you want us to deliver.</p>
                 </div>
                 <div>
-                    <img src="/images/illustration_2.svg" alt="fastfood">
+                    <img src="../images/illustration_2.svg" alt="fastfood">
                     <p class="first">Tell us what you want</p>
                     <p>Browse the type of food that interests you.</p>
                 </div>
                 <div>
-                    <img src="/images/illustration_3.svg" alt="delivery man on scooter">
+                    <img src="../images/illustration_3.svg" alt="delivery man on scooter">
                     <p class="first">We'll come running</p>
                     <p>Your order will be delivered to you in no time.</p>
                 </div>
@@ -125,13 +134,13 @@
         <nav>
             <div class="footer-nav">
                 <a href="https://twitter.com/">
-                    <img src="/images/twitter 2.svg" alt="twitter icon">
+                    <img src="../images/twitter 2.svg" alt="twitter icon">
                 </a>
                 <a href="https://www.youtube.com/">
-                    <img src="/images/youtube 1.svg" alt="youtube icon">
+                    <img src="../images/youtube 1.svg" alt="youtube icon">
                 </a>
                 <a href="https://www.facebook.com/">
-                    <img src="/images/facebook-f 1.svg" alt="facebook icon">
+                    <img src="../images/facebook-f 1.svg" alt="facebook icon">
                 </a>
             </div>
         </nav>
@@ -146,6 +155,7 @@
             </div>
         </div>
     </footer>
+    <script src="../../DOM/Landing-page/landing-page.js"></script>
 </body>
 
 </html>
