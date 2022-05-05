@@ -3,9 +3,6 @@
   font-weight: bold;
   color: gray
 }
-.black {
-  color: black;
-}
 
 nav span {
   color: brown;
@@ -200,6 +197,10 @@ select[placeholder] {background-image:url("images/keyboard_arrow_down.svg");
 
 #green {
   color: green;
+}
+
+.black {
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {

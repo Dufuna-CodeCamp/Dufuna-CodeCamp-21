@@ -8,7 +8,7 @@ const Checkout = (props) => {
 
     return (
         <div id="container">
-            <Link to='/' id="button" >{props.Checkout}</Link>
+            <Link to='/Verification' id="button" >{props.Checkout}</Link>
         </div>
     )
 }
