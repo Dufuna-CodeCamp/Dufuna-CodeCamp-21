@@ -46,7 +46,7 @@ class Form extends Component {
                 className="input-elements"
                 name="phoneNumber" 
                 title="Phone number" 
-                type="number" 
+                type="text" 
                 placeholder="+234" 
                 onChange={e => this.change (e)} 
                 value={this.state.phoneNumber}     
@@ -81,7 +81,7 @@ class Form extends Component {
                 className="input-elements"
                 name="cardNumber" 
                 title="Card Number" 
-                type="number" 
+                type="text" 
                 placeholder="Enter Your Card Number" 
                 onChange={e => this.change (e)}  
                 value={this.state.cardNumber}
