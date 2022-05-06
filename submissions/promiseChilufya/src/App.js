@@ -1,17 +1,39 @@
-import Holder from './components/Holder';
-import Navbar from './components/Navbar/Navbar';
-import ManageContext from './Context/main'
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Holder from "./components/Holder";
+import { VerificationHolder } from "./components/VerificationHolder";
+import ManageContext from "./Context/main";
+import { OrderHolder } from "./components/OrderHolder";
+
 
 
 function App() {
+
   return (
+
     <div>
-        <ManageContext>
-          <Navbar />
-    < Holder />
-      </ManageContext>
-    </div>
+    <ManageContext >
+     
+  
+    </ManageContext>
+
+  <Router>
+
+  <Routes>
+ 
+  <Route path="/"  element = { <Holder />} />
+  
+  <Route path="VerificationHolder"  element = { <VerificationHolder />} />
+  <Route path="OrderHolder" element = {<OrderHolder/>} />
+
+  </Routes>
+     
+
+  </Router>
+  
+  </div>
+       
+      
   );
 }
 
-export default App
+export default App;

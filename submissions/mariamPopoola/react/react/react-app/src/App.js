@@ -4,12 +4,9 @@ import Verification from '../src/components/verificationpage/verification';
 function App() {
   return (
     <div>
-       <Cartpage/>
+       <Verification/>
     </div>
   );
 }
 
-export default App;
-
-  
-     
+export default App;  
