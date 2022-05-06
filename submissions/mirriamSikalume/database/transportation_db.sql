@@ -26,6 +26,7 @@ CREATE TABLE company_table (
     CREATE TABLE accident_table (
     id INT NOT NULL auto_increment,
     passengers_id INT NULL,
+	passenger_survived BOOLEAN NOT NULL,
     primary key(id),
     foreign key(passengers_id) REFERENCES passengers_table(id)
     );
