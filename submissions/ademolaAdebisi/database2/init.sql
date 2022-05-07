@@ -9,7 +9,7 @@ CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
     sex VARCHAR(10) NOT NULL,
-    age VARCHAR(3),
+    age VARCHAR(50),
     PRIMARY KEY (id)
 );
 
@@ -17,13 +17,13 @@ CREATE TABLE passengers (
 CREATE TABLE trips (
 	id INT NOT NULL AUTO_INCREMENT,
     passengers_id INT NOT NULL,
-    class ENUM('1', '2', '3') NOT NULL,
     ticket VARCHAR(250) NOT NULL,
-    cabin VARCHAR(10),
     fare DECIMAL(10, 2) NOT NULL,
-    parch INT NOT NULL,
-    sibsp INT NOT NULL,
+    cabin VARCHAR(10),
     embarked VARCHAR(250) NOT NULL,
+    class ENUM('1', '2', '3') NOT NULL,
+    sibsp INT NOT NULL,
+    parch INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
@@ -37,3 +37,4 @@ CREATE TABLE accident_cases (
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
+SELECT * FROM trips;
