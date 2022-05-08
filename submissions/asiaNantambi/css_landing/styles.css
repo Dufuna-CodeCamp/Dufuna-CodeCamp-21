@@ -1,0 +1,102 @@
+
+/* media queries */
+@media only screen and (max-width:400px) {
+body {
+    background-color: white;
+    }
+}
+    
+
+
+
+
+.nav-bar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    background-color: #ff4500;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    overflow: hidden;
+
+}
+
+.nav-bar a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(30, 255, 0);
+}
+
+.nav-bar a.active {
+    color: rgb(245, 214, 157);
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+    
+}
+
+li a{
+    display: inline;
+}
+h1 {
+    text-transform: uppercase;
+}
+
+.welcome {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: left-top;
+    color: rgb(41, 24, 3);
+
+}
+
+main {
+    background-color: rgb(238, 203, 139);
+    background-image: url(images/food3.jpg);
+
+
+}
+
+/* sign in styles */
+
+#form {
+    width: 50%;
+    text-align: center;
+padding-top: 2px;
+padding-left: 25%;
+padding-right: 25%;
+color: rgb(255, 255, 255);
+
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: #ff4500;
+    color: #fff;
+    text-align: center;
+
+}
+
