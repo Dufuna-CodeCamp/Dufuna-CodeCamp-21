@@ -4,10 +4,11 @@ let btn = document.querySelectorAll(".btn");
 
 
 // Loops through all the link tags on the page
-btn.forEach(el => {
-    var btn = el;
+btn.forEach(e => {
+    var btn = e;
     
-    el.addEventListener("click", (el) => {
+    e.addEventListener("click", (e) => {
+        e.preventDefault();
         if (btn.innerHTML=="Add to Cart") {
              // changes button text
             btn.innerHTML= `Remove`;
