@@ -1,26 +1,33 @@
-USE transportation_company_db;
+--total number of passengers who survived
+SELECT COUNT(survival) FROM accident_cases WHERE survival = 1;
+--342
 
--- What is the total number of passengers who survived?
-SELECT COUNT(survived) FROM accident_cases WHERE survived=1;
-342
--- What is the total number of passengers who did not survive?
-SELECT COUNT(survived) FROM accident_cases WHERE survived=0;
-549
--- Get the name and sex of passengers under the age of 27 that embarked at Queenstown and Cherbourg?
-SELECT passengers.full_name, passengers.sex FROM passengers
-INNER JOIN passengers_details ON passengers.passengers_id=passengers_details.passenger_id
-WHERE passengers.age < 27 AND (passengers_details.embark_point='C' or passengers_details.embark_point='Q')
-ORDER BY passengers.passengers_id ASC;
+--total number of passengers who did not survived
+SELECT COUNT(survival) FROM accident_cases WHERE survival = 0;
+--549
 
--- How many of the passengers that embarked at Southampton survived?
-SELECT COUNT(*) FROM accident_cases INNER JOIN passengers_details ON accident_cases.passenger_id = passengers_details.passenger_id
-WHERE passengers_details.embark_point='S' AND accident_cases.survived=1;
-218
+--name and sex of passengers under the age of 27 that embarked at Queenstown and Cherbourg
 
--- Get the id, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board
-SELECT passengers.passengers_id, passengers.full_name FROM passengers
-INNER JOIN passengers_details ON passengers.passengers_id = passengers_details.passenger_id
-WHERE passengers_details.trip_fare > 100 AND passengers_details.age > 35 AND passengers_details.siblings_spouses > 0;
+-- THE p AND THE tARE ALIASES FOR PASSENGERS AND TRIPS tables
 
-SELECT COUNT(*) FROM passengers INNER JOIN passengers_details ON passengers.passengers_id = passengers_details.passenger_id
-WHERE passengers_details.trip_fare > 100.00 AND passengers.age > 35 AND passengers_details.siblings_spouses > 0;
+SELECT p.name, p.sex 
+FROM passengers p INNER JOIN trips t
+ON  p.id = t.passengers_id 
+AND p.age < 27 
+WHERE t.embarked IN ('C', 'Q');
+--158
+
+-- passengers that embarked at Southampton survived?
+SELECT COUNT(*) 
+FROM t INNER JOIN accident_cases a 
+ON t.passengers_id = A.passengers_id AND t.embarked = 'S'
+WHERE accident_cases.survival = 1; 
+--218
+
+--  the id, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board
+SELECT p.id, p.name 
+FROM passengers p INNER JOIN trips t
+ON p.id = t.passengers_id 
+AND t.fare > 100
+WHERE p.age > 35 AND sibsp >= 1;
+--9

@@ -7,7 +7,7 @@ function converter($num) {
 
     echo "$num Kilos converts to: $pounds Pounds <br/>";
     echo "$num Meters converts to: $yards Yards <br/>";
-    echo "$num Celcius converts to: $fahrenheit Fahrenheit <br/>";
+    echo "$num Degrees Celcius converts to: $fahrenheit Degrees Fahrenheit <br/>";
 }
 
 converter(20);
