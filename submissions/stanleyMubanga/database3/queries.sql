@@ -8,7 +8,7 @@ SELECT COUNT(survival) FROM accident_cases WHERE survival = 0;
 
 --name and sex of passengers under the age of 27 that embarked at Queenstown and Cherbourg
 
--- THE p AND THE tARE ALIASES FOR PASSENGERS AND TRIPS
+-- THE p AND THE tARE ALIASES FOR PASSENGERS AND TRIPS tables
 
 SELECT p.name, p.sex 
 FROM passengers p INNER JOIN trips t
