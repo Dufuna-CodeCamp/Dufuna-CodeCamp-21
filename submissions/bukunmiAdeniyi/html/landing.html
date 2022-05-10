@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/landing.css">
-
+    
     <title> FoodBag Landing page</title>
 </head>
 <body>
@@ -23,7 +23,8 @@
                     Login
                 </li>
             
-                <li class="Sign-up"><a href="">Sign up</a>
+                <li class="Sign-up">
+                    Sign up
                 </li>
                 
             </ul>
@@ -40,26 +41,31 @@
     </div>
 </header>
     <!-- The select page -->
-    <section id="Selection-container">
-        <label for="arealist" >Where are you?:</label><br><br>
-        <input list="area-list" name="area" id="area" class="address-container"  placeholder="Enter your delivery address">
-        <datalist>
-            <datalist  id="area-list" class="address-container">
-                <option value="Gbagada">
-                <option value="lekki">
-                <option value="Victoria Island">
-                <option value="Surulere">
-                <option value="Ogba">
-                <option value="Ikeja">
-                <option value="Oshodi">
-                <option value="Abule-Egba">
-                <option value="Agege">
-            </datalist>
-
-        </datalist>
+    
+<form id="Selection-container">
+    <label for="arealist">Where are you?</label><br><br>
+    <select
+      id="area"
+      class="address-container" 
+      list="area-list"
+       name="area"
+      placeholder="Enter your delivery address">
       
-    </section>
-    <div class="food-menu-list">
+      <option value="" default>Enter your delivery address</option>
+      <option value="Bodija, Ibadan">Bodija, Ibadan</option>
+      <option value="Idumota, Lagos">Idumota, Lagos</option>
+      <option value="lekki, Lagos">lekki, Lagos</option>
+        <option value="Victoria Island, lagos">Victoria Island, lagos</option>
+        <option value="Surulere, Lagos">Surulere, Lagos</option>
+        <option value="Ogba, Lagos">Ogba, Lagos</option>
+        <option value="Ikeja, Lagos">Ikeja, Lagos</option>
+        <option value="Oshodi, Lagos">Oshodi, Lagos</option>
+        <option value="Abule-Egba, Lagos">Abule-Egba, Lagos</option>
+        <option value="Agege, Lagos">Agege, Lagos</option>
+      </select>
+      <span class="span"></span>
+</form>
+<div class="food-menu-list">
         
             <h2>
                 Pick an interest
@@ -68,52 +74,56 @@
         
             <div class="food-menu">
                 
-                 <img src="image/fast-food 1.svg" alt="">
-                             
-                 <h3>
-                    Fast Food
-                 </h3>
+                 <img 
+                 
+                 class="menu-img" 
+                 src="image/fast-food_disabled.svg" alt="">
 
-                 <p>
-                    All sorrows are less with bread.
-                </p>
-                
+                <div class="food-menu1">           
+                    <h3>
+                        Fast Food
+                    </h3>
+
+                    <p>
+                        All sorrows are less with bread.
+                    </p>
+                </div>  
             </div>
             <div class="food-menu">
-                <img src="image/healthy-food 1.svg" alt="">
-            
-                <h3>
-                    Vegetables & Fruits
-                </h3>
-                <P>
-                   May not want it, but good for you.
-                </P>
-            
+                <img class="menu-img" src="image/Vegetables _ Drinks_disabled.svg" alt="">
+                <div class="food-menu1">  
+                    <h3>
+                        Vegetables & Fruits
+                    </h3>
+                    <P>
+                    May not want it, but good for you.
+                    </P>
+                </div>  
             </div>
 
             <div class="food-menu">
-                <img src="image/mai-thai 1.svg" alt="">
-                    
+                <img class="menu-img" src="image/Drinks _ Cocktails_disabled.svg" alt="">
+                <div class="food-menu1"> 
                     <h3>
                         Drinks and Cocktails
                     </h3>
                     <p>
                         I feel sad for those who dont drink.
                     </p>
-                
+                </div>   
             </div>
 
             <div class="food-menu"> 
                    
-                <img src="image/fork 1.svg" alt="">
-                
-                <h3>
-                    Restaurants
-                </h3>
-                <p>
-                    All sorrows are less with bread.
-                </p>
-                    
+                <img class="menu-img" src="image/resturant_disabled.svg" alt="">
+                <div class="food-menu1">
+                    <h3>
+                        Restaurants
+                    </h3>
+                    <p>
+                        All sorrows are less with bread.
+                    </p>
+                </div>  
             </div>
             
         </div>
@@ -191,6 +201,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="../dom/cart.js" async  ></script>
 </body>
 </html>

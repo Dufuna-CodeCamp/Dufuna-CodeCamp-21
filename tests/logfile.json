@@ -35,7 +35,7 @@
             {
               "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
               "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "timedOut": true,
+              "timedOut": true, 
               "duration": 180068,
               "state": "failed",
               "speed": null,
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Printing product price\"",
               "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -139,7 +139,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "9.1.3"
+      "version": "9.1.4"
     },
     "mochawesome": {
       "options": {
