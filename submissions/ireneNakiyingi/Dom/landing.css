@@ -105,13 +105,11 @@ ul{
     list-style: none;
     
 }
-.interest{
-    filter: grayscale();
-}
 .order:hover{
     opacity: 0.8;
 }
 .interest{
+     filter: grayscale();
     display: flex;
     flex-direction: row;
     column-gap: 20px;
@@ -128,7 +126,7 @@ ul{
     margin-left: 0;
 }
 .interest:last-child .order{
-    margin-right: o;
+    margin-right: 0;
 }
 .box{
     display: flex;
@@ -247,7 +245,7 @@ p{
     .process{
         display: inline-block;
         justify-content: center;
-        margin: 0px;
+        margin: 0;
         width: 100%;
         text-align: center;
 
