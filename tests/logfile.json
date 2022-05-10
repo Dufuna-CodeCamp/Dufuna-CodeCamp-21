@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-05-10T08:23:56.655Z",
-    "end": "2022-05-10T08:26:56.685Z",
-    "duration": 180030,
+    "start": "2022-05-08T16:38:32.843Z",
+    "end": "2022-05-08T16:41:32.947Z",
+    "duration": 180104,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4e5f728d-a110-4e1a-9284-1e9918a8229e",
+      "uuid": "1ad4a741-a61b-4147-a374-c2f2072a9e4a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "10ab5e67-6b87-47aa-a5ee-27bd28bf249a",
+          "uuid": "141d5c4d-30f5-424f-b6e6-505498429f3f",
           "title": "Printing product price",
-          "fullFile": "/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/tests/product_price_printing/test.js",
-          "file": "/test.js",
+          "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
+          "file": "\\test.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
               "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "timedOut": true,
-              "duration": 180008,
+              "timedOut": true, 
+              "duration": 180068,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -45,12 +45,12 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/tests/product_price_printing/test.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/tests/product_price_printing/test.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
                 "diff": null
               },
-              "uuid": "da6f4174-90c0-4da6-ada3-8938605c1165",
-              "parentUUID": "10ab5e67-6b87-47aa-a5ee-27bd28bf249a",
+              "uuid": "caf6746f-e37b-42fc-a58c-c11e9e87e222",
+              "parentUUID": "141d5c4d-30f5-424f-b6e6-505498429f3f",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "9b975c62-dc77-4db0-b6c5-712de3373839",
-              "parentUUID": "10ab5e67-6b87-47aa-a5ee-27bd28bf249a",
+              "uuid": "9984c2e1-30a9-4fe1-992c-6ba7b65c62fa",
+              "parentUUID": "141d5c4d-30f5-424f-b6e6-505498429f3f",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "7aaf6895-2768-41de-bb34-314d7947bbec",
-              "parentUUID": "10ab5e67-6b87-47aa-a5ee-27bd28bf249a",
+              "uuid": "eeca960d-6b69-4784-bed6-44c8980a7cad",
+              "parentUUID": "141d5c4d-30f5-424f-b6e6-505498429f3f",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "79786bbb-9409-42b9-b7ef-d552b190fd5e",
-              "parentUUID": "10ab5e67-6b87-47aa-a5ee-27bd28bf249a",
+              "uuid": "40e4cc31-d086-4280-aae3-70fd628693d3",
+              "parentUUID": "141d5c4d-30f5-424f-b6e6-505498429f3f",
               "isHook": false,
               "skipped": true
             }
@@ -118,8 +118,8 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "7aaf6895-2768-41de-bb34-314d7947bbec",
-            "79786bbb-9409-42b9-b7ef-d552b190fd5e"
+            "eeca960d-6b69-4784-bed6-44c8980a7cad",
+            "40e4cc31-d086-4280-aae3-70fd628693d3"
           ],
           "duration": 0,
           "root": false,
@@ -155,7 +155,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
+        "reportDir": "C:/Users/HP/Desktop/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
