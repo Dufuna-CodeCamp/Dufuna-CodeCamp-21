@@ -12,7 +12,7 @@ const NavigationItem = (props)=>{
             </header>
     {/*--header ends here--> */}
     
-    <div class="navigation">
+    <div className="navigation">
         <nav>
             <a href="../../public/index.html" id="signup-link">Sign up</a>
             <a href="../../public/index.html">Login</a>
