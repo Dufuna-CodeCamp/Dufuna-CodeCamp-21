@@ -1,17 +1,10 @@
-
-import React from 'react';
-
-const Button = ({imageId,iconName,imageName,addButton}) => {
+const Button = ({button_id, button_value, type, link,handleOnClick}) => {
 
     return (
 
-        <div>
-           <button
-
-           id= {addButton}
-     
-           >
-          <img id = {imageId} src={iconName} alt={imageName}></img>
+        <div className='button-class'>
+           <button id= {button_id} type={type} onClick={handleOnClick}>
+                <a href={link}>{button_value}</a>
            </button>
         </div>
     )
