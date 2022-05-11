@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
 
 import plus from '../image_assets/plus.svg'
 import minus from '../image_assets/Minus.svg'
 import cancel from '../image_assets/cancel.png'
 import scooter from '../image_assets/scooter 1.svg'
+import Button from './Button';
+import { useNavigate } from 'react-router-dom';
+import Sublink from './Sublink'
+
 
 const CartContainer = ({products})=>{
 
     let total = 0;
     const fee= 1200;
 
-
+    const navigateTo = useNavigate();
 
     const[Data, setData] = useState([]);
 
@@ -72,9 +76,15 @@ const CartContainer = ({products})=>{
 
     }
   
+    const handleOnClick = (e) => {
+        e.preventDefault();
+        navigateTo('/verification-page')
 
+}
     return(
 
+        <div>
+        <Sublink />
         <div className='content-wrapper'>
 
            {
@@ -141,9 +151,16 @@ const CartContainer = ({products})=>{
             </div>
             
             <div className='checkout-container'>
-                <button id='checkout-button'>checkout</button>
+                <Button 
+                    button_id='checkout-button' 
+                    type='button' 
+                    button_value="checkout" 
+                    handleOnClick={(e)=>handleOnClick(e)}
+                />
+
             </div>
 
+        </div>
         </div>
         
     )
