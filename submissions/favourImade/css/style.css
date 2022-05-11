@@ -132,7 +132,7 @@ section#home .serve .serve-row div p{
 @media screen and (max-width: 600px){
 
     body{
-        padding: 20px 20px;
+        padding: 20px;
     }
     section#home .landing-page{
         text-align:start;
@@ -204,20 +204,13 @@ footer .contact{
     flex-direction: column;
     align-items: center;
     margin-bottom:10px;
+    height: 100px;
 }
+
 footer .foot{
     display: flex;
     justify-content: space-between;
-}
-
-footer .foot{
-    width: 100%;
+    flex-wrap: wrap;
     text-align: center;
-}
-
-footer .foot{
-    flex-direction: row;
-    justify-content: space-between;
-    height: 80px;
-    text-align: center;
+    height: 50px;
 }
