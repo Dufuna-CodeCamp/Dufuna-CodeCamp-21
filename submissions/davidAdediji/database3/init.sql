@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 USE transportation_company; 
 
 SHOW TABLES;
@@ -32,3 +33,14 @@ WHERE passenger_details.embarkment_point ='S' AND accident_cases.passenger_survi
 SELECT passengers.id, passengers.full_name FROM passengers INNER JOIN
 passenger_details ON passenger_details.passenger_id = passengers.id WHERE
 passengers.age > 35 AND (passenger_details.trip_fare >100 AND passenger_details.siblings_spouse_no !=0);
+=======
+-- Total number of passengers that survived 
+SELECT COUNT(passenger_survived) 
+    FROM accident_cases 
+    WHERE passenger_survived = 1;
+
+-- Total number of passengers that didn't survive
+SELECT COUNT(passenger_survived) 
+    FROM accident_cases 
+    WHERE passenger_survived = 0;
+>>>>>>> 893825f0 (database 2)
