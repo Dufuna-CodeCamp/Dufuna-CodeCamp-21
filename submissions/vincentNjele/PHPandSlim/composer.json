@@ -1,0 +1,25 @@
+{
+    "require": {
+        "slim/slim": "^4.10",
+        "slim/psr7": "^1.5",
+        "illuminate/database": "*"
+    },
+
+    "autoload" : {
+
+        "psr-4": {
+            "App\\Models\\": "app/models",
+            "App\\Controllers\\": "app/controllers",
+            "db\\": "config"
+        }
+
+    },
+    "scripts": {
+        "start": "php -S localhost:8026 -t public"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
