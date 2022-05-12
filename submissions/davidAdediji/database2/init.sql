@@ -9,7 +9,7 @@ USE transportation_company;
 CREATE TABLE passengers(
     id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(250) NOT NULL,
-    sex VARCHAR(10) NOT NULL,
+    sex VARCHAR(20) NOT NULL,
     age VARCHAR(50),
     PRIMARY KEY (id)
 );
