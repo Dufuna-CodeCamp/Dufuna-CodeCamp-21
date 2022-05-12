@@ -16,13 +16,9 @@ import React from "react";
                 
             >
             {props.options}
-              
-
                 
             </select> 
         
-               
-
  
         </div>
     );
