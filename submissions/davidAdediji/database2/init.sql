@@ -8,7 +8,7 @@ USE transportation_company;
 -- 1. Create Passengers table 
 CREATE TABLE passengers(
     id INT NOT NULL AUTO_INCREMENT,
-    full_name VARCHAR(250) NOT NULL,
+    full_name VARCHAR(50) NOT NULL,
     sex VARCHAR(10) NOT NULL,
     age VARCHAR(50),
     PRIMARY KEY (id)
