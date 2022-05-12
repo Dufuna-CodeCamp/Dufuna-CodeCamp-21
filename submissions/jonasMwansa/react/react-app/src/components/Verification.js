@@ -1,81 +1,79 @@
 import Input from './InputComponent';
 import SelectComponent from './SelectComponent';
 import Button from './Button';
-import { Component } from 'react/cjs/react.development';
-
-class Verification extends Component{
-
-        constructor(props){
-            super(props);
-
-            this.state={
-                phone_number:'',
-                card_number:'',
-                card_name:'',
-                expirely_date:'',
-                cvc:'',
-                option:'',
-                options:[
-                    "CARD",
-                    "CASH",
-                    "MOBILE MONEY"
-                ],
-                Data: [
-                    {
-                        id : 1,
-                        title : "Card"
-                    },
-                    {
-                     id : 2,
-                     title : "Mobile Money"
-                 },
-                 {
-                     id : 3,
-                     title : "Cash"
-                 }
-                ],
-                selectValue: "",
-
-            }
-}
-    
-
-handlePhoneChange=(event)=>{
-    this.setState({phone_number: event.target.value})
-    console.log(this.state.phone_number)
-}
-
-handleSelectChange=(event)=>{
-    this.setState({
-        selectValue : event.target.value
-    })
-    console.log(this.state.selectValue)
-}
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 
-handleCardChange=(event)=>{
-    this.setState({card_number: event.target.value})
-    console.log(this.state.card_number)
 
-}
+const Verification=()=> {
 
-handleCardNameChange=(event)=>{
-    this.setState({card_name: event.target.value})
-    console.log(this.state.card_name)
-}
+    //using the state
+    const [phone_number,setPhoneNumber]= useState('');
+    const [card_name, setCardName]= useState('');
+    const [expirely_date, seteExpirelyDate]= useState('');
+    const [card_number,setCadNumber]= useState('');
+    const [cvc, setCvc]= useState('')
+    const [selectValue,setSelectedOption]= useState('')
 
-
-handleDateChange=(event)=>{
-    this.setState(
-        {
-            expirely_date: event.target.value
-        }
+    const [Data,setData]= useState(
+        [
+            {
+                id : 0,
+                title : "Card"
+            },
+            {
+             id : 1,
+             title : "Mobile Money"
+         },
+         {
+             id : 2,
+             title : "Cash"
+         }
+        ]
     )
+
+
+const handlePhoneChange=(event)=>{
+    setPhoneNumber(event.target.value);
+}
+
+const handleSelectChange=(event)=>{
+    setSelectedOption(event.target.value)
+
 }
 
 
+const handleCardChange=(event)=>{
+    setCadNumber(event.target.value)
+}
 
-render(){
+const handleCardNameChange=(event)=>{
+    setCardName(event.target.value)
+}
+
+const handleDateChange=(event)=>{
+   seteExpirelyDate(event.target.value)
+}
+
+const handCvcChange=(event)=>{
+    setCvc(event.target.value)
+}
+
+            //method for navigation
+            const navigateTo = useNavigate();
+
+            const handleOnClick = (e) => {
+                e.preventDefault();
+                if(phone_number==="" || card_number==="" || card_name==="" || cvc==="" ||expirely_date==="" || selectValue===""){
+                    return;
+                }
+                navigateTo('/success-page')
+            
+            }
+
+
+
 
     return(
         <div>
@@ -91,15 +89,15 @@ render(){
                 </div>
                 <p>Your order will be deliverd to your address</p>
             </div>
-            git
+            
                 <form>
                     <Input 
                         label="phone_number" 
                         label_value="Phone number" 
                         type="text"  
                         placeholder="+234"
-                        handleChange={this.handlePhoneChange}
-                        value={this.state.phone_number}
+                        handleChange={(event)=>handlePhoneChange(event)}
+                        value={phone_number}
                     />
                     
                     <hr/>
@@ -110,11 +108,11 @@ render(){
                         title='payment method'
                         id='option'
                         type='select'
-                        handleChange={this.handleSelectChange} 
-                        value = {this.state.selectValue}
+                        handleChange={(event)=>handleSelectChange(event)} 
+                        value = {selectValue}
                        options =  {
 
-                            this.state.Data.map((item) => (
+                                Data.map((item) => (
 
                                 <option key={item.id} > {item.title}</option>
                             ))
@@ -127,8 +125,8 @@ render(){
                         type="text" 
                         name="card_number" 
                         placeholder="2345 6543 7868 2343" 
-                        handleChange={this.handleCardChange}
-                        value={this.state.card_number}
+                        handleChange={(event)=>handleCardChange(event)}
+                        value={card_number}
                         />
 
                     <Input 
@@ -137,8 +135,8 @@ render(){
                         type="text" 
                         name="card_name" 
                         placeholder="TOLUWALASE KENNY OJO" 
-                        handleChange={this.handleCardNameChange}
-                        value={this.state.card_name}
+                        handleChange={(event)=>handleCardNameChange(event)}
+                        value={card_name}
                         />
                     
                     <div className='inline-items'>
@@ -147,18 +145,27 @@ render(){
                             label_value="Expiry date" 
                             type="date" 
                             name="Card_expiry_date" 
-                            handleChange={this.handleDateChange}
-                            value={this.state.expirely_date}
+                            handleChange={(event)=>handleDateChange(event)}
+                            value={expirely_date}
 
                             />
-                        <Input label="Card_verification_code" label_value="CVC" type="text" name="Card_verification_code" placeholder="012" />
+                        <Input 
+                            label="Card_verification_code" 
+                            label_value="CVC" 
+                            type="text" 
+                            name="Card_verification_code" 
+                            placeholder="012"
+                            value={cvc} 
+                            handleChange={(event)=>handCvcChange(event)}
+                            />
                     </div>
                     
             <div className='pay-container'>
                 <Button 
                     button_id='pay-button' 
                     type='button' 
-                    button_value="pay" 
+                    button_value="pay"
+                    handleOnClick={(event)=>handleOnClick(event)} 
                 />
 
             </div>
@@ -167,6 +174,6 @@ render(){
         </div>
     )
 }
-}
+
 
 export default Verification;
