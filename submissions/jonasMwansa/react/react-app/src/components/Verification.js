@@ -3,6 +3,8 @@ import SelectComponent from './SelectComponent';
 import Button from './Button';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useEffect } from 'react';
+import Details from './Details';
 
 
 
@@ -15,24 +17,13 @@ const Verification=()=> {
     const [card_number,setCadNumber]= useState('');
     const [cvc, setCvc]= useState('')
     const [selectValue,setSelectedOption]= useState('')
+    const [Data,setData]= useState( [])
 
-    const [Data,setData]= useState(
-        [
-            {
-                id : 0,
-                title : "Card"
-            },
-            {
-             id : 1,
-             title : "Mobile Money"
-         },
-         {
-             id : 2,
-             title : "Cash"
-         }
-        ]
-    )
 
+
+    useEffect(()=> {
+     setData(Details)
+    },[])
 
 const handlePhoneChange=(event)=>{
     setPhoneNumber(event.target.value);
