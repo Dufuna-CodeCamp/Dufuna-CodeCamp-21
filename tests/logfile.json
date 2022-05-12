@@ -1,8 +1,15 @@
 {
   "stats": {
+<<<<<<< HEAD
     "tests": 3,
     "passes": 3,
     "failures": 0,
     "owner": "abigailAdeboga"
+=======
+    "tests": 7,
+    "passes": 7,
+    "failures": 0,
+    "owner": "davidAdediji"
+>>>>>>> f5745cff99fbfc88ea559a2907c4026d4c543ed5
   }
 }
