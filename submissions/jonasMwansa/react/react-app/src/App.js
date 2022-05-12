@@ -2,9 +2,10 @@ import image1 from './image_assets/image1.svg'
 import image2 from './image_assets/image3.svg'
 import image3 from './image_assets/image4.svg'
 import NavigationItem from './components/Navigation';
-import Sublink from "./components/Sublink";
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 
 import CartContainer from "./components/CartContainer";
+import Verification from './components/Verification';
 
 
 function App() {
@@ -36,11 +37,13 @@ function App() {
 
   return (
       <div>
+          <Router>
           <NavigationItem />
-          <Sublink />
-          <CartContainer  products={products} />
-          <hr/>
-        
+              <Routes>
+                   <Route path='/' element={ <CartContainer  products={products} />} />
+                   <Route path='/verification-page' element={ <Verification />  } />
+              </Routes>
+          </Router>   
       </div>);
 }
 export default App;
