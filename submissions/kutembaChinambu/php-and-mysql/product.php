@@ -14,7 +14,6 @@ try{
     ON  customer.sn = products.customerSn AND products.customerSn=$id";
     $result = $pdo->query($sql);
      if($result->rowCount() > 0){
-         //display table
             echo "<table>";
             echo "<tr>";
                 echo "<th>S/N</th>";
