@@ -25,16 +25,16 @@ try{
         $email = $row['emailaddress'];
         $created = $row['createdat'];
         setcookie('cookie_sn', json_encode($sn),time()+3600);
-        setcookie($cookie_fullname, json_encode($fullname), time()+3600);
-        setcookie($cookie_email, json_encode($mail), time()+3600);
-        setcookie($cookie_created, json_encode($created), time()+3600);
+        setcookie('fullname', json_encode($fullname), time()+3600);
+        setcookie('email', json_encode($mail), time()+3600);
+        setcookie('craeted', json_encode($created), time()+3600);
 
           echo "<tr>";
                 echo "<td>" . $row['sn'] . "</td>";
                 echo "<td>" . $row['fullname'] . "</td>";
                 echo "<td>" . $row['emailaddress'] . "</td>";
                 echo "<td>" . $row['createdate'] . "</td>";
-                echo "<td><input type= 'button' value='View' onclick='save()'></td>";
+                echo "<td> <a href=\"product.php?user_id={$row['sn']}\">View</a> </td>";
             echo "</tr>";
         }
         echo "</table>";
