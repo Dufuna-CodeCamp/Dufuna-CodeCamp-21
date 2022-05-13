@@ -1,8 +1,8 @@
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
+    margin: 10px;
     font-size: 16px;
-    padding: 20px 50px 60px;
+    padding: 0;
 }
 
 *{
@@ -11,41 +11,55 @@ body {
 .nav1 {
     display: flex;
 	justify-content: space-between;
-    position: relative;
 } 
-.nav1 h2{
-    padding: 10px 0;
-}
 .nav1 ul{
 	display: flex;
 	align-content: center;
 	list-style-type: none;
-	padding: 15px 0;
+	padding: 20px 0;
+}
+.nav1 h2{
+    padding: 5px 0;
+}
+.red{
+    color: #a50f0f;
 }
 li a {
 	color: black;
 	text-decoration: none;
-	padding: 0 15px;
+	padding: 0 10px;
 	border-radius: 5px;
 	border: 1px solid none;
-}
-.red{
-    color: #a50f0f;
 }
 .nav1 a:hover {
 	border: 1px solid red;
 	border-radius: 5px;
 }
-
+.nav-list {
+    font-size: 10px;
+    align-items: flex-end;
+}
+.food-bag{
+    padding: 0 30px;
+}
+.active{
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    color: #ad4c4c;
+    padding: 8px 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
 .nav2{
-    display: inline;
-	padding-top: 30px;
+    display: block;
+	padding-top: 15px;
 }
 .nav2-item1{
-    border: none;
-    text-decoration: none;
-    color: #696969;
-    padding: 5px;
+    color: grey;
+}
+.nav2-item2{
+    font-weight: 700;
+    color: #000;
 }
 .nav2-item1:hover {
 	cursor: pointer;
@@ -53,47 +67,124 @@ li a {
 	font-weight: bold;
 	border: none;
 }
-.nav2-item2 {
-	padding-top: 20px;
-	margin: 0;
+.nav2-item3 {
+	padding-top: 5px;
 }
-
-.nav2-item2 h1{
+.nav2-item3 h1{
     font-size: 30px;
-}
-.menugrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .logo{
     width: 50px;
     height: 50px;
 }
-.green {
-	color: #13C319;
+.vendor-head {
+    display: flex;
 }
-.view-all{
+.view-all {
     color: red;
-}
-.cart {
-	display: inline-block;
-	border: 1px solid red;
-	border-radius: 2px;
-	margin-left: 5px;
-	padding: 10px;
-    font-weight: bold;
     text-align: center;
-    color: red;
+    font-weight: 500;
+    padding-top: 50px;
 }
-@media screen and (max-width:450px) {
-    body {
-        font-size: 13px;
+.menugrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px 0 20px;
+}
+.burger{
+    width: 250px;
+    height: 200px;
+}
+.add-to-cart {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    border: 1px solid #ad4c4c;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #ad4c4c;
+    margin: 10px;
+    padding: 10px;
+}
+.dots--nil {
+    display: none;
+}
+  
+.dots--dot {
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #ad4c4c;
+    right: 13.0em;
+    top: 3.5em;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info span {
+    font-weight: bold;
+}
+.item {
+    color: #4e4d4d;
+}
+.amount {
+    color: #5ea304;
+}
+.vendor {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 0 40px 0 0;
+}
+@media screen and (min-width:590px) {
+    .menugrid {
+        column-gap: 10px;
     }
-    .nav1 {
-        display: block;
-        margin: 0;
-        font-size: 15px;
-        padding: 10px;
+    .nav-list{
+        font-size: 12px;
     }
-}  
+    .view-all{
+        display: flex;
+        justify-content: flex-end;
+        order: 1;
+        position: relative; bottom: 715px;
+    }
+    .dots--dot {
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        background: #ad4c4c;
+        right: 11.9em;
+        top: 2.8em;
+    }
+}
+@media screen and (min-width:1150px) {
+    .burger {
+        height: 250px;
+        width: 300px;
+    }
+    .nav-list{
+        font-size: 16px;
+    }  
+    .view-all{
+        display: flex;
+        justify-content: flex-end;
+        order: 1;
+        position: relative; bottom: 460px;
+    }
+    .dots--dot {
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        background: #ad4c4c;
+        right: 10.4em;
+        top: 2.4em;
+    }
+}

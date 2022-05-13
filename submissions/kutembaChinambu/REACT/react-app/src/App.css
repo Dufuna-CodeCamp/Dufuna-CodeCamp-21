@@ -1,0 +1,321 @@
+
+ nav a[href*='/'] {
+  font-weight: bold;
+  color: gray
+}
+
+nav span {
+  color: brown;
+}
+
+nav ul,
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+a { 
+  text-decoration: none;
+}
+
+nav {
+  padding: 15px 40px;
+}
+
+nav li {
+  display: inline;
+  padding: 8px;
+  float: right;
+  font-size: 18px;
+}
+
+.signup {
+  border: solid;
+  border-radius: 5px;
+  border-color: brown;
+  color: brown;
+  font-size: 15px;
+}
+
+a:visited {
+  color: gray;
+}
+
+.lowernav {
+  float: left;
+  padding-top: 60px;
+  font-size: 10px;
+}
+
+.pname1 {
+  float: absolute;
+  padding: 100px 8px;
+}
+
+.pname {
+  float: absolute;
+  padding: 100px 50px;
+}
+
+.wrapper22 li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+#closed {
+  padding: 60px 10px ;
+  float: left;
+}
+
+#foodName {
+  padding: 10px 5px 15px;
+}
+
+#count {
+  font-size: 30px;
+  color: brown;
+  padding: 10px;
+}
+
+#priceTotal {
+ padding: 20px 50px 20px 830px; 
+}
+
+#priceDelivery {
+  padding: 20px 50px 20px 820px;  
+ }
+
+ #priceCart {
+  padding: 50px 50px 20px 750px; 
+ }
+
+#fee {
+  padding: 5px 100px 30px;
+}
+
+#total {
+  padding-right: 315px;
+}
+
+#button {
+  background-color: brown;
+  float: center;
+  color: #fff;
+  text-align: center;
+  padding: 8px 350px;
+  font-size: 20px;
+  border-color: brown;
+  border-radius: 5px;
+
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.theCart {
+  float: left;
+  padding: 5px;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+#mobile li {
+  display: none;
+}
+
+.tag li {
+  list-style-type: none;
+  float: absolute;
+  padding-left: 5px;
+  padding-top: 2px;
+
+}
+
+#confirm {
+  color: brown;
+}
+
+#address {
+  color: gray;
+}
+
+#breadcrumb {
+  float: right;
+  padding-right: 50px;
+}
+
+#form {
+  padding: 5px 60px 20px 50px;
+}
+.input-elements {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: gray;
+}
+
+select[placeholder] {background-image:url("images/keyboard_arrow_down.svg");
+  background-size: 20px 25px;
+  background-position:right;
+  background-repeat:no-repeat;
+  background-color: #fff;
+  }
+
+.last {
+  display: table;
+
+}
+
+.exp {
+  display: table-cell;
+  width: 50%;
+  padding: 12px 50px 20px 0;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.bottom-input {
+  padding: 12px 20px;
+  width: 633px;
+}
+
+#success {
+  text-align: center ;
+  padding-top: 15%;
+}
+
+#green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+      padding: 25px 35px;
+  }
+  
+  nav li {
+      display: inline;
+      padding: 8px;
+      float: right;
+      font-size: 15px;
+  }
+
+  nav ul,
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  #closed img {
+    width: 25px;
+    height: 25px;
+    padding-left: 2px;
+  }
+
+  .controls img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theCart {
+    float: left;
+    padding: 5px;
+  }
+
+  .wrapper22 .theCart {
+    width: 120px;
+    height: 120px;
+  }
+
+  #foodName {
+    font-size: 10px;
+    padding: 20px 5px 13px;
+  }
+
+  #count {
+    font-size: 20px;
+  }
+
+  #priceCart {
+    padding: 60px 50px 10px 70px; 
+    font-size: 15px;
+   }
+
+   #priceDelivery {
+    padding: 40px 50px 10px 140px;  
+    font-size: 15px;
+   }
+
+   #priceTotal {
+    padding: 40px 50px 10px 0;
+    font-size: 15px;
+   }
+
+   #total {
+     font-size: 15px;
+   }
+
+   #closed {
+    padding: 45px 5px ;
+    float: left;
+  }
+
+  #deliver img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #fee {
+    font-size: 10px;
+    padding: 50px 30px;
+  }
+
+  #button {
+    padding: 8px 230px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+
+  }
+  #mobile {
+    padding-left: 0;
+  }
+
+  #mobile li {
+      display: inline;
+      font-size: 15px;
+      list-style-type: none;
+      color: brown;
+      padding: 5px 40px;
+  }
+
+  #remove {
+    float: right;
+    text-decoration-line: underline;
+  }
+
+  .bottom-input {
+    padding: 12px 10px;
+    width: 188px;
+  }
+
+}
+
+

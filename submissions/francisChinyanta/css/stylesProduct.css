@@ -1,0 +1,239 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	height:100%;
+	padding: 0;
+	margin: 0;
+	/**background: #f6f6f6;*/
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul{
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    padding-left: 51px;
+    padding-right: 51px; 
+    font-size: large;
+    font-weight: 600;       
+}
+
+nav li{
+    display: inline-grid;
+    padding: 0;
+    float: right;
+    padding-left:40px;
+}
+nav li a:hover{
+        color: rgb(56, 146, 146);        
+}
+  /* selected link */
+nav li a:active {
+    color: yellow;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;  
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  /**END **/
+a{
+    text-decoration: none;
+}
+
+.foods div{
+    text-align: center;
+}
+
+.foods li{
+    display: inline-grid;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    border: 1px solid #add8e6;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.foods .images li .image_1 .img_1 .i_1{
+    display: flex;
+}
+.i_1{
+    margin: 10px;
+    font-weight: bold;
+}
+.i_1 .i2{
+    padding-left: 15px;
+    color: green;
+    font-weight: bold;
+}
+button{
+    padding: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+span{
+    color: red;
+}
+img {
+    height: 90px;
+}
+.footer{
+    background-color: white;
+    list-style-type: none;
+    margin-top: 20px;   
+}
+
+#div2{
+    padding-left: 50px;
+    font-size: large;
+    font-weight: bold;
+    
+}
+#div2 span{
+    color: darkgray;
+}
+
+#div3 ul{
+    list-style-type: none;
+}
+#div3 li{
+    display: inline-grid;
+    padding: 2px;
+}
+div#kfc{
+    position: relative;
+    bottom: 15px;
+}
+#div3 span{
+    float: right;
+    padding-top: 18px;
+    padding-right: 200px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#view div{
+ width: 60px;
+ position: relative;
+ left: 1090px;
+ font-weight: bold;
+ font-size: medium; 
+ color: red;
+}
+
+#log img{
+    height: 50px;
+}
+
+.foods p{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+.contact-sec, .contact-sec a{    
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+#terms{
+  
+   height: 50px;  
+   margin-bottom: 20px;
+   margin-left: 50px;  
+   /**margin-right: 50%;**/
+   padding: 5px;
+   width: 100%;
+}
+#copyrit{
+    
+    height: 50px;   
+    margin-bottom: 20px;      
+    float: right;   
+    margin-right: 50px;   
+    padding: 5px;
+    width: 100%;
+    text-align: right;
+}
+#terms_copyrit{
+    display: flex;    
+    width: 100%;      
+}
+#reg_1{
+    display: flex;
+}
+.signup{
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.signup fieldset{
+    padding-left: 30px;
+}
+.signup input{
+    width: 170px;
+}
+#gender input{
+    width: 30px;
+}
+#reg{
+    margin-left: 320px;
+    width: 400px;
+    margin-top: 50px;
+    font-style: italic;  
+}
+#condition input{
+    width: 20px;
+}
+/**MEDIA QUERIES**/
+@media screen and (min-width: 1500px) {
+
+    #div3 span{
+    float: right;
+    padding-top: 18px;
+    padding-right: 320px;
+    font-weight: bold;
+    font-size: medium;
+    }
+    #view div{
+        width: 60px;
+        position: relative;
+        left: 1210px;
+        font-weight: bold;
+        font-size: medium; 
+        color: red;
+       }
+  }
+  hr{
+    width: 950px;
+  }
+  /**MEDIA QUERIES**/
+@media screen and (min-width: 1668px ) {
+
+    #div3 span{
+    float: right;
+    padding-top: 18px;
+    padding-right: 400px;
+    font-weight: bold;
+    font-size: medium;
+    }
+    #view div{
+        width: 60px;
+        position: relative;
+        left: 1300px;
+        font-weight: bold;
+        font-size: medium; 
+        color: red;
+       }
+  }
+

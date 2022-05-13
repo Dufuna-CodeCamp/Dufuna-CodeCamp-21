@@ -1,12 +1,15 @@
 /* eslint-disable no-undef */
 import React from 'react';
+import BreadCrumb from './BreadCrumb';
 import CartItem from './CartItem';
 import Delivery from './Delivery';
 import Total from './Total';
+import Checkout from './Checkout';
 import Image4 from '../assets/image4.svg';
 import Image3 from '../assets/image3.svg';
 import Image1 from '../assets/image1.svg';
 import Scooter from '../assets/scooter.svg';
+import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
     currencyFormatter = Intl.NumberFormat('en-US');
@@ -108,6 +111,7 @@ class Cart extends React.Component {
 
     render() {
         return <div id='cart'>
+            <BreadCrumb />
             <div>
                 <h1 id='cart-title'>{this.props.cartTitle}</h1>
                 <p id='item-count'>4 items</p>
@@ -126,6 +130,7 @@ class Cart extends React.Component {
             />
 
             <Total totalPrice={this.currencyFormatter.format(this.state.totalPrice)} />
+            <Link to="verification"><Checkout /></Link>
         </div>
     }
 }
