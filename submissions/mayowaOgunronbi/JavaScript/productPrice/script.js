@@ -5,19 +5,19 @@
 productList = [
     {
         productName: "Greg Bennett GD-100S G-Series Acoustic Guitar",
-        imageUrl: "C:\Users\USER\Desktop\Pictures\FB_IMG_1532362048988.jpg",
+        imageUrl: "put the url copied online",
         productPrice: "70$",
     },
 
     {
         productName: "Professional Jazz Semi Acoustic Guitar",
-        imageUrl: "C:\Users\USER\Desktop\Pictures\FB_IMG_1525256966185.jpg",
+        imageUrl: "put the url copied online",
         productPrice: "300$",
     },
 
     {
         productName: "Sparkle Glitz Electric Lead Guitar",
-        imageUrl: "C:\Users\USER\Desktop\Pictures\FB_IMG_1532032883265.jpg",
+        imageUrl: "put the url copied online",
         productPrice: "100$",
     }
 ]
