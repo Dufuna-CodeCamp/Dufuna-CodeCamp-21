@@ -15,8 +15,8 @@ CREATE TABLE food (
 CREATE TABLE admins (
 	id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
-    type ENUM('0') NOT NULL,
-    email_address VARCHAR(40) NOT NULL,
+    type ENUM('0', '1') NOT NULL,
+    email_address VARCHAR(250) NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
     password VARCHAR(20) NOT NULL,
     PRIMARY KEY (id)
@@ -26,7 +26,7 @@ CREATE TABLE admins (
 CREATE TABLE vendor_food (
 	id INT NOT NULL AUTO_INCREMENT,
     admin_id INT NOT NULL,
-    type ENUM('1'),
+    type ENUM('0','1'),
     food_id INT NOT NULL,
     name VARCHAR(250) NOT NULL,
     amount FLOAT(10,2) NOT NULL,
