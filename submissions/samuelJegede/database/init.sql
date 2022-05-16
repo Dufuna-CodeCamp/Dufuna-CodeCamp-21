@@ -26,7 +26,6 @@ CREATE TABLE admins (
 CREATE TABLE vendor_food (
 	id INT NOT NULL AUTO_INCREMENT,
     admin_id INT NOT NULL,
-    type ENUM('0','1'),
     food_id INT NOT NULL,
     name VARCHAR(250) NOT NULL,
     amount FLOAT(10,2) NOT NULL,
