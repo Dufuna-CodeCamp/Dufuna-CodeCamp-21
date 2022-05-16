@@ -26,7 +26,7 @@ for(var x = 1;x < positiveDifference;x++){
        console.log("Software");
    }else if(x % 5 === 0){
        console.log("Developer"); 
-   }else if (x % 3 === 0 && x % 5 ===0){
+   }else if (x % 3 === 0 && x % 5 === 0){
         console.log("Software Developer");
     }else 
 console.log(x);
