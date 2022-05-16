@@ -19,7 +19,7 @@ var productList = [
     console.log(productList[i].productName+" with "+productList[i].imageUrl+" is sold for "+productList[i].productPrice);
  }
 
- /*JavaScript Second Task*/
+ /* JavaScript Second Task */
 var positiveDifference = 123 - 7;
 for(var x = 1;x < positiveDifference;x++){
     if(x % 3 === 0){
