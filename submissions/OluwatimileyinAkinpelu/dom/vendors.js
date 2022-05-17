@@ -5,8 +5,6 @@ showNotificationDot = () => {
     const removeBtn = document.querySelectorAll('.remove-btn')
     if (removeBtn.length) {
         notificationDot.classList.add('notify-visible');
-    } else {
-        notificationDot.classList.add('notify.invisible');
     }
 }
 addButtons.forEach((addButton) => {
