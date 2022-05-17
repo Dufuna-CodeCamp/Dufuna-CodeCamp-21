@@ -24,6 +24,5 @@ CREATE TABLE trip_details (
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
     survived VARCHAR(3) NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (id) REFERENCES passengers (id)
+    PRIMARY KEY (id)
 );
