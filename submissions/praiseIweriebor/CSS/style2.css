@@ -1,0 +1,148 @@
+body {
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    padding: 20px 80px 40px 80px;
+    /* letter-spacing: 1.5px; */
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    color: blue;
+
+}
+
+#black {
+    color: black;
+}
+
+#black:hover {
+    color: blue;
+}
+
+span {
+    color: brown;
+}
+
+span:hover {
+    color: blue;
+}
+
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 25px;
+} 
+
+
+#color {
+    color: grey;
+    font-weight: 500;
+}
+
+#color:hover {
+    color: blue;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+
+.grey {
+    color: rgba(128, 128, 128, 0.3);
+}
+
+.grey:focus {
+    color: black;
+}
+
+button {
+    border-color: brown;
+    background-color: white;
+    border-radius: 3px;
+    border-width: 1.6px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.brands div {
+    display: flex;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.price2 {
+    color: green;
+}
+
+#hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.brands-cr {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.brands-cr div {
+    display: flex;
+}
+
+#position {
+    position: relative;
+    left: 15px;
+}
+
+/* #cr {
+    padding-right: 30cm;
+} */
+
+.options-cr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-cr {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.price2-cr {
+    color: green
+}
+
