@@ -127,8 +127,24 @@ section#home .serve .serve-row div p{
     nav li{
         padding-right: 15px;
     }
+
+    .car {
+        padding-right: 1px;
+
+    }
+
+    .foodie {
+        padding-bottom: 10px;
+        margin-top: -80px;
+        font-size: 25px;
+    }
+    .foodie-p {
+        font-size: 15px;
+    }
+    
 }
 
+/* Small devices (Potraits tablets and large phones, 600px and down) */
 @media screen and (max-width: 600px){
 
     body{
@@ -148,8 +164,8 @@ section#home .serve .serve-row div p{
     }
 }
 
-
-@media screen and (min-width: 600px) and (max-width: 1017px) {
+/* Medium devices (Landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
     body{
         padding: 20px 30px;
     }
@@ -158,25 +174,20 @@ section#home .serve .serve-row div p{
         flex-basis: 48%;
     }
 
-    section#home .serve .serve-row{
-        
+    section#home .serve .serve-row { 
         justify-content: center;
         align-items: center;
     }
 
     section#home .serve-you .serve-row div{
-        width:300px;
+        width: 300px;
         text-align: center;
     }
 
     
 }
 
-    section.landing .serve-you .serve-container div{
-        width:100%;
-        text-align: center;
-    }
-
+/* Small devices (Potraits tablets and large phones, 600px and up) */ 
 @media screen and (min-width: 600px) and (max-width: 1017px) {
     body{
         padding: 20px 30px;
