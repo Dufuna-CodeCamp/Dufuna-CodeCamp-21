@@ -1,0 +1,241 @@
+
+    
+    
+    box-sizing: border-box;
+} *
+
+* {
+    padding: 50px;
+    margin: 0;
+    border: 20px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    margin: 50px;
+    /* max-width: 440px; */
+    width: auto;
+}
+header {
+    margin: 50px 20px 50px 50px;
+    display: flex;
+    /* gap: 50rem; */
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: auto;
+
+}
+
+li {
+    display: inline-block;
+    justify-content: space-evenly;
+    justify-items: auto;
+    padding: 20px;
+    margin-top: -50rem;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(51, 48, 48);
+    /* text-emphasis: none; */
+}
+
+#signup {
+    color:  rgb(139, 53, 53);
+    background-color: white;
+    border-color: rgb(139, 53, 53);
+    padding: 5px;
+    border-width: thin;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: 600;
+}
+
+#signup:hover {
+    background-color: rgb(187, 150, 150);
+}
+
+.navigation {
+    margin: 50px;
+    margin-bottom: -10px;
+}
+
+#home {
+    color: rgb(212, 203, 203);
+}
+
+h2 {
+    margin: -20px 0 40px 0;
+}
+
+.list-items {
+    display: flex;
+    padding: 20px;
+    /* gap: 3px; */
+    width: auto;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.add-to-cart {
+    color: brown;
+    border-color: brown;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 8px 10px;
+    width: 120px;
+    border-width: thin;
+    font-weight: 600;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(187, 150, 150);
+}
+
+.logo {
+    display: flex;
+    border-bottom: -20px;
+}
+
+.price-tag {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    color: rgb(51, 48, 48);
+    margin-top: -15px;
+    /* font-size: large; */
+}
+
+.price-tag p:last-child {
+    color: rgb(12, 167, 12);
+}
+
+.view {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    color: rgb(139, 53, 53);
+}
+
+.break-line {
+    color: blue;
+    margin: 40px;
+    border-width: thin;
+    /* width: 100%; */
+}
+
+.viewall a {
+    color: brown;
+    text-decoration: none;
+}
+.bottomview a {
+    display: none;
+}
+#foodbag {
+    font-weight: 600;
+}
+
+#foodbag span {
+    color: brown;
+}
+
+.eatery {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* working with media queries */
+@media only screen and (max-width: 728px) {
+    .list-items {
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+        margin-right: -10px;
+        }
+    .list-items div {
+        width: 100%;
+    }
+    .list-items div img {
+        width: 100%;
+        height: 25%;
+    }
+    main {
+        margin: 10px;
+        padding: 0;
+        width: 90%;
+    }
+    header {
+        margin: 0 10px 0 10px;
+        padding: 20px 0 0 0;
+        font-size: 20px;
+        width: 90%;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+    li {
+        padding: 0 10px;
+        gap: 3%;
+        border: 0 0 0 0;
+        justify-content: space-between;
+    }
+    .navigation {
+        margin-left: 10px;
+        width: 90%;
+    }
+    h2 {
+        margin-top: 30px;
+    }
+    .price-tag {
+        font-weight: bolder;
+    }
+    .bottomview a{
+        color: brown;
+        text-decoration: none;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+    }
+    .viewall {
+        display: none;
+    }
+}
+@media only screen and (min-width: 729px) and (max-width: 1140px) {
+.list-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 40px;
+    }
+    .list-items div {
+        width: 100%;
+    }
+    .list-items div img {
+        width: 100%;
+        height: 25%;
+    }
+    .bottomview a{
+        color: brown;
+        text-decoration: none;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+    }
+    .viewall {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1141px) {
+    .list-items {
+        display: flex;
+    }
+}
