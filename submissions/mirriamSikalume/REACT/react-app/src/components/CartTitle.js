@@ -1,5 +1,4 @@
 import React from 'react'
-import carttitle from './carttitle.css'
 export const Body = () => {
   return (
     <div>
