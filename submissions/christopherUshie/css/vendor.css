@@ -1,0 +1,168 @@
+
+*{
+    font-family: 'Poppons',sans-serif
+}
+
+.landnav{
+  
+    display: inline-flex;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+ 
+    
+}
+
+.food{
+   
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 100px;
+    
+    width: 90px;
+    height: 30;
+    
+}
+
+.bag{
+    color: #AD4C4C;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 820px;
+}
+
+.cart p{
+    margin-right: 30px;
+    margin-top: 23px;
+}
+.login p{
+    margin-right: 30px;
+    margin-top: 23px;
+}
+
+.signup p{
+    color: #AD4C4C;
+    margin-top: 10px;
+    height: 24px;
+    width: 61px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-top:10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.home{
+  color: #E5E5E5;
+ 
+  margin-right: 10px;
+}
+
+.vendo{
+  margin-left: 10px;
+}
+
+.hv{
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.ikf{
+  display: flex;
+  margin-top: 50px;
+}
+
+.view{
+  margin-left: 1020px;
+  color: #AD4C4C;
+
+}
+
+.dmag{
+  margin-right: 20px;
+}
+.com{
+  margin-bottom: 33px;
+  font-size: 14px;
+}
+.avd{
+  margin-left: 15px;
+}
+
+.nag{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.fp{
+  display: flex;
+}
+
+.sp{
+  display: flex;
+}
+
+.tp{
+  display: flex;
+}
+
+.fop{
+  display: flex;
+}
+
+.naira{
+  color: #5EA304;
+  margin-top: 17px;
+  margin-left: 90px;
+
+}
+
+.first{
+  margin-right: 30px;
+}
+
+.second{
+  margin-right: 30px;
+}
+
+.third{
+  margin-right: 30px;
+}
+
+.add{
+  border: 1px solid #AD4C4C;
+  width: 130px;
+  height: 30px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.lrol{
+  margin-right: 36px;
+  display: flex;
+  border-top: 1px solid  #E6E6E6;
+}
+
+.chb{
+  margin-top: 74px;
+}
+
+.tla{
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.vl{
+  margin-left: 900px;
+  margin-top: 75px;
+  color: #AD4C4C;
+
+}
