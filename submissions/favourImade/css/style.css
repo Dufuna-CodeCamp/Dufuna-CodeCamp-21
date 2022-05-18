@@ -123,6 +123,7 @@ section#home .serve .serve-row div p{
     color: grey;
 }
 
+/*
 @media screen and (max-width: 400px){
     nav li{
         padding-right: 15px;
@@ -142,36 +143,42 @@ section#home .serve .serve-row div p{
         font-size: 15px;
     }
     
+    
 }
 
 /* Small devices (Potraits tablets and large phones, 600px and down) */
-@media screen and (max-width: 600px){
+/*@media screen and (max-width: 600px){
 
     body{
         padding: 20px;
     }
-    section#home .landing-page{
+    section#home #home-page{
         text-align:start;
     }
     section#home .pick-interest .interest-row .interest{
         flex-basis: 100%;
         /* margin-bottom:20px; */
-    }
-
+/*
     section#home .serve .serve-row div{
         width:100%;
         text-align: center;
     }
-}
+    footer .foot {
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+        text-align: center;
+    }
+}*/
 
 /* Medium devices (Landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
     body{
         padding: 20px 30px;
     }
 
     section#home .pick-interest .interest-row .interest{
-        flex-basis: 48%;
+        flex-basis: 24%;
     }
 
     section#home .serve .serve-row { 
@@ -179,22 +186,22 @@ section#home .serve .serve-row div p{
         align-items: center;
     }
 
-    section#home .serve-you .serve-row div{
-        width: 300px;
+    section#home .serve .serve-row div{
+        width: 100%;
         text-align: center;
     }
 
     
-}
+}*/
 
 /* Small devices (Potraits tablets and large phones, 600px and up) */ 
-@media screen and (min-width: 600px) and (max-width: 1017px) {
+/*@media screen and (min-width: 600px) and (max-width: 1017px) {
     body{
         padding: 20px 30px;
     }
 
     section#home .pick-interest .interest-row .interest{
-        flex-basis: 48%;
+        flex-basis: 18%;
     }
 
     section#home .serve .serve-row{
@@ -207,7 +214,7 @@ section#home .serve .serve-row div p{
         width:300px;
         text-align: center;
     }
-}
+}*/
 
 footer .contact{
     /* margin-left:47%; */
@@ -233,7 +240,7 @@ section#vendors .kfc-vendor .kfc{
     justify-content: space-between;
     align-items: center;
     padding-bottom:100px;
-    /* border-bottom: 1px solid #f4f4f4; */
+    /* bpr.product-bottom: 1px solid #f4f4f4; */
 }
 
 section#vendors .kfc-vendor .kfc .head {
@@ -324,7 +331,7 @@ section#vendors .cr-vendor .cr{
     justify-content: space-between;
     align-items: center;
     padding-bottom:20px;
-    /* border-bottom: 1px solid #f4f4f4; */
+    /* bpr.product-bottom: 1px solid #f4f4f4; */
 }
 
 section#vendors .cr-vendor .cr .head {
@@ -363,4 +370,90 @@ section#vendors .cr-vendor .cr button, .vendor > .btn button{
 a{
     text-decoration: none;
 }
+
+/* extra small devices (phones, 600px down) */
+
+@media screen and (max-width: 400px){
+    nav li{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 20px 20px;
+    }
+    section#home .landing-page{
+        text-align:start;
+    }
+    section#home .pick-interest .interest-row .interest{
+        flex-basis: 100%;
+        /* margin-bottom:20px; */
+    }
+
+    section#home .serve .serve-row div{
+        width:100%;
+        text-align: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 649px){
+
+    #vendors .products .product{
+        width:100%;
+    }
+
+    #vendors .products .product img{
+        width:100%;
+    }
+
+    #vendors .btn{
+        display:flex;
+    }
+
+
+}
+
+
+/* small devices (portrait tablets and large phones 600px and up) */
+
+@media screen and (min-width: 600px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+
+    section#home .interests .interest-row .interest{
+        flex-basis: 48%;
+    }
+
+    section#home .serve .serve-row {
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#home .serve .serve-row div{
+        width:300px;
+        text-align: center;
+    }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* medium devices (landscape tablets, 768px and up) */
+
+/* @media screen and (min-width: 768px) and (max-width: 1017px){
 
