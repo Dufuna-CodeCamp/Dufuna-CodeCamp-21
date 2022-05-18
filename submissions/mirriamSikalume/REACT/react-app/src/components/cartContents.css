@@ -39,7 +39,7 @@
     margin-left: 2rem;
 }
 .container {
-    margin: 0 50px 0 50px;
+    margin:  0 50px;
 }
 .cart-price {
     font-size: 20px;
@@ -87,10 +87,7 @@
     display: flex;
     justify-content: space-between;
 }
-#sum-total {
-    float: right;
-    /* margin-top: 30px; */
-}
+
 #final-total {
     font-size: 30px;
     font-weight: bold;
@@ -101,6 +98,9 @@
     display: flex;
     justify-content: center;
     background-color: #AD4C4C;
+    width: 30rem;
+    margin-left: 24rem;
+    margin-bottom: 1rem;
 
 }
 #checkout {
@@ -114,11 +114,6 @@
     font-weight: 900;
 
 }
-.footer {
-    width: 30rem;
-    margin-left: 24rem;
-    margin-bottom: 1rem;
-}
 #hide-total {
     visibility: hidden;
 }
@@ -126,6 +121,7 @@
     display: none;
 }
 #sum-total {
+    float: right;
     font-size: 20px;
     font-weight: bold;
 }

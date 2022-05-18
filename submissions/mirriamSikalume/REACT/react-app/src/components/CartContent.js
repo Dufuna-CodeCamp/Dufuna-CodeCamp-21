@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Header } from './header'
 import Data from './Data'
 import { Button } from './Button'
 import close from '../images/close.svg'
@@ -7,8 +6,6 @@ import plus from '../images/plus.svg'
 import Minus from '../images/Minus.svg'
 import scooter from '../images/scooter 1.svg'
 
-
-import cartContents from './cartContents.css'
 
 export const CartContent = () => {
 
@@ -86,7 +83,7 @@ export const CartContent = () => {
                 <Button id='cancle-btn' img={close}
                   onClick={() => HandleCancle(item)}
                   imageId="imageId" />
-                <img id='food-image' src={item.image} ></img>
+                <img id='food-image' src={item.image} alt=" food"></img>
 
                 <div className='title-buttons'>
 
@@ -94,14 +91,14 @@ export const CartContent = () => {
 
                   <div className='btn-quantity'>
                     <button id='plus' onClick={() => HandleIncrement(item)} >
-                      <img id=" plus-image-id " src={plus} ></img>
+                      <img id=" plus-image-id " src={plus} alt="plusimg"></img>
                     </button>
 
 
                     <p id='quantity'>{item.quantity}</p>
 
                     <button id='plus' img={Minus} onClick={() => HandleDecrement(item)} >
-                      <img id=" plus-image-id " src={Minus} ></img>
+                      <img id=" plus-image-id " src={Minus} alt="plus"></img>
                     </button>
 
                   </div>
@@ -121,18 +118,18 @@ export const CartContent = () => {
       }
 
    {
-    ListOfData.length ==0 ?
+    ListOfData.length ===0 ?
     <p></p>: 
     <div>
         <div className='delevery-details'>
 
         <div className='scooter-delivery-feel'>
-        <img id="scooter" src={scooter}></img>
+        <img id="scooter" src={scooter} alt="scoter"></img>
         <p id='feel'>Delivery Fee</p>
         </div>
 
-        <p id='total'>#{total == 0 ? 0 : cash}</p>
-        <p id='total-plus-cash'>#{total == 0 ? 0: total += cash}</p>
+        <p id='total'>#{total === 0 ? 0 : cash}</p>
+        <p id='total-plus-cash'>#{total === 0 ? 0: total += cash}</p>
        
 
       </div>
