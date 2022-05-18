@@ -1,0 +1,11 @@
+@media screen and (min-width: 468px) {
+    #1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+    }
+    #1 image{
+     size: 5px;
+    }
+}
