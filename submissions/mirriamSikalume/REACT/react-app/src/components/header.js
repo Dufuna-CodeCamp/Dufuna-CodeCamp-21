@@ -1,12 +1,11 @@
 import React from 'react'
-import header from './header.css';
 export const Header = () => {
   return (
     <div>
         <div className="Nav">
-        <a id="cart" href="#">Cart</a>
-        <a href="#">Login</a>
-        <a id="sign-up" href="#">Sign up</a>
+        <a id="cart" href="cart">Cart</a>
+        <a href="in">Login</a>
+        <a id="sign-up" href="up">Sign up</a>
         </div>
                 
        

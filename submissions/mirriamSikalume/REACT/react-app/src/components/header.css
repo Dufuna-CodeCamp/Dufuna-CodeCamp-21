@@ -10,13 +10,12 @@
 }
 .Nav a {
     justify-content: space-between;
-    padding: 0 25px 0 25px;
+    padding: 0 25px;
     text-decoration: none;
     margin-right: 50px;
 }
 #cart {
     color: #AD4C4C;
-    ;
 }
 #sign-up {
     color: #AD4C4C;
@@ -45,7 +44,7 @@
     }
     .Nav a {
         justify-content: space-between;
-        padding: 0 5px 0 5px;
+        padding: 0 5px;
         text-decoration: none;
         margin-right: 50px;
         
