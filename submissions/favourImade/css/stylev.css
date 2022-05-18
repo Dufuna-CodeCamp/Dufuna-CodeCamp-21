@@ -77,16 +77,6 @@ section#vendors .kfc-vendor .kfc button, .vendor > .btn button{
     background-color: transparent;   
 }
 
-section#vendors .cr-vendor .cr{
-    margin-top:40px;
-    margin-bottom:30px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom:20px;
-}
-
-
 .kfc-vendor .btn{
     display:none;
     justify-content: center;
@@ -208,7 +198,7 @@ a{
 @media screen and (max-width: 600px){
 
     body{
-        padding: 20px 20px;
+        padding: 20px;
     }
 
 }
