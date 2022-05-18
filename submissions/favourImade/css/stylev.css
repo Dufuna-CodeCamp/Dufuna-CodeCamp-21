@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+body{
+    padding: 20px 50px;
+}
+
+header h3 a{
+    color: black;
+}
+
+header h3 a span{
+    color: brown;
+}
+
+nav{
+    position:absolute;
+    right:0;
+    display:flex; 
+    align-items: center;
+}
+
+nav li{
+    display: inline;
+    padding: 40px;
+}
+
+nav li span{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+nav button{
+    color:brown;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius:4px;
+    outline: none;
+    border:2px solid brown;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+section#vendors .kfc-vendor .kfc{
+    margin-top:50px;
+    margin-bottom:-40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:100px;
+    /* bpr.product-bottom: 1px solid #f4f4f4; */
+}
+
+section#vendors .kfc-vendor .kfc .head {
+    display:flex;
+    align-items: center;
+}
+
+section#vendors .kfc-vendor .kfc .head h3{
+    margin-left:10px;
+}
+
+section#vendors .kfc-vendor .kfc button, .vendor > .btn button{
+    outline:none;
+    border:none;
+    color:brown;
+    background-color: transparent;   
+}
+
+section#vendors .cr-vendor .cr{
+    margin-top:40px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:20px;
+}
+
+
+.kfc-vendor .btn{
+    display:none;
+    justify-content: center;
+    margin-top:40px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.products .product{
+    margin-bottom: 20px;
+}
+
+.products .details{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+.products .details p:nth-child(2){
+    color:green;
+}
+
+.products button{
+    background-color: transparent;
+    color: brown;
+    outline:none;
+    border:1px solid brown;
+    padding:5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+button:hover{
+    color: white;
+    background-color: brown;
+}
+
+.draw {
+    /* position: relative; */
+    /* left: 3px; */
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-right: 5px;
+}
+
+.draw::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(7px) translateX(-10px);
+}
+
+section#vendors .cr-vendor .cr{
+    margin-top:40px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:20px;
+}
+
+section#vendors .cr-vendor .cr .head {
+    display:flex;
+    align-items: center;
+}
+
+
+section#vendors .cr-vendor .cr .head h3{
+    margin-left:10px;
+}
+
+section#vendors .cr-vendor .cr button, .vendor > .btn button{
+    outline:none;
+    border:none;
+    color:brown;
+    background-color: transparent;
+}
+
+.cr-vendor .btn{
+    display:none;
+    justify-content: center;
+    margin-top:40px;
+}
+
+.grey-color{
+    color: grey;
+}
+
+.home-vendor{
+    padding-top: 100px;
+    padding-bottom: 35px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 400px){
+    nav li{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 20px 20px;
+    }
+
+}
+
+/* small devices (portrait tablets and large phones 600px and up) */
+
+@media screen and (min-width: 600px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+}
+
+
