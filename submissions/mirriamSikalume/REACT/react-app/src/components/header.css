@@ -1,0 +1,53 @@
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    float: right;
+    line-height: 24px;
+    text-decoration: none;
+    margin-top: 23px;
+}
+.Nav a {
+    justify-content: space-between;
+    padding: 0 25px 0 25px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+#cart {
+    color: #AD4C4C;
+    ;
+}
+#sign-up {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    border-radius: 4px;
+}
+.FB {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.b {
+    color: #AD4C4C;
+}
+@media screen and (min-width: 468px) {
+    .Nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align:end;
+        float: right;
+        line-height: 24px;
+        text-decoration: none;
+        margin-top: 23px;
+        gap: 0.5px;
+    }
+    .Nav a {
+        justify-content: space-between;
+        padding: 0 5px 0 5px;
+        text-decoration: none;
+        margin-right: 50px;
+        
+    }
+}
