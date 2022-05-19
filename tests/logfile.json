@@ -1,8 +1,284 @@
 {
   "stats": {
-    "tests": 6,
-    "passes": 6,
-    "failures": 0,
-    "owner": "chijiokeOrabueze"
+    "suites": 1,
+    "tests": 7,
+    "passes": 0,
+    "pending": 0,
+    "failures": 7,
+    "start": "2022-05-18T15:02:20.073Z",
+    "end": "2022-05-18T15:02:34.150Z",
+    "duration": 14077,
+    "testsRegistered": 7,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e93d9e6d-b9e5-477f-8c52-d20e2e67c86e",
+      "title": "",
+      "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js",
+      "file": "\\cookies.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+          "title": "Testing Cookies Task",
+          "fullFile": "C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js",
+          "file": "\\cookies.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Cookies Task\"",
+              "fullTitle": "Testing Cookies Task \"before all\" hook: setupWebdriver in \"Testing Cookies Task\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
+              "err": {},
+              "uuid": "af836677-397f-4658-be3a-018bed687184",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Cookies Task\"",
+              "fullTitle": "Testing Cookies Task \"after all\" hook in \"Testing Cookies Task\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "a483fa7e-a9f6-4c7c-85a8-9c4b3a1ea809",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: S/N is present",
+              "fullTitle": "Testing Cookies Task test case: S/N is present",
+              "timedOut": true,
+              "duration": 2004,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst serial = await text.toLowerCase();\nassert.include(serial, \"s/n\", `Ensure \"S/N\" column is present on the table`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "1dc24a7a-6c05-49c5-a5ab-c970c0cbcf6a",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Full Name label is present",
+              "fullTitle": "Testing Cookies Task test case: Full Name label is present",
+              "timedOut": true,
+              "duration": 2000,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst serial = await text.toLowerCase();\nassert.include(serial, \"full name\", `Ensure \"Full Name\" column is present on the table`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "2f6a6d00-cebe-4582-9130-73f79451fd0a",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Email label is present",
+              "fullTitle": "Testing Cookies Task test case: Email label is present",
+              "timedOut": true,
+              "duration": 2000,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email address\", `Ensure \"Email Address\" label is present`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "e9768183-65fe-46e8-955b-2c8d532ace71",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Date created is present",
+              "fullTitle": "Testing Cookies Task test case: Date created is present",
+              "timedOut": true,
+              "duration": 2001,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst created_at = await text.toLowerCase();\nassert.include(created_at, \"created at\", `Ensure \"Created At\" is present on the table`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "dab4679c-6636-40d6-812f-3e0363e83e04",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Actions is present",
+              "fullTitle": "Testing Cookies Task test case: Actions is present",
+              "timedOut": true,
+              "duration": 2000,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst actions = await text.toLowerCase();\nassert.include(actions, \"actions\", `Ensure \"Actions\" column is present on the table`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "607ac73b-6d04-427d-8688-6b6d2c274180",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: View button is is present",
+              "fullTitle": "Testing Cookies Task test case: View button is is present",
+              "timedOut": true,
+              "duration": 2002,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"button\"));\nconst text = await name.getText();\nconst view = await text.toLowerCase();\nassert.include(view, \"view\", `Ensure there is a button with text \"VIEW\" in the actions column`);",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\cookies\\cookies.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "21918ab3-3be9-48e9-95d5-5862d86b8b4d",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Check if cookies is set",
+              "fullTitle": "Testing Cookies Task test case: Check if cookies is set",
+              "timedOut": false,
+              "duration": 1877,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const get_cookie = await driver.manage().getCookie();\nconst cookie = get_cookie.value();\nassert.exists(cookie, `Ensure cookie is present`)",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 99\nCurrent browser version is 101.0.4951.67 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 99\nCurrent browser version is 101.0.4951.67 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:548:13)\n    at Executor.execute (C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:474:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "c0ea3e8c-9bbf-4530-a4fe-edf1dc3cb6a8",
+              "parentUUID": "dc9bcd19-b460-4c16-b0c4-6d594ec67e6e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1dc24a7a-6c05-49c5-a5ab-c970c0cbcf6a",
+            "2f6a6d00-cebe-4582-9130-73f79451fd0a",
+            "e9768183-65fe-46e8-955b-2c8d532ace71",
+            "dab4679c-6636-40d6-812f-3e0363e83e04",
+            "607ac73b-6d04-427d-8688-6b6d2c274180",
+            "21918ab3-3be9-48e9-95d5-5862d86b8b4d",
+            "c0ea3e8c-9bbf-4530-a4fe-edf1dc3cb6a8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13884,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/user/Desktop/Dufuna-CodeCamp-21/tests/cookies/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.1.1"
+    }
   }
 }
