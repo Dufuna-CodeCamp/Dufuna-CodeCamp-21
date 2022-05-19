@@ -71,7 +71,7 @@ if(!isset($_COOKIE["user0id"])){
                 echo "<td>" . $_COOKIE[$userTag. "name"] . "</td>";
                 echo "<td>" . $_COOKIE[$userTag. "email"] . "</td>";
                 echo "<td>" . $_COOKIE[$userTag. "date"] . "</td>";
-                echo "<td>" . "<button>VIEW</button>" . "</td>";
+                echo "<td><button>VIEW</button></td>";
             echo "</tr>";
 
             $c += 1;
