@@ -123,81 +123,6 @@ section#home .serve .serve-row div p{
     color: grey;
 }
 
-@media screen and (max-width: 400px){
-    nav li{
-        padding-right: 15px;
-    }
-}
-
-@media screen and (max-width: 600px){
-
-    body{
-        padding: 20px;
-    }
-    section#home .landing-page{
-        text-align:start;
-    }
-    section#home .pick-interest .interest-row .interest{
-        flex-basis: 100%;
-        /* margin-bottom:20px; */
-    }
-
-    section#home .serve .serve-row div{
-        width:100%;
-        text-align: center;
-    }
-}
-
-
-@media screen and (min-width: 600px) and (max-width: 1017px) {
-    body{
-        padding: 20px 30px;
-    }
-
-    section#home .pick-interest .interest-row .interest{
-        flex-basis: 48%;
-    }
-
-    section#home .serve .serve-row{
-        
-        justify-content: center;
-        align-items: center;
-    }
-
-    section#home .serve-you .serve-row div{
-        width:300px;
-        text-align: center;
-    }
-
-    
-}
-
-    section.landing .serve-you .serve-container div{
-        width:100%;
-        text-align: center;
-    }
-
-@media screen and (min-width: 600px) and (max-width: 1017px) {
-    body{
-        padding: 20px 30px;
-    }
-
-    section#home .pick-interest .interest-row .interest{
-        flex-basis: 48%;
-    }
-
-    section#home .serve .serve-row{
-        
-        justify-content: center;
-        align-items: center;
-    }
-
-    section#home .serve .serve-row div{
-        width:300px;
-        text-align: center;
-    }
-}
-
 footer .contact{
     /* margin-left:47%; */
     display: flex;
@@ -214,73 +139,6 @@ footer .foot{
     text-align: center;
     height: 50px;
 }
-
-section#vendors .kfc-vendor .kfc{
-    margin-top:50px;
-    margin-bottom:-40px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom:100px;
-    /* border-bottom: 1px solid #f4f4f4; */
-}
-
-section#vendors .kfc-vendor .kfc .head {
-    display:flex;
-    align-items: center;
-}
-
-section#vendors .kfc-vendor .kfc .head h3{
-    margin-left:10px;
-}
-
-section#vendors .kfc-vendor .kfc button, .vendor > .btn button{
-    outline:none;
-    border:none;
-    color:brown;
-    background-color: transparent;   
-}
-
-.kfc-vendor .btn{
-    display:none;
-    justify-content: center;
-    margin-top:40px;
-}
-
-.products{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-}
-
-.products .product{
-    margin-bottom: 20px;
-}
-
-.products .details{
-    display: flex;
-    justify-content: space-between;
-    margin-top:10px;
-    margin-bottom: 15px;
-}
-
-.products .details p:nth-child(2){
-    color:green;
-}
-
-.products button{
-    background-color: transparent;
-    color: brown;
-    outline:none;
-    border:1px solid brown;
-    padding:5px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display:flex;
-    font-weight: bold;
-    align-items: center;
-}
-
 button:hover{
     color: white;
     background-color: brown;
@@ -306,50 +164,75 @@ button:hover{
     transform: translateY(7px) translateX(-10px);
 }
 
-section#vendors .cr-vendor .cr{
-    margin-top:40px;
-    margin-bottom:30px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom:20px;
-    /* border-bottom: 1px solid #f4f4f4; */
-}
-
-section#vendors .cr-vendor .cr .head {
-    display:flex;
-    align-items: center;
-}
-
-
-section#vendors .cr-vendor .cr .head h3{
-    margin-left:10px;
-}
-
-section#vendors .cr-vendor .cr button, .vendor > .btn button{
-    outline:none;
-    border:none;
-    color:brown;
-    background-color: transparent;
-}
-
-.cr-vendor .btn{
-    display:none;
-    justify-content: center;
-    margin-top:40px;
-}
-
 .grey-color{
     color: grey;
 }
 
-.home-vendor{
-    padding-top: 100px;
-    padding-bottom: 35px;
-    font-weight: bold;
-}
-
 a{
     text-decoration: none;
+}
+
+/* extra small devices (phones, 600px down) */
+
+@media screen and (max-width: 400px){
+    nav li{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 20px;
+    }
+    section#home .landing-page{
+        text-align:start;
+    }
+    section#home .pick-interest .interest-row .interest{
+        flex-basis: 100%;
+        /* margin-bottom:20px; */
+    }
+
+    section#home .serve .serve-row div{
+        width:100%;
+        text-align: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        text-align: center;
+    }
+}
+
+/* small devices (portrait tablets and large phones 600px and up) */
+
+@media screen and (min-width: 600px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+
+    section#home .interests .interest-row .interest{
+        flex-basis: 48%;
+    }
+
+    section#home .serve .serve-row {
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#home .serve .serve-row div{
+        width:300px;
+        text-align: center;
+    }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
