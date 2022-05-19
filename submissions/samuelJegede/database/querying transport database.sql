@@ -25,7 +25,7 @@ WHERE trip_details.trip_fare > 100.00 AND passengers.age > 35
 AND trip_details.siblings_spouses > 0;
 
 -- Total number of passengers who paid a fare greater than $100 AND above the age of 35 had siblings or spouses on board
-SELECT COUNT(full_name) FROM passengers
+SELECT COUNT(*) FROM passengers
 INNER JOIN trip_details ON passengers.passenger_id = trip_details.passenger_id
 WHERE trip_details.trip_fare > 100.00 AND passengers.age > 35
 AND trip_details.siblings_spouses > 0;
