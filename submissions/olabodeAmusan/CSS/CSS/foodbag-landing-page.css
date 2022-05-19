@@ -1,0 +1,236 @@
+/*Styling body*/
+body{
+    padding: 0px 50px 50px 50px;
+}
+*{
+    font-family: "poppin", sans-serif;
+}
+
+/*Navigation Bar*/
+nav ul{
+    list-style: none;
+    float: right;
+    display: inline;
+    margin: 0;
+    padding: 0px;
+}
+.foodbag{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+
+nav span{
+    color: #b64242;
+}
+
+.navigation-bar p{
+    padding:0;
+    margin: 0;
+}
+
+.login,
+.cart{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+}
+.botton{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+}
+
+/*Section*/
+.motto p:first-child{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4E4D4D;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.motto p:last-child{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    padding: 0;
+    margin-top: 0;
+}
+input[type='text']{
+    height: 60px;
+    width:1220px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    padding-left: 5px;
+}
+.image, 
+.address{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 30px;
+    color: #4E4D4D;
+}
+
+.interest div {
+    width: 295px;
+    height: 169px;
+    background: #FFFFFF;
+    padding: 0px 20px 20px 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.interest,
+.service{
+    display: flex;
+}
+
+.how-we-serve p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #4E4D4D;
+    padding-top: 80px;
+    
+}
+.address p{
+    padding-top: 10px;
+}
+.image div div{
+    padding-top: 20px;
+}
+.image div div p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #A5A5A5;
+}
+.image div div p:last-child{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 0;
+}
+
+
+.how-we-serve div div p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #696969;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+}
+
+.how-we-serve div div p:last-child{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.service div {
+    background: #FFFFFF;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: white;
+}
+
+.border1,
+.border2{
+    width:auto;
+    height: 0px;
+    border: 1px solid #F2F2F2;
+    margin: 0;
+}
+
+/*Footer*/
+
+.contact div:first-child{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-style: normal;
+    padding-top: 81px;
+}
+.contact div:first-child ul{
+    padding: 0px;
+}
+
+.contact div:last-child li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-style: normal;
+    padding-top: 48px;
+    padding-bottom: 80px;
+}
+.contact div:last-child li:last-child{
+   float: right;
+}
+.contact div:last-child li:first-child{
+    float: left;
+ }
+
+.contact{
+    color: #696969;
+}
+
+
+@media screen and (min-width: 400px) {
+    nav{
+        padding: 45px 0px;
+    }
+    nav li {
+        display: inline;
+        padding: 8px;
+        float: left;
+    }
+    footer li{
+        display: inline;
+        padding: 8px;
+        
+    }
+   
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: #AD4C4C;
+}
+
