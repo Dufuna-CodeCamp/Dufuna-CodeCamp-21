@@ -16,7 +16,7 @@
 !.github
 !README.md
 
-#Slim Project files
+#Slim project files
 vendor
 .env
 composer.lock
