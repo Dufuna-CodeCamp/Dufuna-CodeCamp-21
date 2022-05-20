@@ -1,0 +1,89 @@
+body {
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+span {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding: 15px;
+    float: right;
+    font-size: 20px;
+}
+
+.parent-one, .service, .terms {
+    display: flex;
+}
+
+.parent-one div {
+    border: 1px solid gray;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+}
+
+.service div {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+}
+
+.foodbag {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.header-child {
+    display: inline-block;
+}
+
+.nav {
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+}
+
+#signup {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.box {
+    text-align: center;
+}
+
+#address {
+    width: 99%;
+    padding: 10px;
+}
+
+.terms p{
+    flex: 1;
+}
+
+.contact img{
+    padding: 10px;
+}

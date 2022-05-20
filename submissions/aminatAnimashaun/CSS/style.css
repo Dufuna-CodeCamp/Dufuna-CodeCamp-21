@@ -5,7 +5,7 @@
 body{
     margin: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
@@ -31,7 +31,7 @@ footer{
 
 nav{
     
-    position: absolute;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -52,7 +52,7 @@ nav ul li{
 }
 
 .content{
-    padding: 100px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -152,3 +152,80 @@ span{
     margin-top: 3px;
     color: gray;
 }
+
+.heading li{
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 5px; 
+       
+}
+
+.kfc li{
+    display: inline-grid;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.chicken li{
+    display: inline-grid;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.price{
+    padding: 60px;
+    color: green;
+}
+
+.head{
+    padding-top: 4%;
+    margin: 1.5%;
+    margin-left: 1%;
+    padding-left: 0;
+    
+}
+
+.addcart{
+    width: 40%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #AD4C4C;
+    padding: 10px;
+    color: #AD4C4C;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.home{
+    color: grey;
+}
+
+.ven{
+    color: black;
+}
+
+
+@media screen and (min-width: 320px) {
+   nav ul{
+       display: inline;
+       
+   }
+   .anchor, .anchor1, .anchor2{
+       padding: 5px;
+       margin: 5px;
+   }
+   nav{
+      
+       align-items: none;
+       display: inline;
+       padding: 5px;
+       
+   }
+   .logo{
+       float: inline-start;
+       margin: 5px;
+       padding: 5px;   
+   }

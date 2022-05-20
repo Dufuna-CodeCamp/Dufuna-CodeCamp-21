@@ -1,0 +1,58 @@
+form{
+    width: 100%;
+}
+
+.title-items-show{ 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  .form-label{
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input.form-control, select.form-control{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    
+  }
+
+  input.form-control{
+    box-sizing: border-box;
+    
+  }
+  
+  textarea.form-control{
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  input.form-control:focus, select.form-control:focus{
+    outline: none;
+    border: 2px solid rgb(86, 247, 225);
+  }
+  
+  .exp-cvc-container div{
+    width: 45%;
+  }
+  
+  .address-radio:checked{
+    background-color: brown;
+    color:brown;
+  }
+  
+  #success{
+    display: none;
+  }
