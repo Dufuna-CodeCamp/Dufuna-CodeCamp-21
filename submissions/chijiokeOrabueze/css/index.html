@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h3 class="log"><a href="">Food<span>Bag</span></a></h3>
+        <h3 class="log"><a href="./index.html" >Food<span>Bag</span></a></h3>
         <nav>
             <li class="nav-link"><a href="">Cart</a></li>
             <li class="nav-link"><a href="">Login</a></li>
@@ -24,29 +24,34 @@
 
         <div class="destination">
             <label for="address"><strong>Where are you?</strong></label> <br><br>
-            <input type="text" id="address" placeholder="Enter your delivery address">
+            <select name="tree" id="address">
+                <option value="Bonga market">Bonga market</option>
+                <option value="High Level">High Level</option>
+                <option value="Wallmart">Wallmart</option>
+                <option value="Altitude plaza">Altitude plaza</option>
+            </select>
         </div>
 
         <div class="interests">
             <h4>Pick an interest</h4> <br>
             <div class="interest-container">
                 <div class="interest">
-                    <img src="images/fast-food.svg" alt="">
+                    <img class = 'interestImg' src="images/fast-food.svg" alt="">
                     <h4>Fast food</h4>
                     <p>All sorrows are less with bread.</p>
                 </div>
                 <div class="interest">
-                    <img src="images/Vegetables & Drinks.svg" alt="" srcset="">
+                    <img class = 'interestImg' src="images/Vegetables & Drinks.svg" alt="" srcset="">
                     <h4>Vegetables & Fruits</h4>
                     <p>May not want it, but good for you.</p>
                 </div>
                 <div class="interest">
-                    <img src="images/Drinks & Cocktails.svg" alt="" srcset="">
+                    <img class = 'interestImg' src="images/Drinks & Cocktails.svg" alt="" srcset="">
                     <h4>Drinks & Cocktails</h4>
                     <p>I feel sad for those who don't drink.</p>
                 </div>
                 <div class="interest">
-                    <img src="images/resturant.svg" alt="" srcset="">
+                    <img class = 'interestImg' src="images/resturant.svg" alt="" srcset="">
                     <h4>Resturants</h4>
                     <p>All sorrows are less with bread.</p>
                 </div>
@@ -89,5 +94,7 @@
             <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
         </div>
     </footer>
+
+    <script src="../Dom/index.js"></script>
 </body>
 </html>

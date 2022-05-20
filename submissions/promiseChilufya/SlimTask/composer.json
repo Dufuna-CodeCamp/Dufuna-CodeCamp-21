@@ -1,0 +1,24 @@
+{
+  "name": "slimphp/slimtask",
+  "description": "slim endpiont task",
+  "require": {
+    "slim/slim": "4.*",
+    "slim/psr7": "^1.5",
+    "illuminate/database": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Models\\": "app/models",
+      "App\\Controllers\\": "app/models",
+      "db\\": "config"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8000 -t public"
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  }
+}

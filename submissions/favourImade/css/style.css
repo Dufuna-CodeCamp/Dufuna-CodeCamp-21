@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+body{
+    padding: 20px 50px;
+}
+
+header h3 a{
+    color: black;
+}
+
+header h3 a span{
+    color: brown;
+}
+
+nav{
+    position:absolute;
+    right:0;
+    display:flex; 
+    align-items: center;
+}
+
+nav li{
+    display: inline;
+    padding: 40px;
+}
+
+nav li span{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+nav button{
+    color:brown;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius:4px;
+    outline: none;
+    border:2px solid brown;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+
+section#home .landing-page{
+    width:100%;
+    text-align:center;
+    margin-bottom:50px;
+    margin-top: 150px;
+    font-size: larger;
+}
+
+
+section#home .location{
+    width:100%;
+    margin-bottom:40px;
+}
+
+section#home .location select,
+section#home .location input{
+    width: 100%;
+    padding:10px;
+    outline:none;
+    border:1px solid grey;
+}
+
+section#home .pick-interest .interest-row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+section#home .pick-interest .interest-row .interest{
+    flex-basis: 23%;
+    margin-bottom:20px;
+}
+
+section#home .pick-interest .interest{
+    padding:20px;
+    border: 2px solid grey;
+    color: grey;
+}
+
+
+section#home .serve{
+    margin-bottom:150px;
+}
+
+section#home .serve h3{
+    /* display:flex; */
+    text-align: center;
+    margin-top:150px;
+    margin-bottom: 80px;
+}
+
+section#home .serve .serve-row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section#home .serve .serve-row div{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section#home .serve .serve-row div p{
+    /* width:195px; */
+    /* margin-left:50px; */
+    color: grey;
+}
+
+footer .contact{
+    /* margin-left:47%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+    height: 100px;
+}
+
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50px;
+}
+button:hover{
+    color: white;
+    background-color: brown;
+}
+
+.draw {
+    /* position: relative; */
+    /* left: 3px; */
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-right: 5px;
+}
+
+.draw::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(7px) translateX(-10px);
+}
+
+.grey-color{
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* extra small devices (phones, 600px down) */
+
+@media screen and (max-width: 400px){
+    nav li{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 20px;
+    }
+    section#home .landing-page{
+        text-align:start;
+    }
+    section#home .pick-interest .interest-row .interest{
+        flex-basis: 100%;
+        /* margin-bottom:20px; */
+    }
+
+    section#home .serve .serve-row div{
+        width:100%;
+        text-align: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        text-align: center;
+    }
+}
+
+/* small devices (portrait tablets and large phones 600px and up) */
+
+@media screen and (min-width: 600px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+
+    section#home .interests .interest-row .interest{
+        flex-basis: 48%;
+    }
+
+    section#home .serve .serve-row {
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#home .serve .serve-row div{
+        width:300px;
+        text-align: center;
+    }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+

@@ -1,0 +1,174 @@
+a{
+  text-decoration:none;
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  border-radius:8px;
+  outline: none;
+  border:1px solid brown;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.App{
+  padding:20px 50px;
+}
+
+
+.nav-container{
+  position:relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container h3 span{
+  color:brown;
+}
+
+.nav-links{
+  position:absolute;
+  right:0;
+  display:flex; 
+  align-items: center;
+}
+
+.nav-links li{
+  padding-right: 40px;
+  display: flex;
+  
+}
+
+.title-items{
+  display:none;
+}
+
+.remove-btn{
+  border: none;
+  border-bottom:1px solid brown;
+  border-radius: 0 !important;
+}
+
+.option-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.option-container > button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: gray;
+}
+
+
+.option-wrapper{
+  height: 100%;
+  flex:5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid gray;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+.flex-center > img{
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.flex-column{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.btn-4,
+.btn-3{
+    padding: 0 !important;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius:2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkout-btn,.btn{
+    width:80vw;
+    height: 40px;
+    border-radius:3px;
+    background-color: brown;
+    color:white;
+  }
+
+@media screen and (max-width: 430px){
+  .App{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .App .nav-links li{
+    padding-right: 15px;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .App{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .App img{
+    height: 50px;
+  }
+
+  .App h3{
+    font-size: 10px;
+  }
+
+  .nav-container h3{
+    font-size: 19px;
+  }
+
+  .App .title-items{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .App .btn-4,
+  .App .btn-3{
+    padding: 0 !important;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius:2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .App .elem-holder{
+    margin: 0 10px !important;
+  }
+
+  .App .option-wrapper h1{
+    font-size: 20px;
+  }
+  
+}

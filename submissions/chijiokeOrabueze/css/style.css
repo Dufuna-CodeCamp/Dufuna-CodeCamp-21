@@ -37,8 +37,19 @@ nav{
     align-items: center;
 }
 
+
 nav li{
     padding-right: 40px;
+    display: flex;
+    
+}
+
+
+nav li span{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: transparent;
 }
 
 nav button{
@@ -49,6 +60,7 @@ nav button{
     outline: none;
     border:2px solid brown;
     font-weight: 400;
+    cursor: pointer;
 }
 
 section.landing, section.vendors{
@@ -67,6 +79,7 @@ section.landing .destination{
     margin-bottom:40px;
 }
 
+section.landing .destination select,
 section.landing .destination input{
     width: 100%;
     padding:10px;
@@ -90,6 +103,10 @@ section.landing .interests .interest{
     padding:20px;
     border: 2px solid grey;
     color: grey;
+}
+
+section.landing .interests .interest img{
+    filter: grayscale(100%);
 }
 
 section.landing .serve-you{
@@ -162,7 +179,7 @@ section.vendors .vendor .title button, .vendor > .btn button{
     outline:none;
     border:none;
     color:brown;
-    background-color: transparent;
+    background-color: transparent;   
 }
 
 .vendor .btn{
@@ -199,6 +216,30 @@ section.vendors .vendor .title button, .vendor > .btn button{
     border:1px solid brown;
     padding:5px 15px;
     border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    /* justify-content: start; */
+    align-items: center;
+}
+
+.draw {
+    /* position: relative; */
+    /* left: 3px; */
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-right: 5px;
+}
+
+.draw::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(7px) translateX(-10px);
 }
 
 
