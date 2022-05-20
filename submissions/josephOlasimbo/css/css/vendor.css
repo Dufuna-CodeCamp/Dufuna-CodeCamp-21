@@ -32,9 +32,6 @@ a {
 
 .menu {
     display: flex;
-}
-
-.menu {
     border: 1px;
     height: 300px;
     width: 200px;
