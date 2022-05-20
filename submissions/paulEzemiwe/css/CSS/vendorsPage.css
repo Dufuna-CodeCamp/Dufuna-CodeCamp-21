@@ -50,6 +50,20 @@ ul.nav__text {
   line-height: 24px;
 }
 
+.nav__btns--nil {
+  display: none;
+}
+
+.nav__btns--dot {
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background: #ad4c4c;
+  right: 20.4em;
+  top: 3.2em;
+}
+
 .nav__btns--border {
   padding: 8px 16px;
   font-size: 16px;
@@ -66,7 +80,6 @@ main {
   max-width: 1240px;
   width: 100%;
 }
-
 section {
   width: 100%;
   margin-bottom: 61px;
@@ -166,6 +179,18 @@ button.kfc__CTA {
   margin: 0 3px;
 }
 
+.kfc__CTA2 {
+  background-color: #A5A5A5;
+  color: #E6E6E6;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 4px 26px 4px 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
 .hor__line {
   height: 1px;
   width: 100%;
@@ -197,6 +222,13 @@ button.kfc__CTA {
 
   .nav__btns {
     font-size: 10px;
+  }
+
+  .nav__btns--dot {
+    right: 11.45rem;
+    top: 2.35em;
+    height: 3px;
+    width: 3px;
   }
 
   .nav__btns--border {
