@@ -7,7 +7,7 @@ import Minus from '../images/Minus.svg'
 import scooter from '../images/scooter 1.svg'
 import { Header } from './header'
 import { Body } from './CartTitle'
-import { Navigate, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 
 
 
