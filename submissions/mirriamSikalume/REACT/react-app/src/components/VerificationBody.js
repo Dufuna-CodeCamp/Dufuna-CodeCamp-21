@@ -1,8 +1,17 @@
 import React from 'react'
 import "./VerificationBody.css"
 import checked from "../images/radio_button_checked.svg"
+import { useNavigate } from 'react-router-dom'
 
 export const VerificationBody = () => {
+
+    const navigate = useNavigate();
+
+    const HandleClick = (e) => {
+         
+        e.preventDefault();
+        navigate('/success');
+    }
   return (
     <div className="VerifyBody">
         <div>
@@ -43,7 +52,11 @@ export const VerificationBody = () => {
             
         </div>
         <div className='footer'>
-         <button id='pay'>Pay</button>
+         <button id='pay'
+         onClick={(e)=> HandleClick(e)}
+         >Pay</button>
+         
+        
       </div>
         
        
