@@ -169,7 +169,7 @@ hr {
 
 @media screen and (min-width: 431px) and (max-width: 1200px) {
     body {
-       padding: 20px 20px;
+       padding: 20px;
     }
     
     div.options {
