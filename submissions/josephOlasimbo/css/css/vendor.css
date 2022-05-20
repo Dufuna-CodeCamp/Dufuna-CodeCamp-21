@@ -1,0 +1,92 @@
+body {
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-child {
+    display: inline-block;
+}
+
+.nav {
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+}
+
+#signup {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu {
+    border: 1px;
+    height: 300px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.foodbag {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#small-view{
+    float: right;
+    color: #AD4C4C;
+    font-size: 17px;
+}
+
+#add-to-cart {
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.front {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#line {
+    margin-bottom: 30px;
+}
+
+.item {
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 900px;
+    text-align: left;
+}
+
+.amount {
+    color: green;
+    font-size: 15px;
+    font-weight: 900px;
+    float: right;
+}
+
+
+h1, h2 {
+    display: inline-block;
+}
