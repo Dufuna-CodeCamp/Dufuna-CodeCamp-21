@@ -1,0 +1,148 @@
+.VerifyBody { 
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+}
+#pay {
+    color: white;
+    background-color: #AD4C4C;
+    border: hidden;
+}
+.footer {
+    height: 30px;
+}
+#P {
+    color: #696969;
+    margin-bottom: 30px;
+}
+#phone {
+    width: 72rem;
+    height: 25px;
+    margin-bottom: 25px;
+}
+.phone {
+    text-size-adjust: bold;
+}
+#Payment {
+    width: 72.5rem;
+    height: 33px;  
+    margin-bottom: 25px;
+}
+#Card {
+    width: 72rem;
+    height: 25px;
+    margin-bottom: 25px;
+}
+#Name {
+    width: 72rem;
+    height: 25px;
+    margin-bottom: 25px;
+}
+.Date {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+#expiry {
+    width: 35rem;
+    height: 25px; 
+    margin-bottom: 25px;
+}
+
+
+.check {
+    justify-content: space-between;
+}
+ #checked {
+    float: right;
+    margin-bottom: 30px;
+} 
+
+@media screen and (min-width: 468px) {
+    #phone {
+        width: 25rem;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .footer {
+        height: 30px;
+        width: 20rem;
+    }
+    .phone {
+        text-size-adjust: bold;
+    }
+    #Payment {
+        width: 25rem;
+        height: 33px;  
+        margin-bottom: 25px;
+    }
+    #Card {
+        width: 25rem;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    #Name {
+        width: 25rem;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .Date {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+    #expiry {
+        width: 10rem;
+        height: 25px; 
+        margin-bottom: 25px;
+    }
+    #CVC {
+        width: 12rem;
+        height: 25px;
+    }
+}
+@media screen and (min-width: 790px) {
+    #phone {
+        width: 72rem;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .phone {
+        text-size-adjust: bold;
+    }
+    #Payment {
+        width: 72.5rem;
+        height: 33px;  
+        margin-bottom: 25px;
+    }
+    #Card {
+        width: 72rem;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    #Name {
+        width: 72rem;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .Date {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+    #expiry {
+        width: 35rem;
+        height: 25px; 
+        margin-bottom: 25px;
+    }
+    #CVC {
+        width: 34.5rem;
+        height: 25px;
+    }
+    .footer {
+        height: 30px;
+        width: 35rem;
+    }
+}
