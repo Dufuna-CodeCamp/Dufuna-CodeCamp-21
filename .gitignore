@@ -15,3 +15,8 @@
 !tests
 !.github
 !README.md
+
+#Slim Project files
+vendor
+.env
+composer.lock
