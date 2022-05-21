@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h1>Product Survey Form</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Survey Form</legend>
+            <label for="email">Email Address</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+            <label for="firstname">First-name</label><br>
+            <input type="text" name="firstname" id="firstname"><br>
+            <label for="lastname">Lastname</label><br>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="address">Address</label><br>
+            <input type="tel" name="address" id="address" disabled><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="male" value="Female">
+            <label for="female">Female</label><br>
+            <label for="age">How would you like to describe our products</label><br>
+            <input type="checkbox" name="description1" id="description1" value="description1">
+            <label for="description">High quality</label><br>
+            <input type="checkbox" name="description2" id="description2" value="description2">
+            <label for="description2">Standard</label><br>
+            <input type="checkbox" name="description3" id="description3" value="description3">
+            <label for="description3">Unique</label><br>
+            <input type="checkbox" name="description4" id="description4" value="description4">
+            <label for="description4">Low quality</label>
+            <label for="comments">write your comment and suggestions about our product</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

@@ -201,7 +201,8 @@ nav a {
 }
 
 .checkout-container {
-  padding-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: auto;
   width: 50%;
 }
@@ -213,8 +214,12 @@ nav a {
   height: 60px;
   font-weight: 600;
   font-size: 16px;
-  color: white;
   cursor: pointer;
+}
+
+#checkout-button a{
+  color: white;
+  text-decoration: none;
 }
 
 #hidden {
@@ -380,4 +385,193 @@ nav a {
     font-size: 16px;
     font-weight: bold;
   }
+}
+
+
+/* ========= VERIFICATION PAGE========== */
+.sub-title p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AD4C4C;
+}
+
+
+.sub-heading{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sub-heading .location{
+  display: flex;
+}
+
+
+
+.sub-heading .location input{
+  margin-left: 900px;
+  margin-top: 45px;
+}
+
+.sub-heading .location input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    background-color: #ad4c4c;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #ad4c4c;
+}
+
+@media (max-width:768px) {
+  
+  .sub-heading .location input{
+    margin-left: 100px;
+    margin-top: 45px;
+  }
+}
+  
+
+form label{
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+form input, select{
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  padding: 8px;
+  width: 96%;
+  margin-bottom: 20px;
+}
+
+@media (max-width:768px){
+  form input, select{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 8px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  
+
+}
+
+
+form select{
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  padding: 8px;
+  width: 98%;
+}
+
+@media (max-width:768px){
+
+  form select{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 8px;
+    width: 98%;
+  }
+}
+
+form .inline-items{
+  display: flex;
+  color: black;
+  align-content: space-between;
+}
+
+
+form .inline-items input[type='date']{ 
+  width: 35.5rem;
+  padding: 8px;
+  margin-right: 80px;
+}
+
+
+form .inline-items input[type='text']{ 
+  width: 35rem;
+  padding: 8px;
+}
+
+
+
+@media (max-width: 768px){
+ 
+  form .inline-items input[type='date']{ 
+    width: 11.5rem;
+    padding: 8px;
+    margin-right: 25px;
+  }
+  
+  
+  form .inline-items input[type='text']{ 
+    width: 11.5rem;
+    padding: 8px;
+  }
+  
+}
+
+
+
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #E6E6E6;
+}
+
+.pay-container{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  width: 50%;
+}
+
+#pay-button {
+  background: #ad4c4c;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#pay-button a{
+  color: white;
+  text-decoration: none;
+}
+
+/* =============the success page============= */
+
+.success-image-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+
+
+.success-message h3{
+  font-size: 30px;
+  color: #5EA304;
+}
+
+
+.success-message p{
+  font-size: 15px;
+  color: #696969;
+}
+
+.success-message h3,p{
+  text-align: center;
 }
