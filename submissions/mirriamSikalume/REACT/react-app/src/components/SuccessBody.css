@@ -1,0 +1,32 @@
+.successpic {
+    display: flex;
+    justify-content: center;
+}
+.SuccessDetails {
+    display: flex;
+    justify-content: center;
+}
+#Order {
+    color: #5EA304;
+    margin-left: 45px;
+}
+@media screen and (min-width: 468px) {
+    #pressing {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 790px) {
+    .successpic {
+        display: flex;
+        justify-content: center;
+    }
+    .SuccessDetails {
+        display: flex;
+        justify-content: center;
+    }
+    #Order {
+        color: #5EA304;
+        margin-left: 45px;
+    }
+}
