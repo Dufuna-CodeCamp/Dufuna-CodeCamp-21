@@ -5,8 +5,6 @@
 
 .fbl{
 display: flex;
-
-
 }
 
 @media only screen and (max-width: 770px){
@@ -16,8 +14,6 @@ display: flex;
   font-size: 40px;  
   margin-left: -540px;
   font-family: 'Poppins', sans-serif;
-
-
 }
 
 .tc{
@@ -29,7 +25,6 @@ display: flex;
 
 .terms{
   display: block;
-  margin-left: 90px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -49,7 +44,6 @@ display: flex;
   width: 600px;
   margin-left: 200px;
   justify-content: center;
-
 }
 
 .dlocat{
@@ -64,7 +58,7 @@ display: flex;
   Width :315px;
 }
 
-  .dlocat p{
+.dlocat p{
   color: #A5A5A5;
   margin-left: -80px;
 }
@@ -72,7 +66,6 @@ display: flex;
   margin-left: -80px;
   color: #696969;
 }
-
 
 .dwant p{
   color: #A5A5A5;
@@ -123,7 +116,6 @@ display: flex;
   width: 1000px;
   justify-content:space-between;
   margin-left: 50px;
- 
 }
 
 
@@ -131,7 +123,6 @@ display: flex;
   margin-top: calc(50vh - 325px);
   color: #7e7985;
   font-size: 60px;
-  margin-top: -0px;
 }
 
 .form__input:hover {
@@ -175,7 +166,6 @@ font-size: 104px;
 .way{
   margin-left: 50px;
   margin-top: 100px;
-  
 }
 
 .way h3{
@@ -183,11 +173,7 @@ font-size: 30px;
 font-family: 'Poppins';
 }
 
-
-
-
 .foodbag{
-
   font-family: 'Poppins';
   font-style: normal;
   line-height: 60px;
@@ -195,7 +181,6 @@ font-family: 'Poppins';
   text-align: left;
   justify-content: left;
   margin-left: 50px;
-
   color: #4E4D4D;
 }
 
@@ -209,18 +194,14 @@ font-family: 'Poppins';
   font-size: 35px;
   line-height: 30px; 
   align-items: left;
-  text-align: left;
-  
+  text-align: left; 
   color: #696969;
-
-  
 }
 
 .foodf p{
   width: 180px;
-  margin-left:0px;
+  margin-left: 0;
   margin-top: 225px;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -228,14 +209,11 @@ font-family: 'Poppins';
   line-height: 30px;
   align-items:left;
   text-align: left;
- 
-
   color: #4E4D4D;
 }
 
 .fbl{
-display: flex
-
+display: flex;
 }
 
 .fsfs{
@@ -264,11 +242,9 @@ display: flex
   padding-right: 5px;
   min-width: 160px;
   margin-right: 35px;
-  min-height: 60px
-
-
-  
+  min-height: 60px;
 }
+
 body{
 font-family: 'Poppins';
 }
@@ -276,19 +252,14 @@ font-family: 'Poppins';
 margin-left: 50px;
 margin-top: 35px;
 font-size: 30px;
-font-family: 'Poppins'
-};
-
-
+font-family: 'Poppins';
+}
 
 .landnav{
-
   display: flex;
   flex-direction: column-reverse;
   font-family: 'Poppins', sans-serif;
   background-color: black;
-
-  
 }
  
 .fast {
@@ -302,7 +273,6 @@ padding-left: 30px;
 font-size: 40px;
 color: #A5A5A5; 
 margin-bottom: 50px;
-
 }
 
 .veg {
@@ -347,7 +317,6 @@ margin-bottom: 50px;
 .hwsy{
 margin-top: 65px;
 text-align: center;
-margin-left: 90px;
 border-top: 2px solid #F2F2F2;
 width: 880px;
 padding-top: 30px;
@@ -355,17 +324,12 @@ font-size: 60px;
 margin-left: 40px;
 }
 
-}
-
 .food{
- 
   margin-top: 50px;
   font-family: 'Poppins', sans-serif;
   margin-left: 100px;
-  
   width: 90px;
   height: 30;
-  
 }
 
 .bag{
@@ -395,14 +359,12 @@ margin-left: 40px;
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  
 }
 
 @media only screen and (min-width: 992px){
 .way{
   margin-left: 100px;
   margin-top: 100px;
-  
 }
 
 .fooda p{
@@ -410,7 +372,6 @@ margin-left: 40px;
   height: 30px;
   margin-left: 536px;
   margin-top: 10px;
-  
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -418,7 +379,6 @@ margin-left: 40px;
   line-height: 30px; 
   align-items: center;
   text-align: center;
-  
   color: #696969;
 }
 
@@ -426,7 +386,6 @@ margin-left: 40px;
   width: 180px;
   margin-left: 620px;
   margin-top: 225px;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -434,23 +393,19 @@ margin-left: 40px;
   line-height: 30px;
   align-items: center;
   text-align: center;
-
   color: #4E4D4D;
 }
 
 
 .foodbag{
-
   font-family: 'Poppins';
   font-style: normal;
   line-height: 60px;
   align-items: center;
   text-align: center;
   justify-content: center;
-
   color: #4E4D4D;
 }
-
 
 .form__icon {
 position: absolute;
@@ -473,7 +428,6 @@ font-size: 14px;
 .form__input:placeholder-shown {
   z-index: 1;
 }
-
 
 .form {
 margin-top: calc(50vh - 325px);
@@ -498,9 +452,7 @@ display: flex;
 width: 1140px;
 justify-content:space-between;
 margin-left: 100px;
-
 }
-
 
 .fast {
 height: 169;
@@ -584,8 +536,6 @@ margin-left: -80px;
 color: #696969;
 }
 
-
-
 .dorder p{
 color: #A5A5A5;
 }
@@ -615,18 +565,6 @@ margin-top: 100px;
 margin-top: 100px;
 }
 
-}
-
-
-
-
-
-
-
-
-
-
-
 .fast h3{
   margin-left: 0;
 }
@@ -642,15 +580,6 @@ margin-top: 100px;
   margin-left: 0;
 }
 
-
-
-
-
-
-
-
-
-
 .lastt h3{
       color: #696969;
 }
@@ -662,5 +591,3 @@ margin-top: 100px;
 .you{
     margin-right: 20px;
 }
-
-
