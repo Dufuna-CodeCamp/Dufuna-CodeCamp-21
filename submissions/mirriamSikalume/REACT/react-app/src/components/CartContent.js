@@ -5,6 +5,10 @@ import close from '../images/close.svg'
 import plus from '../images/plus.svg'
 import Minus from '../images/Minus.svg'
 import scooter from '../images/scooter 1.svg'
+import { Header } from './header'
+import { Body } from './CartTitle'
+import {useNavigate } from 'react-router-dom'
+
 
 
 export const CartContent = () => {
@@ -12,6 +16,7 @@ export const CartContent = () => {
 
   const cash = 1200;
   let total = 0;
+  const navigate = useNavigate();
   const [ListOfData, setListOfData] = useState([])
 
   useEffect(() => {
@@ -71,7 +76,18 @@ export const CartContent = () => {
     }
 
   }
+
+  const HandleClick = (m) => {
+
+    m.preventDefault()
+    navigate("/Verification");
+
+  }
   return (
+    <div>
+      <Header />
+      <Body />
+
     <div className='container'>
       {
         ListOfData.length === 0 ? <p id='empty'> Whooops this is empty</p> : ListOfData.map((item) => (
@@ -140,11 +156,13 @@ export const CartContent = () => {
       </div>
 
       <div className='footer'>
-         <button id='checkout'>checkout</button>
+         <button id='checkout' onClick={(m) => HandleClick(m)}>checkout</button>
       </div>
       </div>
    }
      
     </div>
+    </div>
   )
 }
+

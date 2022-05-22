@@ -1,0 +1,11 @@
+CREATE DATABASE foodbag_db;
+use foodbag_db;
+
+CREATE TABLE customer_table(
+id INT (10) AUTO_INCREMENT NOT NULL,
+full_name VARCHAR(255) NOT NULL,
+email_address VARCHAR (255) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+PRIMARY KEY(id)
+);
+
