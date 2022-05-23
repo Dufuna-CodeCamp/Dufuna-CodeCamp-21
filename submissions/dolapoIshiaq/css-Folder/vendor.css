@@ -48,15 +48,6 @@ li a{
 .breadcrumb a:last-child{
     color: black;
 }
-.head{
-    padding-top: 20px;
-}
-.head p{
-    font-size: 30px;
-    font-weight: 500px;
-    color: black;
-    
-}
 .kfc-section{
   padding-bottom: 50px;
     border-bottom:1, solid, white;
