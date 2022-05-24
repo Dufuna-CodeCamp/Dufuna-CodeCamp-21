@@ -25,7 +25,7 @@ try {
                     echo "<td>" .$row['full_name']. "</td>"; 
                     echo "<td>" .$row['email_address']. "</td>"; 
                     echo "<td>" .$row['created_at']. "</td>";
-                    echo "<td><button>view</button></td>";  
+                    echo "<td><button><a href='viewCustomerOrder.php?id=".$row['id']."'>view</a></button></td>";  
                 echo "</tr>";
             }
         echo "</table>";
@@ -52,44 +52,8 @@ unset($conn);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>customers</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-
-             table{ 
-                margin-left: auto;
-                margin-right: auto;
-                }
-
-
-    table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-    }
-
-    th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    }
-
-    table tr:nth-child(even){
-        background-color: #f2f2f2;
-    }
-
-    table tr:hover {
-        background-color: #ddd;
-    }
-
-    table button{
-        cursor: pointer;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 </body>
 </html>
