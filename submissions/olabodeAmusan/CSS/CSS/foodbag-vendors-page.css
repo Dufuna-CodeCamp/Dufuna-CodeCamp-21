@@ -1,6 +1,6 @@
 /*Styling body*/
 body{
-    padding: 0px 50px 50px 50px;
+    padding: 0 50px 50px;
 }
 *{
     font-family: "poppin", sans-serif;
@@ -12,7 +12,7 @@ nav ul{
     float: right;
     display: inline;
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 .foodbag{
     font-style: normal;
@@ -63,13 +63,13 @@ section p{
 .chicken-republic div:first-child{
     display: inline-block;
     vertical-align: middle;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .kfclogo div:nth-child(2),
 .chicken-republic div:nth-child(2){
     display: inline-block;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .kfclogo div:nth-child(2) p{
@@ -129,7 +129,7 @@ section p{
 .kfc ul,
 .chicken ul{
     list-style: none;
-    padding: 0px;
+    padding: 0;
     justify-content: space-between;
 }
 
@@ -176,7 +176,7 @@ section p{
 
 .border{
     width:auto;
-    height: 0px;
+    height: 0;
     border: 1px solid #F2F2F2;
     margin: 0;
 }
@@ -189,7 +189,7 @@ section p{
 }
 @media screen and (min-width: 400px) {
     nav{
-        padding: 45px 0px;
+        padding: 45px 0;
     }
     nav li {
         display: inline;
