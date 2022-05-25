@@ -1,4 +1,4 @@
-products = [
+var products = [
     "Canon Kit Lens 15-55mm",
     "Nikon 3100",
     "Samsung NX300",
@@ -21,7 +21,7 @@ products = [
     "Olympus PEN E-PL6"
 ];
 
-product_price = [
+var product_price = [
     500.00,
     200.00,
     750.00,
@@ -53,3 +53,5 @@ for(var i = 0; i<products.length; i++){
 
     console.log(`The price of ${products[i]} is ${product_price[i]}`);
 }
+
+module.exports = {products, product_price};
