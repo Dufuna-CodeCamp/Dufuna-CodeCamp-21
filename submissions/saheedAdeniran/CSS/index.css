@@ -42,8 +42,7 @@ a{
     color: red;
 
 }
- .nav sign-up{}
-button{
+ .nav sign-up button{
     border-color: #ad4c4c;  
 }
 button a{
@@ -121,8 +120,8 @@ hr{
 }
  
 .last-part{
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
 }
 
 .nav span{
