@@ -50,7 +50,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 145px 0 0 ;
+    margin-top: 145px;
       
 }
 .top-header h3{
@@ -115,14 +115,14 @@ header{
     min-width: 295px;
     margin-right: 20px;
     height: 196px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     align-items: center;
     padding: 30px;
     border-radius: 3px;
     color: #A5A5A5;
 }
 .choices div:last-of-type{
-    margin-right: 0px;
+    margin-right: 0;
 }
 .choices div h4{
   margin-top: 16px;
