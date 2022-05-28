@@ -7,4 +7,8 @@ Aside the above, I hope to make education, like the one offered by Dufuna, acces
 I am confident that the program will improve my other skills and enable me to be versatile and very valuable to any organisation in the world.
 At the completion of the program, I look forward to referring to myself as a lawyer, software developer, cloud architect, blockchain engineer, privacy technologist, AI ethics advocate, entrepreneur and finally an angel investor.
 
-I put my trust in God. I can do it! Ridwan, just do it!
+<<<<<<< HEAD
+I put my trust in God. I can do it! Ridwan, just do it.
+=======
+I put my trust in God. I can do it! Ridwan, just do it.
+>>>>>>> 41b2a566a2b6c09ed7c2d47aacaa8d5810248da3
