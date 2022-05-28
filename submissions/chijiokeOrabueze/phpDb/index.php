@@ -64,19 +64,27 @@ if(!isset($_COOKIE["user0id"])){
 
             $count = sizeof($_COOKIE);
             $c = 0;
+<<<<<<< HEAD
         for($i = 1; $i <= 5; $i++){
+=======
+        for($i = 1; $i <= $count/4; $i++){
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
             $userTag = "user".$c;
             echo "<tr>";
                 echo "<td>" . $_COOKIE[$userTag."id"] . "</td>";
                 echo "<td>" . $_COOKIE[$userTag. "name"] . "</td>";
                 echo "<td>" . $_COOKIE[$userTag. "email"] . "</td>";
                 echo "<td>" . $_COOKIE[$userTag. "date"] . "</td>";
+<<<<<<< HEAD
                 echo "<td>
                         <form action = 'index1.php' method= 'post'>
                             <input type = 'text' hidden name = 'star' value = '$currentUser'/>
                             <button type = 'submit'>VIEW</button>
                         </form>
                     </td>";
+=======
+                echo "<td><button>VIEW</button></td>";
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
             echo "</tr>";
 
             $c += 1;

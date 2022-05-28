@@ -18,8 +18,11 @@ function App() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default App;  
 =======
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 export default App;
 
   
@@ -41,6 +44,7 @@ export default App;
   
 >>>>>>> 3302d5dc (cart page):react/react-app/src/App.js
 <<<<<<< HEAD
+<<<<<<< HEAD
      
 >>>>>>> 07c87065 (cart page)
 =======
@@ -48,3 +52,8 @@ export default App;
 >>>>>>> 30a7b3ac (cart)
      
 >>>>>>> d24e5bb3 (cart)
+=======
+=======
+>>>>>>> 30a7b3ac (cart)
+     
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a

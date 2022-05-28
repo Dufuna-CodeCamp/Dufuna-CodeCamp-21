@@ -67,7 +67,11 @@ h2 {
     margin: 20px;
 }
 .name {
+<<<<<<< HEAD
     color: grey;
+=======
+    color: brown;
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 }
 .name,
 .description {

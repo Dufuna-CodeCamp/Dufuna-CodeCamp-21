@@ -11,9 +11,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-router-dom": "^6.3.0",
 =======
 >>>>>>> 323abe5b (React task 1)
+=======
+    "react-router-dom": "^6.3.0",
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },

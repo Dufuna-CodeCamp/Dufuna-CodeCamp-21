@@ -201,6 +201,7 @@ header nav ul li {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container2 {
   display: grid;
 =======
@@ -213,6 +214,10 @@ header nav ul li {
 	padding-bottom: 24px;
 	box-shadow: 0 0 3 1.5 rgba(0, 0, 0, 0.1);
 >>>>>>> 9470e531 ([DGPFUS-164] Responsive E-commerce Landing Page)
+=======
+.container2 {
+  display: grid;
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 }
 
 .section-serve .center {
@@ -266,6 +271,9 @@ header nav ul li {
 
 /*Mobile*/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 @media screen and (min-width: 250px) and (max-width: 420px) {
   main {
     width: 79vw;
@@ -589,6 +597,7 @@ header nav ul li {
   .view-All {
     color: #ad4c4c;
   }
+<<<<<<< HEAD
 =======
 @media screen and (min-width:250px) and (max-width:420px) {
 	main{
@@ -918,4 +927,6 @@ header nav ul li {
 		color: #ad4c4c;
 	}
 >>>>>>> 9470e531 ([DGPFUS-164] Responsive E-commerce Landing Page)
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 }

@@ -20,6 +20,7 @@ CREATE TABLE food_bag (
 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 -- Addition of values to Food Bag
 
@@ -35,6 +36,8 @@ INSERT INTO food_bag (type)
 SELECT * FROM food_bag;
 
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 -- (3) Table Admins
 
 CREATE TABLE admins (
@@ -43,14 +46,19 @@ CREATE TABLE admins (
     type ENUM('0', '1') NOT NULL,
     email_address VARCHAR(250) NOT NULL,
 <<<<<<< HEAD
+<<<<<<< HEAD
     phone_number VARCHAR(50) NOT NULL,
 =======
     phone_number INT NOT NULL,
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+    phone_number VARCHAR(50) NOT NULL,
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
     password VARCHAR(250) NOT NULL,
     PRIMARY KEY (id)
 );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 -- Checking table Results
@@ -58,6 +66,8 @@ CREATE TABLE admins (
 SELECT * FROM admins;
 
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 -- (2) Table Vendor Food
 
 CREATE TABLE vendor_food (
@@ -66,15 +76,20 @@ CREATE TABLE vendor_food (
     food_id INT NOT NULL,
     name VARCHAR(250) NOT NULL,
 <<<<<<< HEAD
+<<<<<<< HEAD
     amount DECIMAL(10,2) NOT NULL,
 =======
     amount DECIMAL(4,2) NOT NULL,
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+    amount DECIMAL(10,2) NOT NULL,
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
     PRIMARY KEY (id),
     FOREIGN KEY (admin_id) REFERENCES admins (id),
     FOREIGN KEY (food_id) REFERENCES food_bag (id)
 );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 -- Checking table Results
@@ -82,12 +97,15 @@ CREATE TABLE vendor_food (
 SELECT * FROM vendor_food;
 
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 -- (4) Table Customer's Account
 
 CREATE TABLE customers_account (
 	id INT NOT NULL AUTO_INCREMENT,
     admin_id INT NOT NULL,
     name VARCHAR(250) NOT NULL,
+<<<<<<< HEAD
 <<<<<<< HEAD
     phone_number VARCHAR(50) NOT NULL,
     address VARCHAR(250) NOT NULL,
@@ -98,10 +116,16 @@ CREATE TABLE customers_account (
     payment_method VARCHAR(250),
     payment_verification VARCHAR(250),
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+    phone_number VARCHAR(50) NOT NULL,
+    address VARCHAR(250) NOT NULL,
+    payment_method VARCHAR(250),
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
     PRIMARY KEY (id),
     FOREIGN KEY (admin_id) REFERENCES admins (id)
 );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 -- Checking table Results
@@ -109,6 +133,8 @@ CREATE TABLE customers_account (
 SELECT * FROM customers_account;
 
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 -- (5) Table Orders 
 
 CREATE TABLE orders (
@@ -119,6 +145,7 @@ CREATE TABLE orders (
     PRIMARY KEY (id),
     FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
     FOREIGN KEY (admin_id) REFERENCES admins (id)
+<<<<<<< HEAD
 <<<<<<< HEAD
 );
 =======
@@ -132,3 +159,6 @@ SELECT * FROM orders;
 
 SHOW TABLES;
 >>>>>>> bc30b9ed ([HIRFUS-27] Develop an E-commerce Store Database)
+=======
+);
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a

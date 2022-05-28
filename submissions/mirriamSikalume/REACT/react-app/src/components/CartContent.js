@@ -5,10 +5,13 @@ import close from '../images/close.svg'
 import plus from '../images/plus.svg'
 import Minus from '../images/Minus.svg'
 import scooter from '../images/scooter 1.svg'
+<<<<<<< HEAD
 import { Header } from './header'
 import { Body } from './CartTitle'
 import {useNavigate } from 'react-router-dom'
 
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 
 
 export const CartContent = () => {
@@ -16,7 +19,10 @@ export const CartContent = () => {
 
   const cash = 1200;
   let total = 0;
+<<<<<<< HEAD
   const navigate = useNavigate();
+=======
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
   const [ListOfData, setListOfData] = useState([])
 
   useEffect(() => {
@@ -76,6 +82,7 @@ export const CartContent = () => {
     }
 
   }
+<<<<<<< HEAD
 
   const HandleClick = (m) => {
 
@@ -88,6 +95,9 @@ export const CartContent = () => {
       <Header />
       <Body />
 
+=======
+  return (
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
     <div className='container'>
       {
         ListOfData.length === 0 ? <p id='empty'> Whooops this is empty</p> : ListOfData.map((item) => (
@@ -156,13 +166,22 @@ export const CartContent = () => {
       </div>
 
       <div className='footer'>
+<<<<<<< HEAD
          <button id='checkout' onClick={(m) => HandleClick(m)}>checkout</button>
+=======
+         <button id='checkout'>checkout</button>
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
       </div>
       </div>
    }
      
     </div>
+<<<<<<< HEAD
     </div>
   )
 }
 
+=======
+  )
+}
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a

@@ -26,6 +26,7 @@ button{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .nav-container h3 span{
 =======
 .nav-container h3 a{
@@ -34,6 +35,9 @@ button{
 
 .nav-container h3 a span{
 >>>>>>> 323abe5b (React task 1)
+=======
+.nav-container h3 span{
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
   color:brown;
 }
 
@@ -116,6 +120,7 @@ button{
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   .checkout-btn,.btn{
     width:80vw;
     height: 40px;
@@ -124,6 +129,11 @@ button{
     width:90%;
     height: 30px;
 >>>>>>> 323abe5b (React task 1)
+=======
+  .checkout-btn,.btn{
+    width:80vw;
+    height: 40px;
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
     border-radius:3px;
     background-color: brown;
     color:white;
@@ -185,6 +195,7 @@ button{
     font-size: 20px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 
@@ -195,4 +206,7 @@ button{
     border-radius:3px;
   }
 >>>>>>> 323abe5b (React task 1)
+=======
+  
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 }

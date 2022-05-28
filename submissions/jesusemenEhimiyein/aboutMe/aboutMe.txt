@@ -1,2 +1,10 @@
 Hello World!
 I am Jesusemen Ehimiyein and I am a Software Engineer.
+<<<<<<< HEAD
+=======
+Trained by Dufuna.
+My app has now be connected with my github
+Yes another addition
+Final Addition
+
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a

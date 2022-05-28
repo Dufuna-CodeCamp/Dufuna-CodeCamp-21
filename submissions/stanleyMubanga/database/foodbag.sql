@@ -29,9 +29,9 @@ CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
 type ENUM ('0','1') NOT NULL,
-email_address VARCHAR(250) NOT NULL,
-phone_number VARCHAR(50) NOT NULL,
-password VARCHAR(250) NOT NULL,
+email_address VARCHAR(100) NOT NULL,
+phone_number VARCHAR(13) NOT NULL,
+password VARCHAR(100) NOT NULL,
 PRIMARY KEY (id)
 );
 
@@ -54,16 +54,22 @@ CREATE TABLE customers (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
 <<<<<<< HEAD
+<<<<<<< HEAD
 phone_number VARCHAR(50) NOT NULL,
 address VARCHAR(250) NOT NULL,
 =======
 phone_number VARCHAR(13) NOT NULL,
 address VARCHAR(100) NOT NULL,
 >>>>>>> 6cd61505 (created food bag database)
+=======
+phone_number VARCHAR(13) NOT NULL,
+address VARCHAR(100) NOT NULL,
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 payment_method ENUM('card','Mobile Money','Cash'),
 PRIMARY kEY (id)
 );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 -- HERE I CREATE THE ORDERS TABLE LINKED TO CUSTOMERS AND VENDORS
 =======
@@ -74,6 +80,14 @@ CREATE TABLE orders (
 id INT AUTO_INCREMENT,
 vendor_id INT,
 customer_id INT,
+=======
+-- HERE I CREATE THE ORDERS TABLE LINKED TO CUSTOMERS AND VENDORS
+
+CREATE TABLE orders (
+id INT NOT NULL AUTO_INCREMENT,
+vendor_id INT NOT NULL,
+customer_id INT NOT NULL,
+>>>>>>> 2eb90bee17487d47e91c82c2efcc110b87686f3a
 PRIMARY KEY (id),
 FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
 FOREIGN KEY (customer_id) REFERENCES customers (id)
