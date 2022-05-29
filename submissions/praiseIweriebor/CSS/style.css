@@ -1,0 +1,196 @@
+body{
+    font-family: poppins, sans-serif;
+    margin: 1px;
+    padding: 50px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: black;
+}
+
+#black {
+    color: black;
+}
+
+#black:hover {
+    color: brown;
+}
+
+span {
+    color: brown;
+}
+
+span:hover {
+    color: black;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: right; */
+    /* width: 100%; */
+    /* color: grey; */
+}
+
+li {
+    display: inline;
+    font-size: small;
+    /* color: grey; */
+    padding-left: 25px;
+    list-style: none;
+}
+
+button {
+    background-color: white;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: brown;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+button a {
+    color: brown;
+    padding: 1px 5px;
+}
+
+div.intro {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+.intro h1 {
+    font-weight: bolder;
+}
+
+#font {
+    color: grey;
+    font-weight: 600;
+    line-height: 1px;
+    font-size: 15px;
+}
+
+#space {
+    /* padding-bottom: 15px; */
+    padding-top: 20px;
+}
+select {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border-color: rgba(128, 128, 128, 0.4);
+    color: grey;
+}
+
+#interestpad {
+    padding-top: 10px;
+    /* padding-bottom: 0px; */
+}
+
+.interest-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.interest-options {
+    color: brown;
+}
+
+.interests {
+    /* background-color: blue; */
+    box-sizing: border-box;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    padding: 14px;
+    padding-left: 25px;
+    border-radius: 2px;
+    width: 20%;
+    height: 140px;
+    line-height: 5px;
+}
+/* span.br {
+    text-align: center;
+} */
+
+.space {
+    font-size: 12px;
+    color: grey;
+}
+
+#serve{
+    /* background-color: blue; */
+    text-align: center;
+    font-weight: bolder;
+    padding: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:  50px;
+}
+
+.how-it-works {
+    /* text-align: center; */
+    padding-left: 5px;
+    font-weight: 900;
+    color: grey;
+}
+
+.how-it-works-2 {
+    font-size: 15px;
+    font-weight: 900;
+    color: rgba(128, 128, 128, 0.7);
+    /* text-align: center; */
+}
+
+.contact-us {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: grey;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.yt {
+    padding-left:  30px;
+    padding-right: 30px ;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    color: grey;
+    font-size: 14px;
+}
+
+hr.hr {
+    border: none;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.1);
+}

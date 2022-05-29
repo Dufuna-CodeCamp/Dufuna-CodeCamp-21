@@ -550,3 +550,28 @@ hr{
   color: white;
   text-decoration: none;
 }
+
+/* =============the success page============= */
+
+.success-image-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+
+
+.success-message h3{
+  font-size: 30px;
+  color: #5EA304;
+}
+
+
+.success-message p{
+  font-size: 15px;
+  color: #696969;
+}
+
+.success-message h3,p{
+  text-align: center;
+}
