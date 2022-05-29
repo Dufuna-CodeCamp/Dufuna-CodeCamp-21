@@ -1,6 +1,5 @@
 Hi,
 
-My name's Bunmi Oladipupo and I am on the full stack programme.
+My name's Bunmi Oladipupo and I am on the full stack program.
 
-Regards,
-BO
+cheers!
