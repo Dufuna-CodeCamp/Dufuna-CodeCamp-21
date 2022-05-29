@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 Hello world!
 My name is Tolulope
+=======
+Hello World!
+I am Tolulope Babatunde
+>>>>>>> a7c9a0d114f7a87ce7eb81bcd8a6e59194772349
 I am a Software Engineer.
