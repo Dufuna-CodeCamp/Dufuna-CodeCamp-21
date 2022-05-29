@@ -1,7 +1,8 @@
 Hello World!
 
-My name is Bunmi Oladipupo and I am on the full stack track.
+My name is Bunmi David Oladipupo and I am on the full stack program.
 
-I hope that this program would help me lauch a successful career as a Software Engineer.
+I hope to learn great software engineering skills that'd help me start a career as a software engineer.
 
-Thanks!
+Regards,
+BO
