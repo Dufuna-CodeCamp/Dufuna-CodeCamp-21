@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navbar {
+    font-weight: 500;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 20px;
+    color: #696969;
+}
+
+.logo a span {
+    color: #AD4C4C;
+}
+
+.nav-list {
+    font-size: 16px;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item {
+    color: #696969;
+}
+
+.cart::after {
+    visibility: hidden;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #AD4C4C;
+    border-radius: 50%;
+}
+
+.btn {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: .5rem .75rem;
+    border-radius: 5px;
+}
+
+.link {
+    margin: 4rem 0 2rem 0;
+}
+
+.link a {
+    color: #C9C9C9;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.link a span {
+    color: #000;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.vendor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.vendor div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vendor p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.vendor a {
+    color: #AD4C4C;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.vendors {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.vendors .card {
+    width: 220px;
+    margin-bottom: 4rem;
+}
+
+.details {
+    width: 100%;
+}
+
+.card .details {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1.65rem;
+}
+
+.dish {
+    color: #4E4D4D;
+}
+
+.amount {
+    margin-right: -3.3rem;
+    color: #5EA304;
+}
+
+@media screen and (max-width: 768px) {
+    .cart::after {
+        visibility: visible;
+    }
+    .vendors {
+        display: grid;
+    }
+    .logo {
+        font-size: 16px;
+    }
+    .nav-list {
+        font-size: 12px;
+    }
+    .card img {
+        width: 150%;
+    }
+    .vendor a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .amount {
+        margin-right: -6.4rem;
+    }
+}
