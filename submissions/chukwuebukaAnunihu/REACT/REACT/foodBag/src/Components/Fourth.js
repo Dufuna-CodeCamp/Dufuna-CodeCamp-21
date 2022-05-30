@@ -6,7 +6,7 @@ const Fourth = (props) => {
     <div>
       <div className="fourth-row">
         <div>
-          <img className="delivery" src={scooter} />
+          <img className="delivery" src={scooter} alt="A yellow scooter"/>
         </div>
         <div className="beside1">
           <div>
