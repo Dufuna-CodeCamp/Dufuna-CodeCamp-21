@@ -9,19 +9,19 @@ const Second = (props) => {
     <div>
       <div className="second-row">
         <div className="close">
-          <input type="image" src={close} />
+          <input type="image" src={close} alt="close sign"/>
         </div>
-          <img className="r-max-1" src={rmax1} />
+          <img className="r-max-1" src={rmax1} alt="A bowl of rice, chicken and a bottle of coke"/>
         <div className="beside">
           <div>
             <p>Refuel Max</p>
           </div>
           <div className="buttons">
-            <input onClick={props.onPlusButtonClick} type="image" src={plus} />
+            <input onClick={props.onPlusButtonClick} type="image" src={plus} alt="plus sign"/>
             <div className="value">
               <p>{props.value2}</p>
             </div>
-            <input onClick={props.onMinusButtonClick} type="image" src={minus} />
+            <input onClick={props.onMinusButtonClick} type="image" src={minus} alt="minus sign"/>
           </div>
         </div>
         <div className="price1">
