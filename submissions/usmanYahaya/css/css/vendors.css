@@ -51,7 +51,6 @@ a {
 }
 
 .cart::after {
-    visibility: hidden;
     position: absolute;
     content: '';
     width: 10px;
@@ -145,10 +144,24 @@ a {
     color: #5EA304;
 }
 
+.remove {
+    width: 138px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #E6E6E6;
+    background: #A5A5A5;
+    padding: .4rem .75rem;
+    border-radius: 5px;
+    margin-top: -.4rem;
+}
+
+.remove img {
+    width: 24px;
+    height: 24px;
+}
+
 @media screen and (max-width: 768px) {
-    .cart::after {
-        visibility: visible;
-    }
     .vendors {
         display: grid;
     }
