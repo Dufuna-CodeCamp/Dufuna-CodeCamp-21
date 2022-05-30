@@ -17,8 +17,7 @@ body{
 .logo{
     display: inline-block;
     font-size: 20px;
-    font-weight: 500px;
-    
+    font-weight: 500px;  
 }
 #button{
     border: 1px solid #AD4C4C;
