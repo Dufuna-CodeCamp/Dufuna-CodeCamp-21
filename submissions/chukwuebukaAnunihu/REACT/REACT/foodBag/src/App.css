@@ -257,6 +257,8 @@ hr {
     width: 24.4vw;
     margin-top: 16.7vw;
     margin-left: -1vw;
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .header-nav {
@@ -317,11 +319,6 @@ hr {
   .title {
     font-size: 20px;
     margin-top: -5px;
-  }
-
-  .home-vendor-nav {
-    font-weight: 400;
-    font-size: 14px;
   }
 
   .close {
