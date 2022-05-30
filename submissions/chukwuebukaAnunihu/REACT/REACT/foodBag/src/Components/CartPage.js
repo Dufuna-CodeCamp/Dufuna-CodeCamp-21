@@ -27,7 +27,7 @@ class CartPage extends Component {
   }
 
   increasePrice() {
-    if (this.state.items == 1) {
+    if (this.state.items === 1) {
       this.setState({
         word: "items",
       });
@@ -41,7 +41,7 @@ class CartPage extends Component {
   }
 
   increasePrice2() {
-    if (this.state.items == 1) {
+    if (this.state.items === 1) {
       this.setState({
         word: "items",
       });
@@ -55,7 +55,7 @@ class CartPage extends Component {
   }
 
   increasePrice3() {
-    if (this.state.items == 1) {
+    if (this.state.items === 1) {
       this.setState({
         word: "items",
       });
@@ -69,17 +69,17 @@ class CartPage extends Component {
   }
 
   decreasePrice() {
-    if (this.state.items == 2) {
+    if (this.state.items === 2) {
       this.setState({
         word: "item",
       });
     }
-    if (this.state.value1 == 0 && this.state.price1 == 0) {
+    if (this.state.value1 === 0 && this.state.price1 === 0) {
       return;
     } else if (
-      this.state.value1 == 1 &&
-      (this.state.price1 == 5000) & (this.state.price3 == 0) &&
-      this.state.price2 == 0
+      this.state.value1 === 1 &&
+      (this.state.price1 === 5000) & (this.state.price3 === 0) &&
+      this.state.price2 === 0
     ) {
       this.setState((prevState) => ({
         price1: prevState.price1 - 5000,
@@ -100,18 +100,18 @@ class CartPage extends Component {
   }
 
   decreasePrice2() {
-    if (this.state.items == 2) {
+    if (this.state.items === 2) {
       this.setState({
         word: "item",
       });
     }
 
-    if (this.state.value2 == 0 && this.state.price2 == 0) {
+    if (this.state.value2 === 0 && this.state.price2 === 0) {
       return;
     } else if (
-      this.state.value2 == 1 &&
-      (this.state.price2 == 1200) & (this.state.price1 == 0) &&
-      this.state.price3 == 0
+      this.state.value2 === 1 &&
+      (this.state.price2 === 1200) & (this.state.price1 === 0) &&
+      this.state.price3 === 0
     ) {
       this.setState((prevState) => ({
         price2: prevState.price2 - 1200,
@@ -132,18 +132,18 @@ class CartPage extends Component {
   }
 
   decreasePrice3() {
-    if (this.state.items == 2) {
+    if (this.state.items === 2) {
       this.setState({
         word: "item",
       });
     }
 
-    if (this.state.value3 == 0 && this.state.price3 == 0) {
+    if (this.state.value3 === 0 && this.state.price3 === 0) {
       return;
     } else if (
-      this.state.value3 == 1 &&
-      (this.state.price3 == 1200) & (this.state.price1 == 0) &&
-      this.state.price2 == 0
+      this.state.value3 === 1 &&
+      (this.state.price3 === 1200) & (this.state.price1 === 0) &&
+      this.state.price2 === 0
     ) {
       this.setState((prevState) => ({
         price3: prevState.price3 - 1200,
@@ -166,18 +166,18 @@ class CartPage extends Component {
     let firstClick = false;
     if (
       !firstClick ||
-      this.state.price1 != 0 ||
-      this.state.price2 != 0 ||
-      this.state.price3 != 0
+      this.state.price1 !== 0 ||
+      this.state.price2 !== 0 ||
+      this.state.price3 !== 0
     ) {
       this.setState({
         price4: 1200,
       });
       firstClick = false;
     } else if (
-      this.state.price1 == 0 &&
-      this.state.price2 == 0 &&
-      this.state.price3 == 0
+      this.state.price1 === 0 &&
+      this.state.price2 === 0 &&
+      this.state.price3 === 0
     ) {
       this.setState({
         total: 0,
