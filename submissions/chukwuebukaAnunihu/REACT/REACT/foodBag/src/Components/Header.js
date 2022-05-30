@@ -11,9 +11,9 @@ const Header = () => {
       </div>
       <nav>
         <div className="header-nav">
-          <a href="#" className="cart">Cart</a>
-          <a href="#">Login</a>
-          <a href="#">
+          <a href="/Header.js" className="cart">Cart</a>
+          <a href="/Header.js">Login</a>
+          <a href="/Header.js">
             <input type="button" value="Sign up" />
           </a>
         </div>
