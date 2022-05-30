@@ -9,7 +9,7 @@ const First = (props) => {
     <div>
       <div className="first-row">
         <div className="close">
-          <input type="image" src={close} />
+          <input type="image" src={close} alt="close-sign"/>
         </div>
           <img className="king-bucket" src={kingBucket} />
         <div className="beside">
@@ -17,11 +17,11 @@ const First = (props) => {
             <p>KFC-King Bucket</p>
           </div>
           <div className="buttons">
-            <input onClick={props.onPlusButtonClick} type="image" src={plus} />
+            <input onClick={props.onPlusButtonClick} type="image" src={plus} alt="plus-sign"/>
             <div className="value">
               <p>{props.value1}</p>
             </div>
-            <input onClick={props.onMinusButtonClick} type="image" src={minus} />
+            <input onClick={props.onMinusButtonClick} type="image" src={minus} alt="minus-sign"/>
           </div>
         </div>
         <div className="price">
