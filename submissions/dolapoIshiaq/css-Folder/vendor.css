@@ -1,0 +1,142 @@
+/*..................general styling......*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+header span{
+    color: #AD4C4C;
+}
+#header{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: normal;
+}
+li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    color: #696969;
+    text-transform: capitalize;
+}
+#sign{
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
+    border-radius: 5px;}
+.breadcrumb a{
+    text-decoration: none;
+    color: #c9c9c9;
+    font-size: 16px;
+}
+.breadcrumb a:last-child{
+    color: black;
+}
+.kfc-section{
+  padding-bottom: 50px;
+    border-bottom:1, solid, white;
+}
+
+.head{
+    padding-top: 20px;
+}
+.head h5{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.kfc,
+.chicken{
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.kfc-logo,
+.chicken-logo{
+    display: flex;
+}
+
+.kfc-logo p,
+.chicken-logo p{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.view p{
+    color: #AD4C4C;
+    text-align: right;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.kfc-list,
+.chicken-republic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.kfc-list-box img,
+.chicken-box img{
+    width: 100%;
+}
+
+.kfc-list .price,
+.chicken-republic .price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4E4D4D;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-left: 6px;
+    line-height: 24px;
+}
+
+.kfc-list .price span,
+.chicken-republic .price span{
+    color:  #5EA304;
+}
+
+.kfc-list a,
+.chicken-republic a{
+    color: #AD4C4C;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    background-color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.container{
+    padding: 50px 0;
+}
+
+.kfc-list-box,
+.chicken-box{
+    margin-bottom: 25px;
+}
+
+

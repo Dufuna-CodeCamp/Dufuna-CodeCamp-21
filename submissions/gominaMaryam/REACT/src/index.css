@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header .logo span {
+  color: #ad4c4c;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  margin-left: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-items a:hover {
+  color: #ad4c4c;
+}
+
+.nav-items .signup {
+  border: 1px solid #ad4c4c;
+  color: #ad4c4c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav {
+  font-size: 14px;
+  padding-top: 40px;
+}
+
+.nav span {
+  color: #c9c9c9;
+}
+
+.head-page {
+  font-size: 26px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 500px) {
+  .nav-items {
+    font-size: 12px;
+  }
+}

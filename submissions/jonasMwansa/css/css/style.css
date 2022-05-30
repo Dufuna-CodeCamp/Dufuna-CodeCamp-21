@@ -1,0 +1,881 @@
+
+body{
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    text-align: center;
+    display: flex;
+
+}
+
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+span{
+    color: rgb(248, 17, 17);
+}
+
+
+.navigation{
+    display: flex;
+    float: right;
+    margin-top: -3.9em;
+}
+
+.navigation a{
+
+    text-align: center;
+    list-style: none;
+    float: right;
+    display: inline;
+    padding: 8px; 
+    margin:15px;
+
+}
+
+.navigation a:nth-child(1){
+
+    border: 1px red solid;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+
+#signup-link{
+    color: red;
+}
+
+
+#heading{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    line-height: 0.5;
+}
+
+form select{
+    width: 50%;
+    padding: 5px;
+}
+
+#location{
+    background-image: url("../FoodBagTaskAssets/keyboard_arrow_down.svg");
+    width: 268px;
+    font-size: 12px;
+    line-height: 0.8;
+    border-radius: 3px;
+   
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    background-position-x: 244px;
+    height: 30px;
+    margin-top: 20px;
+    border: 2px solid rgb(146, 142, 142);
+    background-color: white
+}
+
+
+
+.interests {
+    display: inline-grid;
+    line-height: 0.3;
+}
+.interests h4{
+    color: red;
+}
+
+.serving{
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+
+.serving .serving-title{
+    padding-top: 20px;
+    line-height: 0.5;
+}
+
+
+#contact{
+    text-align: center;
+    line-height: 0.2;
+}
+
+#contact-title{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact li{
+    list-style: none;
+    display: inline-grid;
+    margin-right: 30px;
+}
+
+
+/*----------------vendors page-----------------*/
+
+
+.sub-title{
+    padding-top: 50px;
+    display: inline;
+}
+
+.sub-title a{
+    color: gray;
+    text-decoration: none;
+}
+
+.vendors-title{
+    display: inline;
+}
+
+.vendor-title{
+    display: flex;
+
+}
+
+.vendor-heading{
+    float: left;
+    margin-left: 20px;
+}
+
+.vendor-title p{
+    display: inline;
+}
+
+    .view-all{
+        display: inline;
+        float: right;
+        color: rgb(248, 17, 17);
+    }
+
+
+.vendor-content{
+    display: flex;
+    
+}
+
+.kfc-vendor img{
+    float: left;
+}
+
+
+.kfc-vendor li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 5px;
+    padding: 5px;
+}
+
+.kfc-vendor p:nth-child(4){
+    margin-left: 215px;
+    margin-top: -18px;
+    color: green;
+}
+
+.kfc-vendor input{
+    color: red;
+    padding: 1px;
+    border: hidden;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.chicken-republic-vendor img{
+    float: left;
+    
+}
+
+
+.chicken-republic-vendor li{
+    list-style: none;
+    display: inline-grid;
+    line-height: 0.3;
+    margin: 5px;
+    padding: 5px;
+}
+
+.chicken-republic-vendor p:nth-child(4){
+    margin-left: 215px;
+    margin-top: -18px;
+    color: green;
+}
+
+.chicken-republic-vendor input{
+    color: red;
+    padding: 1px;
+    border: hidden;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.vendor-title a{
+    color: red;
+    text-decoration: none;
+}
+
+
+
+/*---------------adding some responsiveness------------*/
+
+/*Small devices (landscape phones, 576px and below)*/
+@media (max-width: 576px) {
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+        
+    header a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    span{
+        color: rgb(248, 17, 17);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;      
+    }
+    
+
+    nav a{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        color: gray;
+        float: right;
+        font-size: 0.8em;
+    }
+    
+    header nav a:nth-child(3){
+    
+        border: 1px red solid;
+        text-align: center;
+        border-radius: 5px;
+    
+    }
+        
+    #signup-link{
+        color: red;
+    }
+        
+    #heading{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 0.5;
+    }
+    
+    form select{
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .interests {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+    }
+
+    .interests .interest-items{
+        width: 100%;
+        align-self: center;
+    }
+
+   .interests .interest-item{
+    box-shadow: 1px 1px 3px 1.5px rgba(0, 0, 0, 0.1);
+    margin: 2px;
+    padding: 10px;
+   }
+
+    .interests .interest-item h4{
+        color: red;
+        line-height: 0.1;
+    }
+    
+    
+    #serving{
+        text-align: center;
+    }
+    
+    #serving #serving-title{
+        padding-top: 20px;
+        text-align: center;
+        line-height: 0.5;
+    }
+    
+    
+    #serving li{
+        list-style: none;
+        display: inline-grid;
+        line-height: 0.3;
+        margin: 20px;
+    }
+    
+    
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-title{
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .contact .contact-items{
+        list-style: none;
+        display: inline-grid;
+        margin: 20px;
+        line-height: 0.2;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+
+
+    /* vendors page*/
+
+    .vendor-content{
+        display: flex;
+     align-content: center;   
+    }
+
+    .kfc-vendor .view-all{
+        margin-left: 160px;
+        color: rgb(248, 17, 17);
+    }
+    
+    .chicken-republic-vendor .view-all{
+        margin-left: 70px;
+        color: rgb(248, 17, 17);
+    }
+
+    .kfc-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 100%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+    .chicken-republic-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 100%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer a{
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 576px) {
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+        
+    header a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    span{
+        color: rgb(248, 17, 17);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;      
+    }
+    
+
+    nav a{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        color: gray;
+        float: right;
+        font-size: 1em;
+    }
+    
+    header nav a:nth-child(3){
+    
+        border: 1px red solid;
+        text-align: center;
+        border-radius: 5px;
+    
+    }
+        
+    #signup-link{
+        color: red;
+    }
+        
+    #heading{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 0.5;
+    }
+    
+    form select{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .interest-title{
+        align-items: center;
+    }
+    .interest-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   .interests .interest-item{
+    box-shadow: 1px 1px 3px 1.5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin-bottom: 10px;
+    padding: 10px;
+   }
+
+    .interests .interest-item h4{
+        color: red;
+        line-height: 0.1;
+    }
+        
+    .serving .serving-title{
+        padding-top: 20px;
+        text-align: center;
+        line-height: 0.5;
+    }
+    
+    
+    .serving {
+        list-style: none;
+        display: inline-grid;
+        text-align: center;
+        line-height: 0.3;
+        margin: 20px;
+    }
+    
+    
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-title{
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .contact .contact-items{
+        list-style: none;
+        display: inline-grid;
+        margin: 20px;
+        line-height: 0.2;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    /*vendors page*/
+    .vendor-content{
+        display: flex;
+        align-content: center;   
+    }
+
+
+    .kfc-vendor .view-all{
+        margin-left: 500px;
+        color: rgb(248, 17, 17);
+    }
+    
+    .chicken-republic-vendor .view-all{
+        margin-left: 430px;
+        color: rgb(248, 17, 17);
+    }
+
+
+    .kfc-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 46%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+    .chicken-republic-vendor li{
+        list-style: none;
+        display: inline-grid;
+        width: 46%;
+        line-height: 0.3;
+        padding: 5px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer a{
+        text-decoration: none;
+        color: gray;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+        
+    header a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    span{
+        color: rgb(248, 17, 17);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+              
+    }
+    
+
+    nav a{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        color: gray;
+        float: right;
+        font-size: 1em;
+    }
+    
+    header nav a:nth-child(3){
+    
+        border: 1px red solid;
+        text-align: center;
+        border-radius: 5px;
+    
+    }
+        
+    #signup-link{
+        color: red;
+    }
+        
+    #heading{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 0.5;
+    }
+    
+    form select{
+        width: 50%;
+        padding: 5px;
+    }
+
+    .interest-title{
+        margin: 30px;
+        text-align: center;
+    }
+
+    .interests {
+        display: inline-grid;
+        width: 100%;
+        align-content: center;
+        margin-bottom: 40px;
+    }
+
+
+   .interests .interest-item{
+        width: auto;
+        margin-left: 30px;
+        box-shadow: 1px 1px 3px 1.5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+   }
+
+    .interests .interest-item h4{
+        color: red;
+        line-height: 0.1;
+    }
+    
+
+    .serving-items{
+        display: flex;
+        width: 100%;
+        align-content: center;
+    }
+    .serving  .serving-item{
+        margin-left: 20px;
+        padding: 20px;
+    }
+
+    .serving .serving-title{
+        line-height: 0.5;    
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-title{
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .contact .contact-items{
+
+        display: flex;
+        margin: 20px;
+        line-height: 0.2;
+    }
+
+
+
+}
+
+
+
+
+/*for devices with screens larger than 992px*/
+@media (min-width: 992px){
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+        
+    header a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    span{
+        color: rgb(248, 17, 17);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    nav a{
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        color: gray;
+        float: right;
+        font-size: 1em;
+    }
+    
+    header nav a:nth-child(3){
+    
+        border: 1px red solid;
+        text-align: center;
+        border-radius: 5px;
+    
+    }
+        
+    #signup-link{
+        color: red;
+    }
+
+
+    /*vendors*/
+    
+    .vendor-content{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+
+
+.kfc-vendor .view-all{
+    display: inline;
+    margin-left: 1060px;
+    color: rgb(248, 17, 17);
+}
+
+.chicken-republic-vendor .view-all{
+    display: inline;
+    margin-left: 950px;
+    color: rgb(248, 17, 17);
+}
+
+
+.vendor-content li{
+    width: auto;
+}
+
+.kfc-vendor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    
+    .kfc-vendor img{
+        float: left;
+    }
+    
+    
+    .kfc-vendor li{
+        list-style: none;
+        display: inline-grid;
+        line-height: 0.3;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    
+    .chicken-republic-vendor img{
+        float: left;
+        
+    }
+    
+    
+    .chicken-republic-vendor li{
+        list-style: none;
+        display: inline-grid;
+        line-height: 0.3;
+        margin: 5px;
+        padding: 5px;
+    }
+
+
+    footer li{
+        list-style: none;
+        display: inline;
+    }
+    
+    footer li a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    footer li:nth-child(2){
+        float: right;
+        margin-left: 20px;
+    }
+
+
+    footer{
+        display: flex;
+        
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: gray;
+    }
+    
+    footer p{
+        display: inline;
+        font-size: 16px;
+        float:  right;
+    
+    }
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*----------------Footer--------------------*/
+footer li{
+    list-style: none;
+
+}
+
+footer li a{
+    text-decoration: none;
+    color: gray;
+}
+
+footer li:nth-child(2){
+    float: right;
+    margin-right: 60px;
+}
+
+
+.action{
+
+    width: 120px;
+    display: flex;
+    color: red;
+    border: 1px rgb(218, 13, 13) solid;
+    border-radius: 2px;
+}
+
+
+.remove{
+    width: 20px;
+    visibility: hidden;
+    margin-left:15px;
+    -webkit-appearance: none;
+}
+
+
+#cartImg{
+    width: 15px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.grey {
+    background-color: grey;
+}
+

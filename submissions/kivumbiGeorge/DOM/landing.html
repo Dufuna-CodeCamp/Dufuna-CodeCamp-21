@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./landing.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header(0) -->
+      <header>
+        <div class="container-header">
+          <div class="header-title">
+            <h1>FoodBag</h1>
+          </div>
+
+          <div class="header-links">
+            <div class="link-item"><a href="#">Cart</a></div>
+            <div class="link-item"><a href="#">Login</a></div>
+            <div class="link-item"><a href="#">Sign up</a></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- FoodBag(2) -->
+      <div class="foodbag">
+        <div>
+          <h2>FoodBag</h2>
+        </div>
+        <div>
+          <p>Anything food,we got you covered.</p>
+        </div>
+      </div>
+
+      <!--location(3)-->
+      <div class="location" id="location">
+        <div>
+          <h3>Where are you?</h3>
+        </div>
+
+        <div id="validateInput">
+          <select id="location-list" class="location-tab">
+            <option class="location-option" value="" disabled selected hidden>
+              Enter your delivery address
+            </option>
+            <option class="location-option" value="Kampala">Kampala</option>
+            <option class="location-option" value="Jinja">Jinja</option>
+            <option class="location-option" value="Gulu">Gulu</option>
+          </select>
+          <span class="error-section"></span>
+        </div>
+      </div>
+
+      <!--interest(4)-->
+      <div class="interest">
+        <div>
+          <h3>Pick an interest</h3>
+        </div>
+        <div class="interest-container">
+          <div class="interest-item">
+            <img src="./assets/Vegetables _ Drinks.svg" alt="logo" />
+            <h3>Fast Food</h3>
+            <p>All sorrows are less with bread.</p>
+          </div>
+
+          <div class="interest-item">
+            <img src="./assets/fast-food.svg" alt="logo" />
+            <h3>Vegetables and Fruits</h3>
+            <p>May not want it, but good for you.</p>
+          </div>
+
+          <div class="interest-item">
+            <img src="./assets/Drinks _ Cocktails.svg" alt="logo" />
+            <h3>Drinks and Cocktails</h3>
+            <p>I feel sad for those who dont drink.</p>
+          </div>
+
+          <div class="interest-item">
+            <img src="./assets/resturant.svg" alt="logo" />
+            <h3>Restaurants</h3>
+            <p>All sorrows are less with bread.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--space(5)-->
+      <div class="horizontal">
+        <hr />
+      </div>
+
+      <!--serve(6)-->
+      <div class="serve">
+        <div>
+          <h2>How we serve you</h2>
+        </div>
+        <div class="serve-container">
+          <div class="serve-item">
+            <img src="./assets/Illustration_1.svg" alt="logo" />
+            <h3>Tell us where you are</h3>
+            <p>Select the location you want us to deliver.</p>
+          </div>
+
+          <div class="serve-item">
+            <img src="./assets/illustration_2.svg" alt="logo" />
+            <h3>Tell us what you want</h3>
+            <p>Browse the type of food that interest you.</p>
+          </div>
+
+          <div class="serve-item">
+            <img src="./assets/illustration_3.svg" alt="logo" />
+            <h3>We'll come running</h3>
+            <p>Your order will be delivered to you in no time.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--space(7)-->
+      <div class="horizontal">
+        <hr />
+      </div>
+
+      <footer>
+        <!--contact(8)-->
+        <div class="contact">
+          <div class="contact-header">
+            <p>Contact us</p>
+          </div>
+
+          <div class="contact-icons">
+            <img src="./assets/twitter 2.svg" alt="logo" />
+            <img src="./assets/youtube 1.svg" alt="logo" />
+            <img src="./assets/facebook-f 1.svg" alt="logo" />
+          </div>
+        </div>
+
+        <!--footer(9)-->
+        <div class="container-footer">
+          <div>
+            <p>Terms &#38; Conditions . Privacy Policy</p>
+          </div>
+          <div>
+            <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="landing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head>
+        <title>Fluff bakes contact form</title>
+        <nav>
+            <a href="bakery.html">Home</a>
+            <a href="cakes.html">Cakes</a>
+            <a href="bread.html">Bread</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </head>
+    <body>
+        <h1>Fluff bakes contact form</form></h1>       
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset> 
+                <legend> Contact form</legend>
+                <label for="firstname">First Name</label><br>
+                <input type="text" name="firstname" id="firstname"><br>
+                <label for="lastname">Last Name</label> <br>
+                <input type="text" name="lastname" id="lastname"><br>
+                <label for="address">Address</label> <br>
+                <input type="text" name="address" id="address"> <br>
+                <label for="Gender">Gender</label> <br>
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="male">Male</label> <br>
+                <input type="radio" name="gender" value="Female" id="female"> 
+                <label for="female">Female</label><br>
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email" placeholder="Enter your email address"> <br><br>
+                <label for="subject">Subject</label> <br>
+                <input type="checkbox" name="service">
+                <label for="service">Service delivery</label><br>
+                <input type="checkbox" name="Job">
+                <label for="Job">Job application</label><br>
+                <input type="checkbox" name="order">
+                <label for="order">Missing or wrong order</label><br>
+                <input type="checkbox" name="other">
+                <label for="other">Other</label> <br><br>
+                <input type="text" name="other" id="other" placeholder="Type subject here if other..."><br><br>
+                <label for="Decsription">Message</label> <br>
+                <textarea name="comment" id="comment" cols="35" rows="6" placeholder="Type description here..."></textarea> <br>
+                <h3>Don't forget to click sumbit below! We appreciate your input.</h3>
+                <button type="submit" onclick="alert('Thank you for your submission!')">Submit </button>
+            </fieldset>
+        </form>
+    </body>
+</html>

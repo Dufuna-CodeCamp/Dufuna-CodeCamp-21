@@ -1,0 +1,209 @@
+body {
+    max-width: 1240;
+    font-family: 'Lato', sans-serif;
+    margin: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+*{
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+	justify-content: space-between;
+    position: relative;
+}
+.nav h2{
+    padding: 10px 0;
+}
+.nav ul{
+	display: flex;
+	align-content: center;
+	list-style-type: none;
+	padding: 18px 0 18px 15px;
+    font-size: 12px;
+}
+li a {
+	color: black;
+	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	border: 1px solid none;
+}
+.red{
+    color: #a50f0f;
+}
+.nav a:hover {
+	border: 1px solid red;
+	border-radius: 5px;
+}
+.active{
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    color: #ad4c4c;
+    padding: 8px 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.food-bag{
+    margin-top: 30px;
+}
+.food-bag1 h2{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.5;
+}
+.covered{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    line-height: 0.5;
+}
+.where {
+    display: inline-block;
+	font-weight: bold;
+	padding-bottom: 15px;
+    color: #000;
+}
+#location1 {
+	width: 100%;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0;
+}
+.interest {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+}
+.sbj-intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.available-foods{
+    width: 100%;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    color: #a5a5a5;
+    margin-bottom: 10px;
+    padding: 24px 0 24px 20px;
+    cursor: pointer;
+}
+.available-foods h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.available-foods p{
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+.serve {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+.service-available{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.service-item h3 {
+    text-align: center;
+    font-size: 16px;
+}
+.service-item p{
+    text-align: center;
+    font-size: 12px;
+}
+.illustration {
+    width: 200px;
+    height: 200px;
+}
+.contactus {
+	text-align: center;
+}
+.contact {
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+    font-size: 20px;
+    padding-top: -20px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+.logo{
+    display: inline;
+    padding: 15px;
+}
+.end {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+hr {
+    border: 1px solid #f2f2f2;
+}
+@media screen and (min-width:600px) {
+    .food-bag1{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        color: black;
+        line-height: 0.5;
+        padding-top: 20px;
+    }
+    .covered{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        color: black;
+        line-height: 0.5;
+    }
+    .sbj-intro{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .available-foods{
+        width: 25%;
+        box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+        color: #a5a5a5;
+        margin-bottom: 10px;
+        padding: 24px 0 24px 20px;   
+    }
+    .serve {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .service-item h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .service-item p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .illustration {
+        width: 300px;
+        height: 200px;
+    }
+    .terms{
+        float: left;
+    }
+    .copy{
+        float: right;
+    }
+    .end{
+        padding-bottom: 20px;
+        margin: 0 0 20px;
+    }    
+}

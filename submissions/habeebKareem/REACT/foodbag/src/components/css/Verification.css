@@ -1,0 +1,108 @@
+p {
+    color: #AD4C4C;
+}
+
+div .radio {    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.radio label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+div .radio input {
+    width: 20px;
+}
+
+.radio > input[type='radio']:checked {
+    background-color: #AD4C4C;
+}
+
+
+.radio > input[type='radio'] {
+    /* remove standard background appearance... */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* ... */
+    /* create custom radio button appearance */
+    display: inline-block;
+    height: 20px;  
+    padding: 3px;
+    background-clip: content-box;
+    border: 2px solid #AD4C4C;
+    border-radius: 50%;
+}
+
+.order-address {
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+}
+
+select {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+    height: 40px;
+    text-indent: 1rem;
+    width: 100%;
+}
+
+select #cards {
+    color: black;
+}
+
+.last-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.pay-btn {
+    background: #AD4C4C;
+    border-radius: 5px;  
+    cursor: pointer;
+    display: flex;  
+    height: 50px;
+    padding: 12px 0;  
+    width: 65%;
+    margin: 30px 15%;
+    justify-content: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    div .radio input {
+        /* width: 0; */
+    }
+
+    .order-address {
+        font-size: 11px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+
+    select {
+        margin: .5rem 0;
+    }
+    
+    .pay-btn {    
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 35px 0 10px;  
+      }
+}
