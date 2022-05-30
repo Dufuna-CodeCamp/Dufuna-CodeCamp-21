@@ -9,15 +9,15 @@ const Third = (props) => {
     <div>
       <div className="third-row">
         <div className="close">
-          <input type="image" src={close} />
+          <input type="image" src={close} alt="close sign"/>
         </div>
-          <img className="r-max-2" src={rmax2} />
+          <img className="r-max-2" src={rmax2} alt="A bowl of rice, chicken and coke"/>
         <div className="beside">
           <div>
             <p>Refuel Max</p>
           </div>
           <div className="buttons">
-            <input onClick={props.onPlusButtonClick} type="image" src={plus} />
+            <input onClick={props.onPlusButtonClick} type="image" src={plus} alt="plus sign"/>
             <div className="value">
               <p>{props.value3}</p>
             </div>
@@ -25,6 +25,7 @@ const Third = (props) => {
               onClick={props.onMinusButtonClick}
               type="image"
               src={minus}
+              alt="minus sign"
             />
           </div>
         </div>
