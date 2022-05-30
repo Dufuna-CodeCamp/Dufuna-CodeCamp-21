@@ -11,7 +11,7 @@ const First = (props) => {
         <div className="close">
           <input type="image" src={close} alt="close-sign"/>
         </div>
-          <img className="king-bucket" src={kingBucket} />
+          <img className="king-bucket" src={kingBucket} alt="bucket of kfc chicken"/>
         <div className="beside">
           <div>
             <p>KFC-King Bucket</p>
