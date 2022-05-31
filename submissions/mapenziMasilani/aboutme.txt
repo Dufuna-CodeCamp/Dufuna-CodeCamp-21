@@ -1,3 +1,0 @@
-hello world!
-my name is masilani mapenzi
-i have been able to push my first task to git hub

@@ -1,3 +1,0 @@
-Hello World!
-My name is Idisi Efezino Endurance and I am an aspiring frontend developer.
-I hope to be an acccomplished frontend developer by the end of this bootcamp.
