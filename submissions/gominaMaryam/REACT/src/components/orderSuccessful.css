@@ -1,0 +1,19 @@
+.order-successful{
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.order-successful h4{
+    color: #5EA304;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.order-successful p{
+    text-align: center;
+    color: #696969;
+}

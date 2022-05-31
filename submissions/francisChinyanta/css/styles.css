@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 html, body{
 	height:100%;
 	padding: 0;
@@ -15,11 +18,23 @@ nav ul{
     font-size: large;
     font-weight: 600;       
 }
-nav{
-    text-decoration: black;    
+
+nav li{
+    display: inline-grid;
+    padding: 0;
+    float: right;
+    padding-left:40px;
 }
+nav li a:hover{
+        color: rgb(56, 146, 146);        
+}
+  /* selected link */
+nav li a:active {
+    color: yellow;
+  }
+
 select {        
-    width: 1200px;   
+    width: 1490px;
     padding: 10px;    }
 a{
     text-decoration: none;
@@ -39,19 +54,6 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
-nav li{
-    display: inline-grid;
-    padding: 0;
-    float: right;
-    padding-left:40px;
-}
-nav li a:hover{
-        color: rgb(56, 146, 146);        
-}
-  /* selected link */
-nav li a:active {
-    color: yellow;
-  }
   
 span{
     color: red;
@@ -86,20 +88,21 @@ img {
 }
 #terms{
    width: 300px;
-   height: 50px;
-   margin-top: 20px;
+   height: 50px;  
    margin-bottom: 20px;
    margin-left: 50px;
+ 
 }
 #copyrit{
     width: 400px;
-    height: 50px;
-    margin-top: 20px;
+    height: 50px;   
     margin-bottom: 20px;
-    margin-left: 850px;   
+    margin-left: 60%;   
+    float: right;   
 }
 #terms_copyrit{
-    display: flex;
+    display: flex;    
+    width: 100%;
 }
 #reg_1{
     display: flex;
@@ -127,3 +130,16 @@ img {
 #condition input{
     width: 20px;
 }
+/**MEDIA QUERIES**/
+@media screen and (max-width: 600px) {
+    nav li {
+      float: none;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    nav ul {
+      float: none;
+      width: 100%;
+    }
+  }

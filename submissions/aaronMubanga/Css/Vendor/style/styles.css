@@ -11,6 +11,21 @@ header {
     background-color: var(--main-color);
 
 }
+
+#cart{
+    position: relative;
+}
+
+#newItem{
+    height:9px;
+    width: 9px;
+    background-color:brown;
+    align-self: center;
+    animation: blink 500ms 200ms infinite ease-in-out;
+    position: absolute;
+    display: none;
+}
+
 header nav a{
     font-size: 1.3rem;
     color: var(--text-color);

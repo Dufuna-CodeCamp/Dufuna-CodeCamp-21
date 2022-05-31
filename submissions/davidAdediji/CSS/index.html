@@ -35,38 +35,37 @@
 			</div>
 
 			<section class="location">
-				<p class="font-500-12 bg-main-color">Where are you?</p>
-				<input class="input font-bg-small" list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" placeholder="Enter your delivery address" />
-				<datalist id="ice-cream-flavors">
-					<option value="Chocolate" />
-					<option value="Coconut" />
-					<option value="Mint" />
-					<option value="Strawberry" />
-					<option value="Vanilla" />
-				</datalist>
+				<label for="location" class="font-500-12 bg-main-color">Where are you?</label><br><br>
+				<select name="location" id ="location1" class="input font-bg-small">
+					<option class="bg-color" value="Enter your delivery address" disabled selected hidden>Enter your delivery address</option>
+					<option class="ice-cream-flavors" value="bodija, market">Bodija Market</option>
+					<option class="ice-cream-flavors" value="ikeja, Lagos">Ikeja Lagos</option>
+					<option class="ice-cream-flavors" value="ikorodu">Ikorodu</option>
+					<option class="ice-cream-flavors" value="apete">Apete, Ibadan</option>
+				</select>
 			</section>
 
 			<section class="section-interest">
 				<p class="font-500-12 bg-main-color">Pick an interest</p>
 				<div class="container">
 					<div class="box">
-						<div><img src="./img/fast-food_disabled.svg" alt=""></div>
-						<p class="bg-color">Fast food</p>
+						<img class="images" src="./img/fast-food_disabled.svg" alt="">
+						<p class="font-3 outlook bg-color">Fast food</p>
 						<p class="bg-color font-bg-small">All sorrows are less with bread</p>
 					</div>
 					<div class="box">
-						<div><img src="./img/Vegetables & Drinks_disabled.svg" alt=""></div>
-						<p class="font-3 bg-color">Vegetables & Fruits</p>
+						<img class="images" src="./img/Vegetables & Drinks_disabled.svg" alt="">
+						<p class="font-3 outlook bg-color">Vegetables & Fruits</p>
 						<p class="bg-color font-bg-small">May not want it, but good for you.</p>
 					</div>
 					<div class="box">
-						<div><img src="./img/Drinks & Cocktails_disabled.svg" alt=""></div>
-						<p class="font-3 bg-color">Drinks & Cocktails</p>
+						<img class="images" src="./img/Drinks & Cocktails_disabled.svg" alt="">
+						<p class="font-3 outlook bg-color">Drinks & Cocktails</p>
 						<p class="bg-color font-bg-small">I feel sad for those who don't drink.</p>
 					</div>
 					<div class="box">
-						<div><img src="./img/resturant_disabled.svg" alt=""></div>
-						<p class="font-3 bg-color">Resturants</p>
+						<img class="images" src="./img/resturant_disabled.svg" alt="">
+						<p class="font-3 outlook bg-color">Resturants</p>
 						<p class="bg-color font-bg-small">All sorrows are less with bread</p>
 					</div>
 				</div>
@@ -114,6 +113,7 @@
 			</div>
 		</footer>
 	</div>
+<script src="../Dom/main.js"></script>
 </body>
 
 </html>
