@@ -22,7 +22,6 @@
 
 .start{
     display: flex;
-    justify-content: center;
     justify-items: center;
     justify-content: space-between; 
     border-top: 50px;
