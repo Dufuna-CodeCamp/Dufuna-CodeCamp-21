@@ -5,13 +5,11 @@ USE transport_company;
 -- create table for the information of the passengers
 CREATE TABLE registered_passengers(
 id INT NOT NULL auto_increment,
-passenger_id INT NOT NULL,
 passenger_name VARCHAR(255) NOT NULL,
-sex VARCHAR(10) NOT NULL ,
+sex VARCHAR(255) NOT NULL ,
 age varchar(5) NULL,
 PRIMARY KEY(id)
 );
-select * from registered_passengers;
 
 -- create a table for the travel information of the passengers
 CREATE TABLE travel_details (
@@ -25,9 +23,9 @@ number_of_parents_children INT NOT NULL,
 number_of_siblings_spouses INT NOT NULL,
 point_of_embarkation VARCHAR(100) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (id) REFERENCES registered_passengers(id)
+FOREIGN KEY (id) REFERENCES travel_id
 );
-select * from travel_details;
+
 
 -- table in the event of an accident, status = alive/dead
 CREATE TABLE flight_status(
@@ -35,8 +33,7 @@ id INT NOT NULL AUTO_INCREMENT,
 traveller_id INT NOT NULL,
 status VARCHAR(10) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (id) REFERENCES registered_passengers(id)
+FOREIGN KEY (id) REFERENCES traveller_id
 );
-select * from flight_status;
 
 
