@@ -19,7 +19,7 @@ class Header extends React.Component {
                 </div>
 
                 <div>
-                    <span  className="hero"><a href="../../../../public/index.html" className="fent">Home{" >  "} </a>  Cart</span>
+                    <span className="hero"><h4 className="fent">Home{" > "} </h4><h4> cart</h4></span>
                     <h2>Cart</h2>
                 </div>          
            
