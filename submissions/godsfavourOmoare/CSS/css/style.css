@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    margin: 7% 6%;
+}
+
+header .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h2 span {
+    color: #c43131;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 7px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li .sign-in {
+    color: #c43131;
+    border: 1px solid #c43131;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    margin: 7% 6%;
+}
+
+main .hero-text h1 {
+    font-size: 2rem;
+    padding: 1.5rem 0 0.4rem;
+}
+
+main .hero-text p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+main div label {
+    font-weight: 700;
+}
+
+main div #dropdown {
+    width: 100%;
+    padding: 0.5rem 0.3rem;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+}
+
+main section label {
+    font-weight: 700;
+}
+
+main .options .ffood,
+main .options .vfruits,
+main .options .drinks,
+main .options .restaurants {
+    margin-top: 0.9rem;
+    border: 1px solid #cec9c9;
+    border-radius: 5px;
+    padding: 1rem;
+    line-height: 30px;
+    width: 100%;
+}
+
+main .options h3 {
+    color: #c43131;
+}
+
+hr {
+    border: 1px solid #cec9c9;
+    margin: 2rem 0;
+}
+
+main .service {
+    text-align: center;
+}
+
+main .service h2 {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+main .service .total-service img {
+    width: 180px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+main .service .total-service h3 {
+    padding-bottom: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    margin: 9% 7%;
+}
+
+footer .social-media p {
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+footer .social-media ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 0.75rem; 
+    padding-right: 0.75rem;
+}
+
+footer .t-condition p{
+    padding-top: 1.5rem;
+    font-size: 14px;
+}
+
+footer .t-condition p:first-child {
+    padding-bottom: 0.2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    header h2,
+    header span {
+        font-size: 1.5rem;
+    }
+ 
+    nav ul li {
+        padding-left: 2rem;
+    }
+
+    main .hero-text {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    main .options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main .options .ffood,
+    main .options .vfruits,
+    main .options .drinks,
+    main .options .restaurants {
+        margin-right: 7px;
+        line-height: 24px;
+    }
+
+
+    main .service .total-service {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    main .service .total-service .location,
+    main .service .total-service .choice,
+    main .service .total-service .delivery {
+        width: 30%;
+    }
+
+    footer .t-condition {
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+    }
+
+    footer .t-condition p {
+       text-align: left;
+       flex: 50%;
+    }
+
+    footer .t-condition p:last-child {
+        text-align: right;
+        flex: 50%;
+    }
+
+}

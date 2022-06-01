@@ -6,9 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* padding: 80px; */
-    /* border: 2px solid red; */
-    padding: 50px;
+    padding: 80px;
+    /* padding: 50px; */
     background-color:  #E5E5E5;
 }
 
@@ -342,12 +341,11 @@ line-height: 18px;
 /* 4subs */
 .boxes {
     margin-top: 10px;
-   width: 100%;
+    width: 100%;
     display: block;
     align-items: center;
     padding-bottom: 25px;
     margin-bottom: 20px;
-
 }
 
 .box {
@@ -357,6 +355,7 @@ line-height: 18px;
     height: 169px;
     width: 100%;
    margin-bottom: 30px;
+   
 }
 
 .box img {
@@ -455,4 +454,67 @@ footer{
     font-size: 12px;
     line-height: 18px;
 }
+ }
+
+/* tablet */
+ @media (min-width: 768px){
+    .boxes {
+        margin-top: 10px;
+        width: 100%;
+        display: block;
+        align-items: center;
+        padding-bottom: 25px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .box {
+        background: #FFFFFF;
+        /* box-shadow: 1px 1px 3px 1.5px rgba(0, 0, 0, 0.1); */
+        padding: 38px;
+        height: 169px;
+        width: 100%;
+       margin-bottom: 30px;
+       
+    }
+
+    .serve-subs {
+        display: block;
+       
+      
+    }
+    
+    .serve-sub1 {
+      width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .serve-sub1 img {
+        width: 150px;
+        height: 140.6px;
+    }
+
+    .contact {
+        text-align: center;
+        margin-top: 8px;
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+        
+    }
+    
+/* footer */
+footer{
+    display: block;
+  text-align: center;
+
+}
+.terms{
+    margin-bottom: 5px;
+}
+.terms p{
+    font-size: 12px;
+    line-height: 18px;
+}
+    
  }

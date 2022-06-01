@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 90%;
+    margin: auto;
+}
+ .Bag{
+     color: orangered;
+     margin-left: -5px;
+     font-weight: 500;
+     font-size: 20px;
+     border-left: 100px;
+ }
+ .Food{
+     color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    border-left: 100px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+ 
+.header{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    margin: auto;
+}
+.nav a{
+   margin-left: 20px;
+   
+ 
+}
+
+#sign-up{
+    color: red;
+
+}
+ .nav sign-up button{
+    border-color: #ad4c4c;  
+}
+button a{
+    padding-left: -30px;
+}
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 60px;
+}
+#where-are-you{ 
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.interest-wrapper{
+    display: flex;
+    justify-content:space-between;
+    justify-items: center;
+   
+}
+.interest-wrapper div{
+    border: 1px ;
+<<<<<<< HEAD
+    box-shadow: 0px, 0px, 3px, 1.5px rgba(0, 0,0, 0.1);
+    margin: 0px, 5px 0px, 5px;
+=======
+    box-shadow: 0 0 3px 1.5px rgba(0, 0,0, 0.1);
+    margin: 0 5px;
+>>>>>>> 01680fcbfe8c8ad424374a267724c5d321a9de7e
+    width: 295px;
+    /* height: 169px; */
+    left: 730px;
+    top: 602px;
+    
+}
+.serve-you-wrapper{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.serve-you-wrapper div{
+    margin: 20px;
+}
+
+#serveu{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-top: 40px;
+    border-bottom: 60px;
+}
+.where input{
+    width: 1240px;
+    height: 60px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+hr{
+    width: 1240px;
+    border: 1px solid #f2f2f2;
+}
+.contact p{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact-svg{
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    justify-items: center;
+}
+.contact-svg span{
+    padding: 10px;
+}
+ 
+.last-part{
+    display:flex;
+    justify-content:space-between;
+}
+
+.nav span{
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: right;
+    padding: 5px;
+}
+#sign-up a{
+    color: #ad4c4c;
+    font-size: 16px;
+    line-height: 24px;
+    /* display: flex; */
+    align-items: center;
+    
+}

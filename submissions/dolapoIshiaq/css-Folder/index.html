@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="header">Food<span>Bag</span></p>
+        <nav>
+            <ul>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#" id="sign">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container">
+            <div id="heading">
+                <h3>FoodBag</h3>
+                <p>Anything food, we have you covered</p>
+            </div>
+            <div class="location">
+                <label for="location"><b>Where are you?</b></label><br>
+                <input list="location-list" id="location" name="location" placeholder="Enter your delivery address">
+                <datalist id="location-list">
+                    <option value="Ado-Ekiti">
+                    <option value="Ido-Ekiti">
+                    <option value="Ijero-Ekiti">
+                    <option value="Oye-Ekiti">
+                    <option value="Igbemo-Ekiti">
+                    <option value="Aramoko-Ekiti">
+                </datalist>
+            </div>
+            <div class="interest">
+                <h4>Pick an interest</h4>
+                <div class="order">
+                    <div class="order-list">
+                        <img src="./img/fast-food_disabled.svg" alt="fastfood">
+                        <p class="title">Fast food</p>
+                        <p>All sorrows are less with bread.</p>
+                    </div>
+                    <div class="order-list">
+                        <img src="./img/Vegetables & Drinks_disabled.svg" alt="vfruits">
+                        <p class="title">Vegetables & Fruits</p>
+                        <p>May not want it, but good for you.</p>
+                    </div>
+                    <div class="order-list">
+                        <img src="./img/Drinks & Cocktails_disabled.svg" alt="dcocktails">
+                        <p class="title">Drinks & Cocktails</p>
+                        <p>I feel sad for those who don't drink.</p>
+                    </div>
+                    <div class="order-list">
+                        <img src="./img/resturant_disabled.svg" alt="resturant">
+                        <p class="title">Resturant</p>
+                        <p>All sorrows are less with bread</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h4>How we serve you</h4>
+            <div class="serve">
+                <div class="serve-list">
+                    <img src="./img/Illustration_1.svg" alt="where">
+                    <p class="title">Tell us where you are</p>
+                    <p>Select the location you want us to deliver.</p>
+                </div>
+                <div class="serve-list">
+                    <img src="./img/illustration_2.svg" alt="want">
+                    <p class="title">Tell us what you want</p>
+                    <p>Browse the type of food that interest you. </p>
+                </div>
+                <div class="serve-list">
+                    <img src="./img/illustration_3.svg" alt="come">
+                    <p class="title">We'll come running</p>
+                    <p>Your order will be delivered in no time.</p>
+                </div>
+            </div>        
+        </section>
+    </main>
+
+    <footer>
+        <h4>Contact us</h4>
+        <div class="contact">
+           
+            <img src="./img/twitter 2.svg" alt="twitter">
+            <img src="./img/youtube 1.svg" alt="youtube">
+            <img src="./img/facebook-f 1.svg" alt="facebook">
+        </div>
+        <div class="copyright">
+            <p>Terms & Conditions. Privacy Policy</p>
+        <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

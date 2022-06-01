@@ -11,14 +11,13 @@ USE transportation_company;
 CREATE TABLE passenger_details(
     id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(250) NOT NULL,
-    sex VARCHAR(11) NOT NULL,
-    age INT,
+    sex VARCHAR(250) NOT NULL,
+    age VARCHAR(250),
     PRIMARY KEY (id)
 );
 
 
 -- Table structure for passenger_travel_details
-
 CREATE TABLE passenger_travel_details(
     id INT NOT NULL AUTO_INCREMENT,
     passenger_id INT NOT NULL,
@@ -26,8 +25,8 @@ CREATE TABLE passenger_travel_details(
     passenger_ticket_number VARCHAR(250) NOT NULL,
     trip_fare DECIMAL NOT NULL,
     assigned_cabin VARCHAR(250),
-    number_parent_children INT NOT NULL,
-    number_siblings_spouse INT NOT NULL,
+    number_parent_children VARCHAR(250) NOT NULL,
+    number_siblings_spouse VARCHAR(250) NOT NULL,
     embark_point VARCHAR(250) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY(passenger_id) REFERENCES passenger_details (id)
@@ -43,4 +42,3 @@ CREATE TABLE accident_cases(
    PRIMARY KEY (id),
    FOREIGN KEY(passenger_id) REFERENCES passenger_details (id)
 );
-
