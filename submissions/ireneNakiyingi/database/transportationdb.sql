@@ -23,7 +23,7 @@ number_of_parents_children INT NOT NULL,
 number_of_siblings_spouses INT NOT NULL,
 point_of_embarkation VARCHAR(100) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (id) REFERENCES travel_id
+FOREIGN KEY (travel_id) REFERENCES registered_passengers(id)
 );
 
 
@@ -33,7 +33,7 @@ id INT NOT NULL AUTO_INCREMENT,
 traveller_id INT NOT NULL,
 status VARCHAR(10) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (id) REFERENCES traveller_id
+FOREIGN KEY (traveller_id) REFERENCES registered_passengers(id) 
 );
 
 
