@@ -12,9 +12,9 @@ class Header extends React.Component {
                     </div>
 
                     <ul>
-                        <li><a href="#" className="a_cart">Cart</a></li>
-                        <li><a href="#">login</a></li>
-                        <li><a href="#" className="su">Sign up</a></li>
+                        <li><a href="../../../../public/index.html" className="a_cart">Cart</a></li>
+                        <li><a href="../../../../public/index.html">login</a></li>
+                        <li><a href="../../../../public/index.html" className="su">Sign up</a></li>
                     </ul>
                 </div>
 
