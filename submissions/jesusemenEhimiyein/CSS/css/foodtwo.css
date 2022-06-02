@@ -1,0 +1,14 @@
+#foodtwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    height: 225px;
+    width: 225px;
+    
+}
