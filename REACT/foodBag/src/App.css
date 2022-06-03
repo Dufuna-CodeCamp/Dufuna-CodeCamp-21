@@ -28,7 +28,7 @@ header span {
 }
 
 .top-left {
-  margin: 3vw 0 0 0;
+  margin: 3vw 0 0;
   font-weight: 500;
   font-size: 20px;
 }
@@ -39,7 +39,7 @@ header span {
   justify-content: space-between;
   align-items: center;
   float: right;
-  margin: -2.5vw 0 0 0;
+  margin: -2.5vw 0 0;
 }
 
 /* Navigation links */
@@ -390,7 +390,7 @@ header span {
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .top-left {
-    margin: 6.4vw 0 0 0;
+    margin: 6.4vw 0 0;
     font-size: 16px;
   }
 
@@ -406,7 +406,7 @@ header span {
 
   .header-nav {
     width: 41.7vw;
-    margin: -8.33vw 0 0 0;
+    margin: -8.33vw 0 0;
   }
 
   .header-nav a {
@@ -521,11 +521,7 @@ header span {
     height: 46px;
     margin-left: -8.33vw;
   }
-
-  .delivery {
-    margin-left: .5vw;
-  }
-
+  
   .cartPage {
     width: 100%;
   }
