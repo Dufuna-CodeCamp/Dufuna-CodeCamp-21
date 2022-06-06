@@ -1,0 +1,20 @@
+.VerifHome {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+.V {
+    color:  #C9C9C9;
+}
+.C {
+    color:  #C9C9C9;
+}
+.verification {
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.VerifDetails {
+    color: #AD4C4C;
+    margin-top: 2px;
+}
