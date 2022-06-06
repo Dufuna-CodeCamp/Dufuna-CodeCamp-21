@@ -6,10 +6,10 @@ const HomeNav = () => {
     <div className="homeNav">
       <div className="home-cart-verify">
         <p className="home">
-          <a href="landing-page.html">Home &gt;</a>
+          <a href="/">Home &gt;</a>
         </p>
         <p className="vendors">
-          <a href="vendor-page.html">Cart &gt;</a>
+          <a href="/">Cart &gt;</a>
         </p>
         <p className="active">
           <a href="/">Verification</a>
