@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: poppins;
+    padding: 10px;
+}
+a {
+  text-decoration:none;
+  color: rgba(105, 105, 105, 1);
+
+}
+ul, ol {
+  list-style-type: none;
+}
+.foodbag-head li {
+  display:inline-grid;
+  padding: 5px 10px;
+  font-weight: regular;
+  float: right;
+
+}
+ li {
+  display:inline-grid;
+  padding: 0;
+}
+.foodbag-head {
+  font-size:20px;
+  font-weight: medium;
+  margin-top: 80px;
+}
+
+ span {
+ color:#AD4C4C;
+ font-family: Poppins;
+ font-weight: 500;
+ text-align: center; 
+
+}
+#view {
+ color:#AD4C4C;
+ font-family: Poppins;
+ font-weight: 500;
+ float: right;
+ margin-top: 10px;
+ width: fit-content;
+ padding-top: 20px;
+ 
+}
+ .foodbag-head .signup {
+  border: 1px solid #AD4C4C;
+  border-radius: 5px;
+}
+#kfc-vendor  {
+  margin-bottom: 60px;
+  }
+.head {
+  margin-top: 80px;
+}
+
+.head p {
+  display: contents;
+  flex-wrap: wrap;
+  line-height: 21px;
+}
+
+#home {
+  color:#A5A5A5;
+  font-weight: 400;
+}
+
+#vendors {
+  color: #000000;
+  font-weight: 500;
+}
+
+#allvendors {
+  font-color: #000000;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: medium;
+  margin-top: 33px;
+}
+
+ .kfc-header img, .chickrep-header img  {
+  width: 50px; 
+  height: 50px;
+  left: 69px;
+  top: 297px;
+} 
+
+.kfc-header div, .chickrep-header div  {
+  display: inline;
+  font-weight:medium;
+  flex-wrap: wrap;
+  font-size:20px;
+  height: 30px;
+  width: 39px;
+  left: 171px;
+  top: 325px;
+  margin-bottom: 60px;
+}
+
+
+
+#interest {
+ font-weight: 600;
+ line-height: 24px;
+ color: #4E4D4D;
+ }
+ 
+#price {
+  color: #5EA304;
+  font-weight: 600;
+  float: right;
+}
+
+.food-items .signup {
+  height: 40px;
+  width: 100px;
+  left: 420px;
+  top: 604px;
+  border-radius: 5px;
+  border: 1px solid #AD4C4C;
+  padding: 10px;
+  border-width: fit-content;
+} 
+
+.food-items span {
+  font-weight: 600px;
+  color:#AD4C4C;
+}
+#chicken-republic {
+  margin-top: 40px;
+}
+
+.chickrep-header, .kfc-header {
+  margin-bottom: 30px;
+  
+}
+@media screen and (max-width:650px)  {
+   .foodbag-head {
+      font-size: 18px;
+      }
+   .foodbag-head li {
+        font-size: 18px;
+        letter-spacing: 0;
+       }
+    #interest {
+      font-size: 14px;
+    }
+    #allvendors {
+      font-size: 25px;
+    }
+     .logo img{
+      width: 40px;
+      height: 40px;
+    }
+	li {
+      display:inline-grid;
+      padding: 0;
+    }
+
+
+}
+
+@media  screen and (max-width: 430px) {
+
+   .foodbag-head {
+      font-size: 16px;
+      }
+   .foodbag-head li {
+        font-size: 14px;
+        letter-spacing: 0;
+       }
+   #interest {
+      font-size: 12px;
+    }
+    #allvendors {
+      font-size: 20px;
+    }
+	li {
+      display:inline-grid;
+       padding:0;
+    }
+   
+} 
+

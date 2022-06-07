@@ -1,0 +1,337 @@
+body {
+    background-color: white;
+}
+
+
+span {
+margin: 10px 100px 50px 10px;
+font-size: medium;
+font-weight: bold;
+
+} 
+
+span.f1::after {
+color: red;
+content: 'Bag';    
+
+}
+
+
+.f2 {
+display: inline-grid;
+margin: 10px 50px 50px 500px; 
+font-size: medium;
+
+}
+
+.f3 {
+display: inline-grid;
+margin: 10px 50px 50px;
+font-size: medium;
+}
+
+.f4 {
+font-size: medium;
+display: inline-grid;
+margin: 10px 50px 50px;
+border: 2px solid red;
+border-radius: 20%;
+padding: 5px
+
+}
+
+.p1 {
+
+    font-size: 28px;
+    margin-left: 350px;
+    margin-bottom: 0;
+
+}
+
+.p2 {
+
+    font-size: medium;
+    margin-left: 280px;
+    margin-top: 5px;
+
+}
+
+.p3 {
+
+    margin: 40px 0 10px 10px;
+    font-size: medium;
+
+}
+
+#address {
+    
+    margin-left: 10px;
+    padding: 10px 850px 10px 10px;
+    border: 1x solid black;
+
+}
+
+.p4 {
+
+    margin: 20px 0 10px 10px ;
+}
+
+section {
+
+    margin: 5px 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    display: inline-grid;
+}
+
+.image1 {
+
+    background-image: url('fast-food_disabled.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+.fast {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.bread {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+
+.image2 {
+
+    background-image: url('Vegetables & Drinks_disabled.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+.vegetable {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.good {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+
+.image3 {
+
+    background-image: url('Drinks & Cocktails_disabled.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+.drink {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.sad {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+
+.image4 {
+
+    background-image: url('resturant_disabled.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100px;
+    margin: 5px;
+}
+
+.resturant {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.sorrow {
+
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.image5 {
+
+    background-image: url('illustration_1.svg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    display: inline-grid;
+    margin: 0;
+}
+
+.image6 {
+
+    background-image: url('illustration_2.svg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    display: inline-grid;
+    margin: 0 50px 0 0;
+}
+
+.image7 {
+
+    background-image: url('illustration_3.svg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    display: inline-grid;
+    margin: 0 50px 0 30px;
+}
+
+.where {
+
+    font-size: large;
+    font-weight: bold;
+    margin: 20px 50px 10px;
+    display: inline-grid;
+
+}
+
+.what {
+    font-weight: bold;
+    font-size: large;
+    margin: 20px 20px 10px 100px;
+    display: inline-grid;
+
+}
+
+.come {
+    font-weight: bold;
+    font-size: large;
+    margin: 20px 50px 10px 210px;
+    display: inline-grid;
+
+}
+
+.location {
+
+    margin: 0 50px 0 40px;
+    display: inline-grid;
+    text-align: center;
+}
+
+.browse {
+
+    margin: 0 50px 0 80px;
+    display: inline-grid;
+    text-align: center;
+}
+
+.order {
+
+    margin: 0 50px 0 160px;
+    display: inline-grid;
+    text-align: center;
+}
+
+
+.us {
+
+    margin: 5px 50px 0 80px;
+    display: inline-grid;
+    text-align: center;
+}
+
+.you {
+
+    margin: 5px 50px 0 200px;
+    display: inline-grid;
+    text-align: center;
+}
+
+.time {
+
+    margin: 5px 50px 0 250px;
+    display: inline-grid;
+    text-align: center;
+}
+
+.contact {
+
+    margin: 10px 0 10px 400px;
+    font-size: large;
+
+}
+
+.image8 {
+
+    background-image: url('twitter 2.svg');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-grid;
+    margin: 10px 10px 10px 390px;
+
+}
+
+.image9 {
+
+    background-image: url('youtube 1.svg');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-grid;
+    margin: 10px 10px 10px 0;
+
+}
+
+.image10 {
+
+    background-image: url('facebook-f 1.svg');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-grid;
+    margin: 10px 10px 10px 0;
+
+}
+
+.terms {
+     
+    margin: 10px 10px 10px 50px;
+    font-size: larger;
+    display: inline-grid;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.privacy {
+     
+    margin: 10px;
+    font-size: larger;
+    display: inline-grid;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.copy {
+    margin: 10px 10px 10px 200px;
+    font-size: larger;
+    display: inline-grid;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
