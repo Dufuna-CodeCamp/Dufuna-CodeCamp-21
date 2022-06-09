@@ -1,5 +1,3 @@
-
-
 *{
     padding:0;
     margin:0;
@@ -41,10 +39,9 @@ display: inline;
 .menu {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid lightgray; */
+  border: 1px solid lightgray;
   height: 225px;
   width: 225px;
-  
 }
 
 .prod_info{
@@ -53,7 +50,6 @@ display: inline;
   justify-content: space-between;
   margin-bottom: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
 }
 
 .img{
@@ -84,13 +80,4 @@ align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid lightgray;
-  height: 225px;
-  width: 225px;
-  
 }
