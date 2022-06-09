@@ -5,10 +5,10 @@ const HomeNav = (props) => {
     <div className="homeNav">
       <div className="home-vendor-nav">
         <p className="home">
-          <a href="landing-page.html">Home &gt;</a>
+          <a href="/">Home &gt;</a>
         </p>
         <p className="vendors active">
-          <a href="vendor-page.html">Cart</a>
+          <a href="/">Cart</a>
         </p>
       </div>
       <div className="title">
