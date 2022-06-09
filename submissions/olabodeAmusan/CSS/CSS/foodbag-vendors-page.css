@@ -146,11 +146,6 @@ a:hover p:last-child{
     padding: 0;
     justify-content: space-between;
 }
-.kfc ul li:last-child,
-.chicken ul li:last-child{
-    justify-content: space-between;
-}
-
 .kfc ul li:first-child,
 .chicken ul li:first-child{
     font-weight: 600;
@@ -163,6 +158,7 @@ a:hover p:last-child{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    justify-content: space-between;
 }
 .kfc ul:nth-child(2),
 .chicken ul:nth-child(2){
