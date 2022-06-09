@@ -1,8 +1,238 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
-    "failures": 0,
-    "owner": "chidinmaOdo"
+    "suites": 1,
+    "tests": 5,
+    "passes": 0,
+    "pending": 0,
+    "failures": 5,
+    "start": "2022-06-09T10:57:54.054Z",
+    "end": "2022-06-09T10:58:02.393Z",
+    "duration": 8339,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6d7d0afc-f678-4a14-b5f2-0989b6f3f463",
+      "title": "",
+      "fullFile": "C:\\Users\\Boga\\Documents\\Dufuna\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
+      "file": "\\html_form.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+          "title": "Testing Form Task",
+          "fullFile": "C:\\Users\\Boga\\Documents\\Dufuna\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
+          "file": "\\html_form.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
+              "err": {},
+              "uuid": "13647219-a300-4ded-8219-18eb48cc4881",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "fba6df3f-d5ee-4991-9317-aad79c2b5342",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: assert 4 input fields are present",
+              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "timedOut": false,
+              "duration": 7525,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const input = await driver.findElements(By.css(\"input\"));\nconst size = input.length;\nassert.equal(\n  size,\n  4,\n  `Ensure you have all the input fields in the order stated in the task criteria`\n);",
+              "err": {
+                "message": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 2 to equal 4",
+                "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected 2 to equal 4\n    at Context.<anonymous> (html_form.js:22:12)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": "- 2\n+ 4\n"
+              },
+              "uuid": "fab89628-3f6d-4987-8e2b-36926ce8ad17",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Full Name label is present",
+              "fullTitle": "Testing Form Task test case: Full Name label is present",
+              "timedOut": false,
+              "duration": 259,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(\n  fullname,\n  \"full name\",\n  `Ensure \"Full Name\" label is present`\n);",
+              "err": {
+                "message": "AssertionError: Ensure \"Full Name\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'full name'",
+                "estack": "AssertionError: Ensure \"Full Name\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'full name'\n    at Context.<anonymous> (html_form.js:33:12)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "df45de7b-1707-415f-9b59-122624dc80d2",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Email label is present",
+              "fullTitle": "Testing Form Task test case: Email label is present",
+              "timedOut": false,
+              "duration": 161,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"Email\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'email'",
+                "estack": "AssertionError: Ensure \"Email\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'email'\n    at Context.<anonymous> (html_form.js:44:12)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "e2298dca-b2cd-4a16-bd6a-340548c972a3",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Subject label is present",
+              "fullTitle": "Testing Form Task test case: Subject label is present",
+              "timedOut": false,
+              "duration": 149,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst subject = await text.toLowerCase();\nassert.include(subject, \"subject\", `Ensure \"Subject\" label is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"Subject\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'subject'",
+                "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'subject'\n    at Context.<anonymous> (html_form.js:51:12)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "adb1c543-8782-4a25-85d6-be8546b36866",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Message label is present",
+              "fullTitle": "Testing Form Task test case: Message label is present",
+              "timedOut": false,
+              "duration": 165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst message = await text.toLowerCase();\nassert.include(message, \"message\", `Ensure \"Message\" label is present`);",
+              "err": {
+                "message": "AssertionError: Ensure \"Message\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'message'",
+                "estack": "AssertionError: Ensure \"Message\" label is present: expected 'product\\ncontact me\\nshop.\\nelectroni…' to include 'message'\n    at Context.<anonymous> (html_form.js:58:12)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "04165ce6-d296-41e9-8e62-03d7acb8f7cc",
+              "parentUUID": "db0de050-b815-4bae-8a9f-d8270cd6e60b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fab89628-3f6d-4987-8e2b-36926ce8ad17",
+            "df45de7b-1707-415f-9b59-122624dc80d2",
+            "e2298dca-b2cd-4a16-bd6a-340548c972a3",
+            "adb1c543-8782-4a25-85d6-be8546b36866",
+            "04165ce6-d296-41e9-8e62-03d7acb8f7cc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8259,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/Boga/Documents/Dufuna/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
   }
 }
