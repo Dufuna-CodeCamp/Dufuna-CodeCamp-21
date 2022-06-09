@@ -97,3 +97,9 @@
         font-size: small;
     }
 }
+
+
+
+.added {
+    background-color: var(--themegray--);
+}
