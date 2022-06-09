@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const PayButton = (props) => {
   if (!props.show) {
@@ -8,14 +7,9 @@ const PayButton = (props) => {
 
   return (
     <div className="pay">
-      <Link to={props.link} onClick={props.onPayButtonClick}>
-        <button className="pay-button">
-          Pay
-        </button>
-      </Link>
+      <button className="pay-button">Pay</button>
     </div>
   );
 };
 
 export default PayButton;
-

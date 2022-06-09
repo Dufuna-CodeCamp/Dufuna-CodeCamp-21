@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-const Checkout = (props) => {
+const Checkout = () => {
   return (
     <div className="checkOut">
-      <Link to={props.next} className="link">
+      <Link to="verify" className="link">
         <button className="checkout-button">
           <p>Checkout</p>
         </button>

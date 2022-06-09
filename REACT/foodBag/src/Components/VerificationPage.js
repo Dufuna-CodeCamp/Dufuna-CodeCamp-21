@@ -19,7 +19,6 @@ class VerificationPage extends Component {
       paymentOptions: ["Card"],
       show: false,
       showInput: false,
-      link: "/success",
     };
   }
 
@@ -29,7 +28,6 @@ class VerificationPage extends Component {
     });
     this.showPayButton();
     this.showInputFields();
-    this.displayErrorPage();
   };
 
   showPayButton = () => {
@@ -65,20 +63,6 @@ class VerificationPage extends Component {
     }
   };
 
-  displayErrorPage() {
-    const { cardNumber } = this.state;
-
-    if (cardNumber.length < 16) {
-      this.setState({
-        link: "/failed",
-      });
-    } else {
-      this.setState({
-        link: "/success",
-      });
-    }
-  }
-
   render() {
     return (
       <div>
@@ -111,11 +95,10 @@ class VerificationPage extends Component {
           class="number"
           name="cardNumber"
           div="card-number"
-          placeholder="Please enter 16 digit card number"
+          placeholder="Please enter card number"
           handleChange={this.handleInputChange}
           value={this.state.cardNumber}
           showInput={this.state.showInput}
-          maxLength={16}
         />
         <Input
           title="Card name"
@@ -153,11 +136,7 @@ class VerificationPage extends Component {
             maxLength={3}
           />
         </div>
-        <PayButton
-          show={this.state.show}
-          onPayButtonClick={this.displayErrorPage}
-          link={this.state.link}
-        />
+        <PayButton show={this.state.show} />
       </div>
     );
   }

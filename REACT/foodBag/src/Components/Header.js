@@ -1,9 +1,7 @@
 import React from "react";
+import '../App.css'
 
-const Header = (props) => {
-  if (props.error) {
-    return null;
-  }
+const Header = () => {
   return (
     <header>
       <div>
@@ -13,9 +11,7 @@ const Header = (props) => {
       </div>
       <nav>
         <div className="header-nav">
-          <a href="/" className="cart">
-            Cart
-          </a>
+          <a href="/" className="cart">Cart</a>
           <a href="/">Login</a>
           <a href="/">
             <input type="button" value="Sign up" />
@@ -26,4 +22,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Header

@@ -23,7 +23,6 @@ class CartPage extends Component {
       total: 0,
       items: 0,
       word: "item",
-      next: "/",
     };
   }
 
@@ -37,7 +36,6 @@ class CartPage extends Component {
       value1: this.state.value1 + 1,
       price1: this.state.price1 + 5000,
       items: this.state.items + 1,
-      next: "/verify"
     });
     this.calculateTotal();
   }
@@ -52,7 +50,6 @@ class CartPage extends Component {
       value2: this.state.value2 + 1,
       price2: this.state.price2 + 1200,
       items: this.state.items + 1,
-      next: "/verify"
     });
     this.calculateTotal();
   }
@@ -67,7 +64,6 @@ class CartPage extends Component {
       value3: this.state.value3 + 1,
       price3: this.state.price3 + 1200,
       items: this.state.items + 1,
-      next: "/verify"
     });
     this.calculateTotal();
   }
@@ -91,7 +87,6 @@ class CartPage extends Component {
         price4: prevState.price4 - 1200,
         total: prevState.total - prevState.price1 - prevState.price4,
         items: prevState.items - 1,
-        next: "/"
       }));
       return;
     }
@@ -124,7 +119,6 @@ class CartPage extends Component {
         price4: prevState.price4 - 1200,
         total: prevState.total - prevState.price2 - prevState.price4,
         items: prevState.items - 1,
-        next: "/"
       }));
       return;
     }
@@ -157,7 +151,6 @@ class CartPage extends Component {
         price4: prevState.price4 - 1200,
         total: prevState.total - prevState.price3 - prevState.price4,
         items: prevState.items - 1,
-        next: "/"
       }));
       return;
     }
@@ -179,7 +172,6 @@ class CartPage extends Component {
     ) {
       this.setState({
         price4: 1200,
-        next: "/verify"
       });
       firstClick = false;
     } else if (
@@ -189,7 +181,6 @@ class CartPage extends Component {
     ) {
       this.setState({
         total: 0,
-        next: "/"
       });
       return;
     }
@@ -216,7 +207,6 @@ class CartPage extends Component {
       total: 0,
       items: 0,
       word: "item",
-      next: "/",
     });
   }
 
@@ -253,9 +243,7 @@ class CartPage extends Component {
           onPlusButtonClick={() => this.calculateTotal()}
           onMinusButtonClick={() => this.calculateTotal()}
         />
-        <Checkout
-          next={this.state.next}
-        />
+        <Checkout />
       </div>
     );
   }
