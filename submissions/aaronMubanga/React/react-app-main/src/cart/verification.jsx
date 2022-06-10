@@ -55,7 +55,7 @@ const handCvcChange=(event)=>{
 const handleSubmite = (e)=>{
     e.preventDefault();
     if (phone_number !=="" && selectValue!=="" && card_number!=="" && card_name!=="" && expirely_date!=="" &&  cvc!=="") {
-        goto("/");
+        goto('/verification/OrderSuccess');
     }
 }
 

@@ -225,3 +225,29 @@ form select{
 form .Card_duration_N_cvc input{
   width: 45vw;
 }
+
+
+/* ==================== Order Sucess Page================ */
+
+.orderSuccess{
+  width: 90vw;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.orderSuccess .texts{
+  width: 14em;
+  text-align: center;
+}
+
+.orderSuccess .texts h3{
+  color: #139a13;
+}
+
+.orderSuccess .texts p{
+  margin: 0;
+}
