@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from './header/Header';
+import Hero from './hero';
 import Products from '../Attributes/products';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../Attributes/Button';
 import plussign from '../assets/images/plus.svg';
 import minussign from '../assets/images/Minus.svg';
@@ -17,6 +19,7 @@ const Html=  ()=>{
 
     let total_price = 0;
     const delivery_fee = 1200;
+    let GoTo = useNavigate();
 
     const[products,setProducts] = useState([]);
 
@@ -71,10 +74,17 @@ const Html=  ()=>{
     }
   }
 
+    const handleClick = (e) => {
+        e.preventDefault();
+        GoTo("/verification");
+
+    }
+
    
         return(
         <div>
             <Header />
+            <Hero />
             {
                 products.map((product) => (
                 <div key={product.id} className="product-container">
@@ -131,7 +141,11 @@ const Html=  ()=>{
             </div>
 
             <div className='submit-button-class'>
-                <button type="submit" id="submit-button">
+                <button 
+                    type="submit" 
+                    id="submit-button"
+                    onClick={(e)=>handleClick(e)}
+                    >
                     checkout
                 </button>
             </div>

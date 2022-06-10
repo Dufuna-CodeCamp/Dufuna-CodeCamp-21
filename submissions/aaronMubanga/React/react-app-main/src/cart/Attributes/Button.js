@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({type, value,id, button,image_src,description,handleChange})=>{
+const Button = ({type, value,id, button,image_src,description,handleClick})=>{
     
     return (
         <div>
@@ -9,7 +9,7 @@ const Button = ({type, value,id, button,image_src,description,handleChange})=>{
                 value={value}
                 id={id}
                 className={button}
-                onClick={handleChange}
+                onClick={handleClick}
             >
               <img src={image_src} alt={description} />
             </button>

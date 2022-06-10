@@ -92,7 +92,7 @@ a {
 }
 
 .category p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1rem;
 }
 
@@ -130,13 +130,13 @@ a {
 }
 
 .delivery {
-    padding: 4rem 0;
+    padding: 4rem 13px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .delivery h2 {
     color: #4E4D4D;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 3rem;
@@ -161,7 +161,7 @@ a {
 
 .delivery .card p {
     color: #A5A5A5;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -171,7 +171,7 @@ footer {
 
 footer p {
     color: #696969;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 2rem;
@@ -192,7 +192,7 @@ footer .terms {
 
 .terms p {
     color: #696969;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -201,7 +201,7 @@ footer .terms {
         font-size: 16px;
     }
     .nav-list {
-        font-size: 12px;
+        font-size: 14px;
     }
     .category .cards,
     .delivery .cards,
@@ -211,5 +211,8 @@ footer .terms {
     }
     .category .card {
         width: 100%;
+    }
+    .card p {
+        font-size: 13px;
     }
 }
