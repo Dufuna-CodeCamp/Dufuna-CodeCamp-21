@@ -11,7 +11,7 @@ const OrderSuccess = ()=>{
             <div className="orderSuccess">
                 <img src={Image} alt="orderSuccess" />
                 <div className="texts">
-                <h3>Order Successfull!</h3>
+                <h3>Order Successful</h3>
                 <p>We have started processing your order.</p>
                 </div>
                 
