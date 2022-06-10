@@ -1,0 +1,209 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #4e4d4d;
+  padding: 50px;
+}
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+h1 {
+  color: #000;
+  font-weight: 500;
+  font-size: 3rem;
+}
+/** Beginning of styling of the Header section **/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+/**Logo**/
+#logo {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #000;
+}
+#logo span,
+.KFC > p {
+  color: #ad4c4c;
+}
+/**Navbar**/
+nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  color: #696969;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav a:last-child {
+  border: 2px solid #ad4c4c;
+  border-radius: 5px;
+  color: #ad4c4c;
+  padding: 5px;
+}
+.cart{
+  position: relative;
+}
+.notification{
+  position: absolute;
+  bottom:1.2rem;
+  left:3.4rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: red;
+  color:#fff;
+  text-align: center;
+  display: none;
+}
+/** End of styling of the Header section **/
+
+p.navigate {
+  color: #c9c9c9;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+p.navigate span:last-child {
+  color: #000;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  place-items: center;
+}
+.eatery,
+.eatery-logo,
+.price {
+  display: flex;
+}
+.eatery {
+  font-weight: 500;
+  margin: 26px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.view {
+  margin-top: 60px;
+  font-weight: 500;
+  color: #ad4c4c;
+}
+.bottom-view {
+  text-align: center;
+  display: none;
+}
+.eatery-logo {
+  gap: 20px;
+  align-items: center;
+}
+.eatery-logo p {
+  color: #000;
+  font-size: 2rem;
+}
+.list > div {
+  width: 265px;
+}
+.price {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin: 15px 0 20px;
+}
+.price p:last-child {
+  color: #5ea304;
+}
+button {
+  background-color: inherit;
+}
+.list button {
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+.button{
+  border-radius: 3px;
+  color: #ad4c4c;
+  border: 1px solid #ad4c4c;
+  padding: 8px;
+}
+.list img.remove{
+  width: 20px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+hr {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 0;
+  margin: 61px 0 66px;
+}
+@media (max-width: 1030px) and (max-height: 600px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 930px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  .notification{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 8px;
+  }
+  .list {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .list > div {
+    width: 100%;
+  }
+  .list > div img {
+    width: 100%;
+  }
+  .eatery-logo {
+    align-self: flex-start;
+    gap: 1rem;
+  }
+  .top-view {
+    display: none;
+  }
+  .bottom-view {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

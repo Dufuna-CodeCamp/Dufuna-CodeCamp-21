@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+    </head>
+    <body>
+        <h2>Contact Form</h2>
+        <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label for="firstname">First Name</label><br>
+                <input type="text" name="firstname" id="firstname" placeholder="First name"/><br><br>
+                <label for="middlename">Middle Name</label><br>
+                <input type="text" name="middlename" id="middlename" placeholder="Middle name"/><br><br>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Last name"/><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email address"/><br><br>
+                <label for="phonenumber">Phone number</label><br>
+                <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number"/><br><br>
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="Male" id="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" value="Female" id="Female">
+                <label for="female">Female</label><br><br>
+
+                <label for="country">Country: </label>
+                <select name="country" id="country">
+                    <option value="nigeria" selected>Nigeria</option>
+                    <option value="senegal">Senegal</option>
+                    <option value="ghana">Ghana</option>
+                 </select> <br><br>
+
+               
+                <labeL>State of Residence:</labeL>
+                <input list="state-list" id="state1" name="state">
+
+                <datalist id="state-list">
+                    <option value="Lagos"/>
+                    <option value="Abuja"/>
+                    <option value="Port Harcourt"/>
+                    <option value="Kano"/>
+                    <option value="Osun"/>
+                </datalist><br><br>
+
+                <label for="address">Address</label><br>
+                <input type="text" name="address" id="address"><br><br>
+
+                <label for="comments">Comments</label><br>
+                <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Write your comments here"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

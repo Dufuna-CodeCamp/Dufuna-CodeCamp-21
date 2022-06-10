@@ -1,0 +1,14 @@
+$primary: #AD4C4C;
+$secondary: #696969;
+$dark: #4E4D4D;
+$success: #5EA304;
+
+
+
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
