@@ -215,7 +215,6 @@ img{
 
 form input,
 form select{
-  margin-top: .5em;
   width: 100%;
   padding: 1em;
   border: unset;
