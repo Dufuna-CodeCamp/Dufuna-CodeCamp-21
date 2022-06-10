@@ -1,5 +1,6 @@
 import React from 'react';
 import'../../styles/cart.css';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render() {
@@ -12,16 +13,11 @@ class Header extends React.Component {
                     </div>
 
                     <ul>
-                        <li><a href="../../../../public/index.html" className="a_cart">Cart</a></li>
+                        <li><Link to="/" className="a_cart">Cart</Link></li>
                         <li><a href="../../../../public/index.html">login</a></li>
                         <li><a href="../../../../public/index.html" className="su">Sign up</a></li>
                     </ul>
-                </div>
-
-                <div>
-                    <span className="hero"><h4 className="fent">Home{" > "} </h4><h4> cart</h4></span>
-                    <h2>Cart</h2>
-                </div>          
+                </div>                       
            
             </React.Fragment>
         )
