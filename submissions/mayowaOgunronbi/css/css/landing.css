@@ -53,11 +53,17 @@ li a {
 h2 {
     margin-bottom: -10px;
 }
+#where {
+    /* margin-bottom: 10px; */
+    font-size: 17px;
+    font-weight: 500;
+}
 #location {
     width: 100%;
     height: 40px;
     padding: 10px;
     border-color: grey;
+    margin-top: 20px;
 }
 .box {
     border:  0.1px solid grey;
