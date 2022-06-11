@@ -18,7 +18,7 @@ SELECT * FROM survival WHERE survived = 0;
 -- QUESTION 3
 SELECT passenger.name, passenger.Sex
 FROM passenger INNER JOIN travel_detail ON passenger.PassengerId = travel_detail.PassengerId WHERE passenger.age < 27
-AND Embarked IN ('C', 'Q');
+AND Embarked IN ('Q', 'C');
 
 
 -- QUESTION 4
