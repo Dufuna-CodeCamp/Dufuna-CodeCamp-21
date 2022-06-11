@@ -144,13 +144,10 @@ a {
 
 .delivery .cards {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
 }
 
 .delivery .card {
     text-align: center;
-    margin-left: 2rem;
 }
 
 .delivery .card h3 {
@@ -196,23 +193,64 @@ footer .terms {
     font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .logo {
         font-size: 16px;
     }
     .nav-list {
         font-size: 14px;
+        gap: 30px;
     }
     .category .cards,
-    .delivery .cards,
+    .delivery .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .category .card {
+        width: 90%;
+    }
+    .card p {
+        font-size: 13px;
+    }
+    .location input {
+        width: 90%;
+    }
     .terms {
         display: flex;
         flex-direction: column;
     }
-    .category .card {
-        width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .logo {
+        font-size: 20px;
     }
-    .card p {
-        font-size: 13px;
+    .nav-list {
+        font-size: 17px;
+    }
+    .text-wrapper h1 {
+        font-size: 35px;
+    }
+    .text-wrapper p {
+        font-size: 18px;
+    }
+    .location {
+        font-size: 18px;
+    }
+    .category .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    .delivery .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .category .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
