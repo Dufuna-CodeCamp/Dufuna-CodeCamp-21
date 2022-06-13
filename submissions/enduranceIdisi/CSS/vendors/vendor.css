@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    font-weight: 400;
+    width: 100%;
+}
+
+#vendor-wrap {
+    width: 90%;
+    margin: 50px auto;
+    height: 50vh;
+}
+
+#main-nav {
+    display: grid;
+    grid-template-areas: 'top-row top-row bottom-row';
+    margin: 20px;
+    width: 90%;
+    margin: 20px auto;
+    align-items: center;
+}
+
+header {
+    grid-area: top-row;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#bag {
+    color: #AD4C4C;
+}
+
+nav {
+    grid-area: bottom-row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px;
+}
+
+nav a:hover {
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    padding: 10px;
+    color: #AD4C4C;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 100px auto;
+    justify-content: center;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 30px;
+
+}
+
+h2 a {
+    text-decoration: none;
+    color: #C9C9C9;
+}
+
+h2 a:visited {
+
+    color: black;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+section {
+    width: 100%;
+}
+
+.kfc {
+    display: grid;
+    grid-template-areas:
+        'first first first first'
+        'third third third third';
+    width: 100%;
+    margin: 20px auto;
+}
+
+.kfc .logo-design {
+    grid-area: first;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kfc-logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.kfc-logo-text h4 {
+    margin-left: 30px;
+}
+
+.logo-design a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.view {
+    text-align: end;
+}
+
+.kfc .kfc-images {
+    grid-area: third;
+}
+
+.kfc-imgs {
+    display: flex;
+    width: 100%;
+}
+
+.box {
+    margin: 10px 20px;
+}
+
+.box h5,
+.box p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.box .box-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.box-row h5 {
+    color: #4e4d4d;
+}
+
+.box-row p {
+    color: #5ea304;
+}
+
+
+section button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    background-color: #fff;
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    padding: 10px;
+}
