@@ -11,7 +11,7 @@ html{
 
 body{
     /* width: 90vw; */
-    margin: 0 100px 20px 100px;
+    margin: 0 100px 20px;
     background: #E5E5E5;
 }
 
@@ -223,7 +223,7 @@ hr {
 }
 
 #vendorh1 {
-    margin: 150px 0 30px 0;
+    margin: 150px 0 30px;
 }
 
 .font30-500 {
