@@ -17,7 +17,7 @@ class Header extends React.Component {
                         <li><a href="../../../../public/index.html">login</a></li>
                         <li><a href="../../../../public/index.html" className="su">Sign up</a></li>
                     </ul>
-                </div>                       
+                </div>           
            
             </React.Fragment>
         )

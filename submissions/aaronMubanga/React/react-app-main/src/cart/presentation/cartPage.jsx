@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './header/Header';
 import Hero from './hero';
 import Products from '../Attributes/products';
 import { useEffect, useState } from 'react';
@@ -83,7 +82,6 @@ const Html=  ()=>{
    
         return(
         <div>
-            <Header />
             <Hero />
             {
                 products.map((product) => (
@@ -146,7 +144,7 @@ const Html=  ()=>{
                     id="submit-button"
                     onClick={(e)=>handleClick(e)}
                     >
-                    checkout
+                    Checkout
                 </button>
             </div>
     </div>

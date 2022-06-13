@@ -1,4 +1,3 @@
-import Header from './presentation/header/Header';
 import Input from './Attributes/Inputs';
 import Select from './Attributes/Select';
 // import Button from './Attributes/Button';
@@ -55,16 +54,13 @@ const handCvcChange=(event)=>{
 const handleSubmite = (e)=>{
     e.preventDefault();
     if (phone_number !=="" && selectValue!=="" && card_number!=="" && card_name!=="" && expirely_date!=="" &&  cvc!=="") {
-        goto("/");
+        goto('/verification/OrderSuccess');
     }
 }
 
 
     return(
         <div>
-
-            <Header />
-
             <div className="Verification-hero">
                 <a href="index.html" className="fent">Home {'>'} Cart {'>'} </a>Verification
                 <h2 id="cart-title">Verification</h2>
