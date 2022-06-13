@@ -144,7 +144,7 @@ const Html=  ()=>{
                     id="submit-button"
                     onClick={(e)=>handleClick(e)}
                     >
-                    checkout
+                    Checkout
                 </button>
             </div>
     </div>
