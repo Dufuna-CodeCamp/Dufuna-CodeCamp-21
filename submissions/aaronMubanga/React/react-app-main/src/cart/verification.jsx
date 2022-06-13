@@ -1,4 +1,3 @@
-import Header from './presentation/header/Header';
 import Input from './Attributes/Inputs';
 import Select from './Attributes/Select';
 // import Button from './Attributes/Button';
@@ -62,9 +61,6 @@ const handleSubmite = (e)=>{
 
     return(
         <div>
-
-            <Header />
-
             <div className="Verification-hero">
                 <a href="index.html" className="fent">Home {'>'} Cart {'>'} </a>Verification
                 <h2 id="cart-title">Verification</h2>
