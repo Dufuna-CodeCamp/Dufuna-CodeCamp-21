@@ -43,11 +43,13 @@ body {
 .first {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .second {
     font-size: 13px;
     font-weight: lighter;
+    text-align: center;
 }
 
 .second-grid {
@@ -85,7 +87,7 @@ p {
     margin: 10px;
 }
 
-.sixth {
+.sixth{
     font-size: 15px;
     font-weight: lighter;
     margin: 0 10px 10px;
@@ -107,6 +109,9 @@ p {
 .how {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+}
+.location {
     text-align: center;
 }
 
@@ -179,6 +184,13 @@ p {
     }
 }
 
+.sixth_new {
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0 10px 10px;
+    color:red;
+}
+
     @media screen and (min-width:650px) {
         .add {
             flex-basis: 500px;
@@ -209,5 +221,15 @@ p {
         } 
     }
 
+    @media screen and (min-width:700px) {
+        .main-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .location {
+            width: 40px;
+        }
+    }
 
 
