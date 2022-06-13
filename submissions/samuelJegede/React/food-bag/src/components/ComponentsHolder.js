@@ -3,6 +3,7 @@ import CartContents from "./CartContents";
 import Header from "./Header";
 import image from '../components/images/image4.svg'
 import image2 from '../components/images/image3.svg'
+import image3 from '../components/images/image1.svg'
 import remove from '../components/images/cancel.png'
 
 const ComponentsHolder= () => {
@@ -27,7 +28,7 @@ const ComponentsHolder= () => {
             id:  3,
             title: "Refuel Max",
             cancel: remove,
-            image: image2,
+            image: image3,
             price: 1200,
             quantity: 1
          },
