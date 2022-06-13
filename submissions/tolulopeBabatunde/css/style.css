@@ -1,0 +1,162 @@
+*, body, html{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+/* NAVIGATION */
+
+nav{
+    margin-top: 30px;
+    
+}
+.home li{
+    display: inline;
+    
+}
+.home{
+    margin: 50px 100px;
+    font-size: 11px;
+}
+.home:hover{
+    font-size: 12px;
+}
+
+.right{
+    display: inline;
+    float: right;
+    margin: 0px 10px;
+    position: relative;
+    bottom: 38px;
+    font-size: 12px;
+    color: black;
+}
+.right:hover{
+    font-size: 15px;
+}
+li a{
+    text-decoration: none!important;
+    color: black!important;   
+}
+
+.logo li {
+    text-decoration: none!important;
+    font-size: 14px;
+    list-style: none!important;
+    margin: 20px 100px;
+    font-weight: 700;
+}
+.bag{
+    color: #ad4c4c;
+}
+.star{
+    color: red;
+}
+
+button.right{
+    margin-right: 60px;
+    top: -43px;
+    border: 1px solid #ad4c4c;
+    width: 80px;
+    height: 28px;
+    color: #ad4c4c;
+    background: transparent;
+}
+button.right:hover{
+    background: grey;
+    color: white;
+    border: none;
+}
+button a{
+    color: black;
+    text-decoration: none!important;
+    
+}
+
+
+
+/* SECTION */
+
+.all{
+    margin: 10px 20px;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+.all h2{
+    margin: 20px 80px;
+    font-size: 16px;
+}
+.all .icon{
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 80px;
+    font-size: 13px;
+}
+.icon img{
+    height: 40px;
+}
+.icon h3{
+    margin: 10px;
+}
+
+.view-desktop{
+  color: #ad4c4c;
+   float: right;
+   margin: 10px 85px 0px 0px;
+   font-size: 12px;
+}
+.view-desktop:hover{
+    background: #ad4c4c;
+    color: white;
+    padding: 10px;
+    height: 30px;
+    }
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-self: center;
+    margin: 15px 20px;
+  
+}
+.image img{
+    height: 150px;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-end;
+    color: green;
+    font-size: 12px;
+    font-weight: 700;
+}
+.name{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cart{
+  width:90px;
+  height: 25px;
+  font-size: 11px;
+  border: 1px solid #ad4c4c;
+ background: transparent;
+ color: #ad4c4c;
+}
+
+.cart:hover{
+    background: grey;
+    color: white;
+    border: none;
+}
