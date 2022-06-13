@@ -11,8 +11,7 @@ const OrderSuccess = ()=>{
                 <div className="texts">
                 <h3>Order Successful</h3>
                 <p>We have started processing your order.</p>
-                </div>
-                
+                </div>                
             </div>
         </React.Fragment>
     )

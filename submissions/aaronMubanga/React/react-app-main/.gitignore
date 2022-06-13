@@ -11,6 +11,7 @@
 # production
 /build
 /src/App.test.js
+/src/_tests_
 
 # misc
 .DS_Store
