@@ -93,26 +93,32 @@ export default function CartContents (props) {
                         </button>
                     </div>
 
-                    <div className="cart-item-image">
-                     <img src={item.image} alt="food"></img>
+                    <div>
+                     <img className="cart-item-image" src={item.image} alt="food"></img>
                     </div>
 
+
                     <div className="cart-item-title">
-                      <p>{item.title}</p>
+                      <div className="cart-title">
+                           <p>{item.title}</p>
+                      </div>  
                
-                        <div className="add-remove-buttons">
-                            <button onClick={()=> OnAdd(item)}  id = "add-btn" >
-                                <img src={plus} alt="plus"></img>
-                            </button>
+                      <div className="add-remove">
+                         <button onClick={()=> OnAdd(item)}  id = "add-btn" >
+                             <img className="add-remove-buttons" src={plus} alt="plus"></img>
+                         </button>
+                            
+                          <p>{item.quantity}</p>
+                            
 
-                            <p>{item.quantity}</p>
+                        <button onClick={() => OnRemove(item)}  id = "add-btn" >
+                          <img className="add-remove-buttons" src={minus} alt="minus"></img>
+                        </button>
+                        
+                      </div>
+                    </div>    
 
-                            <button onClick={() => OnRemove(item)}  id = "add-btn" >
-                                <img src={minus} alt="minus"></img>
-                            </button>
-
-                        </div>
-                    </div>           
+      
                 </div>
   
                 <div className="cart-item-price">
