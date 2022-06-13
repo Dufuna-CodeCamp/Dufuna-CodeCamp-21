@@ -24,7 +24,6 @@ body {
     grid-template-areas: 'top-row top-row bottom-row';
     margin: 20px;
     width: 90%;
-    margin: 20px auto;
     align-items: center;
 }
 
