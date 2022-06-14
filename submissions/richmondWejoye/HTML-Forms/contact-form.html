@@ -6,11 +6,7 @@
 	<title>contact form</title>
 </head>
 
-<body>
-	<nav>
-		<a href="#">Order Product</a><br>
-		<a href="##">Contact us</a><br><br>
-	</nav>
+<body> 
 	<form>
 		<fieldset>
 			<legend>Contact Form</legend>
@@ -20,8 +16,10 @@
 				<input type="text" name="lname" id = "lname" placeholder="Enter last name"><br><br>
 				<label for = "email">Email: </label>
 				<input type="email" name="email" id = "email" placeholder="Enter email" required><br><br>
-				<label for = "number">Number: </label>
-				<input type="tel" name="phone-number" id = "number" placeholder="Enter phone number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br><br>
+				<label for = "subject">Subject: </label>
+				<input type="text" id = "subject" placeholder="Enter subject here"><br><br>
+				<label for = "tarea">Write a message, telling us what you think about our product</label><br>
+				<textarea id = "tarea" cols="40" rows="10" placeholder="Enter message here"></textarea><br><br>
 				<input type="submit" name="submit" id = "submit">
 		</fieldset>
 	</form>
