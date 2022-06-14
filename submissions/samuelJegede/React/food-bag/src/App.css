@@ -25,19 +25,14 @@ nav ul li a {
 }
 #logout {
   border: 1px solid #AD4C4C;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0;
 }
 #login {
   color:#4E4D4D;
 }
 .cart-title {
-  margin-left: 30px;
+  margin: 0 0 20px 30px;
   font-size: 12px;
-  margin-bottom: 20px;
-  color: black;
-  font-weight: 400;
-  padding: 20px 0 0 -10px;
 }
 .home-time p span {
   color: #C9C9C9;
@@ -59,6 +54,12 @@ nav ul li a {
 .cart-item-image {
   height: 150px;
   width: 120px;
+}
+.cart-title {
+  color: black;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 20px 0 0 -10px;
 }
 .cart-item-title {
   padding: 20px 0 0 10px; 
@@ -138,7 +139,6 @@ nav ul li a {
 }
 
 .check-btns {
-  margin-left: 20%;
   border : 1px solid #AD4C4C;
   height: 50px ;
   width : 60% ;
@@ -146,8 +146,97 @@ nav ul li a {
   color: White;
   background-color: #AD4C4C;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin: 0 0 30px 20%;
 }
+#form-group {
+  height: 30px;
+  width: 90%;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.pay-ment {
+  font-size: 14px;
+}
+.contents {  
+  margin-left: 10%;
+}
+.verification {
+  font-size: 24px;
+  font-weight: 700;
+}
+#confirm {
+  font-size: 18px;
+  color:#AD4C4C;
+}
+.delivery-order-image {
+  display: flex;
+  justify-content: space-between;
+}
+.address {
+  margin-top: 50px;
+}
+#delivery {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+#delivery-order {
+  color: #696969;
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin-right: 5%;
+}
+#delivery-image {
+  margin: 20px 5% 0 0;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+#option-value {
+  border: 1px solid #AD4C4C;
+}
+#label-id {
+  font-size: 23px;
+}
+#input-id {
+  width: 90%;
+  height: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+hr {
+  margin: 0 10% 30px 0;
+}
+#line {
+  margin: 0 10% 0 1px;
+}
+
+.cvc {
+  width: 47%;
+  height: 20px;
+  margin-left: 10px;
+}
+.expiry-date { 
+  height: 20px;
+  width: 47%;
+}
+.con {
+  display: flex;
+}
+.con:nth-child(1) {
+  font-weight: bold;
+}
+.button-class {
+  margin: 40px 0 20px 60px;
+  width: 200px;
+  height: 30px;
+  color: white;
+  background: #AD4C4C;
+  border-radius: 5px;
+}
+
 
 @media screen and (min-width: 720px) {
   nav ul li a {
@@ -157,7 +246,7 @@ nav ul li a {
     font-size: 23px; 
   }
   nav ul li {
-    padding-top: 25px;
+    padding-top: 20px;
   }
   .bold-cart {
     font-size: 24px;
@@ -220,19 +309,65 @@ nav ul li a {
     font-size: 16px;
     padding-top: 10px;
   }
-  #hide-total-price {
-    visibility: hidden;
-  }
-  
   .check-btns {
-    margin-left: 20%;
-    border : 1px solid #AD4C4C;
     height: 50px ;
     width : 60% ;
-    font-weight: 700;
-    color: White;
-    background-color: #AD4C4C;
-    cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 0 0 30px 20%;
+  }
+  #form-group {
+    height: 45px;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .phone{
+    font-size: 20px;
+  }
+  .pay-ment {
+    font-size: 20px;
+  }
+  .contents {  
+    margin-left: 5%;
+  }
+  .verification {
+    font-size: 28px;
+  }
+  #confirm {
+    font-size: 24px;
+  }
+  .address {
+    margin-top: 20px;
+  }
+  #delivery {
+    font-size: 24px;
+  }
+  #delivery-order {
+    font-size: 20px;
+  }
+  #delivery-image {
+    height: 24px;
+    width: 24px;
+  }
+  #label-id {
+    font-size: 28px;
+  }
+  #input-id {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  
+  .cvc {
+    width: 47%;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .expiry-date { 
+    height: 20px;
+    width: 47%;
+  }
+  .button-class {
+    margin-top: 90px 0 0 240px;
+    width: 600px;
+    height: 60px;
   }
 }
