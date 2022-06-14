@@ -5,6 +5,8 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 
+/* NAVIGATION */
+
 nav{
     margin-top: 30px;
     
@@ -14,7 +16,7 @@ nav{
     
 }
 .home{
-    margin: 50px 50px 0px 50px;
+    margin: 50px 100px;
     font-size: 11px;
 }
 .home:hover{
@@ -42,7 +44,7 @@ li a{
     text-decoration: none!important;
     font-size: 14px;
     list-style: none!important;
-    margin: 20px 50px;
+    margin: 20px 100px;
     font-weight: 700;
 }
 .bag{
@@ -79,36 +81,14 @@ button a{
 .all{
     margin: 10px 20px;
 }
+
 .first{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center;  
 }
-.icon{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: 70px;
-    font-size: 12px;
-}
-.icon img{
-    height: 20px;
-}
-.image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    align-self: center;
-    margin: 15px 0px;
-  
-}
-.image img{
-    height: 180px;
-}
-
 .all h2{
-    margin: 20px 20px;
+    margin: 20px 80px;
     font-size: 16px;
 }
 .all .icon{
@@ -116,237 +96,67 @@ button a{
     justify-content: flex-start;
 }
 
+.icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 80px;
+    font-size: 13px;
+}
+.icon img{
+    height: 40px;
+}
+.icon h3{
+    margin: 10px;
+}
+
+.view-desktop{
+  color: #ad4c4c;
+   float: right;
+   margin: 10px 85px 0px 0px;
+   font-size: 12px;
+}
+.view-desktop:hover{
+    background: #ad4c4c;
+    color: white;
+    padding: 10px;
+    height: 30px;
+    }
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-self: center;
+    margin: 15px 20px;
+  
+}
+.image img{
+    height: 150px;
+}
+
 .price{
- display: flex;
- justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
     color: green;
     font-size: 12px;
+    font-weight: 700;
+}
+.name{
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .cart{
-  width:70px;
+  width:90px;
   height: 25px;
   font-size: 11px;
   border: 1px solid #ad4c4c;
  background: transparent;
  color: #ad4c4c;
 }
+
 .cart:hover{
     background: grey;
     color: white;
     border: none;
-}
-
-.remove{
-  width:70px;
-  height: 25px;
-  font-size: 11px;
-  border: 1px solid #eee;
-  color: white;
- background: #a5a5a5;
- display: flex;
- flex-direction: row;
- align-items: center;
- 
-}
-.remove:hover{
-    background: #ad4c4c;
-}
-.remove img{
-    height: 20px;
-}
-.name{
-    font-size: 12px;
-}
-.view-mobile{
-    color: #ad4c4c;
-   text-align: center;
-   margin: 30px 0px;
-   font-size: 12px;
-}
-.view-mobile:hover{
-background: #ad4c4c;
-color: white;
-padding: 10px;
-height: 30px;
-}
-
-
-
-@media screen and (max-width:700px) {
-    .view-desktop{
-        display: none;
-    }
-}
-@media screen and (min-width:700px) {
-    .first{
-        display: flex;
-        flex-direction: row;
-       
-        justify-content: space-evenly;
-        
-    }
-    
-    .icon{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px  60px;
-        font-size: 13px;
-    }
-    .icon img{
-        height: 40px;
-    }
-    .image{
-        display: block;
-        
-    }
-    .image img{
-        height: 90px;
-    }
-    
-.remove{
-    width:70px;
-    height: 25px;
-    font-size: 11px;
-    border: 1px solid #eee;
-    color: white;
-   background: #a5a5a5;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   
-  }
-  .remove img{
-      height: 20px;
-  }
-    .view-desktop{
-        color: #ad4c4c;
-       float: right;
-       margin: 10px 55px 0px 0px;
-    }
-    .view-desktop:hover{
-        background: #ad4c4c;
-        color: white;
-        padding: 10px;
-        height: 30px;
-        }
-    .view-mobile{
-        display: none;
-    }
-    
-}
-
-@media screen and (min-width:900px) {
-    .first{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-    }
-    
-    .icon{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px  60px;
-        font-size: 13px;
-    }
-    .icon img{
-        height: 40px;
-    }
-    .image{
-        display: block;
-        
-    }
-    .image img{
-        height: 120px;
-    }
-    
-.remove{
-    width:70px;
-    height: 25px;
-    font-size: 11px;
-    border: 1px solid #eee;
-    color: white;
-   background: #a5a5a5;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   
-  }
-  .remove img{
-      height: 20px;
-  }
-    .view-desktop{
-        color: #ad4c4c;
-       float: right;
-       margin: 10px 55px 0px 0px;
-    }
-    .view-desktop:hover{
-        background: #ad4c4c;
-        color: white;
-        padding: 10px;
-        height: 30px;
-        }
-    .view-mobile{
-        display: none;
-    }
-    
-}
-
-@media screen and (min-width:1200px) {
-    .first{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-       
-        
-    }
-    
-    .icon{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px  60px;
-        font-size: 13px;
-    }
-    .icon img{
-        height: 40px;
-    }
-    .image{
-        display: block;
-        
-    }
-    .cart{
-        width:90px;
-        height: 30px;
-        font-size: 11px;
-        color: #ad4c4c;
-        border: 1px solid #ad4c4c;
-       background: transparent;
-    }
-    
-    .all h2{
-        margin: 40px 50px;
-        
-    }
-  
-    
-    .price{
-       
-        color: green;
-    }
-    .view-desktop{
-        color: #ad4c4c;
-       float: right;
-       margin: 10px 55px 0px 0px;
-    }
-    .view-desktop:hover{
-        background: #ad4c4c;
-        color: white;
-        padding: 10px;
-        height: 30px;
-        }
-    .view-mobile{
-        display: none;
-    }
-    
 }
