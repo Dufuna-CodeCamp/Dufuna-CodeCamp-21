@@ -25,8 +25,7 @@ nav ul li a {
 }
 #logout {
   border: 1px solid #AD4C4C;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0;
 }
 #login {
   color:#4E4D4D;
