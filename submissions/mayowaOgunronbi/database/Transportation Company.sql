@@ -13,6 +13,7 @@ CREATE TABLE passengers (
 
 CREATE TABLE travel_details (
 	id INT AUTO_INCREMENT NOT NULL,
+    passengers_id INT NOT NULL,
     class INT NOT NULL,
     ticket VARCHAR(50) NOT NULL,
     fare DECIMAL(10,2) NOT NULL,
@@ -20,14 +21,17 @@ CREATE TABLE travel_details (
     parents_children INT NOT NULL,
     siblings_spouses INT NOT NULL,
     embarked VARCHAR(50) NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
 
 CREATE TABLE survivals (
 	id INT AUTO_INCREMENT NOT NULL,
+    passengers_id INT NOT NULL,
     survived INT NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
 
