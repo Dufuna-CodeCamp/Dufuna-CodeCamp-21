@@ -60,6 +60,9 @@ nav ul li a {
 .cart-item-title {
   padding: 20px 0 0 10px; 
 }
+.cart-title {
+  padding: 15px 10px 0 0;
+}
 .cart-item-price {
   margin-right: 20px;
   position: relative;
@@ -77,6 +80,17 @@ nav ul li a {
  .add-remove{
   display: flex;
   color: #AD4C4C;
+  padding-bottom: 10px;
+}
+#add-btn {
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: none;
+  cursor: pointer;
+}
+.item-q{
+  padding-top: 18px;
 }
 .add-remove-buttons {
   background-color: white;
