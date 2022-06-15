@@ -1,8 +1,6 @@
 -- TO CREATE A DATABASE CALLED FODBAG
 CREATE DATABASE foodbag;
-SHOW DATABASES;
 USE foodbag;
-SHOW TABLES;
 
 -- TO CREATE THE FOOD TABLE
 CREATE TABLE food (
@@ -10,7 +8,6 @@ CREATE TABLE food (
     type VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
-SELECT * FROM food;
 
 
 -- TO CREATE THE VENDOR FOOD TABLE
@@ -24,7 +21,6 @@ CREATE TABLE vendors (
 --     LINKING IT TO THE FOOD TABLE
     FOREIGN KEY (food_id) REFERENCES food (id)
 );
-SELECT * FROM vendors;
 
 
 -- TO CREATE THE ADMINS TABLE
@@ -37,7 +33,6 @@ CREATE TABLE admins (
     password VARCHAR (255) NOT NULL,
     PRIMARY KEY (id)
 );
-SELECT * FROM admins;
 
 
 -- TO CREATE THE CUSTOMERS TABLE
@@ -49,7 +44,6 @@ CREATE TABLE customers (
     payment_method VARCHAR (255),
     PRIMARY KEY (id)
 );
-SELECT * FROM customers;
 
 
 -- TO CREATE THE ORDERS TABLE
@@ -62,4 +56,3 @@ CREATE TABLE orders (
     FOREIGN KEY (vendors_id) REFERENCES vendors (id),
     FOREIGN KEY (customers_id) REFERENCES customers (id)
 );
-SELECT * FROM orders;
