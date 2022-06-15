@@ -1,23 +1,26 @@
 
 *{
-margin: 0;
-padding: 0;
+margin: 0px;
+padding: 0px;
 box-sizing: border-box;
-
 }
 body{
     display: flex;
     flex-direction: column;
-    margin: 50px 100px 0;
-    font-size: 18px;
+    margin: 50px 100px;
     font-family: 'poppins';
    
 }
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;}
 
 .logo{
-    display: inline-block;
+    display: flex;
     font-size: 20px;
     font-weight: 500px;  
+    align-items: center;
 }
 #button{
     border: 1px solid #AD4C4C;
@@ -28,7 +31,10 @@ body{
     background-color: #fff;
 }
 .nav ul{
-    list-style: none
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex: 1;
   
 }
  
@@ -38,7 +44,6 @@ body{
 }
 header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
@@ -72,15 +77,16 @@ header{
     font-weight: 500;
 }
 .select{
-   
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding-left: 30px;
     width: 100%;
     height: 60px;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
-    padding: 15px 30px;
     color: #696969;
     font-size: 20px;
-    margin-right: 26px;
     appearance: none;
     background-image: url('../images/arrow_down_icon.svg');
     background-repeat: no-repeat;
@@ -88,12 +94,17 @@ header{
     background-position-y:50%;
 
 }
+/* form div select option{
+    margin-left: 30px;
+    width: 100%;
+} */
 .placeholder{
     display: none;
 }
 
 .interest{
     margin-top: 42px;
+    width: 100%;
 }
  .interest h4{
     color: #000;
@@ -107,12 +118,12 @@ header{
     margin-top: 20px;
     margin-right: 20px;
     grid-template-columns: repeat(4, 1fr);
-   
-   
+    column-gap: 20px;
+  
 }
 .choices div{
-    min-width: 295px;
-    margin-right: 20px;
+  min-width: 295px;
+    /* margin-right: 20px; */
     height: 196px;
     box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -120,9 +131,7 @@ header{
     border-radius: 3px;
     color: #A5A5A5;
 }
-.choices div:last-of-type{
-    margin-right: 0;
-}
+
 .choices div h4{
   margin-top: 16px;
     font-size: 18px;
@@ -143,6 +152,10 @@ header{
     margin-top: 72px;
     margin-bottom: 80px;
 
+}
+
+.service-option{
+    width: 100%;
 }
 
 .service-title{
@@ -197,3 +210,125 @@ header{
   color: #696969;
     font-size: 18px;
 }
+.line-break{
+    margin-top: 80px;
+}
+@media screen and (max-width: 1024px){
+    .choices{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+        row-gap: 20px;
+    }
+    .service{
+
+        flex-direction: row;
+         flex-wrap: wrap;
+        row-gap: 20px;
+        align-items: center;
+    justify-content: center;
+} 
+.contact-copyright p:last-child{
+    justify-self: end;
+      align-self: center;}
+/* .service div{
+    min-width: 300px;
+     */
+}
+
+@media screen and (max-width: 425px){
+    .nav ul{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+   
+    }
+    .logo{
+        font-size: 16px;
+    }
+   
+    body{
+        margin: 30px 20px; 
+    }
+    
+
+    #cart, #login{
+        margin-right: 20px;
+    }
+    #button{
+      
+        width: 74px;
+        height: 32px;
+       font-size: 10px;
+    }
+
+    .choices{
+        grid-template-columns:  1fr;
+        grid-auto-columns: minmax(320px, auto);
+        row-gap: 20px;
+    }
+    .top div{
+        align-items: unset; 
+        margin-top: 30px;   
+    }
+    .top-header h3{
+        font-size: 20px;
+    }
+    .top-header p{
+        font-size: 12px;
+    }
+    .location h3{
+        font-size: 12px;
+    }
+    .location{
+        margin-top: 30px;
+       
+    }
+    .select{
+        max-width: 320px;
+        font-size: 12px;
+    }
+    .service{
+        /* display: grid; */
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .choices div h4{
+          font-size: 16px;
+      }
+      .choices div p{
+        font-size: 12px;
+       ;
+      }
+      .choices img{
+          height: 30px;
+          width: 30px;
+      }
+      .service-title{
+          margin-top: 30px;  
+            font-size: 20px;
+      }
+      .service-img{
+          width: 200px;
+          height: 150px;
+      }
+      .service-heading{
+          font-size: 15px;
+      }
+      .service-info{
+          font-size: 10px;
+      }
+      .contact-copyright{
+          flex-direction: column;
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 32px;
+      }
+      .contact-copyright p:last-child{
+          margin-top: 20px;
+          }
+          .line-break{
+            margin-top: 30px;
+        }
+}
+
