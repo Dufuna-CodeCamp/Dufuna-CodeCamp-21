@@ -1,7 +1,9 @@
+-- TO CREATE A DATABSE CALLED TRANSPORTATION_COMPANY
 CREATE DATABASE transportation_company;
 USE transportation_company;
 
 
+-- TO CREATE THE PASSENGERS TABLE
 CREATE TABLE passengers (
 	id INT AUTO_INCREMENT NOT NULL,
     full_name VARCHAR(250) NOT NULL,
@@ -10,7 +12,7 @@ CREATE TABLE passengers (
     PRIMARY KEY (id)
 );
 
-
+-- TO CREATE THE TRAVEL_DETAILS TABLE
 CREATE TABLE travel_details (
 	id INT AUTO_INCREMENT NOT NULL,
     passengers_id INT NOT NULL,
@@ -22,15 +24,18 @@ CREATE TABLE travel_details (
     siblings_spouses INT NOT NULL,
     embarked VARCHAR(50) NOT NULL,
     PRIMARY KEY (id),
+    -- LINKING IT TO THE PASSENGERS TABLE
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
 
+-- TO CREATE THE SURVIVALS TABLE
 CREATE TABLE survivals (
 	id INT AUTO_INCREMENT NOT NULL,
     passengers_id INT NOT NULL,
     survived INT NOT NULL,
     PRIMARY KEY (id),
+    -- LINKING IT TO THE PASSENGERS TABLE
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
