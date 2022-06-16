@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { VerificationButton } from './VerificationButton'
 import VerificationHeader from './VerificationHeader'
 import { VerificationInput } from './VerificationInput'
@@ -29,9 +30,9 @@ export const VerificationComponentsHolder = () => {
     <VerificationHeader />
     <VerificationDetails />
 
-    <VerificationInput name = "Phone Number" className = "phone" inputId= 'input-id' placeholder = "+234"  />
+    <VerificationInput name = "Phone Number" lableId = "label-id" inputId= 'input-id' placeholder = "+234"  />
      <hr id='line'/>
-    <VerificationSelect name = "Payment Method" className = "pay-ment"  selectId = "form-group" options  =  
+    <VerificationSelect labelId = "label-id" name = "Payment Method" selectId = "form-group" options  =  
     {SelectOptions.map((index)=>(
 
         <option key={index.title}>{index.value}</option>
@@ -39,30 +40,32 @@ export const VerificationComponentsHolder = () => {
         ))}>
     </VerificationSelect>
 
-    <VerificationInput name = "Card Number" labelId = "label-id" inputId= 'input-id' 
+    <VerificationInput name = "Card Number" lableId = "label-id" inputId= 'input-id' 
      placeholder = "2345 6543 7868 2343"  />
 
-     <VerificationInput name = "Card Name" labelId = "label-id" inputId= 'input-id' 
-     placeholder = "Samuel"  />
+     <VerificationInput name = "Card Name" lableId = "label-id" inputId= 'input-id' 
+     placeholder = "Fabunmi Tolulope Eniola"  />
 
      <div className='con'>
      
      <div className='expiry-date'>
-     <VerificationInput name = "Expiry Date" labelId = "label-id" inputId= 'input-id' 
+     <VerificationInput name = "Expiry Date" lableId = "label-id" inputId= 'input-id' 
      placeholder = "01/23"  > </VerificationInput>
 
      </div>
         <br/>
     
         <div className='cvc'>
-        <VerificationInput name = "CVC" labelId = "label-id" inputId= 'input-id' 
+        <VerificationInput name = "CVC" lableId = "label-id" inputId= 'input-id' 
            placeholder = "012"  > </VerificationInput>
         </div>
      
         </div>
         <br/>
      
-        <VerificationButton buttonClass="button-class" name= "Pay" /> 
+        <VerificationButton 
+        buttonClick= {()=> window.location.assign("/OrderMainComponentHolder")} 
+        buttonClass="button-class" name= "Pay" />
     </div>
   )
 }
