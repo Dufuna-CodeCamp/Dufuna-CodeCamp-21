@@ -4,6 +4,7 @@ import plus from './images/plus.svg'
 import minus from './images/Minus.svg'
 import scooter from '../components/images/scooter1.svg'
 import CardDetails from "./CartDetails";
+import Button from "./Button";
 
 
 export default function CartContents (props) {
@@ -108,7 +109,7 @@ export default function CartContents (props) {
                              <img className="add-remove-buttons" src={plus} alt="plus"></img>
                          </button>
                             
-                          <p>{item.quantity}</p>
+                          <p className="item-q">{item.quantity}</p>
                             
 
                         <button onClick={() => OnRemove(item)}  id = "add-btn" >
@@ -159,11 +160,10 @@ export default function CartContents (props) {
 
                 </div>
 
-                <div className='checkout'>
-                    <button className='check-btns'>
-                    <p>Checkout</p>
-                    </button>
-                </div>
+                <Button id="checkout-buttons" 
+                buttonClick= {()=> window.location.assign("/VerificationComponentsHolder")} 
+                buttonName= "Checkout" />
+
                 
         
         </div> : <p id="cart-is-empty"> Whoops :) The Cart Is Empty </p>

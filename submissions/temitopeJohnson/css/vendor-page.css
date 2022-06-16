@@ -1,0 +1,175 @@
+/* @media screen and (max-width: 1440px) {} */
+
+body {
+    background-color: #FFFFFF;
+    padding: 50px 100px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav div {
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.FoodBag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+strong {
+    color: #AD4C4C;
+}
+
+.Ct,
+.Lg {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+    padding-right: 50px;
+    
+}
+
+.SignUp {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+section {
+    width: 130px;
+    height: 21px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C9C9C9;
+}
+
+b {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.AllV {
+    width: 171px;
+    height: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.VenName {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+
+.VenName b {
+    margin-left: auto;
+    color: #AD4C4C;
+    padding-top: 10px;
+}
+
+.BName {
+    width: auto;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.Products {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.Products img {
+    width: 250px;
+}
+
+.Items {
+    padding-right: 45px;
+}
+
+.Name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E4D4D;
+    margin-left: 5px;
+}
+
+.Price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5EA304;
+    float: right;
+    margin-right: 5px;
+}
+
+.AddCart {
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #AD4C4C;
+    padding: 8px 12px;
+}
+
+.Line {
+    border-color: #E6E6E6;
+}
+
