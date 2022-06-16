@@ -25,7 +25,7 @@ echo '<table>';
             echo "<td>". $row['full_name']. "</td>";
             echo "<td>". $row['email']."</td>";
             echo "<td>". $row['created_at']. "</td>";
-            echo "<td><button>view</button></td>";
+            echo "<td><button><a href='order.php?id=".$row['id']."'>view</a></button></td>";
         echo '</tr>';
     }
 echo '</table>';
