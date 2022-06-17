@@ -52,7 +52,7 @@ CREATE TABLE orders (
     vendors_id INT NOT NULL,
     customers_id INT NOT NULL,
     PRIMARY KEY (id),
-    --     LINKING IT TO THE VENDORS AND CUSTOMERS TABLES
+    --     LINKING IT TO THE VENDORS AND CUSTOMERS_TABLES
     FOREIGN KEY (vendors_id) REFERENCES vendors (id),
     FOREIGN KEY (customers_id) REFERENCES customers (id)
 );
