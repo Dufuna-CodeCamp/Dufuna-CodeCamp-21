@@ -24,7 +24,7 @@ CREATE TABLE travel_details (
     siblings_spouses INT NOT NULL,
     embarked VARCHAR(50) NOT NULL,
     PRIMARY KEY (id),
-    -- LINKING IT TO THE PASSENGERS TABLE
+    -- LINKING IT TO THE PASSENGER TABLE
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE survivals (
     passengers_id INT NOT NULL,
     survived INT NOT NULL,
     PRIMARY KEY (id),
-    -- LINKING IT TO THE PASSENGERS TABLE
+    -- LINKING IT TO THE PASSENGER TABLE
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
