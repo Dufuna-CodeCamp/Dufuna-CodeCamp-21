@@ -1,0 +1,14 @@
+Hello Dufunites!
+
+My name is Ridwan Badmus. I am a young techie lawyer dexterous at multiple technologies. I love learning and regard myself as a polymath and a long life learner.
+
+I have a whole lot of goals I aim to achieve at the end of the Dufuna programme. Ranging from creating a global e-commerce application, specialised fintech solution and various legal solutions.
+Aside the above, I hope to make education, like the one offered by Dufuna, accessible to a lot of people and empower them, starting from my community. 
+I am confident that the program will improve my other skills and enable me to be versatile and very valuable to any organisation in the world.
+At the completion of the program, I look forward to referring to myself as a lawyer, software developer, cloud architect, blockchain engineer, privacy technologist, AI ethics advocate, entrepreneur and finally an angel investor.
+
+<<<<<<< HEAD
+I put my trust in God. I can do it! Ridwan, just do it.
+=======
+I put my trust in God. I can do it! Ridwan, just do it.
+>>>>>>> 41b2a566a2b6c09ed7c2d47aacaa8d5810248da3
