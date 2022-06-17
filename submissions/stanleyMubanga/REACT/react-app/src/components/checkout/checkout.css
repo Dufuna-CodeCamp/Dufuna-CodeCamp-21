@@ -1,0 +1,25 @@
+.checkout {
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    border: unset;
+    background-color: var(--theme--);
+    color: aliceblue;
+    font-weight: 550;
+    font-size: large;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.checkout:hover {
+    background-color: #aa2323;
+}
+
+@media only screen and (max-width: 1000px) {
+    .checkout {
+        margin: auto;
+        width: 90%;
+        height: 50%;
+        border-radius: 4px;
+    }
+}

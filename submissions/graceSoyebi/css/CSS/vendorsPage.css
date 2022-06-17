@@ -28,6 +28,8 @@ nav a{
 }
 .sub-heading a{
     display: inline-block;
+    float: right;
+    margin-right: 1%;
     color: rgb(146, 68, 68);
 }
 .div-group{

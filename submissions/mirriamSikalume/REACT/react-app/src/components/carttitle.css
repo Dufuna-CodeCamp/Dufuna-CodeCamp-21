@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.H {
+    color:  #C9C9C9;
+}
+.cart {
+    margin-left: 50px;
+}
+/* .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    color: #AD4C4C;
+    visibility: hidden
+    ; */
+
+@media screen and (min-width: 468px) {
+    .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+        color: #AD4C4C;
+        visibility: visible;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 790px) {
+    .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+        color: #AD4C4C;
+        visibility: hidden
+        ;
+    }
+}

@@ -27,40 +27,69 @@ if (badgeCount<=0){
 });
 });
 
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// let grace = {
+ //  myName:"Grace",
+ //  age: 20,
+//   state: "Ogun",
+//   message: function(){
+//    return this.age * 2
+//     }
+// }
+// console.log(grace)
+// console.log(grace.state)
+// console.log(grace.message())
 
+// class Laptop{
+// constructor(name, model, year){
+ //     this.name = name;
+ //     this.model= model;
+//     this.year = year
+// }}
 
+// let laptop1 = new Laptop("hp", "legion", 2022),
+//     laptop2 = new Laptop("dell", "os", 2019)
 
+ // console.log(laptop1)
+// console.log(laptop2)
+ // let myLaptop = new Object();
 
+// myLaptop.name = "hp",
+ // myLaptop.model = "legion",
+// myLaptop.year = 2022
 
+// console.log(myLaptop)
+// console.log(myLaptop.model)
 
+// let nums = [1,4,5,6]
+// console.log(nums);
 
+// class Student{
+//     constructor(name, gender, age, classs){
+//         this.name = name,
+//         this. gender = gender,
+//         this.age= age,
+//         this.classs = classs
+//     }
+// }
 
+// Student.prototype.status = function(){
+//     return this.name + " is a student";
+// }
 
+// let graceinfo = new Student("grace", "f", 20, "200 level"),
+//     ayinfo = new Student("ay", "m", 23, "100 level")
 
+//     console.log(ayinfo.status())
 
+// class Teacher extends Student{
+//     constructor(name, gender, age, classs, course){
+//         super(name, gender, age, classs);
+//         this.course = course
+//     }
+// }
 
-
-
-
-
-// let mybutton = document.querySelector(".btn"),
-//     mybutton2 = document.querySelector(".remove-btn")
-
-//     mybutton.addEventListener("click", function(){
-//        mybutton2.display = "block" ;
-//        mybutton.display = "none"
-//     })
-
-//     mybutton2.addEventListener("click", function(){
-//         mybutton.display = "block" ;
-//         mybutton2.display = "none";
-
-// console.log(mybutton)
-
-// mybutton.addEventListener("click", function onclick(event){
-//         event.target.style.backgroundColor="gray";
-//     });
-
-
+// let teacher1 = new Teacher("nana", "female", 50, "200 level", "computer science")
+// console.log(teacher1.status())
 
