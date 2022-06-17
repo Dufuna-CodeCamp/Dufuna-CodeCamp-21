@@ -1,6 +1,5 @@
 let addButtons = document.querySelectorAll(".add-btn");
 let notificationDot = document.querySelector('li>a>span')
-console.log(notificationDot)
 showNotificationDot = () => {
     const removeBtn = document.querySelectorAll('.remove-btn')
     if (removeBtn.length) {
