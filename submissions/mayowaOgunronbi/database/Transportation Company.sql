@@ -12,7 +12,7 @@ CREATE TABLE passengers (
     PRIMARY KEY (id)
 );
 
--- CREATE THE TRAVEL_DETAILS TABLE
+-- CREATE THE TRAVEL DETAILS TABLE
 CREATE TABLE travel_details (
 	id INT AUTO_INCREMENT NOT NULL,
     passengers_id INT NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE survivals (
     passengers_id INT NOT NULL,
     survived INT NOT NULL,
     PRIMARY KEY (id),
-    -- LINKING IT TO THE PASSENGER TABLE
+    -- LINKING IT TO THE PASSENGERS TABLE
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 

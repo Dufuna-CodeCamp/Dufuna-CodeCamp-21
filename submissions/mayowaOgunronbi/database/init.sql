@@ -10,7 +10,7 @@ CREATE TABLE food (
 );
 
 
--- TO CREATE THE VENDOR FOOD TABLE
+-- TO CREATE THE VENDORS TABLE
 CREATE TABLE vendors (
 	id INT AUTO_INCREMENT NOT NULL,
     admin_id INT NOT NULL,
@@ -52,7 +52,7 @@ CREATE TABLE orders (
     vendors_id INT NOT NULL,
     customers_id INT NOT NULL,
     PRIMARY KEY (id),
-    --     LINKING IT TO THE VENDOR AND CUSTOMER TABLES
+    --     LINKING IT TO THE VENDORS AND CUSTOMERS TABLES
     FOREIGN KEY (vendors_id) REFERENCES vendors (id),
     FOREIGN KEY (customers_id) REFERENCES customers (id)
 );
