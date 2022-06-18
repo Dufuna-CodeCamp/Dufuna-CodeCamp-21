@@ -293,6 +293,10 @@ hr {
     body {
         margin: 0 50px 10px;
     }
+
+    #header, #navigation {
+        width: calc(100vw - 100px);
+    }
 }
 
 @media screen and (max-width: 425px) {

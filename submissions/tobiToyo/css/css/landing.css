@@ -45,6 +45,12 @@ body{
     color: black;
 }
 
+.font18-400 {
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+
 .font18 {
     font-size: 18px;
     font-weight: 500;
@@ -162,9 +168,15 @@ hr {
     padding: 24px 30px;
 }
 
+#serve-you {
+    font-size: 30px;
+    font-weight: 600;
+    color: #4E4D4D;
+}
+
 #illustration-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 20px; /* may need to chenge to figma value */
     margin-top: 100px;
 }
@@ -209,6 +221,122 @@ hr {
     color: #696969;
     
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 50px 10px;
+    }
+
+    #header, #navigation {
+        width: calc(100vw - 100px);
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0 20px 20px;
+    }
+
+    .font20 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .font18 {
+        font-size: 16px;
+    }
+
+
+    .font16 {
+        font-size: 10px;
+    }
+
+    #header, #navigation {
+        width: calc(100vw - 40px);
+    }
+
+    
+    #header > p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #company-name {
+        text-align: left;
+    }
+
+    #company-name h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #company-name p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #location {
+        margin-top: 30px;
+    }
+
+    #locate {
+        padding: 11px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #interest-div {
+        margin-top: 30px;
+    }
+
+    .interest h4 {
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 30px auto;
+    }
+
+    #serve-you {
+        font-size: 20px;
+    }
+
+    #illustration-grid{
+        margin-top: 40px;
+    }
+
+    
+.illustration h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.font20-400{
+    font-size: 10px;
+}
+
+.contact-elem{
+    margin: 15px;
+}
+
+#footer {
+    display: block;
+    text-align: center;
+}
+
+.font18-400 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#footer > p {
+    margin-bottom: 10px;
+}
+
+}
+
 
 
 
