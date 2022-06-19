@@ -1,7 +1,6 @@
 let theparentNode = document.querySelector('.nav-container'); 
 let thereferenceNode = document.querySelector('.three'); 
 let addCart = document.querySelectorAll(".cart");
-let cart = document.querySelectorAll(".two");
 let newElement = document.createElement('div'); 
 let buttonClicks = 0;
 
