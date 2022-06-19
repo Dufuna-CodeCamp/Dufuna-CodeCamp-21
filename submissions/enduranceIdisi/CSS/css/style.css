@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    width: 1440px;
+    height: 1878px;
+    position: relative;
+    font-weight: 400;
+}
+
+.h4,
+h4,
+footer {
+    color: #696969;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #4e4d4d;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a5a5a5;
+}
+
+#wrapper {
+    margin: 50px 116px 50px 100px;
+}
+
+#bag {
+    color: #AD4C4C;
+}
+
+header,
+nav,
+h1 {
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+
+nav li {
+    padding: 10px;
+    display: inline;
+}
+
+nav {
+    float: right;
+    display: inline;
+
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    padding: 10px;
+    color: #AD4C4C;
+}
+
+.head {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4e4d4d;
+}
+
+form {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+input[list] {
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 1240px;
+    height: 60px;
+}
+
+.interest-wrap {
+    display: flex;
+}
+
+.interests {
+    border: 1px solid rgba(107, 95, 95, 0.452);
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    width: 295px;
+    height: 169px;
+    margin: 10px;
+    padding: 12px;
+}
+
+.interests h4,
+.interests p,
+.a5 {
+    padding: 5px;
+    color: #a5a5a5;
+    font-weight: 400;
+}
+
+.second {
+    width: 400px;
+}
+
+.foot {
+    text-align: center;
+    margin: 80px 0 5px;
+}
+
+.foot h6 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 10px;
+}
+
+.foot li {
+    display: inline;
+    padding: 20px;
+}
+
+.second p,
+.second h4 {
+    padding: 5px;
+}
+
+.footer li {
+    display: inline;
+}
+
+.footer-wrap p {
+    float: right;
+    color: #696969;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.footer-wrap {
+    display: inline;
+    padding: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}

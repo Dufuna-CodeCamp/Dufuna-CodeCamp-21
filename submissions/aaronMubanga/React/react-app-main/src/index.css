@@ -27,11 +27,15 @@ code {
 .header ul,
 .main div,
 .hero, 
-.Total{
+.Total,
+.Delivery_address .location,
+.Card_duration_N_cvc{
   display: flex;
 }
 
-.Total{
+.Total,
+.Delivery_address .location,
+.Card_duration_N_cvc{
   justify-content: space-between;
 }
 
@@ -103,7 +107,8 @@ a{
 }
 
 
-.fent{
+.fent,
+.Delivery_address .location{
   color: #888;
 }
 
@@ -200,4 +205,49 @@ img{
   border-radius: .3125em;
   font-size: 1.125rem;
   font-weight: bold;
+}
+
+/* ================== Verificatiion Page ========================= */
+
+.Delivery_address h1{
+  margin: 0;
+}
+
+form input,
+form select{
+  width: 100%;
+  padding: 1em;
+  border: unset;
+  box-shadow: 0 0 .3em .02em;
+  margin: 1em 0;
+}
+
+form .Card_duration_N_cvc input{
+  width: 45vw;
+}
+
+
+/* ==================== Order Sucess Page================ */
+
+.orderSuccess{
+  width: 90vw;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.orderSuccess .texts{
+  width: 14em;
+  text-align: center;
+}
+
+.orderSuccess .texts h3{
+  color: #139a13;
+}
+
+.orderSuccess .texts p{
+  margin: 0;
 }

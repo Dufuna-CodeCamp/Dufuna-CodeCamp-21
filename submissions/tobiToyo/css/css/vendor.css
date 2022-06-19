@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    font-style: normal;
+}
+
+body{
+    /* width: 90vw; */
+    margin: 0 100px 20px;
+    background: #E5E5E5;
+}
+
+.interest p, .font14 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+.font14-500 {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.font16 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.font16-500 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #AD4C4C;
+}
+
+.font16-600 {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.font18 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #696969;
+}
+
+.interest h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #A5A5A5;
+}
+
+/* font20-500 */
+.font20 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.font20-400 {
+    font-size: 20px;
+    font-weight: 400;
+   color: #A5A5A5; 
+}
+
+#header {
+    background: #E5E5E5;
+    width: calc(100vw - 200px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding-top: 42px;
+    padding-bottom: 5px;
+    display: flex;  /* In another project, I can try float right for the right part of the header instead of using a flexbox*/
+    justify-content: space-between;
+    align-items: center;
+    /* opacity: 1; */
+}
+
+#right-head {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right {
+    margin: 0 10px; /* may change to figma */
+}
+
+#bag {
+    color: #AD4C4C; 
+}
+
+#sign-up {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    padding: 8px 15px;
+    
+    /*will change*/
+}
+
+
+#company-name h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 140px;
+}
+
+#company-name p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #696969;
+    margin-top: 5px;
+}
+
+#location {
+    margin-top: 80px;
+}
+
+
+#company-name, #serve-you {
+    text-align: center;
+}
+
+.grey {
+    color: #696969;
+}
+
+#locate {
+    width: 100%;
+    border-radius: 5px; /* may need to chenge to figma value */
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+#interest-div {
+    margin-top: 42px;
+}
+
+hr {
+    margin: 80px auto;
+}
+
+#interest-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px; /* may need to chenge to figma value */
+    margin-top: 20px;
+}
+
+.interest{
+    border: 1px solid #696969;
+    padding: 24px 30px;
+}
+
+#illustration-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px; /* may need to chenge to figma value */
+    margin-top: 100px;
+}
+
+.responsive-img {
+    width: 95%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.illustration {
+    overflow: hidden;
+    text-align: center;
+}
+
+.illustration h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #696969;
+    margin-bottom: 15px;
+}
+
+
+
+#contact {
+    text-align: center;
+    /* display: inline-block; 
+    margin: 0 auto;
+    
+    these did not work to make them centered*/
+}
+
+.contact-elem{
+    margin: 30px;
+}
+
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    color: #696969;
+    
+}
+
+
+
+
+/* Peculiar to the Vendor Page */
+#navigation {
+    position: fixed;
+    top: 75px;
+    z-index: 1;
+    background: #E5E5E5;
+    width: calc(100vw - 200px);
+    padding: 7px 0;
+}
+
+#vendorh1 {
+    margin: 150px 0 30px;
+}
+
+.font30-500 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.vendor-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+}
+
+.vendor h2 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.vendor {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+    
+}
+
+.vendor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.item div {
+    margin-bottom: 15px;
+}
+
+.item-img img {
+    width: 100%;
+    height: auto;
+}
+
+.amount {
+    color: #5EA304;
+    float: right;
+}
+
+.vendor-grid button{
+    color: #AD4C4C;
+    padding: 8px 20px;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+}
+
+.view-mobile {
+    display: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 50px 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0 20px 20px;
+    }
+
+    .font20 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+
+    .font16 {
+        font-size: 10px;
+    }
+
+    #vendorh1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .imgfour,
+    .view-desktop  {
+        display: none;
+    }
+
+    .view-mobile {
+        display: block;
+    }
+
+    #header {
+        width: calc(100vw - 40px);
+    }
+
+    #navigation {
+        width: calc(100vw - 40px);
+    }
+
+}

@@ -7,7 +7,7 @@ import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 
 import Cart from "./components/Cart";
 import Verification from './components/Verification';
-import SuccesfullComponent from './components/SuccesfullComponent'
+import Success from './components/SuccessComponent'
 
 function App() {
 
@@ -43,7 +43,7 @@ function App() {
               <Routes>
                    <Route path='/' element={ <Cart  products={products} />} />
                    <Route path='/verification-page' element={ <Verification />  } />
-                   <Route path='/success-page' element={ <SuccesfullComponent image={success_image}
+                   <Route path='/success-page' element={ <Success image={success_image}
                                                                                 alt="guy delivering the order" 
                                                                                 title='order successful'
                                                                                 message='We have started processing your order.' />  } />
