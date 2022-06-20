@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 0 0 50px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+nav ul li a:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+}
+.signup {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    padding: 8px 15px;
+    border-radius: 3px;
+    width: 92px;
+
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+span {
+    color:red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/*INTRODUCTION*/
+.introduction h1 {
+    text-align: center;
+   font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.food {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+/*LABEL*/
+/*form {
+    background-color: white;
+    border-radius: 10px ;
+    border-color: black;
+    color: black;
+    height: 120px;
+    padding: 30px -20px;
+    width: 91%;
+    max-width: 100%;
+    min-width: 200px;
+  
+  }*/
+
+.address {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding:  20px 100px;
+    position: relative;
+    top: 20px;
+}
+
+select {
+        width: 88%;
+        padding: 10px 30px;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #696969;
+        border-radius: 5px;
+        margin: 20px 100px;
+        border: 1px solid #c4c4c4;
+        -moz-appearance: none; /* Firefox */
+        -webkit-appearance: none; /* Safari and Chrome */
+        appearance: none;
+        background-color: #ffffff;
+        background-image: url("image/keyboard_arrow_down.svg");
+        background-repeat: no-repeat;
+        background-position-x: 97.6%;
+        background-position-y: 50%;
+      }
+      
+      option {
+        display: none;
+      }
+   
+
+/*INTEREST*/
+.interest {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: 100px;
+    position: relative;
+    bottom: 10px;
+    top: 20px;
+}
+
+.interestbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 100px;
+}
+
+.box1 {
+    border: 1px solid gray;
+    color: grey;
+    margin-top: 20px;
+    width: 250px;
+    padding: 20px;
+}
+
+.box1 p{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.box1 h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*HOW WE SERVE YOU*/
+.desc{
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.serve {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.image{
+    width: 250px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+
+hr {
+    position: relative;
+    width: 1350px;
+    left: 100px;
+    right: 100px;
+}
+
+.contact h4{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.handle {
+    padding: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+.copyright1 {
+    color: gray;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/*CART POAGE*/
+.home {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 30px 100px;
+}
+.vendor {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: black;
+}
