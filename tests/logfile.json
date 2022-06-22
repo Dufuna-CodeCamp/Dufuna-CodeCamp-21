@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 5,
-    "start": "2022-06-22T00:21:19.074Z",
-    "end": "2022-06-22T00:21:54.995Z",
-    "duration": 35921,
+    "start": "2022-06-22T00:52:19.315Z",
+    "end": "2022-06-22T00:52:20.837Z",
+    "duration": 1522,
     "testsRegistered": 5,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c3e89918-11e3-44b3-9c71-64f3079344fd",
+      "uuid": "aaadd753-0258-40be-a6ed-de50522f8ce1",
       "title": "",
       "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
       "file": "\\html_form.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+          "uuid": "90523af3-d930-40e8-b625-ab3172d722d8",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
               "err": {},
-              "uuid": "437b1f18-334a-4748-95d2-fd86b422a5c0",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "22ae1643-1849-436c-929d-42a746bac5aa",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "4c8a034d-0683-4b04-8264-b33460da7b34",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "7045ff2c-f062-46bd-8923-6f83cda435fa",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 35856,
+              "duration": 1500,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 102\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:549:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:475:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "0f22ccbc-9122-42f1-9d3c-177be04a5a32",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "d7347157-ee5e-4a15-b4e0-0ff778886402",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 102\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:549:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:475:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "2ea4034b-2b35-4147-beb4-9ba5e968a38a",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "4282d87d-03af-4f3c-bcd7-e86c5f1bdde2",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": false,
               "skipped": false
             },
@@ -133,8 +133,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 102\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:549:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:475:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "17ed0285-a380-4012-9e75-b526b1391530",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "e4b09bce-b0db-4ef8-a065-6b1ba322bffd",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +142,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -155,8 +155,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 102\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:549:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:475:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "4b643af9-23f9-4f75-b5db-1c2bfaf18844",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "e8ecd7a8-4297-45b6-a3f2-0bc3d6626390",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": false,
               "skipped": false
             },
@@ -177,8 +177,8 @@
                 "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 102\nCurrent browser version is 96.0.4664.45 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:549:13)\n    at Executor.execute (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\node_modules\\selenium-webdriver\\lib\\http.js:475:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "1cc80189-fff8-4cd9-9ac5-bed2560e8c6c",
-              "parentUUID": "b034a33d-d905-46ca-ba2a-01144d12fcae",
+              "uuid": "7d783e8d-2d56-49c7-b998-a83bc63246c2",
+              "parentUUID": "90523af3-d930-40e8-b625-ab3172d722d8",
               "isHook": false,
               "skipped": false
             }
@@ -186,15 +186,15 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "0f22ccbc-9122-42f1-9d3c-177be04a5a32",
-            "2ea4034b-2b35-4147-beb4-9ba5e968a38a",
-            "17ed0285-a380-4012-9e75-b526b1391530",
-            "4b643af9-23f9-4f75-b5db-1c2bfaf18844",
-            "1cc80189-fff8-4cd9-9ac5-bed2560e8c6c"
+            "d7347157-ee5e-4a15-b4e0-0ff778886402",
+            "4282d87d-03af-4f3c-bcd7-e86c5f1bdde2",
+            "e4b09bce-b0db-4ef8-a065-6b1ba322bffd",
+            "e8ecd7a8-4297-45b6-a3f2-0bc3d6626390",
+            "7d783e8d-2d56-49c7-b998-a83bc63246c2"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 35859,
+          "duration": 1501,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
