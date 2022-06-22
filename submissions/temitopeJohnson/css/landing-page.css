@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+body {
+    background-color: #FFFFFF;
+    padding: 50px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.NavLinks {
+    margin-left: auto;
+}
+
+.CL {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #696969;
+}
+
+.SignUp {
+    text-decoration: none;
+    color: #AD4C4C;
+    border: solid;
+    border-color: #AD4C4C;
+    border-radius: 5px;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.HeadingText {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.HeadingText b {
+    color: #4E4D4D;
+    font-size: 40px;
+}
+
+.HeadingText div {
+    color: #696969;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+section div {
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+section input {
+    width: 1102px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 15px 5px 20px;
+}
+
+.Interest {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Items {
+    padding: 20px;
+    margin-right: 10px;
+    z-index: 1;
+    box-shadow: 0px 0px 3px 1.5px #0000001A;
+    width: 300px;
+    height: fit-content;
+}
+
+.Items div {
+    color: #A5A5A5;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.Items p {
+    color: #A5A5A5;
+    font-weight: 100;
+    font-size: 13px;
+    padding-top: 0;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #F2F2F2;
+}
+
+.Serve {
+    text-align: center;
+}
+
+.Serving {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ServeBox {
+    margin: 0px 20px;
+}
+
+.Serving p {
+    color: #696969;
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+.Serving div {
+    color: #696969;
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 0%;
+}
+
+.ContactUs {
+    text-align: center;
+}
+
+
+.Terms {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.Terms div {
+    color: #696969;
+    font-size: 15px;
+}
+
+.Terms p {
+    margin-left: auto;
+    color: #696969;
+    font-size: 15px;
+}
