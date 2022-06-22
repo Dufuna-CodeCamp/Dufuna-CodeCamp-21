@@ -118,7 +118,7 @@ select {
 .box1 {
     box-shadow: 1px 1px 1px 1px rgb(224, 224, 224);
     border: 1px solid #e5e5e5;
-    margin: 10px 10px;
+    margin: 10px;
     padding: 20px;
     height: 150px;
     width: 400px;
@@ -305,7 +305,7 @@ ol {
 
     .box2 img {
         height: 130px;
-        margin: 10px 10px;
+        margin: 10px;
     }
 
 
