@@ -1,0 +1,33 @@
+ p{
+     font-weight: 600;
+     color: red;
+ }
+ #box{
+     background-color: blue;
+     width: 200px;
+     height: 200px;
+ }
+ .title{
+     color: brown;
+     font-size: 20px;
+ }
+
+ div.header{
+     background-color: lightblue;
+ }
+
+ div .header{
+    background-color: slategray;
+    color: white;
+}
+div p:first-child{
+    color: teal;
+    font-size: 24px;
+}
+div p:last-child{
+    color: rebeccapurple;
+    font-size: 20px;
+}
+p:nth-child(2){
+    color: green;
+}
