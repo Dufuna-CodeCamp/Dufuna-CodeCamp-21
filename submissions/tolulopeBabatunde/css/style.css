@@ -18,7 +18,7 @@ nav {
 }
 
 .home {
-    margin: 50px 50px 0px 50px;
+    margin: 50px 50px 0px;
     font-size: 11px;
 }
 
@@ -300,11 +300,6 @@ hr {
         color: #ad4c4c;
         border: 1px solid #ad4c4c;
         background: transparent;
-    }
-
-    .all h2 {
-        margin: 40px 50px;
-
     }
 
     .view-desktop {
