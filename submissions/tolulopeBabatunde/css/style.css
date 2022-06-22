@@ -191,7 +191,9 @@ button a {
     height: 30px;
 }
 
-
+hr {
+    margin: 30px 50px;
+}
 
 
 @media screen and (min-width:700px) {
