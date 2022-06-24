@@ -180,6 +180,6 @@ span{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    padding:  80px 100px 0 100px;
+    padding:  80px 100px 0;
     margin-top: 20px;
 }
