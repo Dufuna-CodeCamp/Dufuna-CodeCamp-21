@@ -1,0 +1,185 @@
+/*CART POAGE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 0 0 50px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+nav ul li a:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+}
+.signup {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    padding: 8px 15px;
+    border-radius: 3px;
+    width: 92px;
+
+}
+
+.vendor-desc {
+    padding: 30px 100px;
+}
+
+.home {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+   /* padding: 30px 100px;*/
+}
+
+span{
+    color: red;
+}
+
+.vendor {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: black;
+}
+
+.vendor-head {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    color: black;
+    padding-top: 30px;
+}
+
+.KFC-logo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 100px; 
+}
+
+ .KFC-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: black;
+ }
+
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    color: red;
+ }
+ a:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+ }
+
+ .KFC {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 100px;
+    margin-bottom: 70px;
+ }
+
+ .price {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .list {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: gray;
+    padding-bottom: 20px;
+ }
+
+ .amount {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: green;
+ }
+
+ .cart{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    color: red; 
+    background-color: white;
+    border: 1px solid red;
+    padding: 10px 22px;
+    border-radius: 3px;
+    width: 150px;  
+    text-align: center;  
+    cursor: pointer;
+ }
+ .KFC1{
+    margin-bottom: 2em;
+ }
+
+ hr {
+    position: relative;
+    width: 1400px;
+    left: 100px;
+    right: 100px;
+    top: 50px;
+    bottom: 50px;
+    color: gray;
+}
+
+ .CR-logo {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding:  80px 100px 0 100px;
+    margin-top: 20px;
+}
