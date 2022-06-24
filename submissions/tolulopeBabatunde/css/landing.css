@@ -17,11 +17,7 @@ nav {
 .right {
     display: inline;
     float: right;
-<<<<<<< Updated upstream
-    margin: 0px 20px;
-=======
     margin: 0px 10px;
->>>>>>> Stashed changes
     position: relative;
     bottom: 38px;
     font-size: 12px;
@@ -41,11 +37,7 @@ li a {
     text-decoration: none !important;
     font-size: 14px;
     list-style: none !important;
-<<<<<<< Updated upstream
-    margin: 20px 40px;
-=======
     margin: 20px 100px;
->>>>>>> Stashed changes
     font-weight: 700;
 }
 
@@ -58,11 +50,7 @@ li a {
 }
 
 button.right {
-<<<<<<< Updated upstream
-    margin-right: 30px;
-=======
     margin-right: 145px;
->>>>>>> Stashed changes
     top: -43px;
     border: 1px solid #ad4c4c;
     width: 80px;
@@ -85,34 +73,19 @@ button a {
 
 /* HEADING */
 .heading {
-<<<<<<< Updated upstream
-    margin: 50px 40px;
-    text-align: left;
-}
-
-.heading h1 {
-    font-size: 18px;
-=======
     margin: 50px 0px;
     text-align: center;
 }
 
 .heading h1 {
     font-size: 22px;
->>>>>>> Stashed changes
     margin-bottom: 5px;
     color: #4e4d4d;
 }
 
 .heading p {
-<<<<<<< Updated upstream
-    font-size: 12px;
-    color: #696969;
-
-=======
     font-size: 13px;
     color: #696969;
->>>>>>> Stashed changes
 }
 
 
@@ -124,26 +97,11 @@ button a {
 }
 
 .first-section h5 {
-<<<<<<< Updated upstream
-    margin: 10px 40px;
-=======
     margin: 10px 100px;
->>>>>>> Stashed changes
 }
 
 .first-boxes {
     display: flex;
-<<<<<<< Updated upstream
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-select {
-    width: 400px;
-    height: 30px;
-    margin: 20px 40px;
-=======
     justify-content: center;
 }
 
@@ -151,27 +109,12 @@ select {
     width: 1000px;
     height: 30px;
     margin: 20px 100px;
->>>>>>> Stashed changes
 
 }
 
 .box1 {
     box-shadow: 1px 1px 1px 1px rgb(224, 224, 224);
     border: 1px solid #e5e5e5;
-<<<<<<< Updated upstream
-    margin: 10px;
-    padding: 20px;
-    height: 150px;
-    width: 400px;
-}
-
-.box1 img {
-    height: 40px;
-}
-
-.title {
-    font-size: 14px;
-=======
     margin: 0px 10px;
     padding: 20px;
     height: 120px;
@@ -184,18 +127,13 @@ select {
 
 .title {
     font-size: 13px;
->>>>>>> Stashed changes
     margin: 10px 0px;
     color: #a5a5a5;
     font-weight: 900;
 }
 
 .para {
-<<<<<<< Updated upstream
-    font-size: 13px;
-=======
     font-size: 12px;
->>>>>>> Stashed changes
     color: #a5a5a5;
 }
 
@@ -204,40 +142,24 @@ select {
 
 /* SECOND SECTION */
 .second-section {
-<<<<<<< Updated upstream
-    margin-top: 50px;
-=======
     margin-top: 30px;
->>>>>>> Stashed changes
     text-align: center;
 }
 
 .second-box {
     margin-top: 10px;
     display: flex;
-<<<<<<< Updated upstream
-    flex-direction: column;
-=======
->>>>>>> Stashed changes
     text-align: center;
     justify-content: space-evenly;
 }
 
 .box2 img {
     height: 130px;
-<<<<<<< Updated upstream
-    margin: 15px 10px;
-}
-
-hr {
-    margin: 30px;
-=======
     margin: 10px;
 }
 
 hr {
     margin-top: 30px;
->>>>>>> Stashed changes
 }
 
 
@@ -250,11 +172,7 @@ footer {
 
 footer h6 {
     text-align: center;
-<<<<<<< Updated upstream
-    font-size: 16px;
-=======
     font-size: 17px;
->>>>>>> Stashed changes
 }
 
 .social-media {
@@ -264,23 +182,13 @@ footer h6 {
 }
 
 .social-media img {
-<<<<<<< Updated upstream
-    height: 16px;
-=======
     height: 17px;
->>>>>>> Stashed changes
 }
 
 ol {
     margin: 10px;
 }
 
-<<<<<<< Updated upstream
-
-.copy {
-    display: flex;
-    flex-direction: column;
-=======
 footer h4 {
     font-size: 13px;
     margin-top: 8px;
@@ -290,52 +198,10 @@ footer h4 {
 .copy {
     display: flex;
     flex-direction: row;
->>>>>>> Stashed changes
     justify-content: space-around;
 
 }
 
-<<<<<<< Updated upstream
-.copy h4 {
-    margin: 10px;
-    font-size: 12px;
-
-}
-
-
-
-
-
-
-@media screen and (min-width:768px) {
-
-
-    .logo li {
-        margin: 20px 150px;
-    }
-
-    button.right {
-        margin-right: 145px;
-
-    }
-
-
-    /* HEADING */
-    .heading {
-        margin: 50px 0px;
-        text-align: center;
-    }
-
-    .heading h1 {
-        font-size: 22px;
-        margin-bottom: 5px;
-    }
-
-    .heading p {
-        font-size: 13px;
-    }
-
-=======
 
 
 /* 901PX -1200PX */
@@ -344,79 +210,12 @@ footer h4 {
     .logo li {
         margin: 20px 30px;
     }
->>>>>>> Stashed changes
 
     button.right {
         margin-right: 45px;
 
     }
 
-<<<<<<< Updated upstream
-    .first-section {
-        margin-bottom: 40px;
-    }
-
-    .first-section h5 {
-        margin: 10px 150px;
-    }
-
-    .first-boxes {
-        flex-direction: row;
-
-    }
-
-    select {
-        width: 650px;
-        height: 30px;
-        margin: 20px 50px;
-
-    }
-
-    .box1 {
-        box-shadow: 1px 1px 1px 1px rgb(224, 224, 224);
-        border: 1px solid #e5e5e5;
-        margin: 0px 10px;
-        padding: 20px;
-        height: 120px;
-        width: 250px;
-    }
-
-    .box1 img {
-        height: 30px;
-    }
-
-    .title {
-        font-size: 13px;
-    }
-
-    .para {
-        font-size: 12px;
-
-    }
-
-
-
-
-    /* SECOND SECTION */
-    .second-section {
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .second-box {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: space-evenly;
-    }
-
-    .box2 img {
-        height: 130px;
-        margin: 10px;
-    }
-
-=======
     .first-section h5 {
         margin: 10px 30px;
     }
@@ -493,20 +292,12 @@ footer h4 {
     .logo li {
         margin: 20px 30px;
     }
->>>>>>> Stashed changes
 
     button.right {
         margin-right: 45px;
 
     }
 
-<<<<<<< Updated upstream
-    .social-media img {
-        height: 17px;
-    }
-
-    ol {
-=======
     .heading {
         margin: 50px 30px;
         text-align: left;
@@ -528,24 +319,11 @@ footer h4 {
     }
 
     .box1 {
->>>>>>> Stashed changes
         margin: 10px;
         height: 150px;
         width: 430px;
     }
 
-<<<<<<< Updated upstream
-    footer h4 {
-        font-size: 13px;
-
-    }
-
-    .copy {
-        flex-direction: row;
-
-    }
-
-=======
     .box1 img {
         height: 40px;
     }
@@ -582,7 +360,6 @@ footer h4 {
     footer h4 {
         font-size: 13px;
         margin-top: 8px;
->>>>>>> Stashed changes
 
     }
 
@@ -590,32 +367,4 @@ footer h4 {
         flex-direction: column;
     }
 
-<<<<<<< Updated upstream
-
-
 }
-
-
-
-
-@media screen and (min-width:900px) {
-    select {
-
-        width: 590px;
-        height: 30px;
-        margin: 20px 150px;
-
-    }
-}
-
-@media screen and (min-width:1200px) {
-    select {
-        width: 900px;
-        height: 30px;
-        margin: 20px 150px;
-
-    }
-}
-=======
-}
->>>>>>> Stashed changes
