@@ -221,3 +221,67 @@ header-part {
 .vendor-container .vendor-cart .vendor-text p {
     color: #5EA304;
 }
+
+
+/* Responsive design @Screen Max 766 */
+@media screen and (max-width: 766px) {
+
+    .location {
+        padding: 20px 66px;
+        margin: 14px 0;
+    }
+
+    .vendor {
+        font-size: 45px;
+        line-height: 43px;
+
+    }
+
+    .vendor-data h5 {
+        font-weight: bold;
+    }
+
+    .vendor-data p {
+        text-align: left;
+    }
+
+
+}
+
+/* Responsive design @Screen Max 600 */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 8%;
+    }
+
+    .info-part {
+        padding: 30px 4px;
+        margin: 20px 0;
+    }
+
+    .location {
+        padding: 23px 60px;
+        margin: 16px 0;
+    }
+
+    .vendor {
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    .vendor-data h5 {
+        font-weight: bold;
+    }
+
+    .vendor-data p {
+        text-align: left;
+    }
+
+    .vendor-container {
+        flex-wrap: wrap;
+        display: block;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}

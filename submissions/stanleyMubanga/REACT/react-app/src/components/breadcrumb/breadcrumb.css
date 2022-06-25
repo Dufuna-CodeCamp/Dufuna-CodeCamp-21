@@ -1,0 +1,51 @@
+.breadcrumb {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.crumb {
+    padding: 0.2%;
+    /* min-width: 10%; */
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.crumb-link {
+    text-decoration: unset;
+    color: black;
+}
+
+.back-a {
+    color: grey;
+}
+
+h5 {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .breadcrumb {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: end;
+    }
+
+    .crumb {
+        padding: 0.2%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: end;
+    }
+
+    .crumb-link {
+        font-size: medium;
+    }
+}
