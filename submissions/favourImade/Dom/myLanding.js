@@ -18,13 +18,15 @@ addressList.addEventListener('input', function(e) {
         });
 
         for (let i = 0; i < container.length; i++){
-            container[i].addEventListener('click', loadVendor);
             container[i].style.cursor = "pointer";
+            container[i].addEventListener("click", function(){
+                window.location = "vendor.html";
+            });
         }
 
-        //function that loads the vendors page when an interest list item is loaded
-        function loadVendor() {
-            window.location = "vendor.html";
-        }
+        // //function that loads the vendors page when an interest list item is loaded
+        // function loadVendor() {
+        //     window.location = "vendor.html";
+        // }
     }
 })
