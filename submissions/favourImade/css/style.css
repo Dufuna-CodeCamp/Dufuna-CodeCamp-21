@@ -85,12 +85,14 @@ section#home .pick-interest .interest-row{
 section#home .pick-interest .interest-row .interest{
     flex-basis: 23%;
     margin-bottom:20px;
+    
 }
 
 section#home .pick-interest .interest{
     padding:20px;
-    border: 2px solid grey;
+    border: 0.3px solid grey;
     color: grey;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 
