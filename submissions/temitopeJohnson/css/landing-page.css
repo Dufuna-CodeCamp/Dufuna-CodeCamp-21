@@ -13,7 +13,8 @@ nav {
     padding-bottom: 20px;
 }
 
-input, div {
+input,
+div {
     box-sizing: border-box;
 }
 
@@ -164,7 +165,7 @@ hr {
     body {
         padding: 25px 60px;
     }
-    
+
     nav {
         padding-bottom: 10px;
     }
@@ -172,24 +173,24 @@ hr {
     .CL {
         margin-right: 20px;
     }
-    
+
     .HeadingText {
         text-align: left;
         padding-top: 70px;
         padding-bottom: 10px;
     }
-    
+
     .HeadingText b {
         color: #4E4D4D;
         font-size: 30px;
     }
-    
+
     .HeadingText div {
         color: #696969;
         font-size: 15px;
         font-weight: 100;
     }
-    
+
     section div {
         color: black;
         font-size: 25px;
@@ -198,22 +199,22 @@ hr {
         padding-top: 10px;
         font-weight: bold;
     }
-    
+
     section input {
         width: 100%;
         height: 50px;
         border-radius: 5px;
         padding: 5px 15px 5px 20px;
     }
-    
+
     .Interest {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
         margin-top: 0;
     }
-    
-    
+
+
     .Items {
         padding: 20px;
         z-index: 1;
@@ -221,7 +222,7 @@ hr {
         width: 100%;
         height: fit-content;
     }
-    
+
     .Items div {
         color: #A5A5A5;
         font-weight: 100;
@@ -230,48 +231,48 @@ hr {
         font-size: 20px;
         width: 100%;
     }
-    
+
     .Items p {
         color: #A5A5A5;
         font-weight: 100;
         font-size: 15px;
         padding-top: 0;
     }
-    
+
     hr {
         margin-top: 50px;
         margin-bottom: 50px;
         color: #F2F2F2;
     }
-    
+
     .Serve {
         text-align: center;
     }
-    
+
     .Serving {
         display: flex;
         flex-direction: column;
         padding-left: 50px;
         padding-right: 50px;
     }
-    
+
     .ServeBox {
         margin: 0 20px;
     }
-    
+
     .Serving p {
         color: #696969;
         font-size: 20px;
         padding-bottom: 0;
     }
-    
+
     .Serving div {
         color: #696969;
         font-size: 15px;
         font-weight: 100;
         padding-top: 0%;
     }
-    
+
     .ContactUs {
         text-align: center;
         font-size: 30px;
@@ -283,22 +284,22 @@ hr {
         column-gap: 50px;
         justify-content: center;
     }
-    
+
     .ContactUs img {
         width: 30px;
         height: 30px;
     }
-    
+
     .Terms {
         display: flex;
         flex-direction: column;
     }
-    
+
     .Terms div {
         color: #696969;
         font-size: 15px;
     }
-    
+
     .Terms p {
         color: #696969;
         font-size: 15px;
@@ -312,7 +313,7 @@ hr {
     body {
         padding: 25px 60px;
     }
-    
+
     nav {
         padding-bottom: 10px;
     }
@@ -320,24 +321,24 @@ hr {
     .CL {
         margin-right: 20px;
     }
-    
+
     .HeadingText {
         text-align: left;
         padding-top: 70px;
         padding-bottom: 10px;
     }
-    
+
     .HeadingText b {
         color: #4E4D4D;
         font-size: 30px;
     }
-    
+
     .HeadingText div {
         color: #696969;
         font-size: 15px;
         font-weight: 100;
     }
-    
+
     section div {
         color: black;
         font-size: 25px;
@@ -346,14 +347,14 @@ hr {
         padding-top: 10px;
         font-weight: bold;
     }
-    
+
     section input {
         width: 100%;
         height: 50px;
         border-radius: 5px;
         padding: 5px 15px 5px 20px;
     }
-    
+
     .Interest {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -361,8 +362,8 @@ hr {
         row-gap: 20px;
         margin-top: 0;
     }
-    
-    
+
+
     .Items {
         padding: 20px;
         z-index: 1;
@@ -370,7 +371,7 @@ hr {
         width: 100%;
         height: fit-content;
     }
-    
+
     .Items div {
         color: #A5A5A5;
         font-weight: 100;
@@ -379,31 +380,31 @@ hr {
         font-size: 20px;
         width: 100%;
     }
-    
+
     .Items p {
         color: #A5A5A5;
         font-weight: 100;
         font-size: 15px;
         padding-top: 0;
     }
-    
+
     hr {
         margin-top: 50px;
         margin-bottom: 50px;
         color: #F2F2F2;
     }
-    
+
     .Serve {
         text-align: center;
     }
-    
+
     .Serving {
         display: flex;
         flex-direction: row;
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     .ServeBox {
         margin: 0 10px;
     }
@@ -412,20 +413,20 @@ hr {
         width: 210px;
         height: 200px;
     }
-    
+
     .Serving p {
         color: #696969;
         font-size: 15px;
         padding-bottom: 0;
     }
-    
+
     .Serving div {
         color: #696969;
         font-size: 12px;
         font-weight: 200;
         padding-top: 0%;
     }
-    
+
     .ContactUs {
         text-align: center;
         font-size: 30px;
@@ -437,22 +438,22 @@ hr {
         column-gap: 50px;
         justify-content: center;
     }
-    
+
     .ContactUs img {
         width: 30px;
         height: 30px;
     }
-    
+
     .Terms {
         display: flex;
         flex-direction: row;
     }
-    
+
     .Terms div {
         color: #696969;
         font-size: 12px;
     }
-    
+
     .Terms p {
         color: #696969;
         font-size: 12px;
