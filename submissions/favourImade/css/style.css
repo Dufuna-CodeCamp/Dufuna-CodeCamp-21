@@ -95,7 +95,6 @@ section#home .pick-interest .interest{
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
-
 section#home .serve{
     margin-bottom:150px;
 }
@@ -145,27 +144,6 @@ button:hover{
     color: white;
     background-color: brown;
 }
-
-.draw {
-    /* position: relative; */
-    /* left: 3px; */
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border-radius: 50%;
-    border:2px solid white;
-    margin-right: 5px;
-}
-
-.draw::after{
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: white;
-    transform: translateY(7px) translateX(-10px);
-}
-
 .grey-color{
     color: grey;
 }

@@ -23,10 +23,5 @@ addressList.addEventListener('input', function(e) {
                 window.location = "vendor.html";
             });
         }
-
-        // //function that loads the vendors page when an interest list item is loaded
-        // function loadVendor() {
-        //     window.location = "vendor.html";
-        // }
     }
 })
