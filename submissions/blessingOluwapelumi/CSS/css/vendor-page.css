@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px 50px 80px 50px;
+    font-family: 'Poppins';
+}
+
+#logo {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#logo span {
+    color: #AD4C4C;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 30px;
+}
+
+
+#signup-btn {
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    color: #AD4C4C;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 30px;
+}
+
+.top-text h4 {
+    margin-top: 8%;
+    font-size: 14px;
+    color: #C9C9C9;
+    font-weight: 400;
+}
+
+.top-text span {
+    color: black;
+    font-weight: 500;
+}
+
+.top-text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+
+#btn {
+    border-radius: 40px;
+    border: none;
+}
+
+.KFC-main {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 3%;
+    font-weight: 500;
+}
+
+.KFC-main p {
+    font-size: 20px;
+
+}
+
+.KFC-main a {
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    color: #AD4C4C;
+    font-size: 16px;
+}
+
+.KFC{
+    display: flex;
+    grid-gap: 45px;
+}
+
+.KFC h5 {
+    color: #4E4D4D;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.KFC p {
+    color: #5EA304;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.KFC-menu div{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.KFC button {
+    padding: 8px 15px;
+    margin-top: 4%;
+    color: #AD4C4C;
+    font-size: 16px;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #E6E6E6;
+    border: none;
+    height: 1px;
+
+}
+
+.republic-main{ 
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 3%;
+    font-weight: 500;
+
+}
+
+
+.republic-main p {
+    font-size: 20px;
+
+}
+
+.republic-main a {
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    color: #AD4C4C;
+    font-size: 16px;
+}
+
+.Chicken-republic{
+    display: flex;
+    grid-gap: 45px;
+}
+
+
+.Chicken-republic h5 {
+    color: #4E4D4D;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.Chicken-republic p {
+    color: #5EA304;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.Chicken-republic-menu div{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.Chicken-republic button {
+    padding: 8px 15px;
+    margin-top: 4%;
+    color: #AD4C4C;
+    font-size: 16px;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    background-color: white;
+    cursor:pointer;
+}
+
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #E6E6E6;
+    border: none;
+    height: 1px;
+
+}

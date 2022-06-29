@@ -34,12 +34,9 @@ nav a {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+     padding-left: 30px;
 }
 
-nav ul li {
-    display: inline;
-    padding-left: 30px;
-}
 
 #signup-btn {
     border: 1px solid #AD4C4C;
@@ -49,7 +46,7 @@ nav ul li {
     padding: 6px 12px;
     font-weight: 500;
     font-style: normal;
-
+    margin-left: 30px;
 }
 
 .hero-text {
