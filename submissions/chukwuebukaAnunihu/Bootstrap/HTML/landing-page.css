@@ -1,0 +1,43 @@
+* {
+    font-family: 'Poppins';
+}
+
+.nav-link .btn:hover {
+    background-color: #fff;
+    color: #AD4C4C;
+}
+
+span {
+    color: #AD4C4C
+}
+
+.navbar {
+    margin-top: -15px;
+}
+
+.nav-link .btn {
+    color: #AD4C4C;
+    border: 1px solid#AD4C4C;
+    margin-top: -5px
+}
+
+.form-control:focus {
+    border-color: #AD4C4C;
+    box-shadow: inset 0 1px 1px #AD4C4C, 0 0 8px #AD4C4C;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    ul,
+    .nav-link .btn,
+    p.text-body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .navbar {
+        width: 25%;
+
+    }
+}
