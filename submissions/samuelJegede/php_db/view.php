@@ -1,13 +1,9 @@
 <?php
-if (isset($_COOKIE['customers'])) {
-    echo $_COOKIE['customers'];
-    // unset($_COOKIE);
-} else {
-    require("connection.php");
+
+require_once("connection.php");
 
 echo "<h3>Customers</h3>";
 
-//Attempt select query execution
 try{
     $sql = "SELECT * FROM customers";
 
@@ -33,11 +29,9 @@ try{
         }
 
         echo "</table>";
-
-        //Free result set
         unset($result);
     } else {
-        echo "No records matching your query were found.";
+        echo "No records were found.";
     }
 } catch(PDOException $e) {
     die("ERROR: Could not execute $sql. " . $e->getMessage());
@@ -45,5 +39,4 @@ try{
 
 // Close connection
 unset($pdo);
-}
 ?>
