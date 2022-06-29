@@ -29,14 +29,3 @@ button.forEach(function(same){
         notiftyDot();
     })
 })
-
-
-
- // same.addEventListener('click', function(){
-    //     if (same.length >= 1) {
-    //         item.innerHTML = "working";
-    //     }else{
-    //         item.style.color = "blue";
-    //         item.innerHTML = "fuck";
-    //     }
-          
