@@ -10,7 +10,7 @@ foodLocation.addEventListener('change',()=>{
 
 for(let index = 0; index < liTags.length; index++)
 {
-    liTags[index].outerHTML='<a href=\"vendors.html\">'+liTags[0].outerHTML+"</a>";
+    liTags[index].outerHTML='<a href="vendors.html">'+liTags[0].outerHTML+"</a>";
 }
 
 });
