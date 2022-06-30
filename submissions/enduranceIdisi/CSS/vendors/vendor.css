@@ -10,25 +10,22 @@ body {
     line-height: 30px;
     position: relative;
     font-weight: 400;
-    width: 100%;
+    padding: 40px;
 }
 
 #vendor-wrap {
-    width: 90%;
-    margin: 50px auto;
-    height: 50vh;
+    width: 100%;
+
 }
 
 #main-nav {
     display: grid;
-    grid-template-areas: 'top-row top-row bottom-row';
-    margin: 20px;
-    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
     align-items: center;
 }
 
 header {
-    grid-area: top-row;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -39,8 +36,6 @@ header {
 }
 
 nav {
-    grid-area: bottom-row;
-    justify-content: center;
     align-items: center;
 }
 
@@ -59,7 +54,7 @@ nav a {
     color: #696969;
     font-size: 16px;
     font-weight: 400;
-    margin: 15px;
+    margin-left: 15px;
 }
 
 nav a:hover {
@@ -70,10 +65,9 @@ nav a:hover {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 100px auto;
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 30px;
     justify-content: center;
 }
 
@@ -140,7 +134,18 @@ section {
 }
 
 .view {
+    visibility: visible;
     text-align: end;
+}
+
+.view a {
+    text-decoration: none;
+    color: #AD4C4C;
+    font-size: 30px;
+}
+
+.mobile {
+    visibility: hidden;
 }
 
 .kfc .kfc-images {
@@ -188,4 +193,120 @@ section button {
     border: 1px solid #AD4C4C;
     border-radius: 5px;
     padding: 10px;
+}
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+
+
+    main {
+        padding: 0;
+        margin: 70px 0;
+    }
+
+    .kfc {
+        margin-bottom: 5rem;
+    }
+
+    .box {
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .chicken {
+        width: 140px;
+    }
+
+    .box h5,
+    .box p {
+        font-size: 12px;
+    }
+
+    section button {
+        line-height: 20px;
+    }
+
+    .mobile {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 10px;
+    }
+
+    #vendor-wrap {
+        max-width: 100%;
+
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        padding: 0 3px;
+    }
+
+    .kfc {
+        display: block;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .kfc-logo-text h4 {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .view {
+        visibility: hidden;
+    }
+
+    .mobile {
+        visibility: visible;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .mobile a {
+        text-decoration: none;
+        color: #AD4C4C;
+        font-size: 20px;
+    }
+
+    .kfc-imgs {
+        display: block;
+    }
+
+    /* .kfc {
+        display: grid;
+        grid-template-areas: 'top1 top2 top3';
+    }
+
+    .logo-design {
+        grid-area: top1;
+    }
+
+    .kfc-imgs {
+        grid-area: top2;
+        display: block;
+    }
+
+    .down {
+        grid-area: top3;
+    } */
 }
