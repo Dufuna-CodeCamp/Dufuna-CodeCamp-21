@@ -130,7 +130,7 @@ nav a {
     cursor: pointer;
 }
 
-hr {
+div>hr {
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #E6E6E6;
