@@ -14,17 +14,18 @@
 </head>
 
 <body>
-    <!--=NAV-->
+    <!--header-->
+    <header class="header">
+        <h2 class="logo">Food<span class="bag">Bag</span></h2>
     <nav>
-        <h2 class="logo">Food<span>Bag</span></h2>
         <ul>
-            <li><a href="vendorpage.html">Cart</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html" class="signup">Signup</a></li>
+            <li><a href="#" id="cart">Cart</a></li>
+            <li><a href="#" id="login">Login</a></li>
+            <li><a href="#" id="signup">Signup</a></li>
             
         </ul>
     </nav>
-
+    </header>
         <!--introduction-->
     <main>
     <section class="content">
@@ -33,9 +34,10 @@
             <p class="food">Anything food, we have you covered.</p>
         </div>
 
-        <div>
+        <!--Location-->
+        <div id="location">
             <h4 class="address">Where are you?</h4>
-            <select class="inputs-outline" name="" id="">
+            <select class="inputs-outline" name="" id="locate">
                 <option>Enter your delivery address</option>
                 <option>Abuja</option>
                 <option>Lagos</option>
@@ -47,7 +49,7 @@
         </div>
         
         <!--Pick an interest-->
-        <div>
+        <div id="interest_header">
             <h3 class="interest">Pick an interest</h3>
         </div>
 
@@ -74,23 +76,24 @@
             </div>
         </div>
 
+        <hr>
         <!--How we serve-->
         <div>
-            <h2 class="desc">How we serve you</h2>
+            <h2 id="illustration_desc">How we serve you</h2>
         </div>
         
-        <div class="serve">
-            <div class="location">
+        <div class="serve_illustration">
+            <div class="illustration">
                 <img src="image/Illustration_1.svg" class="image">
                 <h3>Tell us where you are</h3>
                 <p>Select the location youu want<br> us to deliver.</p>
             </div>
-            <div class="location">
+            <div class="illustration">
                 <img src="image/illustration_2.svg" class="image">
                 <h3>Tell us what you want</h3>
                 <p>Browse the type of food that<br> interest you.</p>
             </div>
-            <div class="location">
+            <div class="illustration">
                 <img src="image/illustration_3.svg" class="image">
                 <h3>We'll come running</h3>
                 <p>Your order will be delivered to<br> you in no time.</p>
@@ -112,7 +115,7 @@
 
         <div class="copyright">
             <p class="copyright1">Terms & Conditions. Privacy Policy</p>
-            <p class="copyright1">&copy Copyright 2021 Foodbad is a registered trademark</p>
+            <p class="copyright1">&copy; Copyright 2021 Foodbag is a registered trademark</p>
         </div>
     </footer>
 

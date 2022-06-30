@@ -1,26 +1,29 @@
-/*CART POAGE*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0 100px 20px;
 }
 
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    font-style: normal;
+}
 
-nav {
+.header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
-    padding: 50px 100px;
+    padding: 42px 0 5px;
+    align-items: center;
+    /*position: fixed;*/
 }
+
 
 nav ul {
     display: flex;
@@ -45,7 +48,7 @@ nav ul li a:hover {
     border: 1px solid blue;
     padding: 5px;
 }
-.signup {
+#signup {
     color: red;
     background-color: white;
     border: 1px solid red;
@@ -53,10 +56,6 @@ nav ul li a:hover {
     border-radius: 3px;
     width: 92px;
 
-}
-
-.vendor-desc {
-    padding: 30px 100px;
 }
 
 .home {
@@ -78,26 +77,27 @@ span{
     color: black;
 }
 
+.home, .vendor {
+    margin: 60px 0 20px;
+  }
+
 .vendor-head {
     font-size: 30px;
     font-weight: 500;
     line-height: 45px;
     color: black;
-    padding-top: 30px;
 }
 
-.KFC-logo {
+.CR-logo {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-wrap:wrap;
     justify-content: space-between;
-    padding: 20px 100px; 
+    margin-top: 20px;
 }
-
  .KFC-img {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
  }
 
  h5 {
@@ -107,12 +107,12 @@ span{
     color: black;
  }
 
-  a {
+  #view {
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
     text-decoration: none;
     color: red;
+    padding-top: 12px;
  }
  a:hover {
     color: blue;
@@ -125,8 +125,8 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 100px;
-    margin-bottom: 70px;
+    margin: 30px 0 70px;
+
  }
 
  .price {
@@ -158,28 +158,143 @@ span{
     border: 1px solid red;
     padding: 10px 22px;
     border-radius: 3px;
-    width: 150px;  
+    width: 90px;  
     text-align: center;  
     cursor: pointer;
+    text-decoration: none;
  }
  .KFC1{
     margin-bottom: 2em;
  }
 
  hr {
-    position: relative;
-    width: 1400px;
-    left: 100px;
-    right: 100px;
-    top: 50px;
-    bottom: 50px;
-    color: gray;
+    margin: 80px auto;
 }
 
- .CR-logo {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    padding:  80px 100px 0;
-    margin-top: 20px;
+#view-mobile {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: red;
+     display: none;
+    text-align: center;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+ /* .KFC1 {
+    overflow: hidden;
+  }
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 768px){
+    body {
+        margin: 0 50px 10px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+   .KFC2, #view {
+        display: none;
+    }
+
+    #view-mobile {
+        display: block;
+    }
+
+    h5 {
+        margin-left: 2px;
+    }
+
+    .KFC1, .img_advert{
+        width: 100%;
+        height: auto;
+      }
+
+      .vendor-head {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+
+      .home, .vendor {
+        margin: 60px 0 20px;
+      }
 }
+
+@media screen and (max-width: 425px){
+    body {
+        margin: 0 20px 20px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+    .KFC2, #view {
+        display: none;
+    }
+    #view-mobile {
+        display: block;
+    }
+
+    .KFC1, .img_advert{
+        width: 100%;
+        height: auto;
+      }
+
+      .vendor-head {
+        font-size: 20px;
+        margin-top: -30px;
+      }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0 23px 20px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+    .KFC2, #view {
+        display: none;
+    }
+    #view-mobile {
+        display: block;
+    }
+
+    .KFC1, .img_advert{
+        width: 100%;
+        height: auto;
+      }
+
+      .vendor-head {
+        font-size: 20px;
+        margin-top: -30px;
+      }
+}
+
+
+
+
+
