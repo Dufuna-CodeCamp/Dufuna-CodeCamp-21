@@ -98,6 +98,7 @@ span {
   
   }*/
 
+
 .address {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -149,7 +150,7 @@ select {
 }
 
 .box1 {
-    border: 1px solid gray;
+    border: 2px solid gray;
     color: grey;
     margin-top: 20px;
     width: 250px;
@@ -203,10 +204,12 @@ p {
 }
 
 hr {
-    position: relative;
-    width: 1350px;
+    /*position: relative;
     left: 100px;
-    right: 100px;
+    right: 2000px;*/
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .contact h4{
@@ -241,7 +244,125 @@ hr {
     font-size: 15px;
 }
 
-/*CART POAGE*/
+/*MEDIA QUERY*/
+@media only screen and (max-width: 600px){
+    nav {
+        padding: 23px 20px;
+    }
+
+    nav ul li {
+        padding: 5px 0 0 20px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .logo, span {
+        font-size: 16px;
+    }
+
+    .introduction h1 {
+        text-align: left;
+        padding: 53px 20px 0;
+        font-size: 20px;
+    }
+
+    .food {
+        text-align: left;
+        padding: 0 20px;
+        font-size: 12px;
+    }
+
+    .address {
+        text-align: left;
+        padding:  20px;
+    }
+
+    select {
+        margin: 10px 25px 30px 20px;
+        font-size: 12px;
+    }
+
+    .interest {
+        font-family: 'Poppins', sans-serif;
+        padding: 30px 20px 10px;
+        position: relative;
+    }
+    
+    .interestbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+    
+    .box1 {
+        width: 400px;
+        padding: 20px;
+    }
+    
+    .box1 p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .box1 h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .desc{
+        padding: 60px 89px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .serve {
+        padding: 20px 89px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        line-height: 33px;
+    }
+    
+    p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    hr {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact h4{
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .handle {
+        padding-bottom: 15px;
+    }
+    
+    .copyright1 {
+         font-size: 14px;
+         line-height: 27px;
+         padding-top: 15px;
+    }
+    
+}
+
+@media only screen and (min-width: 600px){
+    select {
+        width: 80%;
+    }
+}
+
+
 
 
 
