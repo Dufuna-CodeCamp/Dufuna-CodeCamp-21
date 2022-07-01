@@ -69,6 +69,7 @@ nav li{
 
 .tag span{
 	font-weight: bold;
+	color: grey;
 }
 
 h1{
@@ -193,9 +194,4 @@ hr{
 
 .tag p{
 	font-weight: bold;
-}
-
-.tag span{
-	font-weight: bold;
-	color: grey;
 }
