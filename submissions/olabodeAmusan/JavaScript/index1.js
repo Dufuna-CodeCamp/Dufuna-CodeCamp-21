@@ -1,4 +1,6 @@
-for(let i = 1; i <= 123-7; i++){
+var num = 123-7;
+
+for(let i = 1; i <= num; i++){
     if (i % 15 === 0) {
         document.write("Software Developer" + "<br>")
     } else if (i % 5 === 0){
