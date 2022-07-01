@@ -1,10 +1,16 @@
 <?php
-    setcookie('DataBase', 'FoodBag', time()+ 3600, '/');
-  include ('connectDB.php');
+
+//  Cookie is being set 
+
+    set_cookie('DataBase', 'FoodBag', time()+ 3600, '/');
 
   if(!isset($_COOKIE['DataBase'])){
     echo 'Database';
   }
+
+//   Connecring to the database
+
+  include ('connectDB.php');
 
 
     try{
