@@ -1,0 +1,201 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	width: 90%;
+	height: 100px;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+nav ul{
+	list-style: none;
+	
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover{
+	color: #AD4C4C;
+}
+
+nav li{
+	display: inline;
+	float: right;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+#sign-up{
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	border-color: #AD4C4C;
+}
+
+#foodbag{
+	font-size: 20px;
+	position: absolute;
+	left: 0px;
+}
+
+.push {
+	position: absolute;
+	right: 0px;
+}
+
+#bag{
+	color: #AD4C4C;
+}
+
+.tag{
+	width: 90%;
+	text-align: center;
+	word-spacing: 10px;
+}
+
+.tag > p{
+	text-align: left;
+}
+
+.tag span{
+	font-weight: bold;
+}
+
+h1{
+	width: 90%;
+	text-align: left;
+	position: relative;
+	top: -25px;
+}
+
+.kfc-bucket{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+.kfc-bucket > img
+{
+	width: 3%;
+	float: left;
+}
+
+.kfc-bucket h3{
+	font-size: 18px;
+	position: relative;
+	left: 18px;
+	top: 8px;
+}
+
+.kfc-bucket > h6 {
+	float: right;
+	font-size: 14px;
+}
+
+.flex-one{
+	position: relative;
+	top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+
+.flex-one-one{
+ 	margin: 0;
+ }
+
+.everything{
+	width: 90%;
+}
+
+.chicken-rep{
+	width: 90%;
+	position: relative;
+	margin-left: 0px;
+}
+
+.chicken-rep img{
+	float: left;
+}
+
+.chicken-rep h3{
+	position: relative;
+	left: 18px;
+	top: 8px;
+}
+.flex-two{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 10px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.flex-two-two{
+	margin: 0;
+}
+
+h5{
+	border: 1px solid red;
+	width: 50%;
+	border-radius: 3px;
+	float: left;
+	margin-top: 15px;
+	padding: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+hr{
+	width: 90%;
+	position: relative;
+	top: -30px;
+}
+
+.flex-one p{
+	position: relative;
+	top: 10px;
+}
+
+.flex-one  p:nth-of-type(2) {
+	color: green;
+	position: relative;
+	top: -8px;
+	left: 222px;
+}
+
+.flex-two p{
+	position: relative;
+	top: 10px;
+}
+
+.flex-two  p:nth-of-type(2) {
+	color: green;
+	position: relative;
+	bottom: 10px;
+	left: 222px;
+}
+
+.tag p{
+	font-weight: bold;
+}
+
+.tag span{
+	font-weight: bold;
+	color: grey;
+}
