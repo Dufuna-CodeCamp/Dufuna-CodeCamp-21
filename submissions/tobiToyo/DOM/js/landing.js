@@ -7,7 +7,7 @@ let locationVal = document.getElementById('locate');
 
 // MAKE THE INTEREST ITEMS HIGHLIGHTED AND CLICKABLE
 
-const validateLocation = (e) => {
+const validateLocation = () => {
     let highlighted = document.getElementById('highlighted-grid');
     let greyedOut = document.getElementById('interest-grid');
     highlighted.style.display = "grid";
