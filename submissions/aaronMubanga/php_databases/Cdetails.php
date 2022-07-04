@@ -1,14 +1,15 @@
 <?php
 
-//  Cookie is being set 
-
-    set_cookie('DataBase', 'FoodBag', time()+ 3600, '/');
+    setcookie('DataBase',' $id', time()+ 3600, '/');
 
   if(!isset($_COOKIE['DataBase'])){
-    echo 'Database';
+    echo (Database);
   }
 
-//   Connecring to the database
+//   function Corder(id){
+//     header(location: './task2/customers.php');
+//     $sql = "SELECT * FROM orders WHERE id = '$id'";
+//   }
 
   include ('connectDB.php');
 
@@ -35,10 +36,23 @@
         table,td,tr,th {
             border-collapse: collapse;
             border: 1px solid #000;
+            text-align: center;
         }
 
         td{
             width: 10em;
+        }
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        input{
+            border: unset;
+            background-color: #fff;
+            text-align: center;
+            padding: 0;
         }
 
 
@@ -54,17 +68,21 @@
                 <th>Email Address</th>
                 <th>Created At</th>
                 <th>Action</th>
+                <th>More Details</th>
             </thead>
 
             <tbody>
                 <?php while ($row = $result->fetch()): ?>
-                    <tr>
-                        <td><?= $row['id'] ?></td>
-                        <td><?= $row['full_name'] ?></td>
-                        <td><?= $row['email_address'] ?></td>
-                        <td><?= $row['created_at'] ?></td>
-                        <td><?= $row['actions'] ?></td>
-                    </tr>
+                    <form action="customers.php" method="post">
+                        <tr>
+                            <td><input type='text' name='id' value='<?= $row['id'] ?>' /></td>
+                            <td><?= $row['full_name'] ?></td>
+                            <td><?= $row['email_address'] ?></td>
+                            <td><?= $row['created_at'] ?></td>
+                            <td><?= $row['actions'] ?></td>
+                            <td><input type="submit" class="submit" value="View <?= $row['full_name'] ?>'s order"></input></td>
+                        </tr>
+                    </form>
                 <?php endwhile; ?>
             </tbody>
         </table>
