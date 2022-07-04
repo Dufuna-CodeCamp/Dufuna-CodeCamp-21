@@ -17,7 +17,7 @@ for (let i = 1; i <= num; i++) {
     }
     
     else {
-        document.write(i);
+        document.write(" " + i +'</br>' );
     }
     
 }
