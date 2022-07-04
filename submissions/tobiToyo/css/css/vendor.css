@@ -294,7 +294,7 @@ hr {
     padding-right: 25px;
     border: none;
     border-radius: 3px;
-    display: flex;
+    
     flex-direction: row;
     align-items: center;
 }
