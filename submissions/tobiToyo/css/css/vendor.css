@@ -86,7 +86,10 @@ body{
 #right-head {
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
+    /* width: 30%; */
+    /* border: 1px solid; */
+    }
 
 a {
     text-decoration: none;
@@ -215,9 +218,25 @@ hr {
 
 
 /* Peculiar to the Vendor Page */
+#cart-link {
+    position: relative;
+    /* border: 1px solid; */
+}
+
+#cart-notify {
+    display: none;
+    background-color: #AD4C4C;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 33px;
+}
+
 #navigation {
     position: fixed;
-    top: 80px;
+    top: 82px;
     z-index: 1;
     background: white;
     width: calc(100vw - 200px);
@@ -286,6 +305,10 @@ hr {
     
 }
 
+.buttons {
+    display: inline-block;
+}
+
 .clicked-btn {
     display: none;
     background-color: #A5A5A5;
@@ -312,6 +335,10 @@ hr {
     #header, #navigation {
         width: calc(100vw - 100px);
     }
+
+    /* #right-head {
+        width: 50%;
+    } */
 }
 
 @media screen and (max-width: 425px) {
@@ -346,6 +373,14 @@ hr {
 
     #header {
         width: calc(100vw - 40px);
+    }
+
+    /* #right-head {
+        width: 45%;
+    } */
+
+    #cart-notify {
+        left: 20px;
     }
 
     #navigation {
