@@ -12,7 +12,7 @@ html{
 body{
     /* width: 90vw; */
     margin: 0 100px 20px;
-    background: #E5E5E5;
+    background: white
 }
 
 .interest p, .font14 {
@@ -70,7 +70,7 @@ body{
 }
 
 #header {
-    background: #E5E5E5;
+    background: white;
     width: calc(100vw - 200px);
     position: fixed;
     top: 0;
@@ -217,9 +217,9 @@ hr {
 /* Peculiar to the Vendor Page */
 #navigation {
     position: fixed;
-    top: 75px;
+    top: 80px;
     z-index: 1;
-    background: #E5E5E5;
+    background: white;
     width: calc(100vw - 200px);
     padding: 7px 0;
 }
@@ -277,11 +277,26 @@ hr {
     float: right;
 }
 
-.vendor-grid button{
+.vendor-grid-button{
     color: #AD4C4C;
     padding: 8px 20px;
     border: 1px solid #AD4C4C;
     border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.clicked-btn {
+    display: none;
+    background-color: #A5A5A5;
+    color: white;
+    padding: 3px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 3px;
+    
+    flex-direction: row;
+    align-items: center;
 }
 
 .view-mobile {
