@@ -13,55 +13,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Sarabun:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./landing-page.css">
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        .btn:hover {
-            background-color: #fff;
-        }
-
-        .navbar {
-            margin-top: -16px;
-        }
-
-        .form-control:focus {
-            border-color: #AD4C4C;
-            box-shadow: inset 0 1px 1px #AD4C4C, 0 0 8px #AD4C4C;
-        }
-
-        @media screen and (min-width:320px) and (max-width:768px) {
-
-            ul,
-            .btn,
-            .text-body {
-                font-size: 12px;
-            }
-
-            .navbar {
-                width: 50%
-            }
-        }
-
-        @media screen and (min-width:769px) {
-            .navbar {
-                width: 25%
-            }
-        }
-    </style>
-
 </head>
 
-<body style="font-family: Poppins">
+<body>
     <div class="container mt-5">
         <!-- Company logo and page navigation links -->
-        <header class="row justify-content-between ml-1 mr-1">
+        <header class=" d-flex justify-content-between ml-1 mr-1">
             <div class="w-25">
-                <p class="text-body">Food<span style="color:#AD4C4C;">Bag</span></p>
+                <p class="text-body h5">Food<span>Bag</span></p>
             </div>
-            <nav class="navbar navbar-expand justify-content-between ">
-                <ul class="navbar-nav justify-content-between w-100 ">
+            <nav class="navbar navbar-expand justify-content-end">
+                <ul class="navbar-nav d-flex justify-content-between w-100">
                     <li class="nav-item">
                         <a href="#" class="nav-link text-secondary">Cart</a>
                     </li>
@@ -69,8 +36,7 @@
                         <a href="#" class="nav-link text-secondary">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><input type="button" value="Sign up" class="btn"
-                                style="color: #AD4C4C; border: 1px solid#AD4C4C; margin-top: -5px"></a>
+                        <a href="#" class="nav-link"><input type="button" value="Sign up" class="btn"></a>
                     </li>
                 </ul>
             </nav>
@@ -78,18 +44,18 @@
 
         <main>
             <!-- Food ordering section -->
-            <section id="make-order">
+            <section>
                 <div class="w-100 d-flex flex-column align-items-center mt-5">
                     <h1 class="text-dark">FoodBag</h1>
                     <p class="text-secondary">Anything food, we have you covered.</p>
                 </div>
 
                 <form action="#" method="post" enctype="multipart/form-data">
-                    <label for="location" class="fs-5">
+                    <label for="location" class=" fs-5 mb-2">
                         Where are you?
                     </label>
-                    <div class="w-100 input-group input-group-lg mb-4">
-                        <input class="form-control w-100" type="text" name="location" id="location"
+                    <div class=" input-group input-group-lg mb-4">
+                        <input class="form-control" type="text" name="location" id="location"
                             placeholder="Enter your delivery address" list="location-list">
                     </div>
                     <datalist id="location-list">
@@ -115,8 +81,8 @@
                         <option value="Ibeju-Lekki"></option>
                     </datalist>
 
-                    <label for="interest" class="fs-5 mb-4">Pick an interest</label>
-                    <div class="w-100 d-lg-flex justify-content-between  mb-5">
+                    <label for="interest" class=" fs-5 mb-2">Pick an interest</label>
+                    <div class=" d-lg-flex justify-content-between  mb-5">
                         <div class="shadow-sm mb-2 border p-2">
                             <a href="#" class="text-decoration-none">
                                 <input href="#" type="image" src="../images/fast-food_disabled.svg" alt="fast food">
@@ -151,21 +117,21 @@
             </section>
             <!-- Service procedure -->
             <section>
-                <div class="w-100 d-flex flex-column align-items-center mt-5">
+                <div class="w-100 d-flex flex-column align-items-center mt-5 mb-5">
                     <h2 class="fw-bold fs-1 text-dark">How we serve you</h2>
                 </div>
                 <div class="d-lg-flex w-100 justify-content-between">
-                    <div class="w-25-lg text-center">
+                    <div class="w-lg-25 text-center">
                         <img src="../images/Illustration_1.svg" alt="man checking location">
                         <p class="text-secondary fs-4">Tell us where you are</p>
                         <p class="text-black-50 fs-5">Set the location you want <br> us to deliver.</p>
                     </div>
-                    <div class="w-25-lg text-center">
+                    <div class="w-lg-25 text-center">
                         <img src="../images/illustration_2.svg" alt="fastfood">
                         <p class="text-secondary fs-4">Tell us what you want</p>
                         <p class="text-black-50 fs-5">Browse the type of food that <br> interests you.</p>
                     </div>
-                    <div class="w-25-lg text-center">
+                    <div class="w-lg-25 text-center">
                         <img src="../images/illustration_3.svg" alt="delivery man on scooter">
                         <p class="text-secondary fs-4">We'll come running</p>
                         <p class="text-black-50 fs-5">Your order will be delivered to <br> you in no time.</p>
@@ -191,7 +157,7 @@
                     </a>
                 </div>
             </nav>
-            <div class="d-lg-flex w-100 justify-content-between">
+            <div class="  d-lg-flex w-100 justify-content-between">
                 <div>
                     <a href="#" class="text-decoration-none text-secondary text-center">
                         <p>Terms & Conditions . Privacy Policy</p>
@@ -204,7 +170,6 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../DOM/Landing-page/landing-page.js"></script>
 </body>
 
 </html>

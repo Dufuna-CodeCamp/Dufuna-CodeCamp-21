@@ -1,0 +1,216 @@
+*{
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	width: 90%;
+	height: 100px;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+nav ul{
+	list-style: none;
+	
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover{
+	color: #AD4C4C;
+}
+
+nav li{
+	display: inline;
+	float: right;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+#sign-up{
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	border-color: #AD4C4C;
+}
+
+#foodbag{
+	font-size: 20px;
+	position: absolute;
+	left: 0px;
+}
+
+.push {
+	position: absolute;
+	right: 0px;
+}
+
+.motto{
+	text-align: center;
+	margin-top: 50px;
+	width: 90%;
+	color: grey;
+}
+
+.motto h1{
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 45px;
+}
+
+.motto p{
+	font-size: 18px;
+}
+
+#bag{
+	color: #AD4C4C;
+}
+
+.location{
+	margin-top: 60px;
+	width: 90%;
+	text-align: center;
+}
+
+.location h3{
+	text-align: left;
+	line-height: 2;
+	font-size: 20px;
+	font-weight: 520;
+}
+
+select{
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	font-size: 18px;
+	padding: 8px;
+}
+
+.flex-img {
+	margin-top: 40px;
+	width: 90%;
+}
+
+.flex-img h3{
+	font-size: 23px;
+}
+
+.flexing div{
+	display: inline-block;
+	border: 1px solid grey;
+	box-shadow: 0 0 3px 1.5px grey;
+	width: 295px; height: 180px;
+	padding: 30px;
+	border-radius: 5px;
+	margin: 0;
+	padding-bottom: 50px;
+	font-size: 16px;
+}
+
+.flexing div p:first-child{
+	color: #AD4C4C;
+}
+
+.flexing{
+	display: flex;
+	justify-content: space-between;	
+}
+
+.disabled{
+	color: #AD4C4C;
+}
+
+hr{
+	margin-top: 50px;
+}
+
+.service h2{
+	font-size: 30px;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.illustration div{
+	margin: 0;
+	text-align: center;
+	font-size: 23px;
+}
+
+.illustration{
+	display: flex;
+	justify-content: space-between;
+	color: grey;
+}
+
+.#AD4C4Cuce{
+	font-size: 17.5px;
+}
+
+footer{
+	text-align: center;
+	padding-bottom: 100px;
+
+}
+
+footer h4{
+	padding-top: 3em;
+	color: grey;
+	font-size: 17.5px;
+	margin-bottom: 15px;
+}
+
+#pos1{
+	float: left;
+	margin-left: 0px;
+}
+
+#pos2{
+	float: right;
+	margin-right: 0px;
+}
+
+.footer-block{
+	margin-top: 20px;
+	color: grey;
+}
+
+.flex-sec{
+	display: flex;
+	width: 12%;
+}
+
+@media (max-width: 991px){
+	.illustration {
+	  display: flex;
+	  flex-wrap: wrap;
+}
+
+div #first-drop{
+	position: relative;
+	left: 33%;
+}
+
+.flex-sec{
+	display: block;
+	width: 12%;
+}
+
+.footer-block{
+	display: flex;
+/*	justify-content: center;
+*/}
+
+}
+
+	
+
+
+
+

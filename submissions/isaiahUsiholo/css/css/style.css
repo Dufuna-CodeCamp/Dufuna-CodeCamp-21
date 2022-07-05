@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 10px;
+    border: 2;
+    box-sizing: border-box;
+    line-height: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.pseudo::after {
+    content: "Bag" ;
+    color: crimson;
+}
+
+h5, p, a {
+    color: gray;
+    text-decoration: none;
+}
+p {
+    font-size: x-small;
+}
+
+.button {
+    background-color: white;
+    padding: 3px;
+    color: red;
+    margin: 0%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(220, 24, 24, 0.5);
+}
+
+.banner {
+    height: 90px;
+    position: relative;
+}
+div h4, div nav {
+    display: inline-block;
+}
+
+div nav {
+    position: absolute;
+    right: 10px;
+}
+
+.header {
+    text-align: center;
+    color: gray;
+}
+
+.form {
+    width: 100%;
+}
+
+
+
+.one, .two, .three, .four {
+    margin-top: 3px;
+    margin-right: 3px;
+    padding: 5px;
+    border: 1.8px solid rgba(159, 153, 153, 0.5);
+    border-radius: 3px;
+    float: left;
+    height: 160px;
+    width: 24.5%;
+}
+
+
+
+.sub {
+    clear: both;
+    margin-top: 150px;
+}
+
+.sub h4 {text-align: center;
+
+}
+
+.five {
+    float: left;
+    height: 350px;
+    width: 32.3%;
+    margin-right: 3px;
+    border: 1.8px gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.six {
+    float: left;
+    height: 350px;
+    width: 32.3%;
+    margin: 3px;
+    border: 1.8px gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.seven {
+    float: left;
+    height: 350px;
+    margin: 3px;
+    width: 32.3%;
+    border: 1.8px gray;
+    padding: 10px;
+    text-align: center;
+
+}
+
+footer {
+    clear: both;
+    height: 30vh;
+    position: relative;
+}
+    
+.nine {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+.eight p {
+    text-align: center;
+}
+
+.ten {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+
+p:nth-of-type(2) {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
