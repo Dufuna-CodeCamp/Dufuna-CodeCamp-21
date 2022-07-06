@@ -22,3 +22,4 @@ productList.forEach((product) => {
 });
 
 console.log(productList);
+
