@@ -1,6 +1,8 @@
 Hello!
 
-My name is Toluwalope Victoria Adeti-Toyo and I am a software engineer.
+My name is Toluwalope Victoria Adeti-Toyo.
+
+I am a software engineer.
 
 I am currently learning full stack web development in the Dufuna Code Camp.
 
