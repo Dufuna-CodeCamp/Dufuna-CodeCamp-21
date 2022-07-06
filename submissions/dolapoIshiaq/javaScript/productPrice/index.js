@@ -21,4 +21,6 @@ var productList = [
 productList.forEach(item => {
         document.write(`${item.productName} with ${item.imageUrl} is sold for ${item.productPrice} <br><br>`);
     });
+
+    
     
