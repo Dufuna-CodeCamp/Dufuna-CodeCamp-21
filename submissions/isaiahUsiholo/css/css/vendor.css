@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+body {
+    padding-bottom: 5vh;
+}
+.header {
+    margin: 0;
+    padding: 4vw ;
+    width: 100vw;
+    height: 28vh;
+    position: relative;
+}
+.header .pseudo::after {
+    content: "Bag";
+    font-weight: bold;
+    color: crimson;
+}
+
+nav {
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+button {
+    background-color: #fff;
+    color: red;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+.topone {
+    position: absolute;
+    top: 17vh;
+}
+.toptwo {
+    position: absolute;
+    top: 24vh;
+}
+section {
+    margin-top: -5vh;
+    padding: 4vw;
+    width: 100vw;
+    height: 330px;
+    position: relative;
+}
+.subhead {
+    height: 60px;
+    position: relative;
+}
+h5 {
+
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.view {
+    color: crimson;
+    position: absolute;
+    top: 4vh;
+    right: 4vh;
+}
+div {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+    height: 220px;
+    float: left;
+    width: 25% auto;
+    font-size: small;
+    position: relative;
+}
+.text {
+    font-size: 0.7rem;
+    padding: 2px;
+}
+
+.price {
+    color: rgb(129, 193, 27);
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+.cart {
+    background-color: #fff;
+    color: red;
+    padding: 5px 12px;
+    border: 1px solid red;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 2px;
+}
+.kfc img {
+    width: inherit;
+}
+.subhead {
+    clear: both;
+}
+hr{
+    clear: both;
+}
+.two {
+    margin-top: -10px;
+    padding: 4vw;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 330px;
+    position: relative;
+}
