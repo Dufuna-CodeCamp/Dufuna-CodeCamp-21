@@ -1,19 +1,17 @@
-let value;
+let positiveDifference = 123 - 7;
 
-for (let i = 1; i <= 116; i++) {
-    let string = "";
-    value = i;
+for (let i = 1; i <= positiveDifference; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        document.write(`<p>Software Developer</p>`);
+    }
+    else if (i % 5 === 0) {
+        document.write(`<p>Developer</p>`);
+    }
+    else if (i % 3 === 0) {
+        document.write(`<p>Software</p>`);
+    } else {
+        document.write(`<p>${i}</p>`);
+    }
 
-    if (i % 3 ===0) {
-        string = "Software"
-    }
-    if (i % 5 ===0) {
-        string = "Developer"
-    }
-    if (i % 3 ===0 && i % 5=== 0) {
-        string = "Software Developer"
-    }
-    value = (string) ? string : value;
-    document.write(`<p>${value}</p>`)
 }
 
