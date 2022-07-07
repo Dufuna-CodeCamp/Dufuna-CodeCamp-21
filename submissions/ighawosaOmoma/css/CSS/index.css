@@ -4,9 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin-bottom: 50px;
-}
 .container{
     max-width: 90vw;
     margin:40px auto;
