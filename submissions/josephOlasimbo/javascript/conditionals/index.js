@@ -15,4 +15,6 @@ for (let i =1; i<=116; i++) {
     }
     value = (string) ? string : value;
     document.write(`<p>${value}</p>`)
+
+    
 }
