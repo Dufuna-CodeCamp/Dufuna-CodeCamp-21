@@ -10,7 +10,7 @@ var firstTitle = document.getElementsByClassName("firstTitle")
 
 
     //ADDED EVENTLISTENER TO SELECT
-    select.addEventListener('click', function (e) {
+    select.addEventListener('click', function () {
 
     if (select.selectedIndex >= 1) {
 
@@ -42,13 +42,14 @@ var firstTitle = document.getElementsByClassName("firstTitle")
 
 //ADDED EVENT LISTENER TO SELECT, TO TOGGLE THE TITLE COLOR WHEN I CLICK ON A LOCATION
 
-select.addEventListener('click', function (e) {
+select.addEventListener('click', function () {
 
     if (select.selectedIndex >= 1) {
         for (let i = 0; i < firstTitle.length; i++) {
             firstTitle[i].classList.toggle("toggleTitle")
 
         }
+    //ADDED HOVER TO THE BOXES WHEN HIGHLIGHTED    
         for (let i = 0; i < box1.length; i++) {
             box1[i].classList.toggle("boxes")
             
