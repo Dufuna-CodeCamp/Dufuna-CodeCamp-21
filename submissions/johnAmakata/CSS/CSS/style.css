@@ -59,7 +59,7 @@ nav a, h3{
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
     border-radius: 3px;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 5px;
     font-weight: bold;
 }
 
@@ -69,7 +69,7 @@ nav a, h3{
 /* section one*/
 .section1, .section4{
     text-align:center;
-    margin: 70px 0px 60px 0px;
+    margin: 70px 0px 60px;
 }
 
 .section1 h2, .section4 h2{
@@ -143,11 +143,11 @@ select {
 /*Contact*/
 .section5{
     text-align:center;
-    margin: 40px 0px 10px 0px;
+    margin: 40px 0px 10px;
 }
 .section5 li{
     display: inline-block;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 /*==============================================================================================>*/
