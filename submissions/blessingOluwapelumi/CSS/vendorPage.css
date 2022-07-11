@@ -194,7 +194,7 @@ nav a {
 
 @media screen and (min-width: 481px) and (max-width:992px) {
     body {
-        padding: 5% 5% 10% 5%;
+        padding: 5% 5% 10%;
         font-family: 'Poppins';
     }
 
@@ -250,7 +250,7 @@ nav a {
 
 @media screen and (min-width:993px) and (max-width:1400px) {
     body {
-        padding: 3% 5% 8% 5%;
+        padding: 3% 5% 8%;
     }
 
     #logo {
