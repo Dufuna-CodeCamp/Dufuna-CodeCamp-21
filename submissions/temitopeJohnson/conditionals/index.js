@@ -1,14 +1,13 @@
-var x,
-    y,
-    d3,
-    d5,
-    list =[];
+var x,  /*the lower end number*/
+    y,  /*the positive difference*/
+    d3, /*the modulus of 3*/
+    d5, /*a list of the numbers between x and y*/
 
 y = 123 - 7;
 
 for (x = 1; x <= y; x++) {
-    list.push(x);
-    document.write(list);
+    list.push(x); /*adds each number from x to y to list*/
+    document.write(list); /*prints out the list*/
 }
 
 for (x = 1; x <= y; x++) {
