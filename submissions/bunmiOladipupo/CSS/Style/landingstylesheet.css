@@ -9,7 +9,7 @@ div{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
-    margin: 30px 60px 100px 60px;
+    margin: 30px 60px 100px;
 }
 h5 {
     margin: 5px;
@@ -35,12 +35,12 @@ h6 {
     border-radius: 2px;
 }
 section {
-    margin: 0px 60px 60px 60px;
+    margin: 0px 60px;
 }
 select {
     width: 1080px;
     height: 50px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
 }
 button {
     border-color: red;
