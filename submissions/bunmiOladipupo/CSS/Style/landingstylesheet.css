@@ -1,0 +1,63 @@
+a {
+    color: grey;
+    text-decoration: none;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    margin: 30px 60px 100px 60px;
+}
+h5 {
+    margin: 5px;
+    font-size: 15px;
+    width: 400px;
+}
+h6 {
+    margin: 5px;
+    font-size: 12px;
+    width: 180px;
+    font-weight: lighter;
+}
+.left {
+    float: left;
+    margin: 10px;
+}
+.trp {
+    margin: 10px;
+    float: left;
+    padding: 17px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 2px;
+}
+section {
+    margin: 0px 60px 60px 60px;
+}
+select {
+    width: 1080px;
+    height: 50px;
+    margin: 20px 0px 20px 0px;
+}
+button {
+    border-color: red;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    margin: 25px 0px 0px;
+}
+button:hover {
+    background: darkorange;
+}
+.header {
+    width: 90%;
+    background-color: #fff;
+    top: 0%;
+    float: right;
+    position: fixed;
+}
