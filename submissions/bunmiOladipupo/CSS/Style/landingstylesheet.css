@@ -5,9 +5,6 @@ a {
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-div{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
 html{
     margin: 30px 60px 100px;
 }
@@ -24,15 +21,16 @@ h6 {
 }
 .left {
     float: left;
-    margin: 10px;
+    display: block; 
+    margin: 30px 10px 50px;
 }
 .trp {
-    margin: 10px;
     float: left;
     padding: 17px;
     border: 1px solid grey;
     background-color: white;
     border-radius: 2px;
+    margin: 15px;
 }
 section {
     margin: 0px 60px;
@@ -41,6 +39,8 @@ select {
     width: 1080px;
     height: 50px;
     margin: 20px 0px;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 button {
     border-color: red;
@@ -60,4 +60,83 @@ button:hover {
     top: 0%;
     float: right;
     position: fixed;
+}
+#headerh1 {
+    margin: 30px 0px;
+    font-size: 25px;
+}
+.navbar {
+    float: right; 
+    margin: -90px 30px 0px 0px; 
+    word-spacing: 40px; 
+    font-size: 20px;"
+}
+#signupcolor {
+    color: #f00;
+}
+#foodbag {
+    color: #000;
+}
+#foodbagtag {
+    font-size: 15px; 
+    color: grey; 
+    font-weight: lighter;
+}
+#loc {
+    font-weight:bold; 
+    font-family:Verdana;
+}
+#pick {
+    font-size: 14px;
+}
+.fre {
+    margin: 0px 0px 0px -10px;
+}
+#ff5,#f5,#fff5,#g5 {
+    font-size: 10px; 
+    width: 200px;
+}
+#ff6,#f6,#fff6,#g6 {
+    font-size: 8px; 
+    width: 150px;
+}
+hr {
+    opacity: 0.3;
+}
+#a5 {
+    margin: 15px 0px 0px -200px;
+}
+#a6 {
+    margin: 20px;
+}
+#b5 {
+    color: grey;
+}
+#b6,#bb5,#bb6,#bbb5,#bbb6,#l1,#gr1,#q1 {
+    color: grey;
+}
+#aa5 {
+    margin: 15px 0px;
+}
+#aa6 {
+    margin: 20px 0px;
+}
+#aaa5 {
+    margin: 15px 0px;
+}
+#aaa6 {
+    margin: 18px -10px 0px 0px;
+}
+#im1,#im2,#im3 {
+    margin: 8px;
+}
+#sp,#sp1 {
+    font-size: 12px;
+}
+#gr2 {
+    float: right; 
+    color: grey;
+}
+#red {
+    color: red;
 }

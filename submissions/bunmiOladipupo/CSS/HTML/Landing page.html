@@ -10,94 +10,100 @@
     <body>
         <div class="header">
             <div class="logo">
-            <h1 style="margin: 30px 0px;"><strong style="font-size: 25px;">Food<span style="color: #f00;">Bag</span></strong></h1>
+            <h1 id="headerh1"><strong>Food<span id="red">Bag</span></strong></h1>
             </div>
-            <nav class="navbar" style="float: right; margin: -60px 30px 0px 0px; word-spacing: 40px; font-size: 20px;">
+            <nav class="navbar">
                 <a href="#">Cart</a>
                 <a href="#">Login</a>
-                <button><a href="#"><span style="color: #f00;">Sign up</span></a></button>
+                <button><a href="#"><span id="signupcolor">Sign up</span></a></button>
             </nav>
         </div><br><br><br><br><br><br><br>
         <div class="middle" align="center">
-            <h1 style="color: #000;">FoodBag</h1>
-            <h2 style="font-size: 15px; color: grey; font-weight: lighter;">Anything food, we have you covered.</h2><br><br><br>
+            <h1 id="foodbag">FoodBag</h1>
+            <h2 id="foodbagtag">Anything food, we have you covered.</h2><br><br><br>
         </div>
         <div>
-            <label for="location" style="font-weight:bold; font-family:Verdana;">Where are you?</label><br>
-            <select name="location" id="location" style="border-radius: 5px;">
-                <option value="label" style="font-family:Verdana, Geneva, Tahoma, sans-serif";><span style="color: grey;">Enter your delivery address</span></option>
-                <option value="lagos" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Lagos</option>
-                <option value="ibadan" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Ibadan</option>
-                <option value="ph" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Port-Harcourt</option>
-                <option value="abuja" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Abuja</option>
-                <option value="calabar" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Calabar</option>
-                <option value="kano" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Kano</option>
-                <option value="kaduna" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Kaduna</option>
-                <option value="jos" style="font-family:Verdana, Geneva, Tahoma, sans-serif";>Jos</option>
+            <label for="location" id="loc">Where are you?</label><br>
+            <select name="location" id="location">
+                <option value="label"><span id="q1">Enter your delivery address</span></option>
+                <option value="lagos">Lagos</option>
+                <option value="ibadan">Ibadan</option>
+                <option value="ph">Port-Harcourt</option>
+                <option value="abuja">Abuja</option>
+                <option value="calabar">Calabar</option>
+                <option value="kano">Kano</option>
+                <option value="kaduna">Kaduna</option>
+                <option value="jos">Jos</option>
             </select>
         </div>
         <div>
-            <h2 style="font-size: 14px;">Pick an interest</h2>
-            <div align="right" style="margin: 0px 0px 0px -10px;">
+            <h2 id="pick">Pick an interest</h2>
+            <div class="fre" align="right">
                 <a href="#">
-                    <section class="trp" width="550px" align="left" style="margin: 15px;">
+                    <section class="trp" width="550px" align="left">
                         <img src="../Asset/fast-food_disabled.svg" width="50px">
-                        <h5 style="font-size: 10px; width: 200px;">Fast food</h5>
-                        <h6 style="font-size: 8px; width: 150px;">All sorrows are less with bread</h6>
+                        <h5 id="ff5">Fast food</h5>
+                        <h6 id="ff6">All sorrows are less with bread</h6>
                     </section>
                 </a>
                 <a href="#">
-                    <section class="trp" width="550px" align="left" style="margin: 15px;">
+                    <section class="trp" width="550px" align="left">
                         <img src="../Asset/Vegetables & Drinks_disabled.svg" width="50px">
-                        <h5 style="font-size: 10px; width: 200px;">Vegetables & Fruits</h5>
-                        <h6 style="font-size: 8px; width: 150px;">May not want it, but good for you</h6>
+                        <h5 id="f5">Vegetables & Fruits</h5>
+                        <h6 id="f6">May not want it, but good for you</h6>
                     </section>
                 </a>
                 <a href="#">
-                    <section class="trp" width="550px" align="left" style="margin: 15px;">
+                    <section class="trp" width="550px" align="left">
                         <img src="../Asset/Drinks & Cocktails_disabled.svg" width="50px">
-                        <h5 style="font-size: 10px; width: 200px;">Drinks & Cocktails</h5>
-                        <h6 style="font-size: 8px; width: 150px;">I feel sad for those who don't drink</h6>
+                        <h5 id="fff5">Drinks & Cocktails</h5>
+                        <h6 id="fff6">I feel sad for those who don't drink</h6>
                     </section>
                 </a>
                 <a href="#">
-                    <section class="trp" width="550px" align="left" style="margin: 15px;">
+                    <section class="trp" width="550px" align="left">
                         <img src="../Asset/resturant_disabled.svg" width="50px">
-                        <h5 style="font-size: 10px; width: 200px;">Restaurants</h5>
-                        <h6 style="font-size: 8px; width: 150px;">All sorrows are less with bread</h6>
+                        <h5 id="g5">Restaurants</h5>
+                        <h6 id="g6">All sorrows are less with bread</h6>
                     </section>
                 </a>
             </div>
         </div><br><br><br><br><br><br><br><br><br><br><br><br>
-        <hr style="opacity: 0.3;"><br><br>
+        <hr><br><br>
         <div>
             <h1 align="center">How we serve you</h1>
             <div class="del" align="right">
-                <section class="left" style="width: 200px; margin: 30px 10px 50px;">
+                <a href="#">
+                    <section class="left">
                     <img src="../Asset/Illustration_1.svg" width="200px"><br>
-                    <h5 style="margin: 15px 0px 0px -200px;"><span style="color: grey;">Tell us where you are</span></h5>
-                    <h6 align="center" style="margin: 20px;"><span style="color: grey;">Select the location you want us to deliver.</span></h6>
-                </section>
-                <section class="left" style="display: block; margin: 30px 10px 50px;">
+                    <h5 id="a5"><span id="b5">Tell us where you are</span></h5>
+                    <h6 align="center" id="a6"><span id="b6">Select the location you want us to deliver.</span></h6>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="left">
                     <img src="../Asset/illustration_2.svg" width="200px"><br>
-                    <h5 style="margin: 15px 0px;"><span style="color: grey;">Tell us what you want</span></h5>
-                    <h6 align="center" style="margin: 20px 0px;"><span style="color: grey;">Browse the type of food that interests you.</h6>
-                </section>
-                <section class="left" style="display: block; margin: 30px 10px 50px;">
+                    <h5 id="aa5"><span id="bb5">Tell us what you want</span></h5>
+                    <h6 align="center" id="aa6"><span id="bb6">Browse the type of food that interests you.</h6>
+                    </section>
+                </a>
+                <a href="#">
+                    <section class="left">
                     <img src="../Asset/illustration_3.svg" width="200px"><br>
-                    <h5 style="margin: 15px 0px;"><span style="color: grey;">We'll come running</span></h5>
-                    <h6 align="center" style="margin: 18px -10px 0px 0px;"><span style="color: grey;">Your order will be delivered to you in no time.</h6>
-                </section><br>
+                    <h5 id="aaa5"><span id="bbb5">We'll come running</span></h5>
+                    <h6 align="center" id="aaa6"><span id="bbb6">Your order will be delivered to you in no time.</h6>
+                    </section><br>
+                </a>
             </div><br>
         </div><br>
     </body><br><br><br><br><br>
-    <footer><br><br><br><br><br><br><br><br><br><br><br><br><hr style="opacity: 0.3;"><br><br><br><br><br><br>
+    <footer><br><br><br><br><br><br><br><br><br><br><br><br><hr><br><br><br><br><br><br>
         <div class="foot" align="center">
-            <h1 style="font-size: 12px;"><span style="color: grey;">Contact us</span></h1>
-            <img src="../Asset/twitter 2.svg" style="margin: 8px;">
-            <img src="../Asset/youtube 1.svg" style="margin: 8px;">
-            <img src="../Asset/facebook-f 1.svg" style="margin: 8px;">
+            <h1 id="sp"><span id="l1">Contact us</span></h1>
+            <a href="#"><img src="../Asset/twitter 2.svg" id="1m1"></a>
+            <a href="#"><img src="../Asset/youtube 1.svg" id="1m2"></a>
+            <a href="#"><img src="../Asset/facebook-f 1.svg" id="1m3"></a>
         </div><br><br><br><br>
-        <h2 style="font-size: 12px;"><span style="color: grey;" align="left">Terms & Conditions. Privacy Policy</span><span style="float: right; color: grey;">&copy; Copyright 2021 FoodBag is a registered trademark</span></h2>
+        <h2 id="sp1"><span id="gr1" align="left">Terms & Conditions. Privacy Policy</span><span id="gr2">&copy; Copyright 2021 FoodBag is a registered trademark</span></h2>
     </footer>
 </html>
