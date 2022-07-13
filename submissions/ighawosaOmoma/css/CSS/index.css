@@ -109,7 +109,8 @@ select{
     padding: 20px;
     display: flex;
     justify-content:space-between;
-    margin-bottom: 110px;
+    border-bottom:solid 1px  #E6E6E6;
+    margin-bottom: 70px;
     text-align: center;
 }
 .how-we-serve div{
@@ -127,7 +128,7 @@ select{
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    margin:10px 40px;
+    margin:40px;
 }
 .contact >h5, .socials{
     text-align: center;
@@ -152,4 +153,26 @@ footer > span{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 70px;
+}
+
+@media screen and (max-width:660px) {
+    .foodbag{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .interest, .how-we-serve, footer{
+        flex-direction: column;
+    }
+    .how-we-serve {
+        margin-bottom: 50px;
+    }
+    footer span {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer span:nth-of-type(2){
+        line-height: 27px;
+        margin: 10px 40px 30px 60px;    
+    }
+    
 }
