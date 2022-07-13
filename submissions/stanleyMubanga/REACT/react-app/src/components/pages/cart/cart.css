@@ -89,8 +89,13 @@
 .remove-cartItem {
     padding: 0.5%;
     height: 100%;
+    width: 5%;
     display: flex;
     justify-content: center;
+}
+
+.remove-cartItem img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {

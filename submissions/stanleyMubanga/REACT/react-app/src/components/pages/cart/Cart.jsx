@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import Button from "../button/Button";
+import Button from "../../button/Button";
 import './cart.css';
-import data from '../../data';
-import Header from '../header/Header'; 
-import Plus from '../../assets/plus.svg';
-import Minus from '../../assets/Minus.svg';
+import data from '../../../data'; 
+import Plus from '../../../assets/plus.svg';
+import Minus from '../../../assets/Minus.svg';
 import './cart.css';
-import Breadcrumb from '../breadcrumb/Breadcrumb';
-import Checkout from '../checkout/Checkout';
-import Close from '../../assets/close.svg';
-import Delivery from '../delivery/Delivery';
+import Breadcrumb from '../../breadcrumb/Breadcrumb';
+import Checkout from '../../checkout/Checkout';
+import Close from '../../../assets/close.svg';
+import Delivery from '../../delivery/Delivery';
 
 
 function Cart() {
@@ -105,7 +104,6 @@ function Cart() {
 
     return (
         <div className="cart">
-            <Header />
             <Breadcrumb />
             <h2 className="heading">Cart</h2>
             {
