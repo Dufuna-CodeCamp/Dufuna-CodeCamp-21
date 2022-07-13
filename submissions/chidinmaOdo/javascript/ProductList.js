@@ -13,7 +13,7 @@ let productList = [
 
     {
         productName: "iphone13",
-        imageUrl: "image/iphone12.jfif",
+        imageUrl: "image/iphone-13-pro-max-1024x683.jpeg",
         productPrice: "#395000",
     },
 ];
