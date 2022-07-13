@@ -21,7 +21,7 @@ food_id INT NOT NULL,
 name VARCHAR(255) NOT NULL,
 amount double NOT NULL,
 primary key(id), foreign key(food_id) references food_table(id),
-foreign key(admin_id) references admins_table(id),
+foreign key(admin_id) references admins_table(id)
 )
 
 
