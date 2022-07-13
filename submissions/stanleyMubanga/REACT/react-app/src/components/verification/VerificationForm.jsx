@@ -36,10 +36,6 @@ function VerificationForm(props) {
     setCardNumber(event.target.value);
   }
 
-  const handleCvcChange=(event)=> {
-    setCvc(event.target.value);
-  }
-
   const handleExpityDateChange=(event)=> {
     setExpiryDate(event.target.value);
   }
