@@ -17,7 +17,6 @@ function VerificationForm(props) {
   const [card_number, setCardNumber] = useState('');
   const [expiry_date, setExpiryDate] = useState('');
   const [cvc, setCvc] = useState('');
-  const [verification_data, setverificationData] = useState('');
   
   let goto = useNavigate();
 
