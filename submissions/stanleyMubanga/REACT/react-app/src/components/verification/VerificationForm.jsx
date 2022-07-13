@@ -16,7 +16,7 @@ function VerificationForm(props) {
   const [card_name, setCardName] = useState('');
   const [card_number, setCardNumber] = useState('');
   const [expiry_date, setExpiryDate] = useState('');
-  
+
   let goto = useNavigate();
 
   const handlePhoneChange=(event)=> {
@@ -41,7 +41,7 @@ function VerificationForm(props) {
 
   const handleSubmit = (e)=> {
     e.preventDefault();
-    if (phone_number !=="" && selectValue !=="" && card_name !=="" && card_number !=="" && expiry_date !=="" && cvc !=="" ) {
+    if (phone_number !=="" && selectValue !=="" && card_name !=="" && card_number !=="" && expiry_date !=="") {
         goto('verificationForm/VerificationForm')
     }
   }
