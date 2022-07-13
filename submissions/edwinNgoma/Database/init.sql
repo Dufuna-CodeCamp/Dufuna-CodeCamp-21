@@ -15,25 +15,15 @@ primary key(id)
 
 CREATE TABLE vendors_table (
 id INT NOT NULL auto_increment,
-<<<<<<< HEAD
 admin_id  NULL,
 food_id INT NOT NULL,
 name VARCHAR(255) NOT NULL,
 amount double NOT NULL,
-primary key(id), foreign key(food_id) references food_table(id),
+primary key(id), 
+foreign key(food_id) references food_table(id),
 foreign key(admin_id) references admins_table(id),
 )
 
-
-=======
-admin_id INT NOT NULL,
-food_id INT NOT NULL,
-name VARCHAR(255) NOT NULL,
-amount double NOT NULL,
-primary key(id), foreign key(food_id) references food_table(id)
-)
-
->>>>>>> f2c2283b0df5590e8690d2cf121e07550b2eedc8
 /* admins_table comes here */
 
 CREATE TABLE admins_table (
@@ -64,6 +54,8 @@ CREATE TABLE orders_table (
 id INT NOT NULL auto_increment,
 vendor_id VARCHAR NOT NULL,
 customer_id INT  NULL,
-primary key(id), foreign key(vendor_id) references vendors_table(id), foreign key(customer_id) references customers_table(id)
+primary key(id), 
+foreign key(vendor_id) references vendors_table(id), 
+foreign key(customer_id) references customers_table(id)
 )
 
