@@ -51,8 +51,13 @@ select * from vendor_food;
 insert into vendor_food ( admin_id, food_id, name, amount) 
 	values (2, 1, "King Bucket", "5000"), 
 		(2, 2, "Zinger Burger", "3600"), 
+        (2, 4, "Yamilicious", "900"),
+        (2, 3, "Chicken Strips", "1450"),
 		(3, 1, "Citizen Meal", "1500"), 
-		(3, 3, "Crunchy Wings", "1750");
+		(3, 3, "Crunchy Wings", "1750"),
+        (3, 2, "Refuel Max", "1200"),
+        (3, 4, "Express meal", "2000");
+        
 
 select * from vendor_food;
 
