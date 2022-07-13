@@ -6,14 +6,15 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding-bottom: 30px;
 
 }
 header ul li{
@@ -31,7 +32,7 @@ header span{
 }
 li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 10px;
     padding: 5px;
     color: #696969;
     text-transform: capitalize;
@@ -43,21 +44,21 @@ li a{
 .breadcrumb a{
     text-decoration: none;
     color: #c9c9c9;
-    font-size: 16px;
+    font-size: 14px;
 }
 .breadcrumb a:last-child{
     color: black;
 }
 .kfc-section{
-  padding-bottom: 50px;
-    border-bottom:1, solid, white;
+    padding-bottom: 30px;
+    border-bottom: 1px, solid, #c9c9c9;
 }
 
 .head{
     padding-top: 20px;
 }
 .head h5{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 45px;
 }
@@ -65,7 +66,7 @@ li a{
 .chicken{
     display: flex;
     flex-direction:column;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: space-between;
 }
 .kfc-logo,
@@ -76,27 +77,33 @@ li a{
 .kfc-logo p,
 .chicken-logo p{
     padding: 15px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
 .view p{
+    display:none
+    
+}
+.view2 p{
     color: #AD4C4C;
-    text-align: right;
-    padding-top: 20px;
-    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
     font-weight: bold;
+    display:block
+    
 }
 .kfc-list,
 .chicken-republic{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    
 }
 
 .kfc-list-box img,
 .chicken-box img{
-    width: 100%;
+    width: 320px;
 }
 
 .kfc-list .price,
@@ -120,23 +127,71 @@ li a{
 .kfc-list a,
 .chicken-republic a{
     color: #AD4C4C;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     border: 1px solid #AD4C4C;
     border-radius: 3px;
     background-color: white;
-    padding: 8px 15px;
+    padding: 8px 10px;
     text-decoration: none;
     margin-left: 6px;
 }
 
 .container{
-    padding: 50px 0;
+    padding-top: -10px;
 }
-
 .kfc-list-box,
 .chicken-box{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 
+@media screen and (min-width:992px) {
+    body{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    li a{
+        font-size: 14px;
+    }
+    .kfc-section{
+        padding-bottom: 40px;
+    }
+    .kfc-logo p,
+    .chicken-logo p{
+        font-size: 18px;
+    }
+    .view p{
+        color: #AD4C4C;
+        text-align: right;
+        padding-top: 20px;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        display:block;
+        
+    }
+    .view2 p{
+        display:none;
+    }  
+        .kfc-list,
+        .chicken-republic{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        justify-content: space-between;
+        
+    }
+
+    .kfc-list-box img,
+    .chicken-box img{
+        width: 100%;
+    } 
+    .kfc-list a,
+    .chicken-republic a{
+        font-size: 16px;
+    }
+    .container{
+        padding-top: 20px;
+    }
+}

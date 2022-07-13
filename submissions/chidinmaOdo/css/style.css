@@ -1,0 +1,420 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 100px 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0 5px;
+    align-items: center;
+    /*position: fixed;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    /*padding: 50px 100px;*/
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 0 0 50px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+nav ul li a:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+}
+#signup {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    padding: 8px 15px;
+    border-radius: 3px;
+    width: 92px;
+
+}
+
+.logo {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+span {
+    color:red;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/*INTRODUCTION*/
+.introduction h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 120px;
+    font-size: 40px;
+}
+
+.food {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/*Location*/
+/*form {
+    background-color: white;
+    border-radius: 10px ;
+    border-color: black;
+    color: black;
+    height: 120px;
+    padding: 30px -20px;
+    width: 91%;
+    max-width: 100%;
+    min-width: 200px;
+  
+  }*/
+
+
+.address {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 40px 0 10px;
+}
+
+#locate {
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    color: #696969;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+      background-color: #ffffff;
+    background-image: url("image/keyboard_arrow_down.svg");
+    background-repeat: no-repeat;
+    background-position-x: 97.6%;
+    background-position-y: 50%;
+}
+
+
+/*INTEREST*/
+#interes_header {
+    margin-top: 35px;
+}
+
+.interest {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.interestbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 20px;
+}
+
+.box1 {
+    border: 1px solid #696969;
+    color: grey;
+    margin-top: 10px;
+    width: 250px;
+    padding: 24px 30px;
+}
+
+hr {
+
+    margin: 80px auto;
+}
+
+.box1 p {
+    font-size: 12px;
+    font-weight: 400;
+}
+.box1 h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*HOW WE SERVE YOU*/
+#illustration_desc{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.serve_illustration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.image{
+    width: 95%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+
+/*hr {
+    /*position: relative;
+    left: 100px;
+    right: 2000px;*/
+   /*     width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+}
+*/
+.contact {
+    text-align: center;
+}
+.contact h4{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: -20px;
+}
+
+.handle {
+    justify-content: center;
+    text-align: center;
+     justify-content: space-between;
+     margin: 10px 30px;
+}
+
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright1 {
+    color: gray;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 768px){
+    body {
+        margin: 0 50px 10px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+    .introduction h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .food {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #locate {
+        padding: 11px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .box1 {
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    .box1 p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box1 h3 {
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .serve_illustration {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body {
+        margin: 0 20px 20px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+    .introduction h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .food {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #locate {
+        padding: 11px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .box1 {
+        margin-top: 20px;
+        width: 400px;
+    }
+    .box1 p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box1 h3 {
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .serve_illustration {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0 23px 20px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+    .introduction h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 40px;
+    } 
+
+    .food {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #locate {
+        padding: 11px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .box1 {
+        margin-top: 20px;
+        width: 400px;
+    }
+    .box1 p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box1 h3 {
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .serve_illustration {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+git st

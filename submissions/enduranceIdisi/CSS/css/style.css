@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    font-weight: 400;
+}
+
+#wrapper {
+    width: 100%;
+    height: max-content;
+    padding: 1.5rem;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+
+header h1 {
+    font-size: 1.1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    padding-right: 0.4rem;
+}
+
+#bag {
+    color: #AD4C4C;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    padding-left: 0.6rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+nav a:hover {
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    padding: 10px;
+    color: #AD4C4C;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    width: 100%;
+}
+
+.head {
+    margin-bottom: 1.5rem;
+}
+
+.head h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 60px;
+    color: #4e4d4d;
+}
+
+.h4,
+h4,
+footer {
+    color: #696969;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 45px;
+    color: #4e4d4d;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 27px;
+    color: #a5a5a5;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+form {
+    width: 100%;
+    margin: 10px;
+    font-size: 0.8rem;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.h4 {
+    font-size: 0.7rem;
+}
+
+input[list] {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    background-image: url('../images/keyboard_arrow_down.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.interest-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.interests {
+    border: 1px solid rgba(107, 95, 95, 0.452);
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 0.4rem 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.interests h4,
+.interests p,
+.a5 {
+    padding: 5px;
+    color: #a5a5a5;
+    font-weight: 400;
+}
+
+.a5 {
+    font-size: 0.8rem;
+}
+
+.second-section {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+}
+
+.second {
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+
+.foot {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.foot h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 1.2rem;
+}
+
+.foot li {
+    display: inline;
+    padding-left: 20px;
+}
+
+.foot a {
+    text-decoration: none;
+}
+
+.second p,
+.second h4 {
+    padding-left: 5px;
+}
+
+.footer li {
+    display: inline;
+
+}
+
+.footer-wrap p {
+    float: right;
+    color: #696969;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 27px;
+
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+
+}
+
+
+
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+
+    main {
+        padding: 0 2rem;
+    }
+
+    .interest-wrap {
+        flex-direction: row;
+        gap: 13px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    .second-section {
+        margin-top: 5rem;
+    }
+
+    .second-section img {
+        width: 250px;
+    }
+
+    .footer-wrap {
+        margin-top: 1.3rem;
+        flex-direction: row;
+        gap: 25%;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+
+    main {
+        padding: 0 2rem;
+    }
+
+    .interest-wrap {
+        flex-direction: row;
+        gap: 13px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    .second-section {
+        margin-top: 5rem;
+    }
+
+    .footer-wrap {
+        flex-direction: row;
+        gap: 50%;
+    }
+}
