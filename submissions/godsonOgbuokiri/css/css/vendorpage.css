@@ -137,10 +137,10 @@ body {
 	justify-content: space-between;
 }
 
-/*.card:hover {*/
+/*.card:hover {
 	border: 2px solid deepskyblue;
 }
-
+*/
 hr {
 	display: flex;
 	padding-top: 50px;
