@@ -1,0 +1,316 @@
+body {
+	width: 1345px;
+	position: relative;
+	height: 1200px;
+	background: #FFFFFF;
+	padding: 0;
+	right: 10px;
+	
+}
+nav h4 {
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 500, Medium;align-items: center;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;height: 30px;position: absolute;
+	width: 90px;display: flex;
+	left: 100px;
+	top: 50px;
+	border-radius: nullpx;
+}
+
+a:link {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {color: red;}
+a:visited {color: darkred;}
+
+nav li {
+		display: inline;
+		top: 50px;
+		text-align: right;
+		padding: 30px 5px 5px 5px;
+		color: #AD4C4C;
+		float: right;
+		line-height: 24px; 
+		margin: 50px 0px 0px 40px;
+	}
+
+button {
+	top: 50px;
+	width: 92px;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1.2px solid #AD4C4C;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-family: Poppins;
+	font-size: 16px;
+	color: #AD4C4C;
+	font-weight: 500, Medium;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+section a {
+	width: 115px;
+	height: 21px;
+	top: 172px;
+	left: 95px;
+	position: absolute;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	color: #C9C9C9;
+}
+
+section a: hover {color: black;}
+
+section p{
+	width: 115px;
+	height: 21px;
+	top: 158px;
+	left: 152px;
+	position: absolute;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;display: flex;
+	align-items: center;
+}
+section h2 {
+	position: absolute;
+	width: 171px;
+	height: 45px;
+	left: 101px;
+	top: 226px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 45px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+}
+
+.kfc-logo {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 101px;
+	top: 315px;
+}
+
+h5 {
+	position: absolute;
+	width: 39px;
+	height: 30px;
+	left: 171px;
+	top: 295px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+}
+#view-all-one {
+	height: 24px;
+	width: 62px;
+	float: right;
+	left: 1278px;
+	top: 328px;
+	position: absolute;
+	border-radius: nullpx;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0em;color: #AD4C4C;
+}
+
+.Parent-box div {
+	position: absolute;
+	width: 266.67px;
+	height: 150px;
+	top: 395px;
+	background: url(image.png);
+	display: inline;
+	text-align: left;
+	box-shadow: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	align-items: center;
+}
+
+.Parent-box h3 {
+	top: 560px;
+	width: 180px;
+	display: inline-flex;
+	height: 24px;
+	color: #4E4D4D;
+	align-items: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600, Semi Bold;
+}
+.Parent-box div button {
+	top: 604px;
+	width: 138px;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1.2px solid #AD4C4C;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-family: Poppins;
+	font-size: 16px;
+	color: #AD4C4C;
+	font-weight: 500, Medium;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.Parent-box div h4 {
+	top: 560px;
+	width: 60px;
+	display:inline;
+	height: 24px;
+	color: #5EA304;
+	align-items: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600, Semi Bold;
+	float: right;
+}
+#box-one {
+	left:101px ;
+}
+#box-two {
+	left:425px ;
+}
+#box-three {
+	left:749px ;
+}
+#box-four {
+	left:1073px ;
+}
+
+hr {
+	position: absolute;
+	width: 1240px;
+	height: 0px;
+	left: 100px;
+	top: 705px;
+	border: 1px solid #E6E6E6;
+}
+
+#chicken-republic {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 101px;
+	top: 774px;
+}
+
+section h1 {
+	position: absolute;
+	width: 190px;
+	height: 30px;
+	left: 170px;
+	top: 771px;
+	font-family: 'Poppins';font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	display: flex;
+	align-items: center;color: #000000;
+}
+
+#view-all-two {
+	position: absolute;
+	width: 62px;
+	height: 24px;
+	left: 1278px;
+	top: 774px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500, Medium;
+	font-size: 16px;
+	color: #AD4C4C;
+}
+.Chicken-republic div {
+	position: absolute;
+	width: 266.67px;
+	height: 150px;
+	top: 841px;
+	background: url(image.png);
+	display: inline;
+	box-shadow: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+.Chicken-republic h3{
+	top: 1006px;
+	width: 180px;
+	display: inline-flex;
+	height: 24px;
+	color: #4E4D4D;
+	align-items: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600, Semi Bold;
+}
+.Chicken-republic div button{
+	top: 1050px;
+	width: 138px;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1.2px solid #AD4C4C;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-family: Poppins;
+	font-size: 16px;
+	color: #AD4C4C;
+	font-weight: 500, Medium;
+	line-height: 24px;
+	letter-spacing: 0em;text-align: center;
+}
+
+.Chicken-republic div h4 {
+	top: 560px;
+	width: 60px;
+	display:inline;
+	height: 24px;
+	color: #5EA304;
+	align-items: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600, Semi Bold;
+	float: right;
+}
+#republic-one {
+	left:100px ;
+}
+#republic-two {
+	left:424px ;
+}
+#republic-meal {
+	left:748px ;
+}
+#republic-wings {
+	left:1072px ;
+}
+@media screen and (min-width: 640px) {
+	nav li{
+		padding: 25px 10px;
+	}

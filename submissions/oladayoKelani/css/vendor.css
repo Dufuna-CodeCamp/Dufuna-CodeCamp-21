@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    background-color: #ffffff;
+    box-sizing: content-box;
+    flex-direction: row;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 20px 0px 60px;
+  }
+
+  .navbar{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.navbar h5{
+    font-size: 19px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar span{
+    color: #AD4C4C;
+}
+
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+  }
+
+.navbar a{
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px;
+    color: #696969;
+    text-transform: capitalize;
+}
+
+.navbar .signup-btn{
+    color: #AD4C4C;
+    border: 2px solid #AD4C4C;
+    border-radius: 5px;
+}
+.title p{
+  float:left;
+}
+
+.b-red{
+  color: #AD4C4C; 
+}
+
+.crumbs ul{
+    margin: 10px 0;
+    list-style: none;
+    
+}
+
+main h2{
+    margin:20px 0;
+}
+.crumbs ul li{
+    display:inline;
+    font-size: small;
+    color: #000000;
+}
+
+.crumbs ul li+li:before{
+    padding:8px;
+    
+    content:"\003E"
+}
+.crumbs ul li+li:after{
+    color:#000000;
+}
+.crumbs ul li a{
+    color: #C9C9C9;
+    text-decoration: none;
+}
+
+.item-head {
+    list-style-type: none;
+    justify-content: space-between; 
+  display:flex;
+  
+}
+hr{
+    margin: 50px 0;
+}
+.logo{
+    
+    list-style-type: none;
+    display: flex;
+
+}
+
+.logo-img{
+    padding:5px 10px;
+}
+
+.logo h3{
+    padding:20px 10px;
+    text-align: center;
+}
+.view-all{
+    display: flex;
+    padding:20px 15px;
+    text-decoration: none;
+    color:#AD4C4C
+}
+
+.item{
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.item img{
+    width:100%
+}
+.detail{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between; 
+    padding:10px;
+/*    width: inherit;   */
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: #5EA304
+}
+
+.item-KFC button, .item-Chicken button{
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    padding:5px;
+    color:#AD4C4C
+}
+
+
+/* ...................................media query................... */
+@media screen and (min-width:992px){
+  .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*gap: 10px;*/
+    }
+  }
+}

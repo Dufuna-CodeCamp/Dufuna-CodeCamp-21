@@ -1,0 +1,77 @@
+a {
+    text-decoration: none;
+    color: grey;
+}
+div {
+    float:left;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 0px;
+    color: grey;
+    word-spacing: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+button {
+    border-color: red;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    margin: 25px 0px 0px;
+}
+button:hover {
+    background: darkorange;
+}
+.logo {
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 25px;
+    position: fixed;
+}
+#viewall {
+float: right;
+margin: 0px 30px 30px 600px;
+}
+html {
+    margin: 5px;
+    border: 25px;
+    border-radius: 5px;
+}
+.left {
+    float: left;
+    margin: 10px;
+}
+h3 {
+    font-size: 15px;
+    float: left;
+    color: #000;
+    margin: 20px 0px 0px;
+}
+h4 {
+    font-size: 15px;
+    float: right;
+    color: green;
+}
+h1 {
+    font-size: 15px;
+    color: #000;
+}
+h2 {
+    font-size: 15px;
+    color: #f00;
+}
+div.here {
+    position: fixed;
+    background-color: aliceblue;
+    size: 100px;
+}
+div.navbar {
+    float: right;
+    width: 90%;
+    position: fixed;
+    background-color: #fff;
+    top: 0%;
+    margin-top: 0%;
+}

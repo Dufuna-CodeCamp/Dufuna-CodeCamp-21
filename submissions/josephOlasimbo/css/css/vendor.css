@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.nav {
+    padding: 18px;
+    color: black;
+    font-weight: 300;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.foodbag {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#signup {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.front {
+    margin: 30px;
+}
+
+#line {
+    margin: 20px;
+}
+.container {
+    position: relative;
+}
+
+.vendor-head {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin:20px 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.item-card {
+padding: 10px 20px;
+}
+
+#add-to-cart {
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0px 5px 8px;
+    padding: 10px;
+    border-radius: 6px;
+    width: 150px;
+}
+
+.amount {
+    color: green;
+    font-size: 15px;
+    font-weight: 900px;
+    float: right;
+}
+
+#small-view {
+    color: #AD4C4C;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex;
+    margin: 20px;
+}
+
+@media (min-width: 350px) {
+#small-view {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+   text-align: center;
+   justify-content: center;
+}
+.menu {
+    padding-bottom: 50px;
+}
+}
+
+@media screen and (min-width:768px) {
+    .menu {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    #small-view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: right;
+        text-align: right;
+    }
+    hr  {
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+

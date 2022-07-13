@@ -1,0 +1,3 @@
+My name is Kola
+
+Here I m closing out on my Git

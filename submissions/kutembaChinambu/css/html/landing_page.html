@@ -25,7 +25,7 @@
         <!--section to display the datalist form element that enables users to select their preferred destinations-->
         <section class="form">
             <form>
-                <label for="location"><h3>Where are you</h3></label>
+                <label for="location"><h3>Where are you?</h3></label>
                 <input list="location-list" id="location" name="location" placeholder="Enter your delivery address"/>
                 <datalist id="location-list">
                     <option value="Chelstone">
@@ -46,10 +46,10 @@
         <section class="interest">
             <h3>Pick an interest</h3>
             <ul class="wrapper">
-                <li><img src="../FoodBag Task Images/fast-food.svg" alt="fast-food"><h4>Fast food</h4><p>All sorrows are less with bread</p></li>
-                <li><img src="../FoodBag Task Images/Vegetables _ Drinks.svg" alt="fast-food"><h4>Vegetables & Fruits</h4><p>May not want it, but good for you.</p></li>
-                <li><img src="../FoodBag Task Images/Drinks _ Cocktails.svg" alt="fast-food"><h4>Drinks & Cocktails</h4><p>I feel sad for those who don't drink.</p></li>
-                <li><img src="../FoodBag Task Images/resturant.svg" alt="fast-food"><h4>Resturants</h4><p>All sorrows are less with bread</p></li>
+                <li class="interestlist"><img id="fast-food" src="../FoodBag Task Images/fast-food_disabled.svg" alt="fast-food"><h4 class= "interestoptions">Fast food</h4><p class="interestlines">All sorrows are less with bread</p></li>
+                <li class="interestlist"><img id="vegetables" src="../FoodBag Task Images/Vegetables _ Drinks_disabled.svg" alt="fast-food"><h4 class="interestoptions">Vegetables & Fruits</h4><p class="interestlines">May not want it, but good for you.</p></li>
+                <li class="interestlist"><img id ="drinks" src="../FoodBag Task Images/Drinks _ Cocktails_disabled.svg" alt="fast-food"><h4 class="interestoptions">Drinks & Cocktails</h4><p class="interestlines">I feel sad for those who don't drink.</p></li>
+                <li class="interestlist"><img id ="resturants" src="../FoodBag Task Images/resturant_disabled.svg" alt="fast-food"><h4 class="interestoptions">Resturants</h4><p class="interestlines">All sorrows are less with bread</p></li>
             </ul>
         </section>
         <!--section using visual and textual narratives to explain to the user processes flow from the time they place an order till they recieve their delivery-->
@@ -78,5 +78,10 @@
             </ul>
         
         </footer>
+        <script src="../../Dom/landing_page.js"></script>
     </body>
 </html>
+
+
+
+    
