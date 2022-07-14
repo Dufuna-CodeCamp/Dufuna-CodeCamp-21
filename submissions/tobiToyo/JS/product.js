@@ -24,7 +24,7 @@ for (let i = 0; i < 3; i++) {
 
 
 // console.log(product1.productName);
-// console.log(product1.imageUrl); 
+// console.log(product1.imageUrl);
 // console.log(product1.productPrice);
 
 // console.log(product2.productName);
