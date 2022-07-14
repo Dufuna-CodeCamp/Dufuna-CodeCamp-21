@@ -187,6 +187,12 @@ font-size: 20px;
     border-bottom: 3px solid #f2f2f2;
     margin-bottom: 6%;
 }
+.we-serve {
+    text-align:center;
+    color:#4e4d4d;
+    font-size:23px;
+    font-weight:600;
+}
 .serve-container {
     display: flex;
     flex-wrap: wrap;
