@@ -97,6 +97,18 @@ body {
     border-radius: 4px;
     background-color: var(--theme--);
   }
+
+  .heading {
+    font-size: medium;
+  }
+
+  .address-input {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: bottom;
+ }
   
   body {
     padding: 0;
