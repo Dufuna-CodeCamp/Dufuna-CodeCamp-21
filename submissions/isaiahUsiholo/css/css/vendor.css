@@ -1,117 +1,177 @@
 * {
-    margin: 0;
-    padding: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 body {
-    padding-bottom: 5vh;
-}
-.header {
     margin: 0;
-    padding: 4vw ;
-    width: 100vw;
-    height: 28vh;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+header {
+    margin: 40px 20px 25px;
     position: relative;
 }
-.header .pseudo::after {
+
+#title {
+    color: black;
+}
+
+#title::after {
     content: "Bag";
-    font-weight: bold;
     color: crimson;
+}
+
+#page::after {
+    content: "Vendors";
+    color: black;
 }
 
 nav {
     position: absolute;
-    top: 4vw;
-    right: 4vw;
+    top: -5px;
+    right: 0;
 }
-a {
+
+nav a {
+    padding: 0 10px;
     text-decoration: none;
     color: inherit;
 }
 
-
-
-button {
-    background-color: #fff;
-    color: red;
-    padding: 5px;
-    border: 1px solid red;
-    border-radius: 3px;
-}
-.topone {
-    position: absolute;
-    top: 17vh;
-}
-.toptwo {
-    position: absolute;
-    top: 24vh;
-}
-section {
-    margin-top: -5vh;
-    padding: 4vw;
-    width: 100vw;
-    height: 330px;
-    position: relative;
-}
-.subhead {
-    height: 60px;
-    position: relative;
-}
-h5 {
-
-    position: absolute;
-    left: 60px;
-    top: 20px;
-}
-.view {
+nav button {
+    background: white;
+    padding: 8px 18px;
+    border: 1.8px solid crimson;
+    border-radius: 5px;
     color: crimson;
-    position: absolute;
-    top: 4vh;
-    right: 4vh;
-}
-div {
-    margin: 3px;
-    padding: 0;
-    box-sizing: border-box;
-    height: 220px;
-    float: left;
-    width: 25% auto;
-    font-size: small;
-    position: relative;
-}
-.text {
-    font-size: 0.7rem;
-    padding: 2px;
 }
 
-.price {
-    color: rgb(129, 193, 27);
-    position: absolute;
-    bottom: 40px;
-    right: 10px;
-}
-.cart {
-    background-color: #fff;
-    color: red;
-    padding: 5px 12px;
-    border: 1px solid red;
-    border-radius: 3px;
-    position: absolute;
-    bottom: 2px;
-}
-.kfc img {
-    width: inherit;
+h3 {
+    margin: -5px 20px 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: black;
 }
 
-hr{
-    clear: both;
+.section {
+    margin: 20px 20px 40px;
 }
-.two {
-    margin-top: -10px;
-    padding: 4vw;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 330px;
+
+.vendor {
+    margin: 30px 0;
+    color: black;
     position: relative;
+}
+
+.vendor p {
+    font-size: larger;
+    position: absolute;
+    top: -1px;
+    left: 60px;
+}
+
+.menu {
+    margin-bottom: 30px;
+    padding: 0 5px;
+    position: relative;
+}
+
+.menu img {
+    width: 100%;
+
+}
+
+.menu p {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.menu .price {
+    color: rgb(64, 194, 64);
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    right: 6px;
+    bottom: 44px;
+}
+
+.menu button {
+    background: white;
+    color: crimson;
+    font-size: large;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    padding: 10px 18px;
+}
+
+.view {
+    padding: 0 0 25px;
+    text-align: center;
+    font-size: 25px;
+    color: crimson;
+    box-shadow: 0 1.5px rgba(100, 100, 100, 0.25);
+}
+
+/* tab screens and large screens */
+@media screen and (min-width: 700px) {
+    body {
+        margin: 60px 20px;
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 40px;
+    }
+
+    nav a,
+    button {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .section {
+        position: relative;
+        clear: both;
+    }
+
+    .vendor img {
+        width: 100px;
+    }
+
+    .vendor p {
+        font-size: 35px;
+        left: 110px;
+    }
+
+    .display {
+        margin-bottom: 50px;
+        padding-bottom: 280px;
+        height: 250px;
+        /* box-shadow: 0 3px rgba(100, 100, 100, 0.25); */
+    }
+
+    .view {
+        box-shadow: none;
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .menu {
+        padding: 0 6px;
+        float: left;
+        width: 33.3%;
+    }
+
+    .menu p {
+        padding: 0 5px;
+    }
 }
