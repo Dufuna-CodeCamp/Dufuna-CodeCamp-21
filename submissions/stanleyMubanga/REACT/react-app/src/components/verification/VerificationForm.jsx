@@ -5,6 +5,7 @@ import InputSelect from '../inputSelect/InputSelect';
 import {useNavigate} from 'react-router-dom';
 import Pay from '../pay/Pay';
 import './style.css';
+// import OrderSuccess from './orderPage/OrderSuccess';
 
 
 function VerificationForm(props) {
@@ -42,7 +43,7 @@ function VerificationForm(props) {
   const handleSubmit = (e)=> {
     e.preventDefault();
     if (phone_number !=="" && selectValue !=="" && card_name !=="" && card_number !=="" && expiry_date !=="") {
-        goto('verificationForm/VerificationForm')
+        goto('orderPage/OrderSuccess')
     }
   }
 
