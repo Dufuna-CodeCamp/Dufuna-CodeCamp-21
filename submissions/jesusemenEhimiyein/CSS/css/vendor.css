@@ -1,3 +1,5 @@
+
+
 *{
     padding:0;
     margin:0;
@@ -34,14 +36,17 @@ display: inline;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 50px;
+  /* flex-wrap: wrap; */
+
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   height: 225px;
   width: 225px;
+  
 }
 
 .prod_info{
@@ -50,6 +55,7 @@ display: inline;
   justify-content: space-between;
   margin-bottom: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 
 .img{
@@ -80,4 +86,46 @@ align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  height: 225px;
+  width: 225px;
+  
+}
+
+@media only screen and (max-width:1200px){
+      #foodone{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left:150px;
+      }
+
+      #foodtwo {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left:150px;
+      }
+
+
+}
+
+@media only screen and (max-width:600px){
+         
+      #foodone {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-left:120px;
+      }
+
+      #foodtwo {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-left:120px;
+      }
+     
 }
