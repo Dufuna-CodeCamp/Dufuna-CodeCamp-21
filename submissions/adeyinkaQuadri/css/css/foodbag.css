@@ -54,11 +54,6 @@ html,body {
     font-weight: 500;
 }
 
-@media screen and (max-width:418px) {
-    .nav-list a li {
-        padding: 0px 10px;
-    }
-}
 input[type=button] {
     border: 1px solid #AD4C4C;
     background-color: transparent;
@@ -79,31 +74,6 @@ input[type=button] {
     color: #696969;
     font-size: 20px;
 }
-@media screen and (max-width:480px) {
-   .footbag-motto {
-    text-align: left;
-    width: 87%;
-    margin-left: auto;
-    margin-right: auto;
-   }
-   .foodbag-motto h1 {
-    font-size: 25px;
-    text-align: left;
-    width: 87%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0px;
-   }
-   .foodbag-motto p {
-    font-size: 13px;
-    text-align: left;
-    width: 87%;
-    margin-left: auto;
-    margin-right: auto;
-   }
-
-}
-
 input[type=text] {
     width: 100%;
     padding: 10px;
@@ -122,34 +92,6 @@ input[type=text] {
 .location h4 {
     font-size: 20px;
 }
-@media screen and (max-width:480px) {
-    .location h4 {
-        font-size: 15px;
-    }
-    input[type=text] {
-        font-size: 15px;
-        padding: 5px;
-        margin-bottom: 6%;
-        height: 40px;
-    }
-    
-}
-.intrest {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-}
-.intrest h4 {
-font-size: 20px;
-}
-.interest-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    
-}
 .body1 {
     margin-top: 2%;
     background-color: transparent;
@@ -157,11 +99,6 @@ font-size: 20px;
     padding:10px 20px;
     width: 270px;
     box-shadow: 0px 0px 3px 1.5px #0000001A;   
-}
-@media screen and (max-width:620px) {
-  .body1 {
-    width: 100%;
-  }
 }
 
 .img-cover {
@@ -204,11 +141,6 @@ font-size: 20px;
 .serve {
     text-align: center;
     padding: 10px;
-}
-@media screen and (max-width:711px) {
-    .serve {
-        width: 100%;
-    }
 }
 .tell {
     margin-top: 3%;
@@ -262,18 +194,4 @@ a {
    font-size: 18px;
    color: #696969;
    text-align: right;
-}
-@media screen and (max-width:711px) {
-    .terms1 {
-        width: 100%;
-        padding: 5px 0px;
-        text-align: center;
-        font-size: 13px;
-    }
-    .terms2 {
-        width: 100%;
-        padding: 5px;
-        text-align: center;
-        font-size: 13px;
-    }
 }
