@@ -43,10 +43,9 @@ display: inline;
 .menu {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid lightgray; */
+  border: 1px solid lightgray;
   height: 225px;
   width: 225px;
-  
 }
 
 .prod_info{
@@ -89,14 +88,6 @@ align-items: center;
   /* flex-wrap: wrap; */
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid lightgray;
-  height: 225px;
-  width: 225px;
-  
-}
 
 @media only screen and (max-width:1200px){
       #foodone{
