@@ -17,7 +17,7 @@ CREATE TABLE vendor_food (
     amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (food_id) REFERENCES food_table(id),
-    FOREIGN KEY (admin_id) REFERENCES food_table(id)
+    FOREIGN KEY (admin_id) REFERENCES admins(id)
 );
 
 /*This is the table for the third success criteria (admins table)*/
@@ -35,7 +35,7 @@ CREATE TABLE admins(
 CREATE TABLE customer(
 	id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
-    phone_number VARCHAR(15) NOT NULL,
+    phone_number INT NOT NULL,
     address VARCHAR(250) NOT NULL,
     payment_method VARCHAR(20),
     PRIMARY KEY (id)
@@ -47,4 +47,6 @@ CREATE TABLE orders(
     vendor_id INT NOT NULL,
     customer_id INT,
     PRIMARY KEY (id)
+    FOREIGN KEY (vendor_id) REFERENCES vendor_food(id)
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
 	);
