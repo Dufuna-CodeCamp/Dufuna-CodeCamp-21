@@ -1,7 +1,3 @@
-var product_name = document.querySelector('.product-name');
-var product_image = document.querySelector('.product-image');
-var product_price = document.querySelector('.product-price');
-
 var productList = [{
         productName: "Grocery",
         imageUrl: "https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
