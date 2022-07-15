@@ -69,7 +69,7 @@ button:hover {
     float: right; 
     margin: -90px 30px 0px 0px; 
     word-spacing: 40px; 
-    font-size: 20px;"
+    font-size: 20px;
 }
 #signupcolor {
     color: #f00;
@@ -90,7 +90,7 @@ button:hover {
     font-size: 14px;
 }
 .fre {
-    margin: 0px 0px 0px -10px;
+    margin: 0px -10px 200px -10px;
 }
 #ff5,#f5,#fff5,#g5 {
     font-size: 10px; 
@@ -139,4 +139,10 @@ hr {
 }
 #red {
     color: red;
+}
+.foot {
+    margin: 0px 0px 0px 0px;
+}
+#hrr {
+    margin: 250px 0px 80px 0px;
 }
