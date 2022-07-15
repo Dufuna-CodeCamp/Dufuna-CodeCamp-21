@@ -1,0 +1,128 @@
+body {
+    font-family: sans-serif;
+    width: auto;
+    padding: 50px 100px 0px 100px
+}
+a {
+    color: #696969;
+    text-decoration: none;
+}
+a:hover {
+    color: #AD4C4C;
+}
+
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+    color: #A5A5A5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+}
+header nav:nth-child(2) a {
+    padding: 5px 10px;
+}
+header nav a:nth-child(3) {
+    width: 92px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px
+
+}
+.PICKAIP {
+    font-size: 14px;
+    color: #A5A5A5;
+}
+.PICKAI div {
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
+    color: #696969;
+}
+.HOWWESYP {
+    font-size: 20px;
+    color: #A5A5A5;
+    line-height: 30px;
+}
+
+.PREMAIN {
+    text-align: center;
+    }
+.PREMAIN p:first-child {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    }
+.PREMAIN p:nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #696969;
+    margin: 0px;
+}
+input {
+    width: 100%;
+    font-size: 20px;
+    color: #69696;
+    }
+.PICKAI {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+
+}
+.HOWWESYH {
+    text-align: center;
+}
+.HOWWESY {
+    display: flex;
+    justify-content: space-between;
+}
+.HOWWESY div {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.contactus {
+    text-align: center;
+    font-size: 18px;
+    color: #696969;
+}
+.footericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+.footerend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 27px;
+}
+.footercopyright {
+    color: #696969;
+}
+section {
+    margin: 52px 0px;
+}
