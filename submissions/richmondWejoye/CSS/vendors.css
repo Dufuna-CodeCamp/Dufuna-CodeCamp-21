@@ -16,7 +16,7 @@ nav{
 
 nav ul{
 	list-style: none;
-	
+
 }
 
 nav a{
@@ -101,6 +101,15 @@ h1{
 .kfc-bucket > h6 {
 	float: right;
 	font-size: 14px;
+	color: red;
+}
+
+.chicken-rep > h6{
+	float: right;
+	position: relative;
+	left: 130px;
+	font-size: 14px;
+	color: red;
 }
 
 .flex-one{
@@ -159,6 +168,7 @@ h5{
 	padding: 15px;
 	text-align: center;
 	cursor: pointer;
+	color: red;
 }
 
 hr{
@@ -198,4 +208,71 @@ hr{
 .tag span{
 	font-weight: bold;
 	color: grey;
+}
+
+@media screen and (max-width: 600px){
+	.flex-one{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.flex-one-one{
+		position: relative;
+	}
+	.flex-one-one img{
+		transform: scaleX(1.3);
+	}
+	.first{
+		position: relative;
+		right: 38px;
+	}
+	div.flex-one-one.different{
+		display: none;
+	}
+	.flex-two  p:nth-of-type(2) {
+		position: relative;
+		bottom: 10px;
+		left: 222px;
+	}
+	.kfc-bucket h6{
+		position: relative;
+		top: 850px;
+		right: 230px;
+	}
+	.kfc-bucket > img{
+		width: 9%;
+	}
+	h5{
+		position: relative;
+		right: 37px;
+		bottom: 13px;
+	}
+	.flex-two{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.flex-two-two h5{
+		position: relative;
+		left: -34px;
+	}
+
+	.flex-two-two p{
+		position: relative;
+		left: -30px;
+		font-weight: bold;
+	}
+	.flex-two-two.different{
+		display: none;
+	}
+	.flex-two-two img{
+		transform: scaleX(1.3);
+	}
+	.chicken-rep > h6{
+		top: 860px;
+		left: -200px;
+	}
 }
