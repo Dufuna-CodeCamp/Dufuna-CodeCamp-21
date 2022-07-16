@@ -27,6 +27,7 @@
     
     }
     
+<<<<<<< HEAD
     #logo {
         margin-right: 100px;
         
@@ -182,6 +183,33 @@
         display:grid;
         grid-template-columns: 1fr;
     }
+=======
+}
+
+.message-center {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 80px;
+}
+
+.card-two .menu img {
+    width:300px;
+}
+
+.menu h4 {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #696969; 
+}
+
+.interest {
+    margin-left: 35px;
+}
+>>>>>>> 1511ff78c172aab760ce9c2deedc3c6b9438546b
 
     .location .text-field {
         width: 900px;
@@ -198,6 +226,7 @@
      */
     
 
+<<<<<<< HEAD
 @media only screen and (max-width:600px) {
     .card-one{
         display:grid;
@@ -212,5 +241,32 @@
         width: 360px;
     }
     
+=======
+.location input {
+    height: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .interest{
+      margin-bottom: 10px;
+      font-size: 20px;
+  }
+
+
+/* .location > input[text]{
+    : 150px;
+} */
+
+.usp-center{
+   margin: auto;
+}
+.twitter{
+    margin-right: 10px;
+}
+.facebook {
+    margin-right: 10px;
+>>>>>>> 1511ff78c172aab760ce9c2deedc3c6b9438546b
 }
 
