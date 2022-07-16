@@ -12,9 +12,10 @@ const productList = [{
     productName: 'Sugar',
     imageUrl: 'https://dangotesugar.com.ng/wp-content/uploads/2020/09/sugar-bowl222.jpg',
     productPrice: 500,
-}/*an object containing the product details*/
+},/*an object containing the product details*/
 ]; /*an array with objects*/
 
-document.write(productList[0].productName + ' ' + 'with'+ ' ' + productList[0].imageUrl + ' ' + ' is sold for' + ' ' + productList[0].productPrice + ' ' );
-document.write(productList[1].productName + ' ' + 'with'+ ' ' + productList[1].imageUrl + ' ' + ' is sold for' + ' ' + productList[1].productPrice+ ' ' );
-document.write(productList[2].productName + ' ' + 'with'+ ' ' + productList[2].imageUrl + ' ' + ' is sold for' + ' ' + productList[2].productPrice + ' ' );
+
+for (let i = 0; i < productList.length; i++) {
+    document.write(productList[i].productName + ' ' + 'with'+ ' ' + productList[i].imageUrl + ' ' + ' is sold for' + ' ' + productList[i].productPrice + ' ' );
+}
