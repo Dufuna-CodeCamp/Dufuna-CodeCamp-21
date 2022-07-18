@@ -186,30 +186,30 @@ footer h4{
 	width: 12%;
 }
 
-@media (max-width: 991px){
-	.illustration {
-	  display: flex;
-	  flex-wrap: wrap;
+@media screen and (max-width: 992px){
+	.flexing{
+		display: grid;
+		width: 80%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 32px;
+		/* gap: 10px 20px; */
+	}
+
+	.flex-img h3{
+		text-align: center;
+	}
+
+	.illustration{
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
-/* div #first-drop{
-	position: relative;
-	left: 33%;
-} */
-
-.flex-sec{
-	display: block;
-	width: 12%;
-}
-
-.footer-block{
-	display: flex;
-/*	justify-content: center;
-*/}
-
-}
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
+	body{
+		background-color: white;
+	}
 	.motto{
 		text-align: left;
 	}
@@ -242,4 +242,23 @@ footer h4{
 		margin-left: 30px;
 		margin-right: 30px;
 	}
+	.illustration {
+	  display: flex;
+	  flex-wrap: wrap;
+}
+.flex-sec{
+	display: block;
+	width: 12%;
+}
+
+.footer-block{
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-block p{
+	text-align: center;
+	margin-left: 0;
+}
 }
