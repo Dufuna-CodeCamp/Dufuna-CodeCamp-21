@@ -10,9 +10,6 @@
     width:100%;
     
 }
-
-
-
    
     nav {
         display: flex;
@@ -27,7 +24,6 @@
     
     }
     
-<<<<<<< HEAD
     #logo {
         margin-right: 100px;
         
@@ -107,8 +103,7 @@
     .card-two .menu img {
         width:300px;
     }
-    
-    
+        
     
     .menu h4 {
         font-size: 20px;
@@ -173,6 +168,7 @@
         padding:0;
         margin:0;
     } */
+
 @media only screen and (max-width:1200px){
     .card-one{
         display:grid;
@@ -182,8 +178,7 @@
     .card-two {
         display:grid;
         grid-template-columns: 1fr;
-    }
-=======
+
 }
 
 .message-center {
@@ -209,9 +204,7 @@
 .interest {
     margin-left: 35px;
 }
->>>>>>> 1511ff78c172aab760ce9c2deedc3c6b9438546b
-
-    .location .text-field {
+.location .text-field {
         width: 900px;
     }
 
@@ -225,8 +218,6 @@
 }
      */
     
-
-<<<<<<< HEAD
 @media only screen and (max-width:600px) {
     .card-one{
         display:grid;
@@ -241,8 +232,7 @@
         width: 360px;
     }
     
-=======
-.location input {
+    .location input {
     height: 18px;
     padding: 15px;
     border-radius: 10px;
@@ -267,6 +257,5 @@
 }
 .facebook {
     margin-right: 10px;
->>>>>>> 1511ff78c172aab760ce9c2deedc3c6b9438546b
 }
 
