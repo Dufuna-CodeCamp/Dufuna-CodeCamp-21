@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     width: auto;
-    padding: 50px 100px 0px 100px
+    padding: 50px 100px 0px
 }
 a {
     color: #696969;
@@ -82,7 +82,7 @@ h2 {
 input {
     width: 100%;
     font-size: 20px;
-    color: #69696;
+    color: #696969;
     }
 .PICKAI {
     display: flex;
