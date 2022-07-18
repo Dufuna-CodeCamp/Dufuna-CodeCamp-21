@@ -28,6 +28,10 @@ nav a:hover{
 	color: #AD4C4C;
 }
 
+h5:hover{
+	color: #AD4C4C;
+}
+
 nav li{
 	display: inline;
 	float: right;
@@ -101,7 +105,7 @@ h1{
 .kfc-bucket > h6 {
 	float: right;
 	font-size: 14px;
-	color: red;
+	color: #AD4C4C;
 }
 
 .chicken-rep > h6{
@@ -109,7 +113,7 @@ h1{
 	position: relative;
 	left: 130px;
 	font-size: 14px;
-	color: red;
+	color: #AD4C4C;
 }
 
 .flex-one{
@@ -117,10 +121,15 @@ h1{
 	top: 10px;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-left: 0px;
 	margin-right: 0px;
+}
 
+.flex-two{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .flex-one-one{
@@ -160,7 +169,7 @@ h1{
 }
 
 h5{
-	border: 1px solid red;
+	border: 1px solid #AD4C4C;
 	width: 50%;
 	border-radius: 3px;
 	float: left;
@@ -168,7 +177,7 @@ h5{
 	padding: 15px;
 	text-align: center;
 	cursor: pointer;
-	color: red;
+
 }
 
 hr{
@@ -210,12 +219,37 @@ hr{
 	color: grey;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 992px){
+	.flex-one{
+		display: grid;
+		width: 80%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 32px;
+		align-items: center;
+		margin-left: 150px;
+	}
+	.flex-two{
+		display: grid;
+		width: 80%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 32px;
+		align-items: center;
+	}
+	h1{
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 768px){
 	.flex-one{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
+		margin-left: 0;
 	}
 	.flex-one-one{
 		position: relative;
@@ -272,7 +306,13 @@ hr{
 		transform: scaleX(1.3);
 	}
 	.chicken-rep > h6{
-		top: 860px;
+		top: 910px;
 		left: -200px;
 	}
+
+	.flex-two  p:nth-of-type(2){
+		position: relative;
+		top: -10px;
+	}
+
 }
