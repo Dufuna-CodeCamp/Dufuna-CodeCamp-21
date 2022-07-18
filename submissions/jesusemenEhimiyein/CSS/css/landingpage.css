@@ -10,9 +10,6 @@
     width:100%;
     
 }
-
-
-
    
     nav {
         display: flex;
@@ -107,8 +104,6 @@
         width:300px;
     }
     
-    
-    
     .menu h4 {
         font-size: 20px;
         padding: 5px;
@@ -176,14 +171,37 @@
     .card-one{
         display:grid;
         grid-template-columns: 1fr 1fr;
-
     }
     .card-two {
         display:grid;
         grid-template-columns: 1fr;
-    }
 
-    .location .text-field {
+}
+
+.message-center {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 80px;
+}
+
+.card-two .menu img {
+    width:300px;
+}
+
+.menu h4 {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #696969; 
+}
+
+.interest {
+    margin-left: 35px;
+}
+.location .text-field {
         width: 900px;
     }
 
@@ -197,14 +215,13 @@
 }
      */
     
-
 @media only screen and (max-width:600px) {
     .card-one{
         display:grid;
         grid-template-columns: 1fr;
     }
 
-    .card-two{
+   .card-two{
        display:grid;
        grid-template-columns: 1fr; 
     }
@@ -212,5 +229,30 @@
         width: 360px;
     }
     
+    .location input {
+    height: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .interest{
+      margin-bottom: 10px;
+      font-size: 20px;
+  }
+
+
+/* .location > input[text]{
+    : 150px;
+} */
+
+.usp-center{
+   margin: auto;
+}
+.twitter{
+    margin-right: 10px;
+}
+.facebook {
+    margin-right: 10px;
 }
 
