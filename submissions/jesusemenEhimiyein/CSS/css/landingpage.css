@@ -103,7 +103,6 @@
     .card-two .menu img {
         width:300px;
     }
-        
     
     .menu h4 {
         font-size: 20px;
@@ -168,12 +167,10 @@
         padding:0;
         margin:0;
     } */
-
 @media only screen and (max-width:1200px){
     .card-one{
         display:grid;
         grid-template-columns: 1fr 1fr;
-
     }
     .card-two {
         display:grid;
@@ -224,7 +221,7 @@
         grid-template-columns: 1fr;
     }
 
-    .card-two{
+   .card-two{
        display:grid;
        grid-template-columns: 1fr; 
     }

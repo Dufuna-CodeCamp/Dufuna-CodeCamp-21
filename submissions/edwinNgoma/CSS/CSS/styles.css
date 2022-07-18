@@ -394,11 +394,29 @@ height: 100%;
 
 }
 
+
 .add-item {
     width: 70%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+.added {
+    background-color: var(--themegray--);
+    color: white;
+}
+
+#newItem {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--theme--);
 }
 

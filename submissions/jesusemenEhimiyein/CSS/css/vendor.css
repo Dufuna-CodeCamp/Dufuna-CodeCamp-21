@@ -1,3 +1,5 @@
+
+
 *{
     padding:0;
     margin:0;
@@ -52,6 +54,7 @@ display: inline;
   justify-content: space-between;
   margin-bottom: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 
 .img{

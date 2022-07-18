@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 90vw;
+    margin:40px auto;
+    max-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav li a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav .bag{
+    font-weight: 500;
+    font-size: 20px;
+}
+nav .bag::after{
+    content: "Bag";
+    color: #AD4C4C;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav li a:link, nav li a:visited{
+    color: #696969;
+    font-weight: 400;
+}
+nav li a[href*='/']{
+    font-size: 16px;
+    color: #AD4C4C;
+    font-weight: 500;
+    border:1px solid #AD4C4C;
+    padding: 7px;
+    border-radius:4px;
+}
+.heading{
+    margin: 80px 0 30px;
+}
+.heading p{
+    color: #C9C9C9;
+    font-weight: 400;
+    font-size: 14px;
+}
+.heading p::after{
+    content: 'Vendors';
+    color: black;
+    font-weight: 500;
+}
+main h1:nth-of-type(1){
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+.kfc-logo, aside, section {
+    display: flex;
+    justify-content: space-between;
+}
+.kfc-logo{
+    margin-bottom: 30px;
+}
+.A{
+    display: inline-flex;
+}
+.A p:nth-of-type(1){
+    padding:10px 26px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.B p:nth-of-type(1){
+    color: #AD4C4C;
+    font-size: 16px;
+    font-weight: 500;
+}
+section div div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+}
+section div div span:nth-child(1){
+    color: #4E4D4D;
+    font-size: 16px;
+    font-weight: 600;
+}
+section div div span:nth-child(2){
+    color: #5EA304;
+    font-size: 16px;
+    font-weight: 600;
+}
+section div button{
+    background-color: inherit;
+    font-size: 16px;
+    color: #AD4C4C;
+    font-weight: 500;
+    border:1px solid #AD4C4C;
+    margin: 12px 0;
+    padding: 6px 20px;
+    border-radius:4px;
+}
+hr{
+    margin:40px 0;
+    border: 1px solid #E6E6E6;
+}
+aside{
+    margin:0 0 20px;
+}
+main section:nth-of-type(2) button{
+    margin-bottom: 100px;
+}
+
+

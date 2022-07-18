@@ -135,3 +135,58 @@
     margin-top: 30px;
     margin-bottom: 110px;
 }
+.lower-view{
+    display:none;
+}
+@media screen and (max-width: 1024px){
+    .vendor-items{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+       
+}
+@media screen and (max-width: 425px){
+    .nav ul {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        font-size: 16px;
+      }
+      body {
+        margin: 30px 20px;
+      }
+      #cart,
+      #login {
+        margin-right: 20px;
+      }
+      #button {
+        width: 74px;
+        height: 32px;
+        font-size: 10px;
+      } 
+      
+      .vendor-items{
+        margin-top: 30px;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 25px;
+    }
+    .lower-view{
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        color:#AD4C4C;
+    }
+    .header-items span:last-child{
+      display: none;
+    }
+    .vendor-items .vendor-content:last-child{
+        display: none;
+    }
+    
+}
