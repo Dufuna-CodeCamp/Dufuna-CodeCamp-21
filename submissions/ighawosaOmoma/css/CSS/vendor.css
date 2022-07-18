@@ -67,6 +67,9 @@ main h1:nth-of-type(1){
     display: flex;
     justify-content: space-between;
 }
+aside, section{
+    flex-wrap: wrap;
+}
 .kfc-logo{
     margin-bottom: 30px;
 }
@@ -86,6 +89,9 @@ main h1:nth-of-type(1){
 section div div:nth-of-type(1){
     display: flex;
     justify-content: space-between;
+}
+section p:nth-of-type(1){
+    display: none;
 }
 section div div span:nth-child(1){
     color: #4E4D4D;
@@ -118,4 +124,40 @@ main section:nth-of-type(2) button{
     margin-bottom: 100px;
 }
 
+@media screen and (max-width:992px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+}
 
+@media screen and (max-width:768px) {
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+    }
+}
+
+@media screen and (max-width:660px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .B p{
+        display: none;
+    }
+    hr{
+        margin: 10px;
+    }
+    section div img{
+        width: 100%;
+    }
+    section p:nth-of-type(1){
+        display: inline;
+        text-align: center;        
+        color: #AD4C4C;
+        margin: 30px 0 30px;
+    }
+}
