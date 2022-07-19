@@ -8,7 +8,7 @@ USE transport;
 CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(250) NOT NULL,
-    sex VARCHAR(1) NOT NULL,
+    sex VARCHAR(10) NOT NULL,
     age INT,
     PRIMARY KEY (id)
 );
@@ -23,14 +23,16 @@ CREATE TABLE trips (
     parents_or_children INT NOT NULL,
     siblings_or_spouses INT NOT NULL,
     embarkation VARCHAR (50),
+    passengers_id INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (class) REFERENCES passengers (id) 
+    FOREIGN KEY (passengers_id) REFERENCES passengers (id) 
 );
 
 /*Creating the third table (accidents)*/
 CREATE TABLE accidents(
 	id INT NOT NULL AUTO_INCREMENT,
-    survived VARCHAR(3) NOT NULL, 
+    survived BOOLEAN NOT NULL,
+    passengers_id INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id) REFERENCES trips (id)
+    FOREIGN KEY (passengers_id) REFERENCES trips (id)
 );
