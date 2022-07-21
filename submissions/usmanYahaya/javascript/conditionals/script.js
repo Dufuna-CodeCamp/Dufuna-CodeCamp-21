@@ -8,6 +8,8 @@ for (let i = 1; i <= difference; i++) {
         document.write('<br> Developer <br>')
     } else if (i % 3 == 0 && i % 5 == 0) {
         document.write('Software Developer')
+    } else {
+        document.write(i + '<br>')
     }
 
 }
