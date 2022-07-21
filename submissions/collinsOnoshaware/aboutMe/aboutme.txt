@@ -1,2 +1,3 @@
 Hello world!
-I am Collins Onoshaware I am a software Engineer.
+I am Collins Onoshaware 
+I am a software Engineer.
