@@ -1,8 +1,4 @@
-* {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+
  img,video,embed {
      max-width: 100%;
  }
@@ -62,10 +58,6 @@
      margin-right: auto;
      margin-left: auto;
      margin-top: 5%;
- }
-
- a {
-     text-decoration: none;
  }
  .ash {
      color: #696969;
