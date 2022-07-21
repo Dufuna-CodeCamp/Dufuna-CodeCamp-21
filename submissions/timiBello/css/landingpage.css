@@ -1,0 +1,168 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ img,video,embed {
+     max-width: 100%;
+ }
+ html,body {
+     text-size-adjust: none;
+     -moz-text-size-adjust: none;
+     -webkit-text-size-adjust: none;
+     -ms-text-size-adjust: none;
+     font-family: sans-serif;
+		  overflow-x: hidden;
+			width: auto;
+     padding: 50px 100px 0px;
+ }
+ a {
+     color: #696969;
+     text-decoration: none;
+ }
+ a:hover {
+     color: #AD4C4C;
+ }
+
+ h3 {
+     font-size: 20px;
+ }
+ h4 {
+     font-size: 18px;
+     color: #AD4C4C;
+		 font-weight: 500;
+ }
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ header nav:nth-child(2) {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     color: #696969;
+ }
+ header nav:nth-child(2) a {
+     padding: 5px 10px;
+ }
+ header nav a:nth-child(3) {
+     width: 92px;
+     height: 40px;
+     background: #FFFFFF;
+     border: 1px solid #AD4C4C;
+     border-radius: 5px
+
+ }
+ .PICKAIP {
+     font-size: 14px;
+     color: #696969;
+		 font-weight: 400;
+ }
+ .PICKAI div {
+     box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+ }
+ h1 {
+     font-size: 30px;
+ }
+ h2 {
+     font-size: 25px;
+     color: #696969;
+		 font-weight: 500;
+		 padding-bottom: 15px;
+ }
+ .HOWWESYP {
+     font-size: 20px;
+     color: #A5A5A5;
+     line-height: 30px;
+		 font-weight: 500;
+ }
+
+ .PREMAIN {
+     text-align: center;
+     }
+ .PREMAIN p:first-child {
+     font-weight: 600;
+     font-size: 40px;
+     line-height: 60px;
+     margin-top: 50px;
+     margin-bottom: 0px;
+     }
+ .PREMAIN p:nth-child(2) {
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 30px;
+     text-align: center;
+     color: #696969;
+     margin: 0px;
+ }
+ input {
+     width: 100%;
+     font-size: 20px;
+     color: #696969;
+     }
+ .PICKAI {
+     display: flex;
+     justify-content: space-between;
+     background: #FFFFFF;
+ }
+
+ .pickai{
+	 padding-bottom: 20px;
+ }
+ .HOWWESYH {
+     text-align: center;
+ }
+
+ .fastfood{
+	 padding-bottom: 10px;
+    padding-top: 10px;
+}
+ 
+.images{
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+ .HOWWESY {
+     display: flex;
+     justify-content: space-between;
+ }
+ .HOWWESY div {
+     align-items: center;
+     text-align: center;
+     padding: 10px;
+ }
+ .contactus {
+     text-align: center;
+     font-size: 18px;
+     color: #696969;
+		padding-bottom: 32px;
+    padding-top: 81px;
+		font-weight: 500;
+ }
+ .footericon {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 5px;
+ }
+ .footerend {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 18px;
+     line-height: 27px;
+ }
+ .footercopyright {
+     color: #696969;
+		 padding-top: 49px;
+    padding-bottom: 132px;
+		font-weight: 400px;
+ }
+
+ .endd{
+	 padding-bottom: 80px;
+ }
+ section {
+     margin: 52px 0px;
