@@ -57,8 +57,10 @@ li a {
     color: #ad4c4c;
 }
 
-.star {
+.notify {
     color: red;
+    font-weight: 900;
+    font-size: 14px;
 }
 
 button.right {
@@ -160,12 +162,41 @@ button a {
     margin-left: 10px;
     border-radius: 3px;
 }
+.remove {
+    
+   text-align: center;
+    width: 90px;
+    height: 25px;
+    font-size: 12px;
+    border: none;
+    background: grey;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 3px;
+    
+  
+}
+.remove span{
+    position: relative;
+    top: -4px;
+}
+.remove-img{
+    height: 22px!important;
+    width: 26px;
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+    left: -5px;
+   
+}
 
-.cart:hover {
+
+/* .cart:hover {
     background: grey;
     color: white;
     border: none;
-}
+} */
 
 .name {
     font-size: 14px;

@@ -18,7 +18,7 @@ body {
 }
 
 .header a[href*='/']{
-	font-size: 20px;
+	font-size: 21px;
 	font-weight: bold;
 }
 
@@ -81,22 +81,23 @@ body {
 }
 
 .chicken p:hover {
-	color: limegreen;
+	color: blue;
 }
 
 .republic p:hover {
-	color: limegreen;
+	color: blue;
 }
 
 #border:hover {
 	color: white;
 	background-color: limegreen;
-	border: 1px solid forestgreen;
+	border: 2px solid forestgreen;
 
 }
 .flex-card{
 	display: flex;
 	gap: 1rem;
+	/*flex-wrap: wrap;*/
 }
 
 .card img{
@@ -119,6 +120,7 @@ body {
 }
 
 .cart {
+	text-decoration: none;
 	display: flex;
 	gap: 3rem;
 	white-space: nowrap;
@@ -130,10 +132,15 @@ body {
 	padding-right: 120px;
 }
 
-/*.card:hover {*/
-	border: 2px solid deepskyblue;
+.p1 {
+	display: flex;
+	justify-content: space-between;
 }
 
+/*.card:hover {
+	border: 2px solid deepskyblue;
+}
+*/
 hr {
 	display: flex;
 	padding-top: 50px;
@@ -154,6 +161,7 @@ hr {
 .flex-card-2{
 	display: flex;
 	gap: 1rem;
+	/*flex-wrap: wrap;*/
 }
 
 .card-2 img{
@@ -183,14 +191,64 @@ hr {
 }
 
 .cart-2 {
+	text-decoration: none;
 	display: flex;
 	gap: 3rem;
 	white-space: nowrap;
 	width: 100%;
-	height: 150px;
 }
 
 .cart-2 a {
 	text-decoration: none;
 	padding-right: 120px;
 }
+
+@media screen and (max-width: 500px) {
+		.flex-card {
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.card img {
+		width: 300px;
+	}
+	.cart {
+		text-decoration: none;
+	}
+	
+	.flex-card-2 {
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.cart-2 {
+		text-decoration: none;
+	}
+	.card-2 img {
+		width: 300px;
+	}
+		.menu a {
+		padding-left: 15px;
+		font-size: 10px;
+	}
+
+	#border {
+		color: #AD4C4C;
+		border:	1px #AD4C4C solid;
+		border-radius: 5px;
+		padding: 4px 10px; 
+		font-weight: 600;
+	}
+
+	.container{
+		margin: 2% 3%;
+	}
+}
+@media screen and (min-width: 500px)and (max-width: 992px){
+	.flex-card {
+		flex-wrap: wrap;
+	}
+	.flex-card-2 {
+		flex-wrap: wrap;
+	}
+}
+
