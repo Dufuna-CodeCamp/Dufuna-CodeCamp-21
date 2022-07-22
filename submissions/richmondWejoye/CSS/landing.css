@@ -226,22 +226,14 @@ footer h4{
 		font-size: 18px;
 	}
 	.illustration div{
-		margin: 10px auto 40px auto;
+		margin: 10px auto 40px;
 	}
-	.flex-sec{
-		display: flex;
-		width: 33%;
-		justify-content: space-around;
-	}
+
 	#pos1{
 		margin-right: 0;
 		margin-bottom: 30px;
 	}
-	.footer-block{
-		flex-direction: column;
-		margin-left: 30px;
-		margin-right: 30px;
-	}
+
 	.illustration {
 	  display: flex;
 	  flex-wrap: wrap;

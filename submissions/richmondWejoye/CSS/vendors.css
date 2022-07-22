@@ -71,10 +71,6 @@ nav li{
 	text-align: left;
 }
 
-.tag span{
-	font-weight: bold;
-}
-
 h1{
 	width: 90%;
 	text-align: left;
@@ -127,11 +123,6 @@ h1{
 	margin-right: 0px;
 }
 
-.flex-two{
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .flex-one-one{
  	margin: 0;
  }
@@ -149,7 +140,6 @@ h1{
 .chicken-rep img{
 	float: left;
 }
-
 .chicken-rep h3{
 	position: relative;
 	left: 18px;
@@ -263,11 +253,6 @@ hr{
 	}
 	div.flex-one-one.different{
 		display: none;
-	}
-	.flex-two  p:nth-of-type(2) {
-		position: relative;
-		bottom: 10px;
-		left: 222px;
 	}
 	.kfc-bucket h6{
 		position: relative;
