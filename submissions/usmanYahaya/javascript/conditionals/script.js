@@ -1,5 +1,4 @@
 var difference = Math.abs(7 - 123);
-console.log(difference)
 
 for (let i = 1; i <= difference; i++) {
     if (i % 3 === 0) {
