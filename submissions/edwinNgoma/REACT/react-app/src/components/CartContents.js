@@ -169,7 +169,7 @@ export default function CartContents (props) {
             <p>Total <span>#{totalPrice === 0? cash=0 : totalPrice + cash }</span></p>
         </div>
            
-        <Button button="checkout-buttons"  buttonName= "Checkout" />
+        <Button button="checkout-buttons" buttonClick= {()=> window.location.assign("/VerificationComponentsHolder")}  buttonName= "Checkout" />
 
         </div> : <p id="cart-is-empty"> Whoops :) The Cart Is Empty </p>
        }
