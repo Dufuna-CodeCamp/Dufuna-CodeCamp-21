@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 {"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":4,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":4,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0},"startTime":1658585257238,"success":true,"testResults":[{"assertionResults":[{"ancestorTitles":[],"failureMessages":[],"fullName":"renders without crashing","location":null,"status":"passed","title":"renders without crashing"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: check service-title1","location":null,"status":"passed","title":"test case: check service-title1"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: check input elements","location":null,"status":"passed","title":"test case: check input elements"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: check select element","location":null,"status":"passed","title":"test case: check select element"}],"endTime":1658585303862,"message":"","name":"C:\\Users\\BABATUNDE TOLULOPE B\\Documents\\GitHub\\Dufuna-CodeCamp-21\\submissions\\tolulopeBabatunde\\REACT\\react-app\\src\\__tests__\\Verification.test.js","startTime":1658585277124,"status":"passed","summary":""}],"wasInterrupted":false}
+=======
+{
+  "stats": {
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "onomeFuludu"
+  }
+}
+>>>>>>> ebc5d87789c92217ffe376a6df63717e2655f355
