@@ -269,15 +269,23 @@ hr {
 .con:nth-child(1) {
   font-weight: bold;
 }
-.button-class {
-  
+.btn-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ .btn {
   margin-top: 80px;
   width: 809px;
   height: 60px;
-  margin-left: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   top: 1155px;
   color: white;
   background: #AD4C4C;
+  cursor: pointer;
   border-radius: 5px;
   margin-bottom: 20px;
 
