@@ -14,8 +14,9 @@ function validateAddress() {
     document.getElementById('btn2').disabled = false;
     document.getElementById('btn3').disabled = false;
     document.getElementById('btn4').disabled = false;
+    return true;
 }
 
 function goToVendors() {
-    window.location.href = "./vendors.html";
+    window.location.href = "./vendor/vendors.html";
 }
