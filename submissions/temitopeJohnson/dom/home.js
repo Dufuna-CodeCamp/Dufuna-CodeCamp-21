@@ -17,6 +17,6 @@ function validateAddress() {
     return true;
 }
 
-function goToVendors() {
-    window.location.href = "./vendor/vendors.html";
-}
+// function goToVendors() {
+//     window.location.href = "./vendors.html";
+// }
