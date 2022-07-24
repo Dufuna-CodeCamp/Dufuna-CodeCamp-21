@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <b style="color:black;">Food</b><b style="color:#AD4C4C;">Bag</b>
+        </div>
+        <div class="NavLinks">
+            <a href="#" class="CL">Cart</a>
+            <a href="#" class="CL">Login</a>
+            <a href="#" class="SignUp">Sign up</a>
+        </div>
+    </nav>
+    <section class="HeadingText">
+        <b>FoodBag</b>
+        <div>Anything food, we have you covered.</div>
+    </section>
+    <section>
+        <div>Where are you?</div>
+        <input list="Location" name="Location" placeholder="Enter your delivery address" onchange="validateAddress()">
+        <datalist id="Location">
+            <option value="Ikoyi">
+            <option value="Lekki">
+            <option value="VI">
+            <option value="Ikorodu">
+            <option value="Ikeja">
+        </datalist>
+        <div>Pick an interest</div>
+        <div class="Interest">
+            <button class="Items" onclick="goToVendors()"  id="btn1" disabled>
+                <div>
+                    <img src="./images/fast-food_disabled.svg" id="image1" />
+                    <div id="heading1">Fast food</div>
+                    <p>All sorrows are less with bread.</p>
+                </div>
+            </button>
+            <button class="Items" onclick="goToVendors()"  id="btn2" disabled>
+                <div>
+                    <img src="./images/Vegetables _ Drinks_disabled.svg" id="image2" />
+                    <div id="heading2">Vegetables & Fruits</div>
+                    <p>May not want it, but good for you.</p>
+                </div>
+            </button>
+            <button class="Items" onclick="goToVendors()"  id="btn3" disabled>
+                <div>
+                    <img src="./images/Drinks _ Cocktails_disabled.svg" id="image3" />
+                    <div id="heading3">Drinks & Cocktails</div>
+                    <p>I feel sad for those who don't drink.</p>
+                </div>
+            </button>
+            <button class="Items" onclick="goToVendors()"  id="btn4" disabled>
+                <div>
+                    <img src="./images/resturant_disabled.svg" id="image4" />
+                    <div id="heading4">Resturants</div>
+                    <p>All sorrows are less with bread.</p>
+                </div>
+            </button>
+        </div>
+    </section>
+    <hr />
+    <section class="Serve">
+        <div class="">How we serve you</div>
+        <div class="Serving">
+            <div class="ServeBox">
+                <img src="./images/illustration_1.svg" />
+                <p>Tell us where you are</p>
+                <div>Select the location you want us to deliver.</div>
+            </div>
+            <div class="ServeBox">
+                <img src="./images/illustration_2.svg" />
+                <p>Tell us what you want</p>
+                <div>Browse the type of food that interest you.</div>
+            </div>
+            <div class="ServeBox">
+                <img src="./images/illustration_3.svg" />
+                <p>We’ll come running</p>
+                <div>Your order will be delivered to you in no time.</div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <footer>
+        <section class="ContactUs">
+            <b>Contact us</b>
+            <div class="FootImg">
+                <img src="./images/twitter 2.svg" style="padding-right: 10px;" />
+                <img src="./images/youtube 1.svg" />
+                <img src="./images/facebook-f 1.svg" style="padding-left: 10px;" />
+            </div>
+            <div class="Terms">
+                <div>Terms & Conditions . Privacy Policy</div>
+                <p>© Copyright 2021 FoodBag is a registered trademark</p>
+            </div>
+        </section>
+    </footer>
+    <script src="./home.js" type="text/javascript"></script>
+</body>
+
+</html>
