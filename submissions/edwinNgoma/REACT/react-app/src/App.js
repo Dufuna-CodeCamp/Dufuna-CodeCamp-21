@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ComponentsHolder from "./components/ComponentsHolder";
 import ManageContext from "./context/mainContext";
 import { VerificationComponentsHolder } from "./components/VerificationComponentHolder";
-
+import { OrderMainComponentHolder } from "./components/OrderMainComponentHolder";
 
 
 
@@ -20,10 +20,9 @@ function App() {
   <Router>
 
   <Routes>
- 
   <Route path="/"  element = { <ComponentsHolder />} />
   <Route path="VerificationComponentsHolder"  element = { <VerificationComponentsHolder />} />
-
+  <Route path="OrderMainComponentHolder" element = {<OrderMainComponentHolder/>} />
   
 
   </Routes>
