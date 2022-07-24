@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 let removeBtn = document.querySelectorAll(".remove-btn");
+=======
+let btn = document.querySelectorAll(".btn");
+>>>>>>> 14b4fd634414df0831d7e180cc207ee2fae94db6
     notify = document.querySelector("#special");
 
 
 
 // Loops through all the link tags on the page
+<<<<<<< HEAD
 removeBtn.forEach(eval => {
     var btn = eval;
     
     eval.addEventListener("click", (eval) => {
         eval.preventDefault();
+=======
+btn.forEach(e => {
+    var btn = e;
+    
+    e.addEventListener("click", (e) => {
+        e.preventDefault();
+>>>>>>> 14b4fd634414df0831d7e180cc207ee2fae94db6
         if (btn.innerHTML=="Add to Cart") {
              // changes button text
             btn.innerHTML= `Remove`;
