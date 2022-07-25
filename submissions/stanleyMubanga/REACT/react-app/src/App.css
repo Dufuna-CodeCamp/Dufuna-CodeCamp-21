@@ -97,10 +97,29 @@ body {
     border-radius: 4px;
     background-color: var(--theme--);
   }
+
+  .heading {
+    font-size: medium;
+  }
+
+  .address-input {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: bottom;
+ }
   
   body {
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
 }

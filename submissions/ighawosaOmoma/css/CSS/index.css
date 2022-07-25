@@ -109,7 +109,8 @@ select{
     padding: 20px;
     display: flex;
     justify-content:space-between;
-    margin-bottom: 110px;
+    border-bottom:solid 1px  #E6E6E6;
+    margin-bottom: 70px;
     text-align: center;
 }
 .how-we-serve div{
@@ -127,7 +128,7 @@ select{
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    margin:10px 40px;
+    margin:40px;
 }
 .contact >h5, .socials{
     text-align: center;
@@ -153,3 +154,55 @@ footer > span{
     font-weight: 400;
     margin-bottom: 70px;
 }
+
+@media screen and (max-width: 992px) {
+    .foodbag>h2{
+        font-size: 38px;
+    }
+    .interest{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+    .how-we-serve{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .foodbag > h2{
+        font-size: 35px;
+    }
+    .interest{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }  
+}
+
+@media screen and (max-width:600px) {
+    .foodbag > h2{
+        font-size: 30px;
+    }
+    .foodbag{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .interest, .how-we-serve, footer{
+        grid-template-columns: 1fr;
+    } 
+    
+    .how-we-serve {
+        margin-bottom: 50px;
+    }
+    footer span {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer span:nth-of-type(2){
+        line-height: 27px;
+        margin: 10px 40px 30px 60px;    
+    }
+    
+}
+

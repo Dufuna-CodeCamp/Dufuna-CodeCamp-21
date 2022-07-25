@@ -97,7 +97,7 @@ button a {
 }
 
 .first-section h5 {
-    margin: 10px 100px;
+    margin: 10px 145px;
 }
 
 .first-boxes {
@@ -108,7 +108,7 @@ button a {
 select {
     width: 1000px;
     height: 30px;
-    margin: 20px 100px;
+    margin: 20px 145px;
 
 }
 
@@ -119,17 +119,30 @@ select {
     padding: 20px;
     height: 120px;
     width: 250px;
+    
+}
+.boxes:hover{
+    box-shadow: 4px 4px 4px 1px rgb(224, 224, 224);
+    border: 1px solid #ad4c4c;
+    cursor: pointer;
+
 }
 
 .box1 img {
     height: 30px;
 }
+.box1 .img2{
+    display: none;
+}
 
-.title {
+.firstTitle, .title {
     font-size: 13px;
     margin: 10px 0px;
     color: #a5a5a5;
-    font-weight: 900;
+    font-weight: 700;
+}
+.toggleTitle{
+    color: #ad4c4c;
 }
 
 .para {
@@ -144,6 +157,10 @@ select {
 .second-section {
     margin-top: 30px;
     text-align: center;
+}
+.second-section h4{
+    color: grey;
+    font-size: 17px;
 }
 
 .second-box {
@@ -172,7 +189,8 @@ footer {
 
 footer h6 {
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
+    color: grey;
 }
 
 .social-media {
