@@ -20,7 +20,6 @@ h6 {
     font-weight: lighter;
 }
 .left {
-    display: flex;
     flex-direction: column;
     display: block; 
     margin: 30px 10px 50px;
@@ -68,12 +67,12 @@ button:hover {
     display: block;
 }
 #headerh1 {
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 0px;
     font-size: 15px;
 }
 .navbar {
     float: right;
-    margin: -16px 15px 0px 15px; 
+    margin: -16px 15px 0px; 
     font-size: 14px;
     word-spacing: 10px;
 }
@@ -240,7 +239,7 @@ hr {
     margin-bottom: 50px;
 }
 html {
-    margin: 50px 30px 100px 30px;
+    margin: 50px 30px 100px;
 }
 #headerh1 {
     font-size: 25px;
@@ -249,7 +248,7 @@ html {
     float: right;
     font-size: 20px;
     word-spacing: 40px;
-    margin: -25px 0px 0px 0px;
+    margin: -25px 0px 0px;
 }
 button {
     border-color: red;
