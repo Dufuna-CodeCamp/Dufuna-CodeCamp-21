@@ -1,87 +1,180 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import img1 from '../FoodBag/radio_button_checked.svg';
-function Verification() {
-    return (
-        <div>
-            <ul className="home">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">{'>'}</a></li>
-                <li><a href="/">Cart</a></li>
-                <li><a href="/">{'>'}</a></li>
-                <li className='ca'><a href="/verification">Verification</a></li>
-            </ul>
+import { Link } from 'react-router-dom'
 
-            <Wrapper className='verification'>
+class Verification extends Component {
 
 
+    constructor() {
+        super();
+        this.state = {
+            phoneNumber: '',
+            cardNumber: '',
+            cardName: '',
+            expiryDate: '',
+            cvc: '',
+            payment: '',
+            change: false,
+            paymentMethod: ['Card', 'Visa', 'RuPay', 'MasterCard']
+        }
+    }
 
-                <div>
-                    <div className='veri'>
-                        <h2>Verification</h2>
-                        <span>Confirm address & Payment</span>
-                    </div>
-                    <img className='checkbox' src={img1} alt="radio button" />
+    handleInputChange = (event) => {
+        let value = event.target.value;
+        let name = event.target.name;
+        this.setState({ [name]: value })
 
-                    <h4>Delivery Address</h4>
+    }
 
-                    <p>Your order will be delivered to your address</p>
+    handleFormSubmit = (e) => {
+
+        const { phoneNumber, payment, cardName, cardNumber, cvc, expiryDate, paymentMethod } = this.state;
+        const details = {
+            phoneNumber: phoneNumber,
+            cardName: cardName,
+            cardNumber: cardNumber,
+            paymentMethod: paymentMethod,
+            cvc: cvc,
+            expiryDate: expiryDate,
+            payment: payment
+        }
 
 
-                </div>
+        if (phoneNumber !== 0 && cardName !== ''
+            && cardNumber !== 0 && paymentMethod !== 0
+            && expiryDate !== 0 && cvc !== 0) {
 
-{/* FORM */}
+            this.setState({ details: details, change: true })
 
-                <FormWrapper className='form' action="">
-                    <label htmlFor="Phone number">Phone number</label>
-                    <br /> <input type="number" placeholder='+234' required />
-                    <br />
-                    <hr />
-                    <br />
-                    <label htmlFor="Payment method">Payment method</label>
-                    <br />
-                    <input type="text" className="none" />
-                    <select  name="card-type" id="card-type" required>
-                        <option value="">Card</option>
-                        <option value="Visa">Visa</option>
-                        <option value="RuPay">RuPay</option>
-                        <option value="MasterCard">MasterCard</option>
-                    </select>
-                    <br />
-                    <label htmlFor="Card number">Card number</label>
-                    <br />
-                    <input  type="number" name='card-num' autoComplete='card-num' inputMode='numeric' pattern='[\d]{10,30}' placeholder='2345 6543 7868 2343' required />
-                    <br />
-                    <label htmlFor="Card name">Card name</label>
-                    <br />
-                    <input type="text" placeholder='Tolulope Bright Babatunde' required />
-                    <br />
+        } else {
+            this.setState({ change: false })
+            e.preventDefault();
+            console.log(this.state.change)
 
-                    <div className='box'>
+        }
 
-                        <div className='expiry'>
-                            <label htmlFor="Expiry date">Expiry date</label>
-                            <input type='text' placeholder="MM/YY" maxLength="5" required />
+    }
 
+    render() {
+        return (
+            <div>
+                <Wrapper className='verification'>
+
+
+
+                    <div>
+                        <div className='veri'>
+                            <h2>Verification</h2>
+                            <span>Confirm address & Payment</span>
                         </div>
+                        <img className='checkbox' src={img1} alt="radio button" />
+
+                        <h4>Delivery Address</h4>
+
+                        <p>Your order will be delivered to your address</p>
+
+
+                    </div>
+
+                    {/* FORM */}
+
+                    <FormWrapper className='form' action="">
+                        <label htmlFor="Phone number">Phone number</label>
+                        <br /> <input
+                            onChange={this.handleInputChange}
+                            value={this.state.phoneNumber}
+                            name='phoneNumber'
+                            type="number" placeholder='+234' required />
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <label htmlFor="Payment method">Payment method</label>
+                        <br />
+                        <input type="text" className="none" />
+
+                        <select onChange={this.handleInputChange}
+                            value={this.state.payment}
+                            name="payment" required>
+                            {this.state.paymentMethod.map((pay) => {
+                                return (
+                                    <option key={pay} value={pay} label={pay}>
+                                        {pay}
+                                    </option>
+                                )
+                            })}
+
+                        </select>
+                        <br />
+
+                        <label htmlFor="Card number">Card number</label>
+                        <br />
+                        <input onChange={this.handleInputChange}
+                            value={this.state.cardNumber}
+                            name='cardNumber'
+                            type="number" autoComplete='card-num' inputMode='numeric' placeholder='2345 6543 7868 2343' required />
+
+                        <br />
+                        <label htmlFor="Card name" >Card name</label>
+                        <br />
+                        <input type="text"
+                            onChange={this.handleInputChange}
+                            value={this.state.cardName}
+                            name='cardName'
+                            placeholder='Tolulope Bright Babatunde' required />
 
                         <br />
 
-                        <div className="cvc">
-                            <label htmlFor="CVC">CVC</label>
-                            <input type="number" placeholder='012' inputMode="numeric" maxLength={3} required />
+                        <div className='box'>
+
+                            <div className='expiry'>
+                                <label htmlFor="Expiry date">Expiry date</label>
+                                <input type='text'
+                                    name='expiryDate'
+                                    onChange={this.handleInputChange}
+                                    value={this.state.expiryDate}
+                                    placeholder="MM/YY" maxLength="5" required />
+
+                            </div>
+
+                            <br />
+
+                            <div className="cvc">
+                                <label htmlFor="CVC">CVC</label>
+                                <input type="number"
+                                    name='cvc'
+                                    onChange={this.handleInputChange}
+                                    value={this.state.cvc}
+                                    placeholder='012' inputMode="numeric" maxLength='3' required />
+
+                            </div>
+                        </div>
+                        {/* CHECKOUT BUTTON */}
+                        <div>
+
+                            {(this.state.change === true) ? <Link to={'/orderSuccessful'} className='checkout'>
+                                <button onClick={this.handleFormSubmit} className='check'>Pay</button>
+                            </Link> :
+                                <Link to={'/verification'} className='checkout'>
+                                    <button onClick={this.handleFormSubmit} className='check'>Pay</button>
+                                </Link>
+                            }
+
+
+
+
 
                         </div>
-                    </div>
-                    {/* CHECKOUT BUTTON */}
-                    <div className='checkout'>
-                        <button className='check'>Pay</button>
-                    </div>
 
-                </FormWrapper>
-            </Wrapper>
-        </div>
-    )
+                    </FormWrapper>
+
+                </Wrapper>
+
+            </div>
+        );
+    }
 }
 
 
@@ -148,6 +241,7 @@ label{
 
 
 `
+
 
 
 
