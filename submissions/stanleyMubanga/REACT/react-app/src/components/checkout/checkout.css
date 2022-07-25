@@ -4,11 +4,17 @@
     height: 60%;
     border: unset;
     background-color: var(--theme--);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.checkout-link {
+    padding: 1% 45%;
     color: aliceblue;
     font-weight: 550;
     font-size: large;
-    cursor: pointer;
-    transition: 200ms ease-in-out;
+    text-decoration: unset;
+    /* background-co lor: green; */
 }
 
 .checkout:hover {
