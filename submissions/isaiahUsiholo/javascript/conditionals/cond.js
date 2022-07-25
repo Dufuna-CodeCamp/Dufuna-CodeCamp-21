@@ -22,4 +22,7 @@ for (let i = 1; i <= number.length; i++) {
         //numbers that are multiples of 5
         document.write(" " + "developer" + "</br>");
     }
+    else {
+        document.write(" " + i + "</br>");
+    }
 }
