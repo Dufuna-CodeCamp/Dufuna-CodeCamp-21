@@ -79,7 +79,7 @@
     background-color: #fff;
 }
 .quantity{
-    margin: 0 2px 0 2px;
+    margin: 0 2px ;
     color: rgb(161, 49, 49);
 }
 
@@ -108,7 +108,7 @@
 .total{
    
     justify-content: space-between;
-    margin: 20px 2px 20px 2px;
+    margin: 20px 2px ;
 }
 .totalp{
     font-size: 25px;
