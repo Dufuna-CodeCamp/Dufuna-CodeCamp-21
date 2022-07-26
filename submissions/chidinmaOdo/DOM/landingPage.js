@@ -1,5 +1,5 @@
 let fastFood = "../css/image/fast-food.svg";
-let drinks = "../css/image/Drinks & Cocktails.svg";
+let drinkCocktail = "../css/image/Drinks & Cocktails.svg";
 let restaurant = "../css/image/resturant.svg";
 let vegetable = "../css/image/Vegetables & Drinks.svg";
 let address = document.getElementById("locate");
@@ -8,7 +8,7 @@ let imageTitle = document.querySelectorAll(".img-title");
 let cards = document.querySelectorAll(".box1");
 let vendorUrl = "./vendorpage.html";
 
-let imageArr = [fastFood, drinks, restaurant, vegetable];
+let imageArr = [fastFood, drinkCocktail, restaurant, vegetable];
 
 const changeFunct = () => {
     let selectedValue = address.options[address.selectedIndex].value;
