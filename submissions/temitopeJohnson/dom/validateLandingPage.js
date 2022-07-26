@@ -16,7 +16,3 @@ function validateAddress() {
     document.getElementById('btn4').disabled = false;
     return true;
 }
-
-// function goToVendors() {
-//     window.location.href = "./vendors.html";
-// }
