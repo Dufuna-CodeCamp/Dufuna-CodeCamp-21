@@ -1,0 +1,67 @@
+.header{
+   
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.name{ 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.A{
+    font-size: 30px;
+    margin-right:0 ;
+}
+.B{
+    font-size: 30px;
+    color: #ad4c4c;
+    margin-left: 0;
+}
+.nav{
+    display: inline-flex;
+    justify-content: right;
+    align-content: center;
+    
+    
+}
+a{
+    font-weight:500;
+    display: inline;
+    align-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    
+
+    
+    
+}
+.nav .cart{
+    color: #ad4c4c;
+}
+
+
+.nav .signup{
+    border: 2px solid #ad4c4c ;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #ad4c4c;
+    align-content: center;
+    margin-right: 0;
+    padding: 0 4px 0 4px;
+    
+    
+}
+/* responsiveness */
+@media screen and (max-width:1000px){
+    .header{
+        width: 100%;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    
+}
