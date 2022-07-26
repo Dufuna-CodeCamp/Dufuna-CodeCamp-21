@@ -1,0 +1,133 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodBag</title>
+  <link rel="stylesheet" href="../CSS/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <nav>
+      
+      <a class="nav-logo" href=""><strong>Food<span>Bag</span></strong></a>
+      <div class="navbar-item">
+          <a href="">Cart</a>
+          <a href="">Login</a>
+          <a id="signup" href="">Sign up</a>
+      </div>
+      
+  </nav>
+
+  <!-- FoodBag Center -->
+  <div class="foodbag-desc">
+      <h1>FoodBag</h1>
+      <p>Anything food, we have you covered.</p>
+  </div>
+
+  <form action="" method="post">
+      <label for="locations">Where are you?</label>
+      <br>
+      <input list="locations" oninput='clickableInterest()' name="locations" id="location" placeholder="Enter your delivery address">
+      <datalist name="locations" id="locations">
+        <option value="Lagos"></option>
+        <option value="Kano"></option>
+        <option value="Ogun"></option>
+        <option value="Oyo"></option>
+        <option value="Abuja"></option>
+        <option value="Kaduna"></option>
+        <option value="Jos"></option>
+      </datalist>  
+  </form>
+
+  <!-- Interest Cards -->
+  <h3>Pick an interest</h3>
+  <div class="interest">       
+
+      <div class="interest-items">
+        <img src="../HTML/assets/fast-food_disabled.svg"  class="card-img-int" alt="Fast-Food-disabled">
+        <img src="../HTML/assets/fast-food.svg" hidden="hidden" class="card-img-int" alt="Fast-Food">
+        <div class="card-body">
+          <h5 class="interest-title">Fast food</h5>
+          <p class="interest-text">All sorrows are less with bread</p>
+        </div>
+      </div>
+      <div class="interest-items">
+        <img src="../HTML/assets/Vegetables _ Drinks_disabled.svg" class="card-img-int" alt="Vegetables-disabled">
+        <img src="../HTML/assets/Vegetables _ Drinks.svg" hidden="hidden" class="card-img-int" alt="Vegetables">
+        <div class="card-body">
+          <h5 class="interest-title">Vegetables &amp; Fruits</h5>
+          <p class="interest-text">May not want it, but good for you.</p>
+        </div>
+      </div>
+      <div class="interest-items">
+        <img src="../HTML/assets/Drinks _ Cocktails_disabled.svg" class="card-img-int" alt="Drinks-Cocktails-disabled">
+        <img src="../HTML/assets/Drinks _ Cocktails.svg"hidden="hidden" class="card-img-int" alt="Drinks-Cocktails">
+        <div class="card-body">
+          <h5 class="interest-title">Drinks &amp; Cocktails</h5>
+          <p class="interest-text">I feel sad for those who don't drink.</p>
+        </div>
+      </div>
+      <div class="interest-items">
+          <img src="../HTML/assets/resturant_disabled.svg" class="card-img-int" alt="Resturants-disabled">
+          <img src="../HTML/assets/resturant.svg" hidden="hidden" class="card-img-int" alt="Resturants">
+          <div class="card-body">
+            <h5 class="interest-title">Resturants</h5>
+            <p class="interest-text">All sorrows are less with bread.</p>
+          </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <!-- How we serve -->
+  <h3 class="services-text">How we serve you</h3>
+  
+  <div class="services">
+      <div class="service-card">
+        <img src="../HTML/assets/Illustration_1.svg" class="card-img" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Tell us where you are</h3>
+          <p class="card-text">Select the location you want us to deliver.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="../HTML/assets/illustration_2.svg" class="card-img" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Tell us what you want</h3>
+          <p class="card-text">Browse the type of food that interest you.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="../HTML/assets/illustration_3.svg" class="card-img" alt="Delivery Scooter">
+        <div class="card-body">
+          <h3 class="card-title">We'll come running</h3>
+          <p class="card-text">Your order will be delivered to you in no time.</p>
+        </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <footer>
+      <h4>Contact us</h4>
+      <div class="footer-links">
+          <a href=""><img src="../HTML/assets/twitter 2.svg" alt="twitter link"></a>
+          <a href=""><img src="../HTML/assets/youtube 1.svg" alt="youtube link"></a>
+          <a href=""><img src="../HTML/assets/facebook-f 1.svg" alt="facebook"></a>
+      </div>
+
+      <div class="footer-text">
+          <p>Terms &amp; Conditions . Privacy Policy</p>
+          <p>© Copyright 2021 FoodBag is a registered trademark</p>
+      </div>
+      
+      
+  </footer>
+
+  <script src="../Dom/landingPageScript.js"></script>
+</body>
+</html>
