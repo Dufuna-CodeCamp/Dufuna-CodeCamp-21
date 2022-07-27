@@ -3,40 +3,41 @@ a {
     color: grey;
 }
 div {
-    float:left;
+    
     font-size: 20px;
     font-weight: lighter;
     padding: 0px;
     color: grey;
     word-spacing: 5px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
 }
 button {
     border-color: red;
     border-radius: 5px;
     border-width: 1px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: lighter;
     padding: 10px;
-    margin: 25px 0px 0px;
+    margin: 28px 0px 0px;
 }
 button:hover {
     background: darkorange;
 }
 .logo {
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 25px;
     position: fixed;
 }
-#viewall {
-float: right;
-margin: 0px 30px 30px 600px;
+.viewall {
+    text-align: center; 
+    margin: 850px 0px -30px 0px; 
+    color: #ff0000;
 }
 html {
     margin: 5px;
-    border: 25px;
+    border: 15px;
     border-radius: 5px;
 }
 .left {
@@ -69,9 +70,180 @@ div.here {
 }
 div.navbar {
     float: right;
-    width: 90%;
+    width: 99%;
     position: fixed;
     background-color: #fff;
     top: 0%;
     margin-top: 0%;
+}
+#title {
+    font-size: 15px;
+}
+#nav {
+    float: right; 
+    margin: -5px 40px 10px 0px; 
+    word-spacing: 15px;
+    font-size: 12px;
+}
+#vendiv {
+    word-spacing: 2px;
+    margin: 80px 15px 10px 0px;
+}
+#home1 {
+    margin: 500px 0px 15px 0px;
+}
+#alvendor {
+    font-size: 20px; 
+    margin: 10px 15px 15px 5px; 
+    color: #000;
+}
+section {
+    width: auto;
+}
+.cart {
+    margin-left: -120px;
+}
+#carts1 {
+    margin-left: -95px;
+}
+#carts2 {
+    margin-left: -110px;
+}
+#carts3 {
+    margin-left: -100px;
+}
+#carts4 {
+    margin-left: -125px;
+}
+#cart {
+    margin-top: 10px;
+}
+#hr {
+    margin-bottom: 30px;
+}
+#hre {
+    margin-top: -50px;
+}
+#footer1 {
+    word-spacing: 2px;
+    font-size: 8px;
+    float: left;
+}
+#footer2 {
+    word-spacing: 2px;
+    font-size: 8px;
+    float: right;
+    margin-top: 17px;
+}
+#g {
+    display: none;
+}
+#CR {
+    margin: 10px 20px 10px 10px;
+}
+#vw1,#vw2 {
+    float: right; 
+    margin-top: -30px;
+}
+span {
+    color: #f00;
+}
+.img {
+    margin: -15px 20px 10px 0px;
+}
+.secheight {
+    margin-top: ;
+}
+@media screen and (max-width: 400px) {
+    .invc, .hidviewall {
+        display: none;
+    }
+    h1 {
+
+        color: #000;
+    }
+    
+}
+@media screen and (min-width: 450px) {
+    #nav {
+        word-spacing: 20px;
+    }
+}
+@media screen and (max-width: 637px) {
+    .invc, .hidviewall {
+        display: none;
+    }
+    .viewall {
+        text-align: center; 
+        margin: 850px 0px -30px 0px; 
+        color: #ff0000;
+    }    
+}
+@media screen and (min-width: 638px) {
+    #hvw1, #hvw2{
+        display: none;
+    }
+    #hr {
+        margin-top: 500px;
+    }
+    #hre {
+        margin-top: 450px;
+    }
+    #vw1, #vw2 {
+        margin-right: 30px;
+    }
+    .secheight {
+       margin: -40px 0px -30px 0px; 
+    }
+    
+}
+@media screen and (min-width: 933px) {
+    #footer1, #footer2 {
+        font-size: 12px;
+    }
+    #footer2 {
+        margin-top: 27px;
+    }
+    #title {
+        font-size: 18px;
+    }
+    #nav {
+        font-size: 20px;
+    }
+    button {
+        font-size: 16px;
+    }
+    #nav {
+    float: right; 
+    margin: -5px 30px 10px 0px; 
+    word-spacing: 20px;
+    }
+    #hr {
+        margin-top: 530px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    html {
+        margin-left: 30px;
+    }
+    #hr {
+        margin-top: 270px;
+    }
+    #hre {
+        margin-top: 200px;
+    }
+    #footer1, #footer2 {
+        font-size: 14px;
+    }
+    #footer2 {
+        margin-top: 32px;
+    }
+    #nav {
+        float: right; 
+        margin: -5px 50px 10px 100px; 
+        word-spacing: 20px;
+    }
+    #title {
+        font-size: 20px;
+    }
 }

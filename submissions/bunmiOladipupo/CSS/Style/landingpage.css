@@ -214,6 +214,11 @@ hr {
         margin: 10px -25px 0px 10px;
     }    
 }
+@media screen and (max-width: 1049px) {
+    #middle2 {
+        display: none;
+    }    
+}
 @media screen and (min-width: 1050px) {
     .left {
         float: left;
@@ -221,36 +226,39 @@ hr {
         margin: 30px 10px 50px;
         width: auto;
     }
+    #middle {
+        display: none;
+    }
     #hrr {
         margin: 250px 0px 50px;
-}
-.fre {
+    }
+    .fre {
     margin: 0px -10px 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-#sp1 {
+    }
+    #sp1 {
     float: left;
-}
-#gr2 {
+    }
+    #gr2 {
     float: right;
-}
-.foot {
+    }
+    .foot {
     margin-bottom: 50px;
-}
-html {
+    }
+    html {
     margin: 50px 30px 100px;
-}
-#headerh1 {
+    }
+    #headerh1 {
     font-size: 25px;
-}
-.navbar {
+    }
+    .navbar {
     float: right;
     font-size: 20px;
     word-spacing: 40px;
     margin: -25px 0px 0px;
-}
-button {
+    }
+    button {
     border-color: red;
     border-radius: 5px;
     border-width: 1px;
@@ -258,31 +266,31 @@ button {
     font-weight: lighter;
     padding: 10px;
     margin: -7px 0px 0px;
-}
-button:hover {
+    }
+    button:hover {
     background: darkorange;
-}
-#a5,#aa5,#aaa5 {
+    }
+    #a5,#aa5,#aaa5 {
     align: center;
     margin: 15px 0px 0px -25px;
     font-size: 15px;
     text-align: inherit;
-}
-#b5,#bb5,#bbb5 {
+    }
+    #b5,#bb5,#bbb5 {
     align: center;
     margin: 15px -30px 0px 0px;
     font-size: 15px;
     text-align: inherit;
-}
-#a6,#aa6,#aaa6 {
+    }
+    #a6,#aa6,#aaa6 {
     align: center;
     margin: 10px px 0px 0px;
     font-size: 12px;
     text-align: inherit;
-}
-#b6,#bb6,#bbb6 {
+    }
+    #b6,#bb6,#bbb6 {
     align: center;
     margin: 15px 0px 0px 20px;
     text-align: inherit;
-}
+    }
 }
