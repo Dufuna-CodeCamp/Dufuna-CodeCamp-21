@@ -36,10 +36,10 @@ for (let i = 0; i < productName.length; i++) {
 	if (productName[i].length % 2 == 0) {
 		let newPrice = productPrice[i] * 2;
 		newProductPrice.push(newPrice);
-		console.log(`The price of ${productName[i]} is ${newProductPrice[i]}. \n <br>`);
+		console.log(`The price of ${productName[i]} is ${newProductPrice[i]}. \n`);
 	} else {
 		let newPrice = productPrice[i] / 2;
 		newProductPrice.push(newPrice);
-		console.log(`The price of ${productName[i]} is ${newProductPrice[i]}. \n <br>`);
+		console.log(`The price of ${productName[i]} is ${newProductPrice[i]}. \n`);
 	}
 }
