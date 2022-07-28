@@ -16,6 +16,7 @@ var productList = [
         price: "#44,000" 
     }
 ];
+
 for (i = 0; i <= productList.length; i++) {
     document.write (productList[i].productName + " " + "with" + productList[i].image + " " +"is sold for" + " " + productList[i].price + "<br><br>" );
 }
