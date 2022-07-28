@@ -133,7 +133,8 @@ select{
              .term{
                  margin-top: 100px;
              }
-            #rr{
+            h2.main-heading{
+                font-weight: bolder;
                 font-size: 30px;
             }
             a:link{
@@ -145,5 +146,8 @@ select{
              }
              #sign{
                 color: red;
+             }
+             .social image{
+                width: 50%;
              }
         
