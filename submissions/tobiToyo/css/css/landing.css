@@ -12,13 +12,17 @@ html{
 body{
     /* width: 90vw; */
     margin: 0 100px 20px;
-    background: #E5E5E5;
+    
 }
 
 .interest p, .font14 {
     font-size: 14px;
     font-weight: 400;
     color: #A5A5A5;
+}
+
+.highlighted p {
+    color: black;
 }
 
 .font14-500 {
@@ -61,6 +65,12 @@ body{
     font-size: 18px;
     font-weight: 500;
     color: #A5A5A5;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.highlighted h4 {
+    color: #AD4C4C;
 }
 
 /* font20-500 */
@@ -72,11 +82,15 @@ body{
 .font20-400 {
     font-size: 20px;
     font-weight: 400;
-   color: #A5A5A5; 
+    color: #A5A5A5; 
+}
+
+.black {
+    color: black;
 }
 
 #header {
-    background: #E5E5E5;
+    background: white;
     width: calc(100vw - 200px);
     position: fixed;
     top: 0;
@@ -143,9 +157,11 @@ a {
 
 #locate {
     width: 100%;
+    border: 1px solid #C4C4C4;
     border-radius: 5px; /* may need to chenge to figma value */
     padding: 15px 30px;
-    margin-top: 20px;
+    margin-top: 20px; /* i need to space out the drop-down arrow and the border */
+    cursor: pointer;
 }
 
 #interest-div {
@@ -164,8 +180,20 @@ hr {
 }
 
 .interest{
-    border: 1px solid #696969;
+    box-shadow: 0px 0px 3px 1.5px hwb(0 0% 100% / 0.1);
     padding: 24px 30px;
+}
+
+
+#highlighted-grid {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px; /* may need to chenge to figma value */
+    margin-top: 20px;
+}
+
+.highlighted {
+    cursor: pointer; 
 }
 
 #serve-you {

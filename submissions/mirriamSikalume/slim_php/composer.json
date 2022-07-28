@@ -1,0 +1,17 @@
+{
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.5",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB\\":"connection",
+            "App\\ArticlesController\\": "app/controllers",
+            "App\\Middleware\\":"app/middlewares"
+        }
+    },
+    "scripts": {
+        "start":"php -S localhost:8080 -t public"
+    }
+}

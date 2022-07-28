@@ -1,0 +1,58 @@
+.cart-validation {
+    width: 100%;
+    height: 130%;
+    /* background-color: red; */
+}
+
+.cart-checkout {
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.address {
+    align-items: center;
+}
+
+h2,
+p{
+    height: 0;
+    padding: 0.5% 0;
+}
+
+.address-title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    padding: 2% 0;
+    align-items: center;
+ }
+
+ /* h2 {
+    height: 8%;
+ } */
+
+ .address-input {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: bottom;
+ }
+
+ 
+.phone {
+    height: 20%;
+    border-bottom:  2px solid rgb(209, 209, 209);
+}
+
+.phone input {
+    margin-top: -20px;
+    height: 35%;
+}
