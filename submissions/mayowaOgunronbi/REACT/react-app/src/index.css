@@ -90,7 +90,6 @@ p span {
   display: flex;
 }
 #price {
-  margin-right: 30px;
   font-size: 23px;
   font-weight: bold;
   margin: auto 30px;
@@ -236,7 +235,7 @@ p span {
 
 @media (max-width: 393px) {
 	body {
-		margin: 0 20px 0;
+		margin: 0 20px;
 	}
 	  
 	  
@@ -287,10 +286,12 @@ p span {
 	  .buttons {
 		height: 10px;
 		width: 10px;
+		margin-top: 90px;
+		display: flex;
+		padding: 5px;
 	  }
 
 	  #price {
-		margin-right: 30px;
 		font-size: 20px;
 		font-weight: bold;
 		margin: auto 30px;
@@ -317,11 +318,7 @@ p span {
 		font-weight: 400;
 	  }
 	  
-	  .buttons {
-		margin-top: 90px;
-		display: flex;
-		padding: 5px;
-	  }
+	  
 	  #plus-button {
 		background-color: white;
 		border: none;
@@ -479,7 +476,7 @@ p span {
 
 #order-delivered {
   color: grey;
-  margin: -10px 0 50px 0;
+  margin: -10px 0 50px;
 }
 
 .location input[type='radio']:checked:after {
@@ -581,7 +578,7 @@ p span {
 	  
 	  #order-delivered {
 		color: grey;
-		margin: -10px 0 20px 0;
+		margin: -10px 0 20px;
 		font-size: 16px;
 	  }
 	  
@@ -666,7 +663,7 @@ p span {
 /* =============SUCCESS PAGE============= */
 
 .success-image img {
-    margin: 300px auto 30px auto;
+    margin: 300px auto 30px;
     display: block;
 }
 
@@ -691,7 +688,7 @@ p span {
 @media (max-width: 393px) {
 
 	body {
-		margin: 0 20px 0;
+		margin: 0 20px;
 	}
 	  
 	  #foodbag {
@@ -699,12 +696,12 @@ p span {
 	  }
 	  
 	  .nav a {
-		margin: 20px 0 10px 0;
+		margin: 20px 0 10px;
 		font-size: 15px;
 	  }
 	  
 	  .success-image img {
-		margin: 200px auto 30px auto;
+		margin: 200px auto 30px;
 	}
 	
 	.success-message h3{
