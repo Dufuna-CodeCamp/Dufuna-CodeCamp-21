@@ -133,11 +133,30 @@ input[list] {
     background-repeat: no-repeat;
 }
 
-.interest-wrap {
+input:focus-visible {
+    border: 1px solid #a5a5a5;
+    outline: none;
+}
+
+
+.interest-wrap,
+.interest-wrap3 {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 10px 0;
+}
+
+.interest-wrap3 h5 {
+    color: #AD4C4C;
+}
+
+.interest-wrap2 {
+    display: none;
+}
+
+.remove_interest {
+    display: none;
 }
 
 .interests {
@@ -241,7 +260,8 @@ footer ul {
         padding: 0 2rem;
     }
 
-    .interest-wrap {
+    .interest-wrap,
+    .interest-wrap3 {
         flex-direction: row;
         gap: 13px;
     }
@@ -276,9 +296,18 @@ footer ul {
         padding: 0 2rem;
     }
 
-    .interest-wrap {
+    .interest-wrap,
+    .interest-wrap3 {
         flex-direction: row;
         gap: 13px;
+    }
+
+    .remove_interest {
+        display: none;
+    }
+
+    .interest-wrap3 h5 {
+        color: #AD4C4C;
     }
 
     h3 {

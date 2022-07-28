@@ -87,6 +87,7 @@
               "err": {},
               "uuid": "4cb3d0ea-c396-4f06-8b69-eb969bbc8e6e",
               "parentUUID": "964b71f2-8e3f-49ed-8c54-d73693b68ebb",
+
               "isHook": false,
               "skipped": false
             },
@@ -266,6 +267,7 @@
     "marge": {
       "options": {
         "reportDir": "C:/Users/Tomiwa/desktop/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
+
         "reportFilename": "logfile",
         "quiet": "true"
       },

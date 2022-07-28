@@ -1,0 +1,189 @@
+*{
+    margin: 10px;
+    
+}
+.heading{
+    padding:  0 0.4%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    margin-bottom: 40px;
+    font-size: 15px;
+    position: relative;
+
+}
+.cartheading{
+    height: 90%;
+    width: 100%;
+    font-weight: 500;
+}
+.q-text{
+    visibility: hidden;
+}
+.right{
+    visibility: hidden;
+}
+.KFC .refuelmax1 .refuelmax2{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    
+   
+}
+.cart-item{
+    
+    display: flex;
+    position:relative;
+    border-bottom: 2px solid rgb(247, 247, 247);
+    margin: 20px 0px 10px 5px;
+}
+.item-img{
+    height: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 0;
+    
+}
+.item-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-info{
+    height: 100%;
+    display:block;
+    flex-wrap: wrap;
+    font-size: 20px;
+    align-self: center;
+    justify-content: space-between;
+}
+.info{
+    
+    align-items: center;
+    display: flex;
+    
+    margin-bottom: 10px;
+}
+.counter-btns{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.counter-btns img{
+    background-color: #fff;
+}
+.quantity{
+    margin: 0 2px ;
+    color: rgb(161, 49, 49);
+}
+
+.price{
+    position: absolute;
+    right:0 ;
+    height: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    font-weight: 500;
+    color: rgb(78, 74, 74);
+    
+}
+.btn-nav{
+    width: 100%;
+    height: 28%;
+}
+.btn-nav div{
+    width: 100%;
+    height: 49%;
+    display: flex;
+    align-items: center;
+}
+.total{
+   
+    justify-content: space-between;
+    margin: 20px 2px ;
+}
+.totalp{
+    font-size: 25px;
+    font-weight:bolder;
+}
+.removebtn{
+    display: flex;
+    align-self: center;
+    height: 50%;
+}
+.removebtn img{
+    height: 50px;
+    width: 50px;
+    margin-right: 0;
+    
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+@media screen and (max-width:1000px){
+    .heading2{
+        width: 100%;
+    }
+    .q-text{
+        visibility: visible;
+        font-size: 20px;
+        color: rgb(161, 49, 49);
+        
+    }
+    
+    .right{
+        visibility: visible;
+        color: rgb(161, 49, 49);
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        
+        align-items: center;
+    }
+    .cart-item .item-img{
+        height: 50%;
+        width: 50%;
+    }
+    .product-info{
+        height:100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    .info {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        font-size: 25px;
+        
+    }
+    .counter-btns{
+        margin: auto;
+        margin-left:0 ;
+        
+        display: flex;
+        
+        align-items: center;
+    }
+    .total h1{
+        font-size: 25px;
+    }
+    .price{
+        font-size: 20px;
+        height: 50%;
+    }
+
+}
