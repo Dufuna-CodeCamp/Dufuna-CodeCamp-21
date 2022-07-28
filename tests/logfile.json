@@ -1,1 +1,199 @@
-{"numFailedTestSuites":3,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":5,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":3,"numTodoTests":0,"numTotalTestSuites":4,"numTotalTests":5,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0},"startTime":1658931009429,"success":false,"testResults":[{"assertionResults":[],"coverage":{},"endTime":1658931011399,"message":"  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module '../components/Verification' from 'src/__tests__/Verification.test.js'\n\n    \u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[33mReact\u001b[39m \u001b[36mfrom\u001b[39m \u001b[32m\"react\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m { shallow} \u001b[36mfrom\u001b[39m \u001b[32m\"enzyme\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[33mVerification\u001b[39m \u001b[36mfrom\u001b[39m \u001b[32m\"../components/Verification\"\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m   |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 4 |\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 5 |\u001b[39m \u001b[36mconst\u001b[39m thisComponent \u001b[33m=\u001b[39m shallow(\u001b[33m<\u001b[39m\u001b[33mVerification\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 6 |\u001b[39m\u001b[0m\n\n      \u001b[2mat Resolver.resolveModule (\u001b[22mnode_modules/jest-runtime/node_modules/jest-resolve/build/index.js\u001b[2m:306:11)\u001b[22m\n      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[0m\u001b[36msrc/__tests__/Verification.test.js\u001b[39m\u001b[0m\u001b[2m:3:1)\u001b[22m\n","name":"/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/submissions/oluwatimileyinAkinpelu/react/foodBag/src/__tests__/Verification.test.js","startTime":1658931011399,"status":"failed","summary":""},{"assertionResults":[],"coverage":{},"endTime":1658931011399,"message":"  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module '../components/OrderSuccessful' from 'src/__tests__/OrderSuccessful.test.js'\n\n    \u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[33mReact\u001b[39m \u001b[36mfrom\u001b[39m \u001b[32m\"react\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 2 |\u001b[39m \u001b[36mimport\u001b[39m { shallow} \u001b[36mfrom\u001b[39m \u001b[32m\"enzyme\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m \u001b[36mimport\u001b[39m \u001b[33mOrderSuccessful\u001b[39m \u001b[36mfrom\u001b[39m \u001b[32m\"../components/OrderSuccessful\"\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m   |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 4 |\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 5 |\u001b[39m \u001b[36mconst\u001b[39m thisComponent \u001b[33m=\u001b[39m shallow(\u001b[33m<\u001b[39m\u001b[33mOrderSuccessful\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 6 |\u001b[39m\u001b[0m\n\n      \u001b[2mat Resolver.resolveModule (\u001b[22mnode_modules/jest-runtime/node_modules/jest-resolve/build/index.js\u001b[2m:306:11)\u001b[22m\n      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[0m\u001b[36msrc/__tests__/OrderSuccessful.test.js\u001b[39m\u001b[0m\u001b[2m:3:1)\u001b[22m\n","name":"/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/submissions/oluwatimileyinAkinpelu/react/foodBag/src/__tests__/OrderSuccessful.test.js","startTime":1658931011399,"status":"failed","summary":""},{"assertionResults":[],"coverage":{},"endTime":1658931011399,"message":"  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module 'react' from '../../../../../../node_modules/react-router-dom/umd/react-router-dom.development.js'\n\n    Require stack:\n      /Users/oluwatimileyinakinpelu/node_modules/react-router-dom/umd/react-router-dom.development.js\n      /Users/oluwatimileyinakinpelu/node_modules/react-router-dom/main.js\n      src/App.js\n      src/__tests__/App.test.js\n\n      \u001b[2mat Resolver.resolveModule (\u001b[22mnode_modules/jest-runtime/node_modules/jest-resolve/build/index.js\u001b[2m:306:11)\u001b[22m\n      \u001b[2mat \u001b[22m../../../../../../node_modules/react-router-dom/umd/react-router-dom.development.js\u001b[2m:12:83\u001b[22m\n      \u001b[2mat Object.<anonymous> (\u001b[22m../../../../../../node_modules/react-router-dom/umd/react-router-dom.development.js\u001b[2m:15:2)\u001b[22m\n","name":"/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/submissions/oluwatimileyinAkinpelu/react/foodBag/src/__tests__/App.test.js","startTime":1658931011399,"status":"failed","summary":""},{"assertionResults":[{"ancestorTitles":[],"failureMessages":[],"fullName":"renders without crashing","location":null,"status":"passed","title":"renders without crashing"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: check header title","location":null,"status":"passed","title":"test case: check header title"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: check intial counter value","location":null,"status":"passed","title":"test case: check intial counter value"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: expected images","location":null,"status":"passed","title":"test case: expected images"},{"ancestorTitles":[],"failureMessages":[],"fullName":"test case: check submit button","location":null,"status":"passed","title":"test case: check submit button"}],"endTime":1658931011380,"message":"","name":"/Users/oluwatimileyinakinpelu/Documents/Dufuna-CodeCamp-21/submissions/oluwatimileyinAkinpelu/react/foodBag/src/__tests__/CartPage.test.js","startTime":1658931010122,"status":"passed","summary":""}],"wasInterrupted":false}
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-27T16:11:44.038Z",
+    "end": "2022-07-27T16:11:52.812Z",
+    "duration": 8774,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74a25350-157c-46a5-8785-77aec506f84e",
+      "title": "",
+      "fullFile": "C:\\Users\\USER\\desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
+      "file": "\\html_task.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\USER\\desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
+          "file": "\\html_task.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 8516,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "af66d586-9039-459a-ba59-c1ade2ea2aa9",
+              "parentUUID": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "42eb37f6-9e74-490f-be77-17a30c9e2a8c",
+              "parentUUID": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check if Price is present",
+              "fullTitle": "Testing Scholars Project test case: check if Price is present",
+              "timedOut": false,
+              "duration": 89,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "err": {},
+              "uuid": "88880bcb-36a2-4c58-a65e-c2be3e50f43d",
+              "parentUUID": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check if Description is present",
+              "fullTitle": "Testing Scholars Project test case: check if Description is present",
+              "timedOut": false,
+              "duration": 39,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "err": {},
+              "uuid": "5832c3ad-b805-4b14-9170-d2cba3689307",
+              "parentUUID": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 2",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
+              "timedOut": false,
+              "duration": 18,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "err": {},
+              "uuid": "c486a5cc-2353-4842-b18c-e5bb98533ef3",
+              "parentUUID": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
+              "err": {},
+              "uuid": "b0fcaf8e-23b1-4ff9-b29a-80656d43655c",
+              "parentUUID": "a13fbeaa-9a0d-44f5-aa1b-07a416139775",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "88880bcb-36a2-4c58-a65e-c2be3e50f43d",
+            "5832c3ad-b805-4b14-9170-d2cba3689307",
+            "c486a5cc-2353-4842-b18c-e5bb98533ef3",
+            "b0fcaf8e-23b1-4ff9-b29a-80656d43655c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 147,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/USER/desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
