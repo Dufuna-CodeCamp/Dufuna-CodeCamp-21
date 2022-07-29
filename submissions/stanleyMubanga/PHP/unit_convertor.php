@@ -1,6 +1,8 @@
 <?php 
 
-    // ubit converter
+    // unit converter
+
+    // 
 
     function unitConvertor($sum){
         $pounds = $sum * 2.20462;
@@ -12,6 +14,10 @@
         echo "$sum Degrees celcius converts to: $fahrenheit fahrenheit <br/>";
     }
 
+
+    // calling the function
+
     unitConvertor(50);
      
+
 ?>
