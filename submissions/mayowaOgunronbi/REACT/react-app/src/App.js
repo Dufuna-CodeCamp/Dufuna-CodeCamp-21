@@ -1,11 +1,11 @@
-import Cart from './Components/Cart';
 import image4 from './Images/image4.svg';
 import image3 from './Images/image3.svg';
 import image1 from './Images/image1.svg';
+import SuccessImage from './Images/success.svg'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Cart from './Components/Cart';
 import Verification from './Components/Verification';
 import Success from './Components/Success';
-import SuccessImage from './Images/success.svg'
 
 function App() {
   
