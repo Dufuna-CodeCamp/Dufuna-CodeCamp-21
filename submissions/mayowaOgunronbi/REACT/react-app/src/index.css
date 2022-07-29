@@ -1,4 +1,3 @@
-
 body {
   margin: 20px 60px 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -427,10 +426,6 @@ p span {
 		font-weight: 700;
 	  }
 
-
-	
-
-
 }
 
 
@@ -493,9 +488,6 @@ p span {
   border: 1px solid #ad4c4c;
 }
 
-
-
-
 .input-field {
   width: auto;
   height: 120px;
@@ -535,7 +527,7 @@ p span {
 }
 
 .inline-items {
-  width: 100vw;
+  width: 95vw;
   height: 120px;
   margin-bottom: 10px;
   display: flex;
@@ -551,7 +543,7 @@ p span {
   width: 45vw;
   height: 35px;
   border-radius: 10px;
-  margin-right: 10%;
+  margin-right: 22px;
 }
 
 .label {
