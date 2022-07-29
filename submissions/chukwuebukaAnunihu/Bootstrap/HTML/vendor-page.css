@@ -1,0 +1,59 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link .btn:hover {
+    background-color: #fff;
+    color: #AD4C4C;
+}
+
+span {
+    color: #AD4C4C
+}
+
+.navbar {
+    margin-top: -16px;
+}
+
+.nav-link .btn {
+    color: #AD4C4C;
+    border: 1px solid#AD4C4C;
+    margin-top: -5px
+}
+
+.btn:focus,
+button:focus {
+    border-color: #AD4C4C;
+    box-shadow: inset 0 1px 1px #AD4C4C, 0 0 8px #AD4C4C;
+}
+
+button {
+    color: #AD4C4C;
+    background-color: #fff;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    width: 138px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.d-none {
+    color: #AD4C4C;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    ul,
+    .nav-link .btn,
+    p.text-body,
+    .text-muted {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .navbar {
+        width: 25%
+    }
+}
