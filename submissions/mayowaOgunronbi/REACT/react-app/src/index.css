@@ -629,7 +629,7 @@ p span {
 		border: 1px solid grey;
 		font-size: 18px;
 		color: grey;
-		width: 34vw;
+		width: 31.5vw;
 		height: 10px;
 		border-radius: 10px;
 	  }
@@ -661,7 +661,7 @@ p span {
 
 
 .success-message h3{
-  font-size: 30px;
+  font-size: 35px;
   color: #5EA304;
 }
 
@@ -672,7 +672,7 @@ p span {
   margin-top: -10px;
 }
 
-.success-message h3,p{
+.success-message h3, p{
   text-align: center;
 }
 
