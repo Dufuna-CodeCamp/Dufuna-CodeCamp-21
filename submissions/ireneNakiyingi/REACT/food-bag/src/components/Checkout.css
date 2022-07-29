@@ -1,0 +1,27 @@
+.checkout{
+    margin: auto;
+    width: 70%;
+    height: 60px;
+    padding: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #de4747;
+    color: rgb(255, 255, 255);
+    font-size:25px;
+    transition: 200ms ease-in-out;
+}
+
+.checkout:hover{
+    background-color: #aa2323;
+}
+@media screen and (max-width:1000px){
+    .checkout{
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+        margin-top: 20px;
+        
+    }
+}

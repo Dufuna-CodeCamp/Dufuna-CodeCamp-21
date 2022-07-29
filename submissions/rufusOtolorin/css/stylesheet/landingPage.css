@@ -1,0 +1,552 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    font-style: normal;
+    margin: 23px 20px 0px;
+}
+
+a:hover {
+    color: #AD4C4C;
+}
+
+h3 {
+    
+    font-size: 12px;
+    line-height: 18px;
+}
+h4 {
+    font-size: 18px;
+    color: #A5A5A5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 53px;
+}
+.foodbag {
+    width: 72px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    float: left;
+    color: #000000;
+
+}
+.secondheader a {
+    border: 1px rgba(240, 0, 0, 0%) solid;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #696969;
+    text-decoration: none;
+    }
+header nav a:nth-child(3) {
+    width: 48px;
+    height: 23px;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px
+
+}
+.PREMAIN {
+    float: left;
+    width: 100%;
+    margin-bottom: 31px;
+    }
+.PREMAIN p:first-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+.PREMAIN p:nth-child(2) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #696969;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    color: #696969;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 40px;
+    color: #696969;
+    }
+.PICKAI {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #FFFFFF;
+
+}
+.PICKAIP {
+    font-size: 14px;
+    color: #A5A5A5;
+    width: 100%;
+}
+.PICKAI div {
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    height: 141px;
+    line-height: 6px;
+
+}
+.image1 {
+    width: 50px;
+    height: 50px;
+
+}
+.HOWWESYH {
+   text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px;
+}
+.HOWWESY {
+    display: flex;
+    flex-direction: column;
+}
+.HOWWESY div {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.HOWWESYP {
+    display: inline-block;
+    width: 147px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #A5A5A5;
+}
+.image2 {
+    width: 200px;
+    height: 151px;
+}
+
+.contactus {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+}
+.footericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+.image3 {
+    width: 55px;
+    height: 37px;
+}
+.footerend {
+    margin-top: 22px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #696969;
+    text-decoration: none;
+}
+.footerend div a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #696969;
+    text-decoration: none;
+}
+.footercopyright {
+    display: inline-block;
+    color: #696969;
+    width: 176px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+section {
+    margin: 30px 0px;
+}
+
+@media only screen and (min-width: 600px){
+    body {
+        
+        background-color: #FFFFFF;
+        font-family: sans-serif;
+        font-style: normal;
+        margin: 30px 23px 0px;
+    }
+    h3 {
+        
+        font-size: 12px;
+        line-height: 18px;
+    }
+    h4 {
+        font-size: 18px;
+        color: #A5A5A5;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 53px;
+    }
+    .foodbag {
+        font-weight: 600;
+        font-size: 20px;
+        float: left;
+        color: #000000;
+    
+    }
+    .secondheader a {
+        border: 1px rgba(240, 0, 0, 0%) solid;
+        display: inline-block;
+        padding: 2px 5px;
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 400;
+        color: #696969;
+        text-decoration: none;
+        }
+    header nav a:nth-child(3) {
+        width: 63px;
+        height: 23px;
+        background: #FFFFFF;
+        border: 1px solid #AD4C4C;
+        border-radius: 5px
+    
+    }
+    .PREMAIN {
+        float: left;
+        width: 100%;
+        margin-bottom: 31px;
+        }
+    .PREMAIN p:first-child {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+    .PREMAIN p:nth-child(2) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #696969;
+        margin: 0px;
+    }
+    h2 {
+        color: #696969;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    input {
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 40px;
+        color: #696969;
+        }
+    .PICKAI {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 2rem;
+        background: #FFFFFF;
+    
+    }
+    .PICKAIP {
+        font-size: 14px;
+        color: #A5A5A5;
+        width: 100%;
+    }
+    .PICKAI div {
+        box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 100%;
+        height: 141px;
+        line-height: 6px;
+    
+    }
+    .image1 {
+        width: 50px;
+        height: 50px;
+    
+    }
+    .HOWWESYH {
+       text-align: center;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 30px;
+        margin: 0px;
+    }
+    .HOWWESY {
+        display: flex;
+        flex-direction: column;
+    }
+    .HOWWESY div {
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .HOWWESYP {
+        display: inline-block;
+        width: 250px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #A5A5A5;
+    }
+    .image2 {
+        width: 200px;
+        height: 151px;
+    }
+    
+    .contactus {
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #696969;
+    }
+    .footericon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px;
+    }
+    .image3 {
+        width: 55px;
+        height: 37px;
+    }
+    .footerend {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 22px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #696969;
+        text-decoration: none;
+    }
+    .footerend div a {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #696969;
+        text-decoration: none;
+    }
+    .footercopyright {
+        color: #696969;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    section {
+        margin: 30px 0px;
+    }
+    
+}
+@media only screen and (min-width: 992px){
+body {
+    font-family: sans-serif;
+    width: auto;
+    padding: 50px 100px 0px
+}
+a {
+    color: #696969;
+    text-decoration: none;
+}
+a:hover {
+    color: #AD4C4C;
+}
+
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+    color: #A5A5A5;
+    line-height: 25px;
+    height: 54px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+}
+header nav:nth-child(2) a {
+    padding: 5px 10px;
+}
+header nav a:nth-child(3) {
+    width: 76px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px
+
+}
+.PREMAIN {
+    text-align: center;
+    }
+.PREMAIN p:first-child {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    }
+.PREMAIN p:nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #696969;
+    margin: 0px;
+}
+.PICKAI {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #FFFFFF;
+    width: auto;
+    height: 260px;
+}
+.PICKAIP {
+    font-size: 14px;
+    color: #A5A5A5;
+    width: auto;
+    line-height: 22px;
+}
+.PICKAI div {
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: auto;
+    height: 141px;
+    line-height: 6px;
+
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
+    color: #696969;
+}
+.HOWWESYP {
+    font-size: 20px;
+    color: #A5A5A5;
+    line-height: 30px;
+}
+
+
+input {
+    width: 100%;
+    font-size: 20px;
+    color: #696969;
+    }
+.image1 {
+    width: 70px;
+    height: 70px;
+}
+.image2 {
+    width: 250px;
+    height: 190px;
+}
+.HOWWESYH {
+    text-align: center;
+}
+.HOWWESY {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.HOWWESY div {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+footer {
+    width: 100%;
+}
+.contactus {
+    text-align: center;
+    font-size: 18px;
+    color: #696969;
+}
+.footericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+.image3 {
+    width: 80px;
+    height: 50px;
+}
+.footerend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    line-height: 27px;
+}
+.footerend div a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #696969;
+    text-decoration: none;
+}
+.footercopyright {
+    display: inline-block;
+    color: #696969;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    width: 402px;
+}
+section {
+    margin: 52px 0px;
+}
+}
