@@ -59,6 +59,12 @@ main {
     left: 20px;
     border-radius: 5px;
    }
+ .disabledInput{
+   /** border: 1px solid red;*/
+    pointer-events: none;
+    color: gray;
+ }
+
 
 .foods, .foods1 {
     margin-bottom: 50px;
@@ -114,9 +120,9 @@ main {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.foods .wp .order div .desc {
+/**.foods .wp .order div .desc {
     color: gray;
-} 
+} */
 hr{
     width: 300px;
   }
