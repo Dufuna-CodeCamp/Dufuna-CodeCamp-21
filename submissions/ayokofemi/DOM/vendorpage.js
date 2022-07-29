@@ -1,14 +1,17 @@
 let btn = document.querySelectorAll(".btn");
+
     notify = document.querySelector("#special");
 
 
 
 // Loops through all the link tags on the page
+
 btn.forEach(e => {
     var btn = e;
     
     e.addEventListener("click", (e) => {
         e.preventDefault();
+
         if (btn.innerHTML=="Add to Cart") {
              // changes button text
             btn.innerHTML= `Remove`;
