@@ -2,6 +2,62 @@ a {
     text-decoration: none;
     color: grey;
 }
+#class {
+    margin-left: -90px;
+}
+#bag {
+    color: #f00;
+}
+.navigation {
+    float: right; 
+    margin: -5px 25px 10px 10px; 
+    word-spacing: 40px;
+}
+#signup {
+    color:red;
+}
+.home {
+    word-spacing: 2px;
+}
+#home {
+    margin: 15px 15px 15px 10px;
+}
+#vendors {
+    color: #000;
+}
+#allvendors {
+    font-size: 30px; 
+    margin: 15px 15px 15px 20px; 
+    color: #000;
+}
+#kfc-logo {
+    margin: -15px 20px 10px 10px;
+}
+#kfc {
+    margin: 10px;
+}
+#viewall1 {
+    float: right; 
+    margin: -30px 10px 10px; 
+    color: #ff0000;
+}
+#viewall2, #view-all, #viewall3, #viewall4 {
+    color: red;
+}
+/* Chicken Republic */
+#chick-logo {
+    margin: 0px 0px 10px 10px;
+}
+#chicken {
+    margin: 15px 0px 10px 10px;
+}
+#viewall {
+    float: right; 
+    margin: -30px 10px 10px;
+}
+#footer {
+    word-spacing: 2px;
+}
 div {
     
     font-size: 20px;
@@ -141,10 +197,6 @@ section {
 #CR {
     margin: 10px 20px 10px 10px;
 }
-#vw1,#vw2 {
-    float: right; 
-    margin-top: -30px;
-}
 span {
     color: #f00;
 }
@@ -154,7 +206,7 @@ span {
 .secheight {
     margin-top: ;
 }
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 400px) {
     .invc, .hidviewall {
         display: none;
     }
@@ -162,22 +214,10 @@ span {
 
         color: #000;
     }
-    
-}
-@media screen and (min-width: 450px) {
     #nav {
         word-spacing: 20px;
     }
-}
-@media screen and (max-width: 637px) {
-    .invc, .hidviewall {
-        display: none;
-    }
-    .viewall {
-        text-align: center; 
-        margin: 850px 0px -30px; 
-        color: #ff0000;
-    }    
+    
 }
 @media screen and (min-width: 638px) {
     #hvw1, #hvw2{
@@ -189,11 +229,22 @@ span {
     #hre {
         margin-top: 450px;
     }
-    #vw1, #vw2 {
+    #vw1,#vw2 {
+        float: right; 
+        margin-top: -30px;
         margin-right: 30px;
+        color: #f00;
     }
     .secheight {
        margin: -40px 0px -30px; 
+    }
+    .viewall {
+        text-align: center; 
+        margin: 850px 0px -30px; 
+        color: #ff0000;
+    }   
+    .invc, .hidviewall {
+        display: block;
     }
     
 }

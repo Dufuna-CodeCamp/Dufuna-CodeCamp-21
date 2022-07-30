@@ -109,7 +109,7 @@ hr {
     opacity: 0.3;
 }
 #a5,#aa5,#aaa5 {
-    align: center;
+    
     margin: 0px 0px 0px -35px;
 }
 #a6 {
@@ -132,11 +132,10 @@ hr {
 }
 #sp {
     font-size: 12px;
-    align: center;
+    
 }
 #sp1 {
     font-size: 12px;
-    align: center;
     text-align: center; 
     margin-bottom: 20px;
 }
@@ -163,25 +162,25 @@ hr {
 .how1 {
     font-size: 20px;
 }
-#middle {
+#middle, #middle2 {
     margin-top: 100px;
-    align: left;
+}
+#middle2 {
+    display: none;
 }
 @media screen and (min-width: 405px) {
-     #b5,#bb5,#bbb5 {
-        align: center;
+     #b5,#bb5,#bbb5 {        
         margin: 0px 0px 0px 40px;
         font-size: 15px;
     }
-    #b6,#bb6,#bbb6 {
-        align: center;
+    #b6,#bb6,#bbb6 {        
         margin: 10px -25px 0px 0px;
     }
 }
 @media screen and (min-width: 585px) {
     .fre {
         margin: 0px -10px 350px;
-    }  
+    }
 }
 @media screen and (min-width: 860px) {
     .left {
@@ -189,35 +188,34 @@ hr {
         width: 27%;
         display: block;
     }
-    #b5,#bb5,#bbb5 {
-        align: center;
+    #b5,#bb5,#bbb5 {        
         margin: 0px 10px 0px -85px;
         font-size: 15px;
     }
-    #b6,#bb6,#bbb6 {
-        align: center;
+    #b6,#bb6,#bbb6 {        
         margin: 10px -25px 0px 10px;
     }
     #hrr {
         margin-top: 250px;
         margin-bottom: 100px;
     }
+    #middle2 {
+        display: block;
+    }
+    #middle {
+        display: none;
+    }
 }
 @media screen and (min-width: 900px){
     #b5,#bb5,#bbb5 {
-        align: center;        
+                
         margin: 0px 0px 0px -50px;
         font-size: 15px;
     }
     #b6,#bb6,#bbb6 {
-        align: center;
+        
         margin: 10px -25px 0px 10px;
-    }    
-}
-@media screen and (max-width: 1049px) {
-    #middle2 {
-        display: none;
-    }    
+    }  
 }
 @media screen and (min-width: 1050px) {
     .left {
@@ -226,39 +224,36 @@ hr {
         margin: 30px 10px 50px;
         width: auto;
     }
-    #middle {
-        display: none;
-    }
     #hrr {
         margin: 250px 0px 50px;
-    }
-    .fre {
+}
+.fre {
     margin: 0px -10px 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    }
-    #sp1 {
+}
+#sp1 {
     float: left;
-    }
-    #gr2 {
+}
+#gr2 {
     float: right;
-    }
-    .foot {
+}
+.foot {
     margin-bottom: 50px;
-    }
-    html {
+}
+html {
     margin: 50px 30px 100px;
-    }
-    #headerh1 {
+}
+#headerh1 {
     font-size: 25px;
-    }
-    .navbar {
+}
+.navbar {
     float: right;
     font-size: 20px;
     word-spacing: 40px;
     margin: -25px 0px 0px;
-    }
-    button {
+}
+button {
     border-color: red;
     border-radius: 5px;
     border-width: 1px;
@@ -266,31 +261,28 @@ hr {
     font-weight: lighter;
     padding: 10px;
     margin: -7px 0px 0px;
-    }
-    button:hover {
+}
+button:hover {
     background: darkorange;
-    }
-    #a5,#aa5,#aaa5 {
-    align: center;
+}
+#a5,#aa5,#aaa5 {    
     margin: 15px 0px 0px -25px;
     font-size: 15px;
     text-align: inherit;
-    }
-    #b5,#bb5,#bbb5 {
-    align: center;
+}
+#b5,#bb5,#bbb5 {    
     margin: 15px -30px 0px 0px;
     font-size: 15px;
     text-align: inherit;
-    }
-    #a6,#aa6,#aaa6 {
-    align: center;
+}
+#a6,#aa6,#aaa6 {    
     margin: 10px px 0px 0px;
     font-size: 12px;
     text-align: inherit;
-    }
-    #b6,#bb6,#bbb6 {
-    align: center;
+}
+#b6,#bb6,#bbb6 {
     margin: 15px 0px 0px 20px;
     text-align: inherit;
-    }
+}
+
 }
