@@ -12,7 +12,7 @@ laptops ={
 phones = {
     productName:'Samsung Galaxy S22',
     imageUrl:'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/R/S/2054_1651239627.jpg',
-    productPrice:'Samsung Galaxy S22'
+    productPrice:'$849.98'
 }
 const productList = [cars, laptops, phones]
 
