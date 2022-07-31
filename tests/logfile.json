@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-07-29T22:32:21.323Z",
-    "end": "2022-07-29T22:35:21.364Z",
-    "duration": 180041,
+    "start": "2022-07-31T22:38:36.815Z",
+    "end": "2022-07-31T22:41:36.848Z",
+    "duration": 180033,
     "testsRegistered": 4,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c104c63f-8c28-407a-94a7-aa304a9b802d",
+      "uuid": "d48edd40-fbfc-4d3b-b18c-58ff55b6bd75",
       "title": "",
       "fullFile": "C:\\Users\\Dell\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
       "file": "\\html_task.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0e8c9025-89c1-4326-b20a-103de980038e",
+          "uuid": "174f33ab-0919-4048-a08b-c7607743cefe",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Dell\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: check if Price is present\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check if Price is present\"",
               "timedOut": true,
-              "duration": 180027,
+              "duration": 180020,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Dell\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
                 "diff": null
               },
-              "uuid": "b9518de7-89e2-46d6-b5e3-c6770a878959",
-              "parentUUID": "0e8c9025-89c1-4326-b20a-103de980038e",
+              "uuid": "9b354e28-1dd1-47e9-be63-f1c56b93429d",
+              "parentUUID": "174f33ab-0919-4048-a08b-c7607743cefe",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "ac3fd7d0-e502-40a7-993f-d91de2787480",
-              "parentUUID": "0e8c9025-89c1-4326-b20a-103de980038e",
+              "uuid": "40b1a49c-6f59-4920-aa7e-8e7957e52029",
+              "parentUUID": "174f33ab-0919-4048-a08b-c7607743cefe",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
               "err": {},
-              "uuid": "3da8d8ec-821a-4591-b253-bcc287b18d3f",
-              "parentUUID": "0e8c9025-89c1-4326-b20a-103de980038e",
+              "uuid": "a13eb2cb-611c-4626-bcf4-b4701d21afdd",
+              "parentUUID": "174f33ab-0919-4048-a08b-c7607743cefe",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
               "err": {},
-              "uuid": "a6107aee-9b1d-43fa-a1b9-b1f9dd0e97d4",
-              "parentUUID": "0e8c9025-89c1-4326-b20a-103de980038e",
+              "uuid": "edc69bd4-1dc1-498e-9fd6-f6dee2131b0a",
+              "parentUUID": "174f33ab-0919-4048-a08b-c7607743cefe",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
               "err": {},
-              "uuid": "7249ae71-c7ea-486b-a6a7-8500a2c69b39",
-              "parentUUID": "0e8c9025-89c1-4326-b20a-103de980038e",
+              "uuid": "6c398088-62cf-4dc7-bfef-132c17f6b5ce",
+              "parentUUID": "174f33ab-0919-4048-a08b-c7607743cefe",
               "isHook": false,
               "skipped": true
             },
@@ -143,8 +143,8 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
-              "uuid": "b9357793-5147-4a59-b0cf-de24a3babdfa",
-              "parentUUID": "0e8c9025-89c1-4326-b20a-103de980038e",
+              "uuid": "2edc0c8c-55af-4653-a8d8-455c7ce8fc36",
+              "parentUUID": "174f33ab-0919-4048-a08b-c7607743cefe",
               "isHook": false,
               "skipped": true
             }
@@ -154,10 +154,10 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "3da8d8ec-821a-4591-b253-bcc287b18d3f",
-            "a6107aee-9b1d-43fa-a1b9-b1f9dd0e97d4",
-            "7249ae71-c7ea-486b-a6a7-8500a2c69b39",
-            "b9357793-5147-4a59-b0cf-de24a3babdfa"
+            "a13eb2cb-611c-4626-bcf4-b4701d21afdd",
+            "edc69bd4-1dc1-498e-9fd6-f6dee2131b0a",
+            "6c398088-62cf-4dc7-bfef-132c17f6b5ce",
+            "2edc0c8c-55af-4653-a8d8-455c7ce8fc36"
           ],
           "duration": 0,
           "root": false,
