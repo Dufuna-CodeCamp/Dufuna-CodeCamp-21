@@ -120,25 +120,25 @@
      background: darkorange;
  }
  #w2,#aa5,#aaa5 {
-     text-align: center;
+     align-content: center;
      margin: 15px 0px 0px -25px;
      font-size: 15px;
      text-align: inherit;
  }
  #b5,#bb5,#bbb5 {
-     text-align: center;
+     align-content: center;
      margin: 15px -30px 0px 0px;
      font-size: 15px;
      text-align: inherit;
  }
  #w2,#aa6,#aaa6 {
-     text-align: center;
+     align-content: center;
      margin: 10px px 0px 0px;
      font-size: 12px;
      text-align: inherit;
  }
  #b6,#bb6,#bbb6 {
-     text-align: center;
+     align-content: center;
      margin: 15px 0px 0px 20px;
      text-align: inherit;
 }
@@ -160,10 +160,7 @@
     background-color: white;
     border-radius: 2px;
     margin: 15px;
-}
-section {
-    margin: 0px 60px;
-}
+ }
 select {
     width: 1080px;
     height: 50px;
@@ -184,6 +181,7 @@ button {
  }
  button:hover {
      background: darkorange;
+		 font-size: 14px;
  }
  .header {
      width: 90%;
@@ -198,24 +196,17 @@ button {
  #headerh1 {
      margin: 30px 0px;
      font-size: 25px;
-     margin: 30px 0px 0px;
      font-size: 15px;
  }
  .navbar {
      float: right; 
      margin: -90px 30px 0px 0px; 
-     word-spacing: 40px; 
      font-size: 20px;
-     float: right;
-     margin: -16px 15px 0px; 
      font-size: 14px;
      word-spacing: 10px;
  }
  #signupcolor {
      color: #f00;
- }
-		 button:hover {
-     font-size: 14px;
  }
  .fre {
      margin: 0px -10px 200px;
@@ -290,6 +281,7 @@ button {
  }
  .HOWWESYH {
      font-size: 20px;
+		 text-align: center;
  }
  #middle {
      margin-top: 100px;
@@ -380,10 +372,6 @@ button {
  .pickai{
 	 padding-bottom: 20px;
  }
- .HOWWESYH {
-     text-align: center;
- }
-
  .fastfood{
 	 padding-bottom: 10px;
     padding-top: 10px;
