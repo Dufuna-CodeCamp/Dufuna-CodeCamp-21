@@ -257,12 +257,12 @@ span{
 
       .nav-btns--dot {
         position: absolute;
-height: 9px;
-width: 9px;
-border-radius: 50%;
-background: #ad4c4c;
-right: 14.4em;
-top: 3.0em;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        background: #ad4c4c;
+        right: 14.4em;
+        top: 3.0em;
        /* right: 11.45rem;
         top: 2.35em;
         height: 3px;
