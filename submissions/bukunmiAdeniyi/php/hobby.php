@@ -7,4 +7,5 @@ $hobbies = ["Running", "Writing", "Reading", "Researching", "Travelling", "skati
 for ($i=0; $i < 8; $i++){
     echo "My name is $names[$i]. i love $hobbies[$i] <br>";
 }
+
 ?>
