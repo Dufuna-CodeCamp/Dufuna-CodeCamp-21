@@ -13,5 +13,4 @@ elseif ($temperature > 40){
 }
 
 
-
 ?>
