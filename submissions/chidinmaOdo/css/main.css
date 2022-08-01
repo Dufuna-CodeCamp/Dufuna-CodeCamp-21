@@ -21,7 +21,7 @@ html {
     justify-content: space-between;
     padding: 42px 0 5px;
     align-items: center;
-    /*position: fixed;*/
+    
 }
 
 
@@ -58,12 +58,27 @@ nav ul li a:hover {
 
 }
 
+.nav-link--nil {
+    display: none;
+}
+
+.nav-btns--dot {
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #ad4c4c;
+    right: 20.4em;
+    top: 3.2em;
+  }
+
+
 .home {
     color: gray;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-   /* padding: 30px 100px;*/
+   
 }
 
 span{
@@ -163,6 +178,22 @@ span{
     cursor: pointer;
     text-decoration: none;
  }
+
+ .cart2 {
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    color: #E6E6E6;
+    background-color: #A5A5A5;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 3px;
+    width: 90px;  
+    text-align: center;  
+    cursor: pointer;
+    text-decoration: none;
+ }
  .KFC1{
     margin-bottom: 2em;
  }
@@ -222,6 +253,16 @@ span{
 
       .home, .vendor {
         margin: 60px 0 20px;
+      }
+
+      .nav-btns--dot {
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        background: #ad4c4c;
+        right: 14.4em;
+        top: 3.0em;
       }
 }
 
