@@ -10,6 +10,6 @@
         array("Richard ","Painting"),
     );
     foreach ($person as [$firstname, $hobby]){
-        echo "My name is $firstname. I love $hobby. <br/>";
+        echo "My name is .$firstname. I love .$hobby. <br/>";
     }
 ?>
