@@ -12,4 +12,5 @@ elseif ($temperature > 40){
     echo "Am i in the sahara desert?";
 }
 
+
 ?>
