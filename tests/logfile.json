@@ -1,5 +1,6 @@
 {
   "stats": {
+sherrif
     "suites": 1,
     "tests": 5,
     "passes": 0,
@@ -234,5 +235,11 @@
       },
       "version": "6.2.0"
     }
+=======
+    "tests": 6,
+    "passes": 6,
+    "failures": 0,
+    "owner": "bukunmiAdeniyi"
+ master
   }
 }
