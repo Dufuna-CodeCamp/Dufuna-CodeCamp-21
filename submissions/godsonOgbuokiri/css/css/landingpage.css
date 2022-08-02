@@ -124,6 +124,10 @@ select:hover {
 	color: #696969;
 }
 
+.card a{
+	text-decoration: none;
+	color: #696969;
+}
 .card:hover {
 	border: 2px solid deepskyblue;
 }
@@ -243,6 +247,9 @@ hr {
 		width: 100%;
 	}
 
+	.card-1 {
+		width: 100%;
+	}
 	.cart {
 		text-decoration: none;
 	}
