@@ -6,7 +6,7 @@
     require __DIR__ . '/../bootstrap/app.php';
 
     $app->get('/', function ( Request $request, Response $response ){
-        $response->getBody()->write('Welcome.....' . '<br><br>' . 'As you can see, It works thus far!!!');
+        $response->getBody()->write("Welcome..... <br><br> As you can see, It works thus far!!!");
         return $response;
     });
     
