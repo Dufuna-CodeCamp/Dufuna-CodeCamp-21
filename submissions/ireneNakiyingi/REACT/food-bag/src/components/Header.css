@@ -11,13 +11,14 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-left: 0;
 }
 .A{
-    font-size: 30px;
+    font-size: 25px;
     margin-right:0 ;
 }
 .B{
-    font-size: 30px;
+    font-size: 25px;
     color: #ad4c4c;
     margin-left: 0;
 }
@@ -25,6 +26,7 @@
     display: inline-flex;
     justify-content: right;
     align-content: center;
+    margin-right: 10px;
     
     
 }
@@ -33,7 +35,7 @@ a{
     display: inline;
     align-content: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     
 
     
@@ -60,7 +62,7 @@ a{
     .header{
         width: 100%;
         align-items: center;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     

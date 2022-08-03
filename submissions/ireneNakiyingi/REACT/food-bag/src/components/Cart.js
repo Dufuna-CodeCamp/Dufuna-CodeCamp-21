@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Breadcrumb from './Breadcrumb';
-import Checkout from './Checkout.js'
+import CheckOut from './Checkout.js'
 import Delivery from './Delivery.js';
 import Button from './Buttons.js';
 import Header from './Header.js';
@@ -292,7 +292,7 @@ function CartPage (){
                 <h1 className='totalp'> #{totalPrice}</h1> 
             </div>
             <div className='checkout-count'>
-                <Checkout/>
+                <CheckOut/>
             </div>
         </div>
     </div>
