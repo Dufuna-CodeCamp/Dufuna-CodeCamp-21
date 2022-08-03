@@ -1,8 +1,8 @@
 
- img,video,embed {
+ img, video, embed {
      max-width: 100%;
  }
- html,body {
+ html, body {
      text-size-adjust: none;
      -moz-text-size-adjust: none;
      -webkit-text-size-adjust: none;
@@ -10,6 +10,179 @@
      font-family: sans-serif;
 		  overflow-x: hidden;
  }
+
+ @media only screen and (min-width: 600px){
+body{
+     background-color: white;
+     font-family: sans-serif;
+     font-style: normal;
+     margin: 46px 40px 0px;
+ }
+ .foodbag {
+     width: 72px;
+     height: 24px;
+     font-weight: 500;
+     font-size: 24px;
+     float: left;
+     color: #000000;
+
+ }
+
+ nav .HL{
+     float: right;
+ }
+
+
+ .HL a {
+     border: 1px rgba(240, 0, 0, 0%) solid;
+     text-decoration: none;
+     color: #000000;
+     display: inline-block;
+     padding: 2px 5px;
+     font-size: 15px;
+     line-height: 15px;
+     font-weight: 400;
+
+ }
+ .HL a:nth-child(3) {
+     border: 1px #AD4C4C solid;
+     border-radius: 5px;
+     color: #AD4C4C;
+ }
+ .HL a:hover {
+     background-color: azure;
+     border: 1px #AD4C4C solid;
+     border-radius: 5px;
+     color: #AD4C4C;
+
+ }
+ .homevendor{
+     margin: 20px 0px;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 21px;
+ }
+ #AVendors{
+     margin: 0px 0px 25px;
+     width: auto; 
+     height: 30px;
+     font-size: 22px;
+     line-height: 30px;
+ }
+ .viewall {
+ display: flex;
+ justify-content: space-between;
+ }
+ #viewa {
+     display: inline;
+     width: 62px;
+     height: 24px;
+     font-weight: 500;
+     font-size: 16px;
+     color: #AD4C4C;
+
+ }
+ .viewallmobile {
+     display: none;
+     margin: 0px;
+ }
+ .product {
+     margin-right: 0px;
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+     grid-template-rows: none;
+     gap: 2rem;
+ }
+ .productimage{
+     padding-right: 0px;
+     margin-right: 0px;
+     width: 100%;
+     height:auto
+
+
+ }
+ .pnp {
+     display: flex;
+     justify-content: space-between;
+     margin-right: 15.33px;
+ }
+ button {
+     border: 1px #AD4C4C solid;
+     border-radius: 3px;
+     color: #AD4C4C;
+     box-sizing: border-box;
+     /*width: 138px;*/
+     height: 40px;
+     background: #FFFFFF;
+ }
+ hr {
+     margin-top: 22px;
+     margin-bottom: 22px;
+ }
+ }
+
+ @media only screen and (min-width: 992px){
+body {
+     width: auto;
+     position: absolute;
+     top: 50px;
+     font-family: sans-serif;
+     font-style: normal;
+     margin-left: 101px;
+		background-color: white;
+     line-height: 30px;
+ }
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .foodbag {
+     /* FoodBag */
+ width: 90px;
+ height: 30px;
+ font-weight: 500;
+ font-size: 20px;
+ float: left;
+
+ /* identical to box height */
+ color: #000000;
+
+ }
+ nav .HL{
+     float: right;
+ }
+
+
+ .HL a {
+     border: 1px rgba(240, 0, 0, 0%) solid;
+     text-decoration: none;
+   margin-right: 100px;
+ margin-top: 26px;
+ }
+ #viewa {
+     display: inline;
+     width: 62px;
+     height: 24px;
+     font-weight: 500;
+ }
+  button {
+     margin-right: 50px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: none;
+     margin-bottom: 26px;
+ }
+ .viewallmobile {
+     display: none;
+ }
+ hr {
+     margin-top: 50px;
+     margin-bottom: 50px;
+     margin-right: 100px;
+ }
+ }
+
  .nav {
      display: flex;
      justify-content: space-around;
@@ -96,14 +269,14 @@ background-image: url('img/remove.svg');
 background-position: left;
 background-repeat:no-repeat;
 background-size:contain;
-background-color: #A5A5A5 !important;
-     color: white !important;
-     outline:none !important;
-     border:1px solid !important;
-     padding: 5px 15px !important;
-     border-radius: 3px !important;
-     cursor: pointer !important;
-     display:flex !important;
+background-color: #A5A5A5;
+     color: white;
+     outline:none;
+     border:1px solid;
+     padding: 5px 15px;
+     border-radius: 3px;
+     cursor: pointer;
+     display:flex;
      align-items: center;
  }
 
