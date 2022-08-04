@@ -1,12 +1,15 @@
 import React from 'react';
 import './Vbutton.css'
+import {Link} from 'react-router-dom'
 
 function VButton(){
     return(
         <div >
-            <button className='paybtn' value='Pay'>
-            <span>Pay</span>
-           </button>
+            
+                <Link to='/Success' className='paybtn'><button className='paybtn' value='Pay'>
+                Pay</button></Link>
+            
+           
         </div>
         
     )
