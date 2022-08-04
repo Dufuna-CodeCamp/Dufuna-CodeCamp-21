@@ -6,7 +6,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
 	margin: 2% 7%;
 }
 
@@ -17,7 +17,7 @@ body {
 	align-content: center;
 }
 
-.header a[href*='/']{
+.header a[href*='/'] {
 	font-size: 21px;
 	font-weight: bold;
 }
@@ -33,11 +33,21 @@ body {
 
 #border {
 	color: #AD4C4C;
-	border:	1px #AD4C4C solid;
+	border: 1px #AD4C4C solid;
 	border-radius: 5px;
-	padding: 8px 15px; 
+	padding: 8px 15px;
 	font-weight: 600;
 }
+
+#notification {
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	display: none;
+	margin-bottom: 8px;
+	background: red;
+}
+
 
 .main {
 	padding-top: 80px;
@@ -94,13 +104,14 @@ body {
 	border: 2px solid forestgreen;
 
 }
-.flex-card{
+
+.flex-card {
 	display: flex;
 	gap: 1rem;
 	/*flex-wrap: wrap;*/
 }
 
-.card img{
+.card img {
 	/*box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);*/
 	/*width: 100%;*/
 	font-size: 13px;
@@ -113,7 +124,7 @@ body {
 	font-weight: 600;
 }
 
-.card p  {
+.card p {
 	font-size: 16px;
 	color: #5EA304;
 	font-weight: 600;
@@ -123,7 +134,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color:white;
+	background-color: white;
 	color: red;
 	border-radius: 3px;
 	border: 1px solid red;
@@ -131,18 +142,19 @@ body {
 	height: 40px;
 	font-weight: 600;
 	font-size: 16px;
-}	
+	cursor: pointer;
+}
 
 .cart a {
 	text-decoration: none;
 	padding-right: 120px;
 }
 
-.remove {
+.rmv-btn {
 	display: none;
 	align-items: center;
 	justify-content: center;
-	background-color:#A5A5A5;
+	background-color: #A5A5A5;
 	color: white;
 	border-radius: 3px;
 	border-style: none;
@@ -150,6 +162,11 @@ body {
 	height: 40px;
 	font-weight: 600;
 	font-size: 16px;
+}
+
+.cart:hover {
+	background-color: maroon;
+	color: white;
 }
 
 /* #border2 {
@@ -185,13 +202,13 @@ hr {
 	font-weight: 500;
 }
 
-.flex-card-2{
+.flex-card-2 {
 	display: flex;
 	gap: 1rem;
 	/*flex-wrap: wrap;*/
 }
 
-.card-2 img{
+.card-2 img {
 	/*box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);*/
 	/*width: 100%;*/
 	font-size: 13px;
@@ -204,7 +221,7 @@ hr {
 	font-weight: 600;
 }
 
-.card-2 p  {
+.card-2 p {
 	font-size: 16px;
 	color: #5EA304;
 	font-weight: 600;
@@ -212,7 +229,7 @@ hr {
 
 
 
-.serve p{
+.serve p {
 	font-size: 30px;
 	font-weight: 600;
 	text-align: center;
@@ -233,7 +250,7 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-		.flex-card {
+	.flex-card {
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
@@ -241,43 +258,48 @@ hr {
 	.card img {
 		width: 300px;
 	}
+
 	.cart {
 		text-decoration: none;
 	}
-	
+
 	.flex-card-2 {
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
+
 	.cart-2 {
 		text-decoration: none;
 	}
+
 	.card-2 img {
 		width: 300px;
 	}
-		.menu a {
+
+	.menu a {
 		padding-left: 15px;
 		font-size: 10px;
 	}
 
 	#border {
 		color: #AD4C4C;
-		border:	1px #AD4C4C solid;
+		border: 1px #AD4C4C solid;
 		border-radius: 5px;
-		padding: 4px 10px; 
+		padding: 4px 10px;
 		font-weight: 600;
 	}
 
-	.container{
+	.container {
 		margin: 2% 3%;
 	}
 }
-@media screen and (min-width: 500px)and (max-width: 992px){
+
+@media screen and (min-width: 500px)and (max-width: 992px) {
 	.flex-card {
 		flex-wrap: wrap;
 	}
+
 	.flex-card-2 {
 		flex-wrap: wrap;
 	}
 }
-
