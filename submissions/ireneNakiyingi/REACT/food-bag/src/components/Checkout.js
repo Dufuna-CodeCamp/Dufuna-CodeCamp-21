@@ -1,16 +1,32 @@
 import React from 'react';
 import './Checkout.css'
 
+import {Link} from 'react-router-dom'
 
-function checkOut(){
+
+
+
+export default function CheckOut(){
+    
+     
+
+
     
     return(
         <div>
-            <button  className='checkout'>Checkout</button>
+            <button  className='checkout' >
+                <Link to='/Verification' className='checkout'>Checkout</Link>
+                
+                
+                </button>
+           
+            
+             
        
         </div>
         
     )
+    
+    
 }
 
-export default checkOut;
