@@ -2,20 +2,20 @@ var productList = [
      
     {
         productName:"Nike Air",
-        productUrl:"www.Nikeair.com",
+        productUrl:"https://www.Nikeair.com",
         productPrice:7000
     } , 
 
     {
         productName:"Adiddas",
-        productUrl:"www.adiddas.com",
+        productUrl:"https://www.adiddas.com",
         productPrice: 5000
 
     } ,
 
     {
         productName:"Asics",
-        productUrl:"www.ascis.com",
+        productUrl:"https://www.ascis.com",
         productPrice: 4000
 
     }
