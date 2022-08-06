@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* Utilities */
+.py-color{
+  color: #AD4C4C;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primary-bg-color{
+  background-color: #AD4C4C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.py-dark{
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-primary{
+  border: 1px solid #AD4C4C;
+  padding:8px 16px 8px 16px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+/* Navbar */
+.navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 1px solid #AD4C4C;
+}
+
+.nav-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-list{
+  display: flex;
+  color: #696969;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.nav-list li{
+  margin-right: 50px;
+}
+
+.nav-list li:last-child{
+  margin-right: 0;
+  align-self: center;
+}
+
+/* CartPage */
+.page-nav{
+  padding:42px 0px 30px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #C9C9C9;
+  border: 1px solid #AD4C4C;
+}
+
+.checkout-section{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.checkout-btn{
+  width: 50%;
+  background: #AD4C4C;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  padding: 18px 355px 18px 355px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*CartItems section*/
+.cart-title{
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+}
+
+.cart-item-section{
+  border: 1px solid #AD4C4C;
 }
