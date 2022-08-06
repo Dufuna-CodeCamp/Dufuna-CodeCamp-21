@@ -1,9 +1,24 @@
 import NavBar from "./Navbar"
-
+import Success from "../asserts/images/success.svg"
+import '../App.css'
 
 const OrderSuccess = ()=>{
     return(
-        <NavBar/>
+        <main>
+            <NavBar/>
+            <div className="success-section">
+                <div>
+                    <img src={Success} alt="success" />
+                </div>
+                <div>
+                    <p className="main-title">Order Successful</p>
+                    <p className="main-description">
+                    We have started processing your order.
+                    </p>
+                </div>
+            </div>
+        </main>
+       
     )
 }
 
