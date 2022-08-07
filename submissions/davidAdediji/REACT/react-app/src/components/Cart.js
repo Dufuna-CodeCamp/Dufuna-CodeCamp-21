@@ -1,7 +1,8 @@
 import CartItems from "./CartItems";
 import NavBar from "./Navbar";
+import Button from "./Button";
 
-const Cart = ({products})=>{
+const Cart = ({products, onAdd})=>{
     return(
         <main>
             <NavBar/>
@@ -9,12 +10,15 @@ const Cart = ({products})=>{
                 <p>Home &gt;&nbsp;</p>
                 <p className="py-dark">Cart</p>
             </section>
-            <CartItems products={products}/>
-            <div className="checkout-section">
-                <button className="checkout-btn" type="submit">
-                    Checkout
-                </button>
-            </div>
+            <section className='cart-item-section'>
+                <p className='cart-title'>Cart</p>
+                    {products.map((product)=>{
+                        return(
+                        <CartItems key={product.id} product={product} onAdd={onAdd}/>
+                    )})}
+            </section>
+            
+            <Button name={"Checkout"}/>
         </main>
     )
 }

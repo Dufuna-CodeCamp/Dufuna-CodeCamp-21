@@ -1,12 +1,25 @@
-import '../App.css'
-const CartItems = ({products})=>{
+import '../App.css';
+import Cancel from '../asserts/icons/cancel.png';
+
+const CartItems = ({product})=>{
     return(
         <section className='cart-item-section'>
-            <p className='cart-title'>Cart</p>
-            {products.map((product) =>(
-                <div key={product.id}>{product.name}</div>
-            ))}
+            <div>
+                <img className='small' src={Cancel} alt="" />
+            </div>
+            <div className='cart-item'>
+                <div>
+                    <img src={product.img} alt="" />
+                </div>
+                <div>
+                    Text
+                </div>
+                <div className='item-price'>
+                    <p>{product.price}</p>
+                </div>
+            </div>
         </section>
+
     )
 }
 

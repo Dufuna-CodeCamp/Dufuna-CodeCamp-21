@@ -18,6 +18,11 @@
   border-radius: 5px;
 }
 
+.small{
+  width: 14px;
+  color: #A5A5A5;
+}
+
 /* Navbar */
 .navbar{
   display: flex;
@@ -88,7 +93,13 @@
 .cart-item-section{
   border: 1px solid #AD4C4C;
 }
-
+.cart-item{
+  display: flex;
+}
+.item-price{
+  margin-left: auto;
+  align-self: center;
+}
 /* Order sucess page */
 
 .success-section{
@@ -110,4 +121,24 @@
   font-size: 20px;
   text-align: center;
 
+}
+
+/* Card-Items */
+.card-details{
+  display: flex;
+  align-items: center;
+}
+
+.card-img{
+  width: 133px;
+}
+
+.cart-cancel{
+  align-self: center;
+}
+
+
+
+.cart-name-add{
+  align-self:flex-start;
 }
