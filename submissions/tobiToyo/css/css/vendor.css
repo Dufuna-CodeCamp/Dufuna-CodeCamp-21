@@ -12,7 +12,7 @@ html{
 body{
     /* width: 90vw; */
     margin: 0 100px 20px;
-    background: #E5E5E5;
+    background: white
 }
 
 .interest p, .font14 {
@@ -70,7 +70,7 @@ body{
 }
 
 #header {
-    background: #E5E5E5;
+    background: white;
     width: calc(100vw - 200px);
     position: fixed;
     top: 0;
@@ -86,7 +86,10 @@ body{
 #right-head {
     display: flex;
     align-items: center;
-}
+    justify-content: space-between;
+    /* width: 30%; */
+    /* border: 1px solid; */
+    }
 
 a {
     text-decoration: none;
@@ -215,11 +218,27 @@ hr {
 
 
 /* Peculiar to the Vendor Page */
+#cart-link {
+    position: relative;
+    /* border: 1px solid; */
+}
+
+#cart-notify {
+    display: none;
+    background-color: #AD4C4C;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 33px;
+}
+
 #navigation {
     position: fixed;
-    top: 75px;
+    top: 82px;
     z-index: 1;
-    background: #E5E5E5;
+    background: white;
     width: calc(100vw - 200px);
     padding: 7px 0;
 }
@@ -277,11 +296,30 @@ hr {
     float: right;
 }
 
-.vendor-grid button{
+.vendor-grid-button{
     color: #AD4C4C;
     padding: 8px 20px;
     border: 1px solid #AD4C4C;
     border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.buttons {
+    display: inline-block;
+}
+
+.clicked-btn {
+    display: none;
+    background-color: #A5A5A5;
+    color: white;
+    padding: 3px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
 }
 
 .view-mobile {
@@ -297,6 +335,10 @@ hr {
     #header, #navigation {
         width: calc(100vw - 100px);
     }
+
+    /* #right-head {
+        width: 50%;
+    } */
 }
 
 @media screen and (max-width: 425px) {
@@ -331,6 +373,14 @@ hr {
 
     #header {
         width: calc(100vw - 40px);
+    }
+
+    /* #right-head {
+        width: 45%;
+    } */
+
+    #cart-notify {
+        left: 20px;
     }
 
     #navigation {
