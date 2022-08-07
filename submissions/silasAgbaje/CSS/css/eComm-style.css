@@ -1,0 +1,92 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.logo, button{
+	color: #AD4C4C;
+}
+
+button{
+	border-color: #AD4C4C;
+	border-width: thin;
+	border-radius: 5px;
+	height: 30px;
+    width: 80px;
+	background-color: #FFF;
+}
+
+header li {
+	padding-left: 20px;
+	float: right;
+}
+
+h1,
+h2,
+h3,
+h4, .title
+ {
+	text-align: center;
+}
+
+li, a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #000;
+}
+
+hr {
+	background-color: #d3d3d3;
+}
+
+.contact, footer div ul
+{
+	text-align: center;
+}
+
+section li {
+	display: inline-grid;
+	padding: 5px;
+	text-align: center;
+}
+
+section ul {
+    text-align: center;
+}
+
+.interest li {
+	display: inline-grid;
+	padding: 5px;
+	text-align: center;
+}
+
+.serve li {
+	display: inline-grid;
+	text-align: center;
+}
+
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexbox li {
+	float: right;
+}
+
+.right {
+	float: right;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border-width: thin;
+}
