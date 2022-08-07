@@ -1,0 +1,27 @@
+CREATE DATABASE foodbag;
+USE foodbag;
+SHOW TABLES;
+
+CREATE TABLE customers (
+	id INT NOT NULL AUTO_INCREMENT,	
+	full_name VARCHAR(200) NOT NULL,
+	email VARCHAR(40) NOT NULL,		
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	PRIMARY KEY (id)
+);
+SELECT * FROM customers;
+SELECT * FROM customer_order;
+
+CREATE TABLE customer_order(
+id INT NOT NULL AUTO_INCREMENT,
+customer_id INT NOT NULL,
+product_name VARCHAR(255) NOT NULL,
+unit_price FLOAT(15,2) NOT NULL,
+quantity INT(10) NOT NULL,
+total_price FLOAT(15, 2) NOT NULL,
+order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+customer_address VARCHAR(255) NOT NULL,
+PRIMARY KEY (id),
+FOREIGN KEY(customer_id) REFERENCES customers(id)
+);
+    

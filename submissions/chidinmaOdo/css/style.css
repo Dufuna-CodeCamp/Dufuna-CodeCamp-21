@@ -3,23 +3,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0 100px 20px;
 }
 
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0 5px;
+    align-items: center;
+    /*position: fixed;
+}
 
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    padding: 50px 100px;
+    /*padding: 50px 100px;*/
 }
 
 nav ul {
@@ -45,7 +56,7 @@ nav ul li a:hover {
     border: 1px solid blue;
     padding: 5px;
 }
-.signup {
+#signup {
     color: red;
     background-color: white;
     border: 1px solid red;
@@ -56,7 +67,6 @@ nav ul li a:hover {
 }
 
 .logo {
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -64,7 +74,6 @@ nav ul li a:hover {
 
 span {
     color:red;
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -73,18 +82,19 @@ span {
 /*INTRODUCTION*/
 .introduction h1 {
     text-align: center;
-   font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    margin-top: 120px;
+    font-size: 40px;
 }
 
 .food {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 20px;
+    margin-top: 5px;
 }
 
-/*LABEL*/
+/*Location*/
 /*form {
     background-color: white;
     border-radius: 10px ;
@@ -100,97 +110,94 @@ span {
 
 
 .address {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    padding:  20px 100px;
-    position: relative;
-    top: 20px;
+    font-size: 20px;
+    padding: 40px 0 10px;
 }
 
-select {
-        width: 88%;
-        padding: 10px 30px;
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 400;
-        color: #696969;
-        border-radius: 5px;
-        margin: 20px 100px;
-        border: 1px solid #c4c4c4;
-        -moz-appearance: none; /* Firefox */
-        -webkit-appearance: none; /* Safari and Chrome */
-        appearance: none;
-        background-color: #ffffff;
-        background-image: url("image/keyboard_arrow_down.svg");
-        background-repeat: no-repeat;
-        background-position-x: 97.6%;
-        background-position-y: 50%;
-      }
-      
-      option {
-        display: none;
-      }
-   
+#locate {
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    color: #696969;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+      background-color: #ffffff;
+    background-image: url("image/keyboard_arrow_down.svg");
+    background-repeat: no-repeat;
+    background-position-x: 97.6%;
+    background-position-y: 50%;
+}
+
 
 /*INTEREST*/
+#interes_header {
+    margin-top: 35px;
+}
+
 .interest {
-    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: 500;
-    padding-left: 100px;
-    position: relative;
-    bottom: 10px;
-    top: 20px;
 }
 
 .interestbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5px 100px;
+    margin: 20px 0;
 }
 
 .box1 {
-    border: 2px solid gray;
+    border: 1px solid #696969;
     color: grey;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 250px;
-    padding: 20px;
+    padding: 24px 30px;
 }
 
-.box1 p{
+hr {
+
+    margin: 80px auto;
+}
+
+.box1 p {
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
 }
-.box1 h3{
-    font-family: 'Poppins', sans-serif;
+.img-title {
     font-weight: 500;
     font-size: 18px;
 }
 
+.img-title--red {
+    font-weight: 500;
+    font-size: 18px;
+    color: red;
+}
+
 /*HOW WE SERVE YOU*/
-.desc{
-    padding-top: 100px;
+#illustration_desc{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 25px;
 }
 
-.serve {
+.serve_illustration {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    padding: 20px 100px;
 }
 
 .image{
-    width: 250px;
+    width: 95%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-h3 {
-  font-family: 'Poppins', sans-serif;
+ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 38px;
@@ -203,175 +210,211 @@ p {
     color: gray;
 }
 
-hr {
+/*hr {
     /*position: relative;
     left: 100px;
     right: 2000px;*/
-        width: 100%;
+   /*     width: 100%;
         margin-left: auto;
         margin-right: auto;
 }
-
+*/
+.contact {
+    text-align: center;
+}
 .contact h4{
     text-align: center;
-    padding-top: 50px;
-    font-family: 'Poppins',sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+    margin-top: -20px;
 }
 
 .handle {
-    padding: 30px;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
+     /*justify-content: space-between;*/
+     margin: 10px 30px;
 }
 
 .copyright{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 100px;
+    align-items: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .copyright1 {
     color: gray;
-    font-family: 'Poppins',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
 }
 
+
 /*MEDIA QUERY*/
-@media only screen and (max-width: 600px){
-    nav {
-        padding: 23px 20px;
+@media screen and (max-width: 768px){
+    body {
+        margin: 0 50px 10px;
     }
 
     nav ul li {
-        padding: 5px 0 0 20px;
+        padding: 0 0 0 30px;
     }
 
-    nav ul li a {
-        font-size: 10px;
+    span, .logo {
+        font-size: 15px;
     }
-
-    .logo, span {
-        font-size: 16px;
-    }
-
     .introduction h1 {
         text-align: left;
-        padding: 53px 20px 0;
-        font-size: 20px;
+        font-size: 30px;
+        margin-top: 40px;
     }
 
     .food {
         text-align: left;
-        padding: 0 20px;
-        font-size: 12px;
-    }
-
-    .address {
-        text-align: left;
-        padding:  20px;
-    }
-
-    select {
-        margin: 10px 25px 30px 20px;
-        font-size: 12px;
-    }
-
-    .interest {
-        font-family: 'Poppins', sans-serif;
-        padding: 30px 20px 10px;
-        position: relative;
-    }
-    
-    .interestbox {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 5px 20px;
-    }
-    
-    .box1 {
-        width: 400px;
-        padding: 20px;
-    }
-    
-    .box1 p{
-        font-size: 14px;
-        line-height: 21px;
-    }
-    .box1 h3{
         font-size: 18px;
-        line-height: 24px;
     }
-    
-    .desc{
-        padding: 60px 89px;
-        text-align: center;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .serve {
-        padding: 20px 89px;
-    }
-    
-    h3 {
-        font-size: 15px;
-        line-height: 33px;
-    }
-    
-    p {
+
+    #locate {
+        padding: 11px 10px;
         font-size: 12px;
-        line-height: 15px;
-    }
-    
-    hr {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        font-weight: 400;
     }
 
-    .contact h4{
-        text-align: center;
-        font-size: 16px;
-        line-height: 24px;
+    .box1 {
+        margin-top: 20px;
+        width: 400px;
     }
-    
-    .handle {
-        padding-bottom: 15px;
-    }
-    
-    .copyright1 {
-         font-size: 14px;
-         line-height: 27px;
-         padding-top: 15px;
-    }
-    
-}
 
-@media only screen and (min-width: 600px){
-    select {
-        width: 80%;
+    .box1 p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box1 h3 {
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .serve_illustration {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        margin-bottom: 25px;
     }
 }
 
+@media screen and (max-width: 425px){
+    body {
+        margin: 0 20px 20px;
+    }
 
+    nav ul li a {
+        font-size: 12px;
+    }
 
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
 
+    span, .logo {
+        font-size: 15px;
+    }
 
+    .introduction h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 40px;
+    }
 
+    .food {
+        text-align: left;
+        font-size: 18px;
+    }
 
+    #locate {
+        padding: 11px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
 
+    .box1 {
+        margin-top: 20px;
+        width: 400px;
+    }
+    .box1 p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box1 h3 {
+        font-weight: 500;
+        font-size: 23px;
+    }
 
+    .serve_illustration {
+        justify-content: center;
+        gap: 20px;
+    }
 
+    footer {
+        margin-bottom: 25px;
+    }
+}
 
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0 23px 20px;
+    }
 
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
 
+    span, .logo {
+        font-size: 15px;
+    }
 
+    .introduction h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 40px;
+    } 
+
+    .food {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #locate {
+        padding: 11px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .box1 {
+        margin-top: 20px;
+        width: 400px;
+    }
+    .box1 p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box1 h3 {
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .serve_illustration {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,9 @@
+.wrapper {
+    height: 90vh;
+    width: 100%;
+}
+
+.v-caption {
+    margin-top: -2%;
+    color: var(--theme--);
+}

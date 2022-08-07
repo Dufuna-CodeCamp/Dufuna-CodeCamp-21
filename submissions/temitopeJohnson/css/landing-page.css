@@ -252,8 +252,8 @@ hr {
     .Serving {
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .ServeBox {
@@ -304,8 +304,8 @@ hr {
         color: #696969;
         font-size: 15px;
         margin-left: 0;
-        padding-left: 110px;
-        padding-right: 110px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 

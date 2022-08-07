@@ -10,86 +10,172 @@
     width:100%;
     
 }
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:lightyellow;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #eeee;
-
-}
-
-#logo {
-    margin-right: 100px;
+   
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color:lightyellow;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #eeee;
     
-}
-
-#links li {
-  display: inline;
-}
-
-#links a {
-    margin-right: 20px;
-    padding-right: 10px;
-}
-
-.card-one{
-    display: flex;
-    flex-direction: row;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-bottom: 80px;
-}
-
-.menu{
-  border: 2px solid rgb(212, 210, 210);
-  border-radius: 5px;
-  padding: 20px 30px;
-  text-align: center;
-  margin: 16px;
-}
-
-.menu img {
-    width: 100px;
-}
-
-.food-name{
-  font-size: 20px;
-  padding: 4px;
-  height: 27px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ad4c4c;
-}
-
-.message {
-  font-size: 20px;
-  padding: 4px;
-}
-
-
-.card-two{
-    display: flex;
-    flex-direction: row;
-    margin-left: 230px;
-    margin-right: 35px;
-    margin-bottom: 60px;
-}
-
-.card-two .menu {
-    padding: 30px 0;
-    border:none;
-    margin-right:75px;
+    }
     
+    #logo {
+        margin-right: 100px;
+        
+    }
+    
+    #links li {
+      display: inline;
+    }
+    
+    #links a {
+        margin-right: 20px;
+        padding-right: 10px;
+    }
+    
+    .card-one{
+        display: flex;
+        flex-direction: row;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 80px;
+        
+    }
+    
+    .menu{
+      border: 2px solid rgb(212, 210, 210);
+      border-radius: 5px;
+      padding: 20px 30px;
+      text-align: center;
+      margin: 16px;
+    }
+    
+    .menu img {
+        width: 100px;
+    }
+    
+    .food-name{
+      font-size: 20px;
+      padding: 4px;
+      height: 27px;
+      font-family: "Poppins";
+      font-style: normal;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ad4c4c;
+    }
+    
+    .message {
+      font-size: 20px;
+      padding: 4px;
+    }
+    
+    
+    .card-two{
+        display: flex;
+        flex-direction: row;
+        margin-left: 230px;
+        margin-right: 35px;
+        margin-bottom: 60px;
+    
+    }
+    
+    .card-two .menu {
+        padding: 30px 0;
+        border:none;
+        margin-right:75px;
+        
+    }
+    
+    .message-center {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 80px;
+    }
+    
+    .card-two .menu img {
+        width:300px;
+    }
+    
+    .menu h4 {
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #696969; 
+    }
+    
+    
+    .interest {
+        margin-left: 35px;
+    }
+    
+    .food {
+        font-size: 5em;
+    }
+    
+    
+    .location{
+        margin-right: 35px;
+        margin-left: 35px;
+        
+    }
+    
+    .main-quest {
+        margin-bottom: 10px;
+    }
+    
+    .location input {
+        height: 18px;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        
+      }
+    
+      .interest{
+          margin-bottom: 10px;
+          font-size: 20px;
+      }
+    
+    
+    
+    /* .location > input[text]{
+        : 150px;
+    } */
+    
+    .usp-center{
+       margin: auto;
+    }
+    .twitter{
+        margin-right: 10px;
+    }
+    .facebook {
+        margin-right: 10px;
+    }
+    
+    /* h1,h2,h3,h4,h5,h6 {
+        padding:0;
+        margin:0;
+    } */
+@media only screen and (max-width:1200px){
+    .card-one{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-two {
+        display:grid;
+        grid-template-columns: 1fr;
+
 }
 
 .message-center {
@@ -115,22 +201,35 @@ nav {
 .interest {
     margin-left: 35px;
 }
+.location .text-field {
+        width: 900px;
+    }
 
-.food {
-    font-size: 5em;
+
 }
 
-
-.location{
-    margin-right: 35px;
-    margin-left: 35px;
+/* @media only screen and (max-width:1500px){
+    .location .text-field {
+        width: 900px;
+    }
 }
+     */
+    
+@media only screen and (max-width:600px) {
+    .card-one{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
 
-.main-quest {
-    margin-bottom: 10px;
-}
-
-.location input {
+   .card-two{
+       display:grid;
+       grid-template-columns: 1fr; 
+    }
+    .location .text-field {
+        width: 360px;
+    }
+    
+    .location input {
     height: 18px;
     padding: 15px;
     border-radius: 10px;
