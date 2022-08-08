@@ -16,7 +16,7 @@
 }
 .btn-primary{
   border: 1px solid #AD4C4C;
-  padding:8px 16px 8px 16px;
+  padding:8px 16px;
   background: #FFFFFF;
   border-radius: 5px;
 }
@@ -78,7 +78,7 @@
 
 /* CartPage */
 .page-nav{
-  padding:42px 0px 30px 0px;
+  padding:42px 0px 30px;
   font-weight: 400;
   font-size: 14px;
   display: flex;
@@ -100,12 +100,15 @@
 .cart-item{
   display: flex;
   flex: 2;
-  padding: 30px 0px 30px 0px;
-  border-bottom:1px solid #C9C9C9; ;
+  padding: 30px 0px;
+  border-bottom:1px solid #C9C9C9;
 }
 .item-price{
   margin-left: auto;
   align-self: center;
+  color:#4E4D4D;
+  font-weight: 500;
+  font-size: 20px;
 }
 /* Order sucess page */
 
@@ -134,6 +137,7 @@
 
 .cart-cancel{
   align-self: center;
+  padding-right: 16px;
 }
 
 .cart{
@@ -175,11 +179,6 @@
   font-size: 16px;
 }
 
-.item-price{
-  color:#4E4D4D;
-  font-weight: 500;
-  font-size: 20px;
-}
 
 .scooter-adjust{
   margin-left: 15px;
@@ -199,15 +198,11 @@
 .cart-item-total{
   display: flex;
   flex: 2;
-  padding: 30px 0px 30px 0px;
-}
-
-.cart-cancel{
-  padding-right: 16px;
+  padding: 30px 0px;
 }
 
 .checkout-section{
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
   width: 809px;
   margin: auto;
   margin-bottom: 50px;
@@ -219,7 +214,7 @@
   border-radius: 5px;
   border: none;
   color: #fff;
-  padding: 18px 366px 18px 366px;
+  padding: 18px 366px;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
@@ -257,7 +252,7 @@
   }
 
   .page-nav{
-    padding:37px 0px 20px 0px;
+    padding:37px 0px 20px;
     font-weight: 400;
     font-size: 14px;
     display: flex;
@@ -285,8 +280,8 @@
   .cart-item{
     display: flex;
     flex: 2;
-    padding: 17px 0px 17px 0px;
-    border-bottom:1px solid #C9C9C9; ;
+    padding: 17px 0px;
+    border-bottom:1px solid #C9C9C9;
   }
 
   .scooter-adjust img{
@@ -294,7 +289,7 @@
   }
 
   .checkout-section{
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px;
     width: 320px;
     margin-bottom: 20px;
   }
@@ -305,7 +300,7 @@
     border-radius: 5px;
     border: none;
     color: #fff;
-    padding: 13px 121px 13px 121px;
+    padding: 13px 121px;
   }
   .item-total{
     font-size: 18px;
