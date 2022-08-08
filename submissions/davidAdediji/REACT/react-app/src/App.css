@@ -11,6 +11,9 @@
   color: #000000;
 }
 
+.border{
+  border: 1px solid red;
+}
 .btn-primary{
   border: 1px solid #AD4C4C;
   padding:8px 16px 8px 16px;
@@ -95,6 +98,7 @@
 }
 .cart-item{
   display: flex;
+  flex: 2;
 }
 .item-price{
   margin-left: auto;
@@ -123,20 +127,17 @@
 
 }
 
-/* Card-Items */
-.card-details{
-  display: flex;
-  align-items: center;
-}
-
-.card-img{
-  width: 133px;
-}
+/* Cart-Items */
 
 .cart-cancel{
   align-self: center;
 }
 
+.cart{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
 
 
 .cart-name-add{
