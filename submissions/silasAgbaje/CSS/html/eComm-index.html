@@ -11,10 +11,10 @@
 </head>
 
 <body>
-	<header>
-		<p><strong>Food<span class="logo">Bag</span></strong></p>
-		<ul>
-			<li><a href="#"><button><span>Sign Up</span></button></a></li>
+	<header class="flexbox">
+		<div><p><strong>Food<span class="logo">Bag</span></strong></p></div>
+		<ul class="flexbox right">
+			<li class="flexbox right"><a href="#"><button><span>Sign Up</span></button></a></li>
 			<li><a href="#">Login</a></li>
 			<li><a href="#">Cart</a></li>
 		</ul>
@@ -26,8 +26,8 @@
 		<h2>FoodBag</h2>
 		<p>Anything food, we have you covered</p>
 	</div>
- 	<label for="location"><strong>where are you?</strong></label> <br> <br>
-	<input list="location-list" id="location" name="location">
+ 	<label for="location"><strong>where are you?</strong></label><br><br>
+	<input list="location-list" id="location" name="location" placeholder="Enter your delivery address">
 	<datalist id="location-list">
 		<option value="Bodija Market">
 		<option value="Oja Oba Market">
@@ -38,18 +38,19 @@
 	<h5>Pick an interest</h5>
 	<div>
 		<ul class="interest">
-			<li><img src="../eCommerce-img/fast-food.svg">Fast food<p>All sorrows are less with bread</p></li>
-			<li><img src="../eCommerce-img/Vegetables _ Drinks.svg">Vegetables & Fruits<p>May not want it, but good for you</p></li>
-			<li><img src="../eCommerce-img/Drinks _ Cocktails.svg">Drinks & Cocktails<p>I feel sad for those who don't drink</p></li>
-			<li><img src="../eCommerce-img/resturant.svg">Restaurants<p>All sorrows are less with bread</p></li> 
+			<li><img src="../eCommerce-Img/fast-food.svg">Fast food<p>All sorrows are less with bread</p></li>
+			<li><img src="../eCommerce-Img/Vegetables _ Drinks.svg">Vegetables & Fruits<p>May not want it, but good for you</p></li>
+			<li><img src="../eCommerce-Img/Drinks _ Cocktails.svg">Drinks & Cocktails<p>I feel sad for those who don't drink</p></li>
+			<li><img src="../eCommerce-Img/resturant.svg">Restaurants<p>All sorrows are less with bread</p></li> 
 		</ul>
+
 	</div>
 	<hr>
 
 		<h3>How we serve you</h3>
 		<div>
 		<ul class="serve">
-			<li><img src="../eCommerce-Img/illustration_1.svg"alt="">Tell us where you are<p>Select the location you want us to deliver</p></li>
+			<li><img src="../eCommerce-Img/Illustration_1.svg"alt="">Tell us where you are<p>Select the location you want us to deliver</p></li>
 			<li><img src="../eCommerce-Img/illustration_2.svg"alt="">Tell us what you want<p>Browse the tupe of food that interest you</p></li>
 			<li><img src="../eCommerce-Img/illustration_3.svg"alt="">We'll come running<p>Your order will be delivered to you in no time</p></li>
 		</ul>
