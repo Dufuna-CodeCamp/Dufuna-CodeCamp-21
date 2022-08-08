@@ -26,7 +26,9 @@
   cursor: pointer;
   outline: none;
 }
-
+.hidden{
+  display: none;
+}
 .small{
   width: 14px;
   color: #A5A5A5;
@@ -39,8 +41,10 @@
 .center-delivery-fee{
   width: 100%;
   margin-top:25px;
+  margin-left: 45px;
   
 }
+
 
 /* Navbar */
 .navbar{
@@ -80,7 +84,6 @@
   display: flex;
   align-items: center;
   color: #C9C9C9;
-  border: 1px solid #AD4C4C;
 }
 
 .checkout-section{
@@ -106,15 +109,14 @@
 .cart-title{
   font-weight: 500;
   font-size: 30px;
+  margin-bottom: 40px;
   color: #000000;
-}
-
-.cart-item-section{
-  border: 1px solid #AD4C4C;
 }
 .cart-item{
   display: flex;
   flex: 2;
+  padding: 30px 0px 30px 0px;
+  border-bottom:1px solid #C9C9C9; ;
 }
 .item-price{
   margin-left: auto;
@@ -192,4 +194,29 @@
   color:#4E4D4D;
   font-weight: 500;
   font-size: 20px;
+}
+
+.scooter-adjust{
+  margin-left: 15px;
+}
+
+.item-total{
+  color: #4E4D4D;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.item-details{
+  padding-left: 17px;
+}
+
+.cart-item-total{
+  display: flex;
+  flex: 2;
+  padding: 30px 0px 30px 0px;
+}
+
+.cart-cancel{
+  padding-right: 16px;
 }
