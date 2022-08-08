@@ -1,13 +1,15 @@
-for (let i = 0; i < 173; i++) {
+var difference = 123-7;
+
+for (let i = 0; i < difference; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
-    document.write(`Software Developer <br><br>`);
+    document.write(` <p> Software Developer </p>`);
   } else if (i % 3 == 0) {
-    document.write(`software <br><br>`);
+    document.write(` <p> software </p>`);
   } else if (i % 5 == 0) {
-    document.write(`Developer <br><br>`);
+    document.write(` <p> Developer </p>`);
   }
 
   else{
-    document.write(`${i} <br><br>`)
+    document.write(`<p> ${i} </p>`)
   }
 }
