@@ -371,7 +371,7 @@ background-color: #A5A5A5;
  }
 
  body{
-     padding:20px 50px;
+     padding:20px 10px;
  }
 
  header{
@@ -469,6 +469,8 @@ background-color: #A5A5A5;
 
  .orders .order{
      margin-bottom: 20px;
+		 margin-left: 20px;
+    margin-right: 10px;
  }
 
  .orders .desc{
