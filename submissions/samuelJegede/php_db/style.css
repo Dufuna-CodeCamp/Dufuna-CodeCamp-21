@@ -1,0 +1,33 @@
+h3{
+text-align: center;
+}
+
+
+table th {
+padding: 12px, 0;
+text-align: left;
+background-color: #3e04aa;
+color: white;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+table tr:nth-child(even){
+background-color: #f2f2f2;
+}
+
+table tr:hover {
+background-color: #ddd;
+}
+
+table button{
+cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
