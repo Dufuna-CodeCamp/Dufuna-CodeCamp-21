@@ -14,22 +14,25 @@
 
 <body>
     <div id="wrapper">
-        <header>
-            <h1>Food<span id="bag">Bag</span></h1>
-        </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Cart</a>
-                </li>
-                <li>
-                    <a href="#">Login</a>
-                </li>
-                <li>
-                    <a href="#">Sign up</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="main-header">
+            <header>
+                <h1>Food<span id="bag">Bag</span></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
 
         <main>
             <section class="first">
@@ -37,7 +40,7 @@
                     <h2>FoodBag</h2>
                     <p class="h4">Anything food, we have got you covered</p>
                 </div>
-                <form action="GET">
+                <form action="POST">
                     <label for="location">Where are you?</label><br>
                     <input list="location-list" id="location" placeholder="Enter your delivery address">
                     <datalist id="location-list">
@@ -75,26 +78,49 @@
                             <p>All sorrows are less with bread</p>
                         </div>
                     </div>
+
+                    <div class="interest-wrap2">
+                        <div class="interests">
+                            <img src="../images/fast-food.svg" alt="fast food icon">
+                            <h5>Food</h5>
+                            <p>All sorrows are less with bread</p>
+                        </div>
+                        <div class="interests">
+                            <img src="../images/Vegetables _ Drinks.svg" alt="vegetables icon">
+                            <h5>Vegetables & Fruits</h5>
+                            <p>May not want it, but good for you</p>
+                        </div>
+                        <div class="interests">
+                            <img src="../images/Drinks _ Cocktails.svg" alt="drinks icon">
+                            <h5>Drinks & Cocktails</h5>
+                            <p>I feel sad for those who don't drink</p>
+                        </div>
+                        <div class="interests">
+                            <img src="../images/resturant.svg" alt="resturant icon">
+                            <h5>Resturants</h5>
+                            <p>All sorrows are less with bread</p>
+                        </div>
+                    </div>
                 </form>
             </section>
 
-            <section>
+            <section class="second-section">
                 <div class="head">
                     <h3>How we serve you</h3>
                 </div>
                 <form class="interest-wrap">
                     <div class="second">
-                        <img src="../images/Illustration_1.svg" alt="Illustration_1">
+                        <img src="../images/Illustration_1.svg" alt="Illustration_1" class="image">
                         <h4>Tell us where you are</h4>
                         <p class="a5">Select the location you want us to deliver.</p>
                     </div>
                     <div class="second">
-                        <img src="../images/illustration_2.svg" alt="Illustration_2">
+                        <img src="../images/illustration_2.svg" alt="Illustration_2" class="image">
                         <h4>Tell us what you want</h4>
                         <p class="a5">Browse the type of food that interest you.</p>
                     </div>
                     <div class="second">
-                        <img src="../images/Illustration_3.svg" alt="Illustration_1">
+                        <img src="../images/Illustration_3.svg" alt="Illustration_1" class="image">
                         <h4>We'll come running</h4>
                         <p class="a5">Your order will be delivered to you in no time.</p>
                     </div>
@@ -108,17 +134,17 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="../images/twitter 2.svg" alt="twitter">
+                            <img src="../images/twitter 2.svg" alt="twitter 1con">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../images/youtube 1.svg" alt="youtube">
+                            <img src="../images/youtube 1.svg" alt="youtube icon">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../images/facebook-f 1.svg" alt="facebook">
+                            <img src="../images/facebook-f 1.svg" alt="facebook icon">
                         </a>
                     </li>
                 </ul>
@@ -139,6 +165,8 @@
 
         </footer>
     </div>
+
+    <script src="../../dom/index.js"></script>
 </body>
 
 </html>

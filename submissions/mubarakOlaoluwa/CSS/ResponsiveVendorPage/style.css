@@ -22,7 +22,6 @@ body {
     color: orange;
     font-weight: bold;
     padding-top: 5px;
-    
 
 }
 
@@ -68,13 +67,19 @@ body {
 }
 
 .second-flex {
-    display: flex;   
+    display: flex; 
 }
 
 .kfc{
     padding: 15px 0 0 10px;
     font-size: 15px;
     }
+.new-p {
+    display: none;
+}
+.new-p2 {
+    display: none;
+}
 
 .first-grid {
     display: grid;
@@ -111,6 +116,12 @@ body {
     margin-left: 5px;
     margin-right: 280px;
     text-align: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 0, 200, 0.8);
 }
 
 
@@ -130,6 +141,7 @@ body {
 
     .cart {
         margin-right: 320px;
+        position: relative;
     }
 }
 
@@ -149,8 +161,10 @@ body {
 
     .cart {
         margin-right: 400px;
+        position: relative;
     }
 }
+
 
 @media screen and (min-width: 670px) {
     .add {
@@ -168,6 +182,7 @@ body {
 
     .cart {
         margin-right: 500px;
+        position: relative;
     }
 }
 
@@ -187,5 +202,68 @@ body {
 
     .cart {
         margin-right: 600px;
+        position: relative;
     }
 }
+
+@media screen and (min-width: 850px) {
+    .add {
+        flex-basis: 750px;
+    }
+
+    .main-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .image2 {
+        width: 200px;
+        align-items: center;
+    }
+    .king {
+        flex-basis: 170px;
+    }
+    .cart {
+        margin-right: 120px;
+        position: relative;
+    }
+    .second-p {
+        display: none;
+    }
+    .new-p {
+        display: inline;
+        color: rgba(255, 0, 200, 0.8);
+        font-size: 13px;
+        margin-top: 15px;
+        margin-left: 680px;
+    }
+    .new-p2 {
+        display: inline;
+        color: rgba(255, 0, 200, 0.8);
+        font-size: 13px;
+        margin-top: 15px;
+        margin-left: 600px;
+    }
+}
+
+    .notification {
+        height: 10px;
+        width: 10px;
+        margin-left:680px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: red;
+    }
+
+    .remove {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid grey;
+    }
+
+    .cart_new {
+        color: rgba(255, 0, 200, 0.8);
+        background-color: white;
+        padding: 5px;
+        border: 1px solid rgba(255, 0, 200, 0.8);
+    }

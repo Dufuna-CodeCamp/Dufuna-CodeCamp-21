@@ -1,0 +1,151 @@
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.bon{
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+.logo{
+    height: 70px;
+    margin-left: 0px;  
+}
+  .chicken{
+      font-size: 14px;
+      margin-top: 30px;
+  }  
+  .dd{
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+  }
+  .sec{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 100px;
+      margin-left: -20px;
+
+  }
+   .sec div{
+       width: 240px;
+       height: 380px;
+       margin:  10px;
+       text-align: center;
+       background: white;
+       padding: 7px;
+   }
+   img{
+       height: 150px;
+   }
+   p{
+       margin: 15px;
+      float: left; 
+   }
+   h3{
+       position: relative;
+       color: green;
+       font-size: 14px;
+       float: right;
+       left: -10%;
+       top: 5px;
+   }
+   h4{
+       margin-top: 80px;
+       position: relative;
+       color: red;
+       border: 1px solid red;
+       width: 100px;
+       padding: 5px;
+       margin-left: 12px;
+   }
+   .kfc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+}
+ .kfc div{
+     width: 240px;
+     height: 380px;
+     margin:  10px;
+     text-align: center;
+     background: white;
+     padding: 7px;
+}
+     .red{
+         color: red;
+         margin-top: -10px;
+
+     }
+     li{
+        display: inline;
+        text-decoration: none;
+    position: relative;
+    left: 70%;
+    margin: 20px;
+     }
+     .yy{
+        margin-top: 50px;
+         display: inline;  
+     }
+     .yyy{
+         margin-left: -10px;
+         margin-top: 50px;
+     }
+     h2{
+         margin-top: 150px;
+         margin-bottom: 50px;
+     }
+     #z{
+        margin-left: 20px;
+         opacity: 1; 
+         color: gray;
+     }
+     .gan{
+         border: 1px solid black;
+         border-radius: 50%;
+         height: 50px;
+         width: 50px; 
+         float: left;
+         margin-top: -12px;
+     }
+     .view {
+         position: relative;
+         left: 80%;
+         margin-top: -30px;
+         color: red;
+         font-size: 20px;
+     }
+     .view2{
+        position: relative;
+        left: 80%;
+        margin-top: 30px;
+        color: red;
+        font-size: 20px;
+     }
+     .kf{
+         margin-left: 20px;
+         position: relative;
+         bottom: -50%;
+         
+     }
+     
+    #sign{
+        color: red;
+        border: 1px solid red;
+        padding: 5px;
+    }
+    .home{
+        margin-left: -20px;
+        
+    }
+    
+
+.rep{
+    margin-top: -100px;
+}

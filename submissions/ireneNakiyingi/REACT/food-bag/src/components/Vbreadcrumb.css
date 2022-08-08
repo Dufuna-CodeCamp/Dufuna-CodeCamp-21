@@ -1,0 +1,35 @@
+.crumb-container{
+    
+    word-wrap: unset;
+    margin: 10px;
+}
+.crumb{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.h-link, .c-link{
+    color: gray;
+    
+}
+.v-link{
+    color: #000;
+}
+span{
+    margin: 0;
+    padding: 0
+}
+h5{
+    font-size: 80%;
+    font-weight:600;
+    margin: 0;
+   
+}
+@media screen and (max-width:1000px){
+    h5{
+        font-size:100%;
+    }
+}

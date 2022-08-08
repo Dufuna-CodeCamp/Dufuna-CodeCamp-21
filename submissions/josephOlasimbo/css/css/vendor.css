@@ -1,26 +1,41 @@
-body {
-    font-size: 15px;
-    padding: 20px;
-    margin: 20px;
-}
-
 * {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
 }
 
 a {
+    position: relative;
     text-decoration: none;
 }
 
-.header-child {
-    display: inline-block;
+#dot {
+    display: none;
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #AD4C4C;
+    right: 8px;
+    top: 15px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1)
 }
 
 .nav {
-    padding: 20px;
-    font-size: 20px;
+    padding: 18px;
     color: black;
-    font-weight: 100;
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.foodbag {
+    font-size: 18px;
+    font-weight: 300;
 }
 
 #signup {
@@ -30,50 +45,63 @@ a {
     border-radius: 6px;
 }
 
-.menu {
-    display: flex;
-    border: 1px;
-    height: 300px;
-    width: 200px;
-    padding: 20px;
+.front {
+    margin: 30px;
+}
+
+#line {
     margin: 20px;
 }
 
-.foodbag {
-    font-size: 14px;
-    font-weight: 800;
+.container {
+    position: relative;
 }
 
-#small-view{
-    float: right;
-    color: #AD4C4C;
-    font-size: 17px;
+.vendor-head {
+    display: flex;
+    align-items: center;
 }
 
-#add-to-cart {
+.menu {
+    position: inherit;
+    margin: 20px 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.item-card {
+    padding: 10px 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
     font-size: 15px;
     font-weight: 600;
-    margin: 5px;
+    margin: 20px 0px 5px 8px;
     padding: 10px;
     border-radius: 6px;
-}
-
-.front {
-    margin-top: 70px;
-    margin-bottom: 30px;
-}
-
-#line {
-    margin-bottom: 30px;
-}
-
-.item {
-    padding: 30px;
-    font-size: 15px;
-    font-weight: 900px;
-    text-align: left;
+    width: 150px;
 }
 
 .amount {
@@ -83,7 +111,53 @@ a {
     float: right;
 }
 
-
-h1, h2 {
-    display: inline-block;
+#small-view {
+    color: #AD4C4C;
+    font-weight: 700;
 }
+
+.logo {
+    display: flex;
+    margin: 20px;
+}
+
+@media (min-width: 350px) {
+    #small-view {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menu {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #small-view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        justify-content: right;
+        text-align: right;
+    }
+
+    hr {
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
