@@ -274,11 +274,7 @@ hr {
         display: flex;
         flex-direction: row;
         width: 100%;
-        justify-content: center;
         
-      }
-      .sign-up{
-          font-size: 12px;
       }
     }
     .headers-menu {
@@ -299,8 +295,8 @@ hr {
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 18px;
         display: flex;
         align-items: center;
         color: #000000;
@@ -526,7 +522,7 @@ hr {
 }
 @media (max-width: 499px) and (min-width: 401px) {
     body {
-      margin: 21px 15px 24px 20px;
+      margin: 21px 24px 24px 24px;
     }
 
     .image-menu img {
