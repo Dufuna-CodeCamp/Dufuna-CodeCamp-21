@@ -21,9 +21,25 @@
   border-radius: 5px;
 }
 
+.btn-small{
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 .small{
   width: 14px;
   color: #A5A5A5;
+}
+
+.indent{
+  flex: 0.05;
+}
+
+.center-delivery-fee{
+  width: 100%;
+  margin-top:25px;
+  
 }
 
 /* Navbar */
@@ -139,7 +155,41 @@
   align-items: center;
 }
 
+.cart-item-img{
+  width: 133px;
+}
 
 .cart-name-add{
   align-self:flex-start;
+}
+
+.qty{
+  display: inline;
+  padding-left: 20.5px;
+  padding-right: 20.5px;
+  color: #AD4C4C;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.item-change-qty{
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+}
+
+.img-minus, .img-plus{
+  width: 100%;
+}
+
+.item-name{
+  color:#4E4D4D;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.item-price{
+  color:#4E4D4D;
+  font-weight: 500;
+  font-size: 20px;
 }
