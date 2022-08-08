@@ -23,3 +23,13 @@ a{
 ul{
   list-style: none;
 }
+
+@media only screen and (max-width: 600px) {
+  main{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  body{
+    max-width: 360px;
+  }
+}

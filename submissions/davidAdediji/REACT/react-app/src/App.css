@@ -220,3 +220,40 @@
 .cart-cancel{
   padding-right: 16px;
 }
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .nav-list{
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .navbar{
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .checkout-btn{
+    display: none;
+  
+  }
+  .nav-list li{
+    margin-right: 20px;
+  }
+  
+  .nav-list li:last-child{
+    margin-right: 0;
+    align-self: center;
+  }
+
+  .page-nav{
+    padding:37px 0px 20px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #C9C9C9;
+  }
+}
+
+

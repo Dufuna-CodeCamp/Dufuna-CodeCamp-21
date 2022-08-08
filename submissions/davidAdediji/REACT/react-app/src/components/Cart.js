@@ -14,6 +14,10 @@ const Cart = ()=>{
     const deliveryFee = 1200;
     const navigate = useNavigate();
     const [cartItems, setCartItems] = useState([]);
+    const handleClick = (e)=>{
+        e.preventDefault();
+        navigate('/')
+    }
 
   useEffect(()=>{
     setCartItems(products)},[]);
@@ -112,7 +116,7 @@ const Cart = ()=>{
                     </div>
             </section>
             
-            <Button name={"Checkout"}/>
+            <Button onClick = {handleClick} name={"Checkout"}/>
         </main>
     )
 }
