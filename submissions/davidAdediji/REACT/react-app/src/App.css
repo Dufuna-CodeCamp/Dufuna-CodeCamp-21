@@ -374,11 +374,9 @@
 .form-flex{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 29px;
 }
 
-.form-flex input{
-  width: 150px;
-}
 
 .fieldClassName{
   margin-bottom: 20px;
@@ -390,11 +388,6 @@
 
 .formClassName{
   margin-bottom: 20px;
-}
-.form-flex{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 29px;
 }
 
 .form-flex input{
