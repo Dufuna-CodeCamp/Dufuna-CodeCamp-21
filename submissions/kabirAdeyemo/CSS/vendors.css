@@ -148,34 +148,30 @@ section.vendors .vendor .title button, .vendor > .btn button{
 
 /* Media query starts here */
 
-@media screen and (max-width: 360px){
-    header nav{
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-        padding: auto;
-    }
-}
-
-@media screen and (max-width: 500px){
-
+@media screen and (min-width: 501px) and (max-width: 1017px) {
     body{
-        padding: 20px;
+        padding: 20px 30px;
     }
 
-    .vendor .orders .order{
-        width:100%;
+    section.landing .interests .interest-container .interest{
+        flex-basis: 48%;
     }
 
-    .vendor .orders .order img{
-        width:100%;
+    section.landing .serve-you .serve-container{
+        
+        justify-content: center;
+        align-items: center;
     }
 
-    section.vendors .vendor .title button{
-        display: none;
+    section.landing .serve-you .serve-container div{
+        width:300px;
+        text-align: center;
     }
 
-    .vendor .btn{
-        display:flex;
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
     }
+
 }
