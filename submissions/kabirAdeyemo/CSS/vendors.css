@@ -145,3 +145,37 @@ section.vendors .vendor .title button, .vendor > .btn button{
     background-color: white;
     transform: translateY(7px) translateX(-10px);
 }
+
+/* Media query starts here */
+
+@media screen and (max-width: 360px){
+    header nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    body{
+        padding: 20px;
+    }
+
+    .vendor .orders .order{
+        width:100%;
+    }
+
+    .vendor .orders .order img{
+        width:100%;
+    }
+
+    section.vendors .vendor .title button{
+        display: none;
+    }
+
+    .vendor .btn{
+        display:flex;
+    }
+}
