@@ -468,5 +468,13 @@
   .fieldClassName{
     margin-bottom: 20px;
   }
+
+
+  .sucess-section-img{
+    width:200;
+  }
+  .success-img{
+    width:100%;
+  }
 }
 
