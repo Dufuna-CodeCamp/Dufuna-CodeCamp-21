@@ -45,26 +45,24 @@
 
    console.log(productsName.length);
 
-   document.write( productsName.length + "<br><br>");
-
    function evenPrices() {
 
     for (let i = 0; i < productsName.length; i++) {
 
-        for (let j = 0; j < ProductPrice.length; j++) {
+        for (let j = 0; j < productsName.length; j++) {
 
             if(i === j ){
                 if ( productsName.length % 2 == 0) {
 
                     ProductPrice[j] = ProductPrice[j] * 2;
     
-                    document.write("The price of "  + productsName[i] + "</b>" + " is :"  + "<br>" + ProductPrice[j] + "</b>" + "<br><br>")
+                    document.write("The price of "  + productsName[i] + " is :"  + "<br>" + ProductPrice[j] + "<br><br>")
     
                 } else {
     
                     ProductPrice[j] = ProductPrice[j] / 2;
     
-                    document.write("The price of "  + productsName[i] + "</b>" + " is :" +  "<br>" + ProductPrice[j] + "</b>" + "<br><br>")
+                    document.write("The price of "  + productsName[i] + " is :" +  "<br>" + ProductPrice[j] + "<br><br>")
     
                 }
             }
