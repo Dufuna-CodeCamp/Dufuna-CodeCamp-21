@@ -1,10 +1,9 @@
 {
   "stats": {
-    "tests": 3,
+    "tests": 4,
     "passes": 3,
-    "failures": 0,
-    "owner": "johnOparaji"
-
+    "failures": 1,
+    "owner": "timiBello"
   }
 }
 about-tolu
