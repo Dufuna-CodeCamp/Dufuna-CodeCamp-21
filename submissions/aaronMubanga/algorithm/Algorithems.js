@@ -44,7 +44,7 @@
     ];
 
     for (let i=0; i < productsName.length; i++) {
-        if (productsName[i].length %2 == 0) {
+        if (productsName[i].length % 2 == 0) {
             let Price = ProductPrice[i] * 2;
             document.write ('The price of ' + productsName[i] + ' is ' + Price + '<br><br>');
             
