@@ -17,7 +17,7 @@ address.addEventListener('input', address =>{
         for (let i = 0; i < menu.length; i++) {
             menu[i].style.color = 'crimson';
             
-        };
+        }
         choiceList.forEach(choiceList => {
             choiceList.addEventListener('click', ()=> {
                 window.location = 'vendorpage.html';
