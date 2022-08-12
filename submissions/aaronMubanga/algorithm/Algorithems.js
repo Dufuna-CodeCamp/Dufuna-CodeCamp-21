@@ -43,32 +43,14 @@
         750.00
     ];
 
-   console.log(productsName.length);
-
-   function evenPrices() {
-
-    for (let i = 0; i < productsName.length; i++) {
-
-        for (let j = 0; j < productsName.length; j++) {
-
-            if(i === j ){
-                if ( productsName.length % 2 == 0) {
-
-                    ProductPrice[j] = ProductPrice[j] * 2;
-    
-                    document.write("The price of "  + productsName[i] + " is :"  + "<br>" + ProductPrice[j] + "<br><br>")
-    
-                } else {
-    
-                    ProductPrice[j] = ProductPrice[j] / 2;
-    
-                    document.write("The price of "  + productsName[i] + " is :" +  "<br>" + ProductPrice[j] + "<br><br>")
-    
-                }
-            }
-        }
+    for (let i=0; i < productsName.length; i++) {
+        if (productsName[i].length %2 == 0) {
+            let Price = ProductPrice[i] * 2;
+            document.write ('The price of ' + productsName[i] + ' is ' + Price + '<br><br>');
+            
+       } else {
+           let Price = ProductPrice[i] / 2;
+           document.write ('The price of ' + productsName[i]  + ' is ' + Price + '<br><br>');
+       }
     }
 
-}
-
-   evenPrices();
