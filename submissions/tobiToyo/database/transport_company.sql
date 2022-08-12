@@ -1,10 +1,11 @@
-create database dufuna_transport_company;
+/*
+create database dufuna_transport_company; */
 use dufuna_transport_company;
 create table passengers (
 	id int not null auto_increment,
 	full_name varchar(150) not null,
     sex varchar(50) not null,
-    age int,
+    age varchar(50),
     primary key (id)
     );
     

@@ -6,7 +6,7 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
-    margin: 30px 60px 100px;
+    margin: 10px;
 }
 h5 {
     margin: 5px;
@@ -20,9 +20,12 @@ h6 {
     font-weight: lighter;
 }
 .left {
-    float: left;
+    flex-direction: column;
     display: block; 
     margin: 30px 10px 50px;
+}
+#tleft {
+    margin-bottom: -60px;
 }
 .trp {
     float: left;
@@ -46,30 +49,32 @@ button {
     border-color: red;
     border-radius: 5px;
     border-width: 1px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: lighter;
     padding: 10px;
-    margin: 25px 0px 0px;
+    margin: -7px 0px 0px;
 }
 button:hover {
     background: darkorange;
 }
 .header {
-    width: 90%;
+    width: 95%;
     background-color: #fff;
     top: 0%;
     float: right;
+    margin: 0px;
     position: fixed;
+    display: block;
 }
 #headerh1 {
-    margin: 30px 0px;
-    font-size: 25px;
+    margin: 30px 0px 0px;
+    font-size: 15px;
 }
 .navbar {
-    float: right; 
-    margin: -90px 30px 0px 0px; 
-    word-spacing: 40px; 
-    font-size: 20px;
+    float: right;
+    margin: -16px 15px 0px; 
+    font-size: 14px;
+    word-spacing: 10px;
 }
 #signupcolor {
     color: #f00;
@@ -90,7 +95,7 @@ button:hover {
     font-size: 14px;
 }
 .fre {
-    margin: 0px -10px 200px;
+    margin: 0px -10px 620px;
 }
 #ff5,#f5,#fff5,#g5 {
     font-size: 10px; 
@@ -103,8 +108,9 @@ button:hover {
 hr {
     opacity: 0.3;
 }
-#a5 {
-    margin: 15px 0px 0px -200px;
+#a5,#aa5,#aaa5 {
+    
+    margin: 0px 0px 0px -35px;
 }
 #a6 {
     margin: 20px;
@@ -115,14 +121,8 @@ hr {
 #b6,#bb5,#bb6,#bbb5,#bbb6,#l1,#gr1,#q1 {
     color: grey;
 }
-#aa5 {
-    margin: 15px 0px;
-}
 #aa6 {
     margin: 20px 0px;
-}
-#aaa5 {
-    margin: 15px 0px;
 }
 #aaa6 {
     margin: 18px -10px 0px 0px;
@@ -130,12 +130,19 @@ hr {
 #im1,#im2,#im3 {
     margin: 8px;
 }
-#sp,#sp1 {
+#sp {
     font-size: 12px;
+    
+}
+#sp1 {
+    font-size: 12px;
+    text-align: center; 
+    margin-bottom: 20px;
 }
 #gr2 {
-    float: right; 
+    text-align: center; 
     color: grey;
+    font-size: 12px;
 }
 #red {
     color: red;
@@ -144,5 +151,138 @@ hr {
     margin: 0px;
 }
 #hrr {
-    margin: 250px 0px 80px;
+    margin: 0px 0px 50px;
+}
+.loc1 {
+    display: flex;
+    align-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.how1 {
+    font-size: 20px;
+}
+#middle, #middle2 {
+    margin-top: 100px;
+}
+#middle2 {
+    display: none;
+}
+@media screen and (min-width: 405px) {
+     #b5,#bb5,#bbb5 {        
+        margin: 0px 0px 0px 40px;
+        font-size: 15px;
+    }
+    #b6,#bb6,#bbb6 {        
+        margin: 10px -25px 0px 0px;
+    }
+}
+@media screen and (min-width: 585px) {
+    .fre {
+        margin: 0px -10px 350px;
+    }
+}
+@media screen and (min-width: 860px) {
+    .left {
+        float: left;
+        width: 27%;
+        display: block;
+    }
+    #b5,#bb5,#bbb5 {        
+        margin: 0px 10px 0px -85px;
+        font-size: 15px;
+    }
+    #b6,#bb6,#bbb6 {        
+        margin: 10px -25px 0px 10px;
+    }
+    #hrr {
+        margin-top: 250px;
+        margin-bottom: 100px;
+    }
+    #middle2 {
+        display: block;
+    }
+    #middle {
+        display: none;
+    }
+}
+@media screen and (min-width: 900px){
+    #b5,#bb5,#bbb5 {
+                
+        margin: 0px 0px 0px -50px;
+        font-size: 15px;
+    }
+    #b6,#bb6,#bbb6 {
+        
+        margin: 10px -25px 0px 10px;
+    }  
+}
+@media screen and (min-width: 1050px) {
+    .left {
+        float: left;
+        display: block; 
+        margin: 30px 10px 50px;
+        width: auto;
+    }
+    #hrr {
+        margin: 250px 0px 50px;
+}
+.fre {
+    margin: 0px -10px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#sp1 {
+    float: left;
+}
+#gr2 {
+    float: right;
+}
+.foot {
+    margin-bottom: 50px;
+}
+html {
+    margin: 50px 30px 100px;
+}
+#headerh1 {
+    font-size: 25px;
+}
+.navbar {
+    float: right;
+    font-size: 20px;
+    word-spacing: 40px;
+    margin: -25px 0px 0px;
+}
+button {
+    border-color: red;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    margin: -7px 0px 0px;
+}
+button:hover {
+    background: darkorange;
+}
+#a5,#aa5,#aaa5 {    
+    margin: 15px 0px 0px -25px;
+    font-size: 15px;
+    text-align: inherit;
+}
+#b5,#bb5,#bbb5 {    
+    margin: 15px -30px 0px 0px;
+    font-size: 15px;
+    text-align: inherit;
+}
+#a6,#aa6,#aaa6 {    
+    margin: 10px px 0px 0px;
+    font-size: 12px;
+    text-align: inherit;
+}
+#b6,#bb6,#bbb6 {
+    margin: 15px 0px 0px 20px;
+    text-align: inherit;
+}
+
 }
