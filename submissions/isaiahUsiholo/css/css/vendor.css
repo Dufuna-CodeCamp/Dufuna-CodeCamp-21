@@ -39,6 +39,9 @@ nav a {
     text-decoration: none;
     color: inherit;
 }
+nav a span{
+    color: crimson;
+}
 
 nav button {
     background: white;
@@ -74,7 +77,7 @@ h3 {
 
 .menu {
     margin-bottom: 30px;
-    padding: 0 5px;
+    padding: 0 5px 0;
     position: relative;
 }
 
@@ -114,6 +117,39 @@ h3 {
     color: crimson;
     box-shadow: 0 1.5px rgba(100, 100, 100, 0.25);
 }
+.btn {
+    width: 150px;
+    height: 50px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+#added {
+    color: crimson;
+    display: flex;
+    align-items: center;
+    
+}
+
+#notif_img {
+    visibility: hidden;
+}
+#rm {
+    width: 35px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+    visibility: hidden;
+}
+
 
 /* tab screens and large screens */
 @media screen and (min-width: 700px) {

@@ -78,7 +78,7 @@ section .form {
 }
 .choice h3 {
     font-weight: 300;
-    color: crimson;
+    color: gray;
 }
 #lasthead {
     margin: 40px 32px;
@@ -163,7 +163,7 @@ footer .one {
         padding-left: 1px;
     }
     img {
-        padding: 20px 15px;
+        padding: 20px 15px 20px 15px;
         box-sizing: border-box;
         display: inline-block;
     }
@@ -172,11 +172,11 @@ footer .one {
     }
     .serve p {
         margin: 10px;
-        padding: 0 0 40px;
+        padding: 0 0 40px 0;
         padding-left: 30px;
     }
     footer {
-        margin: 60px 32px 30px;
+        margin: 60px 32px 30px 32px;
         padding: 20px;
         box-shadow: 0 -1.5px rgba(100, 100, 100, 0.25);
         height: 260px;
@@ -204,7 +204,7 @@ footer .one {
         grid-auto-rows: 150px;
     }
     .container .choice {
-        margin: 5px;
+        margin: 5px 5px;
         padding: 5px 10px;
         height: inherit;
         border-radius: 5px;
@@ -213,7 +213,7 @@ footer .one {
     .choice h3 {
         margin: 3px;
         font-weight: 300;
-        color: crimson;
+        color: gray;
     }
     .choice p {
         margin: 0;
@@ -232,7 +232,7 @@ footer .one {
         flex-direction: column;
     }
     .serve {
-        margin: -60px 30px 30px;
+        margin: -60px 30px 30px 30px;
         height: 150px;
         padding: 10px;
         position: relative;
@@ -274,7 +274,7 @@ footer .one {
     }
     
     .container .choice {
-        margin: 5px;
+        margin: 5px 5px;
         padding: 5px 10px;
         height: inherit;
         border-radius: 5px;
@@ -286,7 +286,7 @@ footer .one {
     
     .choice p {
         margin: 0;
-        padding: 0 5px 1px;
+        padding: 0 5px 1px 5px;
         font-size: medium;
     }
     #lasthead {
@@ -311,11 +311,13 @@ footer .one {
     }
     
     .serve p {
-        padding: 5px;
+        padding: 5px 5px;
         font-size: 16px;
     }
     footer {
         clear: both;
+    }
+    footer {
         position: relative;
     }
     footer #two {

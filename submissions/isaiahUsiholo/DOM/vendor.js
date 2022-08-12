@@ -9,17 +9,18 @@ button.forEach( value =>(
         
         if (buttonClick.classList.contains("add")) {
             buttonClick.querySelector("#added").innerText = "Remove";
-            buttonClick.style.color = "white";
+            buttonClick.querySelector("#added").style.color = 'white';
             icon.style.visibility = "visible";
-            buttonClick.setAttribute('style','color: white; background: gray; border: 2px solid gray;');
+            buttonClick.setAttribute('style','background: gray; border: 2px solid gray;');
         }
         else {
             icon.style.visibility = "hidden";
             buttonClick.querySelector("#added").innerText = "Add to Cart";
+            buttonClick.querySelector("#added").style.color = 'crimson';
             buttonClick.style.backgroundColor = "white";
-            buttonClick.setAttribute('style','color: crimson; background: white; border: 2px solid crimson;');
+            buttonClick.setAttribute('style', 'background: white; border: 2px solid crimson;');
         }
-        notify();
+        notify(); 
     })
 ))
 
