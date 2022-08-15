@@ -1,41 +1,28 @@
-let addressBar = document.getElementById("address");
-let foodChoice = document.getElementsByClassName("choice");
-let fastFood = document.getElementById("ff");
-let vegies = document.getElementById("vf");
-let drinks = document.getElementById("dc");
-let restaurant = document.getElementById("res");
-let h1 = document.getElementById("col1");
-let h2 = document.getElementById("col2");
-let h3 = document.getElementById("col3");
-let h4 = document.getElementById("col4");
-
-console.log(foodChoice[0])
+let address = document.getElementById('address'),
+choiceList = document.querySelectorAll('.choice'),
+fastFood = document.getElementById("ff"),
+veggies = document.getElementById("vf"),
+drinks = document.getElementById("dc"),
+restaurant = document.getElementById("res"),
+menu = document.querySelectorAll('.blur');
 
 
-let value = addressBar.innerText;
-if (value == "") {
-    fastFood.src = "../assets/fast-food_disabled.svg";
-    vegies.src = "../assets/Vegetables & Drinks_disabled.svg";
-    drinks.src = "../assets/Drinks & Cocktails_disabled.svg";
-    restaurant.src = "../assets/resturant_disabled.svg";
-    h1.style.color = "gray";
-    h2.style.color = "gray";
-    h3.style.color = "gray";
-    h4.style.color = "gray";
-}
-else {
-    for (i = 0; i < foodChoice.length; i++) {
-        foodChoice[i].addEventListener("click", ()=>{
-    window.location.assign("./vendorpage.html")}
-);
+address.addEventListener('input', address =>{
+    if (address.value !== '') {
+        fastFood.setAttribute('src', '../assets/fast-food.svg');
+        veggies.setAttribute('src', '../assets/Vegetables & Drinks.svg');
+        drinks.setAttribute('src', '../assets/Drinks & Cocktails.svg');
+        restaurant.setAttribute('src', '../assets/resturant.svg');
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].style.color = 'crimson';
+            
+        }
+        choiceList.forEach(choiceList => {
+            choiceList.addEventListener('click', ()=> {
+                window.location = 'vendorpage.html';
+            })
+        });
     }
-}
-
-
-
-
-
-
-
+})
 
 

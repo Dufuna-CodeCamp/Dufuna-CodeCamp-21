@@ -78,7 +78,7 @@ section .form {
 }
 .choice h3 {
     font-weight: 300;
-    color: crimson;
+    color: gray;
 }
 #lasthead {
     margin: 40px 32px;
@@ -213,7 +213,7 @@ footer .one {
     .choice h3 {
         margin: 3px;
         font-weight: 300;
-        color: crimson;
+        color: gray;
     }
     .choice p {
         margin: 0;
