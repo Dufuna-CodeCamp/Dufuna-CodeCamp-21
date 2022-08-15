@@ -1,7 +1,7 @@
 let btns = document.querySelectorAll(".add-btn");
 let cartNotice = document.querySelector(".nav-item span");
 let noticeCount = 0;
-
+//EVENT
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.innerText === "Add to Cart") {
