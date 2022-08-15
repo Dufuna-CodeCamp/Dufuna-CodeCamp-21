@@ -11,7 +11,7 @@ btns.forEach((btn) => {
       btn.style.color = "#ffffff";
       btn.style.border = "none";
       cartNotice.style.display = "block";
-      noticeCount+++;
+      noticeCount++;
     } else if (btn.innerText === "Remove") {
       btn.innerText = "Add to Cart";
       btn.style.backgroundColor = "#fff";
