@@ -9,7 +9,7 @@
 // Ensure your PR is created with the task title as seen on the mobile App
 
 
-let productName =["canon kit lens", 'Nkon', 'Samsung', 'Canon', 
+let productName =["canon kit lens", 'Nikon', 'Samsung', 'Canon', 
                 'Sony Alpha', 'Sony NX', 
                 'Panasonic Lumix GH4', 'Panasonic Lumix DC-GH5', 
                 'Xiaomi', 'Fujifilm', 
@@ -17,29 +17,22 @@ let productName =["canon kit lens", 'Nkon', 'Samsung', 'Canon',
                 'Sony A7','Sony A6500', 'Sony Alpha A7r', 
                 'SOny NEX-3N', 'Nikon V1', 'Sony NEX-F3', 'Sony NEX-5', 
                 'Olympus PEN'];
-let productPrice = [500, 200, 750,2000,1600, 
+    productPrice = [500, 200, 750,2000,1600, 
                     300, 800, 5000, 500, 600, 1200,
                      1200, 2000, 2000, 5000, 750, 200,
                       800, 900,750];
 
-    
-function squareEven(array1, array2){
-    for(i = 0; i <array1.length; i++){
-        if (i % 2 == 0) {
-            array2[i] = Math.pow(array2[i], 2);
+let product = productName.length;
+
+    for(i = 0; i<product; i++){
+      let  productList = productName[i];
+            productPrices = productPrice[i];
+        if(productList.length %2 == 0){
+            productPrices = productPrice[i]*2
         }
-        else if(i % 2 !== 0){
-            array2[i] = array2[i]/2;
+        else{
+            productPrices = productPrice[i]/2
         }
+        document.write( ` The price of ${[productList]} is ${[productPrices]} <br><br>`);
     }
-    return productName.forEach((item,arr)=>{
-        document.write(  `The price of ${item} is ${productPrice[arr]} <br><br>`)
-    });
-}
-
-
-
-
-
-squareEven(productName, productPrice);
-
+    
