@@ -52,6 +52,11 @@ a {
     margin-top: 0px;
 }
 
+.name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 #signup {
     color: #AD4C4C;
     border: 1px solid #AD4C4C;
@@ -59,7 +64,7 @@ a {
     border-radius: 6px;
 }
 
-.container {
+.interests, .service {
     display: flex;
 }
 
@@ -99,7 +104,7 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-    .container {
+    .interests, .service {
         display: flex;
         flex-direction: column;
     }

@@ -145,3 +145,33 @@ section.vendors .vendor .title button, .vendor > .btn button{
     background-color: white;
     transform: translateY(7px) translateX(-10px);
 }
+
+/* Media query starts here */
+
+@media screen and (min-width: 501px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+
+    section.landing .interests .interest-container .interest{
+        flex-basis: 48%;
+    }
+
+    section.landing .serve-you .serve-container{
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.landing .serve-you .serve-container div{
+        width:300px;
+        text-align: center;
+    }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
+}
