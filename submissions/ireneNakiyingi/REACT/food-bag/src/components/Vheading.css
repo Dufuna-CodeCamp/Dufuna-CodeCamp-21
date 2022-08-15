@@ -1,0 +1,42 @@
+.verify{
+   padding: 10px 0;
+}
+.verify h5{
+    color: rgb(143, 14, 14);
+    font-size: 15px;
+    margin: 10px;
+}
+.withdot h5{
+    color: rgb(112, 109, 109);
+    font-size: 15px;
+    margin: 10px;
+    
+}
+.withdot{
+    position: relative;
+    margin-right: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-image: url('images/red-btn.svg') ;
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 15px 15px;
+    
+}
+@media screen and (max-width:1000px){
+    .withdot{
+        background-size: 30px;
+        font-size: 20px;
+    }
+    .withdot h5{
+        font-size: 20px;
+    }
+    .verify{
+        font-size: 20px;
+    }
+    .verify h5{
+        font-size: 20px;
+    }
+}
+
+

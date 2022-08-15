@@ -1,29 +1,32 @@
-*, body, html{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* NAVIGATION */
-
-nav{
+nav {
     margin-top: 30px;
-    
+
 }
-.home li{
+
+.home li {
     display: inline;
-    
+
 }
-.home{
-    margin: 50px 100px;
+
+.home {
+    margin: 50px 50px 0px;
     font-size: 11px;
 }
-.home:hover{
+
+.home:hover {
     font-size: 12px;
 }
 
-.right{
+.right {
     display: inline;
     float: right;
     margin: 0px 10px;
@@ -32,29 +35,35 @@ nav{
     font-size: 12px;
     color: black;
 }
-.right:hover{
+
+.right:hover {
     font-size: 15px;
 }
-li a{
-    text-decoration: none!important;
-    color: black!important;   
+
+li a {
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .logo li {
-    text-decoration: none!important;
+    text-decoration: none !important;
     font-size: 14px;
-    list-style: none!important;
-    margin: 20px 100px;
-    font-weight: 700;
-}
-.bag{
-    color: #ad4c4c;
-}
-.star{
-    color: red;
+    list-style: none !important;
+    margin: 20px 50px;
+    font-weight: 500;
 }
 
-button.right{
+.bag {
+    color: #ad4c4c;
+}
+
+.notify {
+    color: red;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+button.right {
     margin-right: 60px;
     top: -43px;
     border: 1px solid #ad4c4c;
@@ -63,100 +72,271 @@ button.right{
     color: #ad4c4c;
     background: transparent;
 }
-button.right:hover{
+
+button.right:hover {
     background: grey;
     color: white;
     border: none;
 }
-button a{
+
+button a {
     color: black;
-    text-decoration: none!important;
-    
+    text-decoration: none !important;
+
 }
 
 
 
 /* SECTION */
 
-.all{
+.all {
     margin: 10px 20px;
 }
 
-.first{
+.first {
     display: flex;
-    flex-direction: row;
-    justify-content: center;  
-}
-.all h2{
-    margin: 20px 80px;
-    font-size: 16px;
-}
-.all .icon{
-    text-align: left;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon{
+.icon {
     display: flex;
-    justify-content: space-between;
-    margin: 0px 80px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.icon img {
+    height: 30px;
+}
+
+.icon h3 {
+    margin-left: 10px;
+    margin-top: 5px;
     font-size: 13px;
 }
-.icon img{
-    height: 40px;
-}
-.icon h3{
-    margin: 10px;
-}
 
-.view-desktop{
-  color: #ad4c4c;
-   float: right;
-   margin: 10px 85px 0px 0px;
-   font-size: 12px;
-}
-.view-desktop:hover{
-    background: #ad4c4c;
-    color: white;
-    padding: 10px;
-    height: 30px;
-    }
-.image{
+.image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     align-self: center;
-    margin: 15px 20px;
-  
-}
-.image img{
-    height: 150px;
+    margin: 15px 0px;
+
 }
 
-.price{
+.image img {
+    height: 220px;
+}
+
+
+.all h2 {
+    margin: 10px 33px;
+    font-size: 17px;
+}
+
+.all .icon {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.price {
     display: flex;
     justify-content: flex-end;
     color: green;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cart {
+    width: 90px;
+    height: 25px;
+    font-size: 11px;
+    border: 1px solid #ad4c4c;
+    background: transparent;
+    color: #ad4c4c;
+    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.remove {
+    
+   text-align: center;
+    width: 90px;
+    height: 25px;
     font-size: 12px;
-    font-weight: 700;
+    border: none;
+    background: grey;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 3px;
+    
+  
 }
-.name{
-    font-size: 13px;
-    font-weight: 700;
+.remove span{
+    position: relative;
+    top: -4px;
+}
+.remove-img{
+    height: 22px!important;
+    width: 26px;
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+    left: -5px;
+   
 }
 
-.cart{
-  width:90px;
-  height: 25px;
-  font-size: 11px;
-  border: 1px solid #ad4c4c;
- background: transparent;
- color: #ad4c4c;
-}
 
-.cart:hover{
+/* .cart:hover {
     background: grey;
     color: white;
     border: none;
+} */
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.view-desktop {
+    display: none;
+}
+
+.view-mobile {
+    color: #ad4c4c;
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 12px;
+}
+
+.view-mobile:hover {
+    background: #ad4c4c;
+    color: white;
+    padding: 10px;
+    height: 30px;
+}
+
+hr {
+    margin: 30px 50px;
+}
+
+
+@media screen and (min-width:700px) {
+    .first {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 60px;
+        font-size: 13px;
+    }
+
+    .icon img {
+        height: 40px;
+    }
+
+    .image {
+        display: block;
+
+    }
+
+    .image img {
+        height: 90px;
+    }
+
+    .view-desktop {
+        display: block;
+        color: #ad4c4c;
+        float: right;
+        margin: 10px 55px 0px 0px;
+    }
+
+    .view-desktop:hover {
+        background: #ad4c4c;
+        color: white;
+        padding: 10px;
+        height: 30px;
+    }
+
+    .view-mobile {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+
+
+    .image img {
+        height: 120px;
+    }
+
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+    button.right {
+        margin-right: 100px !important;
+
+    }
+
+    .all h2 {
+        margin: 30px 100px !important;
+
+    }
+
+    .logo {
+        margin-left: 80px;
+    }
+
+    .home {
+        margin-left: 120px;
+    }
+
+
+    .icon {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 90px;
+        font-size: 13px;
+    }
+
+    .icon img {
+        height: 40px;
+    }
+
+    .image {
+        display: block;
+
+    }
+
+    .cart {
+        width: 90px;
+        height: 30px;
+        font-size: 11px;
+        color: #ad4c4c;
+        border: 1px solid #ad4c4c;
+        background: transparent;
+    }
+
+    .view-desktop {
+        margin: 10px 95px 0px 0px;
+    }
+
+
+
 }

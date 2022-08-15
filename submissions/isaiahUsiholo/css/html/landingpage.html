@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBag</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <p id="pseudo">Food</p>
+        <nav>
+            <a href="#">Cart</a>
+            <a href="#">Login</a>
+            <button>Sign up</button>
+        </nav>
+        <h2>FoodBag</h2>
+        <p id="motto">Anything food, we have you covered.</p>
+    </header>
+    <section>
+        <p>Where are you?</p>
+        <form action="#" method="post" id="address">
+            <input list="address-list" name="address" id="address" placeholder="enter your delivery address" class="form">
+            <datalist id="address-list">
+                <option value="lagos" />
+                <option value="abuja" />
+                <option value="portharcourt" />
+                <option value="benin" />
+            </datalist>
+        </form>
+    </section>
+    <p id="subhead">Pick an interest</p>
+    <div class="container">
+        <div class="choice">
+            <img src="../assets/fast-food_disabled.svg" alt="" width="100px" id="ff">
+            <h3 class="blur">Fast food</h3>
+            <p>All sorrows are less with bread.</p>
+        </div>
+        <div class="choice">
+            <img src="../assets/Vegetables & Drinks_disabled.svg" alt="" id="vf">
+            <h3 class="blur">Vegetables & Fruits</h3>
+            <p>May not want it, but good for you.</p>
+        </div>
+        <div class="choice">
+            <img src="../assets/Drinks & Cocktails_disabled.svg" alt="" id="dc">
+            <h3 class="blur">Drinks & Cocktails</h3>
+            <p>I feel sad for those who don’t drink it.</p>
+        </div>
+        <div class="choice">
+            <img src="../assets/resturant_disabled.svg" alt="" id="res">
+            <h3 class="blur">Restaurants</h3>
+            <p>All sorrows are less with one bread.</p>
+        </div>
+    </div>
+    <h2 id="lasthead">How we serve you</h2>
+
+    <div class="display">
+        <div class="serve">
+            <img src="../assets/Illustration_1.svg" alt="">
+            <h5>Tell us where you are</h5>
+            <p>Select the location you want us to deliver</p>
+        </div>
+        <div class="serve">
+            <img src="../assets/illustration_2.svg" alt="">
+            <h5>Tell us what you want</h5>
+            <p>Browse the type of food that interest you</p>
+        </div>
+        <div class="serve">
+            <img src="../assets/illustration_3.svg" alt="">
+            <h5>We’ll come running</h5>
+            <p>Your order will be delivered to you in no time</p>
+        </div>
+    </div>
+    
+    <footer>
+        <h3>Contact us</h3>
+        <img src="../assets/twitter 2.svg" alt="">
+        <img src="../assets/youtube 1.svg" alt="">
+        <img src="../assets/facebook-f 1.svg" alt=""><br><br>
+        <p class="one">Terms and Conditions.</p>
+        <p class="one" id="toggle">Privacy Policy</p><br><br>
+        <p id="two">&copy; copyright2022 FoodBag is a registered trademark</p>
+    </footer>
+    <script src="../../DOM/landing.js"></script>
+</body>
+</html>
