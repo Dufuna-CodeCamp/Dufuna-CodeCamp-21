@@ -1,6 +1,6 @@
-var numt = 123 - 7
+var numE = 123 - 7
 
-for (var i = 1; i <= numt; i++){
+for (var i = 1; i <= numE; i++){
   if (((i % 3) === 0 ) && ((i % 5) === 0)){
     document.write("Software Developer" + "<br>");
   }
