@@ -1,6 +1,6 @@
-var numr = 123 - 7
+var nump = 123 - 7
 
-for (var i = 1; i <= numr; i++){
+for (var i = 1; i <= nump; i++){
   if (((i % 3) === 0 ) && ((i % 5) === 0)){
     document.write("Software Developer" + "<br>");
   }
