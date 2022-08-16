@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import CartPage from './components/CartPage';
-import VerificationPage from './components/VerificationPage';
+import Verification from './components/Verification';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<CartPage />}/>
-          <Route exact path="/verification-page" element={<VerificationPage />}/>
+          <Route exact path="/verification-page" element={<Verification />}/>
         </Routes>
       </Router>
     </div>

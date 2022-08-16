@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import InputField from './InputField';
 
-const VerificationPage = () => {
+const Verification = () => {
 
     //local State
     const [formData, setFormData] = useState({
@@ -100,4 +100,4 @@ const VerificationPage = () => {
   )
 }
 
-export default VerificationPage
+export default Verification
