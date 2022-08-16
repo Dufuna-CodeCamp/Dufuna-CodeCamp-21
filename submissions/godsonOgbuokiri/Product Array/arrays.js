@@ -7,14 +7,16 @@ let productPrice = [500, 200, 750, 2000, 1600, 300, 800, 5000, 500, 600, 1200, 1
 
 for (let i = 0; i < products.length; i++) {
     for (let n = 0; n < productPrice.length; n++) {
-        if (products[i] % 2 == 0) {
-            const price = productPrice[n] * 2;
-            document.write('The price of ' + products[i] + ' ' + 'is ' + price + '<br>');
+        if (products[i].length % 2 == 0) {
+            evenName = productPrice[n] * 2;
+            document.write('The price of ' + products [i]+ ' ' + 'is ' + evenName + '<br>');
+           
         }
         else {
-            const price = productPrice[n] / 2;
-            document.write('The price of ' + products[i] + ' ' + 'is ' + price + '<br>');
-            break
-        }
+            oddName = productPrice[n] / 2;
+            document.write('The price of ' + products[i] + ' ' + 'is ' + oddName + '<br>');
+           
+        }i++
     }
-}
+   
+} 
