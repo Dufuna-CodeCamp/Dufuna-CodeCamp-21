@@ -18,6 +18,7 @@ CREATE TABLE vendor_food(
     FOREIGN KEY (admin_id) REFERENCES admins(id),
     FOREIGN KEY (food_id) REFERENCES food(id)
 );
+ALTER TABLE vendor_food MODIFY name VARCHAR(255) NOT NULL;
 
 CREATE TABLE admins(
 	id INT NOT NULL AUTO_INCREMENT,
@@ -29,6 +30,9 @@ CREATE TABLE admins(
     password VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
+ALTER TABLE admins MODIFY name VARCHAR(255) NOT NULL;
+ALTER TABLE admins MODIFY email_address VARCHAR(255) NOT NULL;
+ALTER TABLE admins MODIFY password VARCHAR(255) NOT NULL;
 
 CREATE TABLE customer(
 	id INT NOT NULL AUTO_INCREMENT,
@@ -38,6 +42,10 @@ CREATE TABLE customer(
     payment_method ENUM('card', 'cash', 'transfer') DEFAULT 'card',
     PRIMARY KEY (id)
 );
+
+ALTER TABLE customer MODIFY name VARCHAR(255) NOT NULL;
+
+
 CREATE TABLE orders(
 	id INT NOT NULL AUTO_INCREMENT,
 	vendor_id INT NOT NULL,
