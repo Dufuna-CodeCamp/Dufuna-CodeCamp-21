@@ -1,0 +1,73 @@
+/* Vendor Name */
+.vendor-name {
+    display: flex;
+    position: relative;
+  }
+  .vendor-name span {
+    margin-left: 40px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+  }
+  .vendor-name a {
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    color: #AD4C4C;
+  }
+  
+  
+  
+  
+  /* Vendor Menu */
+  .vendor-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  /* Horizontal Rule */
+  hr {
+    margin: 50px 0;
+    border: 1px solid #F2F2F2;
+  }
+  
+  #view-all {
+    display: none;
+  }
+  
+  @media (max-width: 650px) {
+  
+    .vendor-menu {
+      display: block;
+    }
+  
+    .vendor-menu .span {
+      margin: 10px 0 0 15px;
+      font-weight: 500;
+      font-size: 20px;
+      color: #000000;
+      position: absolute;
+    }
+  
+    .vendor-menu a {
+      display: none;
+    }
+  
+    /* Horizontal Rule */
+    hr {
+      margin: 20px 0 20px 25px;
+    }
+  
+    #view-all {
+      display: block;
+      color: #AD4C4C;
+      margin: 55px 0 30px;
+      text-decoration: none;
+      text-align: center;
+  }
+  }

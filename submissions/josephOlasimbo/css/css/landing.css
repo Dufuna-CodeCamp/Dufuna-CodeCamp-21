@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.pick-interest {
+    margin-top: 20px;
+}
+
+.foodbag {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.address {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    margin: 30px 0px 40px;
+}
+
+.box-one {
+    margin-bottom: 0px;
+}
+
+.box-two {
+    margin-top: 0px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#signup {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.interests, .service {
+    display: flex;
+}
+
+.interest-container {
+    padding: 10px;
+    margin: 10px;
+    border: 2px  black;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+
+.interest-container div {
+    margin: 10px;
+}
+
+hr {
+    margin: 50px 0px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact img {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    text-align: center;
+}
+
+.info-service {
+    width: 60%;
+    margin: 0px auto;
+    font-size: small;
+}
+
+@media screen and (max-width:500px) {
+    .interests, .service {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:505px) {
+     .box {
+        text-align: center;
+    }
+    .service-container {
+        width: 80%;
+        object-fit: cover;
+    }
+    .terms {
+        display: flex;
+        justify-content: space-around;
+    }
+   .info-service, .info, .terms {
+    font-size: medium;
+}
+}
+
+@media screen and (min-width:992px) {
+    .service-container {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .info-service, .info, .terms {
+        font-size: medium;
+    }
+    .terms {
+        display: flex;
+        justify-content: space-around;
+    }
+}

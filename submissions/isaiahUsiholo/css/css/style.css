@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+header #pseudo::after {
+    content: "Bag";
+    color: crimson;
+}
+header p {
+    font-size: 20px;
+    color: #000;
+}
+header {
+    padding: 12px 30px;
+    height: 200px;
+    position: relative;
+}
+header nav {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+header h2 {
+    position: absolute;
+    bottom: 25px;
+    color: #000;
+}
+header #motto {
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    color: gray;
+}
+header nav a {
+    display: flexbox;
+    flex-direction: column;
+    padding: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    padding: 10px 20px;
+    background: white;
+    border: 1.5px solid red;
+    border-radius: 7px;
+    color: red;
+}
+section {
+    margin: 5px 0;
+    padding: 0 30px;
+    height: 80px;
+}
+section p {
+    margin: 5px 0;
+    padding: 0;
+    color: #000;
+}
+section .form {
+    border-color: rgba(100, 100, 100, 0.15);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+#subhead {
+    padding: 0 30px;
+    color: #000;
+}
+.choice {
+    margin: 20px 30px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(100, 100, 100, 0.25);
+}
+.choice h3 {
+    font-weight: 300;
+    color: gray;
+}
+#lasthead {
+    margin: 40px 32px;
+    padding: 40px;
+    text-align: center;
+    font-weight: 550;
+    box-shadow: 0 -1.5px rgba(100, 100, 100, 0.15);
+}
+.serve {
+    margin: -60px 30px;
+    padding: 30px;
+    text-align: center;
+}
+.serve h5 {
+    margin: 0.5px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.serve p {
+    margin: 10px;
+    padding: 0 100px;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgba(100, 100, 100, 0.45);
+}
+footer {
+    margin: 50px 32px;
+    padding: 20px;
+    box-shadow: 0 -1.5px rgba(100, 100, 100, 0.25);
+    height: 220px;
+    text-align: center;
+}
+img {
+    padding: 5px 15px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+footer #two {
+    font-weight: 100;
+    font-size: 15px;
+    padding: 0 70px;
+}
+footer .one {
+    padding: 0 5px;
+    display: inline;
+    flex-direction: column;
+}
+
+/* iphone SE, S8+ screens */
+
+@media screen and (max-width: 380px) {
+    .serve {
+        margin: -60px 30px;
+        padding-left: 1px;
+    }
+    #lasthead {
+        margin: 40px 31px;
+    }
+    .serve h5 {
+        padding-left: 35px;
+    }
+    .serve p {
+        margin: 10px;
+        padding: 0;
+        padding-left: 30px;
+    }
+    footer {
+        margin: 50px 31px;
+    }
+    footer #two {
+        padding: 0 20px;
+    }
+    footer .one {
+        padding: 0 2px;
+    }
+}
+
+/* iphone 12Pro, XR, S20 Ultra */
+@media screen and (max-width: 420px) {
+    .serve {
+        margin: -100px 30px;
+        padding-left: 1px;
+    }
+    img {
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    .serve h5 {
+        padding-left: 35px;
+    }
+    .serve p {
+        margin: 10px;
+        padding: 0 0 40px;
+        padding-left: 30px;
+    }
+    footer {
+        margin: 60px 32px 30px;
+        padding: 20px;
+        box-shadow: 0 -1.5px rgba(100, 100, 100, 0.25);
+        height: 260px;
+        text-align: center;
+    }
+    
+    footer #two {
+        font-weight: 100;
+        font-size: 15px;
+        padding: 0 70px;
+    }
+    
+    footer .one {
+        padding: 0 5px;
+        display: inline;
+        flex-direction: column;
+    }
+}
+/* tablets */
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+    .container {
+        margin: 15px 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+    }
+    .container .choice {
+        margin: 5px;
+        padding: 5px 10px;
+        height: inherit;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(100, 100, 100, 0.25);
+    }
+    .choice h3 {
+        margin: 3px;
+        font-weight: 300;
+        color: gray;
+    }
+    .choice p {
+        margin: 0;
+        font-size: small;
+    }
+    
+    #lasthead {
+        margin: 40px 32px;
+        padding: 40px;
+        text-align: center;
+        font-weight: 550;
+        box-shadow: 0 -1.5px rgba(100, 100, 100, 0.15);
+    }
+    .display {
+        display: flexbox;
+        flex-direction: column;
+    }
+    .serve {
+        margin: -60px 30px 30px;
+        height: 150px;
+        padding: 10px;
+        position: relative;
+        box-shadow: 0 2px rgba(100, 100, 100, 0.15);
+    }
+    .display .serve img {
+        width: 200px;
+        position: absolute;
+        left: 1px;
+    }
+    
+    .display h5 {
+        margin: 0.5px;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        top: 55px;
+        right: 30px;
+    }
+    
+    .display p {
+        margin: 0;
+        padding: 0 1px;
+        font-size: 15px;
+        font-weight: 100;
+        color: rgba(100, 100, 100, 0.45);
+        position: absolute;
+        top: 100px;
+        right: 30px;
+    }
+}
+/* larger screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin: 15px 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 180px;
+    }
+    
+    .container .choice {
+        margin: 5px;
+        padding: 5px 10px;
+        height: inherit;
+        border-radius: 5px;
+    }
+    
+    .choice h3 {
+        margin: 20px;
+    }
+    
+    .choice p {
+        margin: 0;
+        padding: 0 5px 1px;
+        font-size: medium;
+    }
+    #lasthead {
+        font-size: 40px;
+    }
+    .display {
+        margin: 20px 30px;
+        padding: 0;
+        width: inherit;
+        height: 300px;
+    }
+    .serve {
+        margin: 0 10px;
+        padding: 30px;
+        float: left;
+        width: 31.6%;
+        position: relative;
+    }
+    .display h5 {
+        font-size: 24px;
+        font-weight: 100;
+    }
+    
+    .serve p {
+        padding: 5px;
+        font-size: 16px;
+    }
+    footer {
+        clear: both;
+        position: relative;
+    }
+    footer #two {
+        font-weight: 100;
+        font-size: 15px;
+        padding: 0 5px;
+        text-align: right;
+    }
+    
+    footer .one {
+        position: absolute;
+        left: 15px;
+        bottom: 5px;
+    }
+    #toggle {
+        left: 180px;
+    }
+}

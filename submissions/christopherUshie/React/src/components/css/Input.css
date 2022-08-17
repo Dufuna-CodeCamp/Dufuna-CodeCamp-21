@@ -1,0 +1,31 @@
+.input {
+    margin: 30px 0;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+    height: 40px;
+    text-indent: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    
+    .input {
+        margin: 10px 0;
+    }
+
+    input {
+        margin: .5rem 0;
+    }
+}

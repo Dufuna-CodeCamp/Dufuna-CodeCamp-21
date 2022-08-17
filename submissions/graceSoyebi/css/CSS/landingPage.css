@@ -69,6 +69,9 @@ nav a{
     margin-top: 8%;
    
 }
+.image-class{
+    filter:grayscale(100%);
+}
 
 .p-div{
     text-align: center;
@@ -95,7 +98,7 @@ nav a{
    nav{
     display: inline-block;
     margin-left: 10%;
-}
+   }
     nav a{
     text-decoration: none;
     color: grey;

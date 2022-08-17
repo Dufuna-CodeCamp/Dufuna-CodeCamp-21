@@ -1,0 +1,367 @@
+/*....................................general styling.................*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.order, 
+.serve{
+    display: grid;
+   grid-template-columns: 1fr;
+   column-gap: 30px;
+}
+.container,
+.services{
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 15px;
+}
+
+.hide{
+    display: none;
+}
+/*............general styling end...........*/
+
+/*...header.....*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+    
+    
+}
+header span{
+    color: #AD4C4C;
+}
+#header{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-style: normal;
+}
+li a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px;
+    color: #696969;
+    text-transform: capitalize;
+}
+#sign{
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
+    border-radius: 5px;
+}
+
+/*.........container.....*/
+.container #heading{
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #696969;
+    margin-top: 30px;
+}
+.container #heading h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.container #heading p{
+    font-size: 14px;
+}
+.location label{
+    font-size: 16px;
+    font-weight: 600px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.location input{
+    width: 320px;
+    height: 40px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+}
+.location input::placeholder {
+    padding-left: 20px;
+}
+.interest h4{
+    font-size: 12px;
+    font-weight: 600px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+ .order .order-list {
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    width: 320px;
+    height: 141px;
+    padding: 15px 15px 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.order-list .title{
+    color: #A5A5A5;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 15px; 
+}
+.order-list p{
+    color: #A5A5A5;
+    font-size: 14px;
+    line-height: 0;
+    padding: 10px; 
+    
+}
+
+/*.......services....*/
+.services h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4E4D4D;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.serve-list{
+    margin-bottom: 20px;
+    width: 320px;
+}
+.serve-list img{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    height: 150px;
+}
+.serve-list .title{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #696969;
+    align-items: center;
+    margin-top: -15px;
+}
+.serve-list .subject{
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    color: #A5A5A5;
+    padding-top: 20px;
+}
+
+
+/*..footer....*/
+footer h4{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 16px;
+    color:#696969;
+    padding-top: 50px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.contact img{
+    margin: 15px;
+}
+.copyright{
+    color: #696969;
+    font-weight: 400;
+    margin-bottom: 20px;
+   display: grid;
+   text-align: center;
+}
+.copyright p:first-child{
+    padding: 10px;
+    font-size: 14px;
+}
+.copyright p:last-child{
+    padding: 10px;
+    font-size: 13px;
+   
+}
+
+
+
+@media  screen and (min-width:768px){
+    body{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .location input{
+        width: 100%;
+        height: 30px;
+    }
+    .location input::placeholder{
+        padding-left: 15px;
+    }
+    .interest h4{
+        font-size: 18px;
+    }
+    .order{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .serve{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container #heading{
+        text-align: left;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .container #heading h3{
+        font-size: 20px;
+    }
+    .location label{
+        font-size: 18px;
+    }
+    .order-list p{
+        font-size: 18px;
+        
+    }
+    .order-list P:last-child{
+        font-size: 16px;
+    }
+    .order .order-list{
+        width: 100%;
+        height: 180px;
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .container,
+    .services,
+    footer,{
+        border-bottom: 1px solid #F2F2F2;
+        padding-bottom: 40px;
+    }
+    .serve-list .title{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+    .serve-list .subject{
+        font-size: 16px;
+    }
+    footer h4{
+        font-size: 18px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact img{
+        margin: 10px;
+    }
+    .copyright{
+       display: flex;
+     justify-content: space-between
+    }
+   
+
+}
+    
+
+@media screen and (min-width:992px) {
+    body{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    li a{
+        font-size: 16px;
+        padding: 15px; 
+    }
+    #sign{
+        padding: 5px;
+    }
+    .location input{
+        width: 100%;
+        height: 40px;
+    }
+    .location input::placeholder{
+        padding-left: 20px;
+    }
+    .interest h4{
+        font-size: 20px;
+    }
+    .order,
+    .serve{
+        display: flex;
+    flex-direction: row;
+    }
+
+    .container #heading{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .container #heading h3{
+        font-size: 30px;
+    }
+    .location label{
+        font-size: 20px;
+    }
+    .order-list p:last-child{
+        font-size: 11px;
+        
+    }
+    .order .order-list{
+        width: 30%;
+        height: 180px;
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .container,
+    .services,
+    footer,{
+        border-bottom: 1px solid #F2F2F2;
+        padding-bottom: 50px;
+    }
+    .serve-list .title{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+    .serve-list .subject{
+        font-size: 16px;
+    }
+    footer h4{
+        font-size: 18px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact img{
+        margin: 10px;
+    }
+    .copyright{
+       display: flex;
+     justify-content: space-between
+    }
+   
+
+}
+
+
+
+    

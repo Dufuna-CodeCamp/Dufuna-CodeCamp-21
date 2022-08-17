@@ -13,7 +13,7 @@ addBtn.forEach(el => {
         if (btn.innerHTML=="Add to Cart") {
              // changes button text
             btn.innerHTML= `Remove`;
-            btn.style.color = "#ffffff";
+            btn.style.color = "#ffffff";   
             // changes the id attribute for the link tag
             btn.setAttribute("id", "removebtn");
             
