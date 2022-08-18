@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c37a22e4.chunk.css",
+    "main.js": "/static/js/main.2ec3e4e5.chunk.js",
+    "main.js.map": "/static/js/main.2ec3e4e5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3e6cc670.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3e6cc670.js.map",
+    "static/js/2.acb7c4a9.chunk.js": "/static/js/2.acb7c4a9.chunk.js",
+    "static/js/2.acb7c4a9.chunk.js.map": "/static/js/2.acb7c4a9.chunk.js.map",
+    "static/js/3.077aca9d.chunk.js": "/static/js/3.077aca9d.chunk.js",
+    "static/js/3.077aca9d.chunk.js.map": "/static/js/3.077aca9d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c37a22e4.chunk.css.map": "/static/css/main.c37a22e4.chunk.css.map",
+    "static/js/2.acb7c4a9.chunk.js.LICENSE.txt": "/static/js/2.acb7c4a9.chunk.js.LICENSE.txt",
+    "static/media/Rectangle 28-small.5df91d31.svg": "/static/media/Rectangle 28-small.5df91d31.svg",
+    "static/media/Rectangle 28.9ff25ac3.svg": "/static/media/Rectangle 28.9ff25ac3.svg",
+    "static/media/Rectangle 29.94ae2a71.svg": "/static/media/Rectangle 29.94ae2a71.svg",
+    "static/media/Rectangle 35.937feaf7.svg": "/static/media/Rectangle 35.937feaf7.svg",
+    "static/media/Rectangle 36-small.faa5521c.svg": "/static/media/Rectangle 36-small.faa5521c.svg",
+    "static/media/Rectangle 38-small.9a2d3e16.svg": "/static/media/Rectangle 38-small.9a2d3e16.svg",
+    "static/media/Vector.29440d69.svg": "/static/media/Vector.29440d69.svg",
+    "static/media/scooter 1-small.589a6897.svg": "/static/media/scooter 1-small.589a6897.svg",
+    "static/media/scooter 1.d959d40c.svg": "/static/media/scooter 1.d959d40c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e6cc670.js",
+    "static/js/2.acb7c4a9.chunk.js",
+    "static/css/main.c37a22e4.chunk.css",
+    "static/js/main.2ec3e4e5.chunk.js"
+  ]
+}
