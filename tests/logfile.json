@@ -1,8 +1,13 @@
 {
   "stats": {
     "tests": 3,
+<<<<<<< HEAD
     "passes": 3,
     "failures": 0,
+=======
+    "passes": 2,
+    "failures": 1,
+>>>>>>> 8e492e729e9a718c99f68e44a3d2c90359bfc852
     "owner": "estheroluwaferanmiAdedeji"
   }
 }
