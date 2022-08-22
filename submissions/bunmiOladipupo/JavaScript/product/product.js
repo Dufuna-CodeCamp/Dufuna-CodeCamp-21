@@ -19,4 +19,4 @@ var productList = [
 ];
 for(i = 0; (i <= productList.length - 1); i++){
     document.write(productList[i].productName + ' ' + 'with' + ' ' + productList[i].imageUrl + ' ' + ' is sold for' + ' '  + '&#8358;' + productList[i].productPrice + str );
-};
+}
