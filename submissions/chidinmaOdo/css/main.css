@@ -2,28 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: white;
     font-family: 'Poppins', sans-serif;
-    margin: 0 100px 20px;
 }
 
-html {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif ;
-    font-style: normal;
-}
-
-.header {
+nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 42px 0 5px;
-    align-items: center;
-    
+    text-align: center;
+    padding: 50px 100px;
+    margin-bottom: 30px;
 }
-
 
 nav ul {
     display: flex;
@@ -48,86 +37,72 @@ nav ul li a:hover {
     border: 1px solid blue;
     padding: 5px;
 }
-#signup {
-    color: #AD4C4C;
+.signup {
+    color: red;
     background-color: white;
-    border: 1px solid #AD4C4C;
+    border: 1px solid red;
     padding: 8px 15px;
     border-radius: 3px;
     width: 92px;
 
 }
 
-.nav-link--nil {
-    display: none;
+span {
+    color: red;
 }
 
-.nav-btns--dot {
-    position: absolute;
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background: #ad4c4c;
-    right: 20.4em;
-    top: 3.2em;
-  }
+main {
+    position: relative;
+}
 
+.vendor-desc {
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    height: 21px;
+}
 
 .home {
     color: gray;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-   
-}
 
-span{
-    color: #AD4C4C;
 }
-
 .vendor {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
-    color: black;
+      color: black  
 }
 
-.home, .vendor {
-    margin: 60px 0 20px;
-  }
-
 .vendor-head {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     line-height: 45px;
     color: black;
+    padding-top: 30px;
 }
 
-.CR-logo {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
- .KFC-img {
+.KFC-img {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
  }
-
+ 
  h5 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 30px;
     color: black;
  }
-
-  #view {
+  a {
     font-size: 16px;
     font-weight: 500;
+    line-height: 24px;
+    color: black;
     text-decoration: none;
-    color: #AD4C4C;
-    padding-top: 12px;
+    color: red;
  }
  a:hover {
     color: blue;
@@ -135,20 +110,18 @@ span{
     border: 1px solid blue;
     padding: 5px;
  }
-
  .KFC {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px 0 70px;
-
+    padding: 50px 100px;
+    margin-bottom: 50px;
+    margin-top: -90px;
  }
-
  .price {
     display: flex;
     justify-content: space-between;
  }
-
  .list {
     font-size: 16px;
     font-weight: 600;
@@ -156,183 +129,50 @@ span{
     color: gray;
     padding-bottom: 20px;
  }
-
  .amount {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     color: green;
  }
-
  .cart{
     font-size: 16px;
     font-weight: 600;
     line-height: 12px;
-    color: #AD4C4C;
+    color: red; 
     background-color: white;
-    border: 1px solid #AD4C4C;
+    border: 1px solid red;
     padding: 10px 22px;
     border-radius: 3px;
-    width: 90px;  
+    width: 150px;  
     text-align: center;  
     cursor: pointer;
-    text-decoration: none;
- }
-
- .cart2 {
-
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 12px;
-    color: #E6E6E6;
-    background-color: #A5A5A5;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 3px;
-    width: 90px;  
-    text-align: center;  
-    cursor: pointer;
-    text-decoration: none;
  }
  .KFC1{
     margin-bottom: 2em;
  }
-
  hr {
-    margin: 80px auto;
-}
+    position: relative;
+    width: 1400px;
+    left: 100px;
+    right: 100px;
+    top: -30px;
+    bottom: 50px;
+    color: gray;
+ }
 
-#view-mobile {
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #AD4C4C;
-     display: none;
+ .CR-logo{
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    align-items: center;
-    margin-top: -20px;
-  }
+    justify-content: space-between;
+    padding: 70px 100px;
+ }
 
+ .view {
+    padding-top: 14px;
+ }
 
-/*MEDIA QUERY*/
-
-@media screen and (max-width: 768px){
-    body {
-        margin: 0 50px 10px;
-    }
-
-    nav ul li {
-        padding: 0 0 0 30px;
-    }
-
-    span, .logo {
-        font-size: 15px;
-    }
-
-   .KFC2, #view {
-        display: none;
-    }
-
-    #view-mobile {
-        display: block;
-    }
-
-    h5 {
-        margin-left: 2px;
-    }
-
-    .KFC1, .img_advert{
-        width: 100%;
-        height: auto;
-      }
-
-      .vendor-head {
-        font-size: 20px;
-        padding-top: 20px;
-      }
-
-      .home, .vendor {
-        margin: 60px 0 20px;
-      }
-
-      .nav-btns--dot {
-        position: absolute;
-        height: 9px;
-        width: 9px;
-        border-radius: 50%;
-        background: #ad4c4c;
-        right: 14.4em;
-        top: 3.0em;
-      }
-}
-
-@media screen and (max-width: 425px){
-    body {
-        margin: 0 20px 20px;
-    }
-
-    nav ul li a {
-        font-size: 12px;
-    }
-
-    nav ul li {
-        padding: 0 0 0 30px;
-    }
-
-    span, .logo {
-        font-size: 15px;
-    }
-
-    .KFC2, #view {
-        display: none;
-    }
-    #view-mobile {
-        display: block;
-    }
-
-    .KFC1, .img_advert{
-        width: 100%;
-        height: auto;
-      }
-
-      .vendor-head {
-        font-size: 20px;
-        margin-top: -30px;
-      }
-}
-
-@media only screen and (max-width: 600px){
-    body {
-        margin: 0 23px 20px;
-    }
-
-    nav ul li {
-        padding: 0 0 0 30px;
-    }
-
-    span, .logo {
-        font-size: 15px;
-    }
-
-    .KFC2, #view {
-        display: none;
-    }
-    #view-mobile {
-        display: block;
-    }
-
-    .KFC1, .img_advert{
-        width: 100%;
-        height: auto;
-      }
-
-      .vendor-head {
-        font-size: 20px;
-        margin-top: -30px;
-      }
-}
-
-
-
-
-
+ 
+ 
+ 
