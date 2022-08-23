@@ -3,6 +3,7 @@
     "tests": 3,
     "passes": 3,
     "failures": 0,
+navi
     "start": "2022-08-22T15:40:58.786Z",
     "end": "2022-08-22T15:41:04.218Z",
     "duration": 5432,
@@ -136,5 +137,6 @@
       },
       "version": "6.2.0"
     }
+master
   }
 }
