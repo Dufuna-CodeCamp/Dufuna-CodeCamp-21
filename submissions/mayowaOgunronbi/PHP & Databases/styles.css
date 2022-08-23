@@ -1,0 +1,31 @@
+
+h1{
+    margin-left: 8%;
+   margin-top: 40px;
+   color: rgb(184, 43, 43);
+}
+
+table th {
+    background-color: rgb(184, 43, 43);
+    color: white;
+    padding: 10px;
+    text-align: start;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: rgb(219, 201, 201);
+}
+
+button{
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: grey;
+}
