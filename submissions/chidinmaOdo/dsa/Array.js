@@ -31,22 +31,13 @@ var product_price = [
 ];
 
 function productArray() {
-    //LOOP THROUGH PRODUCTS TO GET THE LENGTH OF EACH PRODUCT ITEM
 for (let i = 0; i < products.length; i++) {
-
-      //LOOP THROUGH PRODUCT PRICE TO GET THE PRICE OF EACH PRODUCT ITEM
     for (let j = 0; j < product_price.length; j++) {
-
-        //IF PRODUCT LENGTH IS EVEN
-        //DOUBLE THE PRICE
         if(products[i].length % 2 === 0){
             console.log(product_price[j])
             newProductPrice = product_price[j] * 2;
           document.write(`The new price of ${products[i]} is ${newProductPrice} <br>`) 
         }
-
-        //IF PRODUCT LENGTH IS ODD 
-        //HALF THE PRICE
         else {
             newProductPrice = product_price[j] / 2;
             document.write(`The new price of ${ '  ' +products[i]} is ${ '  '+newProductPrice} <br>`)    
@@ -56,5 +47,4 @@ for (let i = 0; i < products.length; i++) {
    
 }
 }
-//call the function
 productArray()
