@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< Updated upstream
     "tests": 3,
     "passes": 3,
     "failures": 0,
@@ -138,5 +139,11 @@ navi
       "version": "6.2.0"
     }
 master
+=======
+    "tests": 5,
+    "passes": 5,
+    "failures": 0,
+    "owner": "ireneNakiyingi"
+>>>>>>> Stashed changes
   }
 }
