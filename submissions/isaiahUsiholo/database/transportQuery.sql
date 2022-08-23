@@ -1,11 +1,16 @@
-SELECT * FROM registered_passengers;
+select * from accidents;
+delete from accidents;
+alter table registered_passengers modify age varchar(50);
+SET SQL_SAFE_UPDATES = 0;
 
+SHOW TABLES;
+SELECT * FROM accidents;
 
--- the total number of people who survived = 290;
+-- the total number of people who survived = 342;
 SELECT passenger_status, COUNT(passenger_status) FROM accidents
 WHERE passenger_status = 'survived';
 
--- the total number of people who did not survive = 424;
+-- the total number of people who did not survive = 549;
 SELECT passenger_status, COUNT(passenger_status) FROM accidents
 WHERE passenger_status = '';
 
@@ -16,7 +21,7 @@ FROM registered_passengers INNER JOIN trips ON registered_passengers.id = trips.
 AND point_of_embarkment IN ('Q', 'C');
 
 
--- how many passengers that embarked at southhampton survived (total = 202);
+-- how many passengers that embarked at southhampton survived (total = 218);
 SELECT point_of_embarkment, COUNT(point_of_embarkment) FROM trips 
 INNER JOIN accidents ON trips.registered_passengers_id = accidents.registered_passengers_id
 WHERE point_of_embarkment = 'S' AND accidents.passenger_status = 'survived';
@@ -30,5 +35,3 @@ JOIN trips ON registered_passengers.id = trips.registered_passengers_id
 WHERE trip_fare > 100 AND registered_passengers.age > 35 
 AND number_of_parents_or_children > 0 AND number_of_siblings_or_spouse > 0
 GROUP BY registered_passengers.id;
-
-
