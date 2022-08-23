@@ -113,15 +113,22 @@ header {
   align-items: center;
   padding: 30px;
   border-radius: 3px;
-  color: #a5a5a5;
+  /* color: #a5a5a5; */
 }
 
-.choices div h4 {
+.choices_title {
   margin-top: 16px;
   font-size: 18px;
   font-weight: 500;
-  color: #a5a5a5;
+  color: red;
 }
+.header-gray{
+  color:#a5a5a5;
+}
+.header-color {
+  color: #ad4c4c;
+}
+
 .choices div p {
   margin-top: 5px;
   font-size: 14px;
