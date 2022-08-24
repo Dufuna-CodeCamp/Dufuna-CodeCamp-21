@@ -3,15 +3,15 @@
 ## Project setup
 
 cd into project directory and run:
-```
+
 npm install
-```
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -19,17 +19,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### npm test
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### `Important notice on running test`
+#### Important notice on running test
 
-After you run `npm test` or `npm run test` in your terminal, all the tests available under `__test__` folder will run automatically. You will probably be getting error messages since you are yet to work on the component file for the test. To prevent these errors and to run a test at a time;
+After you run npm test or npm run test in your terminal, all the tests available under __test__ folder will run automatically. You will probably be getting error messages since you are yet to work on the component file for the test. To prevent these errors and to run a test at a time;
 
-1. In your terminal, run `npm test` or `npm run test` followed by the test you want to run
-2. For example `npm test App.test.js` or `npm test CartPage.test.js`
+1. In your terminal, run npm test or npm run test followed by the test you want to run
+2. For example npm test App.test.js or npm test CartPage.test.js
 
 ### `npm run build`
 
