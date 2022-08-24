@@ -1,0 +1,62 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.brand, button, .view-all{
+	color: #AD4C4C;
+}
+
+button {
+    border-color: #AD4C4C;
+    border-radius: 5px;
+    border-width: thin;
+    height: 30px;
+    width: 100px;
+    background-color: #FFF;
+}
+
+.sign-up {
+    height: 30px;
+    width: 70px;
+}
+
+li, a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #000;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox li {
+    float: right;
+    padding-left: 20px;
+}
+.ash {
+    color: #b2beb5;
+}
+
+.vendor {
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price{
+    color: #5EA304;
+    font-weight: bold;
+
+}
+
+aside ul li p {  
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+ .view {
+    float: right;
+ }
