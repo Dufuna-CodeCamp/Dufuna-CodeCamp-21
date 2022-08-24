@@ -1,6 +1,6 @@
 
-let numbers = "";
-for (let i = 1; i <= 123-7; i++) {
+let numbers = 123-7;
+for (let i = 1; i <= numbers; i++) {
     let print = "";
     if (i % 3 == 0 && i % 5 == 0) {
         print += "Software Developer";
