@@ -1,8 +1,9 @@
-ALTER TABLE accidents MODIFY passenger_status BOOLEAN;
-SET SQL_SAFE_UPDATES = 0;
-
+ALTER TABLE registered_passengers MODIFY age VARCHAR(50) NULL;
+SET SQL_SAFE_UPDATES = '0';
+ALTER TABLE trips CHANGE number_of_siblings_or_spouse number_of_parents_or_children INT NULL;
+ALTER TABLE trips CHANGE number_of_parents_or_children number_of_siblings_or_spouse INT NULL;
 SHOW TABLES;
-SELECT * FROM registered_passengers;
+SELECT * FROM trips;
 
 -- the total number of people who survived = 342;
 SELECT passenger_status, COUNT(passenger_status) FROM accidents
@@ -27,7 +28,7 @@ WHERE point_of_embarkment = 'S' AND accidents.passenger_status = '1';
 -- get the id, name and the total number of passengers
 -- who paid a fare greater than $100
 -- above age 35, had siblings or spouse aboard;
--- total number = 13;
+-- total number = 9;
 SELECT registered_passengers.id, registered_passengers.age, registered_passengers.full_name, COUNT(registered_passengers.id) FROM registered_passengers
 JOIN trips ON registered_passengers.id = trips.registered_passengers_id 
 WHERE (trip_fare > '100' AND age > '35')
