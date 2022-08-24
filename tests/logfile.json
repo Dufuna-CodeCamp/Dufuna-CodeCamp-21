@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< Updated upstream
 Irene2
 Updated upstream
     "tests": 3,
@@ -167,5 +168,11 @@ Updated upstream
     "failures": 0,
     "owner": "ireneNakiyingi"
 Stashed changes
+=======
+    "tests": 6,
+    "passes": 6,
+    "failures": 0,
+    "owner": "ireneNakiyingi"
+>>>>>>> Stashed changes
   }
 }
