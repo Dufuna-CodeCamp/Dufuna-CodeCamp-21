@@ -1,9 +1,9 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
+Irene2
+Updated upstream
+    "tests": 3,
+    "passes": 3,
     "failures": 0,
     "start": "2022-08-23T17:27:51.003Z",
     "end": "2022-08-23T17:30:51.071Z",
@@ -161,5 +161,11 @@
       },
       "version": "6.2.0"
     }
+
+    "tests": 5,
+    "passes": 5,
+    "failures": 0,
+    "owner": "ireneNakiyingi"
+Stashed changes
   }
 }
