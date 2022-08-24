@@ -14,14 +14,14 @@ button.forEach(function(container) {
             const hem = document.getElementById("hem");
             function remove (){
                 setTimeout (() => {
-                    if (hem.style.visibility = "visible"){
+                    if (hem.style.visibility == "visible"){
                         hem.style.visibility = "hidden";
                      }
                  }, 2000);
             }
 
             function showhem(cb){
-                if (hem.style.visibility = "hidden"){
+                if (hem.style.visibility == "hidden"){
                     hem.style.visibility = "visible";
                     hem.innerText = (addedItems.length + " " + "item in cart!")
                     }
@@ -53,3 +53,4 @@ function cartItems () {
         cartDot.style.visibility = "hidden";
     }
 }
+
