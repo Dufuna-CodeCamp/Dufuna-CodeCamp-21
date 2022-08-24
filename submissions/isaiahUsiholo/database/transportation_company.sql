@@ -33,4 +33,4 @@ CREATE TABLE accidents(
 );
 
 
-SHOW COLUMNS FROM registered_passengers;
+SELECT * FROM trips;
