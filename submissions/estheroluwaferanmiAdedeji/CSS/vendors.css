@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 45px 70px 0 100px;
+}
+
+div {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.nav-heading {
+  font-size: 18px;
+}
+
+.nav-heading-span {
+  color:#B76262;;
+}
+
+.nav-list {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 30px;
+}
+
+.nav-link,
+button {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: #fff;
+  color: #C17979;
+  border: 1px solid #C17979;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.home-div {
+  margin-bottom: 30px;
+}
+
+.home-div a {
+  text-decoration: none;
+}
+
+.home-link {
+  color: grey;
+  font-size: 14px;
+}
+
+.vendor-link {
+  font-size: 14px;
+  color: #000;
+}
+
+.bigheading {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.vendor-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+.vendor-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vendor-image {
+  margin-right: 24px;
+}
+
+.package-grid-container {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.package-grid {
+  margin-left: 10px;
+}
+
+.package-text-container {
+  display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
+}
+
+.brand-name {
+  font-size: 22px;
+}
+
+.view-section {
+  color: #B76262;
+}
+
+.package-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.package-price {
+  color: green;
+  font-weight: 600;
+}
