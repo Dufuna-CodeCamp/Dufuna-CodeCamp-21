@@ -2,6 +2,8 @@
 
         require_once ('config.php');
 
+        // Setting the cookie
+        setcookie("customers", "result", time() + 3600);
       
         $sql = "select SN, Full_Name, Email, Created_At, Actions FROM customer";
         $stmt = $pdo->prepare($sql);
@@ -9,11 +11,7 @@
         $result = $stmt->fetchAll();
 
         echo "<h1>Customer Details Table</h1>";
-
-        setcookie('customer', serialize($result), time() + 3600, '/', '', 0);
-
-        try {
-           
+                   
             if($stmt->rowCount() > 0) {
             echo '<table>';
                 echo '<tr>';
@@ -34,22 +32,19 @@
                     echo '</tr>';
                 }
             echo '</table>';
-            
-            
-            // Free result set
-            unset($result);
-            
-            } else{
-                echo "No records were found";
-            }
-        } catch (PDOException $e) {
-            die("ERROR: Could not be able to execute $sql. " . $e->getMessage());
-        }
+ } else {
+    echo "No results to display";
+}
 
-        // Unset connection
-        unset($pdo);
-
-// }
+if (isset($_COOKIE["customers"])) {
+    echo $_COOKIE["customers"];
+    //Free result test
+    unset($customers);
+} else {
+    echo "No records matching your query were found.";
+}
+// Close connection
+unset($pdo);
 
 ?>
 
