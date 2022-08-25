@@ -10,10 +10,18 @@ body {
     margin: 23px 20px 0px;
 }
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 46px;
+    top: 0px;
+    padding-bottom: 13px;
+    padding-right: 40px;
+    z-index: 2000
 }
 span{
     margin: 0px;
@@ -44,6 +52,14 @@ nav .HL{
     font-weight: 400;
     
 }
+.HL a:first-child img {
+    height: 8px;
+    width: 8px;
+    position: relative;
+    right: -1px;
+    top: -3px;
+    visibility: hidden;
+}
 .HL a:nth-child(3) {
     border: 1px #AD4C4C solid;
     border-radius: 5px;
@@ -56,8 +72,21 @@ nav .HL{
     color: #AD4C4C;
     
 }
+#hem {position: fixed;
+    top: 540px;
+    color: #000000;
+    visibility: hidden;
+    text-shadow: 1px 1px 2px red, 
+      0 0 25px rgb(127, 161, 38), 0 0 5px #AD4C4C;
+    z-index: 2000;
+    font-size: 15px;
+    background-color: rgba(216, 78, 15, 0.7);
+  }
 .homevendor{
-    margin: 20px 0px;
+    margin-top: 111px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -112,21 +141,46 @@ justify-content: space-between;
     line-height: 24px;
 
 }
-button {
+.buttondiv  {
     border: 1px #AD4C4C solid;
     border-radius: 3px;
     color: #AD4C4C;
     box-sizing: border-box;
-
+    align-items: center;
 
     width: 138px;
     height: 40px;
-
-    background-color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-
+    z-index: 1000;
+}
+.buttondiv p {
+    background-color: grey;
+    color: #FFFFFF;
+    width: 136px;
+    height: 38px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    z-index: -10;
+    cursor: pointer;
+    visibility: hidden;
+}
+.buttondiv button {
+    width: 138px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    border: hidden;
+    z-index: -1;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
 .viewallmobile {
     text-align: center;
@@ -143,6 +197,18 @@ button {
     font-family: sans-serif;
     font-style: normal;
     margin: 46px 40px 0px;
+}
+header {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 46px;
+    top: 0px;
+    padding-bottom: 13px;
+    padding-right: 82px;
+    z-index: 2000
 }
 .foodbag {
     width: 72px;
@@ -170,6 +236,14 @@ nav .HL{
     font-weight: 400;
     
 }
+.HL a:first-child img {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    right: -1px;
+    top: -6px;
+    visibility: hidden;
+}
 .HL a:nth-child(3) {
     border: 1px #AD4C4C solid;
     border-radius: 5px;
@@ -183,7 +257,6 @@ nav .HL{
     
 }
 .homevendor{
-    margin: 20px 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -234,14 +307,46 @@ margin-top:
     justify-content: space-between;
     margin-right: 15.33px;
 }
-button {
+.buttondiv  {
     border: 1px #AD4C4C solid;
     border-radius: 3px;
     color: #AD4C4C;
     box-sizing: border-box;
+    align-items: center;
+
     width: 138px;
     height: 40px;
-    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1000;
+}
+.buttondiv p {
+    background-color: grey;
+    color: #FFFFFF;
+    width: 136px;
+    height: 38px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    z-index: -10;
+    cursor: pointer;
+    visibility: hidden;
+}
+.buttondiv button {
+    width: 138px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    border: hidden;
+    z-index: -1;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
 hr {
     margin-top: 22px;
@@ -261,12 +366,18 @@ body {
     line-height: 30px;
 }
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    margin-right: 100px;
-    
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 46px;
+    top: 0px;
+    padding-bottom: 13px;
+    padding-right: 208px;
+    z-index: 2000;
 }
 .foodbag {
 width: 90px;
@@ -286,6 +397,14 @@ nav .HL{
     display: inline-block;
     padding: 1px 5px;
 }
+.HL a:first-child img {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    right: 0px;
+    top: -6px;
+    visibility: hidden;
+}
 .HL a:nth-child(3) {
     border: 1px #AD4C4C solid;
     border-radius: 5px;
@@ -299,6 +418,10 @@ nav .HL{
     
 }
 .homevendor{
+    margin-top: 64px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 115px;
     height: 21px;
     left: 95px;
@@ -310,7 +433,7 @@ nav .HL{
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
+
 
     display: flex;
 align-items: center;
@@ -354,18 +477,47 @@ margin-top: 26px;
     justify-content: space-between;
     margin-right: 57.33px;
 }
-button {
+.buttondiv  {
     border: 1px #AD4C4C solid;
     border-radius: 3px;
     color: #AD4C4C;
     box-sizing: border-box;
-
+    align-items: center;
 
     width: 138px;
     height: 40px;
-
-    background: #FFFFFF;
-
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1000;
+    
+}
+.buttondiv p {
+    background-color: grey;
+    color: #FFFFFF;
+    width: 136px;
+    height: 38px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    z-index: -10;
+    cursor: pointer;
+    visibility: hidden;
+}
+.buttondiv button {
+    width: 138px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    border: hidden;
+    z-index: -1;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
 .productimage{
     margin-right: 57.33px;
