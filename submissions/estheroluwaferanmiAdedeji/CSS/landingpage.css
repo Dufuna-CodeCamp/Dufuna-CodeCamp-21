@@ -50,15 +50,16 @@ header {
   color: #646363;
 }
 
-.nav-link-button {
+button {
   text-decoration: none;
-  background-color: transparent;
+  background-color: white;
   color: #C17979;
   border-color:#C17979;
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
   padding: 5px 10px;
+  font-size: 10px;
 }
 
 form {
@@ -72,14 +73,14 @@ form {
 }
 
 #location {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  width: 1200px;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  width: 98%;
   font-size: 18px;
-  color:#646363;;
-  border-radius: 5px;
-  border-color:#646363;
+  color:#646363;
+ border: 1px solid #646363;
+ border-radius: 5px;
   margin-top: 15px;
   margin-bottom: 25px;
 }
@@ -123,26 +124,37 @@ form {
   margin-top: 10px;
 }
 
-footer {
-  margin-top: 15%;
-}
-
-.icon-section {
-  text-align: center;
-}
-
-.info-section {
+.contact-section {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-top: 80px;
 }
 
-footer p {
-  font-size: 16px;
-  margin-bottom: 20px;
+.contact-text {
   color: #646363;
 }
 
+.contact-image {
+  margin-top: 30px;
+}
+
 footer img {
-  margin: 0 10px;
+  padding: 0 15px;
+}
+
+.contact-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  color: #646363;
+}
+
+@media screen and (max-width:400px) {
+  .contact-copyright {
+    text-align: center;
+  }
 }
