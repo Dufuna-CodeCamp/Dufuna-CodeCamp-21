@@ -113,6 +113,7 @@ input[type='radio']:checked{
 }
 .cartPage {
   margin-top: 62px;
+  padding-bottom: 50px;
 }
 .title {
   font-size: 18px;
