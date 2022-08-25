@@ -5,6 +5,7 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
+ html-task
     "start": "2022-08-24T22:13:04.965Z",
     "end": "2022-08-24T22:13:06.030Z",
     "duration": 1065,
