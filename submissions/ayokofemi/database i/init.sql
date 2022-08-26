@@ -1,7 +1,7 @@
 --for the foodTable--
 CREATE TABLE foods (
 id INT NOT NULL AUTO_INCREMENT,
-type ENUM ('fast_food','vegetable_fruits','drinks_cocktails','resturants') NOT NULL DEFAULT 'fast_food',
+type ENUM('fast_food','vegetable_fruits','drinks_cocktails','resturants') NOT NULL DEFAULT 'fast_food',
 PRIMARY KEY (id)
 );
 
