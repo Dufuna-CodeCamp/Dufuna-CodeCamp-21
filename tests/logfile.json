@@ -1,70 +1,84 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-html-forms
-    "start": "2022-08-25T21:06:24.279Z",
-    "end": "2022-08-25T21:06:25.416Z",
-    "duration": 1137,
-
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "start": "2022-08-26T21:04:10.646Z",
+    "end": "2022-08-26T21:07:10.827Z",
+    "duration": 180181,
+    "testsRegistered": 3,
+    "passPercent": 0,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
   },
   "results": [
     {
-html-forms
-      "uuid": "e3327427-7aaf-444d-a678-30f3f6deb228",
-
+      "uuid": "5ade4980-8cc2-4aef-adac-96d471ba5715",
       "title": "",
-      "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-      "file": "\\navigation_tasks.js",
+      "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+      "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
- html-forms
-          "uuid": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "4349924b-9c32-4df9-9766-007a920dbca7",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "timedOut": false,
- html-forms
-              "duration": 1093,
-
-              "state": null,
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
+              "timedOut": true,
+              "duration": 180092,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
-              "err": {},
-html-forms
-              "uuid": "5f131e18-1258-4a11-bc95-427cda81b1c0",
-              "parentUUID": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
+                "diff": null
+              },
+              "uuid": "a8263a27-6ca8-4844-b41d-6ef50135503b",
+              "parentUUID": "4349924b-9c32-4df9-9766-007a920dbca7",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 4,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "3f0b0af3-bca8-47a9-8657-a774bf87c3da",
+              "parentUUID": "4349924b-9c32-4df9-9766-007a920dbca7",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check dropdown",
+              "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -73,51 +87,60 @@ html-forms
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
- html-forms
-              "uuid": "3b3efb4c-1e0b-446f-a1f8-97eedd8e9676",
-              "parentUUID": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "tests": [
+              "uuid": "30481f61-08a9-4ef2-863a-dea6b9d27a69",
+              "parentUUID": "4349924b-9c32-4df9-9766-007a920dbca7",
+              "isHook": false,
+              "skipped": true
+            },
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-html-forms
-              "duration": 35,
-
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
- html-forms
-              "uuid": "caf2cea8-1796-4eaa-9b90-d94e0f32cc52",
-              "parentUUID": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-
+              "uuid": "dd84fc82-64cb-4181-8684-b0852bc9cf1e",
+              "parentUUID": "4349924b-9c32-4df9-9766-007a920dbca7",
               "isHook": false,
-              "skipped": false
+              "skipped": true
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "err": {},
+              "uuid": "ef86d6bf-a407-4ceb-8f14-3f19f9c157fc",
+              "parentUUID": "4349924b-9c32-4df9-9766-007a920dbca7",
+              "isHook": false,
+              "skipped": true
             }
           ],
           "suites": [],
-          "passes": [
- html-forms
-            "caf2cea8-1796-4eaa-9b90-d94e0f32cc52"
-
-          ],
+          "passes": [],
           "failures": [],
           "pending": [],
-          "skipped": [],
- html-forms
-          "duration": 35,
-
+          "skipped": [
+            "30481f61-08a9-4ef2-863a-dea6b9d27a69",
+            "dd84fc82-64cb-4181-8684-b0852bc9cf1e",
+            "ef86d6bf-a407-4ceb-8f14-3f19f9c157fc"
+          ],
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -151,12 +174,11 @@ html-forms
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/adebayoobafemi/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/Users/HP/Desktop/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
       "version": "6.2.0"
     }
-master
   }
 }
