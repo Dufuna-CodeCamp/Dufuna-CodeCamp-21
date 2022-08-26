@@ -1,20 +1,20 @@
 --for the foodTable--
-CREATE TABLE food (
+CREATE TABLE foods (
 id INT NOT NULL AUTO_INCREMENT,
 type ENUM ('fast_food','vegetable_fruits','drinks_cocktails','resturants') NOT NULL DEFAULT 'fast_food',
 PRIMARY KEY (id)
 );
 
 --for the vendorFood--
-CREATE TABLE vendor_food (
+CREATE TABLE vendor_foods (
 id INT NOT NULL AUTO_INCREMENT,
 admin_id INT NOT NULL,
 food_id INT NOT NULL,
 name VARCHAR(250) NOT NULL,
 amount FLOAT(10,2) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (food_id) REFERENCES food (id),
-FOREIGN KEY (admin_id) REFERENCES admin (id)
+FOREIGN KEY (food_id) REFERENCES foods (id),
+FOREIGN KEY (admin_id) REFERENCES admins (id)
 );
 
 --for the adminsTable--
@@ -29,7 +29,7 @@ PRIMARY KEY (id)
 );
 
 --for the customerTable--
-CREATE TABLE customer (
+CREATE TABLE customers (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 phone_number VARCHAR(18) NOT NULL,
