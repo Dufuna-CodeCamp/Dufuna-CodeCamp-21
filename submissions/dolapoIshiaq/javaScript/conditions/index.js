@@ -1,4 +1,4 @@
-var positiveDifference= 123 - 7;
+//var positiveDifference= 123 - 7;
 
 for(var i = 1; i <= positiveDifference; i++){
     if(i % 3 === 0 && i % 5 === 0) {
