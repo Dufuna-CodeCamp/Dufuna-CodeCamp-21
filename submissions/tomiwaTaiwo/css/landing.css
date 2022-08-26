@@ -1,126 +1,438 @@
-body{
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+main{
+  margin: 10px;
+}
+ul{
+  list-style-type: none;
+}
+.nav-list{
+  display: flex;
+  row-gap: 1em;
+  margin-left: 75%;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+.nav-it{
+  padding: 8px;
+}
+.f {
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  
+  
+}
+#red {
+  margin-top: 20px;
+  color: red;
+}
+.lu {
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+select {
+  width: 70%;
+  display: block;
+  margin-top: 5px;
+  height: 30px;
+}
+.opt {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+}
+.opt div {
+  width: 250px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  background: white;
+  padding: 7px;
+}
+.img {
+  height: 100px;
+}
+h2 {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.fast {
+  color: red;
+}
+.serve {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.serve div {
+  width: 200px;
+  height: 200px;
+  margin: 90px;
+  text-align: center;
+  background: white;
+  padding: 7px;
+}
+h4 {
+  opacity: 0.8;
+}
+.url {
+  height: 200px;
+  object-fit: contain;
+}
 
+.how {
+  text-align: center;
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+  left: 20
+  px;
 }
-li{
-    display: inline;
-    text-decoration: none;
-    position: relative;
-    left: 70%;
-    margin: 20px;
-    
+h5 {
+  opacity: 0.5;
 }
-.f{
-    float: left;
-}
-#k{
-    position: relative;
-    margin-top: -5px;
-}
-#red{
 
-    margin-top: -5px;
-    color: red;
+.contact {
+  margin-top: 90px;
+  text-align: center;
+  left: 400px;
+  position: relative;
 }
-.lu{
-    margin: auto;
-    text-align: center;
-    padding-top: 30px;
+.social {
+  display: inline;
+
+  text-align: center;
 }
-select{
-    width: 70%;
-    display: block;
-    margin-top: 5px;
-    height: 30px;
+hr {
+  margin-top: 40px;
+  opacity: 0.5;
+}
+.social div {
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  display: inline;
+  position: relative;
+  right: -100%;
+  text-align: center;
+  background: white;
+  padding: 7px;
+}
+.s {
+  width: 50px;
+  margin-top: 20px;
+}
+.fb{
+  width: 35px;
+  margin-top: 20px;
+}
+.copy {
+  margin-top: -30px;
+  position: relative;
+  left: 950px;
+}
+.term {
+  margin-top: 100px;
+}
+#rr {
+  font-size: 30px;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+#sign {
+  color: red;
+  border: 1px solid red;
+  border-radius: 80px;
+  padding: 5px;
+  display: inline;
+}
+#location{
+  width: 100%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .lu {
+    text-align: left;
+}
+.nav-list{
+  margin-left: 17%;
+}
+#sign{
+  display: inline;
 }
 .opt{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 0;
+  width: 100%;
 }
- .opt div{
-     width: 250px;
-     height: 200px;
-     border:1px solid black;
-     margin:  10px;
-     text-align: center;
-     background: white;
-     padding: 7px;
+.social div{
+  right: 0%;
 }
-     .img{
-         height: 100px;
+.contact{
+  text-align: center;
+  left: 50px;
+}
+.fb{
+  width: 25px;  
+}
+.term{
+  margin-top: 50px;
+   margin-left: 30px;
+}
+.copy {
+  margin-top: -20px;
+  position: relative;
+  left: 40px;
+}
+}
+/* Small devices (portrait tables and large phones,600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-list{
+    margin-left: 20%;
+  }
+  .f{
+    font-size: 17px;
+  }
+  .lu {
+    text-align: left;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-list{
+    margin-left: 720px;
+    font-size: 20px;
      }
-     h2{
-         margin-bottom: 10px;
-         margin-left: 5px;
+  .f{
+    font-size: 23px;
+  }
+  
+#rr{
+    font-size: 40px;
+    text-align: center;
+  }
+  .any{
+    margin-top: -30px;
+    font-size: 25px;
+  }
+  #location{
+    width: 950px;
+    height: 50px;
+  }
+  .place{
+    font-size: 23px;
+  }
+  .opt div {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    background: white;
+    padding: 7px;
+  }
+  .opt{
+    display: grid;
+        grid-template-columns: 4fr 1fr;
+        gap: 20px;
+  }
+  .fast{
+    font-size: 20px;
+  }
+  h4.text{
+    font-size: 19px;
+  }
+    .how {
+      text-align: center;
+      margin: auto;
+      margin-top: 70px;
+      position: relative;
+      left: 180px;
+      font-size: 26px;
+       }
+  
+.serve {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+.serve div {
+  width: 200px;
+  height: 200px;
+  margin: 90px;
+  text-align: center;
+  background: white;
+  padding: 7px;
+}
+h4.tags{
+  font-size: 20px;
+  font-weight: bolder;
+}
+h5.ref{
+  font-size: 18px;
+}
+    footer{
+      margin-top: 500px;
+      margin-left: -1450px;
+    }
+    .contact{
+      margin-left: 400px;
+      font-size: 25px;
+    }
+    .copy{
+      font-size: 17px;
+      margin-right: 80px;
+    }
+    .term{
+      margin-right: -250px;
+      font-size: 17px;
+    }
+.s{
+  margin-left: -80px;
+}
+.fb{
+  margin-left: -70px;
+  left: 100px;
+}
+}
+
+
+/* large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ul{
+  list-style-type: none;
+}
+.nav-list{
+  display: flex;
+  row-gap: 1em;
+  margin-left: 75%;
+    font-size: 15px;
      }
-     .fast{
-         color: red;
-     }
-     .serve{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
       
+h3#rr{
+  font-size: 24px;
+}
+.any{
+  font-size: 20px;
+}
+.place{
+  font-size: 20px;
+}
+
+#location{
+  width: 950px;
+  height: 30px;
+}
+h4.text{
+  font-size: 14px;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+.nav-it{
+  padding: 8px;
+}
+.f {
+  float: left;
+  position: relative;
+  margin-top: 20px; 
+  font-size: 20px; 
+}
+#red {
+  margin-top: 20px;
+  color: red;
+}
+.lu {
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+select {
+  width: 70%;
+  display: block;
+  margin-top: 5px;
+  height: 30px;
+}
+.opt {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+}
+.opt div {
+  width: 250px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  background: white;
+  padding: 7px;
+}
+.img {
+  height: 100px;
+}
+h2 {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.fast {
+  color: red;
+  font-size: 18px;
+}
+.serve {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.serve div {
+  width: 200px;
+  height: 200px;
+  margin: 90px;
+  text-align: center;
+  background: white;
+  padding: 7px;
+}
+h4 {
+  opacity: 0.8;
+}
+.url {
+  height: 200px;
+  object-fit: contain;
+}
+
+.how {
+  text-align: center;
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+  left: 20px;
+  font-size: 25px;
+}
+h4.tags{
+  font-size: 15px;
+}
+    h5.ref{
+      font-size: 12px;
     }
-     .serve div{
-         width: 200px;
-         height: 200px;
-         margin: 90px;
-         text-align: center;
-         background: white;
-         padding: 7px;
-    }
-         h4{
-             opacity: 0.8;
-         }
-         .url{
-            height: 200px;
-        object-fit: contain;
-        }
-        
-        .how{
-            text-align: center;
-            margin: auto;
-            margin-top: 80px;
-        }
-        h5{
-            opacity: 0.5;
-        }
-    
-        .contact{
-            margin-top: 90px;
-            text-align: center;
-            left: 100%;
-            position: relative;
-            
-        }
-        .social{
-            display: inline;
-        
-            
-            text-align: center;
-            
-            }
-            hr{
-                margin-top: 40px;
-                opacity: 0.5;
-            }
-         .social div{
-             width: 200px;
-             height: 50px;
-             margin: 5px;
-             display: inline;
-            position: relative;
-             right: -100%;
-             text-align: center;
-             background: white;
-             padding: 7px;
-    }
+ vendors
             .s{
                  width: 50px;
                  margin-top: 20px;
@@ -150,4 +462,4 @@ select{
              .social image{
                 width: 50%;
              }
-        
+       

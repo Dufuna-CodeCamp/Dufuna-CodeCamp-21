@@ -84,9 +84,9 @@ nav {
   padding: 15px 0;
 }
 
-.location input {
-  height: 25px;
-  padding: 25px;
+.location .location_2 {
+  /* height: 5px; */
+  padding: 18px;
   border-radius: 10px;
 }
 
@@ -98,31 +98,33 @@ div.interest {
 .content-section div.container {
   display: flex;
   margin: auto 40px;
+
 }
 
 .item {
   border: 2px solid rgb(212, 210, 210);
   border-radius: 5px;
   padding: 20px 30px;
-  text-align: center;
+  /* text-align: center; */
   margin: 16px;
+  color: #696969;
+
 }
 
 .item img {
   width: 100px;
+  color: #E6E6E6;
+  /* filter: opacity(30%); */
 }
 
-.item h4 {
-  font-size: 20px;
+.item .outlook {
+  font-size: 12px;
   padding: 4px;
-  height: 27px;
   font-family: "Poppins";
   font-style: normal;
   line-height: 27px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ad4c4c;
+
+  /* color: #ad4c4c; */
 }
 
 .item p {

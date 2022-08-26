@@ -30,10 +30,17 @@
             <h1>FoodBag</h1>
             <p>Anything food,We have you covered.</p>
         </div>
-        <div class="location">
-            <label for="address">Where are you?</label>
-            <input type="address" name="address" placeholder="Bodija Market">
-        </div>
+        <section class="location">
+            <label for="location">Where are you?</label><br><br>
+            <select name="location" id="location_1" class="input location_2">
+                <option value="Enter your delivery address" disabled selected hidden>Enter your
+                    delivery address</option>
+                <option value="bodija, market">Bodija Market</option>
+                <option value=" Yankura, Kano">Yankura, Kano State</option>
+                <option value="Agbeni">Agbeni, Ibadan Oyo State</option>
+                <option value="Oshodi">Oshodi, Lagos State</option>
+            </select>
+        </section>
         <div class="interest">
             <h4>Pick an interest</h4>
         </div>
@@ -41,23 +48,23 @@
         <div class="content-section">
             <div class="container">
                 <div class="item">
-                    <img src="./images/fast-food 1.svg">
-                    <h4>Fast food</h4>
+                    <img class="images" src="./images/fast-food_disabled.svg">
+                    <h4 class="outlook">Fast food</h4>
                     <p>All sorrows are less with bread</p>
                 </div>
                 <div class="item">
-                    <img src="./images/healthy-food 1.svg">
-                    <h4>Vegetables</h4>
+                    <img class="images" src="./images/Vegetables & Drinks_disabled.svg">
+                    <h4 class="outlook">Vegetables & Fruits</h4>
                     <p>May not want it, but good for you.</p>
                 </div>
                 <div class="item">
-                    <img src="./images/mai-thai 1.svg">
-                    <h4>Drinks & Cocktails</h4>
+                    <img class="images" src="./images/Drinks & Cocktails_disabled.svg">
+                    <h4 class="outlook">Drinks & Cocktails</h4>
                     <p>I feel sad for those who don't drink.</p>
                 </div>
                 <div class="item">
-                    <img src="./images/fork 1.svg">
-                    <h4>Resturants</h4>
+                    <img class="images" src="./images/fork_disabled.svg">
+                    <h4 class="outlook">Resturants</h4>
                     <p>All sorrows are less with bread.</p>
                 </div>
             </div>
@@ -117,6 +124,7 @@
             <p> © Copyright 2021 FoodBag is a registered trademark</p>
         </div>
     </footer>
+    <script src="../DOM/location.js"></script>
 </body>
 
 </html>
