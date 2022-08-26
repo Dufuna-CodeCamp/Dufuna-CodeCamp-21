@@ -1,7 +1,5 @@
 Hello World!
 My name is Ifeoma and I am a Software engineer.
-<<<<<<< HEAD
 And I'm enjoying the journey so far.
-=======
 And it's been amazing
->>>>>>> 6dc210f6a35ea1062ceec3dcb1c2ae01f6ef2534
+
