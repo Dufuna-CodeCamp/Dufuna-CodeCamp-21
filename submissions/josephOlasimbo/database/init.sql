@@ -1,0 +1,48 @@
+-- CREATE THE food bag DB
+CREATE DATABASE food_bag;
+USE food_bag;
+
+-- CREATE THE food TABLE
+CREATE TABLE food (
+	id INT NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (id)
+);
+
+-- CREATE THE vendor food TABLE
+CREATE TABLE vendor_food (
+	id INT NOT NULL AUTO_INCREMENT,
+	admin_id INT NOT NULL,
+	food_id INT NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	amount DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- CREATE THE admins TABLE
+CREATE TABLE admins (
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NOT NULL,
+	type INT NOT NULL,
+	email_address VARCHAR(255) NOT NULL,
+	phone_number VARCHAR(255) NOT NULL,
+	password VARCHAR(10) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- CREATE THE customers TABLE
+CREATE TABLE customers (
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NOT NULL,
+	phone_number VARCHAR(255) NOT NULL,
+	address VARCHAR(255) NOT NULL, 
+	payment_method VARCHAR(10),
+    PRIMARY KEY (id)
+);
+
+-- CREATE THE orders TABLE
+CREATE TABLE orders (
+id INT NOT NULL AUTO_INCREMENT,
+vendor_id INT NOT NULL,
+customer_id INT NOT NULL,
+PRIMARY KEY (id)
+);
