@@ -11,15 +11,15 @@ function validateLocation() {
     img1[i].src = image2[i];
     //img1[i].style.cursor = "pointer";
     interest[i].style.color = "#AD4C4C";
-    };
+    }
 
     for (let j = 0; j < img.length; j++) {
        img[j].onclick = () => location.href = "vendors.html";
        img[j].style.cursor = "pointer";   
     
-    };
+    }
     //img[i].onclick = () => location.href = "vendors.html";
-};
+}
 t.addEventListener('change', validateLocation);
 
 
