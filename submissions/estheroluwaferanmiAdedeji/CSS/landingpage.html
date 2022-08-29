@@ -19,11 +19,13 @@
        Food<span class="foodbag-span">Bag</span>
       </h3>
    
-      <nav class="navbar"></nav>
+      <nav class="navbar">
        <ul class="nav-list">
          <li><a href="#" class="nav-link">Cart</a></li>
          <li><a href="#" class="nav-link">Login</a></li>
-         <li><a href="#" class="nav-link-button">Sign Up</a></li>
+         <li>
+          <button>Sign up</button>
+        </li>
        </ul>
      </nav>
 
@@ -37,21 +39,18 @@
        <p class="bigheading-text">Anything food, we have you covered.</p>
       </div>
 
-        <form>
-          <label for="location" class="select">Where are you?</label>
+          <h4 class="select">Where are you?</h4>
           <br>
-           <select name="location" id="location">
-            <option>Enter your delivery address</option>
-            <option>Ibadan</option>
-            <option>Lagos</option>
-            <option>Ife</option>
-            <option>Ado-Ekiti</option>
-            <option>Akure</option>
-            <option>Abuja</option>
-            <option>Ilorin</option>
-          </select>
-          
-        </form>
+          <input list="locations" name="location" id="location" placeholder="Enter your delivery address">
+          <datalist id="locations">
+            <option value="Ibadan" ></option>
+            <option value="Lagos"></option>
+            <option value="Ife"></option>
+            <option value="Ado-ekiti"></option>
+            <option value="Akure"></option>
+            <option value="Abuja"></option>
+            <option value="Ilorin"></option>
+          </datalist>
 
       <div class="section-1">
         <h5 class="select">Pick an interest</h5>
@@ -128,11 +127,11 @@
       </div>
 
       <div class="copyright-section">
-        <p class="copyright-info">Terms & Conditions &dot; Privacy Policy</p>
-        <p class="copyright-info">&copy; Copyright 2021 FoodBag is a registered trademark</p>
+        <p class="copyright-info">Terms & Conditions . Privacy Policy</p>
+        <p class="copyright-info">&#169; Copyright 2021 FoodBag is a registered trademark</p>
       </div>
     </footer>
-<script src="../DOM/landingPage.js"></script>
+
   
 </body>
 </html>

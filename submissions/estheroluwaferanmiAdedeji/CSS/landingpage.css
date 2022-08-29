@@ -43,7 +43,7 @@ header {
   margin: 25px;
 }
 
-.nav-link-button {
+button {
   text-decoration: none;
   background-color: transparent;
   color: #C17979;
@@ -52,6 +52,7 @@ header {
   border-style: solid;
   border-radius: 5px;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .bigheading-section {
@@ -79,7 +80,7 @@ form {
   margin-bottom: 10px;
 }
 
-#location {
+input {
   padding: 10px 30px;
   width: 100%;
   color:#646363;
