@@ -30,6 +30,8 @@ try{
                 echo "<td>" . $row['Full_Name'] . "</td>";
                 echo "<td>" . $row['Email_Address'] . "</td>";
                 echo "<td>" . $row['Created_At'] . "</td>";
+        
+
                 echo "<td> <button><a href=\"product.php?userid={$row['ID']}\">View</a> </button></td>";
         echo "</tr>";
     }
