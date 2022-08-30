@@ -7,19 +7,12 @@
 body {
   padding-left: 65px;
   line-height: 1.5;
-  margin: 0 100px 20px;
-}
 
-hr {
-  margin: 80px auto;
-  border-width: 1px;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 42px 0 5px;
-  align-items: center;
+
 }
 
 .header-heading {
@@ -43,17 +36,6 @@ header {
   margin: 25px;
 }
 
-button {
-  text-decoration: none;
-  background-color: transparent;
-  color: #C17979;
-  border-color:#C17979;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
 
 .bigheading-section {
   text-align: center;
@@ -70,6 +52,7 @@ button {
   color: #646363;
 }
 
+
 form {
   margin-top: 70px;
 }
@@ -77,21 +60,7 @@ form {
 .select {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 10px;
-}
 
-input {
-  padding: 10px 30px;
-  width: 100%;
-  color:#646363;
-  background-color: #fff;
-  border-radius: 5px;
-  appearance: none;
-  background-image: url(../CSS/images/keyboard_arrow_down.svg);
-  background-repeat: no-repeat;
-  background-position-x: 97.6%;
-  background-position-y: 50%;
-  margin-bottom: 50px;
 }
 
 .food-selection-container {
@@ -133,30 +102,8 @@ input {
   margin-top: 10px;
 }
 
-footer {
-  display: block;
-}
-
 .icon-section {
   text-align: center;
 }
 
-.icons {
-  text-align: center;
-  margin: 10px 30px;
-}
 
-.copyright-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.copyright-info {
-  color: #646363;
-    font-weight: 400;
-    font-size: 14px;
-}
