@@ -109,7 +109,7 @@ ul, ol {
  font-weight: 600;
  line-height: 24px;
  color: #4E4D4D;
- padding: 10px 0 20px 0;
+ padding: 10px 0 20px;
  
  }
  
@@ -126,7 +126,7 @@ ul, ol {
   top: 604px;
   border-radius: 5px;
   border: 1px solid #AD4C4C;
-  padding: 10px 0 20px 0;
+  padding: 10px 0 20px;
  /* border-width: fit-content;*/
  align-content: center;
 } 
