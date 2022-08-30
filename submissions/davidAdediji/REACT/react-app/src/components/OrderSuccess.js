@@ -7,8 +7,8 @@ const OrderSuccess = ()=>{
         <main>
             <NavBar/>
             <div className="success-section">
-                <div>
-                    <img src={Success} alt="success" />
+                <div className="sucess-section-img">
+                    <img className="success-img" src={Success} alt="success" />
                 </div>
                 <div>
                     <p className="main-title">Order Successful</p>
