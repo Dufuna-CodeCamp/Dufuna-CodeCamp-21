@@ -1,17 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 9,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-html-forms
-    "start": "2022-08-25T21:06:24.279Z",
-    "end": "2022-08-25T21:06:25.416Z",
-    "duration": 1137,
-
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 9,
+    "start": "2022-08-30T22:12:50.050Z",
+    "end": "2022-08-30T22:12:51.587Z",
+    "duration": 1537,
+    "testsRegistered": 9,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -20,107 +18,278 @@ html-forms
   },
   "results": [
     {
-html-forms
-      "uuid": "e3327427-7aaf-444d-a678-30f3f6deb228",
-
+      "uuid": "c5a417a8-99a4-47d0-bc65-9e7920674b0a",
       "title": "",
-      "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-      "file": "\\navigation_tasks.js",
+      "fullFile": "C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js",
+      "file": "\\cookies_2.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
- html-forms
-          "uuid": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+          "title": "Testing Cookies Task",
+          "fullFile": "C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\tests\\cookies2\\cookies_2.js",
+          "file": "\\cookies_2.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Cookies Task\"",
+              "fullTitle": "Testing Cookies Task \"before all\" hook: setupWebdriver in \"Testing Cookies Task\"",
               "timedOut": false,
- html-forms
-              "duration": 1093,
-
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url)",
               "err": {},
-html-forms
-              "uuid": "5f131e18-1258-4a11-bc95-427cda81b1c0",
-              "parentUUID": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-
+              "uuid": "444025a3-da44-4e4a-81e8-dd4d42a1256c",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"after all\" hook in \"Testing Cookies Task\"",
+              "fullTitle": "Testing Cookies Task \"after all\" hook in \"Testing Cookies Task\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "driver.quit();",
               "err": {},
- html-forms
-              "uuid": "3b3efb4c-1e0b-446f-a1f8-97eedd8e9676",
-              "parentUUID": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
+              "uuid": "c4ef3721-4096-4957-a294-7131ff22e560",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "title": "test case: S/N is present",
+              "fullTitle": "Testing Cookies Task test case: S/N is present",
               "timedOut": false,
-html-forms
-              "duration": 35,
-
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 1499,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
-              "err": {},
- html-forms
-              "uuid": "caf2cea8-1796-4eaa-9b90-d94e0f32cc52",
-              "parentUUID": "54b059f8-9e49-4f23-9ac3-e816f93467d6",
-
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst serial = text.toLowerCase();\nassert.include(serial, \"s/n\", `Ensure \"S/N\" column is present on the table`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "401c5553-ed0a-48e4-90eb-9756cacdbb42",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Product Name is present",
+              "fullTitle": "Testing Cookies Task test case: Product Name is present",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst product_name = text.toLowerCase();\nassert.include(product_name, \"product text\", `Ensure \"Product Name\" column is present on the table`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "e791de97-18a5-46ed-ab65-bccb1d92c71d",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Unit price is present",
+              "fullTitle": "Testing Cookies Task test case: Unit price is present",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();;\nconst unit_price = text.toLowerCase();\nassert.include(unit_price, \"order unit price\", `Ensure \"Order Unit Price\" is present`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "ce67a51b-f4f1-4d61-bfee-5e4c13913443",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Quantity is present",
+              "fullTitle": "Testing Cookies Task test case: Quantity is present",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst qty = text.toLowerCase();\nassert.include(qty, \"order quantity\", `Ensure \"Order Quantity\" is present on the table`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "a0571580-98c4-442a-9f86-cc830e0cd4a9",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Order total price is present",
+              "fullTitle": "Testing Cookies Task test case: Order total price is present",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst order = text.toLowerCase();\nassert.include(order, \"order total price\", `Ensure \"Order Total Price\" column is present on the table`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "008672a7-c330-484e-956f-15dc673adce2",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Created Date is present",
+              "fullTitle": "Testing Cookies Task test case: Created Date is present",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst date = text.toLowerCase();\nassert.include(date, \"created date\", `Ensure \"Created Date\" column is present on the table`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "908a93db-f1ea-4d2f-a9cd-20c5f097e3ba",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Customer location is present",
+              "fullTitle": "Testing Cookies Task test case: Customer location is present",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"body\")).getText();\nconst location = text.toLowerCase();\nassert.include(location, \"customer location\", `Ensure \"Customer Location\" column is present on the table`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "a36f56af-98f4-4941-a91e-9a8755584242",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: View button is is present",
+              "fullTitle": "Testing Cookies Task test case: View button is is present",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const text = await driver.findElement(By.css(\"button\")).getText();\nconst view = text.toLowerCase();\nassert.include(view, \"view\", `Ensure there is a button with text \"VIEW\" in the actions column`);",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "d0d3e024-40c2-45b1-8b27-f0e0815458c2",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: Check if cookies is set",
+              "fullTitle": "Testing Cookies Task test case: Check if cookies is set",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const get_cookie = await driver.manage().getCookie();\nconst cookie = get_cookie.value();\nassert.exists(cookie, `Ensure cookie is present`)",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 104.0.5112.102 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "5e90a833-3798-4384-ba63-5befa5a173eb",
+              "parentUUID": "7a4f0b26-8cd3-4cbb-bd59-968eb4b74838",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
- html-forms
-            "caf2cea8-1796-4eaa-9b90-d94e0f32cc52"
-
+          "passes": [],
+          "failures": [
+            "401c5553-ed0a-48e4-90eb-9756cacdbb42",
+            "e791de97-18a5-46ed-ab65-bccb1d92c71d",
+            "ce67a51b-f4f1-4d61-bfee-5e4c13913443",
+            "a0571580-98c4-442a-9f86-cc830e0cd4a9",
+            "008672a7-c330-484e-956f-15dc673adce2",
+            "908a93db-f1ea-4d2f-a9cd-20c5f097e3ba",
+            "a36f56af-98f4-4941-a91e-9a8755584242",
+            "d0d3e024-40c2-45b1-8b27-f0e0815458c2",
+            "5e90a833-3798-4384-ba63-5befa5a173eb"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
- html-forms
-          "duration": 35,
-
+          "duration": 1504,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 180000
+          "_timeout": 2000
         }
       ],
       "passes": [],
@@ -135,7 +304,7 @@ html-forms
   ],
   "meta": {
     "mocha": {
-      "version": "10.0.0"
+      "version": "9.2.2"
     },
     "mochawesome": {
       "options": {
@@ -151,12 +320,11 @@ html-forms
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/adebayoobafemi/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/Users/USER/Documents/Dufuna-CodeCamp-21/tests/cookies2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
       "version": "6.2.0"
     }
-master
   }
 }
