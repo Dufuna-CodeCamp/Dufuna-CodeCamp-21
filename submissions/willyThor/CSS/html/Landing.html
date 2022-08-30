@@ -6,6 +6,9 @@
    <meta name="viewport" content="width=device-width, intial-scale=1.0">
    <title>FoodBag</title>
    <link href="../css/landing.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com"/>
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <header class="foodbag-head">
@@ -26,20 +29,24 @@
    <section id="address">
      <h4>Where are you?</h4>
     <!--  <input type="search" id="address" name="address" size="100"/> -->
-     <select name="address" id="address" class="address-bar" >
+     <select name="address" id="address-list" class="address-bar" >
+                <option value="none"selected disabled hidden >Enter your location</option>
                 <option value="bodija market">Bodija Market</option>
                 <option value="westlands">Westlands</option>
                 <option value="kasarani">Kasarani</option>
+                <option value="roysambu">Roysambu</option>
+                <option value="thika">Thika</option>
+                <option value="githurai">Githurai</option>
           </select>
    </section>
    <section class="services">
      <div>
      <p><h4>Pick an interest </h4></p>
        <ul>
-	 <li><img src="../images/fast-food.svg"></img><br><p id="interest">Fast food</p><br>All sorrows are less with bread </li>
-	 <li><img src="../images/Vegetables _ Drinks.svg"></img><br><p id="interest">Vegetables&Fruits</p><br> May not want it but good for you</li>
-	 <li><img src="../images/Drinks _ Cocktails.svg"></img><br><p id="interest">Drinks&Cocktails</p><br>I feel sad for those who don't drink</li>
-	 <li><img src="../images/resturant.svg"></img><br><p id="interest">Restaurants</p><br>All sorrows are less with bread</li>
+	 <li id = "img"><img id="img1" src="../images/fast-food_disabled.svg"></img><br><p id="interest">Fast food</p><br>All sorrows are less with bread </li>
+	 <li id = "img"><img id="img1" src="../images/Vegetables _ Drinks_disabled.svg"></img><br><p id="interest">Vegetables&Fruits</p><br> May not want it but good for you</li>
+	 <li id = "img"><img id="img1" src="../images/Drinks _ Cocktails_disabled.svg"></img><br><p id="interest">Drinks&Cocktails</p><br>I feel sad for those who don't drink</li>
+	 <li id = "img"><img id="img1" src="../images/resturant_disabled.svg"></img><br><p id="interest">Restaurants</p><br>All sorrows are less with bread</li>
      </ul>
     </div>
   </section>
@@ -73,6 +80,7 @@
       </div>
    </div>
   </footer>
-     	
+
+  <script src = "../../DOM/landing.js"></script>    	
 </body>
 </html> 
