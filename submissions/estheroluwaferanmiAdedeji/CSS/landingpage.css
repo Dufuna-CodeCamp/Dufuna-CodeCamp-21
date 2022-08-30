@@ -7,11 +7,12 @@
 body {
   padding-left: 65px;
   line-height: 1.5;
+
 }
 
 header {
   display: flex;
-  padding: 30px;
+
 }
 
 .header-heading {
@@ -35,6 +36,7 @@ header {
   margin: 25px;
 }
 
+
 .bigheading-section {
   text-align: center;
   margin-top: 95px;
@@ -50,16 +52,6 @@ header {
   color: #646363;
 }
 
-.nav-link-button {
-  text-decoration: none;
-  background-color: transparent;
-  color: #C17979;
-  border-color:#C17979;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
 
 form {
   margin-top: 70px;
@@ -68,20 +60,7 @@ form {
 .select {
   font-size: 22px;
   font-weight: 500;
-  padding-bottom: 50px;
-}
 
-#location {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  width: 1200px;
-  font-size: 18px;
-  color:#646363;;
-  border-radius: 5px;
-  border-color:#646363;
-  margin-top: 15px;
-  margin-bottom: 25px;
 }
 
 .food-selection-container {
@@ -124,25 +103,11 @@ form {
 }
 
 footer {
-  margin-top: 15%;
+
 }
 
 .icon-section {
   text-align: center;
 }
 
-.info-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-footer p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #646363;
-}
-
-footer img {
-  margin: 0 10px;
-}
