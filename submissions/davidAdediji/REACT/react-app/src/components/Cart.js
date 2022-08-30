@@ -16,7 +16,7 @@ const Cart = ()=>{
     const [cartItems, setCartItems] = useState([]);
     const handleClick = (e)=>{
         e.preventDefault();
-        navigate('/')
+        navigate('/verify')
     }
 
   useEffect(()=>{

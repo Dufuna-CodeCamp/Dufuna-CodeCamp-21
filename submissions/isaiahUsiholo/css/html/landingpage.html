@@ -20,8 +20,8 @@
     </header>
     <section>
         <p>Where are you?</p>
-        <form action="#" method="post">
-            <input list="address-list" name="address" id="address" placeholder="enter your delivery address" class="form">
+        <form action="#" method="post" id="address">
+            <input list="address-list" name="address" id="address" placeholder="enter your delivery address" class="form input-element">
             <datalist id="address-list">
                 <option value="lagos" />
                 <option value="abuja" />
@@ -33,23 +33,23 @@
     <p id="subhead">Pick an interest</p>
     <div class="container">
         <div class="choice">
-            <img src="../assets/illustration_2.svg" alt="" width="100px">
-            <h3>Fast food</h3>
+            <img src="../assets/fast-food_disabled.svg" alt="" width="100px" id="ff">
+            <h3 class="blur">Fast food</h3>
             <p>All sorrows are less with bread.</p>
         </div>
         <div class="choice">
-            <img src="../assets/Vegetables & Drinks.svg" alt="">
-            <h3>Vegetables & Fruits</h3>
+            <img src="../assets/Vegetables & Drinks_disabled.svg" alt="" id="vf">
+            <h3 class="blur">Vegetables & Fruits</h3>
             <p>May not want it, but good for you.</p>
         </div>
         <div class="choice">
-            <img src="../assets/Drinks & Cocktails.svg" alt="">
-            <h3>Drinks & Cocktails</h3>
+            <img src="../assets/Drinks & Cocktails_disabled.svg" alt="" id="dc">
+            <h3 class="blur">Drinks & Cocktails</h3>
             <p>I feel sad for those who don’t drink it.</p>
         </div>
         <div class="choice">
-            <img src="../assets/resturant.svg" alt="">
-            <h3>Restaurants</h3>
+            <img src="../assets/resturant_disabled.svg" alt="" id="res">
+            <h3 class="blur">Restaurants</h3>
             <p>All sorrows are less with one bread.</p>
         </div>
     </div>
@@ -82,5 +82,6 @@
         <p class="one" id="toggle">Privacy Policy</p><br><br>
         <p id="two">&copy; copyright2022 FoodBag is a registered trademark</p>
     </footer>
+    <script src="./landing.js"></script>
 </body>
 </html>

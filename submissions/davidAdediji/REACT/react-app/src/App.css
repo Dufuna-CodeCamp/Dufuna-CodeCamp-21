@@ -308,3 +308,173 @@
 }
 
 
+/* Verification Page */
+
+
+/* Desktop */
+.verification-form-title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.verification-form-desc{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AD4C4C;
+}
+
+.form-group{
+  margin-top: 42px;
+}
+
+.form-label{
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-radio-text{
+  color: #696969;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.delivery-address-field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-radio{
+  color: #AD4C4C;
+}
+
+.input-wrapper{
+  border: 1px solid #C4C4C4;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-wrapper input, .input-wrapper select{
+  width: 100%;
+  height: 100%;
+  padding-top:11px;
+  padding-left:10px;
+  padding-bottom: 11px;
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+
+}
+
+.form-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+
+.fieldClassName{
+  margin-bottom: 20px;
+}
+.horizontal-line{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.formClassName{
+  margin-bottom: 20px;
+}
+
+.form-flex input{
+  width: 680px;
+}
+
+@media only screen and (max-width: 600px) {
+  .verification-form-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+ 
+  .verification-form-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+  }
+
+  .form-group{
+    margin-top: 42px;
+  }
+
+  .form-label{
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .form-radio-text{
+    color: #696969;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .delivery-address-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-radio{
+    color: #AD4C4C;
+  }
+
+  .input-wrapper{
+    border: 1px solid #C4C4C4;
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .input-wrapper input, .input-wrapper select{
+    width: 100%;
+    height: 100%;
+    padding-top:11px;
+    padding-left:10px;
+    padding-bottom: 11px;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    padding-right: 11px;
+
+  }
+
+  .form-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+  }
+
+  .form-flex input{
+    width: 150px;
+  }
+
+  .fieldClassName{
+    margin-bottom: 20px;
+  }
+
+
+  .sucess-section-img{
+    width:200;
+  }
+  .success-img{
+    width:100%;
+  }
+}
+

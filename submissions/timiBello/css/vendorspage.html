@@ -8,14 +8,22 @@
      <title>FoodBag</title>
  </head>
  <body>
-     <header>
-         <h3 class="log"><a href="index.html">Food<span>Bag</span></a></h3>
-         <nav>
-             <li class="nav-link"><a href="./vendorspage.html">Cart</a><span id="cartSpan"></span></li>
-             <li class="nav-link"><a href="">Login</a></li>
-             <button>Sign up</button>
-         </nav>
-    </header>
+		<!-- header -->
+    <div id="header">
+         <p class="font20">Food<span id="bag">Bag</span></p>
+
+         <div id="right-head">
+<a href="#" class="right font16" id="cart-link">Cart <div id="cart-notify"></div></a>
+             <a href="#" class="right font16">Login</a>
+             <a href="#" class="right font16" id="sign-up">Sign Up</a>
+         </div>
+        <!-- navigation -->
+    <div id="navigation">
+        <a href="../css/landingpage.html" class="font14">Home > </a>
+        <a href="#" class="font14-500">Vendors</a>
+    </div>
+    </div>
+    
     <section class="vendors">
         <h1 class='vendorsheading'>All Vendors</h1>
         <div class="vendor kfc">
@@ -27,47 +35,74 @@
                 <button>View all</button>
             </div>
             <div class="orders">
-                <div class="order">
-                    <img src="img/image4.svg" alt="" srcset="">
+                <div class="order postproduct">
+                    <img src="img/image4.svg" alt="kingbucket" srcset="">
                     <div class="desc">
                         <p>KFC - King Bucket</p>
                         <p>#5,000</p>
                     </div>
-                    <button class="remBtn">Remove</button>
+                    <!--BUTTONS  -->
+
+                 <button class="font16-500 vendor-grid-button">
+                     Add to Cart
+                    </button>
+                    <button class="font16-500  clicked-btn">
+                        <img src="../Dom/img/remove.svg" alt=""> Remove
+                    </button>  
+
                 </div>
-                <div class="order">
+                <div class="order postproduct">
                     <img src="img/image4.svg" alt="" srcset="">
                     <div class="desc">
                         <p>Zinger Burger</p>
                         <p>#3,600</p>
                     </div>
-                    <button class="adBtn">Add to Cart</button>
+                    <!-- BUTTONS -->
+
+             <button class="font16-500 vendor-grid-button">
+Add to Cart
+             </button>
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button> 
                 </div>
-                <div class="order">
+                <div class="order postproduct">
                     <img src="img/image4.svg" alt="" srcset="">
                     <div class="desc">
                         <p>Chicken strips</p>
                         <p>#1,450</p> 
                     </div>
-                    <button class="adBtn">Add to Cart</button>
-                </div>
-                <div class="order">
+                    <button class="font16-500 vendor-grid-button">
+Add to Cart
+             </button>  
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button>                </div>
+                <div class="order postproduct">
                     <img src="img/image4.svg" alt="" srcset="">
                     <div class="desc">
                         <p>Yamilicious</p>
                         <p>#900</p>
                     </div>
-                    <button class="adBtn">Add to Cart</button>
-                </div>
+                    <button class="font16-500 vendor-grid-button">
+              Add to Cart
+</button> 
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button>
+						                </div>
             </div>
             <div class="btn">
-                <button>View all</button>
+                <button class='viewallmobile'>View all</button>
             </div>
         </div>
-        <hr>
+        <hr color="#E6E6E6">
         <div class="vendor cr">
             <div class="title">
-                <div class="logo">
+                <div class="logo" style="display: flex; align-content: center;">
                     <img src="img/Chicken republic_logo.svg" alt="" srcset="">
                     <h3>Chicken republic</h3>
                 </div>
@@ -80,7 +115,13 @@
                         <p>Refuel Max</p>
                         <p>#1,200</p>
                     </div>
-                    <button class="adBtn">Add to Cart</button>
+                    <button class="font16-500 vendor-grid-button">
+Add to Cart
+</button> 
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button>
                 </div>
                 <div class="order">
                     <img src="img/image2.svg" alt="" srcset="">
@@ -88,7 +129,14 @@
                         <p>Express meal</p>
                         <p>#2,000</p>
                     </div>
-                    <button class="adBtn">Add to Cart</button>
+                    <button class="font16-500 vendor-grid-button">
+
+                 Add to Cart
+</button> 
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button>
                 </div>
                 <div class="order">
                     <img src="img/image3.svg" alt="" srcset="">
@@ -96,7 +144,13 @@
                         <p>Citizen meal</p>
                         <p>#1,500</p> 
                     </div>
-                    <button class="remBtn">Remove</button>
+                    <button class="font16-500 vendor-grid-button"> 
+Add to Cart
+             </button>
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button>
                 </div>
                 <div class="order">
                     <img src="img/image3.svg" alt="" srcset="">
@@ -104,13 +158,20 @@
                         <p>Crunchy wings</p>
                         <p>#1,750</p>
                     </div>
-                    <button class="adBtn">Add to Cart</button>
+                    <button class="font16-500 vendor-grid-button">
+Add to Cart
+										</button> 
+
+             <button class="font16-500  clicked-btn">
+                 <img src="../Dom/img/remove.svg" alt=""> Remove
+             </button>
                 </div>
             </div>
             <div class="btn">
-                <button>View all</button>
+                <button class="viewallmobile">View all</button>
             </div>
         </div>
     </section>
+		<script src="../Dom/vendorspage.js"></script>
 </body>
 </html>
