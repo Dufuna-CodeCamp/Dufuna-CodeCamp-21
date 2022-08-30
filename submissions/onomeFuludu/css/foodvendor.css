@@ -8,7 +8,7 @@ div{
 li{
     display: inline;
     position: relative;
-    left: 400%;
+    left: 350%;
     margin-left: 20px;
 
 }
@@ -31,13 +31,10 @@ height: 20px;
 width: 40px;
 justify-content: space-between;
 }
-.bag{
-    position: absolute;
-}
 .redall{
     color: crimson;
     position: relative;
-    left: 450%;
+    left: 480%;
     top: 40%;
     display: inline-block;
 }
