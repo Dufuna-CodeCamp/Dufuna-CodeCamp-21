@@ -151,31 +151,28 @@ footer .t-condition p:first-child {
         margin-bottom: 0.5rem;
     }
 
-    main .options {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    main .options .ffood,
-    main .options .vfruits,
-    main .options .drinks,
-    main .options .restaurants {
-        margin-right: 7px;
-        line-height: 24px;
-    }
-
-
+    main .options,
     main .service .total-service {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-areas: 
+        "a b";
     }
-    
-    main .service .total-service .location,
-    main .service .total-service .choice,
-    main .service .total-service .delivery {
-        width: 30%;
+
+    main .options .ffood {
+        grid-area: a;
+    }
+
+    main .options .vfruits {
+        grid-area: b;
+    }
+
+    main .service .total-service .location {    
+        grid-area: a;
+    }
+
+    main .service .total-service .choice {
+        grid-area: b;
     }
 
     footer .t-condition {
@@ -194,4 +191,12 @@ footer .t-condition p:first-child {
         flex: 50%;
     }
 
+}
+
+@media screen and (min-width: 1300px) {
+    main .options,
+    main .service .total-service {
+        grid-template-areas: 
+        "a b c d";
+    }
 }
