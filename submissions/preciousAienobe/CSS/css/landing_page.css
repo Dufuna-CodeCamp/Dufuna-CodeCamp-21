@@ -56,12 +56,13 @@ h3 {
   margin-left: 20px;
 }
 
-.dropdown {
-  width: 94.5%;
-  height: 35px;
+#dropdown {
+  width: 94%;
+  height: 27px;
   margin-left: 20px;
   border-radius: 5px;
   padding: 5px;
+  color: #ad4c4c;
 }
 
 .container-2 {
