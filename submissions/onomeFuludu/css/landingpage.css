@@ -68,3 +68,9 @@ display: inline;
     top:520% ;
     right:53% ;
 }
+.foo{
+    position: absolute; top:600% ;
+}
+.foot{
+    position:absolute ; top: 600%; left: 54%;
+}
