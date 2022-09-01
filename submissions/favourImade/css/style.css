@@ -85,14 +85,15 @@ section#home .pick-interest .interest-row{
 section#home .pick-interest .interest-row .interest{
     flex-basis: 23%;
     margin-bottom:20px;
+    
 }
 
 section#home .pick-interest .interest{
     padding:20px;
-    border: 2px solid grey;
+    border: 0.3px solid grey;
     color: grey;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
-
 
 section#home .serve{
     margin-bottom:150px;
@@ -123,6 +124,36 @@ section#home .serve .serve-row div p{
     color: grey;
 }
 
+footer .contact{
+    /* margin-left:47%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+    height: 100px;
+}
+
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50px;
+}
+button:hover{
+    color: white;
+    background-color: brown;
+}
+.grey-color{
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* extra small devices (phones, 600px down) */
+
 @media screen and (max-width: 400px){
     nav li{
         padding-right: 15px;
@@ -146,47 +177,27 @@ section#home .serve .serve-row div p{
         width:100%;
         text-align: center;
     }
+
+    footer .foot{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        text-align: center;
+    }
 }
 
+/* small devices (portrait tablets and large phones 600px and up) */
 
 @media screen and (min-width: 600px) and (max-width: 1017px) {
     body{
         padding: 20px 30px;
     }
 
-    section#home .pick-interest .interest-row .interest{
+    section#home .interests .interest-row .interest{
         flex-basis: 48%;
     }
 
-    section#home .serve .serve-row{
-        
-        justify-content: center;
-        align-items: center;
-    }
-
-    section.landing .serve-you .serve-row div{
-        width:300px;
-        text-align: center;
-    }
-
-
-}
-
-    section.landing .serve-you .serve-container div{
-        width:100%;
-        text-align: center;
-    }
-
-@media screen and (min-width: 600px) and (max-width: 1017px) {
-    body{
-        padding: 20px 30px;
-    }
-
-    section#home .pick-interest .interest-row .interest{
-        flex-basis: 48%;
-    }
-
-    section#home .serve .serve-row{
+    section#home .serve .serve-row {
         
         justify-content: center;
         align-items: center;
@@ -196,21 +207,12 @@ section#home .serve .serve-row div p{
         width:300px;
         text-align: center;
     }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
-footer .contact{
-    /* margin-left:47%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom:10px;
-    height: 100px;
-}
-
-footer .foot{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-    height: 50px;
-}

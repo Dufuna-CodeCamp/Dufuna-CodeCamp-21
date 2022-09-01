@@ -2,14 +2,16 @@
   "dependencies": {
     "@babel/core": "^7.15.8",
     "casperjs": "0.7.2",
-    "chai": "^4.3.6",
     "chromedriver": "^96.0.0",
     "phantomcss": "^0.7.2",
-    "phantomjs-prebuilt": "^2.1.16",
-    "selenium-webdriver": "^4.1.1"
+    "phantomjs-prebuilt": "^2.1.16"
   },
   "scripts": {
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "selenium-webdriver": "^4.3.1"
   }
 }

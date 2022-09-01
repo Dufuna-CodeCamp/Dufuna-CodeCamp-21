@@ -1,0 +1,25 @@
+.breadcrumb{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 5px ;
+    justify-content: left;
+}
+.crumb{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.cart{
+    text-decoration: none;
+    color: black;
+}
+.home{
+    color: gray;
+}
+span{
+   white-space:unset;
+}
