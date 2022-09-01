@@ -32,7 +32,7 @@ try{
                 echo "<td>" . $row['Created_At'] . "</td>";
         
 
-                echo "<td> <button><a href=\"product.php?userid={$row['ID']}\">View</a> </button></td>";
+                echo "<td> <button><a href=\"productDetails.php?userid={$row['ID']}\">View</a> </button></td>";
         echo "</tr>";
     }
     echo "</table>";
