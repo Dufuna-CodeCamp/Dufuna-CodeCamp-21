@@ -11,6 +11,231 @@
 		  overflow-x: hidden;
  }
 
+ .interest p, .font14 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+.font14-500 {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.font16 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+}
+.font16-500 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #AD4C4C;
+}
+.font16-600 {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.font18 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #696969;
+}
+.interest h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #A5A5A5;
+}
+/* font20-500 */
+.font20 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.font20-400 {
+    font-size: 20px;
+    font-weight: 400;
+   color: #A5A5A5; 
+}
+#header {
+    background: white;
+    width: calc(100vw - 200px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding-top: 42px;
+    padding-bottom: 5px;
+    display: flex;  /* In another project, I can try float right for the right part of the header instead of using a flexbox*/
+    justify-content: space-between;
+    align-items: center;
+    /* opacity: 1; */
+}
+ #right-head {
+     display: flex;
+     align-items: center;
+ }
+     /*justify-content: space-between;*/
+     /* width: 30%; */
+     /* border: 1px solid; */
+     /*}*/
+.right {
+    margin: 0 10px; /* may change to figma */
+}
+#bag {
+    color: #AD4C4C; 
+}
+#sign-up {
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    /*padding: 15px;*/
+		padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+		padding-right: 5px;
+    
+    /*/will change/*/
+}
+#company-name h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 140px;
+}
+#company-name p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #696969;
+    margin-top: 5px;
+}
+#location {
+    margin-top: 80px;
+}
+#company-name, #serve-you {
+    text-align: center;
+}
+.grey {
+    color: #696969;
+}
+#locate {
+    width: 100%;
+    border-radius: 5px; /* may need to chenge to figma value */
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+#interest-div {
+    margin-top: 42px;
+}
+hr {
+    margin: 80px auto;
+}
+#interest-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px; /* may need to chenge to figma value */
+    margin-top: 20px;
+}
+.interest{
+    border: 1px solid #696969;
+    padding: 24px 30px;
+}
+#illustration-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px; /* may need to chenge to figma value */
+    margin-top: 100px;
+}
+.responsive-img {
+    width: 95%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.illustration {
+    overflow: hidden;
+    text-align: center;
+}
+.illustration h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #696969;
+    margin-bottom: 15px;
+}
+#contact {
+    text-align: center;
+    /* display: inline-block; 
+    margin: 0 auto;
+    
+    these did not work to make them centered*/
+}
+.contact-elem{
+    margin: 30px;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    color: #696969;
+    
+}
+
+
+ /* Peculiar to the Vendor Page */
+ #cart-link {
+     position: relative;
+     /* border: 1px solid; */
+ }
+
+ #cart-notify {
+     display: none;
+     background-color: #AD4C4C;
+     width: 9px;
+     height: 9px;
+     border-radius: 50%;
+     position: absolute;
+     top: -5px;
+     left: 33px;
+ }
+
+ #navigation {
+     position: fixed;
+top: 82px;
+     z-index: 1;
+     background: white;
+     width: calc(100vw - 200px);
+    padding: 7px 0;
+}
+#vendorh1 {
+    margin: 150px 0 30px;
+}
+.font30-500 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.vendor-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+}
+.buttons {
+     display: inline-block;
+ }
+
+ .clicked-btn {
+     display: none;
+     background-color: #A5A5A5;
+    color: white;
+    padding: 3px;
+     padding-right: 25px;
+     border: none;
+     border-radius: 3px;
+cursor: pointer;
+     flex-direction: row;
+     align-items: center;
+ }
+.view-mobile {
+    display: none;
+    text-align: center;
+}
+
  @media only screen and (min-width: 600px){
 body{
      background-color: white;
@@ -152,6 +377,7 @@ body {
  nav .HL{
      float: right;
  }
+
 
 
  .HL a {
