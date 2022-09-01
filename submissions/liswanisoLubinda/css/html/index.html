@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page title and style references here -->
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>FoodBag</title>
+    </head>
+
+    <body>
+        <!--The main nav bar at the top of the page and its elements-->
+    <header class="header">      
+                <p>Food<span>Bag</span></p>
+                <ul class="top_bar">
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href='#' class="sign_up">Sign up</a></li>
+                </ul>
+    </header>
+
+    <main class="main_body">
+        <section class="body">
+            <div class="body_content">
+                <h2>FoodBag</h2>
+                <p>Anything food, we have you covered.</p>
+            </div>
+        </section>
+
+        <!--Section and div to create form for customer to select their addresss-->
+        <section class="address">
+            <div class="customer_address">
+                <h3>Where are you?</h3>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <select name="address">
+                        <option value="customer_address" selected>Please enter your address</option>
+                        <option value="matero">Matero</option>
+                        <option value="ibex hill">Ibex Hill</option>
+                        <option value="roma">Roma</option>
+                        <option value="olympia">Olympia</option>
+                        <option value="emmasdale">Emmasdale</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <!--Section for customer to select their interests-->
+        <section class="interest">
+            <div class="interest_content">
+                <h3>Pick an interest</h3>
+                <!--Another div to wrap around the content-->
+                <div class="interest_content_wrapper">
+                    <div class="fastfood_box">
+                        <div class="fastfood_wrapper">
+                        <img src="../images/fast-food_disabled.svg" alt="fastfood icon">
+                        <h3>Fastfood</h3>
+                        <p>All sorrows are less with bread</p>
+                        </div>
+                    </div>
+
+                    <div class="vegetables_box">
+                        <div class="vegetables_wrapper">
+                        <img src="../images/Vegetables_Drinks_disabled.svg"alt="vegetables icon">
+                        <h3>Vegetables & Fruit</h3>
+                        <p>May not want it, but good for you</p>
+                        </div>
+                    </div>
+
+                    <div class="drinks_box">
+                        <div class="drinks_wrapper">
+                        <img src="../images/Drinks_Cocktails_disabled.svg" alt="drinks icon">
+                        <h3>Drinks & Cocktails</h3>
+                        <p>I feel sad for those don't drink</p>
+                        </div>
+                    </div>
+
+                    <div class="restraunts_box">
+                        <div class="restraunts_wrapper">
+                        <img src="../images/resturant_disabled.svg" alt="restaurants icon">
+                        <h3>Restaurants</h3>
+                        <p>All sorrows are less with bread</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--section that contains services provided-->
+        <section class="services">
+            <div class="services_content_wrapper">
+                <h2>How we serve you</h2>
+                <div class="services_wrapper">
+                    <div class="location_services">
+                        <img src="../images/Illustration_1.svg" alt="location services Icon">
+                        <h3>Tell us where you are</h3>
+                        <p>Select the location you want us to deliver.</p>
+                    </div>
+
+                    <div class="meal_services">
+                        <img src="../images/illustration_2.svg" alt="meal services Icon">
+                        <h3>Tell us what you want</h3>
+                        <p>Browse the type of food that interest you.</p>
+                    </div>
+                
+                    <div class="delivery_services">
+                        <img src="../images/illustration_3.svg" alt="delivery services Icon">
+                        <h3>We'll come running</h3>
+                        <p>Your order will be delivered to you in no time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer which contains socials, t&c's and copyright-->
+    <footer>
+        <div class="contact_wrapper">
+            <h3>Contact us</h3>
+            <div class="contact_icons">
+                <a href="#">
+                    <img src="../images/twitter 2.svg" alt="twitter icon">
+                </a>
+                <a href="#">
+                    <img src="../images/youtube 1.svg" alt="youtube icon">
+                </a>
+                <a href="#">
+                    <img src="../images/facebook-f 1.svg" alt="facebook icon">
+                </a>
+            </div>
+            <div class="terms_wrapper">
+                <div class="terms">
+                    <p>Terms & Conditions. Privacy Policy</p>
+                </div>
+                <div class="contact__copyright-info">
+                    <p>&copy Copyright 2022 FoodBag is a registered trademark</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
