@@ -1,15 +1,14 @@
 {
-  "stats": {
     "suites": 1,
-    "tests": 18,
-    "passes": 15,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
-    "failures": 3,
-    "start": "2022-09-01T23:28:58.113Z",
-    "end": "2022-09-01T23:29:00.675Z",
-    "duration": 2562,
-    "testsRegistered": 18,
-    "passPercent": 83.33333333333334,
+    "failures": 0,
+    "start": "2022-09-01T15:38:16.658Z",
+    "end": "2022-09-01T15:38:31.506Z",
+    "duration": 14848,
+    "testsRegistered": 1,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,72 +17,71 @@
   },
   "results": [
     {
-      "uuid": "bc4afa42-c1cb-49ed-93b6-852c1d1d505e",
+      "uuid": "cb102a29-7132-4a25-97f3-59f6d8a45b20",
       "title": "",
-      "fullFile": "C:\\Users\\Dell\\Desktop\\Dufuna-CodeCamp-21\\tests\\landing_page\\landing_page.js",
-      "file": "\\landing_page.js",
+      "fullFile": "C:\\Users\\Seed\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+      "file": "\\navigation_tasks.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e957fd0c-8905-493e-a401-8520153aa165",
-          "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\Dell\\Desktop\\Dufuna-CodeCamp-21\\tests\\landing_page\\landing_page.js",
-          "file": "\\landing_page.js",
+          "uuid": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "C:\\Users\\Seed\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+          "file": "\\navigation_tasks.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1713,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "7accbc9b-0969-478d-a1f2-52d20fb465a4",
-              "parentUUID": "e957fd0c-8905-493e-a401-8520153aa165",
+              "uuid": "9b94cc68-1c25-4e89-8f00-18c745545b94",
+              "parentUUID": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
-              "uuid": "f97b4345-7094-4bb9-92b5-8eb8e7434283",
-              "parentUUID": "e957fd0c-8905-493e-a401-8520153aa165",
+              "uuid": "c571958a-42b6-4216-8bda-dcb29335d6cc",
+              "parentUUID": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: FoodBag Logo is present",
-              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 92,
+              "duration": 213,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
               "uuid": "2614b5ce-4b64-40f0-82cd-e435e5c93936",
               "parentUUID": "e957fd0c-8905-493e-a401-8520153aa165",
@@ -108,7 +106,6 @@
               "isHook": false,
               "skipped": false
             },
-            {
               "title": "test case: FoodBag text is present on the page",
               "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
               "timedOut": false,
@@ -126,7 +123,6 @@
               "isHook": false,
               "skipped": false
             },
-            {
               "title": "test case: check Login",
               "fullTitle": "Testing Scholars Project test case: check Login",
               "timedOut": false,
@@ -381,60 +377,21 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css('body')).getText();\nassert.include(element, \"Where are you?\", `Ensure you have the input field as the appropriate label as seen in the mock-up`);",
               "err": {},
-              "uuid": "7b4726ef-8cae-48b1-b5ec-f18eaec6fa5e",
-              "parentUUID": "e957fd0c-8905-493e-a401-8520153aa165",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: assert image amount is 10",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 10",
-              "timedOut": false,
-              "duration": 21,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
-              "err": {
-                "message": "AssertionError: Ensure all the images are present on the page: expected 11 to equal 10",
-                "estack": "AssertionError: Ensure all the images are present on the page: expected 11 to equal 10\n    at Context.<anonymous> (landing_page.js:125:20)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
-                "diff": "- 11\n+ 10\n"
-              },
-              "uuid": "ccc5b413-3235-457d-96ef-a7ef5439b03f",
-              "parentUUID": "e957fd0c-8905-493e-a401-8520153aa165",
+              "uuid": "10c6eea0-108d-4ce4-92bd-62b23a2ef634",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+      "uuid": "f12f5346-85df-4310-a18f-21722bda3e04",
+              "parentUUID": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2614b5ce-4b64-40f0-82cd-e435e5c93936",
-            "1e7b8f4f-6a8e-45b4-a641-ea81f0965f39",
-            "a3f07a8a-c5f3-4aef-88df-6f5ec9a78a60",
-            "125ffe80-4cb5-4e82-b41b-429ca32893a2",
-            "571299e4-a512-44b3-bbf4-0577c1d30211",
-            "7bf0cfb5-fa33-4ae8-9d77-936283f09a4c",
-            "9be99080-0cca-4858-b4c6-4d70d319bfe2",
-            "fc6190c0-925c-45d0-a50e-1f6cf5ee09d2",
-            "d42af7d3-5a4c-43c6-906e-1e7fe4b0739c",
-            "52d5ef4e-b7bb-4c68-99f5-5aa456df49ae",
-            "02f30cef-c987-41fa-bdd1-645e9e40000f",
-            "59714ea8-7f7a-46c3-a5a5-ef7a4eb363c6",
-            "001da231-8b4b-48c3-bf23-0cf3450cf4f4",
-            "b75e2292-b245-45c8-8ab6-fccfbbd67ded",
-            "7b4726ef-8cae-48b1-b5ec-f18eaec6fa5e"
-          ],
-          "failures": [
-            "c79d9cf9-148b-45eb-ab21-905959ca349c",
-            "b7efc5ea-dd43-4fa1-99d4-d797d5d993cb",
-            "ccc5b413-3235-457d-96ef-a7ef5439b03f"
+            "f12f5346-85df-4310-a18f-21722bda3e04"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 823,
+          "duration": 213,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -468,7 +425,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Dell/Desktop/Dufuna-CodeCamp-21/tests/landing_page/../..//tests/",
+        "reportDir": "C:/Users/Seed/desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
