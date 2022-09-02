@@ -105,10 +105,10 @@
               "err": {},
               "uuid": "5df73c84-7b4c-49f3-b902-15f8b02f398a",
               "parentUUID": "c8d13c64-68fa-425d-a1c6-4b7e511178a3",
-              "isHook": false,
-              "skipped": false
-            },
-            {
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
+              "err": {},
+              "uuid": "125ffe80-4cb5-4e82-b41b-429ca32893a2",
+              "parentUUID": "e957fd0c-8905-493e-a401-8520153aa165",
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
