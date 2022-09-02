@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+span {
+  color: #ad4c4c;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+#signup-btn {
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+  padding: 7px;
+  color: #ad4c4c;
+}
+
+.header {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.header p {
+  padding: 10px;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+#dropdown {
+  width: 94%;
+  height: 27px;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ad4c4c;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.container-2 .interest {
+  color: #ad4c4c;
+  padding-bottom: 5px;
+}
+
+.fast-food-img {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.vegetables-img {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.cocktails-img {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.restaurant-img {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-left: px;
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-3 div p {
+  color: gray;
+  text-align: center;
+}
+
+.container-3 div h3 {
+  text-align: center;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer img {
+  padding-left: 15px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#terms {
+  margin-left: 20px;
+}
+
+#copyright {
+  margin-right: 50px;
+}
