@@ -1,48 +1,53 @@
--- CREATE THE food bag DB
 CREATE DATABASE food_bag;
 USE food_bag;
 
--- CREATE THE food TABLE
+-- CREATING THE food TABLE
 CREATE TABLE food (
 	id INT NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY (id)
+	type ENUM('fast_food_category', 'veg_fruits_category', 'drinks_cocktails_category', 'restaurants_category'),
+	PRIMARY KEY(id)
 );
 
--- CREATE THE vendor food TABLE
-CREATE TABLE vendor_food (
+-- CREATING THE vendor_food TABLE
+CREATE TABLE vendor_id (
 	id INT NOT NULL AUTO_INCREMENT,
 	admin_id INT NOT NULL,
 	food_id INT NOT NULL,
-	name VARCHAR(100) NOT NULL,
+	name VARCHAR(250) NOT NULL,
 	amount DECIMAL(10, 2) NOT NULL,
-    PRIMARY KEY (id)
+	PRIMARY KEY(id),
+	FOREIGN KEY(food_id) REFERENCES food (id)
 );
+ALTER TABLE vendor_id RENAME TO vendor_food;
 
--- CREATE THE admins TABLE
+-- CREATING THE admins TABLE 
 CREATE TABLE admins (
 	id INT NOT NULL AUTO_INCREMENT,
-	name VARCHAR(255) NOT NULL,
-	type INT NOT NULL,
-	email_address VARCHAR(255) NOT NULL,
-	phone_number VARCHAR(255) NOT NULL,
-	password VARCHAR(10) NOT NULL,
-    PRIMARY KEY (id)
+	name VARCHAR(250) NOT NULL,
+	type ENUM( '0', '1'),
+	email_address VARCHAR(250) NOT NULL,
+	phone_number VARCHAR(250) NOT NULL,
+	password VARCHAR(250) NOT NULL, 
+	PRIMARY KEY(id)
 );
+ALTER TABLE vendor_id ADD FOREIGN KEY(admin_id) REFERENCES admins (id);
 
--- CREATE THE customers TABLE
+-- CREATING THE customers TABLE
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
-	name VARCHAR(255) NOT NULL,
-	phone_number VARCHAR(255) NOT NULL,
-	address VARCHAR(255) NOT NULL, 
-	payment_method VARCHAR(10),
-    PRIMARY KEY (id)
-);
+	name VARCHAR(250) NOT NULL,
+	phone_number VARCHAR(250) NOT NULL,
+	address VARCHAR(250) NOT NULL,
+	payment_method ENUM( 'cash', 'wire transfer', 'debit card'),
+	PRIMARY KEY(id)
+); 
 
--- CREATE THE orders TABLE
+-- CREATING THE orders TABLE
 CREATE TABLE orders (
-id INT NOT NULL AUTO_INCREMENT,
-vendor_id INT NOT NULL,
-customer_id INT NOT NULL,
-PRIMARY KEY (id)
+	id INT NOT NULL AUTO_INCREMENT,
+	vendor_id INT NOT NULL,
+	customer_id INT,
+	PRIMARY KEY(id),
+	FOREIGN KEY(vendor_id) REFERENCES vendor_food (id),
+	FOREIGN KEY(customer_id) REFERENCES customers (id)
 );
