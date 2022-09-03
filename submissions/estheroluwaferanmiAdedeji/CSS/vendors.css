@@ -125,7 +125,7 @@ button {
   color: #C17979;
 }
 
-@media screen and (min-width:530px) {
+@media screen and (max-width:600px) {
   .nav-link, 
   button {
     font-size: 17px;
@@ -138,12 +138,12 @@ button {
     align-items: center;
   }
 
-  .view-section1 {
+  .view-section2 {
    display: inline;
    color: #C17979;
   }
 
-  .view-section2 {
+  .view-section1 {
     display: none;
   }
 
@@ -162,23 +162,78 @@ button {
   }
 }
 
-@media screen and (min-width:680px) {
+@media screen and (min-width:600px) {
   .package-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .vendor-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .view-section1 {
+    display: inline;
+    color: #C17979;
+   }
+ 
+   .view-section2 {
+     display: none;
+   }
 }
 
-@media screen and (min-width:820px) {
+@media screen and (min-width:768px) {
   .package-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .vendor-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .vendor-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .view-section1 {
+    display: inline;
+    color: #C17979;
+   }
+ 
+   .view-section2 {
+     display: none;
+   }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:992px) {
   .package-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .vendor-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .view-section1 {
+    display: inline;
+    color: #C17979;
+   }
+ 
+   .view-section2 {
+     display: none;
+   }
 }
