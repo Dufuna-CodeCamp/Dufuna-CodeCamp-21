@@ -195,14 +195,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  .vendor-text {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+  
   .vendor-text {
     width: 100%;
     display: flex;
