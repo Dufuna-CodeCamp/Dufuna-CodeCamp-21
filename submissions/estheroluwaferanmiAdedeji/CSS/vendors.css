@@ -128,7 +128,7 @@ button {
 @media screen and (max-width:600px) {
   .nav-link, 
   button {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .vendor-text {
@@ -163,6 +163,11 @@ button {
 }
 
 @media screen and (min-width:600px) {
+  .nav-link, 
+  button {
+   font-size: 16px;
+  }
+
   .package-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
