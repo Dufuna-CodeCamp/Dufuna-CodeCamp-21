@@ -5,7 +5,6 @@
 body {
     margin: 20px 50px;
     font-family: poppins;
-    /* background-color: gray; */
 }
 
 a {
@@ -17,7 +16,6 @@ span {
 }
 
 header {
-    /* background-color: crimson; */
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -25,7 +23,6 @@ header {
 }
 
 header nav div {
-    /* background-color: yellow; */
     float: right;
 }
 
@@ -76,7 +73,6 @@ input {
 section.interest {
     display: flex;
     column-gap: 0px;
-    /* background-color: hsl(0, 0%, 90%); */
     justify-content: space-between;
     margin: 10px 0 50px 0;
 }

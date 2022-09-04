@@ -47,7 +47,6 @@
     section.interest {
         display: flex;
         flex-direction: column;
-        /* background-color: hsl(0, 0%, 90%); */
         margin: 5px 0 20px 0;
     }
 
@@ -89,7 +88,6 @@
         text-align: center;
         color: hsla(0, 0%, 65%, 1);
         font-size: 10px;
-        /* padding: 0 50px; */
     }
 
     footer {
