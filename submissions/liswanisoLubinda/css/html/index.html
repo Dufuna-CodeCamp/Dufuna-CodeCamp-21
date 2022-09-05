@@ -29,19 +29,16 @@
 
         <!--Section and div to create form for customer to select their addresss-->
         <section class="address">
-            <div class="customer_address">
-                <h3>Where are you?</h3>
-                <form action="#" method="post" enctype="multipart/form-data">
-                    <select name="address">
-                        <option value="customer_address" selected>Please enter your address</option>
-                        <option value="matero">Matero</option>
-                        <option value="ibex hill">Ibex Hill</option>
-                        <option value="roma">Roma</option>
-                        <option value="olympia">Olympia</option>
-                        <option value="emmasdale">Emmasdale</option>
-                    </select>
-                </form>
-            </div>
+                <label for="address" class="customer_address">Where are you?</label> <br>
+                <input list="addresses" id="address" placeholder="Enter your delivery address"/>
+                    <datalist name="address">
+                        <datalist id="addresses">
+                        <option value="Matero"></option>
+                        <option value="Ibex hill"></option>
+                        <option value="Roma"></option>
+                        <option value="Olympia"></option>
+                        <option value="Emmasdale"></option>
+                    </datalist>
         </section>
 
         <!--Section for customer to select their interests-->
@@ -130,10 +127,10 @@
             </div>
             <div class="terms_wrapper">
                 <div class="terms">
-                    <p>Terms & Conditions. Privacy Policy</p>
+                    <p>Terms & Conditions . Privacy Policy</p>
                 </div>
                 <div class="contact__copyright-info">
-                    <p>&copy Copyright 2022 FoodBag is a registered trademark</p>
+                    <p>&copy Copyright 2021 FoodBag is a registered trademark</p>
                 </div>
             </div>
         </div>

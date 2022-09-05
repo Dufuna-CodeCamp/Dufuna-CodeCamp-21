@@ -70,14 +70,17 @@ section {
     margin: 50px;
 }
 
-select {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 16px;
-    margin: 5px 2px;
-    border: 2px;
-    height: 50px;
+.address input {
+  outline: none;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.address label {
+  font-weight: bold;
 }
 
 .interest_content_wrapper {
