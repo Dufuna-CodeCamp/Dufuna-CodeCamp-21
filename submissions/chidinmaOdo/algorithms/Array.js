@@ -31,18 +31,18 @@ var product_price = [
 ];
 
 function productArray() {
-for (let i = 0; i < products.length; i++) {
-    for (let j = 0; j < product_price.length; j++) {
-        if(products[i].length % 2 === 0){
-            console.log(product_price[j])
-            newProductPrice = product_price[j] * 2;
-          document.write(`The price of ${products[i]} is ${newProductPrice} <br>`) 
+for (let a = 0; a < products.length; a++) {
+    for (let b = 0; b < product_price.length; b++) {
+        if(products[a].length % 2 === 0){
+            console.log(product_price[b])
+            newProductPrice = product_price[b] * 2;
+          document.write(`The price of ${products[a]} is ${newProductPrice} <br>`) 
         }
         else {
-            newProductPrice = product_price[j] / 2;
-            document.write(`The price of ${ '  ' +products[i]} is ${ '  '+newProductPrice} <br>`)    
+            newProductPrice = product_price[b] / 2;
+            document.write(`The price of ${ '  ' +products[a]} is ${ '  '+newProductPrice} <br>`)    
         }
-       i++
+       a++
    }
    
 }
