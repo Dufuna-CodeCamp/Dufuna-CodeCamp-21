@@ -1,0 +1,99 @@
+body {
+    background-color: #E5E5E5;
+    font-family: Poppins;
+    font-style: normal;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header p {
+    font-weight: bold;
+    display: inline;
+    font-size: 25px;
+  }
+
+  span {
+    color: rgb(187, 0, 0);
+  }
+
+  header ul li {
+    display: inline;
+    font-size: 15px;
+  
+  }
+  
+  header ul li a {
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 20px;
+      padding: 10px;
+      color: gray;
+  }
+
+  .sign_up {
+    color: red;
+    border: 1px solid red;
+    border-radius: 7px;
+  }
+
+  main, 
+  section {
+    padding: 30px 50px;
+  }
+
+  .kfc_wrapper {
+    padding-bottom: 100px;
+  }
+
+  .kfc-icon,
+  .chicken_republic-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .kfc-icon img,
+  .chicken_republic-icon img {
+    padding-right: 10px;
+  }
+
+.kfc-meals,
+.cr-meals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kfc_wrapper .price,
+.chicken_republic_wrapper .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kfc_wrapper .price:nth-child(1)
+.chicken_republic_wrapper .price:nth-child(1) {
+    font-weight: bold;
+}
+
+.kfc_wrapper .price:nth-child(2),
+.chicken_republic_wrapper .price:nth-child(2) {
+    font-weight: bold;
+    color: green;
+}

@@ -121,6 +121,7 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
+
               "uuid": "afbed189-9735-4b57-b128-3ebe189923f0",
               "parentUUID": "82498c71-6c8e-4493-9dfb-e018e21e12a2",
               "isHook": false,
@@ -203,6 +204,7 @@
               "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
               "timedOut": false,
               "duration": 15,
+
               "state": "passed",
               "speed": "fast",
               "pass": true,
