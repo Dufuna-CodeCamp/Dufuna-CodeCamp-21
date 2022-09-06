@@ -6,7 +6,7 @@ SHOW DATABASES;
 USE foodbag;
 
  -- TO START CREATING THE FOOD_BAG TABLE
-CREATE TABLE food_bag (
+CREATE TABLE food (
 	id INT NOT NULL AUTO_INCREMENT,
     type VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
@@ -16,7 +16,7 @@ CREATE TABLE food_bag (
 CREATE TABLE admins (
 	id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
-    type ENUM('0', '1') NOT NULL,
+    type INT NOT NULL,
     email_address VARCHAR(255) NOT NULL,
     phone_number VARCHAR(100) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE vendor_food (
     amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (admin_id) REFERENCES admins (id),
-    FOREIGN KEY (food_id) REFERENCES food_bag (id)
+    FOREIGN KEY (food_id) REFERENCES food (id)
 );
 
 -- TO START CREATING CUSTOMERS ACCOUNT TABLE
@@ -60,4 +60,3 @@ CREATE TABLE orders (
 
 -- COMMAND TO CONFIRM THAT ALL TABLES HAS BEEN MADE
 SHOW TABLES;
-
