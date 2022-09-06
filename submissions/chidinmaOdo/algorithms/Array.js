@@ -36,11 +36,11 @@ for (let i = 0; i < products.length; i++) {
         if(products[i].length % 2 === 0){
             console.log(product_price[j])
             newProductPrice = product_price[j] * 2;
-          document.write(`The new price of ${products[i]} is ${newProductPrice} <br>`) 
+          document.write(`The price of ${products[i]} is ${newProductPrice} <br>`) 
         }
         else {
             newProductPrice = product_price[j] / 2;
-            document.write(`The new price of ${ '  ' +products[i]} is ${ '  '+newProductPrice} <br>`)    
+            document.write(`The price of ${ '  ' +products[i]} is ${ '  '+newProductPrice} <br>`)    
         }
        i++
    }
