@@ -5,7 +5,7 @@ $username = "root";
 $password = "mysql";
 $db = "food_bag";
 try{
-    $connect = new PDO ( "mysql:$servername "  . "dbname=$db" ,
+    $connect = new PDO ( "mysql:$servername ;$db" ,
      $username,$password);
     $connect->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $connect->exec("use food_bag");
