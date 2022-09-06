@@ -1,0 +1,31 @@
+{
+    "name": "sbj/slimphp",
+    "description": "Publishing API",
+    "type": "project",
+    "license": "none",
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.5",
+        "vlucas/phpdotenv": "5.4.x-dev",
+        "illuminate/database": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB\\": "database",
+            "App\\Controller\\": "app/controllers",
+            "App\\Constants\\": "app/constants",
+            "App\\Middleware\\": "app/middlewares",
+            "App\\Model\\": "app/models"
+        }
+
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
