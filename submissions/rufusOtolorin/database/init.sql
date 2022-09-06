@@ -4,53 +4,60 @@ CREATE DATABASE foodbag;
 SHOW DATABASES;
  -- TO USE THE FOODBAG DATABASE
 USE foodbag;
- -- TO START CREATING THE FOOD TABLE
-CREATE TABLE food (
-id INT AUTO_INCREMENT NOT NULL,
-type VARCHAR(255) NOT NULL,
-PRIMARY KEY (id)
+
+ -- TO START CREATING THE FOOD_BAG TABLE
+CREATE TABLE food_bag (
+	id INT NOT NULL AUTO_INCREMENT,
+    type VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
 );
 
- -- TO START CREATING THE VENDORS TABLE
- CREATE TABLE vendors (
-  id INT AUTO_INCREMENT NOT NULL,
-  admin_id INT NOT NULL,
-  food_id INT NOT NULL,
-  name VARCHAR(255) NOT NULL,
-  amount DECIMAL(10, 2) NOT NULL,
-  PRIMARY KEY (id),
-   -- THE COMMAND BELOW WILL LINK IT TO THE FOOD TABLE
-   FOREIGN KEY (food_id) REFERENCES food (id)
- );
- 
-  -- NOW TO CREATING ADMIN TABLE
-  CREATE TABLE admins (
-	id INT AUTO_INCREMENT NOT NULL,
+-- TO START CREATING THE ADMINS TABLE
+CREATE TABLE admins (
+	id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
-    type INT NOT NULL,
-    email_adrress VARCHAR(255) NOT NULL,
-    phone_number INT NOT NULL,
+    type ENUM('0', '1') NOT NULL,
+    email_address VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(100) NOT NULL,
     password VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
-  );
-  
-  -- TO CREATING CUSTOMERS TABLE
-  CREATE TABLE customers (
-	id INT AUTO_INCREMENT NOT NULL,
-    name VARCHAR (255) NOT NULL,
-    phone_number INT NOT NULL,
-    address VARCHAR (255) NOT NULL,
-    payment_method VARCHAR (255),
-    PRIMARY KEY (id)
 );
 
--- TO CREATE THE ORDERS TABLE
-CREATE TABLE orders (
-	id INT AUTO_INCREMENT NOT NULL,
-    vendors_id INT NOT NULL,
-    customers_id INT NOT NULL,
+-- TO START MAKING THE VENDOR_FOOD TABLE
+CREATE TABLE vendor_food (
+	id INT NOT NULL AUTO_INCREMENT,
+    admin_id INT NOT NULL,
+    food_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
-    -- LINKING IT TO THE VENDORS AND CUSTOMERS TABLES
-    FOREIGN KEY (vendors_id) REFERENCES vendors (id),
-    FOREIGN KEY (customers_id) REFERENCES customers (id)
+    FOREIGN KEY (admin_id) REFERENCES admins (id),
+    FOREIGN KEY (food_id) REFERENCES food_bag (id)
 );
+
+-- TO START CREATING CUSTOMERS ACCOUNT TABLE
+CREATE TABLE customers_account (
+	id INT NOT NULL AUTO_INCREMENT,
+    admin_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    payment_method VARCHAR(255),
+    PRIMARY KEY (id),
+    FOREIGN KEY (admin_id) REFERENCES admins (id)
+);
+
+-- NOW TO MAKE THE ORDERS TABLE
+CREATE TABLE orders (
+	id INT NOT NULL AUTO_INCREMENT,
+    vendor_id INT NOT NULL,
+    customers_id INT ,
+    admin_id INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
+    FOREIGN KEY (admin_id) REFERENCES admins (id)
+);
+
+-- COMMAND TO CONFIRM THAT ALL TABLES HAS BEEN MADE
+SHOW TABLES;
+
