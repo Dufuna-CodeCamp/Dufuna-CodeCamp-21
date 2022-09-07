@@ -1,27 +1,23 @@
 CREATE DATABASE food_bag;
 -- Creation of Database
 
-SHOW DATABASE;
+show DATABASES;
 -- To show the list of all Databases
 
 USE food_bag;
 -- The USE key word helps to use food_bag for our task databse
-
 
 -- NOW TO TABLE CREATION
 
 -- Food Table Creation
 CREATE TABLE food (
 id INT NOT NULL AUTO_INCREMENT,
-type VARCHAR(100) NOT NULL,
+type ENUM('fast_food', 'vegetable_fruits','drinks_cocktails','restaurants') NOT NULL DEFAULT 'fast_food',
 PRIMARY KEY (id)
 );
 
--- SHOW TABLE
-    SHOW TABLES;
-
 -- Admins Table Creation
-CREATE TABLE Admins (
+CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 type ENUM ('0','1') NOT NULL,
@@ -30,10 +26,6 @@ phone_number VARCHAR(50) NOT NULL,
 password VARCHAR(100) NOT NULL,
 PRIMARY KEY (id)
 );
-
-
--- SHOW TABLE
-SHOW TABLES;
 
 -- Vendor table creation
 
@@ -45,16 +37,13 @@ name VARCHAR(100) NOT NULL,
 amount DECIMAL(20,2) NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (food_id) REFERENCES food (id),
-FOREIGN KEY (admin_id) REFERENCES Admins (id)
+FOREIGN KEY (admin_id) REFERENCES admins (id)
 );
 
 
--- SHOW TABLE
-    SHOW TABLES;
-
 -- Customers table creation
 
-CREATE TABLE Customers (
+CREATE TABLE customers (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 phone_number VARCHAR(50) NOT NULL,
@@ -66,16 +55,14 @@ PRIMARY kEY (id)
 
 -- Customers and Vendors linked together
 
-CREATE TABLE Orders (
-id INT AUTO_INCREMENT,
-vendor_id INT,
-customer_id INT,
+CREATE TABLE orders (
+id INT AUTO_INCREMENT NOT NULL,
+vendor_id INT NOT NULL,
+customer_id INT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
-FOREIGN KEY (customer_id) REFERENCES Customers (id)
+FOREIGN KEY (customer_id) REFERENCES customers (id)
 );
-
--- SHOW TABLE
-    SHOW TABLES;
+-- show table status;
 
 -- End of Tables
