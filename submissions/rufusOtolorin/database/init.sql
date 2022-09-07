@@ -8,7 +8,7 @@ USE foodbag;
  -- TO START CREATING THE FOOD_BAG TABLE
 CREATE TABLE food (
 	id INT NOT NULL AUTO_INCREMENT,
-    type VARCHAR(255) NOT NULL,
+    type ENUM('fast_food', 'vegetable_fruits', 'drinks_cocktails', 'restaurants') NOT NULL DEFAULT 'fast_food',
     PRIMARY KEY (id)
 );
 
@@ -38,13 +38,11 @@ CREATE TABLE vendor_food (
 -- TO START CREATING CUSTOMERS ACCOUNT TABLE
 CREATE TABLE customers_account (
 	id INT NOT NULL AUTO_INCREMENT,
-    admin_id INT NOT NULL,
     name VARCHAR(255) NOT NULL,
     phone_number VARCHAR(100) NOT NULL,
     address VARCHAR(255) NOT NULL,
-    payment_method VARCHAR(255),
-    PRIMARY KEY (id),
-    FOREIGN KEY (admin_id) REFERENCES admins (id)
+    payment_method ENUM('card', 'cash', 'transfer') NULL DEFAULT 'card',
+    PRIMARY KEY (id)
 );
 
 -- NOW TO MAKE THE ORDERS TABLE
@@ -52,10 +50,9 @@ CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
     vendor_id INT NOT NULL,
     customers_id INT ,
-    admin_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
-    FOREIGN KEY (admin_id) REFERENCES admins (id)
+    FOREIGN KEY (customers_id) REFERENCES customers_account (id)
 );
 
 -- COMMAND TO CONFIRM THAT ALL TABLES HAS BEEN MADE
