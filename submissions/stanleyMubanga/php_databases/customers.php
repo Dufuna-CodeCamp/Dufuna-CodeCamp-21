@@ -5,7 +5,6 @@
     try {
             $customer_string = "";
             $retrived_data = array();
-            setcookie('CUSTOMERS', json_encode($retrived_data), time () - 86000, "/", "", false);
             if (isset($_COOKIE['CUSTOMERS'])) {
                 $retrived_data = json_decode ($_COOKIE['CUSTOMERS'], true);
 
