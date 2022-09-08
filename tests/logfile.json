@@ -11,10 +11,10 @@
     "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
   },
   "results": [
     {
@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -66,7 +66,6 @@
               "code": "driver.quit();",
               "err": {},
               "uuid": "d28476d1-17a1-4ff4-942f-48598131f3b2",
-              "parentUUID": "cae7ba17-836c-44eb-ad4f-ca0b1e9e16d9",
               "isHook": true,
               "skipped": false
             }
@@ -214,7 +213,43 @@
               "uuid": "81ad33f2-37c1-4269-b7c8-2ba64145d5ba",
               "parentUUID": "cae7ba17-836c-44eb-ad4f-ca0b1e9e16d9",
               "isHook": false,
-              "skipped": false
+              "skipped": true
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "err": {},
+              "uuid": "20459063-513e-40c2-950b-eee4ca0680da",
+              "parentUUID": "9760d10c-c587-4eb9-935c-a0ee0751402c",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "err": {},
+              "uuid": "bae1d2b2-ed6f-4fe8-9d38-9b43dc0786e9",
+              "parentUUID": "9760d10c-c587-4eb9-935c-a0ee0751402c",
+              "isHook": false,
+              "skipped": true
             }
           ],
           "suites": [],
