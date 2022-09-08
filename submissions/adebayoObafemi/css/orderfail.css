@@ -1,0 +1,26 @@
+nav {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h3.fail {
+    font-size: 25px;
+    color: hsla(9, 100%, 65%, 1);
+    margin-bottom: 15px;
+}
+
+.container p.fail {
+    font-size: 20px;
+    color: hsla(0, 0%, 41%, 1);
+    width: 14em;
+    text-align: center;
+}
+
