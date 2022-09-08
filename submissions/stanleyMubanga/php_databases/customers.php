@@ -26,6 +26,7 @@
                         $customer_string .= "<td>" . htmlspecialchars($customer['email_address']) . "</td>";
                         $customer_string .= "<td>" . htmlspecialchars($customer['created_at']) . "</td>";
                         $customer_string .= "<td> <button><a href='orders.php?customer_order=" . htmlspecialchars($customer["id"]) . "'>View</a></button> </td>";
+
                     $customer_string .= "</tr>";
 
                 }
