@@ -210,7 +210,7 @@ h2 {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    padding: 40px 20px 60px 20px;
+    padding: 40px 20px 60px;
     font-family: "Poppins";
   }
   #logo {
@@ -266,7 +266,7 @@ h2 {
 
 @media screen and (min-width: 769px) and (max-width: 1400px) {
   body {
-    padding: 40px 70px 60px 70px;
+    padding: 40px 70px 60px;
     font-family: "Poppins";
   }
 
