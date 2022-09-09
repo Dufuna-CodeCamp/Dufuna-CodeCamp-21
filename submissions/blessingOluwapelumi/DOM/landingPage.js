@@ -2,6 +2,7 @@ const currentDeliveryLocation = document.querySelector(".location");
 const foodImages = document.querySelectorAll(".interest-images");
 const interest = document.querySelectorAll(".interest-container");
 
+
 // console.log(currentDeliveryLocation, foodImages, interest);
 // span = document.querySelector(".span");
 
@@ -25,7 +26,7 @@ const domChanges = function () {
       mainImgParent.children[1].style.color = "#A5A5A5";
       mainImgParent.children[2].style.color = "#A5A5A5";
       mainImgParent.style.cursor = "auto";
-      mainImgParent.onclick = () => (location.href = "");
+      mainImgParent.onclick = () => (location.href = "../html/vendor.html");
     }
   }
 };
