@@ -1,0 +1,76 @@
+body{
+ padding-left: 59px;
+}
+div{
+    display: inline-flex;
+}
+li{
+    display: inline;
+    position: relative;
+    left: 320%;
+    top: 5px;
+    margin-left: 23px;
+}
+.center{
+    position: relative;
+    left: 32%;
+    top: 10px;
+}
+.cent{
+    position: relative;
+    left: 27%;
+}
+.container{
+    position:relative;
+    left:-25px;
+    padding: 10px;
+    margin: 8px;
+}
+.box{
+    position:relative;
+    width: 210px;
+    height: 110px;
+    margin:  10px;
+    border: solid 1px whitesmoke;
+    display: inline-flex;
+}
+.text{
+    position: absolute;
+    top: 62%;
+    right: 69%;
+    font-size: 15px;
+    display: inline;
+}
+.tex{
+    position: absolute;
+    top:80%;
+    right:25%;
+    font-size: 12px;
+    display:inline;
+}
+.conta{
+position: absolute;
+top: 200%;
+left: -2%;
+}
+.bo{
+border: solid 1px whitesmoke;
+padding: 70px;
+}
+.sit{
+position:absolute;
+bottom:50px;
+font-size: 20px;
+display: inline;
+}
+.cona{
+    position: absolute;
+    top:520% ;
+    right:53% ;
+}
+.foo{
+    position: absolute; top:600% ;
+}
+.foot{
+    position:absolute ; top: 600%; left: 54%;
+}

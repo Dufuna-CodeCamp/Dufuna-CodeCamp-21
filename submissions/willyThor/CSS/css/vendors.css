@@ -57,7 +57,7 @@ ul, ol {
   margin-bottom: 60px;
   }
 .head {
-  margin-top: 80px;
+  padding-top: 20px;
 }
 
 .head p {
@@ -77,7 +77,7 @@ ul, ol {
 }
 
 #allvendors {
-  font-color: #000000;
+  color: #000000;
   font-size: 30px;
   line-height: 45px;
   font-weight: medium;
@@ -109,6 +109,8 @@ ul, ol {
  font-weight: 600;
  line-height: 24px;
  color: #4E4D4D;
+ padding: 10px 0 20px;
+ 
  }
  
 #price {
@@ -119,18 +121,20 @@ ul, ol {
 
 .food-items .signup {
   height: 40px;
-  width: 100px;
+  width: 50%;
   left: 420px;
   top: 604px;
   border-radius: 5px;
   border: 1px solid #AD4C4C;
-  padding: 10px;
-  border-width: fit-content;
+  padding: 10px 0 20px;
+ /* border-width: fit-content;*/
+ align-content: center;
 } 
 
 .food-items span {
   font-weight: 600px;
   color:#AD4C4C;
+  
 }
 #chicken-republic {
   margin-top: 40px;
