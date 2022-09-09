@@ -12,7 +12,7 @@ USE food_bag;
 -- Food Table Creation
 CREATE TABLE food (
 id INT NOT NULL AUTO_INCREMENT,
-type ENUM('fast_food', 'vegetable_fruits','drinks_cocktails','restaurants') NOT NULL DEFAULT 'fast_food',
+type ENUM('fast_food','vegetable_fruits','drinks_cocktails','restaurants') NOT NULL DEFAULT 'fast_food',
 PRIMARY KEY (id)
 );
 
@@ -48,7 +48,7 @@ id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 phone_number VARCHAR(50) NOT NULL,
 address VARCHAR(250) NOT NULL,
-payment_method ENUM('Card','Mobile Money','Cash'),
+payment_method ENUM('Card','Mobile Money','Cash') NOT NULL DEFAULT 'Card',
 PRIMARY kEY (id)
 );
 
@@ -63,6 +63,7 @@ PRIMARY KEY (id),
 FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
 FOREIGN KEY (customer_id) REFERENCES customers (id)
 );
--- show table status;
+
+show table status;
 
 -- End of Tables
