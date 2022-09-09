@@ -103,8 +103,11 @@ select option {
   gap: 20px;
   color: #a5a5a5;
 }
+
 .interest a{
     text-decoration: none;
+     padding: 33px;
+  box-shadow: 1px 1px 10px 1px rgba(140, 140, 140, 0.309);
 }
 
 .interest h4 {
@@ -119,14 +122,6 @@ select option {
   font-weight: 400;
   padding: 5px 0;
 }
-
-.interest a {
-  padding: 33px;
-  box-shadow: 1px 1px 10px 1px rgba(140, 140, 140, 0.309);
-}
-
-
-
 
 
 #rule1 {
