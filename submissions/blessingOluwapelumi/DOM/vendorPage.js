@@ -1,6 +1,5 @@
 const addCart = document.querySelectorAll(".addToCartButton");
 const notification = document.getElementsByClassName("notificationDot");
-const align = document.querySelectorAll(".CR-menu-img");
 console.log(notification);
 let notificationCount = 0;
 
