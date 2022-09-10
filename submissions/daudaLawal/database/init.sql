@@ -58,7 +58,7 @@ PRIMARY kEY (id)
 CREATE TABLE orders (
 id INT AUTO_INCREMENT NOT NULL,
 vendor_id INT NOT NULL,
-customer_id INT NULL,
+customer_id INT NULL, --Not important
 PRIMARY KEY (id),
 FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
 FOREIGN KEY (customer_id) REFERENCES customers (id)
