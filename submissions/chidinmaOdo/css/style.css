@@ -146,7 +146,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0 20px;
+    margin: 20px 0;
 }
 
 .box1 {
@@ -166,9 +166,15 @@ hr {
     font-size: 12px;
     font-weight: 400;
 }
-.box1 h3 {
+.img-title {
     font-weight: 500;
     font-size: 18px;
+}
+
+.img-title--red {
+    font-weight: 500;
+    font-size: 18px;
+    color: red;
 }
 
 /*HOW WE SERVE YOU*/
@@ -191,7 +197,7 @@ hr {
     margin-bottom: 10px;
 }
 
-h3 {
+ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 38px;
@@ -228,7 +234,7 @@ p {
 .handle {
     justify-content: center;
     text-align: center;
-     justify-content: space-between;
+     /*justify-content: space-between;*/
      margin: 10px 30px;
 }
 
@@ -412,9 +418,3 @@ p {
         margin-bottom: 25px;
     }
 }
-
-
-
-
-
-git st

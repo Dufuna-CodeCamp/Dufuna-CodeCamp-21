@@ -9,6 +9,7 @@
     "end": "2022-09-05T21:57:57.716Z",
     "duration": 3941,
     "testsRegistered": 18,
+
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -22,6 +23,7 @@
       "title": "",
       "fullFile": "C:\\Users\\user.DESKTOP-19R781R\\Desktop\\Dufuna-CodeCamp-21\\tests\\landing_page\\landing_page.js",
       "file": "\\landing_page.js",
+
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
@@ -31,6 +33,7 @@
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\user.DESKTOP-19R781R\\Desktop\\Dufuna-CodeCamp-21\\tests\\landing_page\\landing_page.js",
           "file": "\\landing_page.js",
+
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
@@ -172,11 +175,9 @@
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Sign up\", \"Ensure the `Sign up` link is present on the header\");",
               "err": {},
               "uuid": "269dd275-4e53-43e8-8e78-7cdcf674f78d",
-              "parentUUID": "3235b207-311c-4786-b1f2-06b127d0164c",
               "isHook": false,
               "skipped": false
             },
@@ -194,11 +195,9 @@
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Pick an interest\", \"Ensure Quantity label is present\");",
               "err": {},
               "uuid": "44a02e98-567f-4ea7-a794-935c313ba9f2",
-              "parentUUID": "3235b207-311c-4786-b1f2-06b127d0164c",
               "isHook": false,
               "skipped": false
             },
-            {
               "title": "test case: check service-description2",
               "fullTitle": "Testing Scholars Project test case: check service-description2",
               "timedOut": false,
@@ -378,7 +377,6 @@
               "isHook": false,
               "skipped": false
             },
-            {
               "title": "test case: assert image amount is 10",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 10",
               "timedOut": false,
@@ -454,7 +452,6 @@
       "version": "7.1.3"
     },
     "marge": {
-      "options": {
         "reportDir": "C:/Users/user.DESKTOP-19R781R/Desktop/Dufuna-CodeCamp-21/tests/landing_page/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"

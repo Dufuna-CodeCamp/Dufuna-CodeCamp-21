@@ -5,13 +5,28 @@
 }
 
 a {
+    position: relative;
     text-decoration: none;
 }
+
+#dot {
+    display: none;
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #AD4C4C;
+    right: 8px;
+    top: 15px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1)
+}
+
 .nav {
     padding: 18px;
     color: black;
     font-weight: 300;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -19,8 +34,8 @@ a {
 }
 
 .foodbag {
-  font-size: 18px;
-  font-weight: 300;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 #signup {
@@ -37,6 +52,7 @@ a {
 #line {
     margin: 20px;
 }
+
 .container {
     position: relative;
 }
@@ -47,7 +63,8 @@ a {
 }
 
 .menu {
-    margin:20px 20px 60px;
+    position: inherit;
+    margin: 20px 20px 60px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
 }
@@ -69,10 +86,14 @@ a {
 }
 
 .item-card {
-padding: 10px 20px;
+    padding: 10px 20px;
 }
 
-#add-to-cart {
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
     font-size: 15px;
@@ -101,24 +122,26 @@ padding: 10px 20px;
 }
 
 @media (min-width: 350px) {
-#small-view {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-   text-align: center;
-   justify-content: center;
-}
-.menu {
-    padding-bottom: 50px;
-}
+    #small-view {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menu {
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (min-width:768px) {
     .menu {
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+
     #small-view {
         position: absolute;
         top: 0;
@@ -126,13 +149,14 @@ padding: 10px 20px;
         justify-content: right;
         text-align: right;
     }
-    hr  {
+
+    hr {
         margin: 50px 0px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .menu{
+    .menu {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

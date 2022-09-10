@@ -11,6 +11,7 @@ body {
     position: relative;
     font-weight: 400;
     padding: 40px;
+    max-width: 100%;
 }
 
 #vendor-wrap {
@@ -67,8 +68,6 @@ nav a:hover {
 main {
     width: 100%;
     margin: 100px 0;
-    padding: 0 30px;
-    justify-content: center;
 }
 
 h2 {
@@ -108,7 +107,7 @@ section {
         'first first first first'
         'third third third third';
     width: 100%;
-    margin: 20px auto;
+    margin: 60px auto;
 }
 
 .kfc .logo-design {
@@ -158,7 +157,7 @@ section {
 }
 
 .box {
-    margin: 10px 20px;
+    margin: 20px 0 20px 20px;
 }
 
 .box h5,
@@ -183,7 +182,7 @@ section {
 }
 
 
-section button {
+section .cart {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -193,6 +192,34 @@ section button {
     border: 1px solid #AD4C4C;
     border-radius: 5px;
     padding: 10px;
+}
+
+.addCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #a5a5a5 url('../images/remove.svg') no-repeat center left;
+    padding: 1rem 1rem 1rem 2rem;
+    transition: 0.1s;
+}
+
+#cart-list {
+    position: relative;
+}
+
+#cart-nav {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: -8px;
+    background-color: #AD4C4C;
+    width: 8px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 @media screen and (min-width:600px) and (max-width:1000px) {

@@ -1,0 +1,38 @@
+
+.paybtn{
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #de4747;
+    color: rgb(255, 255, 255);
+    font-size:23px;
+    transition: 200ms ease-in-out;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.paybtn:hover{
+    background-color: #aa2323;
+}
+
+@media screen and (max-width:1000px){
+   .paybtn{
+        
+        width: 50%;
+        height: 35px;
+        font-size: 18px;
+        padding: 5px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+    
+    
+}

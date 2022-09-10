@@ -1,0 +1,42 @@
+.wrapper-success {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 55%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-heading {
+    padding: 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--themegreen--);
+}
+
+.order-caption {
+    padding: 2% 0;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(119, 119, 119);
+}

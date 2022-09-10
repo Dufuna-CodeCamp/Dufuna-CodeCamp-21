@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    margin: 5% 4%;
+}
+
+header .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h2 span {
+    color: #c43131;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 7px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li .sign-in {
+    color: #c43131;
+    border: 1px solid #c43131;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    margin: 5% 4%;
+}
+
+main #linked-page p #home-link {
+    text-decoration: none;
+    color: #cec9c9;
+    font-size: 1rem;
+}
+
+main #linked-page p span a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main h2 {
+    padding: 30px 0 35px;
+}
+
+main .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+main .logo p img {
+    width: 40px;
+}
+
+main .logo p span {
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+main .logo p .view-all1 {
+    text-decoration: none;
+    color: #c43131;
+    display: none;
+}
+
+main section .kfc-chicken,
+main section .chicken-rep {
+    width: 100%;
+}
+
+main section .kfc-chicken img,
+main section .chicken-rep img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+main section .kfc-chicken .align,
+main section .chicken-rep .align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section .kfc-chicken .align .left,
+main section .chicken-rep .align .left {
+    font-weight: 700;
+}
+
+main section .kfc-chicken .align .right,
+main section .chicken-rep .align .right {
+    color: #008000;
+    font-weight: 700;
+}
+
+button {
+    color: #c43131;;
+    border: 1px solid #c43131;
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 5px 0 20px;
+    background-color: transparent;
+}
+
+main p .view-all {
+    text-decoration: none;
+    color: #c43131;
+}
+
+main section p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+hr {
+    color: #cec9c9;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    header .hero {
+        display: block;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    nav ul li a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    main section .kfc-chicken .align,
+    main section .chicken-rep .align {
+        display: block;
+}
+}
+
+@media screen and (min-width: 600px) {
+    header h2,
+    header span {
+        font-size: 1.5rem;
+    }
+ 
+    nav ul li {
+        padding-left: 2rem;
+    }
+
+    main .logo p .view-all1 {
+        display: block;
+    }
+
+    main section {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-areas: 
+        "a b";
+    }
+
+    .grid-a {
+        grid-area: a;
+    }
+
+    .grid-b {
+        grid-area: b;
+    }
+
+    main section .kfc-chicken .align p,
+    main section .chicken-rep .align p {
+        font-size: 0.8rem;
+    }
+
+    main p .view-all {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main section {
+        grid-template-areas: 
+        "a b c d";
+    }
+
+}
+
+
+
+
