@@ -7,12 +7,12 @@ show DATABASES;
 USE food_bag;
 -- The USE key word helps to use food_bag for our task databse
 
--- NOW TO TABLE CREATION
+-- TABLE CREATION
 
 -- Food Table Creation
 CREATE TABLE food (
 id INT NOT NULL AUTO_INCREMENT,
-type ENUM('fast_food','vegetable_fruits','drinks_cocktails','restaurants') NOT NULL DEFAULT 'fast_food',
+type VARCHAR(250) NOT NULL DEFAULT 'fast_food',
 PRIMARY KEY (id)
 );
 
@@ -20,7 +20,7 @@ PRIMARY KEY (id)
 CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
-type ENUM ('0','1') NOT NULL,
+type INT NOT NULL,
 email_address VARCHAR(255) NOT NULL,
 phone_number VARCHAR(50) NOT NULL,
 password VARCHAR(100) NOT NULL,
@@ -34,7 +34,7 @@ id INT NOT NULL AUTO_INCREMENT,
 admin_id INT NOT NULL,
 food_id INT NOT NULL,
 name VARCHAR(100) NOT NULL,
-amount DECIMAL(20,2) NOT NULL,
+amount DECIMAL(20, 2) NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (food_id) REFERENCES food (id),
 FOREIGN KEY (admin_id) REFERENCES admins (id)
@@ -48,7 +48,7 @@ id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 phone_number VARCHAR(50) NOT NULL,
 address VARCHAR(250) NOT NULL,
-payment_method ENUM('Card','Mobile Money','Cash') NOT NULL DEFAULT 'Card',
+payment_method ENUM('Card','Mobile Money','Cash') NOT NULL,
 PRIMARY kEY (id)
 );
 
