@@ -68,11 +68,15 @@ li {
  text-align: center; 
 
 }
-#view {
+#view, #view2 {
  color:#AD4C4C;
  font: 18px 'Poppins', sans-serif;
  font-weight: 500;
  
+}
+.view2 {
+  text-align: center;
+  display: none;
 }
 #signup {
   border: 1px solid #AD4C4C;
@@ -85,7 +89,6 @@ li {
   margin-bottom: 60px;
   }
 .head {
-  margin-top: 80px;
   font:16px 'Poppins', sans-serif;
   display: inline-block;
   flex-wrap: wrap;
@@ -121,13 +124,14 @@ li {
   height: 50px;
   left: 69px;
   top: 297px;
+  padding-right: 5px;
 } 
 
 .kfc-header, .chickrep-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   
 }
 .logo {
@@ -135,9 +139,6 @@ li {
   align-items: center;
   font:20px 'Poppins', sans-serif;
    
-}
-#cap{
-  padding-right: 5px;
 }
 #interest {
  font: 16px 'Poppins', sans-serif;
@@ -153,8 +154,7 @@ li {
   color: #5EA304;
   font-weight: 600;
   float: right;
-  font: inherit;
-  
+   
 }
 
 .food-items .add {
@@ -167,8 +167,6 @@ li {
   border-radius: 3px;
   border: 1px solid #AD4C4C;
   cursor: pointer;
-  font-style: normal;
-  font-weight: 500;
   font: 14px 'Poppins', sans-serif;
   color:#AD4C4C;
   padding: 10px 25px;
@@ -202,10 +200,6 @@ li {
   margin-top: 40px;
 }
 
-.chickrep-header, .kfc-header {
-  margin-bottom: 30px;
-  
-}
 @media screen and (max-width:650px)  {
    .foodbag-head {
       font-size: 18px;
@@ -251,6 +245,14 @@ li {
       display:inline-grid;
       padding:0;
     }
+  #view{
+      display: none;
+
+    }
+  .view2{
+      display: block;
+    }
+    
    
 } 
 
