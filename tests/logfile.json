@@ -1,8 +1,14 @@
 {
   "stats": {
-    "tests": 3,
-    "passes": 3,
+    "suites": 1,
+
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
     "failures": 0,
-    "owner": "debbieMiti"
+    "start": "2022-09-12T19:16:30.520Z",
+    "end": "2022-09-12T19:16:32.124Z",
+    "duration": 1604,
+    "testsRegistered": 4,
   }
 }
