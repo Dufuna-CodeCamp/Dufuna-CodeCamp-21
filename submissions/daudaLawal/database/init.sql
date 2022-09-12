@@ -12,16 +12,16 @@ USE food_bag;
 -- Food Table Creation
 CREATE TABLE food (
 id INT NOT NULL AUTO_INCREMENT,
-type VARCHAR(250) NOT NULL DEFAULT 'fast_food',
+type ENUM('fast_food','vegetable_fruits','drinks_cocktails', 'restaurants') NOT NULL DEFAULT 'fast_food',
 PRIMARY KEY (id)
 );
 
 -- Admins Table Creation
 CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
-name VARCHAR(100) NOT NULL,
-type INT NOT NULL,
-email_address VARCHAR(255) NOT NULL,
+name VARCHAR(250) NOT NULL,
+type ENUM('0','1') NOT NULL, 
+email_address VARCHAR(250) NOT NULL,
 phone_number VARCHAR(50) NOT NULL,
 password VARCHAR(100) NOT NULL,
 PRIMARY KEY (id)
@@ -33,7 +33,7 @@ CREATE TABLE vendor_food (
 id INT NOT NULL AUTO_INCREMENT,
 admin_id INT NOT NULL,
 food_id INT NOT NULL,
-name VARCHAR(100) NOT NULL,
+name VARCHAR(250) NOT NULL,
 amount DECIMAL(20, 2) NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (food_id) REFERENCES food (id),
@@ -48,7 +48,7 @@ id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(100) NOT NULL,
 phone_number VARCHAR(50) NOT NULL,
 address VARCHAR(250) NOT NULL,
-payment_method ENUM('Card','Mobile Money','Cash') NOT NULL,
+payment_method ENUM('Card','Mobile Money','Cash') NULL,
 PRIMARY kEY (id)
 );
 
