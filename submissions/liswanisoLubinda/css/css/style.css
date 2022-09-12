@@ -1,0 +1,138 @@
+body {
+    background-color: #E5E5E5;
+    font-family: Poppins;
+    font-style: normal;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+  header {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header p {
+    font-weight: bold;
+    display: inline;
+    font-size: 25px;
+  }
+
+  span {
+    color: rgb(187, 0, 0);
+  }
+
+
+
+header ul li {
+  display: inline;
+  font-size: 15px;
+
+}
+
+header ul li a {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    color: gray;
+}
+
+.sign_up {
+    color: red;
+    border: 1px solid red;
+    border-radius: 7px;
+  }
+
+.body {
+    text-align: center;
+    margin: 80px 20px;
+}
+
+.body h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.body p {
+    font-size: 17px;
+}
+
+section {
+    margin: 50px;
+}
+
+.address input {
+  outline: none;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.address label {
+  font-weight: bold;
+}
+
+.interest_content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.fastfood_box,
+.vegetables_box,
+.drinks_box,
+.restraunts_box {
+  border: 1px solid #ccc;
+  padding: 20px 40px 20px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.interest_content_wrapper h3 {
+  font-weight: bold;
+}
+
+.services h2 {
+text-align: center;
+}
+
+.services_content_wrapper {
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.location_services,
+.meal_services,
+.delivery_services {
+display: inline-block;
+}
+
+.contact_icons,
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact_icons img {
+  padding: 8px;
+}
+
+.terms_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
