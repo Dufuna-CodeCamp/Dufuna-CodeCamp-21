@@ -1,5 +1,6 @@
 {
   "stats": {
+
     "suites": 1,
     "tests": 1,
     "passes": 1,
@@ -138,5 +139,9 @@
       },
       "version": "6.2.0"
     }
+    "tests": 7,
+    "passes": 7,
+    "failures": 0,
+
   }
 }

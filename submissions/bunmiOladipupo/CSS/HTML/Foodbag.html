@@ -7,13 +7,14 @@
         <title>FoodBag</title>
         <link rel="stylesheet" href="../Style/vendorspage.css">
     </head>
+    <body>
     <div class="wrapper">
         <div class="navbar">
             <div class="logo">
                 <strong id="title">Food<span id="bag">Bag</span></strong>
             </div>
             <nav id="nav">
-                <a href="#">Cart</a>
+                <a href="#">Cart<sup id="count"><span></span></sup></a>
                 <a href="#">Login</a>
                 <button><a id="signup" href="#">Sign Up</a></button>     
             </nav>
@@ -37,26 +38,26 @@
                         <img src="../../CSS/Asset/image4.svg" width="100%" alt="KFC item1"><br>
                         <h3>KFC- King Bucket</h3>
                         <h4>#5,000</h4><br>
-                        <button id="cart"><a href="#">Add to Cart</a></button>
+                        <button class="cartjs topp" id="cart5k">Add to Cart</button>
                     </section>
                     <section class="left">
                         <img src="../../CSS/Asset/image4.svg" width="100%" alt="KFC item2"><br>
                         <h3>Zinger Burger</h3>
                         <h4>#3,600</h4><br>
-                        <button class="cart"><a href="#">Add to Cart</a></button>
+                        <button class="cartjs topp" id="cart5k2">Add to Cart</button>
                     </section>
                     <section class="left">
                         <img src="../../CSS/Asset/image4.svg" width="100%" alt="KFC item3"><br>
                         <h3>Chicken Strips</h3>
                         <h4>#1,450</h4><br>
-                        <button class="cart"><a href="#">Add to Cart</a></button>
+                        <button class="cartjs topp" id="cart5k3">Add to Cart</button>
                     </section>
                     <section class="invc">
                         <section class="left">
                             <img src="../../CSS/Asset/image4.svg" width="100%" alt="KFC item4"><br>
                             <h3>Yamilicious</h3>
                             <h4>#900</h4><br>
-                            <button class="cart" id="class"><a href="#">Add to Cart</a></button>
+                            <button class="cartjs topp" id="class">Add to Cart</button>
                         </section>
                     </section>
                 </section>
@@ -77,26 +78,26 @@
                             <img src="../../CSS/Asset/image3.svg" width="100%" alt="Chick item1"><br>
                             <h3>Refuel Max</h3>
                             <h4>#1,200</h4><br>
-                            <button id="carts1"><a href="#">Add to Cart</a></button>
+                            <button class="cartjs topp" id="carts1">Add to Cart</button>
                         </section>
                         <section class="left">
                             <img src="../../CSS/Asset/image3.svg" width="100%" alt="Chick item2"><br>
                             <h3>Express Meal</h3>
                             <h4>#2,000</h4><br>
-                            <button id="carts2"><a href="#">Add to Cart</a></button>
+                            <button class="cartjs topp" id="carts2">Add to Cart</button>
                         </section>
                         <section class="left">
                             <img src="../../CSS/Asset/image3.svg" width="100%" alt="Chick item3"><br>
                             <h3>Citizen Meal</h3>
                             <h4>#1,500</h4><br>
-                            <button id="carts3"><a href="#">Add to Cart</a></button>
+                            <button class="cartjs topp" id="carts3">Add to Cart</button>
                         </section>
                         <section class="invc">
                             <section class="left">
                                 <img src="../../CSS/Asset/image3.svg" width="100%" alt="Chick item4"><br>
                                 <h3>Crunchy Wings</h3>
                                 <h4>#1,750</h4><br>
-                                <button id="carts4"><a href="#">Add to Cart</a></button>
+                                <button class="cartjs topp" id="carts4">Add to Cart</button>
                             </section>
                         </section>
                     </section>
@@ -111,4 +112,7 @@
         <h6 id="footer1">&copy; Copyright 2021 </h6>
         <h7 id="footer2">Foodbag is a registered trademark of Dave Inc.</h7>
     </footer>
+    <script src="../../dom/vedorsvalidation.js"></script>    
+    <script src="../../dom/landingpagevalidation.js"></script>
+</body>
 </html>
