@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-09-12T11:58:05.641Z",
-    "end": "2022-09-12T11:58:15.979Z",
-    "duration": 10338,
+    "start": "2022-09-12T12:09:25.570Z",
+    "end": "2022-09-12T12:09:42.099Z",
+    "duration": 16529,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d07112fa-3fcc-4f82-b77b-831bb1494b35",
+      "uuid": "c51ee97b-b553-4288-b31a-cf68f78b28ea",
       "title": "",
       "fullFile": "C:\\Users\\LawsonIfeoma\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
       "file": "\\navigation_tasks.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d98c721e-da6f-450a-b813-290749acb94e",
+          "uuid": "e170955f-d705-4eca-aa63-50469cb09b06",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\LawsonIfeoma\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 10164,
+              "duration": 14171,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "5a36400e-57d9-4476-96f1-da6101c857f4",
-              "parentUUID": "d98c721e-da6f-450a-b813-290749acb94e",
+              "uuid": "1f1ed002-0b17-4a09-bf6e-e17fccb44980",
+              "parentUUID": "e170955f-d705-4eca-aa63-50469cb09b06",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "df069ddc-0468-49c2-9ba6-71d0fee4d3c5",
-              "parentUUID": "d98c721e-da6f-450a-b813-290749acb94e",
+              "uuid": "40502bd5-90e9-47ad-8ff9-36cfa7ce5566",
+              "parentUUID": "e170955f-d705-4eca-aa63-50469cb09b06",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 152,
+              "duration": 2299,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,20 +85,20 @@
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "382d1c0c-652d-4218-bc90-c472f177a549",
-              "parentUUID": "d98c721e-da6f-450a-b813-290749acb94e",
+              "uuid": "824c7670-095d-4933-9576-7de9157510ad",
+              "parentUUID": "e170955f-d705-4eca-aa63-50469cb09b06",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "382d1c0c-652d-4218-bc90-c472f177a549"
+            "824c7670-095d-4933-9576-7de9157510ad"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 152,
+          "duration": 2299,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
