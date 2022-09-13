@@ -1,0 +1,152 @@
+h5.items, a.items {
+    display: none;
+}
+
+section.cart {
+    margin-bottom: 50px;
+}
+
+div.one {
+    display: none;
+}
+
+div.two {
+    display: flex;
+    flex-direction: column;
+}
+
+div.menu {
+    display: flex;
+    margin: 20px 0;
+    padding: 10px 0;
+    /* height: 100px; */
+}
+
+div.img {
+    display: flex;
+    column-gap: 10px;
+}
+
+div #scooter {
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 0; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: green; */
+    /* width: ; */
+    /* height: 150px; */
+}
+
+div #scooter div#image {
+    width: 10em;
+    /* border: solid 2px purple; */
+    margin: 0 12px auto 35px;
+}
+
+div #scooter img {
+    margin: 0;
+    /* background-color: red; */
+    /* width: 100px; */
+}
+
+div.setorder {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 5px;
+    /* background-color: forestgreen; */
+}
+
+div.setorder p {
+    color: hsla(0, 39%, 49%, 1);
+    font-size: 16px;
+}
+
+div#ordernum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 10px; */
+    /* background-color: yellow; */
+}
+
+#menu {
+    display: inline-flex;
+    /* background-color: burlywood; */
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+#menu span:not(div.setorder span) {
+    float: inline-end;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    /* background-color: brown; */
+    color: hsla(0, 1%, 30%, 1);
+}
+
+div.two h6 {
+    display: inline-flex;
+    /* background-color: blue; */
+    color: hsla(0, 1%, 30%, 1);
+    margin: 10px 0;
+    padding: 0;
+    /* padding: 25px 10px; */
+    font-size: 16px;
+}
+
+#total {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 50px; */
+    color: hsla(0, 1%, 30%, 1);
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#total span {
+    float: inline-end;
+    flex-direction: row;
+    font-size: 30px;
+    /* background-color: brown; */
+    color: hsla(0, 0%, 0%, 1);
+}
+
+#delfee {
+    display: inline-flex;
+    /* width: 85%; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lawngreen; */
+}
+
+.reduceimg {
+    /* background-color: blue; */
+    /* padding: 10px; */
+    width: 10em;
+}
+
+button {
+    background-color: hsla(0, 39%, 49%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+hr {
+    background-color: hsla(0, 0%, 79%, 1);
+}
