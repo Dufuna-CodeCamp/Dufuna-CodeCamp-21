@@ -63,7 +63,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
               "uuid": "bda608e5-349b-44a4-9b91-122fa834d6b2",
               "parentUUID": "6d288588-4d22-42da-980d-b7761eab4994",
@@ -76,7 +76,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-              "duration": 90,
+              "duration": 90,r
               "state": "passed",
               "speed": "slow",
               "pass": true,
