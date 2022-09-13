@@ -1,12 +1,13 @@
 <?php
-require_once("connection2.php");
+require_once("connection.php");
 
 try{
- 
+
 
     $customers = " ";
     $customer_data = array();
-    $sql = "SELECT SN, Full_Name, Email_Address, Created_At, Actions FROM customer ";
+    $sql = "use food_bag; 
+    SELECT SN, Full_Name, Email_Address, Created_At, Actions FROM customer ";
     $pdoresult = $connect->query($sql);
     if (isset($_COOKIE["CUSTOMERS"])){
         $customer_data= $_COOKIE["CUSTOMERS"];
