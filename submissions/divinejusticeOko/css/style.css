@@ -70,7 +70,7 @@ label {
     font-weight: 500;
 }
 
-.address select {
+.address input {
     height: 40px;
     width: 100%;
     border-radius: 5px;
@@ -193,14 +193,6 @@ footer img {
     footer p{
         font-size: 16px;
     }
-}
-
-@media screen and (min-width:992px) {
-     
-}
-
-@media screen and (min-width:1200px) {
-     
 }
 
 @media screen and (min-width:1400px) {
