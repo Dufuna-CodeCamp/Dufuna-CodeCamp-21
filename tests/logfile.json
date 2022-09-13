@@ -63,7 +63,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
               "uuid": "50bc02ba-a700-455d-8fe9-d0ab50b0701e",
               "parentUUID": "874db924-9911-494d-b05d-cd776a866518",
