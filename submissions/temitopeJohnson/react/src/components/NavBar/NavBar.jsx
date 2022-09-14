@@ -1,5 +1,5 @@
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import './NavBar.css';
+import { Outlet } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -12,7 +12,7 @@ const Navbar = () => {
                     <a href="#" className="SignUp">Sign up</a>
                 </div>
             </nav>
-            <Breadcrumbs />
+            <Outlet />
         </>
     )
 }

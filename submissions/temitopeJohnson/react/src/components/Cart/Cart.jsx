@@ -9,6 +9,7 @@ import Button from "./Button";
 import Total from "./Total";
 import Delivery from "./Delivery";
 import './Cart.css'
+import BreadcrumbsCart from "./BreadcrumbsCart/BreadcrumbsCart"
 
 const Cart = () => {
     const CartContent = [
@@ -66,6 +67,7 @@ const Cart = () => {
 
     return (
         <>
+            <BreadcrumbsCart />
             <div className="PageTitle">Cart</div>
             <div className="MobileSummary">
                 <div>4 Items</div>

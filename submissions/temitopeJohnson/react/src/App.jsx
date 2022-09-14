@@ -1,15 +1,23 @@
 import React from 'react'
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from './components/Cart/Cart'
-import Navbar from './components/NavBar/NavBar'
+import Verification from './components/Verification/Verification'
+import Navbar from './components/NavBar/NavBar';
 
 
 function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Cart />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Cart />} />
+            <Route path="Verification" element={<Verification />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

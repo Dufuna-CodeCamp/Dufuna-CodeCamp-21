@@ -1,6 +1,6 @@
-import './Breadcrumbs.css';
+import './BreadcrumbsCart.css';
 
-const Breadcrumbs = () => {
+const BreadcrumbsCart = () => {
     return (
         <div className='Breadcrumbs'>
             <span style={{color: '#C9C9C9'}}>Home &gt;</span><span style={{color: '#000000'}}> Cart</span>
@@ -8,4 +8,4 @@ const Breadcrumbs = () => {
     );
 }
 
-export default Breadcrumbs;
+export default BreadcrumbsCart;
