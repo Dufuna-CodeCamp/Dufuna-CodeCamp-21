@@ -46,7 +46,6 @@ div.one {
 @media screen  and ((min-width: 481px) and (max-width: 768px)) {
     body {
         margin: 0 20px;
-        border: solid 1px brown;
     }
     
     header nav div.navlinks a {
