@@ -1,152 +1,151 @@
 * {
     margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 20px 50px;
-    font-family: poppins;
-}
-
-a {
-    text-decoration: none;
+    margin: 0px 20px 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 span {
     color: hsla(0, 39%, 49%, 1);
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    justify-content: space-between;
+a {
+    text-decoration: none;
 }
 
-header nav div {
-    float: right;
-}
+a.logo {
 
-header nav a.logo {
     color: hsla(0, 0%, 0%, 1);
     font-size: 20px;
 }
 
-header nav div a {
-    padding: 10px 20px;
-    font-size: 16px;
+a.cart, a.login {
     color: hsla(0, 0%, 41%, 1);
-}
-
-header nav div a.navsignup {
-    padding: 10px;
     font-size: 16px;
-    border: 1px solid hsla(0, 39%, 49%, 1);
-    border-radius: 5px;
-    color: hsla(0, 39%, 49%, 1);
 }
 
-section.header h2 {
-    text-align: center;
-    font-size: 40px;
-    margin: 5px;
-    color: hsla(0, 1%, 30%, 1);
+nav {
+    margin: 20px 0 50px;
 }
 
-section.header p {
-    text-align: center;
-    font-size: 16px;
-    margin: 5px;
-    color: hsla(0, 0%, 41%, 1)
-}
-
-label[for="location"],label[for="interest"] {
-    font-size: 20px;
-}
-
-input {
-    width: 100%;
-    font-size: 20px;
-    padding: 8px 0px 8px 15px;
-    margin: 10px 0 30px;
-}
-
-section.interest {
+header nav div.navlinks {
     display: flex;
-    column-gap: 0px;
-    justify-content: space-between;
-    margin: 10px 0 50px;
-}
-
-section.interest div {
-    box-shadow: 0px 0px 3px 1.5px hsla(0, 0%, 0%, 0.1);
-    padding: 20px;
-}
-
-section.interest div h4 {
-    color: hsla(0, 0%, 65%, 1);
-    font-size: 18px;
-}
-
-section.interest div p {
-    color: hsla(0, 0%, 65%, 1);
-    font-size: 14px;
-}
-
-section.serve h3 {
-    text-align: center;
-    font-size: 30px;
-    margin: 20px 0 10px;
-    color: hsla(0, 1%, 30%, 1);
-}
-
-section div.serve {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-section.serve h4 {
-    text-align: center;
-    margin: 10px;
-    font-size: 25px;
-    color: hsla(0, 0%, 41%, 1);
-}
-
-section.serve p {
-    text-align: center;
-    color: hsla(0, 0%, 65%, 1);
-    font-size: 20px;
-    padding: 0 50px;
-}
-
-footer p {
-    text-align: center;
-    font-size: 18px;
-    margin: 50px 0 20px;
-    color: hsla(0, 0%, 41%, 1);
-}
-
-footer div.footerimg {
-    text-align: center;
-}
-
-footer div.footerimg img {
-    padding: 0 10px;
-}
-
-footer a {
-    display: inline-block;
-    font-size: 18px;
-    color: hsla(0, 0%, 41%, 1);
-    margin: 20px 0 40px;
-}
-
-footer a.copyright {
     float: right;
 }
 
+header nav div.navlinks a {
+    margin-left: 40px;
+    padding: 5px;
+}
+
+header nav div a.signup {
+    padding: 5px 20px;
+}
+
+a.signup {
+    border: solid 1px hsla(0, 39%, 49%, 1);
+    color: hsla(0, 39%, 49%, 1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section.vendornav h4 {
+    margin: 30px 0;
+}
+
+div.kfctwo {
+    margin: 20px 0 30px;
+}
+
+div.republictwo {
+    margin: 20px 0 30px;
+}
+
+a.home {
+    color: hsla(0, 0%, 79%, 1);
+    font-size: 14px;
+}
+
+a.vendor {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+div.one {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+div.first {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+a.viewall {
+    padding: 0 10px;
+    color: hsla(0, 39%, 49%, 1);
+    font-size: 16px;
+}
+
+a.kfc, a.republic {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 20px;
+}
+
+div.two {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.two h6 {
+    color: hsla(0, 1%, 30%, 1);
+    margin: 10px 0 20px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+div.two h6 span {
+    color: hsla(86, 95%, 33%, 1);
+    float: right;
+    margin-right: 20px;
+}
+
+a.addtocart {
+    display: inline-block;
+    margin: 0 5px 20px;
+    padding: 7px 25px;
+    border: 1px solid hsla(0, 39%, 49%, 1);
+    border-radius: 3px;
+    font-size: 16px;
+    color: hsla(0, 39%, 49%, 1);
+}
+
 hr {
-    border: solid 1px;
-    color: hsla(0, 0%, 95%, 1);
+    border: solid 1px hsla(0, 0%, 90%, 1);
+}
+
+svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+    fill: hsla(0, 39%, 49%, 1);
+    overflow: visible;
+}
+
+div.secondviewall {
+    display: none;
 }

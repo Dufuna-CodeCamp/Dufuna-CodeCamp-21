@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendor's page</title>
-    <link rel="stylesheet" href="vendorPage.css">
+    <link rel="stylesheet" href="../css/vendorPage.css">
 </head>
 
 <body>
@@ -14,7 +14,9 @@
     <header>
         <a href="#" id="logo">Food<span>Bag</span></a>
         <nav>
-            <a href="#"> Cart</a>
+            <a href="#" class="cart"> Cart 
+                <span class="notificationDot"></span>
+            </a>
             <a href="#"> Login</a>
             <a href="#" id="signup-btn"> Sign up</a>
         </nav>
@@ -27,7 +29,7 @@
     </div>
 
     <div class="KFC-main">
-        <button id="btn"><img src="assets/image 2.png" alt=""></button>
+        <button id="btn"><img src="../assets/image 2.png" alt=""></button>
         <p>KFC</p>
         <a id="desktop-view" href="#">View all</a>
 
@@ -37,47 +39,47 @@
 
         <div class="KFC-menu">
             <div class="KFC-menu-img">
-                <img src="assets/image4.svg" alt="KFC image King bucket image">
+                <img src="../assets/image4.svg" alt="KFC image King bucket image">
             </div>
             <div class="KFC-menu-pricelist">
                 <h5>KFC - King bucket</h5>
                 <p> &#8358;5,000</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
 
         <div class="KFC-menu">
             <div class="KFC-menu-img">
-                <img src="assets/image4.svg" alt="KFC Zinger Burger image">
+                <img src="../assets/image4.svg" alt="KFC Zinger Burger image">
             </div>
             <div class="KFC-menu-pricelist">
                 <h5> Zinger Burger </h5>
                 <p> &#8358;3,600</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
         <div class="KFC-menu">
             <div class="KFC-menu-img">
-                <img src="assets/image4.svg" alt="KFC Chicken strip image">
+                <img src="../assets/image4.svg" alt="KFC Chicken strip image">
             </div>
             <div class="KFC-menu-pricelist">
                 <h5>Chicken strips</h5>
                 <p> &#8358;1,450</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
         <div class="KFC-menu">
             <div class="KFC-menu-img">
-                <img src="assets/image4.svg" alt="Yomilicious image">
+                <img src="../assets/image4.svg" alt="Yomilicious image">
             </div>
             <div class="KFC-menu-pricelist">
                 <h5>Yamilicious</h5>
                 <p> &#8358;900</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
 
@@ -91,7 +93,7 @@
     <hr id="ruler1">
 
     <div class="republic-main">
-        <img src="assets/Chicken republic_logo.svg" alt="chicken-republic-logo">
+        <img src="../assets/Chicken republic_logo.svg" alt="chicken-republic-logo">
         <p>Chicken republic</p>
         <a href="#"> View all</a>
     </div>
@@ -100,53 +102,55 @@
 
         <div class="CR-menu">
             <div class="CR-menu-img">
-                <img src="assets/image1.svg" alt="Refuel-max-image">
+                <img src="../assets/image1.svg" alt="Refuel-max-image">
             </div>
             <div class="CR-menu-pricelist">
                 <h5>Refuel Max</h5>
                 <p> &#8358;1,200</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
 
         <div class="CR-menu">
             <div class="CR-menu-img">
-                <img src="assets/image2.svg" alt="Express-Meal-image">
+                <img src="../assets/image2.svg" alt="Express-Meal-image">
             </div>
             <div class="CR-menu-pricelist">
                 <h5>Express meal</h5>
                 <p> &#8358;2,000</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
 
         <div class="CR-menu">
             <div class="CR-menu-img">
-                <img src="assets/image3.svg" alt="Citizen-meal-image">
+                <img src="../assets/image3.svg" alt="Citizen-meal-image">
             </div>
 
             <div class="CR-menu-pricelist">
                 <h5>Citizen meal</h5>
                 <p> &#8358;1,500</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
 
         <div class="CR-menu">
             <div class="CR-menu-img">
-                <img src="assets/image3.svg" alt="Crunchy-wings-image">
+                <img src="../assets/image3.svg" alt="Crunchy-wings-image">
             </div>
 
             <div class="CR-menu-pricelist">
                 <h5>Crunchy wings</h5>
                 <p> &#8358;1,750</p>
             </div>
-            <button>Add to Cart</button>
+            <button class="addToCartButton">Add to Cart</button>
         </div>
         <a id="mobile-view" href="#">View all</a>
     </div>
+
+    <script src="/DOM/vendorPage.js"></script>
 </body>
 
 </html>
