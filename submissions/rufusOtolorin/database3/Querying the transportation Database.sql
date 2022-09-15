@@ -29,6 +29,7 @@ AND travel_details.trip_fare > 100 WHERE passengers.age > 35 AND travel_details.
 -- second, to generate the count
 SELECT COUNT(passengers.id AND passengers.full_name) FROM passengers INNER JOIN travel_details ON passengers.id = travel_details.passengers_id 
 AND travel_details.trip_fare > 100 WHERE passengers.age > 35 AND travel_details.siblings_spouses_aboard >= 1;
+-- total number is 9
 
 SHOW tables;
 
