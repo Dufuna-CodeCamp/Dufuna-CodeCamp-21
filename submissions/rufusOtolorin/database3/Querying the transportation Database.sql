@@ -23,6 +23,12 @@ WHERE accident_cases.survivals = 1;
 /* (Q5). TO GET THE ID, NAME AND THE TOTAL NUMBER OF PASSENGERS WHO PAID
 A FARE GREATER THAN $100 AND ABOVE THE AGE OF 35 HAD SIBLINGS OR
 SPOUSES ON BOARD. */
+-- first, to view answer table
 SELECT passengers.id, passengers.full_name FROM passengers INNER JOIN travel_details ON passengers.id = travel_details.passengers_id 
 AND travel_details.trip_fare > 100 WHERE passengers.age > 35 AND travel_details.siblings_spouses_aboard >= 1;
+-- second, to generate the count
+SELECT COUNT(passengers.id AND passengers.full_name) FROM passengers INNER JOIN travel_details ON passengers.id = travel_details.passengers_id 
+AND travel_details.trip_fare > 100 WHERE passengers.age > 35 AND travel_details.siblings_spouses_aboard >= 1;
+
+SHOW tables;
 
