@@ -11,7 +11,7 @@ let changeButton = document.querySelectorAll('.adBtn'), //adField
                 btn.style.background = 'gray';
                 btn.style.border = 'none';
                 btn.style.color = 'white';
-                btn.style.height = '25px';
+                btn.style.height = '28px';
                 addCart.style.background = 'brown';
               
             }else{
