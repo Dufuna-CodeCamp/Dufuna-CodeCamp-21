@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './Verification.css'
 
 const Card = () => {
@@ -68,7 +69,9 @@ const Card = () => {
                     />
                 </div>
             </div>
-            <button type="submit" className='PaymentBtn'>Pay</button>
+            <Link to="/OrderSuccessful">
+                <button type="submit" className='PaymentBtn'>Pay</button>
+            </Link>
         </form>
     );
 }
