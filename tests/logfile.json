@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+
     "tests": 18,
     "passes": 18,
     "pending": 0,
@@ -56,7 +57,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -78,7 +79,7 @@
               "timedOut": false,
               "duration": 82,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
@@ -379,6 +380,7 @@
               "skipped": false
             },
             {
+
               "title": "test case: assert image amount is 10",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 10",
               "timedOut": false,
