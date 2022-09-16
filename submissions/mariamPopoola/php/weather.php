@@ -1,4 +1,5 @@
 <?php
+// Enter the temperature to tell you what the weather is.
 $temperature = $_POST["weather"];
 
 if($temperature <= 20){
