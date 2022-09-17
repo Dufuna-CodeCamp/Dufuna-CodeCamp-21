@@ -125,6 +125,15 @@ button {
   color: #C17979;
 }
 
+.remove-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: white;
+  padding: 10px 15px;
+}
+
 @media screen and (max-width:600px) {
   .nav-link, 
   button {
