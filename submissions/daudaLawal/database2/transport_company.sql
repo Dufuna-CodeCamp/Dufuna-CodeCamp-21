@@ -18,7 +18,7 @@ CREATE TABLE passengers(
 );
 
 -- Table for passengers' record
-CREATE TABLE passengers_record(
+CREATE TABLE passengers_details(
     id INT NOT NULL AUTO_INCREMENT,
     passenger_id INT NOT NULL,
     passenger_class ENUM('1', '2', '3') NOT NULL, 
