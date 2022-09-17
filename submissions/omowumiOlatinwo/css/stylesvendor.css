@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: grey;
+}
+
+.container {
+    margin: 20px;
+}
+.front{
+    padding: 0 25px 0 25px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+
+header ul li a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    color: darkmagenta;
+    transition: .4s;
+ 
+}
+#sign {
+    color: maroon;
+    border: 2px solid maroon;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.start a{
+    text-decoration: none;
+    color: grey;
+}
+.kfc li{
+    list-style-type: none;
+    display: inline;
+
+}
+.kfcgroup{
+    display: flex;
+}
+.crgroup{
+    display: flex;
+}
+.card{
+    padding: 30px;
+}
+.cart{
+    color: maroon;
+    border: 2px solid maroon;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.crr li{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+}
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.view-all{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    color: #AD4C4C;
+    text-decoration: none;       
+}
+@media only screen and (max-width: 1000px) {
+    .kfcgroup, .crgroup {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+}
