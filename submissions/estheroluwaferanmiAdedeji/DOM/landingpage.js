@@ -1,4 +1,4 @@
-const select = document.querySelector("#location");
+const select = document.querySelector("select");
 const img = document.querySelectorAll(".foodimg");
 const items = document.querySelectorAll(".food-selection");
 
