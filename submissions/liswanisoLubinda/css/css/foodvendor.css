@@ -19,6 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 10px;
   }
 
   header p {
@@ -55,6 +56,34 @@ header {
   section {
     padding: 30px 50px;
   }
+ 
+ .menu ul {
+    display: flex;
+  }
+
+  .menu ul li a {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .current {
+    color: black;
+  }
+
+  .kfc-icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .red-font {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #AD4C4C;
+    padding-top: 12px;
+  }
+
 
   .kfc_wrapper {
     padding-bottom: 100px;
@@ -65,6 +94,17 @@ header {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .kfc-icon a,
+  .chicken_republic-icon a {
+    margin-left: auto;
+  }
+
+  .kfc-icon p, 
+  .chicken_republic-icon p {
+    font-weight: bold;
   }
 
   .kfc-icon img,
@@ -92,8 +132,17 @@ header {
     font-weight: bold;
 }
 
-.kfc_wrapper .price:nth-child(2),
-.chicken_republic_wrapper .price:nth-child(2) {
-    font-weight: bold;
-    color: green;
+.cost {
+  color: green;
+}
+
+.kfc_wrapper button,
+.chicken_republic_wrapper button {
+  border-radius: 3px;
+  border: 1px solid red;
+  padding: 7px 22px;
+  background-color: white;
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
 }
