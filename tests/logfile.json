@@ -43,7 +43,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
               "uuid": "b7523e30-b172-4ef7-9caa-b3bd726d4578",
               "parentUUID": "6f31e55f-5816-43b6-bd39-6ac3ff8ceef3",
@@ -198,8 +198,8 @@
               "skipped": false
             },
             {
-              "title": "test case: assert image amount is 9",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
               "duration": 9,
               "state": "passed",
@@ -227,7 +227,6 @@
             "e223eb31-1ac9-45f8-a633-b832455cb0df",
             "180e4a6e-f405-4f8d-bb03-7938062e79d7"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 200,
