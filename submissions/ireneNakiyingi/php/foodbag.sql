@@ -7,8 +7,6 @@ CREATE TABLE customer (
   Created_At datetime ,
   PRIMARY KEY (SN)
 ); 
-
-
 INSERT INTO customer 
 ( Full_Name, Email_Address, Created_At) VALUES 
 ('Alex crew', 'a@gmail.com', now()),
