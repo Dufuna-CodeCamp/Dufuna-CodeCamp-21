@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  margin-left: 30px;
+}
+
+#header {
+  color: #ad4c4c;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+#signup-btn {
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+  padding: 7px;
+  color: #ad4c4c;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.breadcrumb h3 {
+  margin-left: 5px;
+}
+
+#home {
+  opacity: 0.3;
+}
+
+.KFC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.KFC p {
+  margin-right: 50px;
+  color: #ad4c4c;
+  font-weight: bold;
+}
+
+.KFC-logo {
+  display: flex;
+  align-items: center;
+}
+
+.KFC-logo h3 {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.KFC-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.KFC-img span {
+  color: green;
+  margin-top: 10px;
+}
+
+.yamilicious {
+  margin-right: 40px;
+}
+
+#king {
+  margin-left: 80px;
+}
+
+#chicken {
+  margin-left: 130px;
+}
+
+#burger {
+  margin-left: 130px;
+}
+
+#yam {
+  margin-left: 160px;
+}
+
+.KFC-img h3 {
+  border: 1px solid #ad4c4c;
+  font-weight: bold;
+  color: #ad4c4c;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.CR {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.CR-logo {
+  display: flex;
+  align-items: center;
+}
+
+.CR-logo h3 {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.CR p {
+  margin-right: 50px;
+  color: #ad4c4c;
+  font-weight: bold;
+}
+
+.CR-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  height: 300px;
+}
+
+.CR-img h3 {
+  border: 1px solid #ad4c4c;
+  font-weight: bold;
+  color: #ad4c4c;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.CR-img span {
+  color: green;
+  margin-top: 10px;
+}
+
+#refuel {
+  margin-left: 147px;
+}
+
+#express {
+  margin-left: 137px;
+}
+
+#citizen {
+  margin-left: 143px;
+}
+
+#wings {
+  margin-left: 125px;
+}
+
+.view {
+  display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-bar ul li a {
+    margin-right: 0px;
+  }
+
+  .KFC-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .KFC p {
+    display: none;
+  }
+
+  .CR-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+  }
+
+  .CR-logo {
+    margin-bottom: 20px;
+  }
+
+  .CR-img div {
+    margin-top: 10px;
+  }
+
+  .CR p {
+    display: none;
+  }
+
+  .view {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ad4c4c;
+    font-size: larger;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-bar ul li a {
+    margin-right: 0px;
+  }
+
+  .KFC-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .KFC p {
+    display: none;
+  }
+
+  .CR-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+  }
+
+  .CR-logo {
+    margin-bottom: 20px;
+  }
+
+  .CR-img div {
+    margin-top: 10px;
+  }
+
+  .CR p {
+    display: none;
+  }
+
+  .view {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ad4c4c;
+    font-size: larger;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .KFC-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .CR-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+  }
+
+  .view {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .KFC-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .CR-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .KFC-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .CR-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+  }
+}
