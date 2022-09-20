@@ -1,3 +1,5 @@
+/* Mobile first approach */
+/* Starting with extra small devices (phones) to extra large devices */
 * {
     box-sizing: border-box !important;
 }
@@ -89,10 +91,6 @@ label {
 
 .interest {
     margin-top: 30px;
-}
-
-.interest h4 {
-    color: #ad4c4c;
 }
 
 .interest>p:first-child {
@@ -225,7 +223,8 @@ a.red-txt {
 
 
 /* Media Query */
-@media screen and (min-width:768px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width:600px) {
     header,
     section,
     footer {
@@ -247,6 +246,22 @@ a.red-txt {
         width: 48%;
     }
 
+    /* ****************************************************************
+    ******************** Vendors Page ********************************
+    ******************************************************************/
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 48%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
     .serve-list {
         display: flex;
         gap: 40px;
@@ -271,23 +286,11 @@ a.red-txt {
     footer p{
         font-size: 16px;
     }
-
-
-    /* ****************************************************************
-    ******************** Vendors Page ********************************
-    ******************************************************************/
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .menu-item {
-        width: 48%;
-    }
 }
+    
 
-@media screen and (min-width:1400px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width:1200px) {
     .interest-list {
         flex-wrap: nowrap;
     }

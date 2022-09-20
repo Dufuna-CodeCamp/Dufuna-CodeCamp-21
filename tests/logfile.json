@@ -43,7 +43,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
               "uuid": "90fc546a-c3e9-4bce-a192-1cafa27bbdf5",
               "parentUUID": "20335ec6-6d12-454b-9642-92d523137256",
@@ -137,7 +137,25 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
+              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
+              "err": {},
+              "uuid": "e223eb31-1ac9-45f8-a633-b832455cb0df",
+              "parentUUID": "6f31e55f-5816-43b6-bd39-6ac3ff8ceef3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 9,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
               "uuid": "f2e7672a-49f6-48fa-a729-58f85cbd3cec",
               "parentUUID": "20335ec6-6d12-454b-9642-92d523137256",
@@ -152,7 +170,6 @@
             "ad8729d1-756a-45a2-ac53-93f82ecffd51",
             "f2e7672a-49f6-48fa-a729-58f85cbd3cec"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 141,
@@ -173,7 +190,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "10.0.0"
+      "version": "9.2.2"
     },
     "mochawesome": {
       "options": {
