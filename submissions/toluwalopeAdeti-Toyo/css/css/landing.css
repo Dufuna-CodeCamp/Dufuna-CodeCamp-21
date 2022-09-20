@@ -9,10 +9,10 @@ header p{
       display:flex;
 }
 #logo,
-.description p,
-label
-#container-header{
-      font-size: 20px;
+.lp-description p,
+label,
+#lp-container-header{
+      font-size: 12px;
       line-height: 30px;
 
 }
@@ -25,38 +25,33 @@ label
       font-style: normal;
 }
 nav{
-      padding-left: 450px;
+      margin-left: 5px;
 }
-
 nav li{
       text-decoration: none;
       display: inline;
-      padding: 10px;
+      padding: 8px;
       color: #696969;
-      font-size: 16px;
+      font-size: 10px;
       font-weight: 400;
-      line-height: 24px;
-      /* float: right; */
+      line-height: 15px;
 }
 nav button{
       color: #AD4C4C;
-      font-size: 16px;
+      font-size: 10px;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 15px;
       background-color: #FFFFFF;
       border: 1px solid #AD4C4C;
       height: 28px;
       width: 75px;
       border-radius: 5px;
 }
-.lp-description{
-      text-align: center;
-}
 .lp-description h1{
-      font-size: 40px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 500;
       font-style: normal;
-      line-height: 60px;
+      line-height: 24px;
       color: #4E4D4D;
 }
 .lp-description p{
@@ -64,26 +59,16 @@ nav button{
       color: #696969;
 
 }
-label{
-      font-weight: 500;
-}
 #lp-location{
       background: #FFFFFF;
-      width: 800px;
-      height: 35px;
+      width: 20em;
+      height: 2em;
       border: 1px solid #C4C4C4;
       border-radius: 5px;
 }
-#lp-container-header{
-      font-weight: 500;
-}
-.lp-box{
-      display: flex;
-      /* padding: 20px; */
-}
 .lp-box div{
-      width: 295px;
-      height: 169px;
+      width: 240px;
+      height: 130px;
       background: #FFFFFF;
       box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
       padding: 15px;
@@ -100,34 +85,37 @@ label{
       font-weight: 400;
       color: #A5A5A5;
 }
+hr{
+      width: 1px;
+      background-color: #F2F2F2;
+}
 #lp-serving-header{
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 600;
       text-align: center;
       color: #4E4D4D;
 }
-.lp-box1{
-      display: flex;
-}
 .lp-box1 div{
+      text-align: center;
       padding: 3px 10px;
       margin: 0px 10px;
 }
 .lp-box1 img{
-      height: 10em;
-      width: 15em;
+      height: 8em;
+      width: 10em;
+      text-align: center;
 }
 .lp-box1-header{
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 500;
       color: #696969;
       text-align: center;
-      line-height: 37.5px;
+      line-height: 22.5px;
 }
 .lp-box1-para{
-      font-size: 16px;
+      font-size: 10px;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 15px;
       text-align: center;
       color: #A5A5A5;
 }
@@ -135,20 +123,136 @@ label{
       text-align: center;
 }
 .lp-footer-div1 p{
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
-      line-height: 27px;
+      line-height: 24px;
       color: #696969;
 }
 .lp-footer-div2{
-      display: flex;
+      text-align: center;
 }
 .lp-footer-div2 p{
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 400;
-      line-height: 27px;
+      line-height: 18px;
       color: #696969;
 }
-#lp-footer-div2-p{
-      margin-left: 30px;
+
+@media only screen and (min-width: 768px) {
+      #logo,
+      .description p,
+      label
+      #container-header{
+            font-size: 20px;
+            line-height: 30px;
+
+      }
+      nav li{
+            text-decoration: none;
+            display: inline;
+            padding: 10px;
+            color: #696969;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+      }
+      nav{
+            padding-left: 55em;
+      } 
+      nav button{
+            color: #AD4C4C;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            background-color: #FFFFFF;
+            border: 1px solid #AD4C4C;
+            height: 28px;
+            width: 75px;
+            border-radius: 5px;
+      }
+      .lp-description{
+            text-align: center;
+      }
+      .lp-description h1{
+            font-size: 40px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 60px;
+            color: #4E4D4D;
+      }
+      .lp-description p{
+            font-weight: 400;
+            color: #696969;
+      }
+      label{
+            font-weight: 500;
+            font-size: 20px;
+      }
+      #lp-location{
+            background: #FFFFFF;
+            width: 95em;
+            height: 35px;
+            border: 1px solid #C4C4C4;
+            border-radius: 5px;
+      }
+      #lp-container-header{
+            font-weight: 500;
+            font-size: 20px;
+      }
+      .lp-box{
+            display: flex;
+      }
+      .lp-box div{
+            width: 295px;
+            height: 169px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 10px;
+      }
+      #lp-serving-header{
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            color: #4E4D4D;
+      }
+      .lp-box1{
+            display: flex;
+      }
+      .lp-box1 img{
+            height: 10em;
+            width: 15em;
+      }
+      .lp-box1-header{
+            font-size: 20px;
+            font-weight: 500;
+            color: #696969;
+            text-align: center;
+            line-height: 37.5px;
+      }
+      .lp-box1-para{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            color: #A5A5A5;
+      }
+      .lp-footer-div1 p{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            color: #696969;
+      }
+      .lp-footer-div2{
+            display: flex;
+      }
+      .lp-footer-div2 p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            color: #696969;
+      }
+      #lp-footer-div2-p{
+            margin-left: 30em;
+      }
 }
