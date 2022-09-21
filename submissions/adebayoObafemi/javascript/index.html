@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Price</title>
+</head>
+<body>
+
+    <script>
+        var productList = [
+  (cloth = {
+    productName: "Shirt",
+    imageUrl: "www.google.com",
+    productPrice: `$50`,
+  }),
+
+  (shoe = {
+    productName: "Broggue",
+    imageUrl: "www.google.com",
+    productPrice: `$100`,
+  }),
+
+  (watch = {
+    productName: "Smartwwatch",
+    imageUrl: "www.google.com",
+    productPrice: `$150`,
+  }),
+];
+
+for (let i = 0; i < productList.length; i++) {
+  document.write(
+    productList[i].productName +
+      " with " +
+      productList[i].imageUrl +
+      " is sold for " +
+      productList[i].productPrice
+  )
+  document.write("<br><br>");
+}
+    </script>
+</body>
+</html>
