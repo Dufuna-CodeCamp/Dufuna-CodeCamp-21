@@ -17,16 +17,20 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
     .container{
         align-items: center;
         justify-content: center;
         margin: 0;
         padding: 5px;
     }
+    .main{
+        margin: 0 20px;
+    }
     .header{
         font-size: 15px;
         display: flex;
+        flex-direction: row;
         width: 100%;
     }
     .header .logo{
@@ -52,12 +56,20 @@ header {
         padding: 20px;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
     .container{
         align-items: center;
         justify-content: center;
         margin: 0;
-        padding: 5px;
+        padding: 0;
+    }
+    .main{
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        margin: 0 -25px;
     }
     .header{
         font-size: 15px;
@@ -195,7 +207,7 @@ hr {
     font-size: 25px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
     .box {
         display: flex;
         flex-wrap: wrap; 
