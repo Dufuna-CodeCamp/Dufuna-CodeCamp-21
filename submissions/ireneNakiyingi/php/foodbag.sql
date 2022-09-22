@@ -12,7 +12,6 @@ INSERT INTO customer
 ('Alex crew', 'a@gmail.com', now()),
 ('parker tee', 'p@gmail,com',now())
 ;
-select * from customer;
 INSERT INTO customer 
 ( Full_Name, Email_Address, Created_At) VALUES 
 ('Betty White', 'bw@gmail.com', now()),

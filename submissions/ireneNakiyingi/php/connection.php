@@ -8,7 +8,7 @@ try{
      $username,$password);
     $connect->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $connect->exec("use food_bag");
-    echo "Success.";
+    echo "Successful.";
 } catch(PDOException $e){
     die ("ERROR: Could not connect. " . $e->getMessage());
 };
