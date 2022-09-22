@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../CSS/vendors.css">
+  <link rel="stylesheet" href="./vendors.css">
 </head>
 
 <body>
@@ -18,9 +18,9 @@
     <nav>
       <div class="nav-heading">Food<span class="nav-heading-span">Bag</span></div>
       <ul class="nav-list">
-        <li class="nav-items"><a class="nav-link" href="#">Cart</a></li>
+        <li class="nav-items"><a class="nav-link" id="cart" href="#">Cart</a><img src="./images/Elipses (2).svg" alt="Elipses" class="cart-dot"></li>
         <li class="nav-items"><a class="nav-link" href="#">Login</a></li>
-        <li class="nav-items"><button>Sign Up</button></li>
+        <li class="nav-items"><button>Sign up</button></li>
       </ul>
     </nav>
 
@@ -29,7 +29,7 @@
   <main>
 
     <div class="home-div">
-      <div><a href="#"><span class="home-link">Home</span> <span class="vendor-link"> &#62; Vendors</span></a></div>
+      <div><a href="#"><span class="home-link">Home &#62;</span> <span class="vendor-link">Vendors</span></a></div>
     </div>
 
     <div class="bigheading">
@@ -43,7 +43,7 @@
         <img class="vendor-image" src="../CSS/images/KFC logo.svg" alt="KFC">
         <div class="vendor-text">
           <div class="brand-name">KFC</div>
-          <div class="view-section">View all</div>
+          <div class="view-section1">View all</div>
         </div>
 
       </div>
@@ -92,6 +92,8 @@
           </button>
         </div>
 
+        <div class="view-section2">View all</div>
+
       </div>
 
     </section>
@@ -104,7 +106,7 @@
         <img class="vendor-image" src="../CSS/images/Chicken republic_logo.svg" alt="chicken republic logo">
         <div class="vendor-text">
           <div class="brand-name">Chicken Republic</div>
-          <div class="view-section">View all</div>
+          <div class="view-section1">View all</div>
         </div>
 
       </div>
@@ -152,6 +154,7 @@
             Add to Cart
           </button>
         </div>
+        <div class="view-section2">View all</div>
 
       </div>
 
@@ -159,6 +162,7 @@
 
   </main>
 
+  <script src="../DOM/vendorspage.js"></script>
 </body>
 
 </html>
