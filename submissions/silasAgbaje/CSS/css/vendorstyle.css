@@ -122,4 +122,21 @@ li, a {
         text-align: center;
         justify-content: center;
     }
+    
+  /* Tablets Screen */
+  
+ @media screen and (min-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: medium;
+    }
+    p, span {
+        font-size: medium;
+    }
+
+    .vendor img {
+        width: 35px;
+    }
 }
