@@ -1,4 +1,4 @@
-@media only screen and (max-width:600px) {
+/* @media only screen and (max-width: 600px) { */
       body{
             background-color: white;
             padding: 20px;
@@ -10,11 +10,11 @@
             display:flex;
       }
       #logo,
-      .description p,
+      .vp-description p,
       label
-      #container-header{
-            font-size: 20px;
-            line-height: 30px;
+      #vp-container-header{
+            font-size: 16px;
+            line-height: 24px;
       
       }
       #logo{
@@ -26,7 +26,7 @@
             font-style: normal;
       }
       nav{
-            padding-left: 450px;
+            padding-left: 85px;
       }
       
       nav li{
@@ -34,16 +34,15 @@
             display: inline;
             padding: 10px;
             color: #696969;
-            font-size: 16px;
+            font-size: 10px;
             font-weight: 400;
-            line-height: 24px;
-            /* float: right; */
+            line-height: 15px;
       }
       nav button{
             color: #AD4C4C;
-            font-size: 16px;
+            font-size: 10px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 15px;
             background-color: #FFFFFF;
             border: 1px solid #AD4C4C;
             height: 28px;
@@ -51,7 +50,7 @@
             border-radius: 5px;
       }
       .vp-container{
-            display: flex;
+            display: block;
       }
       #vp-box1-home,
       #vp-box1-vendor{
@@ -66,35 +65,36 @@
             color: #000000;
       }
       .vp-box1 h1{
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 500;
-            line-height: 45px;
+            line-height: 30px;
       }
       .vp-container-image{
             height: 50px;
             width: 35px;
       }
       .vp-container-header{
-            /* font-size: 20px; */
             font-weight: 500;
-            /* line-height: 30px; */
+            display: inline;
       }
       .vp-cont-p{
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
             margin-left: 40em;
+            float: calc();
             color: #AD4C4C;
       }
       .vp-container-box{
             padding: 10px;
       }
       .vp-container-box img{
-            height: 8em;
-            width: 11em;
+            height: 150px;
+            width: 320px;
       }
       .vp-container-box-para{
             display: flex;
+
       }
       .vp-container-box-para p{
             font-size: 12px;
@@ -122,7 +122,7 @@
             margin-left: 35em;
       }
       
-}
+/* } */
 
 /* body{
             background-color: white;
