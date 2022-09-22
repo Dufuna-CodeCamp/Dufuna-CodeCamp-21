@@ -1,9 +1,10 @@
 <?php
 require_once("connection.php");
 try{
-    $sql = "SELECT SN, Full_Name, Email_Address, Created_At FROM customer ";
-    $pdoresult = $connect->query($sql);
     $customer_data = array();
+    $sql = "SELECT SN, Full_Name, Email_Address, Created_At FROM customers ";
+    $pdoresult = $connect->query($sql);
+    
     if (isset($_COOKIE["CUSTOMERS"])){
         $customer_data= json_decode ($_COOKIE["CUSTOMERS"], true);
     } else {
@@ -28,7 +29,7 @@ try{
                     echo "<td>" . $rows['Full_Name'] . "</td>";
                     echo "<td>" . $rows['Email_Address'] . "</td>";
                     echo "<td>" . $rows['Created_At'] . "</td>";
-                    echo "<td> <button>View </button></td>";
+                    echo "<td> <button>View </button> </td>";
                 echo '</tr>';
             }
             echo '</table>';
