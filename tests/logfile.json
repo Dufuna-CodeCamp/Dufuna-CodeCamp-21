@@ -17,7 +17,6 @@
     "hasSkipped": false
   },
   "results": [
-    {
       "uuid": "42cc0e37-830e-4ddd-981f-0d3699a611a4",
       "title": "",
       "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
@@ -66,7 +65,6 @@
               "code": "driver.quit();",
               "err": {},
               "uuid": "762cb09a-cc97-49a3-be12-b3990a61960e",
-              "parentUUID": "fa272ee2-4bba-40b8-a7bb-5034707b1ccf",
               "isHook": true,
               "skipped": false
             }
@@ -114,7 +112,6 @@
             "9764076b-dd16-4f38-bf61-b1b99a509d0a",
             "ac322a24-38e2-443b-b30a-cd2d4b710016"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 655,
