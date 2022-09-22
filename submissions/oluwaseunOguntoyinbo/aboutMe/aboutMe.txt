@@ -1,3 +1,2 @@
-Hello World!
 I am Oluwaseun Oguntoyinbo.
-I am a software Engineer.
+At the end of this program, I want to be a confident full-stack developer.
