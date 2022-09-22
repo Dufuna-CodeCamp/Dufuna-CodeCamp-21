@@ -13,8 +13,99 @@ body {
 
 header {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 5px;
+    }
+    .main{
+        margin: 0 20px;
+    }
+    .header{
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .header .logo{
+        width: 25%;
+        margin-right: 40px;
+    }
+    .header .main-nav{
+        display: flex;
+        width: 75%;
+        margin: 0 ;
+        padding: 0 ;
+    }
+    .header .main-nav li{
+        float: left;
+        padding: 0 5px;
+        margin-left: 5px;
+    }
+    
+    .right{
+        text-align: center;
+    }
+    .right span{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        margin: 0 -25px;
+    }
+    .header{
+        font-size: 15px;
+        display: flex;
+        width: 100%;
+    }
+    .header .logo{
+        width: 25%;
+        font-size: 10px;
+    }
+    .header .main-nav{
+        display: flex;
+        width: 75%;
+        margin: 0 ;
+        padding: 0 ;
+    }
+    .header .main-nav li{
+        float: left;
+        padding: 0 5px;
+        margin-left: 5px;
+    }
+    .header .main-nav a{
+        font-size: 10px;
+    }
+    .header .main-nav li #sign {
+        color: maroon;
+        border: 2px solid maroon;
+        padding: 0 4px;
+        border-radius: 10px;
+    }
+    .right{
+        text-align: center;
+    }
+    .right span{
+        padding: 20px;
+    }
 }
 
 header ul li {
@@ -116,7 +207,7 @@ hr {
     font-size: 25px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
     .box {
         display: flex;
         flex-wrap: wrap; 
