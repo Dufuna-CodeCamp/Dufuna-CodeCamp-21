@@ -1,0 +1,137 @@
+body {
+    margin: 30px 20px;
+}
+
+a.vendor {
+    color: hsla(0, 0%, 79%, 1);
+    font-size: 14px;
+}
+
+a.verification {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 14px;
+}
+
+section.vendornav h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+section.vendornav h6 {
+    color: hsla(0, 39%, 49%, 1);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+section.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.address h4 {
+    font-size: 20px;
+    color: hsla(0, 0%, 0%, 1);
+    margin-top: 20px;
+}
+
+section.address h6 {
+    font-size: 16px;
+    color: hsla(0, 0%, 41%, 1);
+    margin: 10px 0 20px;
+}
+
+section.address img {
+    padding-right: 5px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input {
+    margin: 5px 0 20px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid hsla(0, 0%, 77%, 1);
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+div.cardinfo {
+    display: flex;
+    column-gap: 20px;
+}
+
+div.expiry, div.cvc {
+    width: 100%;
+}
+
+label {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 20px;
+} 
+
+button {
+    margin: 40px auto 80px;
+}
+
+input#phone {
+    margin-bottom: 30px;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+button.second {
+    display: none;
+}
+
+@media screen and (max-width: 360px) {
+    header nav div a.cart {
+        color: hsla(0, 0%, 41%, 1);
+    }
+
+    section.vendornav h4 {
+        font-size: 20px;
+    }
+
+    section.address h4 {
+        font-size: 14px;
+    }
+
+    section.address h6 {
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    input {
+        margin: 5px 0 20px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid hsla(0, 0%, 77%, 1);
+        border-radius: 5px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    header nav div a.signup {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+
+    button.first  {
+        display: none;
+    }
+
+    button.second {
+        display: flex;
+        font-family: inherit;
+    }
+}

@@ -33,18 +33,3 @@ carts.forEach((button) => {
             document.getElementById('count').style = '';
         }
     }
-    //landing page verification
-    const interest = document.querySelectorAll('.trp');
-    interest.forEach((button) => {
-        button.addEventListener('click', nextpage)
-    })
-        function nextpage(e){
-        var loc = document.getElementById('location').value;
-        if(loc == "label"){
-        alert('Please select a location');
-        e.preventDefault();
-        return false;
-        } else{
-        return true;
-    }
-}
