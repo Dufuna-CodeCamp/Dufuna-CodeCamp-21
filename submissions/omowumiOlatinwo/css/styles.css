@@ -17,6 +17,8 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+
 @media screen and (max-width: 768px) {
     .container{
         align-items: center;
@@ -150,10 +152,14 @@ header ul li a:hover {
 .location input {
     width: 100%;
     height: 50px;
-    padding: 10px;
+    padding-left: 13px;
     border-radius: 5px;
     border: 1px solid grey;
     font-size: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('images/keyboard_arrow_down.svg') no-repeat right;
 }
 
 .pick {
