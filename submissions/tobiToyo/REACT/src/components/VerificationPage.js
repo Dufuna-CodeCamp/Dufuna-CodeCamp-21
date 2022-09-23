@@ -1,3 +1,7 @@
+
+// This component is redundat. I converted it to a functional component so I could use usenavigate to go to the order success page
+
+
 import React, { Component } from "react";
 import Header from "./header";
 import Input from "./input";
@@ -5,6 +9,8 @@ import Select from "./select";
 import FullBorder from "./FullBorder";
 import './verification.css'
 import Button from "./button";
+
+
 
 
 class Verification extends Component {
@@ -22,6 +28,8 @@ class Verification extends Component {
       paymentOptions: ["Card", "Bank Transfer", "Pay On Delivery"]
     }
   }
+
+
 
   handlePhoneChange = (e) => {
     this.setState({phoneNum: e.target.value})
@@ -51,6 +59,10 @@ class Verification extends Component {
   handlePaymentChange = (e) => {
     this.setState({cvc: e.target.value})
     console.log(this.state.cvc)
+  }
+
+  handlePayment = () => {
+    this.props.navigation.navigate('/Success')
   }
 
   render(){
@@ -114,7 +126,7 @@ class Verification extends Component {
 
       </div>
 
-      <Button  className="checkout-btn" title="Pay"/>
+      <Button  className="checkout-btn" title="Pay" btnClick={this.handlePayment} />
 
     </div>
   )
