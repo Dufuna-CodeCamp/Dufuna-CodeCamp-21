@@ -1,0 +1,332 @@
+/* Mobile first approach */
+/* Starting with extra small devices (phones) to extra large devices */
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #696969;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header h2 {
+    color: #000;
+    font-size: 24px;
+}
+
+header .red-txt {
+    color: #ad4c4c;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+li a {
+    color: #696969;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav .btn,
+.menu-btn {
+    color: #ad4c4c;
+    background-color: #fff;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero {
+    padding-top: 20px;
+}
+
+.address {
+    margin-top: 30px;
+}
+
+label {
+    color: #000;
+    font-weight: 500;
+}
+
+.address input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: #696969;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid #C4C4C4;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('imgs/keyboard_arrow_down.svg') no-repeat right;
+}
+
+
+.interest {
+    margin-top: 30px;
+}
+
+.interest>p:first-child {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.interest-item {
+    padding: 20px 20px 5px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+hr {
+    border-top: 1px solid #F2F2F2;
+}
+
+.serve-you {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.serve-list h4 {
+    margin-bottom: 0;
+}
+
+.serve-list p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #A5A5A5;
+}
+
+footer {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer p {
+    font-size: 12px;
+    color: #A5A5A5;
+}
+
+footer img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-txt p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/* ****************************************************************
+******************** Vendors Page  Styles********************************
+******************************************************************/
+.vendors {
+    padding-top: 30px;
+}
+
+.vendors > P {
+    font-size: 14px;
+}
+
+.vendors > p a {
+    text-decoration: none;
+    color: #696969;
+}
+
+.black-txt {
+    color: #000;
+}
+
+.green-txt {
+    color: #5EA304 !important;
+}
+
+.vendors h3 {
+    font-weight: 500;
+    color: #000;
+    margin-top: 30px;
+}
+
+.kfc,
+.c-rep {
+    padding-top: 30px;
+    position: relative;
+}
+
+.kfc > p,
+.c-rep > p {
+    text-align: center;
+}
+
+.logo,
+.menu-item .flex {
+    display: flex;
+}
+
+.logo p {
+    margin-left: 10px;
+}
+
+.menu {
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.menu-item .flex {
+    justify-content: space-between;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.menu-item > .flex > p {
+    color: #4E4D4D;
+}
+
+.menu-item {
+    margin-bottom: 40px;
+}
+
+.menu-item > img {
+    width: 100%;
+}
+
+a.red-txt {
+    color: #ad4c4c;
+    text-decoration: none;
+}
+
+.c-rep {
+    padding-bottom: 50px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+
+/* Media Query */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width:600px) {
+    header,
+    section,
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .interest-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .interest-item {
+        width: 48%;
+    }
+
+    /* ****************************************************************
+    ******************** Vendors Page Styles********************************
+    ******************************************************************/
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 48%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .serve-list {
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+    }
+
+    .serve-list img {
+        width: 80%;
+    }
+
+    .serve-list p {
+        font-size: 16px;
+    }
+
+    .footer-txt {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+}
+    
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width:1200px) {
+    .interest-list {
+        flex-wrap: nowrap;
+    }
+    .interest-item {
+        width: 25%;
+    }
+
+    /* ****************************************************************
+    ******************** Vendors Page Styles********************************
+    ******************************************************************/
+    .menu {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 24%;
+    }
+
+    .kfc > p,
+    .c-rep > p {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+}
