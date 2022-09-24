@@ -29,7 +29,7 @@ try{
                     echo "<td>" . $rows['Full_Name'] . "</td>";
                     echo "<td>" . $rows['Email_Address'] . "</td>";
                     echo "<td>" . $rows['Created_At'] . "</td>";
-                    echo "<td> <button><a href= 'order.php?customer_order=" . ($rows['SN']) . "'> View </a> </button></td>";
+                    echo "<td> <button><a href= 'orders.php?customer_order=" . ($rows['SN']) . "'> View </a> </button></td>";
                 echo '</tr>';
             }
             echo '</table>';
