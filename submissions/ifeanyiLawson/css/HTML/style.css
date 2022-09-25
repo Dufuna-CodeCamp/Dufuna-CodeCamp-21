@@ -43,6 +43,8 @@ li a  {
 
 button {
     color: red;
+    border-color: red;
+    border-radius: 5px;
 }
 
 
@@ -149,8 +151,22 @@ span {
     color: red;
 }
 
-footer   {
+.flex   {
     display:flex;
     justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
+
+.flex img {
+    margin: 10px;
+}
+
+.terms {
+    float: left;
+}
+
+.copyright {
+    float: right;
+}
+
