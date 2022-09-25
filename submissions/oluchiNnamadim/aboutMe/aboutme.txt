@@ -1,2 +1,3 @@
 Hello World!
-I am Oluchi Nnamadim and I am a Software Engineer and Chartered Accountant
+I am Oluchi Nnamadim and I am a Software Engineer and Chartered Accountant.
+This is a brief summary about me
