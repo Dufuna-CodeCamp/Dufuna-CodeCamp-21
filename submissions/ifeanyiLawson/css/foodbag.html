@@ -25,16 +25,21 @@
     <div>
         <h2>Where are you?</h2>
         
-        <select name="address" required>
-            <option value="" disabled selected hidden>Enter your delivery address </option>
-            <option value="lagos">Lagos</option>
-            <option value="badore">Badore</option>
-            <option value="ajah">Ajah</option>
-            <option value="igando">Igando</option>
-            <option value="egeda">Egbeda</option>
-            <option value="addo">Addo</option>
-            <option value="sangotedo">Sangotedo</option>
-        </select>
+        <label for="location">Where are you?</label><br />
+        <input
+          list="location-list"
+          id="location"
+          name="location"
+          placeholder="Enter your delivery address"
+        />
+        <datalist id="location-list">
+          <option value="Ibadan">Ibadan</option>
+          <option value="Lagos">Lagos</option>
+          <option value="Abuja">Abuja</option>
+          <option value="Port Harcourt">Port Harcourt</option>
+          <option value="Kaduna">Kaduna</option>
+        </datalist>
+
     </div><br><br>
     <h3>Pick an interest</h3>
     <div class="box">
