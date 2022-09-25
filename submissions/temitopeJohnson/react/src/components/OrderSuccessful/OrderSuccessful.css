@@ -1,0 +1,49 @@
+@media only screen and (min-width: 992px) {
+    .Success {
+        margin: 15vh 30vw;
+    }
+
+    .SuccessImg {
+        height: 30vh;
+    }
+
+    .SuccessTxt {
+        margin-top: 1.5vh;
+        color: #5EA304;
+        font-size: 3vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .SuccessSubTxt {
+        color: #696969;
+        font-size: 2vh;
+        font-family: 'Poppins', sans-serif;
+        width: 15vw;
+        margin: 1vh auto 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .Success {
+        margin: 15vh 20vw;
+    }
+
+    .SuccessImg {
+        height: 30vh;
+    }
+
+    .SuccessTxt {
+        margin-top: 1.5vh;
+        color: #5EA304;
+        font-size: 2vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .SuccessSubTxt {
+        color: #696969;
+        font-size: 1.5vh;
+        font-family: 'Poppins', sans-serif;
+        width: 25vw;
+        margin: 1vh auto 0;
+    }
+}
