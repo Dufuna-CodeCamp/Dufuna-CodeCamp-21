@@ -1,0 +1,35 @@
+body{
+    margin-left: 2px;
+}
+h4{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-top: 18px;
+}
+ul{
+    width: auto;
+    float: right;
+    margin-top: 2px;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+ .head{
+    margin-left: 40%;
+ }
+
+.st{
+    margin-left:-8%;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+}
