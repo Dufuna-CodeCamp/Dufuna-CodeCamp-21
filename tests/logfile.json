@@ -5,9 +5,16 @@
     "passes": 18,
     "pending": 0,
     "failures": 0,
+
     "start": "2022-09-27T10:15:28.648Z",
     "end": "2022-09-27T10:15:43.950Z",
     "duration": 15302,
+
+
+    "start": "2022-09-26T23:26:17.648Z",
+    "end": "2022-09-26T23:26:25.545Z",
+    "duration": 7897,
+
     "testsRegistered": 18,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -463,3 +470,6 @@
     }
   }
 }
+
+}
+
