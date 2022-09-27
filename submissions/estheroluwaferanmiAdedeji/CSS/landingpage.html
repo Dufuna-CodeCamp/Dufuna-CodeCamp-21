@@ -39,7 +39,19 @@
       </div>
 
       <h4 class="select-1">Where are you?</h4>
-      <input list="locations" name="location" id="location" placeholder="Enter your delivery address">
+      <select class="select" name="">
+        <option value="placeholder" class="placeholder" selected>
+          Enter your delivery address
+        </option>
+        <option value="Ibadan">Ibadan</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Ife">Ife</option>
+        <option value="Akure">Akure</option>
+        <option value="Ado-Ekiti">Ado-Ekiti</option>
+        <option value="Abuja">Abuja</option>
+        <option value="Ilorin">Ilorin</option>
+      </select>
+      <!-- <input list="locations" name="location" id="location" placeholder="Enter your delivery address">
         <datalist id="locations">
           <option value="Ibadan"></option>
           <option value="Lagos"></option>
@@ -48,7 +60,7 @@
           <option value="Akure"></option>
           <option value="Abuja"></option>
           <option value="Ilorin"></option>
-        </datalist>
+        </datalist> -->
      
 
       <div class="section-1">
@@ -56,31 +68,35 @@
         
         <div class="food-selection-container">
           <div class="food-selection">
-            <img src="./images/fast-food_disabled.svg" alt="">
+            <img src="./images/fast-food_disabled.svg" alt="" class="foodimg">
             <h5 class="food-selection-header">Fast food</h5>
             <p class="food-selection-text">All sorrows are less with bread.</p>
           </div>
   
           <div class="food-selection">
-           <img src="./images/Vegetables _ Drinks_disabled.svg" alt="">
+           <img src="./images/Vegetables _ Drinks_disabled.svg" alt="" class="foodimg">
             <h5 class="food-selection-header">Vegetables & Fruits</h5>
             <p class="food-selection-text">May not want it, but good for you.</p>
           </div>
   
           <div class="food-selection">
-           <img src="./images/Drinks _ Cocktails_disabled.svg" alt="">
+           <img src="./images/Drinks _ Cocktails_disabled.svg" alt="" class="foodimg">
             <h5 class="food-selection-header">Drinks & Cocktails</h5>
             <p class="food-selection-text">I feel sad for those who don't drink.</p>
           </div>
   
           <div class="food-selection">
-           <img src="./images/resturant_disabled.svg" alt="">
+           <img src="./images/resturant_disabled.svg" alt="" class="foodimg">
             <h5 class="food-selection-header">Restaurants</h5>
             <p class="food-selection-text">All sorrows are less with bread.</p>
           </div>
         </div>
 
+
       </div>
+
+
+      
  
       <hr>
     
@@ -129,5 +145,7 @@
         <p>&#169; Copyright 2021 FoodBag is a registered trademark</p>
       </div>
     </footer>
+
+<script src="../DOM/landingpage.js"></script>
 </body>
 </html>

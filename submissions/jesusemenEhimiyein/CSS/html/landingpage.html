@@ -26,7 +26,14 @@
 </section>
 <section class="location">
     <h3 class="main-quest">Where are you?</h3>
-    <input type="text" name=""  value="Surulere" class="text-field" placeholder="Surulere" size="192"/>
+    <select name="addy" class="addbar" id="area">
+ <option value="locate">Select a Location</option>
+   <option value="Victoria Island">Victoria Island</option>
+   <option value="Surulere">Surulere</option>
+   <option value="Lekki">Lekki </option>
+   <option value="Gbagada">Gbagada</option>
+    </select>
+    <!-- <input type="text" name=""  value="Surulere" class="text-field" placeholder="Surulere" size="192"/> -->
 
 </section>
 
@@ -36,23 +43,24 @@
     </div>
     <div class="card-one">
         <div class="menu">
-            <div><img src="../images/fast-food.svg" /></div> 
+            <img class="menuImg" src="../images/fast-food.svg" />
             <div class="food-name"><h4>Fast food</h4></div>
              <div class="message"><p>All sorrows are less with bread</p></div>
 
         </div>
         <div class="menu">
-            <div><img src="../images/Vegetables _ Drinks.svg" /></div> 
+            <img class="menuImg" src="../images/Vegetables _ Drinks.svg" /> 
             <div class="food-name"><h4>Vegetables</h4></div>
             <div class="message"><p>May not want it, but good for you.</p></div> 
         </div>
+        
         <div class="menu">
-             <div><img src="../images/Drinks _ Cocktails.svg " /></div> 
+             <img class="menuImg" src="../images/Drinks _ Cocktails.svg " /> 
              <div class="food-name"><h4>Drinks & Cocktails</h4></div>
              <div class="message"><p>I feel sad foe those dont drink</p></div>  
         </div>
         <div class="menu">
-             <div><img src="../images/resturant.svg" /></div> 
+             <img class="menuImg" src="../images/resturant.svg" /> 
              <div class="food-name"><h4>Restaurants</h4></div>
              <div class="message"><p>All sorrows are less with bread.</p></div>  
         </div>
@@ -92,7 +100,7 @@
 
 
 </div>
-    
+<script src="../../dom/landing.js"></script>
 </body>
 
 </html>

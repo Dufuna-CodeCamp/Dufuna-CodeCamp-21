@@ -2,6 +2,15 @@ a {
     text-decoration: none;
     color: grey;
 }
+#cart5k, #cart5k2, #cart5k3{
+    margin-top: 28px;
+}
+.cartjs{
+    width: 50%;
+}
+.topp{
+    margin-top: 40px;
+}
 #class {
     margin-left: -90px;
 }
@@ -79,6 +88,19 @@ button {
 }
 button:hover {
     background: darkorange;
+    cursor: pointer;
+}
+.button {
+    border-color: red;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: lighter;
+    padding: 10px;
+    margin-top: 40px;
+}
+.button:hover {
+    background: darkorange !important;
+    cursor: pointer;
 }
 .logo {
     margin: 10px;
@@ -206,7 +228,7 @@ span {
 .secheight {
     margin-top: ;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
     .invc, .hidviewall {
         display: none;
     }
@@ -224,7 +246,7 @@ span {
         display: none;
     }
     #hr {
-        margin-top: 500px;
+        margin-top: 550px;
     }
     #hre {
         margin-top: 450px;
