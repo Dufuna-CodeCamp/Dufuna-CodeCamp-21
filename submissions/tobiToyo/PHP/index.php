@@ -1,34 +1,4 @@
-<?php 
-echo "Unit Converter <br><br>";
 
-echo "Kilos to Pounds function <br><br>";
-
-function kiloToPounds ($kilo) {
-  $pound = $kilo * 2.20462262185;
-  echo "$kilo kg = $pound lbs <br><br><br>";
-}
-
-kiloToPounds(30);
-
-
-echo "Meters to Yards <br><br>";
-
-function metersToYards ($meter) {
-  $yard = $meter * 1.0936132983;
-  echo "$meter m = $yard yards <br><br><br>"  ;
-}
-
-metersToYards(5);
-
-
-function celciusToF ($celc) {
-  $fare = ($celc * 9)/5 + 32;
-  echo "$celc Celcius = $fare Fahrenheit <br>";
-}
-
-celciusToF(100);
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +9,21 @@ celciusToF(100);
   <title>PHP Module</title>
 </head>
 <body>
+  <form action="unit-converter.php" method="post">
+    <label for="kilotop"> Convert from Kilos to Pounds  </label> <br>
+    <input type="number" name="kilotop" id="">
+    <br> <br>  
+    <label for="metertoy"> Convert from Meters to Yards  </label> <br>
+    <input type="number" name="metertoy" id="">
+    <br> <br>
+    <label for="celciustof"> Convert from Celcius to Fahrenheit  </label> <br>
+    <input type="number" name="celciustof" id="">
+
+    <br> <br>
+    <input type="submit" value="Convert">
+
+  </form>
+
   <br>
    <a href="weather.php">Check The Weather Here </a>
 </body>
