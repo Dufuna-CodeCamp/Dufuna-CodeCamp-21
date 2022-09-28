@@ -8,3 +8,5 @@
     echo "My name is $names[$a]. I love $hobby[$a]. <br>";
   }
 ?>
+
+<!-- No html here -->
