@@ -18,9 +18,12 @@ body {
     text-decoration: none;
     color: black;
 }
-.bag {
+#bag {
     color: red;
     
+}
+.food {
+    font-weight: bold;
 }
 
 span {
@@ -28,26 +31,12 @@ span {
     float: right;
 }
 
-
-nav li, 
-    #btn {
-    display: inline;
-    float: right;
-    text-align: center;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    float: left;
-}
-
-#btn {
-    float: right;
-    display: inline-block;
-}
 
 .view {
     text-decoration: none;
@@ -93,3 +82,5 @@ a {
 hr {
     border: solid 1px hsla(0, 0%, 90%, 1);
 }
+
+
