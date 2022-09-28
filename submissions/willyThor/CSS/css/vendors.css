@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
 }
+html {
+  box-sizing: border-box;
+  font: 'Poppins', sans-serif ;
+  font-style: normal;
+}
+
 body {
     max-width: 1240px;
     margin: 0 auto;
+    width: 100%;
     font-family: poppins;
     padding: 10px;
 }
@@ -12,56 +19,84 @@ a {
   color: rgba(105, 105, 105, 1);
 
 }
-ul, ol {
-  list-style-type: none;
-}
-.foodbag-head li {
-  display:inline-grid;
-  padding: 5px 10px;
-  font-weight: regular;
-  float: right;
 
-}
- li {
+li {
   display:inline-grid;
   padding: 0;
 }
+
 .foodbag-head {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
   font-size:20px;
-  font-weight: medium;
+  font-weight: 500px;
   margin-top: 80px;
+
 }
 
- span {
+.foodbag-head #right {
+  font: 20px 'Poppins', sans-serif;
+  font-weight: regular;
+
+}
+
+ #login {
+  padding: 20px;
+}
+
+#foodbag {
+  font: 20px 'Poppins', sans-serif;
+  font-weight: 500;  
+}
+#cart {
+  display: inline-flex;
+}
+
+#dot {
+    display: none;
+    border-radius: 50%;  
+    width: 9px;
+    height: 9px;
+    background: #AD4C4C;
+  
+} 
+ span, #signup {
  color:#AD4C4C;
- font-family: Poppins;
+ font:20px 'Poppins', sans-serif;
  font-weight: 500;
  text-align: center; 
 
 }
-#view {
+#view, #view2 {
  color:#AD4C4C;
- font-family: Poppins;
+ font: 18px 'Poppins', sans-serif;
  font-weight: 500;
- float: right;
- margin-top: 10px;
- width: fit-content;
- padding-top: 20px;
  
 }
- .foodbag-head .signup {
+.view2 {
+  text-align: center;
+  display: none;
+}
+#signup {
   border: 1px solid #AD4C4C;
   border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
 }
 #kfc-vendor  {
   margin-bottom: 60px;
   }
 .head {
-  padding-top: 20px;
+  font:16px 'Poppins', sans-serif;
+  display: inline-block;
+  flex-wrap: wrap;
+  line-height: 21px;
+  margin-top: 40px;
 }
-
 .head p {
-  display: contents;
+  display: inline-block;
   flex-wrap: wrap;
   line-height: 21px;
 }
@@ -78,77 +113,98 @@ ul, ol {
 
 #allvendors {
   color: #000000;
-  font-size: 30px;
+  font: 30px 'Poppins', sans-serif;
   line-height: 45px;
   font-weight: medium;
   margin-top: 33px;
 }
 
- .kfc-header img, .chickrep-header img  {
+#cap  {
   width: 50px; 
   height: 50px;
   left: 69px;
   top: 297px;
+  padding-right: 5px;
 } 
 
-.kfc-header div, .chickrep-header div  {
-  display: inline;
-  font-weight:medium;
-  flex-wrap: wrap;
-  font-size:20px;
-  height: 30px;
-  width: 39px;
-  left: 171px;
-  top: 325px;
-  margin-bottom: 60px;
+.kfc-header, .chickrep-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
 }
-
-
-
+.logo {
+  display: flex;
+  align-items: center;
+  font:20px 'Poppins', sans-serif;
+   
+}
 #interest {
+ font: 16px 'Poppins', sans-serif;
  font-weight: 600;
  line-height: 24px;
  color: #4E4D4D;
- padding: 10px 0 20px;
- 
+ margin-top: 15px;
+ margin-bottom: 15px;
+
  }
  
 #price {
   color: #5EA304;
   font-weight: 600;
   float: right;
+   
 }
 
-.food-items .signup {
+.food-items .add {
+  display:inline-flex;
+  background-color: #fff;
   height: 40px;
-  width: 50%;
+  width: 138px;
   left: 420px;
   top: 604px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid #AD4C4C;
-  padding: 10px 0 20px;
- /* border-width: fit-content;*/
- align-content: center;
-} 
-
-.food-items span {
-  font-weight: 600px;
+  cursor: pointer;
+  font: 14px 'Poppins', sans-serif;
   color:#AD4C4C;
+  padding: 10px 25px;
   
+  
+} 
+#remove {
+  display: none;
+  width: 138px;
+  height: 40px;
+  left: 735px;
+  top: 1060px;
+  background: #A5A5A5;
+  border: 1px solid #A5A5A5;
+  border-radius: 3px ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px 'Poppins', sans-serif;
+  line-height: 24px;
+  color: white;
+  align-items: center;
+  cursor: pointer; 
+
 }
+#remove img {
+  padding: 3px;
+}
+
+
 #chicken-republic {
   margin-top: 40px;
 }
 
-.chickrep-header, .kfc-header {
-  margin-bottom: 30px;
-  
-}
 @media screen and (max-width:650px)  {
    .foodbag-head {
       font-size: 18px;
       }
-   .foodbag-head li {
+   #right {
         font-size: 18px;
         letter-spacing: 0;
        }
@@ -158,7 +214,7 @@ ul, ol {
     #allvendors {
       font-size: 25px;
     }
-     .logo img{
+     #cap{
       width: 40px;
       height: 40px;
     }
@@ -175,7 +231,7 @@ ul, ol {
    .foodbag-head {
       font-size: 16px;
       }
-   .foodbag-head li {
+   #right {
         font-size: 14px;
         letter-spacing: 0;
        }
@@ -187,8 +243,16 @@ ul, ol {
     }
 	li {
       display:inline-grid;
-       padding:0;
+      padding:0;
     }
+  #view{
+      display: none;
+
+    }
+  .view2{
+      display: block;
+    }
+    
    
 } 
 

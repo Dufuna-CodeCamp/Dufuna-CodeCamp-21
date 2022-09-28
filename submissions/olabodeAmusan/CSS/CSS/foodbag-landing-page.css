@@ -46,6 +46,7 @@ a:link{
 a:visited{
     color:#696969;
 }
+
 a:hover,
 a:hover p,
 a:hover p:last-child{
@@ -103,19 +104,17 @@ input{
     background-repeat: no-repeat;
     background-position: right;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
     color: #696969;
+    cursor: pointer;
 }
 
 input[type='text']{
     padding-left: 10px;
 }
 
-.fast-food,
-.veg-fruits,
-.drinks,
-.resturant{
+.food{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -129,10 +128,19 @@ input[type='text']{
     color: #A5A5A5;
 }
 
-.fast-food p:last-child,
-.veg-fruits p:last-child,
-.drinks p:last-child,
-.resturant p:last-child{
+.red,
+.error-message{
+
+    color: #AD4C4C;
+    font-size: 10px;
+    padding: -5px;
+}
+
+.gray{
+    color: #A5A5A5;
+}
+
+.food p:last-child{
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -424,6 +432,13 @@ input[type='text']{
         width: 10%;
         height: 30%;
     }
+
+    .red,
+    .error-message{
+        color: #AD4C4C;
+        font-size: 12px;
+        padding: -5px;
+    }
     
     .container-1{
         display: grid;
@@ -488,10 +503,7 @@ input[type='text']{
         line-height: 30px;
         color: black;
     }
-    .fast-food,
-    .veg-fruits,
-    .drinks,
-    .resturant{
+    .food{
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
@@ -507,6 +519,12 @@ input[type='text']{
     .image img{
         width: auto;
         height: auto;
+    }
+    .red,
+    .error-message{
+        color: #AD4C4C;
+        font-size: 14px;
+        padding: -5px;  
     }
 
     .container-1{
