@@ -11,6 +11,11 @@ h1 {
   margin-left: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 span {
   color: #ad4c4c;
   margin-right: 20px;
@@ -86,6 +91,7 @@ h3 {
   padding: 10px;
   padding-left: 20px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .vegetables-img {
@@ -96,6 +102,7 @@ h3 {
   padding: 10px;
   padding-left: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .cocktails-img {
@@ -106,6 +113,7 @@ h3 {
   padding: 10px;
   padding-left: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .restaurant-img {
@@ -116,6 +124,7 @@ h3 {
   padding: 10px;
   padding-left: 20px;
   margin-left: px;
+  cursor: pointer;
 }
 
 .container-3 {
