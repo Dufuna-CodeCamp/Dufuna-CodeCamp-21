@@ -10,8 +10,12 @@
       elseif ($temp >= 30 && $temp < 40) {
         echo "It's so hot today.";
       }
+
+      elseif ($temp >= 40) {
+        echo "Am I in Sahara Desert?<br>";
+      }
       else {
-        echo "Am I in Sahara Desert?!<br>";
+        echo "Please enter the day's temperature<br>";
       }
     }
 
@@ -46,7 +50,7 @@
   </form>
 
 <br>
-    <a href="hobby-arrays.php">Find out about hobbies here</a>
+    
 
 </body>
 </html>
