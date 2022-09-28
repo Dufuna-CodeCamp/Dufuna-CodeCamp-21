@@ -36,7 +36,7 @@
   <form  method="post">
     <label for="temperature">Enter Your Temperature </label>
     <br><br>
-    <input type="number" name="temperature" id="">
+    <input type="number" name="temperature" id="">°C
     <br><br>
     <?php
        $temp = $_POST["temperature"];
