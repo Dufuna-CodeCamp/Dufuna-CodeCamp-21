@@ -46,7 +46,6 @@
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
               "uuid": "8885799d-c33c-4bd7-bd31-63e0331fbd06",
-              "parentUUID": "26d34c33-7995-48bf-b13e-3afd42b9ac63",
               "isHook": true,
               "skipped": false
             }
@@ -122,7 +121,6 @@
               "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
               "err": {},
               "uuid": "12b0934e-32aa-441a-97b1-72b58a0c366e",
-              "parentUUID": "26d34c33-7995-48bf-b13e-3afd42b9ac63",
               "isHook": false,
               "skipped": false
             },
@@ -189,7 +187,6 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
