@@ -41,6 +41,14 @@ li{
 }
 
 @media screen and (max-width: 600px) {
+    
+    ul{
+        margin-top: 3%;
+    }
+    li{
+        padding: 5px;
+    }
+    
     .first, .second{
         display:block;
     }
@@ -74,8 +82,8 @@ li{
 
 }
 
-@media screen and (max-width:800px) {
-     
+@media screen and (min-width: 800px) {
+    
     header{
         height: 70px;
     }
@@ -99,19 +107,10 @@ li{
     .first{
         display: flex;
     
-    }
-    
-    .img1{
-        padding: 100px;
-        margin-top: -4%;
-    }
-    .second{
-        display: flex;
     }
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1200px) {
     header{
         height: 70px;
     }
@@ -135,13 +134,5 @@ li{
     .first{
         display: flex;
     
-    }
-    
-    .img1{
-        padding: 100px;
-        margin-top: -4%;
-    }
-    .second{
-        display: flex;
     }
 }
