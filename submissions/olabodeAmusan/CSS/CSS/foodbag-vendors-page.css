@@ -26,6 +26,43 @@ nav li {
     line-height: 15x;
     color: #696969;
 }
+
+.remove{
+    align-items: center;
+    color: #E6E6E6;
+    float: left;
+    display: inline-flex;
+    margin: -8px 0 -10px 5px;
+}
+
+.change{
+    font-size: 16px;
+    font-weight:500;
+    color: #E6E6E6;
+    background-color:#A5A5A5;
+    align-content: center;
+    width: 138px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.dot{
+    position: relative;
+}
+
+.dot::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #AD4C4C;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
 .botton{
     font-weight: 500;
     font-size: 10px;
@@ -165,8 +202,7 @@ a:hover p:last-child{
     display: flex;
 }
 
-.kfc button,
-.chicken button{
+.button{
     width: 138px;
     height: 40px;
     background: #FFFFFF;
