@@ -342,8 +342,8 @@ body{
                   margin-left: 40em;
                   color: #AD4C4C;
                   position: relative;
-                  /* bottom: 62em;
-                  right: 23em; */
+                  top: 4px;
+                  right: 3px;
             }
             .vp-container-box{
                   padding: 10px;
