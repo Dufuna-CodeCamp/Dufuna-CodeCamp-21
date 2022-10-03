@@ -1,9 +1,9 @@
 {
-<<<<<<< HEAD
-=======
+ vendor
+HEAD
   "stats": {
 
->>>>>>> d80baed772c0757279b1058eb97b4ba61aeb36b5
+ d80baed772c0757279b1058eb97b4ba61aeb36b5
     "suites": 1,
     "tests": 1,
     "passes": 1,
@@ -268,14 +268,21 @@
       },
       "version": "6.2.0"
     }
-<<<<<<< HEAD
-=======
+ HEAD
+
 
     "tests": 4,
     "passes": 4,
     "failures": 0,
     "owner": "kivumbiGeorge"
 
->>>>>>> d80baed772c0757279b1058eb97b4ba61aeb36b5
+ d80baed772c0757279b1058eb97b4ba61aeb36b5
+
+  "stats": {
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "owner": "abiodunFatomi"
+ master
   }
 }
