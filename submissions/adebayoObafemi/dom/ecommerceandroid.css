@@ -168,7 +168,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px 20px;
         justify-content: space-between;
-        margin: 10px 0 50px 0;
+        margin: 10px 0 50px;
     }
     
     section.interest div {
@@ -187,7 +187,7 @@ section.interest div p {
 
     section.serve h3 {
         font-size: 24px;
-        margin: 15px 0 8px 0;
+        margin: 15px 0 8px;
     }
 
     section div.serve {
