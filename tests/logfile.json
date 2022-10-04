@@ -1,4 +1,282 @@
 {
+ vendor
+HEAD
+  "stats": {
+
+ d80baed772c0757279b1058eb97b4ba61aeb36b5
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-01T15:38:16.658Z",
+    "end": "2022-09-01T15:38:31.506Z",
+    "duration": 14848,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb102a29-7132-4a25-97f3-59f6d8a45b20",
+      "title": "",
+      "fullFile": "C:\\Users\\Seed\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+      "file": "\\navigation_tasks.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+
+          "uuid": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "C:\\Users\\Seed\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+          "file": "\\navigation_tasks.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "timedOut": false,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "err": {},
+              "uuid": "9b94cc68-1c25-4e89-8f00-18c745545b94",
+              "parentUUID": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "timedOut": false,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit()",
+              "err": {},
+              "uuid": "c571958a-42b6-4216-8bda-dcb29335d6cc",
+              "parentUUID": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "timedOut": false,
+              "duration": 213,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "err": {},
+              "uuid": "8c0a8e8f-f8fe-463f-adbd-6e2fadebdda9",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "timedOut": false,
+              "duration": 36,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
+              "err": {},
+              "uuid": "ed67935a-0433-449c-891e-c056ace4f52f",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+              "title": "test case: FoodBag text is present on the page",
+              "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
+              "timedOut": false,
+              "duration": 45,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
+              "err": {},
+              "uuid": "8582e406-f531-4604-83a6-d7454cc8d62e",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+              "title": "test case: check Login",
+              "fullTitle": "Testing Scholars Project test case: check Login",
+              "timedOut": false,
+              "duration": 35,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
+              "err": {},
+              "uuid": "e5abcc39-d08d-435c-9dab-602b66e8866d",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check Cart",
+              "fullTitle": "Testing Scholars Project test case: check Cart",
+              "timedOut": false,
+              "duration": 35,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {},
+              "uuid": "9e6a1656-bbe5-4268-a808-9a2eb77f3251",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 34,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
+              "err": {},
+              "uuid": "7bc7221f-4e7e-4fad-a1fb-d16bf125da9b",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check page text",
+              "fullTitle": "Testing Scholars Project test case: check page text",
+              "timedOut": false,
+              "duration": 15,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
+              "err": {},
+              "uuid": "2818b9c6-6ad2-4c3d-8b21-8efccc8d47c3",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 9",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
+              "timedOut": false,
+              "duration": 15,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
+              "err": {},
+              "uuid": "10c6eea0-108d-4ce4-92bd-62b23a2ef634",
+              "parentUUID": "00154974-7a64-401f-82c4-3fdba825888c",
+      "uuid": "f12f5346-85df-4310-a18f-21722bda3e04",
+              "parentUUID": "9fa18b0c-df55-47c6-b7f5-d4153c274918",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f12f5346-85df-4310-a18f-21722bda3e04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 213,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/Seed/desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
+ HEAD
+
+
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "kivumbiGeorge"
+
+ d80baed772c0757279b1058eb97b4ba61aeb36b5
   "stats": {
     "suites": 1,
     "tests": 3,
@@ -176,5 +454,6 @@
       },
       "version": "6.2.0"
     }
+
   }
 }
