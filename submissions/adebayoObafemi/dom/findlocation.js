@@ -1,53 +1,33 @@
-let address = document.getElementById('location');
-let locations = document.querySelector('datalist');
+let address = document.getElementById('location-list');
+let locations = document.querySelector('select');
 let redirect = document.querySelectorAll("div.recipe");
-let changeColor = document.getElementById("location").placeholder;
-let color = document.getElementById("location")
-
-// console.log(changeColor2)
 
 let locationChoice = [
-    locations.options[0].text,
     locations.options[1].text,
     locations.options[2].text,
     locations.options[3].text,
-    locations.options[4].text
+    locations.options[4].text,
+    locations.options[5].text
 ]
-
-console.log(locationChoice.includes("Jigawa"))
 
 address.addEventListener('change', () => {
     if(locationChoice.includes(address.value)) {
-        newImages()
-    } else if(address.value != "") {
         newImages()
     } else {
         images()
     }
 })
 
-address.addEventListener('change', () => {
-    if(locationChoice.includes(address.value)) {
-        console.log(address.value)
-    } else if(address.value != "") {
-        console.log(address.value)
-    } else {
-        console.log("Select your location")
-    }
-})
-
 redirect.forEach(element => {
     element.addEventListener('click', () => {
-        if(locationChoice.includes(address.value)) {
-            window.location.replace("../evendor.html")
-        } else if(address.value != "") {
+        if(address.value == "") {
+            alert ("Please select a location!")
+        } else if (locationChoice.includes(address.value)) {
             window.location.replace("../evendor.html")
         } else {
-            address.placeholder = "This field is required"
-            color.style.fontSize = "30px"
-            alert ("Please provide your location!")
+            location.reload()
         }
-    });
+    })
 });
 
 newImages = () => {

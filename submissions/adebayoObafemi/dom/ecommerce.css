@@ -69,7 +69,7 @@ label[for="location"],label[for="interest"] {
     font-size: 20px;
 }
 
-input {
+select {
     box-sizing: border-box;
     width: 100%;
     font-size: 20px;

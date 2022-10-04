@@ -31,22 +31,14 @@
         <h2 class="logo">FoodBag</h2>
         <p>Anything food, we have you covered.</p>
         <label for="location">Where are you?</label><br />
-        <input
-          type="select"
-          list="location-list"
-          id="location"
-          name="location"
-          placeholder="Enter your delivery address"
-        />
-        <datalist id="location-list">
-          <select name="my-location" id="my-location">
-            <option class="address" value="Ibadan">Ibadan</option>
-            <option class="address" value="Lagos">Lagos</option>
-            <option class="address" value="Abuja">Abuja</option>
-            <option class="address" value="Port Harcourt">Port Harcourt</option>
-            <option class="address" value="Kaduna">Kaduna</option>
-          </select>
-        </datalist>
+        <select name="my-location" id="location-list">
+          <option class="address" value="">Select a location</option>
+          <option class="address" value="Ibadan">Ibadan</option>
+          <option class="address" value="Lagos">Lagos</option>
+          <option class="address" value="Abuja">Abuja</option>
+          <option class="address" value="Port Harcourt">Port Harcourt</option>
+          <option class="address" value="Kaduna">Kaduna</option>
+        </select>
       </section>
       <label for="interest">Pick an interest</label><br />
       <section class="interest" id="interest">

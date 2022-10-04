@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 2,
-    "start": "2022-10-04T06:14:50.591Z",
-    "end": "2022-10-04T06:15:02.923Z",
-    "duration": 12332,
+    "start": "2022-10-04T06:23:36.814Z",
+    "end": "2022-10-04T06:23:43.142Z",
+    "duration": 6328,
     "testsRegistered": 3,
     "passPercent": 33.33333333333333,
     "pendingPercent": 0,
@@ -18,25 +18,25 @@
   },
   "results": [
     {
-      "uuid": "9e406d7f-1993-464e-9539-c4f005ab6b38",
+      "uuid": "9c2d77fa-9d25-48e3-9924-7face229769e",
       "title": "",
-      "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+      "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\dom\\dom.js",
       "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "911eb326-b62b-43fc-827f-30f0bd892bd6",
+          "uuid": "d721d8d5-8d81-464a-8b0c-05904fed37ab",
           "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\dom\\dom.js",
           "file": "\\dom.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 11769,
+              "duration": 5961,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "5581568d-c87a-4475-94b9-59ee8165f8c3",
-              "parentUUID": "911eb326-b62b-43fc-827f-30f0bd892bd6",
+              "uuid": "72095e0b-07a0-44a6-8eea-bf7cac09b05f",
+              "parentUUID": "d721d8d5-8d81-464a-8b0c-05904fed37ab",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "6de14d47-a2af-47ea-a1e5-00e3a0285264",
-              "parentUUID": "911eb326-b62b-43fc-827f-30f0bd892bd6",
+              "uuid": "c6e37528-709d-40b3-a423-d0a3ad319ab1",
+              "parentUUID": "d721d8d5-8d81-464a-8b0c-05904fed37ab",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check dropdown",
               "fullTitle": "Testing Scholars Project test case: check dropdown",
               "timedOut": false,
-              "duration": 200,
+              "duration": 82,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"select\"}\n  (Session info: chrome=105.0.5195.127)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"select\"}\n  (Session info: chrome=105.0.5195.127)\n    at Object.throwDecodedError (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\webdriver.js:141:15)\n    at async C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\webdriver.js:191:16\n    at async forEachKey (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\webdriver.js:185:9)\n    at async convertKeys (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\webdriver.js:190:3)\n    at async thenableWebDriverProxy.execute (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (dom.js:24:25)",
+                "message": "AssertionError: Unspecified AssertionError",
+                "estack": "AssertionError: Unspecified AssertionError\n    at Context.<anonymous> (dom.js:25:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
                 "diff": null
               },
-              "uuid": "f2226fef-d447-44ea-910a-f09714cdb104",
-              "parentUUID": "911eb326-b62b-43fc-827f-30f0bd892bd6",
+              "uuid": "e2c724db-4885-4519-990b-f673ab0a8a97",
+              "parentUUID": "d721d8d5-8d81-464a-8b0c-05904fed37ab",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-              "duration": 66,
+              "duration": 237,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Unspecified AssertionError\n    at Context.<anonymous> (dom.js:31:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
                 "diff": null
               },
-              "uuid": "836676fa-631a-4689-90a7-2c18d1959a85",
-              "parentUUID": "911eb326-b62b-43fc-827f-30f0bd892bd6",
+              "uuid": "103aa820-80c5-4de2-8df2-472dab2eb6c0",
+              "parentUUID": "d721d8d5-8d81-464a-8b0c-05904fed37ab",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: check options in dropdown",
               "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
-              "duration": 28,
+              "duration": 24,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -129,23 +129,23 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "5fded3b6-1871-42da-accc-3465e24213a9",
-              "parentUUID": "911eb326-b62b-43fc-827f-30f0bd892bd6",
+              "uuid": "96fb1af0-67f6-426f-8b42-da3b20458d2e",
+              "parentUUID": "d721d8d5-8d81-464a-8b0c-05904fed37ab",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5fded3b6-1871-42da-accc-3465e24213a9"
+            "96fb1af0-67f6-426f-8b42-da3b20458d2e"
           ],
           "failures": [
-            "f2226fef-d447-44ea-910a-f09714cdb104",
-            "836676fa-631a-4689-90a7-2c18d1959a85"
+            "e2c724db-4885-4519-990b-f673ab0a8a97",
+            "103aa820-80c5-4de2-8df2-472dab2eb6c0"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 294,
+          "duration": 343,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -179,7 +179,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/adebayoobafemi/Desktop/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
+        "reportDir": "C:/Users/adebayoobafemi/Desktop/Dufuna-CodeCamp-21/tests/dom/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
