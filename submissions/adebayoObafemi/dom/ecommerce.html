@@ -32,18 +32,20 @@
         <p>Anything food, we have you covered.</p>
         <label for="location">Where are you?</label><br />
         <input
-          type="text"
+          type="select"
           list="location-list"
           id="location"
           name="location"
           placeholder="Enter your delivery address"
         />
         <datalist id="location-list">
-          <option class="address" value="Ibadan">Ibadan</option>
-          <option class="address" value="Lagos">Lagos</option>
-          <option class="address" value="Abuja">Abuja</option>
-          <option class="address" value="Port Harcourt">Port Harcourt</option>
-          <option class="address" value="Kaduna">Kaduna</option>
+          <select name="my-location" id="my-location">
+            <option class="address" value="Ibadan">Ibadan</option>
+            <option class="address" value="Lagos">Lagos</option>
+            <option class="address" value="Abuja">Abuja</option>
+            <option class="address" value="Port Harcourt">Port Harcourt</option>
+            <option class="address" value="Kaduna">Kaduna</option>
+          </select>
         </datalist>
       </section>
       <label for="interest">Pick an interest</label><br />
