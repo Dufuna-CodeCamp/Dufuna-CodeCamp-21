@@ -7,3 +7,7 @@
     background-color: #AD4C4C;
     color: #fff;
 }
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
