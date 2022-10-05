@@ -18,5 +18,5 @@ let productList = [
 
 for (let i = 0; i < 3; i++){
     product = productList[i];
-    document.write(product.productName + " with " + product.imageUrl + " is sold for " + productList.productPrice + "<br/><br/>");
+    document.write(product.productName + " with " + product.imageUrl + " is sold for " + product.productPrice + "<br/><br/>");
 }
