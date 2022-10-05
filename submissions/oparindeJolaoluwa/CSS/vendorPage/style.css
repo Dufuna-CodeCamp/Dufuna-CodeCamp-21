@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;   
+}
+
+header{
+    display: flex;
+    margin-bottom: 50px;
+}
+ 
+.logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin:20px 950px 20px 30px;  
+}
+
+.colorbag {
+    color: #C17979;
+}
+
+.navigation {
+    text-decoration: none;
+    color: #696969;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#signup {
+    border: 2px solid #AD4C4C;
+    border-radius: 5px;
+    padding:4px 7px;
+    color: #AD4C4C;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+    margin:20px;  
+}
+
+.dishome {
+    color: #C9C9C9;
+    margin-left:30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.actven {
+    color:#000000;
+    font-weight: 400;
+     font-size: 14px;
+}
+
+h1{
+    color: #000000;
+    margin:30px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#klogo{
+    display: flex;
+    margin: 30px;
+}
+.kfclogo{
+    height: 80px;
+}
+
+.kfc {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    margin: 30px; ;
+}
+
+.view{
+color:#AD4C4C;
+font-weight: 500;
+font-size: 16px;
+margin: 30px 0px 30px 1050px;
+}
+
+.ordersection {
+    display:flex ;
+}
+
+.order{
+    margin: 30px;
+}
+
+.describe {
+    color: #4E4D4D;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px 10px 10px 0px;
+}
+
+.price{
+font-weight: 600;
+font-size: 16px;
+color: #5EA304;
+float: right;
+}
+
+.addbut{
+    padding:8px 15px;
+background: #FFFFFF;
+border: 1px solid #AD4C4C;
+border-radius: 3px;
+font-weight: 500;
+font-size: 16px;
+text-align: center;
+margin-bottom: 30px;
+margin-top: 5px;
+}
+
+#chiclogo{
+    display: flex;
+    margin-left: 30px;
+    
+    margin-right: 30px;
+    
+    padding-top: 50px;
+    
+}
+
+
+.crep{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px;   
+}
+
+.view2{
+    color:#AD4C4C;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 30px 0px 30px 950px; 
+}
+.actchic {
+    display: flex;
+    margin-bottom: 40px;
+}
+ 
+ hr {
+    border-top: 1px solid #E6E6E6;
+    margin: 10px 30px;
+ }
