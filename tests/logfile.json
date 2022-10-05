@@ -53,7 +53,7 @@
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+<              "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 1,
@@ -66,7 +66,6 @@
               "code": "driver.quit();",
               "err": {},
               "uuid": "170f7868-9fb6-4303-b001-21620020a383",
-              "parentUUID": "f0b7519e-bf9d-4ed7-9291-3b1a4465cc8d",
               "isHook": true,
               "skipped": false
             }
