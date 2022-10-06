@@ -1,6 +1,6 @@
 
-const numbers = 123 - 7;
-for (i = 1; i <= numbers; i++) {
+const numb = 123 - 7;
+for (i = 1; i <= numb; i++) {
     let numWord = "";
     if (i % 3 === 0 && i % 5 === 0) {
         numWord += "Software Developer"
@@ -11,5 +11,5 @@ for (i = 1; i <= numbers; i++) {
     } else {
         numWord += i;
     }
-    document.write(numWord + "<br><br>");
+    document.write(numWord + "<br>");
 }
