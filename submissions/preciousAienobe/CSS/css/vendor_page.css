@@ -22,6 +22,8 @@ body {
   border-radius: 5px;
   color: rgb(255, 255, 255);
   cursor: pointer;
+  width: 100px;
+  height: 5px;
 }
 
 .dot {
