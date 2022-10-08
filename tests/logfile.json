@@ -4,15 +4,17 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-09-23T11:49:09.146Z",
-    "end": "2022-09-23T11:49:13.437Z",
-    "duration": 4291,
-    "testsRegistered": 1,
+    "start": "2022-10-06T09:37:51.336Z",
+    "end": "2022-10-06T09:38:04.530Z",
+    "duration": 13194,
+    "testsRegistered": 2,
     "passPercent": 100,
+
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -21,87 +23,125 @@
   },
   "results": [
     {
-      "uuid": "3559aec7-a8b6-4f29-8edb-270bfec1d293",
+
+      "uuid": "72755a10-aab8-49e4-83b0-7c1b86499771",
       "title": "",
-      "fullFile": "/Users/seunorefejo/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/navigation_tasks.js",
-      "file": "/navigation_tasks.js",
+      "fullFile": "C:\\Users\\Samm\\Desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
+      "file": "\\test.js",
+
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "074108b1-2b18-47f5-b6da-ac3bb758ef00",
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "/Users/seunorefejo/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/navigation_tasks.js",
-          "file": "/navigation_tasks.js",
+
+          "uuid": "32365bd1-e87f-4f3c-957f-7e8c081c36ab",
+          "title": "Printing product price",
+          "fullFile": "C:\\Users\\Samm\\Desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
+          "file": "\\test.js",
+
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
               "timedOut": false,
-              "duration": 4001,
+
+              "duration": 12902,
+
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "ee4f6313-dd44-42e3-94e9-7e46ccf7d899",
-              "parentUUID": "074108b1-2b18-47f5-b6da-ac3bb758ef00",
+              "uuid": "12f1823d-f7e2-4594-816f-4651093f43f8",
+              "parentUUID": "32365bd1-e87f-4f3c-957f-7e8c081c36ab",
+
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+
               "timedOut": false,
-              "duration": 2,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "driver.quit();",
               "err": {},
-              "uuid": "358a8f86-2daa-4d58-9b78-6440ef144bf8",
-              "parentUUID": "074108b1-2b18-47f5-b6da-ac3bb758ef00",
+
+              "uuid": "849ca953-c658-421e-bc54-5a1ad0d8b561",
+              "parentUUID": "32365bd1-e87f-4f3c-957f-7e8c081c36ab",
+
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
-              "duration": 35,
+              "duration": 55,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
+              "err": {},
+              "uuid": "f1e1eee3-9fb8-4631-9d61-fd2934592b7b",
+              "parentUUID": "32365bd1-e87f-4f3c-957f-7e8c081c36ab",
+
+              "isHook": false,
+              "skipped": false
+            },
+            {
+
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
+              "timedOut": false,
+              "duration": 20,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "974c0996-2866-49a6-be31-c8f2b7ab5344",
-              "parentUUID": "074108b1-2b18-47f5-b6da-ac3bb758ef00",
+              "uuid": "aeea0000-0b0e-44af-bab7-0856ba05c13f",
+              "parentUUID": "32365bd1-e87f-4f3c-957f-7e8c081c36ab",
+
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
+
           "passes": [
-            "974c0996-2866-49a6-be31-c8f2b7ab5344"
+            "f1e1eee3-9fb8-4631-9d61-fd2934592b7b",
+            "aeea0000-0b0e-44af-bab7-0856ba05c13f"
+
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 35,
+
+          "duration": 75,
+
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -135,7 +175,9 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/seunorefejo/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+
+        "reportDir": "C:/Users/Samm/Desktop/dufuna-codecamp-21/tests/product_price_printing/../..//tests/",
+
         "reportFilename": "logfile",
         "quiet": "true"
       },
