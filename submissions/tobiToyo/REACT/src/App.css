@@ -1,0 +1,275 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif ;
+  font-style: normal;
+  font-size: 62.5%;
+}
+
+.App {
+  margin: 0 2rem;
+}
+
+.company-name {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.header-links {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left:  2rem;
+  cursor: pointer;
+}
+
+.header-btn {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #AD4C4C;
+  background-color: white;
+  border: .1rem solid #AD4C4C;
+  border-radius: .5rem;
+  padding: .8rem 1.8rem;
+  margin-left:  2rem;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: white;
+  background-color: #AD4C4C;
+  border: .1rem solid #AD4C4C;
+  border-radius: .5rem;
+  padding: 1.3rem auto;
+  margin:  3rem 0;
+  width: 100%;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+  /* border: 1px solid green; */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.trail-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #C9C9C9;
+  padding-bottom: 2rem;
+}
+
+#trail-text-bold {
+  color: #000000;
+  font-weight: 500;
+}
+
+.cart-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+#cart-title-head {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+#cart-title-item {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #AD4C4C;
+}
+
+#cart-title-remove {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  color: #AD4C4C;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.food-name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.food-img-div {
+  overflow: hidden;
+  margin: 0 1.5rem 0 1rem;
+  width: 5.5rem;
+   /* border: .1rem solid green; */
+}
+
+.scoo-img-div {
+  overflow: hidden;
+  margin: 0 1.5rem 0 2.4rem;
+  width: 5.5rem;
+}
+
+.food-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* border: 1px solid blue; */
+}
+
+.order-leftside, .order-rightside {
+  height: 4.6rem;
+}
+
+.order-leftside {
+  display: flex;
+  /* grid-template-columns: 1fr 3fr 4fr; */
+  align-items: stretch;
+  justify-content: space-between;
+  /* border: .1rem solid red; */
+  /* width: 50%; */
+}
+
+.food-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10rem;
+  
+  /* border: .1rem solid green; */
+}
+
+.scoo-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10rem;
+}
+
+.food-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#food-number {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #AD4C4C;
+  margin: 0 1.5rem;
+}
+
+.close-img-div {
+  width: 1.4 rem;
+  align-self: center;
+  cursor: pointer;
+  /* border: .1rem solid blue; */
+}
+
+.plus-minus-btn {
+  overflow: hidden;
+  width: 1.8rem;
+  cursor: pointer;
+}
+
+.plus-minus-img {
+  width: 100%;
+  height: auto;
+}
+
+.order-rightside {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  width: 50%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-left: 6rem; */
+  /* border: .1rem solid blue; */
+}
+
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: .1rem solid #C9C9C9; */
+}
+
+.border-line {
+  border-bottom: .1rem solid #C9C9C9;
+  color: #C9C9C9;
+  width: calc(100% - 2.4rem);
+  margin: 2rem 0 2rem 2.4rem;
+}
+
+.full-border-line {
+  border-bottom: .1rem solid #C9C9C9;
+  color: #C9C9C9;
+  margin: 4rem 0 0;
+}
+
+#delivery {
+  align-items: center;
+}
+
+#delivery-div {
+  margin: 4rem 0 0 2.4rem;
+}
+
+.total {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  color: #4E4D4D;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 0 2.4rem;
+}
+
+#hide-total {
+  display: none;
+}
+
+
+
+
+@media screen and (min-width: 76.8rem) {
+  html {
+    font-size: 100%;
+  }
+
+  .App {
+    margin: 0 6.25rem;
+  }
+
+  .checkout-btn {
+    width: 65%;
+    display: block;
+    margin: 3rem auto;
+    
+  }
+}

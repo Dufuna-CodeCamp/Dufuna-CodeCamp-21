@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="android.css">
+    <link rel="stylesheet" href="foodbagform.css" />
+    <title>Verification</title>
+  </head>
+  <body>
+    <header class="food bag">
+      <nav>
+        <a href="#" class="logo">Food<span>Bag</span></a>
+        <div class="navlinks">
+          <a href="#" class="nav cart">Cart</a>
+          <a href="#" class="nav login">Login</a>
+          <a href="#" class="nav signup">Sign up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="vendornav">
+        <a href="#" class="home">Home &gt;</a>
+        <a href="#" class="vendor">Cart &gt;</a>
+        <a href="#" class="verification">Verification</a>
+        <h4>Verification</h4>
+        <h6>Confirm address & Payment</h6>
+      </section>
+
+      <section class="address">
+        <div>
+          <h4>Delivery Address</h4>
+          <h6>Your order will be delivered to your address</h6>
+        </div>
+        <div>
+          <img
+            src="./FoodBag Task Assets(beginner)/radio_button_checked.svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <form action="#">
+        <label for="phone">Phone number</label><br />
+        <input type="tel" name="phone" id="phone" placeholder="+234" />
+        <hr />
+        <label for="payment">Payment method</label><br />
+        <input
+          type="text"
+          name="payment"
+          id="payment"
+          placeholder="Card"
+        ><br />
+        <label for="cardnum">Card Number</label><br />
+        <input
+          type="number"
+          name="cardnum"
+          id="cardnum"
+          placeholder="2345 2345 2345 2345"
+        /><br />
+        <label for="cardname">Card name</label><br />
+        <input
+          type="text"
+          name="cardname"
+          id="cardname"
+          placeholder="OBAFEMI ADEBAYO EBENEZER"
+        /><br />
+        <div class="cardinfo">
+          <div class="expiry">
+            <label for="expiry">Expiry date</label><br />
+            <input type="" name="expiry" id="expiry" placeholder="10/25" />
+          </div>
+          <div class="cvc">
+            <label for="cvc">CVC</label><br />
+            <input type="number" name="cvc" id="cvc" placeholder="012" />
+          </div>
+        </div>
+        <button class="first">Pay</button>
+        <button class="second">Checkout</button>
+      </form>
+    </main>
+  </body>
+</html>
