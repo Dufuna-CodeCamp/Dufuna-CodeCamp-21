@@ -11,6 +11,11 @@ h1 {
   margin-left: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 span {
   color: #ad4c4c;
   margin-right: 20px;
@@ -78,7 +83,7 @@ h3 {
   padding-bottom: 5px;
 }
 
-.fast-food-img {
+.interests {
   border: 1px solid gray;
   border-radius: 5px;
   height: 100px;
@@ -86,36 +91,6 @@ h3 {
   padding: 10px;
   padding-left: 20px;
   margin-left: 20px;
-}
-
-.vegetables-img {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 100px;
-  width: 250px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-left: 10px;
-}
-
-.cocktails-img {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 100px;
-  width: 250px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-left: 10px;
-}
-
-.restaurant-img {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 100px;
-  width: 250px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-left: px;
 }
 
 .container-3 {
@@ -188,21 +163,7 @@ footer div {
     align-items: center;
   }
 
-  .fast-food-img {
-    margin-left: 0px;
-  }
-
-  .vegetables-img {
-    margin-left: 0px;
-    margin-top: 5px;
-  }
-
-  .cocktails-img {
-    margin-left: 0px;
-    margin-top: 5px;
-  }
-
-  .restaurant-img {
+  .interests {
     margin-left: 0px;
     margin-top: 5px;
   }
@@ -249,21 +210,7 @@ footer div {
     align-items: center;
   }
 
-  .fast-food-img {
-    margin-left: 0px;
-  }
-
-  .vegetables-img {
-    margin-left: 0px;
-    margin-top: 5px;
-  }
-
-  .cocktails-img {
-    margin-left: 0px;
-    margin-top: 5px;
-  }
-
-  .restaurant-img {
+  .interests {
     margin-left: 0px;
     margin-top: 5px;
   }
