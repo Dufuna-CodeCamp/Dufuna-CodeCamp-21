@@ -1,3 +1,7 @@
+
+
+
+
 let newProductPrice;
 
 //ARRAY FOR PRODUCT ITEMS
@@ -29,6 +33,7 @@ var productCurrentPrice = [
     500, 200, 750, 2000, 1600, 300, 800, 5000, 500, 600,
      1200, 1200, 2000, 2000, 5000, 750, 200, 800, 900, 750
 ];
+
 
 function productArray() {
 	for (a = 0; a < productBrands.length; a++) {
