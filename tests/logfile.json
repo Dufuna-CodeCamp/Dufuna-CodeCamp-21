@@ -1,60 +1,84 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-10-11T11:33:41.434Z",
-    "end": "2022-10-11T11:33:43.055Z",
-    "duration": 1621,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "start": "2022-10-13T11:18:20.180Z",
+    "end": "2022-10-13T11:21:20.239Z",
+    "duration": 180059,
+    "testsRegistered": 2,
+    "passPercent": 0,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "168d152a-15be-49ff-9ec9-2b04bdfaf953",
+      "uuid": "72ffb695-bdce-4020-9dde-eaab81028aa9",
       "title": "",
-      "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-      "file": "\\navigation_tasks.js",
+      "fullFile": "C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
+      "file": "\\test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "885adb14-1203-4fd9-887a-83059aea7aca",
-          "title": "Testing Navigation on HtmlForms",
-          "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
-          "file": "\\navigation_tasks.js",
+          "uuid": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+          "title": "Printing product price",
+          "fullFile": "C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
+          "file": "\\test.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
-              "timedOut": false,
-              "duration": 1569,
-              "state": null,
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "timedOut": true,
+              "duration": 180020,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
-              "err": {},
-              "uuid": "61fb5626-57ca-4c6e-8b9c-9e072b7ed84f",
-              "parentUUID": "885adb14-1203-4fd9-887a-83059aea7aca",
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "1ed719fb-1416-4071-8340-c8140ccd0c6c",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
-              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "e83e058f-ab73-45a4-94e0-006a3e72b770",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -63,42 +87,41 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit()",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "4dfc1899-0414-4fa5-ad1b-1813cb8332f5",
-              "parentUUID": "885adb14-1203-4fd9-887a-83059aea7aca",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "tests": [
+              "uuid": "4f06f5a1-9ae7-4506-a260-03224deb5ea1",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+              "isHook": false,
+              "skipped": true
+            },
             {
-              "title": "test case: assert that there are 2 links on this page",
-              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
-              "duration": 30,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "b995197c-34a8-4db3-8ce6-9ea3a0ef4bfd",
-              "parentUUID": "885adb14-1203-4fd9-887a-83059aea7aca",
+              "uuid": "b473f65b-d6cd-4346-a5af-da1b4ae3311f",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
-          "passes": [
-            "b995197c-34a8-4db3-8ce6-9ea3a0ef4bfd"
-          ],
+          "passes": [],
           "failures": [],
           "pending": [],
-          "skipped": [],
-          "duration": 30,
+          "skipped": [
+            "4f06f5a1-9ae7-4506-a260-03224deb5ea1",
+            "b473f65b-d6cd-4346-a5af-da1b4ae3311f"
+          ],
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -132,7 +155,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportDir": "C:/Users/Seed/desktop/dufuna-codecamp-21/tests/product_price_printing/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
