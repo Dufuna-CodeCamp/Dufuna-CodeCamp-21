@@ -4,11 +4,11 @@ statement = "";
 
 for(var i = 1; i <= number; i++){
 
-    if( i % 3 == 0){
+    if( i % 3 == 0 && i % 5 !== 0 ){
         statement += "Software  <br><br>";
     }
 
-    else if (i % 5 == 0){
+    else if (i % 5 == 0 && i % 3 !== 0 ){
         statement += "Developer <br><br>";
     }
 
