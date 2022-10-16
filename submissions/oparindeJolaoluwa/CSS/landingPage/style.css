@@ -1,0 +1,810 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;   
+}
+
+header{
+    display: flex;
+    margin-bottom: 50px;
+}
+ 
+.logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin:20px 950px 20px 30px;  
+}
+
+.colorbag {
+    color: #AD4C4C;
+}
+
+.navigation {
+    text-decoration: none;
+    color: #696969;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#signup {
+    border: 2px solid #AD4C4C;
+    border-radius: 5px;
+    padding:4px 7px;
+    color: #AD4C4C;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+    margin:20px;  
+}
+
+.motto {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foodbag{
+    color: #4E4D4D;
+    font-weight: 600;
+}
+.slogan{
+    color:#696969;
+    font-weight: 400;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 500;
+    margin:20px 10px 10px 30px;
+}
+
+#inputaddress {
+    width: 1280px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 40px;
+    margin:5px 30px;
+    font-size: 17px;
+    padding:5px 5px 5px 15px;
+}
+
+.discol{
+    display: flex;
+    margin-left: 10px;
+}
+
+.col{
+    color: #A5A5A5;
+    border: 1px solid rgba(0, 0, 0, 0.1) ;
+    width: 268px;
+    height: 160px;
+    box-shadow: 0px 0px 3px 1.5px;
+    margin:20px;
+    padding: 10px;
+}
+
+.disimg {
+    margin: 5px;
+}
+
+.dishead {
+    margin: 5px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.dishead1 {
+    margin: 5px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.activeinfo {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    margin: 40px 30px;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin:50px;
+    color: #4E4D4D;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.actcol {
+    display: flex;
+    width: 1280px;
+    height: 450px;
+}
+
+.acol{
+    width: 300px;
+    height: 400px ;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px;
+    
+}
+h4{
+    color: #696969;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.activep {
+    color: #696969;
+    font-weight:400 ;
+    font-size: 20px;
+}
+
+.acol1{
+    width: 300px;
+    height: 400px ;
+    align-items: center;
+    text-align: center;
+    margin: 10px 100px;
+    padding: 10px; 
+}
+
+.contact {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.conlogo {
+    margin: 10px;
+}
+
+.contact1 {
+    margin: 20px;
+    font-weight: 500;
+    color: #696969;
+    font-size: 18px;
+}
+
+.footer {
+    margin-bottom: 50px;
+    color: #696969;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400px;   
+}
+
+.footermotto{
+    margin: 30px;
+}
+
+.footermotto1 {
+    margin:30px 30px 30px 480px;
+}
+ 
+
+/* medium devices */
+@media only screen and (min-width:601px) and (max-width: 768px){
+header{
+    display: flex;
+    margin-bottom: 50px;
+}
+ 
+.logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin:20px 360px 20px 30px;  
+}
+
+.colorbag {
+    color: #AD4C4C;
+}
+
+.navigation {
+    text-decoration: none;
+    color: #696969;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#signup {
+    border: 2px solid #AD4C4C;
+    border-radius: 5px;
+    padding:4px 7px;
+    color: #AD4C4C;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+    margin:20px;  
+}
+
+.motto {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foodbag{
+    color: #4E4D4D;
+    font-weight: 600;
+}
+.slogan{
+    color:#696969;
+    font-weight: 400;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 500;
+    margin:20px 10px 10px 30px;
+}
+
+#inputaddress {
+    width: 680px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 40px;
+    margin:5px 30px;
+    font-size: 17px;
+    padding:5px 5px 5px 15px;
+}
+
+.discol{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+     margin: 10px;
+}
+
+.col{
+    color: #A5A5A5;
+    border: 1px solid rgba(0, 0, 0, 0.1) ;
+    width: 268px;
+    height: 160px;
+    box-shadow: 0px 0px 3px 1.5px;
+    margin:20px;
+    padding: 10px;
+}
+
+.disimg {
+    margin: 5px;
+}
+
+.dishead {
+    margin: 5px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.dishead1 {
+    margin: 5px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.activeinfo {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    margin: 40px 20px;
+    padding: 5px;    
+}
+
+h2 {
+    text-align: center;   
+    color: #4E4D4D;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.actcol {
+    display: flex;
+    flex-direction: column;
+    
+    width: 750px;
+    height:1000px;
+}
+
+.acol{
+    height:300px ;
+    width: 700px;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    
+}
+h4{
+    color: #696969;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.activep {
+    color: #696969;
+    font-weight:400 ;      
+    font-size: 15px;
+    line-height: 18px;
+    margin: 10px 0px;
+}
+
+.acol1{
+    height:300px ;
+    width: 700px;
+    align-items: center;
+    text-align: center;
+    margin: 10px ;
+    padding: 5px; 
+}
+
+.contact {
+    text-align: center;
+    margin-top: 60px;
+    
+}
+
+.conlogo {
+    margin: 10px;
+}
+
+.contact1 {
+    margin: 20px;
+    font-weight: 500;
+    color: #696969;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer {
+    margin-bottom: 50px;
+    color: #696969;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;    
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.footermotto{
+    margin: 20px;
+}
+
+.footermotto1 {
+    margin: 20px 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+}
+
+/* small devices such as phone with 360px to 600px*/
+@media only screen and (max-width:600px){
+    header{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .logo {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        margin:20px 275px 20px 20px;
+    }
+    .navigation {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;        
+    }
+    
+    .motto {
+        text-align: left;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    
+    .foodbag{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .slogan{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    h3 {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        margin:20px 10px 10px 20px;
+    }
+    #inputaddress {
+        width: 545px;
+        margin-left:20px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        padding:3px 3px 3px 10px;
+    }
+    .discol{
+        display: flex;
+        flex-direction: column;
+    }
+    
+   .col{
+         
+        width: 520px;
+        height: 141px;
+        box-shadow: 0px 0px 3px 1.5px;
+        margin:20px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+    .disimg {
+        margin: 5px;
+    }
+    
+    .dishead {
+        margin: 5px;
+        padding: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .dishead1 {
+        margin: 5px;
+        padding: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .activeinfo {
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        margin: 40px 20px;
+        padding: 5px;    
+    }
+    
+    h2 {
+        text-align: center;   
+        color: #4E4D4D;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .actcol {
+        display: flex;
+        flex-direction: column;
+        width: 520px;
+        height:1000px;
+    }
+    
+    .acol{
+        height:300px ;
+        width: 520px;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        
+    }
+    h4{
+        color: #696969;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .activep {
+        color: #696969;
+        font-weight:400 ;      
+        font-size: 12px;
+        line-height: 15px;
+        margin: 10px 0px;
+    }
+    
+    .acol1{
+        height:300px ;
+        width: 520px;
+        align-items: center;
+        text-align: center;
+        margin: 10px ;
+        padding: 5px; 
+    }
+    
+   .contact {
+        text-align: center;
+        margin-top: 60px;
+        
+    }
+    
+    .conlogo {
+        margin: 10px;
+    }
+    
+    .contact1 {
+        margin: 20px;
+        font-weight: 500;
+        color: #696969;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .footer {
+        margin-bottom: 50px;
+        color: #696969;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 400;    
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .footermotto{
+        margin: 20px;
+    }
+    
+    .footermotto1 {
+        margin: 20px 60px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+/* Extra small devices such as mobile phase view, 360px downward*/
+@media screen and (max-width: 360px){
+    header{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .logo {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        margin:20px 75px 20px 20px;
+    }
+    .colorbag {
+        color: #AD4C4C;
+    }
+    .navigation {
+        text-decoration: none;
+        color: #696969;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: right;        
+    }
+    
+    #signup {
+        border: 1px solid #AD4C4C;
+        border-radius: 5px;
+        padding:2px 4px;
+        color: #AD4C4C;
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #696969;
+        margin:15px;  
+    }
+    
+    .motto {
+        text-align: left;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    
+    .foodbag{
+        color: #4E4D4D;
+        font-weight: 600;
+        font-size: 20px;
+         
+        line-height: 30px;
+    }
+    .slogan{
+        color:#696969;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    h3 {
+        color: #000000;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin:20px 10px 10px 20px;
+    }
+    #inputaddress {
+        width: 320px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        box-sizing: border-box;
+        height: 40px;
+        margin:5px 20px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        padding:3px 3px 3px 10px;
+    }
+    .discol{
+        display: flex;
+        flex-direction: column;
+    }
+    
+   .col{
+        color: #A5A5A5;
+        border: 1px solid rgba(0, 0, 0, 0.1) ;
+        width: 280px;
+        height: 141px;
+        box-shadow: 0px 0px 3px 1.5px;
+        margin:20px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+    .disimg {
+        margin: 5px;
+    }
+    
+    .dishead {
+        margin: 5px;
+        padding: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .dishead1 {
+        margin: 5px;
+        padding: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .activeinfo {
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        margin: 40px 20px;
+        padding: 5px;    
+    }
+    
+    h2 {
+        text-align: center;
+        
+        color: #4E4D4D;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .actcol {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        height:1000px;
+    }
+    
+    .acol{
+        height:300px ;
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        
+    }
+    h4{
+        color: #696969;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .activep {
+        color: #696969;
+        font-weight:400 ;      
+        font-size: 10px;
+        line-height: 15px;
+         
+        margin: 10px 0px;
+    }
+    
+    .acol1{
+        height:300px ;
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        margin: 10px ;
+        padding: 5px; 
+    }
+    
+   .contact {
+        text-align: center;
+        margin-top: 60px;
+        
+    }
+    
+    .conlogo {
+        margin: 10px;
+    }
+    
+    .contact1 {
+        margin: 20px;
+        font-weight: 500;
+        color: #696969;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .footer {
+        margin-bottom: 50px;
+        color: #696969;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 400;    
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .footermotto{
+        margin: 20px;
+    }
+    
+    .footermotto1 {
+        margin: 20px 60px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

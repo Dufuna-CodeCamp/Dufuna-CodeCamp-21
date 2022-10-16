@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+<<<<<<< HEAD
     "tests": 5,
     "passes": 1,
     "pending": 0,
@@ -10,53 +11,86 @@
     "duration": 2700,
     "testsRegistered": 5,
     "passPercent": 20,
+=======
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-13T11:18:20.180Z",
+    "end": "2022-10-13T11:21:20.239Z",
+    "duration": 180059,
+    "testsRegistered": 2,
+    "passPercent": 0,
+>>>>>>> origin
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "63e9d695-0fbe-4a54-a417-ed0dc524e87c",
+=======
+      "uuid": "72ffb695-bdce-4020-9dde-eaab81028aa9",
+>>>>>>> origin
       "title": "",
-      "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
-      "file": "\\html_form.js",
+      "fullFile": "C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
+      "file": "\\test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "462461e8-c679-4bc5-8be5-033d6f9c0827",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\HP\\Desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
+=======
+          "uuid": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+          "title": "Printing product price",
+          "fullFile": "C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js",
+          "file": "\\test.js",
+>>>>>>> origin
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
-              "timedOut": false,
-              "duration": 0,
-              "state": null,
+              "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
+              "timedOut": true,
+              "duration": 180020,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
+<<<<<<< HEAD
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
               "err": {},
               "uuid": "bba29590-164f-40bb-bc6f-0c17c1314a54",
               "parentUUID": "462461e8-c679-4bc5-8be5-033d6f9c0827",
+=======
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Seed\\desktop\\dufuna-codecamp-21\\tests\\product_price_printing\\test.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+                "diff": null
+              },
+              "uuid": "1ed719fb-1416-4071-8340-c8140ccd0c6c",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+>>>>>>> origin
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 2,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,17 +99,23 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+<<<<<<< HEAD
               "uuid": "01650587-2cf0-4100-b6c0-b21952078837",
               "parentUUID": "462461e8-c679-4bc5-8be5-033d6f9c0827",
+=======
+              "uuid": "e83e058f-ab73-45a4-94e0-006a3e72b770",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+>>>>>>> origin
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: assert 4 input fields are present",
-              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 2559,
               "state": "failed",
               "speed": null,
@@ -113,22 +153,43 @@
               },
               "uuid": "668b3471-e27c-4aff-b519-ec1c94588dee",
               "parentUUID": "462461e8-c679-4bc5-8be5-033d6f9c0827",
+=======
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
+              "err": {},
+              "uuid": "4f06f5a1-9ae7-4506-a260-03224deb5ea1",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+>>>>>>> origin
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
-              "title": "test case: Email label is present",
-              "fullTitle": "Testing Form Task test case: Email label is present",
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 28,
               "state": "passed",
               "speed": "fast",
               "pass": true,
+=======
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+>>>>>>> origin
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst email = await text.toLowerCase();\nassert.include(email, \"email\", `Ensure \"Email\" label is present`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
+<<<<<<< HEAD
               "uuid": "7e53715e-6b11-4b30-bb84-e50818b0968e",
               "parentUUID": "462461e8-c679-4bc5-8be5-033d6f9c0827",
               "isHook": false,
@@ -192,6 +253,23 @@
           "pending": [],
           "skipped": [],
           "duration": 2686,
+=======
+              "uuid": "b473f65b-d6cd-4346-a5af-da1b4ae3311f",
+              "parentUUID": "b42d853b-7a32-4dd8-9101-095a59b7f666",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "4f06f5a1-9ae7-4506-a260-03224deb5ea1",
+            "b473f65b-d6cd-4346-a5af-da1b4ae3311f"
+          ],
+          "duration": 0,
+>>>>>>> origin
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -225,7 +303,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/HP/Desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        "reportDir": "C:/Users/Seed/desktop/dufuna-codecamp-21/tests/product_price_printing/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
