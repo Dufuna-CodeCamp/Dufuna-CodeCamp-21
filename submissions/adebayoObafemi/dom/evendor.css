@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px 20px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: hsla(0, 39%, 49%, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+a.logo {
+
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 20px;
+}
+
+a.cart, a.login {
+    color: hsla(0, 0%, 41%, 1);
+    font-size: 16px;
+}
+
+nav {
+    margin: 20px 0 50px;
+}
+
+header nav div.navlinks {
+    display: flex;
+    float: right;
+}
+
+header nav div.navlinks a {
+    margin-left: 40px;
+    padding: 5px;
+}
+
+header nav div a.signup {
+    padding: 5px 20px;
+}
+
+a.signup {
+    border: solid 1px hsla(0, 39%, 49%, 1);
+    color: hsla(0, 39%, 49%, 1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section.vendornav h4 {
+    margin: 30px 0;
+}
+
+div.kfctwo {
+    margin: 20px 0 30px;
+}
+
+div.republictwo {
+    margin: 20px 0 30px;
+}
+
+a.home {
+    color: hsla(0, 0%, 79%, 1);
+    font-size: 14px;
+}
+
+a.vendor {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+div.one {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+div.first {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+a.viewall {
+    padding: 0 10px;
+    color: hsla(0, 39%, 49%, 1);
+    font-size: 16px;
+}
+
+a.kfc, a.republic {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 20px;
+}
+
+div.two {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.two h6 {
+    color: hsla(0, 1%, 30%, 1);
+    margin: 10px 0 20px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+div.two h6 span {
+    color: hsla(86, 95%, 33%, 1);
+    float: right;
+    margin-right: 20px;
+}
+
+a.addtocart {
+    display: inline-block;
+    margin: 0 5px 20px;
+    padding: 7px 25px;
+    border: 1px solid hsla(0, 39%, 49%, 1);
+    border-radius: 3px;
+    font-size: 16px;
+    color: hsla(0, 39%, 49%, 1);
+}
+
+hr {
+    border: solid 1px hsla(0, 0%, 90%, 1);
+}
+
+svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+    fill: hsla(0, 39%, 49%, 1);
+    overflow: visible;
+}
+
+div.secondviewall {
+    display: none;
+}

@@ -11,10 +11,10 @@
     "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
   },
   "results": [
     {
@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
@@ -123,8 +123,9 @@
               "err": {},
               "uuid": "beb0592e-09eb-45ed-a4a6-23278c0b04f5",
               "parentUUID": "940c4bd2-8568-44e3-b061-364257eadb1b",
+
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
               "title": "test case: Subject label is present",
@@ -160,7 +161,7 @@
               "uuid": "fa6109d0-05aa-4b89-8356-8fbf32652566",
               "parentUUID": "940c4bd2-8568-44e3-b061-364257eadb1b",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
