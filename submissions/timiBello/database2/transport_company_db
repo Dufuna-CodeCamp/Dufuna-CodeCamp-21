@@ -43,4 +43,5 @@ CREATE DATABASE transport_company;
 
  show table status;
 
+
  -- End of Tables
