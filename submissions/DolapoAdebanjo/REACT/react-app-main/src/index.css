@@ -46,7 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 nav {
   display: flex;
@@ -136,18 +136,83 @@ nav > a:last-child {
 }
 
 /** Beginning of styling of the Checkout Component **/
-.checkout{
+/* .checkout{
   margin: 100px auto 0;
   text-align: center;
   background-color: #AD4C4C;
   width: 60%;
   padding: 20px 0;
   border-radius: 5px;
-}
-.checkout button{
+} */
+button{
+  display: flex;
+  justify-content: center;
   background-color: transparent;
-  border: transparent;
+  border: transparent; 
   color: #fff;
+  margin: 100px auto;
+  text-align: center;
+  background-color: #AD4C4C;
+  width: 60%;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+button:disabled{
+  opacity: 0.5;
+  background-color:#ad4c4cac;
+  cursor: none;
+}
+/** Beginning of styling of the VerificationPage Component **/
+.confirm-paragraph{
+  color: #AD4C4C;
+  padding-top: 5px;
+}
+.sub-heading{
+  padding-top: 40px;
+}
+.radio-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.medium-font{
+  color: #000;
+  font-size: 20;
+  font-weight: 500;
+}
+.small-heading{
+  color: #696969;
+  font-size: 12;
+  padding-top: 10px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.label{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* select{
+  width: 100%
+} */
+.input-field{
+  display: block;
+   height: 40px;
+   margin-top: 10px;
+   padding-left: 10px;
+   border: 1px #C4C4C4 solid;
+   /* outline: transparent; */
+}
+.row-group{
+  display: flex;
+   gap: 20px;
+}
+.row-form{
+  flex-basis: 50%;
 }
 
 @media (max-width: 750px) {
@@ -167,7 +232,7 @@ nav > a:last-child {
     width: 70%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 540px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -179,5 +244,20 @@ nav > a:last-child {
   .item,.orders, .delivery, .delivery-man{
     display: flex;
     flex-direction: column;
+  }
+  .row-group{
+    flex-direction: column;
+  }
+  .row-form{
+    flex-basis: 100%;
+  }
+  .close{
+    width: 20%;
+  }
+}
+@media (max-width: 280px){
+  .container {
+    padding: 20px;
+    margin-bottom: 100px;
   }
 }

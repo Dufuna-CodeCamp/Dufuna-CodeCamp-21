@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 
-const Page = ({page, children}) => {
+const Page = ({page, children, wantRemove}) => {
   return (
     <div className="container">
       <Header />
@@ -15,10 +15,11 @@ const Page = ({page, children}) => {
 
       <main className={page}>
         <h1>{page}</h1>
+        {wantRemove && (
         <div className="mobile-remove">
           <p className="item-count">4 items</p>
           <p className="remove-all">Remove all</p>
-        </div>
+        </div>)}
         {children}
       </main>
     </div>
