@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+{"numFailedTestSuites":1,"numFailedTests":0,"numPassedTestSuites":0,"numPassedTests":0,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":1,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":0,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0},"startTime":1665979049047,"success":false,"testResults":[{"assertionResults":[],"coverage":{},"endTime":1665979058751,"message":"  \u001b[1m● \u001b[22mTest suite failed to run\n\n    ENOENT: no such file or directory, open 'C:\\Users\\Jahbuchi\\Desktop\\2021\\Dufuna-CodeCamp-21\\submissions\\mauriceOkeke\\REACT\\react-app\\src\\__tests__\\CartPage.test.js'\n\n      \u001b[2mat \u001b[22mnode_modules/jest-runner/build/runTest.js\u001b[2m:236:46\u001b[22m\n","name":"C:\\Users\\Jahbuchi\\Desktop\\2021\\Dufuna-CodeCamp-21\\submissions\\mauriceOkeke\\REACT\\react-app\\src\\__tests__\\CartPage.test.js","startTime":1665979058751,"status":"failed","summary":""}],"wasInterrupted":false}
+=======
 {
   "stats": {
     "tests": 7,
@@ -5,4 +8,9 @@
     "failures": 0,
     "owner": "timiBello"
   }
+<<<<<<< HEAD
+}
+>>>>>>> 55a044193721784f55a67768c33f1d8a1c26c11c
+=======
  }
+>>>>>>> ee4de5346d3588619127087f1b1370e3a55128ec
