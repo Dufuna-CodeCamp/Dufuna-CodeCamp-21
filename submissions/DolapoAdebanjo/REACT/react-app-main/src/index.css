@@ -214,6 +214,10 @@ button:disabled{
 .row-form{
   flex-basis: 50%;
 }
+/** Beginning of styling of Successful Component **/
+.success-container{
+  padding: 50px;
+}
 
 @media (max-width: 750px) {
   html {

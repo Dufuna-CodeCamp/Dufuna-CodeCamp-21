@@ -13,7 +13,7 @@ function VerificationPage() {
   }
   const clickButton = () => {
     if (inputs.pnumber && inputs.payment && inputs.cnumber && inputs.cname && inputs.edate &&  inputs.cvc){
-      navigate("/")
+      navigate("/success")
     }
   }
   return (
