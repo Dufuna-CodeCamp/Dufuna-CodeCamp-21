@@ -136,14 +136,6 @@ nav > a:last-child {
 }
 
 /** Beginning of styling of the Checkout Component **/
-/* .checkout{
-  margin: 100px auto 0;
-  text-align: center;
-  background-color: #AD4C4C;
-  width: 60%;
-  padding: 20px 0;
-  border-radius: 5px;
-} */
 button{
   display: flex;
   justify-content: center;
@@ -205,7 +197,6 @@ button:disabled{
    margin-top: 10px;
    padding-left: 10px;
    border: 1px #C4C4C4 solid;
-   /* outline: transparent; */
 }
 .row-group{
   display: flex;
@@ -213,6 +204,10 @@ button:disabled{
 }
 .row-form{
   flex-basis: 50%;
+}
+/** Beginning of styling of Successful Component **/
+.success-container{
+  padding: 50px;
 }
 
 @media (max-width: 750px) {
