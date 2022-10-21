@@ -10,7 +10,7 @@ cartItem.forEach(element => {
             element.innerHTML = `<a href="#" class="menurm">
             <img src="./FoodBag Task Assets(beginner)/remove.svg" alt="rm">
             Remove</a>`
-            element.style.padding = "2px 30px 2px 2px";
+            element.style.padding = "4px 30px 4px 4px";
             element.style.alignItems = "center";
             element.style.backgroundColor = "hsla(0, 0%, 65%, 1)";
             element.style.color = "hsla(0, 0%, 90%, 1)";

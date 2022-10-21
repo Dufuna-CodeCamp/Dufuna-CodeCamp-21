@@ -1,8 +1,192 @@
 {
   "stats": {
-    "tests": 7,
-    "passes": 7,
-    "failures": 0,
-    "owner": "timiBello"
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2022-10-19T05:23:04.191Z",
+    "end": "2022-10-19T05:23:06.608Z",
+    "duration": 2417,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5bac190-c3cc-4ed3-a6eb-cdac29ab5f31",
+      "title": "",
+      "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
+      "file": "\\dom.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35b3c119-7a99-400a-8a02-9c97586c8b94",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\adebayoobafemi\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
+          "file": "\\dom.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
+              "err": {},
+              "uuid": "e331b7f5-5514-41c7-bcbd-2c3262461cf0",
+              "parentUUID": "35b3c119-7a99-400a-8a02-9c97586c8b94",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "d30b672c-a318-45a8-9b8a-2b1f971b7ede",
+              "parentUUID": "35b3c119-7a99-400a-8a02-9c97586c8b94",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 2403,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 104\nCurrent browser version is 106.0.5249.119 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 104\nCurrent browser version is 106.0.5249.119 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "d207bc02-f136-49be-a36d-619485a06f6e",
+              "parentUUID": "35b3c119-7a99-400a-8a02-9c97586c8b94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 104\nCurrent browser version is 106.0.5249.119 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 104\nCurrent browser version is 106.0.5249.119 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "dc2ec34c-3db8-4973-a01b-0047c1ee9675",
+              "parentUUID": "35b3c119-7a99-400a-8a02-9c97586c8b94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 104\nCurrent browser version is 106.0.5249.119 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 104\nCurrent browser version is 106.0.5249.119 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\error.js:522:15)\n    at parseHttpResponse (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:589:13)\n    at Executor.execute (C:\\Users\\adebayoobafemi\\node_modules\\selenium-webdriver\\lib\\http.js:514:28)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": null
+              },
+              "uuid": "0adae9fb-caf0-4678-b81c-aadcad68bc7d",
+              "parentUUID": "35b3c119-7a99-400a-8a02-9c97586c8b94",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d207bc02-f136-49be-a36d-619485a06f6e",
+            "dc2ec34c-3db8-4973-a01b-0047c1ee9675",
+            "0adae9fb-caf0-4678-b81c-aadcad68bc7d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2404,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/adebayoobafemi/Desktop/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
   }
- }
+}
