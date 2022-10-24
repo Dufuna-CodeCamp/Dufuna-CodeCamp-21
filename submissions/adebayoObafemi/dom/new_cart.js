@@ -1,5 +1,4 @@
 let cartItem = document.querySelectorAll(".addtocart");
-let cartItemTwo = document.getElementsByClassName("addtocart");
 let activeOrder = document.querySelector("#active");
 
 let notifyActive = 0;
