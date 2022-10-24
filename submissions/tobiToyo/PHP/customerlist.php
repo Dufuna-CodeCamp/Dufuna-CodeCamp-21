@@ -43,13 +43,9 @@ if(!empty($result)) {
 
     unset($result);
 }
-  
     else{
       echo 'No records matching your query were found.';
     }
-
-  
-
 
 
 unset($pdo)

@@ -11,13 +11,10 @@ try{
   $statement = $pdo->prepare($insert);
 
   // binding parameters to statements
-
   $statement->bindParam(':Full_Name', $_REQUEST['Full_Name']);
   $statement->bindParam(':Email_Address', $_REQUEST['Email_Address']);
   $statement->bindParam(':Created_At', date('y-m-d h:i:s'));
   
-
-
   // execute the prepared statement
   $statement->execute();
   echo "Records inserted successfully";

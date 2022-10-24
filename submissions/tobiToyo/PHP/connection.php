@@ -13,9 +13,4 @@
   }
 
 
-
-  // $pdo = new PDO('mysql:host=localhost;dbname=practicephp', 'root', 'mysql');
-  
-  
-
   ?>
