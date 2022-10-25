@@ -1,5 +1,5 @@
 svg {
-    display: flex;
+    /* display: none; */
     width: 20px;
     height: 20px;
     fill: hsla(0, 39%, 49%, 1);
@@ -7,17 +7,18 @@ svg {
 }
 
 a.menurm {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     column-gap: 5px;
     align-items: center;
-    margin: 0 5px 20px;
-    padding: 3px 30px 3px 3px;
+    /* margin: none; */
+    /* padding: 2px 30px 2px 2px; */
     border: 1px solid hsla(0, 0%, 65%, 1);
     border-radius: 3px;
     font-size: 16px;
     color: hsla(0, 0%, 90%, 1);
     background-color: hsla(0, 0%, 65%, 1);
+    width: fit-content;
 }
 
 div.one {
