@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-10-27T17:04:36.848Z",
-    "end": "2022-10-27T17:07:37.015Z",
-    "duration": 180167,
+    "start": "2022-10-28T13:01:01.615Z",
+    "end": "2022-10-28T13:04:01.712Z",
+    "duration": 180097,
     "testsRegistered": 8,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6e43d9e8-597d-411c-82cf-c3c8c6ab61a4",
+      "uuid": "08c052e6-a017-445c-9a3e-0bf25a279d88",
       "title": "",
       "fullFile": "C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
       "file": "\\vendors.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+          "uuid": "e7af859c-5611-4d89-be15-5b153b41e458",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
           "file": "\\vendors.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: FoodBag Logo is present\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: FoodBag Logo is present\"",
               "timedOut": true,
-              "duration": 180033,
+              "duration": 180019,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)",
                 "diff": null
               },
-              "uuid": "78a2a6f5-1237-45c2-8741-0743ac75418e",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "a168e8c9-838a-41aa-9dad-2defbfbf064b",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "2db860de-a5d2-43ae-8a55-533ef856eb61",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "38418c4f-ec2e-423d-8d80-ed8c476b1e73",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-              "uuid": "56209ee5-00fe-472e-9e64-0552a2245dea",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "40d7900d-5d3b-40bd-a782-92b4e49ec987",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-              "uuid": "98f35e1a-0701-4067-9ea9-bdbbc5fd6b16",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "ecab8503-fc79-433b-80c5-e287c6b17f2a",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
-              "uuid": "72288a55-5fd0-4297-b7e4-5088479589b6",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "e1b2cc50-c4db-4ac1-a01a-2fdfa51dc8fa",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -143,8 +143,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
               "err": {},
-              "uuid": "6b4269a3-1133-49b6-b370-41d69c60e40d",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "7bb5ae75-091f-44e9-9f09-81096b42e0f3",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -161,8 +161,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "5e9f8ab5-bbaa-4a94-86aa-ed10c3bd58bd",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "00e7a133-7789-44d4-9a02-f2e751ff0952",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -179,8 +179,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "82cbeadf-ab8a-4485-8ebe-be5bdaa3269d",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "88daa641-44fd-4b25-81cc-4e5bde1b24e5",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -197,8 +197,8 @@
               "context": null,
               "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
               "err": {},
-              "uuid": "be593144-26a1-4c15-8f89-1f76a75191a8",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "6c52a38c-fe69-4af9-9580-5b0964836546",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             },
@@ -215,8 +215,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
-              "uuid": "bfe5e1fa-0308-4c7a-849e-7ce7660836bb",
-              "parentUUID": "bfc2c82f-0b75-4c78-911e-2a825ae42379",
+              "uuid": "848763b7-62ec-49f7-89b0-d1b6a26a2bf3",
+              "parentUUID": "e7af859c-5611-4d89-be15-5b153b41e458",
               "isHook": false,
               "skipped": true
             }
@@ -226,14 +226,14 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "56209ee5-00fe-472e-9e64-0552a2245dea",
-            "98f35e1a-0701-4067-9ea9-bdbbc5fd6b16",
-            "72288a55-5fd0-4297-b7e4-5088479589b6",
-            "6b4269a3-1133-49b6-b370-41d69c60e40d",
-            "5e9f8ab5-bbaa-4a94-86aa-ed10c3bd58bd",
-            "82cbeadf-ab8a-4485-8ebe-be5bdaa3269d",
-            "be593144-26a1-4c15-8f89-1f76a75191a8",
-            "bfe5e1fa-0308-4c7a-849e-7ce7660836bb"
+            "40d7900d-5d3b-40bd-a782-92b4e49ec987",
+            "ecab8503-fc79-433b-80c5-e287c6b17f2a",
+            "e1b2cc50-c4db-4ac1-a01a-2fdfa51dc8fa",
+            "7bb5ae75-091f-44e9-9f09-81096b42e0f3",
+            "00e7a133-7789-44d4-9a02-f2e751ff0952",
+            "88daa641-44fd-4b25-81cc-4e5bde1b24e5",
+            "6c52a38c-fe69-4af9-9580-5b0964836546",
+            "848763b7-62ec-49f7-89b0-d1b6a26a2bf3"
           ],
           "duration": 0,
           "root": false,
