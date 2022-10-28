@@ -1,5 +1,4 @@
 
-
 *{
     padding:0;
     margin:0;
@@ -9,7 +8,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color:lightyellow;
+  /* background-color:lightyellow; */
   align-items: center;
   height: 50px;
   width: 100%;
@@ -22,14 +21,60 @@ nav {
   margin-right: 100px;
   
 }
+nav li a span{
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background-color:transparent;
+ 
+}
 
 #links li {
 display: inline;
+list-style: none;
 }
 
 #links a {
   margin-right: 20px;
   padding-right: 10px;
+  text-decoration: none;
+}
+
+
+
+/* #cartActive {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: green;
+} */
+
+
+/* .aditem {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color:red;
+} */
+
+.draw {
+  /* position: relative; */
+  /* left: 3px; */
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border:2px solid white;
+  margin-right: 5px;
+}
+
+.draw::after{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transform: translateY(7px) translateX(-10px);
 }
 #foodone {
   display: flex;

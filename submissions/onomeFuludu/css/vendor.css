@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 100px 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0 5px;
+    align-items: center;
+    
+}
+
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 0 0 50px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#signup {
+    color: #AD4C4C;
+    background-color: white;
+    border: 1px solid #AD4C4C;
+    padding: 8px 15px;
+    border-radius: 3px;
+    width: 92px;
+
+}
+
+.nav-link--nil {
+    display: none;
+}
+
+.nav-btns--dot {
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #ad4c4c;
+    right: 20.4em;
+    top: 3.2em;
+  }
+
+
+.home {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+   
+}
+
+span{
+    color: #AD4C4C;
+}
+
+.vendor {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: black;
+}
+
+.home, .vendor {
+    margin: 60px 0 20px;
+  }
+
+.vendor-head {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    color: black;
+}
+
+.CR7 {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+ .KFC-img {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+ }
+
+ h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: black;
+ }
+
+  #view {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #AD4C4C;
+    padding-top: 12px;
+ }
+ a:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+ }
+
+ .KFC {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 70px;
+
+ }
+
+ .price {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .list {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: gray;
+    padding-bottom: 20px;
+ }
+
+ .amount {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: green;
+ }
+
+ .cart{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    color: #AD4C4C;
+    background-color: white;
+    border: 1px solid #AD4C4C;
+    padding: 10px 22px;
+    border-radius: 3px;
+    width: 90px;  
+    text-align: center;  
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+ .cart2 {
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    color: #E6E6E6;
+    background-color: #A5A5A5;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 3px;
+    width: 90px;  
+    text-align: center;  
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .KFC1{
+    margin-bottom: 2em;
+ }
+
+ hr {
+    margin: 80px auto;
+}
+
+#view-mobile {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #AD4C4C;
+     display: none;
+    text-align: center;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 768px){
+    body {
+        margin: 0 50px 10px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+   .KFC2, #view {
+        display: none;
+    }
+
+    #view-mobile {
+        display: block;
+    }
+
+    h5 {
+        margin-left: 2px;
+    }
+
+    .KFC1, .img_advert{
+        width: 100%;
+        height: auto;
+      }
+
+      .vendor-head {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+
+      .home, .vendor {
+        margin: 60px 0 20px;
+      }
+
+      .nav-btns--dot {
+        position: absolute;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        background: #ad4c4c;
+        right: 14.4em;
+        top: 3.0em;
+      }
+}
+
+@media screen and (max-width: 425px){
+    body {
+        margin: 0 20px 20px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+    .KFC2, #view {
+        display: none;
+    }
+    #view-mobile {
+        display: block;
+    }
+
+    .KFC1, .img_advert{
+        width: 100%;
+        height: auto;
+      }
+
+      .vendor-head {
+        font-size: 20px;
+        margin-top: -30px;
+      }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0 23px 20px;
+    }
+
+    nav ul li {
+        padding: 0 0 0 30px;
+    }
+
+    span, .logo {
+        font-size: 15px;
+    }
+
+    .KFC2, #view {
+        display: none;
+    }
+    #view-mobile {
+        display: block;
+    }
+
+    .KFC1, .img_advert{
+        width: 100%;
+        height: auto;
+      }
+
+      .vendor-head {
+        font-size: 20px;
+        margin-top: -30px;
+      }
+}
+
+
+
+
+
