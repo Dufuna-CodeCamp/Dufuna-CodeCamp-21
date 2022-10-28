@@ -1,8 +1,8 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 4,
-    "passes": 4,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
     "start": "2022-10-28T10:37:42.818Z",
@@ -11,10 +11,10 @@
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 8,
+    "hasSkipped": true
   },
   "results": [
     {
@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
           ],
           "tests": [
             {
-              "title": "test case: check if Price is present",
-              "fullTitle": "Testing Scholars Project test case: check if Price is present",
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
               "duration": 40,
               "state": "passed",
@@ -83,16 +83,16 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
               "uuid": "6b52e446-a6a0-4438-ac95-7313f05e1d51",
               "parentUUID": "666dde64-822a-4c4d-9eac-00268733f82e",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
-              "title": "test case: check if Description is present",
-              "fullTitle": "Testing Scholars Project test case: check if Description is present",
+              "title": "test case: FoodBag Logo is present",
+              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
               "duration": 25,
               "state": "passed",
@@ -101,16 +101,16 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
               "uuid": "3b5c8ca7-8221-4cc5-8256-a86c1a1e0af2",
               "parentUUID": "666dde64-822a-4c4d-9eac-00268733f82e",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
-              "title": "test case: assert image amount is 2",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
+              "title": "test case: FoodBag text is present on the page",
+              "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
               "timedOut": false,
               "duration": 12,
               "state": "passed",
@@ -119,16 +119,16 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
               "uuid": "35f5e9e2-a3b0-48b4-9d51-263c87cd8ce4",
               "parentUUID": "666dde64-822a-4c4d-9eac-00268733f82e",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
-              "title": "test case: ordered list available",
-              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "title": "test case: check Login",
+              "fullTitle": "Testing Scholars Project test case: check Login",
               "timedOut": false,
               "duration": 0,
               "state": "passed",
@@ -142,7 +142,7 @@
               "uuid": "bfc6d9da-24af-45e9-99e7-8c6910737054",
               "parentUUID": "666dde64-822a-4c4d-9eac-00268733f82e",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
