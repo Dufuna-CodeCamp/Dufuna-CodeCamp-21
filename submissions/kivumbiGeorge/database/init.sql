@@ -72,16 +72,3 @@ CREATE TABLE customer (
     payment_method VARCHAR(255) ,
     PRIMARY KEY(id)
 );
-
-/*
- * command to create a database called foodbag that is going to hold the tables
-*/
-CREATE DATABASE foodbag;
-/*
- * select the foodbag database to be used to run our queries
-*/
-USE foodbag;
-
-
-
-
