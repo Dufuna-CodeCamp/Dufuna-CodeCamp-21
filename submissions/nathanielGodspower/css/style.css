@@ -7,6 +7,7 @@
     --clr-black-300: #a5a5a5;
 
     --clr-accent: #ad4c4c;
+    --clr-green: #5ea304;
 
     --ff-primary: 'Poppins', sans-serif;
 
@@ -24,6 +25,7 @@
     --fs-header: 1.25rem; /*  20px */
     --fs-h3: var(--fs-15); /*  25.6px h3*/
     --fs-h2: var(--fs-20);
+    --fs-15-20: var(--fs-15);
 
     --fs-body: var(--fs-12);
     --fs-footer: var(var(--fs-12));
@@ -36,13 +38,49 @@
         --fs-header: 2.5rem;
         --fs-h2: 1.875rem; /*  30px h2*/
         --fs-h3: 1.45rem; /*  25px h2*/
+        --fs-15-20: var(--fs-20);
     }
 }
 
 /* utility classes */
 
+@media screen and (min-width: 375px) {
+    .sm-hidden {
+        display: none;
+    }
+
+    .sm-mb-80 {
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .xs-hidden {
+        display: none;
+    }
+
+    .xs-mt-40 {
+        margin-top: 40px;
+    }
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-16 {
+    font-size: var(--fs-16);
+}
+
+.text-15-20 {
+    font-size: var(--fs-15-20);
+}
+
+.text-xs {
+    font-size: var(--fs-14);
+}
+
+.text-h2 {
+    font-size: var(--fs-h2);
 }
 
 .font-semibold {
@@ -76,15 +114,26 @@
     background-color: var(--clr-accent);
 }
 
+.mb-30 {
+    margin-bottom: 30px;
+}
 .my-10 {
     margin-block: 10px;
 }
+
 .my-5 {
     margin-block: 5px;
 }
 
+.my-15 {
+    margin-block: 15px;
+}
+
 .my-20 {
     margin-block: 20px;
+}
+.my-40 {
+    margin-block: 40px;
 }
 
 .text-body {
@@ -344,4 +393,53 @@ footer {
         width: 100%;
         align-items: center;
     }
+}
+
+.breadcrumb {
+    height: 100px;
+}
+
+.kfc-single {
+    font-size: var(--fs-16);
+}
+
+.kfc-single button {
+    margin-top: 5px;
+}
+
+.kfc-single img {
+    width: 100%;
+}
+.kfc-single span {
+    color: var(--clr-green);
+}
+
+.img-shrink img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 375px) {
+    .kfc-items {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .breadcrumb {
+        height: 250px;
+    }
+    .img-shrink img {
+        width: unset;
+    }
+
+    .hr {
+        margin-block: 100px;
+    }
+}
+
+.hr {
+    color: #e6e6e6;
+    border: 1px solid;
+    margin-block: 30px;
 }
