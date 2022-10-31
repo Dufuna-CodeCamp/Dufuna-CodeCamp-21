@@ -1,6 +1,8 @@
 let address = document.getElementById('location-list');
 let locations = document.querySelector('select');
 let redirect = document.querySelectorAll("div.recipe");
+// let changeColor = document.getElementById("location").placeholder;
+// let color = document.getElementById("location")
 
 let locationChoice = [
     locations.options[1].text,
@@ -19,6 +21,26 @@ address.addEventListener('change', () => {
         images()
     }
 })
+
+address.addEventListener('change', () => {
+    if(address.value == "") {
+        console.log("Select your location");
+        // console.log(address.value)
+    } else if(locationChoice.includes(address.value)) {
+        console.log(address.value)
+    } else {
+        console.log("")
+    }
+})
+
+// console.log(address.value)
+
+// address.addEventListener('change', () => {
+//     console.log(address.value)
+//     console.log(locationChoice.includes(address.value))
+// })
+
+// console.log(address.options[1].text)
 
 redirect.forEach(element => {
     element.addEventListener('click', () => {
