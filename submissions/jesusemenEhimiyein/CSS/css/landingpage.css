@@ -37,6 +37,13 @@
         margin-right: 20px;
         padding-right: 10px;
     }
+
+    .addbar {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 35px;
+        border-radius: 8px;
+    }
     
     .card-one{
         display: flex;
@@ -57,9 +64,10 @@
     
     .menu img {
         width: 100px;
+        filter: grayscale(100%);
     }
     
-    .food-name{
+    /* .food-name{
       font-size: 20px;
       padding: 4px;
       height: 27px;
@@ -70,13 +78,13 @@
       align-items: center;
       justify-content: center;
       color: #ad4c4c;
-    }
-    
-    .message {
+    } */
+          
+    /* .message {
       font-size: 20px;
       padding: 4px;
     }
-    
+     */
     
     .card-two{
         display: flex;
@@ -134,14 +142,14 @@
         margin-bottom: 10px;
     }
     
-    .location input {
+    /* .location input {
         height: 18px;
         padding: 15px;
         border-radius: 10px;
         margin-bottom: 10px;
         
       }
-    
+     */
       .interest{
           margin-bottom: 10px;
           font-size: 20px;

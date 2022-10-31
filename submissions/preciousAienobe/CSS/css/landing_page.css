@@ -11,6 +11,11 @@ h1 {
   margin-left: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 span {
   color: #ad4c4c;
   margin-right: 20px;
@@ -78,7 +83,7 @@ h3 {
   padding-bottom: 5px;
 }
 
-.fast-food-img {
+.interests {
   border: 1px solid gray;
   border-radius: 5px;
   height: 100px;
@@ -86,36 +91,6 @@ h3 {
   padding: 10px;
   padding-left: 20px;
   margin-left: 20px;
-}
-
-.vegetables-img {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 100px;
-  width: 250px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-left: 10px;
-}
-
-.cocktails-img {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 100px;
-  width: 250px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-left: 10px;
-}
-
-.restaurant-img {
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 100px;
-  width: 250px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-left: px;
 }
 
 .container-3 {
@@ -169,4 +144,98 @@ footer div {
 
 #copyright {
   margin-right: 50px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-bar ul li a {
+    margin-right: 0px;
+  }
+
+  #dropdown {
+    width: 80%;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interests {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+  }
+
+  #terms {
+    margin-top: 10px;
+  }
+
+  #copyright {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 770px) {
+  .nav-bar ul li a {
+    margin-right: 0px;
+  }
+
+  #dropdown {
+    width: 90%;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interests {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  .container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+  }
+
+  #terms {
+    margin-top: 10px;
+  }
+
+  #copyright {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
 }
