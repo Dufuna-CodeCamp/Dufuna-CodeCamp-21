@@ -169,8 +169,12 @@ main {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
-}
 
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
 /* Verification page */
 /* Style the list */
 ul.breadcrumb {
