@@ -61,41 +61,6 @@ const CartPage = () => {
           decrementNumber={() => setCounter(counter - 1)}
         />
 
-        {/* <div className="cartItem"> */}
-        {/* <span className="deleteItem">X</span> */}
-        {/* <img src={image} alt="item" className="itemImage" />
-          <div className="item-details">
-            <p>{"KFC - King Bucket"}</p>
-            <div className="item-cta">
-              <button
-                className="addItem"
-                onClick={() => setCounter(counter + 1)}
-              >
-                +
-              </button>
-              <span className="itemCount">{counter}</span>
-              <button
-                className="removeItem"
-                onClick={() => setCounter(counter - 1)}
-              >
-                -
-              </button>
-            </div>
-          </div>
-          <p className="itemPrice">
-            #{(prices.item1 = prices.item1 * counter)}
-          </p>
-        </div> */}
-
-        {/* <ProductCheckout
-          image={refuel}
-          counter={counter1}
-          name={"Refuel Max"}
-          price={(prices.item2 = prices["item2"] * counter1)}
-          increaseNumber={() => setCounter1(counter1 + 1)}
-          decrementNumber={() => setCounter1(counter1 - 1)}
-        /> */}
-
         <div className="cartItem">
           <div className="deleteItem">X</div>
           <img src={refuel} alt="item" className="itemImage" />

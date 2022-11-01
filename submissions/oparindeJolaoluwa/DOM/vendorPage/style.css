@@ -34,6 +34,7 @@ header{
     top: 30px;
     visibility: hidden;
 }
+ 
 .navigation {
     text-decoration: none;
     color: #696969;
@@ -123,6 +124,7 @@ float: right;
 }
 
 .addbut{
+ 
     border: none;
     background-color: #FFFFFF;
     padding:8px 15px;
@@ -132,6 +134,7 @@ float: right;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 5px;
+ 
 }
 
 #chiclogo{
@@ -160,6 +163,7 @@ float: right;
     
     visibility: hidden;
 }
+ 
 .crep{
     font-weight: 500;
     font-size: 20px;
