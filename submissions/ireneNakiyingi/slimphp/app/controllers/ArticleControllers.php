@@ -17,22 +17,16 @@ class ArticlesController{
     // new article post create
     public function create(Request $request, Response $response){
         $requestData= $request->getParsedBody();
-
-        //$id=$requestData['id'];
         $title=$requestData['title'];
         $description=$requestData['description'];
-        //$status='unpublished';
         $created_by=$requestData['created_by'];
         $created_at=Date('Y-m-d H:i:s');
         $sql= "INSERT INTO articles (title, description,created_by,created_at) 
         VALUES (:title, :description,:created_by,:created_at)";
         try{
-            
             $query= $this->db->prepare($sql);
-            //$query->bindParam(':id',$id);
             $query->bindParam(':title',$title);
             $query->bindParam(':description',$description);
-            //$query->bindParam(':status',$status);
             $query->bindParam(':created_by',$created_by);
             $query->bindParam(':created_at',$created_at);
             $query->execute();
@@ -40,10 +34,8 @@ class ArticlesController{
             "data"=>[
                 "title"=> $title,
                 "description"=>$description,
-                //"status"=>$status,
                 "created_by"=>$created_by,
                 "created_at"=>$created_at,
-                //"id"=>$id
             ]]));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
         }catch (PDOException $ex){
@@ -60,18 +52,13 @@ class ArticlesController{
         
         $title=$requestData['title'];
         $description=$requestData['description'];
-        //$status='unpublished';
         $created_by=$requestData['created_by'];
         $created_at=Date('Y-m-d H:l:s');
 
         try{
             $query= $this->db->prepare("UPDATE articles SET title= :title, description= :description WHERE id = $id");
-            //$query->bindParam(':id', $id);
             $query->bindParam(':title',$title);
             $query->bindParam(':description',$description);
-            //$query->bindParam(':status',$status);
-            //$query->bindParam(':created_by',$created_by);
-            //$query->bindParam(':created_at',$created_at);
             $query->execute();
             $response->getBody()->write(json_encode(["status"=>"success","message"=>"This article was successfully updated"]));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
@@ -85,8 +72,6 @@ class ArticlesController{
         $id=$args['id'];
         try{
             $query= $this->db->prepare("use slim_app_task;DELETE FROM articles WHERE id =$id");
-            //no binding id?
-
             $query->execute();
             $articles= $query;
             if(!$articles){
@@ -110,7 +95,6 @@ class ArticlesController{
             $query->bindParam(':id', $id);
             $query->bindParam(':status', $status);
             $query->execute();
-            //$articles= $query;
             $response->getBody()->write(json_encode(["status"=>"success","message"=>"This article was successfully published"]));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
         }catch (PDOException $ex){

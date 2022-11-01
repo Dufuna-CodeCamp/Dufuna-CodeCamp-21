@@ -1,9 +1,6 @@
 <?php
 namespace DB;
 use PDO;
-//use mysqli;
-
-
 class DB {
     private $dbHostnmae;
     private $dbUsername;
@@ -18,16 +15,6 @@ class DB {
 
     }
     public function connect(){
-        /*$conn = new mysqli($this->dbHostname,$this->dbUsername,$this->dbPassword,$this->dbName );
-        if ($conn-> connect_error){
-            die("connect failed");
-
-        } else {
-            echo " success";
-        };*/
-        //$connectionString= "mysql:{$this->dbHostname};{$this->dbName}";
-        //$pdo= new PDO($connectionString, $this->dbUsername, $this->dbPassword);
-        //$pdo= new PDO( "mysql:'localhost';slim_app_task' ", 'root', 'Treasure12');
         $pdo= new PDO ("mysql:{$this->dbHostname};{$this->dbName}",$this->dbUsername, $this->dbPassword );
         $pdo->query("use slim_app_task");
         $pdo-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

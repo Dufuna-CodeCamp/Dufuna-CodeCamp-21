@@ -10,7 +10,6 @@ $app->get('/', function (Request $request, Response $response){
     $response->getBody()->write("Slim App works so far");
     return $response;
 });
-//require __DIR__ . './../routes/api.php';
 echo "index works";
 
 $app->run();
