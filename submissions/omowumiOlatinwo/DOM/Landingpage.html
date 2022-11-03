@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page for a food ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"> <a href="#" style="text-decoration: none; color: grey;">Food<span
+                        style="color:rgb(168, 7, 7);">Bag</span></a></h1>
+            <ul class="main-nav">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#" id="sign">Sign up</a></li>
+            </ul>
+        </header>
+        <div class="first">
+            <h1>FoodBag</h1>
+            <p>Anything food, we have you covered.</p>
+        </div>
+        <!-- Where are you -->
+      <div class="main">
+        <section class="location">
+            <b>
+                <p style="color:black;">Where are you?</p>
+            </b>
+
+            <select id="deliveryLocation">
+                <option value= "Enter your delivery address">Enter your delivery address</option>
+                <option value="Ring-road">Ring-road</option>
+                <option value="Oluyole">Oluyole</option>
+                <option value="Elebu">Elebu</option>
+                <option value="Dugbe">Dugbe</option>
+            </select>
+        </section>
+          <!-- Pick an Interest -->
+        <section>
+            <b>
+                <p class="pick">Pick an interest</p>
+            </b>
+
+            <div class="boxx">
+                <div class="card">
+                    <img src="images/fast-food_disabled.svg" alt="" id ='img' >
+                    <h3 id = 'col'>Fast food</h3>
+                    <p>All sorrows are less with bread</p>
+                </div>
+                <div class="card">
+                    <img src="images/Vegetables & Drinks_disabled.svg" alt="" id ='img' >
+                    <h3 id = 'col' >Vegetables & Fruits</h3>
+                    <p>May not want it, but good for you</p>
+                </div>
+                <div class="card">
+                    <img src="images/Drinks & Cocktails_disabled.svg" alt="" id ='img'>
+                    <h3 id = 'col' >Drinks & Cocktail</h3>
+                    <p>I feel sad for those who don't drink</p>
+                </div>
+                <div class="card">
+                    <img src="images/resturant_disabled.svg" alt="" id ='img'>
+                    <h3 id = 'col' >Restaurants</h3>
+                    <p>All sorrows are less with bread</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- How we serve you -->
+        <section>
+            <h1 class="title">How we serve you</h1>
+
+            <div class="box">
+                <div class="cardd">
+                    <img src="images/Illustration_1.svg" alt="">
+                    <h3>Tell us where you are</h3>
+                    <p>Select the location you want us to deliver.</p>
+                </div>
+                <div class="cardd">
+                    <img src="images/illustration_2.svg" alt="">
+                    <h3>Tell us what you want</h3>
+                    <p>Browse the type of food that interest you.</p>
+                </div>
+                <div class="cardd">
+                    <img src="images/illustration_3.svg" alt="">
+                    <h3>We'll come running</h3>
+                    <p>Your order will be delivered to you in no time.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Contact -->
+        <footer>
+            <div class="service">
+                <h1>Contact us</h1>
+                <div class="social">
+                    <a href="#"> <img src="images/twitter 2.svg" alt=""></a>
+                    <a href="#"> <img src="images/youtube 1.svg" alt=""></a>
+                    <a href="#"> <img src="images/facebook-f 1.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="right">
+                <p>Terms & Conditions . Privacy Policy <span style="float: right;">&copy; Copyright 2021 FoodBag is a registered
+                        trademark </span></p>
+            </div>
+
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
