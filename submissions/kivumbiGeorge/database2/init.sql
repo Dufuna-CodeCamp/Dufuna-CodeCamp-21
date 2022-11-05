@@ -13,7 +13,7 @@ CREATE TABLE passengers (
     id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR(255) NOT NULL,
     sex VARCHAR(10) not null,
-    age VARCHAR,
+    age VARCHAR(255),
     PRIMARY KEY(id)
 );
 /* 
@@ -24,14 +24,12 @@ CREATE TABLE passengers (
 CREATE TABLE passengers_details (
     id INT NOT NULL AUTO_INCREMENT,
     passengers_id INT NOT NULL,
-    passenger_class VARCHAR(3) NOT NULL,
+    passenger_class ENUM("1", "2", "3") NOT NULL,
     passenger_ticket_number VARCHAR(255) NOT NULL,
     trip_fare BIGINT NOT NULL,
     assigned_cabin VARCHAR(255),
-    number_of_parents INT NOT NULL,
-    number_of_children INT NOT NULL,
-    number_of_siblings INT NOT NULL,
-    number_of_spouses INT NOT NULL,
+    number_of_parents_children INT NOT NULL,
+    number_of_siblings_spouses INT NOT NULL,
     point_of_embarkation VARCHAR(255) NOT NULL,
     FOREIGN KEY (passengers_id) REFERENCES passengers (id),
     PRIMARY KEY(id)
