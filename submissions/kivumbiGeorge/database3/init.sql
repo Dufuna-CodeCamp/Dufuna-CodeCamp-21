@@ -26,6 +26,3 @@ SELECT COUNT(*)  FROM passengers LEFT JOIN accident_cases ON passengers.id = acc
  * ANS = 9
  */
 SELECT passengers.id, passengers.full_name FROM passengers LEFT JOIN passengers_details ON passengers.id = passengers_details.passengers_id WHERE passengers.age > 35 AND passengers_details.trip_fare > 100 AND number_of_siblings_spouses > 0;
-
-
-
