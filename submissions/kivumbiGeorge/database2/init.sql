@@ -39,3 +39,10 @@ CREATE TABLE passengers_details (
  * referencing the passengers table,
  * survived_accident
  */
+CREATE TABLE accident_cases (
+    id INT NOT NULL AUTO_INCREMENT,
+    passengers_id INT NOT NULL,
+    survived_accident BOOLEAN,
+    PRIMARY KEY (id),
+    FOREIGN KEY (passengers_id) REFERENCES passengers (id)
+);
