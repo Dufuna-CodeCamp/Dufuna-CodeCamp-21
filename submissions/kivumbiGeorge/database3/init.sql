@@ -17,7 +17,7 @@ SELECT passengers.full_name, passengers.sex FROM passengers LEFT JOIN  passenger
 
 /* 
  * query to count how many passengers embarked at SouthHampton and survived
- * ANS = 218
+ * 
  */
 SELECT COUNT(*)  FROM passengers LEFT JOIN accident_cases ON passengers.id = accident_cases.passengers_id WHERE accident_cases.survived_accident = 1;
 
