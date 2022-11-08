@@ -24,7 +24,7 @@ accident_status.id=record_detail.id WHERE accident_status.status = 1 AND
 -- id, names & total number of pax who paid > $100 and above age 35 who has siblings or spouses on board
 SELECT registered_passenger.id, registered_passenger.full_name FROM registered_passenger INNER JOIN
  record_detail ON registered_passenger.id=record_detail.id WHERE record_detail.trip_fare > 100 AND 
- registered_passenger.age > 35  AND record_detail.number_of_siblings_spouses_abroad = 1;
+ registered_passenger.age > 35  and record_detail.number_of_siblings_spouses_abroad = 1;
  
 1	Braund, Mr. Owen Harris
 7	McCarthy, Mr. Timothy J
