@@ -1,0 +1,156 @@
+@media screen and (min-width : 992px) {
+
+    
+    .PageTitle {
+        margin-bottom: 5vh;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+    }
+
+    .MobileSummary {
+        display: none;
+    }
+
+    .Cart {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .ProductPrice {
+        margin-left: auto;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .ProductQuantity {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .ItemImg {
+        width: 20vw;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .Delivery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vw;
+        padding-left: 3vw;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .ScooterImg {
+        width: 10vw;
+        padding-left: 4vw;
+        padding-right: 6vw;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .Total {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .Checkout {
+        background-color: #AD4C4C;
+        color: #FFFFFF;
+        width: 60vw;
+        height: 8vh;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width : 991px) {
+
+    .PageTitle {
+        margin-bottom: 2.5vh;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        font-size: 2.5vh;
+    }
+
+    .MobileSummary {
+        display: flex;
+        flex-direction: row;
+        font-size: 2vh;
+        font-family: 'Poppins', sans-serif;
+        color: #AD4C4C;
+    }
+
+    .RmvAll {
+        margin-left: auto;
+        text-decoration: underline;
+    }
+
+    .Cart {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .ItemImg {
+        width: 15vw;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .ProductPrice {
+        margin-left: auto;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .ProductQuantity {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5vw;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        line-height: 2vh;
+    }
+
+    .Delivery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vw;
+        padding-left: 3vw;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .ScooterImg {
+        width: 10vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .Total {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 4vw;
+    }
+
+    .Checkout {
+        background-color: #AD4C4C;
+        color: #FFFFFF;
+        width: 100%;
+        height: 6vh;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vh;
+    }
+}

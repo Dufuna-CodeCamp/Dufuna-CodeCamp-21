@@ -1,0 +1,38 @@
+.success-img{
+  display: block;
+  margin: auto;
+  /* border: 1px solid green; */
+}
+
+.success {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.75rem;
+  color: #5EA304 ;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.order-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #696969;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+/* .content{
+  border: 1px solid blue;
+} */
+
+.content-div {
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 10.5rem);
+  position: relative;
+  top: -9rem;
+  
+   /* margin: auto; */
+}

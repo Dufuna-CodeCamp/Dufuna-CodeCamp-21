@@ -1,8 +1,7 @@
 {
   "stats": {
-    "tests": 4,
+    "tests": 3,
     "passes": 3,
-    "failures": 1,
-    "owner": "ireneNakiyingi"
-  }
+    "failures": 0,
+   }
 }
