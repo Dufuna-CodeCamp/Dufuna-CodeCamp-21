@@ -54,7 +54,7 @@ for (i=0; i< products.length ;i++){
         newPriceO= (product_price[i])/2;
         console.log("The price of " + products[i] + " is "+ newPriceO);
     } 
-};
+}
 
 
 
