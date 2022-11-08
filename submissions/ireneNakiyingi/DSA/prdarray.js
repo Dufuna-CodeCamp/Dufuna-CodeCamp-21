@@ -20,8 +20,6 @@ var products=[
     "Sony NEX-5",
     "Olympus PEN E-PL6"
 ];
-
-
 var product_price=[
     500.00,
     200.00,
@@ -44,17 +42,23 @@ var product_price=[
     900.00,
     750.00
 ];
-console.log("The length of the products array is " + products.length);
-
-for (i=0; i< products.length ;i++){
-    if (i%2==0){
-        newPriceE = (product_price[i])*2;
-        console.log("The price of " + products[i] + " is " + newPriceE);
-    } else {
-        newPriceO= (product_price[i])/2;
-        console.log("The price of " + products[i] + " is "+ newPriceO);
-    } 
+//go through array
+for (i=0; i<products.length; i++){
+    //check for length of names of products
+    nameLength = products[i].length;
+    //console.log("the length of" + products[i] + " name is " + nameLength)
+    // check for even name length
+        if (nameLength%2==0){
+            newPriceE = (product_price[i])*2;
+            console.log("The price of " + products[i] + " is " + newPriceE);
+            //odd name length
+        } else {
+            newPriceO= (product_price[i])/2;
+            console.log("The price of " + products[i] + " is "+ newPriceO);
+        } 
 }
+    
+
 
 
 
