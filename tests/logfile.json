@@ -1,9 +1,146 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 5,
-    "passes": 5,
+    "tests": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
+    "failures": 1,
+    "start": "2022-11-09T11:09:58.396Z",
+    "end": "2022-11-09T11:10:06.304Z",
+    "duration": 7908,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b7483959-b9e3-43c5-80db-7b44784ee28b",
+      "title": "",
+      "fullFile": "C:\\Users\\VeeCee\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+      "file": "\\navigation_tasks.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ce5e6bd8-d59e-48d5-9087-cdeb96148870",
+          "title": "Testing Navigation on HtmlForms",
+          "fullFile": "C:\\Users\\VeeCee\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+          "file": "\\navigation_tasks.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "timedOut": false,
+              "duration": 7857,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
+              "err": {},
+              "uuid": "f0f894da-bb8f-4ac8-9e44-e74b76e11f2c",
+              "parentUUID": "ce5e6bd8-d59e-48d5-9087-cdeb96148870",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit()",
+              "err": {},
+              "uuid": "9f322cd1-e63c-4c5a-a143-57200e3acc55",
+              "parentUUID": "ce5e6bd8-d59e-48d5-9087-cdeb96148870",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
+              "timedOut": false,
+              "duration": 35,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "err": {
+                "message": "AssertionError: Ensure you have two links on this page: expected 3 to equal 2",
+                "estack": "AssertionError: Ensure you have two links on this page: expected 3 to equal 2\n    at Context.<anonymous> (navigation_tasks.js:22:16)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": "- 3\n+ 2\n"
+              },
+              "uuid": "dfe672c1-0ae8-4d51-9871-63daa965b63e",
+              "parentUUID": "ce5e6bd8-d59e-48d5-9087-cdeb96148870",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dfe672c1-0ae8-4d51-9871-63daa965b63e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 35,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/VeeCee/Desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
   }
 }
