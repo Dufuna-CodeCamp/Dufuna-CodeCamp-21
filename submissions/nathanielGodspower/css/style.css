@@ -449,6 +449,9 @@ footer {
     .serve-single img {
         width: 250px;
     }
+    .serve__options > *:last-child {
+        grid-column: unset;
+    }
 }
 
 @media screen and (max-width: 500px) {
