@@ -72,8 +72,7 @@ const Verification = () => {
           <div className="location"></div>
         </div>
       </section>
-      {/* <form action="/Success"> */}
-      <form action="">
+      <form action="/Success">
         <label htmlFor="phone">Phone number</label>
         <input
           id="phone"
