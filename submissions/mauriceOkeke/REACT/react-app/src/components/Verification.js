@@ -72,6 +72,7 @@ const Verification = () => {
           <div className="location"></div>
         </div>
       </section>
+      {/* form for submission */}
       <form action="/Success">
         <label htmlFor="phone">Phone number</label>
         <input
@@ -142,6 +143,7 @@ const Verification = () => {
         </div>
         <input type="submit" value="Pay" />
       </form>
+      {/* End of form */}
     </>
   );
 };
