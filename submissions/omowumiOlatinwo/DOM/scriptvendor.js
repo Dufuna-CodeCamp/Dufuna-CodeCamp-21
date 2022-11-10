@@ -1,7 +1,6 @@
 let cartButtons = document.querySelectorAll(".cart");
 let cart = document.querySelector(".cartt");
 
-
 cartButtons.forEach((button)=>{
     button.addEventListener("click",function() {
         if (button.textContent == "Add to Cart"){
