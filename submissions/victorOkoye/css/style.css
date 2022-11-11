@@ -161,8 +161,6 @@ section.vendors .vendor .title .logo {
     align-items: center;
 }
 
-
-
 section.vendors .vendor .title .logo h3{
     margin-left:10px;
 }
@@ -235,10 +233,7 @@ section.landing, section.vendors{
     margin-top: 100px;
 }
 
-
-
 /* extra small devices (phones, 600px down) */
-
 @media screen and (max-width: 400px){
     nav li{
         padding-right: 15px;
@@ -255,7 +250,6 @@ section.landing, section.vendors{
     }
     section.landing .interests .interest-container .interest{
         flex-basis: 100%;
-        /* margin-bottom:20px; */
     }
 
     section.landing .serve-you .serve-container div{
@@ -270,26 +264,6 @@ section.landing, section.vendors{
         text-align: center;
     }
 }
-
-@media screen and (max-width: 649px){
-
-    .vendor .orders .order{
-        width:100%;
-    }
-
-    .vendor .orders .order img{
-        width:100%;
-    }
-
-    section.vendors .vendor .title button{
-        display: none;
-    }
-
-    .vendor .btn{
-        display:flex;
-    }
-}
-
 
 /* small devices (portrait tablets and large phones 600px and up) */
 
