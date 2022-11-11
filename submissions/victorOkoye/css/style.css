@@ -230,3 +230,93 @@ section.vendors .vendor .title button, .vendor > .btn button{
     background-color: white;
     transform: translateY(7px) translateX(-10px);
 }
+
+section.landing, section.vendors{
+    margin-top: 100px;
+}
+
+
+
+/* extra small devices (phones, 600px down) */
+
+@media screen and (max-width: 400px){
+    nav li{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 20px 20px;
+    }
+    section.landing .title{
+        text-align:start;
+    }
+    section.landing .interests .interest-container .interest{
+        flex-basis: 100%;
+        /* margin-bottom:20px; */
+    }
+
+    section.landing .serve-you .serve-container div{
+        width:100%;
+        text-align: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 649px){
+
+    .vendor .orders .order{
+        width:100%;
+    }
+
+    .vendor .orders .order img{
+        width:100%;
+    }
+
+    section.vendors .vendor .title button{
+        display: none;
+    }
+
+    .vendor .btn{
+        display:flex;
+    }
+}
+
+
+/* small devices (portrait tablets and large phones 600px and up) */
+
+@media screen and (min-width: 600px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+
+    section.landing .interests .interest-container .interest{
+        flex-basis: 48%;
+    }
+
+    section.landing .serve-you .serve-container{
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.landing .serve-you .serve-container div{
+        width:300px;
+        text-align: center;
+    }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
+}
