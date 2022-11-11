@@ -1,6 +1,5 @@
 import React from "react";
 import { Component } from "react";
-import plus from '../../src/plus.svg';
 class CartItem extends Component{
     constructor(props){
         super(props)
@@ -22,7 +21,7 @@ class CartItem extends Component{
                             {/* close */}
                             <img src={this.props.close} className="hand cancel" alt="close item"/>
                             {/* item image */}
-                            <img src={this.props.imagesrc} className="img-fluid images" width="150px" height="100px" alt="image items"/>
+                            <img src={this.props.imagesrc} className="img-fluid images" width="150px" height="100px" alt="items"/>
                             </div>
                             {/* item name */}
                             <div className="col desc">

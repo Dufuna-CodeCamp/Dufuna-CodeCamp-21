@@ -1,7 +1,5 @@
 import React from "react";
 import { Component } from "react";
-import plus from '../../src/plus.svg';
-import scooter from '../../src/scooter.svg';
 class Total extends Component {
     // constructor(props){
     //     super(props)

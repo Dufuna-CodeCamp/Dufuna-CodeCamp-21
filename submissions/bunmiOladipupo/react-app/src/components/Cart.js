@@ -4,7 +4,6 @@ import kfc from '../../src/kfc.svg';
 import CartItem from "./CartItem.js";
 import DeliveryItem from "./DeliveryItem.js";
 import Total from "./Total.js";
-import { render } from "enzyme";
 import close from '../../src/close.svg';
 import plus from '../../src/plus.svg';
 import minus from '../../src/minus.svg';
@@ -84,7 +83,6 @@ class Cart extends Component{
             var delivery = "";
             var totalGross = this.totalGross();
             if(totalGross > 0){
-                delivery = 1200;
                 this.setState({delivery: 1200},)
             }else{
                 this.setState({delivery: 0})
@@ -119,7 +117,6 @@ class Cart extends Component{
                 delivery = 1200;
                 this.setState({delivery: 1200},)
             }else{
-                delivery = 0;
                 this.setState({delivery: 0})
             }
             });
@@ -133,10 +130,8 @@ class Cart extends Component{
                     var delivery = "";
                     var totalGross = this.totalGross();
                     if(totalGross > 0){
-                        delivery = 1200;
                         this.setState({delivery: 1200},)
                     }else{
-                        delivery = 0;
                         this.setState({delivery: 0})
                     }
                 });
@@ -154,7 +149,6 @@ class Cart extends Component{
                         delivery = 1200;
                         this.setState({delivery: 1200},)
                     }else{
-                        delivery = 0;
                         this.setState({delivery: 0})
                     }
             })
@@ -164,10 +158,8 @@ class Cart extends Component{
                     var delivery = "";
                     var totalGross = this.totalGross();
                     if(totalGross > 0){
-                        delivery = 1200;
                         this.setState({delivery: 1200},)
                     }else{
-                        delivery = 0;
                         this.setState({delivery: 0})
                     }
              });
@@ -189,11 +181,11 @@ class Cart extends Component{
            for (let j = 0; j < price2.length; j++) {
             total2 +=Number(price2[j].outerText);
        }
-       if (total2 == 0) { 
+       if (total2 === 0) { 
             var value = total2;     
         this.setState({total: total2, delivery: 0})
        }else{    
-            var value = total;    
+            value = total;    
         this.setState({total: total})
        }
            console.log("total is "+total)

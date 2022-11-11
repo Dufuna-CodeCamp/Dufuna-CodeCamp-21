@@ -1,15 +1,13 @@
 import React from "react";
 import { Component } from "react";
-import close from '../../src/close.svg';
-import plus from '../../src/plus.svg';
-import minus from '../../src/minus.svg';
+// import plus from '../../src/plus.svg';
 import scooter from '../../src/scooter.svg';
 
 class DeliveryItem extends Component{
-    constructor(props){
-        super(props)
+    // constructor(props){
+    //     super(props)
         
-    }
+    // }
     render(){
             return (
                 <>
@@ -17,7 +15,7 @@ class DeliveryItem extends Component{
                         <div className="col">
                             <div className="row">
                                 <div className="col">
-                                    <img src={scooter} className="img-fluid deliveryimg" width="80px" height="60px" alt="delivery image"/>
+                                    <img src={scooter} className="img-fluid deliveryimg" width="80px" height="60px" alt="delivery"/>
                                 </div>
                                 <div className="col desc">
                                 <p className="deliveryname">Delivery&nbsp;fee</p><br/>
