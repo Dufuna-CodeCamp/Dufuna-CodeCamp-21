@@ -4,7 +4,6 @@ import close from '../../src/close.svg';
 import plus from '../../src/plus.svg';
 import minus from '../../src/minus.svg';
 import scooter from '../../src/scooter.svg';
-import $ from 'jquery';
 
 class DeliveryItem extends Component{
     constructor(props){
