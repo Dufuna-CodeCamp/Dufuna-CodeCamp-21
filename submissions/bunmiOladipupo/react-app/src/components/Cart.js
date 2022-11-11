@@ -80,7 +80,6 @@ class Cart extends Component{
                 total +=Number(price[i].outerText);
            }
            this.setState({total: total}, function name(params) {
-            
             var totalGross = this.totalGross();
             if(totalGross > 0){
                 this.setState({delivery: 1200},)
