@@ -1,10 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import close from '../../src/close.svg';
-import kfc from '../../src/kfc.svg';
 import plus from '../../src/plus.svg';
-import minus from '../../src/minus.svg';
-import DeliveryItem from "./DeliveryItem.js";
 class CartItem extends Component{
     constructor(props){
         super(props)
@@ -24,9 +20,9 @@ class CartItem extends Component{
                         <div className="row">
                             <div className="col">
                             {/* close */}
-                            <img src={this.props.close} className="hand cancel"/>
+                            <img src={this.props.close} className="hand cancel" alt="close item"/>
                             {/* item image */}
-                            <img src={this.props.imagesrc} className="img-fluid images" width="150px" height="100px"/>
+                            <img src={this.props.imagesrc} className="img-fluid images" width="150px" height="100px" alt="image items"/>
                             </div>
                             {/* item name */}
                             <div className="col desc">
@@ -44,12 +40,12 @@ class CartItem extends Component{
                                 
                                 </div> 
                             </div> */}
-                            <img src={this.props.plus} className="hand spaceboot plus" width="8%" align="left" onClick={this.props.increaseNumber}/>
+                            <img src={this.props.plus} className="hand spaceboot plus" width="8%" align="left" onClick={this.props.increaseNumber} alt="increase"/>
                                 {/* { counter } */}
                         <p id="numb" className="itemnumber spaceboot number">{this.props.number}</p>
 
                                     {/* minus */}
-                        <img src={this.props.minus} className="hand spaceboot minus" width="8%" align="right" onClick={this.props.decreaseNumber}/>
+                        <img src={this.props.minus} className="hand spaceboot minus" width="8%" align="right" onClick={this.props.decreaseNumber} alt="decrease"/>
                             </div>
                         </div>
                     </div>

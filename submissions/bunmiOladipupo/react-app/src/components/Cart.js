@@ -1,6 +1,5 @@
 import React from "react";
 import { Component } from "react";
-import subHeader from "./DeliveryItem.js";
 import kfc from '../../src/kfc.svg';
 import CartItem from "./CartItem.js";
 import DeliveryItem from "./DeliveryItem.js";
@@ -49,8 +48,8 @@ class Cart extends Component{
         }
         
         render(){
-            const del = new DeliveryItem();
-        const pric = del.price
+        //     const del = new DeliveryItem();
+        // const pric = del.price
         return(
             <div>
             <CartItem  id={this.products[0].id} close={close} plus={plus} increaseNumber={()=> this.increaseNumber(this.products[0].id)} number={this.state.products[0].quantity} minus={minus} decreaseNumber={()=> this.decreaseNumber(this.products[0].id)} totalNet={this.totalNet} imagesrc={kfc} name={this.products[0].name} price={this.products[0].price} change={this.totalGross}/>
@@ -88,7 +87,6 @@ class Cart extends Component{
                 delivery = 1200;
                 this.setState({delivery: 1200},)
             }else{
-                delivery = 0;
                 this.setState({delivery: 0})
             }
            })
@@ -113,7 +111,7 @@ class Cart extends Component{
 
 
         decreaseNumber = (id) =>{
-            if(this.deliveryPrice() == 0){
+            if(this.deliveryPrice() === 0){
                 this.setState({quantity: 0, delivery: 0}, function name(params) {
                     var delivery = "";
             var totalGross = this.totalGross();
@@ -148,7 +146,7 @@ class Cart extends Component{
                 
                 // var del = new DeliveryItem()
                 // del.del()
-            }else if(this.addQuantity() == 0){
+            }else if(this.addQuantity() === 0){
                 this.setState({quantity: 0, delivery: 0}, function name(params) {
                     var delivery = "";
                     var totalGross = this.totalGross();

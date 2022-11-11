@@ -1,11 +1,9 @@
 import React from "react";
 import { Component } from "react";
 import close from '../../src/close.svg';
-import kfc from '../../src/kfc.svg';
 import plus from '../../src/plus.svg';
 import minus from '../../src/minus.svg';
 import scooter from '../../src/scooter.svg';
-import CartItem from "./CartItem.js";
 import $ from 'jquery';
 
 class DeliveryItem extends Component{
@@ -20,7 +18,7 @@ class DeliveryItem extends Component{
                         <div className="col">
                             <div className="row">
                                 <div className="col">
-                                    <img src={scooter} className="img-fluid deliveryimg" width="80px" height="60px"/>
+                                    <img src={scooter} className="img-fluid deliveryimg" width="80px" height="60px" alt="delivery image"/>
                                 </div>
                                 <div className="col desc">
                                 <p className="deliveryname">Delivery&nbsp;fee</p><br/>
