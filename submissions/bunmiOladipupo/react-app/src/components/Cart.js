@@ -80,7 +80,7 @@ class Cart extends Component{
                 total +=Number(price[i].outerText);
            }
            this.setState({total: total}, function name(params) {
-            var delivery = "";
+            
             var totalGross = this.totalGross();
             if(totalGross > 0){
                 this.setState({delivery: 1200},)
@@ -127,7 +127,7 @@ class Cart extends Component{
             console.log(this.state.products)
             console.log(this.state.products[id]['quantity'])           
                 this.setState({quantity: this.state.products[id]['quantity']}, function name(params) {
-                    var delivery = "";
+                    
                     var totalGross = this.totalGross();
                     if(totalGross > 0){
                         this.setState({delivery: 1200},)
@@ -146,7 +146,6 @@ class Cart extends Component{
                     var delivery = "";
                     var totalGross = this.totalGross();
                     if(totalGross > 0){
-                        delivery = 1200;
                         this.setState({delivery: 1200},)
                     }else{
                         this.setState({delivery: 0})
@@ -155,7 +154,7 @@ class Cart extends Component{
 
             }else{
                 this.setState({quantity: 0}, function name(params) {
-                    var delivery = "";
+                    
                     var totalGross = this.totalGross();
                     if(totalGross > 0){
                         this.setState({delivery: 1200},)
