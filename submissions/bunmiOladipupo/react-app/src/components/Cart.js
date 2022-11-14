@@ -47,8 +47,6 @@ class Cart extends Component{
         }
         
         render(){
-        //     const del = new DeliveryItem();
-        // const pric = del.price
         return(
             <div>
             <CartItem  id={this.products[0].id} close={close} plus={plus} increaseNumber={()=> this.increaseNumber(this.products[0].id)} number={this.state.products[0].quantity} minus={minus} decreaseNumber={()=> this.decreaseNumber(this.products[0].id)} totalNet={this.totalNet} imagesrc={kfc} name={this.products[0].name} price={this.products[0].price} change={this.totalGross}/>
@@ -73,9 +71,7 @@ class Cart extends Component{
             console.log(this.state.products[id]['quantity'])
             this.setState({quantity: this.state.products[id]['quantity']}, function name(params) {
                 var price = document.getElementsByClassName('spanprice');
-           //console.log(price[0].outerText);
            var total = 0;
-           //var dprice = new DeliveryItem()
            for (let i = 0; i < price.length; i++) {
                 total +=Number(price[i].outerText);
            }
@@ -90,11 +86,6 @@ class Cart extends Component{
            
             })           
             
-            //this.products[id].quantity = 15
-            //this.setState({number: Number(this.state.number) + 1});
-            // var del = new DeliveryItem()
-            // del.del()
-            //console.log("Item "+ new DeliveryItem());
         }
 
         addQuantity = () =>{
@@ -103,7 +94,6 @@ class Cart extends Component{
             prod.forEach(function(val, key){
                 sum += val.quantity;
             })
-            console.log(sum);
         }
 
 
@@ -123,8 +113,7 @@ class Cart extends Component{
             var der = this.products[id].quantity;
             der -= 1
             this.products[id].quantity = der
-            console.log(this.state.products)
-            console.log(this.state.products[id]['quantity'])           
+                     
                 this.setState({quantity: this.state.products[id]['quantity']}, function name(params) {
                     
                     var totalGross = this.totalGross();
@@ -134,12 +123,7 @@ class Cart extends Component{
                         this.setState({delivery: 0})
                     }
                 });
-                console.log("here")
-                console.log("check"+this.check())
-                console.log(this.addQuantity())
                 
-                // var del = new DeliveryItem()
-                // del.del()
             }else if(this.addQuantity() === 0){
                 this.setState({quantity: 0, delivery: 0}, function name(params) {
                     var delivery = "";
@@ -161,18 +145,15 @@ class Cart extends Component{
                         this.setState({delivery: 0})
                     }
              });
-                // var del = new DeliveryItem()
-                // del.del()
             }
         }
         
         totalGross = (props) =>{
            var price = document.getElementsByClassName('spanprice');
            var price2 = document.getElementsByClassName('item');
-           //console.log(price[0].outerText);
+           
            var total = 0;
            var total2 = 0;
-           //var dprice = new DeliveryItem()
            for (let i = 0; i < price.length; i++) {
                 total +=Number(price[i].outerText);
            }
@@ -187,21 +168,16 @@ class Cart extends Component{
         this.setState({total: total})
        }
            console.log("total is "+total)
-           //console.log(this.state.delivery)
            return value;
         }
 
         check = () =>{
             var price = document.getElementsByClassName('item');
-           //console.log(price[0].outerText);
+           
            var total = 0;
-           //var dprice = new DeliveryItem()
            for (let i = 0; i < price.length; i++) {
                 total +=Number(price[i].outerText);
            }
-           //this.setState({total: total})
-           //console.log("total is "+total)
-           //console.log(this.state.delivery)
            console.log("TT"+total)
            return total;
         }
@@ -224,7 +200,7 @@ class Cart extends Component{
             var delivery = this.deliveryPrice()
             var totalNe = "";
             totalNe = Number(delivery) + Number(total);
-            console.log(totalNe);
+            
             return totalNe;
         }
     

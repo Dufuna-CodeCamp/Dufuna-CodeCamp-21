@@ -4,10 +4,7 @@ import { Component } from "react";
 import scooter from '../../src/scooter.svg';
 
 class DeliveryItem extends Component{
-    // constructor(props){
-    //     super(props)
-        
-    // }
+    
     render(){
             return (
                 <>
@@ -31,20 +28,5 @@ class DeliveryItem extends Component{
             )
             }
             
-            // del = (props) =>{
-            //     var de = new CartItem();
-            //     var del = "";
-            //     var total = "";
-            //     total = de.totalGross()
-                
-            //     if (total > 0) {
-            //         del = 1200;            
-            //     }else{
-            //         del = 0;     
-            //     }   
-            //     this.setState({delivery: "del"});
-            //     console.log("Mr. del "+del);              
-            //     return del;
-            // }
     }    
 export default DeliveryItem;
