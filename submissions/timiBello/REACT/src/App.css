@@ -10,12 +10,10 @@ body {
 /* NAV */
 nav {
   margin-top: 30px;
-
 }
 
 .home li {
   display: inline;
-
 }
 
 .home {
@@ -35,7 +33,6 @@ nav {
 .home:hover {
   font-size: 12px;
 }
-
 
 .right {
   display: inline;
@@ -90,14 +87,11 @@ button.right:hover {
   border: none;
 }
 
-
 button.right a {
   font-size: 10px;
   color: #ad4c4c !important;
   text-decoration: none !important;
-
 }
-
 
 /* HEADING */
 .heading {
@@ -121,18 +115,11 @@ button.right a {
   border: none;
   color: #ad4c4c;
   font-size: 13px;
-
 }
 
 .remove button:hover {
   color: #4e4d4d;
 }
-
-
-
-
-
-
 
 /* ITEMS */
 .container {
@@ -151,7 +138,6 @@ button.right a {
   justify-content: space-between;
   align-items: center;
   margin: 0px 20px;
-
 }
 
 .im-container>* {
@@ -210,7 +196,6 @@ button.right a {
   color: #4e4e4d;
 }
 
-
 .deliveryFee {
   font-size: 13px;
 }
@@ -223,7 +208,6 @@ button.right a {
 .delivery h1 {
   font-size: 14px;
   margin: 0px 40px;
-
 }
 
 .total span {
@@ -241,12 +225,12 @@ button.right a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
 }
 
 .check:hover {
   background: #4e4d4d;
 }
+
 .pick-check{
   background: #4e4d4d!important;
 }
@@ -276,11 +260,12 @@ button.right a {
   transform: translate(-50%, -50%);
   padding: 10px;
   width: 200px;
-  
 }
+
 .order img{
   width: 200px;
 }
+
 .order h2{
   color: green;
   font-size: 18px;
@@ -291,7 +276,7 @@ button.right a {
   font-size: 14px;
 }
 
-
+/* MEDIA QUERY FOR MOBILE */
 @media screen and (min-width:970px) {
   .App {
     margin: 10px 90px;
@@ -323,15 +308,14 @@ button.right a {
   }
 
   .order {
-   
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, 60%);
     padding: 10px;
     width: 200px;
-    
   }
+
   .order img{
     width: 300px;
     position: absolute;
@@ -339,6 +323,7 @@ button.right a {
     top: -90%;
     transform: translate(-40%, -50%);
   }
+
   .order h2{
     color: green;
     font-size: 20px;
@@ -348,4 +333,5 @@ button.right a {
     color: #4e4d4d;
     font-size: 15px;
   }
+	
 }
