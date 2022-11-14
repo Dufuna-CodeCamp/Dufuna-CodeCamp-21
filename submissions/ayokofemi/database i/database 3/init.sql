@@ -22,9 +22,9 @@ accident_status.id=record_detail.id WHERE accident_status.status = 1 AND
 --  218
 
 -- id, names & total number of pax who paid > $100 and above age 35 who has siblings or spouses on board
-SELECT registered_passenger.id, registered_passenger.full_name FROM registered_passenger INNER JOIN
- record_detail ON registered_passenger.id=record_detail.id WHERE record_detail.trip_fare > 100 AND 
- registered_passenger.age > 35  and record_detail.number_of_siblings_spouses_abroad = 0;
+SELECT registered_passenger.id, registered_passenger.full_name Count(record_detail.trip_fare)FROM registered_passenger INNER JOIN
+ record_detail ON registered_passenger.id=record_detail.id WHERE record_detail.trip_fare> 100 AND 
+ registered_passenger.age>35  and record_detail.number_of_siblings_spouses_abroad=0;
 -- id   full_name
 -- 320	Spedden, Mrs. Frederic Oakley (Margaretta Corning Stone)
 -- 391	Carter, Mr. William Ernest
