@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+	<div>
+         <a href="../productpagehtml/productpage.html">Product</a>   
+     </div>
+    <h2>CONTACT FORM</h2>
+	<!--- basic details according to requirements-->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+        <label for="first_name">First Name</label> 
+        <input type="text" name="first_name" id="first_name"> <br><br>
+        <label for="last_name">Last Name</label> 
+				<input type="text" name="last_name" id="last_name">
+				<br><br>
+            <label for="email_address">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Insert your email address"><br><br>
+            </div>
+        <!----reason for contacting-->
+        <div>
+            <label for="subject">Enter subject here</label><br><br>
+            <textarea name="subject" id="subject" rows="10" cols="50" placeholder="What would you like us to do for you....."></textarea> <br>
+        </div>
+        <!----button with function-->
+        <div>
+            <br> <button type="submit" onclick="alert('Thank you for your response')" name="button">Submit</button>
+        </div>
+        <br><br><footer>&copy; 2022 peculiarstore.com</footer>
+
+</body>
+</html>

@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
 }
 
-header-part {
+/* .header-part {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -20,9 +20,10 @@ header-part {
     align-items: center;
     text-align: center;
     padding: 16px 50px;
-}
+} */
 
-.header-part nav {
+
+.header-part .header-list {
     display: flex;
     padding: 2%;
     justify-content: space-between;
@@ -68,6 +69,43 @@ header-part {
     display: flex;
     align-items: center;
 }
+
+.remove {
+    display: block;
+    border-radius: 8px;
+}
+
+.remove img {
+    width: 14px;
+    margin-right: 10px;
+}
+
+.remove span {
+    vertical-align: top;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-notice {
+    display: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 8px;
+}
+
+.nav-item .nav-notice {
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    padding: 5px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
 
 .nav-part span {
     color: #c9c9c9;
@@ -129,7 +167,7 @@ header-part {
     gap: 20px;
 }
 
-.vendor-cart img {
+.vendor-cart .image {
     width: 80%;
     height: 150px;
     top: 395px;
@@ -220,4 +258,68 @@ header-part {
 
 .vendor-container .vendor-cart .vendor-text p {
     color: #5EA304;
+}
+
+
+/* Responsive design @Screen Max 766 */
+@media screen and (max-width: 766px) {
+
+    .location {
+        padding: 20px 66px;
+        margin: 14px 0;
+    }
+
+    .vendor {
+        font-size: 45px;
+        line-height: 43px;
+
+    }
+
+    .vendor-data h5 {
+        font-weight: bold;
+    }
+
+    .vendor-data p {
+        text-align: left;
+    }
+
+
+}
+
+/* Responsive design @Screen Max 600 */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 8%;
+    }
+
+    .info-part {
+        padding: 30px 4px;
+        margin: 20px 0;
+    }
+
+    .location {
+        padding: 23px 60px;
+        margin: 16px 0;
+    }
+
+    .vendor {
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    .vendor-data h5 {
+        font-weight: bold;
+    }
+
+    .vendor-data p {
+        text-align: left;
+    }
+
+    .vendor-container {
+        flex-wrap: wrap;
+        display: block;
+        justify-content: space-between;
+        padding: 20px;
+    }
 }

@@ -1,0 +1,392 @@
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.bon{
+    margin-left: 0px;
+    margin-top: -10px;
+}
+main{
+    margin: 10px;
+}
+.logo{
+    height: 70px;
+    margin-left: 0px;  
+}
+  .chicken{
+      font-size: 20px;
+      margin-top: 30px;
+  }  
+  .chicken-republic{
+      position: relative;
+      top: -180px;
+  }
+  .dd{
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+  }
+  .sec{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 100px;
+      margin-left: -20px;
+
+  }
+   .sec div{
+       width: 240px;
+       height: 380px;
+       margin:  10px;
+       text-align: center;
+       background: white;
+       padding: 7px;
+   }
+   img{
+       height: 150px;
+   }
+   p{
+       margin: 15px;
+      float: left; 
+   }
+   h3{
+       position: relative;
+       color: green;
+       font-size: 14px;
+       float: right;
+       left: -10%;
+       top: 5px;
+   }
+   h4{
+       margin-top: 80px;
+       position: relative;
+       color: red;
+       border: 1px solid red;
+       width: 100px;
+       padding: 5px;
+       margin-left: 12px;
+   }
+   .kfc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+}
+ .kfc div{
+     width: 240px;
+     height: 380px;
+     margin:  10px;
+     text-align: center;
+     background: white;
+     padding: 7px;
+}
+     .red{
+         color: red;
+         margin-top: -10px;
+         border-radius: 80%;
+
+     }
+     li{
+        display: inline;
+        text-decoration: none;
+    position: relative;
+    left: 70%;
+    margin: 20px;
+     }
+     .yy{
+        margin-top: 50px;
+         display: inline;  
+     }
+     .yyy{
+         margin-left: -10px;
+         margin-top: 50px;
+     }
+     h2{
+         margin-top: 150px;
+         margin-bottom: 50px;
+     }
+     #z{
+        margin-left: 20px;
+         opacity: 1; 
+         color: gray;
+     }
+     .gan{
+         height: 50px;
+         width: 50px; 
+         float: left;
+         margin-top: -12px;
+     }
+     .view {
+         position: relative;
+         left: 80%;
+         margin-top: -30px;
+         color: red;
+         font-size: 20px;
+     }
+     .view2{
+        position: relative;
+        left: 75%;
+        margin-top: 30px;
+        color: red;
+        font-size: 20px;
+     }
+     .kf{
+         margin-left: 20px;
+         position: relative;
+         bottom: -50%;     
+     }
+     
+    #sign{
+        color: red;
+        border: 1px solid red;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .home{
+        margin-left: -20px;
+        
+    }
+.rep{
+    margin-top: -100px;
+}
+.cart, .cart2{
+    color: red;
+    font-size: 25px;
+    border-color: red;
+}
+
+
+/* Tomiwas Code */
+nav ul li #CartNav{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    transform: translate(-60%, -80%);
+    padding: 5px;
+    display: none;
+}
+
+/* Tomiwas Code */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .bon,.red{
+        font-size: 25px;
+    }
+    .yyy,.yy{
+        font-size: 20px;
+    }
+    h2.vendor{
+        font-size: 30px;
+    }
+    .gan{
+      width: 70px;
+    }
+    .kf{
+        font-size: 30px;
+    }
+    .size,.size2{
+        font-size: 25px;
+    }
+    .cart,.cart2{
+        font-size: 18px;
+    }
+    .money,.money2{
+        font-size: 22px;
+    }
+    ul{
+        font-size: 18px;
+    }
+     .kfc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+}
+    .kfc-images{
+        width: 500px;
+    }
+    .kfc div{
+        width: 500px;
+        height: 380px;
+        margin:  10px;
+        text-align: center;
+        background: rgb(253, 253, 253);
+        padding: 1px;
+   }
+   .chicken{
+    margin-left: 20px;
+     position: relative;
+     bottom: -30%;
+     font-size: 25px;
+    
+ }
+ 
+ .chicken-republic{
+    position: relative;
+    top: 5px;
+}
+
+    .view{
+        position: relative;
+        left: 20%;
+        top: 1620px;
+         margin-top: 200px;
+         color: red;
+         font-size: 30px;
+     }
+     .rep{
+        width: 500px;
+        bottom: 500px;
+    }
+.chicken-republic{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+}
+.chicken-republic div{
+    position: relative;
+    top: -70px;
+        width: 500px;
+        height: 380px;
+        margin:  10px;
+        text-align: center;
+        background: white;
+        padding: 1px;
+   }
+   .view2{
+    position: relative;
+    left: 60%;
+    top: 1530px;
+     margin-top: 200px;
+     color: red;
+     font-size: 30px;
+   }
+}
+        
+    
+/* Small devices (portrait tables and large phones,600px and up) */
+@media only screen and (min-width: 600px)  {
+    
+   .view2{
+    position: relative;
+    left: -50%;
+    top: 1530px;
+     margin-top: 200px;
+     color: red;
+     font-size: 30px;
+   }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bon,.red{
+        font-size: 33px;
+    }
+    ul{
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    .yyy,.yy{
+        font-size: 27px;
+    }
+    h2.vendor{
+        font-size: 25px;
+    }
+    .gan{
+      width: 70px;
+    }
+    .kf{
+        font-size: 30px;
+    }
+    .kfc{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1px;
+  }
+  .chicken-republic div{
+    position: relative;
+    left: 10px;
+    top: -80px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: -1px;
+    margin-top: 150px;
+  }
+  .chicken{
+    position: relative;
+    top: -20px;
+    font-size: 25px;
+  }
+  .view{
+        position: relative;
+        left: 70%;
+        top: -10px;
+         color: red;
+         font-size: 20px;
+ }
+    
+ .size{
+    font-size: 19px;
+    font-weight: 900;
+}
+.size2{
+      position: relative;
+      bottom: -50px;
+      left: -320px;
+      display: inline;
+      font-size: 19px;
+      font-weight: 900px;
+}
+.cart{
+    font-size: 15px;
+}
+.cart2{
+    position: relative;
+    top: -150px;
+    left: -280px;
+    font-size: 15px;
+}
+.money{
+    position: relative;
+    font-size: 20px;
+    top: -10px;
+    left: 20px;
+}
+.money2{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    top: -76px;
+    font-size: 20px;
+
+}
+.view2{
+    position: relative;
+    left: 57%;
+    top: -190px;
+     color: red;
+     font-size: 20px;
+}
+div.border{
+    box-sizing: border-box;
+    height: 50px;
+}
+}
+/* Medium devices (laptops, 1024x and up) */
+@media only screen and (min-width: 1024)  {
+    .chicken-republic{
+        position: relative;
+        top: -180px;
+        margin: 15px;
+    }
+  .chicken{
+    font-size: 20px;
+  }
+}
+

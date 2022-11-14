@@ -25,7 +25,6 @@ export default function CartContents (props) {
        if(itemExits) {
 
          setCartItems(
-
             cartItems.map((index)=>(
                 index.id=== item.id ? {...itemExits, quantity: itemExits.quantity+1}: index
             ))
