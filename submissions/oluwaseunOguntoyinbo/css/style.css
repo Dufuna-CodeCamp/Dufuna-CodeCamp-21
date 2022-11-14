@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px 50px;
+}
+
+nav{
+    overflow: hidden;
+}
+
+nav a,
+.contact a
+{
+    text-decoration: none;
+    color: black;
+}
+
+ul.nav{
+    list-style-type: none;
+    float: right;
+}
+.nav li,
+.contact li
+{
+    display: inline;
+    padding-left: 25px;
+}
+
+.signup {
+    border-radius: 5px;
+    background-color: white; 
+    border: 1px solid #c72424;
+    color: #c72424;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.location .p,
+.variety .p
+{
+    font-weight: bold;
+}
+
+.location select{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    padding: 10px;
+}
+
+.variety .clearfix,
+.service .clearfix,
+.terms
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.variety .varietyBox{
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    width: 25%;
+    padding: 15px 20px;
+    margin-right: 15px;
+}
+
+.variety .varietyBox1{
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    width: 25%;
+    padding: 15px 20px;
+    margin-right: 0px;
+}
+
+.variety .varietyBox p,
+.variety .varietyBox1 p,
+.variety .varietyBox small,
+.variety .varietyBox1 small
+{
+    color: rgb(161, 158, 158);
+}
+
+.service h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.service .serviceBox{
+    width: 33.3%;
+    
+}
+
+.service .serviceBox h3,
+.service .serviceBox p
+{
+    text-align: center;
+}
+
+footer
+{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.contact
+{
+    text-align: center;
+}
+
+.contact p{
+    padding-left: 60px;
+}
