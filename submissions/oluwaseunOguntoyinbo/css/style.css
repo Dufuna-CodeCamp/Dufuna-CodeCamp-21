@@ -1,9 +1,18 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
 }
 
 body{
     padding: 20px 50px;
+}
+
+.icon{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
 }
 
 nav{
@@ -14,7 +23,7 @@ nav a,
 .contact a
 {
     text-decoration: none;
-    color: black;
+    color: #696969;
 }
 
 ul.nav{
@@ -26,15 +35,21 @@ ul.nav{
 {
     display: inline;
     padding-left: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .signup {
     border-radius: 5px;
     background-color: white; 
-    border: 1px solid #c72424;
-    color: #c72424;
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
     padding: 2px 5px;
     text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .heading {
@@ -57,6 +72,7 @@ ul.nav{
 
 .variety .clearfix,
 .service .clearfix,
+/* .vendorsVariety .clearfix */
 .terms
 {
     display: flex;
@@ -117,4 +133,115 @@ footer
 
 .contact p{
     padding-left: 60px;
+}
+
+
+
+/* Vendors */
+
+.breadcrumb{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C9C9C9;
+
+}
+
+/* svg{
+    background: #AD4C4C;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    height: 9px;
+    width: 9px;
+    border-radius: 8px;
+} */
+
+
+.vendorHeading{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+
+.view{
+    overflow: hidden;
+}
+
+.kfc{
+    background: url(images/KFClogo.svg) left top no-repeat;
+    position: absolute;
+    width: 113px;
+    height: 85px;
+}
+
+.kfc p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+.view p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    float: right;
+}
+
+.vendorsVariety{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.vendorsVariety .vendorsVarietyBox{
+    width: 23%;
+}
+
+.vendorsVarietyBox .view .vendorPrice{
+    float: right;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5EA304;
+}
+
+.vendorsVarietyBox .view .specificTreat{
+    float: left;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E4D4D;
+}
+
+.vendorsVarietyBox .addToCart{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    width: 138px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.chicken{
+    background: url(images/ChickenRepublic_logo.svg) left top no-repeat;
+    position: absolute;
+    /* width: 50px; */
+    height: 50px;
+    max-width: 100%;
+    border: 1px solid #F8F8F8;
+}
+
+.chicken p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    padding-left: 60px;
+    padding-bottom: 40px;
 }
