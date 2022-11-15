@@ -265,8 +265,26 @@ section.landing, section.vendors{
     }
 }
 
-/* small devices (portrait tablets and large phones 600px and up) */
+@media screen and (max-width: 649px){
 
+    .vendor .orders .order{
+        width:100%;
+    }
+
+    .vendor .orders .order img{
+        width:100%;
+    }
+
+    section.vendors .vendor .title button{
+        display: none;
+    }
+
+    .vendor .btn{
+        display:flex;
+    }
+}
+
+/* small devices (portrait tablets and large phones 600px and up) */
 @media screen and (min-width: 600px) and (max-width: 1017px) {
     body{
         padding: 20px 30px;
