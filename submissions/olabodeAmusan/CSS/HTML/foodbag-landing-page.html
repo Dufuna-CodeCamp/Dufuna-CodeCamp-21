@@ -9,8 +9,8 @@
 <body>
     <!--Navigation Bar-->
     <nav class="navigation-bar">
-        <a href="#" class="foodbag">Food<span>Bag</span></a>
-        <ul>
+        <a href="#"  class="foodbag">Food<span>Bag</span></a>
+        <ul class="header">
             <li><a href="#" class="cart">Cart</a></li>
             <li><a href="#" class="login">Login </a></li>
             <li><button class="botton">Signup</button></li>
@@ -18,67 +18,76 @@
     </nav>
     
     <!--Brand/Motto-->
-    <section>
+    <main>
         <div class="motto">
             <p>FoodBag</p>
             <p>Anything food, we have you covered.</p>
         </div>
         <div class="address">
             <p>Where are you?</p>
-            <input type="text" name="address" placeholder="Enter your delivery address">
+            <input list="location" type="text" name="address" placeholder="Enter your delivery address" id="input">
+            <datalist id="location">
+                <option>Bodija Market</option>
+                <option>Computer Village</option>
+                <option>Iworoko Market</option>
+                <option>Lekki Phase 1</option>
+            </datalist><br>
+            <span class="error-message"></span>
         </div>
 
     <!--Picking an Interest-->
     
         <div class="image">
             <p>Pick an interest<p>
-            <div class="interest">
-                <div>
-                    <img src="../FoodBagTaskAssets/fast-food_disabled.svg"><br>
-                    <p>Fast Food</p>
+            <div class="container-1">
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/fast-food_disabled.svg" id="fast-food"><br>
+                    <p class="gray">Fast Food</p>
                     <p>All sorrows are less with bread</p>
                 </div>
-                <div>
-                    <img src="../FoodBagTaskAssets/Vegetables _ Drinks_disabled.svg"><br>
-                    <p>Vegetables & Fruits</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/Vegetables&Drinks_disabled.svg" id="veg-fruits"><br>
+                    <p class="gray">Vegetables & Fruits</p>
                     <p>May not want it but good for you.</p>
                 </div>
-                <div>
-                    <img src="../FoodBagTaskAssets/Drinks _ Cocktails_disabled.svg"><br>
-                    <p>Drinks & Cocktails</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/Vegetables&Drinks_disabled.svg" id="drinks"><br>
+                    <p class="gray">Drinks & Cocktails</p>
                     <p>I feel sad for those who don't drink.</p>
                 </div>
-                <div>
-                    <img src="../FoodBagTaskAssets/resturant_disabled.svg"><br>
-                    <p>Resturant</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/resturant_disabled.svg" id="resturant"><br>
+                    <p class="gray">Resturant</p>
                     <p>All sorrows are less than bread.</p>
                 </div>
             </div><br>
-    
+        </div>
         <div class="border1"></div>
         <!--How we serve-->
         <div class="how-we-serve">
             <p>How we serve you</p>
-            <div class="service">
-                <div>
+            <div class="container-2">
+                <a href="#">
+                <div class="wrapper-1">
                     <img src="../FoodBagTaskAssets/Illustration_1.svg"><br>
                     <p>Tell us where you are</p>
                     <p>Select the location you want us to deliver.</p>
-                </div>
-                <div>
+                </div></a>
+                <a href="#">
+                <div class="wrapper-2">
                     <img src="../FoodBagTaskAssets/illustration_2.svg"><br>
                     <p>Tell us what you want</p>
                     <p>Browse the type of food that interest you.</p>
-                </div>
-                <div>
+                </div></a>
+                <a href="#"><div class="wrapper-3">
                     <img src="../FoodBagTaskAssets/illustration_3.svg"><br>
                     <p>We'll come running</p>
                     <p>Your order will be delivered to you in no time.</p>
-                </div>
+                </div></a>
             </div>
         </div>
         <div class="border2"></div>
-    </section>
+    </main>
 
     <!--Footer-->
     <footer class="contact">
@@ -100,6 +109,6 @@
         </div>
        
     </footer>
-
+<script src="../../Dom/landing.js"></script>
 </body>
 </html>

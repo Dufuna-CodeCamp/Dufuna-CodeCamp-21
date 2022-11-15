@@ -14,7 +14,7 @@
     --themeborder--: #C4C4C4: --themefaint--: #A5A5A5;
 }
 
-#newItem {
+.dot {
     margin-bottom: 15%;
     height: 9px;
     width: 9px;

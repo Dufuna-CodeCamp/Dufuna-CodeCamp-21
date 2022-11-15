@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 20px 50px;
+    font-family: poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: hsla(0, 39%, 49%, 1);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+header nav div {
+    float: right;
+}
+
+header nav a.logo {
+    color: hsla(0, 0%, 0%, 1);
+    font-size: 20px;
+}
+
+header nav div a {
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    color: hsla(0, 0%, 41%, 1);
+}
+
+header nav div a.navsignup {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid hsla(0, 39%, 49%, 1);
+    border-radius: 5px;
+    color: hsla(0, 39%, 49%, 1);
+}
+
+section.header h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    color: hsla(0, 1%, 30%, 1);
+}
+
+section.header p {
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    color: hsla(0, 0%, 41%, 1)
+}
+
+label[for="location"],label[for="interest"] {
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 10px 0px 30px;
+}
+
+section.interest {
+    display: flex;
+    column-gap: 0px;
+    justify-content: space-between;
+    margin: 10px 0 50px;
+}
+
+section.interest div {
+    box-shadow: 0px 0px 3px 1.5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+}
+
+section.interest div h4 {
+    color: hsla(0, 0%, 65%, 1);
+    font-size: 18px;
+}
+
+section.interest div p {
+    color: hsla(0, 0%, 65%, 1);
+    font-size: 14px;
+}
+
+section.serve h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 10px;
+    color: hsla(0, 1%, 30%, 1);
+}
+
+section div.serve {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section.serve h4 {
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+    color: hsla(0, 0%, 41%, 1);
+}
+
+section.serve p {
+    text-align: center;
+    color: hsla(0, 0%, 65%, 1);
+    font-size: 20px;
+    padding: 0 50px;
+}
+
+ footer p {
+    text-align: center;
+    font-size: 18px;
+    margin: 50px 0 20px;
+    color: hsla(0, 0%, 41%, 1);
+}
+
+footer div.footerimg {
+    text-align: center;
+}
+
+footer div.footerimg img {
+    padding: 0 10px;
+}
+
+.ftlinks {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 60px;
+}
+
+.ftlinks a {
+    color: hsla(0, 0%, 41%, 1);
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+hr {
+    border: solid 1px;
+    color: hsla(0, 0%, 95%, 1);
+}

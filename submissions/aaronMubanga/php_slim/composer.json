@@ -1,0 +1,17 @@
+{
+    "name": "dufunaslim/task",
+    "description": "php slim api task",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.5",
+        "vlucas/phpdotenv": "^5.4"
+    },
+
+    "autoload":{
+        "psr-4": {
+            "DB\\":"database",
+            "App\\Controller\\": "app/Controllers",
+            "App\\Middleware\\": "app/middleware"
+        }
+    }
+}

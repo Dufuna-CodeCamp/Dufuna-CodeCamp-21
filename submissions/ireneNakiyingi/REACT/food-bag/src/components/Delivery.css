@@ -1,0 +1,41 @@
+.deliver div{
+    width: 100%;
+    align-items: center;
+    position: relative;
+    
+}
+.scooter-img{
+    padding: 2px;
+    height: 100%;
+    display: flex;
+    margin: 10px 4px 10px 40px;
+   
+}
+.scooter-img img{
+    height: 40%;
+    width: 10%;
+}
+
+.deltext{
+    margin-left: 30px;
+    font-size: 25px;
+}
+.fee{
+    font-weight: 500;
+    color: rgb(78, 74, 74);
+    position: absolute;
+    right: 2px;
+    font-size: 25px;
+}
+@media screen and (max-width:1000px){
+    .scooter-img img{
+        height: 50%;
+        width: 20%;
+    }
+    .deltext{
+        font-size: 20px ;
+    }
+    .fee{
+        font-size: 20px;
+    }
+}

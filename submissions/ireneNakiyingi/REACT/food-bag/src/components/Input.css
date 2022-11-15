@@ -1,0 +1,80 @@
+form{
+    width: 100%;
+}
+.e-cvc{
+    display: inline-flex;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.expiry {
+    float: left;
+    width:50%;
+    
+    
+
+}
+.expiry:first-child{
+    margin-left: 0;
+}
+.expiry input{
+    width: 100%;
+    color: rgb(55, 52, 52);
+    font-weight: 550;
+    height: 30px;
+    padding-left: 8px;
+   
+}
+.expiry input:first-of-type{
+    margin-left: 0;
+    margin-right: 15px;
+}
+.expiry label:first-of-type{
+    margin-left: 0;
+}
+.input {
+    padding-left: 8px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    height: 30px;
+    color: rgb(55, 52, 52);
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    width: 100%;
+    align-items: center;
+    margin: 10px 0;
+}
+select{
+    background-image: url('images/keyboard_arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position: right ;
+    -webkit-appearance: none;
+}
+@media screen and (max-width:1000px){
+    .input{
+        height: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    label{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .expiry input{
+        height: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+}
