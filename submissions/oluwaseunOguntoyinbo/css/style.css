@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: 'Poppins';
     font-style: normal;
 }
 
 body{
     padding: 20px 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .icon{
@@ -174,7 +174,7 @@ footer
     height: 85px;
 }
 
-.kfc p{
+.kfc .p{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -237,7 +237,7 @@ footer
     border: 1px solid #F8F8F8;
 }
 
-.chicken p{
+.chicken .chickenP{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
