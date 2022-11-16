@@ -1,6 +1,5 @@
 let cartButtons = document.querySelectorAll(".cart");
-let cart = document.querySelector(".cartt");
-
+let cart = document.querySelector(".cartt")
 
 cartButtons.forEach((button)=>{
     button.addEventListener("click",function() {
@@ -20,4 +19,4 @@ cartButtons.forEach((button)=>{
         }
     });
 })
- 
+

@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
 }
 
+
 .cart{
     color: maroon;
     border: 2px solid maroon;
@@ -46,6 +47,7 @@ body {
     color :white;
 }
 
+
 .dot{
     position: relative;
 }
@@ -56,6 +58,7 @@ body {
     height: 7px;
     border-radius: 50%;
     border: 2px solid #fff;
+
     background: #AD4C4C;
     position: absolute;
     top: 0;
@@ -69,8 +72,6 @@ body {
     border-radius: 10px;
     background-color: transparent;
 }
-
-
 
 
 

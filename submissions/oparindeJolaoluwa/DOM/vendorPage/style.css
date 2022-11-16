@@ -27,6 +27,14 @@ header{
     color: #C17979;
 }
 
+#dot{
+    width:9px;
+    height: 9px;
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+}
+ 
 .navigation {
     text-decoration: none;
     color: #696969;
@@ -116,15 +124,17 @@ float: right;
 }
 
 .addbut{
+ 
+    border: none;
+    background-color: #FFFFFF;
     padding:8px 15px;
-background: #FFFFFF;
-border: 1px solid #AD4C4C;
-border-radius: 3px;
-font-weight: 500;
-font-size: 16px;
-text-align: center;
-margin-bottom: 30px;
-margin-top: 5px;
+    color: #AD4C4C;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+ 
 }
 
 #chiclogo{
@@ -136,8 +146,24 @@ margin-top: 5px;
     padding-top: 50px;
     
 }
-
-
+.buttons{
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid #AD4C4C;
+    border-color: #AD4C4C;
+    border-radius: 5px;
+    background-color:white;
+    height: 35px;
+    width: max-content;
+    padding: 2px;
+}
+.remove{
+   height: 30px;
+    width: 30px;
+    
+    visibility: hidden;
+}
+ 
 .crep{
     font-weight: 500;
     font-size: 20px;
