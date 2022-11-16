@@ -10,6 +10,10 @@ create table passenger_list (
     primary key (id)
 );
 
+-- after review: modify the full_name column -- 
+alter table passengers
+modify full_name varchar(250) not null;
+
 -- change passenger_list table name --
 alter table passenger_list
 rename to passengers;
@@ -31,6 +35,10 @@ create table trips (
     primary key (id)
 );
 
+-- after review: modify the assigned_cabin column --
+alter table trips
+modify assigned_cabin varchar(250);
+
 -- modify the trips table -- 
 alter table trips
 add passengers_id int not null,
@@ -48,3 +56,10 @@ create table accidents (
     primary key (id),
     foreign key (passenger_id) references passengers (id)
 );
+
+-- after review: modify accidents table --
+alter table accidents
+drop column event_date;
+
+alter table accidents
+change status_of_passenger survivals boolean not null;
