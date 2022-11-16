@@ -52,7 +52,7 @@ create table accidents (
 	id int not null auto_increment,
     event_date date,
     passenger_id int not null,
-    status_of_passenger enum('SURVIVED', 'DID NOT SURVIVE', ' ') DEFAULT ' ' not null,
+    survived BOOLEAN NOT NULL,
     primary key (id),
     foreign key (passenger_id) references passengers (id)
 );
