@@ -1,10 +1,14 @@
 import React from "react";
+import {Routes, Link} from "react-router-dom";
 
 function Checkout(props) {
     return(
         <>
             <div>
-                <button type="button" id={props.id}>{props.name}</button>
+                <Link to={props.link}>
+                    <button type="button" id={props.id} onClick={props.checkout}>
+                    {props.name}</button>
+                </Link>
             </div>
         </>
     )

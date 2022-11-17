@@ -8,6 +8,7 @@ import close from '../../src/close.svg';
 import plus from '../../src/plus.svg';
 import minus from '../../src/minus.svg';
 import Checkout from "./Checkout.js";
+import {Route, Link} from 'react-router-dom';
 
 class Cart extends Component{
     products = [
@@ -57,7 +58,7 @@ class Cart extends Component{
 
             <DeliveryItem delivery={this.state.delivery} />
             <Total total={this.state.total} check={this.deliveryPrice}/>
-            <Checkout id="btncheckout" name="Checkout"/>
+            <Checkout id="btncheckout" name="Checkout" link="/Verification"/>
             </div>
         )
         }
