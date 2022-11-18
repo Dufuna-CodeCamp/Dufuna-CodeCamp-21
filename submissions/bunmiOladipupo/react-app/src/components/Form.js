@@ -3,7 +3,6 @@ import { Component } from "react";
 import Select from "./Select.js";
 import Input from "./Input.js";
 import Checkout from "./Checkout.js";
-import { event } from "jquery";
 
 class Form extends Component{
     constructor(props){
@@ -79,7 +78,7 @@ class Form extends Component{
     }
 
     verifyMe = (event) =>{
-        if (this.state.CVV == "" || this.state.cardNumber == "" || this.state.expiryDate == "" || this.state.paymentMethod == "" || this.state.phone == "" || this.state.cardName == "") {
+        if (this.state.CVV === "" || this.state.cardNumber === "" || this.state.expiryDate === "" || this.state.paymentMethod === "" || this.state.phone === "" || this.state.cardName === "") {
             event.preventDefault();
             alert("Please fill all fields");
         }else{

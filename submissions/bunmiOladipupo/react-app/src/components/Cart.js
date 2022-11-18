@@ -8,7 +8,6 @@ import close from '../../src/close.svg';
 import plus from '../../src/plus.svg';
 import minus from '../../src/minus.svg';
 import Checkout from "./Checkout.js";
-import {Route, Link} from 'react-router-dom';
 
 class Cart extends Component{
     products = [

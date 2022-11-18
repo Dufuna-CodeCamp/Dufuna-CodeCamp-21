@@ -1,6 +1,4 @@
 import React from "react";
-import { Component } from "react";
-import Checkout from "./Checkout.js";
 import Form from "./Form.js";
 import Header from "./Header.js";
 

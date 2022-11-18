@@ -1,6 +1,5 @@
 import './App.css';
-import {Route, Routes, Link} from 'react-router-dom';
-import Checkout from './components/Checkout.js';
+import {Route, Routes} from 'react-router-dom';
 import Verification from './components/Verification.js';
 import CartPage from './components/CartPage.js';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Checkout(props) {
     return(
