@@ -7,6 +7,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* BUILT FOR SMALL SCREENS/MOBILE RESPONSIVENESS IN MIND, SO THE STYLING HERE IS FOR SMALLSCREENS */
 /* NAV */
 nav {
   margin-top: 30px;
@@ -276,7 +277,7 @@ button.right a {
   font-size: 14px;
 }
 
-/* MEDIA QUERY FOR MOBILE */
+/* MEDIA QUERY FOR LAPTOP AND BIG SCREENS */
 @media screen and (min-width:970px) {
   .App {
     margin: 10px 90px;
