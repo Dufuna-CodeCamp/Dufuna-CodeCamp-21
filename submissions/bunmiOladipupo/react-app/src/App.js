@@ -1,14 +1,15 @@
 import './App.css';
-import Cart from './components/Cart.js';
-import Header from './components/Header.js';
-import Subheader from './components/Subheader.js';
+import {Route, Routes} from 'react-router-dom';
+import Verification from './components/Verification.js';
+import CartPage from './components/CartPage.js';
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Subheader />
-      <Cart />
+    <div className="container">      
+      <Routes>
+        <Route path="/Verification" exact element={<Verification />}></Route>
+        <Route path="/" exact element={<CartPage /> }></Route>
+      </Routes>
     </div>
   );
 }
