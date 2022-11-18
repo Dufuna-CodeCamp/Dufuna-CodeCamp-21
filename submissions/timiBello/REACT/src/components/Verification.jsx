@@ -166,7 +166,7 @@ class Verification extends Component {
             {/* CHECKOUT BUTTON */}
             <div>
               {this.state.change === true ? (
-                <Link to={'/orderSuccessful'} className='checkout'>
+                <Link to={'/OrderSuccessful'} className='checkout'>
                   <button onClick={this.handleFormSubmit} className='check'>
                     Pay
                   </button>
