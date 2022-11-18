@@ -275,6 +275,7 @@ button.right a {
 .order p{
   color: #4e4d4d;
   font-size: 14px;
+	margin-top: 10px;
 }
 
 /* MEDIA QUERY FOR LAPTOP AND BIG SCREENS */
