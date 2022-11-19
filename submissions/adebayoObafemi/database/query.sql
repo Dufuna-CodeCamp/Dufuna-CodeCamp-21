@@ -30,7 +30,12 @@ where accidents.survived = 1 and trips.point_of_embarkation = 'S';
 /* Question 5: Get the id, name and the total number of passengers
  who paid a fare greater than $100 and above 
  the age of 35 had siblings or spouses on board? */
-select id, full_name, count(full_name) from passengers
+select id, full_name from passengers
+left join trips
+on passengers.id = trips.passenger_id
+where passengers.age > 35 and trips.trip_fare > 100 and trips.no_of_siblings_or_spouses_aboard > 0;
+
+select count(full_name) from passengers
 left join trips
 on passengers.id = trips.passenger_id
 where passengers.age > 35 and trips.trip_fare > 100 and trips.no_of_siblings_or_spouses_aboard > 0;
