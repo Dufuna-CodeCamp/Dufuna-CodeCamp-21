@@ -4,9 +4,6 @@ import Header from "./Header.js";
 import Illustration_success from "../Illustration_success.svg";
 
 class Success extends Component{
-    constructor(props){
-        super(props)
-    }
 
     render(){
         return(
