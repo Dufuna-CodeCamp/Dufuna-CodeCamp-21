@@ -40,7 +40,7 @@ footer div{
     height: 200px;
     width: 200px;
     box-sizing: border-box;
-    margin: 10px 50px 10px 50px;
+    margin: 10px 50px;
 }
 
 .box-seven,
@@ -48,7 +48,7 @@ footer div{
 .box-five {
     height: 180px;
     width: 180px;
-    margin: 10px 100px 10px 100px;
+    margin: 10px 100px;
 }
 
 * {
@@ -61,7 +61,7 @@ footer div{
 }
 
 .box-9 {
-    margin: 80px 400px 20px 400px;
+    margin: 80px 400px 20px;
 }
 
 footer li {
