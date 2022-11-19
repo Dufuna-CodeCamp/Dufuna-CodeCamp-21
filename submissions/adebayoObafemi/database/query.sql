@@ -35,6 +35,7 @@ left join trips
 on passengers.id = trips.passenger_id
 where passengers.age > 35 and trips.trip_fare > 100 and trips.no_of_siblings_or_spouses_aboard > 0;
 
+/* Answer: 9 */
 select count(full_name) from passengers
 left join trips
 on passengers.id = trips.passenger_id
