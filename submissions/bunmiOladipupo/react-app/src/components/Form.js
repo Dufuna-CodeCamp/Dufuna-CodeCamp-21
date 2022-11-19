@@ -41,7 +41,7 @@ class Form extends Component{
                         <Input name="cvv" title="CVV" type="text" value={this.state.CVV}  handleChange={this.handleChangeCVV} placeholder="012" />
                     </div>
                 </div>
-                <Checkout id="btncheckout" name="Pay" link="/" checkout={this.verifyMe}/>
+                <Checkout id="btncheckout" name="Pay" link="/Success" checkout={this.verifyMe}/>
 
             </>
         )
