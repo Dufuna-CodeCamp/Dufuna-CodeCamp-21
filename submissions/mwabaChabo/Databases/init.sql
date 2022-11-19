@@ -1,0 +1,1 @@
+SELECT * FROM transport.registered_passengers;
