@@ -1,8 +1,7 @@
 {
   "stats": {
- 
-    "tests": 7,
-    "passes": 6,
-    "failures": 1,
-    "owner": "oparindeJolaoluwa"
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    }
 }
