@@ -1,1 +1,34 @@
-SELECT * FROM transport.registered_passengers;
+CREATE DATABASE transport;
+USE transport;
+CREATE TABLE registered_passengers (
+PassengerId INT NOT NULL AUTO_INCREMENT,
+FullName VARCHAR(100) NOT NULL,
+Sex VARCHAR(10) NOT NULL,
+Age VARCHAR(40),
+PRIMARY KEY(PassengerId)
+);
+
+CREATE TABLE travel_details (
+Id INT NOT NULL AUTO_INCREMENT,
+PassengerId INT NOT NULL,
+PassengerClasses INT  NOT NULL,
+PassengerTicketNumbers VARCHAR(100) NOT NULL,
+TripFares DECIMAL(8.2) NOT NULL,
+AssignedCabins VARCHAR(100),
+ParentChildrenAboard INT NOT NULL,
+SiblingsSpousesAboard INT NOT NULL,
+Embarkations VARCHAR(100) NOT NULL,
+PRIMARY KEY(Id),
+FOREIGN KEY(PassengerId) REFERENCES registered_passengers(PassengerId)
+);
+
+CREATE TABLE survivors(
+Id INT NOT NULL AUTO_INCREMENT,
+PassengerId INT NOT NULL,
+SurvivedPassengers BOOLEAN  NOT NULL,
+PRIMARY KEY(Id),
+FOREIGN KEY(PassengerId) REFERENCES registered_passengers(PassengerId)
+);
+
+
+
