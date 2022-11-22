@@ -1,15 +1,12 @@
 import image4 from './Images/image4.svg';
 import image3 from './Images/image3.svg';
 import image1 from './Images/image1.svg';
-// import SuccessImage from './Images/success.svg'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cart from './Components/Cart';
-// import Verification from './Components/Verification';
-// import Success from './Components/Success';
 
 function App() {
   
-  	// THIS IS +CART ITEMS
+  	// THIS IS CART ITEMS
   	const products = [
 		{
 			product_id:0,
@@ -40,8 +37,6 @@ function App() {
       <Router>
           <Routes> 
             <Route path='/' element={ <Cart  products={products} />} />
-            {/* <Route path="/Verification-page" element={ <Verification />} />
-			<Route path="/success-page" element={ <Success image={SuccessImage} alt="delivering your order" title="Order successful" message="We have started processing your order" />} />  */}
           </Routes>
       </Router> 
     </div>
