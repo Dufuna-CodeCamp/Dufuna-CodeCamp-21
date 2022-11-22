@@ -56,6 +56,7 @@ CREATE TABLE customers (
     PRIMARY KEY (id)
 );
 
+
 -- Table 5 Orders 
 
 CREATE TABLE orders (
