@@ -1,0 +1,339 @@
+*,
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BUILT FOR SMALL SCREENS/MOBILE RESPONSIVENESS IN MIND, SO THE STYLING HERE IS FOR SMALLSCREENS */
+/* NAV */
+nav {
+  margin-top: 30px;
+}
+
+.home li {
+  display: inline;
+}
+
+.home {
+  margin: 50px 0px 20px 20px;
+}
+
+.home a {
+  font-size: 11px;
+  margin: 0px 2px;
+  color: rgb(209, 202, 202) !important;
+}
+
+.ca a {
+  color: rgb(0, 0, 0) !important;
+}
+
+.home:hover {
+  font-size: 12px;
+}
+
+.right {
+  display: inline;
+  float: right;
+  margin: 0px 10px;
+  position: relative;
+  bottom: 38px;
+  font-size: 12px;
+  color: black;
+}
+
+.right:hover {
+  font-size: 15px;
+}
+
+li a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.logo li {
+  text-decoration: none !important;
+  font-size: 14px;
+  list-style: none !important;
+  margin: 20px;
+  font-weight: 600;
+}
+
+.bag,
+.star {
+  color: #ad4c4c !important;
+}
+
+.star:hover {
+  color: #fff !important;
+}
+
+
+button.right {
+  margin-right: 20px;
+  top: -43px;
+  border: 1px solid #ad4c4c;
+  width: 80px;
+  height: 28px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+button.right:hover {
+  background: #4e4d4d;
+  color: white;
+  border: none;
+}
+
+button.right a {
+  font-size: 10px;
+  color: #ad4c4c !important;
+  text-decoration: none !important;
+}
+
+/* HEADING */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.heading h2 {
+  font-size: 15px;
+}
+
+.heading p {
+  color: #ad4c4c;
+  font-size: 13px;
+}
+
+.remove button {
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: #ad4c4c;
+  font-size: 13px;
+}
+
+.remove button:hover {
+  color: #4e4d4d;
+}
+
+/* ITEMS */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  height: 40px;
+  width: 20px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.im-container>* {
+  margin: 0px 10px;
+}
+
+.image {
+  height: 120px;
+  width: 120px;
+  font-size: 10px;
+}
+
+.item-details {
+  margin: 0px 10px;
+}
+
+.name {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  color: #4e4d4d;
+}
+
+.price {
+  font-size: 13px;
+}
+
+.price,
+.total {
+  color: #4e4d4d;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #ad4c4c;
+  margin: 10px;
+}
+
+.quantity button {
+  margin: 0px 10px;
+  color: #ad4c4c;
+  border: 1px solid #ad4c4c;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+}
+
+.delivery,
+.total {
+  display: flex;
+  margin: 20px 20px 10px 45px;
+  justify-content: space-between;
+  align-items: center;
+  color: #4e4e4d;
+}
+
+.deliveryFee {
+  font-size: 13px;
+}
+
+.delivery img {
+  width: 90px;
+  height: 90px;
+}
+
+.delivery h1 {
+  font-size: 14px;
+  margin: 0px 40px;
+}
+
+.total span {
+  font-size: 17px;
+}
+
+.totalPrice {
+  color: black !important;
+  font-weight: 600;
+}
+
+.checkout,
+.delivery .imgg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.check:hover {
+  background: #4e4d4d;
+}
+
+.pick-check{
+  background: #4e4d4d!important;
+}
+
+.check, .pick-check {
+  text-decoration: none;
+  margin: 20px 0px 30px;
+  text-align: center;
+  min-width: 93%;
+  padding: 14px;
+  background: #ad4c4c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.none {
+  display: none !important;
+}
+
+.order {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 200px;
+}
+
+.order img{
+  width: 200px;
+}
+
+.order h2{
+  color: green;
+  font-size: 18px;
+}
+
+.order p{
+  color: #4e4d4d;
+  font-size: 14px;
+	margin-top: 10px;
+}
+
+/* MEDIA QUERY FOR LAPTOP AND BIG SCREENS */
+@media screen and (min-width:970px) {
+  .App {
+    margin: 10px 90px;
+  }
+
+  .logo li {
+    font-size: 17px;
+  }
+
+  .heading h2 {
+    font-size: 17px;
+  }
+
+  .remove button {
+    font-size: 13px;
+  }
+
+  .delivery h1 {
+    font-size: 15px;
+  }
+
+  .check {
+    min-width: 80%;
+  }
+
+  .totalPrice {
+    color: black !important;
+    font-weight: 600;
+  }
+
+  .order {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 60%);
+    padding: 10px;
+    width: 200px;
+  }
+
+  .order img{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: -90%;
+    transform: translate(-40%, -50%);
+  }
+
+  .order h2{
+    color: green;
+    font-size: 20px;
+  }
+  
+  .order p{
+    color: #4e4d4d;
+    font-size: 15px;
+  }
+	
+}
