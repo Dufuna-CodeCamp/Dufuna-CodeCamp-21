@@ -14,11 +14,20 @@ USE foodbag;
 
 CREATE TABLE food (
 	id INT NOT NULL AUTO_INCREMENT,
-    type VARCHAR(100) NOT NULL,
-	fast_food VARCHAR(100) NOT NULL,
-    veg_fruits VARCHAR(100) NOT NULL,
-    drinks_cock VARCHAR(100) NOT NULL,
-    resturants VARCHAR(100) NOT NULL,
+	type ENUM('fast_food','vegetable_fruits','drinks_cocktails', 'restaurants') NOT NULL DEFAULT 'fast_food',
+    PRIMARY KEY (id)
+);
+
+ 
+-- Table 3 Admins
+
+CREATE TABLE admins (
+	id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(250) NOT NULL,
+    type ENUM('0', '1') NOT NULL,
+    email_address VARCHAR(250) NOT NULL,
+    phone_number VARCHAR(50) NOT NULL,
+    password VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -31,32 +40,20 @@ CREATE TABLE vendor_food (
     name VARCHAR(250) NOT NULL,
     amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (food_id) REFERENCES food (id)
+    FOREIGN KEY (food_id) REFERENCES food (id),
+    FOREIGN KEY(admin_id) REFERENCES admins (id)
 );
- 
--- Table 3 Admins
 
-CREATE TABLE admins (
-	id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(250) NOT NULL,
-    type ENUM('0', '1') NOT NULL,
-    email_address VARCHAR(250) NOT NULL,
-    phone_number VARCHAR(50) NOT NULL,
-    password VARCHAR(250) NOT NULL,
-    PRIMARY KEY (id)
-);
 
 -- Table 4 Customer's Account
 
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
-    admin_id INT NOT NULL,
     name VARCHAR(250) NOT NULL,
     phone_number VARCHAR(50) NOT NULL,
     address VARCHAR(250) NOT NULL,
     payment_method ENUM('cash', 'bank_transfer', 'card') NOT NULL ,
-    PRIMARY KEY (id),
-    FOREIGN KEY (admin_id) REFERENCES admins (id)
+    PRIMARY KEY (id)
 );
 
 -- Table 5 Orders 
@@ -65,9 +62,8 @@ CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
     vendor_id INT NOT NULL,
     customers_id INT,
-    admin_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (vendor_id) REFERENCES vendor_food (id),
-    FOREIGN KEY (admin_id) REFERENCES admins (id)
+    FOREIGN KEY (customers_id) REFERENCES customers (id)
 );
  
