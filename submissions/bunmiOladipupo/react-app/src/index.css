@@ -361,3 +361,35 @@ width: 100% !important;
   margin-left: 50px;
 }
 }
+
+#ordersuccess{
+  text-align: center;
+}
+#ordersuccess h2{
+  color: green;
+  margin-top: 30px;
+}
+#ordersuccess span{
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-size: 24px;
+  width: 80%;
+}
+#span{
+  margin-bottom: 0px;
+}
+.style{
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  img{
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 769px){
+  img{
+    margin-top: 40px;
+  }
+}
