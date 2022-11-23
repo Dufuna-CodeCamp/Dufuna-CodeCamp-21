@@ -3,6 +3,7 @@ import image3 from './Images/image3.svg';
 import image1 from './Images/image1.svg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cart from './Components/Cart';
+import Verification from './Components/Verification';
 
 function App() {
   
@@ -37,6 +38,7 @@ function App() {
       <Router>
           <Routes> 
             <Route path='/' element={ <Cart  products={products} />} />
+			<Route path="/Verification-page" element={ <Verification />} />
           </Routes>
       </Router> 
     </div>
