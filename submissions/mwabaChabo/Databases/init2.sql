@@ -16,7 +16,8 @@ food_id INT NOT NULL,
 name VARCHAR(250) NOT NULL,
 amount DECIMAL(10,2) NOT NULL,
 PRIMARY KEY(id),
-FOREIGN KEY(food_id) REFERENCES food(id)
+FOREIGN KEY(food_id) REFERENCES food(id),
+FOREIGN KEY(admin_id) REFERENCES admin(id)
 );
 /*creating an admin table*/
 CREATE TABLE admin(
@@ -43,7 +44,7 @@ id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
 phone_number VARCHAR(250) NOT NULL,
 address VARCHAR(250) NOT NULL,
-payment_method VARCHAR(250) NOT NULL,
+payment_method ENUM('Card','Cash','Flutterwave','Mobile Money') NULL,
 PRIMARY KEY(id)
 );
 
