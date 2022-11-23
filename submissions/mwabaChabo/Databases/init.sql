@@ -2,7 +2,7 @@ CREATE DATABASE transport;
 USE transport;
 CREATE TABLE registered_passengers (
 PassengerId INT NOT NULL AUTO_INCREMENT,
-FullName VARCHAR(100) NOT NULL,
+FullName VARCHAR(250) NOT NULL,
 Sex VARCHAR(10) NOT NULL,
 Age VARCHAR(10) NULL,
 PRIMARY KEY(PassengerId)
