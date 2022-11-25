@@ -2,7 +2,7 @@
 
 // Check temperature
 
-$temperature = 20;
+$temperature = 25;
 
 if ( $temperature <= 20 ) {
    echo "It is freezing today";
