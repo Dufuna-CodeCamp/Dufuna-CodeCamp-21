@@ -431,7 +431,7 @@ p span {
 
 
 
-/* ========= VERIFICATION PAGE========== */
+/* ========= VERIFICATION PAGE CSS========== */
 .verification-nav {
   margin-top: 60px;
 }
@@ -650,65 +650,4 @@ p span {
 		height: 55px;
 		padding: 5px;
 	  }
-}
-
-/* =============SUCCESS PAGE============= */
-
-.success-image img {
-    margin: 300px auto 30px;
-    display: block;
-}
-
-
-.success-message h3{
-  font-size: 35px;
-  color: #5EA304;
-}
-
-
-.success-message p{
-  font-size: 25px;
-  color: grey;
-  margin-top: -10px;
-}
-
-.success-message h3, p{
-  text-align: center;
-}
-
-
-@media (max-width: 393px) {
-
-	body {
-		margin: 0 20px;
-	}
-	  
-	  #foodbag {
-		font-size: 25px;
-	  }
-	  
-	  .nav a {
-		margin: 20px 0 10px;
-		font-size: 15px;
-	  }
-	  
-	  .success-image img {
-		margin: 200px auto 30px;
-	}
-	
-	.success-message h3{
-	  font-size: 30px;
-	  margin-top: -15px;
-	}
-	
-	
-	.success-message p{
-	  font-size: 22px;
-	  margin-top: -15px;
-	}
-	
-	.success-message h3,p{
-	  text-align: center;
-	}
-
 }
