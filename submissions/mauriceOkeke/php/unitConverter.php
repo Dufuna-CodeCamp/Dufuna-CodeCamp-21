@@ -3,7 +3,7 @@
 //function that converts kilos,meters and celsuis to pounds, yards and fahrenheit respectively
 function unitConvert($value){
     $pound = 2.205;
-    $yard = 1.0936133;
+    $yard = 1.094;
     $fahrenheit = 1.8;
 
 
