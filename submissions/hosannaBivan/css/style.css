@@ -23,13 +23,15 @@ nav{
     line-height: 1;
     border: 1px solid #AD4C4C;
     margin: 0;
+    border-radius: 5px;
 }
 button{
     color: #AD4C4C;
     padding: 3% 5%;
     border: 1px solid #AD4C4C;
     margin: 3%;
-    
+    background-color: white;
+    border-radius: 3px;
 }
 .home{
     color:  #C9C9C9;
