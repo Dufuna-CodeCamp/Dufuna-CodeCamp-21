@@ -4,5 +4,5 @@
             echo $i."<br>";
         }
     }
-
+    displayNumbers()
 ?>
