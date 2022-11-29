@@ -169,8 +169,12 @@ main {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
-}
 
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
 /* Verification page */
 /* Style the list */
 ul.breadcrumb {
@@ -379,7 +383,7 @@ input[type="submit"]:hover {
   .list-item a {
     padding: 0.2rem 0.3rem;
     margin-inline: 0.5rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     font-weight: 400;
     font-size: 10px;
     line-height: 15px;
