@@ -91,5 +91,5 @@ h5{
 footer{
     display: flex;
     justify-content: space-between;
-
+    font-size: 16px;
 }
