@@ -57,7 +57,7 @@ class Cart extends Component{
 
             <DeliveryItem delivery={this.state.delivery} />
             <Total total={this.state.total} check={this.deliveryPrice}/>
-            <Checkout id="btncheckout" name="Checkout"/>
+            <Checkout id="btncheckout" name="Checkout" link="/Verification"/>
             </div>
         )
         }
