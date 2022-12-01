@@ -343,6 +343,7 @@
     
     .flex{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin: 2% 0;
         padding-bottom: 5%;
@@ -435,6 +436,7 @@
     
     .flex{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin: 2% 0;
         padding-bottom: 5%;
