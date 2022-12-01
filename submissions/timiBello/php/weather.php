@@ -1,15 +1,17 @@
 <?php
 
- $temperatureDay < 30;
+ $temperatureDay = 25;
 
  if ($temperatureDay <= 20) {
      echo "It is freezing today <br>";
- }elseif ($temperatureDay > 20 and $temperatureDay < 30) {
+ }
+ elseif ($temperatureDay > 20 && $temperatureDay < 30 ) {
      echo "The weather is just perfect <br>";
-     echo "The weather is just perfect <br>";
-  }elseif ($temperatureDay >= 30 and $temperatureDay < 40)  {
+  }
+	elseif ($temperatureDay >= 30 && $temperatureDay < 40 )  {
      echo "It's so hot today <br>";
- }else {
+ }
+ elseif($temperatureDay >= 40 ) {
      echo "Am I in the Sahara Desert?! <br>";
  }
 
