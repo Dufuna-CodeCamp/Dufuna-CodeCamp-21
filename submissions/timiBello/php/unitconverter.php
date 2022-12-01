@@ -14,7 +14,8 @@
 
      echo"***  Celsius to  Fahrenheit **** <br>";
 
-     echo "$unit Celsius is equal(s) to $fahrenheit ˚ F . <br>"; 
+     echo "$unit Celsius is equal(s) to $fahrenheit ˚ F . 
+		 <br>"; 
  };
 
  //call the function.
