@@ -1,6 +1,6 @@
 <?php
 
- $temperatureDay = 30;
+ $temperatureDay < 30;
 
  if ($temperatureDay <= 20) {
      echo "It is freezing today <br>";
