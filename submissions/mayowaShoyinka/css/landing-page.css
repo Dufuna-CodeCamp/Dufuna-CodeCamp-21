@@ -83,10 +83,6 @@ li{
 	border: transparent;
 	border: 1px solid #C4C4C4;
 }
-::placeholder{
-	color: #696969;
-}
-
 /*----------------- main text 2 -------------------*/
 .main-text-2{
 	margin-top: 20px;
