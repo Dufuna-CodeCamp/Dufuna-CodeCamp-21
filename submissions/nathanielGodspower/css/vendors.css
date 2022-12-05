@@ -478,7 +478,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--disabled);
-	color: #fff;
+	color: rgba(255, 255, 255, 1);
 	gap: 8px;
 	border: 1px solid var(--disabled);
 }
