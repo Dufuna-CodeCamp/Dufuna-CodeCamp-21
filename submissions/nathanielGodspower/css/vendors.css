@@ -479,7 +479,6 @@ footer {
 	align-items: center;
 	background-color: var(--disabled);
 	color: #fff;
-	border: none;
 	gap: 8px;
 	border: 1px solid var(--disabled);
 }
