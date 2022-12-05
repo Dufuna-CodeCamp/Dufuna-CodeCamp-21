@@ -12,6 +12,7 @@ addToCartButtons.forEach((btn) => {
 		if (innerText === 'Add to Cart') {
 			btn.innerHTML = "<img src='./img/remove.svg'/> Remove";
 			btn.classList.add('is-selected');
+			btn.style.color = 'rgba(255, 255, 255, 1)';
 			cartItems++;
 		}
 
@@ -19,6 +20,7 @@ addToCartButtons.forEach((btn) => {
 			btn.innerHTML = 'Add to Cart';
 			btn.classList.remove('is-selected');
 			cartItems--;
+			btn.style.color = 'rgba(173, 76, 76, 1)';
 		}
 
 		if (cartItems > 0) {
