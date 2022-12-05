@@ -1,24 +1,3 @@
-/* const num = 123 - 7;
-
-for (let i = 0; i < num; i++) {
-	if (i % 3 === 0 && i % 5 === 0) {
-		document.write('Software Developer', '<br/>');
-	} else if (i % 3 === 0) {
-		document.write('Software', '<br/>');
-	} else if (i % 5 === 0) {
-		document.write('Developer', '<br/>');
-	}
-}
- */
-
-/* 
-Create an array called productList
-Your productList array should contain 3 objects
-Each of the objects of the array should have 3 properties (productName, imageUrl and productPrice)
-Using document.write(), Print out the values in this format < productName > with < imageUrl > is sold for < productPrice >
-Ensure your PR is created with the task title as seen on the mobile App
-On your terminal, ensure you are in the tests/product_price_printing directory when you run ./test.sh command */
-
 const productList = [
 	{
 		productName: 'Marten High top Boots (UNISEX)',
