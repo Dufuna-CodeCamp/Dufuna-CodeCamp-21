@@ -14,6 +14,7 @@ CREATE TABLE passengers (
     PRIMARY KEY (id)
 );
 
+
 -- creating passengers_details table
 CREATE TABLE passengers_details (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -29,6 +30,7 @@ CREATE TABLE passengers_details (
     FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
+
 -- creating accident_cases table
 CREATE TABLE accident_cases (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -37,6 +39,4 @@ CREATE TABLE accident_cases (
     PRIMARY KEY (id),
     FOREIGN KEY (passengers_id) REFERENCES passengers_details (id)
 );
-
-
 
