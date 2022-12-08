@@ -29,15 +29,14 @@
 
             <div class="address">
                 <label for="address">Where are you?</label> <br>
-                <input list="addresses" name="address" id="address" placeholder="Enter your delivery address">
-                
-                <datalist id="addresses">
-                  <option value="International Market">
-                  <option value="Enugu Express">
-                  <option value="Ogoja road">
-                  <option value="Afikpo road">
-                  <option value="Water works">
-                </datalist>
+                <select name="address" id="address">
+                    <option value="">Enter your delivery address</option>
+                    <option value="International Market">International Market</option>
+                    <option value="Enugu Express">Enugu Express</option>
+                    <option value="Ogoja road">Ogoja road</option>
+                    <option value="Afikpo road">Afikpo road</option>
+                    <option value="Water works">Water Works</option>
+                </select>
             </div>
         </section>
 
@@ -45,7 +44,7 @@
             <p>Pick an interest</p>
 
             <div class="interest-list">
-                <a  class="interest-item" disabled>
+                <a class="interest-item" disabled>
                     <img src="imgs/fast-food.svg" alt="">
                     <h4>Fast food</h4>
                     <p>All sorrows are less with bread</p>
