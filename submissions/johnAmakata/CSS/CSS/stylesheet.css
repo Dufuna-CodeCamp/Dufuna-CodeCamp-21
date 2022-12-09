@@ -59,13 +59,13 @@ nav a, h3{
     border: 1px solid #AD4C4C;
     color: #AD4C4C;
     border-radius: 3px;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 5px;
     font-weight: bold;
 }
 
 /*=============================================>*/
 .vendor-nav{
-    margin: 60px 0px 30px 0px;
+    margin: 60px 0px 30px;
 }
 
 .vendor-nav a:first-child{
@@ -77,7 +77,7 @@ div h2{
 }
 
 .logo{
-    padding:0px, 5px, 5px 5px;
+    padding:0px 5px 5px;
 }
 
 .logo > *{
@@ -113,7 +113,7 @@ This section styles the div content containing the images, amount,  Add cart but
 button{
     color:#AD4C4C;
     border: 1px solid #AD4C4C;
-    padding: 10px 10px; 
+    padding: 10px; 
 }
 
 .amt{
