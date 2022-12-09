@@ -68,6 +68,10 @@ nav a, h3{
     margin: 60px 0px 30px 0px;
 }
 
+.vendor-nav a:first-child{
+    color: rgb(223, 223, 223);
+}
+
 div h2{
     margin-bottom: 20px;
 }
