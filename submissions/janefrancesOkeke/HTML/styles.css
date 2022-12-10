@@ -1,0 +1,28 @@
+body {
+    font-family: 'lato'; sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav a [href*='/'] {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.parent div {
+    background-color: teal;
+    border: 5px solid orange;
+    width: 200px;
+    height: 100px;
+}
+.work-experience h3::first-letter {
+    font-size: 25px;
+}
+.work-experience p::first-line {
+    color: #a52a2a;
+}

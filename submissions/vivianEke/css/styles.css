@@ -1,0 +1,149 @@
+body {
+    font-family: 'poppins', sans-serif;
+    color: var(--color-accent);
+}
+header {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--main-color);
+
+}
+
+#cart{
+    position: relative;
+}
+
+#newItem{
+    height:9px;
+    width: 9px;
+    background-color:brown;
+    align-self: center;
+    animation: blink 500ms 200ms infinite ease-in-out;
+    position: absolute;
+    display: none;
+}
+
+header nav a{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    padding: 1rem 1.3rem;
+}
+
+header nav a:last-child{
+    margin-left: 2rem;
+}
+header .logo {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+}
+header .logo h2 span {
+    color: var(--primary-color);
+}
+
+.breadcrum{
+    justify-content: flex-start;
+    padding: 1rem;
+    margin: auto;
+    /* background-color: green; */
+    margin-top: 7.8rem;
+    text-transform: capitalize;
+}
+
+
+.breadcrum span a{
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.vendors{
+    border-bottom: thin solid var(--text-color);
+    margin: auto;
+}
+.vendors:last-child{
+    border-bottom: unset;
+}
+h3{
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    padding-left: 4.6rem;
+    padding-top: 1.5rem;
+}
+.vendors h5 a{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.vendor{
+    justify-content: flex-start;
+    padding: 1rem;
+}
+.vendor h4{
+    padding-left: 1.3rem;
+}
+.info {
+    justify-items: flex-end;
+    flex: 3;
+}
+.details {
+    gap: 1.1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.vendors .card h5 {
+    display: block;
+    font-size: 0.92rem;
+    margin: unset;
+}
+.vendors .card img{
+    width: 100%;
+}
+.vendors .card {
+    box-shadow: unset;
+}
+.vendors .card .price {
+    justify-self: flex-end;
+    color: var(--success);
+    flex: 1;
+}
+.vendors a {
+    color: var(--primary-color);
+}
+
+
+
+.card {
+    box-shadow: 3px 5px 1rem 2px #afaaaaa6;
+    border-radius: 0.2rem;
+    transition: box-shadow 300ms linear;
+}
+.card h5{
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 1.2rem 0;
+}
+.card:hover {
+    box-shadow: unset;
+}
+img{
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+footer {
+    padding: 3rem;
+    margin-top: 4.3rem;
+}
+footer h3 {
+    text-align: center;
+    padding: 2.5rem;
+}
+footer a {
+    padding: 2rem;
+}
+footer .copyright{
+    margin-top: 4rem;
+    padding: 0 4rem;
+}
