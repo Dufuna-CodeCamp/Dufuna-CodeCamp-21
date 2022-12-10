@@ -3,6 +3,7 @@
     "@babel/core": "^7.15.8",
     "casperjs": "0.7.2",
     "chromedriver": "^96.0.0",
+    "latest-version": "^7.0.0",
     "phantomcss": "^0.7.2",
     "phantomjs-prebuilt": "^2.1.16"
   },
