@@ -7,35 +7,34 @@
 body{
 	font-family: 'Poppins';
 }
-.container{
-	height: 100vh;
-	width: 100%;
-	background: #fff;
-	padding-left: 70px;
-	padding-right: 70px;
+html {
+    font-size: 100%;
 }
+/*------------ Navigation goes here --------------*/
 .header{
+	margin:0 50px 25px 50px;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	padding-top: 30px;
+	width: auto;
 }
-.container span{
+.header span{
 	color: #AD4C4C;
 }
-.header ul{
-	display: flex;
+.header ul li{
+	display: inline-block;
+	margin-top: 2px;
+	padding: 0 20px 0 20px;
+	list-style: none;
 }
 .header a{
-	text-decoration: none;
-	margin: 0 10px;
 	color: #696969;
-}
-a{
-	text-decoration: none;
 }
 .header a:hover{
 	color: #AD4C4C;
+}
+a{
+	text-decoration: none;
 }
 li{
 	list-style-type: none;
@@ -44,17 +43,14 @@ li{
 	color: #AD4C4C;
 	border: 1px solid #AD4C4C;
 	border-radius: 2px;
-	width: 80px;
-	height: 25px;
+	padding: 8px 15px;
+	font-size: 15px;
 	background: #fff;
-	margin-left: 10px;
-	margin-right: 10px;
 }
 .btn:hover{
 	background: #AD4C4C;
 	color: #fff;
 }
-
 /*----------- Body Text --------------*/
 .body-text{
 	text-align: center;
@@ -63,15 +59,13 @@ li{
 .body-text h1{
 	color: #4E4D4D;
 }
-
 .body-text p{
 	color: #696969;
 	font-size: 15px;
 }
-
 /*------------- Main Body Section 1 ----------------*/
 .main-text{
-	margin-top: 40px;
+	margin:40px 50px 25px 50px;
 }
 .main-text h4{
 	margin-bottom: 15px;
@@ -79,22 +73,23 @@ li{
 #location{
 	width: 99.9%;
 	height:45px;
-	padding-left: 10px;
 	border: transparent;
 	border: 1px solid #C4C4C4;
 }
 /*----------------- main text 2 -------------------*/
 .main-text-2{
-	margin-top: 20px;
+	margin:0 50px 25px 50px;
+	/*margin-top: 20px;*/
 }
 .main-text-2-box-container{
 	display: flex;
-	width: 100%;
+	width: auto;
+	margin-right: -10px;
 }
 .main-text-2-box{
 	margin-right: 10px;
 	border: 1px solid #A5A5A5;
-	width: 390px;
+	width: 400px;
 	padding: 30px 0;
 	padding-left: 15px;
 	margin-top:10px;
@@ -105,14 +100,16 @@ li{
 	font-weight: 400;
 }
 .main-text-2-box h6{
-color: #A5A5A5;
-font-size: 9px;
-font-weight: 400;
+	color: #A5A5A5;
+	font-size: 9px;
+	font-weight: 400;
 }
-
+::placeholder{
+	padding-left: 15px;
+}
 /*----------- Main-Text-3 ----------------------*/
 .main-text-3 {
-	margin-top: 30px;
+	margin:30px 50px 25px 50px;
 	text-align: center;
 	color: #4E4D4D;
 }
@@ -121,18 +118,14 @@ font-weight: 400;
 }
 /*------------- break line ------------------*/
 hr { 
-   height: 1px;
-   margin-right: auto;
-   margin-left: auto;
-   margin-top: 50px;
-   margin-bottom:10px;
-   background-color: #F2F2F2;
-   border: none;
+   border: 1px solid #E6E6E6;
+    margin: 50px 50px 40px 50px;
 }
 /*---------- 3-box-main-4 -------------------*/
 .Three-box{
 	display: flex;
-	margin-top: 50px;
+	margin: 50px 50px 40px 50px;
+	/*margin-top: 50px;*/
 	justify-content: space-between;
 }
 .three-box-main-4 h3{
@@ -157,19 +150,24 @@ hr {
 	color: #A5A5A5;
 	font-size: 15px;
 	text-align: center;
-	padding-right: 20px;
+	padding-right: 80px;
 	font-weight: 420;
 }
 .three-box-main-4 img{
-	width: 270px;
+	width: auto;
 }
 .three-box-main-4{
 	margin-left: 5px;
 	margin-bottom: 5px;
 	margin-right: -40px;
 }
-
+.responsiveness-copyright{
+	display: none;
+}
 /*-------------- Social Section -----------------*/
+footer{
+	margin: 50px 50px 40px 50px;
+}
 .social-container{
 	text-align: center;
 	margin-bottom: 30px;
@@ -197,13 +195,78 @@ hr {
 	font-weight: 300;
 	font-size: 15px;
 }
-
-
-
-
-
-
-
-
-
-
+/*---------------- Responsiveness ------------------*/
+@media only screen and (min-width: 250px) and (max-width: 991px) {
+	.header,
+	.body-text,
+	.main-text,
+	.main-text-2,
+	.breakline,
+	.main-text-3,
+	.Three-box,
+	 footer{
+		margin:0 30px 25px 30px;
+	}
+	.body-text{
+		text-align: left;
+	}
+	.main-text-2-box-container{
+		flex-direction: column;
+	}
+	.main-text-2-box{
+		width: auto;
+		padding: 15px 13px;
+	}
+	.Three-box{
+		flex-direction: column;
+		align-items: center;
+	}
+	.three-box-main-4{
+		margin-left: -20px;
+	}
+	.sub-box-main-4{
+		text-align: center;
+	}
+	.sub-3-box-main-4 h3{
+		font-size: 20px;
+		font-weight: 300;
+	}
+	.sub-3-box-main-4 p{
+		font-size: 12px;
+		margin-top: -1px;
+	}
+	.sub-3-box-main-4 h6{
+		padding-left: 30px;
+	}
+	.sub-3-box-main-4 h6{
+		margin-left: 30px;
+	}
+	.sub-3-box-main-4 .break2{
+		margin-left: -15px!important;
+	}
+	.footer-container{
+		flex-direction: column;
+	}
+	.copyright{
+		display: none;
+	}
+	.terms{
+		text-align: center;
+	}
+	.responsiveness-copyright{
+		display: inline-block;
+		margin-top: 20px;
+		text-align: center;
+	}
+	::placeholder{
+		padding-left: 13px;
+	}
+	.break{
+		font-weight: 300;
+	}
+	.break2{
+		padding-right: 10px;
+		font-weight: 300;
+		font-size: 13px;
+	}
+}

@@ -7,35 +7,34 @@
 body{
 	font-family: 'Poppins';
 }
-.container{
-	height: 100vh;
-	width: 100%;
-	background: #fff;
-	padding-left: 70px;
-	padding-right: 70px;
+html {
+    font-size: 100%;
 }
+ /*------------ Navigation goes here --------------*/
 .header{
+	margin:0 50px 25px 50px;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	padding-top: 30px;
+	width: auto;
 }
-.container span{
+.header span{
 	color: #AD4C4C;
 }
-.header ul{
-	display: flex;
+.header ul li{
+	display: inline-block;
+	margin-top: 2px;
+	padding: 0 20px 0 20px;
+	list-style: none;
 }
 .header a{
-	text-decoration: none;
-	margin: 0 20px;
 	color: #696969;
-}
-a{
-	text-decoration: none;
 }
 .header a:hover{
 	color: #AD4C4C;
+}
+a{
+	text-decoration: none;
 }
 li{
 	list-style-type: none;
@@ -44,21 +43,17 @@ li{
 	color: #AD4C4C;
 	border: 1px solid #AD4C4C;
 	border-radius: 2px;
-	width: 80px;
-	height: 25px;
+	padding: 8px 15px;
+	font-size: 15px;
 	background: #fff;
-	margin-left: 20px;
 }
 .btn:hover{
 	background: #AD4C4C;
 	color: #fff;
 }
-
 /*----------------- the Mini Nav Button --------------*/
 .mini-nav{
-	margin-top: 40px;
-	width: 100%;
-	padding:15px 0;
+	margin:0 50px 25px 50px;
 }
 .sub-mini-nav{
 	display: flex;
@@ -69,173 +64,193 @@ li{
 .fa-angle-down{
 	font-size:150px;
 	color: #C9C9C9;
-	margin-left: 8px;
-	margin-top: 2px;
-	margin-right: 5px;
+	margin: 2px 5px 0 8px;
 }
 .vendor-btn{
 	color: #000000;
 }
-.sub-mini-nav img{
-  	 transform: rotate(270deg);
-	 width: 15px;
-	 height: 15px;
-	 margin-left: 1px;
-	 margin-top: 3px;
-	 background: #C9C9C9;
-	 color: #C9C9C9!important;
-}
-
 /* -------- Vendor Name ----------- */
 .vendor-name{
-	margin-top: 20px;
-	line-height: 15px;
-	padding:10px 0;
+	width: auto;
+	margin:0 50px 30px 50px;
 }
 .vendor-name h2{
 	font-size: 25px;
 	font-weight: 400;
-	font-size: 25px;
 }
-
 /* --------- KFC logo Section -------- */
 .kfc-section{
 	display: flex;
+	margin:0 50px 30px 50px;
 	justify-content: space-between;
-	margin-bottom: 10px;
-	margin-top: 20px;
+	width: auto;
 }
 .kfc-container{
 	display: flex;
-}
-.kfc-container img{
-	width: 60px;
+	line-height: 50px;
 }
 .kfc-container h3{
-	line-height: 100px;
+	padding-left: 10px;
 	font-size: 22px;
 	font-weight: 500;
-	margin-left: 20px;
 }
 .kfc-view-all{
-	line-height: 100px;
+	line-height: 50px;
 	color: #AD4C4C;
 }
+/*------------- Picture Section -----------------*/
 .KFC-boxes-container{
 	display: flex;
-}
-.KFC-boxes{
-	margin-top: -8px;
-	width: 271px;
-	margin-right: 74px;
-}
-.KFC-boxes img{
-	padding-left: 0;
-	margin-left: -5px;
+	margin:0 45px 30px 45px;
+	width: auto;
+	justify-content: space-between;
+	padding: 20px 0 0 0;
 }
 .kfc-boxes-text{
 	display: flex;
+	padding: 0 5px;
 	justify-content: space-between;
-	margin-top: 10px;
-}
-.kfc-boxes-text h1{
-	font-size:17px;
-	color: #5EA304;
 }
 .kfc-boxes-text h2{
-	color:#4E4D4D;
-	font-size: 18px
+	font-size: 18px;
+	color: #4E4D4D;
+}
+.kfc-boxes-text h1{
+	font-size: 20px;
+	color: #5EA304;
 }
 .kfc-btn{
-	margin-top: 30px;
-	margin-bottom: 50px;
+	padding: 10px 20px;
+	margin: 10px 3px 20px 3px;
+	font-size: 20px;
 	background: #fff;
-	border: 1px solid #AD4C4C;
-	width: 55%;
-	padding: 18px 18px;
-	line-height: 10px;
-	font-size: 19px;
 	color: #AD4C4C;
-	border-radius: 5px;
+	border: 1px solid #AD4C4C;
+	border-radius: 4px;
 }
 .kfc-btn:hover{
 	background: #AD4C4C;
 	color: #fff;
 }
-/*------------- break line ------------------*/
-hr { 
-   height: 1px;
-   margin-right: auto;
-   margin-left: auto;
-   margin-top: 20px;
-   margin-bottom:10px;
-   background-color: #E6E6E6;
-   border: none;
+/*------------- Bottom Viewall ---------------*/
+.kfc-view-all-bottom{
+	margin:0 45px 20px 45px;
+	text-align: center;
+}
+.kfc-view-all-bottom a{
+	color: #AD4C4C;
+	display: none;
+}
+/*------------------- break line ---------------*/
+.breakline {
+    border: 1px solid #E6E6E6;
+    margin: 0px 50px 40px 50px;
+}
+/*----------------- Responsiveness -------------*/
+@media only screen and (max-width: 600px) {
+	.header,
+	.KFC-boxes-container,
+	.kfc-section,
+	.vendor-name,
+	.mini-nav{
+		margin:0 30px 25px 30px;
+	}
+	/*-------- Navigation goes here -------*/
+	.header h3{
+        font-weight: 400;
+        margin-top: 10px;
+    }
+  /*-----------  KFC  logo Section ---------*/
+    .kfc-view-all{
+    	display: none;
+    }
+    /*--------- Picture Section -----------*/
+    .KFC-boxes-container{
+    	flex-direction: column;
+    }
+    .KFC-boxes img{
+    	width: 100%;
+    	height: 25%;
+    }
+    .kfc-boxes-text{
+    	padding: 0 10px 0 10px;
+    }
+     .kfc-btn{
+     	margin-left: 11px;
+     }
+     /*------ responsive view all ------*/
+    .kfc-view-all-bottom a{
+		color: #AD4C4C;
+		display: inherit;
+	}
+}
+@media only screen and (min-width: 601px) and (max-width: 980px) {
+	/*--------- Navigation goes here ---------*/
+	.header{
+		margin:0 49px 25px 49px;
+	}
+    /*------ KFC Column Section ------*/
+    .KFC-boxes-container{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+        margin-right: -10px;
+        margin:0 49px 25px 49px;
+    }
+    /*---------- KFC  logo Section ----------*/
+    .kfc-view-all{
+    	display: none;
+    }
+    /*---------- Picture Section ---------*/
+    .KFC-boxes img{
+        width: 100%;
+        height: 25%;
+    }
+     .kfc-boxes-text{
+        padding: 0 10px 0 10px;
+    }
+    .kfc-btn{
+        margin: 0 10px;
+    }
+    /*-------- responsive view all ---------*/
+    .kfc-view-all-bottom a{
+		color: #AD4C4C;
+		display: inherit;
+	}
+}
+@media only screen and (min-width: 981px) {
+	/*------- Navigation goes here ----------*/
+	.header .btn{
+		margin-right: -20px;
+	}
 }
 
-/*----------- Chicken Republic Section ------------*/
-.chicken-section{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 10px;
-}
-.chicken-container{
-	display: flex;
-}
-.chicken-container img{
-	width: 60px;
-}
-.chicken-container h3{
-	line-height: 100px;
-	font-size: 22px;
-	font-weight: 500;
-	margin-left: 20px;
-}
-.chicken-view-all{
-	line-height: 100px;
-	color: #AD4C4C;
-}
-.chicken-boxes-container{
-	display: flex;
-}
-.chicken-boxes{
-	margin-top: -8px;
-	width: 271px;
-	margin-right: 74px;
-}
-.chicken-boxes img{
-	padding-left: 0;
-	margin-left: -5px;
-}
-.chicken-boxes-text{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 10px;
-}
-.chicken-boxes-text h1{
-	font-size:17px;
-	color: #5EA304;
-}
-.chicken-boxes-text h2{
-	color:#4E4D4D;
-	font-size: 18px
-}
-.chicken-rebublic-btn{
-	margin-top: 30px;
-	margin-bottom: 100px;
-	background: #fff;
-	border: 1px solid #AD4C4C;
-	width: 55%;
-	padding: 18px 18px;
-	line-height: 10px;
-	font-size: 19px;
-	color: #AD4C4C;
-	border-radius: 5px;
-}
-.chicken-rebublic-btn:hover{
-	background: #AD4C4C;
-	color: #fff;
-}
 
-/*----------------- Responsivness ----------------*/
-@media only screen and (min-width: 729px) and (max-width: 1140px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
