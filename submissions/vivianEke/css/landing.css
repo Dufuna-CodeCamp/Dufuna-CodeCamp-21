@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #696969;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.site-container {
+    margin: 20px;
+}
+
+.red-color, .error-message {
+  color: #ff0000;
+}
+.gray-color {
+  color: #a5a5a5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #696969;
+    width: auto;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-list {
+    display: flex;
+    row-gap: 1em;
+    font-size: 10px;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #696969;
+}
+.nav-item {
+    padding: 8px;
+}
+.signup {
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    color: #AD4C4C; 
+}
+
+.foodbag h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.foodbag p {
+    font-size: 12px;
+}
+
+.location h3 {
+    font-size: 12px;
+    color: black;
+}
+#address-list {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    color: #696969;
+    padding: 10px;
+}
+select {
+    width: 100px;
+    background: url("images/keyboard_arrow_down.svg") no-repeat right
+        white;
+    display: inline-block;
+    position: relative;
+    appearance: none;
+}
+
+.interest h3 {
+    font-size: 12px;
+    color: black;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+
+}
+
+.card-box {
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 141px;
+}
+
+.card-img {
+    margin-top: 30px;
+    padding-left: 20px;    
+}
+img {
+    width: 40px;
+    height: 30px;
+}
+.card-info h4 {
+    margin-top: 0;
+    padding-left: 20px;
+}
+.card-info p{
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+.serve h3 {
+    color: black;
+    text-align: center;
+}
+
+.img-list {
+    width: 200px;
+    height: 150.6px;
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card-box1 {
+    text-align: center;
+}
+.card-info1 h4 {
+    font-size: 15px;
+}
+.card-info1 p {
+    font-size: 10px;
+    margin-top: -10px;
+}
+hr {
+    border: 1px solid #F2F2F2;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.contact h4 {
+    font-size: 16px;
+}
+
+.image a {
+    text-decoration: none;
+}
+
+.svg-list {
+    padding: 0 10px;
+}
+
+.terms {
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+    .site-container {
+        margin: 20px;
+    }
+
+    
+}
+    
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .site-container {
+        margin: 30px;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+
+    .nav-list {
+        font-size: 12px;
+    }
+
+    .foodbag h2{
+        font-size: 20px;
+        font-weight: bold;
+    }   
+
+    .foodbag p {
+        font-size: 14px;
+    }
+    .location h3 {
+        font-size: 14px;
+        color: black;
+    }
+    .interest h3 {
+        font-size: 14px;
+        color: black;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .card-info h4 {
+        font-size: 15px;
+    }
+    .card-info p {
+        font-size: 12px;
+      
+    }
+    img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .serve h3 {
+        font-size: 22px;
+    }
+
+    .card-info1 h4 {
+        font-size: 18px;
+    }
+    .card-info1 p {
+        font-size: 12px;
+        
+    }
+    .contact h4 {
+        font-size: 18px;
+    }
+    
+    .terms {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .site-container {
+        margin: 40px;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+    .nav-list {
+        font-size: 14px;
+    }
+
+    .foodbag h2{
+        font-size: 20px;
+        font-weight: bold;
+    }   
+
+    .foodbag p {
+        font-size: 16px;
+    }
+    .location h3 {
+        font-size: 16px;
+        color: black;
+    }
+    .interest h3 {
+        font-size: 16px;
+        color: black;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .card-info h4 {
+        font-size: 15px;
+    }
+    .card-info p {
+        font-size: 12px;
+      
+    }
+    img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .serve h3 {
+        font-size: 22px;
+    }
+
+    .card-info1 h4 {
+        font-size: 18px;
+    }
+    .card-info1 p {
+        font-size: 12px;
+        
+    }
+    .contact h4 {
+        font-size: 18px;
+    }
+    
+    .terms {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .site-container {
+        margin: 50px;
+    }
+    .header a {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        font-size: 18px;
+    }
+    
+    .foodbag h2{
+        font-size: 20px;
+        font-weight: bold;
+    }   
+
+    .foodbag p {
+        font-size: 18px;
+    }
+    .location h3 {
+        font-size: 18px;
+        color: black;
+    }
+    .interest h3 {
+        font-size: 18px;
+        color: black;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .card-info h4 {
+        font-size: 15px;
+    }
+    .card-info p {
+        font-size: 12px;
+      
+    }
+    img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .serve h3 {
+        font-size: 22px;
+    }
+
+    .card1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+
+    .card-info1 h4 {
+        font-size: 18px;
+    }
+    .card-info1 p {
+        font-size: 12px;
+        
+    }
+    .contact h4 {
+        font-size: 18px;
+    }
+    
+     
+}
