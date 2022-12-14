@@ -147,7 +147,7 @@ li{
     margin: 0px 50px 40px 50px;
 }
 /*----------------- Responsiveness -------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
 	.header,
 	.KFC-boxes-container,
 	.kfc-section,
