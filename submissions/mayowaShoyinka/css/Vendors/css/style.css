@@ -146,6 +146,7 @@ li{
     border: 1px solid #E6E6E6;
     margin: 0px 50px 40px 50px;
 }
+
 /*----------------- Responsiveness -------------*/
 @media only screen and (max-width: 600px) {
 	.header,
@@ -184,6 +185,7 @@ li{
 		display: inherit;
 	}
 }
+
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 	/*--------- Navigation goes here ---------*/
 	.header{
