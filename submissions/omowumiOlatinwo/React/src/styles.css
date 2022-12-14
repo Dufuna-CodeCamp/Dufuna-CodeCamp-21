@@ -22,7 +22,7 @@ header {
     .container{
         align-items: center;
         justify-content: center;
-        margin: 0 0 200px 0;
+        margin: 0 0 200px;
         padding: 5px;
     }
     .main{
