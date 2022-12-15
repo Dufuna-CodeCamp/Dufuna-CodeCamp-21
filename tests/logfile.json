@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-12-08T20:37:48.035Z",
-    "end": "2022-12-08T20:37:56.939Z",
-    "duration": 8904,
+    "failures": 1,
+    "start": "2022-12-15T08:48:36.074Z",
+    "end": "2022-12-15T08:48:41.678Z",
+    "duration": 5604,
     "testsRegistered": 3,
-    "passPercent": 100,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,35 +18,35 @@
   },
   "results": [
     {
-      "uuid": "e5462a7b-e547-431e-9b25-285ceaca91bc",
+      "uuid": "91365eec-e859-4a2a-a400-4b65bafca229",
       "title": "",
-      "fullFile": "C:\\Users\\DIVINEJUSTICE\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+      "fullFile": "C:\\Users\\DIVINEJUSTICE\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
       "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "f32539d1-fcd7-48ac-a9ba-c3d610e57989",
+          "uuid": "bfdb4209-109d-40b3-a316-6460a42751f6",
           "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\DIVINEJUSTICE\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "fullFile": "C:\\Users\\DIVINEJUSTICE\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
           "file": "\\dom.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 8730,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "72c0a605-f14b-4087-aff2-250fd1330ace",
-              "parentUUID": "f32539d1-fcd7-48ac-a9ba-c3d610e57989",
+              "uuid": "67adbce9-a282-42cd-b093-0b38399c4bec",
+              "parentUUID": "bfdb4209-109d-40b3-a316-6460a42751f6",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,78 +65,83 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "15132142-2557-427b-b436-9790be5ca629",
-              "parentUUID": "f32539d1-fcd7-48ac-a9ba-c3d610e57989",
+              "uuid": "c23619bf-f359-43da-bc78-cb44de1d64d8",
+              "parentUUID": "bfdb4209-109d-40b3-a316-6460a42751f6",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check dropdown",
-              "fullTitle": "Testing Scholars Project test case: check dropdown",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 41,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
-              "err": {},
-              "uuid": "27d91513-e42f-4ac4-9774-2c6b722c0625",
-              "parentUUID": "f32539d1-fcd7-48ac-a9ba-c3d610e57989",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: check options in dropdown",
-              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
-              "timedOut": false,
-              "duration": 89,
+              "duration": 5506,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
               "err": {},
-              "uuid": "537bcc19-fefc-49ed-aeea-7540008beecd",
-              "parentUUID": "f32539d1-fcd7-48ac-a9ba-c3d610e57989",
+              "uuid": "c2c05f11-22c2-465a-a08b-f313ec885d4c",
+              "parentUUID": "bfdb4209-109d-40b3-a316-6460a42751f6",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: check options in dropdown",
-              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 25,
+              "duration": 57,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
+              "err": {
+                "message": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(173, 76, 76, 1)' to equal 'rgba(255, 255, 255, 1)'",
+                "estack": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(173, 76, 76, 1)' to equal 'rgba(255, 255, 255, 1)'\n    at Context.<anonymous> (dom.js:34:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "- rgba(173, 76, 76, 1)\n+ rgba(255, 255, 255, 1)\n"
+              },
+              "uuid": "9659a2df-71cb-436c-971c-6b2930eb1e00",
+              "parentUUID": "bfdb4209-109d-40b3-a316-6460a42751f6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 24,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {},
-              "uuid": "da682e64-fe4f-457b-9de8-f4d3306b20d9",
-              "parentUUID": "f32539d1-fcd7-48ac-a9ba-c3d610e57989",
+              "uuid": "eea77d5e-6df6-420b-86c0-c955336c1fe3",
+              "parentUUID": "bfdb4209-109d-40b3-a316-6460a42751f6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "27d91513-e42f-4ac4-9774-2c6b722c0625",
-            "537bcc19-fefc-49ed-aeea-7540008beecd",
-            "da682e64-fe4f-457b-9de8-f4d3306b20d9"
+            "c2c05f11-22c2-465a-a08b-f313ec885d4c",
+            "eea77d5e-6df6-420b-86c0-c955336c1fe3"
           ],
-          "failures": [],
+          "failures": [
+            "9659a2df-71cb-436c-971c-6b2930eb1e00"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 155,
+          "duration": 5587,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -154,7 +159,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "10.1.0"
+      "version": "10.2.0"
     },
     "mochawesome": {
       "options": {
@@ -170,7 +175,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/DIVINEJUSTICE/Desktop/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
+        "reportDir": "C:/Users/DIVINEJUSTICE/Desktop/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
