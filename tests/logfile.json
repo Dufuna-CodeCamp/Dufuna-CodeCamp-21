@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-12-14T15:36:09.186Z",
-    "end": "2022-12-14T15:39:09.219Z",
-    "duration": 180033,
+    "start": "2022-12-15T16:32:02.173Z",
+    "end": "2022-12-15T16:35:02.222Z",
+    "duration": 180049,
     "testsRegistered": 4,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1baf7ead-1df4-4b83-9d0a-1e10cc056dc0",
+      "uuid": "abf0871c-d64b-47dc-9a9f-9f017422b321",
       "title": "",
       "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
       "file": "\\html_task.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "55910cdd-75c4-4287-9754-ae054369f5d5",
+          "uuid": "52749a05-4442-49c5-b91f-c243f6f24af5",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: check if Price is present\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check if Price is present\"",
               "timedOut": true,
-              "duration": 180010,
+              "duration": 180016,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -46,11 +46,11 @@
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {
                 "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js)\n    at listOnTimeout (node:internal/timers:564:17)\n    at process.processTimers (node:internal/timers:507:7)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
                 "diff": null
               },
-              "uuid": "ce1c0fb9-5b7e-4467-9b70-880f9268f115",
-              "parentUUID": "55910cdd-75c4-4287-9754-ae054369f5d5",
+              "uuid": "cf03e6b9-e333-4237-9bb0-6028cadc4c45",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "7309b2b4-8ce5-4190-afec-b129697c3b5a",
-              "parentUUID": "55910cdd-75c4-4287-9754-ae054369f5d5",
+              "uuid": "fa7ca740-92b5-45a7-a2eb-68035f42d30d",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
               "err": {},
-              "uuid": "415f6bb9-f5a6-4219-9cb0-fcd5d9d19c8b",
-              "parentUUID": "55910cdd-75c4-4287-9754-ae054369f5d5",
+              "uuid": "4358e986-3ee2-4050-b412-727a57cb6f87",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
               "err": {},
-              "uuid": "3a6411ea-f9e4-4765-8539-81c24d6abee3",
-              "parentUUID": "55910cdd-75c4-4287-9754-ae054369f5d5",
+              "uuid": "f9d499a4-785e-482c-ba6b-d417c96d0db6",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
               "err": {},
-              "uuid": "75f69e7b-972e-45a9-bb57-1e9275daa795",
-              "parentUUID": "55910cdd-75c4-4287-9754-ae054369f5d5",
+              "uuid": "f8788124-0431-48ef-b000-66c65bf228d6",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
               "isHook": false,
               "skipped": true
             },
@@ -143,8 +143,8 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
-              "uuid": "f7fa3a89-71eb-4b0b-83e8-88bc2e2ecd9e",
-              "parentUUID": "55910cdd-75c4-4287-9754-ae054369f5d5",
+              "uuid": "cf03a7bc-2bb8-4241-944a-d49049a54618",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
               "isHook": false,
               "skipped": true
             }
@@ -154,10 +154,10 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "415f6bb9-f5a6-4219-9cb0-fcd5d9d19c8b",
-            "3a6411ea-f9e4-4765-8539-81c24d6abee3",
-            "75f69e7b-972e-45a9-bb57-1e9275daa795",
-            "f7fa3a89-71eb-4b0b-83e8-88bc2e2ecd9e"
+            "4358e986-3ee2-4050-b412-727a57cb6f87",
+            "f9d499a4-785e-482c-ba6b-d417c96d0db6",
+            "f8788124-0431-48ef-b000-66c65bf228d6",
+            "cf03a7bc-2bb8-4241-944a-d49049a54618"
           ],
           "duration": 0,
           "root": false,
