@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
 	padding: 0;
 	margin: 0;
@@ -13,7 +14,7 @@ html {
 
 /*------------ Navigation goes here --------------*/
 .header{
-	margin:0 50px 25px;
+	margin:0 50px 25px 50px;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 30px;
@@ -25,7 +26,7 @@ html {
 .header ul li{
 	display: inline-block;
 	margin-top: 2px;
-	padding: 0 20px;
+	padding: 0 20px 0 20px;
 	list-style: none;
 }
 .header a{
@@ -66,7 +67,7 @@ li{
 }
 /*------------- Main Body Section 1 ----------------*/
 .main-text{
-	margin:40px 50px 25px;
+	margin:40px 50px 25px 50px;
 }
 .main-text h4{
 	margin-bottom: 15px;
@@ -79,7 +80,7 @@ li{
 }
 /*----------------- main text 2 -------------------*/
 .main-text-2{
-	margin:0 50px 25px;
+	margin:0 50px 25px 50px;
 	/*margin-top: 20px;*/
 }
 .main-text-2-box-container{
@@ -110,7 +111,7 @@ li{
 }
 /*----------- Main-Text-3 ----------------------*/
 .main-text-3 {
-	margin:30px 50px 25px;
+	margin:30px 50px 25px 50px;
 	text-align: center;
 	color: #4E4D4D;
 }
@@ -120,12 +121,12 @@ li{
 /*------------- break line ------------------*/
 hr { 
    border: 1px solid #E6E6E6;
-    margin: 50px 50px 40px;
+    margin: 50px 50px 40px 50px;
 }
 /*---------- 3-box-main-4 -------------------*/
 .Three-box{
 	display: flex;
-	margin: 50px 50px 40px;
+	margin: 50px 50px 40px 50px;
 	/*margin-top: 50px;*/
 	justify-content: space-between;
 }
@@ -167,7 +168,7 @@ hr {
 }
 /*-------------- Social Section -----------------*/
 footer{
-	margin: 50px 50px 40px;
+	margin: 50px 50px 40px 50px;
 }
 .social-container{
 	text-align: center;
@@ -184,6 +185,7 @@ footer{
 	margin-right: 20px;
 	padding-left:10px;
 }
+
 /*----------------------- Footer ----------------------*/
 .footer-container{
 	justify-content: space-between;
@@ -207,7 +209,7 @@ footer{
 	.main-text-3,
 	.Three-box,
 	 footer{
-		margin:0 30px 25px;
+		margin:0 30px 25px 30px;
 	}
 	.body-text{
 		text-align: left;
