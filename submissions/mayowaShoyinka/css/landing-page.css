@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 body{
 	font-family: 'Poppins';
 }
@@ -184,6 +186,7 @@ footer{
 	margin-right: 20px;
 	padding-left:10px;
 }
+
 /*----------------------- Footer ----------------------*/
 .footer-container{
 	justify-content: space-between;
