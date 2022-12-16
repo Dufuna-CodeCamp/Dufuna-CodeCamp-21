@@ -11,10 +11,10 @@
     "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
   },
   "results": [
     {
@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -73,6 +73,7 @@
           ],
           "tests": [
             {
+
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
@@ -87,8 +88,9 @@
               "err": {},
               "uuid": "ae8e368c-7792-4805-a0c0-b1f3dd550b16",
               "parentUUID": "a71220b7-1842-4ef2-9412-276cc654877d",
+
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
               "title": "test case: FoodBag Logo is present",
@@ -106,7 +108,7 @@
               "uuid": "912bd958-b684-4bea-ad92-9f5364ae739d",
               "parentUUID": "a71220b7-1842-4ef2-9412-276cc654877d",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             },
             {
               "title": "test case: FoodBag text is present on the page",
@@ -214,7 +216,25 @@
               "uuid": "4d087d49-ac04-46c0-afc1-9a9fe134fb37",
               "parentUUID": "a71220b7-1842-4ef2-9412-276cc654877d",
               "isHook": false,
-              "skipped": false
+              "skipped": true
+            },
+            {
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
+              "err": {},
+              "uuid": "cf03a7bc-2bb8-4241-944a-d49049a54618",
+              "parentUUID": "52749a05-4442-49c5-b91f-c243f6f24af5",
+              "isHook": false,
+              "skipped": true
             }
           ],
           "suites": [],
