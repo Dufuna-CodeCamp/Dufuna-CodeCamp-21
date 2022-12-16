@@ -25,4 +25,3 @@ SELECT passengers_details.id, users.full_name
 FROM users INNER JOIN passengers_details ON users.id = passengers_details.passengers_id
 WHERE passengers_details.trip_fare > 100 AND users.age > 35 AND passengers_details.num_sibilings_spouses > 0;
 -- 9
-
