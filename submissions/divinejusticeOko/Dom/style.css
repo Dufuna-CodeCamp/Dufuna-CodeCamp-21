@@ -6,7 +6,7 @@
 
 --clr-accent-100: #000000;
 
---clr-neutral-100: #fff;
+--clr-neutral-100: #ffffff;
 --clr-neutral-200: #F2F2F2;
 --clr-neutral-300: #C4C4C4;
 --clr-neutral-400: #a5a5a5;
@@ -55,6 +55,20 @@ li a {
     color: var(--clr-neutral-500);
     text-decoration: none;
     font-size: 12px;
+}
+
+.cart {
+    position: relative;
+}
+
+.item-added span {
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 9px;
+    height: 9px;
+    background-color: var(--clr-primary-100);
+    border-radius: 50%;
 }
 
 nav .btn,
@@ -266,9 +280,24 @@ a.red-txt {
 .menu-btn {
     padding: 10px 20px;
     border-radius: 3px;
+    height: 40px;
     margin-left: 5px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease-in-out,;
 }
 
+.menu-btn img {
+    width: 25px;
+}
+.added_to_cart {
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-100);
+    border-color: var(--clr-neutral-400);
+}
 
 /* Media Query */
 /* Small devices (portrait tablets and large phones, 600px and up) */
