@@ -12,7 +12,7 @@ html {
 }
  /*------------ Navigation goes here --------------*/
 .header{
-	margin:0 50px 25px 50px;
+	margin:0 50px 25px;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 30px;
@@ -24,7 +24,7 @@ html {
 .header ul li{
 	display: inline-block;
 	margin-top: 2px;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
 	list-style: none;
 }
 .header a{
@@ -53,7 +53,7 @@ li{
 }
 /*----------------- the Mini Nav Button --------------*/
 .mini-nav{
-	margin:0 50px 25px 50px;
+	margin:0 50px 25px;
 }
 .sub-mini-nav{
 	display: flex;
@@ -72,7 +72,7 @@ li{
 /* -------- Vendor Name ----------- */
 .vendor-name{
 	width: auto;
-	margin:0 50px 30px 50px;
+	margin:0 50px 30px;
 }
 .vendor-name h2{
 	font-size: 25px;
@@ -81,7 +81,7 @@ li{
 /* --------- KFC logo Section -------- */
 .kfc-section{
 	display: flex;
-	margin:0 50px 30px 50px;
+	margin:0 50px 30px;
 	justify-content: space-between;
 	width: auto;
 }
@@ -101,10 +101,10 @@ li{
 /*------------- Picture Section -----------------*/
 .KFC-boxes-container{
 	display: flex;
-	margin:0 45px 30px 45px;
+	margin:0 45px 30px;
 	width: auto;
 	justify-content: space-between;
-	padding: 20px 0 0 0;
+	padding: 20px 0 0;
 }
 .kfc-boxes-text{
 	display: flex;
@@ -121,7 +121,7 @@ li{
 }
 .kfc-btn{
 	padding: 10px 20px;
-	margin: 10px 3px 20px 3px;
+	margin: 10px 3px 20px;
 	font-size: 20px;
 	background: #fff;
 	color: #AD4C4C;
@@ -134,7 +134,7 @@ li{
 }
 /*------------- Bottom Viewall ---------------*/
 .kfc-view-all-bottom{
-	margin:0 45px 20px 45px;
+	margin:0 45px 20px;
 	text-align: center;
 }
 .kfc-view-all-bottom a{
@@ -144,7 +144,7 @@ li{
 /*------------------- break line ---------------*/
 .breakline {
     border: 1px solid #E6E6E6;
-    margin: 0px 50px 40px 50px;
+    margin: 0px 50px 40px;
 }
 /*----------------- Responsiveness -------------*/
 @media only screen and (max-width: 600px) {
@@ -153,7 +153,7 @@ li{
 	.kfc-section,
 	.vendor-name,
 	.mini-nav{
-		margin:0 30px 25px 30px;
+		margin:0 30px 25px;
 	}
 	/*-------- Navigation goes here -------*/
 	.header h3{
@@ -173,7 +173,7 @@ li{
     	height: 25%;
     }
     .kfc-boxes-text{
-    	padding: 0 10px 0 10px;
+    	padding: 0 10px;
     }
      .kfc-btn{
      	margin-left: 11px;
@@ -188,7 +188,7 @@ li{
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 	/*--------- Navigation goes here ---------*/
 	.header{
-		margin:0 49px 25px 49px;
+		margin:0 49px 25px;
 	}
     /*------ KFC Column Section ------*/
     .KFC-boxes-container{
@@ -197,7 +197,7 @@ li{
         padding-right: 0;
         margin-left: 10px;
         margin-right: -10px;
-        margin:0 49px 25px 49px;
+        margin:0 49px 25px;
     }
     /*---------- KFC  logo Section ----------*/
     .kfc-view-all{
@@ -209,7 +209,7 @@ li{
         height: 25%;
     }
      .kfc-boxes-text{
-        padding: 0 10px 0 10px;
+        padding: 0 10px;
     }
     .kfc-btn{
         margin: 0 10px;

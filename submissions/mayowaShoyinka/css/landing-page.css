@@ -15,7 +15,7 @@ html {
 
 /*------------ Navigation goes here --------------*/
 .header{
-	margin:0 50px 25px 50px;
+	margin:0 50px 25px;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 30px;
@@ -27,7 +27,7 @@ html {
 .header ul li{
 	display: inline-block;
 	margin-top: 2px;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
 	list-style: none;
 }
 .header a{
@@ -68,7 +68,7 @@ li{
 }
 /*------------- Main Body Section 1 ----------------*/
 .main-text{
-	margin:40px 50px 25px 50px;
+	margin:40px 50px 25px;
 }
 .main-text h4{
 	margin-bottom: 15px;
@@ -81,7 +81,7 @@ li{
 }
 /*----------------- main text 2 -------------------*/
 .main-text-2{
-	margin:0 50px 25px 50px;
+	margin:0 50px 25px;
 	/*margin-top: 20px;*/
 }
 .main-text-2-box-container{
@@ -112,7 +112,7 @@ li{
 }
 /*----------- Main-Text-3 ----------------------*/
 .main-text-3 {
-	margin:30px 50px 25px 50px;
+	margin:30px 50px 25px;
 	text-align: center;
 	color: #4E4D4D;
 }
@@ -122,12 +122,12 @@ li{
 /*------------- break line ------------------*/
 hr { 
    border: 1px solid #E6E6E6;
-    margin: 50px 50px 40px 50px;
+    margin: 50px 50px 40px;
 }
 /*---------- 3-box-main-4 -------------------*/
 .Three-box{
 	display: flex;
-	margin: 50px 50px 40px 50px;
+	margin: 50px 50px 40px;
 	/*margin-top: 50px;*/
 	justify-content: space-between;
 }
@@ -169,7 +169,7 @@ hr {
 }
 /*-------------- Social Section -----------------*/
 footer{
-	margin: 50px 50px 40px 50px;
+	margin: 50px 50px 40px;
 }
 .social-container{
 	text-align: center;
@@ -210,7 +210,7 @@ footer{
 	.main-text-3,
 	.Three-box,
 	 footer{
-		margin:0 30px 25px 30px;
+		margin:0 30px 25px;
 	}
 	.body-text{
 		text-align: left;
