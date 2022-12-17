@@ -20,6 +20,6 @@ INNER JOIN trips INNER JOIN accidents ON passengers.id = trips.passenger_id AND 
 
 /*Get the id, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board?*/
 SELECT passengers.id, passengers.name, COUNT(*) FROM passengers
-INNER JOIN trips ON passengers.id = trips.passenger_id WHERE trip_fare > 100 AND age > 35 AND (parch OR sibsp > 0) 
+INNER JOIN trips ON passengers.id = trips.passenger_id WHERE trip_fare > 100 AND age > 35 AND sibsp > 0 
 GROUP BY passengers.id, passengers.name;
-/*15*/
+/*9*/
