@@ -21,23 +21,20 @@ body {
 }
 
 
-.dot{
-    position: relative;
+.cart{
+    color: maroon;
+    border: 2px solid maroon;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: transparent;
 }
-
-.dot::after{
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    border: 2px solid white;
-    background: #AD4C4C;
-    position: absolute;
-    top: 0;
-    right: -10px;
+.remove{
+    align-items: center;
+    color: white;
+    float: left;
+    display: inline-flex;
+    margin: -8px 0 -5px 5px;
 }
-
-
 
 .change{
     font-size: 14px;
@@ -51,13 +48,32 @@ body {
 }
 
 
-.remove{
-    align-items: center;
-    color: white;
-    float: left;
-    display: inline-flex;
-    margin: -8px 0 -5px 5px;
+.dot{
+    position: relative;
 }
+
+.dot::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    background: #AD4C4C;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.cart{
+    color: maroon;
+    border: 2px solid maroon;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
 
 @media screen and (max-width: 600px) {
 .container{
@@ -96,8 +112,6 @@ body {
     border-radius: 5px;
 }
 }
-
-
 
 @media screen and (max-width: 768px) {
     .container{
@@ -177,13 +191,7 @@ header ul li a:hover {
 .card{
     padding: 30px;
 }
-.cart{
-    color: maroon;
-    border: 2px solid maroon;
-    padding: 16px;
-    border-radius: 10px;
-    background-color: transparent;
-}
+
 .crr li{
     display: grid;
     grid-template-columns: 1fr;
