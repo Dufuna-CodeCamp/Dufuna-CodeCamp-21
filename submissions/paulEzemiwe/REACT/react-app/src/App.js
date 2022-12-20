@@ -1,9 +1,12 @@
-import './App.scss';
-import { CartPage } from './pages/CartPage';
+import "./App.scss";
+import { BrowserRouter } from "react-router-dom";
+import { Routes } from "./components/Routes/Routes";
 
 function App() {
   return (
-    <CartPage />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
