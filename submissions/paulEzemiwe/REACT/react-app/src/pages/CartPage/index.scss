@@ -32,9 +32,7 @@ $color-light-grey: #4e4d4d;
 
 .cart__page--title {
     margin: 30px 0 73px 0;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 45px;
+    @include font(30px, 500, 45px);
     color: #000000;
 }
 
