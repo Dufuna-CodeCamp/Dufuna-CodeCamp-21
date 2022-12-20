@@ -1,7 +1,9 @@
 import "./input.scss";
 import { Button } from "../button/button";
+import { useNavigate } from "react-router-dom";
 
 export const Input = ({ props, select, side, submit }) => {
+  const navigate = useNavigate();
   return (
     <div
       className={`input__container ${side ? `input__container--${side}` : ""}`}
@@ -23,6 +25,11 @@ export const Input = ({ props, select, side, submit }) => {
           children="Pay"
           className={props?.errors ? "inactive" : "normal"}
           type="submit"
+          onClick={() => {
+            if (!props?.errors) {
+              navigate("/success");
+            }
+          }}
         />
       ) : (
         <input
