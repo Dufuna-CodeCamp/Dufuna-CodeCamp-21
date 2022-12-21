@@ -116,9 +116,6 @@ hr {
 #verify{
     padding: 25px 0 40px;
 }
-/* .deliveryaddress{
-    padding:  0;
-} */
 .successful{
     display: flex;
     flex-direction: column;
