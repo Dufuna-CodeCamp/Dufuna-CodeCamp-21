@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <div>
        <header className="header">
-            <h1 className="logo">Food<span style={{color: "maroon"}}>Bag</span></h1>
+            <h1 className="logo">Food<span style={{color: "rgb(168, 7, 7)"}}>Bag</span></h1>
             <ul className='main-nav d-flex justify-content-end'>
-                <li style={{color: "maroon"}}>Cart</li>
+                <li>Cart</li>
                 <li>Login</li>
                 <li id="sign">Sign up</li>
             </ul>
@@ -15,4 +15,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

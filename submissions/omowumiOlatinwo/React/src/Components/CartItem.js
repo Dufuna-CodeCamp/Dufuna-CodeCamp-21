@@ -42,11 +42,9 @@ class CartItem extends Component{
                     <div className="col">
                         {/* total for the items */}
                         <p className="textprice d-flex justify-content-end" onClick={this.props.totalNet}>&#8358; <span  className=" spanprice item">{this.props.price * this.props.number}</span>
-                        
                         </p>
                     </div>
                     </>
-                    
                 </div>
                 <hr></hr>
             </>

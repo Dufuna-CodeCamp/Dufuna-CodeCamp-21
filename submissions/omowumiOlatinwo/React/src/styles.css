@@ -56,8 +56,8 @@ header {
         padding: 0 ;
     }
     .header .main-nav li #sign {
-        color: maroon;
-        border: 2px solid maroon;
+        color: rgb(168, 7, 7);
+        border: 2px solid rgb(168, 7, 7);
         padding: 0 4px;
         border-radius: 10px;
     }
@@ -82,8 +82,8 @@ header ul li a:hover {
 }
 
 #sign {
-    color: maroon;
-    border: 2px solid maroon;
+    color: rgb(168, 7, 7);
+    border: 2px solid rgb(168, 7, 7);
     padding: 10px;
     border-radius: 10px;
 }
@@ -97,7 +97,7 @@ hr {
     width: 100%;
 }
 .btnCheckout{
-    background-color: maroon;
+    background-color: rgb(168, 7, 7);
     border: none;
     border-radius: 3px;
     width: 100%;
@@ -106,4 +106,32 @@ hr {
     margin: 10px;
     color: white;
     font-weight: bold;
+}
+.toGrey{
+    color: grey
+}
+#homecart{
+    padding: 40px 0 25px;
+}
+#verify{
+    padding: 25px 0 40px;
+}
+/* .deliveryaddress{
+    padding:  0;
+} */
+.successful{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+#greenOrder{
+    color: green;
+}
+.radio{
+    accent-color: rgb(168, 7, 7);
+}
+
+select{
+    background: url('images/keyboard_arrow_down.svg') no-repeat right;
 }

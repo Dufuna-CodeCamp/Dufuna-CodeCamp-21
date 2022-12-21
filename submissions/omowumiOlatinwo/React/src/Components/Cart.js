@@ -60,7 +60,7 @@ class Cart extends Component{
 
             <DeliveryItem delivery={this.state.delivery} />
             <Total total={this.state.total} check={this.deliveryPrice}/>
-            <Checkout id="btncheckout" name="Checkout"/>
+            <Checkout id="btncheckout" name="Checkout" link="/verification"/>
             </div>
         )
         }
@@ -70,8 +70,6 @@ class Cart extends Component{
             var der = this.products[id].quantity;
             der += 1
             this.products[id].quantity = der
-            console.log(this.state.products)
-            console.log(this.state.products[id]['quantity'])
             this.setState({quantity: this.state.products[id]['quantity']}, function name(params) {
                 var price = document.getElementsByClassName('spanprice');
            var total = 0;
