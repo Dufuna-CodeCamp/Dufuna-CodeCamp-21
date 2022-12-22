@@ -13,7 +13,6 @@ class Success extends Component{
                 <br></br>
                 <br></br>
                 <br></br>
-                <br></br>
                     <div className="successful d-flex justify-content-center">                        
                         <img src={success} alt="delivery success"/>
                         <h2><span id="greenOrder">Order Successful </span></h2>
