@@ -116,9 +116,6 @@ hr {
 #verify{
     padding: 25px 0 40px;
 }
-/* .deliveryaddress{
-    padding:  0;
-} */
 .successful{
     display: flex;
     flex-direction: column;
@@ -131,7 +128,6 @@ hr {
 .radio{
     accent-color: rgb(168, 7, 7);
 }
-
 select{
     background: url('images/keyboard_arrow_down.svg') no-repeat right;
 }

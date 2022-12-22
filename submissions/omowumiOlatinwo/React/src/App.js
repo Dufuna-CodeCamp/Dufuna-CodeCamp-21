@@ -1,7 +1,7 @@
 import './styles.css';
 import {Route, Routes} from 'react-router-dom';
-import Verification from '../src/Components/Verification.js';
 import CartPage from '../src/Components/CartPage.js';
+import Verification from '../src/Components/Verification.js';
 import Success from '../src/Components/Success.js';
 
 function App() {
