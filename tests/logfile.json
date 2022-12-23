@@ -137,10 +137,10 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "b26aeb37-cd03-4bd5-88ed-371a901b2714",
-              "parentUUID": "23046fb6-2ac2-4799-b63d-d035f7a24d05",
+              "uuid": "dac9f2c9-1cc9-4c1b-97e1-2b4f9baaccf9",
+              "parentUUID": "f60547c6-50a0-4567-8016-425c23dff998",
               "isHook": false,
               "skipped": false
             }

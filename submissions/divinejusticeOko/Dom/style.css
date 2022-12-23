@@ -1,0 +1,396 @@
+/* Mobile first approach */
+/* Starting with extra small devices (phones) to extra large devices */
+:root {
+--clr-primary-100: #ad4c4c;
+--clr-primary-200: #5EA304;
+
+--clr-accent-100: #000000;
+
+--clr-neutral-100: #ffffff;
+--clr-neutral-200: #F2F2F2;
+--clr-neutral-300: #C4C4C4;
+--clr-neutral-400: #a5a5a5;
+--clr-neutral-500: #696969;
+--clr-neutral-600: #4E4D4D;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--clr-neutral-500);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header h2 {
+    color: var(--clr-accent-100);
+    font-size: 24px;
+}
+
+header .red-txt {
+    color: var(--clr-primary-100);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+li a {
+    color: var(--clr-neutral-500);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.cart {
+    position: relative;
+}
+
+.item-added span {
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 9px;
+    height: 9px;
+    background-color: var(--clr-primary-100);
+    border-radius: 50%;
+}
+
+nav .btn,
+.menu-btn {
+    color: var(--clr-primary-100);
+    background-color: var(--clr-neutral-100);
+    border: 1px solid var(--clr-primary-100);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero {
+    padding-top: 20px;
+}
+
+.address {
+    margin-top: 30px;
+}
+
+label {
+    color: var(--clr-accent-100);
+    font-weight: 500;
+}
+
+.address select {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: var(--clr-neutral-500);
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid var(--clr-neutral-300);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('imgs/keyboard_arrow_down.svg') no-repeat right;
+}
+
+
+.interest {
+    margin-top: 30px;
+}
+
+.interest>p:first-child {
+    color: var(--clr-accent-100);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.interest-item {
+    color: inherit;
+    text-decoration: none;
+    padding: 20px 20px 5px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.interest-item img {
+    filter: grayscale(1);
+}
+
+.interest-item.active img {
+    filter: unset;
+}
+
+.interest .active {
+    cursor: pointer;
+}
+
+.interest .active {
+    cursor: pointer;
+}
+.interest .active h4 {
+    color: var(--clr-primary-100);
+}
+
+hr {
+    border-top: 1px solid var(--clr-neutral-200);
+}
+
+.serve-you {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.serve-list h4 {
+    margin-bottom: 0;
+}
+
+.serve-list p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: var(--clr-neutral-400);
+}
+
+footer {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer p {
+    font-size: 12px;
+    color: var(--clr-neutral-400);
+}
+
+footer img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-txt p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/* ****************************************************************
+******************** Vendors Page  Styles********************************
+******************************************************************/
+.vendors {
+    padding-top: 30px;
+}
+
+.vendors > P {
+    font-size: 14px;
+}
+
+.vendors > p a {
+    text-decoration: none;
+    color: var(--clr-neutral-500);
+}
+
+.black-txt {
+    color: var(--clr-accent-100);
+}
+
+.green-txt {
+    color: var(--clr-primary-200) !important;
+}
+
+.vendors h3 {
+    font-weight: 500;
+    color: var(--clr-accent-100);
+    margin-top: 30px;
+}
+
+.kfc,
+.c-rep {
+    padding-top: 30px;
+    position: relative;
+}
+
+.kfc > p,
+.c-rep > p {
+    text-align: center;
+}
+
+.logo,
+.menu-item .flex {
+    display: flex;
+}
+
+.logo p {
+    margin-left: 10px;
+}
+
+.menu {
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.menu-item .flex {
+    justify-content: space-between;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.menu-item > .flex > p {
+    color: var(--clr-neutral-600);
+}
+
+.menu-item {
+    margin-bottom: 40px;
+}
+
+.menu-item > img {
+    width: 100%;
+}
+
+a.red-txt {
+    color: var(--clr-primary-100);
+    text-decoration: none;
+}
+
+.c-rep {
+    padding-bottom: 50px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    border-radius: 3px;
+    height: 40px;
+    margin-left: 5px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease-in-out,;
+}
+
+.menu-btn img {
+    width: 25px;
+}
+.added_to_cart {
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-100);
+    border-color: var(--clr-neutral-400);
+}
+
+/* Media Query */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width:600px) {
+    header,
+    section,
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .interest-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .interest-item {
+        width: 48%;
+    }
+
+    /* ****************************************************************
+    ******************** Vendors Page Styles********************************
+    ******************************************************************/
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 48%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .serve-list {
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+    }
+
+    .serve-list img {
+        width: 80%;
+    }
+
+    .serve-list p {
+        font-size: 16px;
+    }
+
+    .footer-txt {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+}
+    
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width:1200px) {
+    .interest-list {
+        flex-wrap: nowrap;
+    }
+    .interest-item {
+        width: 25%;
+    }
+
+    /* ****************************************************************
+    ******************** Vendors Page Styles********************************
+    ******************************************************************/
+    .menu {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 24%;
+    }
+
+    .kfc > p,
+    .c-rep > p {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+}

@@ -46,7 +46,7 @@ const Cart = ({ products }) => {
        
     }
 
-    //  METHOD TO DECREASE QUANTITY OF ITEM
+    //  METHOD TO INCREASE  QUANTITY OF ITEM
     const removeItems=(item)=>{
     const findItem = Data.find((param)=> param.product_id=== item.product_id)
 
@@ -86,28 +86,28 @@ const Cart = ({ products }) => {
                                 <img src={item.image} id="image" alt="cart item"></img>
 
                                 <div className='title-buttons'>
-                                    <p id='product-name'>{item.product_name}</p>
+                                <p id='product-name'>{item.product_name}</p>
 
-                                    <div className='buttons'>
+                                <div className='buttons'>
 
-                                        <button id ="plus-button" onClick={()=>increaseItems(item)}> 
-                                            <img id='plus-image' src = {plus} alt="plus"></img>
-                                        </button>
-                                    
-                                        <p id='quantity'>{item.quantity}</p>
+                                    <button id ="plus-button" onClick={()=>increaseItems(item)}> 
+                                        <img id='plus-image' src = {plus} alt="plus"></img>
+                                    </button>
+                                
+                                    <p id='quantity'>{item.quantity}</p>
 
-                                        <button id ="minus-button" onClick={()=>removeItems(item)}> 
-                                            <img id='minus-image' src = {minus}  alt="minus"></img>
-                                        </button>
-                                    </div>
-
+                                    <button id ="minus-button" onClick={()=>removeItems(item)}> 
+                                        <img id='minus-image' src = {minus}  alt="minus"></img>
+                                    </button>
                                 </div>
 
                             </div>
 
-                            <p id ='price'>#{ item.quantity === 0 ? item.price: item.quantity * item.price}</p>
-                            <p id='hidden'>{ item.quantity === 0 ? total+=item.price: total += item.quantity * item.price}</p>
                         </div>
+
+                        <p id ='price'>#{ item.quantity === 0 ? item.price: item.quantity * item.price}</p>
+                        <p id='hidden'>{ item.quantity === 0 ? total+=item.price: total += item.quantity * item.price}</p>
+                    </div>
 
                     ))
                 }
