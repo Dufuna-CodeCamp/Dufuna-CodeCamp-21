@@ -74,7 +74,7 @@ if(!isset($_COOKIE["user0id"])){
                 echo "<td> &nbsp;&nbsp;&nbsp;&nbsp;" . $_COOKIE[$userTag."email"] . "</td>";
                 echo "<td> &nbsp;&nbsp;&nbsp;&nbsp;" . $_COOKIE[$userTag."date"] . "</td>";
                 echo "<td> &nbsp;&nbsp;&nbsp;&nbsp;
-                        <button style='margin-top: 10px; margin-bottom: 10px; margin-left: 10px;' type='submit'>
+                        <button style='margin-top: 10px; margin-bottom: 10px; margin-left: 10px; text-decoration: none;' type='submit'>
                             <a href=''>VIEW</a>
                         </button>
                     </td>";
