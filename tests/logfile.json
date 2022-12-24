@@ -85,8 +85,46 @@
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "3fa26366-dde4-4705-a8aa-d834e88a6766",
-              "parentUUID": "1d65382b-a572-4289-a1fd-2d8d3cf48e1b",
+
+              "uuid": "2dce1ec6-978e-4274-9045-61f65217ad23",
+              "parentUUID": "23046fb6-2ac2-4799-b63d-d035f7a24d05",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: assert image amount is 2",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
+              "timedOut": false,
+              "duration": 14,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "err": {},
+              "uuid": "81f20299-b0bf-40ee-a1ba-14e05a33bfe1",
+              "parentUUID": "23046fb6-2ac2-4799-b63d-d035f7a24d05",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: ordered list available",
+              "fullTitle": "Testing Scholars Project test case: ordered list available",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
+              "err": {},
+              "uuid": "dac9f2c9-1cc9-4c1b-97e1-2b4f9baaccf9",
+              "parentUUID": "f60547c6-50a0-4567-8016-425c23dff998",
+ 
               "isHook": false,
               "skipped": false
             }
