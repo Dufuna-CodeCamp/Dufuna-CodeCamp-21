@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Form Task\"",
               "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -145,6 +145,7 @@
               "skipped": false
             },
             {
+
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
@@ -171,13 +172,12 @@
             "96a39bf0-b261-4051-b55d-fcf4c3433756",
             "c4a926fe-aa54-4d7d-8647-30a262c05aea"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 1469,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 180000
+          "_timeout": 2000
         }
       ],
       "passes": [],
@@ -207,7 +207,6 @@
       "version": "7.1.3"
     },
     "marge": {
-      "options": {
         "reportDir": "C:/Users/Aisha/desktop/dufuna-codecamp-21/tests/html_FORMS/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
