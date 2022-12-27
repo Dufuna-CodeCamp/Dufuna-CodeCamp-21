@@ -66,6 +66,8 @@ if(!isset($_COOKIE["user0id"])){
             $c = 0;
         for($i = 1; $i <= 5; $i++){
             $userTag = "user".$c;
+            $currentUser = $_COOKIE[$userTag."id"];
+            echo "<p>$currentUser</p>";
             echo "<tr>";
                 echo "<td>" . $_COOKIE[$userTag."id"] . "</td>";
                 echo "<td>" . $_COOKIE[$userTag. "name"] . "</td>";

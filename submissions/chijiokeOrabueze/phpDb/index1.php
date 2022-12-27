@@ -4,10 +4,13 @@ require_once('connection.php');
 
 $id = intval($_REQUEST['star']);
 
+var_dump("hello");
+echo $id;
+
 
 
 try{
-    $sql = "SELECT * FROM orders WHERE customer_id = $id";
+    $sql = "SELECT * FROM orders WHERE user_id = $id";
 
     $result = $pdo->query($sql);
 
