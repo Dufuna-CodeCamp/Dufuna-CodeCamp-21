@@ -1,0 +1,68 @@
+$color-primary: #ad4c4c;
+$color-black: #000000;
+$color-grey: #c4c4c4;
+$color-light-grey: #696969;
+
+@mixin boxSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size: null, $weight: null, $line-height: null) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+.input__container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &--right {
+        margin-left: 1%;
+    }
+    &--left {
+        margin-right: 1%;
+    }
+}
+
+.input__label {
+    @include font(20px, 500, 30px);
+    color: $color-black;
+    margin-bottom: 5px;
+}
+
+.input__field {
+    @include font(20px, 400, 30px);
+    @include boxSize(100%, 60px);
+    color: $color-light-grey;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+    padding: auto;
+    padding-left: 32.78px;
+    outline: none;
+    &:focus {
+        border: 1px solid $color-primary;
+    }
+}
+
+.input__error {
+    @include font(10px, 400, 15px);
+    color: $color-primary;
+    margin-top: 5px;
+}
+
+.select__field {
+    @extend .input__field;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../assets/svgs/arrow-down.svg) no-repeat 97% 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .input__container {
+        margin-bottom: 20px;
+    }
+}
