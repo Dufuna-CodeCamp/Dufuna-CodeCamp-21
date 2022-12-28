@@ -17,8 +17,13 @@ productPrice: "$170",
 },
 ];
 
-productlist.forEach(productlist => {
+for (let i = 0; i < productList.length; i++) {
     document.write(
-      `<h2>${productlist.productName}</h2> with ${productlist.imageUrl} is sold for <strong>${productlist.productPrice}</strong>`
-    );
-  })
+      productList[i].productName +
+        " with " +
+        productList[i].imageUrl +
+        " is sold for " +
+        productList[i].productPrice
+    )
+    document.write("<br><br>");
+  }
