@@ -2,7 +2,7 @@
 
 require_once('dbconnect.php');
 $id = intval($_REQUEST['star']);
-echo($id);
+// echo("Order Details for user ".$id);
 
 try{
     $sql = "SELECT * FROM orders WHERE user_id = $id";
