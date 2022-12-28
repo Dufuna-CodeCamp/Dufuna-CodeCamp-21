@@ -6,16 +6,14 @@ echo($id);
 
 try{
     $sql = "SELECT * FROM orders WHERE user_id = $id";
-    // echo ($sql);
 
     $result = $pdo_conn->query($sql);
     
-    
     if($result->rowCount() > 0){
         $orderId = 0;
-        // echo $orderId;
+        
         while($row = $result->fetch()){
-            // var_dump($row['location_address']);
+
             $orderTag = 'order'.$orderId;
             setcookie($orderTag.'id', $row['id']);
             setcookie($orderTag.'pname', $row['product_name']);
@@ -30,14 +28,13 @@ try{
 
         }
         unset($result);
-        // var_dump($_COOKIE);
+
     }else{
         echo "customer has no orders";
     }
 }catch(PDOException $e){
     die("ERROR: ". $e->getMessage());
 }
-
 
 ?>
 
@@ -66,7 +63,7 @@ try{
         for ($i =0; $i < $orderId; $i++){
             $orderBase = "order".$i;
             $orderNum = $i + 1;
-            // var_dump($_COOKIE);
+
             echo "<tr>";
                 echo "<td>&nbsp;&nbsp;&nbsp;" . $orderNum . "</td>";
                 echo "<td>&nbsp;&nbsp;&nbsp;" . $_COOKIE[$orderBase. "pname"] . "</td>";
@@ -82,19 +79,6 @@ try{
 
         }
         
-        
-
-        // echo "</table>";
-
-        // $count = sizeof($_COOKIE);
-
-        
-        // $keys = array_keys($_COOKIE);
-
-        // var_dump($keys);
-
-        // echo "$orderId";
-
     ?>
 </body>
 </html>

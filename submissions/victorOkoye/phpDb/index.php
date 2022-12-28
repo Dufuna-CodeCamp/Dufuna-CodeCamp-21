@@ -84,7 +84,6 @@ if(!isset($_COOKIE["user0id"])){
             $c += 1;
         }
             
-
         echo "</table>";
     ?>
 </body>
