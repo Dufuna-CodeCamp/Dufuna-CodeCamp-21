@@ -1,24 +1,24 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 0,
-    "passes": 0,
+    "tests": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-12-27T11:51:17.543Z",
-    "end": "2022-12-27T11:54:17.581Z",
-    "duration": 180038,
+    "failures": 1,
+    "start": "2022-12-28T16:33:00.954Z",
+    "end": "2022-12-28T16:33:20.340Z",
+    "duration": 19386,
     "testsRegistered": 2,
-    "passPercent": 0,
+    "passPercent": 50,
     "pendingPercent": 0,
-    "other": 1,
-    "hasOther": true,
-    "skipped": 2,
-    "hasSkipped": true
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
   },
   "results": [
     {
-      "uuid": "6c54a36d-9732-46cc-a019-8e02c6b59e8b",
+      "uuid": "a52ea65c-c959-40a4-93f9-7863db1f8540",
       "title": "",
       "fullFile": "C:\\Users\\LawsonIfeoma\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
       "file": "\\test.js",
@@ -27,30 +27,26 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a828b9f8-e433-4eb5-94a5-9662e49de939",
+          "uuid": "ec69f3fb-8a65-46b4-be7e-ab522443affb",
           "title": "Printing product price",
           "fullFile": "C:\\Users\\LawsonIfeoma\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
           "file": "\\test.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "timedOut": true,
-              "duration": 180015,
-              "state": "failed",
+              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "timedOut": false,
+              "duration": 18686,
+              "state": null,
               "speed": null,
               "pass": false,
-              "fail": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
-              "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\LawsonIfeoma\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\LawsonIfeoma\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
-                "diff": null
-              },
-              "uuid": "d2a146e4-cc62-4468-aabb-c3f52009f11c",
-              "parentUUID": "a828b9f8-e433-4eb5-94a5-9662e49de939",
+              "err": {},
+              "uuid": "91b3cb54-8f1e-45cc-bcc1-9e7ceac80f50",
+              "parentUUID": "ec69f3fb-8a65-46b4-be7e-ab522443affb",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +56,7 @@
               "title": "\"after all\" hook in \"Printing product price\"",
               "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 2,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "597f2b2b-2400-4484-95ca-1304808cf792",
-              "parentUUID": "a828b9f8-e433-4eb5-94a5-9662e49de939",
+              "uuid": "4b0cfac7-4e80-4ac5-b608-3ef780365cd4",
+              "parentUUID": "ec69f3fb-8a65-46b4-be7e-ab522443affb",
               "isHook": true,
               "skipped": false
             }
@@ -80,48 +76,53 @@
               "title": "test case: check product details",
               "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
-              "duration": 0,
-              "state": null,
-              "speed": null,
-              "pass": false,
+              "duration": 319,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "48d6e3fb-b2bf-45db-b514-e66248fb976b",
-              "parentUUID": "a828b9f8-e433-4eb5-94a5-9662e49de939",
+              "uuid": "24a54116-2b01-4ae9-bc53-1f34b140f54d",
+              "parentUUID": "ec69f3fb-8a65-46b4-be7e-ab522443affb",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "test case: check three arrays are present",
               "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
-              "duration": 0,
-              "state": null,
+              "duration": 158,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
-              "err": {},
-              "uuid": "a472d77b-94b3-4577-a172-21df3efbab54",
-              "parentUUID": "a828b9f8-e433-4eb5-94a5-9662e49de939",
+              "err": {
+                "message": "AssertionError: Ensure the array contains 3 objects: expected 1 to equal 3",
+                "estack": "AssertionError: Ensure the array contains 3 objects: expected 1 to equal 3\n    at Context.<anonymous> (test.js:33:12)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                "diff": "- 1\n+ 3\n"
+              },
+              "uuid": "6559e31b-e94a-48be-ba90-2ec4f1282e88",
+              "parentUUID": "ec69f3fb-8a65-46b4-be7e-ab522443affb",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [],
-          "pending": [],
-          "skipped": [
-            "48d6e3fb-b2bf-45db-b514-e66248fb976b",
-            "a472d77b-94b3-4577-a172-21df3efbab54"
+          "passes": [
+            "24a54116-2b01-4ae9-bc53-1f34b140f54d"
           ],
-          "duration": 0,
+          "failures": [
+            "6559e31b-e94a-48be-ba90-2ec4f1282e88"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 477,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
