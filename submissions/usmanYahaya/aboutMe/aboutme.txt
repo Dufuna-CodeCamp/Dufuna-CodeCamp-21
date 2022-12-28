@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+Hello everyone, My name is Usman Yahaya. At the end of this progrma, i want to be a software engineer
+
+=======
 Hello world
 My name is Usman Yahaya, I am a software engineer
 Nice to meet you!!
+>>>>>>> e5234ef78cb686017d1f90756c587e85800e7c16

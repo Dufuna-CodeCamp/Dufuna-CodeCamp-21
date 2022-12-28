@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Foodbag | Responsive page</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navlink flex justify-between items-center">
+				<input
+					placeholder="Enter your delivery address"
+					type="text"
+					hidden
+				/>
+				<h3 class="font-semibold logo">
+					Food<span class="text-accent">Bag</span>
+				</h3>
+				<ul class="flex justify-between gap-2 text-500 items-center">
+					<li><a href="#">Cart</a></li>
+					<li><a href="#">Login </a></li>
+					<button>Sign up</button>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="hero flex flex-col justify-center gap-1">
+				<h1 class="text-700 font-semibold">Foodbag</h1>
+				<p class="text-500">Anything food, we have you covered.</p>
+			</section>
+			<section>
+				<form class="flex flex-col gap-4 location-form" action="#">
+					<label class="text-body text-900 font-medium" for="location"
+						>Where are you?</label
+					>
+					<select name="location" id="location">
+						<option value="">Enter your delivery address</option>
+						<option value="Lekki">Lekki</option>
+						<option value="UI">UI</option>
+						<option value="New port">New port</option>
+					</select>
+				</form>
+			</section>
+			<section class="my-10 interests">
+				<h3 class="text-body font-medium my-20">Pick an interest</h3>
+				<div class="grid interests__wrapper gap-8 my-10">
+					<a
+						class="flex flex-col gap-2 interests__item disabled-item"
+					>
+						<img
+							class="my-5"
+							src="./img/fast-food_disabled.svg"
+							alt=""
+						/>
+						<h4 class="text-accent">Fast food</h4>
+						<p class="text-500">All sorrows are less with bread.</p>
+					</a>
+					<a
+						class="flex flex-col gap-2 interests__item disabled-item"
+					>
+						<img
+							class="my-5"
+							src="./img/Vegetables _ Drinks_disabled.svg"
+							alt=""
+						/>
+						<h4 class="text-accent">Vegetables & Fruits</h4>
+						<p class="text-500">
+							May not want it, but good for you.
+						</p>
+					</a>
+					<a
+						class="flex flex-col gap-2 interests__item disabled-item"
+					>
+						<img
+							class="my-5"
+							src="./img/Drinks _ Cocktails_disabled.svg"
+							alt=""
+						/>
+						<h4 class="text-accent">Drinks & Cocktails</h4>
+						<p class="text-500">
+							I feel sad for those who don't drink.
+						</p>
+					</a>
+					<a
+						class="flex flex-col gap-2 interests__item disabled-item"
+					>
+						<img
+							class="my-5"
+							src="./img/resturant_disabled.svg"
+							alt=""
+						/>
+						<h4 class="text-accent">Resturants</h4>
+						<p class="text-500">All sorrows are less with bread.</p>
+					</a>
+				</div>
+			</section>
+			<section class="flex flex-col text-center my-20 serve">
+				<h2 class="text-700 font-semibold">How we serve you</h2>
+
+				<div class="serve__options grid">
+					<div
+						class="serve-single flex flex-col items-center justify-center"
+					>
+						<img src="./img/Illustration_1.svg" alt="" />
+						<h4>Tell us where you are</h4>
+						<p>Select the location you want us to deliver.</p>
+					</div>
+					<div
+						class="serve-single flex flex-col items-center justify-center"
+					>
+						<img src="./img/illustration_2.svg" alt="" />
+						<h4>Tell us what you want</h4>
+						<p>Browse the type of food that interest you.</p>
+					</div>
+					<div
+						class="serve-single flex flex-col items-center justify-center"
+					>
+						<img src="./img/illustration_3.svg" alt="" />
+						<h4>We'll come running</h4>
+						<p>Your order will be delivered to you in no time.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="flex items-center">
+			<div class="contact flex items-center flex-col">
+				<h4 class="text-500 my-20 font-medium">Contact us</h4>
+				<div class="icons flex items-center gap-4">
+					<img src="./img/twitter 2.svg" alt="" />
+					<img src="./img/youtube 1.svg" alt="" />
+					<img src="./img/facebook-f 1.svg" alt="" />
+				</div>
+				<div class="footer-text text-500 text-center">
+					<p class="my-10">Terms & Conditions . Privacy Policy</p>
+					<p>© Copyright 2021 FoodBag is a registered trademark</p>
+				</div>
+			</div>
+		</footer>
+		<script src="../DOM/landing_page_validation.js"></script>
+	</body>
+</html>

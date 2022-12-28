@@ -1,0 +1,417 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  background-color: rgb(253, 253, 253);
+}
+
+.container {
+  padding-inline: 5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+}
+
+.home {
+  color: #c9c9c9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+}
+
+.name-active {
+  color: #000;
+  margin-left: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.list-item {
+  margin: 1rem 0.8rem;
+}
+
+.list-item:last-child {
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+}
+
+.list-item:last-child a {
+  color: #ad4c4c;
+}
+
+.list-item a {
+  padding: 0.2rem 0.8rem;
+  text-decoration: none;
+  display: block;
+  color: #696969;
+}
+
+main {
+  padding-block: 3rem;
+}
+
+.cartPage-actions {
+  display: none;
+}
+
+.cartItem {
+  margin-block: 1rem;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+.cartItem > * {
+  margin-right: 1.5rem;
+}
+
+.itemPrice {
+  margin-left: auto;
+}
+
+.itemImage {
+  min-width: 5rem;
+  min-height: 5rem;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.item-cta {
+  display: flex;
+  align-items: center;
+}
+.item-cta > * {
+  margin-right: 0.5rem;
+}
+
+.item-cta button {
+  /* padding: 0.1rem 0.8rem; */
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #ad4c4c;
+  border-radius: 5px;
+  border: 1px solid #ad4c4c;
+  cursor: pointer;
+}
+
+/* Delivery */
+
+.delivery {
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding-inline: 1.5rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+.delivery-title {
+  font-weight: bold;
+}
+.deliveryFee {
+  margin-left: auto;
+}
+
+.delivery-image {
+  margin-right: 5rem;
+}
+
+/* Total price for items in the cart */
+
+.total {
+  display: flex;
+  align-items: center;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+}
+
+.total-fee {
+  margin-left: auto;
+}
+
+/* Checkout button */
+.checkout {
+  width: 60%;
+  display: block;
+  margin-inline: auto;
+  padding-block: 1.125rem;
+  border: unset;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ad4c4c;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+/* Verification page */
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: black;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 4px;
+  color: #c9c9c9;
+  content: "\003E";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  text-decoration: none;
+}
+
+/* First part of verification */
+.hero-verification {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hero-verification p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.hero-verification__title p {
+  color: #ad4c4c;
+}
+
+.hero-verification__address p {
+  color: #696969;
+  margin-bottom: 30px;
+}
+
+.hero-verification__address {
+  position: relative;
+}
+
+.location {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ad4c4c;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 8.33%;
+}
+
+.location::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ad4c4c;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+/* For the inputs */
+label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+input:not([type="submit"]),
+select {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 1rem 0.8rem;
+  margin-bottom: 30px;
+  color: #696969;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+hr {
+  border: 1px solid #c9c9c9;
+  margin-block: 50px;
+}
+
+.last-part {
+  display: flex;
+  gap: 23px;
+}
+
+.last-part div {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 60%;
+  background-color: #ad4c4c;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 82px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/* For the Sucess Page  */
+.success,
+.unsuccessful {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.successful__order,
+.error {
+  text-align: center;
+}
+
+.success-text,
+.unsuccessful-text {
+  margin-top: 2rem;
+  margin-inline: auto;
+  width: 80%;
+}
+
+.success-text p,
+.unsuccessful-text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
+  margin-top: 14px;
+}
+.success-text p:first-child {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: #5ea304;
+  margin-bottom: 14px;
+}
+
+/* For the unSucessful Page  */
+.unsuccessful-text p:first-child {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  color: #ff644a;
+}
+
+/* ******** Media Query ****** */
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-inline: 0.6rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: 500;
+    /* line-height: 24px; */
+  }
+
+  .list-item {
+    margin: 0rem 0.8rem;
+  }
+
+  .list-item:last-child {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .list-item a {
+    padding: 0.2rem 0.3rem;
+    margin-inline: 0.5rem;
+    /* margin-top: 1rem; */
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .cartPage-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .number-items {
+    color: #ad4c4c;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .removeAll {
+    border: none;
+    outline: none;
+    color: #ad4c4c;
+    background-color: transparent;
+    -webkit-text-decoration: 2px underline #ad4c4c;
+    text-decoration: 2px underline #ad4c4c;
+    cursor: pointer;
+  }
+}
