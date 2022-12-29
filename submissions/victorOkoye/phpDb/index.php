@@ -67,23 +67,23 @@ if(!isset($_COOKIE["user0id"])){
             $c = 0;
         for($i = 1; $i <= 5; $i++){
             $userTag = "user".$c;
-            
+            $currentUser = $_COOKIE[$userTag."id"];
             echo "<tr>";
                 echo "<td> &nbsp;" . $_COOKIE[$userTag."id"] . "</td> &nbsp;";
                 echo "<td> &nbsp;&nbsp;&nbsp;" . $_COOKIE[$userTag."name"] . "</td>";
                 echo "<td> &nbsp;&nbsp;&nbsp;&nbsp;" . $_COOKIE[$userTag."email"] . "</td>";
                 echo "<td> &nbsp;&nbsp;&nbsp;&nbsp;" . $_COOKIE[$userTag."date"] . "</td>";
                 echo "<td> &nbsp;&nbsp;&nbsp;&nbsp;
-                        <button style='margin-top: 10px; margin-bottom: 10px; margin-left: 10px; text-decoration: none;' type='submit'>
-                            <a href=''>VIEW</a>
-                        </button>
+                        <form action = 'index1.php' method= 'post'>
+                            <input type = 'text' hidden name = 'star' value = '$currentUser'/>
+                            <button type = 'submit' style='margin-left: 30px;'>VIEW</button>
+                        </form>
                     </td>";
             echo "</tr>";
 
             $c += 1;
         }
             
-
         echo "</table>";
     ?>
 </body>
