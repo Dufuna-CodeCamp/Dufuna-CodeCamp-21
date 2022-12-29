@@ -1,4 +1,4 @@
-var productlist = [
+const productlist = [
 {
 productName:"Nike Running Shoe",
 imageUrl: "https://www.mrporter.com/en-us/mens/product/nike-running/sport/running-shoes/air-zoom-terra-kiger-8-rubber-trimmed-mesh-trail-running-sneakers/1647597293734957?cm_mmc=PartnerizeAM-_-shopstyle-_-Comparison%2FReview-_-1101l510&utm_source=partnerize&utm_medium=affiliation&utm_campaign=xq_1101l510&utm_content=shopstyle&clickref=1101lwqaiHyg",
