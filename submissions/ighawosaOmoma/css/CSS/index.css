@@ -154,6 +154,9 @@ footer > span{
     font-weight: 400;
     margin-bottom: 70px;
 }
+.interesting{
+    display: none;
+}
 
 @media screen and (max-width: 992px) {
     .foodbag>h2{
