@@ -46,11 +46,12 @@ require_once('connection.php');
 
       for ($i=0; $i < count($customerInfo) ; $i++) {   
     echo
-    "<tr>
+     "<tr>
        <td style='border: 1px solid black; padding: 10px' >". $customerInfo [$i]['id']. "</td>" . 
          "<td style='border: 1px solid black;  padding: 10px;'>" . $customerInfo [$i]['full_name']. "</td>" .
          "<td style='border: 1px solid black;  padding: 10px'>" . $customerInfo [$i]['email']. "</td>" .
-         "<td style='border: 1px solid black;  padding: 10px;'>" .  "<td style='border: 1px solid black; padding: 10px; text-align: center;'>  <a href= 'orders.php?id={$customerInfo[$i]['id']}' style='text-decoration:none; cursor:pointer; '> <button style='padding:10px 25px;'> View </button> </a> </td>
+         "<td style='border: 1px solid black;  padding: 10px;'>" . $customerInfo [$i]['created_at']. "</td>".
+         "<td style='border: 1px solid black; padding: 10px; text-align: center;'>  <a href= 'orders.php?id={$customerInfo[$i]['id']}' style='text-decoration:none; cursor:pointer; '> <button style='padding:10px 25px;'> View </button> </a> </td>
       </tr>";
      }
     
