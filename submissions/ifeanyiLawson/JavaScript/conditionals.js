@@ -9,5 +9,8 @@ for (var i = 1; i <= number; i++) {
   } 
   else if (i % 3 === 0) {
     document.write("Software");
-  } 
+  }
+  else {
+    document.write(i);
+  }
 }
