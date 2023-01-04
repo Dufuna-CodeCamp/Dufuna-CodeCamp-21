@@ -26,22 +26,3 @@ for(i = 1; i <= 116; i++){
 document.close();
 
 
-// var productList = new Array;
-
-// productList = [
-//     {
-//         productName:  "KFC King Bucket",
-//         imageUrl: "images/Rectangle 28.svg",
-//         productPrice: 3000
-//     },
-//     {
-//         productName:  "Zinger Burger",
-//         imageUrl: "images/Rectangle 28.svg",
-//         productPrice: 3000
-//     },
-//     {
-//         productName:  "Yamillicious",
-//         imageUrl: "images/Rectangle 28.svg",
-//         productPrice: 3000
-//     }
-// ]
