@@ -88,7 +88,7 @@ h4{
     margin-left: 70px;
 }
 
-.menu3{
+.menu{
     color: #696969;
     width: 350px;
     line-height: 1.6;
@@ -194,7 +194,7 @@ footer .terms-copyright p{
     .service{
         flex-direction: column;
     }
-    .menu3{
+    .menu{
         width: 90vw;
         padding: 20px;
     }
@@ -209,9 +209,8 @@ footer .terms-copyright p{
         font-size: 16px;
     }
     .deliver{
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
-        font-weight: lighter;
         padding: 0 30px 0 15px;
     }
     .socials{
@@ -251,7 +250,7 @@ footer .terms-copyright p{
         text-align: left;
         font-size: 17px;
     }
-    .menu3{
+    .menu{
         padding: 15px;
     }
     .service{
