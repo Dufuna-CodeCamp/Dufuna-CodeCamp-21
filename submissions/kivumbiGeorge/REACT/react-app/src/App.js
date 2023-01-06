@@ -1,5 +1,4 @@
 import "./App.css";
-
 import CartPage from "./components/CartPage";
 
 function App() {

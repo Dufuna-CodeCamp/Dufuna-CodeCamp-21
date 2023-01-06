@@ -6,9 +6,9 @@ import PlusSVG from "../../assets/image/plus.svg";
 import KFCKingBucketSVG from "../../assets/image/image4.svg";
 import RefuelMaxPotSVG from "../../assets/image/image1.svg";
 import KFCKingBucket2SVG from "../../assets/image/image3.svg";
-import "./cart.css";
 import Header from "../layout/header";
 import Nav from "../layout/nav";
+import "./cart.css";
 
 class CartPage extends Component {
   constructor(props) {
