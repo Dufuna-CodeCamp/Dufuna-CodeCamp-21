@@ -7,7 +7,6 @@ import KFCKingBucket2SVG from "../../assets/image/image3.svg";
 import "./cart.css";
 import Header from "../layout/header";
 import Nav from "../layout/nav";
-
 import CloseSVG from "../../assets/image/close.svg";
 import MinusSVG from "../../assets/image/Minus.svg";
 import PlusSVG from "../../assets/image/plus.svg";
@@ -169,7 +168,7 @@ class CartPage extends Component {
             {this.state.items.length > 0 ? (
               <div className="cart-body-remove-section">
                 <a
-                  href="#"
+                  href="delete"
                   className="cart-body-remove-link"
                   onClick={this.handleDelete}
                 >

@@ -140,8 +140,6 @@
     justify-content: start;
 }
 
-cart-item-product-name-container {
-}
 
 cart-item-product-name {
     font-family: 'Poppins';
@@ -159,8 +157,7 @@ cart-item-product-name {
     margin-top: 19px;
 }
 
-.cart-item-reduce {
-}
+
 
 .cart-item-reduce-button {
     border: none;
@@ -191,8 +188,6 @@ cart-item-product-name {
     color: #AD4C4C;
 }
 
-.cart-item-increase {
-}
 
 .cart-item-increase-button {
     border: none;
