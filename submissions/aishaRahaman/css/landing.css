@@ -33,11 +33,11 @@ header{
 }
 
 .nav li a:hover{
-    color: black;
+    color: brown;
 }
 
 .nav li a:visited{
-    color: brown ;
+    color: black ;
 }
 
 .nav ul li{
@@ -47,7 +47,7 @@ header{
 
 .but{
     background: white;
-    color: rgba(165, 42, 42, 0.625);
+    color: orangered;
     padding: 5px 7px;
     border: 1px solid rgba(165, 42, 42, 0.875);
     font-size: 14px;
@@ -55,7 +55,6 @@ header{
 .but:hover{
     color: #696969;
 }
-
 /******* Customer's Location *******/
 .heading-main{
     margin-top: 100px;
@@ -71,9 +70,9 @@ header{
     border: 1.5px solid #e6e6e6;
     margin: 0 0 0 070px;
 }
-
+.menu:hover,
 #location:hover{
-    color: rgb(165, 42, 42)
+    border: 2px solid brown;
 }
 
 h4{
@@ -84,14 +83,13 @@ h4{
 /******* Services FoodBag provides *******/
 .interest{
     display: flex;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin: 0 70px;
 }
 
 .menu{
     color: #696969;
     width: 350px;
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 16px;
     padding: 40px;
     border: 1px solid #e6e6e6;
@@ -166,7 +164,7 @@ footer .terms-copyright p{
 /******* Responsiveness *******/
 @media screen and (max-width: 600px){
     header{
-        margin: 30px 0 55px 15px;
+        margin: 30px 0 55px 13px;
         font-size: 17px;
     }
     .heading{
@@ -182,11 +180,12 @@ footer .terms-copyright p{
         font-size: 15px;
         font-weight: lighter;
     }
+    
     .heading-main,
     #location,
     .details,
     .interest{
-        margin-left: 15px;
+        margin-left: 13px;
         text-align: left;
         font-size: 15px;
     }
@@ -205,6 +204,7 @@ footer .terms-copyright p{
         margin: 30px;
     }
     .order,
+    .menu h5,
     .socials p{
         font-size: 16px;
     }
@@ -227,7 +227,7 @@ footer .terms-copyright p{
 
 @media screen and (max-width: 800px) {
     header{
-        margin: 30px 0 55px 20px;
+        margin: 30px 0 55px 10px;
         font-size: 19px;
     }
     .heading{
@@ -250,6 +250,7 @@ footer .terms-copyright p{
         text-align: left;
         font-size: 17px;
     }
+    
     .menu{
         padding: 15px;
     }
@@ -262,7 +263,7 @@ footer .terms-copyright p{
         text-align: center;
         display: grid;
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
