@@ -10,7 +10,7 @@
 header{
     position: relative;
     margin: 60px 70px 90px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 
@@ -64,7 +64,7 @@ header span{
 
 .head{
     margin: 50px 0 50px 70px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .logo{
@@ -74,10 +74,9 @@ header span{
 
 .logo a{
    position: absolute;
-   right: 50px;
+   right: 65px;
    top: 40px; 
-   color: brown;
-    
+   color: brown;  
 }
 
 .restaurant{
@@ -85,18 +84,16 @@ header span{
     text-align: center;
     width: auto;
     padding: 0 48px;
-    
-    
 }
 
 .image{
     width: 330px;
 }
 
+    
 .food{
     display: inline-block;
-    margin: 25px 10px 30px 45px ;
-
+    margin: 25px 10px 30px 45px;
 }
 
 .order{
@@ -124,8 +121,12 @@ h5 .price{
     margin-bottom: 10px;
 }
 
-but:hover{
+.food a:hover{
     color: #696969;
+}
+
+.view{
+    visibility: hidden;
 }
 
 hr{
@@ -134,30 +135,81 @@ hr{
 }
 
 /* Responsive */
-@media screen and (max-width: 500px) {
-    header,
-    .page,
+/* Extra small devices [phones, 600px and down]  */
+@media only screen and (max-width: 600px) {
+    *{
+        font-weight: lighter;
+    }
+    header{
+        font-size: 17px;
+        margin: 30px 0 60px 20px;
+    }
+    .heading{
+        top:30px;
+        right: 20px;
+    }
+    .ton,
+    .food h5,
+    .food button,
+    .nav li a{
+        font-size: 15px;
+    }
+    .nav ul li{
+        padding: 0 2px;
+    }
+    .head,
     .logo,
-    .restaurant{
-        text-align: left;
+    .page a{
+        margin-left: 20px;
+        font-size: 16px;
     }
-
-    body{
-        margin: 20px 10px;
+    .logo a{
+        visibility: hidden;
     }
-
-    .restaurant{
-        display: grid;
-        grid-template-columns: repeat(2 , 1fr);
-
+    .view{
+        visibility: visible;
+        text-align: center;
+        margin-top: 70px;
+        padding-bottom: 30px;
     }
-
+    .view a{
+        color: brown;
+    }
+    .food{
+        margin-left: 20px;
+        margin-bottom: -30px;
+    }
     .image{
-        justify-content: flex-start;
-        width: 250px;
+        width: 90vw;
     }
-    h5 .price{
+    .order{
+        line-height: 2.0;
+    }
+    hr{
+        margin: 0 30px 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    header{
+        font-size: 19px;
+        margin: 35px 0 60px 20px;
+    }
+    .heading{
+        top:35px;
+        right: 20px;
+    }
+    .head,
+    .logo,
+    .food,
+    .page a{
+        margin-left: 20px;
         font-size: 18px;
     }
-
+    .image{
+        display: block;
+        width: fit-content;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
