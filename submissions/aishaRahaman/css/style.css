@@ -102,6 +102,7 @@ h4{
 
 /******* How FoodBag serve Customers *******/
 .serve{
+    text-align: center;
     margin-top: 65px;
     color: #696969;
 }
@@ -162,10 +163,8 @@ footer .terms-copyright p{
 }
 
 
-
-/******* Responsiveness to other devices *******/
+/******* Responsiveness *******/
 @media screen and (max-width: 600px){
-    
     header{
         margin: 30px 0 55px 15px;
         font-size: 17px;
@@ -184,8 +183,8 @@ footer .terms-copyright p{
         font-weight: lighter;
     }
     .heading-main,
-    .details,
     #location,
+    .details,
     .interest{
         margin-left: 15px;
         text-align: left;
@@ -208,7 +207,6 @@ footer .terms-copyright p{
     .order,
     .socials p{
         font-size: 16px;
-        
     }
     .deliver{
         font-size: 13px;
@@ -220,7 +218,7 @@ footer .terms-copyright p{
         margin-top: 0;
     }
     footer .terms-copyright p,
-    .copy{
+    footer .copy{
         text-align: center;
         display: grid;
         margin-top: 20px;
