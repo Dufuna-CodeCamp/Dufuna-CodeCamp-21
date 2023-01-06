@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import DeliverySVG from "../../assets/image/scooter 1.svg";
-// import ChickenKFCSVG from "../../assets/image/image1.svg";
+import CloseSVG from "../../assets/image/close.svg";
+import MinusSVG from "../../assets/image/Minus.svg";
+import PlusSVG from "../../assets/image/plus.svg";
 import KFCKingBucketSVG from "../../assets/image/image4.svg";
 import RefuelMaxPotSVG from "../../assets/image/image1.svg";
 import KFCKingBucket2SVG from "../../assets/image/image3.svg";
 import "./cart.css";
 import Header from "../layout/header";
 import Nav from "../layout/nav";
-import CloseSVG from "../../assets/image/close.svg";
-import MinusSVG from "../../assets/image/Minus.svg";
-import PlusSVG from "../../assets/image/plus.svg";
 
 class CartPage extends Component {
   constructor(props) {
