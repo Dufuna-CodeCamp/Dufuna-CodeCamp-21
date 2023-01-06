@@ -84,7 +84,6 @@ h4{
 /******* Services FoodBag provides *******/
 .interest{
     display: flex;
-    width: auto;
     margin-right: 70px;
     margin-left: 70px;
 }
@@ -103,7 +102,6 @@ h4{
 
 /******* How FoodBag serve Customers *******/
 .serve{
-    text-align: center;
     margin-top: 65px;
     color: #696969;
 }
@@ -132,9 +130,8 @@ h4{
 }
 
 hr{
-    margin: 80px;
+    margin: 70px;
     border: 1px solid #e6e6e6;
-    height: 0;
 }
 
 /******* Footer: FoodBag Contact Address *******/
@@ -165,71 +162,110 @@ footer .terms-copyright p{
 }
 
 
+
 /******* Responsiveness to other devices *******/
-@media screen and (max-width: 500px) {
-    header,
-    .interest,
-    .service,
-    #location,
-    .details,
-    .terms-copyright p{
-        margin: 20px 10px 15px;
+@media screen and (max-width: 600px){
+    
+    header{
+        margin: 30px 0 55px 15px;
+        font-size: 17px;
     }
-
-body{
-    padding: 10px;
+    .heading{
+        top: 32px;
+        right: 15px;
+    }
+    .nav ul li{
+        padding: 0 2px;
+    }
+    .nav li a,
+    .but,
+    p{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .heading-main,
+    .details,
+    #location,
+    .interest{
+        margin-left: 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+    .interest,
+    .service{
+        flex-direction: column;
+    }
+    .menu3{
+        width: 90vw;
+        padding: 20px;
+    }
+    hr{
+        margin: 37px 25px 20px;
+    }
+    .serve{
+        margin: 30px;
+    }
+    .order,
+    .socials p{
+        font-size: 16px;
+        
+    }
+    .deliver{
+        font-size: 13px;
+        text-align: center;
+        font-weight: lighter;
+        padding: 0 30px 0 15px;
+    }
+    .socials{
+        margin-top: 0;
+    }
+    footer .terms-copyright p,
+    .copy{
+        text-align: center;
+        display: grid;
+        margin-top: 20px;
+        font-size: 13px;
+    }
 }
 
-.heading{
-    top: 30px;
-    right: 20px;
+@media screen and (max-width: 800px) {
+    header{
+        margin: 30px 0 55px 20px;
+        font-size: 19px;
+    }
+    .heading{
+        top: 32px;
+        right: 20px;
+    }
+    .nav ul li{
+        padding: 0 2px;
+    }
+    .nav li a,
+    .but,
+    p{
+        font-size: 17px;
+    }
+    .heading-main,
+    .details,
+    #location,
+    .interest{
+        margin-left: 20px;
+        text-align: left;
+        font-size: 17px;
+    }
+    .menu3{
+        padding: 15px;
+    }
+    .service{
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+    footer .terms-copyright p,
+    .copy{
+        text-align: center;
+        display: grid;
+        margin-top: 20px;
+        font-size: 13px;
+    }
 }
 
-div.heading-main p,
-div.heading-main h2{
-    text-align: left;
-    margin-left: 10px;
-}
-
-
-
-.interest{
-    flex-direction: column;
-    
-    
-}
-.menu3{
-    width: auto;
-    padding: 20px;
-}
-.service{
-    flex-direction: column;
-    align-items: center;
-}
-.image{
-    margin-left: -20px;
-}
-.delivery .order{
-    text-align: center;
-    font-size: 14px;
-}
-.service .deliver{
-    font-size: 15px;
-    margin-left: 30px;
-
-}
-.serve{
-    text-align: center;
-}
- hr{
-     margin: 70px 25px  ; 
-} 
-
-footer .terms-copyright,
-footer .terms-copyright copy{
-    font-size: 12px;
-    text-align: center;
-    margin: 15px ;
-    display: grid;
-}
-}

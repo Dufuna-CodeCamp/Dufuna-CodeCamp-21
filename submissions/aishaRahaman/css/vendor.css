@@ -190,7 +190,7 @@ hr{
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 768px and up) */
 @media only screen and (max-width: 768px) {
     header{
         font-size: 19px;
