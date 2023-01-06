@@ -1,1 +1,2 @@
+Hello Dufuna!
 At the end of this program, I hope to have achieved the programming skills essential to be a well skilled full stack developer.
