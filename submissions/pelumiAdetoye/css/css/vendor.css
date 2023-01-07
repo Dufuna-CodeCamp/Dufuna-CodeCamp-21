@@ -75,7 +75,8 @@ a{
     width: 100%;
 }
 .kfc-img, .kfc-img4{
-    margin-top: 20px;  
+    margin-top: 20px;
+    width: 100%;  
 }
 .kfc-img .kfc-price, .kfc-img4 .kfc-price{
     display: flex;
@@ -129,6 +130,9 @@ hr{
 .kfc-img4{
     display: none;
 }
+.kfc-img4 img{
+    width: 100%;
+}
 
 
 /* MEDIA SCREEN */
@@ -144,11 +148,33 @@ hr{
     }
     .kfc-section{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    .kfc-section-a{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .kfc-section-b{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
     .chicken-section{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    .chicken-section-a{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .chicken-section-b{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
     .kfc-img4{
         display: block;
@@ -187,5 +213,17 @@ hr{
     }
     .allvendors{
         font-size: 18px;
+    }
+}
+@media screen and (min-width: 992px){
+    .kfc-section{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .chicken-section{
+        display: flex;
+        flex-direction: row;
     }
 }   
