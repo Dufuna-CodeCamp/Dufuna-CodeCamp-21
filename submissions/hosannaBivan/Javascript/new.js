@@ -9,7 +9,7 @@ document.open();
 productList = [
     {
         productName: "Refuel Max",
-        imageUrl: "../css/images/Rectangle 28 (1).jpg",
+        imageUrl: "../css/images/Rectangle 28 (1).svg",
         productPrice: 3000
     },
     {
