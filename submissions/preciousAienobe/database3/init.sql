@@ -57,6 +57,7 @@ WHERE passenger_survivals.survived = 1 AND travel_details.embarkation_point = 'S
 # RESULT = 218
 
 #For id, name and total number of passengers who paid a fare greater than $100 and above the age of 35 and had siblings or spouses on board
-SELECT passenger_details.id, passenger_details.full_name FROM passenger_details 
+SELECT COUNT(passenger_details.full_name), passenger_details.id, passenger_details.full_name FROM passenger_details
 INNER JOIN travel_details ON passenger_details.id = travel_details.passenger_id
 WHERE travel_details.trip_fare > 100.00 AND passenger_details.age > 35 AND travel_details.number_siblings_spouses > 0;
+# RESULT = 9
