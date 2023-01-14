@@ -22,4 +22,3 @@ it("test case: check select element", async () => {
     const select = thisComponent.find("select");
     expect(select.length).toEqual(1)
 });
-
