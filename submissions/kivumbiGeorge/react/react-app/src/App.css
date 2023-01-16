@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 154px;
+    margin-left: 95px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    body {
+        margin-top: 22px;
+        margin-right: 20px;
+        margin-bottom: 19px;
+        margin-left: 20px;
+    }
+}
