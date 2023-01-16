@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    padding:20px 50px;
+}
+
+header{
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+
+header h3 a{
+    color:black;
+}
+
+header h3 a span{
+    color:brown;
+}
+
+nav{
+    position:absolute;
+    right:0;
+    display:flex; 
+    align-items: center;
+}
+
+nav li{
+    padding-right: 40px;
+    display: flex;
+    
+}
+
+nav li span{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+nav button{
+    color:brown;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius:8px;
+    outline: none;
+    border:2px solid brown;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+section.landing .title{
+    width:100%;
+    text-align:center;
+    margin: 40px 0;
+}
+
+section.landing .destination{
+    width:100%;
+    margin-bottom:30px;
+}
+
+section.landing .destination select,
+section.landing .destination input{
+    width: 100%;
+    padding:10px;
+    outline:none;
+    border:1px solid grey;
+}
+
+section.landing .interests .interest-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+section.landing .interests .interest-container .interest{
+    flex-basis: 23%;
+    margin-bottom: 10px;
+}
+
+section.landing .interests .interest{
+    padding:20px;
+    border: 2px solid grey;
+    color: grey;
+}
+
+section.landing .interests .interest img{
+    filter: grayscale(100%);
+}
+
+section.landing .serve-you{
+    margin-bottom:150px;
+}
+
+section.landing .serve-you h3{
+    text-align: center;
+    margin-top:150px;
+    margin-bottom: 40px;
+}
+
+section.landing .serve-you .serve-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section.landing .serve-you .serve-container div{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section.landing .serve-you .serve-container div p{
+    color: grey;
+}
+
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+footer .contact .img{
+    margin: 0 15px;
+}
+
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.vendors .vendor.kfc{
+    padding-bottom:100px;
+}
+
+section.vendors .vendor .title{
+    margin-top:80px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.vendors .vendor .title .logo {
+    display:flex;
+    align-items: center;
+}
+
+section.vendors .vendor .title .logo h3{
+    margin-left:10px;
+}
+
+section.vendors .vendor .title button, .vendor > .btn button{
+    outline:none;
+    border:none;
+    color:brown;
+    background-color: transparent;   
+}
+
+.vendor .btn{
+    display:none;
+    justify-content: center;
+    margin-top:40px;
+}
+
+.orders{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.orders .order{
+    margin-bottom: 20px;
+}
+
+.orders .desc{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+.orders .desc p:nth-child(2){
+    color:green;
+}
+
+.orders button{
+    background-color: transparent;
+    color: brown;
+    outline:none;
+    border:1px solid brown;
+    padding:5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+}
+
+.draw {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-right: 5px;
+}
+
+.draw::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(7px) translateX(-10px);
+}
+
+section.landing, section.vendors{
+    margin-top: 100px;
+}
+
+/* extra small devices (phones, 600px down) */
+@media screen and (max-width: 400px){
+    nav li{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        padding: 20px;
+    }
+    section.landing .title{
+        text-align:start;
+    }
+    section.landing .interests .interest-container .interest{
+        flex-basis: 100%;
+    }
+
+    section.landing .serve-you .serve-container div{
+        width:100%;
+        text-align: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 649px){
+
+    .vendor .orders .order{
+        width:100%;
+    }
+
+    .vendor .orders .order img{
+        width:100%;
+    }
+
+    section.vendors .vendor .title button{
+        display: none;
+    }
+
+    .vendor .btn{
+        display:flex;
+    }
+}
+
+/* small devices (portrait tablets and large phones 600px and up) */
+@media screen and (min-width: 600px) and (max-width: 1017px) {
+    body{
+        padding: 20px 30px;
+    }
+
+    section.landing .interests .interest-container .interest{
+        flex-basis: 48%;
+    }
+
+    section.landing .serve-you .serve-container{
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.landing .serve-you .serve-container div{
+        width:300px;
+        text-align: center;
+    }
+
+
+    footer .foot{
+        width: 100%;
+        text-align: center;
+    }
+
+}
