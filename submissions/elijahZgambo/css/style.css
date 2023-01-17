@@ -185,13 +185,13 @@ section.vendors .vendor .title button, .vendor > .btn button{
 }
 
 .orders .order{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .orders .desc{
     display: flex;
     justify-content: space-between;
-    margin-top:10px;
+    margin-top:50px;
     margin-bottom: 15px;
 }
 
@@ -284,7 +284,6 @@ section.landing, section.vendors{
     }
 }
 
-/* small devices (portrait tablets and large phones 600px and up) */
 @media screen and (min-width: 600px) and (max-width: 1017px) {
     body{
         padding: 20px 30px;
