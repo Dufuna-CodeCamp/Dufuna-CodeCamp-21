@@ -24,8 +24,3 @@ yarn-debug.log*
 yarn-error.log*
 
 #test file
-/src/_tests_
-/src/_tests_/App.test.js
-/src/_tests_/CartPage.test.js
-/src/_tests_/OrderSuccessful.test.js
-/src/_tests_/Verification.test.js
