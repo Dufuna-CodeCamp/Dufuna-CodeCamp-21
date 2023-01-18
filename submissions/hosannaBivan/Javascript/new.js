@@ -1,10 +1,6 @@
 document.open();
 
-
-// var productList = new Array();
-// var pic = document.createElement("img");
-// pic.src = "../css/images/Rectangle 28 (1).svg";
-// var imgg = document.body.appendChild(pic)
+var productList = new Array();
 
 productList = [
     {
@@ -24,7 +20,6 @@ productList = [
     }
 ]
 
-// Using document.write(), Print out the values in this format < productName > with < imageUrl > is sold for < productPrice >
 
 for(i=0; i < productList.length; i++){
     document.write( productList[i].productName + " with "
