@@ -11,13 +11,13 @@ function doubleDivide() {
     for (i = 0; i < products.length; i++) {
         if(products[i].length % 2 === 0){
             console.log(`The price of ${products[i]} is ${productPrices[i] * 2}`);
-        }else{
+        }else {
             console.log(`The price of ${products[i]} is ${productPrices[i] / 2}`);
         }
     }
 }
-doubleDivide()
-console.log(productPrices)
+doubleDivide();
+console.log(productPrices);
 
 
 
