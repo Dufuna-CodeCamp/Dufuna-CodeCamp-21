@@ -4,3 +4,16 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+p {
+  margin-bottom: 0px;
+}
+.title-head {
+  color: #4E4D4D;
+  margin-bottom: 0px;
+}
+main {
+  margin-top: 140px;
+}
+.description {
+  color: #696969;
+}
