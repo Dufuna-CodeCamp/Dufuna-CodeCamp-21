@@ -1,0 +1,132 @@
+.main-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title-section {
+    width: 50%;
+    display: flex;
+}
+
+.title-section-heading-cl-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.title-section-heading-cl-2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #AD4C4C;
+}
+
+.link-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-link-container {
+    display: flex;
+    /*justify-content: end;*/
+}
+
+.header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    margin-left: 35px;
+}
+
+.header-link-title {
+    margin: 8px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+}
+
+.header-link-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    margin-left: 35px;
+}
+
+.header-link-disabled-title {
+    margin: 8px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #696969;
+}
+
+.header-link-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+    margin-left: 35px;
+}
+
+.header-link-active-title {
+    margin: 8px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .title-section-heading-cl-1 {
+        font-size: 16px;
+    }
+
+    .title-section-heading-cl-2 {
+        font-size: 16px;
+    }
+
+    .header-link {
+        margin-left: 0;
+    }
+
+    .header-link-title {
+        font-size: 10px;
+    }
+
+    .header-link-disabled {
+        margin-left: 0;
+    }
+
+    .header-link-disabled-title {
+        font-size: 10px;
+    }
+
+    .header-link-active {
+        margin-left: 0;
+    }
+
+    .header-link-active-title {
+        margin: 8px 18px;
+        font-size: 10px;
+    }
+}

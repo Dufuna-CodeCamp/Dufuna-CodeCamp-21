@@ -11,10 +11,10 @@
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
   },
   "results": [
     {
@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -56,14 +56,14 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
               "uuid": "067e10cb-4d67-4281-ac8d-4a0d7198e29f",
               "parentUUID": "1e400b9f-bf50-428b-8345-821233b191a8",
@@ -124,7 +124,7 @@
               "uuid": "f0c79677-4f5b-4bd4-b0e1-b1dcb34ed7a3",
               "parentUUID": "1e400b9f-bf50-428b-8345-821233b191a8",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
