@@ -91,13 +91,20 @@ a{
     font-size: 14px;
     margin-top: 10px;
     font-weight: bold;
-    color: #ad4c4c;
+    color: #A5A5A5;
 }
 .ff-cont{
     font-size: 12px;
     margin-top: 10px;
     color: #A5A5A5;
 }
+.address-bar {
+    width:100%;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px; 
+  }
 .illustrator1{
     margin-top: 20px;
     text-align: center;
