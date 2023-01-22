@@ -1,5 +1,4 @@
-let x = 123;
-x -= 7;
+let x = 123 - 7;
 //document.write(x); 
 
 for(i = 1; i <= x; i++) {
