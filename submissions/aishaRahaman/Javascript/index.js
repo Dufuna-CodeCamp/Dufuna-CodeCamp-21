@@ -1,5 +1,5 @@
 let x = 123 - 7;
-//document.write(x); 
+//document.write(x);
 
 for(i = 1; i <= x; i++) {
     //Multiples of 3 and 5
