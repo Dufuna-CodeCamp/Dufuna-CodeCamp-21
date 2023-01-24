@@ -1,0 +1,112 @@
+.vendor {
+  width: 100%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+  font-size: 16px;
+}
+.vendor > h1 {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: left;
+}
+.head_link {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.head_link > p,
+.head_link > h4 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #c9c9c9;
+}
+.head_link > h4 {
+  color: #000000;
+}
+.head_link_next {
+  color: #c9c9c9 !important;
+}
+.kfc {
+  width: 100%;
+}
+.kfc_logo {
+  display: flex;
+  align-items: center;
+}
+.kfc_logo > img {
+  width: 50px;
+  height: 40px;
+}
+.kfc_logo > h2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.kfc_stock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  place-items: center;
+  place-content: center;
+}
+.kfc_stock_details {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+.kfc_stock_details > img {
+  width: 150px;
+  height: 100px;
+  box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.name_price {
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name_price > h3 {
+  font-weight: 600;
+  color: #4e4d4d;
+}
+.name_price > p {
+  color: #5ea304;
+}
+.kfc_stock_details > button {
+  line-height: 24px;
+  padding: 4px 12px;
+  background: #ffffff;
+  border: 1px solid #ad4c4c;
+  border-radius: 3px;
+  color: #ad4c4c;
+  display: flex;
+  justify-content: left;
+}
+.kfc_stock_details > button:hover {
+  background: #ad4c4c;
+  color: #ffffff;
+}
+.hr {
+  border: 1px solid #e6e6e6;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1000px) {
+  .kfc_stock {
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .kfc_stock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .kfc_stock {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

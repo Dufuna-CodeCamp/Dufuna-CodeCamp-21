@@ -1,0 +1,54 @@
+header {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+header nav {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #AD4C4C;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav ul li a:hover {
+    color: #AD4C4C;
+}
+
+.nav-cart {
+    background: #AD4C4C;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 3px 5px;
+    position: absolute;
+    top: 15px;
+}
+
+.signup {
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 9px 5px;
+    
+}
+
+@media (max-width: 650px) {
+    body{
+        margin: 20px;
+    }
+    .nav-cart {
+        display: none;        
+    }
+}

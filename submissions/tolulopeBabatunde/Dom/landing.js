@@ -8,6 +8,18 @@ var box1Img2 = document.getElementsByClassName("img2")
 
 var firstTitle = document.getElementsByClassName("firstTitle")
 
+ //DEFAULT VALUE    [IMG1 APPEARS, IMG2 IS INVISIBLE]
+if (select.selectedIndex === 0) {
+
+   
+    for (let i = 0; i < box1Img1.length; i++) {
+        box1Img1[i].style.display = "block";
+
+    }
+    for (let i = 0; i < box1Img2.length; i++) {
+        box1Img2[i].style.display = "none";
+    }
+}
 
     //ADDED EVENTLISTENER TO SELECT
     select.addEventListener('click', function () {
@@ -47,16 +59,16 @@ select.addEventListener('click', function () {
     if (select.selectedIndex >= 1) {
         for (let i = 0; i < firstTitle.length; i++) {
             firstTitle[i].classList.toggle("toggleTitle")
+            firstTitle[i].style.color ="#ad4c4c"
 
         }
     //ADDED HOVER TO THE BOXES WHEN HIGHLIGHTED    
         for (let i = 0; i < box1.length; i++) {
             box1[i].classList.toggle("boxes")
+        
             
         }
     }
 
 
 });
-
-

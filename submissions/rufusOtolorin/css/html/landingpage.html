@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="../stylesheet/landingPage.css">
         <title>LANDING PAGE</title>
     </head>
+    <body>
     <header>
-        <nav><h3>Food<span style="color:#AD4C4C;">Bag</span></h3></nav>
+        <nav><h3 class="foodbag">Food<span style="color:#AD4C4C;">Bag</span></h3></nav>
         <nav class="secondheader">
             <a href="#">Cart</a>
             <a href="#">Login</a>
@@ -22,9 +23,9 @@
         </div>
         <section>
             <form action="#" method="post" enctype="multipart/form-data">
-                <label for="where"><h3>where are you?</h3></label>
-                <input list="where you" placeholder="Enter your delivery address">
-                <datalist id="where you">
+                <label for="where"><h3 >Where are you?</h3></label>
+                <input list="whereAreYou" name="where" id="where"  placeholder="Enter your delivery address">
+                <datalist id="whereAreYou">
                     <option value="Magodo Lagos State">Magodo Lagos State</option>
                     <option value="Ikeja Lagos State">Ikeja Lagos State</option>
                     <option value="Badagery Lagos State">Badagery Lagos State</option>\XFJN
@@ -38,24 +39,24 @@
         <section>
             <h3>Pick an interest</h3>
             <div class="PICKAI">
-            <div>
-                <img src="../asset/fast-food_disabled.svg.png" alt="fast-food" width="75" height="75">
-                <h4>Fast Food</h4>
+            <div class="PIBOX">
+                <img id="fastfood" src="../asset/fast-food_disabled.svg.png" alt="fast-food" class="image1">
+                <h4 class="name">Fast Food</h4>
                 <p class="PICKAIP">All sorrows are less with bread.</p>
             </div>
-            <div>
-                <img src="../asset/Vegetables & Drinks_disabled.svg.png" alt="Vegetables" width="75" height="75">
-                <h4>Vegetables and Fruits</h4>
+            <div class="PIBOX">
+                <img id="vegetables" src="../asset/Vegetables & Drinks_disabled.svg.png" alt="Vegetables" class="image1">
+                <h4 class="name">Vegetables and Fruits</h4>
                 <p class="PICKAIP">May not want it, but good for you.</p>
             </div>
-            <div>
-                <img src="../asset/Drinks & Cocktails_disabled.svg.png" alt="Drinks" width="75" height="75">
-                <h4>Drinks and Cocktails</h4>
+            <div class="PIBOX">
+                <img id="drinks" src="../asset/Drinks & Cocktails_disabled.svg.png" alt="Drinks" class="image1">
+                <h4 class="name">Drinks and Cocktails</h4>
                 <p class="PICKAIP">I feel sad for those who don't drink.</p>
             </div>
-            <div>
-                <img src="../asset/resturant_disabled.svg.png" alt="resturant" width="75" height="75">
-                <h4>Resturant</h4>
+            <div class="PIBOX">
+                <img id="resturant" src="../asset/resturant_disabled.svg.png" alt="resturant" class="image1">
+                <h4 class="name">Resturant</h4>
                 <p class="PICKAIP">All sorrows are less with bread.</p>
             </div>
             </div>
@@ -66,17 +67,17 @@
             <h1 class="HOWWESYH">How we serve you</h1>
             <div class="HOWWESY">
             <div>
-                <img src="../asset/Illustration_1.svg.png" alt="Illustration_1" width="200" height="200">
+                <img src="../asset/Illustration_1.svg.png" alt="Illustration_1" class="image2">
                 <h2>Tell us where you are</h2>
                 <p class="HOWWESYP">select the location you want us to deliver.</p>
             </div>
             <div>
-                <img src="../asset/illustration_2.svg.png" alt="illustration_2" width="200" height="200">
+                <img src="../asset/illustration_2.svg.png" alt="illustration_2" class="image2">
                 <h2>Tell us what you want</h2>
                 <p class="HOWWESYP">Browsw the type of food that interest you.</p>
             </div>
             <div>
-                <img src="../asset/illustration_3.svg.png" alt="illustration_3" width="200" height="200">
+                <img src="../asset/illustration_3.svg.png" alt="illustration_3" class="image2">
                 <h2>We'll come running</h2>
                 <p class="HOWWESYP">Your order will be delivered to you in no time.</p>
             </div>
@@ -88,9 +89,9 @@
     <footer>
         <p class="contactus"><b>Contact us</b></p>
         <div class="footericon">
-            <img src="../asset/twitter 2.svg.png" alt="twitter" width="25" height="20">
-            <img src="../asset/youtube 1.svg.png" alt="youtube" width="25" height="20">
-            <img src="../asset/facebook-f 1.svg.png" alt="facebook" width="25" height="20">
+            <img src="../asset/twitter 2.svg.png" alt="twitter" class="image3">
+            <img src="../asset/youtube 1.svg.png" alt="youtube" class="image3">
+            <img src="../asset/facebook-f 1.svg.png" alt="facebook" class="image3">
         </div>
         <div class="footerend">
             <div>
@@ -104,4 +105,6 @@
         </div>
 
     </footer>
+    <script src="../../DOM/landingPage.js"></script>
+    </body>
 </html>

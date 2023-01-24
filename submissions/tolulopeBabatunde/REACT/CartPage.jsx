@@ -9,6 +9,7 @@ import scooter from "../FoodBag/scooter 1.svg"
 
 
 function CartPage() {
+
     //STATE AND FUNCTION FOR FIRST ITEM
 
     const [price, setPrice] = useState(0);
@@ -90,6 +91,13 @@ function CartPage() {
     }
 
     const noOfQuantity = (quantity + quantity2 + quantity3)
+
+    let checkOrder = false;
+    if (total !== 0) {
+        checkOrder = true;
+    }else{
+        checkOrder = false
+    }
     return (
         <div>
 
@@ -159,9 +167,18 @@ function CartPage() {
 
             {/* CHECKOUT BUTTON */}
             <div>
-                <Link to={'/verification'} className ='checkout'>
-                    <button className='check'>Checkout</button>
-                </Link>
+               
+      {/* <Link to={'/verification'} className ='checkout'>
+      <button className='check'>Checkout</button>
+       </Link> */}
+                
+               {  (checkOrder) ?
+         <Link to={'/verification'} className ='checkout'>
+         <button className='check'>Checkout</button>
+          </Link> :  <Link to={'/'} className ='checkout'>
+      <button className='pick-check'>Checkout</button>
+       </Link>
+        }
 
             </div>
         </div>
