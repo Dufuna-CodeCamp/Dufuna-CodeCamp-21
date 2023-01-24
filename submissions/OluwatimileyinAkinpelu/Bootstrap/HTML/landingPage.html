@@ -12,29 +12,29 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <div class="p-5">
+  <div class="px-lg-0 px-xl-5 py-lg-4">
     <header>
-      <nav class="navbar .navbar-expand-sm">
-        <p class="fs-5 fw-normal">
+      <nav class="align-content-center justify-content-between  navbar .navbar-expand-sm">
+        <p class="logo">
           Food<span class="text-danger">Bag</span>
         </p>
-        <div class="d-flex" id="">
+        <div class="d-flex align-items-center" id="">
           <ul class="navbar-nav list-unstyled d-flex flex-row mr-3 pointer">
-            <li class="nav-item me-5"><a class="nav-link text-decoration-none text-secondary" href="#">Cart</a></li>
-            <li class="nav-item me-5"><a class="nav-link text-decoration-none text-secondary" href="#">Login</a></li>
+            <li class="nav-list-items nav-item me-3 me-md-5"><a class="nav-link text-decoration-none text-secondary" href="#">Cart</a></li>
+            <li class=" nav-list-items nav-item me-3 me-md-5"><a class="nav-link text-decoration-none text-secondary" href="#">Login</a></li>
           </ul>
-          <button type="button" class="btn text-danger bg-white border-danger">
+          <button type="button" class="btn-text btn text-danger bg-white border-danger">
             Sign up
           </button>
         </div>
       </nav>
     </header>
     <main class="">
-      <div class="title text-center">
-        <p class="fs-1 fw-semibold title-head">FoodBag</h1>
-        <p class="fs-5 mt-1 description">Anything food, we have you covered.</p>
+      <div class="title text-left text-md-center">
+        <p class="title-head fw-semibold">FoodBag</h1>
+        <p class="mt-1 description">Anything food, we have you covered.</p>
       </div>
-      <form>
+      <form class="d-flex flex-column">
         <label for="delivery-address" class="delivery-label">Where are you?</label>
         <select name="deliveryAddress" id="delivery-address">
           <option value="">Enter your delivery address</option>
@@ -48,79 +48,87 @@
           <option value="Bariga, Lagos">Bariga, Lagos</option>
         </select>
       </form>
-      <section class="interest-section">
+      <section class="interest-section mt-5">
         <p class="interest">Pick an interest</p>
-        <div class="interest-lists">
-          <div class="interest-lists-item">
-            <img src="../images/fast-food-disabled.svg" alt="">
-            <div class="interest-name">
-              <p>Fast food</p>
-              <p>All sorrows are less with bread.</p>
-            </div>
-          </div>
-          <div class="interest-lists-item">
-            <img src="../images//healthy-food-disabled.svg" alt="">
-            <div class="interest-name">
-              <p>Vegetables & Fruits</p>
-              <p>May not want it, but good for you.</p>
-            </div>
-          </div>
-          <div class="interest-lists-item">
-            <img src="../images/mai-thai-disabled.svg" alt="">
-            <div class="interest-name">
-              <p>Drinks & Cocktails</p>
-              <p>I feel sad for those who don't drink.</p>
-            </div>
-          </div>
-          <div class="interest-lists-item">
-            <img src="../images/fork-disabled.svg" alt="">
-            <div class="interest-name">
-              <p>Resturants</p>
-              <p>All sorrows are less with bread.</p>
-            </div>
-          </div>
+        <div class="container-fluid">
+          <div class="interest-lists row gap-4">
+              <div class="interest-lists-item col-md">
+                <img src="../images/fast-food-disabled.svg" alt="">
+                <div class="text-gray mt-3">
+                  <p class="fs-5">Fast food</p>
+                  <p class="mt-1">All sorrows are less with bread.</p>
+                </div>
+              </div>
+              <div class="interest-lists-item col-md">
+                <img src="../images//healthy-food-disabled.svg" alt="">
+                <div class="text-gray mt-3">
+                  <p class="fs-5">Vegetables & Fruits</p>
+                  <p class="mt-1">May not want it, but good for you.</p>
+                </div>
+              </div>
+              <div class="interest-lists-item col-md">
+                <img src="../images/mai-thai-disabled.svg" alt="">
+                <div class="text-gray mt-3">
+                  <p class="fs-5">Drinks & Cocktails</p>
+                  <p class="fs-6 mt-1">I feel sad for those who don't drink.</p>
+                </div>
+              </div>
+              <div class="interest-lists-item col-md">
+                <img src="../images/fork-disabled.svg" alt="">
+                <div class="text-gray mt-3">
+                  <p class="fs-5">Resturants</p>
+                  <p class="mt-1">All sorrows are less with bread.</p>
+                </div>
+              </div>
+            </div> 
         </div>
       </section>
       <hr class="ruler"/>
       <section>
-        <p class="service-section">How we serve you</p>
-        <div class="services-list">
-          <div class="service-list">
-            <img src="../images/Map_Two Color 1.svg" alt="" class="small-img">
-            <div class="services">
-              <p class="services-title">Tell us where you are</p>
-              <p class="services-description">Select the location you want us to deliver.</p>
+        <p class="title-head fs-3 fw-semibold text-center">How we serve you</p>
+        <div class="services-list row">
+          <div class="col">
+            <div class="d-flex flex-column">
+              <img src="../images/Map_Two Color 1.svg" alt="" class="small-img">
+              <div class="services mt-5 text-center">
+                <p class="services-title text-gray-200">Tell us where you are</p>
+                <p class="services-description text-gray mt-2">Select the location you want us to deliver.</p>
+              </div> 
             </div>  
           </div>
-          <div class="service-list">
-            <img src="../images/Fast food_Two Color (1) 1.png" alt="" class="small-img">
-            <div class="services">
-              <p class="services-title">Tell us what you want</p>
-              <p class="services-description">Browse the type of food that interest you.</p>
-            </div>  
+          <div class="service-list col">
+            <div class="d-flex flex-column">
+              <img src="../images/Fast food_Two Color (1) 1.png" alt="" class="small-img">
+              <div class="services mt-5 text-center">
+                <p class="services-title text-gray-200 fs-4">Tell us what you want</p>
+                <p class="services-description text-gray mt-2">Browse the type of food that interest you.</p>
+              </div>  
+            </div>
           </div>
-          <div class="service-list">
-            <img src="../images/Scooter_Two Color 1.svg" alt="" class="small-img">
-            <div class="services">
-              <p class="services-title">We’ll come running</p>
-              <p class="services-description">Your order will be delivered to you in no time.</p>
-            </div>  
+          <div class="service-list col">
+            <div class="d-flex flex-column">
+              <img src="../images/Scooter_Two Color 1.svg" alt="" class="small-img">
+              <div class="services mt-5 text-center  ">
+                <p class="services-title text-gray-200 fs-4">We’ll come running</p>
+                <p class="services-description text-gray mt-2">Your order will be delivered to you in no time.</p>
+              </div> 
+            </div>
           </div>
         </div>
       </section>
       <hr class="ruler"/>
-      <section class="contact-section">
-        <p class="contact-us">Contact us</p>
-        <div>
-          <img src="../images/twitter-Vector.png" alt="twitter icon" class="icon">
-          <img src="../images/youtube-Vector.png" alt="youtube-icon" class="icon">
+      <section class="contact-section text-center d-flex justify-content-center align-content-center flex-column">
+        <p class="text-gray-200 fw-normal">Contact us</p>
+        <div class="mt-4">
+          <img src="../images/twitter-Vector.png" alt="twitter icon" class="me-4">
+          <img src="../images/youtube-Vector.png" alt="youtube-icon" class="me-4">
           <img src="../images/facebook-Vector.png" alt="facebook-icon" class="">
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="d-lg-flex text-center justify-content-between mt-5 text-gray-200">
       <p>Terms & Conditions . Privacy Policy</p>
-      <p>© Copyright 2021 FoodBag is a registered trademark</p>
+      <p class="mt-3 mt-lg-0">© Copyright 2021 FoodBag is a registered trademark</p>
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
