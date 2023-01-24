@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function print() {
+            let initialValue = 1;
+            let startValue = 7;
+            let endValue = 123;
+
+            let positiveDiff = endValue - startValue;
+
+            for(let counter = initialValue; counter <= positiveDiff; counter++){
+                
+                    if((counter%3 === 0) && (counter%5 === 0)){
+                        document.write("Software Developer")
+                    }
+                    else if(counter%5 === 0){
+                        document.write("Developer")
+                    }
+                    else if(counter%3 === 0){
+                        document.write("Software")
+                    }
+                
+            }
+        }
+        print();
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 90vw;
+  margin: 40px auto;
+  max-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* styling for notification dot */
+nav li a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+nav ul li #cart {
+  position: relative;
+}
+nav ul li a i {
+  color: #ad4c4c;
+  font-size: 0.6rem;
+  position: absolute;
+  visibility: hidden;
+}
+/* End of notification dot styling */
+nav .bag {
+  font-weight: 500;
+  font-size: 20px;
+}
+nav .bag::after {
+  content: "Bag";
+  color: #ad4c4c;
+  font-size: 20px;
+  font-weight: 500;
+}
+nav li a:link,
+nav li a:visited {
+  color: #696969;
+  font-weight: 400;
+}
+nav li a[href*="/"] {
+  font-size: 16px;
+  color: #ad4c4c;
+  font-weight: 500;
+  border: 1px solid #ad4c4c;
+  padding: 7px;
+  border-radius: 4px;
+}
+.heading {
+  margin: 80px 0 30px;
+}
+.heading p {
+  color: #c9c9c9;
+  font-weight: 400;
+  font-size: 14px;
+}
+.heading p::after {
+  content: "Vendors";
+  color: black;
+  font-weight: 500;
+}
+main h1:nth-of-type(1) {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+.kfc-logo,
+aside,
+section {
+  display: flex;
+  justify-content: space-between;
+}
+aside,
+section {
+  flex-wrap: wrap;
+}
+.kfc-logo {
+  margin-bottom: 30px;
+}
+.A {
+  display: inline-flex;
+}
+.A p:nth-of-type(1) {
+  padding: 10px 26px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.B p:nth-of-type(1) {
+  color: #ad4c4c;
+  font-size: 16px;
+  font-weight: 500;
+}
+section div div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+}
+section p:nth-of-type(1) {
+  display: none;
+}
+section div div span:nth-child(1) {
+  color: #4e4d4d;
+  font-size: 16px;
+  font-weight: 600;
+}
+section div div span:nth-child(2) {
+  color: #5ea304;
+  font-size: 16px;
+  font-weight: 600;
+}
+section div button.add {
+  background-color: inherit;
+  font-size: 16px;
+  color: #ad4c4c;
+  font-weight: 500;
+  border: 1px solid #ad4c4c;
+  margin: 12px 0;
+  padding: 6px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+hr {
+  margin: 40px 0;
+  border: 1px solid #e6e6e6;
+}
+aside {
+  margin: 0 0 20px;
+}
+
+/* main section:nth-of-type(2) button{
+    margin-bottom: 20px;
+} */
+/* JS class styling */
+.remove {
+    color: #fff;
+    border: none;
+    background: #696969;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+@media screen and (max-width: 992px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .B p {
+    display: none;
+  }
+  hr {
+    margin: 10px;
+  }
+  section div img {
+    width: 100%;
+  }
+  section p:nth-of-type(1) {
+    display: inline;
+    text-align: center;
+    color: #ad4c4c;
+    margin: 30px 0;
+  }
+}

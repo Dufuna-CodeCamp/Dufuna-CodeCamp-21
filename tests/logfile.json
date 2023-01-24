@@ -1,0 +1,189 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-01-02T13:46:11.624Z",
+    "end": "2023-01-02T13:46:14.979Z",
+    "duration": 3355,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c70aaba9-21b6-4cf5-a73a-22f95a66a657",
+      "title": "",
+      "fullFile": "C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+      "file": "\\dom.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab72f61a-aa0f-44b9-bb27-7af08834886e",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\tests\\Dom\\dom.js",
+          "file": "\\dom.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 3099,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "err": {},
+              "uuid": "de164415-1f66-439a-869f-8f249d974a45",
+              "parentUUID": "ab72f61a-aa0f-44b9-bb27-7af08834886e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "ef2685c4-28ba-45e2-93cd-5e3053e9a69e",
+              "parentUUID": "ab72f61a-aa0f-44b9-bb27-7af08834886e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "test case: check dropdown",
+              "fullTitle": "Testing Scholars Project test case: check dropdown",
+              "timedOut": false,
+              "duration": 50,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"select\"}\n  (Session info: chrome=108.0.5359.125)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"select\"}\n  (Session info: chrome=108.0.5359.125)\n    at Object.throwDecodedError (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:587:13)\n    at Executor.execute (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:515:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:741:17)\n    at async toWireValue (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:143:15)\n    at async C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:193:16\n    at async forEachKey (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:187:9)\n    at async convertKeys (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:3)\n    at async thenableWebDriverProxy.execute (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:739:22)\n    at async Context.<anonymous> (dom.js:24:25)",
+                "diff": null
+              },
+              "uuid": "806d0ae0-5f6e-4e3b-a872-a23a79dd24ae",
+              "parentUUID": "ab72f61a-aa0f-44b9-bb27-7af08834886e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 43,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"option\"}\n  (Session info: chrome=108.0.5359.125)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"option\"}\n  (Session info: chrome=108.0.5359.125)\n    at Object.throwDecodedError (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:587:13)\n    at Executor.execute (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:515:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async thenableWebDriverProxy.execute (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:741:17)\n    at async toWireValue (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:143:15)\n    at async C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:193:16\n    at async forEachKey (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:187:9)\n    at async convertKeys (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:3)\n    at async thenableWebDriverProxy.execute (C:\\Users\\IG-MATRIX\\Desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\webdriver.js:739:22)\n    at async Context.<anonymous> (dom.js:30:24)",
+                "diff": null
+              },
+              "uuid": "14e76da7-5d42-46b4-b4cf-192526e9706d",
+              "parentUUID": "ab72f61a-aa0f-44b9-bb27-7af08834886e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
+              "timedOut": false,
+              "duration": 134,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
+              "err": {},
+              "uuid": "a305d6c4-dc9f-4cdc-92dd-513a6ffd228e",
+              "parentUUID": "ab72f61a-aa0f-44b9-bb27-7af08834886e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a305d6c4-dc9f-4cdc-92dd-513a6ffd228e"
+          ],
+          "failures": [
+            "806d0ae0-5f6e-4e3b-a872-a23a79dd24ae",
+            "14e76da7-5d42-46b4-b4cf-192526e9706d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 227,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/IG-MATRIX/Desktop/Dufuna-CodeCamp-21/tests/Dom/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    height: 70px;
+    margin-left: -30px;  
+}
+  .chicken{
+      font-size: 14px;
+      margin-top: 40px;
+  }  
+  .head{
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+  }
+  .cards{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 100px;
+      margin-left: -20px;
+
+  }
+   .cards div{
+       width: 240px;
+       height: 380px;
+       margin:  10px;
+       text-align: center;
+       background: white;
+       padding: 7px;
+   }
+   img{
+       height: 150px;
+   }
+   p{
+       margin: 15px;
+      float: left; 
+   }
+   h3{
+       position: relative;
+       color: green;
+       font-size: 14px;
+       float: right;
+       left: -10%;
+       top: 5px;
+   }
+   h4{
+       margin-top: 80px;
+       position: relative;
+       border: 1px solid red;
+       width: 100px;
+       padding: 5px;
+       margin-left: 12px;
+   }
+   .kfc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 0;
+}
+ .kfc div{
+     width: 240px;
+     height: 380px;
+     margin:  10px;
+     text-align: center;
+     background: white;
+     padding: 7px;
+}
+     .red{
+         margin-left: -15px;
+         color: red;
+         margin-top: -10px;
+     }
+     li{
+        display: inline;
+        text-decoration: none;
+    position: relative;
+    left: 70%;
+    margin: 20px;
+     }
+     .mo{
+        margin-top: 50px;
+         display: inline;  
+     }
+     .mo1{
+         margin-left: -10px;
+         margin-top: 50px;
+     }
+     h2{
+         margin-top: 150px;
+         margin-bottom: 50px;
+     }
+     #no{
+         opacity: 0.5; 
+     }
+     .round{
+         border: 1px solid black;
+         border-radius: 50%;
+         height: 50px;
+         width: 50px; 
+         float: left;
+         margin-top: -12px;
+     }
+     .view {
+         position: relative;
+         left: 80%;
+         margin-top: -30px;
+         color: red;
+     }
+     .kf{
+         margin-left: 20px;
+         position: relative;
+         bottom: -50%;
+         
+     }
+     .view2{
+        position: relative;
+        left: 80%;
+        margin-top: 30px;
+        color: red;
+     }
+    #sign{
+        border: 1px solid red;
+        padding: 5px;
+    }
+    .home{
+        margin-left: -20px;
+    }
+    .none{
+        margin-left: -5px;
+        margin-top: -10px;
+    }
+    .food{
+        margin-left: -120px;
+        margin-top: 70px;
+    }

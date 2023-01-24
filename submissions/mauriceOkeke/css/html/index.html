@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>FoodBag</title>
+  </head>
+  <body>
+    <header>
+      <p>Food<span class="red-color">Bag</span></p>
+      <ul>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="red-color">Sign up</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <h2>FoodBag</h2>
+      <p>Anything food we have you convered</p>
+    </main>
+
+    <section class="location">
+      <label for="location" class="location-title">Where are you?</label>
+      <input
+        list="locations"
+        id="location"
+        name="location"
+        placeholder="Enter your delivery address"
+      />
+      <datalist id="locations">
+        <option value="Bodja Market"></option>
+        <option value="Balogun Market"></option>
+        <option value="TBS Junction"></option>
+      </datalist>
+      <span class="error-message"></span>
+    </section>
+
+    <section class="interest">
+      <label for="interests">Pick an interest</label>
+      <div class="interests" id="interests">
+        <div class="fast-food">
+          <img src="../images/fast-food_disabled.svg" alt="" />
+          <p class="gray-color">Fast Food</p>
+          <p>All Sorrows are less with bread</p>
+        </div>
+        <div class="vegetable-fruit">
+          <img src="../images/Vegetables & Drinks_disabled.svg" alt="" />
+          <p class="gray-color">Vegetable & Fruits</p>
+          <p>May not want it, but good for you</p>
+        </div>
+        <div class="drinks-cocktail">
+          <img src="../images/Drinks & Cocktails_disabled.svg" alt="" />
+          <p class="gray-color">Drinks & Cocktails</p>
+          <p>I feel sad for those who don't drink</p>
+        </div>
+        <div class="restaurants">
+          <img src="../images/resturant_disabled.svg" alt="" />
+          <p class="gray-color">Restaurants</p>
+          <p>All Sorrows are less with bread</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-method">
+      <h2>How we serve you</h2>
+      <div class="methods">
+        <div class="method-one">
+          <img src="../images/Illustration_1.svg" alt="" />
+          <p>Tell us where you are</p>
+          <p>
+            Select the location you want us <br />
+            to deliver
+          </p>
+        </div>
+        <div class="method-two">
+          <img src="../images/illustration_2.svg" alt="" />
+          <p>Tell us what you want</p>
+          <p>
+            Browse the type of food that <br />
+            interest you
+          </p>
+        </div>
+        <div class="method-three">
+          <img src="../images/Illustration_3.svg" alt="" />
+          <p>We'll come running</p>
+          <p>
+            You order will delivered to <br />
+            you in no time
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-socials">
+        <p>Contact us</p>
+        <div class="footer-images">
+          <img src="../images/twitter 2.svg" alt="twitter-img" />
+          <img src="../images/youtube 1.svg" alt="youtube-img" />
+          <img src="../images/facebook-f 1.svg" alt="facebook-img" />
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>Terms & Conditions . Privacy Policy</p>
+        <p>&copy; Copyright 2021 FoodBag is a registered trademark</p>
+      </div>
+    </footer>
+
+    <script src="../../Dom/landingPage.js"></script>
+  </body>
+</html>

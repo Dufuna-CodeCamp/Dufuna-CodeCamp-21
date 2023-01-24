@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 16px 50px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navigationlinks ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navigationlinks ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigationlinks ul li:hover::after {
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.intro h4 {
+    font-size: 10px;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+.location {
+    padding: 16px 50px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    list-style: none;
+    font-size: 15px;
+}
+
+.location label {
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.interest {
+    padding: 16px 50px;
+}
+
+.option-wrapper {
+    border: 3px solid rgb(212, 210, 210);
+    border-radius: 5px;
+    padding: 16px 50px;
+    width: 235px;
+    text-align: center;
+    margin: 16px 50px;
+}
+
+.option-wrapper img {
+    width: 100px;
+}
+
+.option-wrapper h4 {
+    font-size: 20px;
+    padding: 4px;
+}
+
+.option-wrapper p {
+    font-size: 20px;
+    padding: 4px;
+}
+
+.services {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.flex-parent-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-wrapper {
+    padding: 30px 0;
+}
+
+.services-wrapper img {
+    width: 220px;
+}
+
+.services-wrapper h4 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.services-wrapper p {
+    font-size: 16px;
+    padding: 5px;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.contact-page p {
+    font-size: 16px;
+    padding: 7px 0;
+}
+
+.contact-images img {
+    padding: 7px;
+}
+
+.footer-notice p {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+    .logo .color-red {
+        color: red;
+    }
+}
+.interest {
+    padding: 16px 0;
+}
+.interest h3 {
+    text-align: center;
+    font-size: 25px;
+}
+.flex-parent-one {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.option-wrapper {
+    border: 2px solid rgb(212, 210, 210);
+    border-radius: 5px;
+    padding: 16px;
+    width: 320px;
+    text-align: center;
+}
+.option-wrapper img {
+    width: 50px;
+}
+.option-wrapper h4 {
+    font-size: 25px;
+    padding: 5px;
+}
+.option-wrapper p {
+    font-size: 15px;
+    padding: 5px;
+}
+.services-wrapper {
+    padding: 35px 0;
+}
+.services-wrapper img {
+    width: 250px;
+}
+.services-wrapper h4 {
+    font-size: 20px;
+    padding: 5px;
+}
+.services-wrapper p {
+    font-size: 15px;
+    padding: 5px;
+}
+footer {
+    padding: 15px 0;
+    text-align: center;
+}
+.contact-page p {
+    font-size: 20px;
+    padding: 5px 0;
+}
+.contact-images img {
+    padding: 5px;
+}
+.footer-notice p {
+    font-size: 15px;
+}
+.nav-links ul li {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-links ul li {
+    margin: 0 15px;
+    font-size: 16px;
+}
+.hero {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.hero h1 {
+    font-size: 35px;
+}
+.hero p {
+    font-size: 24px;
+}
+.location-pointer label {
+    font-size: 25px;
+    padding: 10px 0;
+}
+.location-pointer input[type="text"] {
+    padding: 8px 20px;
+    margin: 10px 0;
+    width: 450px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 768px) {
+header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+}
+.nav-links ul li {
+    margin: 0 15px;
+    padding: 6px 10px;
+}
+.nav-links ul li:last-child {
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 6px;
+    margin: 20px;
+    padding: 4px;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+    flex-direction: row;
+}
+.nav-links a:hover {
+    color: rgb(219, 9, 9)
+}
+.hero {
+    text-align: center;
+    padding: 80px;
+}
+.hero h1 {
+    padding-bottom: 10px;
+}
+.hero p {
+    color: rgb(44, 44, 44);
+}
+.location-pointer h3 {
+    padding: 10px 0;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 20px 0;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+}
+.interest {
+    padding: 2px 0 40px 0;
+}
+.interest h3 {
+    padding: 10px 0;
+}
+.flex-parent-one {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.option-wrapper {
+    border: 2px solid rgb(212, 210, 210);
+    border-radius: 1px;
+    padding: 16px 50px;
+    margin: 5px;
+}
+.option-wrapper h4,
+p {
+    padding: 5px;
+    color: rgb(212, 210, 210);
+}
+hr {
+    color: rgb(92, 58, 58)
+}
+.services {
+    padding: 45px 0;
+}
+.services h2 {
+    text-align: center;
+    padding-bottom: 35px;
+}
+.flex-parent-two {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.services-wrapper h4,
+p {
+    color: rgb(212, 210, 210);
+    padding: 5px;
+    text-align: center;
+}
+.contact-page {
+    padding: 40px 0;
+    text-align: center;
+}
+.contact-page p {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.contact-icons i {
+    padding: 0 8px;
+    color: rgb(219, 9, 9);
+}
+footer {
+    padding: 10px 0;
+}
+.footer-notice {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 992px) {
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+.header {
+    font-size: 25px;
+    padding: 10px 30px;
+}
+.nav-links ul li {
+    display: inline-block;
+    flex-direction: column;
+    list-style-type: none;
+}
+.nav-links ul li {
+    margin: 0 15px;
+    padding: 6px 10px;
+}
+.nav-links ul li:last-child {
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.nav-links a:hover {
+    color: rgb(219, 9, 9);
+}
+.hero {
+    text-align: center;
+    padding: 100px;
+}
+.hero h1 {
+    padding-bottom: 10px;
+}
+.hero p {
+    color: rgb(44, 44, 44);
+}
+.location-pointer h2 {
+    padding: 10px 0;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 20px 0;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+}
+.interest {
+    padding: 16px 40px;
+}
+.interest h3 {
+    padding: 16px 50px;
+}
+.flex-parent-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.option-wrapper {
+    border: 2px solid rgb(212, 210, 210);
+    border-radius: 5px;
+    padding: 16px 10px;
+    display: inline-block;
+    align-items: center;
+}
+.option-wrapper h4,
+p {
+    padding: 4px;
+    color: rgb(212, 210, 210);
+}
+hr {
+    color: rgb(212, 210, 210)
+}
+.services {
+    padding: 45px 0;
+}
+.services h2 {
+    text-align: center;
+    padding-bottom: 35px;
+}
+.flex-parent-two {
+    display: flex;
+    justify-content: space-between;
+}
+.services-wrapper h4,
+p {
+    color: rgb(156, 154, 154);
+    padding: 5px;
+    text-align: center;
+}
+.contact-page {
+    padding: 40px 0;
+    text-align: center;
+}
+.contact-page p {
+    font-weight: 550;
+    padding-bottom: 20px;
+}
+.contact-icons i {
+    padding: 0 8px;
+    color: rgb(219, 9, 9);
+}
+footer {
+    padding: 10px 0;
+}
+.footer-notice {
+    display: flex;
+    justify-content: space-between;
+}
+}

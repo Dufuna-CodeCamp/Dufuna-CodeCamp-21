@@ -1,0 +1,10 @@
+Hello
+I am Omoma Ighawosa and I am very excited to begin this codecamp on becoming a  software engineer.
+My expectations at the end of this programs are:
+1. To fully understand how the software development process works and apply it where applicable
+2. Gain full mastery of Git and how to use GitHub
+3. Able to design websites using HTML, CSS, Javascript and React. Understand fully how each works and how to apply them.
+4. Learn how backend web development process works and build fully functional websites
+5. Become a full fledged fullstack web developer
+6. Develop fully responsive webpages of any kind from scractch
+7. Become employable as a software engineer.

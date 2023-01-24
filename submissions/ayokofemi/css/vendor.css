@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    padding: 15px 30px;
+    margin: 15px 30px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 30px;
+}
+
+.logo .color-red {
+    color: rgb(219, 9, 9);
+}
+
+.navigation-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation-links li {
+    margin: 0 15px;
+    padding: 6px 10px;
+}
+
+.navigation-links li:last-child {
+    border: 1px solid rgb(219, 9, 9);
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation-links a:hover {
+    color:rgb(219, 9, 9);
+}
+
+.page-select {
+    display: flex;
+    padding: 40px 0;
+}
+
+.page-select p  {
+    padding: 0 5px;
+}
+
+.page-select p:last-child {
+    margin-right: 5px;
+}
+
+.page-select a {
+    color: #000;
+    text-decoration: none;
+}
+
+.home-text {
+    padding: 30px 0;
+}
+
+.vendors-section {
+    padding: 20px 0;
+}
+
+.logo-more {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    display: flex;
+}
+
+.brand-logo .small-img {
+    width: 50px;
+}
+
+.brand-logo p {
+    padding: 15px 5px;
+}
+
+.more-info .color-red {
+    color: red;
+}
+
+.more-info a {
+    text-decoration: none;
+}
+
+.packages-select {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-price .color-green {
+    color: rgb(47, 201, 47);
+}
+
+.package-wrapper button {
+    outline: none;
+    background: none;
+    padding: 5px 12px;
+    margin: 5px 0;
+    color: red;
+    border: 2px solid red;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 12px;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .logo {
+        font-size: 25px;
+    }
+    
+    .navigation-links ul {
+        flex-direction: column;
+    }
+    
+    .navigation-links li {
+        margin: 5px 0;
+    }
+    
+    .navigation-links li:last-child {
+        border: 1px solid rgb(219, 9, 9);
+        border-radius: 3px;
+        width: 90px;
+    }
+    .page-select {
+        padding: 20px 0;
+    }
+
+    .page-select p:last-child {
+        margin-right: 5px;
+    }
+
+    .page-select a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .home-text {
+        padding: 20px 0;
+    }
+
+    .vendors-section {
+        padding: 17px 0;
+    }
+
+    .logo-more {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .packages-select {
+        padding: 40px 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .package-wrapper {
+        padding: 10px;
+    }
+
+    .package-wrapper button {
+        outline: none;
+        background: none;
+        padding: 5px 12px;
+        margin: 5px 0;
+        color: red;
+        border: 1px solid red;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        padding: 12px;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .logo {
+        font-size: 25px;
+    }
+    
+    .navigation-links ul {
+        flex-direction: column;
+    }
+    
+    .navigation-links li {
+        margin: 5px 0;
+    }
+    
+    .navigation-links li:last-child {
+        border: 1px solid rgb(219, 9, 9);
+        border-radius: 3px;
+        width: 90px;
+    }
+    .page-select {
+        padding: 20px 0;
+    }
+
+    .page-select p:last-child {
+        margin-right: 5px;
+    }
+
+    .page-select a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .home-text {
+        padding: 20px 0;
+    }
+
+    .vendors-section {
+        padding: 17px 0;
+    }
+
+    .logo-more {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .packages-select {
+        padding: 40px 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .packages-select img {
+        width: 420px;
+    }
+
+    .package-wrapper {
+        padding: 10px;
+    }
+
+    .package-wrapper button {
+        outline: none;
+        background: none;
+        padding: 5px 12px;
+        margin: 5px 0;
+        color: red;
+        border: 1px solid red;
+    }
+
+}
+
+
+@media  screen and (min-width: 992px) {
+    header {
+        flex-direction: row;
+    }
+
+    .navigation-links ul {
+        flex-direction: row;
+    }
+
+    .packages-select {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .packages-select img {
+        width: 300px;
+    }
+}
+

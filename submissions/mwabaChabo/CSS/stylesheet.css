@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+}
+.header ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+
+}
+.menu_option{
+    height: 150px;
+    width: 250px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+    display:inline-block;
+}
+.heading{
+    text-align: center;
+}
+.service{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    height: 320px;
+    width:300px;
+    text-align:justify;
+
+}
+.contact_us{
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    margin-top: 140px;
+}
+.foot_note{
+    display: inline-flex;
+    float: left;
+}
+.footer{
+    float:right
+}
+.location{
+    font-size: 19px;
+    
+}
+.location input{
+    width: 1125px;
+    height: 30px;
+    margin-left: 5px;
+}

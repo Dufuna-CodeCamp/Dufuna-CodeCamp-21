@@ -1,0 +1,143 @@
+
+body {
+    width: auto;
+    position: absolute;
+    top: 50px;
+    font-family: sans-serif;
+    font-style: normal;
+    margin-left: 101px;
+    
+    line-height: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    
+}
+.foodbag {
+    /* FoodBag */
+width: 90px;
+height: 30px;
+font-weight: 500;
+font-size: 20px;
+float: left;
+
+/* identical to box height */
+color: #000000;
+
+}
+nav .HL{
+    float: right;
+}
+
+
+.HL a {
+    border: 1px rgba(240, 0, 0, 0%) solid;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 1px 5px;
+}
+.HL a:nth-child(3) {
+    border: 1px #AD4C4C solid;
+    border-radius: 5px;
+    color: #AD4C4C;
+}
+.HL a:hover {
+    background-color: azure;
+    border: 1px #AD4C4C solid;
+    border-radius: 5px;
+    color: #AD4C4C;
+    
+}
+.homevendor{
+    width: 115px;
+    height: 21px;
+    left: 95px;
+    top: 172px;
+    right: 1230;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+align-items: center;
+}
+#AVendors{
+    display: inline;
+    width: 171px;
+    height: 45px;
+    left: 101px;
+  /*  top: 226px;*/
+    font-size: 30px;
+    line-height: 45px;
+}
+.KL {
+    /*top: 297px;*/
+    left: 69px;
+    
+}
+.KFC {
+    margin-left: 24px; 
+    /*325 171*/
+
+}
+.viewall {
+display: flex;
+justify-content: space-between;
+margin-right: 100px;
+margin-top: 26px;
+}
+#viewa {
+    width: 62px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AD4C4C;
+
+}
+.pnp {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 57.33px;
+}
+button {
+    border: 1px #AD4C4C solid;
+    border-radius: 3px;
+    color: #AD4C4C;
+    box-sizing: border-box;
+
+
+    width: 138px;
+    height: 40px;
+
+    background: #FFFFFF;
+
+}
+.productimage{
+    margin-right: 57.33px;
+    width: 266.67px;
+    height: 150px;
+    left: 101px;
+    top: 395px;
+    
+}
+.product {
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 26px;
+
+}
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}

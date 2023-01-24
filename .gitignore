@@ -1,0 +1,22 @@
+# Mac DS_Store Files
+*.DS_Store
+
+# PhpStorm Project Files
+*.idea
+
+# Vs Code project folder
+*.vscode
+
+*node_modules
+
+/*
+!.gitignore
+!submissions
+!tests
+!.github
+!README.md
+
+#Slim project files
+vendor
+.env
+composer.lock
