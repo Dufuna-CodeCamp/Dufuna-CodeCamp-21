@@ -18,15 +18,6 @@
   },
   "results": [
     {
-      "uuid": "0d70fe91-b1f2-4572-b6b2-d3b60c3e22d8",
-      "title": "",
-      "fullFile": "/Users/oluwatimileyinakinpelu/Dufuna-CodeCamp-21/tests/landing_page/landing_page.js",
-      "file": "/landing_page.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
           "uuid": "7e408ed9-d941-4c83-83e5-f5238f4ff4b1",
           "title": "Testing Scholars Project",
           "fullFile": "/Users/oluwatimileyinakinpelu/Dufuna-CodeCamp-21/tests/landing_page/landing_page.js",
@@ -40,7 +31,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -49,9 +40,7 @@
               "parentUUID": "7e408ed9-d941-4c83-83e5-f5238f4ff4b1",
               "isHook": true,
               "skipped": false
-            }
-          ],
-          "afterHooks": [
+            },
             {
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
@@ -60,7 +49,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "driver.quit();",
@@ -69,9 +58,7 @@
               "parentUUID": "7e408ed9-d941-4c83-83e5-f5238f4ff4b1",
               "isHook": true,
               "skipped": false
-            }
-          ],
-          "tests": [
+            },
             {
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
@@ -433,7 +420,7 @@
           "duration": 382,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 180000
+          "_timeout": 2000
         }
       ],
       "passes": [],
@@ -464,7 +451,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/oluwatimileyinakinpelu/Dufuna-CodeCamp-21/tests/landing_page/../..//tests/",
+        "reportDir": "C:/Users/IG-MATRIX/Desktop/Dufuna-CodeCamp-21/tests/product_algorithm/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
