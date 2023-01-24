@@ -29,44 +29,45 @@
 
     <div class="content1">
         <label for="location" class="way">Where are you?</label><br>
-        <input list="locations" name="location" id="location" placeholder="Enter your delivery address">
-        <datalist id="locations">
-            <option value="Abia">
-            <option value="Bodija Market" selected>
-            <option value="Benue">
-            <option value="Edo">
-            <option value="Enugu">
-            <option value="Anambra">
-        </datalist>
+        <!-- <input list="locations" name="location" id="location" placeholder="Enter your delivery address"> -->
+        <select name="address" id="address-list" class="address-bar" >
+            <option value="none"selected disabled hidden >Enter your location</option>
+            <option value="bodija market">Bodija Market</option>
+            <option value="westlands">Westlands</option>
+            <option value="kasarani">Kasarani</option>
+            <option value="roysambu">Roysambu</option>
+            <option value="thika">Thika</option>
+            <option value="githurai">Githurai</option>
+        </select>
     </div>
 
     <div class="content2">Pick an interest</div>
     <div class="content2divs">
         <div class="content2divsa">
-            <div class="content2a">
-                <img src="../imgs/fast-food.svg" alt="fast-food">
-                <div class="ff">Fast food</div>
-                <div class="ff-cont">All sorrows are less with bread.</div>
+            <div class="content2a" id="imgdiv">
+                <img src="../imgs/fast-food_disabled.svg" alt="fast-food" id="img">
+                <div class="ff" id="interest">Fast food</div>
+                <div class="ff-cont" >All sorrows are less with bread.</div>
             </div>
     
-            <div class="content2a">
-                <img src="../imgs/Vegetables _ Drinks.svg" alt="fast-food">
-                <div class="ff">Vegetables and Fruits</div>
-                <div class="ff-cont">May not want it, but good for you.</div>
+            <div class="content2a" id="imgdiv">
+                <img src="../imgs/Vegetables _ Drinks_disabled.svg" alt="Vegetables" id="img">
+                <div class="ff" id="interest">Vegetables and Fruits</div>
+                <div class="ff-cont" >May not want it, but good for you.</div>
             </div>
         </div>
 
         <div class="content2divsb">
-            <div class="content2a">
-                <img src="../imgs/Drinks _ Cocktails.svg" alt="fast-food">
-                <div class="ff">Drinks and Cocktails</div>
-                <div class="ff-cont">I feel sad for those who don't drink.</div>
+            <div class="content2a" id="imgdiv">
+                <img src="../imgs/Drinks _ Cocktails_disabled.svg" alt="drinks and Cocktails" id="img" >
+                <div class="ff" id="interest">Drinks and Cocktails</div>
+                <div class="ff-cont" >I feel sad for those who don't drink.</div>
             </div>
     
-            <div class="content2a">
-                <img src="../imgs/resturant.svg" alt="fast-food">
-                <div class="ff">Restaurants</div>
-                <div class="ff-cont">All sorrows are less with bread.</div>
+            <div class="content2a" id="imgdiv">
+                <img src="../imgs/resturant_disabled.svg" alt="restaurants" id="img">
+                <div class="ff" id="interest">Restaurants</div>
+                <div class="ff-cont" >All sorrows are less with bread.</div>
             </div>
         </div>
     </div>
@@ -110,5 +111,6 @@
         </div>
     </footer>    
     
+    <script src="../../Dom/landingpage.js"></script>    
 </body>
 </html>
