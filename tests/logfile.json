@@ -40,7 +40,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
@@ -49,9 +49,7 @@
               "parentUUID": "6948168d-a856-4698-affb-5d3d97ca0bc3",
               "isHook": true,
               "skipped": false
-            }
-          ],
-          "afterHooks": [
+            },
             {
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
@@ -60,7 +58,7 @@
               "state": null,
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "driver.quit();",
@@ -69,9 +67,7 @@
               "parentUUID": "6948168d-a856-4698-affb-5d3d97ca0bc3",
               "isHook": true,
               "skipped": false
-            }
-          ],
-          "tests": [
+            },
             {
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
@@ -234,7 +230,7 @@
           "duration": 203,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 180000
+          "_timeout": 2000
         }
       ],
       "passes": [],
