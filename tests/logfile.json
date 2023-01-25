@@ -43,7 +43,7 @@
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
               "uuid": "8597829d-7f6e-46cb-b8e5-c01f2a48f9af",
               "parentUUID": "6948168d-a856-4698-affb-5d3d97ca0bc3",
@@ -224,7 +224,6 @@
             "9ee00bad-8bbc-43a8-b4ef-0e6ebcf23720",
             "9e98faf0-11fb-4464-b916-6ca549d80da4"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 203,
