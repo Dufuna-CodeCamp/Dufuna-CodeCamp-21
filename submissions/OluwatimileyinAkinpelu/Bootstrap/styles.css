@@ -12,6 +12,20 @@ body{
   padding: 20px;
   font-family: "Poppins", sans-serif;
 }
+.text-green {
+  color: #5EA304;
+}
+.add-btn {
+  width: 138px;
+  height: 40px;
+  font-size: 16px;
+  border: solid 1px #AD4C4C;
+  border-radius: 3px;
+  background-color: #ffff;
+  cursor:pointer;
+  margin-top: 14px;
+  margin-bottom: 25px;
+}
 p {
   margin-bottom: 0px;
 }
