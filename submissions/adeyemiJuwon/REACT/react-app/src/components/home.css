@@ -1,0 +1,134 @@
+home {
+  width: 100%;
+}
+.header {
+  margin: 1rem auto;
+  text-align: center;
+}
+.header > h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+
+  color: #4e4d4d;
+}
+.header > h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
+}
+.input_form > h3,
+.pick_interests > h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  color: #000;
+}
+.input_form > input {
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding-left: 16px;
+}
+.pick_interest {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-content: center;
+  grid-gap: 20px;
+}
+.pick_interest_details {
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  font-style: normal;
+  font-family: 'Poppins';
+}
+.pick_interest_details > img {
+  width: 70px;
+}
+.pick_interest_details > h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ad4c4c;
+}
+.pick_interest_details > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #696969;
+}
+
+.serves > h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #4e4d4d;
+}
+.serve {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  place-content: center;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+.serve_details > h3 {
+  font-size: 25px;
+  line-height: 38px;
+  align-items: center;
+  text-align: center;
+  color: #696969;
+}
+.serve_details img {
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 20px;
+  max-height: 200px;
+}
+.serve_details > p {
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #a5a5a5;
+}
+@media screen and (min-width: 600px) {
+  .pick_interest {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 800px) {
+  .serve {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .serve_details > h3 {
+    font-size: 30px;
+  }
+  .pick_interest {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .pick_interest {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .serve {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 140px;
+  }
+}
