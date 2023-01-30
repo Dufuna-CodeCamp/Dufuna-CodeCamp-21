@@ -111,7 +111,7 @@ a{
 .price{
     color: rgb(64, 176, 64);
 }
-/* .removecart{
+.removecart{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +119,7 @@ a{
     margin-top: 10px;
     background-color: #5b5757;
     border: 1px solid #5b5757;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     border-radius: 2px;
     font-weight: bold;
     margin-left: 3px;
@@ -127,7 +127,7 @@ a{
 }
 .removecart img{
     width: 30%;
-} */
+}
 .viewall{
     display: none;
 }

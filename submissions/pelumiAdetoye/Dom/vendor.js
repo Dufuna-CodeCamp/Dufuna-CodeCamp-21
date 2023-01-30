@@ -9,11 +9,11 @@ function cartButtonClick(){
   if(check == "Add to Cart"){
     this.innerHTML = '<img src="../imgs/remove.svg" style="width: 30%;"/> Remove'
     document.getElementById('cart-notify').style = 'height: 8px; width: 8px; background-color: #ad4c4c; border-radius: 50%; display: inline-block';
-    this.style = "background-color: silver; color: rgba(255, 255, 255, 1); border: 1px solid #fff; display: flex; justify-content: center; align-items: center; margin-top: 10px; border-radius: 2px; font-weight: bold;";
+    this.style = "background-color: rgba(255, 255, 255, 1); color: rgba(255, 255, 255, 1); border: 1px solid rgba(255, 255, 255, 1); display: flex; justify-content: center; align-items: center; margin-top: 10px; border-radius: 2px; font-weight: bold;";
     this.classList.remove('button');
   } else if (check.includes('Remove') == true){
     this.innerHTML = "Add to Cart";
-    this.style = "background-color: white; color: #ad4c4c; border: 1px solid #ad4c4c"
+    this.style = "background-color: silver; color: #ad4c4c; border: 1px solid #ad4c4c; display: flex; justify-content: center; align-items: center; margin-top: 10px; border-radius: 2px; font-weight: bold;"
     this.classList.add('button');       
   } else{
     return false;
@@ -21,6 +21,7 @@ function cartButtonClick(){
 
   clean()
 }
+// #ad4c4c
  
 function clean(){
   let cart1 = document.getElementById("addtocart1").innerHTML;
