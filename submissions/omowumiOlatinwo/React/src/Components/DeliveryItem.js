@@ -11,9 +11,9 @@ class DeliveryItem extends Component{
                         <div className="col">
                             <div className="row">
                                 <div className="col">
-                                    <img src={scooter} className="img-fluid deliveryimg" width="80px" height="60px" alt="delivery"/>
+                                    <img src={scooter} className="img-fluid deliveryimg" width="80px" height="60px" alt="deliveryImage"/>
                                 </div>
-                                <div className="col desc">
+                                <div className="col">
                                 <p className="deliveryname">Delivery&nbsp;fee</p><br/>
                                 </div>
                             </div>

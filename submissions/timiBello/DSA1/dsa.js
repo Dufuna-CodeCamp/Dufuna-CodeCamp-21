@@ -34,7 +34,7 @@ for (i = 0; i < product.length; i++) {
       'The price of ' + product[i] + ' is ' + product_price[i] + '<br><br>'
     );
   } else {
-    // DIVIDE ALL EVEN INDEXES BY 2
+    // DIVIDE ALL ODD INDEXES BY 2
     product_price[i] = product_price[i] * (1 / 2);
     document.write(
       'The price of ' + product[i] + ' is ' + product_price[i] + '<br><br>'
