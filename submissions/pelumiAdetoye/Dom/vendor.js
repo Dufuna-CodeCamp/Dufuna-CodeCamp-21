@@ -1,41 +1,35 @@
 let addToCart = document.querySelectorAll(".addtocart")
 
-addToCart.forEach((button) => {
-  button.addEventListener('click', cartButtonClick)
-})
+let notify = document.querySelector(".notify")
 
-function cartButtonClick(){
-  let check = this.innerHTML
-  if(check == "Add to Cart"){
-    this.innerHTML = '<img src="../imgs/remove.svg" style="width: 30%;"/> Remove'
-    document.getElementById('cart-notify').style = 'height: 8px; width: 8px; background-color: #ad4c4c; border-radius: 50%; display: inline-block';
-    this.style = "background-color: rgba(255, 255, 255, 1); color: rgba(255, 255, 255, 1); border: 1px solid rgba(255, 255, 255, 1); display: flex; justify-content: center; align-items: center; margin-top: 10px; border-radius: 2px; font-weight: bold;";
-    this.classList.remove('button');
-  } else if (check.includes('Remove') == true){
-    this.innerHTML = "Add to Cart";
-    this.style = "background-color: silver; color: #ad4c4c; border: 1px solid #ad4c4c; display: flex; justify-content: center; align-items: center; margin-top: 10px; border-radius: 2px; font-weight: bold;"
-    this.classList.add('button');       
-  } else{
-    return false;
-  }
+// add to cart and remove from cart
+for(let cart of addToCart ){
+  cart.addEventListener('click', (e)=>{
 
-  clean()
-}
-// #ad4c4c
+    if(cart.innerText === "Add to Cart"){
+      cart.style.backgroundColor = "#A5A5A5";
+      cart.style.color = "rgba(255, 255, 255, 1)";
+      cart.style.border = "none";
+      cart.innerHTML =
+        '<img src = "../imgs/remove.svg" class = "remove" style=" width:20px; padding-right:2px; color:#fff" />Remove';
+      cart.style.display = "flex";
+      cart.style.alignItems = "center";
+    } else if (cart.innerText == "Remove") {
+      cart.style.backgroundColor = "#fff";
+      cart.style.color = "#ad4c4c";
+      cart.style.border = "1px solid #ad4c4c";
+      cart.innerHTML = "Add to Cart";
+    }
+
+    let cartNotificationBtn = document.querySelectorAll(".remove").length;
+
+    if (cartNotificationBtn > 0) {
+      notify.style.display = "inline-flex";
+    } else {
+      notify.style.display = "none";
+    }
  
-function clean(){
-  let cart1 = document.getElementById("addtocart1").innerHTML;
-  let cart2 = document.getElementById("addtocart2").innerHTML;
-  let cart3 = document.getElementById("addtocart3").innerHTML;
-  let cart4 = document.getElementById("addtocart4").innerHTML;
-  let cart5 = document.getElementById("addtocart5").innerHTML;
-  let cart6 = document.getElementById("addtocart6").innerHTML;
-  let cart7 = document.getElementById("addtocart7").innerHTML;
-  let cart8 = document.getElementById("addtocart8").innerHTML;
-  if ((cart1 == 'Add to Cart') && (cart2 == 'Add to Cart') && (cart3 == 'Add to Cart') && (cart4 == 'Add to Cart') && (cart5 == 'Add to Cart') && (cart6 == 'Add to Cart') && (cart7 == 'Add to Cart') && (cart8 == 'Add to Cart')){
-      document.getElementById('cart-notify').style = '';
-  }
+  })  
 }
-
 
 
