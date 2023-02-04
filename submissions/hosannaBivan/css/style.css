@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.cart:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px){
     body{
         padding: 2%;

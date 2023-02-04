@@ -3,6 +3,14 @@
     padding: 0;
     margin: 0;
 }
+.f:hover{
+    cursor: pointer;
+}
+.display-none{
+    /* display: none; */
+    color: red;
+}
+
 @media screen and (max-width: 600px){
     body{
         padding: 5%;
