@@ -6,9 +6,16 @@
 .f:hover{
     cursor: pointer;
 }
-.display-none{
-    /* display: none; */
+
+.g{
+    border: 2px solid #E6E6E6;
+    padding: 2%;
+    font-size: 14px;
     color: red;
+    display: none;
+}
+.f{
+    display: block ;
 }
 
 @media screen and (max-width: 600px){
