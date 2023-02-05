@@ -1,12 +1,12 @@
 var difference = 123-7;
 
-for (let i = 0; i <=difference; i++) {
+for (let i = 1; i <=difference; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
-    document.write(` <p> Software Developer </p>`);
+    document.write(` <br> Software Developer <br>`);
   } else if (i % 3 == 0) {
-    document.write(` <p> software </p>`);
+    document.write(` <br> software <br>`);
   } else if (i % 5 == 0) {
-    document.write(` <p> Developer </p>`);
+    document.write(` <br> Developer <br>`);
   }
 
   else{
