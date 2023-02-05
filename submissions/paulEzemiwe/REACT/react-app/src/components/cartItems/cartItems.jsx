@@ -1,10 +1,10 @@
 import "./cartItems.scss";
 import * as React from "react";
-import CloseIcon from "../../assets/images/close.svg";
-import Plus from "../../assets/images/plus.svg";
-import Minus from "../../assets/images/minus.svg";
-import Scooter from "../../assets/images/scooter.svg";
-import ScooterMobile from "../../assets/images/scooter-mobile.svg";
+import CloseIcon from "../../assets/svgs/close.svg";
+import Plus from "../../assets/svgs/plus.svg";
+import Minus from "../../assets/svgs/minus.svg";
+import Scooter from "../../assets/svgs/scooter.svg";
+import ScooterMobile from "../../assets/svgs/scooter-mobile.svg";
 
 export const CartItems = ({
   props,

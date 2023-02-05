@@ -3,14 +3,17 @@ import "./index.scss";
 import Navbar from "../../components/navbar/navbar";
 import Breadcrumb from "../../components/breadcrumb/breadcrumb";
 import CartItems from "../../components/cartItems/cartItems";
-import ChickenBucket from "../../assets/images/kfc.svg";
-import ChickenBucketMobile from "../../assets/images/kfc-mobile.svg";
-import RefuelMax from "../../assets/images/coke.svg";
-import RefuelMaxMobile from "../../assets/images/coke-mobile.svg";
-import RefuelMax2 from "../../assets/images/pot.svg";
-import RefuelMax2Mobile from "../../assets/images/pot-mobile.svg";
+import ChickenBucket from "../../assets/svgs/kfc.svg";
+import ChickenBucketMobile from "../../assets/svgs/kfc-mobile.svg";
+import RefuelMax from "../../assets/svgs/coke.svg";
+import RefuelMaxMobile from "../../assets/svgs/coke-mobile.svg";
+import RefuelMax2 from "../../assets/svgs/pot.svg";
+import RefuelMax2Mobile from "../../assets/svgs/pot-mobile.svg";
+import { Button } from "../../components/button/button";
+import { useNavigate } from "react-router-dom";
 
 export function CartPage() {
+  const navigate = useNavigate();
   const cartItems = [
     {
       id: 0,
@@ -65,7 +68,7 @@ export function CartPage() {
   };
 
   const total = cartItemsState.reduce((acc, item) => {
-    return acc + (item.price * item.quantity);
+    return acc + item.price * item.quantity;
   }, 0);
 
   const sumTotal = total + 1200;
@@ -86,9 +89,13 @@ export function CartPage() {
         <p className="cart__total--text">Total</p>
         <p className="cart__total--price">₦{sumTotal}</p>
       </div>
-      <div className="cart__btn">
-        <button className="cart__page--btn">Checkout</button>
-      </div>
+      <Button
+        onClick={() => {
+          sumTotal > 1200 && navigate("/verification");
+        }}
+        children="Checkout"
+        className="normal"
+      />
     </div>
   );
 }

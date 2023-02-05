@@ -136,7 +136,8 @@ $color-light-grey: #4e4d4d;
         margin: 0 10px;
     }
 
-    .counter__price {
+    .counter__price,
+    .delivery__price {
         @include font(15px, 500, 22.5px);
     }
 
