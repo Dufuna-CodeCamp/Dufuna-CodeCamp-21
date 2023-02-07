@@ -7,7 +7,7 @@ var productList = [
   {
     productName: "Biscuits",
     imageUrl: "https://www.pexels.com/photo/biscuits-in-box-317969/",
-    productPrice: "258,370 naira"
+    productPrice: "258,373 naira"
   },
   {
     productName: "Wine",
