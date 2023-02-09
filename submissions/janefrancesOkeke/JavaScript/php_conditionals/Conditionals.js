@@ -8,7 +8,6 @@ for (let i = 1; i <=difference; i++) {
   } else if (i % 5 == 0) {
     document.write(` <br> Developer <br>`);
   }
-
   else{
     document.write(`<p> ${i} </p>`)
   }
