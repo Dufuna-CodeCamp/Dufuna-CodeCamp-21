@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-09T14:05:24.490Z",
-    "end": "2023-02-09T14:08:24.510Z",
-    "duration": 180020,
+    "start": "2023-02-09T14:20:32.001Z",
+    "end": "2023-02-09T14:23:32.051Z",
+    "duration": 180050,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "db0543f4-efba-4e24-8716-af990012a55a",
+      "uuid": "a57af41c-642c-4670-aa67-e57a2f23a6b0",
       "title": "",
       "fullFile": "C:\\Users\\pc\\Desktop\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
       "file": "\\conditionals_test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "50944c17-2b0e-43e8-89de-d21fdf21c9b1",
+          "uuid": "9fd1f4dd-5dd9-43fd-9468-d7a3338d4cc3",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\pc\\Desktop\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: check conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver for \"test case: check conditionals\"",
               "timedOut": true,
-              "duration": 180002,
+              "duration": 180034,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\pc\\Desktop\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
                 "diff": null
               },
-              "uuid": "45e7b42f-6bd6-485e-abe1-29ef3088cbbc",
-              "parentUUID": "50944c17-2b0e-43e8-89de-d21fdf21c9b1",
+              "uuid": "5ed6e485-2df1-43ae-ac80-7deb80bac727",
+              "parentUUID": "9fd1f4dd-5dd9-43fd-9468-d7a3338d4cc3",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "2f3ce9b7-e477-498c-b6d8-6ac4296e6413",
-              "parentUUID": "50944c17-2b0e-43e8-89de-d21fdf21c9b1",
+              "uuid": "067ef6c5-38f7-4fe6-879c-cc516928832f",
+              "parentUUID": "9fd1f4dd-5dd9-43fd-9468-d7a3338d4cc3",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const productList = driver.wait(webdriver.until.elementLocated(webdriver.By.css(\"body\")));\nconst text = await productList.getText();\nconst x = 123 - 7;\nfor (let i = 1; i <= x; i++) {\n    if (i % 3 === 0 && i % 5 === 0) {\n        assert.include(text, 'Software Developer');\n    } else if (i % 3 === 0) {\n        assert.include(text, 'Software');\n    } else if (i % 5 === 0) {\n        assert.include(text, 'Developer');\n    } \n}",
               "err": {},
-              "uuid": "960f933e-b6d3-4d9b-b0d6-51ca0da3c93b",
-              "parentUUID": "50944c17-2b0e-43e8-89de-d21fdf21c9b1",
+              "uuid": "638546c9-28e7-4f6f-bd3a-bc8fed304140",
+              "parentUUID": "9fd1f4dd-5dd9-43fd-9468-d7a3338d4cc3",
               "isHook": false,
               "skipped": true
             }
@@ -100,7 +100,7 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "960f933e-b6d3-4d9b-b0d6-51ca0da3c93b"
+            "638546c9-28e7-4f6f-bd3a-bc8fed304140"
           ],
           "duration": 0,
           "root": false,
