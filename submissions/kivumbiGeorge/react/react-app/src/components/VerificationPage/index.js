@@ -4,6 +4,7 @@ import Header from "../layout/header";
 import Nav from "../layout/nav";
 import Input from "../Input";
 import RadioButtonChecked from "../../assets/image/radio_button_checked.svg"
+import { Link } from "react-router-dom";
 
 
 const VerificationPage = () => {
@@ -146,11 +147,12 @@ const VerificationPage = () => {
                         </div>
                     </div>
                     <div className="submit-section">
-                        <button
+                        <Link
+                            to="/success"
                             className="submit-section-button"
                             type="submit"
                         >Pay
-                        </button>
+                        </Link>
                     </div>
                 </form>
             </div>
