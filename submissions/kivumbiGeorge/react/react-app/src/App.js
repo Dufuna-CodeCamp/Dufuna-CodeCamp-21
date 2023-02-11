@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import CartPage from "./components/CartPage";
 import OrderSuccessful from "./components/OrderSuccessful";
-import VerificationPage from "./components/VerificationPage";
+import Verification from "./components/Verification";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <CartPage />
         </Route>
         <Route path="/verification">
-          <VerificationPage />
+          <Verification />
         </Route>
         <Route path="/success">
           <OrderSuccessful />
