@@ -55,7 +55,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 46rem; */
   }
 
   .center-stage {
@@ -91,6 +90,4 @@
     margin-top: -10px;
     width: 70%;
   }
-
- 
 }
