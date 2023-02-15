@@ -52,60 +52,60 @@ const CartPage = () => {
     }
 
     const handleIncrease = (idx) => {
-        /* get object at index */
+        
         let oldItem = items[idx];
-        /* update number */
+        
         let newNumber = oldItem.number + 1;
         oldItem.number = newNumber;
-        /* update price */
+        
         let newTotalPrice = newNumber * oldItem.unitPrice;
         oldItem.totalPrice = newTotalPrice;
-        /* put object back into state */
+        
         setItems(items.map((item, index) =>
             index === idx ? oldItem : item
         ))
-        /* update total price */
+        
         setTotal(calculateTotal(items))
     }
 
     const handleReduce = (idx) => {
-        /* get object at index */
+        
         let oldItem = items[idx];
-        /* update number */
+        
         let newNumber = oldItem.number - 1;
         if (newNumber < 1) {
-            /* if number less than 1, remove item from list */
-            /* filter out removed item by index */
+           
+            
 
             setItems(items.filter((item, index) => index !== idx))
         } else {
-            /* if number not less than 1 reduce normally */
+            
             oldItem.number = newNumber;
-            /* update price */
+            
             let newTotalPrice = newNumber * oldItem.unitPrice;
             oldItem.totalPrice = newTotalPrice;
-            /* put object back into state */
+            
             setItems(items.map((item, index) =>
                 index === idx ? oldItem : item
             ))
-            /* update total price */
+            
             setTotal(calculateTotal(items))
         }
     }
 
     const handleRemove = (idx) => {
-        /* filter out removed item by index */
+        
         setItems(items.filter((item, index) => index !== idx))
-        /* update total price */
+        
         setTotal(calculateTotal(items));
 
     }
 
     const handleDelete = (event) => {
         event.preventDefault();
-        /* remove all items from cart */
+        
         setItems([])
-        /* update total price */
+        
         setTotal(calculateTotal(items));
 
     }
