@@ -45,11 +45,12 @@ a{
     color: white;
 }
 .notify{
-    width:5px;
-    height: 5px;
+    width:15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #ad4c4c;
     display: none;
+    font-size: 10px;
 }
 /* navigation bar ends */
 

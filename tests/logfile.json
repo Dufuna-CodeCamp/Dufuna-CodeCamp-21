@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 2,
-    "start": "2023-01-31T16:56:27.015Z",
-    "end": "2023-01-31T16:56:35.722Z",
-    "duration": 8707,
+    "start": "2023-02-16T12:54:27.281Z",
+    "end": "2023-02-16T12:54:56.392Z",
+    "duration": 29111,
     "testsRegistered": 3,
     "passPercent": 33.33333333333333,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fea2f323-43b7-40a5-b42c-601925c2c61c",
+      "uuid": "4ceb7575-f145-4c82-ad11-9b64b55e4ad6",
       "title": "",
       "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
       "file": "\\dom.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "17b6514d-d452-4691-84f1-a861e2bda736",
+          "uuid": "0069bdde-1298-4145-a1c3-7ec4526d93f1",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
           "file": "\\dom.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "73b825cd-02e2-498a-a8ba-15185640f309",
-              "parentUUID": "17b6514d-d452-4691-84f1-a861e2bda736",
+              "uuid": "74e03bdb-5e8e-402a-8f8c-4d8462355766",
+              "parentUUID": "0069bdde-1298-4145-a1c3-7ec4526d93f1",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "eb08a987-39b3-4184-9c8f-4305cbc3b19c",
-              "parentUUID": "17b6514d-d452-4691-84f1-a861e2bda736",
+              "uuid": "a1cf1644-666b-46a7-b801-8e9bf5915439",
+              "parentUUID": "0069bdde-1298-4145-a1c3-7ec4526d93f1",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 5626,
+              "duration": 15205,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "TypeError: Cannot read properties of undefined (reading 'click')\n    at Context.<anonymous> (dom.js:25:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "65e00d94-73ef-4e4a-87f2-7e3eb42d50ca",
-              "parentUUID": "17b6514d-d452-4691-84f1-a861e2bda736",
+              "uuid": "3d38b05e-a2d0-4ff7-b6a5-86507687b665",
+              "parentUUID": "0069bdde-1298-4145-a1c3-7ec4526d93f1",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check colour of text",
               "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 2540,
+              "duration": 11616,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(173, 76, 76, 1)' to equal 'rgba(255, 255, 255, 1)'\n    at Context.<anonymous> (dom.js:34:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": "- rgba(173, 76, 76, 1)\n+ rgba(255, 255, 255, 1)\n"
               },
-              "uuid": "66f40ac5-e565-4dcb-b311-e37addaf577d",
-              "parentUUID": "17b6514d-d452-4691-84f1-a861e2bda736",
+              "uuid": "fc929f25-e067-47dd-9d7a-ae3a880951b6",
+              "parentUUID": "0069bdde-1298-4145-a1c3-7ec4526d93f1",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 462,
+              "duration": 2135,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -129,23 +129,23 @@
               "context": null,
               "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {},
-              "uuid": "0cd6407d-1d37-4bc3-badd-891d9950cd80",
-              "parentUUID": "17b6514d-d452-4691-84f1-a861e2bda736",
+              "uuid": "b5e8c18b-7700-400c-81fd-a789a59dc766",
+              "parentUUID": "0069bdde-1298-4145-a1c3-7ec4526d93f1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0cd6407d-1d37-4bc3-badd-891d9950cd80"
+            "b5e8c18b-7700-400c-81fd-a789a59dc766"
           ],
           "failures": [
-            "65e00d94-73ef-4e4a-87f2-7e3eb42d50ca",
-            "66f40ac5-e565-4dcb-b311-e37addaf577d"
+            "3d38b05e-a2d0-4ff7-b6a5-86507687b665",
+            "fc929f25-e067-47dd-9d7a-ae3a880951b6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 8628,
+          "duration": 28956,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
