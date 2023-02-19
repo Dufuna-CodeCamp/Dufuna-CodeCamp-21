@@ -41,11 +41,10 @@ a{
 }
 .rnc3:hover{
     background-color: #ad4c4c;
-}
-.rnc3 a:hover{
     color: white;
 }
 /* navigation bar ends */
+
 .fb{
     font-size: 18px;
     color: #696969;
@@ -91,13 +90,20 @@ a{
     font-size: 14px;
     margin-top: 10px;
     font-weight: bold;
-    color: #ad4c4c;
+    color: #A5A5A5;
 }
 .ff-cont{
     font-size: 12px;
     margin-top: 10px;
     color: #A5A5A5;
 }
+.address-bar {
+    width:100%;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px; 
+  }
 .illustrator1{
     margin-top: 20px;
     text-align: center;
@@ -113,7 +119,7 @@ a{
     width: 70%;
 }
 .illustrator2 img{
-    margin-top: 20px;
+    margin-top: 18px;
      width: 70%;
  }
  .illustrator3 img{
@@ -182,9 +188,11 @@ footer div img{
     margin-left: 10px;
 }
 .tnc{
-    color: #696969;
     margin-top: 30px;
     font-size: 12px;
+}
+.tnc a{
+    color: #696969;
 }
 .copy{
     width: 70%;
@@ -226,7 +234,7 @@ footer{
         
     }
     .content2a{
-        width: 290px;
+        width: 100%;
         height: 169px;
         padding-top: 35px;
     }
@@ -248,14 +256,14 @@ footer{
         width: 100%;
     }
     .p-head,.p-head2,.p-head3{
-        font-size: 20px;
+        font-size: 16px;
     }
     .p-cont{
-        font-size: 18px;
+        font-size: 12px;
         width: 90%;
     }
     .p-cont2,.p-cont3{
-        font-size: 18px;
+        font-size: 12px;
         width: 70%;
     }
     .illustrator1{
@@ -295,5 +303,47 @@ footer{
     .footer-cont{
         display: flex;
         justify-content: space-between;
+    }
+    .content2divs{
+        display: flex;
+        flex-direction: column;
+    }
+    .content2divsa{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+
+    }
+    .content2divsb{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+    .content2divs{
+        display: flex;
+        flex-direction: row;
+    }
+    .content2divsa{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .content2divsb{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .p-head,.p-head2,.p-head3{
+        font-size: 20px;
+    }
+    .p-cont{
+        font-size: 18px;
+        width: 90%;
+    }
+    .p-cont2,.p-cont3{
+        font-size: 18px;
+        width: 70%;
     }
 }
