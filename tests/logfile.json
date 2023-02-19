@@ -1,5 +1,6 @@
 {
   "stats": {
+<<<<<<< HEAD
     "suites": 1,
     "tests": 18,
     "passes": 18,
@@ -461,5 +462,11 @@
       },
       "version": "6.2.0"
     }
+=======
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "elijahZgambo"
+>>>>>>> bc54a871e20d531adf3c2b8566d5c12e27f4ccbe
   }
 }

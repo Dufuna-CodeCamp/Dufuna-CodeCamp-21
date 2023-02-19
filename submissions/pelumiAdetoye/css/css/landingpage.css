@@ -41,11 +41,10 @@ a{
 }
 .rnc3:hover{
     background-color: #ad4c4c;
-}
-.rnc3 a:hover{
     color: white;
 }
 /* navigation bar ends */
+
 .fb{
     font-size: 18px;
     color: #696969;
@@ -189,9 +188,11 @@ footer div img{
     margin-left: 10px;
 }
 .tnc{
-    color: #696969;
     margin-top: 30px;
     font-size: 12px;
+}
+.tnc a{
+    color: #696969;
 }
 .copy{
     width: 70%;

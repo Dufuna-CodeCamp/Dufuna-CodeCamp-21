@@ -4,6 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    position: relative;
 }
 #container{
     margin: 25px;
@@ -41,28 +42,23 @@ a{
 }
 .rnc3:hover{
     background-color: #ad4c4c;
-}
-.rnc3 a:hover{
     color: white;
 }
+.notify{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ad4c4c;
+    display: none;
+    font-size: 10px;
+}
 /* navigation bar ends */
+
 .homevendor{
     margin-top: 50px;
     font-weight: bold;
     font-size: 10px;
 }
-/* .cart{
-    position: relative;
-}
-.cart::after{
-    position: absolute;
-    content:'';
-    width:5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #ad4c4c;
-} */
-
 .home{
     color: rgb(209, 214, 212);
 }
@@ -108,10 +104,21 @@ a{
     font-weight: bold;
     margin-left: 3px;
 }
+/* .removecart{
+    padding: 5px 15px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ad4c4c;
+    color: #ad4c4c;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left: 3px;
+    display: hidden;
+} */
 .price{
     color: rgb(64, 176, 64);
 }
-/* .removecart{
+.removecart{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +126,7 @@ a{
     margin-top: 10px;
     background-color: #5b5757;
     border: 1px solid #5b5757;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     border-radius: 2px;
     font-weight: bold;
     margin-left: 3px;
@@ -127,7 +134,7 @@ a{
 }
 .removecart img{
     width: 30%;
-} */
+}
 .viewall{
     display: none;
 }
@@ -137,11 +144,6 @@ a{
     margin-top: 40px;
     font-size: 14px;
 }
-/* .line{
-    margin-top: 30px;
-    border: 1px solid #F2F2F2;
-} */
-
 hr{
     margin-top: 30px; 
 }
@@ -245,27 +247,14 @@ hr{
         font-size: 18px;
     }
 }
+
+
 /* media query for larger screen size */
 @media screen and (min-width: 992px){
     .kfc-section{
         display: flex;
         flex-direction: row;
     }
-    /* .kfc-section-a{
-        margin-right: 40px;
-    } */
-    /* .kfc-img{
-        margin-right: 40px;
-    } */
-
-    /* .kfc-section-b .kfc-img img, .chicken-section-b .kfc-img img{
-            width: 93%;
-    }  */
-
-    /* .kfc-section-b .kfc-img4 img, .chicken-section-b .kfc-img4 img{
-        width: 93%;
-    }  */
-
     .chicken-section{
         display: flex;
         flex-direction: row;
