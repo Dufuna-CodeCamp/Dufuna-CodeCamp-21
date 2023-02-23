@@ -24,9 +24,6 @@ section.address {
     margin-top: 15px;
 }
 
-/* section.address {
-} */
-
 section.address h6 {
     color: #696969;
     font-weight: lighter;
@@ -58,7 +55,8 @@ hr {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    margin: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 18px;
 }
 
