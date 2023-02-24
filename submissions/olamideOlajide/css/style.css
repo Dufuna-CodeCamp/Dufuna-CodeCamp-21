@@ -118,7 +118,8 @@ form{
     list-style-type: none;
 }
 .k{
-    margin-top: 400px;
+    margin-top: 100px;
+    float: left;
 }
 .kfc-header{
     margin: 40px 40px;
