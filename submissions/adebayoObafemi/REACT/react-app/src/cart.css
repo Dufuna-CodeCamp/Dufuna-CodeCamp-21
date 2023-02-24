@@ -1,17 +1,17 @@
 * {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 
 body {
     margin: 20px 80px;
 }
 
-img:not([alt="close"]) {
+img:not([alt ="close"]) {
     width: 10rem;
 }
 
-img[alt="scooter"] {
+img[alt = "scooter"] {
     width: 5rem;
     padding: 0 2.5rem 0 4rem;
 }
@@ -55,13 +55,11 @@ a.cart {
     margin: 40px 0px 20px;
 }
 
-.Home,
-.navArrow {
+.Home, .navArrow {
     color: #C9C9C9;
 }
 
-.firstLevelCart,
-.secondLevelCart {
+.firstLevelCart, .secondLevelCart {
     color: #000000;
 }
 
@@ -106,7 +104,7 @@ a.cart {
 .changeCountButton {
     background-color: #FFFFFF;
     color: #AD4C4C;
-    border: #AD4C4C solid 1px;
+    border:#AD4C4C solid 1px;
     border-radius: 3px;
 }
 

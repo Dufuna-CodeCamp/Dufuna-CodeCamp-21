@@ -1,5 +1,5 @@
 @media screen and (max-width: 360px) {
-    body {
+body {
         margin: 0 20px;
     }
 
@@ -19,7 +19,7 @@
         width: 5rem;
         border-radius: 1rem;
     }
-
+    
     img[alt="scooter"] {
         width: 3rem;
         padding: 0.5rem 1rem;
@@ -40,9 +40,7 @@
         margin: 0;
     }
 
-    .Home,
-    .navArrow,
-    .firstLevelCart {
+    .Home, .navArrow, .firstLevelCart {
         font-size: 14px;
     }
 
@@ -100,7 +98,7 @@
         border: #AD4C4C solid 1px;
         border-radius: 3px;
         font-size: 10px;
-
+        
     }
 
     .delivery {
@@ -131,7 +129,7 @@
         margin: 0 auto 1.5em;
     }
 
-    .cart-hr {
+    .cart-hr { 
         display: flex;
         justify-content: right;
         align-items: right;
