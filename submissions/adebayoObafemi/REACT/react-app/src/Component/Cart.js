@@ -10,7 +10,6 @@ import scooter from "../FoodBag-Task-Assets/scooter.svg";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-  // Stored data in an array
   const menuList = [
     {
       id: 1,
@@ -46,23 +45,18 @@ const Cart = () => {
     total: "5000",
   };
 
-  // Initialize the data to be used
   const [items, setItems] = useState(menuList);
-
-  // Initialize the total amount of selected items
   const total =
     items.reduce((a, item) => a + item.price * item.count, 0) === 0
       ? 0
       : items.reduce((a, item) => a + item.price * item.count, 0) +
         delivery.price;
 
-  // Initialize the total count of selected items
   const totalCount =
     items.reduce((a, item) => a + item.count, 0) === 0
       ? 0
       : items.reduce((a, item) => a + item.count, 0);
 
-  //   This function increases the count at every click of the button that listens for it.
   function incrementCount(id) {
     setItems((prevItems) => {
       return prevItems.map((item) => {
@@ -71,7 +65,6 @@ const Cart = () => {
     });
   }
 
-  //   This function decreases the count at every click of the button that listens for it.
   function decrementCount(id) {
     setItems((prevItems) => {
       return prevItems.map((item) => {
@@ -82,7 +75,6 @@ const Cart = () => {
     });
   }
 
-  //   This function resets the count at every click of the element that listens for it.
   function resetCount() {
     setItems((prevItems) => {
       return prevItems.map((item) => {

@@ -1,6 +1,5 @@
 import Button from "./Button";
 
-// This component defines the structure of each recipe entry available for selection
 const Menu = (props) => {
   return (
     <div className="menu" id={props.id}>
