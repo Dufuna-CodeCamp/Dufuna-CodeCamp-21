@@ -38,7 +38,7 @@ body{
     color: red;
     background-color: rgba(255, 255, 255, 0);
     border-color: red;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 nav li{
     display: sticky;
@@ -69,7 +69,7 @@ form{
     border: 1px solid rgba(180, 180, 180, 0.637);
     margin: 10px;
     margin-left: 0;
-    padding: 10px 10px;
+    padding: 10px;
     line-height: 5px;
     box-shadow: 3px 3px rgba(85, 85, 85, 0.178);
 }
@@ -84,7 +84,6 @@ form{
     width: 300px;
     height: 60px;
     float: left;
-    margin-left: 0;
     margin: 20px;
     padding: 30px;
     line-height: 30px;
@@ -122,7 +121,7 @@ form{
     float: left;
 }
 .kfc-header{
-    margin: 40px 40px;
+    margin: 40px;
     position: relative;
 }
 .kfc-header img{
