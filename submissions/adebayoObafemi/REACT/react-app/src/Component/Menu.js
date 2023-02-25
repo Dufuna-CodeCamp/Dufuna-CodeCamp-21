@@ -1,6 +1,22 @@
+// import { useState } from "react";
 import Button from "./Button";
 
 const Menu = (props) => {
+  // const [count, setCount] = useState(0);
+  // const [price, setPrice] = useState(props.price * 0);
+
+  // const incrementCount = () => {
+  //   setCount(count + 1);
+  //   setPrice(price * count);
+  // };
+
+  // const decrementCount = () => {
+  //   if (count > 0) {
+  //     setCount(count - 1);
+  //     setPrice(price * count);
+  //   }
+  // };
+  // console.log(props.id)
   return (
     <div className="menu" id={props.id}>
       <div className="recipe">
