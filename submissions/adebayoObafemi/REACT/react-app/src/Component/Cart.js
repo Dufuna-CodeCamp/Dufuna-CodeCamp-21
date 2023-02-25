@@ -66,28 +66,6 @@ const Cart = () => {
     });
   }
 
-  // function handleIncrementPrice(id) {
-  //   incrementCount(id);
-  // setItems((prevItems) => {
-  //   return prevItems.map((item) => {
-  //     return item.id === id
-  //       ? { ...item, price: item.price * item.count }
-  //       : item;
-  //   });
-  // });
-  // }
-
-  // function handleDecrementPrice(id) {
-  // decrementCount(id);
-  // setItems((prevItems) => {
-  //   return prevItems.map((item) => {
-  //     return item.id === id
-  //       ? { ...item, price: item.price * item.count }
-  //       : item;
-  //   });
-  // });
-  // }
-
   function decrementCount(id) {
     setItems((prevItems) => {
       return prevItems.map((item) => {
