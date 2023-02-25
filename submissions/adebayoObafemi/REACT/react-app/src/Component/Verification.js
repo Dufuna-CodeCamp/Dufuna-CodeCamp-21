@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-// import ''
 import "./verification.css";
 import Navigation from "./Navigation";
 import radioButton from "../FoodBag-Task-Assets/radio_button_checked.svg";
@@ -23,10 +22,7 @@ export default function Verification() {
         [e.target.name]: e.target.value,
       };
     });
-    //   console.log(e.target.value);
   }
-
-  // console.log(formData);
 
   return (
     <div>
@@ -160,13 +156,3 @@ export default function Verification() {
     </div>
   );
 }
-
-// <form action="">
-//   <input
-//     type="number"
-//     name="phoneNumber"
-//     placeholder="+234"
-//     onChange={handleChange}
-//     value={formData.firstName}
-//   />
-// </form>

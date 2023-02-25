@@ -106,12 +106,6 @@ const Cart = () => {
     });
   }
 
-  // const [total, setTotal] = useState(5000);
-  // setTotal((prevState) => {
-  //   return prevState ;
-  // });
-  // console.log(total);
-
   return (
     <div>
       <header>
