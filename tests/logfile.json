@@ -5,15 +5,9 @@
     "passes": 8,
     "pending": 0,
     "failures": 0,
-<<<<<<< HEAD
-    "start": "2023-02-26T12:43:12.063Z",
-    "end": "2023-02-26T12:43:13.571Z",
-    "duration": 1508,
-=======
-    "start": "2023-02-25T10:02:01.021Z",
-    "end": "2023-02-25T10:02:18.409Z",
-    "duration": 17388,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+    "start": "2023-02-26T12:58:07.365Z",
+    "end": "2023-02-26T12:58:08.823Z",
+    "duration": 1458,
     "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -24,41 +18,25 @@
   },
   "results": [
     {
-<<<<<<< HEAD
-      "uuid": "4eea1cdd-5c5d-4ef1-a0dd-568cd6327789",
+      "uuid": "12bc7ca4-690f-429c-b016-87278b0ea1ca",
       "title": "",
       "fullFile": "C:\\Users\\samue\\Documents\\AgbaDev\\DUFUNA\\DUFUNA_REPO\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
-=======
-      "uuid": "649010c3-063b-419a-9800-f856649c2367",
-      "title": "",
-      "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
       "file": "\\vendors.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
-          "uuid": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
+          "uuid": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\samue\\Documents\\AgbaDev\\DUFUNA\\DUFUNA_REPO\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
-=======
-          "uuid": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
-          "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\USER\\Desktop\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
           "file": "\\vendors.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 1112,
-=======
-              "duration": 16863,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 1083,
               "state": null,
               "speed": null,
               "pass": false,
@@ -67,13 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "f33d677c-d1eb-4c8d-a477-d769b7a36290",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "398cd26b-1c78-48df-8435-ad66a5fb022c",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "0e07f399-3d5b-45e5-afa8-b219021e7c82",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": true,
               "skipped": false
             }
@@ -83,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -92,13 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "634e3a2f-2f6a-4305-977e-f54096ddeec0",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "1354c1af-5bd9-4c47-b99d-5ac7495609dd",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "0a8fb13e-eb30-4b80-bbfc-7e6030d2b874",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": true,
               "skipped": false
             }
@@ -108,11 +76,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 99,
-=======
-              "duration": 120,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 88,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -121,13 +85,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Food\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "5b1ddb5c-4394-4797-ac19-a6f30e07703c",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "ddd2b2f9-d3e0-4120-b0ef-e0fa177c355b",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "d632dce0-d1d5-4dc1-87e9-aa9a1434471c",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
@@ -135,11 +94,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 46,
-=======
-              "duration": 67,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 47,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -148,13 +103,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "1c2bf705-1297-4db8-b60e-db0512c574bd",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "bdf60d5a-9e9a-4202-93e5-61ed7f60352e",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "a9db0f81-ab32-481f-adbd-e574a6a2f6a1",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
@@ -162,11 +112,7 @@
               "title": "test case: FoodBag text is present on the page",
               "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 51,
-=======
-              "duration": 69,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 48,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -175,13 +121,8 @@
               "context": null,
               "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"FoodBag\", `Ensure \"FoodBag\" text is present`);",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "b320d889-cc72-46b3-bdfd-d6965b11a69a",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "57dc639d-359f-4e3e-9af1-b6d80fd93d85",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "b332bd03-acd5-4a3d-a273-58deaf5676f2",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
@@ -189,11 +130,7 @@
               "title": "test case: check Login",
               "fullTitle": "Testing Scholars Project test case: check Login",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 44,
-=======
-              "duration": 57,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 41,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -202,13 +139,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Login\", \"Ensure the `Login` link is present on the header\");",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "1ec0106f-9a8a-4115-8a4d-efaa7fe23396",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "b7145815-73c0-4288-bf7d-9f96f7b576cc",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "cb150a3e-5421-4006-ae66-ecae4fe2e563",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
@@ -216,11 +148,7 @@
               "title": "test case: check Cart",
               "fullTitle": "Testing Scholars Project test case: check Cart",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 57,
-=======
-              "duration": 60,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 51,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -229,13 +157,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"Cart\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "3d7db33a-f313-423d-af20-b90a7f4c6319",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "41411f82-d2c8-4e56-9dec-26ecccf9c7a5",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "dc8bff69-a396-41a8-9c2b-51daed090ed6",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
@@ -243,10 +166,7 @@
               "title": "test case: check page text",
               "fullTitle": "Testing Scholars Project test case: check page text",
               "timedOut": false,
-<<<<<<< HEAD
-              "duration": 49,
-=======
-              "duration": 69,
+              "duration": 43,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -255,8 +175,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
               "err": {},
-              "uuid": "e2d1346e-00ae-4ed7-bca6-67248d8083e4",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
+              "uuid": "7aed72b7-08d4-49f8-9ebc-6192cb9cf0a3",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
@@ -264,32 +184,23 @@
               "title": "test case: check page text",
               "fullTitle": "Testing Scholars Project test case: check page text",
               "timedOut": false,
-              "duration": 28,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "duration": 16,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-<<<<<<< HEAD
-              "code": "const element = await driver.findElement(By.css(\"body\"))\nconst text = await element.getText();\nassert.include(text, \"All Vendors\", \"Ensure the `Cart` link is present on the header\");",
-              "err": {},
-              "uuid": "29a3342e-8765-48a4-b15a-61298498059c",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
               "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
               "err": {},
-              "uuid": "ef07697c-3b00-44b6-b60b-09bc3be75e66",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "317c28b7-dd44-4920-83e7-b6afe926dd24",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             },
             {
-<<<<<<< HEAD
-              "title": "test case: check page text",
-              "fullTitle": "Testing Scholars Project test case: check page text",
+              "title": "test case: assert image amount is 9",
+              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
               "timedOut": false,
               "duration": 20,
               "state": "passed",
@@ -298,73 +209,29 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
-              "err": {},
-              "uuid": "7bdd848a-1b0f-42e9-9309-8e582f1948e7",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: assert image amount is 9",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
-              "timedOut": false,
-              "duration": 15,
-=======
-              "title": "test case: assert image amount is 9",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
-              "timedOut": false,
-              "duration": 26,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
               "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
               "err": {},
-<<<<<<< HEAD
-              "uuid": "2fd9340a-ef59-4842-bed4-a8e7b2bbc859",
-              "parentUUID": "9a9d75d7-3052-4bc8-8f1e-d69a2cff7905",
-=======
-              "uuid": "aa47ac40-3eec-4068-ad40-432f0501c6ff",
-              "parentUUID": "19b86fe9-f4c7-4b3d-b50a-b512aa440489",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+              "uuid": "1bf4bc4c-0ad1-4d79-a90d-831519762895",
+              "parentUUID": "2d8d96c4-28d5-49da-9a3b-a80c338349af",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
-            "5b1ddb5c-4394-4797-ac19-a6f30e07703c",
-            "1c2bf705-1297-4db8-b60e-db0512c574bd",
-            "b320d889-cc72-46b3-bdfd-d6965b11a69a",
-            "1ec0106f-9a8a-4115-8a4d-efaa7fe23396",
-            "3d7db33a-f313-423d-af20-b90a7f4c6319",
-            "29a3342e-8765-48a4-b15a-61298498059c",
-            "7bdd848a-1b0f-42e9-9309-8e582f1948e7",
-            "2fd9340a-ef59-4842-bed4-a8e7b2bbc859"
-=======
-            "ddd2b2f9-d3e0-4120-b0ef-e0fa177c355b",
-            "bdf60d5a-9e9a-4202-93e5-61ed7f60352e",
-            "57dc639d-359f-4e3e-9af1-b6d80fd93d85",
-            "b7145815-73c0-4288-bf7d-9f96f7b576cc",
-            "41411f82-d2c8-4e56-9dec-26ecccf9c7a5",
-            "e2d1346e-00ae-4ed7-bca6-67248d8083e4",
-            "ef07697c-3b00-44b6-b60b-09bc3be75e66",
-            "aa47ac40-3eec-4068-ad40-432f0501c6ff"
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+            "d632dce0-d1d5-4dc1-87e9-aa9a1434471c",
+            "a9db0f81-ab32-481f-adbd-e574a6a2f6a1",
+            "b332bd03-acd5-4a3d-a273-58deaf5676f2",
+            "cb150a3e-5421-4006-ae66-ecae4fe2e563",
+            "dc8bff69-a396-41a8-9c2b-51daed090ed6",
+            "7aed72b7-08d4-49f8-9ebc-6192cb9cf0a3",
+            "317c28b7-dd44-4920-83e7-b6afe926dd24",
+            "1bf4bc4c-0ad1-4d79-a90d-831519762895"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-<<<<<<< HEAD
-          "duration": 381,
-=======
-          "duration": 496,
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
+          "duration": 354,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -398,11 +265,7 @@
     },
     "marge": {
       "options": {
-<<<<<<< HEAD
         "reportDir": "C:/Users/samue/Documents/AgbaDev/DUFUNA/DUFUNA_REPO/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
-=======
-        "reportDir": "C:/Users/USER/Desktop/Dufuna-CodeCamp-21/tests/vendors_page/../..//tests/",
->>>>>>> bbf66406f97420907adb83148a4d8b565820d5f1
         "reportFilename": "logfile",
         "quiet": "true"
       },
