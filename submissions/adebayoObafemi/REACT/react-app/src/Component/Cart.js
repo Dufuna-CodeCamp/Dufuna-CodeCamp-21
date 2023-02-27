@@ -46,6 +46,7 @@ const Cart = () => {
   };
 
   const [items, setItems] = useState(menuList);
+  // console.log(items);
   const total =
     items.reduce((a, item) => a + item.price * item.count, 0) === 0
       ? 0

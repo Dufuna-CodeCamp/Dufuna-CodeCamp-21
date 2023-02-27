@@ -5,5 +5,4 @@ const Navigation = ({ text, className, onClick }) => {
     </span>
   );
 };
-
 export default Navigation;
