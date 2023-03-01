@@ -35,7 +35,7 @@ nav li {
     cursor: pointer;
 }
 
-nav button{
+nav button {
     padding: 5px 8px;
     color: #ad4c4c;
     border: 1.5px solid #ad4c4c;
@@ -50,7 +50,7 @@ nav button{
     text-align: center;
 }
 
-.header h2{
+.header h2 {
     font-size: 30px;
     font-weight: bolder;
     color: #4e4d4d;
