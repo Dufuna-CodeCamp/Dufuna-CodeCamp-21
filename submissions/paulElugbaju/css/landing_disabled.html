@@ -25,27 +25,27 @@
 
     <div class="location-select"> 
         <label for="location">Where are you?</label> <br>
-        <select name="location" id="location" aria-placeholder="Select" disabled>
-            <option value="" selected>Enter your delivery address</option>
-            <option value="Abia">Abia</option>
-            <option value="Abuja">Abuja</option>
-            <option value="Akwa-ibom">Akwa-ibom</option>
-            <option value="Anambra">Anambra</option>
-            <option value="Benue">Benue</option>
-            <option value="Delta">Delta</option>
-            <option value="Edo">Edo</option>
-            <option value="Ekiti">Ekiti</option>
-            <option value="Imo">Imo</option>
-            <option value="Kogi">Kogi</option>
-            <option value="Kwara">Kwara</option>
-            <option value="Lagos">Lagos</option>
-            <option value="Niger">Niger</option>
-            <option value="Ogun">Ogun</option>
-            <option value="Ondo">Ondo</option>
-            <option value="Osun">Osun</option>
-            <option value="Oyo">Oyo</option>
-            <option value="Rivers">Rivers</option>
-        </select>
+        <input list="localtion-list" id="location" disabled placeholder="Enter your delivery address">
+            <datalist id="localtion-list">
+                <option value="Abia">
+                <option value="Abuja">
+                <option value="Akwa-ibom">
+                <option value="Anambra">
+                <option value="Benue">
+                <option value="Delta">
+                <option value="Edo">
+                <option value="Ekiti">
+                <option value="Imo">
+                <option value="Kogi">
+                <option value="Kwara">
+                <option value="Lagos">
+                <option value="Niger">
+                <option value="Ogun">
+                <option value="Ondo">
+                <option value="Osun">
+                <option value="Oyo">
+                <option value="Rivers">
+            </datalist>
     </div>
 
     <div class="interest">
