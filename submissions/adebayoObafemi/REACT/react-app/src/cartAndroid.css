@@ -1,0 +1,139 @@
+@media screen and (max-width: 360px) {
+body {
+        margin: 0 20px;
+    }
+
+    header {
+        margin: 20px 0 5px;
+    }
+
+    h1.logo {
+        font-size: 16px;
+    }
+
+    img[alt="close"] {
+        width: 1rem;
+    }
+
+    img:not([alt="close"]) {
+        width: 5rem;
+        border-radius: 1rem;
+    }
+    
+    img[alt="scooter"] {
+        width: 3rem;
+        padding: 0.5rem 1rem;
+        margin-left: 1rem;
+    }
+
+    ul {
+        padding: 5px 0;
+    }
+
+    a:not(a.signup) {
+        margin: 10px;
+        font-size: 10px;
+    }
+
+    a.signup {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .Home, .navArrow, .firstLevelCart {
+        font-size: 14px;
+    }
+
+    .secondLevelCart {
+        font-size: 20px;
+    }
+
+    .container> :first-child {
+        margin-top: 0px;
+    }
+
+    .cartItemsTotal {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        color: #AD4C4C;
+    }
+
+    .cartItemsTotal :nth-child(2) {
+        text-decoration: underline;
+        color: #AD4C4C;
+        cursor: pointer;
+    }
+
+    .menu {
+        max-width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .selectMenu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 0.2rem;
+        padding: 0.5rem 0;
+    }
+
+    .recipeName {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .recipeCount {
+        padding: 0 0.5rem;
+        color: #AD4C4C;
+        font-size: 14px;
+    }
+
+    .changeCountButton {
+        background-color: #FFFFFF;
+        color: #AD4C4C;
+        border: #AD4C4C solid 1px;
+        border-radius: 3px;
+        font-size: 10px;
+    }
+
+    .delivery {
+        padding: 0.5rem 0;
+    }
+
+    .deliveryText {
+        font-size: 10px;
+    }
+
+    .deliveryFee {
+        font-size: 15px;
+    }
+
+    .total {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+
+    .totalFee {
+        font-size: 18px;
+        color: #4E4D4D;
+    }
+
+    .checkout-button {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto 1.5em;
+    }
+
+    .cart-hr { 
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        margin-left: auto;
+        color: #C9C9C9;
+        width: 94%;
+    }
+}

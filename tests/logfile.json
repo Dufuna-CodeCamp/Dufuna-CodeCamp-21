@@ -256,7 +256,7 @@
               "title": "test case: check service-title-3",
               "fullTitle": "Testing Scholars Project test case: check service-title-3",
               "timedOut": false,
-              "duration": 38,
+              "duration": 49,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -393,6 +393,7 @@
               "err": {},
               "uuid": "bd9a4cec-13e3-4a69-a61d-5b2e2fac8978",
               "parentUUID": "56ec3e80-de38-4c53-9004-9d5a22efbf5e",
+
               "isHook": false,
               "skipped": false
             }
@@ -418,7 +419,6 @@
             "4494a6ff-ac1d-4087-8e64-812ead4b0eab",
             "bd9a4cec-13e3-4a69-a61d-5b2e2fac8978"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 836,
