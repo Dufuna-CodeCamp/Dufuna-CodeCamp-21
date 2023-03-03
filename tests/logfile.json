@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-03T17:15:17.669Z",
-    "end": "2023-03-03T17:18:17.699Z",
-    "duration": 180030,
+    "start": "2023-03-03T17:32:43.030Z",
+    "end": "2023-03-03T17:35:43.049Z",
+    "duration": 180019,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8f87abc2-edc9-466b-ba30-f4d45fbef109",
+      "uuid": "da26622e-aa68-423b-9758-c2863457bf2f",
       "title": "",
       "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js",
       "file": "\\dom.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ed2c1179-5996-43e2-9fb6-fa66faa861c6",
+          "uuid": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js",
           "file": "\\dom.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "timedOut": true,
-              "duration": 180013,
+              "duration": 180009,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
                 "diff": null
               },
-              "uuid": "bd79d0d2-797d-47aa-920f-706885267c2a",
-              "parentUUID": "ed2c1179-5996-43e2-9fb6-fa66faa861c6",
+              "uuid": "29e15f4c-cddf-4931-9f2b-3df838ec09d3",
+              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "954388da-1ec8-453b-8f7d-fa03140c365d",
-              "parentUUID": "ed2c1179-5996-43e2-9fb6-fa66faa861c6",
+              "uuid": "c0127809-8445-491b-a479-c113be7c8636",
+              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
-              "uuid": "8f7f12d9-d437-4c90-9269-491eaa043529",
-              "parentUUID": "ed2c1179-5996-43e2-9fb6-fa66faa861c6",
+              "uuid": "527de7a0-308f-4d32-a759-3aca5e0ab8b9",
+              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
-              "uuid": "82a2c4ba-79c0-4aaa-8a07-3d9286393ecd",
-              "parentUUID": "ed2c1179-5996-43e2-9fb6-fa66faa861c6",
+              "uuid": "66b9206a-6d07-49f6-b6c8-05cb9e7ed634",
+              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "91f1236d-227f-4386-aee6-aabd89928bbf",
-              "parentUUID": "ed2c1179-5996-43e2-9fb6-fa66faa861c6",
+              "uuid": "9c828fe7-b488-49ad-a2f0-0f74db96afcb",
+              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
               "isHook": false,
               "skipped": true
             }
@@ -136,9 +136,9 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "8f7f12d9-d437-4c90-9269-491eaa043529",
-            "82a2c4ba-79c0-4aaa-8a07-3d9286393ecd",
-            "91f1236d-227f-4386-aee6-aabd89928bbf"
+            "527de7a0-308f-4d32-a759-3aca5e0ab8b9",
+            "66b9206a-6d07-49f6-b6c8-05cb9e7ed634",
+            "9c828fe7-b488-49ad-a2f0-0f74db96afcb"
           ],
           "duration": 0,
           "root": false,

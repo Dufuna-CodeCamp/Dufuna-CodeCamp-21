@@ -7,10 +7,10 @@ menu.forEach(function(loc){
 function addy(e){
     var orderAddy = document.forms['address-tag']['input-tag'].value;
 
-    if(orderAddy === ''){
+    if(orderAddy === ""){
         alert('Please enter your delivery address')
-        // e.preventDefault();
-        // return false;
+        e.preventDefault();
+        return false;
 
     }else{
         return true;
@@ -24,7 +24,7 @@ active.addEventListener('change', color);
 function color(){
     const orderAddy = document.forms['address-tag']['input-tag'].value;
 
-    if(orderAddy !== ''){
+    if(orderAddy !== ""){
 
         document.getElementById('img1').src = "./images/fast-food.svg";
        
@@ -41,9 +41,6 @@ function color(){
 
         document.getElementById('img4').src = "./images/resturant.svg";
         document.getElementById('text4').style.color = 'brown'
-
-       
-        
         
     }else{
         document.getElementById('img1').src = "./images/fast-food_disabled.svg";
@@ -61,7 +58,6 @@ function color(){
         document.getElementById('img4').src = "./images/resturant_disabled.svg";
         document.getElementById('text4').style.color = '#696969';
        
-        
         return false;
     } 
 }
