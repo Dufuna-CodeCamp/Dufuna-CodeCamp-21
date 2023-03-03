@@ -63,6 +63,7 @@ header{
     color: #696969;
 }
 
+
 #location{
     width: 90%;
     padding: 12px 17px;
@@ -89,8 +90,8 @@ h4{
 .menu{
     color: #696969;
     width: 350px;
-    line-height: 1.5;
-    font-size: 16px;
+    line-height: 1.7;
+    font-size: 15px;
     padding: 40px;
     border: 1px solid #e6e6e6;
     border-radius: 1px;
@@ -159,6 +160,8 @@ footer .terms-copyright p{
 .copy{
     float: right;
 }
+
+/* Javascript */
 
 
 /******* Responsiveness *******/
