@@ -4,12 +4,11 @@ menu.forEach(function(loc){
     loc.addEventListener('click', addy);
 })
 
-function addy(e){
+function addy(){
     var orderAddy = document.forms['address-tag']['input-tag'].value;
 
     if(orderAddy === ""){
         alert('Please enter your delivery address')
-        e.preventDefault();
         return false;
 
     }else{

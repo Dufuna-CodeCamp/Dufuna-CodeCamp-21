@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-03T17:32:43.030Z",
-    "end": "2023-03-03T17:35:43.049Z",
-    "duration": 180019,
+    "start": "2023-03-03T17:55:50.173Z",
+    "end": "2023-03-03T17:58:50.206Z",
+    "duration": 180033,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "da26622e-aa68-423b-9758-c2863457bf2f",
+      "uuid": "c3764a97-6c20-4d62-9e73-ce55423a1e32",
       "title": "",
       "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js",
       "file": "\\dom.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
+          "uuid": "672a48e5-688a-464c-81cb-e4a053161302",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js",
           "file": "\\dom.js",
@@ -49,8 +49,8 @@
                 "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
                 "diff": null
               },
-              "uuid": "29e15f4c-cddf-4931-9f2b-3df838ec09d3",
-              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
+              "uuid": "82159586-1af0-4923-8dd3-3c18903b80d0",
+              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c0127809-8445-491b-a479-c113be7c8636",
-              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
+              "uuid": "e07849c1-95c1-4474-9474-2f3bc6acf861",
+              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
-              "uuid": "527de7a0-308f-4d32-a759-3aca5e0ab8b9",
-              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
+              "uuid": "0c71c203-61d4-409b-979a-3b2b55f82c19",
+              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
-              "uuid": "66b9206a-6d07-49f6-b6c8-05cb9e7ed634",
-              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
+              "uuid": "7981efe1-3066-45fd-9942-fbf751251bd6",
+              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "9c828fe7-b488-49ad-a2f0-0f74db96afcb",
-              "parentUUID": "f2eb47be-3d2f-41ff-9b3c-14fd5c11b5c1",
+              "uuid": "dc9bbbd6-079c-4994-a58c-efaf3348f412",
+              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
               "isHook": false,
               "skipped": true
             }
@@ -136,9 +136,9 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "527de7a0-308f-4d32-a759-3aca5e0ab8b9",
-            "66b9206a-6d07-49f6-b6c8-05cb9e7ed634",
-            "9c828fe7-b488-49ad-a2f0-0f74db96afcb"
+            "0c71c203-61d4-409b-979a-3b2b55f82c19",
+            "7981efe1-3066-45fd-9942-fbf751251bd6",
+            "dc9bbbd6-079c-4994-a58c-efaf3348f412"
           ],
           "duration": 0,
           "root": false,
