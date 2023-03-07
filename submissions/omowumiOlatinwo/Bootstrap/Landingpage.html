@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page for a food ordering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+
+<body>
+    <div class="container" style="color: grey;">
+        <header class="header navbar">
+            <p class="logo" style="max-width: 20px; font-size: 30px; font-weight: 500;"> <a href="#" style="text-decoration: none; color: grey;">Food<span
+                        style="color:rgb(168, 7, 7);">Bag</span></a><p>
+            <ul class="main-nav nav">
+                <li class="nav-item"><a class="text-reset nav-link " href="#">Cart</a></li>
+                <li class="nav-item"><a class="text-reset nav-link" href="#">Login</a></li>
+                <li class="nav-item"><a class="text-reset nav-link" href="#" id="sign" style=" color: rgb(168, 7, 7); border: 2px solid rgb(168, 7, 7); padding: 6px; border-radius: 10px;">Sign up</a></li>
+            </ul>
+        </header class="row">
+        <div class="first col d-flex flex-column align-items-center p-5">
+            <h1>FoodBag</h1>
+            <p class="text-nowrap">Anything food, we have you covered.</p>
+        </div>
+        <!-- Where are you -->
+      <div class="main">
+        <section class="location">
+            <b>
+                <h4 class="text-dark">Where are you?</h4>
+            </b>
+            <br>
+
+            <select id="deliveryLocation" style="width: 100%; border-radius: 7px; padding: 10px; background: url('images/keyboard_arrow_down.svg') no-repeat right; appearance: none;">
+                <option value= "Enter your delivery address">Enter your delivery address</option>
+                <option value="Ring-road">Ring-road</option>
+                <option value="Oluyole">Oluyole</option>
+                <option value="Elebu">Elebu</option>
+                <option value="Dugbe">Dugbe</option>
+            </select>
+        </section>
+          <!-- Pick an Interest -->
+        <section>
+            <br>
+            <b>
+                <h4 class="pick text-dark ">Pick an interest</h4>
+            </b>
+            
+            <div class="boxx row p-4">
+                <div class="carrd col-md px-2 py-2 m-2  text-nowrap" style="box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1); height: 200px;">
+                    <img src="images/fast-food_disabled.svg"  alt="" id ='img' >
+                    <h4 id = 'col'>Fast food</h4>
+                    <p class="p-0 m-0">All sorrows are less with bread</p>
+                </div>
+                <div class="carrd col-md px-2 py-2 m-2 text-nowrap" style="box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1); height: 200px;">
+                    <img src="images/Vegetables & Drinks_disabled.svg" alt="" id ='img'>
+                    <h4 id = 'col' >Vegetables & Fruits</h4>
+                    <p>May not want it, but good for you</p>
+                </div>
+                <div class="carrd col-md px-2 py-2 m-2  text-nowrap" style="box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1); height: 200px;">
+                    <img src="images/Drinks & Cocktails_disabled.svg" alt="" id ='img'>
+                    <h4 id = 'col' >Drinks & Cocktail</h4>
+                    <p>I feel sad for those who don't drink</p>
+                </div>
+                <div class="carrd col-md px-2 py-2 m-2  text-nowrap" style="box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1); height: 200px;">
+                  <img src="images/resturant_disabled.svg" alt="" id ='img'>
+                    <h4 id = 'col' >Restaurants</h4>
+                    <p>All sorrows are less with bread</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- How we serve you -->
+        <section>
+            <h1 class="title d-flex justify-content-center p-4 text-nowrap text-dark">How we serve you</h1>
+
+            <div class="box row p-4 ">
+                <div class="cardd col-md-4 p-4">
+                    <img src="images/Illustration_1.svg" alt="">
+                    <h4 id="col">Tell us where you are</h4>
+                    <p>Select the location you want us to deliver.</p>
+                </div>
+                <div class="cardd col-md-4 p-4">
+                    <img src="images/illustration_2.svg" alt="">
+                    <h4>Tell us what you want</h4>
+                    <p>Browse the type of food that interest you.</p>
+                </div>
+                <div class="cardd col-md-4 p-4">
+                    <img src="images/illustration_3.svg" alt="">
+                    <h4>We'll come running</h4>
+                    <p>Your order will be delivered to you in no time.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Contact -->
+        <footer>
+            <div class="service d-flex  flex-column align-items-center m-4">
+                <h1>Contact us</h1>
+                <div class="social">
+                    <a href="#"> <img src="images/twitter 2.svg" alt=""></a>
+                    <a href="#"> <img src="images/youtube 1.svg" alt=""></a>
+                    <a href="#"> <img src="images/facebook-f 1.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="right p-4">
+                <p>Terms & Conditions . Privacy Policy <span style="float: right;">&copy; Copyright 2021 FoodBag is a registered trademark </span></p>
+            </div>
+
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

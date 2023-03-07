@@ -319,3 +319,77 @@ ul li{
   margin: 40px 0px 0px 10px;
 }
 }
+#verify{
+  margin-bottom: 20px;
+}
+#deliveryorder{
+  font-size: 10px;
+  width: 100%;
+}
+#homecart{
+  margin: 30px 0px 20px;
+}
+.deliveryaddress{
+margin: 20px 0px;
+}
+hr{
+margin: 30px 0px;
+}
+label{
+margin: 20px 0px;
+}
+#radio{
+color: red;
+background-color: red;
+}
+input[type="radio"]{
+accent-color: red;
+width: 60% !important;
+}
+#inputBlock{
+width: 100% !important;
+}
+@media screen and (min-width: 760px){
+#deliveryorder{
+  font-size: 20px;
+  width: 100%;
+}
+#deliver{
+  font-size: 24px;
+}
+#radio{
+  margin-left: 50px;
+}
+}
+
+#ordersuccess{
+  text-align: center;
+}
+#ordersuccess h2{
+  color: green;
+  margin-top: 30px;
+}
+#ordersuccess span{
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-size: 24px;
+  width: 80%;
+}
+#span{
+  margin-bottom: 0px;
+}
+.style{
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  img{
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 769px){
+  img{
+    margin-top: 40px;
+  }
+}
