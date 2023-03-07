@@ -1,0 +1,262 @@
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+}
+#container{
+    margin: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar span{
+    color: #ad4c4c;
+}
+.right-nav{
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.rnc{
+    margin-right: 15px;
+}
+.rnc3{
+    border: 1px solid #ad4c4c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 0;
+}
+.rnc3 a{
+    color: #ad4c4c;
+    font-weight: bold;
+}
+.rnc3:hover{
+    background-color: #ad4c4c;
+    color: white;
+}
+.notify{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ad4c4c;
+    display: none;
+    font-size: 10px;
+}
+/* navigation bar ends */
+
+.homevendor{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.home{
+    color: rgb(209, 214, 212);
+}
+.allvendors{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.imgkfc{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+} 
+.imgkfc img{
+    width: 10%;
+    margin-right: 5px;
+}
+
+.kfc-img img{
+    width: 100%;
+}
+.kfc-img, .kfc-img4{
+    margin-top: 20px;
+    width: 100%;  
+}
+.kfc-img .kfc-price, .kfc-img4 .kfc-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.addtocart{
+    padding: 5px 15px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ad4c4c;
+    color: #ad4c4c;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+/* .removecart{
+    padding: 5px 15px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ad4c4c;
+    color: #ad4c4c;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left: 3px;
+    display: hidden;
+} */
+.price{
+    color: rgb(64, 176, 64);
+}
+.removecart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5px 9px;
+    margin-top: 10px;
+    background-color: #5b5757;
+    border: 1px solid #5b5757;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left: 3px;
+    outline: none; 
+}
+.removecart img{
+    width: 30%;
+}
+.viewall{
+    display: none;
+}
+.view{
+    text-align: center;
+    color: #ad4c4c;
+    margin-top: 40px;
+    font-size: 14px;
+}
+hr{
+    margin-top: 30px; 
+}
+.chic-rep{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+} 
+.chic-rep img{
+    width: 7%;
+    margin-right: 5px;
+}
+.kfc-img4{
+    display: none;
+}
+.kfc-img4 img{
+    width: 100%;
+}
+
+
+/* MEDIA SCREEN */
+/* media query for large screen size */
+@media screen and (min-width: 640px) {
+    #container{
+        margin: 40px 80px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .right-nav{
+        font-size: 16px;
+    }
+    .kfc-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .kfc-section-a{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .kfc-section-b{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .chicken-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .chicken-section-a{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .chicken-section-b{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .kfc-img4{
+        display: block;
+    }
+    .view{
+        display: none;
+    }
+    .viewall{
+        display: block;
+        color: #ad4c4c;
+    }
+    .kfc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .imgkfc {
+        margin-top: 0;
+    }
+    .imgkfc img{
+        width: 40%;
+    }
+    .chic-rep{
+        justify-content: space-between;
+    }
+    .chic-rep-img{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .homevendor{
+        font-size: 14px;
+    }
+    .allvendors{
+        font-size: 18px;
+    }
+}
+
+
+/* media query for larger screen size */
+@media screen and (min-width: 992px){
+    .kfc-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .chicken-section{
+        display: flex;
+        flex-direction: row;
+    }
+}   

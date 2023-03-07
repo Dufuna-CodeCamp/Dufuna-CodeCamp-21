@@ -1,0 +1,147 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 0px 5%;
+}
+a {
+  text-decoration: none;
+  color: #696969;
+}
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #696969;
+  font-weight: 500;
+}
+
+.logo {
+  color: black;
+}
+.logoBag {
+  color: #ad4c4c;
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.navLinks > span {
+  margin-left: 20px;
+}
+.navLinks > span:last-child > a {
+  padding: 5px;
+  color: #ad4c4c;
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+}
+.banner {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  color: #a5a5a5;
+  font-size: 20px;
+}
+
+h3,
+h4 {
+  color: #4e4d4d;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  color: #a5a5a5;
+  border: 1px solid #a5a5a5;
+  border-radius: 8px;
+}
+select:focus {
+  outline: none;
+}
+
+.categories,
+.how-we-serve {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+.categories {
+  padding-bottom: 50px;
+}
+.category {
+  box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 150px;
+  padding: 30px;
+}
+
+.category > img {
+  width: 50px;
+  height: 50px;
+}
+.category > p {
+  font-size: 15px;
+}
+.how-serve {
+  padding: 50px 0px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.serve {
+  width: 350px;
+  text-align: center;
+}
+
+.serve img {
+  width: 80%;
+}
+.contact {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+.socials > span {
+  margin: 0px 8px;
+}
+
+footer {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0px 5%;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+  .serve,
+  .category {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

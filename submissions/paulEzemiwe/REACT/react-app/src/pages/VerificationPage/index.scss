@@ -1,0 +1,82 @@
+$color-primary: #ad4c4c;
+$color-secondary: #ffffff;
+$color-black: #000000;
+$color-grey: #696969;
+$color-light-grey: #c9c9c9;
+
+@mixin display-flex($justify, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin boxSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size: null, $weight: null, $line-height: null) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+.verification__page {
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.verification__page--title {
+    margin-top: 30px;
+    @include font(30px, 500, 45px);
+    color: #000000;
+}
+
+.verification__page--subtitle {
+    margin-bottom: 50px;
+    @include font(16px, 400, 24px);
+    color: $color-primary;
+}
+
+.address__delivery {
+    @include display-flex(space-between);
+    @include font(20px, 500, 30px);
+    margin-bottom: 30px;
+    &--text {
+        color: $color-grey;
+        @include font(16px, 400, 24px);
+        margin: 5px 0 30px;
+    }
+    &--radio {
+        @include boxSize(20px, 20px);
+        accent-color: $color-primary;
+    }
+}
+
+.divider {
+    border-bottom: 1px solid $color-light-grey;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.expiry__cvc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .verification__page {
+        margin: 0 20px;
+        width: auto;
+    }
+    .divider {
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+}
