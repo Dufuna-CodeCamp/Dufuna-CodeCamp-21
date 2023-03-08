@@ -181,8 +181,8 @@
               "skipped": false
             },
             {
-              "title": "test case: check page text",
-              "fullTitle": "Testing Scholars Project test case: check page text",
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
               "duration": 14,
               "state": "passed",
@@ -191,7 +191,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElements(By.css(\"hr\"))\nconst length = await element.length\nassert.equal(length, 1,  \"Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up\");",
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
               "uuid": "3e2db8de-2da7-4252-b525-05cd2441bcd0",
               "parentUUID": "a95128e8-b754-4065-9c90-0f42de609013",
@@ -199,8 +199,8 @@
               "skipped": false
             },
             {
-              "title": "test case: assert image amount is 9",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
+              "title": "test case: check options in dropdown",
+              "fullTitle": "Testing Scholars Project test case: check options in dropdown",
               "timedOut": false,
               "duration": 15,
               "state": "passed",
@@ -209,7 +209,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const images = await driver.findElements(By.css('img'));\nconst size = images.length\nassert.equal(size, 10, `Ensure all the images are present on the page`);",
+              "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
               "uuid": "e9d4b484-7e2b-4dd3-a7f3-0cda118b535f",
               "parentUUID": "a95128e8-b754-4065-9c90-0f42de609013",
