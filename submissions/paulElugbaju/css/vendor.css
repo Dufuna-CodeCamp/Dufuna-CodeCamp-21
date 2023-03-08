@@ -136,6 +136,7 @@ hr {
     margin: 60px;
 }
 
+/* Mobile screen */
 @media screen and (max-width: 600px) {
     nav {
         padding: 35px 40px;
@@ -180,6 +181,8 @@ hr {
     }
 }
 
+
+/* Tablet screen */
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .select-cart-wrapper {
         display: grid;
