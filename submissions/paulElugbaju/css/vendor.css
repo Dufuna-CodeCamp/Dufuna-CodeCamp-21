@@ -135,3 +135,63 @@ nav button {
 hr {
     margin: 60px;
 }
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 35px 40px;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    .head {
+        margin: 40px;
+    }
+
+    .vendor-logo {
+        margin: 10px 40px;
+    }
+
+    .select-cart-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select-cart {
+        margin-left: 40px;
+        width: 85%;
+    }
+
+    hr {
+        margin: 80px 40px 40px;
+    }
+
+    .to-cart {
+        position: relative;
+    }
+
+    .to-cart .vendor-logo .view-all {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .select-cart-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .select-cart {
+        width: 85%;
+    }
+
+    .third-cart {
+        margin-left: 60px;
+    }
+}
