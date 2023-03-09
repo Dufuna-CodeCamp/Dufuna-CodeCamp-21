@@ -1,6 +1,5 @@
 {
   "stats": {
-<<<<<<< HEAD
     "suites": 1,
     "tests": 8,
     "passes": 8,
@@ -272,11 +271,5 @@
       },
       "version": "6.2.0"
     }
-=======
-    "tests": 6,
-    "passes": 4,
-    "failures": 2,
-    "owner": "adebayoObafemi"
->>>>>>> php
   }
 }
