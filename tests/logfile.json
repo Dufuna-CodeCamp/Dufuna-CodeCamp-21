@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-03T17:55:50.173Z",
-    "end": "2023-03-03T17:58:50.206Z",
-    "duration": 180033,
+    "start": "2023-03-09T12:24:41.155Z",
+    "end": "2023-03-09T12:27:41.201Z",
+    "duration": 180046,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,25 +18,25 @@
   },
   "results": [
     {
-      "uuid": "c3764a97-6c20-4d62-9e73-ce55423a1e32",
+      "uuid": "db8923af-ccf0-47c2-9266-bc5f961d8c02",
       "title": "",
-      "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js",
+      "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\dom\\dom.js",
       "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "672a48e5-688a-464c-81cb-e4a053161302",
+          "uuid": "719b9152-a9fd-4ac2-95aa-2e4ddf08d6e1",
           "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js",
+          "fullFile": "C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\dom\\dom.js",
           "file": "\\dom.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver for \"test case: check dropdown\"",
               "timedOut": true,
-              "duration": 180009,
+              "duration": 180018,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -45,12 +45,12 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\Dom\\dom.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
+                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\dom\\dom.js)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Aisha\\desktop\\dufuna-codecamp-21\\tests\\dom\\dom.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
                 "diff": null
               },
-              "uuid": "82159586-1af0-4923-8dd3-3c18903b80d0",
-              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
+              "uuid": "b2f0cf7c-e2fd-4f02-9193-eff65a8b5f8e",
+              "parentUUID": "719b9152-a9fd-4ac2-95aa-2e4ddf08d6e1",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "e07849c1-95c1-4474-9474-2f3bc6acf861",
-              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
+              "uuid": "a54eb2cf-0146-448d-9a8e-7a414f5078b4",
+              "parentUUID": "719b9152-a9fd-4ac2-95aa-2e4ddf08d6e1",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"select\")).isDisplayed();\nassert(element == true)",
               "err": {},
-              "uuid": "0c71c203-61d4-409b-979a-3b2b55f82c19",
-              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
+              "uuid": "35209bed-9f55-4b75-9b52-b5cd830449a9",
+              "parentUUID": "719b9152-a9fd-4ac2-95aa-2e4ddf08d6e1",
               "isHook": false,
               "skipped": true
             },
@@ -107,8 +107,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst option = await driver.findElement(By.css(\"option\")).isDisplayed();\nassert(option == true)",
               "err": {},
-              "uuid": "7981efe1-3066-45fd-9942-fbf751251bd6",
-              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
+              "uuid": "95ad07f8-2491-4d70-9875-85e64ecb6e73",
+              "parentUUID": "719b9152-a9fd-4ac2-95aa-2e4ddf08d6e1",
               "isHook": false,
               "skipped": true
             },
@@ -125,8 +125,8 @@
               "context": null,
               "code": "driver.findElement(By.css(\"select\")).click();\nconst options = await driver.findElements(By.css(\"option\"));\nconst first_option = options[1];\noptions.forEach(option => validateImage(option, first_option));\nasync function validateImage(item, arr) {\n    arr = item.click();\n    const images = await driver.findElements(By.css(\"img\"));\n    const validate = images.length\n    assert.equal(validate, 10, `Ensure the images change when you click on any option`)\n}",
               "err": {},
-              "uuid": "dc9bbbd6-079c-4994-a58c-efaf3348f412",
-              "parentUUID": "672a48e5-688a-464c-81cb-e4a053161302",
+              "uuid": "e0f5b29c-55cd-4996-8362-9f1097985209",
+              "parentUUID": "719b9152-a9fd-4ac2-95aa-2e4ddf08d6e1",
               "isHook": false,
               "skipped": true
             }
@@ -136,9 +136,9 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "0c71c203-61d4-409b-979a-3b2b55f82c19",
-            "7981efe1-3066-45fd-9942-fbf751251bd6",
-            "dc9bbbd6-079c-4994-a58c-efaf3348f412"
+            "35209bed-9f55-4b75-9b52-b5cd830449a9",
+            "95ad07f8-2491-4d70-9875-85e64ecb6e73",
+            "e0f5b29c-55cd-4996-8362-9f1097985209"
           ],
           "duration": 0,
           "root": false,
@@ -174,7 +174,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Aisha/desktop/dufuna-codecamp-21/tests/Dom/../..//tests/",
+        "reportDir": "C:/Users/Aisha/desktop/dufuna-codecamp-21/tests/dom/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
