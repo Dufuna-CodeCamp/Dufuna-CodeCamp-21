@@ -9,5 +9,7 @@
         echo "It's so hot today. <br>";
     } elseif($temperature >= 40) {
         echo "Am i in the Sahara Desert?!";
+    } else {
+        echo "Enter a valid value!";
     }
 ?>
