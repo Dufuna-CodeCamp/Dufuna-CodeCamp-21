@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-03-11T23:27:07.613Z",
-    "end": "2023-03-11T23:27:09.227Z",
-    "duration": 1614,
+    "start": "2023-03-11T23:31:58.489Z",
+    "end": "2023-03-11T23:32:00.124Z",
+    "duration": 1635,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0ef055ae-399e-4c01-9d94-162b1fe71b21",
+      "uuid": "f164a72b-af74-4f28-b154-a314983c8253",
       "title": "",
       "fullFile": "C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
       "file": "\\conditionals_test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "be8c4e55-57ee-44de-b651-e7449fe6ed94",
+          "uuid": "29d35e1d-c0ee-4fb3-af26-d38b6df30530",
           "title": "Testing javascript conditionals",
           "fullFile": "C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 1500,
+              "duration": 1546,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "a63a592d-e1b2-433a-a6fc-9d9ccd60350b",
-              "parentUUID": "be8c4e55-57ee-44de-b651-e7449fe6ed94",
+              "uuid": "b542c5c7-f908-459f-9ced-647d7c28d572",
+              "parentUUID": "29d35e1d-c0ee-4fb3-af26-d38b6df30530",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "2c060119-1773-4f0f-a82f-60c41bd5fd61",
-              "parentUUID": "be8c4e55-57ee-44de-b651-e7449fe6ed94",
+              "uuid": "deab3916-71f6-41f8-8dff-6626eb6e42bf",
+              "parentUUID": "29d35e1d-c0ee-4fb3-af26-d38b6df30530",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 98,
+              "duration": 73,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'Software'\n    at Context.<anonymous> (conditionals_test.js:28:24)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "1c14ff86-b30b-4e57-95c9-428c68b8326f",
-              "parentUUID": "be8c4e55-57ee-44de-b651-e7449fe6ed94",
+              "uuid": "499d941d-a8f9-45c6-9505-529d744fb15f",
+              "parentUUID": "29d35e1d-c0ee-4fb3-af26-d38b6df30530",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "1c14ff86-b30b-4e57-95c9-428c68b8326f"
+            "499d941d-a8f9-45c6-9505-529d744fb15f"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 98,
+          "duration": 73,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
