@@ -13,4 +13,4 @@ for (i = 1; i <= x; i++) {
     else {
         document.write(i + "<br>")
     };
-};
+}
