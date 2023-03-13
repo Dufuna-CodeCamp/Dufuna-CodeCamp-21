@@ -35,16 +35,17 @@
         <p>Anything food, we have you covered.</p>
     </div>
 
-   <form>
-    <label><h4 class="details">Where are you?</h4></label>
-    <input list="address" name="address" id="location" placeholder="Enter your delivery address"> 
+   <form name="address-tag">
+    <label for="address"><h4 class="details">Where are you?</h4></label>
+    <input list="address" name="input-tag" id="location" placeholder="Enter your delivery address"> 
 
    <datalist id="address">
-    <option value="Bodija"/>
-    <option value="Challenge"/>
-    <option value="Agbeni/Ogunpa"/>
-    <option value="Moniya"/>
-    <option value="Alakia"/>
+    <option value="Lagos-Mainland"/>
+    <option value="Lagos-Island"/>
+    <option value="Abule-Egba"/>
+    <option value="Badagry"/>
+    <option value="Epe"/>
+    <option value="Berger"/>
    </datalist>
     </form> 
 
@@ -54,26 +55,26 @@
 
     <div class="interest">
     <div class="menu">
-        <a href=""><img src="./images/fast-food_disabled.svg" alt="food"></a>
-        <h5>Fast food</h5>
+        <a href="http://127.0.0.1:5500/css/vendor.html"><img id="img1" src="./images/fast-food_disabled.svg" alt="food"></a>
+        <h5 id="text1">Fast food</h5>
         <p>All sorrows are less with bread.</p>
     </div>
 
     <div class="menu">
-        <a href=""><img src="./images/Vegetables & Drinks_disabled.svg" alt="veggies"></a>
-        <h5>Vegetables & Fruits</h5>
+        <a href="http://127.0.0.1:5500/css/vendor.html"><img id="img2" src="./images/Vegetables & Drinks_disabled.svg" alt="veggies"></a>
+        <h5 id="text2">Vegetables & Fruits</h5>
         <p>May not want it, but good for you.</p>
     </div>
 
     <div class="menu">
-        <a href=""><img src="./images/Drinks & Cocktails_disabled.svg" alt="drinks"></a>
-        <h5>Drinks & Cocktails</h5>
+        <a href="http://127.0.0.1:5500/css/vendor.html"><img id="img3" src="./images/Drinks & Cocktails_disabled.svg" alt="drinks"></a>
+        <h5 id="text3">Drinks & Cocktails</h5>
         <p>I feel sorry for those who don't drink.</p>
     </div>
 
     <div class="menu">
-        <a href=""><img src="./images/resturant_disabled.svg" alt="restaurants"></a>
-        <h5>Resturants</h5>
+        <a href="http://127.0.0.1:5500/css/vendor.html"><img id="img4" src="./images/resturant_disabled.svg" alt="restaurants"></a>
+        <h5 id="text4">Resturants</h5>
         <p>All sorrows are less with bread</p>
     </div>
    </div>
@@ -119,5 +120,7 @@
    </div>
    
    </footer>
+
+   <script src="../../Dom/landingpage.js"></script>
 </body>
 </html>
