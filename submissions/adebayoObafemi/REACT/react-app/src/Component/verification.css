@@ -1,0 +1,114 @@
+body {
+    box-sizing: border-box;
+}
+
+.Home,
+.firstLevelCart {
+    color: #C9C9C9;
+}
+
+.secondLevelNav h6 {
+    color: #AD4C4C;
+    font-weight: lighter;
+}
+
+img[alt="locationChecked"] {
+    width: 1.5rem;
+}
+
+section.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 15px;
+}
+
+section.address h6 {
+    color: #696969;
+    font-weight: lighter;
+}
+
+input {
+    margin: 5px 0 20px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid hsla(0, 0%, 77%, 1);
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 20px;
+    box-sizing: border-box;  /* this line of code ensures that the input field does not overflow its parent component. */
+}
+
+hr {
+    margin: 10px 0 30px;
+}
+
+.payment-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 5em;
+    width: 80%;
+    background-color: #AD4C4C;
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 360px) {
+    nav ul {
+        font-size: 5px;
+    }
+
+    .firstLevelNav {
+        font-size: 14px;
+    }
+
+    .secondLevelCart {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .container> :first-child {
+        margin-top: 30px;
+    }
+
+    section.address h4 {
+        font-size: 14px;
+    }
+    section.address {
+        margin-bottom: 1.5rem;
+    }
+
+    section.address h4 {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    input {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    div.cardinfo {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .payment-button {
+        margin: 20px auto;
+    }
+}
