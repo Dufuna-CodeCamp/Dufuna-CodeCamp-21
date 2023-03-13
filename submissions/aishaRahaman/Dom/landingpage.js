@@ -9,8 +9,8 @@ function addy(e){
 
     if(orderAddy === ''){
         alert('Please enter your delivery address')
-        // e.preventDefault();
-        // return false;
+         e.preventDefault();
+         return false;
 
     }else{
         return true;
