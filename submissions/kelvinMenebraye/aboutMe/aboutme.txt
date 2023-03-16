@@ -1,2 +1,2 @@
-hello world!!
-my name is kelvin Menebraye i am a software engineer
+hello world!
+i am kelvin and i am a software engineer
