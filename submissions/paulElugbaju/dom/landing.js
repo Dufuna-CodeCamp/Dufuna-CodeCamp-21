@@ -5,7 +5,6 @@ let image = document.querySelectorAll('.interest-image')
 
 interest.forEach((int) => {
     int.addEventListener('click', interestClick);
-    // int.addEventListener('mouseover', hoverColor);
 })
 
 function interestClick (e) {
@@ -17,12 +16,6 @@ function interestClick (e) {
         return true;
     }
 };
-
-// function hoverColor (e) {
-//     if (address.value == '') {
-//         interest.style.backgroundColor = 'rgba(0,0,0,0.6)'
-//     }
-// }
 
 address.addEventListener('change', interestStyle);
 
@@ -38,11 +31,11 @@ function interestStyle (e) {
     })
     interest.forEach((load) => {
         load.addEventListener('click', vendorPage)
-        function vendorPage (e) {
+        function vendorPage () {
             window.location.href = './vendor.html'
         }
-    });
-    return true;
+    })
+        return true;
     } else {
         return false;
     }
