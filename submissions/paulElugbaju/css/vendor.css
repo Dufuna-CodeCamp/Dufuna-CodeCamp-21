@@ -46,9 +46,20 @@ nav button {
     cursor: pointer;
 }
 
+#cart {
+    position: relative;
+}
+
+#check {
+    position: absolute;
+    width: 30%;
+    display: none;
+}
+
 .head {
     margin: 40px 60px 25px;
 }
+
 .head p {
     padding: 15px 0;
 }
@@ -71,7 +82,6 @@ nav button {
 }
 
 .vendor-logo {
-    /* display: inline; */
     margin: 10px 60px;
 }
 
@@ -111,7 +121,7 @@ nav button {
     color: limegreen;
 }
 
-.select-cart button {
+.btn {
    margin: 10px 0;
    padding: 8px 10px;
    width: 50%;
