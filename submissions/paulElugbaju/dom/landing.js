@@ -16,7 +16,7 @@ function interestClick (e) {
     } else {
         return true;
     }
-};
+}
 
 // function hoverColor (e) {
 //     if (address.value == '') {
@@ -38,7 +38,7 @@ function interestStyle (e) {
     })
     interest.forEach((load) => {
         load.addEventListener('click', vendorPage)
-        function vendorPage (e) {
+        function vendorPage () {
             window.location.href = './vendor.html'
         }
     });
@@ -46,4 +46,4 @@ function interestStyle (e) {
     } else {
         return false;
     }
-};
+}
