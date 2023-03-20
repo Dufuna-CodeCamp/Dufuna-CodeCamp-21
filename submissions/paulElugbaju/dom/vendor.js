@@ -10,7 +10,7 @@ button.forEach((rem) => {
             rem.style.justifyContent = 'space-around';
             rem.style.alignItems = 'center';
             rem.style.backgroundColor = '#a5a5a5';
-            rem.style.color = '#fff';
+            rem.style.color = 'white';
             rem.style.border = 'none'
         } else if (rem.innerText == 'Remove') {
             rem.innerHTML = 'Add to Cart';
