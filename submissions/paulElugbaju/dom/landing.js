@@ -16,7 +16,7 @@ function interestClick (e) {
     } else {
         return true;
     }
-};
+}
 
 // function hoverColor (e) {
 //     if (address.value == '') {
@@ -46,4 +46,4 @@ function interestStyle (e) {
     } else {
         return false;
     }
-};
+}
