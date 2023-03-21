@@ -17,7 +17,7 @@ button.forEach((rem) => {
             rem.style.backgroundColor = '#fff';
             rem.style.color = '#ad4c4c';
             rem.style.border = '1.5px solid #ad4c4c';
-        };
+        }
 
         const cartList = document.querySelectorAll('.remove').length;
 
