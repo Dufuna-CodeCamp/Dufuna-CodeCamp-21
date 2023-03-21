@@ -3,7 +3,7 @@ const check = document.getElementById('check');
 // console.dir(check)
 
 button.forEach((rem) => {
-    rem.addEventListener('click', function (e) {
+    rem.addEventListener('click', function () {
         if (rem.innerHTML == 'Add to Cart') {
             rem.innerHTML = '<img src="./images/remove.svg" alt="" style = "width: 30%; margin: -5px 5px -5px -5px; color: #fff" class = "remove">Remove';
             rem.style.display = 'flex';
@@ -16,7 +16,7 @@ button.forEach((rem) => {
             rem.innerHTML = 'Add to Cart';
             rem.style.backgroundColor = '#fff';
             rem.style.color = '#ad4c4c';
-            rem.style.border = '1.5px solid #ad4c4c';
+            rem.style.border = '1.5px solid #ad4c4c'
         }
 
         const cartList = document.querySelectorAll('.remove').length;
@@ -29,4 +29,4 @@ button.forEach((rem) => {
             check.style.display = 'none'
         }
     })
-});
+})
