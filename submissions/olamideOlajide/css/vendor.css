@@ -92,7 +92,7 @@ nav li{
 
 
 /* media query for larger screen size */
-@media screen and (max-width: 640px){
+@media screen and (max-width: 480px){
     .kfc img{
         width: 350px;
     }
@@ -103,7 +103,7 @@ nav li{
         margin: 15px;
     }
 }   
-@media screen and (min-width: 650px){
+@media screen and (min-width: 960px){
     .kfc img{
         width: 300px;
     }
