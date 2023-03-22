@@ -30,7 +30,6 @@
           "uuid": "85dddbbd-2d1d-4d33-8a90-2bb0e5553a83",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\landing_page\\landing_page.js",
-          "file": "\\landing_page.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
@@ -418,7 +417,6 @@
             "75c16e8f-2140-42a7-9ce9-f8bc2b0f9728",
             "cdf3b39d-3389-48f7-a455-90dbb32b175a"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 895,
