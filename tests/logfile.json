@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 5,
-    "start": "2023-03-26T08:04:32.097Z",
-    "end": "2023-03-26T08:04:33.569Z",
-    "duration": 1472,
+    "start": "2023-03-26T08:39:05.224Z",
+    "end": "2023-03-26T08:39:06.761Z",
+    "duration": 1537,
     "testsRegistered": 5,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "57fe3bc2-4888-4550-b0e3-9a883e4ff2cd",
+      "uuid": "5dbebfef-b42b-4d01-907d-07791724dab7",
       "title": "",
       "fullFile": "C:\\Users\\Ifeanyi\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
       "file": "\\html_form.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+          "uuid": "9a135602-9833-4e90-be14-5f96178b029d",
           "title": "Testing Form Task",
           "fullFile": "C:\\Users\\Ifeanyi\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
           "file": "\\html_form.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
               "err": {},
-              "uuid": "10f258ed-7286-4881-ae4a-3733d2d8cfd5",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "2b78b047-cee2-4fa8-98e6-665e3ea70a96",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "ebb0d076-23ab-4378-8f57-99f28d0a95a4",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "76eeb55a-d9a8-4341-a56e-6eda13d2493a",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: assert 4 input fields are present",
               "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
               "timedOut": false,
-              "duration": 973,
+              "duration": 1281,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: Ensure you have all the input fields in the order stated in the task criteria: expected +0 to equal 4\n    at Context.<anonymous> (html_form.js:22:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 0\n+ 4\n"
               },
-              "uuid": "6033df19-cf2c-4cab-95ad-489a3cd37a63",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "2b45b3a0-2dc5-450f-82a4-ddae31f3ec71",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: Full Name label is present",
               "fullTitle": "Testing Form Task test case: Full Name label is present",
               "timedOut": false,
-              "duration": 396,
+              "duration": 49,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Ensure \"Full Name\" label is present: expected 'your file couldn’t be accessed\\nit ma…' to include 'full name'\n    at Context.<anonymous> (html_form.js:33:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "eb654075-c509-47f1-b15c-d7f83a07e69f",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "36c1730e-7867-4dfa-a7b7-553a3ed2794b",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: Email label is present",
               "fullTitle": "Testing Form Task test case: Email label is present",
               "timedOut": false,
-              "duration": 31,
+              "duration": 76,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -133,8 +133,8 @@
                 "estack": "AssertionError: Ensure \"Email\" label is present: expected 'your file couldn’t be accessed\\nit ma…' to include 'email'\n    at Context.<anonymous> (html_form.js:44:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "3b148c20-6958-4f9f-8e1f-51b922c556db",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "dad65bc3-412c-403f-9305-250ae216a687",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +142,7 @@
               "title": "test case: Subject label is present",
               "fullTitle": "Testing Form Task test case: Subject label is present",
               "timedOut": false,
-              "duration": 33,
+              "duration": 57,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -155,8 +155,8 @@
                 "estack": "AssertionError: Ensure \"Subject\" label is present: expected 'your file couldn’t be accessed\\nit ma…' to include 'subject'\n    at Context.<anonymous> (html_form.js:51:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "33185080-84e2-40d2-b126-5cf0bac23ec3",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "946c12b6-fa58-4d6a-9efb-c923be279b28",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": false,
               "skipped": false
             },
@@ -164,7 +164,7 @@
               "title": "test case: Message label is present",
               "fullTitle": "Testing Form Task test case: Message label is present",
               "timedOut": false,
-              "duration": 28,
+              "duration": 58,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -177,8 +177,8 @@
                 "estack": "AssertionError: Ensure \"Message\" label is present: expected 'your file couldn’t be accessed\\nit ma…' to include 'message'\n    at Context.<anonymous> (html_form.js:58:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "59311f0b-4362-423a-b11e-7260489f3bd4",
-              "parentUUID": "c62e258f-7e0b-4b48-b2dd-66b64324313f",
+              "uuid": "76775954-d168-4ed3-b6d7-26cf5dd7a980",
+              "parentUUID": "9a135602-9833-4e90-be14-5f96178b029d",
               "isHook": false,
               "skipped": false
             }
@@ -186,15 +186,15 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "6033df19-cf2c-4cab-95ad-489a3cd37a63",
-            "eb654075-c509-47f1-b15c-d7f83a07e69f",
-            "3b148c20-6958-4f9f-8e1f-51b922c556db",
-            "33185080-84e2-40d2-b126-5cf0bac23ec3",
-            "59311f0b-4362-423a-b11e-7260489f3bd4"
+            "2b45b3a0-2dc5-450f-82a4-ddae31f3ec71",
+            "36c1730e-7867-4dfa-a7b7-553a3ed2794b",
+            "dad65bc3-412c-403f-9305-250ae216a687",
+            "946c12b6-fa58-4d6a-9efb-c923be279b28",
+            "76775954-d168-4ed3-b6d7-26cf5dd7a980"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1461,
+          "duration": 1521,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
