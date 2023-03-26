@@ -89,3 +89,25 @@ nav li{
     color: red;
     border: 1px solid rgb(0, 0, 0);
 }
+
+
+/* media query for larger screen size */
+@media screen and (max-width: 480px){
+    .kfc img{
+        width: 350px;
+    }
+    .kfc span{
+        margin-right: -70px;
+    }
+    .kfc-header a{
+        margin: 15px;
+    }
+}   
+@media screen and (min-width: 960px){
+    .kfc img{
+        width: 300px;
+    }
+    .kfc span{
+        margin-right: -10px;
+    }
+}
