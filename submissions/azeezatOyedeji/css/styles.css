@@ -132,3 +132,8 @@ input {
     width: 80vw;
   }
 }
+@media screen and (max-width: 1440px) {
+  .interest-container {
+    justify-content: space-evenly;
+  }
+}
