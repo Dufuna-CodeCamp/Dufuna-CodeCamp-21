@@ -132,8 +132,16 @@ input {
     width: 80vw;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
+  input {
+    width: 89vw;
+  }
   .interest-container {
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .service {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
   }
 }
