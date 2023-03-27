@@ -79,7 +79,7 @@ button {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
   body {
     padding: 0;
   }
@@ -90,7 +90,6 @@ button {
     display: grid;
     grid-template-columns: 1fr;
   }
-
   .view-one {
     display: none;
   }
@@ -108,7 +107,8 @@ button {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 581px) {
+
+@media screen and (min-width: 768px) {
   .view-two {
     display: none;
   }
@@ -116,10 +116,5 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .view-two {
-    display: none;
   }
 }
