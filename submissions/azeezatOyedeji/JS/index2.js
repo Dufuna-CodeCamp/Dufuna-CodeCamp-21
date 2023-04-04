@@ -15,13 +15,14 @@ const productList = [
     productPrice: "$15",
   },
 ];
-productList.forEach((items) => {
+
+productList.forEach((item) => {
   document.write(
-    items.productName +
+    item.productName +
       " with " +
-      items.imageUrl +
+      item.imageUrl +
       " is sold for " +
-      items.productPrice +
+      item.productPrice +
       "<br/>"
   );
 });

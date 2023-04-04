@@ -5,9 +5,15 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2023-04-04T14:22:07.755Z",
     "end": "2023-04-04T14:22:09.611Z",
     "duration": 1856,
+=======
+    "start": "2023-04-04T09:13:11.655Z",
+    "end": "2023-04-04T09:13:16.861Z",
+    "duration": 5206,
+>>>>>>> origin/odun-print
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -17,8 +23,12 @@
     "hasSkipped": false
   },
   "results": [
+<<<<<<< HEAD
     {
       "uuid": "de763d73-53c8-490c-818a-5a69dcd45294",
+=======
+      "uuid": "86f42c8b-d3d3-45c5-85a9-8fc456b02597",
+>>>>>>> origin/odun-print
       "title": "",
       "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
       "file": "\\test.js",
@@ -26,8 +36,12 @@
       "afterHooks": [],
       "tests": [],
       "suites": [
+<<<<<<< HEAD
         {
           "uuid": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+          "uuid": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
           "title": "Printing product price",
           "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
           "file": "\\test.js",
@@ -36,7 +50,11 @@
               "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
               "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 1634,
+=======
+              "duration": 5007,
+>>>>>>> origin/odun-print
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +63,13 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "324de0b3-45f1-4786-9514-bfcce44b0121",
               "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "uuid": "20a33d3b-5a48-4a63-9f34-99612aea15e0",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +88,13 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+<<<<<<< HEAD
               "uuid": "ce50aba2-86bd-428c-ab11-921f892e1686",
               "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "uuid": "0498da3a-8465-4101-bafb-ef2765d60093",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +104,11 @@
               "title": "test case: check product details",
               "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 147,
+=======
+              "duration": 130,
+>>>>>>> origin/odun-print
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +117,13 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
+<<<<<<< HEAD
               "uuid": "79a3369a-5002-4837-be46-dd5e2f5f1915",
               "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "uuid": "639ab8fb-7ac8-4916-b60d-0732dffe6076",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": false,
               "skipped": false
             },
@@ -94,30 +131,50 @@
               "title": "test case: check three arrays are present",
               "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 62,
+=======
+              "duration": 46,
+>>>>>>> origin/odun-print
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
+<<<<<<< HEAD
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
               "uuid": "e4783beb-5c88-476e-be22-c79c67a3f0b0",
               "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
+              "err": {},
+              "uuid": "7615d1a7-6d74-4a23-92e7-32e23379b45f",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
+<<<<<<< HEAD
             "79a3369a-5002-4837-be46-dd5e2f5f1915",
             "e4783beb-5c88-476e-be22-c79c67a3f0b0"
+=======
+            "639ab8fb-7ac8-4916-b60d-0732dffe6076",
+            "7615d1a7-6d74-4a23-92e7-32e23379b45f"
+>>>>>>> origin/odun-print
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
+<<<<<<< HEAD
           "duration": 209,
+=======
+          "duration": 176,
+>>>>>>> origin/odun-print
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
