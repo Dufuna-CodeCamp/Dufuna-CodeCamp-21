@@ -1,14 +1,20 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 4,
-    "passes": 4,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-04-03T14:25:24.061Z",
-    "end": "2023-04-03T14:25:29.600Z",
-    "duration": 5539,
-    "testsRegistered": 4,
+<<<<<<< HEAD
+    "start": "2023-04-04T14:22:07.755Z",
+    "end": "2023-04-04T14:22:09.611Z",
+    "duration": 1856,
+=======
+    "start": "2023-04-04T09:13:11.655Z",
+    "end": "2023-04-04T09:13:16.861Z",
+    "duration": 5206,
+>>>>>>> origin/odun-print
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -17,46 +23,63 @@
     "hasSkipped": false
   },
   "results": [
+<<<<<<< HEAD
     {
-      "uuid": "e07c51d7-b68e-446d-a30b-d9402084d0c7",
+      "uuid": "de763d73-53c8-490c-818a-5a69dcd45294",
+=======
+      "uuid": "86f42c8b-d3d3-45c5-85a9-8fc456b02597",
+>>>>>>> origin/odun-print
       "title": "",
-      "fullFile": "C:\\Users\\Diph\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
-      "file": "\\html_task.js",
+      "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
+      "file": "\\test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
+<<<<<<< HEAD
         {
-          "uuid": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
-          "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\Diph\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
-          "file": "\\html_task.js",
+          "uuid": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+          "uuid": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
+          "title": "Printing product price",
+          "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
+          "file": "\\test.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
               "timedOut": false,
-              "duration": 5015,
+<<<<<<< HEAD
+              "duration": 1634,
+=======
+              "duration": 5007,
+>>>>>>> origin/odun-print
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "1c74c75d-fb18-49b3-8d4d-ec6bdc8d5af7",
-              "parentUUID": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
+<<<<<<< HEAD
+              "uuid": "324de0b3-45f1-4786-9514-bfcce44b0121",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "uuid": "20a33d3b-5a48-4a63-9f34-99612aea15e0",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,97 +88,93 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "65cfb88d-89a6-4269-a625-db6b8fcf60e9",
-              "parentUUID": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
+<<<<<<< HEAD
+              "uuid": "ce50aba2-86bd-428c-ab11-921f892e1686",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "uuid": "0498da3a-8465-4101-bafb-ef2765d60093",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check if Price is present",
-              "fullTitle": "Testing Scholars Project test case: check if Price is present",
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
-              "duration": 475,
+<<<<<<< HEAD
+              "duration": 147,
+=======
+              "duration": 130,
+>>>>>>> origin/odun-print
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst price = text.toLowerCase();\nassert.include(price, \"price\", `Ensure Price is present`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "ebc78357-2285-4371-bc6f-54d9193033d9",
-              "parentUUID": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
+<<<<<<< HEAD
+              "uuid": "79a3369a-5002-4837-be46-dd5e2f5f1915",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "uuid": "639ab8fb-7ac8-4916-b60d-0732dffe6076",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "test case: check if Description is present",
-              "fullTitle": "Testing Scholars Project test case: check if Description is present",
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
-              "duration": 23,
+<<<<<<< HEAD
+              "duration": 62,
+=======
+              "duration": 46,
+>>>>>>> origin/odun-print
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
+<<<<<<< HEAD
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst description = text.toLowerCase();\nassert.include(description, \"description\", `Ensure DESCRIPTION is present`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "e6dfb9cd-39c2-4139-970c-8a872a67701b",
-              "parentUUID": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: assert image amount is 2",
-              "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
-              "timedOut": false,
-              "duration": 12,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+              "uuid": "e4783beb-5c88-476e-be22-c79c67a3f0b0",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
+=======
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "dd30735c-9db3-4d0c-b7b2-9e950bcad49a",
-              "parentUUID": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "test case: ordered list available",
-              "fullTitle": "Testing Scholars Project test case: ordered list available",
-              "timedOut": false,
-              "duration": 1,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
-              "err": {},
-              "uuid": "58cdb6b1-5817-4022-8e1f-8735eb4e908a",
-              "parentUUID": "949ea4ad-e3bc-4e8a-b133-b083749b2c0a",
+              "uuid": "7615d1a7-6d74-4a23-92e7-32e23379b45f",
+              "parentUUID": "63dca87d-7b2c-4243-a9de-16753d0c4657",
+>>>>>>> origin/odun-print
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ebc78357-2285-4371-bc6f-54d9193033d9",
-            "e6dfb9cd-39c2-4139-970c-8a872a67701b",
-            "dd30735c-9db3-4d0c-b7b2-9e950bcad49a",
-            "58cdb6b1-5817-4022-8e1f-8735eb4e908a"
+<<<<<<< HEAD
+            "79a3369a-5002-4837-be46-dd5e2f5f1915",
+            "e4783beb-5c88-476e-be22-c79c67a3f0b0"
+=======
+            "639ab8fb-7ac8-4916-b60d-0732dffe6076",
+            "7615d1a7-6d74-4a23-92e7-32e23379b45f"
+>>>>>>> origin/odun-print
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 511,
+<<<<<<< HEAD
+          "duration": 209,
+=======
+          "duration": 176,
+>>>>>>> origin/odun-print
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -189,7 +208,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Diph/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+        "reportDir": "C:/Users/odunola/OneDrive/desktop/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
