@@ -17,7 +17,6 @@
     "hasSkipped": false
   },
   "results": [
-    {
       "uuid": "86f42c8b-d3d3-45c5-85a9-8fc456b02597",
       "title": "",
       "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
@@ -26,7 +25,6 @@
       "afterHooks": [],
       "tests": [],
       "suites": [
-        {
           "uuid": "63dca87d-7b2c-4243-a9de-16753d0c4657",
           "title": "Printing product price",
           "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
@@ -100,7 +98,6 @@
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
               "uuid": "7615d1a7-6d74-4a23-92e7-32e23379b45f",
