@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-04-04T10:58:03.408Z",
-    "end": "2023-04-04T10:58:08.116Z",
-    "duration": 4708,
+    "start": "2023-04-04T14:22:07.755Z",
+    "end": "2023-04-04T14:22:09.611Z",
+    "duration": 1856,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c20268a6-5234-45d3-88a1-e30ed8256f32",
+      "uuid": "de763d73-53c8-490c-818a-5a69dcd45294",
       "title": "",
       "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
       "file": "\\test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "573ccfae-706a-44ba-9c3f-a5ed20a31e86",
+          "uuid": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
           "title": "Printing product price",
           "fullFile": "C:\\Users\\odunola\\OneDrive\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
           "file": "\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
               "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
               "timedOut": false,
-              "duration": 4548,
+              "duration": 1634,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "a111ecca-a658-4308-a75c-45c49f836f7c",
-              "parentUUID": "573ccfae-706a-44ba-9c3f-a5ed20a31e86",
+              "uuid": "324de0b3-45f1-4786-9514-bfcce44b0121",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Printing product price\"",
               "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "3b0cc1c1-4e04-4ae4-9074-264bf741cda5",
-              "parentUUID": "573ccfae-706a-44ba-9c3f-a5ed20a31e86",
+              "uuid": "ce50aba2-86bd-428c-ab11-921f892e1686",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check product details",
               "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
-              "duration": 99,
+              "duration": 147,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,8 +85,8 @@
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
-              "uuid": "383b1c80-e0d6-4e4a-810e-43e9682d6788",
-              "parentUUID": "573ccfae-706a-44ba-9c3f-a5ed20a31e86",
+              "uuid": "79a3369a-5002-4837-be46-dd5e2f5f1915",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
               "isHook": false,
               "skipped": false
             },
@@ -94,30 +94,30 @@
               "title": "test case: check three arrays are present",
               "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
-              "duration": 30,
+              "duration": 62,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
               "err": {},
-              "uuid": "b9691d0b-8047-43a7-a8e2-b0fabb1dc567",
-              "parentUUID": "573ccfae-706a-44ba-9c3f-a5ed20a31e86",
+              "uuid": "e4783beb-5c88-476e-be22-c79c67a3f0b0",
+              "parentUUID": "a4a2c20a-3ff8-4668-8bd2-19b0d6ad14ab",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "383b1c80-e0d6-4e4a-810e-43e9682d6788",
-            "b9691d0b-8047-43a7-a8e2-b0fabb1dc567"
+            "79a3369a-5002-4837-be46-dd5e2f5f1915",
+            "e4783beb-5c88-476e-be22-c79c67a3f0b0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 129,
+          "duration": 209,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
