@@ -1,5 +1,7 @@
-Hello!
-I am Christopher Akinfenwa
-I am a Software Engineer.
+Hello World!
 
-I hope I got better.
+I am Akinfenwa Taiwo Christopher and I am a frontend Software Developer
+
+Currently Studying Civil Engineering in Unversity of Ibadan
+
+I hope I got better after the end of this course.
