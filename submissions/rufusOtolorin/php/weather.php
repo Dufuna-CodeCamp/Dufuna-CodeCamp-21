@@ -1,5 +1,6 @@
 <?php 
 // room temperature = 25
+//so i will use the room temperature which is perfect
 $temperature = 25;
 
 if($temperature <= 20) {
