@@ -15,9 +15,9 @@
     >
     <br /><br />
     <h1>CONTACT US</h1>
-    <form action="" method="post">
       <fieldset>
         <legend>Contact Form</legend>
+        <form action="#" method="post">
         <label for="fullname">Full Name; </label><br />
         <input
           type="text"
@@ -33,7 +33,7 @@
           placeholder="amakaubong@email.com"
         /><br /><br />
 
-        <label>Subject; </label><br />
+        <label for="subject">Subject; </label><br />
         <input list="subject-list" id="subject1" name="subject" />
         <datalist id="subject-list">
           <option value="Camon 17" />
@@ -44,7 +44,7 @@
           Message; <br />
           <textarea rows="11" col="50" name="message"> </textarea><br /><br />
         </form>
-        <button type="submit">Submit</button>
+        <input type="button" name="submit" value="submit"/>
       </fieldset>
     </form>
   </body>
