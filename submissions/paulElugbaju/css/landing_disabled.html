@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    
     <nav>
         <a href="#">Food<span>Bag</span></a href="/">
         <ul>
@@ -26,7 +25,7 @@
 
     <div class="location-select"> 
         <label for="location">Where are you?</label> <br>
-        <input list="localtion-list" id="location" disabled placeholder="Enter your delivery address">
+        <input list="localtion-list" id="location" placeholder="Enter your delivery address">
             <datalist id="localtion-list">
                 <option value="Abia">
                 <option value="Abuja">
@@ -51,25 +50,27 @@
 
     <div class="interest">
         <p>Pick an interest</p>
-        <div class="your-interest">
-            <img src="images/fast-food_disabled.svg" alt="Fast-food">
-            <p class="services">Fast food</p>
-            <p class="services-caption">All sorrows are less with bread</p>
-        </div>
-        <div class="your-interest">
-            <img src="images/Vegetables _ Drinks_disabled.svg" alt="Vegetables _ Drinks">
-            <p class="services">Vegetables & Fruits</p>
-            <p class="services-caption">May not want it, but good for you.</p>
-        </div>
-        <div class="your-interest">
-            <img src="images/Drinks _ Cocktails_disabled.svg" alt="Drinks _ Cocktails">
-            <p class="services">Drinks & Cocktails</p>
-            <p class="services-caption">I feel sad for those who don't drink.</p>
-        </div>
-        <div class="your-interest">
-            <img src="images/resturant_disabled.svg" alt="Restaurant">
-            <p class="services">Restaurants</p>
-            <p class="services-caption">All sorrows are less with bread.</p>
+        <div class="interest-wrapper">
+            <div class="your-interest">
+                <img class="interest-image" src="images/fast-food_disabled.svg" alt="Fast-food">
+                <p class="services">Fast food</p>
+                <p class="services-caption">All sorrows are less with bread</p>
+            </div>
+            <div class="your-interest">
+                <img class="interest-image" src="images/Vegetables _ Drinks_disabled.svg" alt="Vegetables _ Drinks">
+                <p class="services">Vegetables & Fruits</p>
+                <p class="services-caption">May not want it, but good for you.</p>
+            </div>
+            <div class="your-interest">
+                <img class="interest-image" src="images/Drinks _ Cocktails_disabled.svg" alt="Drinks _ Cocktails">
+                <p class="services">Drinks & Cocktails</p>
+                <p class="services-caption">I feel sad for those who don't drink.</p>
+            </div>
+            <div class="your-interest">
+                <img class="interest-image" src="images/resturant_disabled.svg" alt="Restaurant">
+                <p class="services">Restaurants</p>
+                <p class="services-caption">All sorrows are less with bread.</p>
+            </div>
         </div>
     </div>
 
@@ -79,23 +80,31 @@
         <h3>
             How we serve you
         </h3>
-        <div class="for-you">
-            <img src="images/Illustration_1.svg" alt="">
-            <p class="tell-us">Tell us where you are</p>
-            <p class="tell-us-caption">Select the location you want us to deliver.</p>
+        <div class="serve-wrapper">
+            <div class="for-you">
+                <img src="images/Illustration_1.svg" alt="">
+                <p class="tell-us">Tell us where you are</p>
+                <p class="tell-us-caption">Select the location you want us to deliver.</p>
+            </div>
+            <div class="for-you">
+                <img src="images/illustration_2.svg" alt="">
+                <p class="tell-us">Tell us what you want</p>
+                <p class="tell-us-caption">Browse the type of food that interest you.</p>
+            </div>
+            <div class="for-you">
+                <img src="images/illustration_3.svg" alt="">
+                <p class="tell-us">We'll come running</p>
+                <p class="tell-us-caption">Your order will be delivered to you in no time.</p>
+            </div>
         </div>
-        <div class="for-you">
-            <img src="images/illustration_2.svg" alt="">
-            <p class="tell-us">Tell us what you want</p>
-            <p class="tell-us-caption">Browse the type of food that interest you.</p>
-        </div>
-        <div class="for-you">
-            <img src="images/illustration_3.svg" alt="">
-            <p class="tell-us">We'll come running</p>
-            <p class="tell-us-caption">Your order will be delivered to you in no time.</p>
-        </div>
+
+        <hr id="foot-rule">
     </section>
+
+    <script src="../dom/landing.js"></script>
 </body>
+
+
 <footer>
     <div class="footer">
         <a href="/" id="contact">Contact us</a>
