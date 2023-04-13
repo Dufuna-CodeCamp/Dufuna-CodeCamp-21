@@ -35,7 +35,7 @@ nav li {
     cursor: pointer;
 }
 
-nav button {
+nav button{
     padding: 5px 8px;
     color: #ad4c4c;
     border: 1.5px solid #ad4c4c;
@@ -50,7 +50,7 @@ nav button {
     text-align: center;
 }
 
-.header h2 {
+.header h2{
     font-size: 30px;
     font-weight: bolder;
     color: #4e4d4d;
@@ -90,13 +90,13 @@ label {
 }
 
 .your-interest {
-    border: 1px solid #696969;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
     display: inline-block;
     width: 21%;
     padding: 20px;
     margin: 20px 38px;
     margin-left: 0;
-   
+   cursor: pointer;
 }
 
 .interest .your-interest .services {
@@ -186,4 +186,170 @@ footer #right {
     float: right;
     color: #a5a5a5;
     font-size: 14px;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 35px 40px;
+    }
+
+    nav li {
+        margin: 0 25px;
+    }
+
+    .header {
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .header p {
+        padding-bottom: 50px;
+    }
+
+    label {
+        padding-left: 40px;
+    }
+
+    #location {
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .interest {
+        padding-left: 40px;
+    }
+
+    .interest-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .your-interest {
+        width: 90%;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .your-interest:hover {
+        cursor: pointer;
+        background-color: #f3f3f3;
+    }
+
+    hr {
+        margin: 20px 40px 25px;
+    }
+
+    .serve-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .for-you {
+        width: 80%;
+        align-items: baseline;
+    }
+
+    #foot-rule {
+        margin: 40px;
+    }
+
+    footer #contact {
+        margin-bottom: 15px;
+    }
+
+    footer  #left{
+        float: none;
+        width: 50%;
+        padding: 0 25% 25px;
+    }
+
+    footer #right {
+        float: none;
+        width: 70%;
+        padding: 10px 15%;
+    }
+}
+
+/* Tablet screen */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    nav {
+        padding: 35px 40px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+
+    .header {
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    label {
+        padding-left: 40px;
+    }
+
+    #location {
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .interest {
+        padding-left: 40px;
+    }
+
+    .interest-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .your-interest {
+        width: 90%;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .your-interest:hover {
+        cursor: pointer;
+        background-color: #f3f3f3;
+    }
+
+    hr {
+        margin: 20px 40px 25px;
+    }
+
+    .serve-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section .for-you {
+        margin: 0 40px;
+        width: 75%;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #foot-rule {
+        margin: 40px;
+    }
+
+    footer #contact {
+        margin-bottom: 15px;
+    }
+
+    footer  #left{
+        float: none;
+        width: 50%;
+        margin: 0 25% 25px;
+    }
+
+    footer #right {
+        /* float: none; */
+        width: 60%;
+        margin: 20px 15% 10px;
+    }
 }
