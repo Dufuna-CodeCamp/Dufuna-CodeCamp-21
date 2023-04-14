@@ -54,12 +54,7 @@ h3 {
   font-size: large;
   font-weight: 100;
 }
-input {
-  width: 98%;
-  padding: 10px;
-  font-size: large;
-  font-weight: 100;
-}
+
 .interest {
   border: 3px solid lightgrey;
   padding: 15px;
@@ -96,8 +91,10 @@ input {
   justify-content: space-between;
   margin: 15px 20px 40px;
 }
-
-@media screen and (max-width: 580px) {
+.colored {
+  color: rgb(168, 43, 43);
+}
+@media screen and (max-width: 600px) {
   .nav-header {
     justify-content: space-evenly;
     font-size: 12px;
@@ -128,14 +125,8 @@ input {
     align-self: flex-start;
     margin: 0 18px 0 0;
   }
-  input {
-    width: 80vw;
-  }
 }
 @media screen and (min-width: 768px) {
-  input {
-    width: 89vw;
-  }
   .interest-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,5 +134,11 @@ input {
   .service {
     flex-wrap: wrap;
     margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .interest-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

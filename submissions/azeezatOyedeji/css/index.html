@@ -28,43 +28,61 @@
       </header>
       <br />
       <div class="location">
-        <label for="address"><strong>Where are you?</strong></label
-        ><br /><br />
-        <input
-          type="email"
-          placeholder="Enter your delivery address"
-        /><br /><br />
-        <select name="address" id="address">
-          <option value="1">Select your city</option>
-          <option value="2">Ibadan</option>
-          <option value="3">Ikeja</option>
-          <option value="4">Tanke</option>
-          <option value="5">Lekki</option>
-          <option value="6">Osogbo</option>
-        </select>
+        <form action="">
+          <label for="arealist">Where are you?</label><br /><br />
+          <select
+            id="address"
+            class="address-container"
+            list="area-list"
+            name="area"
+            placeholder="Enter your delivery address"
+          >
+            <option value="" default>
+              Enter your delivery
+              <address></address>
+            </option>
+            <option value="ringroad">Oyo, Ringroad</option>
+            <option value="tanke">Ilorin, Tanke</option>
+            <option value="lagos">Lagos, Mainland</option>
+            <option value="lekki">Lagos, Island</option>
+            <option value="Bodija">Oyo, Bodija</option>
+          </select>
+        </form>
       </div>
       <br />
 
       <h3><strong>Pick an interest</strong></h3>
       <div class="interest-container">
         <div class="interest">
-          <img src="image/fast-food.svg" alt="Food" />
-          <h4>Fast Food</h4>
+          <img class="image" src="image/fast-food_disabled.svg" alt="Food" />
+          <h4 class="name">Fast Food</h4>
           <p>All sorrows are less with bread.</p>
         </div>
         <div class="interest">
-          <img src="image/Vegetables _ Drinks_disabled.svg" alt="Vegetables" />
-          <h4>Vegetables & Fruits</h4>
+          <img
+            class="image"
+            src="image/Vegetables _ Drinks_disabled.svg"
+            alt="Vegetables"
+          />
+          <h4 class="name">Vegetables & Fruits</h4>
           <p>May not want it, but good for you.</p>
         </div>
         <div class="interest">
-          <img src="image/Drinks _ Cocktails_disabled.svg" alt="Drinks" />
-          <h4>Drinks & Cocktails</h4>
+          <img
+            class="image"
+            src="image/Drinks _ Cocktails_disabled.svg"
+            alt="Drinks"
+          />
+          <h4 class="name">Drinks & Cocktails</h4>
           <p>I feel sad for those who don't drink.</p>
         </div>
         <div class="interest">
-          <img src="image/resturant.svg" alt="resturant" />
-          <h4>Resturant</h4>
+          <img
+            class="image"
+            src="image/resturant_disabled.svg"
+            alt="resturant"
+          />
+          <h4 class="name">Resturant</h4>
           <p>All sorrows are less with bread.</p>
         </div>
       </div>
@@ -100,5 +118,6 @@
         <p>&#169; Copyright 2021 FoodBag is a registered trademark</p>
       </div>
     </footer>
+    <script src="../Dom/cart.js"></script>
   </body>
 </html>
