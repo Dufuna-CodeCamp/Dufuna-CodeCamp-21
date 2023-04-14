@@ -1,0 +1,155 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+nav {
+    margin: 0;
+    padding: 50px 100px;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav a {
+    color: black;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    gap: 50px;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #696969;
+    border-radius: 5px;
+    border-width: 92px;
+}
+.title {
+    margin-top: 98px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c9c9c9;
+}
+.title a {
+    color: #c9c9c9;
+}
+.vendor {
+    font-weight: 500;
+    color: black;
+}
+.vendor-sect {
+    margin-top: 33px;
+    padding: 0 100px;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+}
+.kfc {
+    margin-top: 40px;
+    padding: 0 100px;
+}
+.kfc-head {
+    display: flex;
+    justify-content: space-between;
+}
+.kfc-head-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    gap: 20px;
+}
+.kfc-head-list {
+    align-self: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+.kfc-head-list a {
+    color: #ad4c4c;
+}
+.kfc-products {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.kfc-products-deets {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+.kfc-products-deets-price {
+    color: #5ea304;
+}
+.kfc-products-cart {
+    border: 1px solid #ad4c4c;
+    border-radius: 3px;
+}
+.kfc-products-cart a {
+    color: #ad4c4c;
+}
+.kfc-cr {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid #e6e6e6;
+}
+.chicken-republic {
+    margin-top: 60px;
+    padding: 0 100px;
+}
+.cr-head {
+    display: flex;
+    justify-content: space-between;
+}
+.cr-head-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    gap: 20px;
+}
+.cr-head-list {
+    align-self: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+.cr-head-list a {
+    color: #ad4c4c;
+}
+.cr-products {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.cr-products-deets {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+.cr-products-deets-price {
+    color: #5ea304;
+}
+.cr-products-cart {
+    border: 1px solid #ad4c4c;
+    border-radius: 3px;
+}
+.cr-products-cart a {
+    color: #ad4c4c;
+}

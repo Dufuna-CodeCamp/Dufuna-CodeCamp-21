@@ -14,9 +14,9 @@
             <div id="navbar">
                 <div class="logo"><a href="#"><b>Food<span>Bag</span></b></a></div>
                 <div class="right-nav">
-                    <div class="rnc rnc1" ><a href="#" style="color: #817d7d;">Cart</a></div>
-                    <div class="rnc rnc2"><a href="#" style="color: #817d7d;">Login</a></div>
-                    <div class="rnc rnc3"><a href="#">Sign up</a></div>
+                    <a href="#" style="color: #817d7d;" id="cart"><div class="rnc rnc1" >Cart<sup><span class="notify"></span></sup></div></a>
+                    <a href="#" style="color: #817d7d;"><div class="rnc rnc2">Login</div></a>
+                    <a href="#"><div class="rnc rnc3">Sign up</div></a>
                 </div>
             </div>
         </nav>
@@ -30,7 +30,7 @@
             All Vendors
         </div>
 
-        <!-- kfc section -->
+        <!-- kfc list section begins -->
         <div class="kfc">
             <div class="imgkfc">
                 <img src="../imgs/KFC logo.svg" alt="">
@@ -52,7 +52,11 @@
                         <span class="price">#5,000</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart1">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
         
                 <div class="kfc-img">
@@ -63,7 +67,11 @@
                         <span class="price">#3,800</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart2">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
             </div>
     
@@ -76,7 +84,11 @@
                         <span class="price">#1,450</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart3">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
     
                 <div class="kfc-img4">
@@ -87,7 +99,11 @@
                         <span class="price">#900</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart4">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
             </div>
             
@@ -98,8 +114,9 @@
         <div class="view">
             View all
         </div>
+        <!-- kfc list section begins -->
 
-        <!-- chicken republic section -->
+        <!-- chicken republic section begins-->
         <div class="chic-rep">
             <div class="chic-rep-img">
                 <img src="../imgs/Chicken republic_logo.svg" alt="">
@@ -121,7 +138,11 @@
                         <span class="price">#1,200</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart5">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
         
                 <div class="kfc-img">
@@ -132,7 +153,11 @@
                         <span class="price">#2,000</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart6">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
             </div>
     
@@ -142,10 +167,14 @@
         
                     <div class="kfc-price">
                         <span>Citizen Meal</span>
-                        <span class="price">#1,500</span>
+                        <span class="price">#1,200</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart7">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
     
                 <div class="kfc-img4">
@@ -153,18 +182,25 @@
         
                     <div class="kfc-price">
                         <span>Crunchy Wings</span>
-                        <span class="price">#1,750</span>
+                        <span class="price">#1,950</span>
                     </div>
         
-                    <button>Add to Cart</button>
+                    <button class="addtocart" id="addtocart8">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
             </div>
         </div>
 
+
         <div class="view">
             View all
         </div>
+        <!-- chicken republic section ends-->
     </div>
  
+    <script src="../../Dom/vendor.js"></script>
 </body>
 </html>

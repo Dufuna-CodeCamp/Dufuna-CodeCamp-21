@@ -1,0 +1,113 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Cuprum', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Labrada', serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+} 
+.nav li, input{
+    list-style: none;
+}
+.nav{
+    padding-right: 40px
+}
+.nav-input{
+    width: 80px;
+    margin-top: 5px;
+    height: 30px;
+    float: right;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: red;
+    border-radius: 5px;
+}
+nav li{
+    display: sticky;
+    padding: 8px;
+    float: right;
+}
+.header{
+    margin-top: 100px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.vendor{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.vendor a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.k{
+    margin-top: 100px;
+    float: left;
+}
+.kfc-header{
+    margin: 40px;
+    position: relative;
+}
+.kfc-header img{
+    width: 50px;
+    height: 50px;
+}
+.kfc-header p{
+    display: inline;
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+.kfc-header a{
+    float: right;
+    text-decoration: none;
+    margin-right: 60px;
+}
+.kfc{
+    margin: 10px 20px;
+    width: 260px;
+    float: left;
+}
+.kfc span{
+    color: green;
+    float: right;
+    margin-right: 30px;
+}
+.kfc button{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    color: red;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+/* media query for larger screen size */
+@media screen and (max-width: 480px){
+    .kfc img{
+        width: 350px;
+    }
+    .kfc span{
+        margin-right: -70px;
+    }
+    .kfc-header a{
+        margin: 15px;
+    }
+}   
+@media screen and (min-width: 960px){
+    .kfc img{
+        width: 300px;
+    }
+    .kfc span{
+        margin-right: -10px;
+    }
+}
