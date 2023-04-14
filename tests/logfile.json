@@ -1,5 +1,6 @@
 {
   "stats": {
+
     "suites": 1,
     "tests": 3,
     "passes": 1,
@@ -185,5 +186,11 @@
       },
       "version": "6.2.0"
     }
+
+    "tests": 5,
+    "passes": 5,
+    "failures": 0,
+    "owner": "rufusOtolorin"
+
   }
 }
