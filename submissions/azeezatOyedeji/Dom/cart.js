@@ -1,5 +1,5 @@
 let image = document.querySelectorAll(".image");
-let address = document.querySelectorAll("#address");
+let address = document.querySelectorAll("select");
 let interest = document.querySelectorAll(".interest");
 let textName = document.querySelectorAll(".name");
 

@@ -91,9 +91,8 @@ h3 {
   justify-content: space-between;
   margin: 15px 20px 40px;
 }
-.colored {
-  color: rgb(168, 43, 43);
-}
+
+
 @media screen and (max-width: 600px) {
   .nav-header {
     justify-content: space-evenly;
