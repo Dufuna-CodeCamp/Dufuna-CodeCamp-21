@@ -1,42 +1,29 @@
 let buttons = document.querySelectorAll(".btn");
-let body = document.querySelector("body");
-let span = document.querySelector("#red");
+let cartNotification = document.querySelector("#cartNotification");
 
-buttons.forEach((element) => {
-  element.addEventListener("click", function () {
-    const initialText = "Add to Cart";
+let cartCounter = 0;
 
-    if (element.textContent.includes(initialText)) {
-      //the romove button text
-      element.innerHTML =
-        '<img src = "image/remove.svg" style=" width:22px; height:22px; padding-right:2px; background:gray;">Remove';
-      element.style.display = "flex";
-      element.style.justifyContent = "center";
-      element.style.backgroundColor = "gray";
-      element.style.fontSize = "20px";
-      element.style.color = "white";
-      element.style.border = "none";
-      //cart notification style
-      span.style.position = "absolute";
-      span.style.borderRadius = "50%";
-      span.style.width = "9px";
-      span.style.height = "9px";
-      span.style.backgroundColor = "rgb(168, 43, 43)";
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const btnText = "Add to Cart";
+
+    if (btn.textContent.includes(btnText)) {
+      //the remove button text
+      btn.innerHTML =
+        '<img src = "image/remove.svg" style=" width:22px; height:22px; padding-right:2px; background:gray;"><cartNotification style = "background:gray;color:rgba(255, 255, 255, 1)">Remove</cartNotification>';
+      btn.classList.add("removeText");
+      cartNotification.classList.add("notification");
+
+      cartCounter += 1;
     } else {
       //to return the button back to its default property
-      element.textContent = initialText;
-      element.style.backgroundColor = "white";
-      element.style.fontSize = "15px";
-      element.style.color = "red";
-      element.style.border = "1px solid red";
-      span.style.width = "0px";
+      btn.textContent = btnText;
+      btn.classList.remove("removeText");
+      cartCounter -= 1;
+    }
+    //to return cartNotification to default style
+    if (cartCounter < 1) {
+      cartNotification.classList.remove("notification");
     }
   });
-});
-//to make sure the cart notification stays on if there is any item in the cart
-let newButton = "Remove";
-body.addEventListener("click", () => {
-  if (body.textContent.includes(newButton)) {
-    span.style.width = "9px";
-  }
 });

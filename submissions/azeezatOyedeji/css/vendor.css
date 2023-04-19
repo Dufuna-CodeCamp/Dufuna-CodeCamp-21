@@ -77,7 +77,20 @@ button {
   border: 1px solid rgb(209, 74, 74);
   border-radius: 5px;
 }
-
+.removeText {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  font-size: 20px;
+  border: none;
+}
+.notification {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(168, 43, 43);
+}
 @media screen and (max-width: 600px) {
   body {
     padding: 0;
