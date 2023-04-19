@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "fbd29371-5367-4985-a340-a8c823922374",
-              "parentUUID": "b170db9e-0c4e-455b-85e4-b544dc92f72f",
+              "uuid": "316d7f46-26e0-471c-8b47-b26bf99faf39",
+              "parentUUID": "e653b854-b3f0-48d2-9292-7df4b2d95f77",
               "isHook": true,
               "skipped": false
             }
@@ -96,7 +96,7 @@
               "timedOut": false,
               "duration": 32,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
