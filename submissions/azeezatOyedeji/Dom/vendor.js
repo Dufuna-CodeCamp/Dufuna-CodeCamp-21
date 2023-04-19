@@ -10,7 +10,7 @@ buttons.forEach((btn) => {
     if (btn.textContent.includes(btnText)) {
       //the remove button text
       btn.innerHTML =
-        '<img src = "image/remove.svg" style=" width:22px; height:22px; padding-right:2px; background:gray;"><cartNotification style = "background:gray;color:rgba(255, 255, 255, 1)">Remove</cartNotification>';
+        '<img src = "image/remove.svg" style=" width:22px; height:22px; padding-right:2px; background:gray;"><span style = "background:gray;color:rgba(255, 255, 255, 1)">Remove</span>';
       btn.classList.add("removeText");
       cartNotification.classList.add("notification");
 
