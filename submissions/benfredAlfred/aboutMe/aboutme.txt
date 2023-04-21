@@ -1,3 +1,4 @@
 IHello World 
 My Name Is Benfred
-And I'm At The Dufuna CodeCamp23
+ I'm At The Dufuna CodeCamp23
+And I'm A Software Engineer
