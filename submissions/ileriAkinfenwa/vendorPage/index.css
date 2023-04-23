@@ -79,7 +79,7 @@ h2 span{
     margin-top: 30px;
     gap: 30px;
     padding-bottom: 61px;
-    border-bottom: 1px solid #e6e6e6; 
+     
 }
 .item{
     width: 100%;
@@ -127,10 +127,12 @@ h2 span{
 }
 .chicken-republic{
     margin-top: 60px;
+
 }
 .chicken-header{
     display: flex;
     align-items: center;
+
 }
 .img{
     margin-right: 20px;
@@ -141,7 +143,6 @@ h2 span{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
     gap: 30px;
-    padding-bottom: 61px;
 }
 @media screen and (max-width:1000px){
     .items, .itemsDe{
