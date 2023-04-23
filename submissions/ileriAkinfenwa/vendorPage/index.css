@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bgcontainer{
+    width: 100%;
+    background-color: #ffffff;   
+}
+.container{
+    margin: 20px 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+   color: black;
+   font-size: 15px; 
+}
+h2 span{
+    color:#ad4c4c;
+}
+.nav-lists{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-lists a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.nav-lists a:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ad4c4c;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.breadcremb{
+    margin-top: 30px;
+    color:#696969;
+}
+.breadcremb strong{
+    color: black;
+}
+.hero{
+    margin-top: 40px;
+}
+.kfc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.kfcs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.kfcs span{
+    font-weight: bolder;
+    font-size: 17px;
+}
+.view-all{
+    color: #ad4c4c;
+}
+.items{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 30px;
+    padding-bottom: 61px;
+    border-bottom: 1px solid #e6e6e6; 
+}
+.item{
+    width: 100%;
+}
+.item img{
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    margin-top: 10px;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+.description span{
+    color: #4e4d4d;
+    font-size: 17px;
+}
+.price{
+    color: #5ea304;
+    font-size: 15px;
+    font-weight: bold;
+}
+.card-btn{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.card-btn button{
+    padding: 8px 30px;
+    border: 1px solid #ad4c4c;
+    border-radius: 3px;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ad4c4c;
+    cursor: pointer;
+}
+.card-btn button:hover{
+    background-color: #ad4c4c;
+    color: #ffffff;
+}
+.chicken-republic{
+    margin-top: 60px;
+}
+.chicken-header{
+    display: flex;
+    align-items: center;
+}
+.img{
+    margin-right: 20px;
+}
+.itemsDe{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 30px;
+    padding-bottom: 61px;
+}
+@media screen and (max-width:1000px){
+    .items, .itemsDe{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:570px){
+    .items, .itemsDe{
+        grid-template-columns: 1fr ;
+    }
+}
+
+
+
+@media screen and (max-width:490px){
+    .container{
+        margin: 20px 5px;
+    }
+    .logo{
+        font-size: 12px;
+    }
+    .nav-lists{
+        padding-right: 5px;
+    }
+    .nav-lists a{
+        font-size: 13px;
+    }
+    .nav-lists a:nth-child(3){
+        width: 70px;
+    }
+} 
