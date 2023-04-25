@@ -30,11 +30,11 @@
 
     <main>
         <h4>Where are you?</h4>
-        <select name="address" id="address">
+        <select name="address" id="address" onchange="selectLocation();">
             <option value="1">Enter your delivery address</option>
-            <option value="2">Abuja</option>
-            <option value="3">Lagos</option>
-            <option value="4">Kaduna</option>
+            <option class="locations" value="2">Abuja</option>
+            <option class="locations" value="3">Lagos</option>
+            <option class="locations" value="4">Kaduna</option>
         </select>
 
         <h4>Pick an interest</h4>
