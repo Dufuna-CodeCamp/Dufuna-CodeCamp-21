@@ -1,9 +1,8 @@
 var boxes = document.getElementsByClassName("f");
 var newBoxes = document.getElementsByClassName("g");
-var locations = document.getElementsByClassName("locations");
 var selectBox = document.getElementById("address");
 
-
+selectBox.addEventListener("change", selectLocation)
 
 function selectLocation() {
             for(let i=0; i<boxes.length; i++){
