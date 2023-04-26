@@ -137,6 +137,9 @@ h2 span{
 .img{
     margin-right: 20px;
 }
+.viewbtn{
+    display: none;
+}
 .itemsDe{
     display: grid;
     width: 100%;
@@ -159,7 +162,7 @@ h2 span{
 
 @media screen and (max-width:490px){
     .container{
-        margin: 20px 5px;
+        margin: 20px 40px;
     }
     .logo{
         font-size: 12px;
@@ -173,4 +176,26 @@ h2 span{
     .nav-lists a:nth-child(3){
         width: 70px;
     }
+    .view-all{
+        display: none;
+    }
+    .viewbtn{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        align-items: center;
+        color: #ad4c4c;
+        width: 100%;
+        cursor: pointer;
+    }
 } 
+@media screen and (max-width:400px){
+    .container{
+        margin: 20px 20px;
+    }
+}
+@media screen and (max-width:323px){
+    .container{
+        margin: 20px 10px;
+    }
+}
