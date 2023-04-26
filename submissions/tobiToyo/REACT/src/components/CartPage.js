@@ -8,6 +8,7 @@ import scooter from "../images/scooter 1.svg";
 import Border from './borderline';
 import FullBorder from './FullBorder';
 import Button from './button';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -18,6 +19,7 @@ const CartPage = () => {
     let total = 0;
 
     const [FoodList, setFoodList] = useState([]);
+    const navigate = useNavigate();
 
     useEffect (() => {
         setFoodList(foodItems)
@@ -72,9 +74,13 @@ const CartPage = () => {
         )
     }
 
+    const navigateVerification = () => {
+        navigate('/Verification');
+    }
+
     return (
         <div>
-            <Header />
+            <Header grey="Home > "  bold="Cart" />
 
             <div className=''>
                 <div className="cart-title-div">
@@ -155,7 +161,7 @@ const CartPage = () => {
                             <p className='total-text'>Total</p>
                             <p className='total-text'>#{total + fee}</p>
                         </div>
-                        <Button className="checkout-btn" title="Check Out" />
+                        <Button className="checkout-btn" title="Check Out" btnClick={navigateVerification} />
                         
                 </div> 
                 }

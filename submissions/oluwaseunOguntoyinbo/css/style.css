@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+body{
+    padding: 20px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a,
+.contact a
+{
+    text-decoration: none;
+    color: #696969;
+}
+
+ul.nav{
+    list-style-type: none;
+    float: right;
+}
+.nav li
+{
+    display: inline;
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    align-items: center;
+    text-align: right;
+    color: #696969;
+}
+
+.signup {
+    border-radius: 5px;
+    background-color: white; 
+    border: 1px solid #AD4C4C;
+    color: #AD4C4C;
+    padding: 2px 5px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    align-items: center;
+    text-align: right;
+}
+
+.heading {
+    padding-bottom: 10px;
+}
+
+.location .p,
+.variety .p
+{
+    font-weight: bold;
+}
+
+.location select{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    padding: 10px;
+}
+
+.variety .clearfix,
+.service .clearfix,
+.terms
+{
+    display: block;
+    align-items: center;
+}
+
+.variety .varietyBox{
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+.variety .varietyBox1{
+    border-radius: 3px;
+    border: 1px solid rgb(219, 216, 216);
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+
+.variety .varietyBox p,
+.variety .varietyBox1 p,
+.variety .varietyBox small,
+.variety .varietyBox1 small
+{
+    color: rgb(161, 158, 158);
+}
+
+.service h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.service .serviceBox{
+    width: 100%;
+    
+}
+
+.service .serviceBox h3,
+.service .serviceBox p
+{
+    text-align: center;
+}
+
+footer
+{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.contact
+{
+    text-align: center;
+    align-items: center;
+}
+
+.contact p{
+    text-align: center;
+    align-items: center;
+    color: #696969;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.contact li{
+    display: inline;
+    padding: 0px 25px;
+}
+
+.contact ul{
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.terms p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #696969;
+}
+
+
+
+.breadcrumb{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C9C9C9;
+}
+
+
+.vendorHeading{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+
+.view{
+    overflow: hidden;
+}
+
+
+.kfc{
+    background: url(images/KFClogo.svg) left top no-repeat;
+    position: absolute;
+    width: 67.8px;
+    height: 51px;
+}
+
+.kfc .p{
+    color: black;
+    width: 29px;
+    height: 23px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 20px;
+}
+
+.view p{
+    font-weight: 0;
+    font-size: 0px;
+    line-height: 0px;
+    float: right;
+}
+
+.viewall {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #AD4C4C;
+    padding-bottom: 35px;
+}
+
+.vendorsVariety{
+    display: block;
+    padding-top: 50px;
+}
+
+
+.vendorsVariety .vendorsVarietyBox{
+    width: 100%;
+}
+
+.vendorsVarietyBox .view .vendorPrice{
+    float: right;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5EA304;
+}
+
+.vendorsVarietyBox .view .specificTreat{
+    float: left;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E4D4D;
+}
+
+.vendorsVarietyBox .addToCart{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    width: 138px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.chicken{
+    background: url(images/ChickenRepublic_logo.svg) left top no-repeat;
+    position: absolute;
+    height: 50px;
+    max-width: 100%;
+    border: 1px solid #F8F8F8;
+}
+
+.chicken .chickenP{
+    color: black;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    height: 23px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 600px){
+    body{
+        padding: 20px 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .icon{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+    .heading {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .nav li
+    {
+        display: inline;
+        padding-left: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: right;
+        color: #696969;
+    }
+
+    .signup {
+        border-radius: 5px;
+        background-color: white; 
+        border: 1px solid #AD4C4C;
+        color: #AD4C4C;
+        padding: 2px 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: right;
+    }
+    .variety .clearfix,
+    .service .clearfix,
+    .terms
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .terms p{
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: #696969;
+    }
+    .variety .varietyBox{
+        border-radius: 3px;
+        border: 1px solid rgb(219, 216, 216);
+        width: 25%;
+        padding: 15px 20px;
+        margin-right: 15px;
+    }
+    .variety .varietyBox1{
+        border-radius: 3px;
+        border: 1px solid rgb(219, 216, 216);
+        width: 25%;
+        padding: 15px 20px;
+        margin-right: 0px;
+    }
+    .service .serviceBox{
+        width: 33.3%;
+        
+    }
+    .contact p{
+        padding-left: 60px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        align-items: center;
+        color: #696969;
+    }
+    .contact li{
+        display: inline;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vendorsVariety{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0px;
+    }
+    
+    
+    .vendorsVariety .vendorsVarietyBox{
+        width: 23%;
+    }
+
+    .view p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        float: right;
+    }
+    .viewall{
+    
+        font-weight: 0;
+        font-size: 0px;
+        line-height: 0px;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .kfc{
+        background: url(images/KFClogo.svg) left top no-repeat;
+        position: absolute;
+        width: 113px;
+        height: 85px;
+    }
+
+    .kfc .p{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: black;
+    }
+
+    .chicken{
+        background: url(images/ChickenRepublic_logo.svg) left top no-repeat;
+        position: absolute;
+        height: 50px;
+        max-width: 100%;
+        border: 1px solid #F8F8F8;
+    }
+
+    .chicken .chickenP{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: black;
+        padding-left: 60px;
+        padding-bottom: 40px;
+    }
+    
+}

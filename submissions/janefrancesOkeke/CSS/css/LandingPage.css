@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Poppins:wght@500&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#logo {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#logo span {
+  color: #ad4c4c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 10px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+#signup-btn {
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+  color: #ad4c4c;
+  padding: 6px 12px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.hero-text {
+  text-align: left;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  color: #4e4d4d;
+}
+
+.hero-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.search .searchHeading {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.location {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  font-family: "Poppins";
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+select{
+  color: rgb(51, 51, 51);
+}
+
+select option {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+}
+
+
+
+.interest-heading {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #a5a5a5;
+}
+
+.interest a{
+    text-decoration: none;
+     padding: 33px;
+  box-shadow: 1px 1px 10px 1px rgba(140, 140, 140, 0.309);
+}
+
+.interest h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a5a5a5;
+}
+
+.interest p {
+  color: #a5a5a5;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+
+#rule1 {
+  margin-top: 9%;
+  margin-bottom: 9%;
+  border: none;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.256);
+}
+
+h2 {
+  padding-bottom: 7%;
+  font-size: 20px;
+  color: #4e4d4d;
+  text-align: center;
+  font-weight: 600;
+}
+
+.service-flow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  gap: 70px;
+  
+}
+
+.service-flow img {
+  width: 200px;
+  height: 150.6px;
+}
+
+.service-flow h4 {
+  font-size: 15px;
+  color: #696969;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.service-flow p {
+  color: #a5a5a5;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+#rule2 {
+  margin-top: 9%;
+  margin-bottom: 9%;
+  border: none;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.256);
+}
+
+.footer1 {
+  margin-top: 9%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #696969;
+}
+
+.footer1 div {
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-text {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  gap: 15px;
+  color: #696969;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    padding: 40px 20px 60px;
+    font-family: "Poppins";
+  }
+  #logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero-text h3 {
+    font-size: 25px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .search p {
+    font-size: 14px;
+  }
+
+  input[list] {
+    font-size: 14px;
+  }
+
+  .interest-heading {
+    font-size: 16px;
+  }
+
+  .interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .service-flow img {
+    width: 250px;
+    height: 180.6px;
+  }
+
+  .service-flow h4 {
+    font-size: 18px;
+  }
+
+  .service-flow p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 40px 70px 60px;
+    font-family: "Poppins";
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .hero-text h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .search .searchHeading{
+    font-size: 20px;
+  }
+
+  .location{
+    font-size: 18px;
+  }
+
+  select option{
+    font-size: 18px;
+  }
+
+ .interest h4 {
+    font-size: 18px;
+  }
+
+  .interest p{
+    font-size: 14px;
+  }
+
+  .interest-heading {
+    font-size: 20px;
+  }
+  .interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .service-flow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .service-flow h4 {
+    font-size: 25px;
+  }
+
+  .service-flow p {
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .footer1 {
+    font-size: 18px;
+  }
+
+  .footer1 div {
+    margin-top: 2%;
+  }
+
+  .footer-text {
+    margin-top: 2%;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .service-flow img {
+    width: 300px;
+    height: 225.9px;
+  }
+}

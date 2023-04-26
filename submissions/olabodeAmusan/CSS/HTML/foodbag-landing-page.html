@@ -25,7 +25,14 @@
         </div>
         <div class="address">
             <p>Where are you?</p>
-            <input type="text" name="address" placeholder="Enter your delivery address">
+            <input list="location" type="text" name="address" placeholder="Enter your delivery address" id="input">
+            <datalist id="location">
+                <option>Bodija Market</option>
+                <option>Computer Village</option>
+                <option>Iworoko Market</option>
+                <option>Lekki Phase 1</option>
+            </datalist><br>
+            <span class="error-message"></span>
         </div>
 
     <!--Picking an Interest-->
@@ -33,24 +40,24 @@
         <div class="image">
             <p>Pick an interest<p>
             <div class="container-1">
-                <div class="fast-food">
-                    <img src="../FoodBagTaskAssets/fast-food_disabled.svg"><br>
-                    <p>Fast Food</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/fast-food_disabled.svg" id="fast-food"><br>
+                    <p class="gray">Fast Food</p>
                     <p>All sorrows are less with bread</p>
                 </div>
-                <div class="veg-fruits">
-                    <img src="../FoodBagTaskAssets/Vegetables _ Drinks_disabled.svg"><br>
-                    <p>Vegetables & Fruits</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/Vegetables&Drinks_disabled.svg" id="veg-fruits"><br>
+                    <p class="gray">Vegetables & Fruits</p>
                     <p>May not want it but good for you.</p>
                 </div>
-                <div class="drinks">
-                    <img src="../FoodBagTaskAssets/Drinks _ Cocktails_disabled.svg"><br>
-                    <p>Drinks & Cocktails</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/Vegetables&Drinks_disabled.svg" id="drinks"><br>
+                    <p class="gray">Drinks & Cocktails</p>
                     <p>I feel sad for those who don't drink.</p>
                 </div>
-                <div class="resturant">
-                    <img src="../FoodBagTaskAssets/resturant_disabled.svg"><br>
-                    <p>Resturant</p>
+                <div class="food">
+                    <img src="../FoodBagTaskAssets/resturant_disabled.svg" id="resturant"><br>
+                    <p class="gray">Resturant</p>
                     <p>All sorrows are less than bread.</p>
                 </div>
             </div><br>
@@ -102,6 +109,6 @@
         </div>
        
     </footer>
-
+<script src="../../Dom/landing.js"></script>
 </body>
 </html>

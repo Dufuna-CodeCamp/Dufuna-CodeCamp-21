@@ -1,0 +1,34 @@
+CREATE DATABASE transport;
+use transport;
+
+-- After improtation of data
+show table status;
+
+-- Total Number of Passengers who survive from the journey
+SELECT COUNT(survived) FROM survival WHERE survived=1;
+-- The answer is 342
+
+-- Total Number of Passengers who did not survive from the journey 
+SELECT COUNT(survived) FROM survival WHERE survived=0;
+-- The answer is 549
+
+-- Get the name and sex of passengers under the age of 27 that embarked at Queenstown and Cherbourg?
+
+SELECT passenger.name, passenger.sex FROM passenger INNER JOIN traveldetail ON passenger.passengerid = traveldetail.passengerid WHERE age<27 AND (embarked= 'Q' OR embarked= 'C');
+
+-- How many of the passengers that embarked at Southampton survived?
+SELECT COUNT(survived) FROM survival INNER JOIN traveldetail ON survival.passengerid = traveldetail.passengerid WHERE survived=1 AND embarked= 'S';
+-- Total is 218
+
+-- ID, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board?
+SELECT  passenger.PassengerId, passenger.Name FROM passenger INNER JOIN traveldetail ON traveldetail.PassengerId = passenger.PassengerId WHERE passenger.Age>35 AND (traveldetail.Fare>100 AND traveldetail.SibSp != 0);
+
+-- Wick, Mrs. George Dennick (Mary Hitchcock)
+-- Thayer, Mrs. John Borland (Marian Longstreth Morris)
+-- Thayer, Mr. John Borland
+-- Spedden, Mrs. Frederic Oakley (Margaretta Corning Stone)
+-- Frauenthal, Dr. Henry William
+-- Fortune, Mr. Mark
+-- Douglas, Mr. Walter Donald
+-- Carter, Mrs. William Ernest (Lucile Polk)
+-- Carter, Mr. William Ernest

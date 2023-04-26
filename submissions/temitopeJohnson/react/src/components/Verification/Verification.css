@@ -1,0 +1,204 @@
+@media only screen and (min-width: 992px) {
+    .VerificationTitle {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        font-size: 3vh;
+    }
+
+    .VerificationSubTitle {
+        margin-bottom: 2vh;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        color: #AD4C4C;
+        font-size: 2vh;
+    }
+
+    .Address {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        font-size: 3vh;
+    }
+
+    .DeliveryTo {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2vh;
+        font-size: 2vh;
+    }
+
+    .AddressRadio {
+        accent-color: #AD4C4C;
+        margin-left: auto;
+        width: 3vh;
+    }
+
+    .Item {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 3vh;
+    }
+
+    .ItemLabel {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vh;
+    }
+
+    .ItemValue {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vh;
+    }
+
+    .Col {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+    }
+
+    .Flex1 {
+        grid-column: 1/2;
+    }
+
+    .Flex2 {
+        grid-column: 2/3;
+    }
+
+    .PaymentBtn {
+        margin-top: 2vh;
+        background-color: #AD4C4C;
+        color: white;
+        width: 60vw;
+        height: 5vh;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        border-color: #AD4C4C;
+    }
+
+    .PaymentBtnDisable {
+        margin-top: 2vh;
+        background-color: gainsboro;
+        color: black;
+        width: 60vw;
+        height: 5vh;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        border-color: gainsboro;
+    }
+
+    .Cash {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vh;
+    }
+
+    .CashSub {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .VerificationTitle {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        font-size: 2vh;
+    }
+
+    .VerificationSubTitle {
+        margin-bottom: 3vh;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        color: #AD4C4C;
+        font-size: 1.5vh;
+    }
+
+    .Address {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        font-size: 2vh;
+    }
+
+    .DeliveryTo {
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5vh;
+        font-size: 1.5vh;
+    }
+
+    .AddressRadio {
+        accent-color: #AD4C4C;
+        margin-left: auto;
+        width: 2vh;
+    }
+
+    .Item {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 2vh;
+    }
+
+    .ItemLabel {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vh;
+    }
+
+    .ItemValue {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5vh;
+    }
+
+    option {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5vh;
+    }
+
+    .Col {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+    }
+
+    .Flex1 {
+        grid-column: 1/2;
+    }
+
+    .Flex2 {
+        grid-column: 2/3;
+    }
+
+    .PaymentBtn {
+        margin-top: 2vh;
+        background-color: #AD4C4C;
+        color: white;
+        width: 60vw;
+        height: 5vh;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        border-color: #AD4C4C;
+    }
+
+    .PaymentBtnDisable {
+        margin-top: 2vh;
+        background-color: gainsboro;
+        color: black;
+        width: 60vw;
+        height: 5vh;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        border-color: gainsboro;
+    }
+
+    .Cash {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vh;
+    }
+
+    .CashSub {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5vh;
+    }
+}

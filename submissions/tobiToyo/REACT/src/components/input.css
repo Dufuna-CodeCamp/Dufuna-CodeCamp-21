@@ -1,0 +1,19 @@
+.input-label {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: .8rem;
+  margin-top: 2rem;
+}
+
+.input {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #696969;
+  padding: 1rem;
+  width: 100%;
+  border: .1rem solid #C4C4C4;
+  border-radius: .5rem;
+}

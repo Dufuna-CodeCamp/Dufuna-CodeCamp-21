@@ -1,0 +1,106 @@
+$color-primary: #ad4c4c;
+$color-secondary: #ffffff;
+$color-black: #000000;
+$color-grey: #c9c9c9;
+$color-light-grey: #4e4d4d;
+
+@mixin display-flex($justify, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin boxSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size: null, $weight: null, $line-height: null) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+.cart__page {
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cart__page--title {
+    margin: 30px 0 73px 0;
+    @include font(30px, 500, 45px);
+    color: #000000;
+}
+
+.cart__total {
+    @include display-flex(space-between);
+    margin: 30px 0 60px 35px;
+}
+
+.cart__btn {
+    @include display-flex(center);
+}
+
+.cart__page--btn {
+    @include font(16px, 600, 24px);
+    @include boxSize(809px, 60px);
+    margin-bottom: 154px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border: none;
+    cursor: pointer;
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+@each $total in (text, price) {
+    .cart__total--#{$total} {
+        @include font(30px, 600, 35px);
+        color: $color-black;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cart__page {
+        margin: 0 20px;
+        width: auto;
+    }
+
+    .cart__page--title {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cart__total {
+        margin: 30px 0 60px 35px;
+    }
+
+    @each $total in (text, price) {
+        .cart__total--#{$total} {
+            @include font(20px, 600, 37px);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cart__page {
+        margin: 0 20px;
+    }
+
+    .cart__page--btn {
+        @include boxSize(100%, 60px);
+        margin-bottom: 19px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .cart__page {
+        width: auto;
+    }
+}

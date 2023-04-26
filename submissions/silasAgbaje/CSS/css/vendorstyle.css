@@ -1,5 +1,6 @@
 body {
 	font-family: 'Lato', sans-serif;
+    margin: 20px;
 }
 
 .brand, button, .view-all{
@@ -28,21 +29,39 @@ li, a {
 
 .flexbox {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .flexbox li {
     float: right;
-    padding-left: 20px;
+    padding-left: 15px;
+    /* position: fixed; */
 }
 .ash {
     color: #b2beb5;
 }
 
-.vendor {
-    text-align: left;
+.vendor-nav {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.view a {
+    color: #AD4C4C;
+}
+.view {
+    /* display: flex; */
+    float: right;
+    /* text-align: right; */
+}
+
+.flexbox-wrap {
+    display: flex;
+    flex-direction: row;
 }
 
 .product-price{
@@ -51,12 +70,73 @@ li, a {
 
 }
 
-aside ul li p {  
+.flexbox-content li p {  
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
 }
- .view {
-    float: right;
- }
+
+.flexbox-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.flexbox-content li {
+    margin-right: 20px;
+}
+.hr {
+    box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, 0.1);
+}
+.view-all {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p, span {
+        font-size: medium;
+    }
+
+    .vendor img {
+        width: 30px;
+    }
+
+    .view {
+        display: none;
+    }
+    .view-all a {
+        color: #AD4C4C;
+        font: bold;
+    }
+    .view-all {
+        display: block;
+        color: #AD4C4C;
+        text-align: center;
+        justify-content: center;
+    }
+    
+  /* Tablets Screen */
+  
+ @media screen and (min-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: medium;
+    }
+    p, span {
+        font-size: medium;
+    }
+
+    .vendor img {
+        width: 35px;
+    }
+}

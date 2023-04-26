@@ -1,0 +1,13 @@
+@media screen and (min-width : 991px) {
+    .App {
+        margin: 5vh 2vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 991px) {
+    .App {
+        margin: 5vh 5vw;
+        text-align: center;
+    }
+}

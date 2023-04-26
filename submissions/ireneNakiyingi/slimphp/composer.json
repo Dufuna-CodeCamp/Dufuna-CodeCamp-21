@@ -1,0 +1,22 @@
+{
+    "name": "hp/taskdufuna",
+    "require": {
+        "slim/psr7": "^1.5",
+        "vlucas/phpdotenv": "^5.4",
+        "illuminate/database": "^9.34",
+        "selective/basepath": "^2.1",
+        "slim/slim": "^4.10"
+    },
+    "autoload":{
+        "psr-4": {
+            
+            "DB\\":"database",
+            "App\\Controller\\": "app/controllers",
+            "App\\Middleware\\":"app/middlewares",
+            "App\\Model\\": "app/models"
+        }
+    } , 
+    "scripts": {
+        "start":"php -S localhost:8080 -t public"
+    }
+}

@@ -1,0 +1,15 @@
+@media screen and (min-width: 991px) {
+    .Breadcrumbs {
+        margin-bottom: 5vh;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Breadcrumbs {
+        font-size: 2vh;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+}

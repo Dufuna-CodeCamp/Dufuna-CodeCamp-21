@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="landing.css " />
+    <link rel="stylesheet" href="landing.css "/>
   </head>
   <body>
     <div>
@@ -31,40 +31,43 @@
 
       <label for="location"><b class="place">Where are you?</b> </label>
 
-      <select name="location" id="location">
+      <select  name="location" id="location">
         <option value="" disabled selected hidden>
           Enter your delivery Address
         </option>
-        <option value="Akobo">Akobo, Ibadan</option>
-        <option value="Ring Road">Ring Road, Ibadan</option>
-        <option value="Oluyole">Oluyole, Ibadan</option>
-        <option value="Dugbe">Dugbe, Ibadan</option>
-        <option value="Bodija">Bodija, Ibadan</option>
-        <option value="Samonda">Samonda, Ibadan</option>
-        <option value="Sango">Sango, Ibadan</option>
-        <option value="Agodi">Agodi, Ibadan</option>
-        <option value="Moniya">Moniya, Ibadan</option>
+        <datalist><option value="Akobo">Akobo, Ibadan</option>
+          <option value="Ring Road">Ring Road, Ibadan</option>
+          <option value="Oluyole">Oluyole, Ibadan</option>
+          <option value="Dugbe">Dugbe, Ibadan</option>
+          <option value="Bodija">Bodija, Ibadan</option>
+          <option value="Samonda">Samonda, Ibadan</option>
+          <option value="Sango">Sango, Ibadan</option>
+          <option value="Agodi">Agodi, Ibadan</option>
+          <option value="Moniya">Moniya, Ibadan</option>
+        </datalist>
       </select>
 
-      <h2>Pick an interest</h2>
+      <h3>Pick an Interest</h3>
       <div class="opt">
         <div class="imagesff">
-          <img class="img" src="./image/fast-food.svg" />
+          <a href="./vendors-page.html" class="imgLink"><img class="img-1" id="img-1" src="./image/fast-food_disabled.svg" /></a>
+          
           <p class="fast">Fast food</p>
           <h4 class="text">All sorrows are less with bread</h4>
         </div>
         <div class="imagesff">
-          <img class="img" src="./image/Vegetables & Drinks.svg" />
-          <p class="fast">Vegetables & Fruit</p>
+          <a href="./vendors-page.html" class="imgLink"><img class="img-2" id="img-2"src="./image/Vegetables & Drinks_disabled.svg" />
+          </a>         
+           <p class="fast">Vegetables & Fruit</p>
           <h4 class="text">May not want it,but good for you</h4>
         </div>
         <div class="imagesff">
-          <img class="img" src="./image/Drinks & Cocktails.svg" />
+          <a href="./vendors-page.html" class="imgLink"><img class="img-3"id="img-3" src="./image/Drinks & Cocktails_disabled.svg" /></a> 
           <p class="fast">Drinks & Cocktails</p>
           <h4 class="text">I feel sad for who don't drink</h4>
         </div>
         <div class="imagesff">
-          <img class="img" src="./image/resturant.svg" alt="" />
+          <a href="./vendors-page.html" class="imgLink"><img class="img-4"id="img-4" src="./image/resturant_disabled.svg" alt="" /></a>
           <p class="fast">Resturants</p>
           <h4 class="text">All sorrows are less with bread</h4>
         </div>
@@ -118,5 +121,6 @@
         </footer>
       
     </div>
+    <script src="landing.js"></script>
   </body>
 </html>

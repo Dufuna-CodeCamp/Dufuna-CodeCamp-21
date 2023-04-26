@@ -1,0 +1,58 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+    gap: 5vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.FoodBag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+strong {
+    color: #AD4C4C;
+}
+
+.NavContent {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+}
+
+.Ct,
+.Lg {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+}
+
+.SignUp {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AD4C4C;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+    align-items: center;
+    padding: 8px 15px;
+}

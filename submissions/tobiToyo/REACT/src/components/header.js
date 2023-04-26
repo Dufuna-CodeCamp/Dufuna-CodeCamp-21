@@ -4,7 +4,8 @@ import Button from "./button";
 import Trail from "./trail";
 
 
-const Header = () => {
+
+const Header = (props) => {
 
     return (
         <div>
@@ -20,7 +21,7 @@ const Header = () => {
  
             </div>
 
-            <Trail grey="Home > " bold="Cart" />
+            <Trail grey={props.grey} bold={props.bold} />
 
         </div>
     )

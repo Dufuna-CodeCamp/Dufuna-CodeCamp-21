@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins';
+}
+html {
+    font-size: 100%;
+}
+ /*------------ Navigation goes here --------------*/
+.header{
+	margin:0 50px 25px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	width: auto;
+}
+.header span{
+	color: #AD4C4C;
+}
+.header ul li{
+	display: inline-block;
+	margin-top: 2px;
+	padding: 0 20px;
+	list-style: none;
+}
+.header a{
+	color: #696969;
+}
+.header a:hover{
+	color: #AD4C4C;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+.btn{
+	color: #AD4C4C;
+	border: 1px solid #AD4C4C;
+	border-radius: 2px;
+	padding: 8px 15px;
+	font-size: 15px;
+	background: #fff;
+}
+.btn:hover{
+	background: #AD4C4C;
+	color: #fff;
+}
+/*----------------- the Mini Nav Button --------------*/
+.mini-nav{
+	margin:0 50px 25px;
+}
+.sub-mini-nav{
+	display: flex;
+}
+.home-btn{
+	color: #C9C9C9;
+}
+.fa-angle-down{
+	font-size:150px;
+	color: #C9C9C9;
+	margin: 2px 5px 0 8px;
+}
+.vendor-btn{
+	color: #000000;
+}
+/* -------- Vendor Name ----------- */
+.vendor-name{
+	width: auto;
+	margin:0 50px 30px;
+}
+.vendor-name h2{
+	font-size: 25px;
+	font-weight: 400;
+}
+/* --------- KFC logo Section -------- */
+.kfc-section{
+	display: flex;
+	margin:0 50px 30px;
+	justify-content: space-between;
+	width: auto;
+}
+.kfc-container{
+	display: flex;
+	line-height: 50px;
+}
+.kfc-container h3{
+	padding-left: 10px;
+	font-size: 22px;
+	font-weight: 500;
+}
+.kfc-view-all{
+	line-height: 50px;
+	color: #AD4C4C;
+}
+/*------------- Picture Section -----------------*/
+.KFC-boxes-container{
+	display: flex;
+	margin:0 45px 30px;
+	width: auto;
+	justify-content: space-between;
+	padding: 20px 0 0;
+}
+.kfc-boxes-text{
+	display: flex;
+	padding: 0 5px;
+	justify-content: space-between;
+}
+.kfc-boxes-text h2{
+	font-size: 18px;
+	color: #4E4D4D;
+}
+.kfc-boxes-text h1{
+	font-size: 20px;
+	color: #5EA304;
+}
+.kfc-btn{
+	padding: 10px 20px;
+	margin: 10px 3px 20px;
+	font-size: 20px;
+	background: #fff;
+	color: #AD4C4C;
+	border: 1px solid #AD4C4C;
+	border-radius: 4px;
+}
+.kfc-btn:hover{
+	background: #AD4C4C;
+	color: #fff;
+}
+/*------------- Bottom Viewall ---------------*/
+.kfc-view-all-bottom{
+	margin:0 45px 20px;
+	text-align: center;
+}
+.kfc-view-all-bottom a{
+	color: #AD4C4C;
+	display: none;
+}
+/*------------------- break line ---------------*/
+.breakline {
+    border: 1px solid #E6E6E6;
+    margin: 0px 50px 40px;
+}
+/*----------------- Responsiveness -------------*/
+@media only screen and (max-width: 600px) {
+	.header,
+	.KFC-boxes-container,
+	.kfc-section,
+	.vendor-name,
+	.mini-nav{
+		margin:0 30px 25px;
+	}
+	/*-------- Navigation goes here -------*/
+	.header h3{
+        font-weight: 400;
+        margin-top: 10px;
+    }
+  /*-----------  KFC  logo Section ---------*/
+    .kfc-view-all{
+    	display: none;
+    }
+    /*--------- Picture Section -----------*/
+    .KFC-boxes-container{
+    	flex-direction: column;
+    }
+    .KFC-boxes img{
+    	width: 100%;
+    	height: 25%;
+    }
+    .kfc-boxes-text{
+    	padding: 0 10px;
+    }
+     .kfc-btn{
+     	margin-left: 11px;
+     }
+     /*------ responsive view all ------*/
+    .kfc-view-all-bottom a{
+		color: #AD4C4C;
+		display: inherit;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	/*--------- Navigation goes here ---------*/
+	.header{
+		margin:0 49px 25px;
+	}
+    /*------ KFC Column Section ------*/
+    .KFC-boxes-container{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+        margin-right: -10px;
+        margin:0 49px 25px;
+    }
+    /*---------- KFC  logo Section ----------*/
+    .kfc-view-all{
+    	display: none;
+    }
+    /*---------- Picture Section ---------*/
+    .KFC-boxes img{
+        width: 100%;
+        height: 25%;
+    }
+     .kfc-boxes-text{
+        padding: 0 10px;
+    }
+    .kfc-btn{
+        margin: 0 10px;
+    }
+    /*-------- responsive view all ---------*/
+    .kfc-view-all-bottom a{
+		color: #AD4C4C;
+		display: inherit;
+	}
+}
+@media only screen and (min-width: 981px) {
+	/*------- Navigation goes here ----------*/
+	.header .btn{
+		margin-right: -20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

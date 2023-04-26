@@ -5,6 +5,7 @@
     try {
             $customer_string = "";
             $retrived_data = array();
+            setcookie('CUSTOMERS', json_encode($retrived_data), time () - 86000, "/", "", false);
             if (isset($_COOKIE['CUSTOMERS'])) {
                 $retrived_data = json_decode ($_COOKIE['CUSTOMERS'], true);
 
@@ -14,7 +15,7 @@
                 $result = $pdo->query($sql);
                 if ($result->rowCount() > 0) {
                     $retrived_data = $result->fetchAll();
-                    setcookie('CUSTOMERS', json_encode($retrived_data), time () + 8600, "/", "", false);
+                    setcookie('CUSTOMERS', json_encode($retrived_data), time () + 86000, "/", "", false);
                 }
             }
 
@@ -25,7 +26,7 @@
                         $customer_string .= "<td>" . htmlspecialchars($customer['full_name']) . "</td>";
                         $customer_string .= "<td>" . htmlspecialchars($customer['email_address']) . "</td>";
                         $customer_string .= "<td>" . htmlspecialchars($customer['created_at']) . "</td>";
-                        $customer_string .= "<td> <button>View</button> </td>";
+                        $customer_string .= "<td> <button><a href='orders.php?customer_order=" . htmlspecialchars($customer["id"]) . "'>View</a></button> </td>";
                     $customer_string .= "</tr>";
 
                 }

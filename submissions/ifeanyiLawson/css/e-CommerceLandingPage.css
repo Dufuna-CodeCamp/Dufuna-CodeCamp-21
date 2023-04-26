@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica";
+    margin: 20px;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px 5px 0;
+    color: black;
+} 
+
+.bag {
+    color: red;
+}
+
+input {
+    width: 1000px;
+}
+
+.cart {
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 5px;
+    border-color: red;
+    margin:0 5px 20px;
+    padding: 10px;
+}
+
+.box {
+    display: block;
+    position: relative;
+    gap: 10px;
+}
+
+.box-one {
+    background-color: white;
+    width: 300px;
+    height: 170px;
+    border:  solid whitesmoke;
+    padding: 15px;
+}
+
+
+.box-two {
+    background-color: white;
+    width: 300px;
+    height: 170px;
+    border:  solid whitesmoke;
+    padding: 15px;
+}
+.box-three {
+    background-color: white;
+    width: 300px;
+    height: 170px;
+    border:  solid whitesmoke;
+    padding: 15px;
+    
+}
+
+.box-four {
+    background-color: white;
+    width: 300px;
+    height: 170px;
+    border:  solid whitesmoke;
+    padding: 15px;
+}
+
+
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+.flex, {
+    display:flex;
+    margin: 10px;
+    
+}
+
+ .flex img {
+    margin: 10px;
+} 
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
+    input {
+        width: 400px;
+    }
+
+    .box2 {
+        text-align: center;
+    }
+    }
+
+
+
+
+    

@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #4e4d4d;
+}
+h1 {
+  color: #000;
+  font-weight: 500;
+  font-size: 3rem;
+}
+/** Beginning of styling of the Page Component **/
+.container {
+  padding: 50px;
+  margin-bottom: 200px;
+}
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+p.navigate {
+  color: #c9c9c9;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  text-align: start;
+}
+p.navigate span:last-child {
+  color: #000;
+}
+.mobile-remove{
+  display: none;
+}
+/** Beginning of styling of the Header Component **/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+nav {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  color: #696969;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav > a:last-child {
+  border: 2px solid #ad4c4c;
+  border-radius: 5px;
+  color: #ad4c4c;
+  padding: 5px;
+}
+.cart {
+  position: relative;
+  height: fit-content;
+  cursor: pointer;
+}
+/**Logo**/
+#logo {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #000;
+}
+#logo span,
+.KFC > p {
+  color: #ad4c4c;
+}
+
+/** Beginning of styling of Order Component **/
+.orders, .delivery, .cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 2rem 0;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.item,
+.delivery-man {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.button {
+  border: transparent;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.button:active {
+  transform: translateY(3px);
+}
+.order-name,
+.delivery-p {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.cost {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/** Beginning of styling of Total Component **/
+.cart-total {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 2;
+  border-bottom: none;
+}
+
+/** Beginning of styling of Delivery Component **/
+.delivery{
+  gap: 5rem;
+}
+.delivery-man{
+  width: 45rem;
+  justify-content: space-between;
+}
+
+/** Beginning of styling of the Checkout Component **/
+button{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: transparent; 
+  color: #fff;
+  margin: 100px auto;
+  text-align: center;
+  background-color: #AD4C4C;
+  width: 60%;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+button:disabled{
+  opacity: 0.5;
+  background-color:#ad4c4cac;
+  cursor: none;
+}
+/** Beginning of styling of the VerificationPage Component **/
+.confirm-paragraph{
+  color: #AD4C4C;
+  padding-top: 5px;
+}
+.sub-heading{
+  padding-top: 40px;
+}
+.radio-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.medium-font{
+  color: #000;
+  font-size: 20;
+  font-weight: 500;
+}
+.small-heading{
+  color: #696969;
+  font-size: 12;
+  padding-top: 10px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.label{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* select{
+  width: 100%
+} */
+.input-field{
+  display: block;
+   height: 40px;
+   margin-top: 10px;
+   padding-left: 10px;
+   border: 1px #C4C4C4 solid;
+}
+.row-group{
+  display: flex;
+   gap: 20px;
+}
+.row-form{
+  flex-basis: 50%;
+}
+/** Beginning of styling of Successful Component **/
+.success-container{
+  padding: 50px;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+  .c-img {
+    width: 25%;
+  }
+  .mobile-remove{
+    color:#AD4C4C;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  .close{
+    width: 70%;
+  }
+}
+@media (max-width: 540px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .c-img {
+    width: 38%;
+  }
+  .item,.orders, .delivery, .delivery-man{
+    display: flex;
+    flex-direction: column;
+  }
+  .row-group{
+    flex-direction: column;
+  }
+  .row-form{
+    flex-basis: 100%;
+  }
+  .close{
+    width: 20%;
+  }
+}
+@media (max-width: 280px){
+  .container {
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+}

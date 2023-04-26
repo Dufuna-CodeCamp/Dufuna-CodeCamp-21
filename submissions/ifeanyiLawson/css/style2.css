@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: "Helvetica";
+}
+
+
+.home {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.vendor {
+    text-decoration: none;
+    color: black;
+}
+.bag {
+    color: red;
+    
+}
+
+span {
+    color: green;
+    float: right;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view {
+    text-decoration: none;
+    color: red;
+    float: right;
+    margin: 10px;
+}
+
+.KFC {
+    display: flex;
+    gap: 30px;
+}
+
+.cart {
+    text-decoration: none;
+    color: red;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 5px;
+    margin:0 5px 20px;
+    padding: 10px;
+    border-color: red;
+    display: inline-block;
+}
+
+.chickenrepublic {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    display: inline;
+    padding: 5px;
+    float: left;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    
+}
+
+hr {
+    border: solid 1px hsla(0, 0%, 90%, 1);
+}

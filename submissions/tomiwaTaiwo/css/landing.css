@@ -61,7 +61,7 @@ select {
   background: white;
   padding: 7px;
 }
-.img {
+.img-1, .img-2, .img-3, .img-4 {
   height: 100px;
 }
 h2 {
@@ -386,7 +386,7 @@ select {
   background: white;
   padding: 7px;
 }
-.img {
+.img-1, .img-2, .img-3, .img-4 {
   height: 100px;
 }
 h2 {
@@ -466,4 +466,11 @@ margin-left: -70px;
 left: 100px;
 width: 35px;
 }
+}
+
+
+/* ghjkl */
+
+.imgLink{
+  pointer-events: none;
 }

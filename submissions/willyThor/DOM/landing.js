@@ -14,7 +14,7 @@ function validateLocation() {
     }
 
     for (let j = 0; j < img.length; j++) {
-       img[j].onclick = () => location.href = "vendors.html";
+       img[j].onclick = () => location.href = "vendors.html", "_blank";
        img[j].style.cursor = "pointer";   
     
     }

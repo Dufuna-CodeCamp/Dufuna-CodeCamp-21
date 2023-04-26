@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Foodbag</title>
+		<link rel="stylesheet" href="vendors.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navlink flex justify-between items-center">
+				<input
+					placeholder="Enter your delivery address"
+					type="text"
+					hidden
+				/>
+				<h3 class="font-semibold logo">
+					Food<span class="text-accent">Bag</span>
+				</h3>
+				<ul class="flex justify-between gap-2 text-500 items-center">
+					<li><a href="#" id="cart">Cart</a></li>
+					<li><a href="#">Login</a></li>
+					<button>Sign up</button>
+				</ul>
+			</nav>
+		</header>
+		<main class="xs-mt-40">
+			<section class="breadcrumb flex flex-col justify-center">
+				<h5 class="text-500 font-medium text-x s">
+					Home > <span class="text-900">Vendors</span>
+				</h5>
+				<h2 class="my-20 text-h2">All Vendors</h2>
+			</section>
+			<section class="kfc">
+				<div class="flex justify-between items-center">
+					<div class="flex items-center my-20 img-shrink">
+						<img src="./img/KFC logo.svg" alt="" />
+						<h4 class="text-15-20">KFC</h4>
+					</div>
+					<span class="text-accent text-16 xs-hidden font-medium"
+						>View All</span
+					>
+				</div>
+				<div class="kfc-items grid gap-4">
+					<div class="kfc-single">
+						<img src="./img/image4.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">KFC - King Bucket</p>
+							<span>#5,000</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+					<div class="kfc-single">
+						<img src="./img/image4.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Zinger Burger</p>
+							<span>#3,600</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+					<div class="kfc-single">
+						<img src="./img/image4.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Chicken strips</p>
+							<span>#1,450</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+					<div class="kfc-single">
+						<img src="./img/image4.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Yamilicious</p>
+							<span>#900</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+				</div>
+				<div class="text-center text-accent text-16 my-40">
+					<span class="font-medium sm-hidden my-20">View All</span>
+				</div>
+			</section>
+
+			<hr class="hr" />
+
+			<section class="kfc sm-mb-80">
+				<div class="flex justify-between items-center">
+					<div class="flex items-center my-20 img-shrink">
+						<img src="./img/Chicken republic_logo.svg" alt="" />
+						<h4 class="text-15-20">Chicken republic</h4>
+					</div>
+					<span class="text-accent text-16 xs-hidden font-medium"
+						>View All</span
+					>
+				</div>
+				<div class="kfc-items grid gap-4">
+					<div class="kfc-single">
+						<img src="./img/image1.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Refuel Max</p>
+							<span>#1,200</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+					<div class="kfc-single">
+						<img src="./img/image2.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Express meal</p>
+							<span>#3,600</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+					<div class="kfc-single">
+						<img src="./img/image3.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Citizen meal</p>
+							<span>#2,000</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+					<div class="kfc-single">
+						<img src="./img/image3.svg" alt="" />
+						<div class="flex justify-between font-semibold my-10">
+							<p class="text-700">Crunchy wings</p>
+							<span>#1,750</span>
+						</div>
+						<button class="my-20">Add to Cart</button>
+					</div>
+				</div>
+				<div class="text-center text-accent text-16 my-40">
+					<span class="font-medium sm-hidden my-20">View All</span>
+				</div>
+			</section>
+		</main>
+
+		<script src="../DOM/vendors_page_validation.js"></script>
+	</body>
+</html>

@@ -1,123 +1,385 @@
+@media only screen and (max-width: 600px) {
+      body{
+            background-color: white;
+            padding: 20px;
+            font-family: Poppins;
+            font-style: normal;
+      }
+      header,
+      header p{
+            display:flex;
+      }
+      #logo,
+      .vp-description p,
+      label
+      #vp-container-header{
+            font-size: 16px;
+            line-height: 24px;
+      
+      }
+      #logo{
+            font-weight: 500;
+            color: #000000;
+      }
+      #logo b{
+            color: #AD4C4C;
+            font-style: normal;
+      }
+      nav{
+            padding-left: 85px;
+      }
+      
+      nav li{
+            text-decoration: none;
+            display: inline;
+            padding: 10px;
+            color: #696969;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+      }
+      nav button{
+            color: #AD4C4C;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            background-color: #FFFFFF;
+            border: 1px solid #AD4C4C;
+            height: 28px;
+            width: 75px;
+            border-radius: 5px;
+      }
+      .vp-container{
+            display: block;
+      }
+      #vp-box1-home,
+      #vp-box1-vendor{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+      }
+      #vp-box1-home{
+            color: #C9C9C9;
+      }
+      #vp-box1-vendor{
+            color: #000000;
+      }
+      .vp-box1 h1{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+      }
+      .vp-container-image{
+            height: 50px;
+            width: 35px;
+      }
+      .vp-container-header{
+            font-weight: 500;
+            display: inline;
+      }
+      .vp-cont-p{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-left: 40em;
+            color: #AD4C4C;
+            position: relative;
+            top: 66em;
+            right: 23em;
+      }
+      .vp-container-box{
+            padding: 10px;
+      }
+      .vp-container-box img{
+            height: 150px;
+            width: 320px;
+      }
+      .vp-container-box-para{
+            display: flex;
+
+      }
+      .vp-container-box-para p{
+            font-size: 12px;
+            font-weight: 600;
+      }
+      .container-box-price{
+            margin-left: 15px;
+            color: #5EA304;
+      }
+      .vp-container-box button{
+            height: 30px;
+            width: 110px;
+            border: 1px solid #AD4C4C;
+            border-radius: 3px;
+            background-color: white;
+            color: #AD4C4C;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+      }
+      hr{
+            margin-top: 5em;
+            border: 1px solid #E6E6E6;
+      }
+      #vp-cont-p1{
+            margin-left: 35em;
+      }
+      
+}
+@media only screen and (min-width: 600px) {
+
 body{
-      background-color: white;
-      padding: 20px;
-      font-family: Poppins;
-      font-style: normal;
-}
-header,
-header p{
-      display:flex;
-}
-#logo,
-.description p,
-label
-#container-header{
-      font-size: 20px;
-      line-height: 30px;
+            background-color: white;
+            padding: 20px;
+            font-family: Poppins;
+            font-style: normal;
+      }
+      header,
+      header p{
+            display:flex;
+      }
+      #logo,
+      .vp-description p,
+      label
+      #vp-container-header{
+            font-size: 20px;
+            line-height: 30px;
+
+      }
+      #logo{
+            font-weight: 500;
+            color: #000000;
+      }
+      #logo b{
+            color: #AD4C4C;
+            font-style: normal;
+      }
+      nav{
+            padding-left: 95px;
+      }
+
+      nav li{
+            text-decoration: none;
+            display: inline;
+            padding: 10px;
+            color: #696969;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+      }
+      nav button{
+            color: #AD4C4C;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            background-color: #FFFFFF;
+            border: 1px solid #AD4C4C;
+            height: 28px;
+            width: 75px;
+            border-radius: 5px;
+      }
+      .vp-container{
+            display: block;
+      }
+      #vp-box1-home,
+      #vp-box1-vendor{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+      }
+      #vp-box1-home{
+            color: #C9C9C9;
+      }
+      #vp-box1-vendor{
+            color: #000000;
+      }
+      .vp-box1 h1{
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 45px;
+      }
+      .vp-container-image{
+            height: 50px;
+            width: 35px;
+      }
+      .vp-container-header{
+            font-weight: 500;
+            display: inline;
+      }
+      .vp-cont-p{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-left: 40em;
+            color: #AD4C4C;
+            position: relative;
+            top: 62em;
+            right: 23em;
+      }
+      .vp-container-box{
+            padding: 10px;
+      }
+      .vp-container-box img{
+            height: 8em;
+            width: 11em;
+      }
+      .vp-container-box-para{
+            display: flex;
+      }
+      .vp-container-box-para p{
+            font-size: 12px;
+            font-weight: 600;
+      }
+      .container-box-price{
+            margin-left: 15px;
+            color: #5EA304;
+      }
+      .vp-container-box button{
+            height: 30px;
+            width: 110px;
+            border: 1px solid #AD4C4C;
+            border-radius: 3px;
+            background-color: white;
+            color: #AD4C4C;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+      }
+      hr{
+            margin-top: 5em;
+            border: 1px solid #E6E6E6;
+      }
+      #vp-cont-p1{
+            margin-left: 35em;
+      }
 
 }
-#logo{
-      font-weight: 500;
-      color: #000000;
-}
-#logo b{
-      color: #AD4C4C;
-      font-style: normal;
-}
-nav{
-      padding-left: 450px;
-}
 
-nav li{
-      text-decoration: none;
-      display: inline;
-      padding: 10px;
-      color: #696969;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      /* float: right; */
-}
-nav button{
-      color: #AD4C4C;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      background-color: #FFFFFF;
-      border: 1px solid #AD4C4C;
-      height: 28px;
-      width: 75px;
-      border-radius: 5px;
-}
-.vp-container{
-      display: flex;
-}
-#vp-box1-home,
-#vp-box1-vendor{
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 21px;
-}
-#vp-box1-home{
-      color: #C9C9C9;
-}
-#vp-box1-vendor{
-      color: #000000;
-}
-.vp-box1 h1{
-      font-size: 30px;
-      font-weight: 500;
-      line-height: 45px;
-}
-.vp-container-image{
-      height: 50px;
-      width: 35px;
-}
-.vp-container-header{
-      /* font-size: 20px; */
-      font-weight: 500;
-      /* line-height: 30px; */
-}
-.vp-cont-p{
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      margin-left: 40em;
-      color: #AD4C4C;
-}
-.vp-container-box{
-      padding: 10px;
-}
-.vp-container-box img{
-      height: 8em;
-      width: 11em;
-}
-.vp-container-box-para{
-      display: flex;
-}
-.vp-container-box-para p{
-      font-size: 12px;
-      font-weight: 600;
-}
-.container-box-price{
-      margin-left: 15px;
-      color: #5EA304;
-}
-.vp-container-box button{
-      height: 30px;
-      width: 110px;
-      border: 1px solid #AD4C4C;
-      border-radius: 3px;
-      background-color: white;
-      color: #AD4C4C;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-}
-hr{
-      border: 1px solid #E6E6E6;
-}
-#vp-cont-p1{
-      margin-left: 35em;
-}
+@media only screen and (min-width: 768px) {
 
+ body{
+                  background-color: white;
+                  padding: 20px;
+                  font-family: Poppins;
+                  font-style: normal;
+            }
+            header,
+            header p{
+                  display:flex;
+            }
+            #logo,
+            .vp-description p,
+            label
+            #vp-container-header{
+                  font-size: 20px;
+                  line-height: 30px;
+      
+            }
+            #logo{
+                  font-weight: 500;
+                  color: #000000;
+            }
+            #logo b{
+                  color: #AD4C4C;
+                  font-style: normal;
+            }
+            nav{
+                  padding-left: 450px;
+            }
+      
+            nav li{
+                  text-decoration: none;
+                  display: inline;
+                  padding: 10px;
+                  color: #696969;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+            }
+            nav button{
+                  color: #AD4C4C;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  background-color: #FFFFFF;
+                  border: 1px solid #AD4C4C;
+                  height: 28px;
+                  width: 75px;
+                  border-radius: 5px;
+            }
+            .vp-container{
+                  display: flex;
+            }
+            #vp-box1-home,
+            #vp-box1-vendor{
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 21px;
+            }
+            #vp-box1-home{
+                  color: #C9C9C9;
+            }
+            #vp-box1-vendor{
+                  color: #000000;
+            }
+            .vp-box1 h1{
+                  font-size: 30px;
+                  font-weight: 500;
+                  line-height: 45px;
+            }
+            .vp-container-image{
+                  height: 50px;
+                  width: 35px;
+            }
+            .vp-container-header{
+                  font-weight: 500;
+                  display: flex;
+            }
+            .vp-cont-p{
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 24px;
+                  margin-left: 40em;
+                  color: #AD4C4C;
+                  position: relative;
+                  top: 4px;
+                  right: 3px;
+            }
+            .vp-container-box{
+                  padding: 10px;
+            }
+            .vp-container-box img{
+                  height: 8em;
+                  width: 11em;
+            }
+            .vp-container-box-para{
+                  display: flex;
+            }
+            .vp-container-box-para p{
+                  font-size: 12px;
+                  font-weight: 600;
+            }
+            .container-box-price{
+                  margin-left: 15px;
+                  color: #5EA304;
+            }
+            .vp-container-box button{
+                  height: 30px;
+                  width: 110px;
+                  border: 1px solid #AD4C4C;
+                  border-radius: 3px;
+                  background-color: white;
+                  color: #AD4C4C;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 24px;
+            }
+            hr{
+                  margin-top: 5em;
+                  border: 1px solid #E6E6E6;
+            }
+            #vp-cont-p1{
+                  margin-left: 35em;
+            } 
+      
+      }

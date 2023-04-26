@@ -1,0 +1,41 @@
+.dot{
+    position: relative;
+}
+
+.dot::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: rgb(168, 7, 7);
+    position: absolute;
+    top: 2px;
+    right: 3px;
+}
+.remove{
+    align-items: center;
+    color: white;
+    float: left;
+    display: inline-flex;
+    margin: -8px 0 -5px 5px;
+    
+    border-radius: 6px;
+}
+.change{
+    font-size: 14px;
+    background-color:#A5A5A5;
+    align-content: center;
+    border: 2px solid transparent;
+    padding: 7px;
+    border-radius: 10px;
+    display: inline;
+    color :white;
+}
+.cart{
+    color:  rgb(168, 7, 7);
+    border: 2px solid  rgb(168, 7, 7);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+}

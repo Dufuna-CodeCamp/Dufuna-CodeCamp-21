@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: grey;
+}
+
+.container {
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 5px;
+    }
+    .main{
+        margin: 0 20px;
+    }
+    .header{
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .header .logo{
+        width: 25%;
+        margin-right: 40px;
+    }
+    .header .main-nav{
+        display: flex;
+        width: 75%;
+        margin: 0 ;
+        padding: 0 ;
+    }
+    .header .main-nav li{
+        float: left;
+        padding: 0 5px;
+        margin-left: 5px;
+    }
+    
+    .right{
+        text-align: center;
+    }
+    .right span{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        margin: 0 -25px;
+    }
+    .header{
+        font-size: 15px;
+        display: flex;
+        width: 100%;
+    }
+    .header .logo{
+        width: 25%;
+        font-size: 10px;
+    }
+    .header .main-nav{
+        display: flex;
+        width: 75%;
+        margin: 0 ;
+        padding: 0 ;
+    }
+    .header .main-nav li{
+        float: left;
+        padding: 0 5px;
+        margin-left: 5px;
+    }
+    .header .main-nav a{
+        font-size: 10px;
+    }
+    .header .main-nav li #sign {
+        color: maroon;
+        border: 2px solid maroon;
+        padding: 0 4px;
+        border-radius: 10px;
+    }
+    .right{
+        text-align: center;
+    }
+    .right span{
+        padding: 20px;
+    }
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+
+}
+
+header ul li a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    color: darkmagenta;
+    transition: .4s;
+ 
+}
+
+#sign {
+    color: maroon;
+    border: 2px solid maroon;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.first {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.location {
+    font-size: 25px;
+
+}
+
+.location select {
+    width: 100%;
+    height: 50px;
+    padding-left: 13px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('images/keyboard_arrow_down.svg') no-repeat right;
+}
+
+.pick {
+    font-size: 25px;
+    color: black;
+}
+
+.boxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    padding: 20px 30px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+
+}
+
+hr {
+    border: 1px solid #F2F2F2;
+    width: 100%;
+}
+
+.title {
+    color: rgb(85, 75, 75);
+    font-size: 40px; 
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+
+.cardd {
+    padding: 30px 35px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+    .box {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .boxx {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.service {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    padding: 15px;
+}
+.right p{
+    font-size: 18px;
+}

@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    padding: 20px 20px 0 ;
+    font-family: "Helvetica";
+}
+
+nav, .sign, .sign-up {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bag {
+    color: red;
+}
+
+.sign-up {
+    color: red;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 5px;
+    border-color: red;
+    margin:0 5px 20px;
+    padding: 0 5px 0 10px;
+}
+.cart {
+    text-decoration: none;
+    color: red;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 5px;
+    margin:0 5px 20px;
+    padding: 10px;
+    border-color: red;
+    display: inline-block;
+}
+
+span {
+    color: green;
+    float: right;
+}
+
+.home {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.vendor {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: inline;
+    padding: 5px;
+    float: left;
+    
+}
+
+.view {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a.view {
+    width: 50%;
+}
+
+.all {
+    color: red;
+}
+
+.KFC {
+    display: block;
+    width: 100%;
+}
+
+.child1 {
+    width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        body {
+            display: block;
+        }
+    }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        overflow-wrap: break-word;
+    }
+}
+
+/* Medium devices (landscape tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        overflow-wrap: break-word;
+    }
+}

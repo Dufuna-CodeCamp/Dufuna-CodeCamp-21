@@ -1,0 +1,395 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title{
+  font-size: 18px;
+}
+.desc{
+  margin-left: -180px;
+}
+.itemname{
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+.itemnumber{
+  margin: 0px 15px;
+  font-weight: 700;
+  color: #AD4C4C;
+  display: inline-block;
+}
+.row{
+  justify-content: space-between;
+}
+/* div{
+  border: 1px solid red;
+} */
+.minus{
+  margin-left: 0px;
+  margin-right: 250px;
+}
+.sign{
+  width: 100%;
+}
+.textprice{
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+#bag{
+  color: #AD4C4C;
+  font-weight: bold;
+}
+#food{
+  font-weight: bold;
+}
+ul li{
+  text-decoration: none;
+  margin: 0px 50px;
+}
+.spanprice{
+  font-weight: 700;
+}
+.nav{
+  display: inline-block;
+}
+.navdiv{
+  text-align: right;
+}
+#btnsignup{
+  color: #AD4C4C;
+  border: 1px solid #AD4C4C;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-weight: 500;
+}
+.header{
+  margin: 40px 0px 100px;
+}
+.grey{
+  color: grey;
+}
+.homecart{
+  margin: 0px 0px 30px;
+}
+#cartname{
+  margin: 0px 0px 50px;
+}
+.hand:hover{
+  cursor: pointer;
+}
+.deliveryimg{
+  margin-left: 60px;
+}
+.deliveryname{
+  margin-top: 30px;
+  font-weight: bold;
+}
+#btncheckout{
+  width: 60%;
+  margin: 40px 20%;
+  text-align: center;
+  height: 50px;
+  background-color:#AD4C4C;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.total{
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 40px;
+}
+@media screen and (min-width: 300px) and (max-width: 500px){
+  ul li{
+  text-decoration: none;
+  margin: 0px 10px;
+  }
+  .sign{
+    width: 100%;
+  }
+  #btnsignup{
+  color: #AD4C4C;
+  border: 1px solid #AD4C4C;
+  border-radius: 5px;
+  width: 60px;
+  height: 30px;
+  font-weight: 200;
+  font-size: 12px;
+}
+.header{
+  margin: 40px 0px 10px;
+  
+}
+.navdiv{
+  text-align: right;
+  margin-left: 0px;
+}
+.name{
+  margin-right: -200px;
+}
+.title{        
+  font-size: 14px;
+}
+#title{
+  margin-left: -10px;
+}
+.cancel{
+  width: 10%;
+  margin-top: 40px;
+}
+.images{
+  width: 60%;
+  margin-top: 40px;
+}
+.itemname{
+  width: 100%;
+  font-size: 10px;
+  margin: 40px 0px 0px 110px;
+  border: 1px solid red;
+}
+.itemnumber{
+  display: inline-block;
+  border: 1px solid red;
+}
+.minus{
+  margin: 0px;
+  display: inline-block;
+  border: 1px solid red;
+  float: right;
+}
+.number{
+  /* margin:  0px 0px 0px 0px !important; */
+  border: 1px solid red;
+  
+}
+.plus{
+  margin: 0px 0px 0px -10px;
+  display: inline-block;
+  border: 1px solid red;
+  float: right;
+}
+#numb{
+  margin-top: -3px !important;
+  padding-top: 0px !important;
+  margin-left: 5px !important;
+  border: 1px solid red;
+  font-size: 10px;
+  font-weight: 400;
+  float: right;
+}
+#root{
+  width: 100%;
+}
+.textprice{
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 40px;
+  font-size: 10px;
+}
+.deliveryimg{
+  width: 60px;
+  height: 40px;
+  margin-left: 30px;
+}
+.deliveryname{
+  margin-top: 10px;
+  margin-left: 110px;
+  font-size: 10px;
+}
+.delprice{
+  margin-top: 10px !important;
+}
+.totallast{
+  margin: 40px 0px 0px 10px;
+}
+}
+@media screen and (min-width: 501px) and (max-width: 1024px){
+  ul li{
+  text-decoration: none;
+  margin: 0px 10px;
+  }
+  .sign{
+    width: 100%;
+  }
+  #btnsignup{
+  color: #AD4C4C;
+  border: 1px solid #AD4C4C;
+  border-radius: 5px;
+  width: 60px;
+  height: 30px;
+  font-weight: 200;
+  font-size: 12px;
+}
+.header{
+  margin: 40px 0px 10px;
+  
+}
+.navdiv{
+  text-align: right;
+  margin-left: 0px;
+}
+.name{
+  margin-right: -200px;
+}
+.title{        
+  font-size: 14px;
+}
+#title{
+  margin-left: -10px;
+}
+.cancel{
+  width: 10%;
+  margin-top: 40px;
+}
+.images{
+  width: 60%;
+  margin-top: 40px;
+}
+.itemname{
+  width: 100%;
+  font-size: 18px;
+  margin: 40px 0px 0px 110px;
+  border: 1px solid red;
+}
+.itemnumber{
+  display: inline-block;
+  border: 1px solid red;
+}
+.minus{
+  margin: 0px;
+  display: inline-block;
+  border: 1px solid red;
+  float: right;
+}
+.number{
+  /* margin:  0px 0px 0px 0px !important; */
+  border: 1px solid red;
+  
+}
+.plus{
+  margin: 0px 130px 0px -10px;
+  display: inline-block;
+  border: 1px solid red;
+  float: right;
+}
+#numb{
+  margin-top: -3px !important;
+  padding-top: 0px !important;
+  margin-left: 5px !important;
+  border: 1px solid red;
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+}
+#root{
+  width: 100%;
+}
+.textprice{
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+.deliveryimg{
+  width: 60px;
+  height: 40px;
+  margin-left: 30px;
+}
+.deliveryname{
+  margin-top: 10px;
+  margin-left: 110px;
+  font-size: 18px;
+}
+.delprice{
+  margin-top: 10px !important;
+}
+.totallast{
+  margin: 40px 0px 0px 10px;
+}
+}
+#verify{
+  margin-bottom: 20px;
+}
+#deliveryorder{
+  font-size: 10px;
+  width: 100%;
+}
+#homecart{
+  margin: 30px 0px 20px;
+}
+.deliveryaddress{
+margin: 20px 0px;
+}
+hr{
+margin: 30px 0px;
+}
+label{
+margin: 20px 0px;
+}
+#radio{
+color: red;
+background-color: red;
+}
+input[type="radio"]{
+accent-color: red;
+width: 60% !important;
+}
+#inputBlock{
+width: 100% !important;
+}
+@media screen and (min-width: 760px){
+#deliveryorder{
+  font-size: 20px;
+  width: 100%;
+}
+#deliver{
+  font-size: 24px;
+}
+#radio{
+  margin-left: 50px;
+}
+}
+
+#ordersuccess{
+  text-align: center;
+}
+#ordersuccess h2{
+  color: green;
+  margin-top: 30px;
+}
+#ordersuccess span{
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-size: 24px;
+  width: 80%;
+}
+#span{
+  margin-bottom: 0px;
+}
+.style{
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  img{
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 769px){
+  img{
+    margin-top: 40px;
+  }
+}

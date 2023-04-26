@@ -125,6 +125,25 @@ button {
   color: #C17979;
 }
 
+#cart {
+  position: relative;
+}
+
+.cart-dot {
+  position: absolute;
+ display: none;
+}
+
+.remove-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #a5a5a5 url(../CSS/images/remove.svg) no-repeat center left;
+  padding: 5% 9%;
+  border: none;
+}
+
 @media screen and (max-width:600px) {
   .nav-link, 
   button {

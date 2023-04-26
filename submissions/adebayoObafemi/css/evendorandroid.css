@@ -1,0 +1,263 @@
+@media screen and (max-width: 360px) {
+    body {
+        margin: 0 20px;
+    }
+    
+/* CSS style for Vendor's lading page for android */
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        margin: 20px 0 50px;
+    }
+
+    header nav div {
+        display: inline;
+    }
+
+    header nav a.logo {
+        font-size: 16px;
+    }
+
+    header nav div a.nav {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    header nav div a.signup {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    header nav div.navlinks a {
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+    svg {
+        display: flex;
+        width: 5px;
+        height: 5px;
+        fill: hsla(0, 39%, 49%, 1);
+        overflow: visible;
+    }
+    
+    ellipse {
+        cx: -2;
+        cy: 8;
+        rx: 2;
+        ry: 2;
+    }
+
+    div.two {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    div.menu img {
+        width: 100%;
+    }
+
+    div.menuone img {
+        width: 100%;
+    }
+
+    div.two h6 {
+        color: hsla(0, 1%, 30%, 1);
+        margin: 2px 0 20px;
+        padding-left: 5px;
+        font-size: 16px;
+    }
+
+    div.two h6 span {
+        color: hsla(86, 95%, 33%, 1);
+        float: right;
+        margin-right: 10px;
+    }
+
+    a.addtocart {
+        display: inline-block;
+        margin: 0 5px 20px;
+        padding: 7px 20px;
+        border: 1px solid hsla(0, 39%, 49%, 1);
+        border-radius: 3px;
+        font-size: 16px;
+        color: hsla(0, 39%, 49%, 1);
+    }
+
+    div.second {
+        display: none;
+    }
+
+    div.secondviewall {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    div.secondviewall a {
+        display: flex;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    div.first {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+    }
+
+    div.first a {
+        font-size: 15px;
+    }
+
+/* CSS styling for active order page for android */
+
+    a.menurm {
+        display: inline-flex;
+        flex-direction: row;
+        column-gap: 5px;
+        align-items: center;
+        margin: 0 5px 20px;
+        padding: 3px 28px 3px 3px;
+        border: 1px solid hsla(0, 0%, 65%, 1);
+        border-radius: 3px;
+        font-size: 16px;
+        color: hsla(0, 0%, 90%, 1);
+        background-color: hsla(0, 0%, 65%, 1);
+    }
+
+/* CSS styling for order success page for android */
+
+    .container h3.success {
+        font-size: 25px;
+        color: hsla(86, 95%, 33%, 1);
+        margin-bottom: 15px;
+    }
+    
+    .container p.success {
+        font-size: 20px;
+        color: hsla(0, 0%, 41%, 1);
+        width: 10em;
+        text-align: center;
+    }
+
+/* CSS styling for order fail page for android */
+
+    .container h3.fail {
+        font-size: 25px;
+        color: hsla(9, 100%, 65%, 1);
+        margin-bottom: 15px;
+    }
+    
+    .container p.fail {
+        font-size: 20px;
+        color: hsla(0, 0%, 41%, 1);
+        width: 12em;
+        text-align: center;
+    }
+
+/* CSS styling for cart page for android */
+
+    header nav div a.cart {
+        color: hsla(0, 39%, 49%, 1);
+    }
+
+    #items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .itemscart {
+        margin-bottom: 10px;
+    }
+
+    .itemscart h4 {
+        font-size: 20px;
+    }
+
+    a.items {
+        display: flex;
+        text-decoration: underline;
+        color: hsla(0, 39%, 49%, 1);
+        font-size: 14px;
+    }
+
+    h5.items {
+        display: flex;
+        color: hsla(0, 39%, 49%, 1);
+        font-size: 16px;
+    }
+
+    section.vendornav h4 {
+        margin: 10px 0;
+    }
+
+    div.one {
+        display: none;
+        margin-top: 30px;
+    }
+
+    div.img img.reduceimg {
+        width: 5em;
+    }
+
+    div.img img.reduceimagex {
+        width: 1.5em;
+    }
+
+    div.img img.reduceimage {
+        width: 1em;
+    }
+
+    div #scooter div#image {
+        width: 5em;
+        margin: 0 12px auto 35px;
+    }
+
+    div.setorder p {
+        color: hsla(0, 39%, 49%, 1);
+        font-size: 14px;
+    }
+
+    #ordernum h6, #menu #scooter h6 {
+        font-size: 10px;
+    }
+
+    #menu span {
+        font-size: 15px;
+    }
+
+    #total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: hsla(0, 1%, 30%, 1);
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #total span {
+        float: inline-end;
+        flex-direction: row;
+        font-size: 18px;
+        color: hsla(0, 1%, 30%, 1);
+    }
+
+    #total h4 {
+        font-size: 18px;
+        margin-left: 35px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+    }
+}
