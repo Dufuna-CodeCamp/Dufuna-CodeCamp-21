@@ -1,2 +1,3 @@
-Hello World!
-I am Chishimba Lukwesa a software engineer.
+Hello Worl!
+I am Chishimba.
+Want to learn Software Development.
