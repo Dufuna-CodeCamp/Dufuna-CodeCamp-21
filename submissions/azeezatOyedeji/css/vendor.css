@@ -22,8 +22,7 @@ a {
 .one a {
   color: black;
 }
-.one span,
-.logo a {
+.one span {
   color: rgb(168, 43, 43);
 }
 .two a {
@@ -36,7 +35,7 @@ a {
   padding: 10px;
   border-radius: 3px;
 }
-header p span {
+header p {
   color: lightgray;
 }
 .logo,
@@ -76,9 +75,23 @@ button {
 }
 .btn {
   border: 1px solid rgb(209, 74, 74);
-  border-radius: 2px;
+  border-radius: 5px;
 }
-
+.removeText {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  font-size: 20px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+}
+.notification {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(168, 43, 43);
+}
 @media screen and (max-width: 600px) {
   body {
     padding: 0;
