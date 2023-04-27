@@ -1,9 +1,7 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 18,
-    "passes": 18,
-    "pending": 0,
+    "tests": 7,
+    "passes": 7,
     "failures": 0,
     "start": "2023-04-24T20:13:24.148Z",
     "end": "2023-04-24T20:13:45.886Z",
