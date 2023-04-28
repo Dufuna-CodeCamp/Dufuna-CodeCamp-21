@@ -147,22 +147,18 @@ h2 span{
     margin-top: 30px;
     gap: 30px;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:768px){
     .items, .itemsDe{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width:570px){
+@media screen and (max-width:480px){
+    
     .items, .itemsDe{
         grid-template-columns: 1fr ;
     }
-}
-
-
-
-@media screen and (max-width:490px){
     .container{
-        margin: 20px 40px;
+        margin: 20px 10px;
     }
     .logo{
         font-size: 12px;
@@ -189,12 +185,7 @@ h2 span{
         cursor: pointer;
     }
 } 
-@media screen and (max-width:400px){
-    .container{
-        margin: 20px;
-    }
-}
-@media screen and (max-width:323px){
+@media screen and (max-width:320px){
     .container{
         margin: 20px 10px;
     }
