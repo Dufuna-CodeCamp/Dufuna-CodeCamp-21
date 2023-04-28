@@ -185,8 +185,3 @@ h2 span{
         cursor: pointer;
     }
 } 
-@media screen and (max-width:320px){
-    .container{
-        margin: 20px 10px;
-    }
-}
