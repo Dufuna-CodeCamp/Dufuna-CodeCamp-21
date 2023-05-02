@@ -218,7 +218,12 @@ input::placeholder{
         grid-template-columns: 1fr 1fr;
     }
 }
-
+@media screen and (max-width:670px) {
+    .terms{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
 @media screen and (max-width:500px) {
     .foodbagcontainer{
         padding:1rem;
