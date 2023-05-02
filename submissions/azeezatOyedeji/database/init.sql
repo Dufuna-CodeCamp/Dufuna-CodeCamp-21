@@ -5,14 +5,14 @@ CREATE DATABASE foodbag;
 USE foodbag;
 
 -- create table for food
-CREATE TABLE food(
+CREATE TABLE foods(
 id INT NOT NULL AUTO_INCREMENT,
 type ENUM('Fast Food','Vegetables & Fruits','Drinks & Cocktails','Resturants'),
 PRIMARY KEY (id)
 );
 
 -- create vendors table
-CREATE TABLE vendor_food(
+CREATE TABLE vendors_foods(
 id INT NOT NULL AUTO_INCREMENT,
 admin_id INT NOT NULL,
 food_id INT NOT NULL,
@@ -35,7 +35,7 @@ PRIMARY KEY(id)
 );
 
 -- creating customers account table
-CREATE TABLE customer_acc(
+CREATE TABLE customers_acc(
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(255) NOT NULL,
 phone_number VARCHAR(100) NOT NULL,
