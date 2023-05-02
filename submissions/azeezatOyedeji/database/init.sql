@@ -19,8 +19,8 @@ food_id INT NOT NULL,
 name VARCHAR(255) NOT NULL,
 amount DECIMAL(10,2) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (admin_id) REFERENCES admin(id),
-FOREIGN KEY (food_id) REFERENCES food(id)
+FOREIGN KEY (admin_id) REFERENCES admins(id),
+FOREIGN KEY (food_id) REFERENCES foods(id)
 );
 
 -- creating admins table
@@ -50,6 +50,6 @@ id INT NOT NULL AUTO_INCREMENT,
 vendor_id INT NOT NULL, 
 customer_id INT,
 PRIMARY KEY(id),
-FOREIGN KEY (vendor_id) REFERENCES vendor_food(id),
-FOREIGN KEY (customer_id) REFERENCES customer_acc(id)
+FOREIGN KEY (vendor_id) REFERENCES vendors_foods(id),
+FOREIGN KEY (customer_id) REFERENCES customers_acc(id)
 ); 
