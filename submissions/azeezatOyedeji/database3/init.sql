@@ -4,8 +4,7 @@ CREATE DATABASE travel;
 -- specify which database to use;
 USE travel;
 
-
--- query 1
+-- solution to query 1
 SELECT COUNT(*) FROM accident_cases WHERE survived = 1;
 -- 342
 
