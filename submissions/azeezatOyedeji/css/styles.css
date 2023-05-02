@@ -145,3 +145,9 @@ input {
     margin-bottom: 80px;
   }
 }
+@media screen and (min-width: 992px) {
+  .interest-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
