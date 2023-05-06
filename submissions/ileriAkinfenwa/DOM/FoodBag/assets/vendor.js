@@ -89,7 +89,6 @@ handleFoodsDisplay(pageData.chickenRepublic, chickenRepublicFoods);
 
 // Add to cart btns selection
 const addCartBtns = document.querySelectorAll(".card-btn");
-const cartsContainer = document.querySelector(".cart-items");
 // const toggleCardBtn =
 
 // Cart Items
@@ -123,7 +122,6 @@ const handleCartBtnChangeShowCartDot = (
   }
 };
 
-const removeItemBtn = document.querySelectorAll(".remove-item");
 
 // Function to remove item from cart
 const removeFoodfromCart = (arr, btnId) => {
