@@ -114,7 +114,7 @@ const handleCartBtnChangeShowCartDot = (
   if (clickedBtnId && status === "add") {
     clickedBtn = document.getElementById(clickedBtnId);
     clickedBtn.classList.add("remove-item");
-    clickedBtn.innerHTML = `<img src="./img/Vector.svg" alt="rm-icon" /> Remove Item`;
+    clickedBtn.innerHTML = `<img src="./img/Vector.svg" alt="rm-icon" /> Remove`;
     clickedBtn.classList.add("card-btn");
   } else if (clickedBtnId && status === "remove") {
     clickedBtn = document.getElementById(clickedBtnId);
@@ -123,27 +123,6 @@ const handleCartBtnChangeShowCartDot = (
   }
 };
 
-// function to handle cart Items display
-/*
-const displayCartItems = function (arr) {
-  cartsContainer.innerHTML = arr
-    .map(
-      (food) => `
-<div class="card">
-<div class="card-img">
- <img src="${food?.foodImg}" alt=${food?.foodName} />
-</div>
-<div class="card-description-price">
- <div class="description"><span>${food?.foodName}</span></div>
- <div class="price">#${food?.foodPrice}</div>
-</div>
-</div>
-`
-    )
-    .join("");
-};
-*/
-// removing Items from cart
 const removeItemBtn = document.querySelectorAll(".remove-item");
 
 // Function to remove item from cart
