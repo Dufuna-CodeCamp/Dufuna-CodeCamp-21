@@ -114,7 +114,7 @@ div.offerings2 {
 }
 
 .offerings2 p {
-    color: grey;
+    text-align: center;
 }
 
 .socials {
@@ -125,12 +125,12 @@ div.offerings2 {
 div.contactUs {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 
 }
 
-#footer {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
+
+footer p {
+    display: inline-block;
+    margin-top: 60px;
 }
