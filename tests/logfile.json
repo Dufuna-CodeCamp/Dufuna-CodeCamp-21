@@ -384,7 +384,7 @@
               "timedOut": false,
               "duration": 12,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,

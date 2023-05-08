@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -21,71 +19,54 @@
       </div>
     </nav>
     <br /><br />
-    <main>
-      <header>
-        <h2>FoodBag</h2>
-        <p>Anyfood, we have you covered.</p>
-      </header>
-      <br />
+    <header>
+      <h2>FoodBag</h2>
+      <p>Anyfood, we have you covered.</p>
+    </header>
+    <br />
+    <div class="location">
+      <label for="address"><strong>Where are you?</strong></label
+      ><br /><br />
+      <input
+        type="email"
+        placeholder="Enter your delivery address"
+      /><br /><br />
+      <select name="address" id="address">
+        <option value="1">Select your city</option>
+        <option value="2">Ibadan</option>
+        <option value="3">Ikeja</option>
+        <option value="4">Tanke</option>
+        <option value="5">Lekki</option>
+        <option value="6">Osogbo</option>
+      </select>
+    </div>
+    <br />
 
-      <div class="location">
-        <form action="">
-          <label for="arealist">Where are you?</label><br /><br />
-          <select
-            name="area"
-            list="area-list"
-            id="address"
-            placeholder=" Enter your delivery address"
-          >
-            <option value="" default>Enter your address</option>
-            <option value="1">Oyo, Ringroad</option>
-            <option value="2">Ilorin, Tanke</option>
-            <option value="3">Lagos, Mainland</option>
-            <option value="4">Lagos, Island</option>
-            <option value="5">Oyo, Bodija</option>
-          </select>
-        </form>
+    <h3><strong>Pick an interest</strong></h3>
+    <div class="interest-container">
+      <div class="interest">
+        <img src="image/fast-food.svg" alt="Food" />
+        <h4>Fast Food</h4>
+        <p>All sorrows are less with bread.</p>
       </div>
-      <br />
-
-      <h3><strong>Pick an interest</strong></h3>
-      <div class="interest-container">
-        <div class="interest">
-          <img class="image" src="image/fast-food_disabled.svg" alt="Food" />
-          <h4 class="name">Fast Food</h4>
-          <p>All sorrows are less with bread.</p>
-        </div>
-        <div class="interest">
-          <img
-            class="image"
-            src="image/Vegetables _ Drinks_disabled.svg"
-            alt="Vegetables"
-          />
-          <h4 class="name">Vegetables & Fruits</h4>
-          <p>May not want it, but good for you.</p>
-        </div>
-        <div class="interest">
-          <img
-            class="image"
-            src="image/Drinks _ Cocktails_disabled.svg"
-            alt="Drinks"
-          />
-          <h4 class="name">Drinks & Cocktails</h4>
-          <p>I feel sad for those who don't drink.</p>
-        </div>
-        <div class="interest">
-          <img
-            class="image"
-            src="image/resturant_disabled.svg"
-            alt="resturant"
-          />
-          <h4 class="name">Resturant</h4>
-          <p>All sorrows are less with bread.</p>
-        </div>
+      <div class="interest">
+        <img src="image/Vegetables _ Drinks_disabled.svg" alt="Vegetables" />
+        <h4>Vegetables & Fruits</h4>
+        <p>May not want it, but good for you.</p>
       </div>
-    </main>
+      <div class="interest">
+        <img src="image/Drinks _ Cocktails_disabled.svg" alt="Drinks" />
+        <h4>Drinks & Cocktails</h4>
+        <p>I feel sad for those who don't drink.</p>
+      </div>
+      <div class="interest">
+        <img src="image/resturant.svg" alt="resturant" />
+        <h4>Resturant</h4>
+        <p>All sorrows are less with bread.</p>
+      </div>
+    </div>
     <br /><br /><br />
-    <h3 class="serve"><b> How we serve you</b></h3>
+    <h3 class="serve">How we serve you</h3>
     <div class="service">
       <div class="serve-you">
         <img src="image/Illustration_1.svg" alt="" srcset="" />
@@ -115,6 +96,5 @@
         <p>&#169; Copyright 2021 FoodBag is a registered trademark</p>
       </div>
     </footer>
-    <script src="/Dom/landing.js"></script>
   </body>
 </html>

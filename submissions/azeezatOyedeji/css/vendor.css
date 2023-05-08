@@ -22,7 +22,8 @@ a {
 .one a {
   color: black;
 }
-.one span {
+.one span,
+.logo a {
   color: rgb(168, 43, 43);
 }
 .two a {
@@ -35,7 +36,7 @@ a {
   padding: 10px;
   border-radius: 3px;
 }
-header p {
+header p span {
   color: lightgray;
 }
 .logo,
@@ -75,59 +76,5 @@ button {
 }
 .btn {
   border: 1px solid rgb(209, 74, 74);
-  border-radius: 5px;
-}
-.removeText {
-  display: flex;
-  justify-content: center;
-  background-color: gray;
-  font-size: 20px;
-  border: none;
-  color: rgba(255, 255, 255, 1);
-}
-.notification {
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: rgb(168, 43, 43);
-}
-@media screen and (max-width: 600px) {
-  body {
-    padding: 0;
-  }
-  .nav-header {
-    font-size: 12px;
-  }
-  .food-img {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .view-one {
-    display: none;
-  }
-  .view-two {
-    display: flex;
-    color: rgb(209, 74, 74);
-    margin-bottom: 30px;
-    justify-content: center;
-  }
-  .logo-img {
-    margin-bottom: 20px;
-  }
-  .title {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .view-two {
-    display: none;
-  }
-  .food-img {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  border-radius: 2px;
 }

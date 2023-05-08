@@ -19,7 +19,7 @@ body {
   text-decoration: none;
 }
 .one a {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 .one span {
   color: rgb(168, 43, 43);
@@ -95,59 +95,4 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 15px 20px 40px;
-}
-
-@media screen and (max-width: 580px) {
-  .nav-header {
-    justify-content: space-evenly;
-    font-size: 12px;
-  }
-  header,
-  .location {
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-around;
-    text-align: left;
-    margin-left: 30px;
-    overflow: hidden;
-    font-size: 15px;
-  }
-  .serve,
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .terms {
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-  }
-  .interest-container {
-    flex-direction: column;
-    align-self: flex-start;
-    margin: 0 18px 0 0;
-  }
-  input {
-    width: 80vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  input {
-    width: 89vw;
-  }
-  .interest-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .service {
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .interest-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 }
