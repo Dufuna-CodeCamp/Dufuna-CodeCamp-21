@@ -72,6 +72,17 @@ h2 span{
 .view-all{
     color: #ad4c4c;
 }
+.cart-dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: #ad4c4c;
+    position: absolute;
+    top: 1.4rem;
+    z-index: 10;
+    visibility: hidden;
+  }
+
 .items{
     display: grid;
     width: 100%;
@@ -110,7 +121,7 @@ h2 span{
     align-items: center;
     margin-top: 20px;
 }
-.card-btn button{
+.add-item{
     padding: 8px 30px;
     border: 1px solid #ad4c4c;
     border-radius: 3px;
@@ -121,7 +132,20 @@ h2 span{
     color: #ad4c4c;
     cursor: pointer;
 }
-.card-btn button:hover{
+.remove-item{
+    color: #e6e6e6;
+    background-color: #a5a5a5;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    font-size: 16px;
+    padding: 8px 10px;
+}
+.remove-item img{
+    width: 20px;
+}
+.add-item:hover{
     background-color: #ad4c4c;
     color: #ffffff;
 }

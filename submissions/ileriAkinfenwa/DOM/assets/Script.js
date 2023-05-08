@@ -35,15 +35,15 @@ redirect.forEach(element => {
 });
 
 newImages = () => {
-    document.querySelector('img[alt=fast-image]').src="fast-food.svg";
-    document.querySelector('img[alt=Vegetables_Drinks]').src="Vegetables _ Drinks.svg";
-    document.querySelector('img[alt=Drink_Cocktails]').src="Drinks _ Cocktails.svg";
-    document.querySelector('img[alt=Resturant]').src="resturant.svg";
+    document.querySelector('img[alt=fast-image]').src="./img/fast-food.svg";
+    document.querySelector('img[alt=Vegetables_Drinks]').src="./img/Vegetables _ Drinks.svg";
+    document.querySelector('img[alt=Drink_Cocktails]').src="./img/Drinks _ Cocktails.svg";
+    document.querySelector('img[alt=Resturant]').src="./img/resturant.svg";
 }
 
 images = () => {
-    document.querySelector('img[alt=fast-image]').src="fast-food_disabled.svg";
-    document.querySelector('img[alt=Vegetables_Drinks]').src="Vegetables _ Drinks_disabled.svg";
-    document.querySelector('img[alt=Drink_Cocktails]').src="Drinks _ Cocktails_disabled.svg";
-    document.querySelector('img[alt=Resturant]').src="resturant_disabled.svg";
+    document.querySelector('img[alt=fast-image]').src="./img/fast-food_disabled.svg";
+    document.querySelector('img[alt=Vegetables_Drinks]').src="./img/Vegetables _ Drinks_disabled.svg";
+    document.querySelector('img[alt=Drink_Cocktails]').src="./img/Drinks _ Cocktails_disabled.svg";
+    document.querySelector('img[alt=Resturant]').src="./img/resturant_disabled.svg";
 }
