@@ -1,0 +1,300 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+        position: relative;
+        margin: 20px;
+        font-family: 'Poppins';
+        padding: 0;
+}
+/* Header section */
+
+/* navbar */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    color: rgb(185, 79, 79);
+}
+
+div.logo {
+    position: relative;
+    display: inline;
+    top: 10px;
+}
+
+.navigation {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    top: 13px;
+}
+
+ul li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    text-align: right;
+    margin-left: 20px;
+}
+
+
+ a {
+    text-decoration: none;
+    color: rgb(109, 104, 104);
+    }
+
+
+#sign-up {
+    color: rgb(192, 113, 113);
+    border: 2px solid rgb(226, 145, 145);
+    border-radius: 6px;
+    padding: 8px;
+}
+span.home {
+    color: rgb(189, 182, 182);
+}
+h4.home {
+    color: black;
+    font-weight: normal;
+}
+div.p-c-container {
+    display: inline;
+    position: relative;
+    top: 50px;
+}
+div.page-nav {
+    position: relative;
+    display: inline;
+    float: left;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+}
+div.vendor h1 {
+    position: relative;
+    display: inline;
+    float: left;
+    font-weight: 450;
+    top: 20px;
+}
+/* kfc logo Section========================= */
+.k-f-c-logo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 95px;
+    width: 100%;
+}
+h3.name {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+/* content section========================== */
+div.content-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    top: 120px;
+    width: 100%;
+    gap: 40px;
+}
+.view-all a{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: rgb(185, 79, 79);
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+div.kfc , div.c-r {
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    align-content: center;
+}
+
+.kfc img {
+    width: 100%;
+}
+.c-r img {
+    width: 100%;
+}
+
+.dish {
+    position: relative;
+    text-justify: distribute;
+}
+p span.price {
+    position: relative;
+    display: inline;
+    float: right;
+    color: rgba(54, 196, 54, 0.781);
+    font-weight: bold;
+}
+.dish {
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
+.add-to-cart a{
+    position: relative;
+    box-sizing: content-box;
+    border: 2px solid rgba(165, 42, 42, 0.719);
+    top: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    color: rgba(165, 42, 42, 0.719);
+    font-weight: 500;
+}
+hr {
+    position: relative;
+    top: 160px;
+}
+/* chicken republic section========================================= */
+.chicken-republic-logo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+/* content section 2 */
+.view-all-2 a {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: rgb(185, 79, 79);
+    width: 100%;
+    padding-top: 20px;
+}
+ div.content-container-2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    top: 220px;
+    width: 100%;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+/*================= media queries =================*/
+@media only screen and (min-width: 600px) {
+   div.content-container ,div.content-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+div.kfc , div.c-r {
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    padding-top: 40px;
+}
+   .kfc img {
+    width: 100%;
+}
+.c-r img {
+    width: 100%;
+} 
+
+.view-all a{
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: right;
+    padding-top: 1px;
+}
+.view-all-2 a{
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: right;
+    padding-top: 1px; 
+}
+}
+
+@media only screen and (min-width: 768px) {
+   div.content-container ,div.content-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+
+div.kfc , div.c-r {
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    padding-top: 40px;
+}
+   .kfc img {
+    width: 100%;
+}
+.c-r img {
+    width: 100%;
+} 
+
+.view-all a{
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: right;
+    padding-top: 1px;
+    right: -1px;
+
+}
+.view-all-2 a{
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: right;
+    padding-top: 1px;
+    right: -1px; 
+}
+}
+
+@media only screen and (min-width: 992px) {
+   div.content-container ,div.content-container-2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+} 
+
+div.kfc , div.c-r {
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    padding-top: 40px;
+}
+   .kfc img {
+    width: 100%;
+}
+.c-r img {
+    width: 100%;
+} 
+
+.view-all a{
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: right;
+    padding-top: 1px;
+    right: -1px;
+
+}
+.view-all-2 a{
+    position: absolute;
+    display: block;
+    top: 0;
+    text-align: right;
+    padding-top: 1px;
+    right: -1px; 
+}
+}
