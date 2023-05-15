@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 4,
-    "start": "2023-05-14T14:29:13.291Z",
-    "end": "2023-05-14T14:29:13.305Z",
-    "duration": 14,
+    "start": "2023-05-15T14:34:02.849Z",
+    "end": "2023-05-15T14:34:02.883Z",
+    "duration": 34,
     "testsRegistered": 4,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a884e979-a71c-4198-b623-2c98dc46e19d",
+      "uuid": "333c39c0-5ebe-4541-b34a-4ff1f8aa2789",
       "title": "",
       "fullFile": "C:\\Users\\hp\\Pictures\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
       "file": "\\product_algorithm.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8b4c801f-0dad-47bf-8fe0-952e379078a2",
+          "uuid": "2a1c8e25-7622-407e-bb34-a38c3f77f8ab",
           "title": "Product Array Algorithm Task",
           "fullFile": "C:\\Users\\hp\\Pictures\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
           "file": "\\product_algorithm.js",
@@ -38,7 +38,7 @@
               "title": "check length of products",
               "fullTitle": "Product Array Algorithm Task check length of products",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:7:25)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "40c82576-24dc-4cb6-b01d-2953a8ce296b",
-              "parentUUID": "8b4c801f-0dad-47bf-8fe0-952e379078a2",
+              "uuid": "6171c356-b04d-41f2-a837-5503ab22e65f",
+              "parentUUID": "2a1c8e25-7622-407e-bb34-a38c3f77f8ab",
               "isHook": false,
               "skipped": false
             },
@@ -73,8 +73,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:11:30)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "72fc89b2-9239-4e82-ac4f-859293313727",
-              "parentUUID": "8b4c801f-0dad-47bf-8fe0-952e379078a2",
+              "uuid": "079870e9-a6ef-4851-b60f-db3df886d5ce",
+              "parentUUID": "2a1c8e25-7622-407e-bb34-a38c3f77f8ab",
               "isHook": false,
               "skipped": false
             },
@@ -95,8 +95,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:15:34)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "478b1f9f-3b9c-463b-99d1-174248244929",
-              "parentUUID": "8b4c801f-0dad-47bf-8fe0-952e379078a2",
+              "uuid": "100599e2-fef2-4abc-b634-16123eb3fb6b",
+              "parentUUID": "2a1c8e25-7622-407e-bb34-a38c3f77f8ab",
               "isHook": false,
               "skipped": false
             },
@@ -117,8 +117,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:21:39)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "27a37a4d-bb65-4f2f-8a61-7d4dfa4ab0ae",
-              "parentUUID": "8b4c801f-0dad-47bf-8fe0-952e379078a2",
+              "uuid": "66c6649d-e9db-444b-ba56-33e9679babf6",
+              "parentUUID": "2a1c8e25-7622-407e-bb34-a38c3f77f8ab",
               "isHook": false,
               "skipped": false
             }
@@ -126,14 +126,14 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "40c82576-24dc-4cb6-b01d-2953a8ce296b",
-            "72fc89b2-9239-4e82-ac4f-859293313727",
-            "478b1f9f-3b9c-463b-99d1-174248244929",
-            "27a37a4d-bb65-4f2f-8a61-7d4dfa4ab0ae"
+            "6171c356-b04d-41f2-a837-5503ab22e65f",
+            "079870e9-a6ef-4851-b60f-db3df886d5ce",
+            "100599e2-fef2-4abc-b634-16123eb3fb6b",
+            "66c6649d-e9db-444b-ba56-33e9679babf6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
