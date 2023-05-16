@@ -226,7 +226,7 @@ div.kfc , div.c-r {
 @media only screen and (min-width: 768px) {
    div.content-container ,div.content-container-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 } 
 
 div.kfc , div.c-r {
