@@ -1,4 +1,1 @@
-IHello World 
-My Name Is Benfred
-I'm At The Dufuna CodeCamp23
-And I'm A Software Engineering student.
+My name is Benfred and i am in the fullstack software engineering program at Dufuna
