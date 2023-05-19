@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+span {
+    color: rgba(175, 5, 5, 0.825);
+}
+
+.foodbag {
+    font-size: x-large;
+}
+
+.navigation a {
+    padding: 15px;
+}
+
+div a[href*='/'] {
+    color: grey;
+}
+
+.signup {
+    color: rgba(175, 5, 5, 0.825);
+    border: 1px solid rgba(175, 5, 5, 0.825);
+    border-radius: 10px;
+}
+
+.food {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.food p {
+    color: grey;
+}
+
+input {
+    width: 100%;
+    border: 2px solid rgb(214, 212, 212);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.location {
+    margin-bottom: 50px;
+}
+
+div.offerings1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px;
+}
+
+.offerings1 p {
+    color: grey;
+}
+
+.box1 {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    width: 330px;
+    text-align: center;
+}
+
+.box2 {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    width: 330px;
+    text-align: center;
+}
+
+.box3 {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    width: 330px;
+    text-align: center;
+}
+
+.box4 {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    width: 330px;
+    text-align: center;
+}
+
+#service {
+    text-align: center;
+}
+
+div.offerings2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.offerings2 p {
+    text-align: center;
+}
+
+.socials {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+div.contactUs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+
+footer p {
+    display: inline-block;
+    margin-top: 60px;
+}
