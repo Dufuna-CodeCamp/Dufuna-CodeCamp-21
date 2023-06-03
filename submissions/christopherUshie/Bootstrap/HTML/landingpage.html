@@ -1,145 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
-<body>
-    <header class="pt-2">
-       
-        <nav class="navbar navbar-expand mb-4">
-            <div class="container-fluid px-5">
-              <a style="font-size:15px; font-weight:600" class="navbar-brand" href="#">Food<span style="color: #ad4c4c;">Bag</span></a>
-         
-             <div class="navbar-nav mt-2">
-                  <a style="font-size:13px" class="nav-link active me-2" href="#">Cart</a>
-                  <a style="font-size:13px" class="nav-link active me-2" href="#">Login</a>
-                  <a style="font-size:13px; border:1px solid #ad4c4c; min-width: 80px; max-height: 35px;" class="nav-link active btn w-100 me-2" href="#">Sign up</a>
-                 
-                </div>
-              </div>
-            </div>
-          </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+	<link rel="stylesheet" href="style.css" />
+    <title>Food Bag</title>
+  </head>
+  <body>
+    <header class="container-fluid px-md-5 px-2">
+		<nav class="navbar justify-content-between align-items-center py-3">
+		  <h3 class="nav-brand">Food<span class="text-brown">Bag</span></h3>
+        <ul class="nav align-items-center">
+          <li class="nav-item cart">
+            <a class="nav-link text-dark" href="#">Cart</a><span class="active-cart"></span>
+          </li>
+          <li class="nav-item "><a class="nav-link text-dark" href="#">Login</a></li>
+          <li class="nav-item ">
+            <a class="nav-link text-brown border-brown rounded py-1" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-  
-
-    <section class="d-block px-5">
-      <div class="heading mb-5 ">
-        <h3 style="color: #4e4d4d;">FoodBag</h3>
-      <p style="font-size:14px; color: #696969;">Anything food, we have you covered.</p>
-
+    <main class="container-fluid px-md-5 px-2">
+      <div class="text-md-center p-2 p-md-5 mt-5">
+        <h1 class="fs-1 text-asher fw-bold mt-5">FoodBag</h1>
+        <p class="text-ash">Anything food, we have you covered.</p>
       </div>
-      <h6 style="font-size:14px" class="mb-4">Where are you?</h6>
-      <select style="font-size:14px" class="mb-4 w-100"  name="" id="mySelect">
-<option value="1">Enter your delivery address</option>
-<option value="2">Tanke</option>
-<option value="3">Unilorin</option>
-<option value="4">Post office</option>
-<option value="5">Asa dam</option>
-<option value="4">Taiwo</option>
-<option value="5">Airport</option>
-</select>
-
-
-<h6 style="font-size:14px" class="mb-4">Pick an interest</h6>
-<section class="first-boxes d-md-flex flex-wrap row px-2">
- 
-    <div class="box1 card mb-4 col-md me-4" > 
-     <div class="card-body ">
-        <a href="./index.html" target="_blank"><img class="img2 card-img-top" style="width: 40px" src="Images/fast-food.svg" alt=""></a>
-        <img class="img1 card-img-top" style="width: 40px" src="Images/fast-food_disabled.svg" alt="">
-        <h5 style="font-size:15px; color: #a5a5a5" class="firstTitle card-title">Fast food</h5>
-        <p style="font-size:14px; color: #a5a5a5" class="para card-text">All sorrows are less with bread.</p>
-    
-     </div>
-    </div>
-   
-    <div class="box1 card mb-4 col-md me-4" >
-        <div class="card-body">
-        <a href="./index.html" target="_blank"><img class="img2 card-img-top" style="width: 40px" src="Images/Vegetables _ Drinks.svg" alt=""></a>
-        <img class ='img1 card-img-top' style="width: 40px" src="Images/Vegetables _ Drinks_disabled.svg" alt="">
-        <h5 style="font-size:15px; color: #a5a5a5" class="firstTitle card-title">Vegetables & Fruits</h5>
-        <p style="font-size:14px; color: #a5a5a5" class="para card-text">May not want it, but good for you.</p>
-    </div>
-    </div>
-   
-    <div class="box1 card mb-4 col-md me-4" >
-        <div class="card-body">
-        
-        <a href="./index.html" target="_blank"><img class="img2"style="width: 40px"  src="Images/Drinks _ Cocktails.svg" alt=""></a>
-        <img class ="img1" style="width: 40px" src="Images/Drinks _ Cocktails_disabled.svg" alt="">
-        <h5 style="font-size:15px; color: #a5a5a5" class="firstTitle card-title">Drinks & Cocktails</h5>
-        <p style="font-size:14px; color: #a5a5a5" class="para card-text">I feel sad for those who don't drink.</p>
-    </div>
-    </div>
-
-   
-    <div class="box1 card mb-4 col-md" >
-        <div class="card-body">
-        <a href="./index.html" target="_blank"><img class="img2"style="width: 40px"  src="Images/resturant.svg" alt=""></a>
-        <img class ="img1" style="width: 40px" src="Images/resturant_disabled.svg" alt="">
-        <h5 style="font-size:15px; color: #a5a5a5;" class="firstTitle card-title">Resturants</h5>
-        <p style="font-size:14px; color: #a5a5a5;" class="para card-text">All sorrows are less with bread.</p>
-    </div>
-    </div>
-   
-</section>
-      </section>
-
-      <hr>
-
-<section class="second-section mx-auto">
-    <h5 style="font-size:17px; color: grey;" class="text-center mt-4 mb-4">How we serve you</h5>
-    <div class="second-box text-center d-md-flex justify-content-around">
-
-        <div class="box2">
-            <img src="Images/illustration_1.svg" class="w-50" alt="">
-            <h6 style="color: grey;" class="title">Tell us where you are.</h6>
-            <p style="font-size: 14px; color: grey;" class="para">Select the location you want us to deliver.</p>
+      <form class="">
+        <label class="fs-5  fw-bold" for="location">Where are you?</label>
+        <select class="form-select py-2 mt-2" name="location" id="location" aria-label="Default select example">
+          <option value selected>Enter your delivery address</option>
+          <option value="Bodija Market">Bodija Market</option>
+          <option value="Owerri">Owerri</option>
+          <option value="Lekki">Lekki</option>
+          <option value="Abuja">Abuja</option>
+        </select>
+      </form>
+      <div class="py-5 px-4 px-lg-0 border-bottom">
+        <h5 class="">Pick an interest</h5>
+        <div class="row  align-items-center gap-3">
+          <div class="col-lg-3 col-md-5 shadow p-4">
+            <img
+              src="../../css/images/fast-food_disabled.svg"
+              class="service-img"
+              alt="Fast food"
+            />
+            <h6 class="text-brown pt-3">Fast food</h6>
+            <p class="service-text">All sorrows are less with bread.</p>
+          </div>
+          <div class="col-lg-3 col-md-5 shadow p-4 ">
+            <img
+              src="../../css/images/Vegetables & Drinks_disabled.svg"
+              class="service-img"
+              alt="Vegetables & Fruits"
+            />
+            <h6 class="text-brown pt-3">Vegetables & Fruits</h6>
+            <p class="service-text">May not want it, but good for you.</p>
+          </div>
+          <div class="col-lg-3 col-md-5 shadow p-4 ">
+            <img
+              src="../../css/images/Drinks & Cocktails_disabled.svg"
+              class="service-img"
+              alt="Drinks & Cocktails"
+            />
+            <h6 class="text-brown pt-3">Drinks & Cocktails</h6>
+            <p class="service-text">I feel sad for those who don't drink.</p>
+          </div>
+          <div class="col-lg-3 col-md-5 shadow p-4 ">
+            <img
+              src="../../css/images/resturant_disabled.svg"
+              class="service-img"
+              alt="Resturants"
+            />
+            <h6 class="text-brown pt-3">Resturants</h6>
+            <p class="service-text">All sorrows are less with bread.</p>
+          </div>
         </div>
-       
-        <div class="box2">
-            <img src="Images/illustration_2.svg" class="w-50" alt="">
-            <h6 style="color: grey;" class="title">Tell us what you want.</h6>
-            <p style="font-size: 14px; color: grey;" class="para">Browse the type of food that interest you.</p>
+      </div>
+      <div class="py-5 border-bottom">
+        <h2 class="text-center">How we serve you</h2>
+        <div class="row align-items-center justify-content-between pt-5">
+          <div class="text-center col-md-4">
+            <img src="../../css/images/Illustration_1.svg" alt="Illustration_1" />
+            <div class="">
+              <h4 class="text-ash">Tell us where you are</h4>
+              <p class="text-asher">Select the location you want <br />us to deliver.</p>
+            </div>
+          </div>
+          <div class="text-center col-md-4">
+            <img src="../../css/images/Illustration_2.svg" alt="Illustration_2" />
+            <div class="about-text">
+              <h4 class="text-ash">Tell us what you want</h4>
+              <p class="text-asher">Browse the type of food <br />that interest you.</p>
+            </div>
+          </div>
+          <div class="text-center col-md-4">
+            <img src="../../css/images/Illustration_3.svg" alt="Illustration_3" />
+            <div class="about-text">
+              <h4 class="text-ash">We'll come running</h4>
+              <p class="text-asher">Your order will be delivered to <br />you in no time.</p>
+            </div>
+          </div>
         </div>
-       
-        <div class="box2">
-            <img src="Images/illustration_3.svg" class="w-50" alt="">
-            <h6 style="color: grey;" class="title">We'll come running.</h6>
-            <p style="font-size: 14px; color: grey;" class="para">Your order will be delivered to you in no time.</p>
+      </div>
+    </main>
+    <footer class="container-fluid px-md-5 px-2 pb-5">
+      <div class="py-4 text-center">
+        <p class="text-ash pt-4">Contact us</p>
+        <div class="d-flex align-items-center justify-content-center gap-4">
+          <img src="../../css/images/twitter 2.svg" alt="twitter" />
+          <img src="../../css/images/youtube 1.svg" alt="youtube" />
+          <img src="../../css/images/facebook-f 1.svg" alt="facebook" />
         </div>
-       
-
-    </div>
-</section>
-
-<hr>
-
-    <footer class="text-center">
-<h6 style="color: grey;">Contact us</h6>
-<div class="my-4 social-media d-flex justify-content-center">
-    <ol class="twitter"><img src="Images/twitter 2.svg" alt=""></ol>
-    <ol class="twitter"><img src="Images/youtube 1.svg" alt=""></ol>
-    <ol class="twitter"><img src="Images/facebook-f 1.svg" alt=""></ol>
-</div>
-
-<div class="copy d-md-flex justify-content-around mb-4">
-    <h6>Terms & Conditions . Privacy Policy</h6>
-    <h6>&copy; Copyright 2021 FoodBag is a registered trademark</h6>    
-</div>
-
-</footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="../.././Dom/landing.js"></script>
-
-</body>
+      </div>
+      <div class="d-flex flex-column flex-lg-row flex-wrap text-center align-items-center justify-content-between text-ash">
+        <p>Terms & Conditions . Privacy Policy</p>
+        <p>© Copyright 2021 FoodBag is a registered trademark</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
