@@ -1,4 +1,4 @@
-
+/* 
 let inputField = document.getElementById('address'),
     interestImgField = document.querySelectorAll('.interestImg'),
     interestField = document.querySelectorAll('.interest');
@@ -34,3 +34,4 @@ interestField.forEach(function(element){
 
 
 
+ */
