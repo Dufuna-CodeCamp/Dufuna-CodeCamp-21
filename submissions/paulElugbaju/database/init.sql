@@ -7,7 +7,7 @@ USE foodbag;
 -- create table, food
 CREATE TABLE food (
 	id INT NOT NULL AUTO_INCREMENT,
-    type ENUM ('Fast Food','Vegetables & Fruits','Drinks & Cocktails','Resturants'),
+    type ENUM('fast_food', 'vegetable_fruits', 'drinks_cocktails', 'restaurants') NOT NULL DEFAULT 'fast_food',
     PRIMARY KEY (id)
 );
 
