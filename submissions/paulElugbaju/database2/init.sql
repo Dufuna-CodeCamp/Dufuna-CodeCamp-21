@@ -17,8 +17,8 @@ CREATE TABLE passengers_details (
     ticket_number VARCHAR(255) NOT NULL,
     trip_fare DECIMAL (10, 2) NOT NULL,
     assigned_cabin VARCHAR(255),
-    parents_children_aboard VARCHAR(255) NOT NULL,
-    siblings_spouses_aboard VARCHAR(255) NOT NULL,
+    parents_children_aboard INT NOT NULL,
+    siblings_spouses_aboard INT NOT NULL,
     point_of_embarkation VARCHAR(255) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)	
@@ -27,7 +27,7 @@ CREATE TABLE passengers_details (
 CREATE TABLE accident_cases (
 	id INT NOT NULL AUTO_INCREMENT,
 	passenger_id INT NOT NULL,
-    status ENUM ('survived', 'not-survived') NOT NULL DEFAULT 'survived',
+    status BOOLEAN NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers_details (id)	
 );
