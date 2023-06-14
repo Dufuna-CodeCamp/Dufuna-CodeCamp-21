@@ -1,15 +1,8 @@
 {
   "stats": {
- database1
-    "tests": 7,
-    "passes": 6,
-    "failures": 1,
-    "owner": "paulElugbaju"
-
     "tests": 3,
     "passes": 3,
     "failures": 0,
-    "owner": "shogoOlugbodi"
- master
+    "owner": "taiwoAyobami"
   }
 }
