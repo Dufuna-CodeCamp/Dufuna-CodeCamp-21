@@ -26,10 +26,8 @@ for(var newBox of newBoxes){
 function makeSelection(){
     for(let i=0; i<newBoxes.length; i++){
         newBoxes[i].addEventListener('click', function(){
-            // e.preventDefault();
             
             window.location.href="food.html";
         })
     }       
 }
-
