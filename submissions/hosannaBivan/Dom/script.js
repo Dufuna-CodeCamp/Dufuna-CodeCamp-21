@@ -1,6 +1,5 @@
 var buttons = document.getElementsByClassName("cart")
 var cart = document.getElementById('cart')
-var removeIcon = document.getElementsByClassName("span-none")
 
 
 function addToCart(){
