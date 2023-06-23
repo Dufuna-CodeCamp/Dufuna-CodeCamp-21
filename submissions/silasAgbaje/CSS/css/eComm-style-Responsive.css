@@ -219,14 +219,10 @@ section, h3 {
 
 @media screen and (min-width: 361px) {
 	.interest span {
-		color: grey;
+		color: #AD4C4C;
 		font-weight: bold;
 		text-align: start;
 		padding-top: 5px;
-	}
-
-	.interest p {
-		color: grey;
 	}
 
 	.interest li {
