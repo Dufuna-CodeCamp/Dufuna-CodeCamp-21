@@ -70,7 +70,11 @@
     margin: 20px 0px;
     
 }
-.check button{
+.check .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width: 50%;
     height: 40px;
     color: white ;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Vector from "../../assets/Vector.png"
 import Scooter from "../../assets/scooter 1.svg"
 import "./cart.css"
+import { Link } from 'react-router-dom'
 
 export const Cart = ({cart}) => {
   const [CART, setCART] =useState([])
@@ -14,10 +15,10 @@ export const Cart = ({cart}) => {
 
   const Price = CART < 1 ? null: Delivery 
 
-  return ( 
+  return (   
     <div className='cart'>
-        <div class="breadcremb">
-            <a href="./vendor" style={{textDecoration:"none", color:'black'}}>Home &gt; <strong>Cart</strong></a>
+        <div className="breadcremb">
+            <a href="/" style={{textDecoration:"none", color:'black'}}>Home &gt; <strong>Cart</strong></a>
         </div>
         <h2 style={{marginTop:"30px"}}>Cart</h2>
         <div className='cartContainer'>
@@ -56,13 +57,13 @@ export const Cart = ({cart}) => {
                       <span className='cartPrice'>#{cartItem.price * cartItem.quantity}</span>
                     </div>
                      
+                </div>  
+                <hr /> 
                 </div> 
-                <hr />
-                </div>
-                ) 
-              }) 
-            }  
-          </div>
+                )   
+              } )   
+            }    
+          </div> 
             <div className='cartSms'>
               <div className="cartdetails">
               <img src={Scooter} alt="del" width={'70px'} style={{marginLeft:'40px'}}/>
@@ -82,7 +83,7 @@ export const Cart = ({cart}) => {
                 </div>
               </p>
               <div className="check" >
-                <button>Checkout</button>
+                <Link to ='/verification' className='btn'>Checkout</Link>
               </div>
         </div>
     </div>
