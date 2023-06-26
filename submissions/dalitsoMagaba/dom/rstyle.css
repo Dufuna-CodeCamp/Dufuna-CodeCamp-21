@@ -1,0 +1,253 @@
+body {
+  height: max-content;
+  margin: 10px;
+  font-family: "Poppins";
+  padding: 10px;
+}
+/* Header & navbar section */
+.header {
+  display: inline;
+}
+
+span {
+  color: rgb(224, 106, 106);
+}
+
+header.logo {
+  position: relative;
+  float: left;
+}
+
+.navigation {
+  text-align: right;
+  position: relative;
+  top: 20px;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(109, 104, 104);
+}
+
+#sign-up {
+  color: rgb(192, 113, 113);
+  border: 2px solid rgb(226, 145, 145);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* Title & description */
+.title-description {
+  position: relative;
+  margin-top: 150px;
+  text-align: left;
+  padding: 0;
+}
+
+.title-description h2 {
+  position: relative;
+  color: rgb(82, 79, 79);
+}
+
+.title-description p {
+  color: rgb(110, 97, 97);
+}
+/* ===================location and delivery================= */
+
+form.location {
+  position: relative;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-inline-end: 5px;
+}
+
+select {
+  padding-left: 5px;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url("./Images/keyboard_arrow_down.svg");
+  align-self: center;
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgb(165, 154, 154);
+}
+
+
+/*===================== choice section=======================*/
+div.choice-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 20px;
+  position: relative;
+  top: 100px;
+  color: gray;
+}
+
+p.interest {
+  position: relative;
+  display: inline;
+  text-align: left;
+  top: 90px;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+.choice {
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid rgb(128, 128, 128);
+  margin: 6px;
+  padding-inline: 20px;
+  transition: box-shadow 0.1s linear;
+  box-shadow: 3px 4px 3px 4px rgba(186, 196, 95, 0.308);
+}
+.highlight:hover {
+  box-shadow: unset;
+  cursor: pointer;
+}
+
+hr {
+  color: rgba(250, 250, 250, 0.336);
+  position: relative;
+  top: 160px;
+}
+
+hr.stp {
+  top: 220px;
+}
+/* ordering process section */
+aside.ordering-steps {
+  position: relative;
+  width: 100%;
+  top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+div.steps-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+div.steps {
+  margin: auto;
+}
+
+.steps h4 {
+  color: rgb(102, 90, 90);
+}
+
+.steps p {
+  color: rgb(165, 150, 150);
+}
+/* footer */
+footer {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 250px;
+  align-content: center;
+  justify-content: center;
+  color: rgb(128, 128, 128);
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+.Contact-pages {
+  text-align: center;
+}
+
+.Page {
+  padding-inline: 12px;
+}
+/* copyright */
+#copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .title-description {
+    text-align: center;
+  }
+
+  div.choice-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 0;
+    row-gap: 20px;
+  }
+
+  .choice {
+    margin: inherit;
+    width: auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.choice-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  div.steps-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  div.choice-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  div.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

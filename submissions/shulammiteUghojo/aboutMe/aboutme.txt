@@ -1,2 +1,8 @@
 Hello World!
 I am Shulammite Ughojo and  I am a Web Designer, Product Designer and Software Engineer
+I'm learning coding with dufuna
+<<<<<<< HEAD
+At the end of this program, I hope to be a Full Stack Developer, be able to crat a website using codes and be able to get a well being job either as a freelancer or an hybrid job position.
+=======
+At the end of this program, I hope to be a Full Stack Developer, be able to crat a website using codes and be able to get a well being job either as a freelancer or an hybrid job position. 
+>>>>>>> 76493df96bae218a1c75d2ea0c1d26ae6937c7f4
