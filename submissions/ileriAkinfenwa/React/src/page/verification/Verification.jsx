@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar } from '../../components/navbar/Navbar'
 import { useFormik } from 'formik'
 import './verification.css'
+import { useNavigate } from 'react-router-dom'
 
 
   const initialValues =  {
@@ -44,6 +45,12 @@ import './verification.css'
       
       })
     console.log('Form errors', formik.errors)
+
+    const navigate = useNavigate();
+    const navigateToSucess = () => {
+      navigate('/sucess');
+    };
+  
   return (
     <div className='verify'>
     <Navbar/>
@@ -148,11 +155,16 @@ import './verification.css'
                   </div>
               </div>
               <div style={{display:"flex",justifyContent:"center",alignContent:"center", justifyItems:'center',marginTop:"40px",}} >
-                <button type='submit'  style={{width:'50%', height:'30px',border:"none",backgroundColor:!(formik.dirty && formik.isValid) ? 'null' : '#AD4C4C',cursor: !(formik.dirty && formik.isValid) ? 'not-allowed':"pointer",color:!(formik.dirty && formik.isValid) ?"null": "white"}} disabled={!(formik.dirty && formik.isValid)}>Pay</button>
+                <button onClick={navigateToSucess} 
+                type='submit' 
+                style={{width:'50%', height:'30px',border:"none",backgroundColor:!(formik.dirty && formik.isValid) ? 'null' : '#AD4C4C',cursor: !(formik.dirty && formik.isValid) ? 'not-allowed':"pointer",color:!(formik.dirty && formik.isValid) ?"null": "white"}} disabled={!(formik.dirty && formik.isValid)}
+                >
+                Pay
+                </button>
               </div>
           </form>
       </div>
-        
+     
     </div>
   )
 }
