@@ -1,0 +1,232 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+nav {
+    margin: 0;
+    padding: 50px 100px;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav a {
+    color: black;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    gap: 50px;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #696969;
+    border-radius: 5px;
+    border-width: 92px;
+}
+.container {
+    padding: 0 100px;
+}
+.container .header {
+    margin-top: 93px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #4e4d4d;
+}
+.container .subtitle {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #696969;
+}
+.container .location {
+    margin-top: 80px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+.container .location-pick {
+    position: relative;
+    margin-top: 20px;
+    width: 1240px; 
+    height: 60px; 
+    border-radius: 5px; 
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 30px;
+    color: #696969;
+}
+.container .interest {
+    margin-top: 42px;
+    color: black;
+    font-weight: 500;
+}
+.container .interest-pick {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.container .food {
+    margin-top: 20px;
+    width: 295px;
+    height: 169px;
+    padding: 30px;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+.container .food li {
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .food li a {
+    color: #a5a5a5;
+}
+.container .food p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.container .vegetables {
+    margin-top: 20px;
+    width: 295px;
+    height: 169px;
+    padding: 30px;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+.container .vegetables li {
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .vegetables li a {
+    color: #a5a5a5;
+}
+.container .vegetables p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.container .drinks {
+    margin-top: 20px;
+    width: 295px;
+    height: 169px;
+    padding: 30px;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+.container .drinks li {
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .drinks li a {
+    color: #a5a5a5;
+}
+.container .drinks p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.container .restaurants {
+    margin-top: 20px;
+    width: 295px;
+    height: 169px;
+    padding: 30px;
+    box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+.container .restaurants li {
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .restaurants li a {
+    color: #a5a5a5;
+}
+.container .restaurants p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.border1 {
+    padding: 0 100px;
+    margin-top: 81px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid #f2f2f2; 
+}
+.service-options {
+    padding: 0 100px;
+}
+.service {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #4e4d4d;
+}
+.serve-image {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+.serve-link {
+    margin-top: 41px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 25px;
+    align-items: center;
+    gap: 180px;
+}
+.serve-link a {
+    color: #696969;
+}
+.serve-text {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #a5a5a5;
+    text-align: center;
+    align-items: center;
+    gap: 110px;
+}
+.border2 {
+    padding: 0 100px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px solid #f2f2f2; 
+}
+.foot {
+    padding: 0 100px;
+}
+.contact {
+    margin-top: 81px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #696969;
+}
+.foot-link {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.foot-root {
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    color: #696969;
+}

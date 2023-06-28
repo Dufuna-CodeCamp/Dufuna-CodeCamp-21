@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 35px 60px;
+}
+
+ nav a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ nav span {
+    color: #ad4c4c;
+ }
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    margin: 0 20px;
+    display: inline;
+    font-size: 16px;
+    color: #696969;
+    cursor: pointer;
+}
+
+nav button{
+    padding: 5px 8px;
+    color: #ad4c4c;
+    border: 1.5px solid #ad4c4c;
+    border-radius: 4px;
+    background: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #4e4d4d;
+    padding: 60px 0 15px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #696969;
+    padding-bottom: 80px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 60px;
+}
+
+#location {
+    margin: 20px 0;
+    margin-left: 5%;
+    height: 45px;
+    width: 90%;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.interest {
+    padding: 20px 60px;
+    padding-right: 0;
+}
+
+.interest p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.your-interest {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    width: 21%;
+    padding: 20px;
+    margin: 20px 38px;
+    margin-left: 0;
+   cursor: pointer;
+}
+
+.interest .your-interest .services {
+    color: #696969;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.interest .your-interest .services-caption {
+    color: #a5a5a5;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+hr {
+    margin: 40px 60px;
+    height: 2px;
+    color: #a5a5a5;
+}
+
+section h3 {
+    padding: 30px 0;
+    text-align: center;
+    color: #4e4d4d;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+section .for-you {
+    margin: 60px 90px 60px 60px;
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    /* margin: 50px 140px 20px 0; */
+}
+
+section .for-you img {
+    width: 90%;
+}
+
+section .for-you .tell-us {
+    font-size: 18px;
+    color: #696969;
+    padding: 40px 0 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section .for-you .tell-us-caption {
+    font-size: 14px;
+    color: #a5a5a5;
+    text-align: center;
+    line-height: 20px;
+}
+
+footer #contact {
+    display: flex;
+    justify-content: center;
+    color: #696969;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+footer .icon {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    margin: 10px 10px 40px;
+}
+footer a {
+    text-decoration: none;
+    color: #a5a5a5;
+}
+
+footer #left {
+    padding-left: 60px;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+footer #right {
+    padding-right: 60px;
+    float: right;
+    color: #a5a5a5;
+    font-size: 14px;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 35px 40px;
+    }
+
+    nav li {
+        margin: 0 25px;
+    }
+
+    .header {
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .header p {
+        padding-bottom: 50px;
+    }
+
+    label {
+        padding-left: 40px;
+    }
+
+    #location {
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .interest {
+        padding-left: 40px;
+    }
+
+    .interest-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .your-interest {
+        width: 90%;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .your-interest:hover {
+        cursor: pointer;
+        background-color: #f3f3f3;
+    }
+
+    hr {
+        margin: 20px 40px 25px;
+    }
+
+    .serve-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .for-you {
+        width: 80%;
+        align-items: baseline;
+    }
+
+    #foot-rule {
+        margin: 40px;
+    }
+
+    footer #contact {
+        margin-bottom: 15px;
+    }
+
+    footer  #left{
+        float: none;
+        width: 50%;
+        padding: 0 25% 25px;
+    }
+
+    footer #right {
+        float: none;
+        width: 70%;
+        padding: 10px 15%;
+    }
+}
+
+/* Tablet screen */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    nav {
+        padding: 35px 40px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+
+    .header {
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    label {
+        padding-left: 40px;
+    }
+
+    #location {
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .interest {
+        padding-left: 40px;
+    }
+
+    .interest-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .your-interest {
+        width: 90%;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .your-interest:hover {
+        cursor: pointer;
+        background-color: #f3f3f3;
+    }
+
+    hr {
+        margin: 20px 40px 25px;
+    }
+
+    .serve-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section .for-you {
+        margin: 0 40px;
+        width: 75%;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #foot-rule {
+        margin: 40px;
+    }
+
+    footer #contact {
+        margin-bottom: 15px;
+    }
+
+    footer  #left{
+        float: none;
+        width: 50%;
+        margin: 0 25% 25px;
+    }
+
+    footer #right {
+        /* float: none; */
+        width: 60%;
+        margin: 20px 15% 10px;
+    }
+}

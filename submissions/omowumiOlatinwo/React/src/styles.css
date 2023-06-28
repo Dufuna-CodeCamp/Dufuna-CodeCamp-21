@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemnumber{
+    padding: "15px";
+    color: "red";
+}
+@media screen and (max-width: 600px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 200px;
+        padding: 5px;
+    }
+    .main{
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .plus{
+        width: 28%;
+    }
+    .minus{
+        width: 28%;
+    }
+    .itemnumber{
+        padding: 5px;
+    }
+    .header{
+        font-size: 15px;
+        display: flex;
+        width: 100%;
+    }
+    .header .logo{
+        width: 25%;
+        font-size: 15px;
+    }
+    
+    .header .main-nav{
+        display: flex;
+        width: 75%;
+        margin: 0 ;
+        padding: 0 ;
+    }
+    .header .main-nav li #sign {
+        color: rgb(168, 7, 7);
+        border: 2px solid rgb(168, 7, 7);
+        padding: 0 4px;
+        border-radius: 10px;
+    }
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+header ul li a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+header ul li a:hover {
+    color: darkmagenta;
+    transition: .4s;
+ 
+}
+
+#sign {
+    color: rgb(168, 7, 7);
+    border: 2px solid rgb(168, 7, 7);
+    padding: 10px;
+    border-radius: 10px;
+}
+.items {
+    display: flex;
+
+}
+
+hr {
+    border: 1px solid #cac1c1;
+    width: 100%;
+}
+.btnCheckout{
+    background-color: rgb(168, 7, 7);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+.toGrey{
+    color: grey
+}
+#homecart{
+    padding: 40px 0 25px;
+}
+#verify{
+    padding: 25px 0 40px;
+}
+.successful{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+#greenOrder{
+    color: green;
+}
+.radio{
+    accent-color: rgb(168, 7, 7);
+}
+select{
+    background: url('images/keyboard_arrow_down.svg') no-repeat right;
+}

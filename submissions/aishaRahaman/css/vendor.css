@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+header{
+    position: relative;
+    margin: 60px 70px 90px;
+    font-size: 24px;
+}
+
+
+
+header span{
+    color: rgba(165, 42, 42, 0.864);
+}
+
+.heading{
+    position: absolute;
+    align-items: centre;
+    display: flex;
+    top: 50px;
+    right: 60px;
+    width: auto;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav li a{
+    color: #696969;
+    font-size: 20px;
+}
+
+.ton{
+    padding: 7px;
+    font-size: 20px;
+    color: brown;
+    background-color: white;
+    border: 1px solid rgba(165, 42, 42, 0.864);
+    border-radius: 2px;
+}
+
+.ton:hover{
+    color: #696969;
+}
+
+.page a{
+    color: black;
+    margin-left: 70px;
+    align-content: left;
+    font-size: 18px;
+}
+
+.page a:visited,
+.nav li a:visited{
+    color: #696969;
+}
+
+.head{
+    margin: 50px 0 50px 70px;
+    font-size: 20px;
+}
+
+.logo{
+    margin-left: 70px;
+    position: relative;
+}
+
+.logo a{
+   position: absolute;
+   right: 65px;
+   top: 40px; 
+   color: brown;  
+}
+
+.restaurant{
+    display: flex;
+    text-align: center;
+    width: auto;
+    padding: 0 48px;
+}
+
+.image{
+    width: 330px;
+}
+
+    
+.food{
+    display: inline-block;
+    margin: 25px 10px 30px 45px;
+}
+
+.order{
+    color: #696969;
+    font-size: large;
+    font-weight: 700;
+    line-height: 3.5;
+    margin-right: 10px;
+}
+
+h5 .price{
+    color: rgba(4, 121, 4, 0.639);
+    float: right;
+}
+
+.but{
+    margin-top: 7px;
+    margin-left: 5px;
+    padding: 12px 25px;
+    color: rgba(165, 42, 42, 0.864);
+    background: #fff;
+    font-size: 1em;
+    border: 1px solid brown;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.but:hover{
+    background-color: rgba(210, 105, 30, 0.301) ;
+}
+
+.food a:hover{
+    color: #696969;
+}
+
+.view{
+    visibility: hidden;
+}
+
+hr{
+    margin: 70px;
+    border: 1px solid #e6e6e6;
+}
+
+
+
+/* Responsive */
+/* Extra small devices [phones, 600px and down]  */
+@media only screen and (max-width: 600px) {
+    *{
+        font-weight: lighter;
+    }
+    header{
+        font-size: 17px;
+        margin: 30px 0 60px 20px;
+    }
+    .heading{
+        top:30px;
+        right: 20px;
+    }
+    .ton,
+    .food h5,
+    .food button,
+    .nav li a{
+        font-size: 15px;
+    }
+    .nav ul li{
+        padding: 0 2px;
+    }
+    .head,
+    .logo,
+    .page a{
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .logo a{
+        visibility: hidden;
+    }
+    .view{
+        visibility: visible;
+        text-align: center;
+        margin-top: 70px;
+        padding-bottom: 30px;
+    }
+    .view a{
+        color: brown;
+    }
+    .food{
+        margin-left: 20px;
+        margin-bottom: -30px;
+    }
+    .image{
+        width: 90vw;
+    }
+    .order{
+        line-height: 2.0;
+    }
+    hr{
+        margin: 0 30px 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
+    header{
+        font-size: 19px;
+        margin: 35px 0 60px 20px;
+    }
+    .heading{
+        top:35px;
+        right: 20px;
+    }
+    .head,
+    .logo,
+    .food,
+    .page a{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .image{
+        display: block;
+        width: fit-content;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

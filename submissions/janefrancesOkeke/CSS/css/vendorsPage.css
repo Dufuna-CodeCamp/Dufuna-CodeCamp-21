@@ -6,7 +6,7 @@
 
 body {
   padding: 40px 20px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 #logo {
@@ -176,7 +176,7 @@ nav a {
   text-align: center;
   display: none;
 }
-@media screen and (min-width: 300px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .republic-main a {
     display: none;
   }
@@ -211,7 +211,7 @@ bottom: 0.4rem;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   body {
     padding: 5% 5% 10%;
     font-family: "Poppins";
@@ -263,7 +263,7 @@ bottom: 0.4rem;
       }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1400px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     padding: 3% 5% 8%;
   }

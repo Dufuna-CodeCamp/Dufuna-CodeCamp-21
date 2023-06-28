@@ -1,0 +1,116 @@
+$color-primary: #ad4c4c;
+$color-secondary: #ffffff;
+$color-black: #000000;
+$color-grey: #c9c9c9;
+
+@mixin display-flex($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin boxSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size: null, $weight: null, $line-height: null) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+.navbar {
+    @include display-flex(space-between);
+    padding-top: 42px;
+    color: $color-black;
+    background-color: $color-secondary;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    max-width: 1240px;
+}
+
+.navbar__logo {
+    @include font(20px, 500, 30px);
+    cursor: pointer;
+    &--red {
+        @extend .navbar__logo;
+        color: $color-primary;
+    }
+}
+
+.navbar__links {
+    @include display-flex(space-between);
+    @include font(16px, 400);
+    width: 22%;
+    text-decoration: none;
+}
+
+@each $link in (cart, login) {
+    .navbar__links--#{$link} {
+        color: $color-black;
+        text-decoration: none;
+        line-height: 24px;
+    }
+
+    .navbar__links--#{$link}:hover {
+        color: $color-primary;
+    }
+}
+
+.navbar__links--signup {
+    @include display-flex(center);
+    @include boxSize(92px, 40px);
+    @include font(16px, 500, 24px);
+    color: $color-primary;
+    background-color: $color-secondary;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar__links--signup:hover {
+    background-color: $color-primary;
+    color: $color-secondary;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-top: 22px;
+        position: relative;
+        width: auto;
+    }
+
+    .navbar__logo {
+        @include font(16px, 500, 24px);
+    }
+
+    .navbar__links {
+        width: 48%;
+        @include font(10px, 400, 15px);
+    }
+
+    .navbar__links--signup {
+        @include boxSize(75px, 32px);
+        @include font(10px, 500, 15px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        position: relative;
+        width: auto;
+    }
+
+    .navbar__logo {
+        @include font(16px, 500, 24px);
+    }
+
+    .navbar__links {
+        width: 30%;
+        @include font(10px, 400, 15px);
+    }
+}

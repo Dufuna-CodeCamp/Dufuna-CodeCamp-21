@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-section {
+  width: 100%;
+}
+
+.heading-section-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.heading-section-message {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ad4c4c;
+  margin-top: -30px;
+}
+
+.generic-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.generic-input-label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.generic-input-value {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.delivery-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.delivery-heading-container {
+  /*background-color: red;*/
+}
+
+.delivery-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.delivery-message-container {
+  display: flex;
+  /*background-color: blue;*/
+  align-items: start;
+}
+
+.delivery-message {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #696969;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.delivery-section-marker {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+}
+
+.contact-section {
+  width: 100%;
+}
+
+.split-section {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.payment-section {
+  width: 100%;
+}
+
+.card-security {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.card-security-1 {
+  padding-right: 11px;
+  flex-grow: 2;
+}
+
+.card-security-2 {
+  padding-left: 11px;
+  flex-grow: 2;
+}
+
+.submit-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.submit-section-button {
+  width: 70%;
+  background: #ad4c4c;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.null-select {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .main-body {
+  }
+
+  .heading-section {
+  }
+
+  .heading-section-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .heading-section-message {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -20px;
+  }
+
+  .generic-input {
+  }
+
+  .generic-input-label {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .generic-input-value {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 11px 10px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+
+  .delivery-section {
+  }
+
+  .delivery-section-text {
+  }
+
+  .delivery-heading-container {
+  }
+
+  .delivery-heading {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .delivery-message-container {
+  }
+
+  .delivery-message {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: -15px;
+  }
+
+  .delivery-section-marker {
+    margin-top: -5px;
+  }
+
+  .contact-section {
+  }
+
+  .split-section {
+    margin-bottom: 30px;
+  }
+
+  .payment-section {
+  }
+
+  .card-security {
+  }
+
+  .card-security-1 {
+    padding-right: 10px;
+  }
+
+  .card-security-2 {
+    padding-left: 10px;
+  }
+
+  .submit-section {
+    margin-top: 29px;
+  }
+
+  .submit-section-button {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

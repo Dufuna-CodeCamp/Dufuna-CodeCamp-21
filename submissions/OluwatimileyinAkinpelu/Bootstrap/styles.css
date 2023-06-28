@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  padding: 0;
+  margin: 0;
+}
+/* body {
+  margin: 0;
+  padding: 13px 52px 62px;
+} */
+body{
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.text-green {
+  color: #5EA304;
+}
+.add-btn {
+  width: 138px;
+  height: 40px;
+  font-size: 16px;
+  border: solid 1px #AD4C4C;
+  border-radius: 3px;
+  background-color: #ffff;
+  cursor:pointer;
+  margin-top: 14px;
+  margin-bottom: 25px;
+}
+p {
+  margin-bottom: 0px;
+}
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+}
+.delivery-label {
+  font-size: 12px;
+  font-weight: 500;
+}
+.nav-list-items {
+  /* margin-right: 20px; */
+  font-size: 12px !important;
+}
+.btn-text {
+  font-size: 12px !important;
+}
+.interest {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.title-head {
+  color: #4e4d4d;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+main {
+  margin-top: 45px;
+}
+.description {
+  color: #696969;
+}
+form {
+  margin-top: 30px;
+}
+.text-gray {
+  color: #a5a5a5;
+}
+.description  {
+  font-size: 12px;
+  font-weight: 400;
+}
+select {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+  border: solid 1px #c4c4c4;
+  color: #696969;
+  height: 40px;
+}
+.interest-lists-item {
+  /* width: 295px;
+  height: 169px; */
+  padding: 24px 30px;
+  box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+.ruler {
+  margin: 80px 0;
+  border: solid 1px #e6e6e6;
+}
+.small-img {
+  width: 200px;
+  height: 150.6px;
+  margin: 0 auto;
+}
+.text-gray-200 {
+  color: #696969;
+}
+.services-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+.services-description {
+  color: #a5a5a5;
+  width: 245px;
+  margin: 5px auto 0;
+}
+.services-list {
+  margin-top: 72px;
+}
+@media screen and (min-width: 768px) {
+  .title-head {
+    font-size: 30px;
+  }
+  select  {
+    font-size: 15px;
+  }
+  body  {
+    padding: 50px;
+    font-size: 16px;
+  }
+  .interest {
+    font-size: 15px;
+  }
+  .delivery-label {
+    font-size: 15px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .btn-text {
+    font-size: 16px !important;
+  }
+  .nav-list-items {
+    /* margin-right: 20px; */
+    font-size: 16px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .title-head {
+    font-size: 40px;
+  }
+  main {
+    margin-top: 145px;
+  }
+  select{
+    margin-top: 20px;
+    height: 60px;
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+  .interest {
+    font-size: 20px;
+  }
+  form {
+    margin-top: 80px;
+  }
+  .delivery-label {
+    font-size: 20px;
+  }
+  body  {
+    padding: 50px 100px;
+    font-size: 16px;
+  }
+}

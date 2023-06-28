@@ -1,0 +1,40 @@
+
+    h1{
+            text-align: center;
+        }
+
+             table{ 
+                margin-left: auto;
+                margin-right: auto;
+                }
+
+
+    table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    }
+
+    th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+
+    table tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    table button{
+        cursor: pointer;
+    }
+
+    button a{
+        text-decoration: none;
+        color: black;
+    }

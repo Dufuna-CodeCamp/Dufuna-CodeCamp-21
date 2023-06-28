@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_page</title>
+    <link rel="stylesheet" href="./rstyle.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+    <!-- header section -->
+        <header class="logo">
+            <h3>Food<span>Bag</span></h3>
+        </header>
+        <!-- navbar -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Cart</a> </li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#" id="sign-up">Sign up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Page title & description -->
+    <main>
+    <div class="title-description">
+        <h2>FoodBag</h2>
+        <p>Anything food,we have you covered.</p>
+    </div>
+    <!-- Location and delivery -->
+    <form class="location">
+        <label for="location"  >
+           <h4>Where are you?</h4>
+        </label>
+       <select name="towns" id="location">
+        <option value="" style="color: rgb(134, 130, 130);" disabled selected hidden>Enter your delivery address</option>
+        <option value="Ibex">Ibex</option>
+        <option value="Chelston">Chelston</option>
+        <option value="Lilayi">Lilayi</option>
+        <option value="Kabulonga">Kabulonga</option>
+        <option value="Bauleni">Bauleni</option>
+       </select>
+    </form>
+    <!-- Choice section -->
+    <p class="interest">Pick an interest</p>
+    <div class="choice-section">
+        <div class="choice highlight">
+            <img id="fast-food" src="./Images/fast-food_disabled.svg" alt="fastFood">
+            <h4 class="redText">Fast food</h4>
+            <p class="one">All sorrows are less with bread.</p>
+        </div>
+        <div class="choice highlight">
+        <img id="veg-drinks" src="./Images/Vegetables _ Drinks_disabled.svg" alt="vegetables">
+        <h4 class="redText">Vegetables & Fruits</h4>
+        <p class="two">May not want it,but good for you.</p>
+        </div>
+        <div class="highlight choice">
+            <img id="cocktails" src="./Images/Drinks _ Cocktails_disabled.svg" alt="cockTails">
+            <h4 class="redText">Drinks & Cocktails</h4>
+            <p>I feel sad for those who don't drink.</p>
+        </div>
+        <div class="choice highlight">
+            <img id="resturant" src="./Images/resturant_disabled.svg" alt="restaurant">
+            <h4 class="redText">Restaurants</h4>
+            <p class="three">All sorrows are less with bread.</p>
+        </div>
+    </div>
+    <hr>
+</main>
+    <!-- Ordering process section -->
+    <aside class="ordering-steps">
+        <h3>How we serve you</h3>
+        <div class="steps-container">
+            <div class="steps">
+                <img src="./FoodBag Task Assets(beginner)/Illustration_1.svg" alt="">
+                <h4>Tell us where you are</h4>
+                <p>Select the location you want us to deliver.</p>
+            </div>
+            <div class="steps">
+                <img src="./FoodBag Task Assets(beginner)/illustration_2.svg" alt="">
+                <h4>Tell us what you want</h4>
+                <p>Browse the type of food that interest you.</p>
+            </div>
+            <div class="steps">
+                <img src="./FoodBag Task Assets(beginner)/illustration_3.svg" alt="">
+                <h4>We'll come running</h4>
+                <p>Your order will be delivered to you in time</p>
+            </div>
+        </div>
+    </aside><br>
+    <hr class="stp">
+    <!-- footer -->
+    <footer>
+            <p id="contact">Contact us</p>
+            <!-- contact pages -->
+            <div class="Contact-pages">
+            <img class="Page" src="./FoodBag Task Assets(beginner)/twitter 2.svg" alt="">
+                <img class="Page" src="./FoodBag Task Assets(beginner)/youtube 1.svg" alt="">
+            <img class="Page" src="./FoodBag Task Assets(beginner)/facebook-f 1.svg" alt="">
+            </div>
+            <!-- copyright/Ts & Cs -->
+            <div id="copyright">
+                <p class="T-c">Terms & Conditions . Privacy Policy</p>
+                <p class="C-r">&copy;Copyright 2021 FoodBag is a registered trademark</p>
+            </div>          
+    </footer>
+        <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+$color-black: #000000;
+$color-grey: #c9c9c9;
+$color-light-grey: #4e4d4d;
+$color-secondary: #ffffff;
+
+.error__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $color-secondary;
+    color: $color-black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.error__page--title {
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.error__page--text {
+    color: $color-grey;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}

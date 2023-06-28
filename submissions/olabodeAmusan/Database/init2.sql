@@ -5,7 +5,7 @@ CREATE TABLE passengers(
 id INT NOT NULL AUTO_INCREMENT,
 name VARCHAR(250) NOT NULL,
 sex ENUM('male','female') NOT NULL DEFAULT 'male',
-age INT NULL,
+age VARCHAR(8) NULL,
 PRIMARY KEY(id)
 );
 
@@ -30,4 +30,6 @@ survival BOOLEAN NOT NULL DEFAULT 1,
 PRIMARY KEY(id),	
 FOREIGN KEY(passenger_id) REFERENCES passengers(id)
 );
+
+
 

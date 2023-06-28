@@ -1,0 +1,19 @@
+.container {
+  height: "100vh";
+  width: "100vw";
+  display: "flex";
+  text-align: center;
+  align-items: "center";
+  justify-content: "center";
+  margin-top: 100px;
+}
+
+.wrapper {
+  text-align: "center";
+}
+
+.firstParagraph {
+  font-size: "28px";
+  color: "green";
+  font-weight: "bold";
+}

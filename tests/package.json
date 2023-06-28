@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@babel/core": "^7.15.8",
-    "casperjs": "0.7.2",
+    "casperjs": "^1.1.0",
     "chromedriver": "^96.0.0",
     "latest-version": "^7.0.0",
     "phantomcss": "^0.7.2",
@@ -12,7 +12,7 @@
     "webdriver-start": "webdriver-manager start"
   },
   "devDependencies": {
-    "chai": "^4.3.6",
-    "selenium-webdriver": "^4.6.1"
+    "chai": "^4.3.7",
+    "selenium-webdriver": "^4.10.0"
   }
 }
