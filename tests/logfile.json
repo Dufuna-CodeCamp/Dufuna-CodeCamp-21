@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 2,
-    "start": "2023-06-29T12:50:03.786Z",
-    "end": "2023-06-29T12:50:06.568Z",
-    "duration": 2782,
+    "start": "2023-06-29T12:55:11.933Z",
+    "end": "2023-06-29T12:55:14.670Z",
+    "duration": 2737,
     "testsRegistered": 4,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bcf26f18-a2a3-4592-87c6-a6d23350ae04",
+      "uuid": "ac80cc5c-932b-42cd-afa3-0fd8a4636901",
       "title": "",
       "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
       "file": "\\html_task.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+          "uuid": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\product_page_using_html\\html_task.js",
           "file": "\\html_task.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 2510,
+              "duration": 2451,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "4131697a-edc0-476e-b492-a314e41b240f",
-              "parentUUID": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+              "uuid": "f496ff25-331e-447a-9179-cb94adf59647",
+              "parentUUID": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "c4ad9826-df07-4b03-84ee-ad36f500ef97",
-              "parentUUID": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+              "uuid": "9745d9ec-9bad-453d-90cd-d2c771c86674",
+              "parentUUID": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
-              "duration": 125,
+              "duration": 148,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: Ensure Price is present: expected 'your file couldn’t be accessed\\nit ma…' to include 'price'\n    at Context.<anonymous> (html_task.js:23:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "1da0dfba-6778-417f-a873-68bafef7edcf",
-              "parentUUID": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+              "uuid": "0256727c-a627-4d2a-9f8b-bebc9828941f",
+              "parentUUID": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
-              "duration": 71,
+              "duration": 66,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Ensure DESCRIPTION is present: expected 'your file couldn’t be accessed\\nit ma…' to include 'description'\n    at Context.<anonymous> (html_task.js:30:12)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "33193afa-748c-41c7-a967-689f73e3bc9c",
-              "parentUUID": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+              "uuid": "a6e73d10-cfe5-4ab5-999b-f5e2298eef79",
+              "parentUUID": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 52,
+              "duration": 45,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -129,8 +129,8 @@
               "context": null,
               "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
               "err": {},
-              "uuid": "f61d9f8c-7216-4e3a-8a76-c54824561237",
-              "parentUUID": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+              "uuid": "260acfd9-7619-415a-9746-9f3cc173df53",
+              "parentUUID": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
               "isHook": false,
               "skipped": false
             },
@@ -138,7 +138,7 @@
               "title": "test case: ordered list available",
               "fullTitle": "Testing Scholars Project test case: ordered list available",
               "timedOut": false,
-              "duration": 1,
+              "duration": 2,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -147,24 +147,24 @@
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
-              "uuid": "7c7e41b9-a180-4868-95df-82a997bc7176",
-              "parentUUID": "a0f0aadb-d9b2-4c0b-bfb2-9b70b6651abb",
+              "uuid": "3f207697-04a6-415d-8d64-1a2c0038d5c4",
+              "parentUUID": "5c966135-8ade-4e79-bb6b-4134ab583f3f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f61d9f8c-7216-4e3a-8a76-c54824561237",
-            "7c7e41b9-a180-4868-95df-82a997bc7176"
+            "260acfd9-7619-415a-9746-9f3cc173df53",
+            "3f207697-04a6-415d-8d64-1a2c0038d5c4"
           ],
           "failures": [
-            "1da0dfba-6778-417f-a873-68bafef7edcf",
-            "33193afa-748c-41c7-a967-689f73e3bc9c"
+            "0256727c-a627-4d2a-9f8b-bebc9828941f",
+            "a6e73d10-cfe5-4ab5-999b-f5e2298eef79"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 249,
+          "duration": 261,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
