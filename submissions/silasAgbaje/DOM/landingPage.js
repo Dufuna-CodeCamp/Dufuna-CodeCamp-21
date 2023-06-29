@@ -10,7 +10,6 @@ const   place = document.getElementById("location");
     
 
     place.addEventListener('input', (event) => {
-        fastFood.src = "../../CSS/eCommerce-Img/fast-food.svg";
         if(event.target.value !== "") {
             fastFood.src = "../../CSS/eCommerce-Img/fast-food.svg";
             vegetables.src = "../../CSS/eCommerce-Img/Vegetables _ Drinks.svg";
@@ -38,5 +37,25 @@ const   place = document.getElementById("location");
 
             // };
 
+        } else {
+            
+            fastFood.src = "../../CSS/eCommerce-Img/fast-food_disabled.svg";
+            vegetables.src = "../../CSS/eCommerce-Img/Vegetables _ Drinks_disabled.svg";
+            drinks.src = "../../CSS/eCommerce-Img/Drinks _ Cocktails_disabled.svg";
+            restaurant.src = "../../CSS/eCommerce-Img/resturant_disabled.svg";
+
+            interestHeaders.forEach((element => {
+                element.style.color = "gray";
+            }));
+            
+            interestText.forEach((elements => {
+                elements.style.color = 'gray';
+            }));
+
+            interestList.forEach((element => {
+                element.addEventListener('click', () => {
+                    window.location = "../../CSS/html/eComm-index.html"
+                })
+            }));
         }
     })
