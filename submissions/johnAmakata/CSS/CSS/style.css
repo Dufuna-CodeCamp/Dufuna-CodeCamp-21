@@ -40,6 +40,9 @@ header{
 nav a, h3{
     display: inline-block;
 }
+nav h3{
+    padding-right:10px;
+}
 
 /*floats the links to the right*/
 .links{
@@ -106,6 +109,12 @@ select {
 
 
 /*Interest*/
+/* .interest, .serve{
+    display: flex;
+    flex-direction: row;
+
+} */
+
 .interest div{
     display: inline-block;
     padding: 20px 30px;
@@ -164,4 +173,45 @@ footer p{
 }
 span p{
     float: right;
+}
+
+
+/* =================================================================
+                        Media Query
+================================================================= */
+
+@media screen  and (min-width: 320px) and (max-width: 480px) {
+    nav a, h3{
+        font-size: 10px;
+    }
+
+    .section1{
+        display: block;
+        text-align: left;
+    }
+    .section1 p{
+        font-size: 12px;
+    }
+
+    .interest{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .interest{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .interest{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr, 1fr);
+        column-gap: 100px;
+    }
 }
