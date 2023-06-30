@@ -260,7 +260,7 @@ button{
     .kfc, .chicken-republic{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 52px;
+        gap: 50px;
     }
 
     .kfc img, .chicken-republic img{
