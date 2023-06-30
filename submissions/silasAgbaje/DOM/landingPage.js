@@ -30,13 +30,6 @@ const   place = document.getElementById("location");
                 })
             }));
 
-            // for (let l = 0; l < interestList.length; l++) {
-            //     interestList[l].addEventListener('click', () => {
-            //         window.location = "../../CSS/html/vendorindex.html"
-            //     })
-
-            // };
-
         } else {
             
             fastFood.src = "../../CSS/eCommerce-Img/fast-food_disabled.svg";
