@@ -33,8 +33,8 @@
           "file": "\\vendors.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
               "timedOut": false,
               "duration": 14291,
               "state": null,
@@ -43,7 +43,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
               "err": {},
               "uuid": "be37369e-5390-4155-be4b-7b3acf7a9d94",
               "parentUUID": "ecff229f-8144-4783-8390-09cbcaf8745d",
@@ -53,8 +53,8 @@
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "title": "\"after all\" hook in \"Testing Form Task\"",
+              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -78,7 +78,7 @@
               "timedOut": false,
               "duration": 390,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
@@ -228,7 +228,6 @@
             "e4146e0d-7192-462f-ba2a-5490add42a20",
             "19183760-4007-491d-a8f8-f6724b77fcfc"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 1313,
