@@ -27,14 +27,13 @@
 		<p>Anything food, we have you covered</p>
 	</div>
  	<label for="location"><strong>Where are you?</strong></label><br><br>
-	<input list="location-list" id="location" name="location" placeholder="Enter your delivery address">
-	<datalist id="location-list">
-		<option value="">
-		<option value="Bodija Market">
-		<option value="Oja Oba Market">
-		<option value="Malu Market">
-		<option value="Ile Market">
-	</datalist>
+	<select id="location-list" class="select">
+		<option disabled class="option" value="">
+		<option class="option" value="Bodija Market"> Bodija Market
+		<option class="option" value="Oja Oba Market"> Oja Oba Market
+		<option class="option" value="Malu Market"> Malu Market
+		<option class="option" value="Ile Market"> Ile Market
+	</select>
 	<h5 class="interest">Pick an interest</h5>
 	<ul class="interest interest-ul">
 		

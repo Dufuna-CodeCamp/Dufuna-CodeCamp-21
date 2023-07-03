@@ -1,4 +1,4 @@
-const   place = document.getElementById("location");
+const   place = document.querySelector(".select");
         interestText = document.querySelectorAll(".interest-text");
         interestList = document.querySelectorAll(".interest-list");
         interestHeaders = document.querySelectorAll(".interest-heading");
