@@ -4,18 +4,18 @@ import KFC from "../../assets/KFC logo.svg"
 const Vendor = ({product, addToCart}) => {
   return (
     <div className='vendorContainer'>
-        <div class="breadcremb">
+        <div className="breadcremb">
             <span>Home &gt; <strong>Vendors</strong></span>
         </div>
-        <div class="hero">
+        <div className="hero">
             <h2>All Vendors</h2>
         </div>
-        <div class="kfc">
-            <div class="kfcs">
+        <div className="kfc">
+            <div className="kfcs">
                 <img src={KFC} alt="img"/>
                 <span>KFC</span>
             </div>
-            <div class="view-all">
+            <div className="view-all">
                 <span>View all</span>
             </div>
         </div>
@@ -23,16 +23,16 @@ const Vendor = ({product, addToCart}) => {
             {
                 product.map((productItem,productIndex)=>{
                     return(
-                        <div class="item">
-                            <div class="card-img">
+                        <div className="item">
+                            <div className="card-img">
                             <img className='productsimg' src={require("../../assets/" + productItem.pictures + `.svg`).default} alt="productImage" />
                             </div>
-                            <div class="card">
-                                <div class="description">
+                            <div className="card">
+                                <div className="description">
                                     <span>Chicken strips</span>
-                                    <div class="price">{productItem.price}</div>
+                                    <div className="price">{productItem.price}</div>
                                 </div>
-                                <div class="card-btn"><button onClick={() => addToCart(productItem)}>Add to Cart</button></div>
+                                <div className="card-btn"><button onClick={() => addToCart(productItem)}>Add to Cart</button></div>
                             </div>
                         </div>
                     )
@@ -40,27 +40,27 @@ const Vendor = ({product, addToCart}) => {
             }
         </div>
         <hr/>
-            <div class="chicken-republic">
-                <div class="chicken-header">
-                    <div class="img">
+            <div className="chicken-republic">
+                <div className="chicken-header">
+                    <div className="img">
                         <img src="Chicken republic_logo.svg" alt="" />
                     </div>
-                    <div class="header">
+                    <div className="header">
                         <h3>Chicken Republic</h3>
                         <div className='items'>
             {
                 product.map((productItem,productIndex)=>{
                     return(
-                        <div class="item">
-                            <div class="card-img">
+                        <div className="item">
+                            <div className="card-img">
                             <img className='productsimg' src={require("../../assets/" + productItem.pictures + `.svg`).default} alt="productImage" />
                             </div>
-                            <div class="card">
-                                <div class="description">
+                            <div className="card">
+                                <div className="description">
                                     <span>Chicken strips</span>
-                                    <div class="price">{productItem.price}</div>
+                                    <div className="price">{productItem.price}</div>
                                 </div>
-                                <div class="card-btn"><button onClick={() => addToCart(productItem)}>Add to Cart</button></div>
+                                <div className="card-btn"><button onClick={() => addToCart(productItem)}>Add to Cart</button></div>
                             </div>
                         </div>
                     )
