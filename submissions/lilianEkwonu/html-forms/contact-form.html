@@ -6,7 +6,7 @@
 <body>
     <header>
         <h1>Welcome to My E-commerce Website</h1>
-        <img src="../images/drip-haven.jpeg" height="300" width="450">
+        <img src="../html/images/drip-haven.jpeg" height="300" width="450">
         <a href="./product-page.html">Product Form</a>
   
       </header>
@@ -14,29 +14,17 @@
     <form action="#" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Contact Form</legend>
-            <label for="First Name">Firstname</label> <br>
-            <input type="text" name="firstname" id="firstname"/><br>
-            <label>Last Name</label> <br>
-            <input type="text" name="lastname" id="lastname"/><br>
-            <label> Country with list</label>
-            <input list="country-list" id=" country1" name="country"/>
-            <datalist id="country-list">
-                <option value="Ghana"></option>/>
-                <option value="Nigeria"></option>/>
-                <option value="Rwanda"></option>/>
-                <option value="South Afrifa"></option>/>
-                <option value="Zambia"></option>/>
-            </datalist><br>
-            Address: <br>
-            <textarea rows="5" cols="50" name="address"></textarea><br>
-            Gender:<br/>
-            <input type="radio" name="gender" id="Female" value="female">
-            <label for="female">Female</label><br/>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Male</label> <br>
+            <label for="fullname">Full name</label> <br>
+            <input type="text" name="fullname" id="fullname"/><br>
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your email address"/> <br>
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject"/><br>
+            <label for="message">Message: </label>
+            <input type="text" name="message" id="message"/><br>
+            
         </fieldset>
+        <button type="submit" name="submit" value="submit">Submit</button>
     </form>
     <footer>
         <p>&copy; 2023 My E-commerce Website</p>
