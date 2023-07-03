@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-07-02T04:22:13.260Z",
-    "end": "2023-07-02T04:22:14.559Z",
-    "duration": 1299,
+    "failures": 0,
+    "start": "2023-07-02T04:32:38.124Z",
+    "end": "2023-07-02T04:32:39.319Z",
+    "duration": 1195,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d5e315d4-5cd9-44b9-9055-64427bfa50fd",
+      "uuid": "c6332d02-30d3-43e0-a68a-879ad3fb079f",
       "title": "",
       "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
       "file": "\\navigation_tasks.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2ee5c6b4-804c-47f8-90a1-c87e2214eaa4",
+          "uuid": "5f79a15b-bf25-4f06-979d-7bcdd9c004b7",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1246,
+              "duration": 1140,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
-              "uuid": "dda177ee-3bb6-4921-a7ad-9e1471079748",
-              "parentUUID": "2ee5c6b4-804c-47f8-90a1-c87e2214eaa4",
+              "uuid": "96d7ba6c-79f9-48c1-8c90-29399a2a522a",
+              "parentUUID": "5f79a15b-bf25-4f06-979d-7bcdd9c004b7",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "1d74a3f6-64f9-46a1-b6be-e64841000864",
-              "parentUUID": "2ee5c6b4-804c-47f8-90a1-c87e2214eaa4",
+              "uuid": "ae6dcb65-a2cd-43d1-afe8-245edefb92ea",
+              "parentUUID": "5f79a15b-bf25-4f06-979d-7bcdd9c004b7",
               "isHook": true,
               "skipped": false
             }
@@ -76,33 +76,29 @@
               "title": "test case: assert that there are 2 links on this page",
               "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
-              "duration": 36,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 44,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
-              "err": {
-                "message": "AssertionError: Ensure you have two links on this page: expected 5 to equal 2",
-                "estack": "AssertionError: Ensure you have two links on this page: expected 5 to equal 2\n    at Context.<anonymous> (navigation_tasks.js:22:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
-                "diff": "- 5\n+ 2\n"
-              },
-              "uuid": "c98e77e5-4785-41f3-8fdf-f371b9346d64",
-              "parentUUID": "2ee5c6b4-804c-47f8-90a1-c87e2214eaa4",
+              "err": {},
+              "uuid": "bb694565-7bf5-4e3d-943e-4a1cd4f29793",
+              "parentUUID": "5f79a15b-bf25-4f06-979d-7bcdd9c004b7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "c98e77e5-4785-41f3-8fdf-f371b9346d64"
+          "passes": [
+            "bb694565-7bf5-4e3d-943e-4a1cd4f29793"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 36,
+          "duration": 44,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
