@@ -112,7 +112,11 @@ padding: 30px;
 padding-top: 0px;
 }
 .foot{
+<<<<<<< HEAD
  margin:0px 50px 0px;
+=======
+ margin:0px 50px;
+>>>>>>> 3e4fe929fa07dd5e066f48498a3e19a75bb6d291
     display: flex;
     flex-direction: row;
     justify-content: space-between;
