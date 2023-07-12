@@ -1,5 +1,4 @@
 import React from 'react'
-// import CartItem from './CartItem'
 
 function Total(props) {
   return (

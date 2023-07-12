@@ -1,6 +1,4 @@
-/* .App {
 
-} */
 body{
   padding: 1%;
 }
@@ -8,7 +6,6 @@ body{
 nav{
   display: flex;
   padding: 2%;
-  /* height: 11vh; */
   justify-content: space-between;
 }
 
@@ -30,14 +27,6 @@ nav .nav-item{
   cursor: pointer;
 }
 
-/* button{
-  color: #AD4C4C;
-  padding: 2%;
-  border: 1px solid #AD4C4C;
-  margin: 1% 3%;
-  background-color: white;
-  border-radius: 3px;
-} */
 .home{
   color: #C9C9C9;
   margin: 1% 2%;
@@ -69,6 +58,9 @@ nav .nav-item{
   height: 25%;
   margin-top: 5%;
   cursor: pointer;
+}
+.flex-column{
+  width: 50%;
 }
 
 #productImage {
@@ -102,7 +94,7 @@ nav .nav-item{
 
 .plus-minus{
   display: flex;
-  width: 7vw;
+  width: 12vw;
   justify-content: space-between;
   padding-top: 2%;
 }
@@ -124,8 +116,50 @@ nav .nav-item{
     color: white;
 
 }
+@media screen and (min-width: 1024px){
+  
+  .plus-minus {
+    width: 9vw;
+  }
+
+}
 
 @media screen and (max-width: 800px){
+  #logo{
+    margin-right: 0;
+    width: 20%;
+  }
+  .food-section {
+    display: flex;
+    width: 75%;
+  }
+  .plus-minus {
+    width: 18vw;
+    padding-top: 3%;
+  }
+  
+  #productImage {
+    width: 33%;
+  }
+  .home {
+    margin: 5% 2%;
+  }
+  .row {
+    margin: 0 2% 8%;
+  }
+  .total{
+    width: 60%;
+  
+  }
+  #scooter {
+    margin: 0 10%;
+    width: 22%;
+}
+  
+}
+
+
+@media screen and (max-width: 500px){
   #logo{
     margin-right: 0;
     width: 20%;
@@ -138,10 +172,9 @@ nav .nav-item{
     width: 25vw;
     padding-top: 3%;
   }
-  .productImage {
-    margin-right: 2%;
-    width: 35%;
-    /* height: 10vh; */
+  
+  #productImage {
+    width: 33%;
   }
   .home {
     margin: 5% 2%;
@@ -149,5 +182,14 @@ nav .nav-item{
   .row {
     margin: 0 2% 8%;
   }
+  .total{
+    width: 60%;
+  
+  }
+  #scooter {
+    margin: 0 10%;
+    width: 22%;
+}
   
 }
+

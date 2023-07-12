@@ -16,41 +16,28 @@ export class CartPage extends Component {
     
       this.state = {
          count: 0,
-        //  total: 1200,
-        //  price: 0,
-        //  props.price * this.state.count,
+        
       }
     }
 
     incrementCount = () => {
         this.setState(
             (plus) => ({count: plus.count + 1}));
-        // this.setState({total: 1200 + (this.props.price * (this.state.count + 1))});
-        // console.log('total', 1200 + (this.props.price * (this.state.count + 1)))
-        // console.log('count', this.state.count + 1)
-        // console.log('price', this.props.price)
+        
 
       }
     decrementCount = () => {
       if(this.state.count >= 1){
         this.setState(
             (minus) => ({count: minus.count - 1}));
-        // this.setState({total: this.state.total + this.props.price * this.state.count});
-        // console.log('total', this.state.total)
+        
       }
     }
     
 
 
 render() {
-    // const { count } = this.state;
-
-    // const total = (price) => {}
-
-  // const deleteItem = (item) => {
-  //   setItems(items.filter((item) => item.id !== id ))
-  // } 
-
+    
     return (
       <>
          <CartItem
