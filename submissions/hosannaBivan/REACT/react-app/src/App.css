@@ -114,6 +114,16 @@ nav .nav-item{
   cursor: pointer;
 }
 
+.checkout{
+  background: #AD4C4C;
+    width: 60%;
+    margin: 2% 20% 5%;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+}
 
 @media screen and (max-width: 800px){
   #logo{

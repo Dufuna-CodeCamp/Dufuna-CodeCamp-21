@@ -7,7 +7,7 @@ function Total(props) {
         <div className='food-section total'>
             Total
         </div>
-        <div className='total-money'>#{props.price}</div>
+        <div className='total-money'># {props.totalPrice}</div>
 </div>
   )
 }
