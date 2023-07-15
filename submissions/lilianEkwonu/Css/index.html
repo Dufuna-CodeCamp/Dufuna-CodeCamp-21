@@ -14,9 +14,9 @@
           <a href="#">Food<span>Bag</span></a>
         </div>
           <ul class="nav-links">
-            <li><a class="signup" href="#">Sign Up</a></li>
-            <li><a href="#">Login</a></li>
             <li><a href="#">Cart</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a class="signup" href="#">Sign up</a></li>
           </ul>
       </nav>
     </header>
@@ -25,25 +25,25 @@
             <h1>FoodBag</h1>
             <p>Anything food, we have you covered.</p>
       </section>
-      <section class="nav">
+        <section class="nav-i">
           <h3>Where are you?</h3>
           <div>
-            <select id="addressSelect">
-              <option value="" disabled selected hidden>Enter your delivery address</option>
-              <option value="Bodija Market">Bodija Market</option>
-              <option value="Bodija Market 2">Bodija Market 2</option>
-              <option value="Bodija Market 2">Bodija Market 3</option>
-            </select>
+            <br>
+            <input type="text" id="address" placeholder="Enter your delivery address" name="address" required>
           </div>
       </section>
       <section class="specialty" id="specialty">
         <h3 class="heading">Pick an interest </h3>
         <div class="food-container">
+          
           <div class="box">
+          
             <img src="./images/fast food (2).jpeg" height="50" width="50" alt="Fast Food">
             <h3 class="title">Fast Food</h3>
             <p class="text">All sorrows are less with bread.</p>
+          
           </div>
+        
           <div class="box">
             <img src="./images/vegetables.jpeg" height="50" width="50" alt="Vegetables & Fruits">
             <h3 class="title">Vegetables & Fruits</h3>
@@ -61,6 +61,8 @@
           </div>
         </div>
       </section>
+    
+      
       <hr>
       <section>
         <h2>How we serve you</h2>
@@ -85,14 +87,19 @@
       <hr>
     </main>
     <footer>
-      <div class="fo">
+      <div>
         <p>Contact us</p>
-        <img src="./images/twitter.jpeg" class="imj" alt="Twitter">
-        <img src="./images/youtube.jpeg" class="imj" alt="YouTube">
-        <img src="./images/facebook.jpeg" class="imj" alt="Facebook">
+        <div class="fo">
+          <!-- Add your YouTube, Twitter, and Facebook icons or links here -->
+          <a href="#"><img src="./images/youtube.jpeg" class="imj" alt="YouTube"></a>
+          <a href="#"><img src="./images/twitter.jpeg" class="imj" alt="twitter"></a>
+          <a href="#"><img src="./images/facebook.jpeg" class="imj" alt="Facebook"></a>
+        </div>
+        <p class="tf">
+          <a href="#">Terms &amp; Conditions . Privacy Policy</a>
+        </p>
+        <p class="tg">&copy; Copyright 2021 FoodBag is a registered trademark</p>
       </div>
-      <p class="tf">Terms & Conditions. Privacy Policy.</p>
-      <p class="tg">&copy; 2023 FoodBag is a registered trademark</p>
     </footer>
   </div>
 </body>
