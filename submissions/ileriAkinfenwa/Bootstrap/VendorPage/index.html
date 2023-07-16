@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha256-fx038NkLY4U1TCrBDiu5FWPEa9eiZu01EiLryshJbCo=" crossorigin="anonymous">
+    <title>Vendors Page</title>
+</head>
+<style>
+    h2 span{
+    color:#ad4c4c;
+}
+
+.data a:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ad4c4c;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+    .card-btn{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+    .card-btn button{
+    padding: 8px 30px;
+    border: 1px solid #ad4c4c;
+    border-radius: 3px;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ad4c4c;
+    cursor: pointer;
+}
+.card-btn button:hover{
+    background-color: #ad4c4c;
+    color: #ffffff;
+}
+.price{
+    margin-right: 65px;
+}
+.bad{
+    color: #ad4c4c;
+}
+.viewbtn{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        align-items: center;
+        color: #ad4c4c
+}
+</style>
+<body>
+    <div class="container-fluid  bg-white">
+        <div class="p-2 mr-3">
+            <div class="navbar d-f">
+                <div class="mt-2">
+                    <h2 class="navbar-brand  text-dark">Food<span class='bag'>Bag</span></h2>
+                </div>
+                <div class="navbar justify-content-center  column gy-2 data">
+                    <a href="#" class="nav-link text-dark p-2">Cart</a>
+                    <a href="#" class="nav-link text-dark p-2">Login</a>
+                    <a href="#" class="nav-link text-dark p-3">Sign up</a>
+                </div>
+            </div>
+            <div class="mt-3">
+                <span>Home > <strong>Vendors</strong></span>
+            </div>
+            <div class="mt-4">
+                <h2>All Vendors</h2>
+            </div>
+            <div class="navbar">
+                <div class="d-f">
+                    <img src="assests/KFC logo.svg" alt="img" />
+                    <span>KFC</span>
+                </div>
+                <div class="text-danger">
+                    <span>View all</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="col">
+                            <img src="assests/image4.svg" alt="img" />
+                        </div>
+                        <div>
+                          <div class="navbar" >
+                             <span>KFC - King Bucket</span>
+                             <div class="text-success"> <strong class="price">#5,000</strong></div>
+                           </div>
+                          <div class="card-btn"><button type="button" class="btn btn-outline-danger">Add to Cart</button></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <img src="assests/image4.svg" alt="img" />
+                          </div>
+                          <div>
+                            <div class="navbar" >
+                                <span class="pl-1">Zinger Burger</span>
+                                <div class="text-success"><strong class="price">#3,600</strong></div>
+                            </div>
+                            <div class="card-btn"><button>Add to Cart</button></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="assests/image4.svg" alt="img" />
+                          </div>
+                          <div>
+                            <div class="navbar">
+                                <span>Chicken strips</span>
+                                <div class="text-success"><strong class="price">#1,450</strong></div>
+                            </div>
+                            <div class="card-btn"><button>Add to Cart</button></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-img">
+                            <img src="assests/image4.svg" alt="img" />
+                          </div>
+                          <div>
+                            <div class="navbar">
+                                <span>Yamilicious</span>
+                                <div class="text-success"><strong class="price">#900</strong></div>
+                            </div>
+                            <div class="card-btn"><button>Add to Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="viewbtn">
+                    <span>View all</span>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="nav my-5">
+                    <div>
+                        <img src="assests/Chicken republic_logo.svg" alt="" />
+                    </div>
+                    <div class="">
+                        <h3>Chicken Republic</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-img">
+                                <img src="assests/image1.svg" alt="img" />
+                            </div>
+                            <div>
+                                <div class="navbar">
+                                    <span>Refuel Max</span>
+                                     <div class="text-success"><strong class="price">#1,200</strong></div>
+                                </div>
+                                <div class="card-btn"><button>Add to Cart</button></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-img">
+                            <img src="assests/image2.svg" alt="img" />
+                        </div>
+                        <div >
+                            <div class="navbar">
+                                <span>Express meal</span>
+                                 <div class="text-success"> <strong class="price">#2,000</strong></div>
+                            </div>
+                            <div class="card-btn"><button>Add to Cart</button></div>
+                        </div></div>
+                        <div class="col"><div class="card-img">
+                            <img src="assests/image3.svg" alt="img" />
+                        </div>
+                        <div>
+                            <div class="navbar">
+                                <span>Citizen meal</span>
+                                 <div class="text-success"><strong class="price">#1,500</strong></div>
+                            </div>
+                            <div class="card-btn"><button>Add to Cart</button></div>
+                        </div></div>
+                        <div class="col"> 
+                        <div class="card-img">
+                            <img src="assests/image3.svg" alt="img" />
+                        </div>
+                        <div>
+                            <div class="navbar">
+                                <span>Crunchy wings</span>
+                                 <div class="text-success"><strong class="price">#1,750</strong></div>
+                            </div>
+                            <div class="card-btn"><button>Add to Cart</button></div>
+                        </div></div>
+                    </div>
+                </div>
+                    <div class="viewbtn">
+                        <span>View all</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha256-/ijcOLwFf26xEYAjW75FizKVo5tnTYiQddPZoLUHHZ8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha256-WeLjw8JYAtNUcyjqluHrkVYN1fpL7TtakwRhaRgUx8s=" crossorigin="anonymous"></script>
+</body>
+</html>
