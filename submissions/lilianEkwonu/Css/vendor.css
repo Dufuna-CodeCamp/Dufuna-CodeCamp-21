@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+  }
+
+  .contain {
+    margin: 20px;
+  }
+
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .logo a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .logo span {
+    color: #964000;
+  }
+
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    font-size: 12px;
+    padding: 8px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .nav-links li .signup {
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    color: #ad4c4c;
+    text-decoration: none;
+  }
+
+  .active-link{
+    display: inline-block;
+    list-style-type: none; 
+    color: grey;
+  }
+
+  .active-link span{
+    font-weight: bold;
+    color: #000;
+  }
+
+h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  display: inline-flex;
+  margin: 20px 0px;
+}
+
+hr {
+  color: #f2f2f2;
+  margin: 40px 0;
+  height: 1px;
+}
+
+.more{
+    float: right;
+    font-size: medium;
+    color: #AD4C4C;
+    border: none;
+    background-color: transparent;
+}
+
+ .food-container {
+    display: grid;
+    grid-template-columns: repeat(4 , 300px);
+    gap: 30px;
+
+  }
+
+  .food-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box{
+    padding: 5px;
+    justify-content: center;
+    display: flex 100%;
+    flex-direction: column;
+  }
+
+  .img{
+   display: flex;
+   justify-content: center;
+  }
+
+  .price {
+    color:#5EA304;
+    float: right;
+    font-weight: bold;
+  }
+
+    .add {
+    background-color: transparent;
+    border: 1px solid #AD4C4C;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    outline: none;
+    color: #AD4C4C;
+  }
+  
+  
+
+  @media screen and (min-width: 1240px) {
+    nav {
+      padding: 25px 35px;
+    }
+    nav li {
+      display: inline;
+      padding: 8px;
+      float: right;
+    }
+  }
+  
