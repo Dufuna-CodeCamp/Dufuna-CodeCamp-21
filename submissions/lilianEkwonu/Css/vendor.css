@@ -64,11 +64,11 @@
     color: #000;
   }
 
-h2 {
+.h2 {
   font-size: 30px;
   color: #000;
   font-weight: 600;
-  display: inline-flex;
+  display: block;
   margin: 20px 0px;
 }
 
