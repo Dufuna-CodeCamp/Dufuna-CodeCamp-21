@@ -1,0 +1,283 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav span {
+    color: #ad4c4c;
+}
+
+.nav-links {
+    line-height: 15px;
+}
+
+.nav-links li {
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: #696969;
+}
+
+.nav button {
+    padding: 5px 8px;
+    font-size: 10px;
+    color: #ad4c4c;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.hero-text h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4e4d4d;
+    padding-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #696969;
+}
+
+.nav-i {
+    padding: 30px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#location {
+    margin: 10px 0;
+    height: 40px;
+    width: 100%;
+    padding: 0 18px;
+    font-weight: 400;
+    border: 1px solid #C4C4C4;
+}
+
+.heading {
+    padding: 10px 0px;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 18px;
+    color: #ad4c4c;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 14px;
+    color: #696969;
+    padding: 8px;
+    font-weight: 400;
+}
+
+hr {
+    color: #f2f2f2;
+    margin: 40px 0;
+    height: 1px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #4e4d4d;
+    padding: 8px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box-container {
+    display: -moz-grid-line;
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.box-i {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+
+.terms {
+    font-size: 25px;
+    color: #696969;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.tell {
+    font-size: 20px;
+    color: #a5a5a5;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fo {
+    font-size: 18px;
+    color: #696969;
+    padding: 8px;
+    font-weight: 500;
+    line-height: 27px;
+    align-items: center;
+}
+
+.imj {
+    width: 20px;
+    border: 0;
+    display: inline;
+    margin-top: 20px;
+}
+
+.tf {
+    float: left;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.tg {
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 360px) {
+    .food-container {
+        width: 100%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .box-i img {
+        height: 200px;
+        width: 150px;
+    }
+}
+
+/* Media queries for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
+        margin: 0 25px;
+    }
+
+    .food-container {
+        width: 80%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .box-i img {
+        height: 300px;
+        width: 230px;
+    }
+}
+
+/* Media queries for laptop and desktop screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav-links li {
+        font-size: 16px;
+        margin: 0 30px;
+    }
+
+    .food-container {
+        width: 70%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .box-i img {
+        height: 400px;
+        width: 300px;
+    }
+}
