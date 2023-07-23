@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodBag</title>
     <link rel="stylesheet" href="./responsivelanding.css">
@@ -12,19 +13,18 @@
     <header>
         <nav>
             <div class="nav">
-                <a href="#">Food<span>Bag</span></a href="/">
+                <a href="#">Food<span>Bag</span></a>
                 <ul class="nav-links">
                     <li>Cart</li>
                     <li>Login</li>
                     <button class="button">Sign up</button>
                 </ul>
+            </div>
         </nav>
-        </div>
-
     </header>
     <main>
         <section class="hero-text">
-            <h1>FoodBag</h1>
+            <h1><b>Food</b>Bag</h1>
             <p>Anything food, we have you covered.</p>
         </section>
         <section class="nav-i">
@@ -72,37 +72,49 @@
             <h2>How we serve you</h2>
             <div class="box-container">
                 <div class="box-i">
-                    <img src="./images/tell us where you arre.jpeg" height="150.6px" width="200px">
+                    <div class="img">
+                        <img srcset="./images/tell us where you arre-48w.jpeg 480w, 
+                        ./images/tell us where you arre-480w.jpeg 600w, 
+                        ./images/tell us where you arre-800w.jpeg 800w" src="./images/tell us where you arre.jpeg"
+                            alt="where">
+                    </div>
                     <h3 class="terms">Tell us where you are</h3>
-                    <p class="tell">Select the location you want us to deliver.</p>
+                    <p class="tell">Select the location you want<br> us to deliver.</p>
                 </div>
                 <div class="box-i">
-                    <img src="./images/what you want.jpeg" height="300" width="230">
+                    <div class="img">
+                        <img srcset="./images/what you want-48w.jpeg 480w,
+                        ./images/what you want-480w.jpeg 600w, 
+                        ./images/what you want-800w.jpeg 800w" src="./images/what you want.jpeg" alt="what">
+                    </div>
                     <h3 class="terms">Tell us what you want</h3>
-                    <p class="tell">Browse the type of food that interest you.</p>
+                    <p class="tell">Browse the type of food that<br> interest you.</p>
                 </div>
                 <div class="box-i">
-                    <img src="./images/we'll come running.jpeg" height="300" width="230">
+                    <div class="img">
+                        <img srcset="./images/we'll come running-48w.jpeg 480w,
+                        ./images/we'll come running.jpeg 600w, 
+                        ./images/we'll come running.jpeg 800w" src="./images/we'll come running.jpeg" alt="what">
+                    </div>
                     <h3 class="terms">We'll come running</h3>
-                    <p class="tell">Your order will be delivered to you in no time.</p>
+                    <p class="tell">Your order will be delivered<br> to you in no time.</p>
                 </div>
             </div>
         </section>
         <hr>
     </main>
     <footer>
-        <div>
-            <p>Contact us</p>
-            <div class="fo">
-                <!-- Add your YouTube, Twitter, and Facebook icons or links here -->
-                <a href="#"><img src="./images/youtube.jpeg" class="imj" alt="YouTube"></a>
-                <a href="#"><img src="./images/twitter.jpeg" class="imj" alt="twitter"></a>
-                <a href="#"><img src="./images/facebook.jpeg" class="imj" alt="Facebook"></a>
+        <div class="footer">
+            <a href="/" id="Contact">Contact us</a>
+            <div class="icon">
+                <img src="./images/youtube.jpeg" class="imj" alt="YouTube"></a>
+                <img src="./images/twitter.jpeg" class="imj" alt="twitter"></a>
+                <img src="./images/facebook.jpeg" class="imj" alt="Facebook"></a>
             </div>
-            <p class="tf">
-                <a href="#">Terms &amp; Conditions . Privacy Policy</a>
+            <p>
+                <a href="#">Terms &amp; Conditions . Privacy Policy</a><br>
+                <span>&copy; Copyright 2021 FoodBag is a<br> registered trademark</span>
             </p>
-            <p class="tg">&copy; Copyright 2021 FoodBag is a registered trademark</p>
         </div>
     </footer>
     </div>

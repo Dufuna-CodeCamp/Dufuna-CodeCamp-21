@@ -8,7 +8,7 @@
 
 .container {
     max-width: 360px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #ffffff;
 }
 
@@ -25,7 +25,7 @@
     text-decoration: none;
     color: #000;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .nav span {
@@ -56,20 +56,24 @@
 }
 
 .hero-text {
-    text-align: center;
-    padding: 30px 0;
+    display: block;
+    padding: 25px 0;
 }
 
 .hero-text h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: #4e4d4d;
     padding-bottom: 15px;
+    line-height: 30px;
 }
 
 .hero-text p {
-    font-size: 16px;
+    font-size: 12px;
     color: #696969;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 20px;
 }
 
 .nav-i {
@@ -84,7 +88,18 @@
     width: 100%;
     padding: 0 18px;
     font-weight: 400;
-    border: 1px solid #C4C4C4;
+    border: 1px solid#000;
+}
+
+input#location {
+    color: #696969;
+    top: 218px;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .heading {
@@ -103,12 +118,13 @@
     flex-direction: column;
     background: rgba(0, 0, 0, 0);
     padding: 20px;
+    margin: 0 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .title {
     font-size: 18px;
-    color: #ad4c4c;
+    color: #A5A5A5;
     padding: 8px;
     font-weight: 500;
 }
@@ -124,6 +140,7 @@ hr {
     color: #f2f2f2;
     margin: 40px 0;
     height: 1px;
+    padding: 0 20px;
 }
 
 h2 {
@@ -151,8 +168,14 @@ h2 {
     padding: 5px;
 }
 
+.img {
+    align-items: center;
+    margin: 20px 80px;
+    width: 200px;
+    line-height: 15px;
+}
+
 .terms {
-    font-size: 25px;
     color: #696969;
     padding: 8px;
     font-size: 15px;
@@ -160,11 +183,9 @@ h2 {
     line-height: 23px;
     letter-spacing: 0em;
     text-align: center;
-    
 }
 
 .tell {
-    font-size: 20px;
     color: #a5a5a5;
     padding: 8px;
     font-size: 10px;
@@ -172,9 +193,6 @@ h2 {
     line-height: 15px;
     letter-spacing: 0em;
     text-align: center;
-    
-
-
 }
 
 footer {
@@ -183,33 +201,27 @@ footer {
     margin-bottom: 30px;
 }
 
-.fo {
-    font-size: 18px;
+footer a {
+    text-decoration: none;
     color: #696969;
-    padding: 8px;
-    font-weight: 500;
-    line-height: 27px;
-    align-items: center;
+}
+
+footer p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #696969;
 }
 
 .imj {
     width: 20px;
     border: 0;
     display: inline;
-    margin-top: 20px;
-}
-
-.tf {
-    float: left;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.tg {
-    float: right;
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /* Media queries for mobile devices */
