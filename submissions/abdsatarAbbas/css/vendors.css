@@ -78,6 +78,10 @@ nav button{
 	margin: 10px 60px;
 }
 
+.vendors-logo img{
+    margin-bottom: -17px;
+}
+
 .add-to-cart .vendors-logo .vendors-name{
 	font-size: 20px;
 	font-weight: bold;
@@ -146,17 +150,18 @@ hr{
         margin: 0 10px;
     }
 
-    .head {
+    .homenav {
         margin: 40px;
     }
 
-    .vendor-logo {
+    .vendors-logo {
         margin: 10px 40px;
     }
 
-    .select-cart-wrapper {
+    .all-cart {
         display: flex;
         flex-direction: column;
+        margin-left: -15px;
     }
 
     .select-cart {
@@ -168,11 +173,11 @@ hr{
         margin: 80px 40px 40px;
     }
 
-    .to-cart {
+    .add-to-cart {
         position: relative;
     }
 
-    .to-cart .vendor-logo .view-all {
+    .add-to-cart .vendors-logo .view {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -184,7 +189,7 @@ hr{
 
 /* Screen for Tab */
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    .select-cart-wrapper {
+    .all-cart {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
