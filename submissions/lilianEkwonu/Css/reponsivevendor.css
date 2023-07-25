@@ -95,13 +95,13 @@ h2 {
     Width: 114px;
 }
 
-.vendor1 {
+/* .vendor1 {
     font-size: 15px;
     font-weight: 500;
     line-height: 22.5px;
     letter-spacing: 0em;
     text-align: left;
-}
+} */
 
 .food-container {
     display: grid;
