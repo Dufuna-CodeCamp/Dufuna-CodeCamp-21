@@ -13,7 +13,7 @@
 }
 
 body{
-    margin: 20px 20px;
+    margin: 20px;
 }
 
 
@@ -66,14 +66,13 @@ body{
 /* main style */
 
 .active-link {
-    line-height: 30px;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
     color: #c9c9c9;
-    margin: 40px 0 15px 0;
+    margin: 40px 0 15px;
 }
 
 .active-link span{
