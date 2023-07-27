@@ -15,7 +15,7 @@ PRIMARY KEY (id)
 CREATE TABLE trips (
 id INT NOT NULL AUTO_INCREMENT,
 passengers_id INT NOT NULL,
-passenger_class ENUM ('1','2','3'),
+passenger_class ENUM ('1','2','3') NOT NULL,
 passenger_ticket_number VARCHAR(250),
 trip_fare DECIMAL (20,2) NOT NULL,
 assigned_cabin VARCHAR(250),
@@ -29,7 +29,7 @@ FOREIGN KEY (passengers_id) REFERENCES passengers(id)
 CREATE TABLE accident_cases (
 id INT NOT NULL AUTO_INCREMENT,
 passengers_id INT NOT NULL,
-passenger_survived BOOLEAN,
+passenger_survived BOOLEAN NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (passengers_id) REFERENCES passengers(id)
 );
