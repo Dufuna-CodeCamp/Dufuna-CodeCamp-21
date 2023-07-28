@@ -1,16 +1,16 @@
-let x = 123 - 7;
+let a = 123 - 7;
 
-for (i = 1; i <= x; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
+for (b = 1; b <= a; b++) {
+    if (b % 3 === 0 && b % 5 === 0) {
         document.write("Software Developer" + " <br>");
     } 
-    else if (i % 3 === 0) {
+    else if (b % 3 === 0) {
         document.write("Software" + "  <br>");
     } 
-    else if (i % 5 === 0) {
+    else if (b % 5 === 0) {
         document.write ("Developer" + "  <br>");
     } 
     else {
-        document.write(i + "<br>")
+        document.write(b + "<br>")
     }
 }
