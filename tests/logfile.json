@@ -1,5 +1,6 @@
 {
   "stats": {
+
     "suites": 1,
     "tests": 1,
     "passes": 0,
@@ -142,5 +143,10 @@
       },
       "version": "6.2.0"
     }
+=======
+    "tests": 4,
+    "passes": 4,
+    "failures": 0,
+    "owner": "lilianEkwonu"
   }
 }
