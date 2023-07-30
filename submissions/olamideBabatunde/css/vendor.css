@@ -1,11 +1,109 @@
-body{
-    margin: 0px 90px;
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;
+font-size: 12px;
 }
+.nav-bar-text span{
+color: rgb(180, 75, 75);
+}
+.navlinks{
+  display: flex;
+    flex-direction: row;
+  list-style-type: none;
+align-items: center;
+
+}
+.navlinks li a {
+ padding: 10px;   
+text-decoration: none;
+color: rgb(78, 76, 76);
+}
+.navlinks li a button{
+    padding: 5px;
+    width: 70px;
+    background-color: white;
+  color: rgb(153, 40, 40); 
+    border-color: rgb(153, 40, 40);
+
+}
+.navigation{
+    margin: 1px 0px;
+}
+.navigation span{
+  margin-left: 20px;
+ color: rgb(122, 119, 119);
+}
+h1{
+  margin-left: 20px;
+}
+.logo div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+ 
+}
+.logo div p{
+  margin-left: 20px;
+}
+.view{
+  display: none;
+}
+.card1{
+  margin: 20px;
+
+}
+.card1 div p span{
+margin-left: 90px;
+color: green;
+}
+.card1 button{
+    padding: 5px;
+    width: 100px;
+    color: rgb(180, 75, 75);
+    background-color: white;
+    border: 1px solid rgb(180, 75, 75);
+    margin-top: 10px;
+}
+.view1{
+  text-align: center;
+  color: rgb(180, 75, 75);
+}
+.card2{
+  margin: 20px;
+}
+.card2 div p span{
+  margin-left: 90px;
+color: green;
+}
+.card2 button{
+  padding: 5px;
+  width: 100px;
+  color: rgb(180, 75, 75);
+  background-color: white;
+  border: 1px solid rgb(180, 75, 75);
+  margin-top: 10px;
+}
+
+.logo1 div{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+
+}
+.logo1 div p{
+margin-left: 20px;
+}
+
+@media screen and (min-width:768px){
 .nav-bar{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
 justify-content: space-between;
+font-size: 20px;
+align-items: center;
 }
 .nav-bar-text span{
     color: rgb(180, 75, 75);
@@ -20,7 +118,6 @@ justify-content: space-between;
     
 }
 .navlinks li a{
-   color: black;
 padding: 10px;
 text-decoration: none;
 }
@@ -36,9 +133,10 @@ text-decoration: none;
 }
 .navigation{
     margin: 40px 0px;
+    font-size: 20px;
 }
 .navigation span{
-    color: rgb(202, 207, 212);
+ margin-left: 20px;
 }
 .logo{
     display: flex;
@@ -46,8 +144,6 @@ text-decoration: none;
     justify-content: space-between;
 }
 .logo div{
-    display: flex;
-    flex-direction: row;
     margin: 30px 0px;
 }
 .logo div p{
@@ -57,6 +153,11 @@ margin-left: 20px;
     color: rgb(180, 75, 75);
     position: relative;
     top: 25px;
+    display: inline;
+right: 60px;
+}
+.view1{
+    display: none;
 }
 
 
@@ -101,10 +202,15 @@ hr{
 .logo1 div p{
 margin-left: 20px;
 }
-.logo1 .view1{
+.logo1 .view{
     color: rgb(180, 75, 75);
     position: relative;
     top: 25px;
+    display: inline;
+right: 60px;
+}
+.logo1 .view1{
+display: none;
 
 }
 .hero .view {
@@ -134,4 +240,5 @@ margin-left: 20px;
     background-color: white;
     border: 1px solid rgb(180, 75, 75);
     margin-top: 10px;
+} 
 }

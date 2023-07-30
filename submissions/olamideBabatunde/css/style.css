@@ -1,8 +1,97 @@
 body{
-padding: 0;
 font-family:Arial, Helvetica, sans-serif ;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+align-items: center;
+font-size: 12px;
+}
+.nav-bar-text span{
+color: rgb(153, 40, 40);
+}
+.navlinks{
+  display: flex;
+    flex-direction: row;
+  list-style-type: none;
+align-items: center;
 
 }
+.navlinks li a {
+ padding: 10px;   
+text-decoration: none;
+color: rgb(78, 76, 76);
+}
+.navlinks li a button{
+    padding: 5px;
+    width: 70px;
+    background-color: white;
+  color: rgb(153, 40, 40); 
+    border-color: rgb(153, 40, 40);
+
+}
+.hero{
+    margin: 10px;
+}
+.hero p{
+font-size: 15px;
+}
+.container{
+    margin: 10px;
+}
+.container h2{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.container input{
+    width: 90%;
+    padding: 10px;
+}
+select{
+    position: relative;
+    left: 250px;
+    top: -27px;
+    color: rgb(185, 33, 33);
+    border: none;
+}
+.intrest-cards-header{
+    font-size: 20px;
+    margin:0px 10px;
+}
+.intrest-cards{
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.first-card,
+.second-card,
+.third-card,
+.fourth-card
+{
+    border: 1px solid rgb(207, 205, 205);
+padding: 10px;
+margin-top: 5px;
+color: rgb(73, 73, 73);
+
+}
+.card-container-header{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-container{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+.footer-image img{
+padding: 10px;
+}
+@media screen and (min-width:768px){
+    
 .nav-bar{
     display: flex;
     flex-direction: row;
@@ -48,6 +137,7 @@ select{
     left: -50px;
     color: rgb(180, 75, 75);
     border: none;
+    top: 1px;
 }
 
 .container{
@@ -117,3 +207,16 @@ padding-top: 0px;
     flex-direction: row;
     justify-content: space-between;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
