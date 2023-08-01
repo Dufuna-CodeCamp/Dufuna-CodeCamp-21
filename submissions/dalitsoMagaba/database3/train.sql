@@ -52,3 +52,4 @@ WHERE trips.embarked = 'S' AND accidents.survived = 1;
 -- (5) Passengers with fare greater than $100 and are above 35 with siblings or spouses on board
 SELECT passengers.id,passengers.full_name FROM passengers INNER JOIN trips ON passengers.id = trips.passenger_id AND trips.fare > 100
 WHERE passengers.age > 35 AND trips.sibsp >= 1;
+-- 9
