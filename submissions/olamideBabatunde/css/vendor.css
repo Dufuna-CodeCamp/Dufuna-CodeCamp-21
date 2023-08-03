@@ -211,7 +211,6 @@ right: 60px;
 }
 .logo1 .view1{
 display: none;
-
 }
 .hero .view {
     color: rgb(180, 75, 75);
@@ -241,4 +240,5 @@ display: none;
     border: 1px solid rgb(180, 75, 75);
     margin-top: 10px;
 } 
+
 }
