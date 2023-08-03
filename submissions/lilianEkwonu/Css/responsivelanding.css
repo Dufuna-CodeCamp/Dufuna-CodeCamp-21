@@ -1,0 +1,295 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 360px;
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav span {
+    color: #ad4c4c;
+}
+
+.nav-links {
+    line-height: 15px;
+}
+
+.nav-links li {
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: #696969;
+}
+
+.nav button {
+    padding: 5px 8px;
+    font-size: 10px;
+    color: #ad4c4c;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.hero-text {
+    display: block;
+    padding: 25px 0;
+}
+
+.hero-text h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e4d4d;
+    padding-bottom: 15px;
+    line-height: 30px;
+}
+
+.hero-text p {
+    font-size: 12px;
+    color: #696969;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 20px;
+}
+
+.nav-i {
+    padding: 30px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#location {
+    margin: 10px 0;
+    height: 40px;
+    width: 100%;
+    padding: 0 18px;
+    font-weight: 400;
+    border: 1px solid#000;
+}
+
+input#location {
+    color: #696969;
+    top: 218px;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.heading {
+    padding: 10px 0px;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    margin: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 18px;
+    color: #A5A5A5;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 14px;
+    color: #696969;
+    padding: 8px;
+    font-weight: 400;
+}
+
+hr {
+    color: #f2f2f2;
+    margin: 40px 0;
+    height: 1px;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #4e4d4d;
+    padding: 8px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box-container {
+    display: -moz-grid-line;
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.box-i {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+
+.img {
+    align-items: center;
+    margin: 20px 80px;
+    width: 200px;
+    line-height: 15px;
+}
+
+.terms {
+    color: #696969;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.tell {
+    color: #a5a5a5;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #696969;
+}
+
+footer p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #696969;
+}
+
+.imj {
+    width: 20px;
+    border: 0;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 360px) {
+    .food-container {
+        width: 100%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .box-i img {
+        height: 200px;
+        width: 150px;
+    }
+}
+
+/* Media queries for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
+        margin: 0 25px;
+    }
+
+    .food-container {
+        width: 80%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .box-i img {
+        height: 300px;
+        width: 230px;
+    }
+}
+
+/* Media queries for laptop and desktop screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav-links li {
+        font-size: 16px;
+        margin: 0 30px;
+    }
+
+    .food-container {
+        width: 70%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .box-i img {
+        height: 400px;
+        width: 300px;
+    }
+}
