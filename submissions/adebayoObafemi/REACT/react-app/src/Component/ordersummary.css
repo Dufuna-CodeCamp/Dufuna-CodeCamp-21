@@ -1,0 +1,35 @@
+.orderSummaryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.orderSummaryContainer h3.success {
+    font-size: 25px;
+    color: hsla(86, 95%, 33%, 1);
+    margin-bottom: 15px;
+}
+
+.orderSummaryContainer p.success {
+    font-size: 20px;
+    color: hsla(0, 0%, 41%, 1);
+    width: 13em;
+    text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+    .orderSummaryContainer h3.success {
+        font-size: 25px;
+        color: hsla(86, 95%, 33%, 1);
+        margin-bottom: 15px;
+    }
+
+    .orderSummaryContainer p.success {
+        font-size: 20px;
+        color: hsla(0, 0%, 41%, 1);
+        width: 10em;
+        text-align: center;
+    }
+}

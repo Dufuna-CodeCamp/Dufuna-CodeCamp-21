@@ -1,0 +1,13 @@
+.App {
+  width: 70%;
+  margin: 0px auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (max-width: 600px) {
+  .App {
+    width: 90%;
+  }
+}

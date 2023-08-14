@@ -2,6 +2,35 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+} 
+
+.cart:hover{
+    cursor: pointer;
+}
+
+.remove{
+    color: white !important;
+    background-color: grey !important;
+    border: 1px solid transparent !important;
+}
+.remove-icon{
+    display: block !important;
+    float: left;
+    width: 20% !important;
+    height: 15% !important;
+}
+
+nav span{
+    display: none;
+} 
+
+.span-none{
+    display: none;
+}
+
+.cart-dot{
+    float: right;
+    display: block;
 }
 
 @media screen and (max-width: 600px){

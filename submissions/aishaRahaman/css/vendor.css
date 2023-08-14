@@ -14,6 +14,7 @@ header{
 }
 
 
+
 header span{
     color: rgba(165, 42, 42, 0.864);
 }
@@ -121,6 +122,10 @@ h5 .price{
     margin-bottom: 10px;
 }
 
+.but:hover{
+    background-color: rgba(210, 105, 30, 0.301) ;
+}
+
 .food a:hover{
     color: #696969;
 }
@@ -133,6 +138,8 @@ hr{
     margin: 70px;
     border: 1px solid #e6e6e6;
 }
+
+
 
 /* Responsive */
 /* Extra small devices [phones, 600px and down]  */

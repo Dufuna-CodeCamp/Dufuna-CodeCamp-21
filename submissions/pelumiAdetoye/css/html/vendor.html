@@ -14,9 +14,9 @@
             <div id="navbar">
                 <div class="logo"><a href="#"><b>Food<span>Bag</span></b></a></div>
                 <div class="right-nav">
-                    <div class="rnc rnc1" ><a href="#" style="color: #817d7d;">Cart</a></div>
-                    <div class="rnc rnc2"><a href="#" style="color: #817d7d;">Login</a></div>
-                    <div class="rnc rnc3"><a href="#">Sign up</a></div>
+                    <a href="#" style="color: #817d7d;" id="cart"><div class="rnc rnc1" >Cart<sup><span class="notify"></span></sup></div></a>
+                    <a href="#" style="color: #817d7d;"><div class="rnc rnc2">Login</div></a>
+                    <a href="#"><div class="rnc rnc3">Sign up</div></a>
                 </div>
             </div>
         </nav>
@@ -30,7 +30,7 @@
             All Vendors
         </div>
 
-        <!-- kfc section -->
+        <!-- kfc list section begins -->
         <div class="kfc">
             <div class="imgkfc">
                 <img src="../imgs/KFC logo.svg" alt="">
@@ -43,48 +43,68 @@
         </div>
 
         <div class="kfc-section">
-            <div class="kfc-img">
-                <img src="../imgs/image4.svg" alt="">
-    
-                <div class="kfc-price">
-                    <span>KFC - King Bucket</span>
-                    <span class="price">#5,000</span>
-                </div>
-    
-                <button>Add to Cart</button>
-            </div>
-    
-            <div class="kfc-img">
-                <img src="../imgs/image4.svg" alt="">
-    
-                <div class="kfc-price">
-                    <span>Zinger Burger</span>
-                    <span class="price">#3,800</span>
-                </div>
-    
-                <button>Add to Cart</button>
-            </div>
-    
-            <div class="kfc-img">
-                <img src="../imgs/image4.svg" alt="">
-    
-                <div class="kfc-price">
-                    <span>Chicken Strips</span>
-                    <span class="price">#1,450</span>
-                </div>
-    
-                <button>Add to Cart</button>
-            </div>
+            <div class="kfc-section-a">
+                <div class="kfc-img">
+                    <img src="../imgs/image4.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>KFC - King Bucket</span>
+                        <span class="price">#5,000</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart1">Add to Cart</button>
 
-            <div class="kfc-img4">
-                <img src="../imgs/image4.svg" alt="">
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
+                </div>
+        
+                <div class="kfc-img">
+                    <img src="../imgs/image4.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Zinger Burger</span>
+                        <span class="price">#3,800</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart2">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
+                </div>
+            </div>
     
-                <div class="kfc-price">
-                    <span>Yamilicious</span>
-                    <span class="price">#900</span>
+            <div class="kfc-section-b">
+                <div class="kfc-img">
+                    <img src="../imgs/image4.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Chicken Strips</span>
+                        <span class="price">#1,450</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart3">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
     
-                <button>Add to Cart</button>
+                <div class="kfc-img4">
+                    <img src="../imgs/image4.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Yamilicious</span>
+                        <span class="price">#900</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart4">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
+                </div>
             </div>
             
         </div>
@@ -94,8 +114,9 @@
         <div class="view">
             View all
         </div>
+        <!-- kfc list section begins -->
 
-        <!-- chicken republic section -->
+        <!-- chicken republic section begins-->
         <div class="chic-rep">
             <div class="chic-rep-img">
                 <img src="../imgs/Chicken republic_logo.svg" alt="">
@@ -108,55 +129,78 @@
         </div>
 
         <div class="chicken-section">
-            <div class="kfc-img">
-                <img src="../imgs/image1.svg" alt="">
-    
-                <div class="kfc-price">
-                    <span>Refuel Max</span>
-                    <span class="price">#1,200</span>
-                </div>
-    
-                <button>Add to Cart</button>
-            </div>
-    
-            <div class="kfc-img">
-                <img src="../imgs/image2.svg" alt="">
-    
-                <div class="kfc-price">
-                    <span>Express Meal</span>
-                    <span class="price">#2,000</span>
-                </div>
-    
-                <button>Add to Cart</button>
-            </div>
-    
-            <div class="kfc-img">
-                <img src="../imgs/image3.svg" alt="">
-    
-                <div class="kfc-price">
-                    <span>Citizen Meal</span>
-                    <span class="price">#1,500</span>
-                </div>
-    
-                <button>Add to Cart</button>
-            </div>
+            <div class="chicken-section-a">
+                <div class="kfc-img">
+                    <img src="../imgs/image1.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Refuel Max</span>
+                        <span class="price">#1,200</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart5">Add to Cart</button>
 
-            <div class="kfc-img4">
-                <img src="../imgs/image3.svg" alt="">
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
+                </div>
+        
+                <div class="kfc-img">
+                    <img src="../imgs/image2.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Express Meal</span>
+                        <span class="price">#2,000</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart6">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
+                </div>
+            </div>
     
-                <div class="kfc-price">
-                    <span>Crunchy Wings</span>
-                    <span class="price">#1,750</span>
+            <div class="chicken-section-b">
+                <div class="kfc-img">
+                    <img src="../imgs/image3.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Citizen Meal</span>
+                        <span class="price">#1,200</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart7">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
                 </div>
     
-                <button>Add to Cart</button>
+                <div class="kfc-img4">
+                    <img src="../imgs/image3.svg" alt="">
+        
+                    <div class="kfc-price">
+                        <span>Crunchy Wings</span>
+                        <span class="price">#1,950</span>
+                    </div>
+        
+                    <button class="addtocart" id="addtocart8">Add to Cart</button>
+
+                    <!-- <button class="removecart" style="display: none;">
+                        <img src = "../imgs/remove.svg" alt = ""/>  Remove
+                    </button> -->
+                </div>
             </div>
         </div>
+
 
         <div class="view">
             View all
         </div>
+        <!-- chicken republic section ends-->
     </div>
  
+    <script src="../../Dom/vendor.js"></script>
 </body>
 </html>

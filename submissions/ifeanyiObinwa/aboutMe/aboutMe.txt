@@ -1,0 +1,10 @@
+Hello World!
+
+I am Ifeanyi Obinwa and I'm learning Software engineering on Dufuna.
+
+I'm currently corp member serving in Lagos, and I hope that by the time I'd be done with my
+service that I'd be good in Frontend web development.
+
+I am grateful for Dufuna for this opportunity and I hope to make  maximum use of it.
+
+Thank you.

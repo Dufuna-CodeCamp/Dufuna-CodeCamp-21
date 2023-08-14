@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+  color: #696969;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 40px;
+}
+.footer > h2 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.social-icon {
+  width: 20px;
+  margin-left: 10px;
+  color: #ad4c4c;
+}
+.social-icon:hover {
+  color: #e63030;
+}
+.footer_down {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_down {
+    justify-content: center;
+  }
+}
