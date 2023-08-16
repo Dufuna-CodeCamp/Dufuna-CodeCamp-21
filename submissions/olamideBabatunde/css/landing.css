@@ -79,6 +79,10 @@ select {
 .card-container {
   text-align: center;
 }
+.cardcontainer,
+.cardcontainer3 {
+  display: none;
+}
 footer {
   text-align: center;
 }
@@ -153,30 +157,34 @@ footer {
     outline-color: none;
     margin-bottom: 10px;
   }
-  .card-container h3 {
+  .cardcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-container {
+    display: none;
+  }
+  .cardcontainer3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cardcontainer,
+  .cardcontainer3 h3 {
     font-size: 18px;
     color: rgb(92, 84, 84);
     text-align: center;
   }
-  .card-container p {
+  .cardcontainer p {
     font-size: 15px;
     color: rgb(92, 84, 84);
     text-align: center;
   }
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .cardcontainer1 img {
-    width: 160px;
-    padding-right: 100px;
-  }
-  .cardcontainer2 img {
-    width: 160px;
-  }
-  .cardcontainer3 img {
-    width: 160px;
+  .cardcontainer3a p {
+    font-size: 15px;
+    color: rgb(92, 84, 84);
+    text-align: center;
   }
   .card-container-header {
     margin-left: 50px;
@@ -267,6 +275,10 @@ footer {
     outline-color: none;
     margin-bottom: 50px;
   }
+  .cardcontainer,
+  .cardcontainer3 {
+    display: none;
+  }
   .card-container h3 {
     font-size: 25px;
     color: rgb(92, 84, 84);
@@ -277,13 +289,22 @@ footer {
     color: rgb(92, 84, 84);
     text-align: center;
   }
+
+  .cardcontainer3a {
+    display: none;
+  }
+  .card-container-header {
+    margin-left: 50px;
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .card-container-header {
-    margin-left: 50px;
+  .cardcontainer1 {
+    display: flex;
+    flex-direction: column;
   }
   footer {
     text-align: center;
