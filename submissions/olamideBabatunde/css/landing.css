@@ -228,7 +228,7 @@ footer {
     border: none;
     top: 3px;
   }
-  .container {
+  /* .container {
     padding: 0px 50px;
   }
   .container input {
@@ -250,7 +250,7 @@ footer {
     border: 3px solid rgb(236, 229, 229);
     padding: 30px;
     outline: none;
-    margin: 10px 10px 50px;
+    margin: 10px 10px 50px; */
   }
   hr {
     border: 1px solid rgb(230, 220, 220);
