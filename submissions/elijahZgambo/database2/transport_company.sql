@@ -43,4 +43,5 @@ alter table trips modify passenger_class enum('1','2','3') not null;
 alter table trips modify assigned_cabin varchar(250);
 alter table trips modify point_of_embarkation varchar(250);
 alter table trips modify trip_fare DECIMAL(10,2);
-alter table survivors modify survived boolean default true;   
+alter table survivors modify survived boolean default true;
+alter table passengers modify sex enum('male','female') not null;
