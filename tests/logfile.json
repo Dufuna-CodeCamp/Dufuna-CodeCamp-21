@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-08-22T09:02:26.941Z",
-    "end": "2023-08-22T09:05:26.959Z",
-    "duration": 180018,
+    "start": "2023-08-22T15:49:09.092Z",
+    "end": "2023-08-22T15:52:09.112Z",
+    "duration": 180020,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f31b5bb7-0b4f-43da-8399-ca2e03ec5be8",
+      "uuid": "4ee57622-4617-4265-8a0d-a6753607031c",
       "title": "",
       "fullFile": "C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
       "file": "\\navigation_tasks.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0544b4fc-c0db-4b1e-857a-d55634097ddd",
+          "uuid": "aaf3465c-f3e2-4274-84e4-d8a7c48bf403",
           "title": "Testing Navigation on HtmlForms",
           "fullFile": "C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
           "file": "\\navigation_tasks.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver for \"test case: assert that there are 2 links on this page\"",
               "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver for \"test case: assert that there are 2 links on this page\"",
               "timedOut": true,
-              "duration": 180001,
+              "duration": 180006,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -46,11 +46,11 @@
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {
                 "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
+                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\User\\Desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js)\n    at listOnTimeout (node:internal/timers:557:17)\n    at processTimers (node:internal/timers:500:7)",
                 "diff": null
               },
-              "uuid": "641ef69e-14f1-4e71-bfbb-4f1191a3a31c",
-              "parentUUID": "0544b4fc-c0db-4b1e-857a-d55634097ddd",
+              "uuid": "4aa61092-9634-41bd-9d8c-2076c7fc6d59",
+              "parentUUID": "aaf3465c-f3e2-4274-84e4-d8a7c48bf403",
               "isHook": true,
               "skipped": false
             }
@@ -60,7 +60,7 @@
               "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
               "context": null,
               "code": "driver.quit()",
               "err": {},
-              "uuid": "15a54240-016f-40ba-8c7f-365e4339b1e8",
-              "parentUUID": "0544b4fc-c0db-4b1e-857a-d55634097ddd",
+              "uuid": "63120ce8-91b2-4ae0-8c57-d82c82e144da",
+              "parentUUID": "aaf3465c-f3e2-4274-84e4-d8a7c48bf403",
               "isHook": true,
               "skipped": false
             }
@@ -89,8 +89,8 @@
               "context": null,
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
-              "uuid": "5d5dc3ce-5ae8-4a72-8750-6345d9a49dc2",
-              "parentUUID": "0544b4fc-c0db-4b1e-857a-d55634097ddd",
+              "uuid": "eb9c59a3-5f0d-4cb7-a1fe-e73f08977889",
+              "parentUUID": "aaf3465c-f3e2-4274-84e4-d8a7c48bf403",
               "isHook": false,
               "skipped": true
             }
@@ -100,7 +100,7 @@
           "failures": [],
           "pending": [],
           "skipped": [
-            "5d5dc3ce-5ae8-4a72-8750-6345d9a49dc2"
+            "eb9c59a3-5f0d-4cb7-a1fe-e73f08977889"
           ],
           "duration": 0,
           "root": false,
