@@ -60,9 +60,10 @@ select count(survived) from survivors where survived = 0;
 /* Q3 */
 select passengers.full_name, passengers.sex from passengers inner join trips on passengers.id = trips.id where passengers.age < 27 and (point_of_embarkation = 'Q' or point_of_embarkation = 'C');
 
-/* Q4 */+
-select count(survived) from survivors inner join trips on survivors.passenger_id = trips.passenger_id where survived = 1 and point_of_embarkation = 'S';
-/* Total: 218 passengers*/
+/* Q4 */
+select count(survived) from survivors inner join trips on survivors.id = trips.id where survived = 1 and point_of_embarkation = 'S';
+/* Total: 218 */
 
 /* Q5 */
 select passengers.id, passengers.full_name from passengers inner join trips on trips.id = passengers.id where passengers.age > 35 and (trips.trip_fare > 100 and trips.number_of_siblings_spouses_aboard != 0);
+/* 9 passengers */
