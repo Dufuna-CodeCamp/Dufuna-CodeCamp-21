@@ -16,7 +16,7 @@
 }
 
 body {
-    margin: 20px 20px;
+    margin: 20px;
 }
 
 /* Header styles */
@@ -25,7 +25,6 @@ body {
     top: 23px;
     left: 20px;
     font-size: 16px;
-    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
