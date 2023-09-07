@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 8,
-    "start": "2023-09-07T20:24:15.772Z",
-    "end": "2023-09-07T20:24:17.017Z",
-    "duration": 1245,
+    "start": "2023-09-07T20:31:44.001Z",
+    "end": "2023-09-07T20:31:45.160Z",
+    "duration": 1159,
     "testsRegistered": 8,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1a181b0f-c84d-42ba-8c82-6cc8881083e7",
+      "uuid": "bc3d8ddd-ef66-4335-89e0-8cf4128f3d23",
       "title": "",
       "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
       "file": "\\vendors.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+          "uuid": "564186e3-26b1-4b40-9379-b68aa48367e7",
           "title": "Testing Scholars Project",
           "fullFile": "C:\\Dufuna-CodeCamp-21\\tests\\vendors_page\\vendors.js",
           "file": "\\vendors.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 1042,
+              "duration": 942,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "aeab0bfd-e613-4ef3-9e5b-05eb39572eca",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "3dec74c4-2313-4dae-901a-7973ffb9b4fe",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "4c2bdc5c-cfd8-4b43-9869-721cb3461695",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "dd003513-e3ab-4565-aa1c-b4e117da1db2",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-              "duration": 53,
+              "duration": 52,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'Food'\n    at Context.<anonymous> (vendors.js:24:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "8225da42-8621-4e0a-8c93-5aca5a7e38e6",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "bce7e060-b5cb-49f0-9f88-b4f85b32836c",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: FoodBag Logo is present",
               "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
               "timedOut": false,
-              "duration": 21,
+              "duration": 24,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -111,8 +111,8 @@
                 "estack": "AssertionError: Ensure \"food bag\" text is present on header: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'Bag'\n    at Context.<anonymous> (vendors.js:30:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "c0825a14-530b-4019-a9d4-6ead73912529",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "a2059090-87b8-4c53-b2f0-ec7db608dcff",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: FoodBag text is present on the page",
               "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
               "timedOut": false,
-              "duration": 21,
+              "duration": 24,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -133,8 +133,8 @@
                 "estack": "AssertionError: Ensure \"FoodBag\" text is present: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'FoodBag'\n    at Context.<anonymous> (vendors.js:36:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "b7af1b0d-f2ff-454c-8f48-4466548f7e22",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "ebcfefff-3704-498c-97e3-c0d19112c041",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -142,7 +142,7 @@
               "title": "test case: check Login",
               "fullTitle": "Testing Scholars Project test case: check Login",
               "timedOut": false,
-              "duration": 21,
+              "duration": 26,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -155,8 +155,8 @@
                 "estack": "AssertionError: Ensure the `Login` link is present on the header: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'Login'\n    at Context.<anonymous> (vendors.js:43:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "36f21680-ec03-4ffd-96b9-618366ec65ca",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "45b6a405-5074-4507-8edf-02782ac7c391",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -177,8 +177,8 @@
                 "estack": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'Cart'\n    at Context.<anonymous> (vendors.js:49:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "ecf1d2a2-ab66-4940-8662-ba5cd1369d83",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "78507252-206d-47af-b07c-7ce4bfa89b2d",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -186,7 +186,7 @@
               "title": "test case: check page text",
               "fullTitle": "Testing Scholars Project test case: check page text",
               "timedOut": false,
-              "duration": 19,
+              "duration": 26,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -199,8 +199,8 @@
                 "estack": "AssertionError: Ensure the `Cart` link is present on the header: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'All Vendors'\n    at Context.<anonymous> (vendors.js:55:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "dd9c0745-f8b5-4932-94d9-7cbf353fb2c8",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "4f62b50b-ba38-4ce4-a905-3c46a83c752a",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -208,7 +208,7 @@
               "title": "test case: check page text",
               "fullTitle": "Testing Scholars Project test case: check page text",
               "timedOut": false,
-              "duration": 14,
+              "duration": 15,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -221,8 +221,8 @@
                 "estack": "AssertionError: Ensure the horizantal rule is present beneath the first list of images as seen in the mock-up: expected +0 to equal 1\n    at Context.<anonymous> (vendors.js:61:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 0\n+ 1\n"
               },
-              "uuid": "4faea9e8-3b4a-49d3-b37d-f1c9e3638c91",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "632931d2-802f-48c6-8d75-ebb2a324ca74",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             },
@@ -230,7 +230,7 @@
               "title": "test case: assert image amount is 9",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 9",
               "timedOut": false,
-              "duration": 14,
+              "duration": 13,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -243,8 +243,8 @@
                 "estack": "AssertionError: Ensure all the images are present on the page: expected 2 to equal 10\n    at Context.<anonymous> (vendors.js:67:20)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": "- 2\n+ 10\n"
               },
-              "uuid": "aa965a95-36c0-411b-8700-c89be5e4a8b2",
-              "parentUUID": "5d800c68-32b8-4988-ac14-c6dadb57b0e9",
+              "uuid": "f67976b8-335c-4bb5-9d49-edf4af8d04a9",
+              "parentUUID": "564186e3-26b1-4b40-9379-b68aa48367e7",
               "isHook": false,
               "skipped": false
             }
@@ -252,18 +252,18 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "8225da42-8621-4e0a-8c93-5aca5a7e38e6",
-            "c0825a14-530b-4019-a9d4-6ead73912529",
-            "b7af1b0d-f2ff-454c-8f48-4466548f7e22",
-            "36f21680-ec03-4ffd-96b9-618366ec65ca",
-            "ecf1d2a2-ab66-4940-8662-ba5cd1369d83",
-            "dd9c0745-f8b5-4932-94d9-7cbf353fb2c8",
-            "4faea9e8-3b4a-49d3-b37d-f1c9e3638c91",
-            "aa965a95-36c0-411b-8700-c89be5e4a8b2"
+            "bce7e060-b5cb-49f0-9f88-b4f85b32836c",
+            "a2059090-87b8-4c53-b2f0-ec7db608dcff",
+            "ebcfefff-3704-498c-97e3-c0d19112c041",
+            "45b6a405-5074-4507-8edf-02782ac7c391",
+            "78507252-206d-47af-b07c-7ce4bfa89b2d",
+            "4f62b50b-ba38-4ce4-a905-3c46a83c752a",
+            "632931d2-802f-48c6-8d75-ebb2a324ca74",
+            "f67976b8-335c-4bb5-9d49-edf4af8d04a9"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 187,
+          "duration": 204,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
