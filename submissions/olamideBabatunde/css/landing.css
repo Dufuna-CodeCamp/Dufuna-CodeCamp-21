@@ -112,7 +112,7 @@ footer {
   }
   select {
     position: relative;
-    left: 50px;
+    left: 500px;
     color: rgb(180, 75, 75);
     border: none;
     top: -25px;
@@ -131,6 +131,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  .intrest-cards1,
+  .intrest-cards2 {
+    display: flex;
+    flex-direction: column;
   }
   .first-card,
   .second-card,
@@ -228,7 +233,7 @@ footer {
     border: none;
     top: 3px;
   }
-  /* .container {
+  .container {
     padding: 0px 50px;
   }
   .container input {
@@ -243,6 +248,11 @@ footer {
     flex-direction: row;
     margin-left: 50px;
   }
+  .intrest-cards1,
+  .intrest-cards2 {
+    display: flex;
+    flex-direction: row;
+  }
   .first-card,
   .second-card,
   .third-card,
@@ -250,7 +260,7 @@ footer {
     border: 3px solid rgb(236, 229, 229);
     padding: 30px;
     outline: none;
-    margin: 10px 10px 50px; */
+    margin: 10px 10px 50px;
   }
   hr {
     border: 1px solid rgb(230, 220, 220);
