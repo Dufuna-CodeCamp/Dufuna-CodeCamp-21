@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1>Product Survey Form</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Survey form</legend>
+            <label for="firstname">First Name</label> <br>
+            <input type="text" name="firstname" id="firstname"/> <br>
+            <label for="lastname">Last Name</label> <br>
+            <input type="text" name="lastname" id="lastname"/> <br>
+            <label for="address">Address</label> <br>
+            <input type="text" name="address" id="address" disabled/> <br><br>
+            <label for="male">Gender</label> <br>
+            <input type="radio" name="gender" value="Male" id="male">
+            <label for="male">Male</label> <br>
+            <input type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label> <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"> <br><br>
+
+            <label>How would you like to describe our product?</label><br>
+            <input type="checkbox" name="description1" id="description1" value="description1">
+            <label for="description1">High Quality</label><br>
+            <input type="checkbox" name="description2" id="description2" value="description2">
+            <label for="description2">Standard</label><br>
+            <input type="checkbox" name="description3" id="description3" value="description3">
+            <label for="description3">Unique</label><br>
+            <input type="checkbox" name="description4" id="description4" value="description4">
+            <label for="description4">Low Quality</label><br>
+
+            <label>Password:</label>
+            <input type="password" name="password"> <br><br>
+
+            <label for="file">Upload file</label>
+            <input type="file" name="file" id="file"><br><br>
+
+            <label>Country: </label>
+            <select name="country" id="country">
+                <option value="Nigeria"</option>
+                    <option value="Zambia"</option>
+                        <option value="Ghana"</option>
+            </select>
+            <br><br>
+
+            <label>Country with list</label>
+            <input list="country-list" id="country1" name="country">
+
+            <datalist id="country-list">
+                <option value="nigeria"/>
+                <option value="zambia"/>
+                <option value="ghana"/>
+                <option value="rwanda"/>
+                <option value="southafrica"/>
+            </datalist><br><br>
+
+            <label>Write your comments and suggestion about our product</label><br>
+            <textarea name="comments" id="comments" cols="50" rows="10"></textarea> <br><br>
+
+            <button onclick="alert('hello, and welcome to my website')" >Say Hello</button>
+
+            <input type="image" name="image button" src="img/02.jpg" width="200" height="50"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
