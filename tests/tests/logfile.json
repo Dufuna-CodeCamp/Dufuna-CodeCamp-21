@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-03-12T10:08:20.589Z",
-    "end": "2023-03-12T10:08:22.860Z",
-    "duration": 2271,
+    "start": "2023-07-28T08:44:45.916Z",
+    "end": "2023-07-28T08:44:50.409Z",
+    "duration": 4493,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,25 +18,25 @@
   },
   "results": [
     {
-      "uuid": "209620ea-447d-42a8-b062-3c38db5fddef",
+      "uuid": "121f38c6-2cd2-40db-a8e8-406decbf6e98",
       "title": "",
-      "fullFile": "C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
+      "fullFile": "C:\\Users\\Abdsatar\\Desktop\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
       "file": "\\conditionals_test.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "941138a6-2aa9-4a4b-85e8-8278d38374a0",
+          "uuid": "ccf999f0-aad6-4a81-a535-83c436f1c944",
           "title": "Testing javascript conditionals",
-          "fullFile": "C:\\Users\\USER\\Documents\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
+          "fullFile": "C:\\Users\\Abdsatar\\Desktop\\Dufuna-CodeCamp-21\\tests\\php_loops_and_numbers\\conditionals_js\\conditionals_test.js",
           "file": "\\conditionals_test.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"before all\" hook: setupWebdriver in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 2143,
+              "duration": 4194,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
-              "uuid": "d7c546d9-55df-485e-9b14-333217cf21ce",
-              "parentUUID": "941138a6-2aa9-4a4b-85e8-8278d38374a0",
+              "uuid": "6c20df48-ebce-44d5-a6d8-6c66359eb79e",
+              "parentUUID": "ccf999f0-aad6-4a81-a535-83c436f1c944",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing javascript conditionals\"",
               "fullTitle": "Testing javascript conditionals \"after all\" hook in \"Testing javascript conditionals\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "2905bc17-383d-42b6-a333-334d9fa4b5b8",
-              "parentUUID": "941138a6-2aa9-4a4b-85e8-8278d38374a0",
+              "uuid": "fe027170-90fe-474d-bfca-d9337e7bacfe",
+              "parentUUID": "ccf999f0-aad6-4a81-a535-83c436f1c944",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check conditionals",
               "fullTitle": "Testing javascript conditionals test case: check conditionals",
               "timedOut": false,
-              "duration": 108,
+              "duration": 273,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -89,8 +89,8 @@
                 "estack": "AssertionError: expected 'Your file couldn’t be accessed\\nIt ma…' to include 'Software'\n    at Context.<anonymous> (conditionals_test.js:28:24)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
                 "diff": null
               },
-              "uuid": "f1f1d7d5-ff71-4f7f-8306-02b34ff6ccae",
-              "parentUUID": "941138a6-2aa9-4a4b-85e8-8278d38374a0",
+              "uuid": "c8ff7088-83ba-4e62-b569-ba0c6bc8edd4",
+              "parentUUID": "ccf999f0-aad6-4a81-a535-83c436f1c944",
               "isHook": false,
               "skipped": false
             }
@@ -98,11 +98,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "f1f1d7d5-ff71-4f7f-8306-02b34ff6ccae"
+            "c8ff7088-83ba-4e62-b569-ba0c6bc8edd4"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 108,
+          "duration": 273,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -136,7 +136,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/USER/Documents/Dufuna-CodeCamp-21/tests/php_loops_and_numbers/conditionals_js/../..//tests/",
+        "reportDir": "C:/Users/Abdsatar/Desktop/Dufuna-CodeCamp-21/tests/php_loops_and_numbers/conditionals_js/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
