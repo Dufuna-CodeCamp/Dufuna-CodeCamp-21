@@ -1,5 +1,7 @@
 import './App.css';
+// import CartItem from './components/CartItem';
 import CartPage from './components/CartPage';
+// import CartPage from './components/CartPage';
 import Navbar from './components/Navbar';
 import logo from './images/FoodBag.png'
 
@@ -20,6 +22,7 @@ function App() {
       />
       
       <CartPage />
+      {/* <CartItem /> */}
 
 
     </div>

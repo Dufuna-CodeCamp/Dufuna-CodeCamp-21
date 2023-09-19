@@ -43,20 +43,29 @@ nav .nav-item{
 
 }
 
-.food-section{
+.food{
+  width: 50vw;
+}
+
+.flex{
   display: flex;
-  width: 50%;
 }
 
 .row{
   display: flex;
-  width: 95vw;
-  margin: 0 2% 2%;
+  width: 90vw;
+  margin: 0 3% 2%;
   justify-content: space-between;
 }
+
+.food-section {
+  display: flex;
+  width: 75%;
+}
+
 #close{
   height: 25%;
-  margin-top: 5%;
+  margin-top: 4%;
   cursor: pointer;
 }
 .flex-column{
@@ -65,16 +74,16 @@ nav .nav-item{
 
 #productImage {
   margin: 0 2%;
-  width: 25%;
+  width: 17%;
 }
 
 #scooter{
-  margin: 0 6%;
-  width: 20%;
+  margin: 0 7% 0 7% ;
+  width: 17%;
 }
 
 .delivery{
-  padding: 7% 0;
+  padding: 7%;
 }
 .delivery-money{
   padding: 3% 0;
@@ -101,6 +110,7 @@ nav .nav-item{
 
 .plus-parent{
   padding-top: 2%;
+  margin-left: 5%;
 }
 .plus-minus img{
   cursor: pointer;
@@ -121,6 +131,7 @@ nav .nav-item{
   .plus-minus {
     width: 9vw;
   }
+  
 
 }
 
@@ -139,7 +150,7 @@ nav .nav-item{
   }
   
   #productImage {
-    width: 33%;
+    width: 25%;
   }
   .home {
     margin: 5% 2%;
@@ -152,8 +163,8 @@ nav .nav-item{
   
   }
   #scooter {
-    margin: 0 10%;
-    width: 22%;
+    margin: 0 9%;
+    width: 25%;
 }
   
 }
@@ -188,7 +199,7 @@ nav .nav-item{
   }
   #scooter {
     margin: 0 10%;
-    width: 22%;
+    width: 33%;
 }
   
 }

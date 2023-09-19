@@ -2,8 +2,8 @@ import React from 'react'
 
 function Delivery(props) {
   return (
-    <div className='ml-10 row'>
-        <div className='food-section'>
+    <div className='row'>
+        <div className='food flex'>
             <img id='scooter' src={props.productImage} alt='' />
 
             <div className='delivery'>
