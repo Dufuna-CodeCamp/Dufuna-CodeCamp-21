@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+body{
+    margin: 0px 90px;
+}
+=======
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 .nav-bar{
     display: flex;
     flex-direction: row;
@@ -97,13 +105,25 @@ margin-left: 20px;
 }
 
 @media screen and (min-width:768px){
+<<<<<<< HEAD
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 .nav-bar{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
 justify-content: space-between;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 font-size: 20px;
 align-items: center;
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+font-size: 20px;
+align-items: center;
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 }
 .nav-bar-text span{
     color: rgb(180, 75, 75);
@@ -118,6 +138,13 @@ align-items: center;
     
 }
 .navlinks li a{
+<<<<<<< HEAD
+<<<<<<< HEAD
+   color: black;
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 padding: 10px;
 text-decoration: none;
 }
@@ -133,10 +160,22 @@ text-decoration: none;
 }
 .navigation{
     margin: 40px 0px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+.navigation span{
+    color: rgb(202, 207, 212);
+=======
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
     font-size: 20px;
 }
 .navigation span{
  margin-left: 20px;
+<<<<<<< HEAD
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 }
 .logo{
     display: flex;
@@ -144,6 +183,14 @@ text-decoration: none;
     justify-content: space-between;
 }
 .logo div{
+<<<<<<< HEAD
+<<<<<<< HEAD
+    display: flex;
+    flex-direction: row;
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
     margin: 30px 0px;
 }
 .logo div p{
@@ -153,11 +200,20 @@ margin-left: 20px;
     color: rgb(180, 75, 75);
     position: relative;
     top: 25px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
     display: inline;
 right: 60px;
 }
 .view1{
     display: none;
+<<<<<<< HEAD
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 }
 
 
@@ -202,6 +258,16 @@ hr{
 .logo1 div p{
 margin-left: 20px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+.logo1 .view1{
+    color: rgb(180, 75, 75);
+    position: relative;
+    top: 25px;
+
+=======
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 .logo1 .view{
     color: rgb(180, 75, 75);
     position: relative;
@@ -211,6 +277,10 @@ right: 60px;
 }
 .logo1 .view1{
 display: none;
+<<<<<<< HEAD
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 }
 .hero .view {
     color: rgb(180, 75, 75);
@@ -239,6 +309,14 @@ display: none;
     background-color: white;
     border: 1px solid rgb(180, 75, 75);
     margin-top: 10px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 } 
 
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
+=======
+} 
+
+>>>>>>> 22f60f4c09530de392597cb993f450b8264402ba
 }
