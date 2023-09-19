@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+nav h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* nav h1 {
+} */
+
+nav span {
+  color: #ad4c4c;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  font-size: 16px;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #696969;
+}
+
+nav button {
+  font-size: 16px;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid #ad4c4c;
+  /* border-color: #ad4c4c; */
+  color: #ad4c4c;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.section-1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-1 h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-1 p {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+/* SECTION TWO */
+.section-2 p {
+  margin-bottom: 10px;
+  /* font-size: 20px; */
+}
+
+.where,
+.pick {
+  font-size: 20px;
+  font-weight: 600;
+  /* color: #000000; */
+}
+
+select {
+  font-size: 20px;
+  color: #696969;
+  font-weight: 400;
+}
+
+.section-2 form {
+  margin-bottom: 20px;
+}
+
+.p-1 {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.p-2 {
+  font-size: 14px;
+}
+
+.section-2 select {
+  width: 100%;
+  padding: 10px;
+}
+
+.section-2 .boxes {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-2 .bx-1 {
+  border: 1px solid #696969;
+  padding: 10px 25px;
+}
+
+.bx-1 img {
+  height: 50px;
+  /* margin-bottom: 15px; */
+}
+
+.p {
+  margin: 10px 0;
+}
+
+.section-3 {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.section-3 h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.t {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.s {
+  font-size: 20px;
+}
+
+.section-3 .box {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  margin-top: 80px;
+}
+
+.one,
+.two,
+.three {
+  text-align: center;
+  padding: 15px;
+}
+
+hr {
+  width: 100%;
+  /* color: #e6e6e6; */
+  border: 1px solid #69696951;
+}
+
+.section-4 {
+  margin: 50px 0;
+  text-align: center;
+  align-content: center;
+}
+
+.section-4 h1 {
+  font-size: 18px;
+  color: #696969;
+}
+
+.image-box {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  font-size: 18px;
+}
