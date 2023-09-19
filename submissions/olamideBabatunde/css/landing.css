@@ -131,7 +131,7 @@ footer {
   .intrest-cards {
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     margin-left: 50px;
   }
   .first-card,
@@ -152,7 +152,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-flow: wrap;
+    flex-wrap: wrap;
   }
   .card-container h3 {
     font-size: 25px;

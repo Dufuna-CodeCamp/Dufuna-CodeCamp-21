@@ -165,7 +165,7 @@ right: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-flow:wrap ;
+    flex-wrap:wrap ;
 }
 .card1 div{
     display: flex;
@@ -220,7 +220,7 @@ display: none;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
-    flex-flow: wrap;
+    flex-wrap: wrap;
 }
 .card2 div{
     display: flex;
