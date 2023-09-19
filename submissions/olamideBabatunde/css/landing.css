@@ -79,134 +79,11 @@ select {
 .card-container {
   text-align: center;
 }
-.cardcontainer,
-.cardcontainer3 {
-  display: none;
-}
 footer {
   text-align: center;
 }
 .footer-image img {
   padding: 10px;
-}
-@media screen and (min-width: 600px) {
-  .navlinks li {
-    list-style: none;
-    padding: 26px 20px 0px 0px;
-  }
-  .navlinks li a {
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-  }
-  .navlinks li a button {
-    padding: 8px;
-    width: 80px;
-    border: 2px solid rgb(180, 75, 75);
-    background-color: white;
-    outline: none;
-    position: relative;
-    border-radius: 5px;
-  }
-  .hero {
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 35px;
-  }
-  select {
-    position: relative;
-    left: 500px;
-    color: rgb(180, 75, 75);
-    border: none;
-    top: -25px;
-  }
-  .container {
-    padding: 0px 50px;
-  }
-  .container input {
-    padding: 10px;
-    width: 95%;
-  }
-  .intrest-cards-header {
-    margin: 30px 50px;
-  }
-  .intrest-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .intrest-cards1,
-  .intrest-cards2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .first-card,
-  .second-card,
-  .third-card,
-  .fourth-card {
-    border: 3px solid rgb(236, 229, 229);
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 20px;
-    outline: none;
-    margin: 10px 10px 50px;
-  }
-  hr {
-    border: 1px solid rgb(230, 220, 220);
-    outline-color: none;
-    margin-bottom: 10px;
-  }
-  .cardcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .card-container {
-    display: none;
-  }
-  .cardcontainer3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .cardcontainer,
-  .cardcontainer3 h3 {
-    font-size: 18px;
-    color: rgb(92, 84, 84);
-    text-align: center;
-  }
-  .cardcontainer p {
-    font-size: 15px;
-    color: rgb(92, 84, 84);
-    text-align: center;
-  }
-  .cardcontainer3a p {
-    font-size: 15px;
-    color: rgb(92, 84, 84);
-    text-align: center;
-  }
-  .card-container-header {
-    margin-left: 50px;
-  }
-  footer {
-    text-align: center;
-    margin-bottom: 10px;
-    color: rgb(92, 84, 84);
-  }
-  footer h4 {
-    font-size: 30px;
-  }
-  footer img {
-    padding: 30px;
-    padding-top: 0px;
-  }
-  .foot {
-    margin: 0px 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 @media screen and (min-width: 768px) {
   .nav-bar {
@@ -254,12 +131,8 @@ footer {
   .intrest-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 50px;
-  }
-  .intrest-cards1,
-  .intrest-cards2 {
-    display: flex;
-    flex-direction: row;
   }
   .first-card,
   .second-card,
@@ -275,9 +148,11 @@ footer {
     outline-color: none;
     margin-bottom: 50px;
   }
-  .cardcontainer,
-  .cardcontainer3 {
-    display: none;
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .card-container h3 {
     font-size: 25px;
@@ -289,22 +164,8 @@ footer {
     color: rgb(92, 84, 84);
     text-align: center;
   }
-
-  .cardcontainer3a {
-    display: none;
-  }
   .card-container-header {
     margin-left: 50px;
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .cardcontainer1 {
-    display: flex;
-    flex-direction: column;
   }
   footer {
     text-align: center;
