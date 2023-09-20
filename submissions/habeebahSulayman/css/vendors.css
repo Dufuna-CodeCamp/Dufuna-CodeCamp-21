@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+nav h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* nav h1 {
+} */
+
+nav span {
+  color: #ad4c4c;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  font-size: 16px;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #696969;
+}
+
+nav button {
+  font-size: 16px;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid #ad4c4c;
+  /* border-color: #ad4c4c; */
+  color: #ad4c4c;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.link-box {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.link-box a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 14px;
+}
+
+.link-box li {
+  list-style: none;
+}
+
+.vendors {
+  font-weight: 600;
+}
+
+.section-1 h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.kfc {
+  width: 40px;
+  height: 40px;
+}
+
+.k {
+  font-size: 20px;
+  color: #000;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.div a {
+  text-decoration: none;
+  color: #ad4c4c;
+  font-weight: 600;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.food-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 600;
+  color: #696969;
+}
+
+.price {
+  font-weight: 600;
+  color: rgb(105, 183, 27);
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+  color: #ad4c4c;
+}
+
+hr {
+  color: #bdb2b2ae;
+}
+
+.section-2 {
+  margin-bottom: 40px;
+}
+
+.section-3 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
