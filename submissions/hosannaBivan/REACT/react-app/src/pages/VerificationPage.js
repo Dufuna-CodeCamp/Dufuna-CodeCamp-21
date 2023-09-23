@@ -95,19 +95,13 @@ function VerificationPage(){
                         </div>
                 </div>
 
-                {/* <button>Submit</button> */}
-                {/* <ConditionalLink> */}
-
-                
-            
                     
-                    <Link to='/'>
+                    <Link to='/successpage'>
             
                            <Checkout button = 'Pay' />
             
                     </Link> 
-            
-               
+                           
                 
         </form>
 
