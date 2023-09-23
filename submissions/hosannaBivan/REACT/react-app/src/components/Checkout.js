@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Checkout() {
+
+function Checkout(props) {
   return (
     <div>
-        <button className='checkout'>Checkout</button>
+              
+            <button className='checkout'>{props.button}</button>
+
     </div>
   )
 }
