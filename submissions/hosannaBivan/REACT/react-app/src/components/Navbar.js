@@ -21,7 +21,7 @@ const Navbar = (props) => {
             
         </nav>
     
-        <p class="home">{props.home} > <span id="home">{props.category}</span></p>
+        <p class="home">{props.home} {props.arrow} <span id="home">{props.category}</span></p>
         <p id='bold'>{props.category}</p>
     </>
   )

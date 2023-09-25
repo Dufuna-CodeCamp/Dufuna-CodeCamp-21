@@ -36,6 +36,7 @@ function CartPage() {
       navItem2 = 'Login'
       navItem3 = 'Sign up'
       home = 'Home' 
+      arrow = '>'
       category = 'Cart'
       />
 
