@@ -1,64 +1,40 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 0,
+    "tests": 3,
     "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-09-26T12:31:49.259Z",
-    "end": "2023-09-26T12:34:49.378Z",
-    "duration": 180119,
-    "testsRegistered": 2,
+    "failures": 3,
+    "start": "2023-09-28T14:25:00.499Z",
+    "end": "2023-09-28T14:25:02.709Z",
+    "duration": 2210,
+    "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
-    "other": 1,
-    "hasOther": true,
-    "skipped": 2,
-    "hasSkipped": true
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
   },
   "results": [
     {
-      "uuid": "724f810d-4aac-4fd7-8029-aa157fdf96af",
+      "uuid": "9c41fb9d-bcb6-48e8-9a3b-a95129d5cf88",
       "title": "",
-      "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
-      "file": "\\test.js",
+      "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\dom_2\\dom.js",
+      "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "b41d5d1b-2f6b-400d-9ee4-6a45f89c7189",
-          "title": "Printing product price",
-          "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js",
-          "file": "\\test.js",
+          "uuid": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+          "title": "Testing Scholars Project",
+          "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\dom_2\\dom.js",
+          "file": "\\dom.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver for \"test case: check product details\"",
-              "timedOut": true,
-              "duration": 180018,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
-              "err": {
-                "message": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)",
-                "estack": "Error: Timeout of 180000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\product_price_printing\\test.js)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)",
-                "diff": null
-              },
-              "uuid": "700361d1-21a9-4bab-99f1-f6b98a790f79",
-              "parentUUID": "b41d5d1b-2f6b-400d-9ee4-6a45f89c7189",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "afterHooks": [
-            {
-              "title": "\"after all\" hook in \"Printing product price\"",
-              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
               "timedOut": false,
               "duration": 1,
               "state": null,
@@ -67,61 +43,112 @@
               "fail": false,
               "pending": false,
               "context": null,
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
+              "err": {},
+              "uuid": "f3a487e9-ecb5-4c38-a4c4-a2a9c317b374",
+              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Testing Scholars Project\"",
+              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "b0fb0dcd-b192-4398-bdf0-ea1136913009",
-              "parentUUID": "b41d5d1b-2f6b-400d-9ee4-6a45f89c7189",
+              "uuid": "43557801-a2b3-428d-b317-e88ef9733f7b",
+              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "test case: check product details",
-              "fullTitle": "Printing product price test case: check product details",
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 0,
-              "state": null,
+              "duration": 2187,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
-              "err": {},
-              "uuid": "868c2678-ab48-4556-b68d-96c3aa56a921",
-              "parentUUID": "b41d5d1b-2f6b-400d-9ee4-6a45f89c7189",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "619abf83-dadd-410a-a435-9467fd8b9bd1",
+              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
-              "title": "test case: check three arrays are present",
-              "fullTitle": "Printing product price test case: check three arrays are present",
+              "title": "test case: check colour of text",
+              "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 0,
-              "state": null,
+              "duration": 1,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nconst count = text.split(\"is sold for\").length - 1;\nassert.equal(count, 3, \"Ensure the array contains 3 objects\");",
-              "err": {},
-              "uuid": "8bb4c1f0-c1d7-4207-a373-26b8f67fca0f",
-              "parentUUID": "b41d5d1b-2f6b-400d-9ee4-6a45f89c7189",
+              "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "b7487c23-2cad-4474-9c7d-197ca070bdbc",
+              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
               "isHook": false,
-              "skipped": true
+              "skipped": false
+            },
+            {
+              "title": "test case: check text on button",
+              "fullTitle": "Testing Scholars Project test case: check text on button",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
+              "err": {
+                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "ebfde753-ab50-47e3-a646-55db28f163a2",
+              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "isHook": false,
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
-          "failures": [],
-          "pending": [],
-          "skipped": [
-            "868c2678-ab48-4556-b68d-96c3aa56a921",
-            "8bb4c1f0-c1d7-4207-a373-26b8f67fca0f"
+          "failures": [
+            "619abf83-dadd-410a-a435-9467fd8b9bd1",
+            "b7487c23-2cad-4474-9c7d-197ca070bdbc",
+            "ebfde753-ab50-47e3-a646-55db28f163a2"
           ],
-          "duration": 0,
+          "pending": [],
+          "skipped": [],
+          "duration": 2189,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -155,7 +182,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Olamide/desktop/Dufuna-CodeCamp-21/tests/product_price_printing/../..//tests/",
+        "reportDir": "C:/Users/Olamide/desktop/Dufuna-CodeCamp-21/tests/dom_2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
