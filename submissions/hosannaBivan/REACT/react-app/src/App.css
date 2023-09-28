@@ -169,6 +169,25 @@ h5{
   width: 49%;
 }
 
+.success-div{
+  /* width: 20%; */
+  margin: 10% auto;
+  text-align: center;
+  
+}
+.green{
+  color: #5EA304;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+.p{
+  letter-spacing: 1px;
+  color: #696969;
+  font-size: 1.1em;
+}
+
 @media screen and (min-width: 1024px){
   
   .plus-minus {
