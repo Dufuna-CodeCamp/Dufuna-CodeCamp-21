@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 3,
-    "start": "2023-09-28T14:25:00.499Z",
-    "end": "2023-09-28T14:25:02.709Z",
-    "duration": 2210,
+    "start": "2023-09-29T09:19:31.745Z",
+    "end": "2023-09-29T09:19:35.458Z",
+    "duration": 3713,
     "testsRegistered": 3,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,18 +18,18 @@
   },
   "results": [
     {
-      "uuid": "9c41fb9d-bcb6-48e8-9a3b-a95129d5cf88",
+      "uuid": "097495c1-8e18-4e86-8182-af1d49302a43",
       "title": "",
-      "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\dom_2\\dom.js",
+      "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
       "file": "\\dom.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+          "uuid": "66b38b41-f5e5-4305-9edd-e53d03ed782c",
           "title": "Testing Scholars Project",
-          "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\dom_2\\dom.js",
+          "fullFile": "C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\tests\\Dom_2\\dom.js",
           "file": "\\dom.js",
           "beforeHooks": [
             {
@@ -45,8 +45,8 @@
               "context": null,
               "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then();",
               "err": {},
-              "uuid": "f3a487e9-ecb5-4c38-a4c4-a2a9c317b374",
-              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "uuid": "0c4f8ed8-ea8e-4244-a941-fe1c1767508f",
+              "parentUUID": "66b38b41-f5e5-4305-9edd-e53d03ed782c",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"Testing Scholars Project\"",
               "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
-              "uuid": "43557801-a2b3-428d-b317-e88ef9733f7b",
-              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "uuid": "db14c586-04ba-41d4-9da8-cd8c8121add9",
+              "parentUUID": "66b38b41-f5e5-4305-9edd-e53d03ed782c",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 2187,
+              "duration": 3456,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -85,12 +85,12 @@
               "context": null,
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst button_text = await click[2].getText();\nassert.equal(button_text, \"Remove\", 'Ensure the text on the button changes to `Remove` after adding to Cart`')",
               "err": {
-                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
-                "diff": null
+                "message": "AssertionError: Ensure the text on the button changes to `Remove` after adding to Cart`: expected '' to equal 'Remove'",
+                "estack": "AssertionError: Ensure the text on the button changes to `Remove` after adding to Cart`: expected '' to equal 'Remove'\n    at Context.<anonymous> (dom.js:27:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "+ Remove\n"
               },
-              "uuid": "619abf83-dadd-410a-a435-9467fd8b9bd1",
-              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "uuid": "2b7c5a50-772f-4297-b141-86a178dd1449",
+              "parentUUID": "66b38b41-f5e5-4305-9edd-e53d03ed782c",
               "isHook": false,
               "skipped": false
             },
@@ -98,7 +98,7 @@
               "title": "test case: check colour of text",
               "fullTitle": "Testing Scholars Project test case: check colour of text",
               "timedOut": false,
-              "duration": 1,
+              "duration": 127,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -107,12 +107,12 @@
               "context": null,
               "code": "const click = await driver.findElements(By.css(\"button\"));\nclick[2].click();\nconst text_color = await click[2].getCssValue(\"color\");\nassert.equal(text_color, \"rgba(255, 255, 255, 1)\", 'Ensure the colour of the text `Remove` is white')",
               "err": {
-                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
-                "diff": null
+                "message": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(95, 99, 104, 1)' to equal 'rgba(255, 255, 255, 1)'",
+                "estack": "AssertionError: Ensure the colour of the text `Remove` is white: expected 'rgba(95, 99, 104, 1)' to equal 'rgba(255, 255, 255, 1)'\n    at Context.<anonymous> (dom.js:34:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "- rgba(95, 99, 104, 1)\n+ rgba(255, 255, 255, 1)\n"
               },
-              "uuid": "b7487c23-2cad-4474-9c7d-197ca070bdbc",
-              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "uuid": "cd1b6ba9-2147-44d9-b794-e09d2b0890f9",
+              "parentUUID": "66b38b41-f5e5-4305-9edd-e53d03ed782c",
               "isHook": false,
               "skipped": false
             },
@@ -120,7 +120,7 @@
               "title": "test case: check text on button",
               "fullTitle": "Testing Scholars Project test case: check text on button",
               "timedOut": false,
-              "duration": 1,
+              "duration": 100,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -129,12 +129,12 @@
               "context": null,
               "code": "const buttons = await driver.findElements(By.css(\"button\"));\nconst click = buttons[1];\nawait actions.doubleClick(click);\nconst button_text = await click.getText();\nassert.equal(button_text, \"Add to Cart\", \"Ensure the text on the button changes to `Add to Cart` on the second click\")",
               "err": {
-                "message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-                "estack": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.132 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n    at Object.throwDecodedError (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (C:\\Users\\Olamide\\desktop\\Dufuna-CodeCamp-21\\node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
-                "diff": null
+                "message": "AssertionError: Ensure the text on the button changes to `Add to Cart` on the second click: expected '' to equal 'Add to Cart'",
+                "estack": "AssertionError: Ensure the text on the button changes to `Add to Cart` on the second click: expected '' to equal 'Add to Cart'\n    at Context.<anonymous> (dom.js:42:16)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": "+ Add to Cart\n"
               },
-              "uuid": "ebfde753-ab50-47e3-a646-55db28f163a2",
-              "parentUUID": "e5fc9062-c13f-4c5f-9f2c-87f06aa38857",
+              "uuid": "947f1ada-b935-4d0e-8aa5-8d7f4b4b93b1",
+              "parentUUID": "66b38b41-f5e5-4305-9edd-e53d03ed782c",
               "isHook": false,
               "skipped": false
             }
@@ -142,13 +142,13 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "619abf83-dadd-410a-a435-9467fd8b9bd1",
-            "b7487c23-2cad-4474-9c7d-197ca070bdbc",
-            "ebfde753-ab50-47e3-a646-55db28f163a2"
+            "2b7c5a50-772f-4297-b141-86a178dd1449",
+            "cd1b6ba9-2147-44d9-b794-e09d2b0890f9",
+            "947f1ada-b935-4d0e-8aa5-8d7f4b4b93b1"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2189,
+          "duration": 3683,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -182,7 +182,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Olamide/desktop/Dufuna-CodeCamp-21/tests/dom_2/../..//tests/",
+        "reportDir": "C:/Users/Olamide/desktop/Dufuna-CodeCamp-21/tests/Dom_2/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
