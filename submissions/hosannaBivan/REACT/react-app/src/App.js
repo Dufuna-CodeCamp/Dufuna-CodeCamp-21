@@ -1,6 +1,7 @@
 import './App.css';
 import CartPage from './pages/CartPage';
 import VerificationPage from './pages/VerificationPage';
+import SuccessPage from './pages/SuccessPage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
@@ -15,6 +16,8 @@ function App() {
           <Route exact path='/' element={<CartPage />}></Route>
           <Route exact path='/cartpage' element={<CartPage />}></Route>
           <Route exact path='/verificationpage' element={<VerificationPage />}></Route>
+          <Route exact path='/successpage' element={<SuccessPage />}></Route>
+
           {/* <Route exact path='/login' element={<Login />}></Route> */}
           {/* <Route exact path='/demo' element={<Demo />}></Route> */}
       </Routes>
