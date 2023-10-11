@@ -19,13 +19,13 @@ const datasheet = [
     { product: "Nikon V1", price: 200 },
     { product: "Sony NEX-F3", price: 800 },
     { product: "Sony NEX-5", price: 900 },
-    { product: "Olympus PEN E-PL6", price: 750 },
+    { product: "Olympus PEN E-PL6", price: 750 }
   ];
   // Create a products array from the products in the datasheet
-  const products = datasheet.map((item) => item.product);
+  const products = datasheet.map(item => item.product);
   
   //  Create a product_price array from the product prices in the datasheet
-  const productPrices = datasheet.map((item) => item.price);
+  const productPrices = datasheet.map(item => item.price);
   
   // Check length, update prices, and print
   for (let i = 0; i < products.length; i++) {
