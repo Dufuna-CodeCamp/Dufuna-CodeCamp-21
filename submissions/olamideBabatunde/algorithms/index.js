@@ -42,4 +42,4 @@ for (let i = 0; i < products.length; i++) {
     newPrice = price / 2;
   }
   console.log(`The price of ${productName} is ${newPrice}`);
-};
+}
