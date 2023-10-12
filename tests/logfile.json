@@ -1,0 +1,177 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-10-12T09:42:32.351Z",
+    "end": "2023-10-12T09:42:32.370Z",
+    "duration": 19,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3e91ce4-c7f7-494a-afdd-592148554a54",
+      "title": "",
+      "fullFile": "C:\\Users\\Olamide\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
+      "file": "\\product_algorithm.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "283f4ee7-672f-4e58-b0d0-27e317f609d8",
+          "title": "Product Array Algorithm Task",
+          "fullFile": "C:\\Users\\Olamide\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
+          "file": "\\product_algorithm.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check length of products",
+              "fullTitle": "Product Array Algorithm Task check length of products",
+              "timedOut": false,
+              "duration": 4,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(products.length).to.equal(20);",
+              "err": {
+                "message": "TypeError: Cannot read property 'length' of undefined",
+                "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:7:25)\n    at processImmediate (internal/timers.js:464:21)",
+                "diff": null
+              },
+              "uuid": "7b13fb59-0247-4732-b163-7b7422109bbb",
+              "parentUUID": "283f4ee7-672f-4e58-b0d0-27e317f609d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check length of product price",
+              "fullTitle": "Product Array Algorithm Task check length of product price",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(product_price.length).to.equal(20);",
+              "err": {
+                "message": "TypeError: Cannot read property 'length' of undefined",
+                "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:11:30)\n    at processImmediate (internal/timers.js:464:21)",
+                "diff": null
+              },
+              "uuid": "3e6be320-cdbd-4d25-9d4b-09b32c181494",
+              "parentUUID": "283f4ee7-672f-4e58-b0d0-27e317f609d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check products data type",
+              "fullTitle": "Product Array Algorithm Task check products data type",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "for (i = 0; i < products.length; i++) {\n    expect(products[i]).to.be.a(\"string\");\n}",
+              "err": {
+                "message": "TypeError: Cannot read property 'length' of undefined",
+                "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:15:34)\n    at processImmediate (internal/timers.js:464:21)",
+                "diff": null
+              },
+              "uuid": "6ae71198-32b9-4b15-a5b6-b67dfb7daf8d",
+              "parentUUID": "283f4ee7-672f-4e58-b0d0-27e317f609d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check product price data type",
+              "fullTitle": "Product Array Algorithm Task check product price data type",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "for (i = 0; i < product_price.length; i++) {\n    expect(product_price[i]).to.be.a(\"number\");\n}",
+              "err": {
+                "message": "TypeError: Cannot read property 'length' of undefined",
+                "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:21:39)\n    at processImmediate (internal/timers.js:464:21)",
+                "diff": null
+              },
+              "uuid": "314cedf1-5253-4802-805e-11605082cfe7",
+              "parentUUID": "283f4ee7-672f-4e58-b0d0-27e317f609d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7b13fb59-0247-4732-b163-7b7422109bbb",
+            "3e6be320-cdbd-4d25-9d4b-09b32c181494",
+            "6ae71198-32b9-4b15-a5b6-b67dfb7daf8d",
+            "314cedf1-5253-4802-805e-11605082cfe7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "logfile",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "C:/Users/Olamide/Desktop/Dufuna-CodeCamp-21/tests/product_algorithm/../..//tests/",
+        "reportFilename": "logfile",
+        "quiet": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

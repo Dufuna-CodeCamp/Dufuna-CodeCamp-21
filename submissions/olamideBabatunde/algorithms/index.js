@@ -1,45 +1,61 @@
-// Sample datasheet with product details
-const datasheet = [
-  { product: "Canon Kit Lens 15-55mm", price: 500 },
-  { product: "Nikon 3100", price: 200 },
-  { product: "Samsung NX300", price: 750 },
-  { product: "Canon EOS 80D", price: 2000 },
-  { product: "Sony Alpha A7s", price: 1600 },
-  { product: "Sony NX 300M", price: 300 },
-  { product: "Panasonic Lumix GH4", price: 800 },
-  { product: "Panasonic Lumix DC-GH5", price: 5000 },
-  { product: "Xiaomi Y1-M1", price: 500 },
-  { product: "Fujifilm X-A10", price: 600 },
-  { product: "Canon DSLR Rebel T7", price: 1200 },
-  { product: "Canon DSLR EOS 2000D", price: 1200 },
-  { product: "Sony A7ii", price: 2000 },
-  { product: "Sony A6500 Mirrorless", price: 2000 },
-  { product: "Sony Alpha A7r III", price: 5000 },
-  { product: "Sony NEX-3N", price: 750 },
-  { product: "Nikon V1", price: 200 },
-  { product: "Sony NEX-F3", price: 800 },
-  { product: "Sony NEX-5", price: 900 },
-  { product: "Olympus PEN E-PL6", price: 750 },
+let newProductPrice = 0;
+
+//ARRAY FOR PRODUCT ITEMS
+var products = [
+  "Canon Kit Lens 15-55mm",
+  "Nikon 3100",
+  "Samsung NX300",
+  "Canon EOS 80D",
+  "Sony Alpha A7s",
+  "Sony NX 300M",
+  "Panasonic Lumix GH4",
+  "Panasonic Lumix DC-GH5",
+  "Xiaomi Y1-M1",
+  "Fujifilm X-A10",
+  "Canon DSLR Rebel T7",
+  "Canon DSLR EOS 2000D",
+  "Sony A7ii",
+  "Sony A6500 Mirrorless",
+  "Sony Alpha A7r III",
+  "Sony NEX-3N",
+  "Nikon V1",
+  "Sony NEX-F3",
+  "Sony NEX-5",
+  "Olympus PEN E-PL6",
 ];
 
-// Create a products array from the products in the datasheet
-const products = datasheet.map((item) => item.product);
+//ARRAY FOR PRODUCT PRICE
+var product_price = [
+  500, 200, 750, 2000, 1600, 300, 800, 5000, 500, 600, 1200, 1200, 2000, 2000,
+  5000, 750, 200, 800, 900, 750,
+];
 
-//  Create a product_price array from the product prices in the datasheet
-const productPrices = datasheet.map((item) => item.price);
+function productArrayAlgorithm() {
+  //LOOP THROUGH PRODUCTS TO GET THE LENGTH OF EACH PRODUCT ITEM
+  for (let i = 0; i < products.length; i++) {
+    //LOOP THROUGH PRODUCT PRICE TO GET THE PRICE OF EACH PRODUCT ITEM
+    for (let j = 0; j < product_price.length; j++) {
+      //IF PRODUCT LENGTH IS EVEN
+      //DOUBLE THE PRICE
+      if (products[i].length % 2 === 0) {
+        console.log(product_price[j]);
+        newProductPrice = product_price[j] * 2;
+        document.write(
+          `The price of ${products[i]} is ${newProductPrice} <br>`
+        );
+      }
 
-// Check length, update prices, and print
-for (let i = 0; i < products.length; i++) {
-  const productName = products[i];
-  const price = productPrices[i];
-  const length = productName.length;
-
-  let newPrice;
-
-  if (length % 2 === 0) {
-    newPrice = price * 2;
-  } else {
-    newPrice = price / 2;
+      //ELSE IF PRODUCT LENGTH IS ODD
+      //HALF THE PRICE
+      else {
+        newProductPrice = product_price[j] / 2;
+        document.write(
+          `The price of ${"  " + products[i]} is ${"  " + newProductPrice} <br>`
+        );
+      }
+      i++;
+    }
   }
-  console.log(`The price of ${productName} is ${newPrice}`);
 }
+//CALL THE FUNCTION
+productArrayAlgorithm();
