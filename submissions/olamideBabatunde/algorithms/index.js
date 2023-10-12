@@ -39,14 +39,14 @@ function productArrayAlgorithm() {
       //DOUBLE THE PRICE
       if (products[i].length % 2 === 0) {
         newProductPrice = product_price[j] * 2;
-        console.log(`The price of ${products[i]} is ${newProductPrice} <br>`);
+        document.write(`The price of ${products[i]} is ${newProductPrice}  <br> `);
       }
 
       //ELSE IF PRODUCT LENGTH IS ODD
       //HALF THE PRICE
       else {
         newProductPrice = product_price[j] / 2;
-        console.log(
+        document.write(
           `The price of ${"  " + products[i]} is ${"  " + newProductPrice} <br>`
         );
       }
