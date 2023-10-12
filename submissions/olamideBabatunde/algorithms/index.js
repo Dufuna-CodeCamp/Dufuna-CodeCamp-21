@@ -57,6 +57,9 @@ function productArrayAlgorithm() {
         //   `The price of ${"  " + products[i]} is ${"  " + newProductPrice} <br>`
         // );
       }
+      document.getElementById("text").innerHTML = `The price of ${
+        "  " + products[i]
+      } is ${"  " + newProductPrice} <br>`;
       i++;
     }
   }
