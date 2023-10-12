@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 4,
-    "start": "2023-10-12T10:09:26.674Z",
-    "end": "2023-10-12T10:09:26.689Z",
-    "duration": 15,
+    "start": "2023-10-12T10:28:53.679Z",
+    "end": "2023-10-12T10:28:53.693Z",
+    "duration": 14,
     "testsRegistered": 4,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3f5f46d2-a01d-410a-b232-e62bd44c7f60",
+      "uuid": "1124d321-628b-48cf-8c69-091f6d48889a",
       "title": "",
       "fullFile": "C:\\Users\\Olamide\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
       "file": "\\product_algorithm.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2e673d36-0ed2-4d2b-8547-43bf17ed1b9a",
+          "uuid": "989a8085-11ab-4333-a565-c0916c206cbc",
           "title": "Product Array Algorithm Task",
           "fullFile": "C:\\Users\\Olamide\\Desktop\\Dufuna-CodeCamp-21\\tests\\product_algorithm\\product_algorithm.js",
           "file": "\\product_algorithm.js",
@@ -38,7 +38,7 @@
               "title": "check length of products",
               "fullTitle": "Product Array Algorithm Task check length of products",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:7:25)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "ff9fad23-4f22-4616-9ce8-6b21d4bb4a4b",
-              "parentUUID": "2e673d36-0ed2-4d2b-8547-43bf17ed1b9a",
+              "uuid": "7cbced32-9b68-42f2-9e56-b70995dc3a56",
+              "parentUUID": "989a8085-11ab-4333-a565-c0916c206cbc",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "check length of product price",
               "fullTitle": "Product Array Algorithm Task check length of product price",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:11:30)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "3eaccc32-e0d3-4e86-893a-096ab294e67e",
-              "parentUUID": "2e673d36-0ed2-4d2b-8547-43bf17ed1b9a",
+              "uuid": "6b4159af-4d21-46e2-ad65-80a2cc6d6026",
+              "parentUUID": "989a8085-11ab-4333-a565-c0916c206cbc",
               "isHook": false,
               "skipped": false
             },
@@ -95,8 +95,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:15:34)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "8672fc79-0c1e-4e32-b24a-0300da5f449e",
-              "parentUUID": "2e673d36-0ed2-4d2b-8547-43bf17ed1b9a",
+              "uuid": "33dbd286-8e70-4771-9ac8-f577dfdee231",
+              "parentUUID": "989a8085-11ab-4333-a565-c0916c206cbc",
               "isHook": false,
               "skipped": false
             },
@@ -117,8 +117,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (product_algorithm.js:21:39)\n    at processImmediate (internal/timers.js:464:21)",
                 "diff": null
               },
-              "uuid": "2f0dd2c9-146b-46c9-9318-18fbdede867b",
-              "parentUUID": "2e673d36-0ed2-4d2b-8547-43bf17ed1b9a",
+              "uuid": "fa1a5e1c-4910-4760-962e-c04a4b81a53c",
+              "parentUUID": "989a8085-11ab-4333-a565-c0916c206cbc",
               "isHook": false,
               "skipped": false
             }
@@ -126,14 +126,14 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "ff9fad23-4f22-4616-9ce8-6b21d4bb4a4b",
-            "3eaccc32-e0d3-4e86-893a-096ab294e67e",
-            "8672fc79-0c1e-4e32-b24a-0300da5f449e",
-            "2f0dd2c9-146b-46c9-9318-18fbdede867b"
+            "7cbced32-9b68-42f2-9e56-b70995dc3a56",
+            "6b4159af-4d21-46e2-ad65-80a2cc6d6026",
+            "33dbd286-8e70-4771-9ac8-f577dfdee231",
+            "fa1a5e1c-4910-4760-962e-c04a4b81a53c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

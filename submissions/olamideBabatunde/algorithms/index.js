@@ -38,12 +38,8 @@ function productArrayAlgorithm() {
       //IF PRODUCT LENGTH IS EVEN
       //DOUBLE THE PRICE
       if (products[i].length % 2 === 0) {
-        // console.log(product_price[j]);
         newProductPrice = product_price[j] * 2;
         console.log(`The price of ${products[i]} is ${newProductPrice} <br>`);
-        // document.write(
-        //   `The price of ${products[i]} is ${newProductPrice} <br>`
-        // );
       }
 
       //ELSE IF PRODUCT LENGTH IS ODD
@@ -53,16 +49,11 @@ function productArrayAlgorithm() {
         console.log(
           `The price of ${"  " + products[i]} is ${"  " + newProductPrice} <br>`
         );
-        // document.write(
-        //   `The price of ${"  " + products[i]} is ${"  " + newProductPrice} <br>`
-        // );
       }
-      document.getElementById("text").innerHTML = `The price of ${
-        "  " + products[i]
-      } is ${"  " + newProductPrice} <br>`;
       i++;
     }
   }
 }
 //CALL THE FUNCTION
 productArrayAlgorithm();
+console.log(products.length);
