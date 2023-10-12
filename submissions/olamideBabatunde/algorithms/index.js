@@ -21,6 +21,7 @@ const datasheet = [
   { product: "Sony NEX-5", price: 900 },
   { product: "Olympus PEN E-PL6", price: 750 },
 ];
+
 // Create a products array from the products in the datasheet
 const products = datasheet.map((item) => item.product);
 
@@ -40,6 +41,5 @@ for (let i = 0; i < products.length; i++) {
   } else {
     newPrice = price / 2;
   }
-
   console.log(`The price of ${productName} is ${newPrice}`);
-}
+};
