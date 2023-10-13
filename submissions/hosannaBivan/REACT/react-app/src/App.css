@@ -1,6 +1,7 @@
 
 body{
   padding: 1%;
+  width: 100%;
 }
 
 nav{
@@ -15,8 +16,9 @@ nav{
 }
 
 .signup{
-  color: #AD4C4C;
-  padding: .5% 1%;
+  color: #AD4C4C !important;
+  width: 10vw;
+  padding: 10%;
   line-height: 1;
   border: 1px solid #AD4C4C;
   margin: 0;
@@ -25,6 +27,7 @@ nav{
 }
 nav .nav-item{
   cursor: pointer;
+  color: black;
 }
 
 .home{
@@ -117,7 +120,7 @@ nav .nav-item{
 }
 
 .checkout{
-  background: #AD4C4C;
+    background: #AD4C4C;
     width: 60%;
     margin: 2% 20% 5%;
     padding: 1%;
@@ -126,6 +129,65 @@ nav .nav-item{
     color: white;
 
 }
+
+form {
+  margin: auto 2%;
+  font-weight: 600;
+}
+form input{
+  width: 100%;
+  padding: .5% 1%;
+}
+form select{
+  width: 100%;
+  padding:  .8% 1%;
+  /* padding-right: 2% !important; */
+}
+.form-flex input{
+  padding: 1% 2%;
+}
+
+.extra{
+    margin: auto 2% 2%;
+}
+.one{ 
+  color: #b25858;
+  margin-bottom: 3%;
+  margin-top: -1%;
+}
+
+h5{
+  font-weight: 600;
+}
+
+.form-flex{
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+}
+.form-flex .form-group{
+  width: 49%;
+}
+
+.success-div{
+  /* width: 20%; */
+  margin: 10% auto;
+  text-align: center;
+  
+}
+.green{
+  color: #5EA304;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+.p{
+  letter-spacing: 1px;
+  color: #696969;
+  font-size: 1.1em;
+}
+
 @media screen and (min-width: 1024px){
   
   .plus-minus {
@@ -140,6 +202,12 @@ nav .nav-item{
     margin-right: 0;
     width: 20%;
   }
+
+  .signup{
+    width: 15vw;
+
+  }
+
   .food-section {
     display: flex;
     width: 75%;
@@ -174,6 +242,11 @@ nav .nav-item{
   #logo{
     margin-right: 0;
     width: 20%;
+  }
+
+  .signup{
+    width: 15vw;
+
   }
   .food-section {
     display: flex;

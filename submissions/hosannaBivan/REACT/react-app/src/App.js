@@ -1,28 +1,29 @@
 import './App.css';
-import CartPage from './components/CartPage';
-import Navbar from './components/Navbar';
-import logo from './images/FoodBag.png'
-
+import CartPage from './pages/CartPage';
+import VerificationPage from './pages/VerificationPage';
+import SuccessPage from './pages/SuccessPage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
 function App() {
 
 
   return (
-    <div className="App">
-      <Navbar
-      logo = {logo}
-      navItem1 = 'Cart'
-      navItem2 = 'Login'
-      navItem3 = 'Sign up'
-      home = 'Home' 
-      category = 'Cart'
-      />
+    <Router className="App">
       
-      <CartPage />
+
+      <Routes>
+          <Route exact path='/' element={<CartPage />}></Route>
+          <Route exact path='/cartpage' element={<CartPage />}></Route>
+          <Route exact path='/verificationpage' element={<VerificationPage />}></Route>
+          <Route exact path='/successpage' element={<SuccessPage />}></Route>
+
+          {/* <Route exact path='/login' element={<Login />}></Route> */}
+          {/* <Route exact path='/demo' element={<Demo />}></Route> */}
+      </Routes>
 
 
-    </div>
+    </Router>
   );
 }
 
