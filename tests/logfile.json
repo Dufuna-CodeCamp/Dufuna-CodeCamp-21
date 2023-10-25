@@ -20,8 +20,8 @@
     {
       "uuid": "19a84d2c-0888-44ab-ad7a-e759a5a7c815",
       "title": "",
-      "fullFile": "C:\\Users\\Dell\\desktop\\Dufuna-CodeCamp-21\\tests\\html_forms\\html_form.js",
-      "file": "\\html_form.js",
+      "fullFile": "C:\\Users\\Dell\\desktop\\Dufuna-CodeCamp-21\\tests\\add_navigation_links\\navigation_tasks.js",
+      "file": "\\navigation_tasks.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
@@ -33,17 +33,17 @@
           "file": "\\html_form.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"before all\" hook: setupWebdriver in \"Testing Form Task\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"before all\" hook: setupWebdriver in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 2139,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url);",
+              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done)",
               "err": {},
               "uuid": "89645205-e9f5-4318-bac0-7882909586de",
               "parentUUID": "becdce48-a86c-4759-b8dc-2d9b55ca7439",
@@ -53,8 +53,8 @@
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Form Task\"",
-              "fullTitle": "Testing Form Task \"after all\" hook in \"Testing Form Task\"",
+              "title": "\"after all\" hook in \"Testing Navigation on HtmlForms\"",
+              "fullTitle": "Testing Navigation on HtmlForms \"after all\" hook in \"Testing Navigation on HtmlForms\"",
               "timedOut": false,
               "duration": 0,
               "state": null,
@@ -63,7 +63,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver.quit();",
+              "code": "driver.quit()",
               "err": {},
               "uuid": "fddc0c6a-de82-4c9d-b392-5a475285479f",
               "parentUUID": "becdce48-a86c-4759-b8dc-2d9b55ca7439",
@@ -73,8 +73,8 @@
           ],
           "tests": [
             {
-              "title": "test case: assert 4 input fields are present",
-              "fullTitle": "Testing Form Task test case: assert 4 input fields are present",
+              "title": "test case: assert that there are 2 links on this page",
+              "fullTitle": "Testing Navigation on HtmlForms test case: assert that there are 2 links on this page",
               "timedOut": false,
               "duration": 3096,
               "state": "passed",
@@ -96,12 +96,12 @@
               "timedOut": false,
               "duration": 94,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nconst fullname = await text.toLowerCase();\nassert.include(\n  fullname,\n  \"full name\",\n  `Ensure \"Full Name\" label is present`\n);",
+              "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
               "uuid": "8de48393-7f97-4266-8f0a-e0ddd357eb93",
               "parentUUID": "becdce48-a86c-4759-b8dc-2d9b55ca7439",
@@ -208,7 +208,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "C:/Users/Dell/desktop/Dufuna-CodeCamp-21/tests/html_forms/../..//tests/",
+        "reportDir": "C:/Users/Dell/desktop/Dufuna-CodeCamp-21/tests/add_navigation_links/../..//tests/",
         "reportFilename": "logfile",
         "quiet": "true"
       },
