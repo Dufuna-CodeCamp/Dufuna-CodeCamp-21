@@ -1,0 +1,95 @@
+body {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    margin: 20px 80px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    text-decoration: none;
+   box-sizing: border-box;
+} 
+
+label {
+    display: block;
+  margin: 10px;
+  border-color: gray;
+}
+datalist {
+    border: 0px;
+}
+
+nav a[href='/'] {
+    font-size: 25px;
+    font-weight: bold;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    float: right;
+    padding: 5px;
+}
+
+nav li {
+    display: inline;
+    padding: 8px;
+    float: right;
+}
+
+.Foodbag {
+    text-align: center;
+    line-height: 0.5;
+}
+
+.pick div {
+    text-align: center;
+}
+.pick li {
+    display: inline-grid;
+    color: gray;
+    padding: 35px;
+    margin-bottom: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.serve div {
+    text-align: center;
+}
+.serve li {
+    display: inline-grid;
+    padding: 35px;
+    margin-bottom: 50px;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.social div {
+    text-align: center;
+}
+.social li {
+    display: inline-block;
+    padding:10px;
+}
+
+footer p {
+    font: poppins;
+    text-align: right;
+    color: gray;
+    font-size: 15px;
+    background: #FFFFFF;
+    font-weight: 400;
+}
+footer ul {
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+    font: poppins;
+    
+}
