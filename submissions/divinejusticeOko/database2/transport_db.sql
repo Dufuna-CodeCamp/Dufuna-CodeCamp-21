@@ -1,16 +1,17 @@
 CREATE DATABASE ABCtransport;
 
+USE ABCtransport;
+
 CREATE TABLE passengers(
-	passengerID INT NOT NULL AUTO_INCREMENT,
+	 passengers_id INT NOT NULL AUTO_INCREMENT,
     fullname VARCHAR(50) NOT NULL,
     sex VARCHAR(1) NOT NULL,
-    age INT,
-    PRIMARY KEY(passengerID)
+    age VARCHAR(10),
+    PRIMARY KEY(passengers_id)
 );
-
-CREATE TABLE tripdetails(
+CREATE TABLE passengers_details(
 	tripID INT NOT NULL AUTO_INCREMENT,
-	passengerID INT NOT NULL,
+	passengers_id INT NOT NULL,
     class VARCHAR(4) NOT NULL,
     ticketnumber VARCHAR(10) NOT NULL,
     fare INT NOT NULL,
@@ -19,13 +20,13 @@ CREATE TABLE tripdetails(
     embarked VARCHAR(1) NOT NULL,
     cabin VARCHAR(5),
     PRIMARY KEY(tripID),
-    FOREIGN KEY(passengerID) REFERENCES passengers(passengerID)
+    FOREIGN KEY(passengers_id) REFERENCES passengers(passengers_id)
 );
 
-CREATE table survivals(
-	passengerID INT NOT NULL,
+CREATE TABLE accident_cases(
+    id INT NOT NULL AUTO_INCREMENT,
+	passengers_id INT NOT NULL,
     survived INT NOT NULL,
-    PRIMARY KEY(passengerID),
-    FOREIGN KEY(passengerID) REFERENCES passengers(passengerID)
+    PRIMARY KEY (id),
+    FOREIGN KEY (passengers_id) REFERENCES passengers(passengers_id)
 );
-
