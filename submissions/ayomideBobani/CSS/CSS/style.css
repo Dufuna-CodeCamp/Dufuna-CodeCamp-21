@@ -21,18 +21,10 @@ datalist {
 }
 
 nav a[href='/'] {
+    color: black;
+    margin: 2px;
     font-size: 25px;
     font-weight: bold;
-}
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer li {
-    float: right;
-    padding: 5px;
 }
 
 nav li {
@@ -69,27 +61,15 @@ nav li {
     border: 1px solid white;
     border-radius: 5px;
 }
-
-.social div {
+footer div {
     text-align: center;
 }
-.social li {
+footer li {
     display: inline-block;
     padding:10px;
 }
-
-footer p {
-    font: poppins;
-    text-align: right;
-    color: gray;
-    font-size: 15px;
-    background: #FFFFFF;
-    font-weight: 400;
-}
 footer ul {
     color: gray;
-    font-size: 18px;
-    font-weight: 400;
-    font: poppins;
-    
+    font-size: 12px;
+    margin: 15px;
 }
