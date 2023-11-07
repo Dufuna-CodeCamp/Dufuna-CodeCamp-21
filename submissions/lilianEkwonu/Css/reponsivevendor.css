@@ -1,0 +1,274 @@
+/* Common styles for all screen sizes */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    /* max-width: 360px; */
+    margin: 0px auto;
+    background-color: #ffffff;
+}
+
+body{
+    margin: 20px;
+}
+
+
+/* Header styles */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 24px;
+    margin: auto;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav span {
+    color: #ad4c4c;
+}
+
+.nav-links {
+    line-height: 15px;
+}
+
+.nav-links li {
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: #696969;
+}
+
+.nav button {
+    padding: 5px 8px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #ad4c4c;
+    border: 1px solid #ad4c4c;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* main style */
+
+.active-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #c9c9c9;
+    margin: 40px 0 15px;
+}
+
+.active-link span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000; 
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: inline;
+    Width: 114px;
+}
+
+/* .vendor1 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    letter-spacing: 0em;
+    text-align: left;
+} */
+
+.food-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.food-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    /* width: 320px;  */
+    height: 150px;
+    padding: auto;
+    display: flex;
+    justify-content: center; 
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.title span {
+    color:#5EA304;
+    float: right;
+  }
+
+.add {
+    background-color: transparent;
+    border: 1px solid #AD4C4C;
+    border-radius: 3px;
+    width: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    color: #AD4C4C;
+    margin: 20px 0;
+}
+
+.more {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px none #ffffff;
+    color: #AD4C4C;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #E6E6E6 ;
+    /* width: 320px; */
+    margin: 20px 0;
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 360px) {
+    .food-container {
+        width: 100%;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .box-i img {
+        height: 200px;
+        width: 150px;
+    }
+}
+
+/* Media queries for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
+        margin: 0 25px;
+    }
+
+    .nav button{
+        font-size: 14px;
+    }
+
+    .active-link{
+        font-size: 18px;
+    }
+
+    .active-link span{
+        font-size: 18px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .more{
+        font-size: 20px;
+    }
+}
+
+/* Media queries for laptop and desktop screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
+        margin: 0 25px;
+    }
+
+    .nav button{
+        font-size: 14px;
+    }
+
+    .active-link{
+        font-size: 18px;
+    }
+
+    .active-link span{
+        font-size: 18px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .food-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .more{
+        font-size: 20px;
+    }
+}
