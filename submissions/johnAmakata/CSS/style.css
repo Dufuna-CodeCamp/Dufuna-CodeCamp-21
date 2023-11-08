@@ -69,7 +69,7 @@ nav a, h3{
 /* section one*/
 .section1, .section4{
     text-align:center;
-    margin: 70px 0px 60px;
+    margin: 70px 0px 40px;
 }
 
 .section1 h2, .section4 h2{
@@ -115,6 +115,7 @@ select {
     margin-left: 4px;
     margin-right: 10px;
 }
+
 .interest p{
     font-size: 0.8em;
 }
@@ -122,6 +123,8 @@ select {
  color: #AD4C4C;
  font-weight: bold
 }
+
+
 /*===================================================================================================.*/
 
 
@@ -165,3 +168,87 @@ footer p{
 span p{
     float: right;
 }
+
+
+/*==========================================
+     Media Query
+=================================================*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    header{
+        font-size: 8px;
+    }
+
+    .section1 {
+        margin: 50px 0px 20px;
+    }
+
+    .section1 div{
+        text-align: left;
+        font-size: 10px;
+    }
+
+    .interest div{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    header{
+        font-size: 12px;
+    }
+
+    .section1 {
+        margin: 50px 0px 20px;
+    }
+
+    .section1 div{
+        text-align: left;
+        font-size: 10px;
+    }
+    
+    section h5 div div{
+        display: flex;
+        flex-direction: space-between;
+    }
+
+    .interest div{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header{
+        font-size: 12px;
+    }
+
+    .section1 {
+        margin: 50px 0px 20px;
+    }
+    
+    section h5 div div{
+        display: flex;
+        flex-direction: space-between;
+    }
+
+    .interest div{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .serve div{
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+    
+}
+   
