@@ -1,8 +1,1 @@
-{
-  "stats": {
-    "tests": 7,
-    "passes": 7,
-    "failures": 0,
-    "owner": "divinejusticeOko"
-  }
-}
+{"numFailedTestSuites":0,"numFailedTests":0,"numPassedTestSuites":1,"numPassedTests":1,"numPendingTestSuites":0,"numPendingTests":0,"numRuntimeErrorTestSuites":0,"numTodoTests":0,"numTotalTestSuites":1,"numTotalTests":1,"openHandles":[],"snapshot":{"added":0,"didUpdate":false,"failure":false,"filesAdded":0,"filesRemoved":0,"filesRemovedList":[],"filesUnmatched":0,"filesUpdated":0,"matched":0,"total":0,"unchecked":0,"uncheckedKeysByFile":[],"unmatched":0,"updated":0},"startTime":1699430190210,"success":true,"testResults":[{"assertionResults":[{"ancestorTitles":[],"failureMessages":[],"fullName":"renders without crashing","location":null,"status":"passed","title":"renders without crashing"}],"endTime":1699430193122,"message":"","name":"C:\\Users\\user\\Desktop\\Dufuna-CodeCamp-21\\submissions\\olamideBabatunde\\REACT\\react-app\\src\\__tests__\\App.test.js","startTime":1699430191519,"status":"passed","summary":""}],"wasInterrupted":false}
