@@ -272,7 +272,6 @@ button{
 
       #show_mobile{
         display: flex;
-        justify-content: space-around;
         text-align: center;
         text-decoration: none;
         color: #ad4c4c;
