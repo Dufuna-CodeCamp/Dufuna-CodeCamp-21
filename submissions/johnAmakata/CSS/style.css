@@ -69,7 +69,7 @@ nav a, h3{
 /* section one*/
 .section1, .section4{
     text-align:center;
-    margin: 70px 0px 60px;
+    margin: 70px 0px 40px;
 }
 
 .section1 h2, .section4 h2{
@@ -83,7 +83,7 @@ nav a, h3{
 /*Search */
 
 select {
-    width: 97%;
+    width: 100%;
     padding: 10px 0px;
     margin-top: 2px;
     margin-bottom: 20px;
@@ -106,15 +106,19 @@ select {
 
 
 /*Interest*/
-.interest div{
-    display: inline-block;
-    padding: 20px 30px;
-    border: 1px solid #E5E5E5;
-    margin-top: 20px;
-    margin-bottom:40px;
-    margin-left: 4px;
-    margin-right: 10px;
+.interest{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 10px;
+   
 }
+
+.div-content{
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+}
+
 .interest p{
     font-size: 0.8em;
 }
@@ -122,6 +126,8 @@ select {
  color: #AD4C4C;
  font-weight: bold
 }
+
+
 /*===================================================================================================.*/
 
 
@@ -142,12 +148,17 @@ select {
 
 /*Contact*/
 .section5{
+    display: flex;
+    flex-direction: column;
     text-align:center;
     margin: 40px 0px 10px;
 }
-.section5 li{
-    display: inline-block;
+.section5 ul{
+    display: flex;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 /*==============================================================================================>*/
@@ -156,12 +167,119 @@ select {
 /*footer*/
 footer{
     text-align: center;
-}
-footer p{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 30px;
     color: #696969;
 }
-span p{
-    float: right;
+
+/*==========================================
+     Media Query
+=================================================*/
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+    header{
+        font-size: 9px;
+    }
+
+    .section1 {
+        margin: 50px 0px 20px;
+    }
+
+    .section1 div{
+        text-align: left;
+        font-size: 10px;
+    }
+
+    .interest{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .div-content{
+        padding-bottom: 20px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    header{
+        font-size: 12px;
+    }
+
+    .section1 {
+        margin: 50px 0px 20px;
+    }
+
+    .interest{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .div-content{
+        padding-bottom: 20px;
+    }
+
+    .serve div{
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header{
+        font-size: 12px;
+    }
+
+    .section1 {
+        margin: 50px 0px 20px;
+    }
+
+    .interest{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        gap: 10px 1px;
+    }
+
+    .div-content{
+        padding-bottom: 30px;
+        padding-right: 120px;
+    }
+
+    .serve div{
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    
+}
+   
