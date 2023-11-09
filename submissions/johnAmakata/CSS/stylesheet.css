@@ -111,6 +111,7 @@ div h2{
 }
 #show_mobile {
     display: none;
+    text-align: center;
 }
 
 /*===============================================
@@ -166,7 +167,7 @@ button{
         color: #ad4c4c;
     }
 
-    #show_mobile{
+    .show_mobile{
         display: flex;
         text-align: center;
         text-decoration: none;
@@ -197,7 +198,7 @@ button{
 }
 
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
 
     header{
         font-size: 10px;
@@ -216,7 +217,7 @@ button{
     }
 
 
-    #show_mobile{
+    .show_mobile{
         display: flex;
         text-align: center;
         text-decoration: none;
@@ -240,6 +241,7 @@ button{
       .amt {
         font-size: 12px;
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -267,6 +269,19 @@ button{
         width: 100%;
 
       }
+
+      .show_mobile{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        text-decoration: none;
+        color: #ad4c4c;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
 
 }
 
