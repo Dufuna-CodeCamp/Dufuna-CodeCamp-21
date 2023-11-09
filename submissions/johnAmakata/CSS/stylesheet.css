@@ -167,7 +167,7 @@ button{
         color: #ad4c4c;
     }
 
-    .show_mobile{
+    #show_mobile{
         display: flex;
         text-align: center;
         text-decoration: none;
@@ -217,7 +217,7 @@ button{
     }
 
 
-    .show_mobile{
+    #show_mobile{
         display: flex;
         text-align: center;
         text-decoration: none;
@@ -270,7 +270,7 @@ button{
 
       }
 
-      .show_mobile{
+      #show_mobile{
         display: flex;
         justify-content: space-around;
         text-align: center;
