@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+nav h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* nav h1 {
+} */
+
+nav span {
+  color: #ad4c4c;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  font-size: 16px;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #696969;
+}
+
+nav button {
+  font-size: 16px;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid #ad4c4c;
+  /* border-color: #ad4c4c; */
+  color: #ad4c4c;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.link-box {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.link-box a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 14px;
+}
+
+.link-box li {
+  list-style: none;
+}
+
+.vendors {
+  font-weight: 600;
+}
+
+.section-1 h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.kfc {
+  width: 40px;
+  height: 40px;
+}
+
+.k {
+  font-size: 20px;
+  color: #000;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.div a {
+  text-decoration: none;
+  color: #ad4c4c;
+  font-weight: 600;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.food-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 600;
+  color: #696969;
+}
+
+.price {
+  font-weight: 600;
+  color: rgb(105, 183, 27);
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #ad4c4c;
+  border-radius: 5px;
+  color: #ad4c4c;
+}
+
+hr {
+  color: #bdb2b2ae;
+}
+
+.section-2 {
+  margin-bottom: 40px;
+}
+
+.section-3 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1230px) {
+  .container {
+    width: 1150px;
+  }
+
+  .food-box {
+    gap: 15px;
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+
+  .image {
+    width: 230px;
+  }
+
+  .link-box a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    width: 900px;
+  }
+
+  .image {
+    width: 220px;
+  }
+
+  .link-box a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    width: 800px;
+  }
+
+  .image {
+    width: 180px;
+  }
+
+  .h {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    width: 700px;
+  }
+
+  .food-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .image {
+    width: 150px;
+  }
+
+  .nav h1 {
+    font-size: 16px;
+  }
+
+  .nav ul {
+    font-size: 14px;
+  }
+
+  .title,
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 600px;
+  }
+
+  .food-box {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .title,
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: 500px;
+  }
+
+  .food-box {
+    row-gap: 25px;
+    column-gap: 30px;
+  }
+
+  .image {
+    width: 230px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 400px;
+  }
+
+  .image {
+    width: 175px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 400px;
+  }
+
+  .food-box {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+  .image {
+    width: 400px;
+  }
+
+  .home {
+    color: #f5e6e68f;
+  }
+
+  .nav ul {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  /* .div {
+    flex-direction: column;
+  } */
+
+  .K {
+    font-weight: bold;
+  }
+
+  .link-box {
+    font-size: 14px;
+  }
+
+  nav button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  nav ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 350px;
+  }
+
+  .image {
+    width: 340px;
+  }
+}

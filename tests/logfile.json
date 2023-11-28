@@ -1,6 +1,7 @@
 {
   "stats": {
     "suites": 1,
+<<<<<<< HEAD
     "tests": 0,
     "passes": 0,
     "pending": 0,
@@ -22,11 +23,14 @@
       "title": "",
       "fullFile": "/Users/ogenna/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/html_task.js",
       "file": "/html_task.js",
+=======
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
           "title": "Testing Scholars Project",
           "fullFile": "/Users/ogenna/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/html_task.js",
@@ -51,6 +55,9 @@
               },
               "uuid": "08578281-b71c-4fe2-a840-d1f361b3d715",
               "parentUUID": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
+=======
+
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
               "isHook": true,
               "skipped": false
             }
@@ -69,8 +76,12 @@
               "context": null,
               "code": "driver.quit();",
               "err": {},
+<<<<<<< HEAD
               "uuid": "c6dee8ee-5932-41f7-82e1-635f487aef74",
               "parentUUID": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
+=======
+
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
               "isHook": true,
               "skipped": false
             }
@@ -80,6 +91,7 @@
               "title": "test case: check if Price is present",
               "fullTitle": "Testing Scholars Project test case: check if Price is present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 0,
               "state": null,
               "speed": null,
@@ -93,11 +105,14 @@
               "parentUUID": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
               "isHook": false,
               "skipped": true
+=======
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
             },
             {
               "title": "test case: check if Description is present",
               "fullTitle": "Testing Scholars Project test case: check if Description is present",
               "timedOut": false,
+<<<<<<< HEAD
               "duration": 0,
               "state": null,
               "speed": null,
@@ -111,38 +126,37 @@
               "parentUUID": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
               "isHook": false,
               "skipped": true
+=======
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
             },
             {
               "title": "test case: assert image amount is 2",
               "fullTitle": "Testing Scholars Project test case: assert image amount is 2",
               "timedOut": false,
-              "duration": 0,
-              "state": null,
-              "speed": null,
-              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const images = await driver.findElements(By.css(\"img\"));\nconst size = images.length;\nassert.equal(size, 2, `Amount of images on the page not equal to 2`);",
+<<<<<<< HEAD
               "err": {},
               "uuid": "ffdd2ae6-2a96-4651-bdef-b99f5c90272c",
               "parentUUID": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
               "isHook": false,
               "skipped": true
+=======
+              "err": {}, false
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
             },
             {
               "title": "test case: ordered list available",
               "fullTitle": "Testing Scholars Project test case: ordered list available",
               "timedOut": false,
-              "duration": 0,
-              "state": null,
-              "speed": null,
-              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const list = (await driver).findElements(webdriver.By.id(\"ol\"));\nassert.notStrictEqual(list.length, 0, \"No ordered list on this page\");",
               "err": {},
+<<<<<<< HEAD
               "uuid": "dafe7f7e-2535-4445-9f9f-e8c308fbd2f3",
               "parentUUID": "fc8e4a88-9719-4716-a682-e7f27e8b9fcb",
               "isHook": false,
@@ -160,6 +174,10 @@
             "dafe7f7e-2535-4445-9f9f-e8c308fbd2f3"
           ],
           "duration": 0,
+=======
+
+       
+>>>>>>> e6edc400e964683f04f62e3d194a252b996ebc4c
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -193,7 +211,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "/Users/ogenna/Desktop/Dufuna-CodeCamp-21/tests/product_page_using_html/../..//tests/",
+
         "reportFilename": "logfile",
         "quiet": "true"
       },
