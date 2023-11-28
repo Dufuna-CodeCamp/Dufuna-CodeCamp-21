@@ -11,7 +11,7 @@
     "webdriver-start": "webdriver-manager start"
   },
   "devDependencies": {
-    "chai": "^4.3.8",
+    "chai": "^4.3.10",
     "selenium-webdriver": "^4.12.0"
   }
 }
