@@ -14,7 +14,7 @@ body {
     text-decoration: none;
    box-sizing: border-box;
 } 
-.game {
+h1 {
     position: absolute;
     width: 90px;
     height: 30px;
