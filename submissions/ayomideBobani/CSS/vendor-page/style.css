@@ -269,6 +269,17 @@ color: #4E4D4D;
     left: 1073px;
     top: 395px;
 }
+
+hr {
+    position: absolute;
+    width: 1240px;
+    height: 0px;
+    left: 100px;
+    top: 705px;
+
+    border: 1px solid #E6E6E6;
+}
+
 .face img {
     box-sizing: border-box;
 
