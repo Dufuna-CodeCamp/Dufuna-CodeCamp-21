@@ -83,6 +83,7 @@
               "fail": false,
               "pending": false,
               "context": null,
+<
               "code": "const links = await driver.findElements(By.css('a'));\nconst size = links.length;\nassert.equal(size, 2, `Ensure you have two links on this page`);",
               "err": {},
               "uuid": "4f0cccef-5109-4837-8dbe-02c4438a2633",
@@ -95,10 +96,9 @@
           "passes": [
             "4f0cccef-5109-4837-8dbe-02c4438a2633"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 48,
+          "duratio
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
