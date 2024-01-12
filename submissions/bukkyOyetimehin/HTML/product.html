@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page | Fashi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="../html/images/logo.png" class="logo" alt="navigation-logo">
+        <div class="navbar-link">
+            <a href="product.html">Product page</a>
+            <a href="../html-forms/contact.html">Contact Us</a>
+            <a href="../html-forms/signup.html">Sign Up</a>
+        </div>
+    </div>
+    <!--2 column -->
+    <div class="first-banner">
+        <div class="sub-banner">
+            <div class="banner-left">
+                <img src="images/shirt.jpg">
+            </div>
+            <div class="banner-right">
+                <h1>BLUE-WHITE COLLAR TEE SHIRT</h1>
+                <h4>Brand: Polka-dot</h4>
+                <h4>Quantity: <input class="quantity" type="number" placeholder="1"></h4>
+                <span class="error-block"></span>
+                <p>Price: $ <span class="price">5000</span></p>
+                <p>Shipping Cost: $ <span class="shipping-cost">750</span></p>
+                <p>Total Cost: $ <span class="total-cost">5750</span></p>
+                <a href="#" class="buy-button">BUY NOW</a>
+            </div>
+        </div>
+        <div class="description">
+            <h2>DESCRIPTION</h2>
+            <p>This is a shirt you can put on all day. This polka dot designed shirt guarantees maximum comfort for whoever wears it. The strenght of material assures that it is long lasting from the moment it goes off the shelf.
+        </div>
+    </div>
+    <!--3 column -->
+    <div class="Three-banner">
+        <h2>RELATED PRODUCTS</h2>
+        <div class="banner-1 product1">
+            <img src="images/shoes2.jpg">
+            <p>Red Tennis Shoes</p>
+            <p>Price: &#36;10,000</p>
+        </div>
+        <div class="banner-1 product2">
+            <img src="images/shoes3.jpg">
+            <p>Black Office Shoes</p>
+            <p>Price: &#36;25,000</p>
+        </div>
+        <div class="banner-1 product3">
+            <img src="images/shoes.jpg">
+            <p>Red High-heeled Shoes</p>
+            <p>Price: &#36;18,000</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="mainfooter">
+            <div class="column-first">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                </ul>
+            </div>
+            <div class="column-second">
+                <h3>Sign up for our Newsletter</h3>
+                <form id="validateNewsletter" method="post" novalidate>
+                    <div class newsletter_field>
+                        <input type="email" id="footerEmail" placeholder="Enter your email address">
+                        <pre class="error-block"></pre>
+                    </div>
+                    <input type="submit" value="SUBMIT" id="footer-signup-btn">
+                </form>
+            </div>
+            <div class="column-third">
+                <h3>CONNECT WITH US</h3>
+                <a href="facebook.com"><img src="../html/images/facebook-logo.jpg"></a>
+                <a href="twitter.com"><img src="../html/images/twitter-logo.jpg"></a>
+                <a href="gmail.com"><img src="../html/images/gmail-logo.jpg"></a>
+                <a href="youtube.com"><img src="../html/images/youtube-logo.jpg"></a>
+            </div>
+        </div>
+        <p>Copyright 2020 Fashi.com All rights reserved.</p>
+    </footer>
+    <script src="../domManipulation/productShippingCost.js"></script>
+    <script src="../domManipulation/newsletterForm.js"></script>
+</body>
+
+</html>
