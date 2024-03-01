@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+    background: #FFFFFF;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+.sap1 {
+    height: 50px;
+    width: inherit;
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+    color: #000000;
+    
+}
+.sap2 {
+    box-sizing: border-box;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    color: #AD4C4C;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #AD4C4C;
+    border-radius: 5px;
+}
+.sap3 {
+    height: 50px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    color: #696969;
+}
+
+.Foodbag {
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.pa {
+    margin-top: -20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #696969;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.labe {
+    margin-left: 20px;
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 12px;
+    line-height: 18px;
+}
+.select_box{
+    margin-left: 30px;
+    width: 320px;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 0;
+  }
+
+  .select_box select{
+    width: 317px;
+    border: 0;
+    z-index: 99;
+    background: none;
+  } 
+
+  .pick p {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+  }
+.tap {
+    display: flex;
+    width: 320px;
+    height: 141px;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+.tea {
+    width: 30px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.ace {
+    margin: 0;
+    margin-left: 10px;
+    width: 200px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    color: #A5A5A5;
+}
+.tap p {
+    display: flex;
+    margin: 5px;
+    margin-left: 10px;
+    width: 214px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    color: #A5A5A5;
+}
+.serve p {
+    width: 182px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 89px;
+    align-items: center;
+    text-align: center;
+    color: #4E4D4D;
+}
+.gate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.gatepac {
+    margin-bottom: 50px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150.6px;
+    align-items: center;
+}
+.tea1 {
+    width: 200px; 
+    height: 150.6px;
+    margin: 0;
+}
+.ace1 {
+    width: 159px;
+    height: 23px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    color: #696969;
+}
+.gatepac p {
+    margin: 0;
+    margin-top: -15px;
+    width: 147px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    color: #A5A5A5;
+}
+
+footer p {
+    width: 89px;
+    height: 24px;
+    margin-left: 135px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #696969;
+}
+.rep {
+    display: flex;
+    width: 113.31px;
+    height: 20px;
+    margin-left: 123px;
+}
+.lip {    
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer ul a {
+    width: 207px;
+    height: 18px;
+    margin-left: 77px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #696969;
+}
+footer ul p {
+    width: 244px;
+    height: 36px;
+    margin-left: 58px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #696969;
+}
+
+@media screen and (min-width: 500px) {
+    .nav-list {
+        flex-direction: row;
+        width: 1000px;
+        height: fit-content;
+        min-height: 70px;
+    }
+    .sap1 {
+        margin-right: 500px;
+    }
+    .Foodbag {
+        font-size: 30px;
+    }
+    .pa {
+        font-size: 17px;
+    }
+    .labe {
+        font-size: 17px;
+    }
+    .select_box {
+        width: 1000px;
+    }
+    .select_box select {
+        width: 1000px;
+    }
+    .pick p {
+        font-size: 17px;
+    }
+    .wrap {
+        width: 80%;
+        flex-direction: row;
+        margin: 0px;
+    }
+    .tap {
+        margin: 5px;
+    }
+    .serve p {
+        font-size: 22px;
+        margin-left: 350px;
+    }
+    .gate {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+    .gatepac {
+        display: grid;
+        flex-direction: row;
+        margin-right: 40px;
+    }
+    .gatepac p {
+        display: flex;
+        margin-top: 30px;
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    footer p {
+        margin-left: 400px;
+    }
+   .rep {
+        margin-left: 400px;
+   }
+   footer ul a {
+        margin-left: 35px;
+   }
+   footer ul p {
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 600px;
+        align-items: normal;    
+    }
+}
