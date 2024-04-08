@@ -71,14 +71,14 @@ label {
     padding: 60px;
 }
 
-select {
-    width: 70%;
-    display: block;
-    margin: 20px 0;
+#location{
+	margin: 20px 0;
     margin-left: 5%;
-    height: 30px;
-    padding: 5px;
+    height: 45px;
+    width: 90%;
     align-items: center;
+    padding: 0 20px;
+    font-size: 16px;
 }
 
 .pick {
