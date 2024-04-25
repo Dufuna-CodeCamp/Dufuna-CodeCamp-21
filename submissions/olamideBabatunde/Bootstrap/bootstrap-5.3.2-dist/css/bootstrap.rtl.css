@@ -3603,10 +3603,6 @@ textarea.form-control-lg {
 .dropend .dropdown-toggle:empty::after {
   margin-right: 0;
 }
-.dropdown-toggle::after {
-  vertical-align: 0;
-}
-
 .dropstart .dropdown-menu[data-bs-popper] {
   top: 0;
   left: 100%;
@@ -3619,9 +3615,6 @@ textarea.form-control-lg {
   margin-right: 0.255em;
   vertical-align: 0.255em;
   content: "";
-}
-.dropdown-toggle::after {
-  display: none;
 }
 .dropstart .dropdown-toggle::before {
   display: inline-block;
