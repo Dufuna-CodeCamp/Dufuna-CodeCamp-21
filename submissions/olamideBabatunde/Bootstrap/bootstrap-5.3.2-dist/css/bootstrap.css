@@ -5348,7 +5348,7 @@ textarea.form-control-lg {
   box-sizing: content-box;
   width: 1em;
   height: 1em;
-  padding: 0.25em 0.25em;
+  padding: 0.25em;
   color: var(--bs-btn-close-color);
   background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
   border: 0;
