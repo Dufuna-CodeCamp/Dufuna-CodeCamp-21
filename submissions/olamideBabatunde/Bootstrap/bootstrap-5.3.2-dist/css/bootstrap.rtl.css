@@ -3603,7 +3603,7 @@ textarea.form-control-lg {
 .dropend .dropdown-toggle:empty::after {
   margin-right: 0;
 }
-.dropend .dropdown-toggle::after {
+.dropdown-toggle::after {
   vertical-align: 0;
 }
 
@@ -3620,7 +3620,7 @@ textarea.form-control-lg {
   vertical-align: 0.255em;
   content: "";
 }
-.dropstart .dropdown-toggle::after {
+.dropdown-toggle::after {
   display: none;
 }
 .dropstart .dropdown-toggle::before {
@@ -3635,7 +3635,7 @@ textarea.form-control-lg {
 .dropstart .dropdown-toggle:empty::after {
   margin-right: 0;
 }
-.dropstart .dropdown-toggle::before {
+.dropdown-toggle::before {
   vertical-align: 0;
 }
 
