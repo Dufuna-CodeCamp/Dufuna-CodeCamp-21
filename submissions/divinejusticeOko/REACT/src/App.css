@@ -1,0 +1,215 @@
+:root {
+  --fs-700: 1.875rem;
+  --fs-600: 1.25rem;
+  --fs-500: 1.15rem;
+  --fs-400: 1rem;
+  --fs-300: 0.937rem;
+  --fs-200: 0.875rem;
+  --fs-100: 0.625rem;
+
+  --brand-primary: #AD4C4C;
+}
+
+/* Utility Classes */
+
+.fs-sm {
+  font-size: var(--fs-200);
+}
+.fs-md {
+  font-size: var(--fs-100);
+}
+.fs-lg {
+  font-size: var(--fs-300);
+}
+.fs-xl {
+  font-size: var(--fs-600);
+}
+
+.red-text {
+  color: var(--brand-primary);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h1 {
+  margin-bottom: 5px;
+}
+
+/* Header Component */
+header {
+  padding: 20px;
+  justify-content:space-between;
+}
+.nav {
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: space-around;
+}
+.nav-item {
+  margin-left: 20px;
+}
+.nav-item:hover,
+.nav-item:active {
+  color: #AD4C4C;
+  cursor: pointer;
+}
+
+.sign-up-btn {
+  border: 1px solid #AD4C4C;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #AD4C4C;
+  transition: background .7s ease, color .7s ease;
+}
+.sign-up-btn:hover {
+  background-color: #AD4C4C;
+  color: #fff;
+}
+
+/* Cart Text */
+.cartText {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.u-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Cart item*/
+.cart-details {
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C9C9C9;
+}
+.close-icon {
+  margin-right: 10px;
+}
+.product-image {
+  width: 57px;
+  height: 46px;
+  margin-right: 10px;
+}
+.increment-img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.p-quantity {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.p-name {
+  margin-bottom: 10px;
+}
+
+/* Delivery */
+.scooter {
+  width: 91px;
+  margin-right: 10px;
+  text-align: right;
+}
+.scooter img {
+  width: 57px;
+  height: 57px;
+}
+/* Cart  */
+.cart-container {
+  padding: 20px;
+}
+
+/* Total Cart Price */
+.totalCartPrice {
+  justify-content: space-between;
+  padding: 20px 34px 50px;
+}
+.totalCartPrice p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Checkout Btn */
+.checkoutBtn {
+  display: block;
+  margin: 0 auto;
+  background-color: #AD4C4C;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/***************************************************************************
+******************************* Media Queries *******************************/
+@media screen and (min-width: 768px) {
+  /* Utility Classes */
+  .fs-md {
+    font-size: var(--fs-400);
+  }
+  .fs-lg {
+    font-size: var(--fs-600);
+  }
+  .fs-xl {
+    font-size: var(--fs-700);
+  }
+
+  /* Header  */
+  header {
+    padding: 20px 40px 40px;
+  }
+
+  /* Cart Item */
+  .product-image {
+    width: 133px;
+    height: 75px;
+  }
+  .increment-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Delivery */
+  .scooter {
+    width: 167px;
+    text-align: center;
+  }
+  .scooter img {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* Cart */
+  .cart-container {
+    padding: 40px;
+  }
+
+  /* Checkout Btn */
+.checkoutBtn {
+  width: 70%;
+}
+}
+
+@media screen and (min-width: 999px) {
+  /* Header  */
+  .nav-item {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Header  */
+
+
+  /* Cart */
+  header,
+  .cart-container {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
