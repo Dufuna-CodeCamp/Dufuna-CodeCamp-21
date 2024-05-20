@@ -1,13 +1,24 @@
+import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements,  } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Navbar';
-import Cart from './Components/Cart';
+import Cart from './pages/Cart';
+import CheckoutPage from './pages/CheckoutPage';
+import CheckoutLayout from './layouts/CheckoutLayout';
+import RootLayout from './layouts/RootLayout';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout />}>
+      <Route index element={<Cart />} />
+      <Route path='cart' element={<CheckoutLayout />}>
+        <Route path='verification' element={<CheckoutPage />} />
+      </Route>
+    </Route>
+  )
+)
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Cart />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
