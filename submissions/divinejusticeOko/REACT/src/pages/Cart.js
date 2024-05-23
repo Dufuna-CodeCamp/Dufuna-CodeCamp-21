@@ -1,8 +1,8 @@
-import React, {Component} from "react";
-import CartItem from "../Component/CartItem";
-import DeliveryItem from "../Component/DeliveryItem";
-import TotalCartPrice from "../Component/TotalCartPrice";
-import CheckoutButton from "../Component/CheckoutButton";
+import React, {Component,} from "react";
+import { NavLink } from "react-router-dom";
+import CartItem from "../Components/CartItem";
+import DeliveryItem from "../Components/DeliveryItem";
+import TotalCartPrice from "../Components/TotalCartPrice";
 
 class Cart extends Component {
 
@@ -82,6 +82,7 @@ class Cart extends Component {
     render() {
         return (
             <div className="container">
+                <p className="fs-md poppins-regular"><span className="g-text">Home &#62; </span><span>Cart</span></p>
                 <div className="headingText poppins-semibold flex">
                     <div>
                         <h1 className="fs-xl">Cart</h1>
@@ -94,7 +95,7 @@ class Cart extends Component {
                 ))}
                 <DeliveryItem deliveryFee={this.state.delivery} />
                 <TotalCartPrice totalCartPrice={this.state.totalCartPrice}/>
-                <CheckoutButton />
+                <NavLink to='cart/verification' className=".fs-md poppins-semibold checkoutBtn">Checkout</NavLink>
             </div>
         )
     }

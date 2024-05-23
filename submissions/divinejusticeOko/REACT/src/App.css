@@ -8,6 +8,11 @@
   --fs-100: 0.625rem;
 
   --brand-primary: #AD4C4C;
+  --text-accent: #696969;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* Utility Classes */
@@ -37,6 +42,12 @@ h1 {
   margin-bottom: 5px;
 }
 
+.gray-text {
+  color: var(--text-accent);
+}
+.g-text {
+  color: #c4c4c4;
+}
 /* Header Component */
 header {
   padding: 20px;
@@ -50,8 +61,12 @@ header {
 .nav-item {
   margin-left: 20px;
 }
-.nav-item:hover,
-.nav-item:active {
+.nav-item a {
+  text-decoration: none;
+  color: var(--text-accent);
+}
+.nav-item a:hover,
+.nav-item a.active {
   color: #AD4C4C;
   cursor: pointer;
 }
@@ -63,13 +78,13 @@ header {
   color: #AD4C4C;
   transition: background .7s ease, color .7s ease;
 }
-.sign-up-btn:hover {
+a.sign-up-btn:hover {
   background-color: #AD4C4C;
   color: #fff;
 }
 
 /* Cart Text */
-.cartText {
+.headingText {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 40px;
@@ -119,7 +134,7 @@ header {
   height: 57px;
 }
 /* Cart  */
-.cart-container {
+.container {
   padding: 20px;
 }
 
@@ -143,7 +158,56 @@ header {
   border: none;
   border-radius: 5px;
   padding: 10px;
+  text-align: center;
+  text-decoration: none;
 }
+
+/* *********************************************************
+************************* Checkout Page *********************/
+
+input,
+select {
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  padding: 0 20px;
+  color: #696969;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.input-container {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.border-bottom {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+form .flex {
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.flex .input-container {
+  width: 50%;
+}
+
+/* select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  margin: 20px 0;
+  background: url("../public/images/keyboard_arrow_down.png")
+    no-repeat;
+  background-color: #ccc;
+} */
 
 /***************************************************************************
 ******************************* Media Queries *******************************/
@@ -185,7 +249,7 @@ header {
   }
 
   /* Cart */
-  .cart-container {
+  .container {
     padding: 40px;
   }
 
@@ -208,7 +272,7 @@ header {
 
   /* Cart */
   header,
-  .cart-container {
+  .container {
     padding-left: 7%;
     padding-right: 7%;
   }
