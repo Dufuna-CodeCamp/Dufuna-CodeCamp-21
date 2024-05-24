@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CheckoutButton from "./CheckoutButton";
 import InputElement from "./InputElement";
 import SelectElement from "./SelectElement";
+import { NavLink } from "react-router-dom";
 
 const Checkout = () => {
     const [formState, setFormState] = useState({
@@ -38,7 +38,7 @@ const Checkout = () => {
             <InputElement labelName="CVC" type="number" name="cvc"  placeholder="012" value={formState.cvc} onChange={handleFormChange}/>
             </div>
 
-            <CheckoutButton />
+            <NavLink to="/cart/success" className=".fs-md poppins-semibold checkoutBtn">Pay</NavLink>
         </form>
     )
 }
