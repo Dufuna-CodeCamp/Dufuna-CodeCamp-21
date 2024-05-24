@@ -45,8 +45,15 @@ h1 {
 .gray-text {
   color: var(--text-accent);
 }
+.green-text {
+  color: #5EA304;
+}
 .g-text {
   color: #c4c4c4;
+}
+
+.text-center {
+  text-align: center;
 }
 /* Header Component */
 header {
@@ -198,16 +205,9 @@ form .flex {
   width: 50%;
 }
 
-/* select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 10px;
-  margin: 20px 0;
-  background: url("../public/images/keyboard_arrow_down.png")
-    no-repeat;
-  background-color: #ccc;
-} */
+.sucess {
+  padding: 25%;
+}
 
 /***************************************************************************
 ******************************* Media Queries *******************************/
@@ -226,6 +226,9 @@ form .flex {
   /* Header  */
   header {
     padding: 20px 40px 40px;
+  }
+  .sucess {
+    padding: 10% 35%;
   }
 
   /* Cart Item */
@@ -264,6 +267,7 @@ form .flex {
   .nav-item {
     margin-left: 40px;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -276,4 +280,5 @@ form .flex {
     padding-left: 7%;
     padding-right: 7%;
   }
+
 }
