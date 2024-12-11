@@ -301,7 +301,7 @@ button{
 	border: none;
 	opacity: 0px;
 	/* Vector */
-	display: inline-flex;
+	/* display: inline-flex; */
 	align-items: center;
 	background: #A5A5A5;
 	color: #E6E6E6;
