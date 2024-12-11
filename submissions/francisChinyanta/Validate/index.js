@@ -31,7 +31,7 @@ function emailFieldValidation(event){
 	
 }
 
-function passwordValidation(e){
+function passwordValidation(event){
 	let pwdRegex = /^[a-z0-9]+$/i;
 	if(!password.value.match(pwdRegex)){
 		password.nextElementSibling.innerHTML = "Please password must contain letters or numbers only";
