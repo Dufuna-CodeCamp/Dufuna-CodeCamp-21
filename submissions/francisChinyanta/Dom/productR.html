@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TeaShop</title>
+        <link rel="stylesheet" href="../css/stylesProductR.css">
+    </head>
+    <body onload="removeClasses()">
+        <div class="all-site">
+            <nav class="nav">           
+                <ul class="nav_list">
+                    <header class="header"><h1>Food<span>bag</span></h1></header> 
+                    <li class="navItem"><a href="signProducts.html">Sign up</a></li> 
+                    <li class="navItem"><a href="#">Login</a></li>              
+                    <li class="navItem"><a href="#">Cart<sup><div class="cart_dot"></div></sup></a></li>   					
+                </ul>            
+            </nav>
+        </div>
+        <main>
+            <p><span>Home:<i class="arrow right"></i></span> Vendors</p>
+            <p>All Vendors</p>        
+            <div id="div3">
+                <ul>
+                    <li>
+                        <div id="log">
+                            <img class="pz" src="../html/img/log.gif"> 
+                        </div>
+                    </li>
+                    <li>
+                        <div id="kfc"> 
+                            KFC
+                        </div>
+                    </li>
+                </ul>        
+            </div>       
+            <section class="foods">           
+                <div class="images">
+                    <li class="order">
+                        <div class="image_1">
+                            <div class="im">
+                                <img class="pz" src="../html/img/p1.jpg">
+                            </div>                            
+                            <div class="img_1">
+                                <div class="i_1">
+                                    <div class="i1" ><label>KFC King</label></br></div>
+                                    <div class="i2">#5,000</div>
+                                </div>
+								<div class="i_2">
+                                   <!--  <div id="zip"><button class="btn-stnd"><div class="icon-disable"></div><label>Remove</label></button></div> -->
+								    <button id="button1"  class="btn-active" onclick="toggleButtons(this.id)">Add to Carts</button>
+									<button id="button2"  class="btn-stnd" onclick="toggleButtons(this.id)"><div class="icon-disable"></div><label>Remove</label></button>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order">
+                        <div class="image_1">
+                            <div class="im">
+                                <img class="pz" src="../html/img/p1.jpg">
+                            </div>                           
+                            <div class="img_1">
+                                <div class="i_1">
+                                    <div class="i1" ><label>Zinger Burger</label></br></div>
+                                    <div class="i2">#3,600</div>
+                                </div>
+                                <div class="i_2">
+                                    <button id="button3"  class="btn-active" onclick="toggleButtons(this.id)">Add to Cart</button>
+									<button id="button4"  class="btn-stnd" onclick="toggleButtons(this.id)"><div class="icon-disable"></div><label>Remove</label></button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order">
+                        <div class="image_1">
+                            <div class="im">
+                                <img class="pz" src="../html/img/p1.jpg">
+                            </div> 
+                            <div class="img_1">
+                                <div class="i_1">
+                                    <div class="i1" ><label>Chiken strips</label></br></div>
+                                    <div class="i2">#1,450</div>
+                                </div>
+                                <div class="i_2">
+                                    <button id="button5"  class="btn-active" onclick="toggleButtons(this.id)">Add to Cart</button>
+									<button id="button6"  class="btn-stnd" onclick="toggleButtons(this.id)"><div class="icon-disable"></div><label>Remove</label></button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>                    
+                </div>
+                <div class="clicker" tabindex="1">
+                    <p>view all</p>
+                </div>
+            </section>           
+            <hr>      
+            <section class="foods1">            
+                <div class="images">
+                    <li class="order">
+                        <div class="image_1">
+                            <img class="pz1" src="../html/img/p2.jpg">
+                            <div class="img_1">
+                                <div class="i_1">
+                                    <div class="i1"><label>Refuel Max</label></br></div>
+                                    <div class="i2">#1,200</div>
+                                </div>
+                                <div class="i_2">
+                                    <button id="button7"  class="btn-active" onclick="toggleButtons(this.id)">Add to Cart</button>
+									<button id="button8"  class="btn-stnd" onclick="toggleButtons(this.id)"><div class="icon-disable"></div><label>Remove</label></button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order">
+                        <div class="image_1">
+                            <img class="pz1" src="../html/img/p3.jpg">
+                            <div class="img_1">
+                                <div class="i_1">
+                                    <div class="i1" ><label>Express meal</label></br></div>
+                                    <div class="i2">#2,000</div>
+                                </div>
+                                <div class="i_2">
+                                    <button id="button9"  class="btn-active" onclick="toggleButtons(this.id)">Add to Cart</button>
+									<button id="button10"  class="btn-stnd" onclick="toggleButtons(this.id)"><div class="icon-disable"></div><label>Remove</label></button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                    <li class="order">
+                        <div class="image_1">
+                            <img class="pz1" src="../html/img/p4.jpg">
+                            <div class="img_1">
+                                <div class="i_1">
+                                    <div class="i1" ><label>Citizen meal</label></br></div>
+                                    <div class="i2">#1,500</div>
+                                </div>
+                                <div class="i_2">
+                                    <button id="button11"  class="btn-active" onclick="toggleButtons(this.id)">Add to Cart</button>
+									<button id="button12"  class="btn-stnd" onclick="toggleButtons(this.id)"><div class="icon-disable"></div><label>Remove</label></button>
+                                </div>                            
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="clicker" tabindex="1">
+                    <p>view all</p>
+                </div>
+            </section>
+        </main>
+        <div class="footer">   
+                    <hr>          
+                    <div class="contact-sec">
+                        <p>Contact Us</p>
+                        <a href="https://www.twitter.com"><input type="image" name="twitter" class="mg" src="../html/img/twiiter_logo.jpg"></a>
+                        <a href="https://www.youtube.com"><input type="image" name="youtube" class="mg" src="../html/img/youtube_logo.jpg"></a>
+                        <a href="https://www.facebook.com"><input type="image" name="facebook" class="mg" src="../html/img/facebook_logo.jpg"></a>
+                    
+                    </div>
+                    <div id="terms_copyrit">
+                        <div id="terms">
+                            <p>Terms & Conditions. Privacy Policy</p>
+                        </div>
+                        <div id="copyrit">                   
+                            <p>@Copyright 2022 foodbag is a registered trademark</p>
+                        </div>
+                    </div>
+                    
+                </div>
+				    <script src="mainCopy.js"></script>
+    </body>    
+</html>

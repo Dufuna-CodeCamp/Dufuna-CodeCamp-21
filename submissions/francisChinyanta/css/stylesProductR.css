@@ -221,6 +221,7 @@ button{
     padding: 5px;
     font-weight: bold;
     color: red;
+
 }
 .foods .i_1 .i1, .foods1 .i_1 .i1 {
     width: 150px;
@@ -261,11 +262,98 @@ button{
     text-align: left;   
     
 }
+/*For Active Btns*/
+.btn-active{	
+	width: 128px;
+	height: 40px;
+	top: 604px;
+	left: 100px;
+	gap: 5px;
+	border-radius: 3px;
+	border: 1px solid #AD4C4C;
+	align-items: center;
+	background: #FFFFFF;
+	color: #AD4C4C;
+	font-family: Poppins;
+	font-weight: 500;
+}
+
+/*For Disabled Btns*/
+.icon-disable{
+	width: 30px;
+	height: 30px;
+	top: 624px;
+	left: 105.03px;
+	gap: 0px;
+	opacity: 0px;
+	angle: 45 deg;
+ 	background-image: url('../html/img/disable.PNG'); 
+}
+/*For Hidden Btns*/
+.btn-stnd{
+	
+	width: 128px;
+	height: 40px;
+	top: 604px;
+	left: 100px;
+	gap: 5px;
+	border-radius: 3px;
+	border: none;
+	opacity: 0px;
+	/* Vector */
+	/* display: inline-flex; */
+	align-items: center;
+	background: #A5A5A5;
+	color: #E6E6E6;
+	padding-left: 15px;
+	display: none;
+}
+
+/*For Displayed Btns*/
+.btn-stnd-display{
+	
+	width: 128px;
+	height: 40px;
+	top: 604px;
+	left: 100px;
+	gap: 5px;
+	border-radius: 3px;
+	border: none;
+	opacity: 0px;
+	/* Vector */
+	display: inline-flex;
+	align-items: center;
+	background: #A5A5A5;
+	color: #E6E6E6;
+	padding-left: 15px;
+}
+.btn-stnd label{
+	font-family: Poppins;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	font-size: 16px;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+.cart_dot{
+	/* Ellipse 38 */
+	width: 9px;
+	height: 9px;
+	left: 1105px;
+	top: 52px;
+	display: inline-flex;
+	background: #AD4C4C;
+	border-radius: 100%;
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+
+}
+
 
 @media screen and (min-width: 400px) {
     .navItem {
         height: fit-content;
-        padding: 14px 40px;
+        padding: 12px 38px;
         text-align: center;
         justify-content: center;
     }
@@ -329,8 +417,8 @@ button{
         width: 85%;
     }
     .pz1 {
-        height: 70%;
-        width: 90%;
+        height: 55%;
+        width: 75%;
     }
     .mg {
         height: 40px;
@@ -397,12 +485,12 @@ button{
         padding-left: 50px;
         padding-right: 50px;
     }
-   .navItem {
+  /* .navItem {
     height: 50px;
     width: inherit;   
     align-items: center;
     display: inline-grid;   
     margin-left: 10px;
-    }
+    }*/
 
 }
