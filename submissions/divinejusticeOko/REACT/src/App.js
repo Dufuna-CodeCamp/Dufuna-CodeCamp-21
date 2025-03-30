@@ -4,6 +4,7 @@ import Cart from './pages/Cart';
 import CheckoutPage from './pages/CheckoutPage';
 import CheckoutLayout from './layouts/CheckoutLayout';
 import RootLayout from './layouts/RootLayout';
+import Sucess from './pages/Success';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,6 +12,7 @@ const router = createBrowserRouter(
       <Route index element={<Cart />} />
       <Route path='cart' element={<CheckoutLayout />}>
         <Route path='verification' element={<CheckoutPage />} />
+        <Route path="success" element={<Sucess />} /> 
       </Route>
     </Route>
   )
